@@ -35,7 +35,7 @@ Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We 
 
 #### How can I undo / redo?
 
-* Ctrl+Z & Ctrl+Y
+* Ctrl+Z & Ctrl+Y or ⌘Z / ⌘Y on a Mac.
 
 #### How do I find out the wiring of the 7 segment display?
 

@@ -11,6 +11,7 @@ title: "Tiny Tapeout 01"
 ### Design details
 
 * [Github repository](https://github.com/mattvenn/tinytapeout-mpw7)
+* [The Efabless submission is here](https://platform.efabless.com/projects/1229)
 * [PDF datasheet](/tt01.pdf)
 * [Verification](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/verification.md)
 * [How the scan chain works](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md)
