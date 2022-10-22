@@ -1,0 +1,22 @@
+---
+title: Logic Gates
+tags: [guide]
+description: "Learn the basic logic Gates"
+weight: 20
+---
+
+![gates](images/gates.png)
+
+Still feeling uncertain about digital logic gates and how they function? You can use the same Wokwi interface to explore different gates at your own pace.  One exercise I like is to draw out the truth table for each gate that you’re unfamiliar with. 
+
+Here’s one I built to help me figure out the NAND gate. By toggling inputs 1 and 2 - you can find out what combination you need to turn the red LED on.
+
+[![nand](images/nand.png)](https://wokwi.com/projects/345958822623314515).
+
+| input 1 | input 2 | output |
+|---------|---------|--------|
+| 0       | 0       | 1      |
+| 0       | 1       | 1      |
+| 1       | 0       | 1      |
+| 1       | 1       | 0      |
+
