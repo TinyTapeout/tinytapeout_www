@@ -11,7 +11,7 @@ title: "Tiny Tapeout 01"
 ### Design details
 
 * [Github repository](https://github.com/mattvenn/tinytapeout-mpw7)
-* [PDF datasheet](https://github.com/mattvenn/tinytapeout-mpw7/suites/8867344149/artifacts/404880270)
+* [PDF datasheet](/tt01.pdf)
 * [Verification](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/verification.md)
 * [How the scan chain works](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md)
 
