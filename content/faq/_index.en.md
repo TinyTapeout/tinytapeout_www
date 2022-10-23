@@ -93,7 +93,7 @@ You can see all the [designs currently submitted here](https://github.com/mattve
 * [Cycle](https://wokwi.com/projects/341262321634509394)
 * [4x4-bit unsigned multiplier with Wallace tree reduction](https://github.com/GuzTech/tinytapeout-4x4-multiplier)
 
-And we have the PDF datasheet of [Tiny Tapeout 01 here](/runs/tt01.pdf).
+And we have the PDF datasheet of [Tiny Tapeout 01 here](/tt01.pdf).
 
 #### Do I need to delete unused digital gates?
 
