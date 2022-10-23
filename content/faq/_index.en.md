@@ -1,6 +1,7 @@
 ---
 title: FAQ
 description: Frequently Asked Questions
+weight: 90
 ---
 
 ### Support
@@ -154,16 +155,12 @@ This is to be expected during the early phases of TinyTapeout. I’m hoping to h
 
 There are lots!
 
-* gds render - an SVG of your chip
-* gds.html - pan and zoomable picture of your chip
 * src - the source files for your chip:
     * user_module_xxxxx.v the [Verilog](https://www.zerotoasiccourse.com/terminology/hdl/) file that represents your Wokwi design.
-    * scan_wrapper_xxxxx.v the wrapper that adds a scan chain to your design so its inputs and outputs can be connected to the inputs and outputs of the [ASIC](https://www.zerotoasiccourse.com/terminology/asic/).
     * config.tcl - config file for the [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/) ASIC tool flow that turns the Verilog into [GDS](https://www.zerotoasiccourse.com/terminology/gds2/).
     * cells.v translates the modules into the [standard cells](https://www.zerotoasiccourse.com/terminology/standardcell/) available for the Skywater 130nm process.
-    * ID the id number of your design
 * runs/wokwi/reports/metrics.csv - a detailed summary report of the tool flow. It’s beyond the scope of this doc for now to explain it all.
-* runs/wokwi/reports/syntheeis/1-synthesis.stat.rpt.strategy4 report of the standard cells used for your design. 
+* runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 report of the standard cells used for your design. 
 * runs/wokwi/results/final/ (just the most important described here)
     * gds - the final GDS file that will be added to the TinyTapeout submission.
     * lef - an abstract version of the GDS with less information, used for routing.

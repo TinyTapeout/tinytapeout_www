@@ -1,5 +1,7 @@
 ---
 title: "Tiny Tapeout 01"
+weight: 10
+description: Our first trial run
 ---
 
 ### Launch stats

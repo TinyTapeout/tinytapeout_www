@@ -1,5 +1,7 @@
 ---
 title: "Tiny Tapeout 02"
+weight: 20
+description: Our next run, coming soon!
 ---
 
 We’re getting ready to open for submissions for TinyTapeout-02 in early November. 
