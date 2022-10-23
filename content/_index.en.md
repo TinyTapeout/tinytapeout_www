@@ -8,7 +8,7 @@ title: "Tiny Tapeout"
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
-We ran [TinyTapeout-01 in August](tt01/) and received 150 submissions in just a couple of weeks. 
+We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks. 
 
 We’re getting ready to open for submissions for TinyTapeout-02 in early November. There will be limited spots - so sign up to the mailing list to make sure you don't miss your chance to submit a design.
 

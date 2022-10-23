@@ -93,7 +93,7 @@ You can see all the [designs currently submitted here](https://github.com/mattve
 * [Cycle](https://wokwi.com/projects/341262321634509394)
 * [4x4-bit unsigned multiplier with Wallace tree reduction](https://github.com/GuzTech/tinytapeout-4x4-multiplier)
 
-And we have the PDF datasheet of [Tiny Tapeout 01 here](/tt01.pdf).
+And we have the PDF datasheet of [Tiny Tapeout 01 here](/runs/tt01.pdf).
 
 #### Do I need to delete unused digital gates?
 
@@ -117,8 +117,8 @@ Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-s
 
 Please see the details on each chip's page.
 
-* [TinyTapeout-01](/tt01)
-* [TinyTapeout-02](/tt02)
+* [TinyTapeout-01](/runs/tt01)
+* [TinyTapeout-02](/runs/tt02)
 
 #### When will the course material be available?
 
@@ -169,7 +169,7 @@ There are lots!
 
 #### Where is the submission repository for the shuttle?
 
-* [See the TT01 page](/tt01/)
+* [See the TT01 page](/runs/tt01/)
 
 #### Why do I have fewer / more standard cells than I expected?
 
