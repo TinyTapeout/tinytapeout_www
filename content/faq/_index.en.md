@@ -132,8 +132,15 @@ At the moment, 498. It’s an array of 500, but we use 2 of the slots as a kind 
 
 #### How big can my design be?
 
-90 x 120 (0.1 x 0.1 mm!). This is enough for about 500 digital logic gates, depending on their size. 
+90 x 120 um. This is enough for about 500 digital logic gates, depending on their size. 
 
+Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
+
+Click the picture to open an interactive viewer (can take a while to load).
+
+[![7 seg](images/7segtt02.png)](https://mattvenn.github.io/tt02-seven-segment-seconds/viewer/tinytapeout.html)
+
+Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
 
 ### Github FAQs
 
