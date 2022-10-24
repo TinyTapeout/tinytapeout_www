@@ -4,19 +4,19 @@ weight: 10
 description: Our first trial run
 ---
 
+### Design details
+
+* [Github repository](https://github.com/mattvenn/tinytapeout-mpw7)
+* [PDF datasheet](/tt01.pdf)
+* [How the scan chain works, pinout, tech details](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md)
+* [Verification](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/verification.md)
+* [Efabless MPW submission is here](https://platform.efabless.com/projects/1229)
+
 ### Launch stats
 
 * Launched: 2022-08-17
 * Submission closed: 2022-09-01
 * Submitted to Efabless 2022-09-05 for the MPW7 shuttle using Skywater 130nm open source PDK
-
-### Design details
-
-* [Github repository](https://github.com/mattvenn/tinytapeout-mpw7)
-* [The Efabless submission is here](https://platform.efabless.com/projects/1229)
-* [PDF datasheet](/tt01.pdf)
-* [Verification](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/verification.md)
-* [How the scan chain works](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md)
 
 ### Community stats (as of 2022-09-05)
 

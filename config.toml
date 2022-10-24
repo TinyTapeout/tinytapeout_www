@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'Tiny Tapeout'
 theme = "learn"
 
+[markup.goldmark.renderer]
+unsafe= true
+
