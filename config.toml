@@ -6,3 +6,7 @@ theme = "learn"
 [markup.goldmark.renderer]
 unsafe= true
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
