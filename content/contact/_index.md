@@ -7,7 +7,7 @@ weight: 100
 
 Matthew Venn is a science & technology communicator and electronic engineer. He brings 20 years of experience to create excellent and innovative learning experiences for people all over the world.
 
-His [Zero to ASIC course](zerotoasiccourse.com) has enrolled 250 students and submitted chips to every Google shuttle run with 45 course contributed designs.
+His [Zero to ASIC course](https://www.zerotoasiccourse.com) has enrolled 250 students and submitted chips to every Google shuttle run with 45 course contributed designs.
 
 * Email: matt@mattvenn.net
 * Web: [mattvenn.net](https://mattvenn.net)
