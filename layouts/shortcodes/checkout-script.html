@@ -1,0 +1,2 @@
+{{ $js := resources.Get "scripts/checkout.js" | js.Build | resources.Minify }}
+<script src="{{ $js.RelPermalink }}"></script>

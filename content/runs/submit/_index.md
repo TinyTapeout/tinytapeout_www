@@ -14,6 +14,7 @@ Project Repository URL:
 <input id="url-input" type="text" placeholder="https://github.com/user/repo" />
 
 <button onclick="Submit.nextClick()" id="next-button">Next</button>
+
 <div style="color:red" id="error-message"></div>
 <div style="color:purple; display: none" id="validating-message">Validating repo...</div>
 
@@ -30,4 +31,4 @@ Project Repository URL:
 
 </div>
 
-<script type="text/javascript" module src="/scripts/checkout.js"></script>
+{{< checkout-script >}}
