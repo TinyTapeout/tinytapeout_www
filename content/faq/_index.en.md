@@ -12,14 +12,11 @@ weight: 90
 
 Join the [discord community with this link](https://discord.gg/rPK2nSjxy8).
 
-
 # Wokwi FAQs
-
 
 ## How do I do x, y, z with Wokwi?
 
 Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We don’t have much documentation yet for the [ASIC](https://www.zerotoasiccourse.com/terminology/asic/) version of Wokwi.
-
 
 ## Shortcut keys
 
@@ -28,13 +25,11 @@ Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We 
 * shift and drag to drag a box around multiple components
 * [More here](https://docs.wokwi.com/guides/diagram-editor#keyboard-shortcuts).
 
-
 ## Can I copy and paste from one Wokwi design to another?
 
 1. Select the all the parts you want to copy (using shift and click the parts or shift and drag a box)
 2. Copy them to clipboard (Ctrl+C or Cmd+C)
 3. Go to the target project, click on the diagram editor, and paste (Ctrl+V or Cmd+V) 
-
 
 ## How can I undo / redo?
 
@@ -59,7 +54,6 @@ Either duplicate an existing one (select it and press **d**), or:
 
 Select all the ones you want to move (using shift and click the parts or shift and drag a box). Then drag the selection.
 
-
 ## How many ins and outs do I get?
 
 8 ins and 8 outs.
@@ -67,7 +61,6 @@ Select all the ones you want to move (using shift and click the parts or shift a
 ## What is the top clock speed?
 
 We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
-
 
 ## How do I use the clock block?
 
@@ -101,11 +94,9 @@ And we have the PDF datasheet of [Tiny Tapeout 01 here](/tt01.pdf).
 
 No, unused gates will be optimised out by the ASIC tools.
 
-
 ## I found and fixed a problem in my design - do I need to resubmit?
 
 No you just need to make sure that after saving your project you [re-run the github action](#i-updated-and-saved-my-wokwi-design-how-do-i-re-run-the-github-action-to-update-the-gds-files).
-
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
@@ -113,7 +104,6 @@ If you’re an advanced user, you can use the HDL of your choice. Have a look at
 Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-submission-template/tree/verilog-demo
 
 # TinyTapeout FAQs
-
 
 ## When will the chips get manufactured?
 
@@ -126,11 +116,9 @@ Please see the details on each chip's page.
 
 We are adding this to the website as we go. Please check the [digital design section](/digital_design) section.
 
-
 ## How many spaces are there?
 
 At the moment, 498. It’s an array of 500, but we use 2 of the slots as a kind of controller for the tiny designs.
-
 
 ## How big can my design be?
 
@@ -146,10 +134,41 @@ Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
 
 # Github FAQs
 
+## When I commit my change, the GDS action isn't running
 
-## I got an error on my github action.
+You need to enable the actions.
+
+1. Go to the Actions tab,
+2. Click the enable actions button.
+
+![actions](images/enable_action.png)
+
+Also see the next FAQ on the GDS action failing on 'pages'.
+
+## My GitHub action is failing on the 'pages' part.
+
+Due to Github limitations, you need to do make a change to the settings of your repository to get everything to work.
+
+1. Go to Settings tab,
+2. Select Pages,
+3. Change Source from Deploy from a branch to Github Actions.
+
+![actions](images/action_pages.png)
+
+## I got an error on my GitHub GDS action.
 
 This is to be expected during the early phases of TinyTapeout. I’m hoping to have one config file that will handle all the designs, but we may need to make some tweaks. The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt02-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
+
+## I got an error on my GitHub Documentation action.
+
+You might not have filled in enough fields, we require the following fields to be filled:
+
+    author
+    title
+    description
+    how_it_works
+    how_to_test
+    language
 
 ## I updated and saved my wokwi design, how do I re-run the Github action to update the GDS files?
 
@@ -158,7 +177,7 @@ This is to be expected during the early phases of TinyTapeout. I’m hoping to h
 3. Then click the ‘Run workflow’ button
 3. Then click the ‘Run workflow’ button
 
-![actions](images/actions3.png)
+![actions](images/rerun_actions.png)
 
 ## What are all the files in the artifact?
 
@@ -175,7 +194,6 @@ There are lots!
     * lef - an abstract version of the GDS with less information, used for routing.
     * verilog - the gate level verilog of your design.
 
-
 ## Where is the submission repository for the shuttle?
 
 * [See the TT01 page](/runs/tt01/)
@@ -188,13 +206,11 @@ If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise 
 
 As well as your design, we wrap it in a scan chain, so we can link all the designs together. This adds another 16 cells, 8 flipflops and 8 latches.
 
-
 # ASIC FAQs
 
 ## What do all these acronyms you keep using mean?
 
 Sorry! I’m trying to keep it accessible but I’ll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
-
 
 ## How can I learn more about ASICs and how to design them?
 
