@@ -10,7 +10,8 @@ const paymentButtonElement = document.getElementById('payment-button');
 let available = 0;
 
 function updateAvailability() {
-  fetch(checkoutServer + 'stock')
+  // TODO: check availablity for the selected product
+  fetch(checkoutServer + 'stock/tt-asic-pcb')
     .then((req) => req.json())
     .then((response) => {
       available = parseInt(response.available, 10);
@@ -39,7 +40,7 @@ window.Submit = {
       errorMessageElement.innerText = 'Sorry, we are sold out!';
       return;
     }
-    
+
     nextButtonElement.setAttribute('disabled', '');
     urlInputElement.setAttribute('readonly', 'readonly');
     validatingMessageElement.style.display = 'block';
@@ -58,7 +59,7 @@ window.Submit = {
 
   async goToPayment() {
     paymentButtonElement.setAttribute('disabled', '');
-    // TODO: include selected plan in URL
-    location.href = `${checkoutServer}payment?repo=${encodeURIComponent(repoUrl)}`;
-  }
+    const product = document.querySelector('#package-type input:checked').value;
+    location.href = `${checkoutServer}payment/${product}?repo=${encodeURIComponent(repoUrl)}`;
+  },
 };

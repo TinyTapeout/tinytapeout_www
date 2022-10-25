@@ -23,8 +23,8 @@ Project Repository URL:
 ### Please choose your package:
 
 <fieldset id="package-type">
-  <label><input name="package" value="full" type="radio" checked  /> Design slot + Physical PCB with the chip ($100)</label>
-  <label><input name="package" value="design-only" type="radio" /> Design slot only ($25) </label>
+  <label><input name="package" value="tt-asic-pcb" type="radio" checked  /> Design slot + Physical PCB with the chip ($100)</label>
+  <label><input name="package" value="tt-design-only" type="radio" /> Design slot only ($25) </label>
 </fieldset>
 
 <button onclick="Submit.goToPayment()" id="payment-button">Continue to Payment</button>
