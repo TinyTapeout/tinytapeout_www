@@ -23,4 +23,4 @@ You can also check out the [**solution**](https://wokwi.com/projects/34432907450
 
 This is by no means an exhaustive explanation of flip flops. There are many more important details that ASIC designers often encounter when using flip flops, like [static timing analysis](https://www.zerotoasiccourse.com/terminology/sta/), check out this video: 
 
-{{< youtube 5PRuPVIjEcs&t >}}
+{{< youtube 5PRuPVIjEcs >}}
