@@ -17,8 +17,6 @@ With this information, check out the [rising edge detect circuit](https://wokwi.
 
 {{< wokwi 343585099784127058 >}}
 
-[![edgedetect](images/puzzle_edgedetect.png)](https://wokwi.com/projects/343585099784127058).
-
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) or the [flip flop puzzle](/digital_design/puzzle_flipflop/) if you need a refresher. 
 
 You can also check out the [**solution**](https://wokwi.com/projects/344328880453059156).
