@@ -15,11 +15,15 @@ We’re getting ready to open for submissions for TinyTapeout-02 in early Novemb
 
 > **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
 
-* Find out more about Tiny Tapeout by reading the [slides](https://bit.ly/tiny-tapeout).
-* [Join the discord server](https://discord.gg/qZHPrPsmt6) to chat about Tiny Tapeout, ask questions or get involved.
+# Get started
+
+* Check the [digital design lessons](digital_design)
+* Start your design with the [Wokwi template](https://wokwi.com/projects/339800239192932947)
+* Fork the [GitHub submission template](https://github.com/TinyTapeout/tt02-submission-template)
+* For help and support, check the [FAQ](faq) and [join the community on discord](https://discord.gg/qZHPrPsmt6)
 
 # Sign up
 
-To be the first to know when we launch.
+For more information and to be the first to know when we open the order submission form.
 
 {{< mailchimp >}}
