@@ -7,6 +7,8 @@ weight: 40
 
 In this puzzle, you will learn how to perform basic arithmetic using a logic circuit called a [full adder](https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder).
 
+**Background**
+
 Why are adders important? Lots of basic computation and math is dependent on addition and multiplication, making adders a crucial circuit for computers. And while doing basic arithmetic may seem to be a solved problem, there is actually lots of [ongoing research on how to optimize adders](https://www.zerotoasiccourse.com/post/interview-with-teo/). When so many of a computer's instructions rely on addition, even tiny improvements can make a big difference!
 
 So how are adders built? Let's first think about the problem:
@@ -14,12 +16,35 @@ So how are adders built? Let's first think about the problem:
     * Overflow happening unknowingly is BAD. A register overflowing was at the source of the [Ariane 5 rocket crash](https://www.youtube.com/watch?v=PK_yguLapgA&ab_channel=AmazingInfoTV).
 * As we build more complex circuits, we will want to add more than two bits together. To do so, we need a way to **carry in** bits from a previous adder and **carry out** bits to the adder.
 
-So let's check out the [full adder](https://wokwi.com/projects/344128781499236946). This circuit implements a two-bit adder (A + B, where each input has one bit). While there is an OR gate in the design, there are several other [logic gates](/digital_design/logic_gates) too. **Using the truth table in the Wokwi project, can you make sense of the other logic gates?**
+**Puzzle**
 
-{{< wokwi 344128781499236946 >}}
+So let's check out the full adder design below. This circuit implements a two-bit adder, where each input has one bit.
+
+`A + B + Cin = S with Cout`
+
+While there is an OR gate in the design, there are several other [logic gates](/digital_design/logic_gates) too. **Using the truth table below, can you make sense of the other logic gates?**
+
+|      Switch #        |
+|----------|-----------|
+| 1        | A         |
+| 2        | B         |
+| 3        | Cin       |
+
+{{< wokwi 346662028519146068 >}}
+<br>
+| Cin     | A       | B      | S      | Cout   |
+|---------|---------|--------|--------|--------|
+| 0       | 0       | 0      | 0      | 0      |
+| 0       | 0       | 1      | 1      | 0      |
+| 0       | 1       | 0      | 1      | 0      |
+| 0       | 1       | 1      | 0      | 1      |
+| 1       | 0       | 0      | 1      | 0      |
+| 1       | 0       | 1      | 0      | 1      |
+| 1       | 1       | 0      | 0      | 1      |
+| 1       | 1       | 1      | 1      | 1      |
 
 **Extra credit: using this circuit, can you build a four-bit full adder?** This circuit needs to accept two two-bit values, A and B, and a carry-in bit. It needs to output a two-bit value, S, and a carry-out bit.
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) if you need a refresher. 
 
-You can also check out the [**solution**](https://wokwi.com/projects/344249305917293138).	
+You can also check out the [**solution**](https://wokwi.com/projects/346662821137744466).
