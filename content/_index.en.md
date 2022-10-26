@@ -3,7 +3,7 @@ title: "Tiny Tapeout"
 images: [/images/tinytapeout.jpeg]
 ---
 
-![tiny tapeout](/images/tinytapeout.jpeg)
+{{< youtube mmtE0W1041E >}}
 
 # From idea to chip design in minutes!
 
@@ -17,13 +17,13 @@ We’re getting ready to open for submissions for TinyTapeout-02 in early Novemb
 
 # Get started
 
-* Check the [digital design lessons](digital_design)
+* Learn [some digital design](digital_design)
 * Start your design with the [Wokwi template](https://wokwi.com/projects/339800239192932947)
-* Fork the [GitHub submission template](https://github.com/TinyTapeout/tt02-submission-template)
+* Get your [submission repository ready](/runs/tt02/)
 * For help and support, check the [FAQ](faq) and [join the community on discord](https://discord.gg/qZHPrPsmt6)
 
 # Sign up
 
-For more information and to be the first to know when we open the order submission form.
+For more information and to be the first to know when we open for submissions.
 
 {{< mailchimp >}}

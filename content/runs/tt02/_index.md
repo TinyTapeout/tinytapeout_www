@@ -4,18 +4,14 @@ weight: 20
 description: Our next run, coming soon!
 ---
 
-We’re getting ready to open for submissions for TinyTapeout-02 in early November. 
+# Get your submission repository ready
 
-There will be limited spots - so sign up to the mailing list to make sure you don't miss your chance to submit a design.
+Fork the [GitHub submission template](https://github.com/TinyTapeout/tt02-submission-template).
 
-> **Testimonial** Built a CRC logic for the http://tinytapeout.com of @matthewvenn with my son. Looking forward if the tapeout happens 🥰 Yet either way, the workflow is astonishing. CI/CD for chip design 🤯
+{{< youtube xO_JIdOJWR0 >}}
 
-# Sign up
+# Submission opening soon!
 
-To be the first to know when we launch.
+To be the first to know when we open the submission form, subscribe to the mailing list.
 
 {{< mailchimp >}}
-
-# Join the community
-
-[Join the discord server](https://discord.gg/qZHPrPsmt6) to chat about Tiny Tapeout, ask questions or get involved.
