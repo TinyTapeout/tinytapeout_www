@@ -15,6 +15,8 @@ So how are edge detect circuits built? Before diving into the schematic, let's t
 
 With this information, check out the [rising edge detect circuit](https://wokwi.com/projects/343585099784127058). **Can you figure out how to build the falling edge detect circuit to light the blue LED?**
 
+{{< wokwi 343585099784127058 >}}
+
 [![edgedetect](images/puzzle_edgedetect.png)](https://wokwi.com/projects/343585099784127058).
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) or the [flip flop puzzle](/digital_design/puzzle_flipflop/) if you need a refresher. 

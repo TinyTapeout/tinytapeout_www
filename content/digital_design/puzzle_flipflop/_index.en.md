@@ -15,7 +15,7 @@ Similarly once the enable signal is activated, a flip flop is able to store info
 
 For the puzzle, a basic flip flop has been created. However, someone has changed all the gates to OR gates and now the outputs are wrong! Using your [knowledge of logic gates and truth tables](/digital_design/logic_gates), **can you figure out which gate to use to fix the flip flop?**
 
-[![flipflop](images/puzzle_flipflop.png)](https://wokwi.com/projects/343783725928022610).
+{{< wokwi 343415801522422356 >}}
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) if you need a refresher. 
 

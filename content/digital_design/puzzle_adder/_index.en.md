@@ -16,10 +16,10 @@ So how are adders built? Let's first think about the problem:
 
 So let's check out the [full adder](https://wokwi.com/projects/344128781499236946). This circuit implements a two-bit adder (A + B, where each input has one bit). While there is an OR gate in the design, there are several other [logic gates](/digital_design/logic_gates) too. **Using the truth table in the Wokwi project, can you make sense of the other logic gates?**
 
-[![fulladder](images/puzzle_adder.png)](https://wokwi.com/projects/344128781499236946).
+{{< wokwi 344128781499236946 >}}
 
 **Extra credit: using this circuit, can you build a four-bit full adder?** This circuit needs to accept two two-bit values, A and B, and a carry-in bit. It needs to output a two-bit value, S, and a carry-out bit.
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) if you need a refresher. 
 
-You can also check out the [**solution**](https://wokwi.com/projects/344249305917293138).
+You can also check out the [**solution**](https://wokwi.com/projects/344249305917293138).	
