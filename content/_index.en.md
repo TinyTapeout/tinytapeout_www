@@ -1,12 +1,13 @@
 ---
 title: "Tiny Tapeout"
+images: [/images/tinytapeout.jpeg]
 ---
 
 ![tiny tapeout](/images/tinytapeout.jpeg)
 
 # From idea to chip design in minutes!
 
-TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
+TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks. 
 
