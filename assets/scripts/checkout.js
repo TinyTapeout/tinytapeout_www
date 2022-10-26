@@ -1,65 +1,75 @@
 const checkoutServer = 'https://tt-payment-gateway.wokwi.workers.dev/';
-const urlInputElement = document.getElementById('url-input');
-const nextButtonElement = document.getElementById('next-button');
-const validatingMessageElement = document.getElementById('validating-message');
-const errorMessageElement = document.getElementById('error-message');
-const availableSlotsElement = document.getElementById('available-slots');
-const paymentSectionElement = document.getElementById('payment-section');
-const paymentButtonElement = document.getElementById('payment-button');
 
 let available = 0;
 
-function updateAvailability() {
-  // TODO: check availablity for the selected product
-  fetch(checkoutServer + 'stock/tt-asic-pcb')
-    .then((req) => req.json())
-    .then((response) => {
-      available = parseInt(response.available, 10);
-      availableSlotsElement.innerText = response.available;
-    })
-    .catch((err) => {
-      console.error(err);
-      availableSlotsElement.innerText = 'error';
-    });
-}
+document.addEventListener('alpine:init', () => {
+  Alpine.data('checkout', () => ({
+    stock: {},
+    soldOut: false,
+    loading: true,
 
-setInterval(updateAvailability, 30000);
-updateAvailability();
+    // First step state
+    validating: false,
+    validated: false,
+    repo: '',
+    errorMessage: '',
 
-let repoUrl = null;
+    // Second step state
+    selectedProduct: 'tt-asic-pcb',
+    checkoutError: '',
+    redirecting: false,
 
-window.Submit = {
-  async nextClick() {
-    errorMessageElement.innerText = '';
-    repoUrl = urlInputElement.value;
-    if (!repoUrl || !repoUrl.startsWith('https://github.com/')) {
-      errorMessageElement.innerText = 'Please enter a valid GitHub URL';
-      return;
+    init() {
+      setInterval(() => this.updateStock(), 30000);
+      this.updateStock();
+    },
+
+    async updateStock() {
+      const apiEndpoint = new URL('/stock', checkoutServer);
+      apiEndpoint.searchParams.set('t', Date.now());
+      const req = await fetch(apiEndpoint);
+      this.stock = await req.json();
+      this.soldOut = this.stock['tt-asic-pcb'] <= 0 && this.stock['tt-design-only'] <= 0;
+      this.loading = false;
+    },
+
+    async next() {
+      if (this.soldOut) {
+        this.errorMessage = 'Sorry, we are sold out!';
+        return;
+      }
+      if (!this.repo || !this.repo.startsWith('https://github.com/')) {
+        this.errorMessage = 'Please enter a valid GitHub repository URL';
+        return;
+      }
+      this.errorMessage = '';
+
+      this.validating = true;
+      const apiEndpoint = new URL('/validate', checkoutServer);
+      apiEndpoint.searchParams.set('repo', this.repo);
+      apiEndpoint.searchParams.set('t', Date.now());
+      const req = await fetch(apiEndpoint.toString());
+      const response = await req.json();
+      this.validating = false;
+
+      if (response.result) {
+        this.validated = true;
+      } else {
+        this.errorMessage = response.message ?? response.error;
+      }
+    },
+
+    payment() {
+      if (this.stock[this.selectedProduct] <= 0) {
+        this.checkoutError = 'This product is sold out, please select another one.';
+        return;
+      }
+      this.checkoutError = '';
+      const paymentUrl = new URL(`/payment/${this.selectedProduct}`, checkoutServer);
+      paymentUrl.searchParams.set('repo', this.repo);
+      paymentUrl.searchParams.set('t', Date.now());
+      this.redirecting = true;
+      location.href = paymentUrl.toString();
     }
-    if (!available) {
-      errorMessageElement.innerText = 'Sorry, we are sold out!';
-      return;
-    }
-
-    nextButtonElement.setAttribute('disabled', '');
-    urlInputElement.setAttribute('readonly', 'readonly');
-    validatingMessageElement.style.display = 'block';
-    const apiEndpoint = new URL('/validate', checkoutServer);
-    const req = await fetch(`${apiEndpoint}?repo=${encodeURIComponent(repoUrl)}`);
-    const response = await req.json();
-    validatingMessageElement.style.display = 'none';
-    if (response.result) {
-      paymentSectionElement.style.display = '';
-    } else {
-      errorMessageElement.innerText = response.message ?? response.error;
-      nextButtonElement.removeAttribute('disabled');
-      urlInputElement.removeAttribute('readonly');
-    }
-  },
-
-  async goToPayment() {
-    paymentButtonElement.setAttribute('disabled', '');
-    const product = document.querySelector('#package-type input:checked').value;
-    location.href = `${checkoutServer}payment/${product}?repo=${encodeURIComponent(repoUrl)}`;
-  },
-};
+  }));
+});
