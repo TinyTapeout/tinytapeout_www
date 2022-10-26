@@ -1,6 +1,8 @@
 ---
-title: "Getting started with Wokwi"
-weight: 0
+title: "Getting started with our digital design tool"
+tags: [guide]
+description: "Learn the basics of Wokwi"
+weight: 1
 ---
 
 {{< youtube 4MW-yokN2FM >}}
