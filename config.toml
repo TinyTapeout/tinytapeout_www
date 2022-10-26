@@ -10,3 +10,6 @@ unsafe= true
   [markup.tableOfContents]
     endLevel = 2
     startLevel = 1
+
+[params]
+    Description = "Quicker, easier and cheaper than ever to make your own chip!"

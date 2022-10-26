@@ -110,7 +110,6 @@ Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-s
 Please see the details on each chip's page.
 
 * [TinyTapeout-01](/runs/tt01)
-* [TinyTapeout-02](/runs/tt02)
 
 ## When will the course material be available?
 
