@@ -107,7 +107,7 @@ Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-s
 
 ## Where can I find the the template to get started?
 
-You can access it on the [Getting Started Page](/digital_design/wokwi) or directly [here](https://wokwi.com/projects/339684301812531795).
+You can access it on the [Getting Started Page](/digital_design/wokwi).
 
 ## When will the chips get manufactured?
 
