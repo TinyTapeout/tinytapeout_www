@@ -1,6 +1,5 @@
 const checkoutServer = 'https://tt-payment-gateway.wokwi.workers.dev/';
-
-let available = 0;
+const repoRegex = /https:\/\/github\.com\/([^/]+)\/([^/]+)$/i;
 
 document.addEventListener('alpine:init', () => {
   Alpine.data('checkout', () => ({
@@ -38,10 +37,17 @@ document.addEventListener('alpine:init', () => {
         this.errorMessage = 'Sorry, we are sold out!';
         return;
       }
-      if (!this.repo || !this.repo.startsWith('https://github.com/')) {
-        this.errorMessage = 'Please enter a valid GitHub repository URL';
+
+      if (!this.repo) {
+        this.errorMessage = 'Please enter a GitHub repository URL';
         return;
       }
+
+      if (!this.repo.match(repoRegex)) {
+        this.errorMessage = 'Please enter a valid GitHub repository URL, in the form https://github.com/user/repo';
+        return;
+      }
+
       this.errorMessage = '';
 
       this.validating = true;
