@@ -13,3 +13,7 @@ unsafe= true
 
 [params]
     Description = "Quicker, easier and cheaper than ever to make your own chip!"
+    themeVariant = "tinytapeout"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
