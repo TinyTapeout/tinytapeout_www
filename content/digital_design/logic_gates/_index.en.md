@@ -11,7 +11,8 @@ Still feeling uncertain about digital logic gates and how they function? You can
 
 Here’s one we built to help figure out the NAND gate. By toggling inputs 1 and 2 - you can find out what combination you need to turn the red LED on.
 
-{{< wokwi 345958822623314515 >}}
+{{< wokwi 346663628544410195 >}}
+<br>
 
 | input 1 | input 2 | output |
 |---------|---------|--------|
