@@ -19,7 +19,9 @@ So how are edge detect circuits built? Before diving into the schematic, let's t
 
 With this information, check out the rising edge detect circuit below. **Can you figure out how to build the falling edge detect circuit to light the blue LED?**
 
-HINT: you might need to add a gate
+{{% notice tip %}}
+you might need to add a gate
+{{% /notice %}}
 
 {{< wokwi 346661018698515028 >}}
 <br>
