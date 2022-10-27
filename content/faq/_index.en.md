@@ -60,7 +60,7 @@ Select all the ones you want to move (using shift and click the parts or shift a
 
 ## What is the top clock speed?
 
-We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
+We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
 
 ## How do I use the clock block?
 
@@ -74,7 +74,7 @@ Also, note that we haven't yet validated the clock frequency yet, so it maybe be
 
 ## Are there some examples of projects people have made?
 
-You can see all the [designs currently submitted here](https://github.com/mattvenn/tinytapeout-mpw7). Here are some more ideas:
+You can see all the [designs currently submitted here](https://github.com/tinytapeout/tinytapeout-mpw7). Here are some more ideas:
 
 * [Starting project](https://wokwi.com/projects/339684301812531795)
 * [Seven segment animator](https://wokwi.com/projects/339555071699190356)

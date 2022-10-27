@@ -8,10 +8,10 @@ description: Our first trial run
 
 # Design details
 
-* [Github repository](https://github.com/mattvenn/tinytapeout-mpw7)
+* [Github repository](https://github.com/tinytapeout/tinytapeout-mpw7)
 * [PDF datasheet](/tt01.pdf)
-* [How the scan chain works, pinout, tech details](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/INFO.md)
-* [Verification](https://github.com/mattvenn/tinytapeout-mpw7/blob/mpw7/verification.md)
+* [How the scan chain works, pinout, tech details](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md)
+* [Verification](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/verification.md)
 * [Efabless MPW submission is here](https://platform.efabless.com/projects/1229)
 
 # Launch stats
