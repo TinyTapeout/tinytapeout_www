@@ -30,7 +30,7 @@ Two vacations are possible: can you use the switches to figure out where you'll 
 
 {{< wokwi 346662951270220372 >}}
 
-If you don’t know what the different symbols are, then don’t worry just have a play around and we’ll get to them later.
+If you don’t know what the different symbols are, then don’t worry just have a play around and we’ll get to them in the next lesson.
 
 {{% notice tip %}}
 Once you select the input switch block, you can toggle each one with the numbers on your keyboard.
