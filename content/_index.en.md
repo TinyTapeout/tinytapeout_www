@@ -6,12 +6,13 @@ images: [/images/tinytapeout.jpeg]
 {{< youtube mmtE0W1041E >}}
 
 # From idea to chip design in minutes!
+# [Prepare a submission for TinyTapeout-02](/runs/tt02/) 
 
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks. 
 
-We’re getting ready to open for submissions for TinyTapeout-02 in early November. There will be limited spots - so sign up to the mailing list to make sure you don't miss your chance to submit a design.
+We’re getting ready to open for [submissions for TinyTapeout-02](/runs/tt02/) in early November. There will be limited spots - so sign up to the mailing list to make sure you don't miss your chance to submit a design.
 
 > **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
 
