@@ -5,22 +5,33 @@ weight: 60
 
 {{< children description="true" >}}
 
-If you need help, [join the discord server](https://discord.gg/qZHPrPsmt6) and ask in the digital design channel.
+If you need help, [join the chat](https://discord.gg/qZHPrPsmt6) and ask in the digital design channel.
 
-# Design Inspiration
+# Top picks from [TinyTapeout 1](/runs/tt01)
 
-Here's our top picks from [TinyTapeout 1](/runs/tt01):
-
-* [1 bit ALU](https://wokwi.com/projects/340318610245288530)
-* [Barrel shifter](https://wokwi.com/projects/341136771628663380)
-* [1 to 4 frequency divider](https://wokwi.com/projects/341160201697624660)
-* [BCD to decimal](https://wokwi.com/projects/341161378978988626)
-* [BCD to 7 segment](https://wokwi.com/projects/341152580068442706)
-* [Traffic light](https://wokwi.com/projects/341410909669818963)
-* [Hello world on the LEDs](https://wokwi.com/projects/341609034095264340)
-* [Shift register puzzle](https://wokwi.com/projects/341516949939814994)
-* [4 bit ALU](https://wokwi.com/projects/341538994733974098)
-* [Wolf, Goat, Cabbage](https://wokwi.com/projects/341614346808328788)
-* [8bit pattern player](https://wokwi.com/projects/341620484740219475)
-* [Lab flasher](https://wokwi.com/projects/341631644820570706)
-* [Pseudo random number generator](https://wokwi.com/projects/341178154799333971)
+{{% design "https://github.com/mole99/wokwi-1bit-alu" %}}
+---
+{{% design "https://github.com/johshoff/barrelshifter-wokwi-gds" %}}
+---
+{{% design "https://github.com/skerr92/tinytapeout_frequency_div" %}}
+---
+{{% design "https://github.com/jglim/tinytapeout_bcd-dec" %}}
+---
+{{% design "https://github.com/jglim/tinytapeout_bcd-7seg" %}}
+---
+{{% design "https://github.com/cfib/trafficlight-fsm" %}}
+---
+{{% design "https://github.com/wokwi/tt-game-of-life-cell-popcnt" %}}
+---
+{{% design "https://github.com/ThorKn/tinytapeout_shiftregister_challenge" %}}
+---
+{{% design "https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg" %}}
+---
+{{% design "https://github.com/maehw/wokwi-verilog-gds-wolf-goat-cabbage" %}}
+---
+{{% design "https://github.com/ThorKn/tinytapeout_pattern_player" %}}
+---
+{{% design "https://github.com/tzachari/tinytapeout-lab11" %}}
+---
+{{% design "https://github.com/tcptomato/tinytapeout" %}}
+---
