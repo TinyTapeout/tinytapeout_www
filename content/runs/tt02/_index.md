@@ -8,7 +8,7 @@ description: Our next run, coming soon!
 
 Fork the [GitHub submission template](https://github.com/TinyTapeout/tt02-submission-template).
 
-{{< youtube xO_JIdOJWR0 >}}
+{{< youtube GlvlZzjyUGI >}}
 
 # Submission opening soon!
 

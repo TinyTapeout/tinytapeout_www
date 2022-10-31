@@ -5,7 +5,7 @@ description: "Learn the basics of Wokwi"
 weight: 1
 ---
 
-{{< youtube 4MW-yokN2FM >}}
+{{< youtube CBkYEheK29k >}}
 
 Here is [the Wokwi template](https://wokwi.com/projects/339684301812531795).
 
