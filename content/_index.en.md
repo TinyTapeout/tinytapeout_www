@@ -35,7 +35,7 @@ gantt
 # Get started
 
 * If you're new to digital design - start by taking some of our [lessons here](digital_design).
-* Then start your own design with the [Wokwi template](https://wokwi.com/projects/339800239192932947) or for advanced users, [an HDL](/hdl).
+* Then create your own design with the [Wokwi template](https://wokwi.com/projects/339800239192932947) or for advanced users, [an HDL](/hdl).
 * For help and support, check the [FAQ](faq) and [join the fast & friendly chat](https://discord.gg/qZHPrPsmt6).
 
 ---
@@ -110,7 +110,7 @@ You can validate your repository now, but submissions won't open until 9th Novem
 
 # Sign up
 
-There are limited spots for Tiny Tapeout 2, so sign up to the mailing list to make sure you don't miss your chance to submit a design.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design.
 
 {{< mailchimp >}}
 
