@@ -1,19 +1,82 @@
 ---
-title: Logic Puzzle - Padlock (hard)
+title: Logic Puzzle - Padlock
 tags: [puzzle]
 description: "Figure out the correct code to crack the safe!"
-weight: 50 
+weight: 50
 ---
 
-In this puzzle, you will be trying to crack a safe. The circuit used for this puzzle uses both [combinational logic](/digital_design/logic_gates) and [sequential logic](/digital_design/puzzle_flipflop).
+In this puzzle, you're a spy trying to gain access to a safe containing precious semiconductor equipment. Can you crack the code to gain access to the safe? 
+
+If the first puzzle is too easy, try the second more challenging one!
 
 **Background**
 
-This puzzle uses D-Flip Flops to create a sequential logic circuit called a finite state machine (FSM).
+The circuit used for this puzzle uses both [combinational logic](/digital_design/logic_gates) and [sequential logic](/digital_design/puzzle_flipflop).
+
+This puzzle uses D-flip flops to create a sequential logic circuit called a finite state machine (FSM). Combinational logic is then used to determine under what inputs the circuit switches states. 
+
+For example, using FSMs we could design a basic circuit that becomes active while an input is 1 and remains active until the input goes to 0. To describe this with state machies, we could say that if the circuit is in State 0 (S0) and the input is 1, then it will proceed to State 1 (S1). While the input is 1, the circuit remains in S1. Once the input goes to 0, the circuit then returns to S0.
+
+Using state diagrams, the FSM would look like this:
+
+{{< mermaid >}}
+stateDiagram-v2
+  s0: S0
+  s1: S1
+  s0   --> s0: In = 0
+  s0   --> s1: In = 1
+  s1   --> s1: In = 1
+  s1   --> s0: In = 0
+{{< /mermaid >}}
 
 FSMs are extremely useful in digital design as they enable a digital circuit to progress through tasks programmatically. They enable a system to change its behavior at a given moment based on *the current inputs* to the circuit and *the past state* of the circuit.
 
-In this puzzle, the state machine below is implemented:
+### Puzzle 1: Easy Version
+
+A safe containing precious semiconductor equipment has been locked using logic gates. You must enter the correct sequential code to unlock the system and capture the materials!
+
+This puzzle implements the state machine below:
+
+{{< mermaid >}}
+stateDiagram-v2
+  s0: Locked
+  s1: Unlocked
+  s0   --> s0: Incorrect or Reset
+  s0   --> s1: Correct
+  s1   --> s1: !Reset
+  s1   --> s0: Reset
+{{< /mermaid >}}
+
+Note: "!" is commonly used to represent negation, a.k.a. "not". So !Reset means Reset = 0
+
+**Controls**
+* The push button is used to enter your code.
+* Switch 2 is used to reset the safe.
+* Switches 3 to 5 are used to set code.
+
+**To begin**
+
+Press the green button in the top left of the simulation pane, then click to turn on Switch 2, and press the push button. The red LED labeled "Locked" should turn on and the seven segment display should show "L" (for locked).
+
+Next turn off Switch 2 and begin testing codes. Set a code using Switches 3 to 5. 
+
+If you enter a correct code, you will see the cyan LED labeled "Unlocked!" turn on. Congratulations! The seven segment display should also show "U" (for unlocked).
+
+{{< wokwi 347019916696617554 >}}
+<br>
+
+{{%expand "Check out the solution" %}} 
+| SW3     | SW4    | SW5    |
+|---------|--------|--------|
+| 0       | 1      | 1      |
+
+{{% /expand%}}
+
+### Puzzle 2: Harder Version
+
+Uh oh, after your first break-in, the guards have increased security. Now you must enter three correct codes consecutively to gain access to the safe!
+
+This puzzle implements the state machine below:
 
 {{< mermaid >}}
 stateDiagram-v2
@@ -24,25 +87,20 @@ stateDiagram-v2
   unlocked: Unlocked!
   idle   --> idle: !SW2
   idle   --> locked: SW2
-  locked --> locked: Incorrect guess
+  locked --> locked: Incorrect
   locked --> locked1: 1st entry correct
-  locked1 --> locked: Incorrect guess
+  locked1 --> locked: Incorrect
   locked1 --> locked2: 2nd entry correct
-  locked2 --> locked: Incorrect guess
+  locked2 --> locked: Incorrect
   locked2 --> unlocked: 3rd entry correct
   unlocked --> unlocked: SW2
   unlocked --> idle: !SW2
 {{< /mermaid >}}
 
-
-**Puzzle**
-
-A padlock has been created using logic gates. Just like locker padlocks, you must enter the correct sequential code to unlock the system.
-
 **Controls**
 * The push button is used to enter your code.
 * Switch 2 is used to enable the padlock. To reset at any time, toggle Switch 2 to 0 and back to 1.
-* Switches 3 to 5 are used to set your guess.
+* Switches 3 to 5 are used to set the code.
 
 **To begin**
 
@@ -50,14 +108,15 @@ Set all switches to 0 and press the push button. A "-" will appear on the seven 
 
 When you're ready, turn on Switch 2 and press the push button to begin the challenge. The yellow LED will turn on, and the seven segment display will show "L" for locked".
 
-Next set a code using Switches 3 to 5. If you enter a correct code, you will see the colored LED progress from Yellow --> Magenta.
+Next set a code using Switches 3 to 5. If you enter a correct code, you will see the colored LED progress from yellow --> magenta.
 
-If you succeeded, try again to get to the next stages: White then finally Light Blue! A "U" will appear for unlocked. 
+If you succeeded, try to get to the next stages, lighting the white LED then finally the cyan! A "U" will appear for unlocked. 
 
 If you fail to enter the correct code at any stage, you will return to the yellow LED.
 
 {{< wokwi 346982355289768532 >}}
 <br>
+
 
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) and [flip flop tutorial](/digital_design/puzzle_flipflop) if you need a refresher. 
