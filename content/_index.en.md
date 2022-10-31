@@ -12,6 +12,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks.
 Now we're getting ready to open submissions for Tiny Tapeout 2!
 
+<!--
 {{<mermaid>}}
 gantt
         dateFormat  YYYY-MM-DD
@@ -20,6 +21,8 @@ gantt
         Submissions open        :   2022-11-09,2022-11-14
         Finalise and send to Efabless:   2022-11-14, 7d
 {{</mermaid>}}
+-->
+![timeline](/images/timeline.png)
 
 > **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
 
