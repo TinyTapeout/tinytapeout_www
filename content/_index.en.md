@@ -68,7 +68,7 @@ You can validate your repository now, but submissions won't open until 9th Novem
   <input x-model="repo" x-bind:disabled="validating || validated" type="text" placeholder="https://github.com/user/repo" />
 
   <div x-show="loading">Loading...</div>
-  <button x-on:click="next()" x-show="!loading" x-bind:disabled="validating || validated">Next</button>
+  <button class="button" x-on:click="next()" x-show="!loading" x-bind:disabled="validating || validated">Next</button>
 
   <div style="color:red" x-show="errorMessage" x-text="errorMessage"></div>
   <div style="color:purple" x-show="validating">Validating repo...</div>
