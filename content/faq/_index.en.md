@@ -129,9 +129,9 @@ At the moment, 498. It’s an array of 500, but we use 2 of the slots as a kind 
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
 
-Click the picture to open an interactive viewer (can take a while to load).
+Click the picture to open an interactive viewer.
 
-[![7 seg](images/7segtt02.png)](https://mattvenn.github.io/tt02-seven-segment-seconds/viewer/tinytapeout.html)
+[![7 seg](images/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
 
 Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
 
