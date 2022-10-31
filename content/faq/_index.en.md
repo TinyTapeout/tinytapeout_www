@@ -100,8 +100,7 @@ No you just need to make sure that after saving your project you [re-run the git
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
-If you’re an advanced user, you can use the HDL of your choice. Have a look at the info.yaml file.
-Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-submission-template/tree/verilog-demo
+If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
 # TinyTapeout FAQs
 
