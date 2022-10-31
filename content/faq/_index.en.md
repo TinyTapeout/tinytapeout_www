@@ -207,7 +207,7 @@ Logic synthesis has to convert Verilog to a data structure which has specific pr
 
 If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise them both out, so you end up with less cells than expected.
 
-As well as your design, we wrap it in a scan chain, so we can link all the designs together. This adds another 16 cells, 8 flipflops and 8 latches.
+However, if you have only 8 cells, your design is probably completely optimised out. Maybe you didn't connect the inputs or outputs?
 
 # ASIC FAQs
 
