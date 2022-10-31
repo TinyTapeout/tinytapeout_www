@@ -15,3 +15,6 @@ description: "Resources for learning HDL"
 * [All the open source tools in one bundle](https://github.com/YosysHQ/oss-cad-suite-build)
 * [Cocotb website](https://www.cocotb.org/)
 
+# Community
+
+* For help and support, [join the verilog and HDL channel of our discord server](https://discord.gg/wfxruMmTm9).
