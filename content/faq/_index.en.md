@@ -100,8 +100,7 @@ No you just need to make sure that after saving your project you [re-run the git
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
-If you’re an advanced user, you can use the HDL of your choice. Have a look at the info.yaml file.
-Here's an example of a Verilog submission: https://github.com/TinyTapeout/tt02-submission-template/tree/verilog-demo
+If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
 # TinyTapeout FAQs
 
@@ -129,9 +128,9 @@ At the moment, 498. It’s an array of 500, but we use 2 of the slots as a kind 
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
 
-Click the picture to open an interactive viewer (can take a while to load).
+Click the picture to open an interactive viewer.
 
-[![7 seg](images/7segtt02.png)](https://mattvenn.github.io/tt02-seven-segment-seconds/viewer/tinytapeout.html)
+[![7 seg](images/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
 
 Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
 
@@ -207,7 +206,7 @@ Logic synthesis has to convert Verilog to a data structure which has specific pr
 
 If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise them both out, so you end up with less cells than expected.
 
-As well as your design, we wrap it in a scan chain, so we can link all the designs together. This adds another 16 cells, 8 flipflops and 8 latches.
+However, if you have only 8 cells, your design is probably completely optimised out. Maybe you didn't connect the inputs or outputs?
 
 # ASIC FAQs
 
