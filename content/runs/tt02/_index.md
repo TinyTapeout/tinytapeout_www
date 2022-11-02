@@ -2,6 +2,8 @@
 title: "Tiny Tapeout 02"
 weight: 20
 description: Our next run, coming soon!
+hidden: true
+draft: true
 ---
 
 # Get your Tiny Tapeout submission repository ready
