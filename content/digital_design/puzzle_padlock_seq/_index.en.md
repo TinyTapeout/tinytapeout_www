@@ -33,7 +33,7 @@ The state diagram depicts all possible states the system can be in while describ
 
 Digital logic can then be used to implement the FSM using three main components: next state logic, a state register, and output logic as depicted below (credit: [Prof. Onur Mutlu's 2019 slides, starting on page 49](https://safari.ethz.ch/digitaltechnik/spring2019/lib/exe/fetch.php?media=onur-digitaldesign-2019-lecture6-sequential-logic-afterlecture-corrected.pdf)).
 
-![FSMlogic](/digital_design/puzzle_padlock_seq/images/fsmlogic.png)
+![FSMlogic](images/fsmlogic.png)
 
 ### Puzzle 1: Easy Version
 
@@ -133,4 +133,4 @@ Feel free to play around to try to figure it out. You can always return to the [
 | White   | 0       | 0      | 1      |
 {{% /expand%}}
 
-
+{{% feedback %}}
