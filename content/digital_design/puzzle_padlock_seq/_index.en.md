@@ -17,7 +17,7 @@ This puzzle uses D-flip flops to create a sequential logic circuit called a fini
 
 For example, using FSMs we could design a basic circuit that becomes active while an input is 1 and remains active until the input goes to 0. To describe this with state machies, we could say that if the circuit is in State 0 (S0) and the input is 1, then it will proceed to State 1 (S1). While the input is 1, the circuit remains in S1. Once the input goes to 0, the circuit then returns to S0.
 
-Using state diagrams, the FSM would look like this:
+FSMs can be explained pictorally using state diagrams like this:
 
 {{< mermaid >}}
 stateDiagram-v2
@@ -29,7 +29,11 @@ stateDiagram-v2
   s1   --> s0: In = 0
 {{< /mermaid >}}
 
-FSMs are extremely useful in digital design as they enable a digital circuit to progress through tasks programmatically. They enable a system to change its behavior at a given moment based on *the current inputs* to the circuit and *the past state* of the circuit.
+The state diagram depicts all possible states the system can be in while describing how the system transisitions between states. 
+
+Digital logic can then be used to implement the FSM using three main components: next state logic, a state register, and output logic as depicted below (credit: [Prof. Onur Mutlu's 2019 slides, starting on page 49](https://safari.ethz.ch/digitaltechnik/spring2019/lib/exe/fetch.php?media=onur-digitaldesign-2019-lecture6-sequential-logic-afterlecture-corrected.pdf)).
+
+![FSMlogic](/digital_design/puzzle_padlock_seq/images/fsmlogic.png)
 
 ### Puzzle 1: Easy Version
 
@@ -119,7 +123,7 @@ If you fail to enter the correct code at any stage, you will return to the yello
 
 
 
-Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) and [flip flop tutorial](/digital_design/puzzle_flipflop) if you need a refresher. 
+Feel free to play around to try to figure it out. You can always return to the [logic gate](/digital_design/logic_gates) and [flip flop tutorials](/digital_design/puzzle_flipflop) if you need a refresher. 
 
 
 {{%expand "Check out the solution" %}} | LED     | SW3     | SW4    | SW5    |
