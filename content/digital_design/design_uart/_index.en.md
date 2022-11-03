@@ -63,7 +63,7 @@ Note that garbage characters may be printed upon initialization.
 
 This circuit implements five shift registers to transmit 'Tiny\n'.
 
-{{< wokwi 347140425276981843 >}}
+{{< wokwi 347144898258928211 >}}
 <br>
 
 Each column of flip flops stores a single ASCII character. To modify a character, change bits 6-0 by modifying whether the respective multiplex is set to VCC or GND. 
