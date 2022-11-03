@@ -16,7 +16,6 @@ Now we're getting ready to open submissions for Tiny Tapeout 2!
 {{<mermaid>}}
 gantt
         dateFormat  YYYY-MM-DD
-        todayMarker off
         axisFormat %d-%b
         section You
         Work on your design       :   active,2022-10-20,2022-11-14
