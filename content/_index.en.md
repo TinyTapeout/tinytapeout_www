@@ -51,7 +51,10 @@ gantt
 
 # Submit your design
 
-You can validate your repository now, but submissions won't open until 9th November.
+You can validate your repository now, but submissions won't open until 9th November. We will have:
+
+* 190 ASIC + PCB packages at $100 + P&P
+* 250 Design only packages at $25
 
 <style>
   [x-cloak] { display: none !important; }
