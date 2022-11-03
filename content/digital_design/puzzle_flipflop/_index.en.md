@@ -35,7 +35,7 @@ A flip flop has been created from logic gates below. However, someone has change
 
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) if you need a refresher. 
 
-You can also check out the [**solution**](https://wokwi.com/projects/346662209986757203).
+You can also check out the [**solution**](https://wokwi.com/projects/346662209986757203)
 
 {{% feedback %}}
 

@@ -19,7 +19,7 @@ Here are the basic steps for submitting. Please watch the YouTube video for a qu
 
 1. Come up with a design. Need help? Check out the [Digital Design Guide](/digital_design/) for walkthroughs and [TinyTapeout-01](/runs/tt01/) for inspiration.
 2. Choose your design method:
-    * Try our [Graphical Design Tool](digital_design/wokwi/) called *Wokwi*. The template provided has everything you need to start.
+    * Try our [Graphical Design Tool](/digital_design/wokwi/) called *Wokwi*. The template provided has everything you need to start.
     * Create a design using a [high-level design language (HDL)](/hdl/)
 3. Fork the [GitHub submission template](https://github.com/TinyTapeout/tt02-submission-template) (a *fork* is a just a copy of a repository)
     * Not familiar with GitHub? Don't worry, Matt's walkthrough video walks you through each step.
