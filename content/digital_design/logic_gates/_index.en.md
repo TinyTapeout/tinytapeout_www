@@ -21,3 +21,4 @@ Here’s one we built to help figure out the NAND gate. By toggling inputs 1 and
 | 1       | 0       | 1      |
 | 1       | 1       | 0      |
 
+{{% feedback %}}

@@ -35,3 +35,5 @@ If you don’t know what the different symbols are, then don’t worry just have
 {{% notice tip %}}
 Once you select the input switch block, you can toggle each one with the numbers on your keyboard.
 {{% /notice %}}
+
+{{% feedback %}}

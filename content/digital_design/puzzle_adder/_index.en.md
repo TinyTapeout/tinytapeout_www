@@ -48,3 +48,5 @@ While there is an OR gate in the design, there are several other [logic gates](/
 Feel free to play around to try to figure it out. You can always return to the [logic gate tutorial](/digital_design/logic_gates) if you need a refresher. 
 
 You can also check out the [**solution**](https://wokwi.com/projects/346662821137744466).
+
+{{% feedback %}}

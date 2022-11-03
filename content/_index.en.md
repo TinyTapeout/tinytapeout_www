@@ -1,6 +1,7 @@
 ---
 title: "Tiny Tapeout"
 images: [/images/tinytapeout.jpeg]
+LastModifierDisplayName: matt venn
 ---
 
 # From idea to chip design in minutes!
@@ -106,6 +107,8 @@ You can validate your repository now, but submissions won't open until 9th Novem
 
 {{< checkout-script >}}
 
+{{% feedback %}}
+
 ---
 
 # Sign up
@@ -117,4 +120,3 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 ---
 
 > **Testimonial** Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
-
