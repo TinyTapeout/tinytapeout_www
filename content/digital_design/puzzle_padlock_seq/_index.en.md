@@ -7,7 +7,7 @@ weight: 50
 
 In this puzzle, you're a spy trying to gain access to a safe containing precious semiconductor equipment. Can you crack the code to gain access to the safe? 
 
-If the first puzzle is too easy, try the second more challenging one!
+If the first puzzle is too easy, try the second more challenging one! You can also [customize your own padlock!](/digital_design/design_padlock)
 
 **Background**
 
