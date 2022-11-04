@@ -38,3 +38,5 @@ Feel free to play around to try to figure it out. You can always return to the [
 You can also check out the [**solution**](https://wokwi.com/projects/346662484165263955).
 
 For more information: [https://web.mit.edu/6.111/volume2/www/f2019/handouts/L06.pdf](https://web.mit.edu/6.111/volume2/www/f2019/handouts/L06.pdf)
+
+{{% feedback %}}

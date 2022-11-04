@@ -1,6 +1,7 @@
 ---
 title: "Tiny Tapeout"
 images: [/images/tinytapeout.jpeg]
+LastModifierDisplayName: matt venn
 ---
 
 # From idea to chip design in minutes!
@@ -15,7 +16,6 @@ Now we're getting ready to open submissions for Tiny Tapeout 2!
 {{<mermaid>}}
 gantt
         dateFormat  YYYY-MM-DD
-        todayMarker off
         axisFormat %d-%b
         section You
         Work on your design       :   active,2022-10-20,2022-11-14
@@ -51,7 +51,10 @@ gantt
 
 # Submit your design
 
-You can validate your repository now, but submissions won't open until 9th November.
+You can validate your repository now, but submissions won't open until 9th November. We will have:
+
+* 190 ASIC + PCB packages at $100 + P&P
+* 250 Design only packages at $25
 
 <style>
   [x-cloak] { display: none !important; }
@@ -106,6 +109,8 @@ You can validate your repository now, but submissions won't open until 9th Novem
 
 {{< checkout-script >}}
 
+{{% feedback %}}
+
 ---
 
 # Sign up
@@ -117,4 +122,3 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 ---
 
 > **Testimonial** Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
-
