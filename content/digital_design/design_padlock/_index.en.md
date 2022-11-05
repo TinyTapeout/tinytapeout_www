@@ -2,7 +2,7 @@
 title: Customisable Design - Padlock
 tags: [customisable]
 description: "Set a custom code for your digital safe"
-weight: 110
+weight: 100
 ---
 
 This design implements a customizable padlock. Set a code for your digital safe!

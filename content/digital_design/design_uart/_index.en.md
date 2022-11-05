@@ -2,7 +2,7 @@
 title: Customisable Design - UART
 tags: [customisable]
 description: "Transmit ASCII characters over UART serial"
-weight: 100
+weight: 110
 ---
 
 This design implements a UART transmitter using registers made from D-flip flops and multiplexers.
