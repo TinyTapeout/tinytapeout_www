@@ -30,13 +30,15 @@ gantt
 
 > **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
 
+See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
+
 ---
 
 # Get started
 
 * If you're new to digital design - start by taking some of our [lessons here](digital_design).
 * Then create your own design with the [Wokwi template](https://wokwi.com/projects/339800239192932947) or for advanced users, [an HDL](/hdl).
-* For help and support, check the [FAQ](faq) and [join the fast & friendly chat](https://discord.gg/qZHPrPsmt6).
+* For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 ---
 
