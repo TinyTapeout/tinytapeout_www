@@ -3,7 +3,7 @@
 Contribution instructions:
 
 * fork this repository
-* clone the forked repository recursively
+* *clone the forked repository recursively*
 * install hugo:
     * linux: `snap install hugo`
     * other platforms: https://gohugo.io/getting-started/installing/
