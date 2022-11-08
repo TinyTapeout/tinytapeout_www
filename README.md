@@ -2,8 +2,10 @@
 
 Contribution instructions:
 
+* fork this repository
+* *clone the forked repository recursively*
 * install hugo:
-    * linux: snap install hugo 
+    * linux: `snap install hugo`
     * other platforms: https://gohugo.io/getting-started/installing/
 * after cloning the repo, change to the new directory: cd tinytapeout_www
 * start hugo server: hugo server
