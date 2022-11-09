@@ -11,20 +11,8 @@ LastModifierDisplayName: matt venn
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks.
-Now we're getting ready to open submissions for Tiny Tapeout 2!
 
-{{<mermaid>}}
-gantt
-        dateFormat  YYYY-MM-DD
-        axisFormat %d-%b
-        section You
-        Work on your design       :   active,2022-10-20,2022-11-14
-        Submit your design        :   active,2022-11-09,2022-11-14
-        
-        section Us
-        Join all designs          :   2022-11-14, 1d
-        Send to Efabless          :   2022-11-15, 1d
-{{</mermaid>}}
+[**Submissions are now open for Tiny Tapeout 2!**](/#submit-your-design)
 
 <!-- ![timeline](/images/timeline.png) -->
 
@@ -100,8 +88,8 @@ You can validate your repository now, but submissions won't open until 9th Novem
   </label>
 </fieldset>
 
-<!-- <button x-on:click="payment()" x-bind:disabled="redirecting">Continue to Payment</button> -->
-**<div x-bind:disabled>Submissions will be open on November 9th</div>**
+<button x-on:click="payment()" x-bind:disabled="redirecting">Continue to Payment</button> 
+<!-- **<div x-bind:disabled>Submissions will be open on November 9th</div>** -->
 
 <div style="color:red" x-show="checkoutError" x-text="checkoutError"></div>
 
