@@ -134,6 +134,13 @@ Click the picture to open an interactive viewer.
 
 Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
 
+## Which of my builds will be submitted for fabrication?
+
+Your last submission that 
+(1) successfully passed the GitHub actions, and
+(2) was submitted before the deadline
+will be submitted for fabrication.
+
 # Github FAQs
 
 ## When I commit my change, the GDS action isn't running
@@ -207,6 +214,15 @@ Logic synthesis has to convert Verilog to a data structure which has specific pr
 If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise them both out, so you end up with less cells than expected.
 
 However, if you have only 8 cells, your design is probably completely optimised out. Maybe you didn't connect the inputs or outputs?
+
+## I can't make a new fork of the submission repository. How do I start a new project?
+
+Start by creating a new empty GitHub repository. 
+
+* Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
+* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT02 repository url: https://github.com/TinyTapeout/tt02-submission-template 
+
+In either case, you may need to enable the Github actions.
 
 # ASIC FAQs
 
