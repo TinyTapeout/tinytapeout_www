@@ -19,7 +19,16 @@ document.addEventListener('alpine:init', () => {
     redirecting: false,
 
     init() {
-      setInterval(() => this.updateStock(), 30000);
+      setInterval(() => {
+        if (!document.hidden) {
+          this.updateStock()
+        }
+      }, 30000);
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+          this.updateStock();
+        }
+      });
       this.updateStock();
     },
 
