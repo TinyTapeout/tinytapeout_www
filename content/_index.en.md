@@ -41,6 +41,9 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 # Submit your design
 
+* Design + Physical PCB + ASIC = $100 + p&p
+* Design only = $25
+
 <style>
   [x-cloak] { display: none !important; }
   .checkout--product { display: flex; align-items: baseline; font-weight: normal; }
