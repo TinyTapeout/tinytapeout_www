@@ -18,7 +18,7 @@ flops in between.
 
 # Testing
 
-As well as functional testing with a simulator and testbench, you should consider gate level testing. This allows you to simulate the actual layout of your GDS.
+As well as functional testing with a simulator and testbench, you should consider gate level testing. This allows you to simulate the actual layout of your GDS (post synthesis).
 
 You can find an example [GitHub action workflow for gate level simulation here](https://github.com/TinyTapeout/tt02-verilog-demo/blob/gate-level/.github/workflows/gltest.yaml).
 This takes care of installing the models for the standard cells.
