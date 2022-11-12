@@ -28,3 +28,8 @@ We only support 8 ins and 8 outs:
         input [7:0] io_in,
         output [7:0] io_out
         );
+
+# Don't modify config.tcl
+
+Tiny Tapeout is a compromise - we try to make it easy to get to ASIC, but we have to make limitations, like
+IO speed, IO count, size etc. If you want to go full custom then check out the [Zero to ASIC course](https://zerotoasiccourse.com).
