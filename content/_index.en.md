@@ -11,7 +11,8 @@ LastModifierDisplayName: matt venn
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks.
-Now we're getting ready to open submissions for Tiny Tapeout 2!
+
+[**Submissions are now open for Tiny Tapeout 2! Closing on 14th November at 18:00 CET**](/#submit-your-design)
 
 {{<mermaid>}}
 gantt
@@ -53,10 +54,8 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 # Submit your design
 
-You can validate your repository now, but submissions won't open until 9th November. We will have:
-
-* 190 ASIC + PCB packages at $100 + P&P
-* 250 Design only packages at $25
+* Design + Physical PCB + ASIC = $100 + p&p
+* Design only = $25
 
 <style>
   [x-cloak] { display: none !important; }
@@ -100,8 +99,8 @@ You can validate your repository now, but submissions won't open until 9th Novem
   </label>
 </fieldset>
 
-<!-- <button x-on:click="payment()" x-bind:disabled="redirecting">Continue to Payment</button> -->
-**<div x-bind:disabled>Submissions will be open on November 9th</div>**
+<button x-on:click="payment()" x-bind:disabled="redirecting">Continue to Payment</button> 
+<!-- **<div x-bind:disabled>Submissions will be open on November 9th</div>** -->
 
 <div style="color:red" x-show="checkoutError" x-text="checkoutError"></div>
 
