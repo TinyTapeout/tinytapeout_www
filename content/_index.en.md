@@ -12,19 +12,19 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks.
 
-[**Submissions are now open for Tiny Tapeout 2! Closing on 14th November at 18:00 CET**](/#submit-your-design)
+[**Submissions are now open for Tiny Tapeout 2! Extended until 28th November at 18:00 CET**](/#submit-your-design)
 
 {{<mermaid>}}
 gantt
         dateFormat  YYYY-MM-DD
         axisFormat %d-%b
         section You
-        Work on your design       :   active,2022-10-20,2022-11-14
-        Submit your design        :   active,2022-11-09,2022-11-14
+        Work on your design       :   active,2022-10-20,2022-11-28
+        Submit your design        :   active,2022-11-09,2022-11-28
         
         section Us
-        Join all designs          :   2022-11-14, 1d
-        Send to Efabless          :   2022-11-15, 1d
+        Join all designs          :   2022-11-28, 1d
+        Send to Efabless          :   2022-11-29, 1d
 {{</mermaid>}}
 
 <!-- ![timeline](/images/timeline.png) -->
