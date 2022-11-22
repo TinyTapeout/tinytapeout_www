@@ -52,6 +52,33 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 ---
 
+<style>
+  .fullbleed-bg {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    right: 50%;
+    margin-left: calc(-50vw - 158px);
+    width: 100vw;
+    bottom: -8px;
+    z-index: -1;
+  }
+  @media only all and (max-width: 59.938em) {
+    .fullbleed-bg {
+      margin-left: calc(-50vw - 124px);
+    }
+  }
+  @media only all and (max-width: 47.938em) {
+    .fullbleed-bg {
+      margin-left: calc(-50vw - 8px);
+    }
+  }
+</style>
+
+<div style="position: relative; padding: 8px 0 16px; margin-bottom: 32px">
+  <!-- background color strip -->
+  <div style="background: #c8b2f3;" class="fullbleed-bg"></div>
+
 # Submit your design
 
 * Design + Physical PCB + ASIC = $100 + p&p
@@ -109,6 +136,8 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 </div> <!-- checkout -->
 
 {{< checkout-script >}}
+
+</div>
 
 {{% feedback %}}
 
