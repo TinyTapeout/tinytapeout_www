@@ -8,23 +8,25 @@ LastModifierDisplayName: matt venn
 
 {{< youtube eMvZ5xsPXhA >}}
 
-TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip!
+TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by taking a look at the latest [data sheet](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf).
 
-We ran [TinyTapeout-01 in August](/runs/tt01/) and received 150 submissions in just a couple of weeks.
+[**Submissions are now open for Tiny Tapeout 2! Extended until 2nd December at 18:00 CET**](/#submit-your-design)
 
-[**Submissions are now open for Tiny Tapeout 2! Extended until 28th November at 18:00 CET**](/#submit-your-design)
+<div x-data="checkout"> There are currently 
+<b x-text="stock['tt-asic-pcb']">...</b> Design + PCB + ASIC slots and <b x-text="stock['tt-design-only']">...</b> Design only slots available</small>.
+</div>
 
 {{<mermaid>}}
 gantt
         dateFormat  YYYY-MM-DD
         axisFormat %d-%b
         section You
-        Work on your design       :   active,2022-10-20,2022-11-28
-        Submit your design        :   active,2022-11-09,2022-11-28
+        Work on your design       :   active,2022-10-20,2022-12-02
+        Submit your design        :   active,2022-11-09,2022-12-02
         
         section Us
-        Join all designs          :   2022-11-28, 1d
-        Send to Efabless          :   2022-11-29, 1d
+        Join all designs          :   2022-12-02, 3d
+        Send to Efabless          :   2022-12-05, 1d
 {{</mermaid>}}
 
 <!-- ![timeline](/images/timeline.png) -->
