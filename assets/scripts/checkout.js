@@ -1,5 +1,5 @@
 const checkoutServer = 'https://tt-payment-gateway.wokwi.workers.dev/';
-const repoRegex = /https:\/\/github\.com\/([^/]+)\/([^/]+)$/i;
+const repoRegex = /https:\/\/github\.com\/([^/]+)\/([^/]+)\/?$/i;
 
 document.addEventListener('alpine:init', () => {
   Alpine.data('checkout', () => ({
@@ -55,6 +55,10 @@ document.addEventListener('alpine:init', () => {
       if (!this.repo.match(repoRegex)) {
         this.errorMessage = 'Please enter a valid GitHub repository URL, in the form https://github.com/user/repo';
         return;
+      }
+
+      if (this.repo.endsWith('/')) {
+        this.repo = this.repo.slice(0, -1);
       }
 
       this.errorMessage = '';
