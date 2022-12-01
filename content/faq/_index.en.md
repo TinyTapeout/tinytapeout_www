@@ -60,7 +60,7 @@ Select all the ones you want to move (using shift and click the parts or shift a
 
 ## What is the top clock speed?
 
-We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
+We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
 
 ## How do I use the clock block?
 
@@ -74,21 +74,11 @@ Also, note that we haven't yet validated the clock frequency yet, so it maybe be
 
 ## Are there some examples of projects people have made?
 
-You can see all the [designs currently submitted here](https://github.com/tinytapeout/tinytapeout-mpw7). Here are some more ideas:
+You can see all the [designs submitted to Tiny Tapeout 01 here](https://github.com/tinytapeout/tinytapeout-mpw7).
 
-* [Starting project](https://wokwi.com/projects/339684301812531795)
-* [Seven segment animator](https://wokwi.com/projects/339555071699190356)
-* [Simple blinky](https://wokwi.com/projects/339732875283792466)
-* [Guess the number](https://wokwi.com/projects/340661930553246290)
-* [Seven segment seconds counter](https://wokwi.com/projects/340805072482992722)
-* [Spinny](https://wokwi.com/projects/340218629792465491)
-* [Ripple adder](https://wokwi.com/projects/341154161238213203)
-* [BCD to Decimal](https://wokwi.com/projects/341161378978988626)
-* [Pseudo random number generator](https://wokwi.com/projects/341178154799333971)
-* [Cycle](https://wokwi.com/projects/341262321634509394)
-* [4x4-bit unsigned multiplier with Wallace tree reduction](https://github.com/GuzTech/tinytapeout-4x4-multiplier)
+And here is [Tiny Tapeout 02](https://github.com/tinytapeout/tinytapeout-02).
 
-And we have the PDF datasheet of [Tiny Tapeout 01 here](/tt01.pdf).
+For some inspiration, see [our top picks from TT01](/digital_design/#top-picks-from-tinytapeout-1runstt01)
 
 ## Do I need to delete unused digital gates?
 
@@ -120,11 +110,11 @@ We are adding this to the website as we go. Please check the [digital design sec
 
 ## How many spaces are there?
 
-At the moment, 498. It’s an array of 500, but we use 2 of the slots as a kind of controller for the tiny designs.
+For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots.
 
 ## How big can my design be?
 
-90 x 120 um. This is enough for about 500 digital logic gates, depending on their size. 
+We recently increased the size to 150 x 170 um for TT02. This is enough for about 1000 digital logic gates, depending on their size. 
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
 
@@ -132,13 +122,13 @@ Click the picture to open an interactive viewer.
 
 [![7 seg](images/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
 
-Here's the [work in progress PDF datasheet of the first run](/tt01.pdf).
-
 ## Which of my builds will be submitted for fabrication?
 
-Your last submission that 
-(1) successfully passed the GitHub actions, and
-(2) was submitted before the deadline
+Your last submission that:
+
+1. successfully passed the GitHub actions, and
+2. was submitted before the deadline
+
 will be submitted for fabrication.
 
 # Github FAQs
