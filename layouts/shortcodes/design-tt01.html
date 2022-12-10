@@ -1,4 +1,4 @@
-{{ $designs := getJSON "designs/designs.json" }}
+{{ $designs := getJSON "designs/designs-tt01.json" }}
 {{ $wanted := .Get 0 }}
 {{ range $designs }}
   {{ if eq .project.git_url $wanted }}

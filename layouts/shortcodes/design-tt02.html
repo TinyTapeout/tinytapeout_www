@@ -1,0 +1,13 @@
+{{ $designs := getJSON "designs/designs-tt02.json" }}
+{{ $wanted := .Get 0 }}
+{{ range $designs }}
+  {{ if eq .project.git_url $wanted }}
+  | {{  .documentation.title }} | |
+  |---|---|
+  | Author | {{ .documentation.author }} |
+  | Description | {{ .documentation.description }} |
+  | Links | [Wokwi link](https://wokwi.com/projects/{{  .project.wokwi_id }}) & [GitHub link]({{  .project.git_url }}) |
+  {{ if .documentation.picture }} | Picture | ![pic]({{ .project.git_url }}/raw/main/{{ .project.picture }}?width=40pc) | {{ end }}
+  {{ end }}
+{{ end }}
+
