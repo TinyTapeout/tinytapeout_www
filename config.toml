@@ -17,3 +17,14 @@ unsafe= true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation in English"
+weight = 1
+languageName = "English"
+
+[Languages.es]
+title = "Documentation en Español"
+weight = 2
+languageName = "Español"
