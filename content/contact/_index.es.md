@@ -1,9 +1,9 @@
 ---
-title: Contact
+title: Contacto
 weight: 100
 ---
 
-### Contaco
+### Contacto
 
 Matthew Venn es un comunicador de ciencia y tecnología e ingeniero electrónico. Con 20 años de experiencia, crea excelentes e innovadoras experiencias de aprendizaje para personas de todo el mundo.
 
