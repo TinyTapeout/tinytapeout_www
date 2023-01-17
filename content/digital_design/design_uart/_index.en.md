@@ -18,7 +18,7 @@ UART works by sending data frames serially (i.e. one bit after another) at a pre
 * The data bits are then followed by a Stop Bit where the wire goes to Logic 1 for one bit period
 * While 8N1 only sends 8 bits at a time, multiple data frames can be transmitted sequentially 
 
-![8N1dataframe](images/uartdataframe.png)
+![8N1dataframe](/images/design_uart/uartdataframe.png)
 
 The duration of a bit is determined by the bit rate of the UART transmitter and receiver, and the data rate must be set to the same value in both the transmitter and receiver for successful communication.
 
@@ -31,7 +31,7 @@ This circuit, inspired by @maehw, implements a shift register with 17 bits: four
 
 The circuit supports transmitting a user-selected ASCII character from 0x40 (@) to 0x5F (_), including capital letters from the Latin alphabet. 
 
-![ASCIItable](images/asciitable.png)
+![ASCIItable](/images/design_uart/asciitable.png)
 
 **How to use**
 
