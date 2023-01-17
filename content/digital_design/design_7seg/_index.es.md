@@ -1,6 +1,6 @@
 ---
 title: Diseño personalizable - 7 segmentos
-tags: [customisable]
+tags: [personalizable]
 description: "Mostrar una cadena de caracteres personalizada"
 weight: 120
 ---

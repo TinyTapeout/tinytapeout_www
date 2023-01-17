@@ -1,6 +1,6 @@
 ---
 title: Diseño personalizable - Candado
-tags: [customisable]
+tags: [personalizable]
 description: "Establece un código personalizado para tu caja fuerte digital"
 weight: 100
 ---

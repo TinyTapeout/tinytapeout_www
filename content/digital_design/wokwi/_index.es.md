@@ -1,6 +1,6 @@
 ---
 title: "Comenzando con nuestra herramienta de diseño digital"
-tags: [guide]
+tags: [guía]
 description: "Aprende los conceptos básicos de Wokwi"
 weight: 1
 ---
