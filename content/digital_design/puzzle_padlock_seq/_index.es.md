@@ -1,13 +1,13 @@
 ---
-title: Rompecabezas lógico - Candado
-tags: [rompecabezas]
+title: Desafío lógico - Candado
+tags: [desafío]
 description: "¡Descubre el código correcto para abrir la caja fuerte!"
 weight: 50
 ---
 
-En este rompecabezas, eres un espía tratando de acceder a una caja fuerte que contiene preciosos equipos de semiconductores. ¿Puedes descifrar el código para acceder a la caja fuerte?
+En este desafío, eres un espía tratando de acceder a una caja fuerte que contiene preciosos equipos de semiconductores. ¿Puedes descifrar el código para acceder a la caja fuerte?
 
-Si el primer rompecabezas es demasiado fácil, intenta el segundo desafío más difícil. También puedes [personalizar tu propio candado](/es/digital_design/design_padlock)!
+Si el primer desafío es demasiado fácil, intenta el segundo desafío más difícil. También puedes [personalizar tu propio candado](/es/digital_design/design_padlock)!
 
 **Antecedentes**
 

@@ -1,6 +1,6 @@
 ---
 title: Vacaciones
-tags: [rompecabezas]
+tags: [desafío]
 description: "Configura los interruptores para encender el LED"
 weight: 10
 ---
@@ -11,7 +11,7 @@ En este rompecabezas, tienes que descubrir cómo configurar los interruptores pa
 Para comenzar el rompecabezas, necesitas estar en el "modo simulación". Haz clic en el pequeño botón de reproducción en la esquina superior izquierda.
 {{% /notice %}}
 
-**Rompecabezas** 
+**Desafío**
 
 Tu amigo ha estado trabajando duro para planificar unas vacaciones. (Des)afortunadamente, a ellos les encanta la lógica digital, así que en lugar de imprimirte un itinerario, te dibujaron el siguiente circuito digital.
 

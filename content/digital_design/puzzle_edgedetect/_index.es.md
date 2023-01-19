@@ -1,11 +1,11 @@
 ---
-title: Rompecabezas Lógico - Detección de borde
-tags: [rompecabezas]
+title: Desafío Lógico - Detección de borde
+tags: [desafío]
 description: "Detecta el borde de subida y bajada de una señal"
 weight: 30
 ---
 
-En este rompecabezas, aprenderás cómo detectar un cambio instantáneo en una señal.
+En este desafío, aprenderás cómo detectar un cambio instantáneo en una señal.
 
 **Antecedentes**
 

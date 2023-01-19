@@ -1,11 +1,11 @@
 ---
-title: Rompecabezas lógico - Flip Flop
+title: Desafío lógico - Flip Flop
 tags: [desafío]
 description: "Descubre la compuerta lógica correcta para construir un flip-flop"
 weight: 20
 ---
 
-En este rompecabezas, descubrirás cómo construir un flip-flop a partir de compuertas lógicas básicas.
+En este desafío, descubrirás cómo construir un flip-flop a partir de compuertas lógicas básicas.
 
 **Antecedentes**
 

@@ -1,11 +1,11 @@
 ---
-title: Rompecabezas Lógico - Sumador Completo
-tags: [rompecabezas]
+title: Desafío Lógico - Sumador Completo
+tags: [desafío]
 description: "Add two digital values together"
 weight: 40
 ---
 
-En este rompecabezas, aprenderás a realizar aritmética básica utilizando un circuito lógico llamado [sumdor completo](https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder).
+En este desafío, aprenderás a realizar aritmética básica utilizando un circuito lógico llamado [sumdor completo](https://en.wikipedia.org/wiki/Adder_(electronics)#Full_adder).
 
 **Antecedentes**
 
