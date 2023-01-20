@@ -18,7 +18,7 @@ description: Nuestra primera prueba
 
 * Lanzamiento: 2022-08-17
 * Presentación cerrada: 2022-09-01
-* Presentado a Efabless el 2022-09-05 para el shuttle MPW7 utilizando el PDK de código abierto Skywater de 130 nm.
+* Enviado a Efabless el 2022-09-05 para la lanzadera MPW7 utilizando el PDK de código abierto Skywater de 130 nm.
 
 # Estadísticas de la comunidad (a fecha de 2022-09-05)
 
@@ -92,13 +92,13 @@ Quiero cambiar mi clase de VLSI en la primavera (Abril - Junio) para utilizar su
 Enseño diseño digital en los Emiratos Árabes Unidos y estaría interesado en ponerme en contacto para aprender acerca de la próxima fecha de entrega donde mis estudiantes podrían enviar sus pruebas de infraestructura para el tapeout.
 
 ---
-Soy un profesor de CS y EE y en mi último año como estudiante de doctorado en la Universidad del Sureste de Noruega (USN). Como enseñamos cursos tanto de electrónica digital como analógica, pensé que sería una gran oportunidad para que los estudiantes materializaran su trabajo.
+Soy un profesor de CS y EE y en mi último año como estudiante de doctorado en la Universidad del Sureste de Noruega (USN). Como impartimos cursos tanto de electrónica digital como analógica, pensé que sería una gran oportunidad para que los estudiantes materializaran su trabajo.
 
 ---
 Construí una lógica de CRC para el http://tinytapeout.com de @matthewvenn con mi hijo. Espero que el tapeout suceda 🥰 de todos modos, el flujo de trabajo es asombroso. CI/CD para el diseño de chips 🤯
 
 ---
-Gracias por hacerlo - Siempre quise unirme a estos shuttles de OpenMPW, pero nunca me sentí listo. TinyTapeout me dió un camino para introducirme mientras solo gastaba una tarde de esfuerzo. !Es increíble!
+Gracias por hacerlo - Siempre quise unirme a estos lanzamientos de OpenMPW, pero nunca me sentí listo. TinyTapeout me dió un camino para introducirme mientras solo tomaba una tarde de esfuerzo. !Es increíble!
 
 ---
 Acabo de hacer un desplazador de barril de 4 bits usando esta herramienta de http://tinytapeout.com. Es rápido y divertido de usar. Incluso el GDS se generó en cuestión de minutos. Todos deberían probarlo.

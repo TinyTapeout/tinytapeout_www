@@ -14,22 +14,22 @@ Este diseño implementa un candado personalizable. ¡Establece un código para t
 * El botón de push se usa para ingresar tu código
 
 
-| SW      | Función| 
-|---------|---------|
-| 1       | N/A     | 
-| 2       | Reset   | 
-| 3       | Código 0  |
-| 4       | Código 1  | 
-| 5       | Código 2  | 
-| 6       | N/A     |
-| 7       | N/A     | 
+| SW      | Función          | 
+|---------|------------------|
+| 1       | N/A              | 
+| 2       | Reiniciar        | 
+| 3       | Código 0         |
+| 4       | Código 1         | 
+| 5       | Código 2         | 
+| 6       | N/A              |
+| 7       | N/A              | 
 | 8       | Establecer Código|
 
 ### Para empezar
 
 Presiona el botón verde en la parte superior izquierda del panel de simulación.
 
-Establece tu código deseado utilizando los interruptores 3 a 5. Una vez hecho esto, cambia el interruptor 8 a encendido y luego vuelve a apagado, ¡la caja fuerte está ahora establecida!
+Establece tu código deseado utilizando los interruptores 3 a 5. Una vez hecho esto, cambia el interruptor 8 a encendido y luego vuelve a apagado, ¡la caja fuerte está lista!
 
 Enciende el interruptor 2 y presiona el botón de push. El LED rojo etiquetado como "Bloqueado" debería encenderse y el display de 7 segmentos debería mostrar "L" (por bloqueado).
 

@@ -11,13 +11,13 @@ Si el primer desafío es demasiado fácil, intenta el segundo desafío más dif�
 
 **Antecedentes**
 
-El circuito utilizado para este rompecabezas utiliza tanto [lógica combinatoria](/es/digital_design/logic_gates) como [lógica secuencial](/es/digital_design/puzzle_flipflop).
+El circuito utilizado para este desafío utiliza tanto [lógica combinacional](/es/digital_design/logic_gates) como [lógica secuencial](/es/digital_design/puzzle_flipflop).
 
-Este rompecabezas utiliza flip-flops D para crear un circuito de lógica secuencial llamado máquina de estado finito (FSM, por sus siglas en inglés). Luego se utiliza lógica combinatoria para determinar con qué entradas el circuito cambia de estado.
+Este desafío utiliza flip-flops D para crear un circuito de lógica secuencial llamado máquina de estados finitos (FSM, por sus siglas en inglés). Luego se utiliza lógica combinacional para determinar con qué entradas el circuito cambia de estado.
 
-Por ejemplo, utilizando FSMs podríamos diseñar un circuito básico que se activa mientras una entrada es 1 y permanece activo hasta que la entrada pasa a 0. Para describir esto con máquinas de estado, podríamos decir que si el circuito está en el Estado 0 (S0) y la entrada es 1, entonces pasará al Estado 1 (S1). Mientras la entrada es 1, el circuito permanece en S1. Una vez que la entrada pasa a 0, el circuito vuelve a S0.
+Por ejemplo, utilizando FSMs podríamos diseñar un circuito básico que se activa mientras una entrada es 1 y permanece activo hasta que la entrada pasa a 0. Para describir esto con máquinas de estados, podríamos decir que si el circuito está en el Estado 0 (S0) y la entrada es 1, entonces pasará al Estado 1 (S1). Mientras la entrada es 1, el circuito permanece en S1. Una vez que la entrada pasa a 0, el circuito vuelve a S0.
 
-Los FSMs se pueden explicar gráficamente utilizando diagramas de estado como este:
+Los FSMs se pueden explicar gráficamente utilizando diagramas de estados como este:
 
 {{< mermaid >}}
 stateDiagram-v2
@@ -29,17 +29,17 @@ stateDiagram-v2
   s1   --> s0: In = 0
 {{< /mermaid >}}
 
-El diagrama de estado representa todos los estados posibles en los que puede estar el sistema, describiendo cómo el sistema hace transiciones entre estados.
+El diagrama de estados representa todos los estados posibles en los que puede estar el sistema, describiendo cómo el sistema hace transiciones entre estados.
 
 Luego, la lógica digital puede utilizarse para implementar el FSM utilizando tres componentes principales: lógica de estado siguiente, un registro de estado y lógica de salida, como se muestra a continuación (crédito: Diapositivas del [Prof. Onur Mutlu de 2019, a partir de la página 49](https://safari.ethz.ch/digitaltechnik/spring2019/lib/exe/fetch.php?media=onur-digitaldesign-2019-lecture6-sequential-logic-afterlecture-corrected.pdf)).
 
 ![FSMlogic](/images/puzzle_padlock_seq/fsmlogic.png)
 
-### Rompecabezas 1: Versión fácil
+### Desafío 1: Versión fácil
 
 Una caja fuerte que contiene preciosos equipos de semiconductores ha sido bloqueada utilizando compuertas lógicas. ¡Debe ingresar el código secuencial correcto para desbloquear el sistema y capturar los materiales!
 
-Este rompecabezas implementa la máquina de estado que se muestra a continuación:
+Este desafío implementa la máquina de estados que se muestra a continuación:
 
 {{< mermaid >}}
 stateDiagram-v2
@@ -76,11 +76,11 @@ Si ingresa un código correcto, verá que el LED cian etiquetado "Desbloqueado!"
 
 {{% /expand%}}
 
-### Rompecabezas 2: Versión más difícil
+### Desafío 2: Versión más difícil
 
 Oh oh, después de tu primer allanamiento, los guardias han aumentado la seguridad. ¡Ahora debes ingresar tres códigos correctos consecutivamente para acceder a la caja fuerte!
 
-Este rompecabezas implementa la máquina de estado que se muestra a continuación:
+Este desafío implementa la máquina de estados que se muestra a continuación:
 
 {{< mermaid >}}
 stateDiagram-v2

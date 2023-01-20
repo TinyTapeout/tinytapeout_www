@@ -11,7 +11,7 @@ Gracias al miembro de la comunidad **maehw** por escribir este artículo.
 
 ## Tablas de verdad
 
-Ya has aprendido sobre la lógica combinatoria que se puede describir mediante tablas de verdad, como el [sumador completo](https://tinytapeout.com/es/digital_design/puzzle_adder/).
+Ya has aprendido sobre la lógica combinacional que se puede describir mediante tablas de verdad, como el [sumador completo](https://tinytapeout.com/es/digital_design/puzzle_adder/).
 
 Ahora veamos un decodificador que convierte un dígito decimal codificado en binario (0..9) en un control de un [display de 7 segmentos](https://docs.wokwi.com/parts/wokwi-7segment). El rango de entrada se puede cubrir utilizando cuatro bits (0..15=2^4-1), es decir, cuatro señales de entrada. Especificamos que los valores de entrada válidos están en el rango 0..9, otros valores mostrarán un display en blanco.
 
@@ -90,7 +90,7 @@ python3 generate.py -f ./demos/bcd_7segment_lut.logic.json -o bcd_7segment_lut.d
 
 También asegúrate de activar la bandera `--tinytapeout` (o `-tt`) para que también se generen las piezas predeterminadas de la plantilla tinytapeout de Wokwi.
 
-Luego, podemos abrir y revisar el archivo de salida con el [formato de archivo diagram.json](https://docs.wokwi.com/diagram-format) de Wokwi. Define las piezas (básicamente puertas AND y OR) y las conexiones entre esas piezas:
+Luego, podemos abrir y revisar el archivo de salida con el [formato de archivo diagram.json](https://docs.wokwi.com/diagram-format) de Wokwi. Define las piezas (básicamente compuertas AND y OR) y las conexiones entre esas piezas:
 
 ```
 {

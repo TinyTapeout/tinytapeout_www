@@ -20,6 +20,6 @@ Tiny Tapeout no sería posible sin la ayuda de muchas personas. Nos gustaría ag
 * James Rosenthal por presentar ejemplos con diseño digital
 * Todas las personas que fueron parte de [TinyTapeout 01](/runs/tt01) y ofrecieron su tiempo de manera voluntaria para mejorar la documentación y probar el flujo.
 * El equipo de [YosysHQ](https://www.yosyshq.com/) y todos los otros desarrolladores de herramientas EDA de código abierto
-* [Efabless](https://efabless.com/) por realizar la carreras de shuttle y proporcionar OpenLane y patrocinio
+* [Efabless](https://efabless.com/) por realizar los lanzamientos y proporcionar OpenLane y patrocinio
 * [Tim Ansell y Google](https://www.youtube.com/watch?v=EczW2IWdnOM) por apoyar al movimiento silicio de código abierto
 * Comunidad del curso [Zero to ASIC](https://zerotoasiccourse.com/) por todo tu apoyo

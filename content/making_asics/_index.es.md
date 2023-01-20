@@ -3,7 +3,7 @@ title: "Creando ASICs"
 weight: 70
 ---
 
-Has usado Wokwi o HDL para construir tu diseño digital, ¿Pero cómo pasamos de ahí a un ASIC?
+Has usado Wokwi o HDL para construir tu diseño digital, pero, ¿cómo pasamos de ahí a un ASIC?
 
 Usamos [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/), una herramienta de código abierto que puede convertir una lista de conexiones digitales en formato Verilog a los archivos [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) necesarios para la fabricación de un ASIC.
 

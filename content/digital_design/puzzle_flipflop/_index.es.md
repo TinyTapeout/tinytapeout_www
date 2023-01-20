@@ -9,9 +9,9 @@ En este desafío, descubrirás cómo construir un flip-flop a partir de compuert
 
 **Antecedentes**
 
-¿Qué es un flip-flop? Un [flip-flop](https://en.wikipedia.org/wiki/Flip-flop_(electronics)) es un circuito que puede almacenar de forma estable un bit de información. En otras palabras, su salida mantendrá un 1 o 0 hasta que tanto la entrada cambie como habilitar vaya a 1.
+¿Qué es un flip-flop? Un [flip-flop](https://en.wikipedia.org/wiki/Flip-flop_(electronics)) es un circuito que puede almacenar de forma estable un bit de información. En otras palabras, su salida mantendrá un 1 o un 0 hasta que la *entrada* cambie y la *activación* pase a 1. 
 
-¿Por qué son importantes los flip-flops? Los flip-flops juegan un papel importante en la sincronización de señales y almacenamiento de información, lo que nos permite expandirnos desde la lógica combinatoria donde la salida de un circuito solo depende de su entrada presente, hasta la lógica secuencial donde la salida de un circuito depende tanto de las entradas como del estado anterior del circuito.
+¿Por qué son importantes los flip-flops? Los flip-flops juegan un papel importante en la sincronización de señales y almacenamiento de información, lo que nos permite expandirnos desde la lógica combinacional donde la salida de un circuito solo depende de su entrada presente, hasta la lógica secuencial donde la salida de un circuito depende tanto de las entradas como del estado anterior del circuito.
 
 Para la sincronización, los flip flops permiten que un circuito controle precisamente cuándo una señal de entrada pasa a través del resto del circuito. Este control se maneja a través de una señal de habilitación, por ejemplo, si la señal de habilitación es 1, la salida será igual a la entrada, sin embargo, si la señal de habilitación es 0, la salida no cambiará independientemente de la entrada.
 
@@ -33,7 +33,7 @@ Se ha creado un flip flop a partir de compuertas lógicas a continuación. Sin e
 
 **se asume que Q tiene un estado inicial de 0*
 
-Sientete libre de jugar alrededor para tratar de averiguarlo. Siempre puedes volver al [tutorial de las compuertas lógicas](/es/digital_design/logic_gates) si necesitas un repaso.
+Sientete libre de jugar para tratar de entenderlo. Siempre puedes volver al [tutorial de las compuertas lógicas](/es/digital_design/logic_gates) si necesitas un repaso.
 
 También puedes verificar la [**solución**](https://wokwi.com/projects/346662209986757203)
 

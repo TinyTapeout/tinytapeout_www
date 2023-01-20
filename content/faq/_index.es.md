@@ -33,7 +33,7 @@ La [documentación de Woki esta aquí](https://docs.wokwi.com/?utm_source=wokwi)
 
 ## ¿Cómo puedo deshacer / rehacer?
 
-* Ctrl+Z & Ctrl+Y or ⌘Z / ⌘Y en una Mac.
+* Ctrl+Z y Ctrl+Y o ⌘Z / ⌘Y en una Mac.
 
 ## ¿Cómo encuentro el cableado de la pantalla de 7 segmentos?
 

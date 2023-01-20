@@ -11,7 +11,7 @@ La mayoría de las FPGAs permiten declaraciones iniciales y los flops a menudo s
 
 # Combinacional vs Secuencial
 
-En una FPGA los registros están 'libres' en el sentido de que cada LUT tiene un flop. Por lo tanto, las personas están acostumbradas a hacer mucho pipeline y registro. Pero en un ASIC, estás son las células más caras en términos de área, por lo que es mejor hacer más con combinacional y sólo usar flops sea necesario. Esto podría significar hacer más niveles profundos de lógica combinacional con menos flops de por medio.
+En un FPGA, todos sus registros estan "libres", siendo que cada LUT tiene un flip-flop asignado, por lo mismo las personas estan acostumbradas a hacer flujos y registros grandes. Mas en un ASIC estas combinaciones de células son las mas "caras" en terminos de área, por lo que es mejor hacer uso de logica combinacional y solo usar flip-flops cuando sea necesario. Esto podría significar hacer más niveles profundos de lógica combinacional con menos flip-flops de por medio.
 
 # Pruebas
 

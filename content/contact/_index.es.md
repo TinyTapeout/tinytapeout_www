@@ -11,5 +11,5 @@ Su curso [Zero to ASIC](https://www.zerotoasiccourse.com) a matriculado 250 estu
 
 * Correo: matt@mattvenn.net
 * Web: [mattvenn.net](https://mattvenn.net)
-* Linkedin:[https://www.linkedin.com/in/matt-venn/](https://www.linkedin.com/in/matt-venn/) 
-* Twitter [@matthewvenn](https://twitter.com/matthewvenn)
+* Linkedin: [https://www.linkedin.com/in/matt-venn/](https://www.linkedin.com/in/matt-venn/) 
+* Twitter: [@matthewvenn](https://twitter.com/matthewvenn)

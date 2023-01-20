@@ -5,10 +5,10 @@ description: "Configura los interruptores para encender el LED"
 weight: 10
 ---
 
-En este rompecabezas, tienes que descubrir cómo configurar los interruptores para encender el último LED.
+En este desafío, tienes que descubrir cómo configurar los interruptores para encender el último LED.
 
 {{% notice tip %}}
-Para comenzar el rompecabezas, necesitas estar en el "modo simulación". Haz clic en el pequeño botón de reproducción en la esquina superior izquierda.
+Para comenzar el desafío, necesitas estar en el "modo simulación". Haz clic en el pequeño botón de reproducción en la esquina superior izquierda.
 {{% /notice %}}
 
 **Desafío**

@@ -5,7 +5,7 @@ description: "Ejecutando automáticamente pruebas cocotb"
 
 Gracias al miembro de la comunidad **Tholin** por escribir este artículo.
 
-Para estar completamente seguro de que tu diseño de hardware funciona como quieres, es posible escribir pruebas unitarias de Verilog. Esta guía te mostrará cómo escribir pruebas simples para tus diseños de hardware y a crear un pipeline de Github Actions para ejecutar automáticamente tus pruebas cada vez que hagas un push a tu repositorio.
+Para estar completamente seguro de que tu diseño de hardware funciona como quieres, es posible escribir pruebas unitarias de Verilog. Esta guía te mostrará cómo escribir pruebas simples para tus diseños de hardware y a crear un flujo de Github Actions para ejecutar automáticamente tus pruebas cada vez que hagas un push a tu repositorio.
 
 ## Paquetes requeridos
 
@@ -156,6 +156,6 @@ Imprime mensajes de depuración usando `dut._log.info("test")`
 
 ## Ejecución automática de pruebas en Github Actions
 
-Si eres como yo y siempre olvidas ejecutar las pruebas después de un cambio, puede que quieras configurar un pipeline de Github Actions para hacerlo por ti en cada push. Afortunadamente, ¡ya existe una solución para esto! Puedes descargar un pipeline de acciones pre-hecho [aquí](https://github.com/tinytapeout/tt02-verilog-demo/blob/main/.github/workflows/test.yaml).
+Si eres como yo y siempre olvidas ejecutar las pruebas después de un cambio, puede que quieras configurar un flujo de Github Actions para hacerlo por ti en cada push. Afortunadamente, ¡ya existe una solución para esto! Puedes descargar un flujo de acciones pre-hecho [aquí](https://github.com/tinytapeout/tt02-verilog-demo/blob/main/.github/workflows/test.yaml).
 
-Coloca este archivo en el directorio `.github/workflows` de tu repositorio para habilitarlo. Agrega el archivo a git y haz un push, y deberías ver un nuevo pipeline junto con los habitulaes de GDS y Docs. Esto te dirá si tus pruebas están fallando o no. SI quires que el estado de las pruebas se muestre en tu readme, agrega el siguiente fragmento de código en él `![](../../workflows/test/badge.svg)`
+Coloca este archivo en el directorio `.github/workflows` de tu repositorio para habilitarlo. Agrega el archivo a git y haz un push, y deberías ver un nuevo flujo junto con los habitulaes de GDS y Docs. Esto te dirá si tus pruebas están fallando o no. SI quires que el estado de las pruebas se muestre en tu readme, agrega el siguiente fragmento de código en él `![](../../workflows/test/badge.svg)`

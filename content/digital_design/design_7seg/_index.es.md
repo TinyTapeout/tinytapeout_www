@@ -14,16 +14,16 @@ La parte superior de la ventana de simulación implementa un contador modulo-11.
 La tabla de verdad para el diseño se puede encontrar en la [hoja de cálculo del diseño](https://docs.google.com/spreadsheets/d/1-h9pBYtuxv6su2EC8qBc6nX_JqHXks6Gx5nmHFQh_30/edit?usp=sharing)
 
 
-| SW      | Función | 
-|---------|---------|
-| 1       | N/A     | 
-| 2       | Reset   | 
-| 3       | N/A     |
+| SW      | Función             | 
+|---------|---------------------|
+| 1       | N/A                 | 
+| 2       | Reiniciar           | 
+| 3       | N/A                 |
 | 4       | Deshabilitar reloj  | 
-| 5       | A     | 
-| 6       | B     |
-| 7       | C     | 
-| 8       | D     | 
+| 5       | A                   | 
+| 6       | B                   |
+| 7       | C                   | 
+| 8       | D                   | 
 
 Diseño [inspirado en la presentación tt01 de Rakesh Peter](https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg)
 
