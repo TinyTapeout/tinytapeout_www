@@ -5,7 +5,7 @@ description: "Learn the basic logic Gates"
 weight: 20
 ---
 
-![gates](images/gates.png)
+![gates](/images/logic_gates/gates.png)
 
 Still feeling uncertain about digital logic gates and how they function? You can use the same Wokwi interface to explore different gates at your own pace.  One exercise we like is to draw out the truth table for each gate that you’re unfamiliar with. 
 
