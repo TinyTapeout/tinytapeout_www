@@ -70,7 +70,7 @@ Note that we expect the update frequency to be 12.5KHz, so your maximum clock fr
 
 Also, note that we haven't yet validated the clock frequency yet, so it maybe be lower or higher.
 
-![clock](images/clock_freq.png)
+![clock](/images/faq/clock_freq.png)
 
 ## Are there some examples of projects people have made?
 
@@ -120,7 +120,7 @@ Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of m
 
 Click the picture to open an interactive viewer.
 
-[![7 seg](images/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
+[![7 seg](/images/faq/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
 
 ## Which of my builds will be submitted for fabrication?
 
@@ -140,7 +140,7 @@ You need to enable the actions.
 1. Go to the Actions tab,
 2. Click the enable actions button.
 
-![actions](images/enable_action.png)
+![actions](/images/faq/enable_action.png)
 
 Also see the next FAQ on the GDS action failing on 'pages'.
 
@@ -152,7 +152,7 @@ Due to Github limitations, you need to do make a change to the settings of your 
 2. Select Pages,
 3. Change Source from Deploy from a branch to Github Actions.
 
-![actions](images/action_pages.png)
+![actions](/images/faq/action_pages.png)
 
 ## I got an error on my GitHub GDS action.
 
@@ -176,7 +176,7 @@ You might not have filled in enough fields, we require the following fields to b
 3. Then click the ‘Run workflow’ button
 3. Then click the ‘Run workflow’ button
 
-![actions](images/rerun_actions.png)
+![actions](/images/faq/rerun_actions.png)
 
 ## What are all the files in the artifact?
 

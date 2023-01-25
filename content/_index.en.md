@@ -12,7 +12,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 **Submissions are now closed for Tiny Tapeout 2!**
 
-> **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
+> **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing!
 
 See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
 
