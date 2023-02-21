@@ -21,7 +21,7 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 # Get started
 
 * If you're new to digital design - start by taking some of our [lessons here](digital_design).
-* Then create your own design with the [Wokwi template](https://wokwi.com/projects/339800239192932947) or for advanced users, [an HDL](/hdl).
+* Then create your own design with the [Wokwi template](https://wokwi.com/projects/357178660283991041) or for advanced users, [an HDL](/hdl).
 * For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 ---

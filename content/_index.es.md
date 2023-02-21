@@ -21,7 +21,7 @@ Mira [lo que dicen sobre TinyTapeout](https://twitter.com/search?q=tinytapeout)!
 # Primeros pasos
 
 * Si eres nuevo en el diseño digital - comienza tomando alguno de nuestras [lecciones aquí](digital_design).
-* Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/339800239192932947) or para usuarios avanzados, con [un HDL](/hdl).
+* Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/357178660283991041) or para usuarios avanzados, con [un HDL](/hdl).
 * Para obtener ayuda y soporte, revisa las [preguntas frecuentes](faq) y [únete a las conversaciones rápidas y amigables en Discord](https://discord.gg/qZHPrPsmt6).
 
 ---
