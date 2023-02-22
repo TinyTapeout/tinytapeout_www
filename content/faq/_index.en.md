@@ -27,7 +27,7 @@ Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We 
 
 ## Can I copy and paste from one Wokwi design to another?
 
-1. Select the all the parts you want to copy (using shift and click the parts or shift and drag a box)
+1. Select all the parts you want to copy (using shift and click the parts or shift and drag a box)
 2. Copy them to clipboard (Ctrl+C or Cmd+C)
 3. Go to the target project, click on the diagram editor, and paste (Ctrl+V or Cmd+V) 
 
@@ -60,7 +60,7 @@ Select all the ones you want to move (using shift and click the parts or shift a
 
 ## What is the top clock speed?
 
-We think it wil be around 12.5KHz. We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
+We think it will be around 12.5KHz. We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
 
 ## How do I use the clock block?
 
