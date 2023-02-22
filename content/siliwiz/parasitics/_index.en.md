@@ -42,7 +42,7 @@ Why did the capacitor discharge to zero? Because it also has a parasitic resista
 
 In the previous lesson you learnt the basics of SiliWiz. Now we’re going to put that knowledge to use and build a tiny calculating machine on a silicon chip. We’re going to build a potential divider. This takes a voltage in, divides it, and gives us the answer.
 
-![](../images/image55.png)
+![](../images/image55.png?width=20pc)
 
 How many connections does this device have? We need one for in and out as before, and we’re going to add a new one called vss. vss is also called ground or 0v. It’s used as a reference for the rest of the circuit.
 

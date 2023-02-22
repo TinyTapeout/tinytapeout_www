@@ -17,7 +17,7 @@ weight: 80
 
 As we’ve seen, an NMOS inverter is inefficient because it’s wasting energy through the resistor. CMOS logic replaces the pull up resistor with a P type mosfet. As the P type is the complementary version of the N type, we call this type of logic Complementary Metal Oxide Semiconductor or CMOS for short.
 
-![](../images/image35.png)
+![](../images/image35.png?width=20pc)
 
 There are many ways to draw this, but it’s fairly usual to use the same piece of polysilicon as the gate for both the P type and N type. If you get stuck you can check [my solutio](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dinverter&sa=D&source=editors&ust=1677096507882858&usg=AOvVaw16w4Sklb5KXveeniSpaa8N)[n here](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dinverter&sa=D&source=editors&ust=1677096507883367&usg=AOvVaw3Z7j2YOuggPBfhNrv0A6jZ).
 

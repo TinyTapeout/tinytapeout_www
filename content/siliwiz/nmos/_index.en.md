@@ -80,7 +80,7 @@ For an N MOSFET to work, the body needs to be kept at the same or lower voltage 
 
 Label the gate in, the source vss and the drain vdd. We’ve already connected the body to vss. If you get stuck, check [my s](https://www.google.com/url?q=http://app.siliwiz.com/?preset%3Dnmosfet&sa=D&source=editors&ust=1677096507861190&usg=AOvVaw08aih5qEXFT1-Dl3SAuope)[olution he](https://www.google.com/url?q=http://app.siliwiz.com/?preset%3Dnmosfet&sa=D&source=editors&ust=1677096507861595&usg=AOvVaw1FNSXRSQuoAKtBa-RpcVZs)[re](https://www.google.com/url?q=http://app.siliwiz.com/?preset%3Dnmosfet&sa=D&source=editors&ust=1677096507861857&usg=AOvVaw3-LLkFtuKGHosd13ZJX8Lj).
 
-![](../images/image28.png)
+![](../images/image28.png?width=20pc)
 
 ### VGS curves
 
