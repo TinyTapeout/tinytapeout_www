@@ -57,4 +57,4 @@ Play with the simulation controls to change the input signal’s min, max and ri
 
 ### Solution
 
-If you get stuck, take a [look at my solution](https://siliwiz.pages.dev/?preset%3Dresistor).
+If you get stuck, take a [look at my solution](https://siliwiz.pages.dev/?preset=resistor).

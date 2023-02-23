@@ -75,7 +75,7 @@ The red **polysilicon** forms the gate, but which way round is the source and t
 
 For an N MOSFET to work, the body needs to be kept at the same or lower voltage as one of the remaining terminals. We normally do this by connecting one of the terminals to the same voltage as the body, and historically, this terminal is called the source. The other becomes the drain.
 
-Label the gate **in**, the source **vss** and the drain **vdd**. We’ve already connected the body to vss. If you get stuck, check [my s](http://app.siliwiz.com/?preset%3Dnmosfet).
+Label the gate **in**, the source **vss** and the drain **vdd**. We’ve already connected the body to vss. If you get stuck, check [my s](http://app.siliwiz.com/?preset=nmosfet).
 
 ![](../images/image28.png?width=20pc)
 

@@ -31,7 +31,7 @@ If the input is high, the gate is charged and the MOSFET conducts. This pulls th
 
 ### Draw an NMOS inverter
 
-See if you can draw this inverter using the skills you’ve already learnt. Here’s [my solution](https://app.siliwiz.com/?preset%3Dnmos):
+See if you can draw this inverter using the skills you’ve already learnt. Here’s [my solution](https://app.siliwiz.com/?preset=nmos):
 
 ![](../images/image30.png)
 

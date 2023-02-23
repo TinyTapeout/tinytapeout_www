@@ -21,7 +21,7 @@ Here’s an overview of the SiliWiz user interface:
 
 Choose which layer to draw on by using the palette. By the end of these lessons you will know what each layer is for and what role it plays in building a logic gate.
 
-Go to the [SiliWiz page](https://app.siliwiz.com/?preset%3Dblank), select the **polyres** layer, then draw the first letter of your name on the canvas.
+Go to the [SiliWiz page](https://app.siliwiz.com/?preset=blank), select the **polyres** layer, then draw the first letter of your name on the canvas.
 
 *   Control which layers are visible with the 👁 
 *   Choose which layer is active by clicking on the colour or the text

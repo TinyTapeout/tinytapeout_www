@@ -88,7 +88,7 @@ You should now see the output voltage doing something different. If we zoom in a
 
 ![](../images/image37.png)
 
-If you get stuck, [here’s my solution](https://app.siliwiz.com/?preset%3D**mimcap**).
+If you get stuck, [here’s my solution](https://app.siliwiz.com/?preset=mimcap).
 
 Experiment with the input rise time, what happens to the output pulse?
 

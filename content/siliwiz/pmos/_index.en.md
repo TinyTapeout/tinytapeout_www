@@ -48,7 +48,7 @@ As before, remove the **out** trace, and add **i(vdd)\*-1000**.
 
 ![](../images/image58.png)
 
-You can see [my so](https://app.siliwiz.com/?preset%3Dpmosfet).
+You can see [my so](https://app.siliwiz.com/?preset=pmosfet).
 
 ### N vs P type MOSFET
 
