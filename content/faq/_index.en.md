@@ -103,6 +103,7 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 Please see the details on each chip's page.
 
 * [TinyTapeout-01](/runs/tt01)
+* [TinyTapeout-02](/runs/tt02)
 
 ## When will the course material be available?
 

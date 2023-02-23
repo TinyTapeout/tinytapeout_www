@@ -103,6 +103,7 @@ Puede encontrarla en la [página de inicio](/es/digital_design/wokwi).
 Por favor vea los detalles en la página de cada chip.
 
 * [TinyTapeout-01](/es/runs/tt01)
+* [TinyTapeout-02](/es/runs/tt02)
 
 ## ¿Cuándo estará disponible el material del curso?
 
