@@ -59,7 +59,7 @@ If you want to explore this design yourself:
 
 [Leave feedback!](https://forms.gle/fY5phQRc2dnzBRmf9) Please let us know your thoughts and ideas for improvements. You can also use this form to request more information about SiliWiz and TinyTapeout for schools and universities.
 
-*   Share a picture of your design on social media with the [#SiliWiz](https://twitter.com/search?q%3D%2523siliwiz) [hashtag](https://twitter.com/search?q%3D%2523siliwiz)
+*   Share a picture of your design on social media with the [#SiliWiz hashtag](https://twitter.com/search?q=siliwiz&src=typed_query)
 *   [Learn how to use logic gates to build simple circuits and get them manufactured!](http://tinytapeout.com)
 *   [Take Matt’s highly rated and more advanced Zero to ASIC course](https://zerotoasiccourse.com)
 *   Try drawing stick diagrams with [Stixu](https://stixu.io/)
