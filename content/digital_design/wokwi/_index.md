@@ -7,7 +7,7 @@ weight: 1
 
 {{< youtube CBkYEheK29k >}}
 
-Here is [the Wokwi template](https://wokwi.com/projects/339684301812531795).
+Here is [the Wokwi template](https://wokwi.com/projects/357178660283991041).
 
 We also have some [Wokwi FAQs here](/faq/#wokwi-faqs).
 
