@@ -42,7 +42,7 @@ When a factory develops a way to make a chip, they need to share that informatio
 Normally, you’d need to sign a document to say you wouldn't share the information. With the open source [PDK](https://www.zerotoasiccourse.com/terminology/pdk/), you don’t need to sign any paperwork before you start using it.
 {{% /notice %}}
 
-Here are the layers that are used to make a chip on Skywater’s 130 nm (nanometer) process. A nanometer is 1 million times smaller than a millimetre. So the period at the end of this sentence could easily be a million nanometers across. Note that figures shown in the picture are in micrometres (μm).
+Here are the layers that are used to make a chip on Skywater’s 130 nm (nanometer) process. A nanometer is 1 million times smaller than a millimeter. So the period at the end of this sentence could easily be a million nanometers across. Note that figures shown in the picture are in micrometers (μm).
 
 ![](../images/image49.png)
 
