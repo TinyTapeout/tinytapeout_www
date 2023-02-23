@@ -4,10 +4,6 @@ description: "Create a logic gate and discover its shortcomings"
 weight: 60
 ---
 
-
-#6 Making a logic inverter with a MOSFET
-----------------------------------------
-
 ### Aim
 
 *   Learn how a combination of a resistor and MOSFET can create an inverter
@@ -35,11 +31,11 @@ If the input is high, the gate is charged and the MOSFET conducts. This pulls th
 
 ### Draw an NMOS inverter
 
-See if you can draw this inverter using the skills you’ve already learnt. Here’s [my solution](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dnmos&sa=D&source=editors&ust=1677096507870625&usg=AOvVaw2KM9D2EikBISofXLblkDqG):
+See if you can draw this inverter using the skills you’ve already learnt. Here’s [my solution](https://app.siliwiz.com/?preset%3Dnmos):
 
 ![](../images/image30.png)
 
-Once it’s wired up correctly, select the simulation tab and you should see a simulation result like this. You’ll need the in and out plot traces.
+Once it’s wired up correctly, select the **simulation** tab and you should see a simulation result like this. You’ll need the **in** and **out** plot traces.
 
 ![](../images/image17.png)
 
@@ -49,7 +45,7 @@ The disadvantage with NMOS logic is that the pullup resistors waste a tiny bit o
 
 ### Measuring the current consumption of an NMOS inverter
 
-As before, add i(vdd)\*-1000 to the list of signals to be plotted.
+As before, add **i(vdd)\*-1000** to the list of signals to be plotted.
 
 ![](../images/image61.png)
 
@@ -57,6 +53,6 @@ Now we can see that when the input is low, the current use is low, but once we t
 
 Try changing the width of the gate and the width of the resistor. Can you make the inverter switch faster? How about making it more efficient?
 
-If you have millions of these logic inverters then you are wasting electricity as heat and your chips get hot and slow down. [CMOS](https://www.google.com/url?q=https://www.zerotoasiccourse.com/terminology/cmos&sa=D&source=editors&ust=1677096507874749&usg=AOvVaw2IRPHzVsaYt4JzF7R08D1n) was invented to solve this shortcoming.
+If you have millions of these logic inverters then you are wasting electricity as heat and your chips get hot and slow down. [CMOS](https://www.zerotoasiccourse.com/terminology/cmos) was invented to solve this shortcoming.
 
 In the next lesson you’ll learn how to draw a P type MOSFET, and then you’ll have everything you need to make your own CMOS inverter.

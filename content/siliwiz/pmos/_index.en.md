@@ -4,10 +4,6 @@ description: "Learn about the N type MOSFET's complement, the P type MOSFET"
 weight: 70
 ---
 
-
-#7 Draw a P type MOSFET
------------------------
-
 ### Aim
 
 *   Discover how a P type MOSFET is the complement of an N type MOSFET
@@ -18,7 +14,7 @@ If we change the diffusion type of the gate and source from N type to P type, an
 
 ### P substrate
 
-Like the N MOSFET, we need the p substrate with the connection to vss.
+Like the N MOSFET, we need the **p substrate** with the connection to vss.
 
 ![](../images/image33.png)
 
@@ -26,9 +22,9 @@ Like the N MOSFET, we need the p substrate with the connection to vss.
 
 The N type MOSFET was built on top of the P type substrate. So during the N diffusion process, when the gate protects the channel region, we end up with a P type channel. For a P type MOSFET, this needs to be switched: we need an N type channel that will be protected by P type diffusion.
 
-For a P type MOSFET we need to create a deep area of N type diffusion on the substrate. This is called a well. The layer we need to use to draw this is called n well. Draw a smaller square in the center using the n well layer.
+For a P type MOSFET we need to create a deep area of N type diffusion on the substrate. This is called a well. The layer we need to use to draw this is called **n well**. Draw a smaller square in the center using the **n well** layer.
 
-Next, draw the P type diffusion on top of that using the p diffusion layer.
+Next, draw the P type diffusion on top of that using the **p diffusion** layer.
 
 ![](../images/image19.png)
 
@@ -38,7 +34,7 @@ One question you might have is why not just use an N diffusion layer rather than
 
 ### Well tap
 
-Just as the p substrate needs to be connected to vss, we need to connect the n well to vdd. Use n tap, metal1 via and metal1 to do it.
+Just as the p substrate needs to be connected to vss, we need to connect the **n well** to vdd. Use n tap, **metal1 via** and **metal1** to do it.
 
 ![](../images/image42.png)
 
@@ -48,11 +44,11 @@ Connect up the gate, source and drain as you did for the N type MOSFET. This tim
 
 ![](../images/image46.png)
 
-As before, remove the out trace, and add i(vdd)\*-1000.
+As before, remove the **out** trace, and add **i(vdd)\*-1000**.
 
 ![](../images/image58.png)
 
-You can see [my so](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dpmosfet&sa=D&source=editors&ust=1677096507879461&usg=AOvVaw0yWHfaV-KVQDmHtEf_vt3D)[lution](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dpmosfet&sa=D&source=editors&ust=1677096507879867&usg=AOvVaw0pfpf9FfIEd8RPnVdU1X4e) [here](https://www.google.com/url?q=https://app.siliwiz.com/?preset%3Dpmosfet&sa=D&source=editors&ust=1677096507880171&usg=AOvVaw25HMGCzsaAKnZMgRYqXTvE).
+You can see [my so](https://app.siliwiz.com/?preset%3Dpmosfet).
 
 ### N vs P type MOSFET
 
@@ -61,5 +57,13 @@ What do you notice between the N and P type MOSFETs? On the left is N and on the
 ![](../images/image41.png)![](../images/image47.png)
 
 *   Which MOSFET conducts the best?
-*   If you change the P MOSFET’s p diffusion layer size, can you improve its performance?
-*   Do they have the same gate-source threshold?[\[a\]](#cmnt1)[\[b\]](#cmnt2)[\[c\]](#cmnt3)
+*   If you change the P MOSFET’s **p diffusion** layer size, can you improve its performance?
+*   Do they have the same gate-source threshold?
+
+{{% notice tip %}}
+The N MOSFET conducts about 2.6 times better than P MOSFET.
+
+Drawing a P MOSFET 2.6 times wider than the N MOSFET will give it the same performance as the N MOSFET.
+
+Explanation: This is due to the N type doping having excess electrons, which carry the current, compared to the P type doping which has gaps between electrons, and the movement of these electron "holes" is what carries the current. This is analogous to water quickly falling though air, vs a bubble of air rising much slower though water. (Alternate explanation: cars driving on a road vs a traffic jam where the gap between cars is moving backwards as the cars move slowly forwards).
+{{% /notice %}}
