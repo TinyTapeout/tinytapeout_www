@@ -23,3 +23,4 @@ Tiny Tapeout no sería posible sin la ayuda de muchas personas. Nos gustaría ag
 * [Efabless](https://efabless.com/) por realizar los lanzamientos y proporcionar OpenLane y patrocinio
 * [Tim Ansell y Google](https://www.youtube.com/watch?v=EczW2IWdnOM) por apoyar al movimiento silicio de código abierto
 * Comunidad del curso [Zero to ASIC](https://zerotoasiccourse.com/) por todo tu apoyo
+* [Electronic Cats](https://electroniccats.com/) por su apoyo en la traducción al Español

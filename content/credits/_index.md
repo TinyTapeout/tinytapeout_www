@@ -23,4 +23,4 @@ Tiny Tapeout would not be possible without a lot of people helping. We would esp
 * [Efabless](https://efabless.com/) for running the shuttles and providing OpenLane and sponsorship
 * [Tim Ansell and Google](https://www.youtube.com/watch?v=EczW2IWdnOM) for supporting the open source silicon movement
 * [Zero to ASIC course](https://zerotoasiccourse.com/) community for all your support
-
+* [Electronic Cats](https://electroniccats.com/) for their support in the translation into Spanish
