@@ -60,7 +60,8 @@ After we’ve finished our design we can turn each layer into a mask. A mask all
 
 ![](../images/image7.png)
 
-[Photolithography](https://www.zerotoasiccourse.com/terminology/photolithography/) to make the individual chips. It allows us to use a prepared image of the chip to make millions of copies reliably and rapidly.
+[Photolithography](https://www.zerotoasiccourse.com/terminology/photolithography/) is the key step that allows us to take the patterns we create in a tool like SiliWiz and miniaturise them down to the nanometer scale. It also lets us easily tile the same design over the silicon wafer to make the individual chips. It allows us to use a prepared image of the chip to make millions of copies reliably and rapidly.
+
 
 {{% notice tip %}}
 Some layers are ‘virtual’. For example **polyres** and **polysilicon** are the same physical layer, but we need to have them split onto 2 separate layers so that the simulation knows whether we mean drawing the gate of a [MOSFET](https://www.zerotoasiccourse.com/terminology/mosfet/), or drawing a resistor.
@@ -131,7 +132,7 @@ Tick the Show SPICE check box at the bottom of the page and have a look in the 
 ![](../images/image4.png)
 
 {{% notice tip %}}
-There’s a lot of stuff going on in the SPICE file, but we’ll be mostly ignoring it in these lessons. [SPICE](https://www.zerotoasiccourse.com/terminology/spice/) for making us a special small version.
+There’s a lot of stuff going on in the [SPICE](https://www.zerotoasiccourse.com/terminology/spice/) file, but we’ll be mostly ignoring it in these lessons. SPICE is an important part of a chip designer’s toolkit. [ngspice](https://ngspice.sourceforge.io/) is the open source tool that runs the SPICE simulations for SiliWiz. Thanks to [Holger Vogt](https://www.linkedin.com/in/holger-vogt-737ba5a8/) for making us a special small version.
 {{% /notice %}}
 
 Try to make your letter a higher or lower resistance. Here’s me making a really high resistance:

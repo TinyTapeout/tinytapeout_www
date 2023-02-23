@@ -21,7 +21,7 @@ What happens to the output curve when you make the input rise faster by decreasi
 
 ### Parasitic Capacitance
 
-This type of effect is called parasitic capacitance. We didn’t really want or expect it, but it’s there because that’s how the world works. Parasitics are often unnoticeable at a larger scale, but the capacitor you just made is only 1μm wide and has a noticeable effect on the output of your circuit. Analyzing parasitics is an important part of microelectronics and can’t be ignored if we want our chips to work properly.
+This type of effect is called **parasitic capacitance**. We didn’t really want or expect it, but it’s there because that’s how the world works. Parasitics are often unnoticeable at a larger scale, but the capacitor you just made is only 1μm wide and has a noticeable effect on the output of your circuit. Analyzing parasitics is an important part of microelectronics and can’t be ignored if we want our chips to work properly.
 
 ### Parasitic Resistance
 

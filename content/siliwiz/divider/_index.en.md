@@ -32,7 +32,7 @@ There are lots of ways to draw it, but you’ll at least need:
 
 ### How does it work? Magic!
 
-Another important tool behind the SiliWiz scenes is called [Magic](https://www.zerotoasiccourse.com/terminology/magic/).
+Another important tool behind the SiliWiz scenes is called [Magic](https://www.zerotoasiccourse.com/terminology/magic/).  It’s a powerful tool but it’s not very beginner friendly, which is one reason we wanted to make SiliWiz. Magic has been used for 40 years to help design chips! We are using it for [DRC](https://www.zerotoasiccourse.com/terminology/drc/) and [circuit extraction](https://www.zerotoasiccourse.com/terminology/pex/).
 
 As mentioned earlier, we have two layers that actually specify the same material, polysilicon and polyres. There is no difference between the two layers when the chip is manufactured. The reason we keep them separate is to make Magic’s job easier when it extracts the circuit from the picture we draw.
 

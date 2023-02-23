@@ -15,7 +15,7 @@ As we’ve seen, an NMOS inverter is inefficient because it’s wasting energy t
 
 ![](../images/image35.png?width=20pc)
 
-There are many ways to draw this, but it’s fairly usual to use the same piece of polysilicon as the gate for both the P type and N type. If you get stuck you can check [my solution](https://app.siliwiz.com/?preset=inverter).
+There are many ways to draw this, but it’s fairly usual to use the same piece of polysilicon as the gate for both the P type and N type. If you get stuck you can check [my solution here](https://app.siliwiz.com/?preset=inverter).
 
 ![](../images/image56.png)
 
@@ -33,7 +33,7 @@ A typical PDK will include hundreds of standard cells. Here’s the Skywater 130
 
 ![](../images/image62.png)
 
-Can you identify the P and N type MOSFETs? Can you see the input and output ports? [Here’s a 3D view](https://gds-viewer.tinytapeout.com/?model%3Dhttps://tinytapeout.github.io/sky130B-cells-gltf/cells/sky130_fd_sc_hd__inv_1.gds.gltf) of the same cell:
+Can you identify the P and N type MOSFETs? Can you see the input and output ports? [Here’s a 3D view](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/sky130B-cells-gltf/cells/sky130_fd_sc_hd__inv_1.gds.gltf) of the same cell:
 
 ![](../images/image18.png)
 
@@ -51,7 +51,7 @@ And here we see how the wires connect up the cells into a more complex digital m
 
 If you want to explore this design yourself:
 
-*   [here’s the 3D viewer](https://gds-viewer.tinytapeout.com/?model%3Dhttps://tinytapeout.github.io/tt02-test-invert/tinytapeout.gds.gltf)
+*   [here’s the 3D viewer](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-invert/tinytapeout.gds.gltf)
 *   [the logic design](https://wokwi.com/projects/341535056611770964)
 *   [more information about the design](https://tinytapeout.com/runs/tt02/000/)
 

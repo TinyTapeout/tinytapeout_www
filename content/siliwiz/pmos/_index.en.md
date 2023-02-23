@@ -48,11 +48,11 @@ As before, remove the **out** trace, and add **i(vdd)\*-1000**.
 
 ![](../images/image58.png)
 
-You can see [my so](https://app.siliwiz.com/?preset=pmosfet).
+You can see [my solution here](https://app.siliwiz.com/?preset=pmosfet).
 
 ### N vs P type MOSFET
 
-What do you notice between the N and P type MOSFETs? On the left is N and on the right is P.
+What do you notice between the N and P type MOSFETs? The first is plot is for N and on the second is for P.
 
 ![](../images/image41.png)![](../images/image47.png)
 

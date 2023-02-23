@@ -74,7 +74,7 @@ By connecting a **pull down** resistor between the capacitor and vss we can dra
 
 ![](../images/image21.png)
 
-If you don’t remember how we made a resistor in lesson 1, go back and take a look. Then follow these steps and see if you can draw it yourself.
+If you don’t remember how we made a resistor, [go back and take a look](/siliwiz/resistors/#connect-it-up). Then follow these steps and see if you can draw it yourself.
 
 1.  Draw a square of **metal1 via** so it connects to the **metal1** output square
 2.  Draw a long skinny resistor using **polyres** - maybe make it about 0.5μm thick and 20μm long.
