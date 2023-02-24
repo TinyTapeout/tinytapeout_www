@@ -46,17 +46,17 @@ description: Our first trial run
 
 ## Whole die
 
-![whole die](images/whole_die.png)
+![whole die](/images/whole_die.png)
 
 ## Render of whole die
 
-![render](images/render.png)
+![render](/images/render.png)
 
 By [Maximo Balestrini](https://twitter.com/maxiborga)
 
 ## Zoom on 6 individual designs
 
-![zoom](images/zoom.png)
+![zoom](/images/zoom.png)
 
 Click to launch an interactive GDS [Viewer automatically created by the Github Action](https://proppy.github.io/tinytapeout-xls-test/) 
 
