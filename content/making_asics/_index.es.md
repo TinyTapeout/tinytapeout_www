@@ -12,4 +12,4 @@ Para facilitar las cosas, instalamos y ejecutamos las herramientas en servidores
 En este vídeo explico como funciona y vemos a
  OpenLane y los registros producidos.
 
-{{< youtube lXKt7CKRUes >}}
+{{< youtube dFi0J7GHBko >}}
