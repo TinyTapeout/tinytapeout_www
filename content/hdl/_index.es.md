@@ -8,6 +8,6 @@ Para el [TinyTapeout-01](/runs/tt01/), cerca del 15% de las presentaciones de Ti
 
 Para el TinyTapeout-02, esperamos que el 50% de las presentaciones sean hechas en HDL. Para ayudarte, hemos comenzado a reunir algunos recursos aquí.
 
-{{< youtube wO2Cx1vM_Z4 >}}
+{{< youtube f_T0Uz5ED3g >}}
 
 {{< children description="true" >}}

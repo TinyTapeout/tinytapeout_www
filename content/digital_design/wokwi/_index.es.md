@@ -5,7 +5,7 @@ description: "Aprende los conceptos básicos de Wokwi"
 weight: 1
 ---
 
-{{< youtube CBkYEheK29k >}}
+{{< youtube _G_Tjah_RLo >}}
 
 Aquí esta [la plantilla de Wokwi](https://wokwi.com/projects/357178660283991041).
 
