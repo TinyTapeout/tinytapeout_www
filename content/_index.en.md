@@ -83,7 +83,7 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 * Design + Physical PCB + ASIC = $100 + p&p
 * Design only = $25
-* Our [terms of service](terms)
+* By making an order, you agree to our [terms of service](terms).
 
 <style>
   [x-cloak] { display: none !important; }
