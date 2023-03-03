@@ -6,7 +6,7 @@ LastModifierDisplayName: deimos hall
 
 # ¡Desde una idea hasta el diseño de un chip en minutos!
 
-{{< youtube Mwbs_V0jxJY >}}
+{{< youtube fblSVCPvCiY >}}
 
 TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Consulta lo que otras personas están creando al ver la [hoja de datos](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf) más reciente.
 

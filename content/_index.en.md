@@ -6,7 +6,7 @@ LastModifierDisplayName: matt venn
 
 # From idea to chip design in minutes!
 
-{{< youtube Mwbs_V0jxJY >}}
+{{< youtube fblSVCPvCiY >}}
 
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by taking a look at the latest [data sheet](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf).
 
@@ -45,7 +45,7 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 # Get your submission ready
 
-{{< youtube BqS1X9xH_Sc >}}
+{{< youtube 5l_TVgu__pg >}}
 
 * [GitHub submission template](https://github.com/TinyTapeout/tt03-submission-template).
 * If you want to use an HDL like Verilog, please take a look [here](/hdl).

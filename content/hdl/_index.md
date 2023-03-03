@@ -8,6 +8,6 @@ For [TinyTapeout 1](/runs/tt01/), about 15% of submissions were made with a [Har
 
 For Tiny Tapeout 3, we are expecting about 60% of submissions to be made with an HDL. To support you, we have some resources here.
 
-{{< youtube f_T0Uz5ED3g >}}
+{{< youtube bjih-6_1iEA >}}
 
 {{< children description="true" >}}
