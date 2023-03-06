@@ -20,7 +20,5 @@ flops in between.
 
 As well as functional testing with a simulator and testbench, you should consider gate level testing. This allows you to simulate the actual layout of your GDS (post synthesis).
 
-You can find an example [GitHub action workflow for gate level simulation here](https://github.com/TinyTapeout/tt02-verilog-demo/blob/gate-level/.github/workflows/gltest.yaml).
+You can find an example [GitHub action workflow for gate level simulation here](https://github.com/TinyTapeout/tt03-verilog-demo/blob/main/.github/workflows/gds.yaml#L99).
 This takes care of installing the models for the standard cells.
-
-We also need to adjust the [Makefile](https://github.com/TinyTapeout/tt02-verilog-demo/blob/gate-level/src/Makefile), and when connecting up the module for testing, make sure to [provide it power](https://github.com/TinyTapeout/tt02-verilog-demo/blob/ed43935f8d6236edb59f1a7940e2bf6f9db99603/src/tb.v#L30).
