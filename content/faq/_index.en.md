@@ -100,18 +100,16 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 
 ## When will the chips get manufactured?
 
-Please see the details on each chip's page.
+The chips are taking between 6 and 9 months to manufacture. Then we need to do PCBA, test and order fulfillment. So expect around 1 year's wait time!
+You can see information about the shuttle service we are using on Efabless website: https://efabless.com/shuttle-status
 
-* [TinyTapeout-01](/runs/tt01)
-* [TinyTapeout-02](/runs/tt02)
-
-## When will the course material be available?
-
-We are adding this to the website as we go. Please check the [digital design section](/digital_design) section.
+* TT01 - submitted to lottery shuttle MPW7 - wafers expected July 2023. Not expecting to ship this test.
+* TT02 - submitted to ChipIgnite 2211Q - wafers expected August 2023, delivery should be around a month after.
+* TT03 - will be submitted to ChipIgnite 2304C - wafers September 2023, deliver should be around a month after.
 
 ## How many spaces are there?
 
-For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots.
+For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
 
 ## How big can my design be?
 
@@ -131,6 +129,8 @@ Your last submission that:
 2. was submitted before the deadline
 
 will be submitted for fabrication.
+
+You can keep updating your design up to the tapeout deadline.
 
 # Github FAQs
 
@@ -196,7 +196,8 @@ There are lots!
 
 ## Where is the submission repository for the shuttle?
 
-* [See the TT01 page](/runs/tt01/)
+* [TT01 page](/runs/tt01/)
+* [TT02 page](/runs/tt02/)
 
 ## Why do I have fewer / more standard cells than I expected?
 
@@ -216,6 +217,10 @@ Start by creating a new empty GitHub repository.
 In either case, you may need to enable the Github actions.
 
 # ASIC FAQs
+
+## What PDK is used for the manufacture?
+
+We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.com/terminology/pdk/)
 
 ## What do all these acronyms you keep using mean?
 

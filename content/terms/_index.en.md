@@ -12,3 +12,4 @@ These are the provisional terms for Tiny Tapeout Customers. We are having them c
 * You might have to pay import tax.
 * The combined chip project is shared on GitHub and possibly other websites, under Apache 2 license. You must not submit any copyrighted third-party content, and you must agree to have your submissions under Apache 2 compatible license.
 * We're currently using [eFabless](https://efabless.com) as a contractor for the manufacturing (their chipIgnite program), their terms: https://platform.efabless.com/terms_of_service
+* The PCB deliverable should be considered as a development board, it doesn’t come with a case or any kind of certification.
