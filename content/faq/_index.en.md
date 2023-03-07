@@ -221,7 +221,7 @@ However, if you have only 8 cells, your design is probably completely optimised 
 Start by creating a new empty GitHub repository. 
 
 * Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
-* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT02 repository url: https://github.com/TinyTapeout/tt02-submission-template 
+* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT03 repository url: https://github.com/TinyTapeout/tt03-submission-template 
 
 In either case, you may need to enable the Github actions.
 
