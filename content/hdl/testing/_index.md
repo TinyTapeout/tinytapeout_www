@@ -148,6 +148,6 @@ Print debug messages using `dut._log.info("test")`
 
 ## Auto-running tests in GitHub actions
 
-If you’re like me, and often forget to run your tests after a change, you may want to set up a GitHub actions pipeline to do it for you on every push. Luckily, a solution for this already exists! You can download a pre-made actions pipeline [right here!](https://github.com/tinytapeout/tt02-verilog-demo/blob/main/.github/workflows/test.yaml)
+If you’re like me, and often forget to run your tests after a change, you may want to set up a GitHub actions pipeline to do it for you on every push. Luckily, a solution for this already exists! You can download a pre-made actions pipeline [right here!](https://github.com/tinytapeout/tt03-verilog-demo/blob/main/.github/workflows/test.yaml)
 
 Drop this into the `.github/workflows` directory of your repository to enable it. Add the file to git and push, and you should see a new pipeline pop up along the usual GDS and Docs ones. This one will tell you if your tests are failing or not. If you want the status of the tests to be displayed in your readme, add the following snippet to it `![](../../workflows/test/badge.svg)`
