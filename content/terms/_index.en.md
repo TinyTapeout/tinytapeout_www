@@ -1,6 +1,7 @@
 ---
 title: "Terms"
 date: 2023-03-02T09:56:27+01:00
+weight: 150
 ---
 
 These are the provisional terms for Tiny Tapeout Customers. We are having them checked by a legal expert and they are likely to be revised.
