@@ -107,7 +107,7 @@ Now add 2 **metal1** contacts on top of the **metal1 via**. To simulate our des
 
 ![](../images/image9.png)
 
-Set the labels to be in and out. As soon as you’ve done that you should see the simulation plot update. You’ll need to switch from the cross section to the simulation tab.
+Set the labels to be **in** and **out**. As soon as you’ve done that you should see the simulation plot update. You’ll need to switch from the cross section to the simulation tab.
 
 ![](../images/image57.png)
 
