@@ -59,6 +59,7 @@ Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We 
 * select a component and press **delete** to remove it
 * select a component (or shift select to add more components), then **d** to duplicate it.
 * shift and drag to drag a box around multiple components
+* + and - to zoom in and out
 * [More here](https://docs.wokwi.com/guides/diagram-editor#keyboard-shortcuts).
 
 ## Can I copy and paste from one Wokwi design to another?
