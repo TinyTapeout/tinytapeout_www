@@ -21,12 +21,12 @@ gantt
         dateFormat  YYYY-MM-DD
         axisFormat %d-%b
         section You
-        Work on your design       :   active,2023-03-01,2023-04-01
-        Submit your design        :   active,2023-03-03,2023-04-01
+        Work on your design       :   active,2023-03-01,2023-04-23
+        Submit your design        :   active,2023-03-03,2023-04-23
         
         section Us
-        Join all designs          :   2023-04-01, 3d
-        Send to Efabless          :   2023-04-03, 1d
+        Join all designs          :   2023-04-24, 1d
+        Send to Efabless          :   2023-04-24, 1d
 {{</mermaid>}}
 
 > **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing!
