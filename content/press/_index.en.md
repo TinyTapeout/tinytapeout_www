@@ -14,9 +14,9 @@ date: 2023-03-08T09:56:27+01:00
 | TT02 | 2022-11-09 | 2022-12-02 | 2211Q   | 165     |
 | TT03 | 2023-03-01 | 2023-04-23 | 2304C   |         |
 
-# Press
+# Articles
 
-* [Hackaday](https://hackaday.com/2023/03/05/tiny-tapeout-3-get-your-own-chip-deign-to-a-fab/)
+* [Hackaday](https://hackaday.com/2023/03/05/tiny-tapeout-3-get-your-own-chip-deign-to-a-fab/) & [about TT02](https://hackaday.com/2022/10/23/design-your-own-chip-with-tinytapeout/)
 * [Hackster](https://www.hackster.io/news/matthew-venn-launches-tiny-tapeout-3-to-take-you-from-idea-to-chip-design-in-minutes-00e00946e10a)
 * [Adafruit](https://blog.adafruit.com/2022/08/31/tinytapeout-making-it-easier-to-get-a-chip-design-manufactured-tinytapeout-matthewvenn/)
 * [Hackernews](https://news.ycombinator.com/item?id=32617620)
@@ -101,3 +101,5 @@ Thank you for doing it - I always wanted to join these OpenMPW shuttles, but nev
 Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
 
 ---
+
+More on [Twitter](https://twitter.com/search?q=tinytapeout).
