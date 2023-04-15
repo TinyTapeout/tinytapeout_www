@@ -2,7 +2,7 @@
 title: "Generating Wokwi designs from truth tables"
 tags: [guide]
 description: "Learn how to use Wokwi-lookup-table-generator for design generation and verification from truth tables"
-weight: 130
+weight: 140
 ---
 
 In this guide you'll learn how to use a Python tool to convert a lookup table into a Wokwi design. This can help save time in implementing complex digital logic.
