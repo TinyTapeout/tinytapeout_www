@@ -53,7 +53,7 @@ date: 2023-03-08T09:56:27+01:00
 
 # TT03 statistics
 
-* [100 projects submitted, 149 included from TT02]((/runs/tt03)
+* [100 projects submitted, 149 included from TT02](/runs/tt03)
 * Each project is 150 x 170um
 * 94 used Wokwi, 135 Verilog, 1 myhdl, 7 Amaranth, spade 1, xls 2, migen 1, systemverilog 3, mixed radix circuit synthesis (mrcs) 1, chisel 1.
 * 80k standard cells used across all projects
