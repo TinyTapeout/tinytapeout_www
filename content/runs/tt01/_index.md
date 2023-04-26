@@ -1,7 +1,7 @@
 ---
 title: "Tiny Tapeout 01"
 weight: 10
-description: Our first trial run
+description: 152 designs, closed 1st September 2022
 ---
 
 {{% toc %}}
