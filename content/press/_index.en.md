@@ -12,7 +12,7 @@ date: 2023-03-08T09:56:27+01:00
 |------|-------------|------------|---------|---------|
 | [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | MPW7    | 152     |
 | [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | 2211Q   | 165     |
-| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | 2304C   |         |
+| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | 2304C   | 249 (includes 149 from TT02) |
 
 # Articles
 
@@ -50,6 +50,16 @@ date: 2023-03-08T09:56:27+01:00
 * Most cells used in a design was 1105, the least was 8
 * Total wire length 2024 mm
 * Max utilisation was 52%
+
+# TT03 statistics
+
+* [100 projects submitted, 149 included from TT02]((/runs/tt03)
+* Each project is 150 x 170um
+* 94 used Wokwi, 135 Verilog, 1 myhdl, 7 Amaranth, spade 1, xls 2, migen 1, systemverilog 3, mixed radix circuit synthesis (mrcs) 1, chisel 1.
+* 80k standard cells used across all projects
+* Most cells used 1287 for [project 072](./072)
+* Maximum utilisation 59.95% for [project 044](./044)
+* Total wire length 4079 mm
 
 # Project showcase
 
