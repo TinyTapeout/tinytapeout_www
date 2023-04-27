@@ -8,9 +8,10 @@ LastModifierDisplayName: deimos hall
 
 {{< youtube fblSVCPvCiY >}}
 
-TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Consulta lo que otras personas están creando al ver la [hoja de datos](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf) más reciente.
+TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real.
+Consulta lo que otras personas están creando al ver la [hoja de datos](/runs/tt03) más reciente.
 
-**¡Ya están cerradas las inscripciones para Tiny Tapeout 2!**
+**¡Ya están cerradas las inscripciones para Tiny Tapeout 3!**
 
 > **Testimonio** Gracias por hacerlo - Siempre quise unirme a estos shuttles de OPenMPW, pero nunca me sentí listo. TinyTapeout me dió un camino para introducirme mientras solo dedicaba una tarde de esfuerzo. ¡Es increíble!
 

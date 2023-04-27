@@ -8,7 +8,7 @@ LastModifierDisplayName: matt venn
 
 {{< youtube fblSVCPvCiY >}}
 
-TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt02).
+TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt03).
 
 **Submissions are now closed for Tiny Tapeout 3!**
 
