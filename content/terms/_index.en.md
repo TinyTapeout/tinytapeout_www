@@ -36,19 +36,19 @@ Tiny Tapeout is not responsible for and does not guarantee, warrant or make any 
 
 ## 2. Manufacture and Supply of Chips
 
-2.6. 
+2.1. 
 All Chips are manufactured and supplied by Tiny Tapeout’s authorized third-party manufacturers (“**Manufacturers**”). You hereby acknowledge and agree that inclusion of your Design on the Chip and the manufacture and supply thereof may be subject to additional terms and conditions of the applicable Manufacturer. 
 
 
-2.7. 
+2.2. 
 THE PROGRAM AND CHIPS ARE PROVIDED TO YOU “AS IS”, WITH ANY AND ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY OR NON-INFRINGEMENT. THE CHIP IS SOLELY A DEVELOPMENT BOARD AND IS NOT SUPPLIED WITH A CASE OR ANY CERTIFICATION OF ANY KIND. TINY TAPEOUT AND ITS MANUFACTURERS DO NOT PERFORM ANY TESTING OF ANY CHIPS OR MANUFACTURED DESIGNS. TINY TAPEOUT DOES NOT MAKE ANY REPRESENTATIONS, WARRANTIES OR GUARANTEES WITH RESPECT TO THE FUNCTIONALITY, QUALITY, YIELD OR PERFORMANCE OF THE CHIP OR YOUR MANUFACTURED DESIGN OR OTHERWISE. Notwithstanding the foregoing, in the event that your manufactured Design included on the Chip is not functional, provided that the applicable defect or nonconformity does not result from your error or other act or omission, or any other cause beyond Tiny Tapeout’s reasonable control, as your sole and exclusive remedy, Tiny Tapeout will provide you with a voucher for future Production Runs in the amount of the Fees (as defined below) you have paid hereunder in connection with the applicable Design. 
 
 
-2.8. 
+2.3. 
 If you have purchased a physical copy of a Chip hereunder, we will ship your Chip to the address you provide us, as detailed on the Website. Title and risk of loss to the Chip will pass to you upon delivery of the Chips to the applicable shipping carrier. You will be the importer of record for all shipments of Chips you have purchased hereunder. You are solely and exclusively liable for all import documents and reporting and payment of all customs, import duties and other duties, levies and taxes in connection with the purchase and importation of the Chip.   
 
 
-2.9. 
+2.4. 
 All schedules, production dates and delivery dates for the applicable Production Run are solely estimates and are subject to change at any time. You hereby expressly acknowledge and agree that Tiny Tapeout shall not be liable for any delay or disruption in the manufacture or supply of any applicable Chip or failure to comply with any schedules, production dates or delivery dates of the Production Run. Notwithstanding the foregoing, Tiny Tapeout will endeavor to notify you in writing of any such delay or failure. In the event that any Production Run is not completed or performed for any reason, as your sole and exclusive remedy, Tiny Tapeout will refund you the Fees you have paid hereunder in connection with the applicable Design. 
 
 
