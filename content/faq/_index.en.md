@@ -25,13 +25,27 @@ We are working on a much [faster mux based version here](https://github.com/Tiny
 
 8 ins and 8 outs.
 
+# Chip Specs for TT04
+
+## What is the top clock speed?
+
+We think it will be around 50MHz.
+
+## How many ins and outs do I get?
+
+* clock and **nreset** (low to reset)
+* 8 ins
+* 8 outs
+* 8 bidirectional ios
+
 ## What PDK is used for the manufacture?
 
 We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.com/terminology/pdk/)
 
 ## How big can my design be?
 
-We recently increased the size to 150 x 170 um for TT02. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04, the standard tile size is 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
 
@@ -46,7 +60,8 @@ You can see information about the shuttle service we are using on Efabless websi
 
 * TT01 - submitted to lottery shuttle MPW7 - wafers expected July 2023. Not expecting to ship this test.
 * TT02 - submitted to ChipIgnite 2211Q - wafers expected August 2023, delivery should be around a month after.
-* TT03 - will be submitted to ChipIgnite 2304C - wafers September 2023, deliver should be around a month after.
+* TT03 - will be submitted to ChipIgnite 2304C - wafers September 2023, delivery should be around a month after.
+* TT04 - will be submitted to ChipIgnite 2309C - wafers expected Febuary 2024, delivery should be around a month after.
 
 # Wokwi FAQs
 
@@ -103,11 +118,7 @@ Also, note that we haven't yet validated the clock frequency yet, so it maybe be
 
 ## Are there some examples of projects people have made?
 
-You can see all the [designs submitted to Tiny Tapeout 01 here](https://github.com/tinytapeout/tinytapeout-mpw7).
-
-And here is [Tiny Tapeout 02](https://github.com/tinytapeout/tinytapeout-02).
-
-For some inspiration, see [our top picks from TT01](/digital_design/#top-picks-from-tinytapeout-1runstt01)
+Check the [runs](/runs) page.
 
 ## Do I need to delete unused digital gates?
 
@@ -129,7 +140,8 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 
 ## How many spaces are there?
 
-For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
+* For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
+* TT04, the maximum is around 300, but as different sizes are allowed, there may be less slots.
 
 ## Which of my builds will be submitted for fabrication?
 
@@ -208,6 +220,7 @@ There are lots!
 
 * [TT01 page](/runs/tt01/)
 * [TT02 page](/runs/tt02/)
+* [TT03 page](/runs/tt03/)
 
 ## Why do I have fewer / more standard cells than I expected?
 
