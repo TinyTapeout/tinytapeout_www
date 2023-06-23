@@ -5,7 +5,10 @@ weight: 60
 
 {{< children description="true" >}}
 
-If you need help, [join the chat](https://discord.gg/qZHPrPsmt6) and ask in the digital design-tt01 channel.
+If you need help [join the chat](https://discord.gg/qZHPrPsmt6) and ask in the:
+
+* [digital design channel](https://discord.com/channels/1009193568256135208/1016726411400200292)
+* [Wokwi channel](https://discord.com/channels/1009193568256135208/1009193692084580472)
 
 # Top picks from [TinyTapeout 1](/runs/tt01)
 
