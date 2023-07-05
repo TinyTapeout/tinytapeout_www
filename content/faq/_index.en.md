@@ -179,7 +179,7 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ## I got an error on my GitHub GDS action.
 
-The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt03-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
+The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt04-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
 
 ## I got an error on my GitHub Documentation action.
 
@@ -235,7 +235,7 @@ However, if you have only 8 cells, your design is probably completely optimised 
 Start by creating a new empty GitHub repository. 
 
 * Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
-* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT03 repository url: https://github.com/TinyTapeout/tt03-submission-template 
+* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT04 repository url: https://github.com/TinyTapeout/tt04-submission-template 
 
 In either case, you may need to enable the Github actions.
 
