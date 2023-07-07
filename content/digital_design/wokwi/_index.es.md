@@ -7,7 +7,7 @@ weight: 1
 
 {{< youtube ZD9jvSm50zM >}}
 
-Aquí esta [la plantilla de Wokwi](https://wokwi.com/projects/357178660283991041).
+Aquí esta [la plantilla de Wokwi](https://wokwi.com/projects/354858054593504257).
 
 También tenemos algunas [preguntas frecuentes de Wokwi aquí](/es/faq/#wokwi-faqs).
 
