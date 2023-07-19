@@ -11,4 +11,4 @@ To make things easier, we install the tools and run them on GitHub's servers. As
 
 In this video I explain how it works and take a look at OpenLane and the logs produced.
 
-{{< youtube FdPYIjj2ryI >}}
+{{< youtube dckPKyO2nSo >}}

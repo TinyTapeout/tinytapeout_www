@@ -28,6 +28,26 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 
 ---
 
+# Get your submission ready
+
+{{< youtube bm9xOJzWh10 >}}
+
+* [GitHub submission template](https://github.com/TinyTapeout/tt04-submission-template).
+* If you want to use an HDL like Verilog, please take a look [here](/hdl).
+
+---
+
+# Submit your design
+
+* Design (single tile) + Physical PCB + ASIC = $100 + shipping
+* Design only (single tile): $50
+* Extra tiles = $50 each
+* By making an order, you agree to our [terms of service](terms).
+
+{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
+
+---
+
 # Sign up
 
 Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 4.

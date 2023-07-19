@@ -29,3 +29,5 @@ theme = "learn"
     title = "Documentation en Español"
     weight = 2
     languageName = "Español"
+
+#disableLanguages = ['es']
