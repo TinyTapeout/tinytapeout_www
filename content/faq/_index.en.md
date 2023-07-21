@@ -59,9 +59,9 @@ The chips are taking between 6 and 9 months to manufacture. Then we need to do P
 You can see information about the shuttle service we are using on Efabless website: https://efabless.com/shuttle-status
 
 * TT01 - submitted to lottery shuttle MPW7 - wafers expected July 2023. Not expecting to ship this test.
-* TT02 - submitted to ChipIgnite 2211Q - wafers expected August 2023, delivery should be around a month after.
-* TT03 - will be submitted to ChipIgnite 2304C - wafers September 2023, delivery should be around a month after.
-* TT04 - will be submitted to ChipIgnite 2309C - wafers expected Febuary 2024, delivery should be around a month after.
+* TT02 - submitted to chipIgnite 2211Q - wafers expected August 2023, delivery should be around a month after.
+* TT03 - submitted chipIgnite 2304C - wafers October 2023, delivery should be around a month after.
+* TT04 - will be submitted to chipIgnite 2309 - wafers expected February 2024, delivery should be around a month after.
 
 # Wokwi FAQs
 
