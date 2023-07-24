@@ -108,11 +108,9 @@ Select all the ones you want to move (using shift and click the parts or shift a
 
 ## How do I use the clock block?
 
-You can use the first input as the clock. If you need to change the clock frequency you have to do it by editing the json diagram file. It’s a hack for the demo.
+You can use the first input as the clock. If you need to change the clock frequency you have to do it by editing the json diagram file. Set the "frequency" attribute to the frequency you want in Hz (e.g. "10000" or "10k" for 10 KHz).
 
-Note that we expect the update frequency to be 12.5KHz, so your maximum clock frequency will be half of that. We have clock divider that can divide down from 2 to 255 times slower.
-
-Also, note that we haven't yet validated the clock frequency yet, so it maybe be lower or higher.
+Tiny Tapeout will support a wide range of clock frequencies (we anticipate up to 50 MHz). However, to make sure Wokwi simulates your design fast enough, you should not use a clock frequency higher than 100 KHz while simulating your design.
 
 ![clock](/images/faq/clock_freq.png)
 
