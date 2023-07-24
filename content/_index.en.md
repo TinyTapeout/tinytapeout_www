@@ -10,15 +10,6 @@ LastModifierDisplayName: matt venn
 
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt03).
 
-# Submissions will open soon for Tiny Tapeout 4!
-
-You can already get started with the new [submission template](https://github.com/TinyTapeout/tt04-submission-template)
-
-> **Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing!
-
-See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
-
----
 
 # Get started
 
@@ -26,7 +17,6 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 * Then create your own design with the [Wokwi template](https://wokwi.com/projects/354858054593504257) or for advanced users, [an HDL](/hdl).
 * For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
----
 
 # Get your submission ready
 
@@ -35,7 +25,6 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 * [GitHub submission template](https://github.com/TinyTapeout/tt04-submission-template).
 * If you want to use an HDL like Verilog, please take a look [here](/hdl).
 
----
 
 # Submit your design
 
@@ -43,10 +32,10 @@ See what [people are saying about TinyTapeout](https://twitter.com/search?q=tiny
 * Design only (single tile): $50
 * Extra tiles = $50 each
 * By making an order, you agree to our [terms of service](terms).
+* Closing date is 8th of September
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
----
 
 # Sign up
 
@@ -54,6 +43,11 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 
 {{< mailchimp >}}
 
----
 
-> **Testimonial** Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
+# Testimonials
+
+> Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
+
+> Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 2 evening of effort on my end. That's amazing!
+
+See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
