@@ -47,11 +47,11 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 For TT04, the standard tile size is 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
-Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://wokwi.com/projects/340805072482992722), a small design that increments a counter every second and shows the result on the 7 segment display.
+Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.
 
 Click the picture to open an interactive viewer.
 
-[![7 seg](/images/faq/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
+[![7 seg](/images/faq/7segtt04.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt04-verilog-demo/tinytapeout.gds.gltf)
 
 ## When will the chips get manufactured?
 
