@@ -6,7 +6,7 @@ weight: 1
 
 # Make sure your top module is named uniquely.
 
-I recommend prepending your github username:
+I recommend including your github username:
 
     # bad
     module top ( )
