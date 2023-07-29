@@ -55,13 +55,15 @@ Click the picture to open an interactive viewer.
 
 ## When will the chips get manufactured?
 
-The chips are taking between 6 and 9 months to manufacture. Then we need to do PCBA, test and order fulfillment. So expect around 1 year's wait time!
+The chips are taking between 6 and 9 months to manufacture. Then we need to do PCBA, test and order fulfillment. So expect up to 1 year's wait time!
 You can see information about the shuttle service we are using on Efabless website: https://efabless.com/shuttle-status
 
-* TT01 - submitted to lottery shuttle MPW7 - wafers expected July 2023. Not expecting to ship this test.
-* TT02 - submitted to chipIgnite 2211Q - wafers expected August 2023, delivery should be around a month after.
-* TT03 - submitted chipIgnite 2304C - wafers October 2023, delivery should be around a month after.
-* TT04 - will be submitted to chipIgnite 2309 - wafers expected February 2024, delivery should be around a month after.
+| Shuttle | Submitted to          | Chips expected | Delivery                        |
+| ------- | --------------------- | -------------- | ------------------------------- |
+| TT01    | Lottery Shuttle MPW 7 | November 2023  | Not expecting to ship this test |
+| TT02    | chipIgnite 2211Q      | August 2023    | October 2023                    |
+| TT03    | chipIgnite 2304C      | October 2023   | December 2023                   |
+| TT04    | chipIgnite 2309       | February 2024  | April 2024                      |
 
 # Wokwi FAQs
 
