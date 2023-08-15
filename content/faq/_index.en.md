@@ -148,12 +148,7 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 
 ## Which of my builds will be submitted for fabrication?
 
-Your last submission that:
-
-1. successfully passed the GitHub actions, and
-2. was submitted before the deadline
-
-will be submitted for fabrication.
+If you update your project and want us to use your latest version, you have to [go to your submission](https://app.tinytapeout.com/) and create a new submission.
 
 You can keep updating your design up to the tapeout deadline.
 
@@ -225,14 +220,6 @@ There are lots!
 * [TT02 page](/runs/tt02/)
 * [TT03 page](/runs/tt03/)
 
-## Why do I have fewer / more standard cells than I expected?
-
-Logic synthesis has to convert Verilog to a data structure which has specific properties so that a technology library (like Sky130) can be mapped to it, so that it can actually be fabricated.
-
-If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise them both out, so you end up with less cells than expected.
-
-However, if you have only 8 cells, your design is probably completely optimised out. Maybe you didn't connect the inputs or outputs?
-
 ## I can't make a new fork of the submission repository. How do I start a new project?
 
 Start by creating a new empty GitHub repository. 
@@ -248,6 +235,23 @@ In either case, you may need to enable the Github actions.
 ## What do all these acronyms you keep using mean?
 
 Sorry! I’m trying to keep it accessible but I’ll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
+
+## Why do I have fewer / more standard cells than I expected?
+
+Logic synthesis has to convert Verilog to a data structure which has specific properties so that a technology library (like Sky130) can be mapped to it, so that it can actually be fabricated.
+
+If you have 2 inverters in series, Yosys (the synthesis tool) may well optimise them both out, so you end up with less cells than expected.
+
+However, if you have only 8 cells, your design is probably completely optimised out. Maybe you didn't connect the inputs or outputs?
+
+## Why is target density set to 60%? Should I change it to 100% or should I add another tile?
+
+Routing tends to take up more space than the logic. Also, there needs to be space for OpenLane to add extra cells:
+
+* tap cells - make sure the substrate is correctly biased for the transistors.
+* [antenna diodes](https://www.zerotoasiccourse.com/terminology/antenna-report/) - protect transitor gates during manufacture.
+
+Some people have successfully increased the target density to around 62%. Alternatively you can buy an additional tile.
 
 ## How can I learn more about ASICs and how to design them?
 
