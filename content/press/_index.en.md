@@ -24,10 +24,10 @@ date: 2023-03-08T09:56:27+01:00
 
 # Community
 
-* 570 Discord community members
-* 1200 Mailing list members
-* 15k Video views
-* 80k Website visits
+* 800 Discord community members
+* 1400 Mailing list members
+* 20k Video views
+* 180k Website visits
 * [TinyTapeout hashtag on Twitter](https://twitter.com/search?q=tinytapeout).
 * [SiliWiz hashtag on Twitter](https://twitter.com/search?q=siliwiz).
 
