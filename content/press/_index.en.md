@@ -13,6 +13,7 @@ date: 2023-03-08T09:56:27+01:00
 | [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | MPW7    | 152     |
 | [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | 2211Q   | 165     |
 | [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | 2304C   | 249 (includes 149 from TT02) |
+| [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | 2309C   | 143     |
 
 # Articles
 
@@ -57,26 +58,42 @@ date: 2023-03-08T09:56:27+01:00
 * Each project is 150 x 170um
 * 94 used Wokwi, 135 Verilog, 1 myhdl, 7 Amaranth, spade 1, xls 2, migen 1, systemverilog 3, mixed radix circuit synthesis (mrcs) 1, chisel 1.
 * 80k standard cells used across all projects
-* Most cells used 1287 for [project 072](./072)
-* Maximum utilisation 59.95% for [project 044](./044)
+* Most cells used 1287 for [project 072](/runs/tt03/072)
+* Maximum utilisation 59.95% for [project 044](/runs/tt03/044)
 * Total wire length 4079 mm
+
+# TT04 statistics
+
+* [143 projects submitted](/runs/tt04)
+* Project tile size is 160 x 100um, largest project was 8 tiles
+* 92 used Verilog, 46 Wokwi, 1 SystemVerilog, 1 SpinalHDL, 1 mrcs, 1 spade, 1 RustHDL
+* 82k standard cells used across all projects
+* Most cells was 6813 for [project 033](/runs/tt04/033)
+* Maximum utilisation 87.18% for [project 016](/runs/tt04/016)
+* Total wire length 2607 mm                                                                                                                                                                                                                        
 
 # Project showcase
 
 ## Wokwi projects
 
-* [UART-CC](https://tinytapeout.com/runs/tt02/057)
-* [Nano-neuron](https://tinytapeout.com/runs/tt02/066)
-* [Worm in a Maze](https://tinytapeout.com/runs/tt02/084)
-* [Wolf sheep cabbage river crossing puzzle ASIC design](https://tinytapeout.com/runs/tt02/111)
+* [UART-CC](/runs/tt02/057)
+* [Nano-neuron](/runs/tt02/066)
+* [Worm in a Maze](/runs/tt02/084)
+* [Wolf sheep cabbage river crossing puzzle ASIC design](/runs/tt02/111)
+* [Randomiser and status checker](/runs/tt04/288)
 
 ## HDL projects 
 
-* [Avalon Semiconductors 'TBB1143' Programmable Sound Generator](https://tinytapeout.com/runs/tt02/024/)
-* [Pi (π) to 1000+ decimal places](https://tinytapeout.com/runs/tt02/036)
-* [FPGA](https://tinytapeout.com/runs/tt02/090)
-* [RV8U - 8-bit RISC-V Microcore Processor](https://tinytapeout.com/runs/tt02/107)
-* [8-bit CPU](https://tinytapeout.com/runs/tt02/085/)
+* [Avalon Semiconductors 'TBB1143' Programmable Sound Generator](/runs/tt02/024/)
+* [Pi (π) to 1000+ decimal places](/runs/tt02/036)
+* [FPGA](/runs/tt02/090)
+* [RV8U - 8-bit RISC-V Microcore Processor](/runs/tt02/107)
+* [8-bit CPU](/runs/tt02/085/)
+* [12 bit PDP8](/runs/tt03/019)
+* [Synthesizable Digital Temperature Sensor](/runs/tt03/047/)
+* [Raycaster game](/runs/tt04/033)
+* [ROT FPGA](/runs/tt04/197)
+* [String synthesiser with I2S out](/runs/tt04/052)
 
 # Testimonials
 
