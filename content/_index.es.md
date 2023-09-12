@@ -9,7 +9,7 @@ LastModifierDisplayName: deimos hall
 {{< youtube fblSVCPvCiY >}}
 
 TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real.
-Consulta lo que otras personas están creando al ver la [hoja de datos](/runs/tt03) más reciente.
+Consulta lo que otras personas están creando al ver la [hoja de datos](/runs/tt04) más reciente.
 
 **¡Ya están cerradas las inscripciones para Tiny Tapeout 3!**
 
