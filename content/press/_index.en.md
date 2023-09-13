@@ -6,14 +6,14 @@ date: 2023-03-08T09:56:27+01:00
 
 > Hi, I'm a professor for an Introduction to Digital Systems course and just found this and let's just say this has **fundamentally just changed our entire Computer Engineering curriculum**. It looks like we can actually have first-year students designing ASICs, then be able later to analyze performance while taking their electronics course and learning about MOSFETs as well as their embedded systems and computer architecture. Russell Trafford, Rowan University
 
-# Overview
+# Submissions
 
-| Run  | Launched    | Closed     | Shuttle | Designs | 
-|------|-------------|------------|---------|---------|
-| [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | MPW7    | 152     |
-| [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | 2211Q   | 165     |
-| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | 2304C   | 249 (includes 149 from TT02) |
-| [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | 2309C   | 143     |
+| Run  | Launched    | Closed     | Shuttle | Designs | Chips Expected | PCBs Expected |
+|------|-------------|------------|---------|---------|-------|------|
+| [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Nov 2023 | Jan 2024 |
+| [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Sept 2023 | Nov 2023 |
+| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (includes 149 from TT02) | Oct 2023 | Dec 2023 |
+| [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Mar 2024 | May 2024 |
 
 # Articles
 
@@ -65,6 +65,7 @@ date: 2023-03-08T09:56:27+01:00
 # TT04 statistics
 
 * [143 projects submitted](/runs/tt04)
+* Submissions from over 30 countries
 * Project tile size is 160 x 100um, largest project was 8 tiles
 * 92 used Verilog, 46 Wokwi, 1 SystemVerilog, 1 SpinalHDL, 1 mrcs, 1 spade, 1 RustHDL
 * 82k standard cells used across all projects
@@ -96,6 +97,18 @@ date: 2023-03-08T09:56:27+01:00
 * [String synthesiser with I2S out](/runs/tt04/052)
 
 # Testimonials
+
+Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exist. Thanks to you all!! Looking forward to TT05!
+
+----
+
+Bloop. Just submitted my first chip design to #TinyTapeout  using #Rust  HDL! Amazing how accessible this stuff is thanks to the TT crew's fantastic design tools and documentation.
+
+----
+
+GCC and Python opened up computing to students and enthusiasts; Tiny Tapeout blew the gates open on the semiconductor digital design process! I’m immensely thankful for the TT team’s efforts towards infrastructure and accessibility; without the tooling's short iteration time & pointed feedback, I couldn’t have imagined a project and figured out how to make it work in the same weekend.
+
+----
 
 An educational chip development workflow entirely in-browser, 
 from graphic entry to GDSII output for #sky130! Stunning work by 

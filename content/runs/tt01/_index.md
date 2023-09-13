@@ -18,20 +18,8 @@ description: 152 designs, closed 1st September 2022
 
 * Launched: 2022-08-17
 * Submission closed: 2022-09-01
-* Submitted to Efabless 2022-09-05 for the MPW7 shuttle using Skywater 130nm open source PDK
-
-# Community stats (as of 2022-09-05)
-
-* Discord: 206 members
-* Website 17k visits, 430 link clicks
-* Mailing list: 380 subscriptions
-* Twitter: 300k impressions
-
-# Press
-
-* [Adafruit](https://blog.adafruit.com/2022/08/31/tinytapeout-making-it-easier-to-get-a-chip-design-manufactured-tinytapeout-matthewvenn/)
-* [Hackernews](https://news.ycombinator.com/item?id=32617620)
-* [eenews](https://www.eenewseurope.com/en/tinytapeout-boost-for-open-source-silicon-chip-design/)
+* Submitted to Efabless 2022-09-05 for the [MPW7 shuttle](https://efabless.com/shuttle-status) using Skywater 130nm open source PDK
+* Chips expected November 2023. As this was a trial run, we are not expecting to manufacture or deliver PCBs
 
 # Project statistics
 
