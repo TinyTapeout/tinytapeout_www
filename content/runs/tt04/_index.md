@@ -47,6 +47,10 @@ description: 143 designs, closed 8th September 2023
 
 # Testimonials
 
+Participating in Tiny Tapeout has been a wonderful learning experience and has represented the fulfillment of a dream which I’ve held since I was in high school. The existence of a cheap effective way to get interesting and experimental chips manufactured outside of the university framework represents in my opinion the biggest boon the VLSI industry since its inception. I read a VLSI paper from 1991 “Magic as a PC Layout Tool for Small Budget VLSI Circuit Design,” by O.G. Berkes and R. W. Williams where they dreamed of chip design being in reach of high school students. Finally with the advent of Tiny Tapeout this dream may end up moving closer to reality.
+
+----
+
 Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exist. Thanks to you all!! Looking forward to TT05!
 
 ----
