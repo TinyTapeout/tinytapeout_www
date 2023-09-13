@@ -32,14 +32,14 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 * Design only (single tile): $50
 * Extra tiles = $50 each
 * By making an order, you agree to our [terms of service](terms).
-* Closing date is 8th of September
+* Closing date is 4th of November
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 4.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 05.
 
 {{< mailchimp >}}
 
