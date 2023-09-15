@@ -25,7 +25,7 @@ We are working on a much [faster mux based version here](https://github.com/Tiny
 
 8 ins and 8 outs.
 
-# Chip Specs for TT04
+# Chip Specs for TT04 and TT05
 
 ## What is the top clock speed?
 
@@ -44,7 +44,7 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 
 ## How big can my design be?
 
-For TT04, the standard tile size is 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04 and TT05, the standard tile size is 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.
@@ -145,7 +145,7 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 ## How many spaces are there?
 
 * For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
-* TT04, the maximum is around 300, but as different sizes are allowed, there may be less slots.
+* TT04 & TT05, the maximum is around 300, but as different sizes are allowed, there may be less slots.
 
 ## Which of my builds will be submitted for fabrication?
 
@@ -178,7 +178,7 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ## I got an error on my GitHub GDS action.
 
-The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt04-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
+The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt05-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
 
 ## I got an error on my GitHub Documentation action.
 
@@ -220,13 +220,14 @@ There are lots!
 * [TT01 page](/runs/tt01/)
 * [TT02 page](/runs/tt02/)
 * [TT03 page](/runs/tt03/)
+* [TT04 page](/runs/tt04/)
 
 ## I can't make a new fork of the submission repository. How do I start a new project?
 
 Start by creating a new empty GitHub repository. 
 
 * Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
-* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT04 repository url: https://github.com/TinyTapeout/tt04-submission-template 
+* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT05 repository url: https://github.com/TinyTapeout/tt05-submission-template 
 
 In either case, you may need to enable the Github actions.
 

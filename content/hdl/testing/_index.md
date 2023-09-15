@@ -25,7 +25,7 @@ You should install pytest even if using the full CAD Suite, as it enables cocotb
 ## Testbench module
 
 To enable running tests on your Verilog, you will need to instantiate your top level module inside a testbench module. You can start out by copying this code into a new file called `tb.v`. You can also 
-adapt the testbench in the [Verilog demo](https://github.com/TinyTapeout/tt04-verilog-demo/blob/main/src/tb.v).
+adapt the testbench in the [Verilog demo](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/tb.v).
 
 ```verilog
 `default_nettype none
@@ -66,7 +66,7 @@ module tb (
 endmodule
 ```
 
-Replace both instances of `toplevel_module` with the actual name of your top level module. In the [case of the demo](https://github.com/TinyTapeout/tt04-verilog-demo/blob/main/src/tt_um_seven_segment_seconds.v), it's `tt_um_seven_segment_seconds`.
+Replace both instances of `toplevel_module` with the actual name of your top level module. In the [case of the demo](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/tt_um_seven_segment_seconds.v), it's `tt_um_seven_segment_seconds`.
 
 It can help make things clearer if you have 'convenience wires' that basically rename the important inputs and outputs of your design. In the demo, we want to reference the
 seven segment display output pins, which are output on `ui_out[6:0]`. So we make a new wire and connect it to those outputs:
@@ -96,7 +96,7 @@ include $(shell cocotb-config --makefiles)/Makefile.sim
 
 You will not need to modify this much. The only thing to do is to give it a list of all your verilog source files. To do that, go to the line starting with `VERILOG_SOURCES`, and expand it to list all your files. Separate entries by spaces. Paths are relative to the directory the makefile is in (which sould be 'src'). If you only have a single verilog file, you only need one additional entry: `$(PWD)/my_custom_verilog.v`
 
-You can also use the [demo Makefile](https://github.com/TinyTapeout/tt04-verilog-demo/blob/main/src/Makefile), which is a bit more complex because it handles [Gate Level](#gate-level-testing) testing. 
+You can also use the [demo Makefile](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/Makefile), which is a bit more complex because it handles [Gate Level](#gate-level-testing) testing. 
 
 ## Writing your first test
 
@@ -141,7 +141,7 @@ await ClockCycles(dut.clk, 1000)
 assert int(dut.segments.value) == segments[i]
 ```
 
-Check the [demo's test bench here](https://github.com/TinyTapeout/tt04-verilog-demo/blob/main/src/test.py).
+Check the [demo's test bench here](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/test.py).
 
 {{% notice tip %}}
 Print debug messages using `dut._log.info("test")`
@@ -161,7 +161,7 @@ If you get stuck, let us know in the #verification channel of the [discord chat]
 
 ## Auto-running tests in GitHub actions
 
-If you’re like me, and often forget to run your tests after a change, you may want to set up a GitHub actions pipeline to do it for you on every push. Luckily, a solution for this already exists! You can download a pre-made actions pipeline [right here!](https://github.com/tinytapeout/tt04-verilog-demo/blob/main/.github/workflows/test.yaml)
+If you’re like me, and often forget to run your tests after a change, you may want to set up a GitHub actions pipeline to do it for you on every push. Luckily, a solution for this already exists! You can download a pre-made actions pipeline [right here!](https://github.com/tinytapeout/tt05-verilog-demo/blob/main/.github/workflows/test.yaml)
 
 Drop this into the `.github/workflows` directory of your repository to enable it. Add the file to git and push, and you should see a new pipeline pop up along the usual GDS and Docs ones. This one will tell you if your tests are failing or not. If you want the status of the tests to be displayed in your readme, add the following snippet to it `![](../../workflows/test/badge.svg)`
 
@@ -175,7 +175,7 @@ It's well worth running the same test on the **post synthesis** netlist.
 This post synthesis netlist is called a Gate Level netlist, because it includes all the actual standard cells (gates) used by your design. 
 Gate Level testing can expose some bugs or issues that weren't by exposed by HDL simulation.
 
-This Gate Level netlist snippet just shows 2 of the ~240 standard cells used to create the [tt04-verilog-demo](https://github.com/TinyTapeout/tt04-verilog-demo). You can have a look at
+This Gate Level netlist snippet just shows 2 of the ~240 standard cells used to create the [tt05-verilog-demo](https://github.com/TinyTapeout/tt05-verilog-demo). You can have a look at
 yours by downloading the GDS.zip from the actions page of your design and then looking at the file: `runs/wokwi/results/final/verilog/gl/<your design name>.v`
 
 ```verilog
@@ -217,7 +217,7 @@ You can see the standard cells also have power ports, so one thing we have to do
     );
 ```
 
-If you're not already using the [demo project's Makefile](https://github.com/TinyTapeout/tt04-verilog-demo/blob/main/src/Makefile), update it.
+If you're not already using the [demo project's Makefile](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/Makefile), update it.
 The crucial extra lines are these:
 
 ```bash
@@ -239,7 +239,7 @@ These options only get included when you run `GATES=yes make`.
 They setup some extra options for the GL simulation, and also we replace all your source files with just one `gate_level_netlist.v`.
 We have a GitHub action you can use that automatically fetches the `gate_level_netlist.v` file, copies it to the right place and then run the test.
 
-Copy these lines into your `.github/workflow/gds.yaml` action file in your repository after the GDS job. Here's the [verilog demo project's as an example](https://github.com/TinyTapeout/tt04-verilog-demo/blob/663055456e875934666ab6e2eb1e40cc0ca3cc37/.github/workflows/gds.yaml#L19).
+Copy these lines into your `.github/workflow/gds.yaml` action file in your repository after the GDS job. Here's the [verilog demo project's as an example](https://github.com/TinyTapeout/tt05-verilog-demo/blob/eab5e0c48c3ebc198e1d1ba3328b196a710de6b4/.github/workflows/gds.yaml#L19).
 
 ```yaml
   gl_test:
@@ -252,7 +252,7 @@ Copy these lines into your `.github/workflow/gds.yaml` action file in your repos
           submodules: recursive
 
       - name: GL test
-        uses: TinyTapeout/tt-gds-action/gl_test@tt04
+        uses: TinyTapeout/tt-gds-action/gl_test@tt05
 ```
 
 Now when you make an update, your test and Gate Level test should both be run automatically!
