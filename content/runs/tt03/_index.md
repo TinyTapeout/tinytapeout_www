@@ -1,8 +1,7 @@
 ---
 title: "Tiny Tapeout 03"
-weight: 20
+weight: 30
 description: 249 designs, closed 24th April 2023
-
 ---
 
 {{% toc %}}
