@@ -48,6 +48,8 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 
 > Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
 
-> Testimonial** Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 2 evening of effort on my end. That's amazing!
+> Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 2 evening of effort on my end. That's amazing!
+
+> Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exist. Thanks to you all!! Looking forward to TT05!
 
 See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
