@@ -20,7 +20,7 @@ To receive more information especially for people using Tiny Tapeout for teachin
 
 ## Preparation
 
-* Watch the [introduction video](https://youtu.be/fblSVCPvCiY)
+* Watch the [introduction video](https://youtu.be/f4w1QOpHzOo)
 * Complete some of the [digital design classes](/digital_design/)
 * Create a new design or use one of our [customisable projects](/tags/customisable/)
 * Create the [GDS files needed for manufacture](https://tinytapeout.com/#get-your-submission-ready)
@@ -44,7 +44,7 @@ To receive more information especially for people using Tiny Tapeout for teachin
 
 ## Preparation
 
-* Watch the [introduction video](https://youtu.be/fblSVCPvCiY)
+* Watch the [introduction video](https://youtu.be/f4w1QOpHzOo)
 * Check the [HDL notes](/hdl/)
 * Try the flow with a simple FPGA project
 * Create the [GDS files needed for manufacture](https://tinytapeout.com/#get-your-submission-ready)
