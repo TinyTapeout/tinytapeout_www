@@ -1,6 +1,6 @@
 ---
 title: "Tiny Tapeout 04"
-weight: 40
+weight: 20
 description: 143 designs, closed 8th September 2023
 ---
 
@@ -46,6 +46,18 @@ description: 143 designs, closed 8th September 2023
 ![whole die](images/tinytapeout-tt04.png)
 
 # Testimonials
+
+Thanks to the hard work of the Tiny Tapeout team, making your own ASIC has gone from an impossible dream to a weekend project!
+
+----
+
+Tiny Tapeout is an amazing project where engineers can get hands on experience designing a digital chip. I have often dreamed about creating a chip design, but thought it as infeasible to do as a hobby project. When I came across Tiny Tapeout on Youtube I was hooked. I immediately created a design and submitted it. The process was relatively simple, but when I did have some questions the community was willing to help!
+
+----
+
+TinyTapeout is a fantastic way to take your digital design skills to the next level. With great tools and a friendly community, every day working on it was interesting and fun. I'm looking forward to the next TinyTapeout!
+
+----
 
 Participating in Tiny Tapeout has been a wonderful learning experience and has represented the fulfillment of a dream which I’ve held since I was in high school. The existence of a cheap effective way to get interesting and experimental chips manufactured outside of the university framework represents in my opinion the biggest boon the VLSI industry since its inception. I read a VLSI paper from 1991 “Magic as a PC Layout Tool for Small Budget VLSI Circuit Design,” by O.G. Berkes and R. W. Williams where they dreamed of chip design being in reach of high school students. Finally with the advent of Tiny Tapeout this dream may end up moving closer to reality.
 
