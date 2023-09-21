@@ -61,7 +61,7 @@ You can see information about the shuttle service we are using on Efabless websi
 | Shuttle | Submitted to          | Chips expected | Delivery                        |
 | ------- | --------------------- | -------------- | ------------------------------- |
 | TT01    | Lottery Shuttle MPW 7 | November 2023  | Not expecting to ship this test |
-| TT02    | chipIgnite 2211Q      | September 2023 | November 2023                   |
+| TT02    | chipIgnite 2211Q      | October 2023   | December 2023                   |
 | TT03    | chipIgnite 2304C      | October 2023   | December 2023                   |
 | TT04    | chipIgnite 2309       | February 2024  | April 2024                      |
 | TT05    | chipIgnite 2311       | March 2024     | June 2024                       |
