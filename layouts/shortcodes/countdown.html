@@ -60,7 +60,7 @@
 
   .shuttle-stats .item .title {
     line-height: 20px;
-    min-width: 48px;
+    min-width: 64px;
   }
 
   .shuttle-stats .item .title-text {
@@ -76,6 +76,12 @@
     width: 100px;
     background-color: rgb(190.01999999999998, 187.74, 223.84);
     height: 20px;
+  }
+
+  .shuttle-stats .progress-bar-inner {
+    width: 0;
+    transition: width 0.5s;
+    background-color: #d0d;
   }
 </style>
 
@@ -100,22 +106,22 @@
     </div>
   </div>
   <div class="shuttle-stats">
-    <div class="item">
+    <div class="item tile-stats">
       <span class="title">
         <span class="title-text">Tiles</span>
-        <div>12/380</div>
+        <div class="counter">&nbsp;</div>
       </span>
       <div class="progress-bar">
-        <div style="width: 3.2px; background-color: #d0d"></div>
+        <div class="progress-bar-inner"></div>
       </div>
     </div>
-    <div class="item">
+    <div class="item pcb-stats">
       <span class="title">
         <span class="title-text">PCBs</span>
-        <div>2/190</div>
+        <div class="counter">&nbsp;</div>
       </span>
       <div class="progress-bar">
-        <div style="width: 1.1px; background-color: #d0d"></div>
+        <div class="progress-bar-inner"></div>
       </div>
     </div>
   </div>
