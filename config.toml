@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Tiny Tapeout'
 theme = "learn"
 
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^CF_']
+
 [markup.goldmark.renderer]
   unsafe= true
 

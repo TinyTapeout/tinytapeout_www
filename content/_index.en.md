@@ -53,3 +53,5 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 > Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exist. Thanks to you all!! Looking forward to TT05!
 
 See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
+
+{{< git-info >}}
