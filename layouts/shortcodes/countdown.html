@@ -1,0 +1,184 @@
+<style>
+  .countdown-wrapper {
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .countdown-wrapper > * {
+    margin-bottom: 16px;
+  }
+
+  .countdown-timer {
+    background-color: #0288d1;
+    max-width: 100vw;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  .countdown-timer-tiles {
+    display: flex;
+  }
+
+  .countdown-timer .heading {
+    font-size: 2em;
+  }
+
+  .countdown-timer .heading-mobile {
+    display: none;
+  }
+
+  .countdown-timer .tile {
+    display: flex;
+    flex-direction: column;
+    background-color: #0277bd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 16px;
+    align-items: center;
+  }
+
+  .countdown-timer .tile .value {
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .countdown-timer .tile .unit-name {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .countdown-timer .tile {
+      margin-left: 0;
+    }
+
+    .countdown-timer .tile:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    .countdown-timer .tile .value {
+      font-size: 2em;
+    }
+
+    .countdown-timer .heading {
+      display: none;
+    }
+
+    .countdown-timer .heading-mobile {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .shuttle-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0288d1;
+    padding: 2px;
+    display: flex;
+    color: white;
+    margin-left: 16px;
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  .shuttle-stats .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .shuttle-stats .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .shuttle-stats .item .title {
+    line-height: 20px;
+    min-width: 64px;
+  }
+
+  .shuttle-stats .item .title-text {
+    font-size: 20px;
+  }
+
+  .shuttle-stats .item > *:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .shuttle-stats .progress-bar {
+    display: flex;
+    width: 100px;
+    background-color: rgb(190.01999999999998, 187.74, 223.84);
+    height: 20px;
+  }
+
+  .shuttle-stats .progress-bar-inner {
+    width: 0;
+    transition: width 0.5s;
+    background-color: #d0d;
+  }
+</style>
+
+<div class="countdown-wrapper">
+  <div class="countdown-timer">
+    <div class="heading">TT05<br />Closes in</div>
+    <div class="heading-mobile">TT05 Closes in</div>
+    <div class="countdown-timer-tiles">
+      <div class="tile">
+        <p class="value cd-days">44</p>
+        <p class="unit-name">DAYS</p>
+      </div>
+      <div class="tile">
+        <p class="value cd-hours">44</p>
+        <p class="unit-name">HOURS</p>
+      </div>
+      <div class="tile">
+        <p class="value cd-minutes">44</p>
+        <p class="unit-name">MINS</p>
+      </div>
+      <div class="tile">
+        <p class="value cd-seconds">44</p>
+        <p class="unit-name">SECS</p>
+      </div>
+    </div>
+  </div>
+  <div class="shuttle-stats">
+    <div class="item tile-stats">
+      <span class="title">
+        <span class="title-text">Tiles</span>
+        <div class="counter">&nbsp;</div>
+      </span>
+      <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+      </div>
+    </div>
+    <div class="item pcb-stats">
+      <span class="title">
+        <span class="title-text">PCBs</span>
+        <div class="counter">&nbsp;</div>
+      </span>
+      <div class="progress-bar">
+        <div class="progress-bar-inner"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ $js := resources.Get "scripts/countdown.js" | js.Build | resources.Minify }} {{ $secureJS := $js
+| resources.Fingerprint }}
+<script
+  src="{{ $js.RelPermalink }}?{{ now.Unix }}"
+  integrity="{{ $secureJS.Data.Integrity }}"
+></script>
