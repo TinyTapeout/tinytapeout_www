@@ -47,6 +47,10 @@ description: 143 designs, closed 8th September 2023
 
 # Testimonials
 
+It was a joy to participate in TinyTapeout. The design flow was amazingly simple! Based on my previous experience with tools for silicon design it is outstanding that the process from RTL to GDS happens at the click of a button with only a few configuration files and all hosted on GitHub. Any questions I had were answered promptly over discord by the team and other members of the community. Looking forward to testing my design when silicon arrives!
+
+----
+
 Tiny Tapeout is a game changer for undergrad students. It provided my classmate and I with the unique opportunity to create and implement our very own design on an ASIC, something that is often out of reach for undergraduates. I can't stress enough how much I learned throughout the entire process, and that knowledge is truly priceless to me. I couldn't be more grateful for the experience!
 
 ----
