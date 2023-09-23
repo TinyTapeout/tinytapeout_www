@@ -34,10 +34,13 @@ I recommend including your github username:
         input  wire       rst_n     // reset_n - low to reset
     );
 
-# Don't modify config.tcl
+# Beware of modifying config.tcl
 
 Tiny Tapeout is a compromise - we try to make it easy to get to ASIC, but we have to make limitations, like
-IO speed, IO count, size etc. If you want to go full custom then check out the [Zero to ASIC course](https://zerotoasiccourse.com).
+IO speed, IO count, size etc. The OpenLane config file (config.tcl) comes with a settings that are optimised
+for the process. If you change them, you might get a design that doesn't work. Make sure you know what you're doing!
+
+If you want to go full custom then check out the [Zero to ASIC course](https://zerotoasiccourse.com).
 
 # Make sure your design isn't optimised away
 
