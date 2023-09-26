@@ -23,7 +23,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 # Get your submission ready
 
-{{< youtube bm9xOJzWh10 >}}
+{{< youtube m62HLt4BjeA >}}
 
 * [GitHub submission template](https://github.com/TinyTapeout/tt05-submission-template).
 * If you want to use an HDL like Verilog, please take a look [here](/hdl).
