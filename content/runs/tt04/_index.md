@@ -47,6 +47,16 @@ description: 143 designs, closed 8th September 2023
 
 # Testimonials
 
+Tiny Tapeout gave me the push to finally pick up basic digital design.
+
+I started by going through the excellent Wokwi tutorials to get a feel of how digital designs works on the gate level. Excellent open source resources available to let me adapt existing projects to make my own 7-segment LCD driver.
+
+After that my interest grew and seeing as I still had some time before the deadline, it drove me to quickly pick up Verilog which led me to submit a second PWM project! Sometimes you really need a deadline to push you. 🙂
+
+The Discord community was very helpful too in quickly answering any doubts I had.
+
+----
+
 It was a joy to participate in TinyTapeout. The design flow was amazingly simple! Based on my previous experience with tools for silicon design it is outstanding that the process from RTL to GDS happens at the click of a button with only a few configuration files and all hosted on GitHub. Any questions I had were answered promptly over discord by the team and other members of the community. Looking forward to testing my design when silicon arrives!
 
 ----
