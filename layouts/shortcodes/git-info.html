@@ -1,5 +1,5 @@
 <hr style="margin-top: 64px" />
 <small style="color:#aaa">
   Built at {{ now.Format "2006-01-02T15:04:05Z" }}, 
-  commit sha {{ slicestr (os.Getenv "CF_PAGES_COMMIT_SHA") 0 8 }}.
+  commit sha {{ slicestr (os.Getenv "CF_PAGES_COMMIT_SHA" | default "00000000") 0 8 }}.
 </small>
