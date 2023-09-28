@@ -1,6 +1,6 @@
 ---
 title: "Tiny Tapeout"
-images: [/images/tinytapeout.jpeg]
+images: [/images/tinytapeout5.png]
 LastModifierDisplayName: matt venn
 ---
 
