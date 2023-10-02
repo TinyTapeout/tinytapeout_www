@@ -47,7 +47,11 @@ description: 143 designs, closed 8th September 2023
 
 # Testimonials
 
-Tiny Tapeout gave me the push to finally pick up basic digital design.
+Davey: TinyTapeout provided an amazing opportunity for me to pursue something I thought I could only reach after years of tertiary education, custom silicon of my design! The CI/CD workflows setup by the team make it trivial for anyone to get started with ASICs, highly encourage people to give it a go! 
+
+----
+
+Kheng Meng: Tiny Tapeout gave me the push to finally pick up basic digital design.
 
 I started by going through the excellent Wokwi tutorials to get a feel of how digital designs works on the gate level. Excellent open source resources available to let me adapt existing projects to make my own 7-segment LCD driver.
 
@@ -57,27 +61,31 @@ The Discord community was very helpful too in quickly answering any doubts I had
 
 ----
 
-It was a joy to participate in TinyTapeout. The design flow was amazingly simple! Based on my previous experience with tools for silicon design it is outstanding that the process from RTL to GDS happens at the click of a button with only a few configuration files and all hosted on GitHub. Any questions I had were answered promptly over discord by the team and other members of the community. Looking forward to testing my design when silicon arrives!
+Ashley: It was a joy to participate in TinyTapeout. The design flow was amazingly simple! Based on my previous experience with tools for silicon design it is outstanding that the process from RTL to GDS happens at the click of a button with only a few configuration files and all hosted on GitHub. Any questions I had were answered promptly over discord by the team and other members of the community. Looking forward to testing my design when silicon arrives!
 
 ----
 
-Tiny Tapeout is a game changer for undergrad students. It provided my classmate and I with the unique opportunity to create and implement our very own design on an ASIC, something that is often out of reach for undergraduates. I can't stress enough how much I learned throughout the entire process, and that knowledge is truly priceless to me. I couldn't be more grateful for the experience!
+Donnel: Tiny Tapeout is a game changer for undergrad students. It provided my classmate and I with the unique opportunity to create and implement our very own design on an ASIC, something that is often out of reach for undergraduates. I can't stress enough how much I learned throughout the entire process, and that knowledge is truly priceless to me. I couldn't be more grateful for the experience!
 
 ----
 
-Thanks to the hard work of the Tiny Tapeout team, making your own ASIC has gone from an impossible dream to a weekend project!
+mgyenik77: Thanks to the hard work of the Tiny Tapeout team, making your own ASIC has gone from an impossible dream to a weekend project!
 
 ----
 
-Tiny Tapeout is an amazing project where engineers can get hands on experience designing a digital chip. I have often dreamed about creating a chip design, but thought it as infeasible to do as a hobby project. When I came across Tiny Tapeout on Youtube I was hooked. I immediately created a design and submitted it. The process was relatively simple, but when I did have some questions the community was willing to help!
+Robojan: Tiny Tapeout is an amazing project where engineers can get hands on experience designing a digital chip. I have often dreamed about creating a chip design, but thought it as infeasible to do as a hobby project. When I came across Tiny Tapeout on Youtube I was hooked. I immediately created a design and submitted it. The process was relatively simple, but when I did have some questions the community was willing to help!
 
 ----
 
-TinyTapeout is a fantastic way to take your digital design skills to the next level. With great tools and a friendly community, every day working on it was interesting and fun. I'm looking forward to the next TinyTapeout!
+SteveJ: TinyTapeout is a fantastic way to take your digital design skills to the next level. With great tools and a friendly community, every day working on it was interesting and fun. I'm looking forward to the next TinyTapeout!
 
 ----
 
-Participating in Tiny Tapeout has been a wonderful learning experience and has represented the fulfillment of a dream which I’ve held since I was in high school. The existence of a cheap effective way to get interesting and experimental chips manufactured outside of the university framework represents in my opinion the biggest boon the VLSI industry since its inception. I read a VLSI paper from 1991 “Magic as a PC Layout Tool for Small Budget VLSI Circuit Design,” by O.G. Berkes and R. W. Williams where they dreamed of chip design being in reach of high school students. Finally with the advent of Tiny Tapeout this dream may end up moving closer to reality.
+Eldritch: Tiny Tapeout 4 allowed me to design a digital project by myself from scratch. Walking through all the steps, from planning to verification and constraining the design, made me understand better the flow of ASIC development. I really enjoyed interacting with the community and focusing on realizing a well-tested project. The tools are very intuitive, and the turorials made by the team are very useful. I look forward upcoming tapeouts and new additions to this community project!
+
+----
+
+Devin: Participating in Tiny Tapeout has been a wonderful learning experience and has represented the fulfillment of a dream which I’ve held since I was in high school. The existence of a cheap effective way to get interesting and experimental chips manufactured outside of the university framework represents in my opinion the biggest boon the VLSI industry since its inception. I read a VLSI paper from 1991 “Magic as a PC Layout Tool for Small Budget VLSI Circuit Design,” by O.G. Berkes and R. W. Williams where they dreamed of chip design being in reach of high school students. Finally with the advent of Tiny Tapeout this dream may end up moving closer to reality.
 
 ----
 
@@ -85,11 +93,11 @@ Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exi
 
 ----
 
-Bloop. Just submitted my first chip design to #TinyTapeout  using #Rust  HDL! Amazing how accessible this stuff is thanks to the TT crew's fantastic design tools and documentation.
+KPW: Bloop. Just submitted my first chip design to #TinyTapeout  using #Rust  HDL! Amazing how accessible this stuff is thanks to the TT crew's fantastic design tools and documentation.
 
 ----
 
-GCC and Python opened up computing to students and enthusiasts; Tiny Tapeout blew the gates open on the semiconductor digital design process! I’m immensely thankful for the TT team’s efforts towards infrastructure and accessibility; without the tooling's short iteration time & pointed feedback, I couldn’t have imagined a project and figured out how to make it work in the same weekend.
+Phansel: GCC and Python opened up computing to students and enthusiasts; Tiny Tapeout blew the gates open on the semiconductor digital design process! I’m immensely thankful for the TT team’s efforts towards infrastructure and accessibility; without the tooling's short iteration time & pointed feedback, I couldn’t have imagined a project and figured out how to make it work in the same weekend.
 
 # Project Showcase
 
