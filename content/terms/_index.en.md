@@ -1,12 +1,12 @@
 ---
 title: "Terms"
-date: 2023-03-02T09:56:27+01:00
+date: 2023-10-04T12:57:17+01:00
 weight: 150
 ---
 
 # Tiny Tapeout Terms and Conditions
 
-These Terms and Conditions (the “**Terms**”) govern your participation in the Tiny Tapeout semiconductor chip design program (the “**Program**”). The Terms constitute a binding agreement between you and Tiny Tapeout (a company in formation) (“**Tiny Tapeout**”). By submitting a Design (as defined below) or otherwise participating in the Program, you indicate your acceptance of these Terms. If you do not agree to these Terms, you may not participate in the Program. If you are an individual entering into these Terms on behalf of a legal entity, you hereby represent and warrant that you are authorized to enter into these Terms on behalf of such entity and bind such entity to these Terms. 
+These Terms and Conditions (the “**Terms**”) govern your participation in the Tiny Tapeout semiconductor chip design program (the “**Program**”). The Terms constitute a binding agreement between you and Tiny Tapeout Ltd. (“**Tiny Tapeout**”). By submitting a Design (as defined below) or otherwise participating in the Program, you indicate your acceptance of these Terms. If you do not agree to these Terms, you may not participate in the Program. If you are an individual entering into these Terms on behalf of a legal entity, you hereby represent and warrant that you are authorized to enter into these Terms on behalf of such entity and bind such entity to these Terms. 
 
 
 
@@ -147,7 +147,7 @@ These Terms shall be governed by the laws of the State of Israel, without refere
 
 ## Last Updated
 
-May 10, 2023.  
+October 4, 2023.  
 
  
 
