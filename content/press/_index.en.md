@@ -4,9 +4,11 @@ weight: 140
 date: 2023-03-08T09:56:27+01:00
 ---
 
+TinyTapeout is an educational project that makes it easier and cheaper than ever to get simple digital designs manufactured on a real chip! 
+
 > Hi, I'm a professor for an Introduction to Digital Systems course and just found this and let's just say this has **fundamentally just changed our entire Computer Engineering curriculum**. It looks like we can actually have first-year students designing ASICs, then be able later to analyze performance while taking their electronics course and learning about MOSFETs as well as their embedded systems and computer architecture. Russell Trafford, Rowan University
 
-# Submissions
+# Previous TinyTapeouts
 
 | Run  | Launched    | Closed     | Shuttle | Designs | Chips Expected | PCBs Expected |
 |------|-------------|------------|---------|---------|-------|------|
@@ -31,47 +33,6 @@ date: 2023-03-08T09:56:27+01:00
 * 180k Website visits
 * [TinyTapeout hashtag on Twitter](https://twitter.com/search?q=tinytapeout).
 * [SiliWiz hashtag on Twitter](https://twitter.com/search?q=siliwiz).
-
-# TT01 statistics
-
-* [152 projects submitted](/runs/tt01)
-* Each project is 100um x 100um
-* 115 used Wokwi graphical editor, 31 Verilog, 3 XLS, 2 Chisel, 1 Amaranth
-* 15k standard cells used across all projects
-* Most cells used in a design was 600, the least was 14
-* Total wire length 772 mm
-
-# TT02 statistics
-
-* [165 projects submitted](/runs/tt02)
-* Each project is 150 x 170um
-* Youngest submitter: [4 years old](https://tinytapeout.com/runs/tt02/031)
-* 64 used Wokwi graphical editor, 82 Verilog, 5 Amaranth, 1 Chisel
-* 40k standard cells used across all projects
-* Most cells used in a design was 1105, the least was 8
-* Total wire length 2024 mm
-* Max utilisation was 52%
-
-# TT03 statistics
-
-* [100 projects submitted, 149 included from TT02](/runs/tt03)
-* Each project is 150 x 170um
-* 94 used Wokwi, 135 Verilog, 1 myhdl, 7 Amaranth, spade 1, xls 2, migen 1, systemverilog 3, mixed radix circuit synthesis (mrcs) 1, chisel 1.
-* 80k standard cells used across all projects
-* Most cells used 1287 for [project 072](/runs/tt03/072)
-* Maximum utilisation 59.95% for [project 044](/runs/tt03/044)
-* Total wire length 4079 mm
-
-# TT04 statistics
-
-* [143 projects submitted](/runs/tt04)
-* Submissions from over 30 countries
-* Project tile size is 160 x 100um, largest project was 8 tiles
-* 92 used Verilog, 46 Wokwi, 1 SystemVerilog, 1 SpinalHDL, 1 mrcs, 1 spade, 1 RustHDL
-* 82k standard cells used across all projects
-* Most cells was 6813 for [project 033](/runs/tt04/033)
-* Maximum utilisation 87.18% for [project 016](/runs/tt04/016)
-* Total wire length 2607 mm                                                                                                                                                                                                                        
 
 # Project showcase
 
