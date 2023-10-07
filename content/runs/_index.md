@@ -9,4 +9,4 @@ weight: 10
 | [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 17, 2023 | Dec 2023 |
 | [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (includes 149 from TT02) | Oct 2023 | Dec 2023 |
 | [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | [2309](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Mar 2024 |
-| TT05 | 2023-09-11 |  | [2311](https://efabless.com/shuttle-status) | [Open for submissions](https://app.tinytapeout.com) | Mar 2024 | 
+| TT05 | 2023-09-11 |  | [2311](https://efabless.com/shuttle-status) | [Open for submissions](https://app.tinytapeout.com) | Mar 2024 | May 2024 |
