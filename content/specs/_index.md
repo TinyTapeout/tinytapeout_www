@@ -1,6 +1,6 @@
 ---
 title: 'Tech specs'
-description: 'Technical specifications of the Tiny Tapeout chip'
+description: 'Technical specifications of the Tiny Tapeout Chips & PCB'
 weight: 85
 ---
 
