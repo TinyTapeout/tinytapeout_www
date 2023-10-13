@@ -34,11 +34,11 @@ The demo board easy ways to:
 
 Work in progress: https://github.com/TinyTapeout/tt-demo-pcb
 
-The demo board from TT04 onwards will include Raspberry Pi Pico to:
+The demo board from TT04 onwards will include an RP2040 chip to:
 
-* select the design
-* provide SRAM emulation
-* provide clock generation
+* select the active design
+* generate [the clock signal](../clock/) for your design, up to 50 MHz
+* provide [SPI RAM emulation](https://github.com/MichaelBell/spi-ram-emu), up to 512 Kbit
 
 # Board development
 
