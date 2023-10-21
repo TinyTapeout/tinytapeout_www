@@ -4,7 +4,7 @@ title: "121 Hex to 7 Segment Decoder"
 weight: 122
 ---
 
-## 121 : Hex to 7 Segment Decoder
+## number : 0b001111001 : Hex to 7 Segment Decoder
 
 * Author: Randy Glenn
 * Description: Displays an input 4-bit value as a hex digit

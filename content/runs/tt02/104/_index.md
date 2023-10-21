@@ -4,7 +4,7 @@ title: "104 2bitALU"
 weight: 105
 ---
 
-## 104 : 2bitALU
+## number : 0b001101000 : 2bitALU
 
 * Author: shan
 * Description: 2 bit ALU which performs 16 different operations

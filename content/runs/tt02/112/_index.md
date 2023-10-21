@@ -4,7 +4,7 @@ title: "112 Low-speed UART transmitter with limited character set loading"
 weight: 113
 ---
 
-## 112 : Low-speed UART transmitter with limited character set loading
+## number : 0b001110000 : Low-speed UART transmitter with limited character set loading
 
 * Author: maehw
 * Description: Low baudrate UART transmitter (8N1) with limited character set (0x40..0x5F; includes all capital letters in the ASCII table) loading.

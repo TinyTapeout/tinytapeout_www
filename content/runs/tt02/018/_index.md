@@ -4,7 +4,7 @@ title: "18 Configurable SR"
 weight: 19
 ---
 
-## 18 : Configurable SR
+## number : 0b000010010 : Configurable SR
 
 * Author: Greg Steiert
 * Description: Configurable gates driving SR and D flip-flops

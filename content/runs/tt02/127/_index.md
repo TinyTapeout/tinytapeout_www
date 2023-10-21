@@ -4,7 +4,7 @@ title: "127 Seven Segment Clock"
 weight: 128
 ---
 
-## 127 : Seven Segment Clock
+## number : 0b001111111 : Seven Segment Clock
 
 * Author: Greg Davill
 * Description: Logic to drive 6 external 74hct595's that in turn drive 7 segment displays. The displays form a digital clock.

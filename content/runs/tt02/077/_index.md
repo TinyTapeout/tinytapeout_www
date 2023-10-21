@@ -4,7 +4,7 @@ title: "77 TrainLED2 - RGB-LED driver with 8 bit PWM engine"
 weight: 78
 ---
 
-## 77 : TrainLED2 - RGB-LED driver with 8 bit PWM engine
+## number : 0b001001101 : TrainLED2 - RGB-LED driver with 8 bit PWM engine
 
 * Author: cpldcpu
 * Description: A RGB-LED driver using the WS2812 protocol

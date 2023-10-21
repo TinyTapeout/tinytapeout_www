@@ -4,7 +4,7 @@ title: "1 SIMON Cipher"
 weight: 2
 ---
 
-## 1 : SIMON Cipher
+## number : 0b000000001 : SIMON Cipher
 
 * Author: Fraser Price
 * Description: Simon32/64 Encryption

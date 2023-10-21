@@ -4,7 +4,7 @@ title: "143 Femto 4-bit CPU"
 weight: 144
 ---
 
-## 143 : Femto 4-bit CPU
+## number : 0b010001111 : Femto 4-bit CPU
 
 * Author: Majdi Abdul Samad
 * Description: Design of a small single-cycle CPU with simple RISC/Accumulator ISA

@@ -4,7 +4,7 @@ title: "138 Option23"
 weight: 139
 ---
 
-## 138 : Option23
+## number : 0b010001010 : Option23
 
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays

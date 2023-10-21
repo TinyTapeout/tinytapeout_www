@@ -4,7 +4,7 @@ title: "154 Clock divider ASIC"
 weight: 155
 ---
 
-## 154 : Clock divider ASIC
+## number : 0b010011010 : Clock divider ASIC
 
 * Author: Sad Electronics
 * Description: Uses a series of flip flops to divide the clock

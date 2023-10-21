@@ -4,7 +4,7 @@ title: "110 Rotary Encoder Counter"
 weight: 111
 ---
 
-## 110 : Rotary Encoder Counter
+## number : 0b001101110 : Rotary Encoder Counter
 
 * Author: Vaishnav Achath
 * Description: Count Up/Down on the 7-segment accouring to rotary encoder input

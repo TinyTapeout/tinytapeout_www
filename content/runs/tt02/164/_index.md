@@ -4,7 +4,7 @@ title: "164 PWM Generator"
 weight: 165
 ---
 
-## 164 : PWM Generator
+## number : 0b010100100 : PWM Generator
 
 * Author: Hassan Baydoun <hhb16@mail.aub.edu>, Razan Thebian <rat17@mail.aub.edu>: Electrical and Computer Engineering Department, American University of Beirut 
 * Description: It is a PWM Generator with selectable duty cycle 0-10-20-..-100% with clock divider built in

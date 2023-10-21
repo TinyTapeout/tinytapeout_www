@@ -4,7 +4,7 @@ title: "161 Customizable UART Character"
 weight: 162
 ---
 
-## 161 : Customizable UART Character
+## number : 0b010100001 : Customizable UART Character
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a single character UART transmitter using registers made from D-flip flops and multiplexers.

@@ -4,7 +4,7 @@ title: "59 LEDChaser from LiteX test"
 weight: 60
 ---
 
-## 59 : LEDChaser from LiteX test
+## number : 0b000111011 : LEDChaser from LiteX test
 
 * Author: Nick Østergaard
 * Description: This is just a small demo of synthezing verilog from LiteX, this does not include any CPU.

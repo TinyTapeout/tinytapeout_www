@@ -4,7 +4,7 @@ title: "91 chi 2 shares"
 weight: 92
 ---
 
-## 91 : chi 2 shares
+## number : 0b001011011 : chi 2 shares
 
 * Author: Maria Chiara Molteni
 * Description: Chi function of Xoodoo protected by TI with two shares

@@ -4,7 +4,7 @@ title: "129 4:2 Compressor"
 weight: 130
 ---
 
-## 129 : 4:2 Compressor
+## number : 0b010000001 : 4:2 Compressor
 
 * Author: saicharan0112
 * Description: A Basic 4:2 compressor which contains 4 inputs and 1 carry_in bit which compresses to 2 outputs and 1 carry_out bit

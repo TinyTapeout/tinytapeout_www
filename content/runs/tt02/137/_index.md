@@ -4,7 +4,7 @@ title: "137 Option23 Serial"
 weight: 138
 ---
 
-## 137 : Option23 Serial
+## number : 0b010001001 : Option23 Serial
 
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays

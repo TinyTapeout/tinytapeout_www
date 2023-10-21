@@ -4,7 +4,7 @@ title: "150 Async FIFO"
 weight: 151
 ---
 
-## 150 : Async FIFO
+## number : 0b010010110 : Async FIFO
 
 * Author: Jon Recta
 * Description: A very small asynchonous FIFO

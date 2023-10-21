@@ -4,7 +4,7 @@ title: "81 1-bit ALU"
 weight: 82
 ---
 
-## 81 : 1-bit ALU
+## number : 0b001010001 : 1-bit ALU
 
 * Author: Leo Moser
 * Description: 1-bit ALU from the book `Structured Computer Organization: Andrew S. Tanenbaum`

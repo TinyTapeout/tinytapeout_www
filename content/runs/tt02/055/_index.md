@@ -4,7 +4,7 @@ title: "55 clash cpu"
 weight: 56
 ---
 
-## 55 : clash cpu
+## number : 0b000110111 : clash cpu
 
 * Author: Jack Leightcap
 * Description: tiny register machine written in clash

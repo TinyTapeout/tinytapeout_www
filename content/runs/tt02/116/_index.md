@@ -4,7 +4,7 @@ title: "116 Baudot Converter"
 weight: 117
 ---
 
-## 116 : Baudot Converter
+## number : 0b001110100 : Baudot Converter
 
 * Author: Arthur Hazleden
 * Description: This circuit will convert ASCII serial data to baudot serial data provide the reverse funtion as well

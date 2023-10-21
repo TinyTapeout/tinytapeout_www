@@ -4,7 +4,7 @@ title: "126 Test3"
 weight: 127
 ---
 
-## 126 : Test3
+## number : 0b001111110 : Test3
 
 * Author: Shaos
 * Description: Binary Coded Ternary Test

@@ -4,7 +4,7 @@ title: "32 Tiny Synth"
 weight: 33
 ---
 
-## 32 : Tiny Synth
+## number : 0b000100000 : Tiny Synth
 
 * Author: Nanik Adnani
 * Description: A tiny synthesizer! Modulates the frequency of the clock based on inputs, plays a C scale (hopefully).

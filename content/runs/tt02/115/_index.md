@@ -4,7 +4,7 @@ title: "115 Configurable Gray Code Counter"
 weight: 116
 ---
 
-## 115 : Configurable Gray Code Counter
+## number : 0b001110011 : Configurable Gray Code Counter
 
 * Author: Eric Swalens
 * Description: A configurable counter driven by 2-channel Gray code

@@ -4,7 +4,7 @@ title: "27 Tiny Phase/Frequency Detector"
 weight: 28
 ---
 
-## 27 : Tiny Phase/Frequency Detector
+## number : 0b000011011 : Tiny Phase/Frequency Detector
 
 * Author: argunda
 * Description: Detect phase shifts between 2 square waves.

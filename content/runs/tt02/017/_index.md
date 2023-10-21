@@ -4,7 +4,7 @@ title: "17 tiny-fir"
 weight: 18
 ---
 
-## 17 : tiny-fir
+## number : 0b000010001 : tiny-fir
 
 * Author: Tom Schucker
 * Description: 4bit 2-stage FIR filter

@@ -4,7 +4,7 @@ title: "9 binary clock"
 weight: 10
 ---
 
-## 9 : binary clock
+## number : 0b000001001 : binary clock
 
 * Author: Azdle
 * Description: A binary clock using multiplexed LEDs

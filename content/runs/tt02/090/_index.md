@@ -4,7 +4,7 @@ title: "90 FPGA test"
 weight: 91
 ---
 
-## 90 : FPGA test
+## number : 0b001011010 : FPGA test
 
 * Author: myrtle
 * Description: small mux2 fpga test

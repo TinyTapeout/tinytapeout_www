@@ -4,7 +4,7 @@ title: "66 Nano-neuron"
 weight: 67
 ---
 
-## 66 : Nano-neuron
+## number : 0b001000010 : Nano-neuron
 
 * Author: Daniel Burke
 * Description: minimal low vector test

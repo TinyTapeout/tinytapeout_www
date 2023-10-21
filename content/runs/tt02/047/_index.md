@@ -4,7 +4,7 @@ title: "47 4 bit counter on steamdeck"
 weight: 48
 ---
 
-## 47 : 4 bit counter on steamdeck
+## number : 0b000101111 : 4 bit counter on steamdeck
 
 * Author: 13arn
 * Description: copy of my tt01 submission, enable first input and press button to use the counter

@@ -4,7 +4,7 @@ title: "79 4 bit CPU"
 weight: 80
 ---
 
-## 79 : 4 bit CPU
+## number : 0b001001111 : 4 bit CPU
 
 * Author: Paul Campell
 * Description: simple cpu

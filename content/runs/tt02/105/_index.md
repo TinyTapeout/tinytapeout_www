@@ -4,7 +4,7 @@ title: "105 A (7, 1/2) Convolutional Encoder"
 weight: 106
 ---
 
-## 105 : A (7, 1/2) Convolutional Encoder
+## number : 0b001101001 : A (7, 1/2) Convolutional Encoder
 
 * Author: Jos van 't Hof
 * Description: A (7, 1/2) Convolutional Encoder following the CCSDS 131.0-B-4 standard.

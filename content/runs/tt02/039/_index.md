@@ -4,7 +4,7 @@ title: "39 M0: A 16-bit SUBLEQ Microprocessor"
 weight: 40
 ---
 
-## 39 : M0: A 16-bit SUBLEQ Microprocessor
+## number : 0b000100111 : M0: A 16-bit SUBLEQ Microprocessor
 
 * Author: William Moyes
 * Description: A capable but slow microprocessor that fits in a very tight space

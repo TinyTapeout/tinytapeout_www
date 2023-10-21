@@ -4,7 +4,7 @@ title: "0 Test Inverter Project"
 weight: 1
 ---
 
-## 0 : Test Inverter Project
+## number : 0b000000000 : Test Inverter Project
 
 * Author: Matt Venn
 * Description: inverts every line

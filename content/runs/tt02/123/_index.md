@@ -4,7 +4,7 @@ title: "123 LED Chaser"
 weight: 124
 ---
 
-## 123 : LED Chaser
+## number : 0b001111011 : LED Chaser
 
 * Author: Bradley Boccuzzi
 * Description: Push the button to fill in segments of the LED display, they will continue to shift and fill in the display until the button is released.`

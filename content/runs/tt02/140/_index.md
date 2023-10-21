@@ -4,7 +4,7 @@ title: "140 4x4 RAM"
 weight: 141
 ---
 
-## 140 : 4x4 RAM
+## number : 0b010001100 : 4x4 RAM
 
 * Author: Michael Bartholic
 * Description: 4 word, 4 bit read/write RAM

@@ -4,7 +4,7 @@ title: "70 tinytapeout2-HELLo-3orLd-7seg"
 weight: 71
 ---
 
-## 70 : tinytapeout2-HELLo-3orLd-7seg
+## number : 0b001000110 : tinytapeout2-HELLo-3orLd-7seg
 
 * Author: Rakesh Peter
 * Description: HELLo-3orLd Runner on 7 segment Display

@@ -4,7 +4,7 @@ title: "72 GOL-Cell"
 weight: 73
 ---
 
-## 72 : GOL-Cell
+## number : 0b001001000 : GOL-Cell
 
 * Author: Shaos
 * Description: Game of Life Cell

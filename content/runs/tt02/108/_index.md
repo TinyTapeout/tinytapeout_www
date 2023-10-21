@@ -4,7 +4,7 @@ title: "108 Logic-2G97-2G98"
 weight: 109
 ---
 
-## 108 : Logic-2G97-2G98
+## number : 0b001101100 : Logic-2G97-2G98
 
 * Author: Sirawit Lappisatepun
 * Description: Replication of TI's Little Logic 1G97 and 1G98 configurable logic gates.

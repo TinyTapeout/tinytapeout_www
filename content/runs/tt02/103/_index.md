@@ -4,7 +4,7 @@ title: "103 Counter"
 weight: 104
 ---
 
-## 103 : Counter
+## number : 0b001100111 : Counter
 
 * Author: Adam Zeloof
 * Description: It counts!

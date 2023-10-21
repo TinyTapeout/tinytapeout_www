@@ -4,7 +4,7 @@ title: "141 Digital padlock"
 weight: 142
 ---
 
-## 141 : Digital padlock
+## number : 0b010001101 : Digital padlock
 
 * Author: Jean THOMAS
 * Description: A 4-digit electronic padlock

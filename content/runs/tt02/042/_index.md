@@ -4,7 +4,7 @@ title: "42 XLS: bit population count"
 weight: 43
 ---
 
-## 42 : XLS: bit population count
+## number : 0b000101010 : XLS: bit population count
 
 * Author: proppy
 * Description: Count bits set in the input.

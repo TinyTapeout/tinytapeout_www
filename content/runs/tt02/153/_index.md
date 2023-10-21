@@ -4,7 +4,7 @@ title: "153 Adi counter"
 weight: 154
 ---
 
-## 153 : Adi counter
+## number : 0b010011001 : Adi counter
 
 * Author: Prabal Dutta
 * Description: Test FSM

@@ -4,7 +4,7 @@ title: "160 7-Seg 'Tiny Tapeout' Display"
 weight: 161
 ---
 
-## 160 : 7-Seg 'Tiny Tapeout' Display
+## number : 0b010100000 : 7-Seg 'Tiny Tapeout' Display
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This circuit will output a string of characters (’tiny tapeout’) to the 7-segment display.

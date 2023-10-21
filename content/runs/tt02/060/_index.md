@@ -4,7 +4,7 @@ title: "60 8-bit (E4M3) Floating Point Multiplier"
 weight: 61
 ---
 
-## 60 : 8-bit (E4M3) Floating Point Multiplier
+## number : 0b000111100 : 8-bit (E4M3) Floating Point Multiplier
 
 * Author: Clive Chan
 * Description: 8-bit (E4M3) Floating Point Multiplier

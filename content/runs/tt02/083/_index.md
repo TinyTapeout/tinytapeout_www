@@ -4,7 +4,7 @@ title: "83 r2rdac"
 weight: 84
 ---
 
-## 83 : r2rdac
+## number : 0b001010011 : r2rdac
 
 * Author: youngpines
 * Description: small r2r
