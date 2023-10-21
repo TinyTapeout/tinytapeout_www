@@ -4,7 +4,7 @@ title: "87 BCD to 7-Segment Decoder"
 weight: 88
 ---
 
-## 87 : 0b001010111 : BCD to 7-Segment Decoder
+## 87 : 0b 001 010 111 : BCD to 7-Segment Decoder
 
 * Author: JinGen Lim
 * Description: Converts a BCD input into a 7-segment display output

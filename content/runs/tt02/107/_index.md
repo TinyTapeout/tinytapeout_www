@@ -4,7 +4,7 @@ title: "107 RV8U - 8-bit RISC-V Microcore Processor"
 weight: 108
 ---
 
-## 107 : 0b001101011 : RV8U - 8-bit RISC-V Microcore Processor
+## 107 : 0b 001 101 011 : RV8U - 8-bit RISC-V Microcore Processor
 
 * Author: David Richie
 * Description: 8-bit processor based on RISC-V ISA

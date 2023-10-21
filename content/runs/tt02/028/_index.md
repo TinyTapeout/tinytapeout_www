@@ -4,7 +4,7 @@ title: "28 Loading Animation"
 weight: 29
 ---
 
-## 28 : 0b000011100 : Loading Animation
+## 28 : 0b 000 011 100 : Loading Animation
 
 * Author: Andre & Milosch Meriac
 * Description: Submission for tt02 - Rotating Dash

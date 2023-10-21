@@ -4,7 +4,7 @@ title: "33 5-bit Galois LFSR"
 weight: 34
 ---
 
-## 33 : 0b000100001 : 5-bit Galois LFSR
+## 33 : 0b 000 100 001 : 5-bit Galois LFSR
 
 * Author: Michael Bikovitsky
 * Description: 5-bit Galois LFSR with configurable taps and initial state. Outputs a value every second.

@@ -4,7 +4,7 @@ title: "162 Customizable UART String"
 weight: 163
 ---
 
-## 162 : 0b010100010 : Customizable UART String
+## 162 : 0b 010 100 010 : Customizable UART String
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design Supports sending multiple ASCII characters over UART.

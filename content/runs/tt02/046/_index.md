@@ -4,7 +4,7 @@ title: "46 Tiny rot13"
 weight: 47
 ---
 
-## 46 : 0b000101110 : Tiny rot13
+## 46 : 0b 000 101 110 : Tiny rot13
 
 * Author: Phase Noise
 * Description: implements rot13 in the constraints of TT02

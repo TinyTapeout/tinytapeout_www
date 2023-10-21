@@ -4,7 +4,7 @@ title: "95 Asynchronous Binary to Ternary Converter and Comparator"
 weight: 96
 ---
 
-## 95 : 0b001011111 : Asynchronous Binary to Ternary Converter and Comparator
+## 95 : 0b 001 011 111 : Asynchronous Binary to Ternary Converter and Comparator
 
 * Author: Steven Bos
 * Description: This chip offers various kinds of conversions and comparisons between binary encoded ternary and unary encoded ternary in both machine readible output and human readible (7-segment display decimal) output

@@ -4,7 +4,7 @@ title: "98 Funny Blinky"
 weight: 99
 ---
 
-## 98 : 0b001100010 : Funny Blinky
+## 98 : 0b 001 100 010 : Funny Blinky
 
 * Author: regymm
 * Description: Blink the 8 output LEDs in a funny way.

@@ -4,7 +4,7 @@ title: "41 8x8 Bit Pattern Player"
 weight: 42
 ---
 
-## 41 : 0b000101001 : 8x8 Bit Pattern Player
+## 41 : 0b 000 101 001 : 8x8 Bit Pattern Player
 
 * Author: Thorsten Knoll
 * Description: 8x8 bit serial programmable, addressable and playable memory.

@@ -4,7 +4,7 @@ title: "2 HD74480 Clock"
 weight: 3
 ---
 
-## 2 : 0b000000010 : HD74480 Clock
+## 2 : 0b 000 000 010 : HD74480 Clock
 
 * Author: Tom Keddie
 * Description: Displays a clock on a attached HD74480

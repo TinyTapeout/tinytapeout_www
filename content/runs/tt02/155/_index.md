@@ -4,7 +4,7 @@ title: "155 Amaranth 6 Bits Gray counter"
 weight: 156
 ---
 
-## 155 : 0b010011011 : Amaranth 6 Bits Gray counter
+## 155 : 0b 010 011 011 : Amaranth 6 Bits Gray counter
 
 * Author: Camilo Soto
 * Description: Amaranth Gray 6 Bits gray counter

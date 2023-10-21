@@ -4,7 +4,7 @@ title: "135 SevSegFX"
 weight: 136
 ---
 
-## 135 : 0b010000111 : SevSegFX
+## 135 : 0b 010 000 111 : SevSegFX
 
 * Author: Mazen Saghir, ECE Department, American University of Beirut (mazen@aub.edu.lb)
 * Description: Seven segment display effect generator

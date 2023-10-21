@@ -4,7 +4,7 @@ title: "119 Chisel 16-bit GCD with scan in and out"
 weight: 120
 ---
 
-## 119 : 0b001110111 : Chisel 16-bit GCD with scan in and out
+## 119 : 0b 001 110 111 : Chisel 16-bit GCD with scan in and out
 
 * Author: Steve Burns
 * Description: Simple chisel based design based on Knuth's BinaryGDC algorithm using scan chains for I/O.

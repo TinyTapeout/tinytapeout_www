@@ -4,7 +4,7 @@ title: "139 Option22"
 weight: 140
 ---
 
-## 139 : 0b010001011 : Option22
+## 139 : 0b 010 001 011 : Option22
 
 * Author: bitluni
 * Description: Looong shift register. 22x8 bit

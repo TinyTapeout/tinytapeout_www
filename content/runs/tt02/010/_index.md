@@ -4,7 +4,7 @@ title: "10 TinySensor"
 weight: 11
 ---
 
-## 10 : 0b000001010 : TinySensor
+## 10 : 0b 000 001 010 : TinySensor
 
 * Author: Justin Pelan
 * Description: Using external hardware photodiodes as inputs, display light intensity on the 7-segment display

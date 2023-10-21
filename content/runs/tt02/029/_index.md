@@ -4,7 +4,7 @@ title: "29 tiny egg timer"
 weight: 30
 ---
 
-## 29 : 0b000011101 : tiny egg timer
+## 29 : 0b 000 011 101 : tiny egg timer
 
 * Author: yubex
 * Description: tiny egg timer is a configurable small timer

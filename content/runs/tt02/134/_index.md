@@ -4,7 +4,7 @@ title: "134 CRC-16 and Parity calculator"
 weight: 135
 ---
 
-## 134 : 0b010000110 : CRC-16 and Parity calculator
+## 134 : 0b 010 000 110 : CRC-16 and Parity calculator
 
 * Author: Chris Burton
 * Description: CRC-16/XModem and Even Parity calculator based on Ben Eater error detection videos.

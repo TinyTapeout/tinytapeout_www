@@ -4,7 +4,7 @@ title: "40 bitslam"
 weight: 41
 ---
 
-## 40 : 0b000101000 : bitslam
+## 40 : 0b 000 101 000 : bitslam
 
 * Author: Jake "ferris" Taylor
 * Description: bitslam is a programmable sound chip with 2 LFSR voices.

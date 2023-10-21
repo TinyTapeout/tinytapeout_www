@@ -4,7 +4,7 @@ title: "159 M segments"
 weight: 160
 ---
 
-## 159 : 0b010011111 : M segments
+## 159 : 0b 010 011 111 : M segments
 
 * Author: Matt Venn
 * Description: Setting the correct input will show a 3 on the display

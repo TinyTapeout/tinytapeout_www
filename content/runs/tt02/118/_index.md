@@ -4,7 +4,7 @@ title: "118 channel coding"
 weight: 119
 ---
 
-## 118 : 0b001110110 : channel coding
+## 118 : 0b 001 110 110 : channel coding
 
 * Author: Asma Mohsin
 * Description: Convolutional coding is widely used in modern digital communication systems.We often get encoded data by using different polynomials having same constraint lengths (K).

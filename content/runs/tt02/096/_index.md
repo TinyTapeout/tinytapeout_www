@@ -4,7 +4,7 @@ title: "96 Vector dot product"
 weight: 97
 ---
 
-## 96 : 0b001100000 : Vector dot product
+## 96 : 0b 001 100 000 : Vector dot product
 
 * Author: Robert Riachi
 * Description: Compute the dot product of two 2x1 vectors each containing 2 bit integers

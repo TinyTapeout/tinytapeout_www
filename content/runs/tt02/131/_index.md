@@ -4,7 +4,7 @@ title: "131 Hello Generator"
 weight: 132
 ---
 
-## 131 : 0b010000011 : Hello Generator
+## 131 : 0b 010 000 011 : Hello Generator
 
 * Author: Skyler Saleh
 * Description: Flashes 'H-E-L-L-O' on the 7 segment display

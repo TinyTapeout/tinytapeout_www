@@ -4,7 +4,7 @@ title: "130 PS2 keyboard Interface"
 weight: 131
 ---
 
-## 130 : 0b010000010 : PS2 keyboard Interface
+## 130 : 0b 010 000 010 : PS2 keyboard Interface
 
 * Author: Tanish Khanchandani
 * Description: PS2 keyboard interface to enter charecters into a computer. Use the PS2 hex scan codes (https://techdocs.altium.com/display/FPGA/PS2+Keyboard+Scan+Codes) to enter hex codes and it will send the letter to your computer.

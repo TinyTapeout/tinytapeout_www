@@ -4,7 +4,7 @@ title: "146 Hex to Seven Semgent Converter"
 weight: 147
 ---
 
-## 146 : 0b010010010 : Hex to Seven Semgent Converter
+## 146 : 0b 010 010 010 : Hex to Seven Semgent Converter
 
 * Author: Samuel Sun
 * Description: Converts from a binary input to hex seven-segment display

@@ -4,7 +4,7 @@ title: "3 Scrolling Binary Matrix display"
 weight: 4
 ---
 
-## 3 : 0b000000011 : Scrolling Binary Matrix display
+## 3 : 0b 000 000 011 : Scrolling Binary Matrix display
 
 * Author: Chris
 * Description: Display scrolling binary data from input pin on 8x8 SK9822 LED matrix display

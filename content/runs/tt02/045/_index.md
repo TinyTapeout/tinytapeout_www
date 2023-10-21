@@ -4,7 +4,7 @@ title: "45 Super Mario Tune on A Piezo Speaker"
 weight: 46
 ---
 
-## 45 : 0b000101101 : Super Mario Tune on A Piezo Speaker
+## 45 : 0b 000 101 101 : Super Mario Tune on A Piezo Speaker
 
 * Author: Milosch Meriac
 * Description: Plays Super Mario Tune over a Piezo Speaker connected across io_out[1:0]

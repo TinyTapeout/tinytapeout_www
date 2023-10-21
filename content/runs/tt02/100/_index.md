@@ -4,7 +4,7 @@ title: "100 Sigma-Delta ADC/DAC"
 weight: 101
 ---
 
-## 100 : 0b001100100 : Sigma-Delta ADC/DAC
+## 100 : 0b 001 100 100 : Sigma-Delta ADC/DAC
 
 * Author: Adam Greig
 * Description: Simple ADC and DAC

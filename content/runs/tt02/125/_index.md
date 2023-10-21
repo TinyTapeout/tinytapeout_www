@@ -4,7 +4,7 @@ title: "125 w5s8: universal turing machine core"
 weight: 126
 ---
 
-## 125 : 0b001111101 : w5s8: universal turing machine core
+## 125 : 0b 001 111 101 : w5s8: universal turing machine core
 
 * Author: Andrew Foote
 * Description: State transition logic for a 5-state, 8-symbol universal turing machine

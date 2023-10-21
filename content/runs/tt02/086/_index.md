@@ -4,7 +4,7 @@ title: "86 Pseudo-random number generator"
 weight: 87
 ---
 
-## 86 : 0b001010110 : Pseudo-random number generator
+## 86 : 0b 001 010 110 : Pseudo-random number generator
 
 * Author: Thomas Böhm <thomas.bohm@gmail.com>
 * Description: Pseudo-random number generator using a 16-bit Fibonacci linear-feedback shift register

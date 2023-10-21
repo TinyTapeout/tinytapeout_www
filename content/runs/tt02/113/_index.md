@@ -4,7 +4,7 @@ title: "113 Rotary encoder"
 weight: 114
 ---
 
-## 113 : 0b001110001 : Rotary encoder
+## 113 : 0b 001 110 001 : Rotary encoder
 
 * Author: Wim Dams
 * Description: Reads in a (incremental) rotary encoder and shows the result on the seven-segment display

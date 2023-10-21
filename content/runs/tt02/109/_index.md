@@ -4,7 +4,7 @@ title: "109 Melody Generator"
 weight: 110
 ---
 
-## 109 : 0b001101101 : Melody Generator
+## 109 : 0b 001 101 101 : Melody Generator
 
 * Author: myrtle
 * Description: plays a melody, preloaded with jingle bells but re-programmable

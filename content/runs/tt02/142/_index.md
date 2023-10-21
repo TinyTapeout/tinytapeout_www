@@ -4,7 +4,7 @@ title: "142 FFT Butterfly in Wokwi"
 weight: 143
 ---
 
-## 142 : 0b010001110 : FFT Butterfly in Wokwi
+## 142 : 0b 010 001 110 : FFT Butterfly in Wokwi
 
 * Author: James R
 * Description: Single FFT butterfly with 2-bit resolution

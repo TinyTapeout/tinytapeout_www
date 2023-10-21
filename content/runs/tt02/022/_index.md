@@ -4,7 +4,7 @@ title: "22 A LED Flasher"
 weight: 23
 ---
 
-## 22 : 0b000010110 : A LED Flasher
+## 22 : 0b 000 010 110 : A LED Flasher
 
 * Author: Ben Everard
 * Description: Select different inputs to generate different LED patterns

@@ -4,7 +4,7 @@ title: "34 prbs15"
 weight: 35
 ---
 
-## 34 : 0b000100010 : prbs15
+## 34 : 0b 000 100 010 : prbs15
 
 * Author: Tom Schucker
 * Description: generates and checks prbs15 sequences

@@ -4,7 +4,7 @@ title: "12 German Traffic Light State Machine"
 weight: 13
 ---
 
-## 12 : 0b000001100 : German Traffic Light State Machine
+## 12 : 0b 000 001 100 : German Traffic Light State Machine
 
 * Author: Jens Schleusner
 * Description: A state machine to control german traffic lights at an intersection.

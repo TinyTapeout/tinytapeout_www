@@ -4,7 +4,7 @@ title: "128 serv - Serial RISCV CPU"
 weight: 129
 ---
 
-## 128 : 0b010000000 : serv - Serial RISCV CPU
+## 128 : 0b 010 000 000 : serv - Serial RISCV CPU
 
 * Author: Greg Davill
 * Description: An award winning RISCV CPU!

@@ -4,7 +4,7 @@ title: "80 Stack Calculator"
 weight: 81
 ---
 
-## 80 : 0b001010000 : Stack Calculator
+## 80 : 0b 001 010 000 : Stack Calculator
 
 * Author: David Siaw
 * Description: A stack based 4-bit calculator featuring a 4-bit wide 8 entry deep stack and 64 bits of random access memory.

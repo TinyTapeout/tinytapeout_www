@@ -4,7 +4,7 @@ title: "76 TinyPID"
 weight: 77
 ---
 
-## 76 : 0b001001100 : TinyPID
+## 76 : 0b 001 001 100 : TinyPID
 
 * Author: Aidan Medcalf
 * Description: Tiny PID controller with SPI configuration channel, SPI ADC and DAC driver

@@ -4,7 +4,7 @@ title: "149 Continious Math"
 weight: 150
 ---
 
-## 149 : 0b010010101 : Continious Math
+## 149 : 0b 010 010 101 : Continious Math
 
 * Author: Sophia Li
 * Description: output is a total you can ADD, SUBTRACT, XOR, or LEFT_SHIFT with the input  

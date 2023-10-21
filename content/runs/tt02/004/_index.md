@@ -4,7 +4,7 @@ title: "4 Power supply sequencer"
 weight: 5
 ---
 
-## 4 : 0b000000100 : Power supply sequencer
+## 4 : 0b 000 000 100 : Power supply sequencer
 
 * Author: Jon Klein
 * Description: Sequentially enable and disable channels with configurable delay

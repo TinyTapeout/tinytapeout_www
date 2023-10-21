@@ -4,7 +4,7 @@ title: "68 Breathing LED"
 weight: 69
 ---
 
-## 68 : 0b001000100 : Breathing LED
+## 68 : 0b 001 000 100 : Breathing LED
 
 * Author: argunda
 * Description: Use the pwm output to drive an LED and it should look like it's breathing.

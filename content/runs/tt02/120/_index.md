@@ -4,7 +4,7 @@ title: "120 Adder with 7-segment decoder"
 weight: 121
 ---
 
-## 120 : 0b001111000 : Adder with 7-segment decoder
+## 120 : 0b 001 111 000 : Adder with 7-segment decoder
 
 * Author: cy384
 * Description: Four bit adder with binary to 7 segment display decoder

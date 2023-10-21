@@ -4,7 +4,7 @@ title: "6 S4GA: Super Slow Serial SRAM FPGA"
 weight: 7
 ---
 
-## 6 : 0b000000110 : S4GA: Super Slow Serial SRAM FPGA
+## 6 : 0b 000 000 110 : S4GA: Super Slow Serial SRAM FPGA
 
 * Author: Jan Gray
 * Description: one fracturable 5-LUT that receives FPGA LUT configuration frames, serially evaluates LUT inputs and LUT outputs

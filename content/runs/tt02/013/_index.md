@@ -4,7 +4,7 @@ title: "13 4-spin Ising Chain Simulation"
 weight: 14
 ---
 
-## 13 : 0b000001101 : 4-spin Ising Chain Simulation
+## 13 : 0b 000 001 101 : 4-spin Ising Chain Simulation
 
 * Author: Seppe Van Dyck
 * Description: A self-contained physics simulation. This circuit simulates 4 spins of an Ising chain in  an external field.

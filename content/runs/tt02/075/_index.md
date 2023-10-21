@@ -4,7 +4,7 @@ title: "75 Ring OSC Speed Test"
 weight: 76
 ---
 
-## 75 : 0b001001011 : Ring OSC Speed Test
+## 75 : 0b 001 001 011 : Ring OSC Speed Test
 
 * Author: Eric Smith
 * Description: Make two rings with the same number of stages but measure how their frequency differs.  Measure if they can influence eachother.

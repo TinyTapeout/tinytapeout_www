@@ -4,7 +4,7 @@ title: "35 4-bit badge ALU"
 weight: 36
 ---
 
-## 35 : 0b000100011 : 4-bit badge ALU
+## 35 : 0b 000 100 011 : 4-bit badge ALU
 
 * Author: Rolf Widenfelt
 * Description: A 4-bit ALU inspired by Supercon.6 badge

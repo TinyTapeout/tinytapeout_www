@@ -4,7 +4,7 @@ title: "57 UART-CC"
 weight: 58
 ---
 
-## 57 : 0b000111001 : UART-CC
+## 57 : 0b 000 111 001 : UART-CC
 
 * Author: Christina Cyr
 * Description: UART Template

@@ -4,7 +4,7 @@ title: "38 YaFPGA"
 weight: 39
 ---
 
-## 38 : 0b000100110 : YaFPGA
+## 38 : 0b 000 100 110 : YaFPGA
 
 * Author: Frans Skarman
 * Description: Yet another FPGA

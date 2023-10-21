@@ -4,7 +4,7 @@ title: "122 Multiple seven-segment digit buffer"
 weight: 123
 ---
 
-## 122 : 0b001111010 : Multiple seven-segment digit buffer
+## 122 : 0b 001 111 010 : Multiple seven-segment digit buffer
 
 * Author: Zach Mason
 * Description: Storage and variable speed readback segment digits

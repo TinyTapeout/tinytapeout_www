@@ -4,7 +4,7 @@ title: "71 Non-restoring Square Root"
 weight: 72
 ---
 
-## 71 : 0b001000111 : Non-restoring Square Root
+## 71 : 0b 001 000 111 : Non-restoring Square Root
 
 * Author: Wallace Everest
 * Description: Square root for use in RMS calculations

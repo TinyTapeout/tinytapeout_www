@@ -4,7 +4,7 @@ title: "82 SPI Flash State Machine"
 weight: 83
 ---
 
-## 82 : 0b001010010 : SPI Flash State Machine
+## 82 : 0b 001 010 010 : SPI Flash State Machine
 
 * Author: Greg Steiert
 * Description: Implements a state machine stored in an external SPI flash

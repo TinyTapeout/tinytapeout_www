@@ -4,7 +4,7 @@ title: "133 Optimised Euclidean Algorithm"
 weight: 134
 ---
 
-## 133 : 0b010000101 : Optimised Euclidean Algorithm
+## 133 : 0b 010 000 101 : Optimised Euclidean Algorithm
 
 * Author: Recep Said Dulger
 * Description: Finding gcd of 2 4-bit number

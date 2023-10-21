@@ -4,7 +4,7 @@ title: "62 CNS TT02 Test 1:Score Board"
 weight: 63
 ---
 
-## 62 : 0b000111110 : CNS TT02 Test 1:Score Board
+## 62 : 0b 000 111 110 : CNS TT02 Test 1:Score Board
 
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab. Displays an 8-bit score from one of two players as a two-digit hexadecimal value.
