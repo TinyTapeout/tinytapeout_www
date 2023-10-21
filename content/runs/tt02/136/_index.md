@@ -4,7 +4,7 @@ title: "136 LAB11"
 weight: 137
 ---
 
-## number : 0b010001000 : LAB11
+## 136 : 0b010001000 : LAB11
 
 * Author: Thomas Zachariah
 * Description: Cycles through the characters of LAB11

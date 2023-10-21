@@ -4,7 +4,7 @@ title: "43 RC5 decoder"
 weight: 44
 ---
 
-## number : 0b000101011 : RC5 decoder
+## 43 : 0b000101011 : RC5 decoder
 
 * Author: Jean THOMAS
 * Description: Increment/decrement a counter with the press of an IR remote button!

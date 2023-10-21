@@ -4,7 +4,7 @@ title: "23 4-bit Multiplier"
 weight: 24
 ---
 
-## number : 0b000010111 : 4-bit Multiplier
+## 23 : 0b000010111 : 4-bit Multiplier
 
 * Author: Fernando Dominguez Pousa
 * Description: 4-bit Multiplier based on single bit full adders

@@ -4,7 +4,7 @@ title: "89 Taillight controller of a 1965 Ford Thunderbird"
 weight: 90
 ---
 
-## number : 0b001011001 : Taillight controller of a 1965 Ford Thunderbird
+## 89 : 0b001011001 : Taillight controller of a 1965 Ford Thunderbird
 
 * Author: Hirosh Dabui
 * Description: Asic of a Taillight controller of a 1965 Ford Thunderbird

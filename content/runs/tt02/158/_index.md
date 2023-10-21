@@ -4,7 +4,7 @@ title: "158 Laura's L"
 weight: 159
 ---
 
-## number : 0b010011110 : Laura's L
+## 158 : 0b010011110 : Laura's L
 
 * Author: Laura
 * Description: Makes an L on the 7 segment when you press buttons 1 & 2

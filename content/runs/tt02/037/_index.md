@@ -4,7 +4,7 @@ title: "37 Siren"
 weight: 38
 ---
 
-## number : 0b000100101 : Siren
+## 37 : 0b000100101 : Siren
 
 * Author: Alan Green
 * Description: Pretty patterns and a siren straight from the 1970s

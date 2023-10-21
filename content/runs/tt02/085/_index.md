@@ -4,7 +4,7 @@ title: "85 8 bit CPU"
 weight: 86
 ---
 
-## number : 0b001010101 : 8 bit CPU
+## 85 : 0b001010101 : 8 bit CPU
 
 * Author: Paul Campell
 * Description: 8-bit version of the MoonBase 4-bit CPU

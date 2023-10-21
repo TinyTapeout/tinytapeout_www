@@ -4,7 +4,7 @@ title: "24 Avalon Semiconductors 'TBB1143' Programmable Sound Generator"
 weight: 25
 ---
 
-## number : 0b000011000 : Avalon Semiconductors 'TBB1143' Programmable Sound Generator
+## 24 : 0b000011000 : Avalon Semiconductors 'TBB1143' Programmable Sound Generator
 
 * Author: Tholin
 * Description: Sound generator with two square-wave voices, one sawtooth voice and one noise channel. Can also be used as a general-purpose frequency generator.

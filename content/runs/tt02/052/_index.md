@@ -4,7 +4,7 @@ title: "52 XorShift32"
 weight: 53
 ---
 
-## number : 0b000110100 : XorShift32
+## 52 : 0b000110100 : XorShift32
 
 * Author: Ethan Mahintorabi
 * Description: XorShift32 random number generator

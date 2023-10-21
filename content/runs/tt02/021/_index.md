@@ -4,7 +4,7 @@ title: "21 BCD to 7-segment encoder"
 weight: 22
 ---
 
-## number : 0b000010101 : BCD to 7-segment encoder
+## 21 : 0b000010101 : BCD to 7-segment encoder
 
 * Author: maehw
 * Description: Encode binary coded decimals (BCD) in the range 0..9 to 7-segment display control signals

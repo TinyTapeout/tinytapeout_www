@@ -4,7 +4,7 @@ title: "5 Duty Controller"
 weight: 6
 ---
 
-## number : 0b000000101 : Duty Controller
+## 5 : 0b000000101 : Duty Controller
 
 * Author: Marcelo Pouso / Miguel Correia
 * Description: Increase/Decrease a duty cycle of square signal.

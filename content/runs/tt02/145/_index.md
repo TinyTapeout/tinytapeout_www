@@ -4,7 +4,7 @@ title: "145 Secret File"
 weight: 146
 ---
 
-## number : 0b010010001 : Secret File
+## 145 : 0b010010001 : Secret File
 
 * Author: bitluni
 * Description: Nothing to see here

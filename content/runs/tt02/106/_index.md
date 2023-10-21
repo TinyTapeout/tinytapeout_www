@@ -4,7 +4,7 @@ title: "106 Tiny PIC-like MCU"
 weight: 107
 ---
 
-## number : 0b001101010 : Tiny PIC-like MCU
+## 106 : 0b001101010 : Tiny PIC-like MCU
 
 * Author: myrtle
 * Description: serially programmed, subset of PIC ISA, MCU

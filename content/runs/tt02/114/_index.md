@@ -4,7 +4,7 @@ title: "114 FROG 4-Bit CPU"
 weight: 115
 ---
 
-## number : 0b001110010 : FROG 4-Bit CPU
+## 114 : 0b001110010 : FROG 4-Bit CPU
 
 * Author: ChrisPVille
 * Description: The FROG is an extremely minimal load-store 4-bit CPU

@@ -4,7 +4,7 @@ title: "48 Shiftregister Challenge 40 Bit"
 weight: 49
 ---
 
-## number : 0b000110000 : Shiftregister Challenge 40 Bit
+## 48 : 0b000110000 : Shiftregister Challenge 40 Bit
 
 * Author: Thorsten Knoll
 * Description: The design is a 40 bit shiftregister with a hardcoded 40 bit number. The challenge is to find the correct 40 bit to enable the output to high. With all other numbers the output will be low.

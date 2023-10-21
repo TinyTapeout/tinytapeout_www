@@ -4,7 +4,7 @@ title: "74 hex shift register"
 weight: 75
 ---
 
-## number : 0b001001010 : hex shift register
+## 74 : 0b001001010 : hex shift register
 
 * Author: Eric Smith
 * Description: six 40-bit shift registers

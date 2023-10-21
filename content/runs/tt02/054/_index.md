@@ -4,7 +4,7 @@ title: "54 Multiple Tunes on A Piezo Speaker"
 weight: 55
 ---
 
-## number : 0b000110110 : Multiple Tunes on A Piezo Speaker
+## 54 : 0b000110110 : Multiple Tunes on A Piezo Speaker
 
 * Author: Jiaxun Yang
 * Description: Plays multiple Tunes over a Piezo Speaker connected across io_out[1:0]

@@ -4,7 +4,7 @@ title: "163 Customizable Padlock"
 weight: 164
 ---
 
-## number : 0b010100011 : Customizable Padlock
+## 163 : 0b010100011 : Customizable Padlock
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a customizable padlock. Set a code for your digital safe!

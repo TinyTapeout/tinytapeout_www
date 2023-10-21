@@ -4,7 +4,7 @@ title: "49 TinyTapeout2 4-bit multiplier."
 weight: 50
 ---
 
-## number : 0b000110001 : TinyTapeout2 4-bit multiplier.
+## 49 : 0b000110001 : TinyTapeout2 4-bit multiplier.
 
 * Author: Tholin
 * Description: Multiplies two 4-bit numbers presented on the input pins and outputs an 8-bit result.

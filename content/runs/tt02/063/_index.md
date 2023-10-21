@@ -4,7 +4,7 @@ title: "63 CNS002 (TT02-Test 2)"
 weight: 64
 ---
 
-## number : 0b000111111 : CNS002 (TT02-Test 2)
+## 63 : 0b000111111 : CNS002 (TT02-Test 2)
 
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab (second design)

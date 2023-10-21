@@ -4,7 +4,7 @@ title: "50 TinyTapeout2 multiplexed segment display timer."
 weight: 51
 ---
 
-## number : 0b000110010 : TinyTapeout2 multiplexed segment display timer.
+## 50 : 0b000110010 : TinyTapeout2 multiplexed segment display timer.
 
 * Author: Tholin
 * Description: Measures time up to 99 minutes and 59 seconds by multiplexing 4 seven-segment displays.

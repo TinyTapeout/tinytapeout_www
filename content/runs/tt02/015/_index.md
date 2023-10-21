@@ -4,7 +4,7 @@ title: "15 small FFT"
 weight: 16
 ---
 
-## number : 0b000001111 : small FFT
+## 15 : 0b000001111 : small FFT
 
 * Author: Rice Shelley
 * Description: Computes a small fft

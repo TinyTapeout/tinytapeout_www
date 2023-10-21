@@ -4,7 +4,7 @@ title: "93 Whisk: 16-bit Serial RISC CPU"
 weight: 94
 ---
 
-## number : 0b001011101 : Whisk: 16-bit Serial RISC CPU
+## 93 : 0b001011101 : Whisk: 16-bit Serial RISC CPU
 
 * Author: Luke Wren
 * Description: Execute a simple 16-bit RISC-style instruction set from up to 64 kilobytes of external SPI SRAM.

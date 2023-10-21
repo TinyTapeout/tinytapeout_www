@@ -4,7 +4,7 @@ title: "144 Logisim demo - LED blinker"
 weight: 145
 ---
 
-## number : 0b010010000 : Logisim demo - LED blinker
+## 144 : 0b010010000 : Logisim demo - LED blinker
 
 * Author: Tholin
 * Description: Example of how to use Logisim Evolution generated Verilog for TinyTapeout.

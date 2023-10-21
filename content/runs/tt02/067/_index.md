@@ -4,7 +4,7 @@ title: "67 SQRT1 Square Root Engine"
 weight: 68
 ---
 
-## number : 0b001000011 : SQRT1 Square Root Engine
+## 67 : 0b001000011 : SQRT1 Square Root Engine
 
 * Author: Davit Margarian (UDXS)
 * Description: Computes 4.2 fixed-point square root for any 7-bit integer

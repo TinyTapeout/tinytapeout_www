@@ -4,7 +4,7 @@ title: "78 Zinnia+ (MCPU5+) 8 Bit CPU"
 weight: 79
 ---
 
-## number : 0b001001110 : Zinnia+ (MCPU5+) 8 Bit CPU
+## 78 : 0b001001110 : Zinnia+ (MCPU5+) 8 Bit CPU
 
 * Author: cpldcpu
 * Description: A minimal 8 bit CPU

@@ -4,7 +4,7 @@ title: "152 Basic 4 bit cpu "
 weight: 153
 ---
 
-## number : 0b010011000 : Basic 4 bit cpu 
+## 152 : 0b010011000 : Basic 4 bit cpu 
 
 * Author: Noah Gaertner
 * Description: 4-bit CPU that does add, subtract, multiply, left and right shifts, conditional jump based on external signal, logical and bitwise AND and OR, equality and inequality checking, bitwise inversion, and logical NOT

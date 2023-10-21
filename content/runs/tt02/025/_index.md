@@ -4,7 +4,7 @@ title: "25 Transmit UART"
 weight: 26
 ---
 
-## number : 0b000011001 : Transmit UART
+## 25 : 0b000011001 : Transmit UART
 
 * Author: Tom Keddie
 * Description: Transmits a async serial string on a pin

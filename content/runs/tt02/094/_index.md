@@ -4,7 +4,7 @@ title: "94 Scalable synchronous 4-bit tri-directional loadable counter"
 weight: 95
 ---
 
-## number : 0b001011110 : Scalable synchronous 4-bit tri-directional loadable counter
+## 94 : 0b001011110 : Scalable synchronous 4-bit tri-directional loadable counter
 
 * Author: Steven Bos
 * Description: This chip offers a scalable n-bit counter design that can be used as a program counter by setting the next address (eg. for a JMP instruction). It can work in 3 directions: counting up, down and pause.

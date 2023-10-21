@@ -4,7 +4,7 @@ title: "165 MRCS Verilog test"
 weight: 166
 ---
 
-## number : 0b010100101 : MRCS Verilog test
+## 165 : 0b010100101 : MRCS Verilog test
 
 * Author: Steven Bos
 * Description: Testing various auto-generated verilog for various sync and async logic gates

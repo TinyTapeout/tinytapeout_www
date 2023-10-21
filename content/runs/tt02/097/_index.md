@@ -4,7 +4,7 @@ title: "97 Monte Carlo Pi Integrator"
 weight: 98
 ---
 
-## number : 0b001100001 : Monte Carlo Pi Integrator
+## 97 : 0b001100001 : Monte Carlo Pi Integrator
 
 * Author: regymm
 * Description: Calculate the value of Pi using the Monte Carlo method

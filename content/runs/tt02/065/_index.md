@@ -4,7 +4,7 @@ title: "65 7-segment LED flasher"
 weight: 66
 ---
 
-## number : 0b001000001 : 7-segment LED flasher
+## 65 : 0b001000001 : 7-segment LED flasher
 
 * Author: Joseph Chiu
 * Description: Drives 7-segment LED display, alternating between NIC and JAC

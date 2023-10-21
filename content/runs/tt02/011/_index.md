@@ -4,7 +4,7 @@ title: "11 16x8 SRAM & Streaming Signal Generator"
 weight: 12
 ---
 
-## number : 0b000001011 : 16x8 SRAM & Streaming Signal Generator
+## 11 : 0b000001011 : 16x8 SRAM & Streaming Signal Generator
 
 * Author: James Ross
 * Description: Write to, Read from, and Stream 16 addressable 8-bit words of memory

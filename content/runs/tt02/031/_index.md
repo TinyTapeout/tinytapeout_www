@@ -4,7 +4,7 @@ title: "31 heart zoe mom dad"
 weight: 32
 ---
 
-## number : 0b000011111 : heart zoe mom dad
+## 31 : 0b000011111 : heart zoe mom dad
 
 * Author: zoe nguyen.  taylor
 * Description: outputs my name and my age (zoe 4)

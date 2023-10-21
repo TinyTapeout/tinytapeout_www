@@ -4,7 +4,7 @@ title: "101 BCD to Hex 7-Segment Decoder"
 weight: 102
 ---
 
-## number : 0b001100101 : BCD to Hex 7-Segment Decoder
+## 101 : 0b001100101 : BCD to Hex 7-Segment Decoder
 
 * Author: JinGen Lim
 * Description: Converts a 4-bit BCD input into a hexadecimal 7-segment display output

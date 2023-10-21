@@ -4,7 +4,7 @@ title: "64 Test2"
 weight: 65
 ---
 
-## number : 0b001000000 : Test2
+## 64 : 0b001000000 : Test2
 
 * Author: Shaos
 * Description: Testing Flip-Flops

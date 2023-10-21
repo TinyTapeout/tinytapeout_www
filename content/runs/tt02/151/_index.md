@@ -4,7 +4,7 @@ title: "151 Beep Boop Traffic Light Controller"
 weight: 152
 ---
 
-## number : 0b010010111 : Beep Boop Traffic Light Controller
+## 151 : 0b010010111 : Beep Boop Traffic Light Controller
 
 * Author: Anish Singhani
 * Description: Sequencer for a traffic light with a walk button, with timings tuned to match the iconic 'beep boop' streetlight formerly installed in front of Carnegie Mellon University

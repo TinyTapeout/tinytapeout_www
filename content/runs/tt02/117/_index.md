@@ -4,7 +4,7 @@ title: "117 Marquee"
 weight: 118
 ---
 
-## number : 0b001110101 : Marquee
+## 117 : 0b001110101 : Marquee
 
 * Author: Christopher 'ctag' Bero
 * Description: Scrolls 'ctag' across the 7seg.

@@ -4,7 +4,7 @@ title: "44 chiDOM"
 weight: 45
 ---
 
-## number : 0b000101100 : chiDOM
+## 44 : 0b000101100 : chiDOM
 
 * Author: Maria CHiara Molteni
 * Description: Chi function of Xoodoo protected at the first-order by DOM

@@ -4,7 +4,7 @@ title: "51 XLS: 8-bit counter"
 weight: 52
 ---
 
-## number : 0b000110011 : XLS: 8-bit counter
+## 51 : 0b000110011 : XLS: 8-bit counter
 
 * Author: proppy
 * Description: Increment output bits

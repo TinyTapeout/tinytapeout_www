@@ -4,7 +4,7 @@ title: "56 TinyTapeout 2 LCD Nametag"
 weight: 57
 ---
 
-## number : 0b000111000 : TinyTapeout 2 LCD Nametag
+## 56 : 0b000111000 : TinyTapeout 2 LCD Nametag
 
 * Author: Tholin
 * Description: Echoes out a predefined text onto a 20x4 character LCD.

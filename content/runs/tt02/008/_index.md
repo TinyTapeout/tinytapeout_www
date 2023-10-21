@@ -4,7 +4,7 @@ title: "8 The McCoy 8-bit Microprocessor"
 weight: 9
 ---
 
-## number : 0b000001000 : The McCoy 8-bit Microprocessor
+## 8 : 0b000001000 : The McCoy 8-bit Microprocessor
 
 * Author: Aidan Good
 * Description: Custom RISC-V inspired microprocessor capable of simple arithmatic, branching, and jumps through a custom ISA.

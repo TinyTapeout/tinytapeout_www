@@ -4,7 +4,7 @@ title: "148 3-bit adder"
 weight: 149
 ---
 
-## number : 0b010010100 : 3-bit adder
+## 148 : 0b010010100 : 3-bit adder
 
 * Author: MG
 * Description: Add two 3-bit numbers

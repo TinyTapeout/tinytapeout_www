@@ -4,7 +4,7 @@ title: "88 Frequency Counter"
 weight: 89
 ---
 
-## number : 0b001011000 : Frequency Counter
+## 88 : 0b001011000 : Frequency Counter
 
 * Author: Andrew Ramsey
 * Description: Estimates the frequency of an input signal

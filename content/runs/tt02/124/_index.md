@@ -4,7 +4,7 @@ title: "124 Rolling Average - 5 bit, 8 bank"
 weight: 125
 ---
 
-## number : 0b001111100 : Rolling Average - 5 bit, 8 bank
+## 124 : 0b001111100 : Rolling Average - 5 bit, 8 bank
 
 * Author: Kauna Lei
 * Description: 5bit moving average

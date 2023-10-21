@@ -4,7 +4,7 @@ title: "58 3-bit 8-channel PWM driver"
 weight: 59
 ---
 
-## number : 0b000111010 : 3-bit 8-channel PWM driver
+## 58 : 0b000111010 : 3-bit 8-channel PWM driver
 
 * Author: Ivan Krasin
 * Description: PWM driver with 8 channels and 8 PWM levels from 0 to 1

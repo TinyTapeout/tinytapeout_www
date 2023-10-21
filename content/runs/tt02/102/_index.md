@@ -4,7 +4,7 @@ title: "102 SRLD"
 weight: 103
 ---
 
-## number : 0b001100110 : SRLD
+## 102 : 0b001100110 : SRLD
 
 * Author: Chris Burton
 * Description: 8-bit Shift Register with latch and hex decode to display alternating nibbles

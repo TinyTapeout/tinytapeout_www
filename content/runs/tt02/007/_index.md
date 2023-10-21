@@ -4,7 +4,7 @@ title: "7 ALU"
 weight: 8
 ---
 
-## number : 0b000000111 : ALU
+## 7 : 0b000000111 : ALU
 
 * Author: Ryan Cornateanu
 * Description: 2bit ALU with a ripple carry adder that has the capability to perform 16 different calculations

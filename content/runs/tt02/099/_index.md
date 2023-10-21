@@ -4,7 +4,7 @@ title: "99 GPS C/A PRN Generator"
 weight: 100
 ---
 
-## number : 0b001100011 : GPS C/A PRN Generator
+## 99 : 0b001100011 : GPS C/A PRN Generator
 
 * Author: Adam Greig
 * Description: Generate the GPS C/A PRN sequences PRN1 through PRN32

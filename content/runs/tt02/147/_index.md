@@ -4,7 +4,7 @@ title: "147 PWM Generator"
 weight: 148
 ---
 
-## number : 0b010010011 : PWM Generator
+## 147 : 0b010010011 : PWM Generator
 
 * Author: Jason Lu
 * Description: Generates 100 Hz PWM signal

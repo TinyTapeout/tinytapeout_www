@@ -4,7 +4,7 @@ title: "20 chase the beat"
 weight: 21
 ---
 
-## number : 0b000010100 : chase the beat
+## 20 : 0b000010100 : chase the beat
 
 * Author: Emil J Tywoniak
 * Description: Tap twice to the beat, the outputs will chase the beat. Or generate some audio noise!

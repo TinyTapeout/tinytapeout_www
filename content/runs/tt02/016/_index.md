@@ -4,7 +4,7 @@ title: "16 Stream Integrator"
 weight: 17
 ---
 
-## number : 0b000010000 : Stream Integrator
+## 16 : 0b000010000 : Stream Integrator
 
 * Author: William Moyes
 * Description: A silicon implementation of a simple optical computation

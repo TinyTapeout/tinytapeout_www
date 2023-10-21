@@ -4,7 +4,7 @@ title: "69 Fibonacci & Gold Code"
 weight: 70
 ---
 
-## number : 0b001000101 : Fibonacci & Gold Code
+## 69 : 0b001000101 : Fibonacci & Gold Code
 
 * Author: Daniel Estevez
 * Description: This project includes two independent designs: a design that calculates terms of the Fibonacci sequence and displays them in hex one character at a time on a 7-segment display, and a Gold code generator that generates the codes used by CCSDS X-band PN Delta-DOR.

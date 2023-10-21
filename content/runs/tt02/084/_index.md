@@ -4,7 +4,7 @@ title: "84 Worm in a Maze"
 weight: 85
 ---
 
-## number : 0b001010100 : Worm in a Maze
+## 84 : 0b001010100 : Worm in a Maze
 
 * Author: Tim Victor
 * Description: Animation demo on seven-segment LED

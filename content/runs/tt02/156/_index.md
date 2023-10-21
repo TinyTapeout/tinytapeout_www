@@ -4,7 +4,7 @@ title: "156 7 segment seconds"
 weight: 157
 ---
 
-## number : 0b010011100 : 7 segment seconds
+## 156 : 0b010011100 : 7 segment seconds
 
 * Author: Matt Venn
 * Description: counts from 0 to 9, incrementing once per second

@@ -4,7 +4,7 @@ title: "132 MicroASIC VI"
 weight: 133
 ---
 
-## number : 0b010000100 : MicroASIC VI
+## 132 : 0b010000100 : MicroASIC VI
 
 * Author: Mikhail Svarichevsky
 * Description: Free-running oscillators to verify simulation vs reality + TRNG

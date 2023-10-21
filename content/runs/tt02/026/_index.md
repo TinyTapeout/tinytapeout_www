@@ -4,7 +4,7 @@ title: "26 RGB LED Matrix Driver"
 weight: 27
 ---
 
-## number : 0b000011010 : RGB LED Matrix Driver
+## 26 : 0b000011010 : RGB LED Matrix Driver
 
 * Author: Matt M
 * Description: Drives a simple animation on SparkFun's RGB LED 8x8 matrix backpack
