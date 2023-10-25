@@ -8,16 +8,16 @@ To ease bring-up and make it easier to reuse boards, TT advocates to use common 
 
 The use of common pinouts is not mandatory, but is recommended since TT is a community shuttle. Feel free to deviate from the recommendations where it is necessary for your design. If you use a protocol or Pmod not listed here, please make a proposal on the Discord server.
 
-# Common Peripherals
+## Common Peripherals
 
-## UART to USB
+**UART to USB**
 
 If you want to interact with your design over serial console you can do this via the builtin RP2040 on the demo board. This way you can connect the demo board via USB and send/receive data from your chip.
 
 ui_in[3]  - RX\
 uo_out[4] - TX
 
-## VGA Output
+**VGA Output**
 
 ![Tiny VGA](images/tiny_vga.jpg)
 
@@ -38,7 +38,7 @@ uo_out[5] - G0\
 uo_out[6] - B0\
 uo_out[7] - hsync
 
-## SPI RAM
+**SPI RAM**
 
 The RP2040 on the demo board can be configured to provide RAM to the chip over SPI thanks to [spi-ram-emu](https://github.com/MichaelBell/spi-ram-emu/).
 
@@ -51,11 +51,11 @@ uio[3] - GPIO24 - SCK
 
 This maps to the standard SPI pinout for Pmods, which means a PSRAM Pmod could be used as a drop-in replacement.
 
-# Common Protocols (SPI, I2C and UART)
+##  Common Protocols (SPI, I2C and UART)
 
 If you want to implement protocols that do not specifically target any Pmod we suggest to use the pinout for I2C, SPI and UART from the [Pmod specification](https://digilent.com/reference/_media/reference/pmod/pmod-interface-specification-1_2_0.pdf)
 
-## SPI
+**SPI**
 
 SPI uses CS, MOSI, MISO and SCK and therefore requires only one row of pins of the Pmod connector, preferably the upper row. Since standard SPI has to send and receive, the bidirectional Pmod is used:
 
@@ -87,7 +87,7 @@ uio[5] - RST\
 uio[6] - WP\
 uio[7] - HLD
 
-## UART (optional hardware flow control)
+**UART (optional hardware flow control)**
 
 UART uses TXD and RXD and optionally CTS and RTS. Only one row of the Pmod connector is used, preferably the upper row:
 
@@ -107,7 +107,7 @@ uio[7] - (RTS)
 
 If your design is receive only or send only, you can choose to omit TXD or RXD and choose to use the output only or input only Pmod.
 
-## I2C (optional interrupt and reset)
+**I2C (optional interrupt and reset)**
 
 The pinout for I2C uses SCL and SDA and optionally INT and RESET for interrupts and reset. Only one row of the Pmod connector is used, preferably the upper row:
 
