@@ -6,6 +6,8 @@ weight: 24
 
 ## 23 : 0b 000 010 111 : 4-bit Multiplier
 
+{{< tt-scanchain-switches "000010111" >}}
+
 * Author: Fernando Dominguez Pousa
 * Description: 4-bit Multiplier based on single bit full adders
 * [GitHub repository](https://github.com/kuriousd/tt02-4bit-multiplier)

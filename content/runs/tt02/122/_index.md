@@ -6,6 +6,8 @@ weight: 123
 
 ## 122 : 0b 001 111 010 : Multiple seven-segment digit buffer
 
+{{< tt-scanchain-switches "001111010" >}}
+
 * Author: Zach Mason
 * Description: Storage and variable speed readback segment digits
 * [GitHub repository](https://github.com/zymason/tt02-zymason)

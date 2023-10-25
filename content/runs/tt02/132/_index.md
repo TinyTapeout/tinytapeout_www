@@ -6,6 +6,8 @@ weight: 133
 
 ## 132 : 0b 010 000 100 : MicroASIC VI
 
+{{< tt-scanchain-switches "010000100" >}}
+
 * Author: Mikhail Svarichevsky
 * Description: Free-running oscillators to verify simulation vs reality + TRNG
 * [GitHub repository](https://github.com/BarsMonster/MicroAsicVI)

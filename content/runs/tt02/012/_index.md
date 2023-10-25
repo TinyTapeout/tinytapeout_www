@@ -6,6 +6,8 @@ weight: 13
 
 ## 12 : 0b 000 001 100 : German Traffic Light State Machine
 
+{{< tt-scanchain-switches "000001100" >}}
+
 * Author: Jens Schleusner
 * Description: A state machine to control german traffic lights at an intersection.
 * [GitHub repository](https://github.com/JensIMS/tt02-trafficlight)

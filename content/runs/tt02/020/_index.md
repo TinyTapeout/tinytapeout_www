@@ -6,6 +6,8 @@ weight: 21
 
 ## 20 : 0b 000 010 100 : chase the beat
 
+{{< tt-scanchain-switches "000010100" >}}
+
 * Author: Emil J Tywoniak
 * Description: Tap twice to the beat, the outputs will chase the beat. Or generate some audio noise!
 * [GitHub repository](https://github.com/ekliptik/tt02-chase-the-beat)

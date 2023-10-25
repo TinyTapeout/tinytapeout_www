@@ -6,6 +6,8 @@ weight: 101
 
 ## 100 : 0b 001 100 100 : Sigma-Delta ADC/DAC
 
+{{< tt-scanchain-switches "001100100" >}}
+
 * Author: Adam Greig
 * Description: Simple ADC and DAC
 * [GitHub repository](https://github.com/adamgreig/tt02-adc-dac)

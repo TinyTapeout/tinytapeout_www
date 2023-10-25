@@ -6,6 +6,8 @@ weight: 67
 
 ## 66 : 0b 001 000 010 : Nano-neuron
 
+{{< tt-scanchain-switches "001000010" >}}
+
 * Author: Daniel Burke
 * Description: minimal low vector test
 * [GitHub repository](https://github.com/drburke3/tt02-nano-neuron)

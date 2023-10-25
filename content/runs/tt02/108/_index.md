@@ -6,6 +6,8 @@ weight: 109
 
 ## 108 : 0b 001 101 100 : Logic-2G97-2G98
 
+{{< tt-scanchain-switches "001101100" >}}
+
 * Author: Sirawit Lappisatepun
 * Description: Replication of TI's Little Logic 1G97 and 1G98 configurable logic gates.
 * [GitHub repository](https://github.com/Sirawit7205/tt02-2G97-2G98)

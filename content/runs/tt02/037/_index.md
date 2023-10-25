@@ -6,6 +6,8 @@ weight: 38
 
 ## 37 : 0b 000 100 101 : Siren
 
+{{< tt-scanchain-switches "000100101" >}}
+
 * Author: Alan Green
 * Description: Pretty patterns and a siren straight from the 1970s
 * [GitHub repository](https://github.com/alanvgreen/tt02-siren)

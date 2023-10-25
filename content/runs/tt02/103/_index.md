@@ -6,6 +6,8 @@ weight: 104
 
 ## 103 : 0b 001 100 111 : Counter
 
+{{< tt-scanchain-switches "001100111" >}}
+
 * Author: Adam Zeloof
 * Description: It counts!
 * [GitHub repository](https://github.com/azzeloof/tt02-counter)

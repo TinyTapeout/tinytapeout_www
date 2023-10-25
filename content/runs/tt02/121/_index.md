@@ -6,6 +6,8 @@ weight: 122
 
 ## 121 : 0b 001 111 001 : Hex to 7 Segment Decoder
 
+{{< tt-scanchain-switches "001111001" >}}
+
 * Author: Randy Glenn
 * Description: Displays an input 4-bit value as a hex digit
 * [GitHub repository](https://github.com/rglenn/tt02-rglenn-hex-to-7-seg)

@@ -6,6 +6,8 @@ weight: 74
 
 ## 73 : 0b 001 001 001 : 7-channel PWM driver controlled via SPI bus
 
+{{< tt-scanchain-switches "001001001" >}}
+
 * Author: Ivan Krasin
 * Description: PWM driver with 7 channels and 256 PWM levels from 0 to 1
 * [GitHub repository](https://github.com/krasin/tt02-verilog-spi-7-channel-pwm-driver)

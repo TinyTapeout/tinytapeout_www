@@ -6,6 +6,8 @@ weight: 7
 
 ## 6 : 0b 000 000 110 : S4GA: Super Slow Serial SRAM FPGA
 
+{{< tt-scanchain-switches "000000110" >}}
+
 * Author: Jan Gray
 * Description: one fracturable 5-LUT that receives FPGA LUT configuration frames, serially evaluates LUT inputs and LUT outputs
 * [GitHub repository](https://github.com/grayresearch/tt02-s4ga)

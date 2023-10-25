@@ -6,6 +6,8 @@ weight: 23
 
 ## 22 : 0b 000 010 110 : A LED Flasher
 
+{{< tt-scanchain-switches "000010110" >}}
+
 * Author: Ben Everard
 * Description: Select different inputs to generate different LED patterns
 * [GitHub repository](https://github.com/benevpi/tt02-LED-flasher)

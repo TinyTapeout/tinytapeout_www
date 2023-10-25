@@ -6,6 +6,8 @@ weight: 70
 
 ## 69 : 0b 001 000 101 : Fibonacci & Gold Code
 
+{{< tt-scanchain-switches "001000101" >}}
+
 * Author: Daniel Estevez
 * Description: This project includes two independent designs: a design that calculates terms of the Fibonacci sequence and displays them in hex one character at a time on a 7-segment display, and a Gold code generator that generates the codes used by CCSDS X-band PN Delta-DOR.
 * [GitHub repository](https://github.com/daniestevez/tt02-gold-fibonacci)

@@ -6,6 +6,8 @@ weight: 27
 
 ## 26 : 0b 000 011 010 : RGB LED Matrix Driver
 
+{{< tt-scanchain-switches "000011010" >}}
+
 * Author: Matt M
 * Description: Drives a simple animation on SparkFun's RGB LED 8x8 matrix backpack
 * [GitHub repository](https://github.com/mm21/tinytapeout2-led-matrix)

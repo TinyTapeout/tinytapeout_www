@@ -6,6 +6,8 @@ weight: 146
 
 ## 145 : 0b 010 010 001 : Secret File
 
+{{< tt-scanchain-switches "010010001" >}}
+
 * Author: bitluni
 * Description: Nothing to see here
 * [GitHub repository](https://github.com/bitluni/tt02-SecretFile)

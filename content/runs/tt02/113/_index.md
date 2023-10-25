@@ -6,6 +6,8 @@ weight: 114
 
 ## 113 : 0b 001 110 001 : Rotary encoder
 
+{{< tt-scanchain-switches "001110001" >}}
+
 * Author: Wim Dams
 * Description: Reads in a (incremental) rotary encoder and shows the result on the seven-segment display
 * [GitHub repository](https://github.com/wimdams/tt02-rotary-encoder)

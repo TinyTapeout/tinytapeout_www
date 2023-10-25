@@ -6,6 +6,8 @@ weight: 30
 
 ## 29 : 0b 000 011 101 : tiny egg timer
 
+{{< tt-scanchain-switches "000011101" >}}
+
 * Author: yubex
 * Description: tiny egg timer is a configurable small timer
 * [GitHub repository](https://github.com/yubex/tt02-tiny_egg_timer)

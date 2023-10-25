@@ -6,6 +6,8 @@ weight: 41
 
 ## 40 : 0b 000 101 000 : bitslam
 
+{{< tt-scanchain-switches "000101000" >}}
+
 * Author: Jake "ferris" Taylor
 * Description: bitslam is a programmable sound chip with 2 LFSR voices.
 * [GitHub repository](https://github.com/yupferris/bitslam)

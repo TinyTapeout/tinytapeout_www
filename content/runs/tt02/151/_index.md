@@ -6,6 +6,8 @@ weight: 152
 
 ## 151 : 0b 010 010 111 : Beep Boop Traffic Light Controller
 
+{{< tt-scanchain-switches "010010111" >}}
+
 * Author: Anish Singhani
 * Description: Sequencer for a traffic light with a walk button, with timings tuned to match the iconic 'beep boop' streetlight formerly installed in front of Carnegie Mellon University
 * [GitHub repository](https://github.com/asinghani/tt02-beepboop)

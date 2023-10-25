@@ -6,6 +6,8 @@ weight: 108
 
 ## 107 : 0b 001 101 011 : RV8U - 8-bit RISC-V Microcore Processor
 
+{{< tt-scanchain-switches "001101011" >}}
+
 * Author: David Richie
 * Description: 8-bit processor based on RISC-V ISA
 * [GitHub repository](https://github.com/browndeer/rv8u)

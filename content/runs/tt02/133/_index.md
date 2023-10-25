@@ -6,6 +6,8 @@ weight: 134
 
 ## 133 : 0b 010 000 101 : Optimised Euclidean Algorithm
 
+{{< tt-scanchain-switches "010000101" >}}
+
 * Author: Recep Said Dulger
 * Description: Finding gcd of 2 4-bit number
 * [GitHub repository](https://github.com/RecepSaid/tt02-euclidean-algorithm)

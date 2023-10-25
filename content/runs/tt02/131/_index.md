@@ -6,6 +6,8 @@ weight: 132
 
 ## 131 : 0b 010 000 011 : Hello Generator
 
+{{< tt-scanchain-switches "010000011" >}}
+
 * Author: Skyler Saleh
 * Description: Flashes 'H-E-L-L-O' on the 7 segment display
 * [GitHub repository](https://github.com/skylersaleh/tt02-hello)

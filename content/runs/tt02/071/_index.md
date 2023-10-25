@@ -6,6 +6,8 @@ weight: 72
 
 ## 71 : 0b 001 000 111 : Non-restoring Square Root
 
+{{< tt-scanchain-switches "001000111" >}}
+
 * Author: Wallace Everest
 * Description: Square root for use in RMS calculations
 * [GitHub repository](https://github.com/navray/tt02-square-root)

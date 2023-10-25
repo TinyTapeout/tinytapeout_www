@@ -6,6 +6,8 @@ weight: 14
 
 ## 13 : 0b 000 001 101 : 4-spin Ising Chain Simulation
 
+{{< tt-scanchain-switches "000001101" >}}
+
 * Author: Seppe Van Dyck
 * Description: A self-contained physics simulation. This circuit simulates 4 spins of an Ising chain in  an external field.
 * [GitHub repository](https://github.com/svd321/tt02-Ising)

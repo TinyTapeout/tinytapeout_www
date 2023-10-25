@@ -6,6 +6,8 @@ weight: 60
 
 ## 59 : 0b 000 111 011 : LEDChaser from LiteX test
 
+{{< tt-scanchain-switches "000111011" >}}
+
 * Author: Nick Østergaard
 * Description: This is just a small demo of synthezing verilog from LiteX, this does not include any CPU.
 * [GitHub repository](https://github.com/nickoe/tinytapeout02-verilog-gds-test)

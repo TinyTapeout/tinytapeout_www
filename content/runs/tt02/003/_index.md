@@ -6,6 +6,8 @@ weight: 4
 
 ## 3 : 0b 000 000 011 : Scrolling Binary Matrix display
 
+{{< tt-scanchain-switches "000000011" >}}
+
 * Author: Chris
 * Description: Display scrolling binary data from input pin on 8x8 SK9822 LED matrix display
 * [GitHub repository](https://github.com/chrisruk/matrixchip)

@@ -6,6 +6,8 @@ weight: 82
 
 ## 81 : 0b 001 010 001 : 1-bit ALU
 
+{{< tt-scanchain-switches "001010001" >}}
+
 * Author: Leo Moser
 * Description: 1-bit ALU from the book `Structured Computer Organization: Andrew S. Tanenbaum`
 * [GitHub repository](https://github.com/mole99/tt02-1bit-alu)

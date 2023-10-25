@@ -6,6 +6,8 @@ weight: 73
 
 ## 72 : 0b 001 001 000 : GOL-Cell
 
+{{< tt-scanchain-switches "001001000" >}}
+
 * Author: Shaos
 * Description: Game of Life Cell
 * [GitHub repository](https://github.com/shaos-net/tt02-submission-shaos2)

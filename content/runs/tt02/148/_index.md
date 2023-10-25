@@ -6,6 +6,8 @@ weight: 149
 
 ## 148 : 0b 010 010 100 : 3-bit adder
 
+{{< tt-scanchain-switches "010010100" >}}
+
 * Author: MG
 * Description: Add two 3-bit numbers
 * [GitHub repository](https://github.com/cmu-stuco-98154/f22-tt02-mgee3)

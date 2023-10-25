@@ -6,6 +6,8 @@ weight: 44
 
 ## 43 : 0b 000 101 011 : RC5 decoder
 
+{{< tt-scanchain-switches "000101011" >}}
+
 * Author: Jean THOMAS
 * Description: Increment/decrement a counter with the press of an IR remote button!
 * [GitHub repository](https://github.com/jeanthom/tt02-rc5-receiver)

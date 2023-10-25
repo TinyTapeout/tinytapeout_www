@@ -6,6 +6,8 @@ weight: 89
 
 ## 88 : 0b 001 011 000 : Frequency Counter
 
+{{< tt-scanchain-switches "001011000" >}}
+
 * Author: Andrew Ramsey
 * Description: Estimates the frequency of an input signal
 * [GitHub repository](https://github.com/ARamsey118/tiny_tapeout_freq_counter)

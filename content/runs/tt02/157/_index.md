@@ -6,6 +6,8 @@ weight: 158
 
 ## 157 : 0b 010 011 101 : 7 segment seconds
 
+{{< tt-scanchain-switches "010011101" >}}
+
 * Author: Matt Venn
 * Description: count up to 10, one second at a time
 * [GitHub repository](https://github.com/TinyTapeout/tt02-verilog-demo)

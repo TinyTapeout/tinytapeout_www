@@ -6,6 +6,8 @@ weight: 124
 
 ## 123 : 0b 001 111 011 : LED Chaser
 
+{{< tt-scanchain-switches "001111011" >}}
+
 * Author: Bradley Boccuzzi
 * Description: Push the button to fill in segments of the LED display, they will continue to shift and fill in the display until the button is released.`
 * [GitHub repository](https://github.com/DaveyPocket/chaser_tt2)

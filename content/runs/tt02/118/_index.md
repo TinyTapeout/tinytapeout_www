@@ -6,6 +6,8 @@ weight: 119
 
 ## 118 : 0b 001 110 110 : channel coding
 
+{{< tt-scanchain-switches "001110110" >}}
+
 * Author: Asma Mohsin
 * Description: Convolutional coding is widely used in modern digital communication systems.We often get encoded data by using different polynomials having same constraint lengths (K).
 * [GitHub repository](https://github.com/AsmaMohsin1507/tt02-channel-coding)

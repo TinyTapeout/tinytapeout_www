@@ -6,6 +6,8 @@ weight: 76
 
 ## 75 : 0b 001 001 011 : Ring OSC Speed Test
 
+{{< tt-scanchain-switches "001001011" >}}
+
 * Author: Eric Smith
 * Description: Make two rings with the same number of stages but measure how their frequency differs.  Measure if they can influence eachother.
 * [GitHub repository](https://github.com/ericsmi/tt02-verilog-ring-osc-demo)

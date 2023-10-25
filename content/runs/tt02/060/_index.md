@@ -6,6 +6,8 @@ weight: 61
 
 ## 60 : 0b 000 111 100 : 8-bit (E4M3) Floating Point Multiplier
 
+{{< tt-scanchain-switches "000111100" >}}
+
 * Author: Clive Chan
 * Description: 8-bit (E4M3) Floating Point Multiplier
 * [GitHub repository](https://github.com/cchan/fp8_mul)

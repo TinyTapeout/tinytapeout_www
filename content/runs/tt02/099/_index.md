@@ -6,6 +6,8 @@ weight: 100
 
 ## 99 : 0b 001 100 011 : GPS C/A PRN Generator
 
+{{< tt-scanchain-switches "001100011" >}}
+
 * Author: Adam Greig
 * Description: Generate the GPS C/A PRN sequences PRN1 through PRN32
 * [GitHub repository](https://github.com/adamgreig/tt02-gpa-ca-prn)

@@ -6,6 +6,8 @@ weight: 3
 
 ## 2 : 0b 000 000 010 : HD74480 Clock
 
+{{< tt-scanchain-switches "000000010" >}}
+
 * Author: Tom Keddie
 * Description: Displays a clock on a attached HD74480
 * [GitHub repository](https://github.com/TomKeddie/tinytapeout-2022-2)

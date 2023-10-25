@@ -6,6 +6,8 @@ weight: 11
 
 ## 10 : 0b 000 001 010 : TinySensor
 
+{{< tt-scanchain-switches "000001010" >}}
+
 * Author: Justin Pelan
 * Description: Using external hardware photodiodes as inputs, display light intensity on the 7-segment display
 * [GitHub repository](https://github.com/justinP-wrk/tt02-TinySensor)

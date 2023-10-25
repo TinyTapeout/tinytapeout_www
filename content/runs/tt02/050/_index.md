@@ -6,6 +6,8 @@ weight: 51
 
 ## 50 : 0b 000 110 010 : TinyTapeout2 multiplexed segment display timer.
 
+{{< tt-scanchain-switches "000110010" >}}
+
 * Author: Tholin
 * Description: Measures time up to 99 minutes and 59 seconds by multiplexing 4 seven-segment displays.
 * [GitHub repository](https://github.com/89Mods/tt2-multiplexed-counter)

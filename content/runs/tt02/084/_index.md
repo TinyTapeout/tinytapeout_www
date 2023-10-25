@@ -6,6 +6,8 @@ weight: 85
 
 ## 84 : 0b 001 010 100 : Worm in a Maze
 
+{{< tt-scanchain-switches "001010100" >}}
+
 * Author: Tim Victor
 * Description: Animation demo on seven-segment LED
 * [GitHub repository](https://github.com/timvgso/tinatapeworm)

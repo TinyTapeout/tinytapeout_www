@@ -6,6 +6,8 @@ weight: 142
 
 ## 141 : 0b 010 001 101 : Digital padlock
 
+{{< tt-scanchain-switches "010001101" >}}
+
 * Author: Jean THOMAS
 * Description: A 4-digit electronic padlock
 * [GitHub repository](https://github.com/jeanthom/tinytapout-lock)

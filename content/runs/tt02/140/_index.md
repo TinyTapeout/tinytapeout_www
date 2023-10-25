@@ -6,6 +6,8 @@ weight: 141
 
 ## 140 : 0b 010 001 100 : 4x4 RAM
 
+{{< tt-scanchain-switches "010001100" >}}
+
 * Author: Michael Bartholic
 * Description: 4 word, 4 bit read/write RAM
 * [GitHub repository](https://github.com/theFestest/tt02-4x4-ram)

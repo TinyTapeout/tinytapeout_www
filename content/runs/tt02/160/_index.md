@@ -6,6 +6,8 @@ weight: 161
 
 ## 160 : 0b 010 100 000 : 7-Seg 'Tiny Tapeout' Display
 
+{{< tt-scanchain-switches "010100000" >}}
+
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This circuit will output a string of characters (’tiny tapeout’) to the 7-segment display.
 * [GitHub repository](https://github.com/jdrosent/tt02-7segstringdisplay)

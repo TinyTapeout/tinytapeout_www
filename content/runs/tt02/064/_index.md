@@ -6,6 +6,8 @@ weight: 65
 
 ## 64 : 0b 001 000 000 : Test2
 
+{{< tt-scanchain-switches "001000000" >}}
+
 * Author: Shaos
 * Description: Testing Flip-Flops
 * [GitHub repository](https://github.com/shaos/tt02-submission-shaos)

@@ -6,6 +6,8 @@ weight: 93
 
 ## 92 : 0b 001 011 100 : chi 3 shares
 
+{{< tt-scanchain-switches "001011100" >}}
+
 * Author: Molteni Maria Chiara
 * Description: Chi function of Xoodoo protected by TI with three shares
 * [GitHub repository](https://github.com/mmolteni-secpat/tinytapeout02_chi3shares)

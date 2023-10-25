@@ -6,6 +6,8 @@ weight: 80
 
 ## 79 : 0b 001 001 111 : 4 bit CPU
 
+{{< tt-scanchain-switches "001001111" >}}
+
 * Author: Paul Campell
 * Description: simple cpu
 * [GitHub repository](https://github.com/MoonbaseOtago/tt-cpu)

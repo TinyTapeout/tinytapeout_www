@@ -6,6 +6,8 @@ weight: 160
 
 ## 159 : 0b 010 011 111 : M segments
 
+{{< tt-scanchain-switches "010011111" >}}
+
 * Author: Matt Venn
 * Description: Setting the correct input will show a 3 on the display
 * [GitHub repository](https://github.com/mattvenn/tt02-m-segments)

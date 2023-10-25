@@ -6,6 +6,8 @@ weight: 25
 
 ## 24 : 0b 000 011 000 : Avalon Semiconductors 'TBB1143' Programmable Sound Generator
 
+{{< tt-scanchain-switches "000011000" >}}
+
 * Author: Tholin
 * Description: Sound generator with two square-wave voices, one sawtooth voice and one noise channel. Can also be used as a general-purpose frequency generator.
 * [GitHub repository](https://github.com/89Mods/tt2-avalonsemi-TBB1143)

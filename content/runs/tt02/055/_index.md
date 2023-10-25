@@ -6,6 +6,8 @@ weight: 56
 
 ## 55 : 0b 000 110 111 : clash cpu
 
+{{< tt-scanchain-switches "000110111" >}}
+
 * Author: Jack Leightcap
 * Description: tiny register machine written in clash
 * [GitHub repository](https://github.com/mattvenn/clash-silicon-tinytapeout.git)

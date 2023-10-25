@@ -6,6 +6,8 @@ weight: 111
 
 ## 110 : 0b 001 101 110 : Rotary Encoder Counter
 
+{{< tt-scanchain-switches "001101110" >}}
+
 * Author: Vaishnav Achath
 * Description: Count Up/Down on the 7-segment accouring to rotary encoder input
 * [GitHub repository](https://github.com/vaishnavachath/tt02-submission-rotary-encoder-counter)

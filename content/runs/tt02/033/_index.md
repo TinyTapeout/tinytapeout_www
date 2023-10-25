@@ -6,6 +6,8 @@ weight: 34
 
 ## 33 : 0b 000 100 001 : 5-bit Galois LFSR
 
+{{< tt-scanchain-switches "000100001" >}}
+
 * Author: Michael Bikovitsky
 * Description: 5-bit Galois LFSR with configurable taps and initial state. Outputs a value every second.
 * [GitHub repository](https://github.com/mbikovitsky/tt02-lfsr)

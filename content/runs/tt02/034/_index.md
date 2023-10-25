@@ -6,6 +6,8 @@ weight: 35
 
 ## 34 : 0b 000 100 010 : prbs15
 
+{{< tt-scanchain-switches "000100010" >}}
+
 * Author: Tom Schucker
 * Description: generates and checks prbs15 sequences
 * [GitHub repository](https://github.com/teaandtechtime/tt02-submission-prbs15)

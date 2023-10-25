@@ -6,6 +6,8 @@ weight: 166
 
 ## 165 : 0b 010 100 101 : MRCS Verilog test
 
+{{< tt-scanchain-switches "010100101" >}}
+
 * Author: Steven Bos
 * Description: Testing various auto-generated verilog for various sync and async logic gates
 * [GitHub repository](https://github.com/aiunderstand/tt02-mrcs-verilog-test)

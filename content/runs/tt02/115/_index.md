@@ -6,6 +6,8 @@ weight: 116
 
 ## 115 : 0b 001 110 011 : Configurable Gray Code Counter
 
+{{< tt-scanchain-switches "001110011" >}}
+
 * Author: Eric Swalens
 * Description: A configurable counter driven by 2-channel Gray code
 * [GitHub repository](https://github.com/swalense/tt02-graycode_counter)

@@ -6,6 +6,8 @@ weight: 8
 
 ## 7 : 0b 000 000 111 : ALU
 
+{{< tt-scanchain-switches "000000111" >}}
+
 * Author: Ryan Cornateanu
 * Description: 2bit ALU with a ripple carry adder that has the capability to perform 16 different calculations
 * [GitHub repository](https://github.com/ryancor/tt02-submission-template)

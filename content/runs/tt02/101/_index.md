@@ -6,6 +6,8 @@ weight: 102
 
 ## 101 : 0b 001 100 101 : BCD to Hex 7-Segment Decoder
 
+{{< tt-scanchain-switches "001100101" >}}
+
 * Author: JinGen Lim
 * Description: Converts a 4-bit BCD input into a hexadecimal 7-segment display output
 * [GitHub repository](https://github.com/jglim/tt02-bcd-hex7seg-hdl)

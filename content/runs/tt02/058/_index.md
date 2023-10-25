@@ -6,6 +6,8 @@ weight: 59
 
 ## 58 : 0b 000 111 010 : 3-bit 8-channel PWM driver
 
+{{< tt-scanchain-switches "000111010" >}}
+
 * Author: Ivan Krasin
 * Description: PWM driver with 8 channels and 8 PWM levels from 0 to 1
 * [GitHub repository](https://github.com/krasin/tt02-verilog-3-bit-8-channel-pwm-driver)

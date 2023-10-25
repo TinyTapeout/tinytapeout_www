@@ -6,6 +6,8 @@ weight: 92
 
 ## 91 : 0b 001 011 011 : chi 2 shares
 
+{{< tt-scanchain-switches "001011011" >}}
+
 * Author: Maria Chiara Molteni
 * Description: Chi function of Xoodoo protected by TI with two shares
 * [GitHub repository](https://github.com/mmolteni-secpat/tinytapeout02_chi2shares)

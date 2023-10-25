@@ -6,6 +6,8 @@ weight: 49
 
 ## 48 : 0b 000 110 000 : Shiftregister Challenge 40 Bit
 
+{{< tt-scanchain-switches "000110000" >}}
+
 * Author: Thorsten Knoll
 * Description: The design is a 40 bit shiftregister with a hardcoded 40 bit number. The challenge is to find the correct 40 bit to enable the output to high. With all other numbers the output will be low.
 * [GitHub repository](https://github.com/ThorKn/tinytapeout02_shiftregister_challenge)

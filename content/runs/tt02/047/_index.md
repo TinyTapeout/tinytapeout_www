@@ -6,6 +6,8 @@ weight: 48
 
 ## 47 : 0b 000 101 111 : 4 bit counter on steamdeck
 
+{{< tt-scanchain-switches "000101111" >}}
+
 * Author: 13arn
 * Description: copy of my tt01 submission, enable first input and press button to use the counter
 * [GitHub repository](https://github.com/13arn/tt02_counter_steamdeck)

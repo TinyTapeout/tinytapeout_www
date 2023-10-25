@@ -6,6 +6,8 @@ weight: 40
 
 ## 39 : 0b 000 100 111 : M0: A 16-bit SUBLEQ Microprocessor
 
+{{< tt-scanchain-switches "000100111" >}}
+
 * Author: William Moyes
 * Description: A capable but slow microprocessor that fits in a very tight space
 * [GitHub repository](https://github.com/moyesw/TT02-M0)

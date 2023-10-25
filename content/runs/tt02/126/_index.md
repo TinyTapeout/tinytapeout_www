@@ -6,6 +6,8 @@ weight: 127
 
 ## 126 : 0b 001 111 110 : Test3
 
+{{< tt-scanchain-switches "001111110" >}}
+
 * Author: Shaos
 * Description: Binary Coded Ternary Test
 * [GitHub repository](https://github.com/ternary-info/tt02-submission-shaos3)

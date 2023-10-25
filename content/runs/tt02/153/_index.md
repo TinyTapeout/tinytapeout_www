@@ -6,6 +6,8 @@ weight: 154
 
 ## 153 : 0b 010 011 001 : Adi counter
 
+{{< tt-scanchain-switches "010011001" >}}
+
 * Author: Prabal Dutta
 * Description: Test FSM
 * [GitHub repository](https://github.com/prabaldutta/tt02-adi-demo)

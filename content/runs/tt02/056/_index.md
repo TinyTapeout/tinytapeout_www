@@ -6,6 +6,8 @@ weight: 57
 
 ## 56 : 0b 000 111 000 : TinyTapeout 2 LCD Nametag
 
+{{< tt-scanchain-switches "000111000" >}}
+
 * Author: Tholin
 * Description: Echoes out a predefined text onto a 20x4 character LCD.
 * [GitHub repository](https://github.com/89Mods/tt2-lcd-namebadge)

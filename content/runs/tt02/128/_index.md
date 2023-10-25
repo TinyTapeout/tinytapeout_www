@@ -6,6 +6,8 @@ weight: 129
 
 ## 128 : 0b 010 000 000 : serv - Serial RISCV CPU
 
+{{< tt-scanchain-switches "010000000" >}}
+
 * Author: Greg Davill
 * Description: An award winning RISCV CPU!
 * [GitHub repository](https://github.com/gregdavill/tt02-serv)

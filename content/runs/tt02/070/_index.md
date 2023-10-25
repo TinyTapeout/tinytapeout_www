@@ -6,6 +6,8 @@ weight: 71
 
 ## 70 : 0b 001 000 110 : tinytapeout2-HELLo-3orLd-7seg
 
+{{< tt-scanchain-switches "001000110" >}}
+
 * Author: Rakesh Peter
 * Description: HELLo-3orLd Runner on 7 segment Display
 * [GitHub repository](https://github.com/r4d10n/tt02-HELLo-3orLd-7seg)

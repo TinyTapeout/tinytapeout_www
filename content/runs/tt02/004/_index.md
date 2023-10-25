@@ -6,6 +6,8 @@ weight: 5
 
 ## 4 : 0b 000 000 100 : Power supply sequencer
 
+{{< tt-scanchain-switches "000000100" >}}
+
 * Author: Jon Klein
 * Description: Sequentially enable and disable channels with configurable delay
 * [GitHub repository](https://github.com/loxodes/tt02-submission-loxodes)

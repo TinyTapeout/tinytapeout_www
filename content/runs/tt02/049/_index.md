@@ -6,6 +6,8 @@ weight: 50
 
 ## 49 : 0b 000 110 001 : TinyTapeout2 4-bit multiplier.
 
+{{< tt-scanchain-switches "000110001" >}}
+
 * Author: Tholin
 * Description: Multiplies two 4-bit numbers presented on the input pins and outputs an 8-bit result.
 * [GitHub repository](https://github.com/89Mods/tt2-4x4-multiply)

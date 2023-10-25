@@ -6,6 +6,8 @@ weight: 29
 
 ## 28 : 0b 000 011 100 : Loading Animation
 
+{{< tt-scanchain-switches "000011100" >}}
+
 * Author: Andre & Milosch Meriac
 * Description: Submission for tt02 - Rotating Dash
 * [GitHub repository](https://github.com/meriac/loading-animation)

@@ -6,6 +6,8 @@ weight: 68
 
 ## 67 : 0b 001 000 011 : SQRT1 Square Root Engine
 
+{{< tt-scanchain-switches "001000011" >}}
+
 * Author: Davit Margarian (UDXS)
 * Description: Computes 4.2 fixed-point square root for any 7-bit integer
 * [GitHub repository](https://github.com/UDXS/sqrt-tt02)

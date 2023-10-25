@@ -6,6 +6,8 @@ weight: 151
 
 ## 150 : 0b 010 010 110 : Async FIFO
 
+{{< tt-scanchain-switches "010010110" >}}
+
 * Author: Jon Recta
 * Description: A very small asynchonous FIFO
 * [GitHub repository](https://github.com/cmu-stuco-98154/f22-tt02-jrecta)

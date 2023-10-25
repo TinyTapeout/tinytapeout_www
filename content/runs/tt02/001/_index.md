@@ -6,6 +6,8 @@ weight: 2
 
 ## 1 : 0b 000 000 001 : SIMON Cipher
 
+{{< tt-scanchain-switches "000000001" >}}
+
 * Author: Fraser Price
 * Description: Simon32/64 Encryption
 * [GitHub repository](https://github.com/Fraserbc/tt02-simon)

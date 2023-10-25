@@ -6,6 +6,8 @@ weight: 88
 
 ## 87 : 0b 001 010 111 : BCD to 7-Segment Decoder
 
+{{< tt-scanchain-switches "001010111" >}}
+
 * Author: JinGen Lim
 * Description: Converts a BCD input into a 7-segment display output
 * [GitHub repository](https://github.com/jglim/tt02-bcd-7seg)

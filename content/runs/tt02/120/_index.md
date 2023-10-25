@@ -6,6 +6,8 @@ weight: 121
 
 ## 120 : 0b 001 111 000 : Adder with 7-segment decoder
 
+{{< tt-scanchain-switches "001111000" >}}
+
 * Author: cy384
 * Description: Four bit adder with binary to 7 segment display decoder
 * [GitHub repository](https://github.com/cy384/tt02-submission-template)

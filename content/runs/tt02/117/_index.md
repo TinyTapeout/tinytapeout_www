@@ -6,6 +6,8 @@ weight: 118
 
 ## 117 : 0b 001 110 101 : Marquee
 
+{{< tt-scanchain-switches "001110101" >}}
+
 * Author: Christopher 'ctag' Bero
 * Description: Scrolls 'ctag' across the 7seg.
 * [GitHub repository](https://github.com/ctag/tt02-submission-ctag)

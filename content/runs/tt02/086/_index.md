@@ -6,6 +6,8 @@ weight: 87
 
 ## 86 : 0b 001 010 110 : Pseudo-random number generator
 
+{{< tt-scanchain-switches "001010110" >}}
+
 * Author: Thomas Böhm <thomas.bohm@gmail.com>
 * Description: Pseudo-random number generator using a 16-bit Fibonacci linear-feedback shift register
 * [GitHub repository](https://github.com/tcptomato/tt02-submission-template)

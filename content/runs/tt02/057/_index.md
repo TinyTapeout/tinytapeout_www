@@ -6,6 +6,8 @@ weight: 58
 
 ## 57 : 0b 000 111 001 : UART-CC
 
+{{< tt-scanchain-switches "000111001" >}}
+
 * Author: Christina Cyr
 * Description: UART Template
 * [GitHub repository](https://github.com/Christina-Cyr/tt02-submission-UART-CC)

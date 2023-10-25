@@ -6,6 +6,8 @@ weight: 66
 
 ## 65 : 0b 001 000 001 : 7-segment LED flasher
 
+{{< tt-scanchain-switches "001000001" >}}
+
 * Author: Joseph Chiu
 * Description: Drives 7-segment LED display, alternating between NIC and JAC
 * [GitHub repository](https://github.com/toybuilder/tt02-learn-tinytapeout)

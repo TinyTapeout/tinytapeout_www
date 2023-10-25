@@ -6,6 +6,8 @@ weight: 95
 
 ## 94 : 0b 001 011 110 : Scalable synchronous 4-bit tri-directional loadable counter
 
+{{< tt-scanchain-switches "001011110" >}}
+
 * Author: Steven Bos
 * Description: This chip offers a scalable n-bit counter design that can be used as a program counter by setting the next address (eg. for a JMP instruction). It can work in 3 directions: counting up, down and pause.
 * [GitHub repository](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter)

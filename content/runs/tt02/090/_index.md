@@ -6,6 +6,8 @@ weight: 91
 
 ## 90 : 0b 001 011 010 : FPGA test
 
+{{< tt-scanchain-switches "001011010" >}}
+
 * Author: myrtle
 * Description: small mux2 fpga test
 * [GitHub repository](https://github.com/gatecat/tt02-fpga-respin)

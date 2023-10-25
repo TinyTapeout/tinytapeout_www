@@ -6,6 +6,8 @@ weight: 78
 
 ## 77 : 0b 001 001 101 : TrainLED2 - RGB-LED driver with 8 bit PWM engine
 
+{{< tt-scanchain-switches "001001101" >}}
+
 * Author: cpldcpu
 * Description: A RGB-LED driver using the WS2812 protocol
 * [GitHub repository](https://github.com/cpldcpu/tt02-TrainLED)

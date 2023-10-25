@@ -6,6 +6,8 @@ weight: 159
 
 ## 158 : 0b 010 011 110 : Laura's L
 
+{{< tt-scanchain-switches "010011110" >}}
+
 * Author: Laura
 * Description: Makes an L on the 7 segment when you press buttons 1 & 2
 * [GitHub repository](https://github.com/mattvenn/tt02-laura)

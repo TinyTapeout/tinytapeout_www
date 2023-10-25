@@ -6,6 +6,8 @@ weight: 46
 
 ## 45 : 0b 000 101 101 : Super Mario Tune on A Piezo Speaker
 
+{{< tt-scanchain-switches "000101101" >}}
+
 * Author: Milosch Meriac
 * Description: Plays Super Mario Tune over a Piezo Speaker connected across io_out[1:0]
 * [GitHub repository](https://github.com/meriac/tt02-play-tune)

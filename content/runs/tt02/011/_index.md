@@ -6,6 +6,8 @@ weight: 12
 
 ## 11 : 0b 000 001 011 : 16x8 SRAM & Streaming Signal Generator
 
+{{< tt-scanchain-switches "000001011" >}}
+
 * Author: James Ross
 * Description: Write to, Read from, and Stream 16 addressable 8-bit words of memory
 * [GitHub repository](https://github.com/jar/tt02_sram)

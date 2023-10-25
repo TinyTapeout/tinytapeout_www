@@ -6,6 +6,8 @@ weight: 90
 
 ## 89 : 0b 001 011 001 : Taillight controller of a 1965 Ford Thunderbird
 
+{{< tt-scanchain-switches "001011001" >}}
+
 * Author: Hirosh Dabui
 * Description: Asic of a Taillight controller of a 1965 Ford Thunderbird
 * [GitHub repository](https://github.com/splinedrive/thunderbird_taillight_1965)

@@ -6,6 +6,8 @@ weight: 62
 
 ## 61 : 0b 000 111 101 : Dice roll
 
+{{< tt-scanchain-switches "000111101" >}}
+
 * Author: Tholin
 * Description: Will roll a random number from 1 - 6 on the 7-segment display, like a dice.
 * [GitHub repository](https://github.com/AvalonSemiconductors/tt2-diceroll)

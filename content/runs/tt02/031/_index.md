@@ -6,6 +6,8 @@ weight: 32
 
 ## 31 : 0b 000 011 111 : heart zoe mom dad
 
+{{< tt-scanchain-switches "000011111" >}}
+
 * Author: zoe nguyen.  taylor
 * Description: outputs my name and my age (zoe 4)
 * [GitHub repository](https://github.com/zoent/tt02-zoe-chip)

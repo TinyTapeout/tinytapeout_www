@@ -6,6 +6,8 @@ weight: 52
 
 ## 51 : 0b 000 110 011 : XLS: 8-bit counter
 
+{{< tt-scanchain-switches "000110011" >}}
+
 * Author: proppy
 * Description: Increment output bits
 * [GitHub repository](https://github.com/proppy/tt02-xls-counter)

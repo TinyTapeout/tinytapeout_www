@@ -6,6 +6,8 @@ weight: 97
 
 ## 96 : 0b 001 100 000 : Vector dot product
 
+{{< tt-scanchain-switches "001100000" >}}
+
 * Author: Robert Riachi
 * Description: Compute the dot product of two 2x1 vectors each containing 2 bit integers
 * [GitHub repository](https://github.com/RobertRiachi/tt02-dot-product)

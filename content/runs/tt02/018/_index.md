@@ -6,6 +6,8 @@ weight: 19
 
 ## 18 : 0b 000 010 010 : Configurable SR
 
+{{< tt-scanchain-switches "000010010" >}}
+
 * Author: Greg Steiert
 * Description: Configurable gates driving SR and D flip-flops
 * [GitHub repository](https://github.com/steieio/tt02-submission-universal-sr)

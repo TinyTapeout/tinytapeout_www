@@ -6,6 +6,8 @@ weight: 135
 
 ## 134 : 0b 010 000 110 : CRC-16 and Parity calculator
 
+{{< tt-scanchain-switches "010000110" >}}
+
 * Author: Chris Burton
 * Description: CRC-16/XModem and Even Parity calculator based on Ben Eater error detection videos.
 * [GitHub repository](https://github.com/8086net/tt02-CRC16)

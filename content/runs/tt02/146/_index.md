@@ -6,6 +6,8 @@ weight: 147
 
 ## 146 : 0b 010 010 010 : Hex to Seven Semgent Converter
 
+{{< tt-scanchain-switches "010010010" >}}
+
 * Author: Samuel Sun
 * Description: Converts from a binary input to hex seven-segment display
 * [GitHub repository](https://github.com/cmu-stuco-98154/f22-tt02-qilins)

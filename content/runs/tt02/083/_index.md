@@ -6,6 +6,8 @@ weight: 84
 
 ## 83 : 0b 001 010 011 : r2rdac
 
+{{< tt-scanchain-switches "001010011" >}}
+
 * Author: youngpines
 * Description: small r2r
 * [GitHub repository](https://github.com/youngpines/tt02-youngpines-submission)

@@ -6,6 +6,8 @@ weight: 16
 
 ## 15 : 0b 000 001 111 : small FFT
 
+{{< tt-scanchain-switches "000001111" >}}
+
 * Author: Rice Shelley
 * Description: Computes a small fft
 * [GitHub repository](https://github.com/RiceShelley/tiny-fft)

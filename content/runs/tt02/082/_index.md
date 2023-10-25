@@ -6,6 +6,8 @@ weight: 83
 
 ## 82 : 0b 001 010 010 : SPI Flash State Machine
 
+{{< tt-scanchain-switches "001010010" >}}
+
 * Author: Greg Steiert
 * Description: Implements a state machine stored in an external SPI flash
 * [GitHub repository](https://github.com/steieio/tt02-sfsm-wokwi)

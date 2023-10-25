@@ -6,6 +6,8 @@ weight: 140
 
 ## 139 : 0b 010 001 011 : Option22
 
+{{< tt-scanchain-switches "010001011" >}}
+
 * Author: bitluni
 * Description: Looong shift register. 22x8 bit
 * [GitHub repository](https://github.com/bitluni/tt02-option22)

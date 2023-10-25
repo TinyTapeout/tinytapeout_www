@@ -6,6 +6,8 @@ weight: 43
 
 ## 42 : 0b 000 101 010 : XLS: bit population count
 
+{{< tt-scanchain-switches "000101010" >}}
+
 * Author: proppy
 * Description: Count bits set in the input.
 * [GitHub repository](https://github.com/proppy/tt02-xls-popcount)

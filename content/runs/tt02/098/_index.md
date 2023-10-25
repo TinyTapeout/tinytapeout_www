@@ -6,6 +6,8 @@ weight: 99
 
 ## 98 : 0b 001 100 010 : Funny Blinky
 
+{{< tt-scanchain-switches "001100010" >}}
+
 * Author: regymm
 * Description: Blink the 8 output LEDs in a funny way.
 * [GitHub repository](https://github.com/regymm/tt02-verilog-funnyblinky)

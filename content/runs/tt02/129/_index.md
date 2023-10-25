@@ -6,6 +6,8 @@ weight: 130
 
 ## 129 : 0b 010 000 001 : 4:2 Compressor
 
+{{< tt-scanchain-switches "010000001" >}}
+
 * Author: saicharan0112
 * Description: A Basic 4:2 compressor which contains 4 inputs and 1 carry_in bit which compresses to 2 outputs and 1 carry_out bit
 * [GitHub repository](https://github.com/saicharan0112/tt02-submission-template)

@@ -6,6 +6,8 @@ weight: 42
 
 ## 41 : 0b 000 101 001 : 8x8 Bit Pattern Player
 
+{{< tt-scanchain-switches "000101001" >}}
+
 * Author: Thorsten Knoll
 * Description: 8x8 bit serial programmable, addressable and playable memory.
 * [GitHub repository](https://github.com/ThorKn/tinytapeout02_pattern_player)

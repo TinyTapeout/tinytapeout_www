@@ -6,6 +6,8 @@ weight: 39
 
 ## 38 : 0b 000 100 110 : YaFPGA
 
+{{< tt-scanchain-switches "000100110" >}}
+
 * Author: Frans Skarman
 * Description: Yet another FPGA
 * [GitHub repository](https://github.com/TheZoq2/smolfpga)

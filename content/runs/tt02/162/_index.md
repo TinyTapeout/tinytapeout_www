@@ -6,6 +6,8 @@ weight: 163
 
 ## 162 : 0b 010 100 010 : Customizable UART String
 
+{{< tt-scanchain-switches "010100010" >}}
+
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design Supports sending multiple ASCII characters over UART.
 * [GitHub repository](https://github.com/jdrosent/tt02-UARTstring)

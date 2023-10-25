@@ -6,6 +6,8 @@ weight: 6
 
 ## 5 : 0b 000 000 101 : Duty Controller
 
+{{< tt-scanchain-switches "000000101" >}}
+
 * Author: Marcelo Pouso / Miguel Correia
 * Description: Increase/Decrease a duty cycle of square signal.
 * [GitHub repository](https://github.com/migcorre/tt02-dc)

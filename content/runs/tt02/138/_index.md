@@ -6,6 +6,8 @@ weight: 139
 
 ## 138 : 0b 010 001 010 : Option23
 
+{{< tt-scanchain-switches "010001010" >}}
+
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays
 * [GitHub repository](https://github.com/bitluni/tt02-option23)

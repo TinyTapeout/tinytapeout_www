@@ -6,6 +6,8 @@ weight: 110
 
 ## 109 : 0b 001 101 101 : Melody Generator
 
+{{< tt-scanchain-switches "001101101" >}}
+
 * Author: myrtle
 * Description: plays a melody, preloaded with jingle bells but re-programmable
 * [GitHub repository](https://github.com/gatecat/tt02-melody-gen)

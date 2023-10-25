@@ -6,6 +6,8 @@ weight: 156
 
 ## 155 : 0b 010 011 011 : Amaranth 6 Bits Gray counter
 
+{{< tt-scanchain-switches "010011011" >}}
+
 * Author: Camilo Soto
 * Description: Amaranth Gray 6 Bits gray counter
 * [GitHub repository](https://github.com/tucanae47/tt02-gray-counter)

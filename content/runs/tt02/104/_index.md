@@ -6,6 +6,8 @@ weight: 105
 
 ## 104 : 0b 001 101 000 : 2bitALU
 
+{{< tt-scanchain-switches "001101000" >}}
+
 * Author: shan
 * Description: 2 bit ALU which performs 16 different operations
 * [GitHub repository](https://github.com/shan1293/tt02-2bitCPU)

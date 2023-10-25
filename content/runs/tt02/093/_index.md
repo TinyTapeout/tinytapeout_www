@@ -6,6 +6,8 @@ weight: 94
 
 ## 93 : 0b 001 011 101 : Whisk: 16-bit Serial RISC CPU
 
+{{< tt-scanchain-switches "001011101" >}}
+
 * Author: Luke Wren
 * Description: Execute a simple 16-bit RISC-style instruction set from up to 64 kilobytes of external SPI SRAM.
 * [GitHub repository](https://github.com/Wren6991/tt02-whisk-serial-processor)

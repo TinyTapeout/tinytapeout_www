@@ -6,6 +6,8 @@ weight: 153
 
 ## 152 : 0b 010 011 000 : Basic 4 bit cpu 
 
+{{< tt-scanchain-switches "010011000" >}}
+
 * Author: Noah Gaertner
 * Description: 4-bit CPU that does add, subtract, multiply, left and right shifts, conditional jump based on external signal, logical and bitwise AND and OR, equality and inequality checking, bitwise inversion, and logical NOT
 * [GitHub repository](https://github.com/noahgaertner/tt02-verilog-demo)

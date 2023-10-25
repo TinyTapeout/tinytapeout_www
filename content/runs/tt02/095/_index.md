@@ -6,6 +6,8 @@ weight: 96
 
 ## 95 : 0b 001 011 111 : Asynchronous Binary to Ternary Converter and Comparator
 
+{{< tt-scanchain-switches "001011111" >}}
+
 * Author: Steven Bos
 * Description: This chip offers various kinds of conversions and comparisons between binary encoded ternary and unary encoded ternary in both machine readible output and human readible (7-segment display decimal) output
 * [GitHub repository](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare)

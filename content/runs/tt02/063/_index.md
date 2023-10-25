@@ -6,6 +6,8 @@ weight: 64
 
 ## 63 : 0b 000 111 111 : CNS002 (TT02-Test 2)
 
+{{< tt-scanchain-switches "000111111" >}}
+
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab (second design)
 * [GitHub repository](https://github.com/NYIT-CNS/cns002-tt02-submission2)

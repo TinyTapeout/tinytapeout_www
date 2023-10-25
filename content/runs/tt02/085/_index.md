@@ -6,6 +6,8 @@ weight: 86
 
 ## 85 : 0b 001 010 101 : 8 bit CPU
 
+{{< tt-scanchain-switches "001010101" >}}
+
 * Author: Paul Campell
 * Description: 8-bit version of the MoonBase 4-bit CPU
 * [GitHub repository](https://github.com/OneRNG/tt-cpu8)

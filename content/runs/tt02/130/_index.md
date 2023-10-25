@@ -6,6 +6,8 @@ weight: 131
 
 ## 130 : 0b 010 000 010 : PS2 keyboard Interface
 
+{{< tt-scanchain-switches "010000010" >}}
+
 * Author: Tanish Khanchandani
 * Description: PS2 keyboard interface to enter charecters into a computer. Use the PS2 hex scan codes (https://techdocs.altium.com/display/FPGA/PS2+Keyboard+Scan+Codes) to enter hex codes and it will send the letter to your computer.
 * [GitHub repository](https://github.com/tanishnk/Tiny-Tapeout-2-submission-Tanish-k)

@@ -6,6 +6,8 @@ weight: 157
 
 ## 156 : 0b 010 011 100 : 7 segment seconds
 
+{{< tt-scanchain-switches "010011100" >}}
+
 * Author: Matt Venn
 * Description: counts from 0 to 9, incrementing once per second
 * [GitHub repository](https://github.com/TinyTapeout/tt02-test-7seg)

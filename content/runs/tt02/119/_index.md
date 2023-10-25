@@ -6,6 +6,8 @@ weight: 120
 
 ## 119 : 0b 001 110 111 : Chisel 16-bit GCD with scan in and out
 
+{{< tt-scanchain-switches "001110111" >}}
+
 * Author: Steve Burns
 * Description: Simple chisel based design based on Knuth's BinaryGDC algorithm using scan chains for I/O.
 * [GitHub repository](https://github.com/stevenmburns/tt02-scannable-gcd)

@@ -6,6 +6,8 @@ weight: 98
 
 ## 97 : 0b 001 100 001 : Monte Carlo Pi Integrator
 
+{{< tt-scanchain-switches "001100001" >}}
+
 * Author: regymm
 * Description: Calculate the value of Pi using the Monte Carlo method
 * [GitHub repository](https://github.com/regymm/tt02-verilog-mcpi)

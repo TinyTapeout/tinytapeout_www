@@ -6,6 +6,8 @@ weight: 106
 
 ## 105 : 0b 001 101 001 : A (7, 1/2) Convolutional Encoder
 
+{{< tt-scanchain-switches "001101001" >}}
+
 * Author: Jos van 't Hof
 * Description: A (7, 1/2) Convolutional Encoder following the CCSDS 131.0-B-4 standard.
 * [GitHub repository](https://github.com/Josvth/tt02-convolutional-encoder)

@@ -6,6 +6,8 @@ weight: 69
 
 ## 68 : 0b 001 000 100 : Breathing LED
 
+{{< tt-scanchain-switches "001000100" >}}
+
 * Author: argunda
 * Description: Use the pwm output to drive an LED and it should look like it's breathing.
 * [GitHub repository](https://github.com/argunda/tt02-breathing-led)

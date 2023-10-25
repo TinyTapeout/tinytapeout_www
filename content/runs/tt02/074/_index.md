@@ -6,6 +6,8 @@ weight: 75
 
 ## 74 : 0b 001 001 010 : hex shift register
 
+{{< tt-scanchain-switches "001001010" >}}
+
 * Author: Eric Smith
 * Description: six 40-bit shift registers
 * [GitHub repository](https://github.com/brouhaha/tt02-hex-sr)

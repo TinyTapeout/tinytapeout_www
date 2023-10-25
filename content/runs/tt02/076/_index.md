@@ -6,6 +6,8 @@ weight: 77
 
 ## 76 : 0b 001 001 100 : TinyPID
 
+{{< tt-scanchain-switches "001001100" >}}
+
 * Author: Aidan Medcalf
 * Description: Tiny PID controller with SPI configuration channel, SPI ADC and DAC driver
 * [GitHub repository](https://github.com/AidanMedcalf/tt02-pid)

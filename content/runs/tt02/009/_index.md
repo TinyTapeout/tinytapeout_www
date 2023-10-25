@@ -6,6 +6,8 @@ weight: 10
 
 ## 9 : 0b 000 001 001 : binary clock
 
+{{< tt-scanchain-switches "000001001" >}}
+
 * Author: Azdle
 * Description: A binary clock using multiplexed LEDs
 * [GitHub repository](https://github.com/azdle/binary-clock-asic)

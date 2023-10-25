@@ -6,6 +6,8 @@ weight: 33
 
 ## 32 : 0b 000 100 000 : Tiny Synth
 
+{{< tt-scanchain-switches "000100000" >}}
+
 * Author: Nanik Adnani
 * Description: A tiny synthesizer! Modulates the frequency of the clock based on inputs, plays a C scale (hopefully).
 * [GitHub repository](https://github.com/nanikgeorge/tt02-submission-template)

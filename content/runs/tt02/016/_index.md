@@ -6,6 +6,8 @@ weight: 17
 
 ## 16 : 0b 000 010 000 : Stream Integrator
 
+{{< tt-scanchain-switches "000010000" >}}
+
 * Author: William Moyes
 * Description: A silicon implementation of a simple optical computation
 * [GitHub repository](https://github.com/moyesw/tt02-moyesw-StreamIntegrator)

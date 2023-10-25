@@ -6,6 +6,8 @@ weight: 115
 
 ## 114 : 0b 001 110 010 : FROG 4-Bit CPU
 
+{{< tt-scanchain-switches "001110010" >}}
+
 * Author: ChrisPVille
 * Description: The FROG is an extremely minimal load-store 4-bit CPU
 * [GitHub repository](https://github.com/ChrisPVille/tt02-FROG4bitCPU)

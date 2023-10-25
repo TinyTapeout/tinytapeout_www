@@ -6,6 +6,8 @@ weight: 155
 
 ## 154 : 0b 010 011 010 : Clock divider ASIC
 
+{{< tt-scanchain-switches "010011010" >}}
+
 * Author: Sad Electronics
 * Description: Uses a series of flip flops to divide the clock
 * [GitHub repository](https://github.com/TinyTapeout/tt02-tinytapeout-clock-divider-asic)

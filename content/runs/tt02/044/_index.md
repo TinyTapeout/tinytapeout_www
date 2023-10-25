@@ -6,6 +6,8 @@ weight: 45
 
 ## 44 : 0b 000 101 100 : chiDOM
 
+{{< tt-scanchain-switches "000101100" >}}
+
 * Author: Maria CHiara Molteni
 * Description: Chi function of Xoodoo protected at the first-order by DOM
 * [GitHub repository](https://github.com/mmolteni-secpat/tinytapeout02_chiDOM)

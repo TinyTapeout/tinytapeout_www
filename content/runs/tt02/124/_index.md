@@ -6,6 +6,8 @@ weight: 125
 
 ## 124 : 0b 001 111 100 : Rolling Average - 5 bit, 8 bank
 
+{{< tt-scanchain-switches "001111100" >}}
+
 * Author: Kauna Lei
 * Description: 5bit moving average
 * [GitHub repository](https://github.com/klei22/Rolling-Average)

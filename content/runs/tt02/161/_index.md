@@ -6,6 +6,8 @@ weight: 162
 
 ## 161 : 0b 010 100 001 : Customizable UART Character
 
+{{< tt-scanchain-switches "010100001" >}}
+
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a single character UART transmitter using registers made from D-flip flops and multiplexers.
 * [GitHub repository](https://github.com/jdrosent/tt02-UARTcharacter)

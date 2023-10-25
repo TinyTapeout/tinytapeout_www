@@ -6,6 +6,8 @@ weight: 144
 
 ## 143 : 0b 010 001 111 : Femto 4-bit CPU
 
+{{< tt-scanchain-switches "010001111" >}}
+
 * Author: Majdi Abdul Samad
 * Description: Design of a small single-cycle CPU with simple RISC/Accumulator ISA
 * [GitHub repository](https://github.com/majdiabdulsamad/tt02-Femto)

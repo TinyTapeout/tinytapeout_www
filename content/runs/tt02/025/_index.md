@@ -6,6 +6,8 @@ weight: 26
 
 ## 25 : 0b 000 011 001 : Transmit UART
 
+{{< tt-scanchain-switches "000011001" >}}
+
 * Author: Tom Keddie
 * Description: Transmits a async serial string on a pin
 * [GitHub repository](https://github.com/TomKeddie/tinytapeout-2022-2a)

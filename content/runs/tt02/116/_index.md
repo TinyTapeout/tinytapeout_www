@@ -6,6 +6,8 @@ weight: 117
 
 ## 116 : 0b 001 110 100 : Baudot Converter
 
+{{< tt-scanchain-switches "001110100" >}}
+
 * Author: Arthur Hazleden
 * Description: This circuit will convert ASCII serial data to baudot serial data provide the reverse funtion as well
 * [GitHub repository](https://github.com/Luthor2k/tt02-baudot)

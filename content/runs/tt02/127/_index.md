@@ -6,6 +6,8 @@ weight: 128
 
 ## 127 : 0b 001 111 111 : Seven Segment Clock
 
+{{< tt-scanchain-switches "001111111" >}}
+
 * Author: Greg Davill
 * Description: Logic to drive 6 external 74hct595's that in turn drive 7 segment displays. The displays form a digital clock.
 * [GitHub repository](https://github.com/gregdavill/tt02-clock)

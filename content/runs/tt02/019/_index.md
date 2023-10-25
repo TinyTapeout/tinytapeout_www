@@ -6,6 +6,8 @@ weight: 20
 
 ## 19 : 0b 000 010 011 : LUTRAM
 
+{{< tt-scanchain-switches "000010011" >}}
+
 * Author: Luis Ardila
 * Description: LUTRAM with 4 bit address and 8 bit output preloaded with a binary to 7 segments decoder, sadly it was too big for 0-F, so now it is 0-9?
 * [GitHub repository](https://github.com/leardilap/tt02-LUTRAM)

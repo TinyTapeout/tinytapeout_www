@@ -6,6 +6,8 @@ weight: 112
 
 ## 111 : 0b 001 101 111 : Wolf sheep cabbage river crossing puzzle ASIC design
 
+{{< tt-scanchain-switches "001101111" >}}
+
 * Author: maehw
 * Description: Play the wolf, goat and cabbage puzzle interactively.
 * [GitHub repository](https://github.com/maehw/tt02-wokwi-wolf-goat-cabbage)

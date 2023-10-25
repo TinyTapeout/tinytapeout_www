@@ -6,6 +6,8 @@ weight: 148
 
 ## 147 : 0b 010 010 011 : PWM Generator
 
+{{< tt-scanchain-switches "010010011" >}}
+
 * Author: Jason Lu
 * Description: Generates 100 Hz PWM signal
 * [GitHub repository](https://github.com/cmu-stuco-98154/f22-tt02-jxlu)

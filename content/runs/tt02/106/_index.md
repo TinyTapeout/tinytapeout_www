@@ -6,6 +6,8 @@ weight: 107
 
 ## 106 : 0b 001 101 010 : Tiny PIC-like MCU
 
+{{< tt-scanchain-switches "001101010" >}}
+
 * Author: myrtle
 * Description: serially programmed, subset of PIC ISA, MCU
 * [GitHub repository](https://github.com/gatecat/tt02-pic)

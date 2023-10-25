@@ -6,6 +6,8 @@ weight: 79
 
 ## 78 : 0b 001 001 110 : Zinnia+ (MCPU5+) 8 Bit CPU
 
+{{< tt-scanchain-switches "001001110" >}}
+
 * Author: cpldcpu
 * Description: A minimal 8 bit CPU
 * [GitHub repository](https://github.com/cpldcpu/tt02-mcpu5plus)

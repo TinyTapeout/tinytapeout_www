@@ -6,6 +6,8 @@ weight: 143
 
 ## 142 : 0b 010 001 110 : FFT Butterfly in Wokwi
 
+{{< tt-scanchain-switches "010001110" >}}
+
 * Author: James R
 * Description: Single FFT butterfly with 2-bit resolution
 * [GitHub repository](https://github.com/jdrosent/tt02-submission-template)

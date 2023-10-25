@@ -6,6 +6,8 @@ weight: 1
 
 ## 0 : 0b 000 000 000 : Test Inverter Project
 
+{{< tt-scanchain-switches "000000000" >}}
+
 * Author: Matt Venn
 * Description: inverts every line
 * [GitHub repository](https://github.com/TinyTapeout/tt02-test-invert)

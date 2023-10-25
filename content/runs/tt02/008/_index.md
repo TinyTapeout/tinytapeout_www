@@ -6,6 +6,8 @@ weight: 9
 
 ## 8 : 0b 000 001 000 : The McCoy 8-bit Microprocessor
 
+{{< tt-scanchain-switches "000001000" >}}
+
 * Author: Aidan Good
 * Description: Custom RISC-V inspired microprocessor capable of simple arithmatic, branching, and jumps through a custom ISA.
 * [GitHub repository](https://github.com/AidanGood/tt02-McCoy)

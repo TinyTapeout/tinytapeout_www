@@ -6,6 +6,8 @@ weight: 136
 
 ## 135 : 0b 010 000 111 : SevSegFX
 
+{{< tt-scanchain-switches "010000111" >}}
+
 * Author: Mazen Saghir, ECE Department, American University of Beirut (mazen@aub.edu.lb)
 * Description: Seven segment display effect generator
 * [GitHub repository](https://github.com/mazensaghir/tt02-sevsegfx)

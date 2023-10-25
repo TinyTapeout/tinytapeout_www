@@ -6,6 +6,8 @@ weight: 113
 
 ## 112 : 0b 001 110 000 : Low-speed UART transmitter with limited character set loading
 
+{{< tt-scanchain-switches "001110000" >}}
+
 * Author: maehw
 * Description: Low baudrate UART transmitter (8N1) with limited character set (0x40..0x5F; includes all capital letters in the ASCII table) loading.
 * [GitHub repository](https://github.com/maehw/tt02-wokwi-lowspeed-tiny-uart)

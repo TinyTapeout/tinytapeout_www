@@ -6,6 +6,8 @@ weight: 18
 
 ## 17 : 0b 000 010 001 : tiny-fir
 
+{{< tt-scanchain-switches "000010001" >}}
+
 * Author: Tom Schucker
 * Description: 4bit 2-stage FIR filter
 * [GitHub repository](https://github.com/Tschucker/tt02-submission-tiny-fir)

@@ -6,6 +6,8 @@ weight: 54
 
 ## 53 : 0b 000 110 101 : XorShift32
 
+{{< tt-scanchain-switches "000110101" >}}
+
 * Author: Ethan Mahintorabi
 * Description: XorShift32 random number generator
 * [GitHub repository](https://github.com/QuantamHD/evan-submission)

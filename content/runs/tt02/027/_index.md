@@ -6,6 +6,8 @@ weight: 28
 
 ## 27 : 0b 000 011 011 : Tiny Phase/Frequency Detector
 
+{{< tt-scanchain-switches "000011011" >}}
+
 * Author: argunda
 * Description: Detect phase shifts between 2 square waves.
 * [GitHub repository](https://github.com/argunda/tt02-TinyPFD)

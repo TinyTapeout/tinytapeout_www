@@ -6,6 +6,8 @@ weight: 103
 
 ## 102 : 0b 001 100 110 : SRLD
 
+{{< tt-scanchain-switches "001100110" >}}
+
 * Author: Chris Burton
 * Description: 8-bit Shift Register with latch and hex decode to display alternating nibbles
 * [GitHub repository](https://github.com/burtyb/tt02-srld)

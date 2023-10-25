@@ -6,6 +6,8 @@ weight: 137
 
 ## 136 : 0b 010 001 000 : LAB11
 
+{{< tt-scanchain-switches "010001000" >}}
+
 * Author: Thomas Zachariah
 * Description: Cycles through the characters of LAB11
 * [GitHub repository](https://github.com/tzachari/tt02-lab11)

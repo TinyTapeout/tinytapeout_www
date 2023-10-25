@@ -6,6 +6,8 @@ weight: 150
 
 ## 149 : 0b 010 010 101 : Continious Math
 
+{{< tt-scanchain-switches "010010101" >}}
+
 * Author: Sophia Li
 * Description: output is a total you can ADD, SUBTRACT, XOR, or LEFT_SHIFT with the input  
 * [GitHub repository](https://github.com/cmu-stuco-98154/f22-tt02-sophiali)

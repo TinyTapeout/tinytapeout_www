@@ -6,6 +6,8 @@ weight: 55
 
 ## 54 : 0b 000 110 110 : Multiple Tunes on A Piezo Speaker
 
+{{< tt-scanchain-switches "000110110" >}}
+
 * Author: Jiaxun Yang
 * Description: Plays multiple Tunes over a Piezo Speaker connected across io_out[1:0]
 * [GitHub repository](https://github.com/FlyGoat/tt02-play-tune-flygoat)

@@ -6,6 +6,8 @@ weight: 36
 
 ## 35 : 0b 000 100 011 : 4-bit badge ALU
 
+{{< tt-scanchain-switches "000100011" >}}
+
 * Author: Rolf Widenfelt
 * Description: A 4-bit ALU inspired by Supercon.6 badge
 * [GitHub repository](https://github.com/rolfmobile99/tt02-submission-template)

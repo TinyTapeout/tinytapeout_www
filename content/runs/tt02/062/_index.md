@@ -6,6 +6,8 @@ weight: 63
 
 ## 62 : 0b 000 111 110 : CNS TT02 Test 1:Score Board
 
+{{< tt-scanchain-switches "000111110" >}}
+
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab. Displays an 8-bit score from one of two players as a two-digit hexadecimal value.
 * [GitHub repository](https://github.com/NYIT-CNS/cns001-tt02-submission1)
