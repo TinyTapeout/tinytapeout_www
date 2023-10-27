@@ -21,7 +21,7 @@ uo_out[4] - TX
 
 ![Tiny VGA](images/tiny_vga.jpg)
 
-For VGA output it is recommended to use the pinout for [Tiny VGA](https://github.com/mole99/tiny-vga). The board is open source and uses only one Pmod so that you can still use the bidirectional Pmod vor something else.
+For VGA output it is recommended to use the pinout for [Tiny VGA](https://github.com/mole99/tiny-vga). The board is open source and uses only one Pmod so that you can still use the bidirectional Pmod or something else.
 
 Even if you plan on designing your own carrier board it makes sense to use the pinout from Tiny VGA so that others can try your design.
 
