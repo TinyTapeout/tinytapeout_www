@@ -165,7 +165,7 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 1. Go to Settings tab,
 2. Select Pages,
-3. Change Source from Deploy from a branch to Github Actions.
+3. Change Source from Deploy from a branch to **GitHub Actions**.
 
 ![actions](/images/faq/action_pages.png)
 
