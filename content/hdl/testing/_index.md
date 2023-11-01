@@ -213,7 +213,6 @@ You can see the standard cells also have power ports, so one thing we have to do
         .ena        (ena),      // enable - goes high when design is selected
         .clk        (clk),      // clock
         .rst_n      (rst_n)     // not reset
-        );
     );
 ```
 
