@@ -9,8 +9,6 @@ LastModifierDisplayName: matt venn
 
 {{< youtube f4w1QOpHzOo >}}
 
-{{< countdown >}}
-
 TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt04).
 
 
@@ -21,28 +19,9 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 * For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 
-# Get your submission ready
-
-{{< youtube m62HLt4BjeA >}}
-
-* [GitHub submission template](https://github.com/TinyTapeout/tt05-submission-template).
-* If you want to use an HDL like Verilog, please take a look [here](/hdl).
-
-
-# Submit your design
-
-* Design (single tile) + Physical PCB + ASIC = $100 + shipping
-* Design only (single tile): $50
-* Extra tiles = $50 each
-* By making an order, you agree to our [terms of service](terms).
-* Closing date is 4th of November
-
-{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
-
-
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 05.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 06.
 
 {{< mailchimp >}}
 
