@@ -11,4 +11,4 @@ weight: 10
 | [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | [2309](https://efabless.com/shuttle-status)  | 143     | 2024-02-28     | 2024-04-01                      |
 | TT05               | 2023-09-11 | 2023-11-04 | [2311](https://efabless.com/shuttle-status)  | 174     | 2024-04-12     | 2024-05-12                      |
 
-\* TT03 includes 149 from TT02
+\* TT03 also includes 149 designs from TT02
