@@ -114,3 +114,7 @@ Attach a VGA display:
 | 5 | In: Test_in[0]  | Out: green[0] | Out: SPI /RST |
 | 6 | In: Test_in[1]  | Out: blue[0] | Out: SPI io[2] (/WP) |
 | 7 | In: Test_in[2]  | Out: hsync | Out: SPI io[3] (/HLD) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "645" >}}

@@ -40,3 +40,7 @@ floating-point sum comes out of the output pins.
 | 5 | input 1 bit 5  | output bit 5 | input 2 bit 5 |
 | 6 | input 1 bit 6  | output bit 6 | input 2 bit 6 |
 | 7 | input 1 bit 7  | output bit 7 | input 2 bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "292" >}}

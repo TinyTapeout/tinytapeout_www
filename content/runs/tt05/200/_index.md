@@ -39,3 +39,7 @@ No clock is required. The first 4 input bits a[3...0] form the first operand, th
 | 5 | b[1]  | s[5] | none |
 | 6 | b[2] (0 = shift right, 1 = shift left)  | s[6] | none |
 | 7 | b[3]  | s[7] | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "200" >}}

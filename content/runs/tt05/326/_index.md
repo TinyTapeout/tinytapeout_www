@@ -46,3 +46,7 @@ Connect a Tiny VGA to the output Pmod connector. By default, you should see the 
 | 5 | none  | G0 | Horizontal Pulse |
 | 6 | none  | B0 | none |
 | 7 | none  | HS | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "326" >}}

@@ -67,3 +67,7 @@ Note: the game requires 50KHz clock input.
 | 5 | none  | none | seg_f |
 | 6 | none  | dig1 | seg_g |
 | 7 | none  | dig2 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "653" >}}

@@ -47,3 +47,7 @@ By changing the values of 'input1' and 'input2', and observing the output layers
 | 5 | n/a  | n/a | n/a |
 | 6 | n/a  | n/a | n/a |
 | 7 | n/a  | n/a | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "105" >}}

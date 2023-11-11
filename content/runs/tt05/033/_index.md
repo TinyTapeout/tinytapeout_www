@@ -50,3 +50,7 @@ Experiment with various inputs, clock frequencies, and enabling/disabling operat
 | 5 | current bit 16  | segment f | second counter bit 5 |
 | 6 | current bit 17  | segment g | second counter bit 6 |
 | 7 | current bit 18  | segment h | second counter bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "33" >}}

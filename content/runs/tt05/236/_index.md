@@ -77,3 +77,7 @@ w0*i0 + w1*i1 + w2*i2 + ... + w15*i15
 | 5 | input 5 asssociated with weight 5  | Read as an 8 bit output along with other outputs | input 14 asssociated with weight 14 |
 | 6 | input 6 asssociated with weight 6  | Read as an 8 bit output along with other outputs | input 15 asssociated with weight 15 |
 | 7 | input 7 asssociated with weight 7  | None | input 16 asssociated with weight 16 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "236" >}}

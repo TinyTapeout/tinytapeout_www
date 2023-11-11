@@ -44,3 +44,7 @@ Pulse ~S to set the SkullFlop (Q), and pulse ~R to reset it.
 | 5 | none  | none | none |
 | 6 | none  | none | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "239" >}}

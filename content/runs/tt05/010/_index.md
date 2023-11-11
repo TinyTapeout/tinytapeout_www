@@ -39,3 +39,7 @@ Drive inputs to [7:0] ui_in and result of computation of neural network can be o
 | 5 | ui_in[5]  | uo_out[5] | none |
 | 6 | ui_in[6]  | uo_out[6] | none |
 | 7 | ui_in[7]  | uo_out[7] | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "10" >}}

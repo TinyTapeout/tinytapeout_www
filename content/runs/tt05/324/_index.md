@@ -39,3 +39,7 @@ Load some data into the memory and then read them out.
 | 5 | Read Enable  | segment f | Empty Flag Out |
 | 6 | Mode (FIFO=0)  | segment g | Output Valid Flag Out |
 | 7 | Manual Clock  | dot | Display Overflow Flag Out |
+
+### Chip location
+
+{{< shuttle-map "tt05" "324" >}}

@@ -40,3 +40,7 @@ a R2R DAC. See the circuit here: https://github.com/mattvenn/6bit-pmod-vga
 | 5 | none  | g1 | none |
 | 6 | none  | b0 | none |
 | 7 | none  | b1 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "707" >}}

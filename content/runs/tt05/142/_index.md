@@ -164,3 +164,7 @@ same way during the tests below.
 | 5 | clock divider bit 0  | custom dlrtp direct | custom dlrtp instrumented |
 | 6 | clock divider bit 1  | foundry dfrtp direct | foundry dfrtp instrumented |
 | 7 | clock divider bit 2  | custom dfrtp direct | custom dfrtp instrumented |
+
+### Chip location
+
+{{< shuttle-map "tt05" "142" >}}

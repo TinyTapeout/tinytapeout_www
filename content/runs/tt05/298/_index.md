@@ -39,3 +39,7 @@ Explain how to test your project
 | 5 | {'IN5': 'Selection bit (0)--> ALU, (1)--> Dice'}  | {'segment f': 'Normal digit display'} | Not used |
 | 6 | {'IN6': 'Input B0'}  | {'segment g': 'Normal digit display'} | Not used |
 | 7 | {'IN7': 'Input B1'}  | dot | Not used |
+
+### Chip location
+
+{{< shuttle-map "tt05" "298" >}}

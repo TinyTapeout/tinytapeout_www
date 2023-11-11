@@ -41,3 +41,7 @@ Every clock the output should give the addition of the two floats.
 | 5 | Float a Exp[2]  | Float out Exp[2] | Float b Exp[2] |
 | 6 | Float a Exp[3]  | Float out Exp[3] | Float b Exp[3] |
 | 7 | Float a Sign  | Float out Sign | Float b Sign |
+
+### Chip location
+
+{{< shuttle-map "tt05" "169" >}}

@@ -41,3 +41,7 @@ pull bidi pin 3 (timer_start) high, count 10 clock cycles and see if the interru
 | 5 | config[5]  | f | none |
 | 6 | config[6]  | g | none |
 | 7 | config[7]  | h | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "202" >}}

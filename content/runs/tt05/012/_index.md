@@ -44,3 +44,7 @@ The digits are output on the bidirectional port and the output port in BCD (Bina
 | 5 | none  | digit_3[1] | digit_1[1] |
 | 6 | none  | digit_3[2] | digit_1[2] |
 | 7 | none  | digit_3[3] | digit_1[3] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "12" >}}

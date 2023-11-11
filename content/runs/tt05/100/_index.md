@@ -39,3 +39,7 @@ Use DIP switches as input, 1- 4 is for normal circuit that would be considered "
 | 5 | r1_trojan  | segment f not used | none |
 | 6 | r2_trojan  | Output from r0_trojan - r3_trojan circuit | none |
 | 7 | r3_trojan  | dot not used | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "100" >}}

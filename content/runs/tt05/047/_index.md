@@ -39,3 +39,7 @@ Set the clock, pulse reser and it it should givne RBS stream.
 | 5 | none  | segment f | none |
 | 6 | none  | segment g | none |
 | 7 | none  | segment PRBS | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "47" >}}

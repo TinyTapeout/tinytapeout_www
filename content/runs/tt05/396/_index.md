@@ -63,3 +63,7 @@ Alternatively, set `max7129_en` to 1 to display the grid on a MAX7219 LED Matrix
 | 5 | max7129_en  | cell_out[5] | cell_in[5] |
 | 6 | en  | cell_out[6] | cell_in[6] |
 | 7 | wr_en  | cell_out[7] | cell_in[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "396" >}}

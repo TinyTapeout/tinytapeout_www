@@ -48,3 +48,7 @@ Simulations show that the neuron will start firing, reach a steady state where i
 | 5 | current bit 16  | membrane potential bit f | membrane potential fractional output bit n |
 | 6 | current bit 17  | membrane potential bit g | membrane potential fractional output bit o |
 | 7 | current bit 18  | membrane potential bit h | membrane potential fractional output bit p |
+
+### Chip location
+
+{{< shuttle-map "tt05" "590" >}}

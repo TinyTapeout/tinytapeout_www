@@ -65,3 +65,7 @@ Experiment by trying different input values.
 | 5 | load input 2 (up)  | segment f (left) | bit 5 (not used) |
 | 6 | load input 3 (left)  | segment g (down) | bit 6 (not used) |
 | 7 | load input 4 (down)  | dot       (data ready) | bit 7 (not used) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "136" >}}

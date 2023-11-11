@@ -44,3 +44,7 @@ Experiment by changing the inputs
 | 5 | division input bit 5  | Random Number Output | division input bit 13 |
 | 6 | division input bit 6  | Random Number Output | division input bit 14 |
 | 7 | division input bit 7  | Random Number Output | division input bit 15 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "330" >}}

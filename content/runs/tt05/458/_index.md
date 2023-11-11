@@ -39,3 +39,7 @@ Connect to a VGA monitor
 | 5 | none  | VGA G1 | none |
 | 6 | none  | VGA B1 | none |
 | 7 | none  | VGA hsync | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "458" >}}

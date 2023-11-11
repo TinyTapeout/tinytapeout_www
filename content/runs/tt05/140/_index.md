@@ -39,3 +39,7 @@ Explain how to test your project
 | 5 | data 5  | output 5 | none |
 | 6 | data 6  | output 6 | none |
 | 7 | data 7  | output 7 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "140" >}}

@@ -39,3 +39,7 @@ Connect to a VGA connector. Use a D2A Converter.
 | 5 | none  | G0 | none |
 | 6 | none  | B0 | none |
 | 7 | none  | hsync | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "78" >}}

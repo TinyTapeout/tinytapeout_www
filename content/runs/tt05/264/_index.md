@@ -66,3 +66,7 @@ In general, pray it works.
 | 5 | none  | 4th bit of cell location | none |
 | 6 | none  | 5th bit of cell location | none |
 | 7 | none  | 6th bit of cell location | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "264" >}}

@@ -153,3 +153,7 @@ weight: 163
 | 5 | none  | none | none |
 | 6 | none  | none | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "641" >}}

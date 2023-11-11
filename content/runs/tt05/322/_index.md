@@ -48,3 +48,7 @@ Connect serial output to a 6x 8-bit shift registers to display the output on 6x 
 | 5 | none  | none | none |
 | 6 | none  | none | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "322" >}}

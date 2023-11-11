@@ -93,3 +93,7 @@ Reading output:
 | 5 | input5  | output5 | orbit/max select |
 | 6 | input6  | output6 | start compute |
 | 7 | input7  | output7 | write enable or compute busy indicator |
+
+### Chip location
+
+{{< shuttle-map "tt05" "462" >}}

@@ -39,3 +39,7 @@ Explain how to test your project
 | 5 | formula right side [5]  | segment f | none |
 | 6 | formula right side [6]  | segment g | none |
 | 7 | formula right side [7]  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "705" >}}

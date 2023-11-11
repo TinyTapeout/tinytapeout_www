@@ -67,3 +67,7 @@ Then clock in the test data from the generated test bench from naxon, and see th
 | 5 | dendritic input 5  | output axon 5 | output axon 9 |
 | 6 | dendritic input 6  | output axon 6 | dendritic input 9 |
 | 7 | dendritic input 7  | output axon 7 | dendritic input 8 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "518" >}}

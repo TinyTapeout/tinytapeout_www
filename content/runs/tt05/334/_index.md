@@ -39,3 +39,7 @@ Attach VGA pmod and connect to monitor.  Use the inputs to move the paddles
 | 5 | none  | g0/b1 (mole99/digilent) | vsync |
 | 6 | none  | b0/b2 (mole99/digilent) | tied low |
 | 7 | pmod sel (high=mole99, low=digilent)  | hsync/b3 (mole99/digilent) | tied low |
+
+### Chip location
+
+{{< shuttle-map "tt05" "334" >}}

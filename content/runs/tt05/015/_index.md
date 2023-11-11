@@ -51,3 +51,7 @@ This will cause the chip to output the debounced tuple corresponding to a high o
 | 5 | toggles event to be passed through if high  | bit 0 of p | Unused |
 | 6 | bit 1 of t  | bit 1 of t | Unused |
 | 7 | bit 0 of t  | bit 0 of t | Unused |
+
+### Chip location
+
+{{< shuttle-map "tt05" "15" >}}

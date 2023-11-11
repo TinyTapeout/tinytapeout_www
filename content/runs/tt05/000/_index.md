@@ -77,3 +77,7 @@ You can read them by toggling the first four DIP switches and observing the on-b
 | 5 | addr[5]  | data[5] | none |
 | 6 | addr[6]  | data[6] | none |
 | 7 | addr[7]  | data[7] | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "0" >}}

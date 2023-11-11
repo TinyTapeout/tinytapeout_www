@@ -51,3 +51,7 @@ Reset to place a new message on the LSR.
 | 5 | bit5  | bit5 | none |
 | 6 | bit6  | bit6 | none |
 | 7 | bit7  | bit7 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "69" >}}

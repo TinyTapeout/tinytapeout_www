@@ -118,3 +118,7 @@ Another option is to use the Pulse Width Modulated (PWM) AUDIO OUT pin with OpAm
 | 5 | DA5 - multiplexed data/address bus  | digita audio | (out) channel B (PWM) |
 | 6 | DA6 - multiplexed data/address bus  | digita audio | (out) channel C (PWM) |
 | 7 | DA7 - multiplexed data/address bus  | digita audio most significant bit | (out) AUDIO OUT master (PWM) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "165" >}}

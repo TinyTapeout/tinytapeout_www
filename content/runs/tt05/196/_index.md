@@ -43,3 +43,7 @@ See the following [notebook](https://colab.research.google.com/gist/proppy/1258e
 | 5 | param `b` bit 1/3  | pcm sample bit 5/7 | param `d` bit 1/3 |
 | 6 | param `b` bit 2/3  | pcm sample bit 6/7 | param `d` bit 2/3 |
 | 7 | param `b` bit 3/3  | pcm sample bit 7/7 | param `d` bit 3/3 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "196" >}}

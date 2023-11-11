@@ -47,3 +47,7 @@ For simpler testing, the input does not need to be matched to the `clk`. With th
 | 5 | input data bit 1  | reg prev bit 1 | input force_prev bit 1 |
 | 6 | input data bit 2  | reg prev bit 2 | input force_prev bit 2 |
 | 7 | input data bit 3  | reg prev bit 3 | input force_prev bit 3 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "65" >}}

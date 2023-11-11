@@ -40,3 +40,7 @@ Set inputs 0 to 5 to the desired counter shift value, and observe the counter on
 | 5 | cnt_shift[5]  | cnt[5] | none |
 | 6 | cnt_stop  | cnt[6] | none |
 | 7 | cnt_reset  | cnt[7] | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "655" >}}

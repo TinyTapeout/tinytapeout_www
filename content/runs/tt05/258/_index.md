@@ -54,3 +54,7 @@ After resetting, the user should do
 | 5 | None  | PWM[7] signal | External PWM signal 5 |
 | 6 | None  | PWM[7] after cross-domain synchronization | External PWM signal 6 |
 | 7 | None  | PWM[7] falling edge detection | External PWM signal 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "258" >}}

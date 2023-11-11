@@ -52,3 +52,7 @@ Input Pin 1 will stop the clock when high
 | 5 | none  | hour 5 led | 15 min |
 | 6 | increment min counter by 1  | hour 6 led | 30 min |
 | 7 | increment hour counter by 1  | hour 7 led | 45 min |
+
+### Chip location
+
+{{< shuttle-map "tt05" "101" >}}

@@ -46,3 +46,7 @@ Press button 1 to read through the values of P and Q in order of P[15:8], P[7:0]
 | 5 | switch  | status LED | switch |
 | 6 | switch  | status LED | switch |
 | 7 | switch  | status LED | switch |
+
+### Chip location
+
+{{< shuttle-map "tt05" "13" >}}

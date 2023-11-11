@@ -40,3 +40,7 @@ After reset, result values and comparator are reset to 0
 | 5 | current bit 16  | membrane potential bit f | unspecified |
 | 6 | current bit 17  | membrane potential bit g | unspecified |
 | 7 | current bit 18  | membrane potential bit h | unspecified |
+
+### Chip location
+
+{{< shuttle-map "tt05" "160" >}}

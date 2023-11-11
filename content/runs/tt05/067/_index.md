@@ -39,3 +39,7 @@ Make a test bench. boom.
 | 5 | none  | segment f | none |
 | 6 | none  | segment g | none |
 | 7 | none  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "67" >}}

@@ -56,3 +56,7 @@ vice versa.
 | 5 | n/a  | segment f | n/a |
 | 6 | n/a  | segment g | n/a |
 | 7 | n/a  | n/a | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "161" >}}

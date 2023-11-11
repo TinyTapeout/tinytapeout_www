@@ -39,3 +39,7 @@ Provide 100kHz clock on io_in[0], briefly hit reset io_in[1] (L->H->L) and io_ou
 | 5 | none  | none | none |
 | 6 | none  | none | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "197" >}}

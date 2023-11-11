@@ -39,3 +39,7 @@ https://www.onsemi.com/pdf/datasheet/mm74hc595-d.pdf
 | 5 | n/a  | none | q[5] |
 | 6 | n/a  | none | q[6] |
 | 7 | n/a  | none | q[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "649" >}}

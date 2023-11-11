@@ -57,3 +57,7 @@ The project is also designed to be used as a ROM connected to an RP2040's QSPI p
 | 5 | Debug addr 2  | segment f | Debug bit 1 |
 | 6 | Unused  | segment g | Debug bit 2 |
 | 7 | Unused  | dot (Set to SPI CSn) | Debug bit 3 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "715" >}}

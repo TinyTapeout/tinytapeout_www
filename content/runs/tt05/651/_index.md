@@ -58,3 +58,7 @@ the input).  In single mode, the 7-seg dot marks exact match.
 | 5 | input pulse  | segment f | raw input pulse count bit 5 |
 | 6 | output display single enable (LOW == dual)  | segment g | raw input pulse count bit 6 |
 | 7 | output display select  | dot or select (for dual) | raw input pulse count bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "651" >}}

@@ -189,3 +189,7 @@ The following diagram shows 10 cycles of automaton after **/HALT** pulled back t
 | 5 | write cell 5 state  | read cell 5 state | ADDR#, cell block address bit 3 |
 | 6 | write cell 6 state  | read cell 6 state | ADDR#, cell block address bit 4 |
 | 7 | write cell 7 state  | read cell 7 state | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "384" >}}

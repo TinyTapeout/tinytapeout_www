@@ -39,3 +39,7 @@ There are many automated test included for MRCS. A verilog testbench for FPGA an
 | 5 | ui_in[2]  func0L  | uo_out[2] out0L | uio_in[2] a0L |
 | 6 | ui_in[1]  b1H  | uo_out[1] unused | uio_in[1] unused |
 | 7 | ui_in[0]  b1L  | uo_out[0] unused | uio_in[0] unused |
+
+### Chip location
+
+{{< shuttle-map "tt05" "107" >}}

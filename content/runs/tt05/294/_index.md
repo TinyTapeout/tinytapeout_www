@@ -43,3 +43,7 @@ Connecting 4 LEDs in pull_up makes it possible to see the binary value.
 | 5 | none  | led0 | none |
 | 6 | none  | led1 | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "294" >}}

@@ -42,3 +42,7 @@ With the upper 16 bits, the CLINT can be configured, and with the lower 16 bits,
 | 5 | none  | ce1 | none |
 | 6 | none  | sclk_nor | none |
 | 7 | none  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "654" >}}

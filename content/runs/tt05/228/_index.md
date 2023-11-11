@@ -42,3 +42,7 @@ for this connection.
 | 5 | n/a  | n/a | second counter bit 5 |
 | 6 | n/a  | n/a | second counter bit 6 |
 | 7 | n/a  | n/a | second counter bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "228" >}}

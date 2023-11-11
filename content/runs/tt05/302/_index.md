@@ -64,3 +64,7 @@ to generate the necesary timing signals, padles_en, ball_en, mux_clk, shift_reg_
 | 5 | player2_down button  | points player1 pulses when player 1 gets a point | padles_en enable padle counters |
 | 6 | player2_left button  | points player2 | ball_en enable ball counters |
 | 7 | player2_right button  | vertical pixels shift register out | inp_reg_en enables input register. this should happen when clk=1, ball_en=0, padles_en=0 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "302" >}}

@@ -39,3 +39,7 @@ The clock input should be set to 25MHz (or 25.179MHz, either should be close eno
 | 5 | none  | G0 | score[5] |
 | 6 | none  | B0 | score[6] |
 | 7 | none  | hsync | score[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "134" >}}

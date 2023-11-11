@@ -39,3 +39,7 @@ Basic sound synthesizer module: generates sound signal, modulates it with an ASD
 | 5 | n/a  | n/a | n/a |
 | 6 | n/a  | n/a | n/a |
 | 7 | n/a  | n/a | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "75" >}}

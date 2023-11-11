@@ -40,3 +40,7 @@ Enable the respective blocks, and enable the transmission gates to connect the b
 | 5 | {'IN[7]': 'Short UA[0] and UA[1] for testing'}  | n/a | n/a |
 | 6 | n/a  | n/a | n/a |
 | 7 | n/a  | n/a | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "271" >}}

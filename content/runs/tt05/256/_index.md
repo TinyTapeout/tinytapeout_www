@@ -61,3 +61,7 @@ SPI input is connected to RP2040's SPI1 on TT05 breakout board.
 | 5 | none  | none | none |
 | 6 | none  | none | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "256" >}}

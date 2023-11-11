@@ -71,3 +71,7 @@ RP2040 code is expected to be provided to conduct testing based on simulation ex
 | 5 | none  | segment f | none |
 | 6 | none  | segment g | none |
 | 7 | none  | dot | powerOnSense (out) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "130" >}}

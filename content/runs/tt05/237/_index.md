@@ -58,3 +58,7 @@ Experiment by changing the inputs to change the counting speed.
 | 5 | y2  | output 2 | none |
 | 6 | y1  | output 1 | none |
 | 7 | y0  | output 0 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "237" >}}

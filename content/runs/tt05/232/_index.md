@@ -41,3 +41,7 @@ Use the scan chain to test the internal state of the design.
 | 5 | unused  | segment f | unused |
 | 6 | unused  | segment g | unused |
 | 7 | unused  | scan chain output | unused |
+
+### Chip location
+
+{{< shuttle-map "tt05" "232" >}}

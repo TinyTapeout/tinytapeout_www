@@ -43,3 +43,7 @@ to the character to be displayed. 0-25 for a-z, then 26:[space], 27:[_], 28:[-],
 | 5 | dip5  | segment f | none |
 | 6 | not connected  | segment g | none |
 | 7 | not connected  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "46" >}}

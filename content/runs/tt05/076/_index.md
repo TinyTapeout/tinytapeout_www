@@ -43,3 +43,7 @@ the output of the RC filter should be attached to a suitable audio amplifier.
 | 5 | Frequency left shift amount (in bits) -- bit 1  | PCM sawtooth wave output (bit 14) | PCM sawtooth wave output (bit 14) |
 | 6 | Frequency left shift amount (in bits) -- bit 2  | PCM sawtooth wave output (bit 15) | PCM sawtooth wave output (bit 15) |
 | 7 | Frequency left shift amount (in bits) -- bit 3  | PDM sawtooth wave output (needs LPF) | PDM sawtooth wave output (needs LPF) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "76" >}}

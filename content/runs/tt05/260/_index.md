@@ -62,3 +62,7 @@ After selecting the modulation type, the modulated signal is expressed at the â€
 | 5 | none  | mod_out_5 | none |
 | 6 | none  | mod_out_6 | none |
 | 7 | none  | demod_out | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "260" >}}

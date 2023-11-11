@@ -45,3 +45,7 @@ To debug, enable debug mode and check the bidirectional outputs for state machin
 | 5 | count period bit 10  | segment f | count period bit 02 or debug clock bit 0 |
 | 6 | count period bit 09  | segment g | count period bit 01 or debug state bit 1 |
 | 7 | count period bit 08  | digit select | count period bit 00 or debug state bit 0 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "711" >}}

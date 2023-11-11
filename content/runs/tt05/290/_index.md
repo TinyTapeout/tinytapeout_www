@@ -41,3 +41,7 @@ your computer. You should see the characters being printed on your computer.
 | 5 | Bit 4  | segment f | none |
 | 6 | Bit 5  | segment g | none |
 | 7 | Bit 6  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "290" >}}

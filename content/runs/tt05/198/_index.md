@@ -46,3 +46,7 @@ The halt signal indicates that the computer has encountered and ececuted a halt 
 | 5 | data[2]  | data[2] | addr[2] |
 | 6 | data[1]  | data[1] | addr[1] |
 | 7 | data[0]  | data[0] | addr[0] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "198" >}}

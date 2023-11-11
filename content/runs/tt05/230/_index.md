@@ -61,3 +61,7 @@ then read 16-bit temperaute from device.
 | 5 | unused  | unused | ADC_SOUT |
 | 6 | unused  | unused | ADC_SIN |
 | 7 | unused  | unused | ADC_SCK |
+
+### Chip location
+
+{{< shuttle-map "tt05" "230" >}}

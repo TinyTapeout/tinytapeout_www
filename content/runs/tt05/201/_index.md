@@ -325,3 +325,7 @@ D0..D7_______  ________  ________  ________  ________  |
 | 5 | D5 data bus  | digital audio | (out) channel 2 (PWM) |
 | 6 | D6 data bus  | digital audio | (out) channel 3 (PWM) |
 | 7 | D7 data bus  | digital audio MSB | (out) AUDIO OUT master (PWM) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "201" >}}

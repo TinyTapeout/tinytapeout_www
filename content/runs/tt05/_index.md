@@ -20,6 +20,10 @@ description: 174 designs, closed 4th November 2023
 * Submitted to Efabless [2311C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
 * Chips expected April 2024, PCBs expected June 2024
 
+# Chip map
+
+{{< shuttle-map "tt05" >}}
+
 # All projects
 | Index | Title | Author |
 | ----- | ----- | -------|
@@ -196,3 +200,4 @@ description: 174 designs, closed 4th November 2023
 | 717 | [Multiplexed clock](717) | Gustavo Gomez|
 | 718 | [Shaman: SHA-256 hasher](718) | Pat Deegan, psychogenic.com|
 | 719 | [metastability experiment](719) | yubex|
+

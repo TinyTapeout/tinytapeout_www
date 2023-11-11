@@ -50,3 +50,7 @@ TODO
 | 5 | select latch counter (sync/async)  | divided clock of oscillator 0 | not used |
 | 6 | frequency divider select bit 0  | divided clock of oscillator 1 | not used |
 | 7 | frequency divider select bit 1  | divided clock of oscillator 2 | not used |
+
+### Chip location
+
+{{< shuttle-map "tt05" "398" >}}

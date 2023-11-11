@@ -39,3 +39,7 @@ Explain how to test your project
 | 5 | none  | Memory Start | A5 |
 | 6 | none  | Memory Continue | none |
 | 7 | none  | Memory Write Enable | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "204" >}}

@@ -45,3 +45,7 @@ The `out` pins will contain the value read from the RAM.
 | 5 | addr[5]  | out[5] | in[5] |
 | 6 | addr[6]  | out[6] | in[6] |
 | 7 | wen  | out[7] | in[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "526" >}}

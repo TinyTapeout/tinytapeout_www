@@ -41,3 +41,7 @@ After reset, program the neuron threshold, leak rate, and refractory period. Add
 | 5 | ui_in[2] - copi  | uo_out[2] - spikes_out[2] | unused |
 | 6 | ui_in[1] - cs_n  | uo_out[1] - spikes_out[1] | unused |
 | 7 | ui_in[0] - sclk  | uo_out[0] - spikes_out[0] | unused |
+
+### Chip location
+
+{{< shuttle-map "tt05" "450" >}}

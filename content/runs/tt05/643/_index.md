@@ -41,3 +41,7 @@ Provide a 7 segment display, some buttons, and a switch to control the behavior 
 | 5 | inc switch  | segment f | none |
 | 6 | mode switch  | segment g | none |
 | 7 | none  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "643" >}}

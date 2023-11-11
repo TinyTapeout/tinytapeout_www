@@ -51,3 +51,7 @@ To view the current state of the grid, set the row_sel[2:0] inputs to the desire
 | 5 | none  | cell_out[5] | cell_in[5] |
 | 6 | en  | cell_out[6] | cell_in[6] |
 | 7 | wr_en  | cell_out[7] | cell_in[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "270" >}}

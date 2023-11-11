@@ -39,3 +39,7 @@ If I didn't get lazy half-way though, the test-script provided in the repo shoul
 | 5 | (reserved)  | data bit 5 | data bit 5 |
 | 6 | (reserved)  | data bit 6 | data bit 6 |
 | 7 | (reserved)  | data bit 7 | data bit 7 | good/bad token flag (0 = good, 1 = bad) |
+
+### Chip location
+
+{{< shuttle-map "tt05" "7" >}}

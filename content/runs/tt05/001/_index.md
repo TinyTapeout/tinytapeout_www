@@ -39,3 +39,7 @@ Set input 0 high. Check the outputs are toggling.
 | 5 | data_i[5]  | data_o[5] (when sel=0) / counter_o[5] (when sel=1) | counter_o[5] |
 | 6 | data_i[6]  | data_o[6] (when sel=0) / counter_o[6] (when sel=1) | counter_o[6] |
 | 7 | data_i[7]  | data_o[7] (when sel=0) / counter_o[7] (when sel=1) | counter_o[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "1" >}}

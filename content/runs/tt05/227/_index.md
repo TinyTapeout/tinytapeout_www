@@ -41,3 +41,7 @@ Keep the reset at 0 for two clock pulses. Change the reset to 1. Set the thresho
 | 5 | compare bit 16  | segment f | second counter bit 5 |
 | 6 | compare bit 17  | segment g | second counter bit 6 |
 | 7 | compare bit 18  | dot | second counter bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "227" >}}

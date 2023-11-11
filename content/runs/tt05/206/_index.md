@@ -47,3 +47,7 @@ and the resulting uart transmission sequence will appear on the tx output signal
 | 5 | none  | segment f / dataOut[5] | dataIn[5] |
 | 6 | none  | segment g / dataOut[6] | dataIn[6] |
 | 7 | bit to test if we want tx or rx  | segment h / dataOut[7] | dataIn[7] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "206" >}}

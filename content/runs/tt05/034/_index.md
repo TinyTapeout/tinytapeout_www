@@ -51,3 +51,7 @@ It may be fun to drive these with a very fast clock.
 | 5 | none  | none | none |
 | 6 | Shift register load (low) / enable (high)  | UART output enabled | none |
 | 7 | UART output enable  | UART output | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "34" >}}

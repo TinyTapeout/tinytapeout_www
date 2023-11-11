@@ -60,3 +60,7 @@ Connect a clock with frequency `f_clk = 256 kHz` and apply a reset cycle to init
 | 5 | ~rst_n_ks_string  | segment f | i2s_ws_o |
 | 6 | pluck  | segment g | i2s_sd_o |
 | 7 | NOT CONNECTED  | dot | prbs_15 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "454" >}}

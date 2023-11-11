@@ -39,3 +39,7 @@ After reset...
 | 5 | input bus  | last layer neuron 5 | (out) debug neuron layer 1 |
 | 6 | input bus  | last layer neuron 6 | (out) debug neuron layer 2 |
 | 7 | input bus MSB  | last layer neuron 7 | (out) debug neuron layer 2 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "582" >}}

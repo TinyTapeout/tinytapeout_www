@@ -39,3 +39,7 @@ Enable the block and check the uo_outputs. Expected that only uo_out[2] is high.
 | 5 | n/a  | n/a | n/a |
 | 6 | n/a  | n/a | n/a |
 | 7 | n/a  | n/a | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "332" >}}

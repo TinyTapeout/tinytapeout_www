@@ -39,3 +39,7 @@ Explain how to test your project
 | 5 | none  | CLK/8 | none |
 | 6 | none  | CLK/4 | none |
 | 7 | none  | CLK/2 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "40" >}}

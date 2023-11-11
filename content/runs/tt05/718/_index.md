@@ -111,3 +111,7 @@ If the hash is going to be, say "90fc0a268f8b81b...", they'll be present in that
 | 5 | data_input bit 5  | result_byte bit 5 | OUTPUT, processing data block debug |
 | 6 | data_input bit 6  | result_byte bit 6 | INPUT,  start new digest |
 | 7 | data_input bit 7  | result_byte bit 7 | INPUT,  clockin_data |
+
+### Chip location
+
+{{< shuttle-map "tt05" "718" >}}

@@ -57,3 +57,7 @@ TODO: Register descriptions
 | 5 | write data bit 5  | sample bit 5 | unused |
 | 6 | write data bit 6  | sample bit 6 | PWM output |
 | 7 | write data bit 7  | sample bit 7 | write strobe |
+
+### Chip location
+
+{{< shuttle-map "tt05" "262" >}}

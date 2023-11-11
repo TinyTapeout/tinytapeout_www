@@ -42,3 +42,7 @@ The network will pass the spikes in the forward direction accoding to the define
 | 5 | unspecified  | unspecified | unspecified |
 | 6 | unspecified  | unspecified | unspecified |
 | 7 | unspecified  | unspecified | unspecified |
+
+### Chip location
+
+{{< shuttle-map "tt05" "168" >}}

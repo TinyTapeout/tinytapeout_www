@@ -64,3 +64,7 @@ Use the test.py script to run the cocotb test. Monitor the test output to ensure
 | 5 | compare bit 16  | segment f | second counter bit 5 |
 | 6 | compare bit 17  | segment g | second counter bit 6 |
 | 7 | compare bit 18  | dot | second counter bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "39" >}}

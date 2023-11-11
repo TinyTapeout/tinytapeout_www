@@ -39,3 +39,7 @@ Provide input clock frequencies to the neuron clusters and observe the output th
 | 5 | IN4 Input to the (6x6x6) cluster  | OUT5 Output from 5-bit FF | D4 connected as an OUTPUT pin from either the (6x6x6) cluster or the (1x3x2x1) cluster (where IN3 is the input select pin) |
 | 6 | IN5 Input to the (6x6x6) cluster  | OUT6 Output from 6-bit FF | D5 INPUT to the (6x6x6) cluster |
 | 7 | IN6 Input to the (6x6x6) cluster  | OUT7 MUX output) | D6 INPUT to the (6x6x6) cluster |
+
+### Chip location
+
+{{< shuttle-map "tt05" "207" >}}

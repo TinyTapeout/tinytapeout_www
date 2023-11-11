@@ -50,3 +50,7 @@ Experiment by changing the inputs to change the counting speed.
 | 5 | unspecified  | perceptron_output f | unspecified |
 | 6 | unspecified  | perceptron_output g | unspecified |
 | 7 | unspecified  | perceptron_output h | unspecified |
+
+### Chip location
+
+{{< shuttle-map "tt05" "170" >}}

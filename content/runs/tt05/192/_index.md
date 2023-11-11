@@ -39,3 +39,7 @@ Press the reset button, then press the clock button to advance the count.
 | 5 | none  | segment f | none |
 | 6 | none  | segment g | none |
 | 7 | none  | dot | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "192" >}}

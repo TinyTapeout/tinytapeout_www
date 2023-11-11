@@ -41,3 +41,7 @@ Then change the inputs to change the current. You can read the output current to
 | 5 | current bit 16  | out bit f | unspecified |
 | 6 | current bit 17  | out bit g | unspecified |
 | 7 | current bit 18  | out bit h | unspecified |
+
+### Chip location
+
+{{< shuttle-map "tt05" "166" >}}

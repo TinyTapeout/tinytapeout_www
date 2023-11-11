@@ -44,3 +44,7 @@ Experiment by changing the inputs to count different number of seconds
 | 5 | n/a  | segment f | n/a |
 | 6 | n/a  | segment g | n/a |
 | 7 | n/a  | dot | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "205" >}}

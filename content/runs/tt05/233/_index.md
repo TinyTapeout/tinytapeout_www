@@ -42,3 +42,7 @@ Bidirectioanl output pin must be connected to displays anodes.
 | 5 | n/a  | Display cathode 6 | Segment f |
 | 6 | n/a  | n/a | Segment g |
 | 7 | n/a  | n/a | dot |
+
+### Chip location
+
+{{< shuttle-map "tt05" "233" >}}

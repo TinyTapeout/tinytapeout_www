@@ -39,3 +39,7 @@ You simply need to connect an UART RX on uo_out[0] and you will see my name ! UA
 | 5 | none  | n/a | none |
 | 6 | none  | n/a | none |
 | 7 | none  | n/a | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "225" >}}

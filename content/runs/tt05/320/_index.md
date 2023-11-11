@@ -89,3 +89,7 @@ After two clock cycles, the output ready (uio_out) is set to logic '1' and the m
 | 5 | input bit  | output bit | none |
 | 6 | input bit  | output bit | none |
 | 7 | input bit  | output bit | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "320" >}}

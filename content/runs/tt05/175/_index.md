@@ -49,3 +49,7 @@ Experiment by changing the beta, threshold and input current values to see how t
 | 5 | configure beta, threshold and current  | membrane potential | configure the state |
 | 6 | configure beta, threshold and current  | membrane potential | configure the state |
 | 7 | configure beta, threshold and current  | membrane potential | configure the state |
+
+### Chip location
+
+{{< shuttle-map "tt05" "175" >}}

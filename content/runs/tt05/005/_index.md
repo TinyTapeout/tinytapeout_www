@@ -65,3 +65,7 @@ controlling a 3 7-segment display to show the numbers on the 8-bit bus (up to 25
 | 5 | n/a  | bus[5] | n/a |
 | 6 | n/a  | bus[6] | n/a |
 | 7 | n/a  | bus[7] | n/a |
+
+### Chip location
+
+{{< shuttle-map "tt05" "5" >}}

@@ -53,3 +53,7 @@ to make it consistent with realistic biological characteristics.
 | 5 | current bit 16  | membrane f | second counter bit 5 |
 | 6 | current bit 17  | membrane g | second counter bit 6 |
 | 7 | current bit 18  | membrane h | spike bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "224" >}}

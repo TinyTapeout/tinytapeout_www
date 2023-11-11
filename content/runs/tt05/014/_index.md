@@ -99,3 +99,7 @@ the testing section of the README of the github project
 | 5 | TapF  | RunLong | TimerScaleConfig |
 | 6 | EnableTimeout  | Buzzer | WarningTimeConfig |
 | 7 | PressureHigh  | BuzzerHaltedOnly | TimeoutConfig |
+
+### Chip location
+
+{{< shuttle-map "tt05" "14" >}}

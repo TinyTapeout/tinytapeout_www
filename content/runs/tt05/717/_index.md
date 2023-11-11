@@ -66,3 +66,7 @@ Generate a reset to start to init all the registers.
 | 5 | not used  | segment f | output clock of minutes / testing purposes |
 | 6 | not used  | segment g | output not used |
 | 7 | not used  | dot | output not used |
+
+### Chip location
+
+{{< shuttle-map "tt05" "717" >}}

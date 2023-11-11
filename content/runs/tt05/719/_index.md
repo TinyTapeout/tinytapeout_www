@@ -47,3 +47,7 @@ In case of metastability the dot of the 7 segment display should change its stat
 | 5 | delay_ctrl[3]  | segment f, meta_dff_1 | none |
 | 6 | delay_ctrl[4]  | segment g, toggle_dff_en_3t | none |
 | 7 | delay_ctrl[5]  | dot, meta_err_detected | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "719" >}}

@@ -42,3 +42,7 @@ The output of the 2 debouncers will also be output.
 | 5 | encoder 2 pin b  | n/a | debug encoder bit 5 |
 | 6 | debug encoder select bit 0  | n/a | debug encoder bit 6 |
 | 7 | debug encoder select bit 1  | n/a | debug encoder bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "713" >}}

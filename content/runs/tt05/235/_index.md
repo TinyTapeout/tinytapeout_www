@@ -51,3 +51,7 @@ two values will be sent on each clock edge.
 | 5 | Input Value bit 5  | Output Value bit 5 | Column Value bit 1 |
 | 6 | Input Value bit 6  | Output Value bit 6 | Row Value bit 0 |
 | 7 | Input Value bit 7  | Output Value bit 7 | Row Value bit 1 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "235" >}}

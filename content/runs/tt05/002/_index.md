@@ -40,3 +40,7 @@ Toggle input 0, measure the time for output 0 to change.
 | 5 | in5  | mirrors in0 | none |
 | 6 | in6  | mirrors in0 | none |
 | 7 | in7  | the value of in4 & in5 & in6 & in7 | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "2" >}}

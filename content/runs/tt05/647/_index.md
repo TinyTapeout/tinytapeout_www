@@ -39,3 +39,7 @@ Check reset, ena, counter function.
 | 5 | inv6  | counter[10] | output of inv6 |
 | 6 | inv7  | counter[9] | output of inv7 |
 | 7 | inv8  | counter[8] | output of inv8 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "647" >}}

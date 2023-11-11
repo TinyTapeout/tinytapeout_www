@@ -43,3 +43,7 @@ Set the clock frequency to 20 MHz and connect OUT2 to the DIN signal of a WS2812
 | 5 | none  | none | none |
 | 6 | WS2812B LED strip output  | none | none |
 | 7 | shift register input  | none | none |
+
+### Chip location
+
+{{< shuttle-map "tt05" "35" >}}

@@ -48,3 +48,7 @@ Hook up the Tiny VGA interface and connect a VGA monitor.  Hope it works.
 | 5 | unused  | G0 | debug\[2] |
 | 6 | debugsel\[1]  | B0 | debug\[1] |
 | 7 | debugsel\[0]  | hsync | debug\[0] |
+
+### Chip location
+
+{{< shuttle-map "tt05" "390" >}}

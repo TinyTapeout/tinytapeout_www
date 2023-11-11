@@ -47,3 +47,7 @@ Changing the 5 LSB of the input should change how quickly the letters are update
 | 5 | clock divider bit 21  | segment f | second counter bit 5 |
 | 6 | clock divider bit 1  | segment g | second counter bit 6 |
 | 7 | clock divider bit 0  | dot | second counter bit 7 |
+
+### Chip location
+
+{{< shuttle-map "tt05" "203" >}}

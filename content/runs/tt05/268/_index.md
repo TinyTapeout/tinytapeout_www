@@ -65,3 +65,7 @@ An analog PWM filter and audio driver are needed for the test rig.
 | 5 | None  | Square2 | None |
 | 6 | None  | Triangle | None |
 | 7 | None  | Noise | None |
+
+### Chip location
+
+{{< shuttle-map "tt05" "268" >}}
