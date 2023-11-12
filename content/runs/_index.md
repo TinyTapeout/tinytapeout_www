@@ -1,5 +1,5 @@
 ---
-title: Tiny Tapeouts
+title: Tiny Tapeout Chips
 weight: 10
 ---
 
