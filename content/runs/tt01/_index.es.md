@@ -1,7 +1,7 @@
 ---
 title: "Tiny Tapeout 01"
 weight: 10
-description: Nuestra primera prueba
+description: 152 diseños, cerrado el 1 de Septiembre de 2022
 ---
 
 {{% toc %}}
@@ -18,20 +18,8 @@ description: Nuestra primera prueba
 
 * Lanzamiento: 2022-08-17
 * Presentación cerrada: 2022-09-01
-* Enviado a Efabless el 2022-09-05 para la lanzadera MPW7 utilizando el PDK de código abierto Skywater de 130 nm.
-
-# Estadísticas de la comunidad (a fecha de 2022-09-05)
-
-* Discord: 206 miembros
-* Sitio web: 17 mil visitantes, 430 clics en enlaces
-* Lista de correo: 380 subscripciones
-* Twitter: 300 mil impresiones
-
-# Prensa
-
-* [Adafruit](https://blog.adafruit.com/2022/08/31/tinytapeout-making-it-easier-to-get-a-chip-design-manufactured-tinytapeout-matthewvenn/)
-* [Hackernews](https://news.ycombinator.com/item?id=32617620)
-* [eenews](https://www.eenewseurope.com/en/tinytapeout-boost-for-open-source-silicon-chip-design/)
+* Enviado a Efabless el 2022-09-05 para la [lanzadera MPW7](https://efabless.com/shuttle-status) usando el PDK de código abierto Skywater 130nm
+* Se esperan chips para Noviembre de 2023. Como esta fue una prueba, no esperamos fabricar ni entregar PCBs
 
 # Estadísticas del proyecto
 
@@ -39,7 +27,7 @@ description: Nuestra primera prueba
 * 100 personas dispuestas a pagar 100 dólares por el montado del chip en una PCB.
 * 115 usaron el editor gráfico Wokwi, 31 Verilog, 3 XLS, 2 Chisel y 1 Amaranth.
 * 15 mil células estándar usadas en todos los proyectos.
-* La mayoría de las celdas usadas en un diseño fue de 600, la menor fue de 14.
+* El diseño con más células usadas fue de 600, el menor fue de 14.
 * El total del largo del cableado fue de 772 mm.
 
 # Imágenes
