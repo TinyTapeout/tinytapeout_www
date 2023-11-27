@@ -36,7 +36,8 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 <div style="display: flex; margin-bottom: 3em">
   {{< customer-card "Oklahoma State" "osu.png" "https://go.okstate.edu/" >}}
   {{< customer-card "Latin Practice" "latinpractice.png" "https://latinpractice.com/" >}}
-  {{< customer-card "Digital University Kerala" "kerala.png" "https://duk.ac.in/" >}}
+  {{< customer-card "NYU" "nyu.png" "https://www.nyu.edu/" >}}
+  <!-- {{< customer-card "Digital University Kerala" "kerala.png" "https://duk.ac.in/" >}} -->
 </div>
 <div style="display: flex; margin-bottom: 3em">
   {{< customer-card "New York Institute of technology" "nyit.png" "https://www.nyit.edu" >}}
