@@ -28,18 +28,14 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 
 # Our customers
 
-<div style="display: flex; margin-bottom: 3em">
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
   {{< customer-card "University of California, Santa Cruz" "ucsc.jpg" "https://www.linkedin.com/feed/update/urn:li:activity:7127152173037080576/" >}}
   {{< customer-card "San Jose State University" "sjsu.png" "https://www.linkedin.com/feed/update/urn:li:activity:7126369564975607808/" >}}
   {{< customer-card "Johannes Kepler University Linz" "jku.png" "https://www.jku.at/en" >}}
-</div>
-<div style="display: flex; margin-bottom: 3em">
   {{< customer-card "Oklahoma State" "osu.png" "https://go.okstate.edu/" >}}
   {{< customer-card "Latin Practice" "latinpractice.png" "https://latinpractice.com/" >}}
   {{< customer-card "NYU" "nyu.png" "https://www.nyu.edu/" >}}
   <!-- {{< customer-card "Digital University Kerala" "kerala.png" "https://duk.ac.in/" >}} -->
-</div>
-<div style="display: flex; margin-bottom: 3em">
   {{< customer-card "New York Institute of technology" "nyit.png" "https://www.nyit.edu" >}}
   {{< customer-card "Hochschule Rheinmain" "hrm.png" "https://www.hs-rm.de/de/" >}}
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
