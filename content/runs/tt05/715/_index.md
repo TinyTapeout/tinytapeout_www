@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "715 SPI Peripheral"
-weight: 111
+weight: 1
 ---
 
 ## 715 : SPI Peripheral

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "231 Naive 8-bit Binary Counter"
-weight: 129
+weight: 81
 ---
 
 ## 231 : Naive 8-bit Binary Counter

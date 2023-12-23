@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "8 Spiking LSTM Network"
-weight: 79
+weight: 39
 ---
 
 ## 8 : Spiking LSTM Network

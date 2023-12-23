@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "39 Matrix Multiplier"
-weight: 84
+weight: 143
 ---
 
 ## 39 : Matrix Multiplier

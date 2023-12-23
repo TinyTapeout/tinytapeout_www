@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "134 Flappy VGA"
-weight: 168
+weight: 96
 ---
 
 ## 134 : Flappy VGA

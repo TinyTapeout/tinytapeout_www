@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "0 Chip ROM"
-weight: 141
+weight: 80
 ---
 
 ## 0 : Chip ROM

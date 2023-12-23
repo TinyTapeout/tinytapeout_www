@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "228 Spike-timing dependent plasticity (Verilog Demo)"
-weight: 112
+weight: 116
 ---
 
 ## 228 : Spike-timing dependent plasticity (Verilog Demo)

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "42 ring osc test"
-weight: 162
+weight: 85
 ---
 
 ## 42 : ring osc test

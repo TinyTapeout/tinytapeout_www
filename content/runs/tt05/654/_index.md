@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "654 KianV uLinux SoC"
-weight: 51
+weight: 24
 ---
 
 ## 654 : KianV uLinux SoC

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "234 Convolutional Network Circuit Chip Design"
-weight: 18
+weight: 145
 ---
 
 ## 234 : Convolutional Network Circuit Chip Design

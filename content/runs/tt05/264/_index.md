@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "264 Tiny Game of Life"
-weight: 103
+weight: 21
 ---
 
 ## 264 : Tiny Game of Life

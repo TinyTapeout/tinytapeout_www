@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "320 A Boolean function based pseudo random number generator (PRNG)"
-weight: 125
+weight: 166
 ---
 
 ## 320 : A Boolean function based pseudo random number generator (PRNG)

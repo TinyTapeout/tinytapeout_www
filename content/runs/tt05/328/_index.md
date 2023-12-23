@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "328 4 bit Sync Gray Code Counter"
-weight: 3
+weight: 120
 ---
 
 ## 328 : 4 bit Sync Gray Code Counter

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "162 Brain Inspired Random Dropout Circuit"
-weight: 92
+weight: 150
 ---
 
 ## 162 : Brain Inspired Random Dropout Circuit

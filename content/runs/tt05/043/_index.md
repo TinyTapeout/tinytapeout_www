@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "43 7 segment clock with 4 digits"
-weight: 110
+weight: 146
 ---
 
 ## 43 : 7 segment clock with 4 digits

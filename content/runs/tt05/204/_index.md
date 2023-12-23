@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "204 Tetris"
-weight: 133
+weight: 18
 ---
 
 ## 204 : Tetris

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "96 Ring Oscillator and Clock Source Switch"
-weight: 40
+weight: 100
 ---
 
 ## 96 : Ring Oscillator and Clock Source Switch

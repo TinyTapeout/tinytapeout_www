@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "69 Stream Cipher w/ LSR (8 bit key)"
-weight: 13
+weight: 52
 ---
 
 ## 69 : Stream Cipher w/ LSR (8 bit key)

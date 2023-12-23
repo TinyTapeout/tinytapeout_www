@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "132 tt05-loopback tile with input skew measurement"
-weight: 86
+weight: 123
 ---
 
 ## 132 : tt05-loopback tile with input skew measurement

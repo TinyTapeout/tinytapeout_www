@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "46 Character Selector"
-weight: 56
+weight: 125
 ---
 
 ## 46 : Character Selector

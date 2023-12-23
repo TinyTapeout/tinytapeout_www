@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "235 Matrix Vector Multiplication Accelerator"
-weight: 59
+weight: 45
 ---
 
 ## 235 : Matrix Vector Multiplication Accelerator

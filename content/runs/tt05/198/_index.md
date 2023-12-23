@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "198 Byte Computer"
-weight: 119
+weight: 13
 ---
 
 ## 198 : Byte Computer

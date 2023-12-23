@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "705 cpu_8bit"
-weight: 66
+weight: 41
 ---
 
 ## 705 : cpu_8bit

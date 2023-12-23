@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "76 Sawtooth Generator"
-weight: 81
+weight: 11
 ---
 
 ## 76 : Sawtooth Generator

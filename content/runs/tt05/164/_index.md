@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "164 RAM cell test"
-weight: 109
+weight: 65
 ---
 
 ## 164 : RAM cell test

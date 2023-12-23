@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "396 Game of Life 8x32 (siLife)"
-weight: 19
+weight: 163
 ---
 
 ## 396 : Game of Life 8x32 (siLife)

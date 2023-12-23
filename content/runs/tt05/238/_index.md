@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "238 Binary Neural Network (Verilog Demo)"
-weight: 41
+weight: 12
 ---
 
 ## 238 : Binary Neural Network (Verilog Demo)

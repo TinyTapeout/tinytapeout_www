@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "111 Leaky Integrate-and-Fire Neuron"
-weight: 135
+weight: 82
 ---
 
 ## 111 : Leaky Integrate-and-Fire Neuron

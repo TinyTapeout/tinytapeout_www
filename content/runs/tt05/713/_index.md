@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "713 RGB Mixer"
-weight: 97
+weight: 4
 ---
 
 ## 713 : RGB Mixer

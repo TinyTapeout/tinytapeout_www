@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "258 PWM signal generation with Winner-Take-All selection"
-weight: 153
+weight: 159
 ---
 
 ## 258 : PWM signal generation with Winner-Take-All selection

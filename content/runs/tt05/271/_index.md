@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "271 TT05 Analog Testmacro (Ringo, DAC)"
-weight: 127
+weight: 106
 ---
 
 ## 271 : TT05 Analog Testmacro (Ringo, DAC)

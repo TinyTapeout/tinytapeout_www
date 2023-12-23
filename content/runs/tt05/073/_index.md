@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "73 Calculator chip"
-weight: 156
+weight: 99
 ---
 
 ## 73 : Calculator chip

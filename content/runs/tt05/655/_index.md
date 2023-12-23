@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "655 Ring oscillator with counter"
-weight: 122
+weight: 68
 ---
 
 ## 655 : Ring oscillator with counter

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "3 Leaky Integrate and Fire Neuron Model"
-weight: 15
+weight: 88
 ---
 
 ## 3 : Leaky Integrate and Fire Neuron Model

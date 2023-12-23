@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "77 Blinking A"
-weight: 166
+weight: 63
 ---
 
 ## 77 : Blinking A

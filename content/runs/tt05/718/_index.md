@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "718 Shaman: SHA-256 hasher"
-weight: 50
+weight: 71
 ---
 
 ## 718 : Shaman: SHA-256 hasher

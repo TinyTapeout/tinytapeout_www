@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "298 2-Bit ALU + Dice"
-weight: 80
+weight: 92
 ---
 
 ## 298 : 2-Bit ALU + Dice

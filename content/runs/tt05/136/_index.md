@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "136 Asynchronous  Parallel Processor Demonstrator"
-weight: 154
+weight: 5
 ---
 
 ## 136 : Asynchronous  Parallel Processor Demonstrator

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "653 Simon Says game"
-weight: 124
+weight: 133
 ---
 
 ## 653 : Simon Says game
@@ -46,8 +46,8 @@ blue, yellow).
    the colors of the buttons (so `led1` and `btn1` have the same color, etc.)
 3. Connect the speaker to the `speaker` pin.
 4. Connect the seven segment display as follows: `seg_a` through `sev_g` to
-   individual segments, `dig` to the common pin of the first digit, `dig2`
-   to the common pin of the second digit.  
+   individual segments, `dig1` to the common pin of the tens digit, `dig2`
+   to the common pin of the ones digit.  
    Set `seginv` according to the type of 7 segment display you have: high
    for common anode, low for common cathode.
 5. Reset the game, and then press any button to start it. Enjoy!
@@ -64,9 +64,9 @@ Note: the game requires 50KHz clock input.
 | 2 | btn3  | led3 | seg_c |
 | 3 | btn4  | led4 | seg_d |
 | 4 | seginv  | speaker | seg_e |
-| 5 | none  | none | seg_f |
-| 6 | none  | dig1 | seg_g |
-| 7 | none  | dig2 | none |
+| 5 | none  | dig1 | seg_f |
+| 6 | none  | dig2 | seg_g |
+| 7 | none  | none | none |
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "196 bytebeat"
-weight: 171
+weight: 58
 ---
 
 ## 196 : bytebeat

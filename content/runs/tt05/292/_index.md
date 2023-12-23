@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "292 8-bit Floating-Point Adder"
-weight: 73
+weight: 89
 ---
 
 ## 292 : 8-bit Floating-Point Adder

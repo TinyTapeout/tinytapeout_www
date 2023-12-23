@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "384 Rule110 cell automata"
-weight: 104
+weight: 147
 ---
 
 ## 384 : Rule110 cell automata
@@ -22,16 +22,14 @@ weight: 104
 This design executes **over 200 cells** of an elementary cellular automaton **every cycle** applying [Rule 110](https://en.wikipedia.org/wiki/Rule_110) to all of them **in parallel**.
 Roughly 115 cells with parallel read/write bus can be placed on 1x1 TinyTapeout tile. Without read/write bus, up to 240 cells fit on a 1x1 tile!
 
-#### Interesting facts about Rule 110
-
-Rule 110 exhibits complex behavior on the boundary **between stability and chaos**. It could be explored for pseudo random number generator and data compression.
+**The edge of chaos** - Rule 110 exhibits complex behavior on the boundary **between stability and chaos**. It could be explored for pseudo random number generator and data compression.
 
 **Gliders** - periodic structures with complex behaviour, universal computation and self-reproduction can be implemented with Rule 110.
 
 **Turing complete** - with a particular repeating background pattern Rule 110 is known to be Turing complete.
 This implies that, in principle, **any** calculation or computer program can be simulated using such automaton!
 
-#### Definition of Rule 110
+**Definition of Rule 110**
 
 The following rule is applied to each triplet of the neighboring cells. Binary representation 01101110 of 110 defines the transformation pattern.
 
@@ -44,7 +42,7 @@ The following rule is applied to each triplet of the neighboring cells. Binary r
             .0.  .1.  .1.  .0.  .1.  .1.  .1.  .0.
 ```
 
-#### Interesting links for further reading
+**Interesting links for further reading**
 
 * [Elemental Cellular Automaton Rule 110](http://www.comunidad.escom.ipn.mx/genaro/Rule110.html)
 * [Gliders in Rule 110](http://www.comunidad.escom.ipn.mx/genaro/Papers/Papers_on_CA_files/MARTINEZ.pdf)
@@ -52,8 +50,6 @@ The following rule is applied to each triplet of the neighboring cells. Binary r
 
 
 ### How to test
-
-#### Reset
 
 After **RESET** all cells will be set to 0 except the rightmost that is going to be 1. Automaton will immediately start running.
 Automaton produce new state every cycle for all the cells in parallel. One hardware cycle is one iteration of the automaton.
@@ -75,9 +71,9 @@ The following diagram shows 10 first iteration of the automaton after **RESET**.
         10th iteration after RESET  ---->   XXX    XX X
 ```
 
-#### Read automaton state
+**To read automaton state**
 
-To read state of the cells, 1) pull **/HALT** pin low and 2) set the cell block address pins.
+1) pull **/HALT** pin low and 2) set the cell block address pins.
 
 Cells are read in 8 cell blocks and are addressed sequentially from right to left. Adress #0 represents the rightmost 8 cells.
 Adress #1 represents the cells from 16 to 9 on the rights and so forth.
@@ -120,7 +116,7 @@ READ OUTPUT_______         ________        ________
 
 ```
 
-#### (Over)write automaton state
+**(Over)write automaton state**
 
 To write state of the cells, 1) pull **/HALT** pin low, 2) set the cell block address pins,
 3) set the new desired cell state on the **Input** pins and 4) finally pull **/WE** pin low.

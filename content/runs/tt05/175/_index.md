@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "175 Leaky Integrate-and-Fire Neuron"
-weight: 23
+weight: 53
 ---
 
 ## 175 : Leaky Integrate-and-Fire Neuron

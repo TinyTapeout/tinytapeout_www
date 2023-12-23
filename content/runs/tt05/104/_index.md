@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "104 Supecon Gate Play"
-weight: 27
+weight: 140
 ---
 
 ## 104 : Supecon Gate Play

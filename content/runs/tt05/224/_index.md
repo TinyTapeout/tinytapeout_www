@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "224 Leaky-Integrated Fire Neuron"
-weight: 101
+weight: 84
 ---
 
 ## 224 : Leaky-Integrated Fire Neuron

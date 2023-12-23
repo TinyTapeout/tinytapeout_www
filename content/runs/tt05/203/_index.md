@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "203 7-segment Name Display"
-weight: 158
+weight: 161
 ---
 
 ## 203 : 7-segment Name Display

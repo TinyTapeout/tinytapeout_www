@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "100 Hardware Trojan Example"
-weight: 8
+weight: 104
 ---
 
 ## 100 : Hardware Trojan Example

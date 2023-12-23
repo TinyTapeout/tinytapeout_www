@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "105 ECE 183 - Integrate and Fire Network Chip Design"
-weight: 24
+weight: 173
 ---
 
 ## 105 : ECE 183 - Integrate and Fire Network Chip Design

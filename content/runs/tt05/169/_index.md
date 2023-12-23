@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "169 8 bit floating point adder"
-weight: 144
+weight: 165
 ---
 
 ## 169 : 8 bit floating point adder

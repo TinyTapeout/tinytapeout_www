@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "36 Tiny Tapeout 5 Workshop"
-weight: 36
+weight: 160
 ---
 
 ## 36 : Tiny Tapeout 5 Workshop

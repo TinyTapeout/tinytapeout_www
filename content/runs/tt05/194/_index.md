@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "194 UABC-ELECTRONICA"
-weight: 169
+weight: 36
 ---
 
 ## 194 : UABC-ELECTRONICA

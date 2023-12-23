@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "296 4 Bit Pipelined Multiplier"
-weight: 67
+weight: 17
 ---
 
 ## 296 : 4 Bit Pipelined Multiplier

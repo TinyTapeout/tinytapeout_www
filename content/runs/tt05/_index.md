@@ -36,7 +36,7 @@ description: 174 designs, closed 4th November 2023
 | 6 | [Current Based Leaky Integrate and Fire Model](006) | Shatoparba Banerjee|
 | 7 | [TickTockTokens](007) | Johannes Leugering|
 | 8 | [Spiking LSTM Network](008) | Skye Gunasekaran|
-| 9 | [Integrate-and-Fire Neuron. (Verilog Demo)](009) | Kembay  Assel|
+| 9 | [Integrate-and-Fire Neuron.](009) | Kembay  Assel|
 | 10 | [Neural network on chip](010) | Faculty of Technical Sciences Cacak, University of Kragujevac|
 | 11 | [Simple Leaky Integrate and Fire (LIF) Neuron](011) | Phillip Marlowe|
 | 12 | [e Spigot](012) | diadatp|
@@ -200,4 +200,3 @@ description: 174 designs, closed 4th November 2023
 | 717 | [Multiplexed clock](717) | Gustavo Gomez|
 | 718 | [Shaman: SHA-256 hasher](718) | Pat Deegan, psychogenic.com|
 | 719 | [metastability experiment](719) | yubex|
-

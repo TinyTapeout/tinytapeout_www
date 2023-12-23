@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "266 Stack Machine"
-weight: 72
+weight: 73
 ---
 
 ## 266 : Stack Machine

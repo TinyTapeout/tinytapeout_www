@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "300 TT02 Wokwi 7seg remake"
-weight: 106
+weight: 6
 ---
 
 ## 300 : TT02 Wokwi 7seg remake

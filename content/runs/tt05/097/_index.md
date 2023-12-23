@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "97 Matrix Vector Multiplication (Verilog Demo)"
-weight: 138
+weight: 54
 ---
 
 ## 97 : Matrix Vector Multiplication (Verilog Demo)

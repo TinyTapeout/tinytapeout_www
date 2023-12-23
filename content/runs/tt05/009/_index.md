@@ -1,13 +1,13 @@
 ---
 hidden: true
-title: "9 Integrate-and-Fire Neuron. (Verilog Demo)"
-weight: 12
+title: "9 Integrate-and-Fire Neuron."
+weight: 132
 ---
 
-## 9 : Integrate-and-Fire Neuron. (Verilog Demo)
+## 9 : Integrate-and-Fire Neuron.
 
 * Author: Kembay  Assel
-* Description: Implement a IF neuron in silicon.
+* Description: Implement an IF neuron in silicon.
 * [GitHub repository](https://github.com/mountains-high/tt05-mountains-high-if)
 * [GDS submitted](https://github.com/mountains-high/tt05-mountains-high-if/actions/runs/6740782751)
 * HDL project
@@ -15,24 +15,21 @@ weight: 12
 * Clock: 10000000 Hz
 * External hardware: 
 
-
+![picture](images/picture.png)
 
 ### How it works
 
 Apply an input current injection to the IF neuron using switches.
-
-The IF neuron model fires a spike as soon as the input voltage crosses
-the specified threshold without considering any leakage or time-dependent state.
-
-#This gets added to a membrane potential
-If the membrane potential exceeds the threshold then trigger a spike.
+This gets added to a membrane potential.
+If the membrane potential exceeds the threshold, then it triggers a spike.
 
 
 ### How to test
 
-After reset, the membrane potential set to 0.
-
-Then change the inputs to change the current. A higher current should trigger a higher firing rate.
+An 8-bit input current is applied to the IF neuron through the designated input (i.e., uio_in).
+The membrane potential of the IF neuron will respond to the applied input current.
+Larger currents will lead to a higher membrane potential.
+The neuron is designed to generate a spike when the membrane potential exceeds a certain threshold.
 
 
 ### IO

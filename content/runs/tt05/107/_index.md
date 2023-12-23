@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "107 REBEL-2 Balanced Ternary ALU"
-weight: 1
+weight: 57
 ---
 
 ## 107 : REBEL-2 Balanced Ternary ALU

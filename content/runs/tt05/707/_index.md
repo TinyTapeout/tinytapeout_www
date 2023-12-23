@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "707 VGA clock"
-weight: 48
+weight: 15
 ---
 
 ## 707 : VGA clock

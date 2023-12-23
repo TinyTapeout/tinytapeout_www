@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "34 UART Greeter with RNN Module"
-weight: 11
+weight: 153
 ---
 
 ## 34 : UART Greeter with RNN Module

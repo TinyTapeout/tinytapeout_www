@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "390 No Time for Squares"
-weight: 42
+weight: 31
 ---
 
 ## 390 : No Time for Squares

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "33 Frequency Encoder/Decoder"
-weight: 83
+weight: 33
 ---
 
 ## 33 : Frequency Encoder/Decoder

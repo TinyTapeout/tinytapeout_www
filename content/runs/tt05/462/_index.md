@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "462 Collatz conjecture brute-forcer"
-weight: 7
+weight: 138
 ---
 
 ## 462 : Collatz conjecture brute-forcer

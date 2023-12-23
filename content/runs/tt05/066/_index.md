@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "66 GameOfLife"
-weight: 113
+weight: 47
 ---
 
 ## 66 : GameOfLife

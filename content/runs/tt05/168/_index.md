@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "168 Basic Spiking Neural Network"
-weight: 55
+weight: 128
 ---
 
 ## 168 : Basic Spiking Neural Network

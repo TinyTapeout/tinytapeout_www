@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "75 Synth"
-weight: 62
+weight: 118
 ---
 
 ## 75 : Synth

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "643 Stop Watch"
-weight: 132
+weight: 46
 ---
 
 ## 643 : Stop Watch

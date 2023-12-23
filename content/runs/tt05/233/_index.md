@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "233 6 digit chronometer."
-weight: 146
+weight: 94
 ---
 
 ## 233 : 6 digit chronometer.

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "460 Dual Compute Unit"
-weight: 150
+weight: 30
 ---
 
 ## 460 : Dual Compute Unit

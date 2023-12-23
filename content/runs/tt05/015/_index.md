@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "15 Event Denoising Circuit"
-weight: 107
+weight: 124
 ---
 
 ## 15 : Event Denoising Circuit
