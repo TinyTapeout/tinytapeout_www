@@ -10,8 +10,8 @@ Este diseño implementa un candado personalizable. ¡Establece un código para t
 **Controles**
 * El interruptor 2 se usa para restablecer la caja fuerte.
 * El interruptor 8 se usa para establecer tu código (on = establecer, off = bloqueado)
-* Los interruptores 3 a 5 se usan para establecer el código.
-* El botón de push se usa para ingresar tu código
+* Los interruptores 3 a 5 se usan para escribir el código.
+* El botón pulsador se usa para ingresar tu código.
 
 
 | SW      | Función          | 
