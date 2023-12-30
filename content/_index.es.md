@@ -15,7 +15,7 @@ Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt04
 # Primeros pasos
 
 * Si eres nuevo en el diseño digital - comienza tomando alguno de nuestras [lecciones aquí](digital_design).
-* Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/357178660283991041), o para usuarios avanzados, con [un HDL](/hdl).
+* Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/354858054593504257), o para usuarios avanzados, con [un HDL](/hdl).
 * Para obtener ayuda y soporte, revisa las [preguntas frecuentes](faq) y [únete a las conversaciones rápidas y amigables en Discord](https://discord.gg/qZHPrPsmt6).
 
 
