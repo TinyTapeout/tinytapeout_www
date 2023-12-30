@@ -162,7 +162,7 @@ Si te quedas atascado, avísanos en el canal #verification del [chat de Discord]
 
 ## Ejecución automática de pruebas en Github Actions
 
-Si eres como yo y siempre olvidas ejecutar las pruebas después de un cambio, puede que quieras configurar un flujo de Github Actions para hacerlo por ti con cada push. Afortunadamente, ¡ya existe una solución para esto! Puedes descargar un flujo de acciones pre-hecho [aquí](https://github.com/tinytapeout/tt03-verilog-demo/blob/main/.github/workflows/test.yaml).
+Si eres como yo y siempre olvidas ejecutar las pruebas después de un cambio, puede que quieras configurar un flujo de Github Actions para hacerlo por ti con cada push. Afortunadamente, ¡ya existe una solución para esto! Puedes descargar un flujo de acciones pre-hecho [aquí](https://github.com/tinytapeout/tt05-verilog-demo/blob/main/.github/workflows/test.yaml).
 
 Coloca este archivo en el directorio `.github/workflows` de tu repositorio para habilitarlo. Agrega el archivo a git y haz un push, y deberías ver un nuevo flujo junto con los habitulaes de GDS y Docs. Esto te dirá si tus pruebas están fallando o no. SI quires que el estado de las pruebas se muestre en tu readme, agrega el siguiente fragmento de código en él: `![](../../workflows/test/badge.svg)`
 
