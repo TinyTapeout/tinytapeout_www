@@ -10,26 +10,75 @@ weight: 90
 
 ## Tengo problemas, ¿cómo puedo obtener ayuda?
 
-Únete a la [comunidad de Discord en este enlace](https://discord.gg/rPK2nSjxy8).
+Únete a la [comunidad de Discord con este enlace](https://discord.gg/rPK2nSjxy8).
+
+# Especificaciones de Chips para TT01, TT02 & TT03
+
+## ¿Cuál es la velocidad de reloj máxima?
+
+Pensamos que será aproximadamente de 12,5 kHz. Es lento porque de momento estamos usando una cadena de escaneo serial para conectar todos los diseños.
+Tenemos un [divisor de reloj](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) integrado que puede reducir más esta velocidad, hasta 255 veces más lento que la velocidad de reloj máxima.
+
+Estamos trabajando en [una versión mucho más rápida, basada en multiplexores](https://github.com/TinyTapeout/tt-multiplexer).
+
+## ¿Cuántas entradas y salidas puedo tener?
+
+8 entradas y 8 salidas.
+
+# Especificaciones de Chips para TT04 & TT05
+
+## ¿Cuál es la velocidad de reloj máxima?
+
+Creemos que será alrededor de 50 MHz.
+
+## ¿Cuántas entradas y salidas puedo tener?
+
+* Reloj y **nreset** (reset con activo bajo)
+* 8 entradas
+* 8 salidas
+* 8 entradas/salidas bidireccionales
+
+## ¿Qué PDK es utilizado en la manufacturación?
+
+Estamos usando el PDK de código abierto [Skywater 130nm](https://www.zerotoasiccourse.com/terminology/pdk/).
+
+## ¿Qué tan grande puede ser mi diseño?
+
+Para TT04 y TT05, el tamaño estándar de cada cuadro es de 160x100 um. Esto es suficiente para alrededor de 1000 compuertas lógicas digitales, dependiendo de su tamaño.
+También puedes comprar cuadros adicionales si necesitas más espacio.
+
+Aquí se encuentra una visión 3D del [GDS](https://zerotoasiccourse.com/terminology/gds) de mi [contador de segundos 7 segmentos](https://github.com/tinytapeout/tt04-verilog-demo), un pequeño diseño que incrementa un contador cada segundo y muestra el resultado en el display de 7 segmentos.
+
+Haz click en la imagen para abrir el visor interactivo.
+
+[![7 seg](/images/faq/7segtt04.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt04-verilog-demo/tinytapeout.gds.gltf)
+
+## ¿Cuándo serán manufacturados los chips?
+
+Los chips se están demorando entre 6 a 9 meses en ser manufacturados. Luego, tenemos que gestionar embalaje, prueba y cumplimiento del pedido. Así que, ¡espere hasta 1 año de espera!
+
+Puedes encontrar una estimación al día de cada shuttle en la [página de series](/runs).
+
 
 # Preguntas Frecuentes de Wokwi
 
 ## ¿Cómo hago x, y, z con Wokwi?
 
-La [documentación de Woki esta aquí](https://docs.wokwi.com/?utm_source=wokwi). Todavía no tenemos mucha documentación para la versión [ASIC](https://www.zerotoasiccourse.com/terminology/asic/) de Wokwi.
+La [documentación de Woki está aquí](https://docs.wokwi.com/?utm_source=wokwi). Todavía no tenemos mucha documentación para la versión [ASIC](https://www.zerotoasiccourse.com/terminology/asic/) de Wokwi.
 
 ## Teclas de acceso rápido
 
-* Selecciona un componente y presiona **delete** para eliminarlo
-* Selecciona un componente ( o shift para seleccionar más componentes) y luego **d** para duplicarlo.
-* Arrastra y suelta para seleccionar multiples componentes.
+* Selecciona un componente y presiona **delete** para eliminarlo.
+* Selecciona un componente (o shift para seleccionar más componentes) y luego **d** para duplicarlo.
+* Mantén presionado **shift** y arrastra el cursor para dibujar un cuadrado y seleccionar múltiples componentes.
+* **+** y **-** para acercar y alejar.
 * [Más aquí](https://docs.wokwi.com/guides/diagram-editor#keyboard-shortcuts).
 
 ## ¿Puedo copiar y pegar de un diseño de Wokwi a otro?
 
-1. Selecciona todas las partes que quieres copiar (usando shift y haciendo clic en las partes o shift y arrastrando el puntero).
-2. Copialas al portapapeles (Ctrl + C o Cmd + C)
-3. Ve al proyecto destino, has clic sobre el editor de diagramas y pega (Ctrl + V o Cmd + V)
+1. Selecciona todas las partes que quieres copiar (usando **shift** y haciendo clic en las partes o **shift** y arrastrando el cursor).
+2. Cópialas al portapapeles (Ctrl+C o Cmd+C).
+3. Ve al proyecto destino, haz clic sobre el editor de diagramas y pega (Ctrl+V o Cmd+V)
 
 ## ¿Cómo puedo deshacer / rehacer?
 
@@ -37,131 +86,97 @@ La [documentación de Woki esta aquí](https://docs.wokwi.com/?utm_source=wokwi)
 
 ## ¿Cómo encuentro el cableado de la pantalla de 7 segmentos?
 
-Haciendo clic en un componente, se mostrará un ? en un círculo. Haz clic en el ? para [obtener ayuda](https://docs.wokwi.com/parts/wokwi-7segment).
+Al hacer clic en un componente se mostrará un ? en un círculo. Haz clic en el ? para [obtener ayuda](https://docs.wokwi.com/parts/wokwi-7segment).
 
 ## ¿Tengo que usar la pantalla de 7 segmentos?
 
-No, puede eliminarla y poner lo que quiera en su lugar. Hay muchos otros componentes que puedes elegir desde el menú +. Pero, si tiene un PCB, sólo tendrá 7 segmentos en él. Tendría que conectar la placa en una protoboard y agregar sus componentes adicionales después.
+No, puedes eliminarla y poner lo que quieras en su lugar. Hay muchos otros componentes que puedes elegir desde el menú +. Pero, si tiene un PCB, sólo tendrá el 7 segmentos en él. Tendrías que conectar la placa en una protoboard y agregar sus componentes adicionales después.
 
 ## ¿Cómo agrego nuevas compuertas?
 
-Duplique una existente (selecciónela y presione **d**), o:
+Puedes duplicar una existente (selecciónala y presiona **d**), o:
 
-* Presione el botón + en el menú superior de la página.
-* En la caja de filtro, escriba 'logic' para filtrar solamente las compuertas lógicas.
+* Presiona el botón + en el menú superior de la página.
+* En la caja de filtro, escribe 'logic' para filtrar solamente las compuertas lógicas.
 
 ## ¿Cómo muevo un conjunto de compuertas?
 
-Seleccione todas las que quiere mover (usando shift y haciendo clic en las partes o shift y arrastrando un cuadro). Luego, arrastre la selección.
-
-## ¿Cuántas entradas y salidas obtengo?
-
-8 entradas y 8 salidas.
-
-## ¿Cuál es la velocidad máxima de reloj?
-
-Creemos que será alrededor de 12.5 KHz. Tenemos un [divisor de reloj](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) que puede reducir aún más la velocidad, hasta 255 veces más lenta que la velocidad del reloj superior.
+Selecciona todas las que quieras mover (usando **shift** y haciendo clic en las partes o **shift** y arrastrando un cuadro). Luego, arrastra la selección.
 
 ## ¿Cómo utilizo el bloque de reloj?
 
-Puede usar la primera entrada como el reloj. Si necesita cambiar la frecuencia de reloj debe hacerlo editando el archivo json de diagrama. Es un truco para la demo.
+Puede usar la primera entrada como el reloj. Si necesitas cambiar la frecuencia de reloj debe hacerlo editando el archivo json de diagrama. Ajusta el atributo "frequency" a la frecuencia que quieres en Hz (ej. "10000" o "10k" para 10 kHz).
 
-Tome en cuenta que esperamos una frecuencia de actualización de 12.5 KHz, así que su frecuencia máxima de reloj debe ser la mitad de eso. Tenemos un divisor de reloj el cual puede dividir desde 2 hasta 255 veces más lento.
-
-Además, note que todavía no hemos validado la frecuencia de reloj, por lo que puede ser más baja o más alta.
+Tiny Tapeout va a brindar soporte a una amplia gama de frecuencias de reloj (esperamos hasta 50 MHz). Sin embargo, para asegurarnos de que Wokwi simule tu diseño lo suficientemente rápido, no deberías usar una frecuencia de reloj mayor a 100 kHz al simular tu diseño.
 
 ![reloj](/images/faq/clock_freq.png)
 
 ## ¿Hay ejemplos de proyectos que otras personas han hecho?
 
-Puede ver todos [los diseños enviados a Tiny Tapeout 01 aquí](https://github.com/tinytapeout/tinytapeout-mpw7).
+Revisa la página de [series](/runs).
 
-Y aquí esta el [Tiny Tapeout 02](https://github.com/tinytapeout/tinytapeout-02).
-
-Para obtener inspiración, vea [nuestros mejores elegidos del TT01](/digital_design/#top-picks-from-tinytapeout-1runstt01).
-
-## ¿Debo eliminar compuertas lógicas no utilizadas?
+## ¿Es necesario eliminar compuertas lógicas no utilizadas?
 
 No, las compuertas no utilizadas serán optimizadas por las herramientas de ASIC.
 
 ## Encontré y solucione un problema en mi diseño, ¿necesito volver a enviarlo?
 
-No, sólo debe asegurarse de que de guardar su proyecto y volver a [ejecutar la Github Action](#i-updated-and-saved-my-wokwi-design-how-do-i-re-run-the-github-action-to-update-the-gds-files).
+Sí; debes:
+
+* [ejecutar nuevamente la Github Action](#i-updated-and-saved-my-wokwi-design-how-do-i-re-run-the-github-action-to-update-the-gds-files).
+* Avisarnos de usar tu versión más nueva usando el [formulario de Tiny Tapeout](https://app.tinytapeout.com/).
 
 ## ¿Tengo que usar Wokwi o podría usar un HDL?
 
-Si es un usuario avanzado, puede usar el HDL de su elección. Vea la [página de HDL](/es/hdl) para más información. 
+Si eres un usuario avanzado, puedes usar el HDL de tu elección. Ve la [página de HDL](/es/hdl) para más información. 
 
 # Preguntas frecuentes de TinyTapeout
 
 ## ¿Dónde puedo encontrar la plantilla para comenzar?
 
-Puede encontrarla en la [página de inicio](/es/digital_design/wokwi).
+Puedes encontrarla en la [página de inicio](/es/digital_design/wokwi).
 
-## ¿Cuándo serán fabricados los chips?
+## ¿Cuántos espacios hay?
 
-Por favor vea los detalles en la página de cada chip.
-
-* [TinyTapeout-01](/es/runs/tt01)
-* [TinyTapeout-02](/es/runs/tt02)
-
-## ¿Cuándo estará disponible el material del curso?
-
-Estamos agregando esto al sitio web a medida que avanzamos. Por favor revise la [sección de diseño digital](/es/digital_design).
-
-## ¿Cuántos lugares hay?
-
-Para el TT01 fueron 498, para el TT02 lo redujimos a 250 para intentar llenar todas los espacios.
-
-## ¿Qué tan grande puede ser mi diseño?
-
-Recientemente incrementamos el tamaño a 150 x 170 um para el TT02. Esto es suficiente para alrededor de 1000 compuertas lógicas digitales, dependiendo de su tamaño.
-
-Aquí hay una vista en 3D del [GDS](https://zerotoasiccourse.com/terminology/gds) de mi [contador de 7 segmentos](https://wokwi.com/projects/340805072482992722), un pequeño diseño que incrementa un contador cada segundo y muestra el resutlado en una pantalla de 7 segmentos.
-
-Haga clic en la imagen para abrir un visor interactivo.
-
-[![7 segmentos](/images/faq/7segtt02.png)](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-7seg/tinytapeout.gds.gltf)
+* Para TT01 eran 498, para TT02 lo redujimos a 250 para intentar hacer entrar todos los espacios. TT03 será igual a TT02.
+* Para TT04 y TT05, el máximo es alrededor de 300, pero como esta vez se permiten diferentes tamaños, puede que hayan menos espacios.
 
 ## ¿Cuáles de mis diseños serán enviados a fabricación?
 
-Su último envío que:
+Si actualizas tu proyecto y quieres que usemos tu última versión, debes [ir a tus envíos](https://app.tinytapeout.com/) y crear un nuevo envío.
 
-1. Pasó con éxito las Github Actions y
-2. Fue enviado antes de la fecha límite
-
-Será enviado para su fabricación.
+Puedes continuar actualizando tu diseño hasta la fecha límite del tapeout.
 
 # Preguntas frecuentes de Github
 
 ## Cuando hago un commit de un cambio, la GDS Action no se ejecuta
 
-Necesita habilitar las acciones.
+Necesitas habilitar las acciones.
 
-1. Vaya a la pestaña de Acciones,
-2. Haga clic en el botón de habilitar acciones.
+1. Ve a la pestaña de Acciones,
+2. Haz clic en el botón de habilitar acciones.
 
 ![acciones](/images/faq/enable_action.png)
 
-Además, vea las siguientes preguntas frecuentes sobre la GDS Action que falla en 'pages'.
+Ve además las siguientes preguntas frecuentes sobre la GDS Action que falla en 'pages'.
 
 ## Mi Github Action esta fallando en la parte de 'pages'.
 
-Debido a las limitaciones de Github, necesita hacer un cambio en los ajustes de su repositorio para que todo funcione.
+Debido a las limitaciones de Github, necesitas hacer un cambio en los ajustes de tu repositorio para que todo funcione.
 
-1. Vaya a la pestañas de configuraciones,
-2. Seleccione 'Pages',
-3. Cambie el origen de implementar desde una rama a Github Actions.
+1. Ve a la pestañas de configuraciones,
+2. Selecciona 'Pages',
+3. Cambia la fuente desde "implementar desde una rama" a **Github Actions**.
 
 ![actions](/images/faq/action_pages.png)
 
-## Obtuve un error en mi GDS Action de Github.
+## Tuve un error en mi GDS Action de Github.
 
-Esto se espera durante en las primeras fases de TinyTapeout. Espero tener un archivo de configuración que maneje todos los diseños, pero es posible que debamos hacer algunos ajustes. La mejor forma de hacermelo saber es [abrir un issue en el repositorio de la plantilla con un link a su diseño de wokwi](https://github.com/tinytapeout/tt02-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) y yo responderé.
+La mejor forma de hacérmelo saber es [abrir un issue en el repositorio de la plantilla con un link a su diseño de wokwi](https://github.com/tinytapeout/tt02-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) y te contactaré de vuelta.
 
 ## Obtuve un error en mi Github Action de documentación.
 
-Es posible que no haya llenado suficientes campos, requerimos que se llenen los siguientes campos:
+Es posible que no hayas llenado suficientes campos, requerimos que se llenen los siguientes campos:
 
     author
     title
@@ -172,55 +187,65 @@ Es posible que no haya llenado suficientes campos, requerimos que se llenen los 
 
 ## Actualicé y guardé mi diseño de wokwi, ¿cómo ejecuto de nuevo la Github Action para actualizar los archivos GDS?
 
-1. Vaya a su repositorio, haga clic en la pestaña de Actions,
-2. Depués haga clic en el flujo de trabajo ‘gds’
-3. Luego haga clic en el botón ’Run workflow’
-4. Luego haga clic en el botón ’Run workflow’
+1. Ve a tu repositorio, haz clic en la pestaña de Actions,
+2. Depués haz clic en el flujo de trabajo ‘gds’
+3. Luego haz clic en el botón ‘Run workflow’
+4. Luego haz clic en el botón ‘Run workflow’
 
 ![actions](/images/faq/rerun_actions.png)
 
-## ¿Qué son todos los archivos en el artifact?
+## ¿Qué son todos estos archivos en el artifact?
 
 ¡Hay muchos!
 
 * src - los archivos fuente para tu chip:
-    * user_module_xxxxx.v el archivo [Verilog](https://www.zerotoasiccourse.com/terminology/hdl/) que representa su diseño Wokwi.
-    * config.tcl - archivo de configuración para el flujo de herramientas ASIC de [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/) que convierte el Verilog en [GDS](https://www.zerotoasiccourse.com/terminology/gds2/).
-    * cells.v traduce los módulos en las [células estándar](https://www.zerotoasiccourse.com/terminology/standardcell/) disponibles para el proceso Skywater 130 nm.
-* runs/wokwi/reports/metrics.csv - un informe resumido detallado del flujo de herramientas. Por ahora está más allá del alcance de este documento para explicarlo todo.
-* runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 informe de las células estándar utilizadas para su diseño.
-* runs/wokwi/results/final/ (sólo se describen las más importantes se describen aquí)
+    * user_module_xxxxx.v - el archivo [Verilog](https://www.zerotoasiccourse.com/terminology/hdl/) que representa su diseño Wokwi.
+    * config.tcl - archivo de configuración para el flujo de herramientas ASIC de [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/) que convierte el código Verilog en [GDS](https://www.zerotoasiccourse.com/terminology/gds2/).
+    * cells.v - traduce los módulos en las [células estándar](https://www.zerotoasiccourse.com/terminology/standardcell/) disponibles para el proceso Skywater 130 nm.
+* runs/wokwi/reports/metrics.csv - un informe resumen detallado del flujo de herramientas. Por ahora está más allá del alcance de este documento para explicarlo todo.
+* runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 - informe de las celdas estándar utilizadas para su diseño.
+* runs/wokwi/results/final/ (sólo se describen las más importantes aquí)
     * gds - el archivo GDS final que se agregará a la presentación de TinyTapeout.
     * lef - una versión abstracta del GDS con menos información, utilizada para el enrutamiento.
     * verilog - el verilog a nivel de compuertas de tu diseño.
 
 ## ¿Dónde esta el repositorio de presentación para el shuttle?
 
-* [Consulte la página TT01](/es/runs/tt01)
+* [Página de TT01](/runs/tt01/)
+* [Página de TT02](/runs/tt02/)
+* [Página de TT03](/runs/tt03/)
+* [Página de TT04](/runs/tt04/)
+
+## No puedo hacer un nuevo fork del repositorio de envíos. ¿Cómo inicio un nuevo proyecto?
+
+Comienza creando un nuevo repositorio de Github vacío.
+
+* A través de la línea de comando, puedes clonar el repositorio de envíos de tinytapeout, cambiarlo para que apunte a su nuevo repositorio vacío usando `git remote set-url <remote_name> <remote_url>`, y luego `git push`
+* A travéz de la inferfaz web de Github, [puedes importar un repositorio](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) usando la url del repositorio del TT05: https://github.com/TinyTapeout/tt05-submission-template
+
+En cualquier caso, es posible que necesites habilitar las Github Actions.
+
+# Preguntas frecuentes de ASIC
+
+## ¿Qué significan todas estas siglas que usas siempre?
+
+¡Lo siento! ¡Estoy tratando de mantenerlo accesible pero inevitablemente usaré algún término de ASIC en algún momento! Consulta la [guía de términos aquí](https://zerotoasiccourse.com/terminology/) (está en inglés).
 
 ## ¿Por qué tengo menos / más céldas estándar de lo que esperaba?
 
 La síntesis lógica tiene que convertir Verilog en una estructura de datos que tiene propiedades específicas para que una biblioteca de tecnología (como Sky 130) se pueda mapear en ella, para que realmente se pueda fabricar.
 
-Si tiene 2 inversores en serie, Yosys (la herramienta de síntesis) puede optimizarlos a ambos, por lo que termina con menos celdas de los esperado.
+Si tienes 2 inversores en serie, Yosys (la herramienta de síntesis) puede optimizarlos a ambos, por lo que terminas con menos celdas de lo esperado.
 
-Sin embargo, si sólo tiene 8 celdas, su diseño probablemente se ha optimizado completamente. ¿Quiźa no conecto las entradas o las salidas?
+Sin embargo, si sólo tienes 8 celdas, tu diseño probablemente se ha optimizado completamente. ¿Quizás no conectaste las entradas o las salidas?
 
-## No puedo hacer un nuevo fork del repositorio de presentación. ¿Cómo inicio un nuevo proyecto?
+## ¿Por qué mi densidad objetivo está ajustada a 60%? ¿Debería cambiarla a 100% o debería usar un nuevo cuadro?
 
-Comience creando un nuevo repositorio de Github vacío.
+El enrutamiento tiende a utilizar más espacio que la lógica misma. Además, tiene que haber espacio para que OpenLane agregue más celdas:
 
-* A través de la línea de comando, puede clonar el repositorio de presentación de tinytapeout, cambiarlo para que apunte a su nuevo repositorio vacío usando `git remote set-url <remote_name> <remote_url>` y luego `git push`
-* A travéz de la inferfaz web de Github, [puede importar un repositorio](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) usando la url del repositorio del TT02: https://github.com/TinyTapeout/tt02-submission-template
+* celdas tap - se aseguran de que el sustrato esté correctamente polarizado para los transistores.
+* [diodos antena ](https://www.zerotoasiccourse.com/terminology/antenna-report/) - protejen las compuertas de transistores durante la fabricación.
 
-En cualquier caso, es posible que necesite habilitar las Github Actions.
+## ¿Cómo puedo aprender más sobre ASICs y cómo diseñarlos?
 
-# Preguntas frecuentes de ASIC
-
-## ¿Qué significan todas estas siglas que estás usando?
-
-¡Lo siento! ¡Estoy tratando de mantenerlo accesible pero inevitablemente usaré algún término de ASIC en algún momento! Consulte la [guía de términos aquí](https://zerotoasiccourse.com/terminology/).
-
-## ¿Cómo puedo aprender más sobre ASICs y cómo puedo diseñarlos?
-
-[Revisa mi curso Zero to ASIC](https://zerotoasiccourse.com/)
+[¡Revisa mi curso Zero to ASIC!](https://zerotoasiccourse.com/)
