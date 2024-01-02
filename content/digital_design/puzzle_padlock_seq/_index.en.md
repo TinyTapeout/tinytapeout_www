@@ -110,11 +110,11 @@ stateDiagram-v2
 
 Set all switches to 0 and press the push button. A "-" will appear on the seven segment display.
 
-When you're ready, turn on Switch 2 and press the push button to begin the challenge. The yellow LED will turn on, and the seven segment display will show "L" for locked".
+When you're ready, turn on Switch 2 and press the push button to begin the challenge. The yellow LED will turn on, and the seven segment display will show "L" for "locked".
 
 Next set a code using Switches 3 to 5. If you enter a correct code, you will see the colored LED progress from yellow --> magenta.
 
-If you succeeded, try to get to the next stages, lighting the white LED then finally the cyan! A "U" will appear for unlocked. 
+If you succeeded, try to get to the next stages, lighting the white LED then finally the cyan! A "U" will appear for "unlocked".
 
 If you fail to enter the correct code at any stage, you will return to the yellow LED.
 

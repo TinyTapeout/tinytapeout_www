@@ -123,7 +123,7 @@ No, unused gates will be optimised out by the ASIC tools.
 Yes, you need to 
 
 * [re-run the github action](#i-updated-and-saved-my-wokwi-design-how-do-i-re-run-the-github-action-to-update-the-gds-files).
-* Tell us to use your latest version using the (Tiny Tapeout application](https://app.tinytapeout.com/).
+* Tell us to use your latest version using the [Tiny Tapeout application](https://app.tinytapeout.com/).
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
