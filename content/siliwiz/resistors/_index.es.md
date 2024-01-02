@@ -36,7 +36,7 @@ Ve al [sitio web de SiliWiz](https://app.siliwiz.com/?preset=blank), selecciona 
 
 ### Capas
 
-Cuando una fábrica desarrolla una forma de crear un chip, necesitan además compartir esa iformación con los diseñadores de chips - ¡ese eres tú!
+Cuando una fábrica desarrolla una forma de crear un chip, necesitan además compartir esa información con los diseñadores de chips - ¡ese eres tú!
 
 {{% notice tip %}}
 Normalmente, tendrías que firmar un documento que dice que no puedes compartir la información. Con el [PDK](https://www.zerotoasiccourse.com/terminology/pdk/) (*process design kit*, kit de diseño de proceso) de código abierto, no necesitas firmar ningún papeleo antes de empezar a usarlo.
@@ -48,7 +48,7 @@ Aquí se muestran las capas que son usadas para crear un chip con el proceso de 
 
 ### Stackup SiliWiz
 
-Un *stackup* es, por su traducción en inglés, una pila de capas, como la mostrada en la imagen anterior. Aquel stackup es bastante complicado, así que usaremos una más simple y hecha a la medida para SiliWiz. Ten en cuenta que un PDK real y manufacturable tiene [muchas más capas](https://skywater-pdk.readthedocs.io/en/main/rules/masks.html). El stackup de capas de SiliWiz se ve así:
+Un *stackup* es, por su traducción en inglés, una pila de capas, como la mostrada en la imagen anterior. Aquel stackup es bastante complicado, así que usaremos una más simple y hecha a la medida para SiliWiz. Ten en cuenta que un PDK real y fabricable tiene [muchas más capas](https://skywater-pdk.readthedocs.io/en/main/rules/masks.html). El stackup de capas de SiliWiz se ve así:
 
 ![](../../../siliwiz/images/image31.png)
 
@@ -56,7 +56,7 @@ Un *stackup* es, por su traducción en inglés, una pila de capas, como la mostr
 Si te sientes aventurero, ¡puedes revisar el [techfile](https://app.siliwiz.com/assets/siliwiz.tech) para ver los detalles de la tecnología y muchas otras cosas!
 {{% /expand%}}
 
-Después de haber terminado nuestro diseño podremos transformar cada capa en una máscara. Una máscara permite que la luz pase a través de la sáreas que coloreamos en las capas. Estas máscaras se usan en un proceso llamado fotolitografía.
+Después de haber terminado nuestro diseño podremos transformar cada capa en una máscara. Una máscara permite que la luz pase a través de las áreas que coloreamos en las capas. Estas máscaras se usan en un proceso llamado fotolitografía.
 
 ![](../../../siliwiz/images/image7.png)
 
