@@ -11,7 +11,7 @@ Thanks to community member **maehw** for writing this article.
 
 ## Truth tables
 
-You have already learned about combinational logic that can be described by using a truth tables, e.g. the [full adder](https://tinytapeout.com/digital_design/puzzle_adder/).
+You have already learned about combinational logic that can be described by using a truth table, e.g. the [full adder](https://tinytapeout.com/digital_design/puzzle_adder/).
 
 Let's now have a look at at a decoder which converts a binary coded decimal digit (0..9) to control a [7-segment display](https://docs.wokwi.com/parts/wokwi-7segment). The input range can be covered using four bits (0..15=2^4-1), i.e. four input signals. We specify that valid input values are in the range 0..9, other values will show a blank display.
 

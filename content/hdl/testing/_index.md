@@ -69,7 +69,7 @@ endmodule
 Replace both instances of `toplevel_module` with the actual name of your top level module. In the [case of the demo](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/src/tt_um_seven_segment_seconds.v), it's `tt_um_seven_segment_seconds`.
 
 It can help make things clearer if you have 'convenience wires' that basically rename the important inputs and outputs of your design. In the demo, we want to reference the
-seven segment display output pins, which are output on `ui_out[6:0]`. So we make a new wire and connect it to those outputs:
+seven segment display output pins, which are output on `uo_out[6:0]`. So we make a new wire and connect it to those outputs:
 
 ```verilog
     wire [6:0] segments = uo_out[6:0];
@@ -173,7 +173,7 @@ The simulations we've covered above are all **pre synthesis**. A simulator reads
 
 It's well worth running the same test on the **post synthesis** netlist. 
 This post synthesis netlist is called a Gate Level netlist, because it includes all the actual standard cells (gates) used by your design. 
-Gate Level testing can expose some bugs or issues that weren't by exposed by HDL simulation.
+Gate Level testing can expose some bugs or issues that weren't exposed by HDL simulation.
 
 This Gate Level netlist snippet just shows 2 of the ~240 standard cells used to create the [tt05-verilog-demo](https://github.com/TinyTapeout/tt05-verilog-demo). You can have a look at
 yours by downloading the GDS.zip from the actions page of your design and then looking at the file: `runs/wokwi/results/final/verilog/gl/<your design name>.v`
