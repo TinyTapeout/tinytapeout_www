@@ -9,5 +9,5 @@ https://github.com/TinyTapeout/tt05-verilog-demo
 
 Este repositorio muestra cómo:
 
-* [Especificar los archivos](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/info.yaml#L9) para construir el ASIC
-* [Ejecutar un test automatico](/hdl/testing) cuando envíe nuevo código al repositorio
+* [especificar los archivos](https://github.com/TinyTapeout/tt05-verilog-demo/blob/main/info.yaml#L9) para construir el ASIC
+* [ejecutar un test automatico](/hdl/testing) cuando subas nuevo código al repositorio

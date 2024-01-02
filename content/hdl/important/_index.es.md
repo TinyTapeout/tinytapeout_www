@@ -1,10 +1,10 @@
 ---
 title: "¡Importante!"
-description: "Notas importantes, por favor lee primero"
+description: "Notas importantes, por favor leer primero"
 weight: 1
 ---
 
-# Asegúrate de que tu modulo superior tenga un nombre único.
+# Asegúrate de que tu módulo superior (*top module*) tenga un nombre único.
 
 Te recomiendo que antecedas tu nombre de usuario de Github:
 
@@ -12,41 +12,50 @@ Te recomiendo que antecedas tu nombre de usuario de Github:
     module top ( )
 
     # bueno
-    module mattvenn_top ( )
+    module tt_um_mattvenn_top ( )
 
 # Sigue exactamente la definición del módulo
 
-Solo soportamos 8 entradas y 8 salidas y deben de ser nombradas como `io_in` e `io_out`:
-
     # malo
-    module mattvenn_counter (
+    module tt_um_mattvenn_seven_segment_seconds (
         input [100:0] my_bus,
+        output [3:0] outputs
         );
 
     # bueno
-    module mattvenn_counter (
-        input [7:0] io_in,
-        output [7:0] io_out
-        );
+    module tt_um_mattvenn_seven_segment_seconds (
+        input  wire [7:0] ui_in,    // Entradas dedicadas
+        output wire [7:0] uo_out,   // Salidas dedicadas
+        input  wire [7:0] uio_in,   // IOs: Ruta de entrada
+        output wire [7:0] uio_out,  // IOs: Ruta de salida
+        output wire [7:0] uio_oe,   // IOs: Ruta de habilitación (activo alto: 0=entrada, 1=salida)
+        input  wire       ena,      // irá a ALTO cuando el diseño esté habilitado
+        input  wire       clk,      // señal de reloj
+        input  wire       rst_n     // reset_n - lógico BAJO para reset
+    );
 
-# No modifiques el config.tcl
+# Cuidado con modificar \<config.tcl\>
 
-Tiny Tapeout es un compromiso - intentamos que sea fácil llegar al ASIC, pero tenemos que hacer limitaciones, como la velocidad de entradas/salidas, la cantidad de entradas/salidas, el tamaño, etc. Si quieres ir a lo personalizado, revisa el curso [De cero a ASIC](https://zerotoasiccourse.com).
+Tiny Tapeout es un compromiso - intentamos que sea fácil llegar al ASIC, pero tenemos que hacer limitaciones, como la velocidad de entradas/salidas, la cantidad de entradas/salidas, el tamaño, etc. El archivo de configuración de OpenLane (config.tcl) viene con varias configuraciones específicamente optimizadas para el proceso. Si los cambias, podrías terminar con un diseño que no funciona. ¡Asegúrate de que sabes lo que estás haciendo!
 
-# Asegúrate de que tu diseño no sea optimizado
+Si quieres ir a lo personalizado, revisa el curso [De cero a ASIC](https://zerotoasiccourse.com) (en inglés).
+
+# Asegúrate de que tu diseño no termine siendo optimizado
 
 Puede ser muy extraño pasar de la programación al diseño de hardware. Las herramientas de [síntesis](https://www.zerotoasiccourse.com/terminology/synthesis/) intentan optimizar tu diseño en términos de área y velocidad.
 
 * Si haces un registro de 32 bits pero solo usas los primeros dos bits, Yosys borrará los últimos 30 bits.
-* Si haces un CPU de 8 bits pero solo emite 1 bit, Yosys todas sus rutas de datos y lógica para mantener solo ese bit.
+* Si haces un CPU de 8 bits pero solo emite 1 bit, Yosys optimizará todas sus rutas de datos y lógica para mantener solo ese bit.
 
-¿Cómo puedes saber si tu diseño esta siendo optimizado? Piensa en cuánta lógica y flops necesita tu diseño para mantener una estimación aproximada del recuento de celdas. Es normal que Yosys reduzca este número un poco, pero si es la mitad de lo que esperas o menos, vale la pena comprobarlo.
+¿Cómo puedes saber si tu diseño esta siendo optimizado? Piensa en cuánta lógica y flip-flops necesita tu diseño para mantener una estimación aproximada del recuento de celdas. Es normal que Yosys reduzca este número un poco, pero si es la mitad de lo que esperas o menos, quizás valga la pena revisarlo.
 
 Si tienes un buen banco de pruebas, puedes ejecutarlo en el [GL verilog](/hdl/fpga_vs_asic/#testing) y eso te ayudará a asegurarte de que tu diseño sigue funcionando después de la síntesis.
 
-# Revisa las advertensias de la síntesis
+# Revisa las advertencias de la síntesis
 
-Revisa en el registro de Github Action para la compilación de GDS. Revisa la sección de Yosys de la compilación y busca las advertencias. Algunas cómunes incluyen:
+Revisa en el registro de Github Action para la compilación de GDS. Revisa la sección de Yosys de la compilación y busca las advertencias. Algunas comunes incluyen:
 
-* Multiples conflictos en controladores
+* Múltiples conflictos en controladores
 * Cables desconectados
+* Salidas sin activar
+* Bucles combinacionales
