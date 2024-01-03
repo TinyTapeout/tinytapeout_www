@@ -20,7 +20,7 @@ Como hemos mencionado, un capacitor se forma cuando se tienen 2 figuras conducto
 
 Usa la casilla SPICE para ver la capacitancia. Deberías ver una línea que diga algo como **C0 out in** y luego unos números. Yo obtuve `0.73fF`. La "F" significa *Faradios*, que es la unidad de capacitancia. La "f" significa *femto*; hay 1.000.000.000.000.000 (mil billones) de femto Faradios en 1 Faradio. ¡Así que este es un capacitor muy pequeño!
 
-Intenta hacer valores más grandes de capacitancia. Con resistencias, una figura larga, delgada y ondulada obtienes una resistividad grande. Con un capacitor, queremos más area para obtener más capacitancia. El mayor valor que logré obtener solo usando **metal2** fue 14 fF.
+Intenta hacer valores más grandes de capacitancia. Con las resistencias, una figura larga, delgada y ondulada genera una resistividad grande. Con un capacitor, queremos más area para obtener más capacitancia. El mayor valor que logré obtener solo usando **metal2** fue 14 fF.
 
 ### Usando más de 1 capa
 
