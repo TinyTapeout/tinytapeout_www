@@ -6,11 +6,11 @@ weight: 60
 
 ### Metas
 
-* Aprender cómo una combinación de una resistencia con un MOSFET puede crear un inversor
+* Aprender cómo la combinación de una resistencia con un MOSFET puede crear un inversor
 * Descubrir las limitaciones de este tipo de inversor
 * Medir el consumo de corriente de un inversor NMOS
 
-Un inversor lógico tiene una entrada y una salida. Si la salida está en bajo, la salida estará en alto, y viceversa.
+Un inversor lógico tiene una entrada y una salida. Si la entrada está en bajo, la salida estará en alto, y viceversa.
 
 <br>
 
