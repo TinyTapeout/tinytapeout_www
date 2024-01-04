@@ -73,7 +73,7 @@ Debemos dibujar las capas para conectar el drenaje, la fuente y la puerta del MO
 
 El **polysilicon** rojo forma la puerta, pero ¿cuál lado corresponde a la fuente y al drenaje? ¡La vista transversal muestra que el MOSFET es simétrico!
 
-Para que un N MOSFET funcione, el sustrato debe mantenerse a un voltaje igual o menor al de sus terminales restantes. Normalmente hacemos esto conectando uno de los terminales al mismo voltaje que el sustrato, e históricamente a este terminal se ha denominado fuente (source). El otro terminal se vuelve el drenaje (drain).
+Para que un N MOSFET funcione, el sustrato (B) debe mantenerse a un voltaje igual o menor al de sus terminales restantes. Normalmente hacemos esto conectando uno de los terminales al mismo voltaje que el sustrato, e históricamente a este terminal se le ha denominado fuente (source). El otro terminal se vuelve el drenaje (drain).
 
 Etiqueta la puerta como **in**, la fuente como **vss**, y el drenaje como **vdd**. Ya hemos conectado el sustrato a vss. Si te atoras, puedes revisar [mi solución aquí](http://app.siliwiz.com/?preset=nmosfet).
 
@@ -81,7 +81,7 @@ Etiqueta la puerta como **in**, la fuente como **vss**, y el drenaje como **vdd*
 
 ### Curvas VGS
 
-VGS corresponde al voltaje entre puerta y fuente (*Voltage of Gate-Source*). En este experimento, vamos a ver qué ocurre cuando aumentamos el voltaje de puerta desde 0V hasta 5V y luego medimos la corriente que fluye desde vdd hacia vss. La corriente mide cuántos portadores de carga fluyen por segundo, nos dice qué tan "encendido" se encuentra el MOSFET. La corriente se mide en (Amperios)[https://es.wikipedia.org/wiki/Amperio].
+VGS corresponde al voltaje entre puerta y fuente (*Voltage of Gate-Source*). En este experimento, vamos a ver qué ocurre cuando aumentamos el voltaje de puerta desde 0V hasta 5V y luego medimos la corriente que fluye desde vdd hacia vss. La corriente mide cuántos portadores de carga fluyen por segundo, nos dice qué tan "encendido" se encuentra el MOSFET. La corriente se mide en [Amperios](https://es.wikipedia.org/wiki/Amperio).
 
 Este es uno de los experimentos más importantes que podemos hacer con un MOSFET, y nos va a ayudar a entender cómo funcionan en los próximos ejercicios.
 
