@@ -52,7 +52,7 @@ You can see [my solution here](https://app.siliwiz.com/?preset=pmosfet).
 
 ### N vs P type MOSFET
 
-What do you notice between the N and P type MOSFETs? The first is plot is for N and on the second is for P.
+What do you notice between the N and P type MOSFETs? The first plot is for N and on the second is for P.
 
 ![](../images/image41.png)![](../images/image47.png)
 

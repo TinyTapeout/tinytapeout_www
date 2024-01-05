@@ -1,5 +1,5 @@
 ---
-title: "Recusos de HDL"
+title: "Recursos de HDL"
 description: "Recursos para aprender HDL"
 ---
 
