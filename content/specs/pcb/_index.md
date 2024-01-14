@@ -22,7 +22,7 @@ The carrier board makes it easy to:
 
 PCB files: https://github.com/TinyTapeout/tt123-demo-pcb
 
-The demo board easy ways to:
+The demo board provides easy ways to:
 
 * select the active design with dip switches
 * single cycle clock and reset
