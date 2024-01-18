@@ -22,6 +22,10 @@ def process_file(file_path):
                 line = re.sub(r'##\s*\d+', f'## {number} : 0b {binary_number}', line)
             file.write(line)
 
+            if match:
+                binary_number = binary_number.replace(' ', '')
+                file.write(f'\n{{{{< tt-scanchain-switches "{binary_number}" >}}}}\n')
+
 def main(directory_path):
     for root, _, files in os.walk(directory_path):
         for file in files:
@@ -30,6 +34,6 @@ def main(directory_path):
                 process_file(file_path)
 
 if __name__ == '__main__':
-    directory_path = 'content/runs/tt02/'  # Replace with the path to your directory
+    directory_path = 'content/runs/tt03/'  # Replace with the path to your directory
     main(directory_path)
 
