@@ -4,7 +4,9 @@ title: "119 tiny egg timer"
 weight: 120
 ---
 
-## 119 : tiny egg timer
+## 119 : 0b 001 110 111 : tiny egg timer
+
+{{< tt-scanchain-switches "001110111" >}}
 
 * Author: yubex
 * Description: tiny egg timer is a configurable small timer

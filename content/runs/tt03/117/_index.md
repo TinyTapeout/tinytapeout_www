@@ -4,7 +4,9 @@ title: "117 Tiny Phase/Frequency Detector"
 weight: 118
 ---
 
-## 117 : Tiny Phase/Frequency Detector
+## 117 : 0b 001 110 101 : Tiny Phase/Frequency Detector
+
+{{< tt-scanchain-switches "001110101" >}}
 
 * Author: argunda
 * Description: Detect phase shifts between 2 square waves.

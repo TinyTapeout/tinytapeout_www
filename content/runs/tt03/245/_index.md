@@ -4,7 +4,9 @@ title: "245 RiscV Scan Chain based CPU -- block 1 -- clocking"
 weight: 246
 ---
 
-## 245 : RiscV Scan Chain based CPU -- block 1 -- clocking
+## 245 : 0b 011 110 101 : RiscV Scan Chain based CPU -- block 1 -- clocking
+
+{{< tt-scanchain-switches "011110101" >}}
 
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 1 -- clocking

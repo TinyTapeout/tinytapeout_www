@@ -4,7 +4,9 @@ title: "226 Option23 Serial"
 weight: 227
 ---
 
-## 226 : Option23 Serial
+## 226 : 0b 011 100 010 : Option23 Serial
+
+{{< tt-scanchain-switches "011100010" >}}
 
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays

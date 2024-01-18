@@ -4,7 +4,9 @@ title: "50 Microtapeout"
 weight: 51
 ---
 
-## 50 : Microtapeout
+## 50 : 0b 000 110 010 : Microtapeout
+
+{{< tt-scanchain-switches "000110010" >}}
 
 * Author: Enno Schnackenberg
 * Description: A Shift Register, A seven segment encoder (Hexadecimal), 1 Bit ALU, 3 Bit Adder and a suprise

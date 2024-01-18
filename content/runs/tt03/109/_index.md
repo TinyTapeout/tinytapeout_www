@@ -4,7 +4,9 @@ title: "109 Configurable SR"
 weight: 110
 ---
 
-## 109 : Configurable SR
+## 109 : 0b 001 101 101 : Configurable SR
+
+{{< tt-scanchain-switches "001101101" >}}
 
 * Author: Greg Steiert
 * Description: Configurable gates driving SR and D flip-flops

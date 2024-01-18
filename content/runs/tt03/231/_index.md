@@ -4,7 +4,9 @@ title: "231 FFT Butterfly in Wokwi"
 weight: 232
 ---
 
-## 231 : FFT Butterfly in Wokwi
+## 231 : 0b 011 100 111 : FFT Butterfly in Wokwi
+
+{{< tt-scanchain-switches "011100111" >}}
 
 * Author: James R
 * Description: Single FFT butterfly with 2-bit resolution

@@ -4,7 +4,9 @@ title: "172 r2rdac"
 weight: 173
 ---
 
-## 172 : r2rdac
+## 172 : 0b 010 101 100 : r2rdac
+
+{{< tt-scanchain-switches "010101100" >}}
 
 * Author: youngpines
 * Description: small r2r

@@ -4,7 +4,9 @@ title: "80 Ring oscillator with skew correction"
 weight: 81
 ---
 
-## 80 : Ring oscillator with skew correction
+## 80 : 0b 001 010 000 : Ring oscillator with skew correction
+
+{{< tt-scanchain-switches "001010000" >}}
 
 * Author: Daniel Wisehart
 * Description: Fixing the problem of skew in a ring oscillator with a differential clock ring. 

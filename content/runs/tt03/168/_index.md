@@ -4,7 +4,9 @@ title: "168 4 bit CPU"
 weight: 169
 ---
 
-## 168 : 4 bit CPU
+## 168 : 0b 010 101 000 : 4 bit CPU
+
+{{< tt-scanchain-switches "010101000" >}}
 
 * Author: Paul Campell
 * Description: simple cpu

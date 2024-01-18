@@ -4,7 +4,9 @@ title: "221 MicroASIC VI"
 weight: 222
 ---
 
-## 221 : MicroASIC VI
+## 221 : 0b 011 011 101 : MicroASIC VI
+
+{{< tt-scanchain-switches "011011101" >}}
 
 * Author: Mikhail Svarichevsky
 * Description: Free-running oscillators to verify simulation vs reality + TRNG

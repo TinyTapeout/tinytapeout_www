@@ -4,7 +4,9 @@ title: "152 CNS002 (TT02-Test 2)"
 weight: 153
 ---
 
-## 152 : CNS002 (TT02-Test 2)
+## 152 : 0b 010 011 000 : CNS002 (TT02-Test 2)
+
+{{< tt-scanchain-switches "010011000" >}}
 
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab (second design)

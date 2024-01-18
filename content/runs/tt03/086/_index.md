@@ -4,7 +4,9 @@ title: "86 Customizable UART Character"
 weight: 87
 ---
 
-## 86 : Customizable UART Character
+## 86 : 0b 001 010 110 : Customizable UART Character
+
+{{< tt-scanchain-switches "001010110" >}}
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a single character UART transmitter using registers made from D-flip flops and multiplexers.

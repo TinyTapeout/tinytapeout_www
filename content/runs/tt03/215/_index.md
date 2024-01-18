@@ -4,7 +4,9 @@ title: "215 Test3"
 weight: 216
 ---
 
-## 215 : Test3
+## 215 : 0b 011 010 111 : Test3
+
+{{< tt-scanchain-switches "011010111" >}}
 
 * Author: Shaos
 * Description: Binary Coded Ternary Test

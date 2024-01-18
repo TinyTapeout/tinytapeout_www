@@ -4,7 +4,9 @@ title: "118 Loading Animation"
 weight: 119
 ---
 
-## 118 : Loading Animation
+## 118 : 0b 001 110 110 : Loading Animation
+
+{{< tt-scanchain-switches "001110110" >}}
 
 * Author: Andre & Milosch Meriac
 * Description: Submission for tt02 - Rotating Dash

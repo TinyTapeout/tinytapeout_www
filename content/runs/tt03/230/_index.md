@@ -4,7 +4,9 @@ title: "230 Digital padlock"
 weight: 231
 ---
 
-## 230 : Digital padlock
+## 230 : 0b 011 100 110 : Digital padlock
+
+{{< tt-scanchain-switches "011100110" >}}
 
 * Author: Jean THOMAS
 * Description: A 4-digit electronic padlock

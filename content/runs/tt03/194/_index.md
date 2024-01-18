@@ -4,7 +4,9 @@ title: "194 A (7, 1/2) Convolutional Encoder"
 weight: 195
 ---
 
-## 194 : A (7, 1/2) Convolutional Encoder
+## 194 : 0b 011 000 010 : A (7, 1/2) Convolutional Encoder
+
+{{< tt-scanchain-switches "011000010" >}}
 
 * Author: Jos van 't Hof
 * Description: A (7, 1/2) Convolutional Encoder following the CCSDS 131.0-B-4 standard.

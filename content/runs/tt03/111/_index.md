@@ -4,7 +4,9 @@ title: "111 chase the beat"
 weight: 112
 ---
 
-## 111 : chase the beat
+## 111 : 0b 001 101 111 : chase the beat
+
+{{< tt-scanchain-switches "001101111" >}}
 
 * Author: Emil J Tywoniak
 * Description: Tap twice to the beat, the outputs will chase the beat. Or generate some audio noise!

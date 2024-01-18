@@ -4,7 +4,9 @@ title: "141 XLS: 8-bit counter"
 weight: 142
 ---
 
-## 141 : XLS: 8-bit counter
+## 141 : 0b 010 001 101 : XLS: 8-bit counter
+
+{{< tt-scanchain-switches "010001101" >}}
 
 * Author: proppy
 * Description: Increment output bits

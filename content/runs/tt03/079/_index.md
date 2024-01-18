@@ -4,7 +4,9 @@ title: "79 Asynchronous 3-Bit Down Counter"
 weight: 80
 ---
 
-## 79 : Asynchronous 3-Bit Down Counter
+## 79 : 0b 001 001 111 : Asynchronous 3-Bit Down Counter
+
+{{< tt-scanchain-switches "001001111" >}}
 
 * Author: Dikshant, Mohit, Sanidhya
 * Description: This Project works as a down counter which counts from 7 to 0

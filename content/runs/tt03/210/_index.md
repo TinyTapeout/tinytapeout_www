@@ -4,7 +4,9 @@ title: "210 Hex to 7 Segment Decoder"
 weight: 211
 ---
 
-## 210 : Hex to 7 Segment Decoder
+## 210 : 0b 011 010 010 : Hex to 7 Segment Decoder
+
+{{< tt-scanchain-switches "011010010" >}}
 
 * Author: Randy Glenn
 * Description: Displays an input 4-bit value as a hex digit

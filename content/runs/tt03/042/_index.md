@@ -4,7 +4,9 @@ title: "42 Base-10 grey counter counts from zero to a trillion"
 weight: 43
 ---
 
-## 42 : Base-10 grey counter counts from zero to a trillion
+## 42 : 0b 000 101 010 : Base-10 grey counter counts from zero to a trillion
+
+{{< tt-scanchain-switches "000101010" >}}
 
 * Author: Daniel Wisehart
 * Description: Change only one output bit per count, but count with decimal digits instead of the usual reverse bit order grey counter.

@@ -4,7 +4,9 @@ title: "170 1-bit ALU"
 weight: 171
 ---
 
-## 170 : 1-bit ALU
+## 170 : 0b 010 101 010 : 1-bit ALU
+
+{{< tt-scanchain-switches "010101010" >}}
 
 * Author: Leo Moser
 * Description: 1-bit ALU from the book `Structured Computer Organization: Andrew S. Tanenbaum`

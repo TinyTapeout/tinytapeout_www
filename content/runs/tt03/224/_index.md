@@ -4,7 +4,9 @@ title: "224 SevSegFX"
 weight: 225
 ---
 
-## 224 : SevSegFX
+## 224 : 0b 011 100 000 : SevSegFX
+
+{{< tt-scanchain-switches "011100000" >}}
 
 * Author: Mazen Saghir, ECE Department, American University of Beirut (mazen@aub.edu.lb)
 * Description: Seven segment display effect generator

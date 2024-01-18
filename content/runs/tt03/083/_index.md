@@ -4,7 +4,9 @@ title: "83 2's Compliment Subtractor"
 weight: 84
 ---
 
-## 83 : 2's Compliment Subtractor
+## 83 : 0b 001 010 011 : 2's Compliment Subtractor
+
+{{< tt-scanchain-switches "001010011" >}}
 
 * Author: Naman Garg and Aryan Chaudhary
 * Description: Subtracts two 4-bit binary numbers using 2's complement subtraction method

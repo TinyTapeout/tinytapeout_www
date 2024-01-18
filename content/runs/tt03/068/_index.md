@@ -4,7 +4,9 @@ title: "68 I2S reeceiver, data mix and transmitter"
 weight: 69
 ---
 
-## 68 : I2S reeceiver, data mix and transmitter
+## 68 : 0b 001 000 100 : I2S reeceiver, data mix and transmitter
+
+{{< tt-scanchain-switches "001000100" >}}
 
 * Author: Clemens Nasenberg
 * Description: Mix two I2S streams according to selection

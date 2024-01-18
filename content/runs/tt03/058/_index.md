@@ -4,7 +4,9 @@ title: "58 ro-based_tempsense"
 weight: 59
 ---
 
-## 58 : ro-based_tempsense
+## 58 : 0b 000 111 010 : ro-based_tempsense
+
+{{< tt-scanchain-switches "000111010" >}}
 
 * Author: Jorge Marin, Daniel Arevalos
 * Description: Ring oscillator whose frecuency depends on temperature.

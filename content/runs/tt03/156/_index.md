@@ -4,7 +4,9 @@ title: "156 SQRT1 Square Root Engine"
 weight: 157
 ---
 
-## 156 : SQRT1 Square Root Engine
+## 156 : 0b 010 011 100 : SQRT1 Square Root Engine
+
+{{< tt-scanchain-switches "010011100" >}}
 
 * Author: Davit Margarian (UDXS)
 * Description: Computes 4.2 fixed-point square root for any 7-bit integer

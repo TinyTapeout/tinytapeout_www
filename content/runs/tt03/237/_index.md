@@ -4,7 +4,9 @@ title: "237 Clock divider ASIC"
 weight: 238
 ---
 
-## 237 : Clock divider ASIC
+## 237 : 0b 011 101 101 : Clock divider ASIC
+
+{{< tt-scanchain-switches "011101101" >}}
 
 * Author: Sad Electronics
 * Description: Uses a series of flip flops to divide the clock

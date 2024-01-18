@@ -4,7 +4,9 @@ title: "166 TrainLED2 - RGB-LED driver with 8 bit PWM engine"
 weight: 167
 ---
 
-## 166 : TrainLED2 - RGB-LED driver with 8 bit PWM engine
+## 166 : 0b 010 100 110 : TrainLED2 - RGB-LED driver with 8 bit PWM engine
+
+{{< tt-scanchain-switches "010100110" >}}
 
 * Author: cpldcpu
 * Description: A RGB-LED driver using the WS2812 protocol

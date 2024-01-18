@@ -4,7 +4,9 @@ title: "107 Stream Integrator"
 weight: 108
 ---
 
-## 107 : Stream Integrator
+## 107 : 0b 001 101 011 : Stream Integrator
+
+{{< tt-scanchain-switches "001101011" >}}
 
 * Author: William Moyes
 * Description: A silicon implementation of a simple optical computation

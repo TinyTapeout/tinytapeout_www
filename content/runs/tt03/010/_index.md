@@ -4,7 +4,9 @@ title: "10 SKINNY SBOX"
 weight: 11
 ---
 
-## 10 : SKINNY SBOX
+## 10 : 0b 000 001 010 : SKINNY SBOX
+
+{{< tt-scanchain-switches "000001010" >}}
 
 * Author: Niklas Fassbender
 * Description: Implementation of a 4-Bit Sbox for SKINNY

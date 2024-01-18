@@ -4,7 +4,9 @@ title: "165 TinyPID"
 weight: 166
 ---
 
-## 165 : TinyPID
+## 165 : 0b 010 100 101 : TinyPID
+
+{{< tt-scanchain-switches "010100101" >}}
 
 * Author: Aidan Medcalf
 * Description: Tiny PID controller with SPI configuration channel, SPI ADC and DAC driver

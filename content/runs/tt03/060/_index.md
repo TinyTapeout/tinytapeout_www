@@ -4,7 +4,9 @@ title: "60 7 segment seconds"
 weight: 61
 ---
 
-## 60 : 7 segment seconds
+## 60 : 0b 000 111 100 : 7 segment seconds
+
+{{< tt-scanchain-switches "000111100" >}}
 
 * Author: Matt Venn
 * Description: Count up to 10, one second at a time.

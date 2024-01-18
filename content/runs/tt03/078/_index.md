@@ -4,7 +4,9 @@ title: "78 3BitParallelAdder"
 weight: 79
 ---
 
-## 78 : 3BitParallelAdder
+## 78 : 0b 001 001 110 : 3BitParallelAdder
+
+{{< tt-scanchain-switches "001001110" >}}
 
 * Author: Anish Paul , Pancham Mittal , Ramandeep 
 * Description:  This project is used to Add and Subtract 3-bit binary inputs 

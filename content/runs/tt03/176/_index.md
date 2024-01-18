@@ -4,7 +4,9 @@ title: "176 BCD to 7-Segment Decoder"
 weight: 177
 ---
 
-## 176 : BCD to 7-Segment Decoder
+## 176 : 0b 010 110 000 : BCD to 7-Segment Decoder
+
+{{< tt-scanchain-switches "010110000" >}}
 
 * Author: JinGen Lim
 * Description: Converts a BCD input into a 7-segment display output

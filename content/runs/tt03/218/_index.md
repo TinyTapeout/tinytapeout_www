@@ -4,7 +4,9 @@ title: "218 4:2 Compressor"
 weight: 219
 ---
 
-## 218 : 4:2 Compressor
+## 218 : 0b 011 011 010 : 4:2 Compressor
+
+{{< tt-scanchain-switches "011011010" >}}
 
 * Author: saicharan0112
 * Description: A Basic 4:2 compressor which contains 4 inputs and 1 carry_in bit which compresses to 2 outputs and 1 carry_out bit

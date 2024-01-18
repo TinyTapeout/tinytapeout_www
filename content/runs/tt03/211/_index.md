@@ -4,7 +4,9 @@ title: "211 Multiple seven-segment digit buffer"
 weight: 212
 ---
 
-## 211 : Multiple seven-segment digit buffer
+## 211 : 0b 011 010 011 : Multiple seven-segment digit buffer
+
+{{< tt-scanchain-switches "011010011" >}}
 
 * Author: Zach Mason
 * Description: Storage and variable speed readback segment digits

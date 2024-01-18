@@ -4,7 +4,9 @@ title: "219 PS2 keyboard Interface"
 weight: 220
 ---
 
-## 219 : PS2 keyboard Interface
+## 219 : 0b 011 011 011 : PS2 keyboard Interface
+
+{{< tt-scanchain-switches "011011011" >}}
 
 * Author: Tanish Khanchandani
 * Description: PS2 keyboard interface to enter charecters into a computer. Use the PS2 hex scan codes (https://techdocs.altium.com/display/FPGA/PS2+Keyboard+Scan+Codes) to enter hex codes and it will send the letter to your computer.

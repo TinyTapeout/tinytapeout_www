@@ -4,7 +4,9 @@ title: "37 Simon Says"
 weight: 38
 ---
 
-## 37 : Simon Says
+## 37 : 0b 000 100 101 : Simon Says
+
+{{< tt-scanchain-switches "000100101" >}}
 
 * Author: Uri Shaked
 * Description: A simple memory game

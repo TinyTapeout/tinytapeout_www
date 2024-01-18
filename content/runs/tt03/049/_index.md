@@ -4,7 +4,9 @@ title: "49 Brightness control of LED with PWM"
 weight: 50
 ---
 
-## 49 : Brightness control of LED with PWM
+## 49 : 0b 000 110 001 : Brightness control of LED with PWM
+
+{{< tt-scanchain-switches "000110001" >}}
 
 * Author: Ioannis G. Intzes
 * Description: Increase and Decrease the PWM (Pulse-Width) to dim a LED.

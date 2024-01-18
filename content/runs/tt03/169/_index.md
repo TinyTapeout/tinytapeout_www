@@ -4,7 +4,9 @@ title: "169 Stack Calculator"
 weight: 170
 ---
 
-## 169 : Stack Calculator
+## 169 : 0b 010 101 001 : Stack Calculator
+
+{{< tt-scanchain-switches "010101001" >}}
 
 * Author: David Siaw
 * Description: A stack based 4-bit calculator featuring a 4-bit wide 8 entry deep stack and 64 bits of random access memory.

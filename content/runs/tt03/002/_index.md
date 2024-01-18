@@ -4,7 +4,9 @@ title: "2 7 Segment Life"
 weight: 3
 ---
 
-## 2 : 7 Segment Life
+## 2 : 0b 000 000 010 : 7 Segment Life
+
+{{< tt-scanchain-switches "000000010" >}}
 
 * Author: icegoat9
 * Description: Simple 7-segment cellular automaton

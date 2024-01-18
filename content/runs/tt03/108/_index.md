@@ -4,7 +4,9 @@ title: "108 tiny-fir"
 weight: 109
 ---
 
-## 108 : tiny-fir
+## 108 : 0b 001 101 100 : tiny-fir
+
+{{< tt-scanchain-switches "001101100" >}}
 
 * Author: Tom Schucker
 * Description: 4bit 2-stage FIR filter

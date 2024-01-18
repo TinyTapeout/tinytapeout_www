@@ -4,7 +4,9 @@ title: "39 tinysat"
 weight: 40
 ---
 
-## 39 : tinysat
+## 39 : 0b 000 100 111 : tinysat
+
+{{< tt-scanchain-switches "000100111" >}}
 
 * Author: Emmanouel Matigakis
 * Description: Tiny sat solver.

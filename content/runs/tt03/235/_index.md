@@ -4,7 +4,9 @@ title: "235 Basic 4 bit cpu "
 weight: 236
 ---
 
-## 235 : Basic 4 bit cpu 
+## 235 : 0b 011 101 011 : Basic 4 bit cpu 
+
+{{< tt-scanchain-switches "011101011" >}}
 
 * Author: Noah Gaertner
 * Description: 4-bit CPU that does add, subtract, multiply, left and right shifts, conditional jump based on external signal, logical and bitwise AND and OR, equality and inequality checking, bitwise inversion, and logical NOT

@@ -4,7 +4,9 @@ title: "112 BCD to 7-segment encoder"
 weight: 113
 ---
 
-## 112 : BCD to 7-segment encoder
+## 112 : 0b 001 110 000 : BCD to 7-segment encoder
+
+{{< tt-scanchain-switches "001110000" >}}
 
 * Author: maehw
 * Description: Encode binary coded decimals (BCD) in the range 0..9 to 7-segment display control signals

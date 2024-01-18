@@ -4,7 +4,9 @@ title: "229 4x4 RAM"
 weight: 230
 ---
 
-## 229 : 4x4 RAM
+## 229 : 0b 011 100 101 : 4x4 RAM
+
+{{< tt-scanchain-switches "011100101" >}}
 
 * Author: Michael Bartholic
 * Description: 4 word, 4 bit read/write RAM

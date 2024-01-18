@@ -4,7 +4,9 @@ title: "181 chi 3 shares"
 weight: 182
 ---
 
-## 181 : chi 3 shares
+## 181 : 0b 010 110 101 : chi 3 shares
+
+{{< tt-scanchain-switches "010110101" >}}
 
 * Author: Molteni Maria Chiara
 * Description: Chi function of Xoodoo protected by TI with three shares

@@ -4,7 +4,9 @@ title: "212 LED Chaser"
 weight: 213
 ---
 
-## 212 : LED Chaser
+## 212 : 0b 011 010 100 : LED Chaser
+
+{{< tt-scanchain-switches "011010100" >}}
 
 * Author: Bradley Boccuzzi
 * Description: Push the button to fill in segments of the LED display, they will continue to shift and fill in the display until the button is released.`

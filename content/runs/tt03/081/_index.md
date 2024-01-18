@@ -4,7 +4,9 @@ title: "81 3 bit multiplier "
 weight: 82
 ---
 
-## 81 : 3 bit multiplier 
+## 81 : 0b 001 010 001 : 3 bit multiplier 
+
+{{< tt-scanchain-switches "001010001" >}}
 
 * Author: Ananya
 * Description: 3 bit multiplier

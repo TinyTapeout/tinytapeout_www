@@ -4,7 +4,9 @@ title: "248 RiscV Scan Chain based CPU -- block 4 -- ALU"
 weight: 249
 ---
 
-## 248 : RiscV Scan Chain based CPU -- block 4 -- ALU
+## 248 : 0b 011 111 000 : RiscV Scan Chain based CPU -- block 4 -- ALU
+
+{{< tt-scanchain-switches "011111000" >}}
 
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 4 -- ALU

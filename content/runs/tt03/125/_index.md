@@ -4,7 +4,9 @@ title: "125 4-bit badge ALU"
 weight: 126
 ---
 
-## 125 : 4-bit badge ALU
+## 125 : 0b 001 111 101 : 4-bit badge ALU
+
+{{< tt-scanchain-switches "001111101" >}}
 
 * Author: Rolf Widenfelt
 * Description: A 4-bit ALU inspired by Supercon.6 badge

@@ -4,7 +4,9 @@ title: "225 LAB11"
 weight: 226
 ---
 
-## 225 : LAB11
+## 225 : 0b 011 100 001 : LAB11
+
+{{< tt-scanchain-switches "011100001" >}}
 
 * Author: Thomas Zachariah
 * Description: Cycles through the characters of LAB11

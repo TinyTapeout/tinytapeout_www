@@ -4,7 +4,9 @@ title: "35 Simple clock"
 weight: 36
 ---
 
-## 35 : Simple clock
+## 35 : 0b 000 100 011 : Simple clock
+
+{{< tt-scanchain-switches "000100011" >}}
 
 * Author: Søren Poulsen
 * Description: Shows time of day.

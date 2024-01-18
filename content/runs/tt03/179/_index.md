@@ -4,7 +4,9 @@ title: "179 FPGA test"
 weight: 180
 ---
 
-## 179 : FPGA test
+## 179 : 0b 010 110 011 : FPGA test
+
+{{< tt-scanchain-switches "010110011" >}}
 
 * Author: myrtle
 * Description: small mux2 fpga test

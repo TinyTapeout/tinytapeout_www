@@ -4,7 +4,9 @@ title: "184 Asynchronous Binary to Ternary Converter and Comparator"
 weight: 185
 ---
 
-## 184 : Asynchronous Binary to Ternary Converter and Comparator
+## 184 : 0b 010 111 000 : Asynchronous Binary to Ternary Converter and Comparator
+
+{{< tt-scanchain-switches "010111000" >}}
 
 * Author: Steven Bos
 * Description: This chip offers various kinds of conversions and comparisons between binary encoded ternary and unary encoded ternary in both machine readible output and human readible (7-segment display decimal) output

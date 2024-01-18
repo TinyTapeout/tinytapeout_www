@@ -4,7 +4,9 @@ title: "129 M0: A 16-bit SUBLEQ Microprocessor"
 weight: 130
 ---
 
-## 129 : M0: A 16-bit SUBLEQ Microprocessor
+## 129 : 0b 010 000 001 : M0: A 16-bit SUBLEQ Microprocessor
+
+{{< tt-scanchain-switches "010000001" >}}
 
 * Author: William Moyes
 * Description: A capable but slow microprocessor that fits in a very tight space

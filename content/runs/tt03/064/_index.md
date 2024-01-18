@@ -4,7 +4,9 @@ title: "64 HiddenCPU"
 weight: 65
 ---
 
-## 64 : HiddenCPU
+## 64 : 0b 001 000 000 : HiddenCPU
+
+{{< tt-scanchain-switches "001000000" >}}
 
 * Author: HiddenRoom
 * Description: Basic 8 bit CPU.

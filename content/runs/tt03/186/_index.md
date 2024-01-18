@@ -4,7 +4,9 @@ title: "186 Monte Carlo Pi Integrator"
 weight: 187
 ---
 
-## 186 : Monte Carlo Pi Integrator
+## 186 : 0b 010 111 010 : Monte Carlo Pi Integrator
+
+{{< tt-scanchain-switches "010111010" >}}
 
 * Author: regymm
 * Description: Calculate the value of Pi using the Monte Carlo method

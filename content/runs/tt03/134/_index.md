@@ -4,7 +4,9 @@ title: "134 chiDOM"
 weight: 135
 ---
 
-## 134 : chiDOM
+## 134 : 0b 010 000 110 : chiDOM
+
+{{< tt-scanchain-switches "010000110" >}}
 
 * Author: Maria CHiara Molteni
 * Description: Chi function of Xoodoo protected at the first-order by DOM

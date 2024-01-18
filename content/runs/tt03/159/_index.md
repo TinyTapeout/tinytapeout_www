@@ -4,7 +4,9 @@ title: "159 tinytapeout2-HELLo-3orLd-7seg"
 weight: 160
 ---
 
-## 159 : tinytapeout2-HELLo-3orLd-7seg
+## 159 : 0b 010 011 111 : tinytapeout2-HELLo-3orLd-7seg
+
+{{< tt-scanchain-switches "010011111" >}}
 
 * Author: Rakesh Peter
 * Description: HELLo-3orLd Runner on 7 segment Display

@@ -4,7 +4,9 @@ title: "190 BCD to Hex 7-Segment Decoder"
 weight: 191
 ---
 
-## 190 : BCD to Hex 7-Segment Decoder
+## 190 : 0b 010 111 110 : BCD to Hex 7-Segment Decoder
+
+{{< tt-scanchain-switches "010111110" >}}
 
 * Author: JinGen Lim
 * Description: Converts a 4-bit BCD input into a hexadecimal 7-segment display output

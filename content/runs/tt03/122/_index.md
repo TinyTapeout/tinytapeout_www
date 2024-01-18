@@ -4,7 +4,9 @@ title: "122 Tiny Synth"
 weight: 123
 ---
 
-## 122 : Tiny Synth
+## 122 : 0b 001 111 010 : Tiny Synth
+
+{{< tt-scanchain-switches "001111010" >}}
 
 * Author: Nanik Adnani
 * Description: A tiny synthesizer! Modulates the frequency of the clock based on inputs, plays a C scale (hopefully).

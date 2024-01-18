@@ -4,7 +4,9 @@ title: "114 4-bit Multiplier"
 weight: 115
 ---
 
-## 114 : 4-bit Multiplier
+## 114 : 0b 001 110 010 : 4-bit Multiplier
+
+{{< tt-scanchain-switches "001110010" >}}
 
 * Author: Fernando Dominguez Pousa
 * Description: 4-bit Multiplier based on single bit full adders

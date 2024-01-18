@@ -4,7 +4,9 @@ title: "234 Secret File"
 weight: 235
 ---
 
-## 234 : Secret File
+## 234 : 0b 011 101 010 : Secret File
+
+{{< tt-scanchain-switches "011101010" >}}
 
 * Author: bitluni
 * Description: Nothing to see here

@@ -4,7 +4,9 @@ title: "110 LUTRAM"
 weight: 111
 ---
 
-## 110 : LUTRAM
+## 110 : 0b 001 101 110 : LUTRAM
+
+{{< tt-scanchain-switches "001101110" >}}
 
 * Author: Luis Ardila
 * Description: LUTRAM with 4 bit address and 8 bit output preloaded with a binary to 7 segments decoder, sadly it was too big for 0-F, so now it is 0-9?

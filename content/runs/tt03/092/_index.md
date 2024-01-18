@@ -4,7 +4,9 @@ title: "92 SIMON Cipher"
 weight: 93
 ---
 
-## 92 : SIMON Cipher
+## 92 : 0b 001 011 100 : SIMON Cipher
+
+{{< tt-scanchain-switches "001011100" >}}
 
 * Author: Fraser Price
 * Description: Simon32/64 Encryption

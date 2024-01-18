@@ -4,7 +4,9 @@ title: "244 Balanced Ternary Calculator"
 weight: 245
 ---
 
-## 244 : Balanced Ternary Calculator
+## 244 : 0b 011 110 100 : Balanced Ternary Calculator
+
+{{< tt-scanchain-switches "011110100" >}}
 
 * Author: Steven Bos
 * Description: A balanced ternary calculator allowing multiplication, addition and subtraction with negative numbers in binary encoded ternary

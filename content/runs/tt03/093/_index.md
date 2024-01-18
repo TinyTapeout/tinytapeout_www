@@ -4,7 +4,9 @@ title: "93 HD74480 Clock"
 weight: 94
 ---
 
-## 93 : HD74480 Clock
+## 93 : 0b 001 011 101 : HD74480 Clock
+
+{{< tt-scanchain-switches "001011101" >}}
 
 * Author: Tom Keddie
 * Description: Displays a clock on a attached HD74480

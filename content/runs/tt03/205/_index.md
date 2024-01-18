@@ -4,7 +4,9 @@ title: "205 Baudot Converter"
 weight: 206
 ---
 
-## 205 : Baudot Converter
+## 205 : 0b 011 001 101 : Baudot Converter
+
+{{< tt-scanchain-switches "011001101" >}}
 
 * Author: Arthur Hazleden
 * Description: This circuit will convert 5-bit Baudot from a teletype machine to 8-bit ASCII.

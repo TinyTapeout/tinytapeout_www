@@ -4,7 +4,9 @@ title: "29 6-bit FIFO"
 weight: 30
 ---
 
-## 29 : 6-bit FIFO
+## 29 : 0b 000 011 101 : 6-bit FIFO
+
+{{< tt-scanchain-switches "000011101" >}}
 
 * Author: Mike Bell
 * Description: Implementation of a FIFO

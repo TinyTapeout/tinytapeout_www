@@ -4,7 +4,9 @@ title: "41 Toy CPU"
 weight: 42
 ---
 
-## 41 : Toy CPU
+## 41 : 0b 000 101 001 : Toy CPU
+
+{{< tt-scanchain-switches "000101001" >}}
 
 * Author: jordan336
 * Description: Toy CPU is an 8 bit toy CPU for the Tiny Tapeout project.

@@ -4,7 +4,9 @@ title: "243 Gameshow Buzzer"
 weight: 244
 ---
 
-## 243 : Gameshow Buzzer
+## 243 : 0b 011 110 011 : Gameshow Buzzer
+
+{{< tt-scanchain-switches "011110011" >}}
 
 * Author: Christopher Haddad, Jenna Nandlall, Matthew Nunez, Farhan Kobir
 * Description: Jeopardy gameshow type of buzzer.

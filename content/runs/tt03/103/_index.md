@@ -4,7 +4,9 @@ title: "103 German Traffic Light State Machine"
 weight: 104
 ---
 
-## 103 : German Traffic Light State Machine
+## 103 : 0b 001 100 111 : German Traffic Light State Machine
+
+{{< tt-scanchain-switches "001100111" >}}
 
 * Author: Jens Schleusner
 * Description: A state machine to control german traffic lights at an intersection.

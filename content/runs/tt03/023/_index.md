@@ -4,7 +4,9 @@ title: "23 Desperate Tapeout"
 weight: 24
 ---
 
-## 23 : Desperate Tapeout
+## 23 : 0b 000 010 111 : Desperate Tapeout
+
+{{< tt-scanchain-switches "000010111" >}}
 
 * Author: Etienne de Maricourt
 * Description: Customized UART string transmitter

@@ -4,7 +4,9 @@ title: "188 GPS C/A PRN Generator"
 weight: 189
 ---
 
-## 188 : GPS C/A PRN Generator
+## 188 : 0b 010 111 100 : GPS C/A PRN Generator
+
+{{< tt-scanchain-switches "010111100" >}}
 
 * Author: Adam Greig
 * Description: Generate the GPS C/A PRN sequences PRN1 through PRN32

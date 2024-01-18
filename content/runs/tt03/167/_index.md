@@ -4,7 +4,9 @@ title: "167 Zinnia+ (MCPU5+) 8 Bit CPU"
 weight: 168
 ---
 
-## 167 : Zinnia+ (MCPU5+) 8 Bit CPU
+## 167 : 0b 010 100 111 : Zinnia+ (MCPU5+) 8 Bit CPU
+
+{{< tt-scanchain-switches "010100111" >}}
 
 * Author: cpldcpu
 * Description: A minimal 8 bit CPU

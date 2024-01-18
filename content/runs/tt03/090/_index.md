@@ -4,7 +4,9 @@ title: "90 3-bit 4-position register"
 weight: 91
 ---
 
-## 90 : 3-bit 4-position register
+## 90 : 0b 001 011 010 : 3-bit 4-position register
+
+{{< tt-scanchain-switches "001011010" >}}
 
 * Author: Chris Burton
 * Description: 3-bit 4-position register using Multiplexers

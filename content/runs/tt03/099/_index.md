@@ -4,7 +4,9 @@ title: "99 binary clock"
 weight: 100
 ---
 
-## 99 : binary clock
+## 99 : 0b 001 100 011 : binary clock
+
+{{< tt-scanchain-switches "001100011" >}}
 
 * Author: Azdle
 * Description: A binary clock using multiplexed LEDs

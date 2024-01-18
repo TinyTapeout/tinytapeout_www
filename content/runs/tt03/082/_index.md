@@ -4,7 +4,9 @@ title: "82 Tiny Teeth Toothbrush Timer"
 weight: 83
 ---
 
-## 82 : Tiny Teeth Toothbrush Timer
+## 82 : 0b 001 010 010 : Tiny Teeth Toothbrush Timer
+
+{{< tt-scanchain-switches "001010010" >}}
 
 * Author: Noah Hoffman
 * Description: Simple 2 minute timer that gives visual feedback on the seven-segment display for each 30-second increment that passes. This indicates when to move to the next quarter of the mouth. Each 30 second increment can be blocked by an input switch so the user has to acknowledge they are done with that section before moving forward. At the end of 2 minutes, all segments of the display will flash

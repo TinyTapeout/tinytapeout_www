@@ -4,7 +4,9 @@ title: "9 Hovalaag CPU"
 weight: 10
 ---
 
-## 9 : Hovalaag CPU
+## 9 : 0b 000 001 001 : Hovalaag CPU
+
+{{< tt-scanchain-switches "000001001" >}}
 
 * Author: Mike Bell
 * Description: Implementation of the CPU from HOVALAAG

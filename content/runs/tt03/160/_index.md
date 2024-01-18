@@ -4,7 +4,9 @@ title: "160 Non-restoring Square Root"
 weight: 161
 ---
 
-## 160 : Non-restoring Square Root
+## 160 : 0b 010 100 000 : Non-restoring Square Root
+
+{{< tt-scanchain-switches "010100000" >}}
 
 * Author: Wallace Everest
 * Description: Square root for use in RMS calculations

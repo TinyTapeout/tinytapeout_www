@@ -4,7 +4,9 @@ title: "220 Hello Generator"
 weight: 221
 ---
 
-## 220 : Hello Generator
+## 220 : 0b 011 011 100 : Hello Generator
+
+{{< tt-scanchain-switches "011011100" >}}
 
 * Author: Skyler Saleh
 * Description: Flashes 'H-E-L-L-O' on the 7 segment display

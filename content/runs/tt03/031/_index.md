@@ -4,7 +4,9 @@ title: "31 31b-PrimeDetector"
 weight: 32
 ---
 
-## 31 : 31b-PrimeDetector
+## 31 : 0b 000 011 111 : 31b-PrimeDetector
+
+{{< tt-scanchain-switches "000011111" >}}
 
 * Author: Aidan McNay
 * Description: Detects whether a 31-bit number is prime or not

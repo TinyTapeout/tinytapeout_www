@@ -4,7 +4,9 @@ title: "173 Worm in a Maze"
 weight: 174
 ---
 
-## 173 : Worm in a Maze
+## 173 : 0b 010 101 101 : Worm in a Maze
+
+{{< tt-scanchain-switches "010101101" >}}
 
 * Author: Tim Victor
 * Description: Animation demo on seven-segment LED

@@ -4,7 +4,9 @@ title: "84 Customizable Padlock"
 weight: 85
 ---
 
-## 84 : Customizable Padlock
+## 84 : 0b 001 010 100 : Customizable Padlock
+
+{{< tt-scanchain-switches "001010100" >}}
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a customizable padlock. Set a code for your digital safe!

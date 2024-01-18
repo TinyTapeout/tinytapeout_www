@@ -4,7 +4,9 @@ title: "7 4x4 Memory"
 weight: 8
 ---
 
-## 7 : 4x4 Memory
+## 7 : 0b 000 000 111 : 4x4 Memory
+
+{{< tt-scanchain-switches "000000111" >}}
 
 * Author: Yannick Reiß
 * Description: Store 4x4 bits of memory.

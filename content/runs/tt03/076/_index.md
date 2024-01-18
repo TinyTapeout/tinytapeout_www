@@ -4,7 +4,9 @@ title: "76 BCDtoDECIMAL"
 weight: 77
 ---
 
-## 76 : BCDtoDECIMAL
+## 76 : 0b 001 001 100 : BCDtoDECIMAL
+
+{{< tt-scanchain-switches "001001100" >}}
 
 * Author: Giresh and Aditya 
 * Description: The objective of this project is to create a circuit that can convert Binary Coded Decimal (BCD) numbers to their decimal equivalents. This will enable users to easily convert BCD numbers, which are commonly used in electronic devices, into the decimal format that is more commonly understood.

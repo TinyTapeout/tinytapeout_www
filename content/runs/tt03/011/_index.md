@@ -4,7 +4,9 @@ title: "11 Stateful Lock"
 weight: 12
 ---
 
-## 11 : Stateful Lock
+## 11 : 0b 000 001 011 : Stateful Lock
+
+{{< tt-scanchain-switches "000001011" >}}
 
 * Author: Tim Henkes
 * Description: A little combination lock which requires three codes in the correct order to unlock

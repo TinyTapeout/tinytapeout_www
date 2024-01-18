@@ -4,7 +4,9 @@ title: "88 Hola"
 weight: 89
 ---
 
-## 88 : Hola
+## 88 : 0b 001 011 000 : Hola
+
+{{< tt-scanchain-switches "001011000" >}}
 
 * Author: Pascual Bravo
 * Description: Chip de prueba

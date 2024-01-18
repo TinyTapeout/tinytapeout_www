@@ -4,7 +4,9 @@ title: "98 The McCoy 8-bit Microprocessor"
 weight: 99
 ---
 
-## 98 : The McCoy 8-bit Microprocessor
+## 98 : 0b 001 100 010 : The McCoy 8-bit Microprocessor
+
+{{< tt-scanchain-switches "001100010" >}}
 
 * Author: Aidan Good
 * Description: Custom RISC-V inspired microprocessor capable of simple arithmatic, branching, and jumps through a custom ISA.

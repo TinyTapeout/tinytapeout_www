@@ -4,7 +4,9 @@ title: "59 FSM_LAT"
 weight: 60
 ---
 
-## 59 : FSM_LAT
+## 59 : 0b 000 111 011 : FSM_LAT
+
+{{< tt-scanchain-switches "000111011" >}}
 
 * Author: Juan Sanchez
 * Description: FSM look at table

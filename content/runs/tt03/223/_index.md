@@ -4,7 +4,9 @@ title: "223 CRC-16 and Parity calculator"
 weight: 224
 ---
 
-## 223 : CRC-16 and Parity calculator
+## 223 : 0b 011 011 111 : CRC-16 and Parity calculator
+
+{{< tt-scanchain-switches "011011111" >}}
 
 * Author: Chris Burton
 * Description: CRC-16/XModem and Even Parity calculator based on Ben Eater error detection videos.

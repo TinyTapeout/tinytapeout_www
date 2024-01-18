@@ -4,7 +4,9 @@ title: "30 ezm_cpu"
 weight: 31
 ---
 
-## 30 : ezm_cpu
+## 30 : 0b 000 011 110 : ezm_cpu
+
+{{< tt-scanchain-switches "000011110" >}}
 
 * Author: guianmonezm#4787
 * Description: basic 8bit CPU

@@ -4,7 +4,9 @@ title: "222 Optimised Euclidean Algorithm"
 weight: 223
 ---
 
-## 222 : Optimised Euclidean Algorithm
+## 222 : 0b 011 011 110 : Optimised Euclidean Algorithm
+
+{{< tt-scanchain-switches "011011110" >}}
 
 * Author: Recep Said Dulger
 * Description: Finding gcd of 2 4-bit number

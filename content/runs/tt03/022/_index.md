@@ -4,7 +4,9 @@ title: "22 Random number guess game"
 weight: 23
 ---
 
-## 22 : Random number guess game
+## 22 : 0b 000 010 110 : Random number guess game
+
+{{< tt-scanchain-switches "000010110" >}}
 
 * Author: Yufei Zhen, Elaina Zodiatis, Khadijatou Dibba
 * Description: Guess 6-bit random number, 3 attemps in one round. 

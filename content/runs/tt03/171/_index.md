@@ -4,7 +4,9 @@ title: "171 SPI Flash State Machine"
 weight: 172
 ---
 
-## 171 : SPI Flash State Machine
+## 171 : 0b 010 101 011 : SPI Flash State Machine
+
+{{< tt-scanchain-switches "010101011" >}}
 
 * Author: Greg Steiert
 * Description: Implements a state machine stored in an external SPI flash

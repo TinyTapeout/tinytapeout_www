@@ -4,7 +4,9 @@ title: "91 Simple adder used for educational purposes"
 weight: 92
 ---
 
-## 91 : Simple adder used for educational purposes
+## 91 : 0b 001 011 011 : Simple adder used for educational purposes
+
+{{< tt-scanchain-switches "001011011" >}}
 
 * Author: Francisco Brito Filho
 * Description: Simple adder used for educational purposes described in VHDL and ported to verilog using ghdl plugin.

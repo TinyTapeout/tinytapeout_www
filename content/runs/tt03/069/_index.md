@@ -4,7 +4,9 @@ title: "69 S4GA: Super Slow Serial SRAM FPGA"
 weight: 70
 ---
 
-## 69 : S4GA: Super Slow Serial SRAM FPGA
+## 69 : 0b 001 000 101 : S4GA: Super Slow Serial SRAM FPGA
+
+{{< tt-scanchain-switches "001000101" >}}
 
 * Author: Jan Gray(TT02), Marco Merlin (TT03)
 * Description: one fracturable 5-LUT that receives FPGA LUT configuration frames, serially evaluates LUT inputs and LUT outputs

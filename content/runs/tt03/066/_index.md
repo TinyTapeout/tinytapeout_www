@@ -4,7 +4,9 @@ title: "66 MSF Clock"
 weight: 67
 ---
 
-## 66 : MSF Clock
+## 66 : 0b 001 000 010 : MSF Clock
+
+{{< tt-scanchain-switches "001000010" >}}
 
 * Author: Jamie Wood & Daniel Cannell
 * Description: MSF radio clock

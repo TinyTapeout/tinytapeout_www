@@ -4,7 +4,9 @@ title: "213 Rolling Average - 5 bit, 8 bank"
 weight: 214
 ---
 
-## 213 : Rolling Average - 5 bit, 8 bank
+## 213 : 0b 011 010 101 : Rolling Average - 5 bit, 8 bank
+
+{{< tt-scanchain-switches "011010101" >}}
 
 * Author: Kauna Lei
 * Description: 5bit moving average

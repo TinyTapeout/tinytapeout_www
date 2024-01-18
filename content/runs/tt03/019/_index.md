@@ -4,7 +4,9 @@ title: "19 12-bit PDP8"
 weight: 20
 ---
 
-## 19 : 12-bit PDP8
+## 19 : 0b 000 010 011 : 12-bit PDP8
+
+{{< tt-scanchain-switches "000010011" >}}
 
 * Author: Paul Campnell
 * Description: PDP8 core

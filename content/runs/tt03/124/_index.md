@@ -4,7 +4,9 @@ title: "124 prbs15"
 weight: 125
 ---
 
-## 124 : prbs15
+## 124 : 0b 001 111 100 : prbs15
+
+{{< tt-scanchain-switches "001111100" >}}
 
 * Author: Tom Schucker
 * Description: generates and checks prbs15 sequences

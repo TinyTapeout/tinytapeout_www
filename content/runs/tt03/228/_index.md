@@ -4,7 +4,9 @@ title: "228 Option22"
 weight: 229
 ---
 
-## 228 : Option22
+## 228 : 0b 011 100 100 : Option22
+
+{{< tt-scanchain-switches "011100100" >}}
 
 * Author: bitluni
 * Description: Looong shift register. 22x8 bit

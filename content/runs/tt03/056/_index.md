@@ -4,7 +4,9 @@ title: "56 Straight through test"
 weight: 57
 ---
 
-## 56 : Straight through test
+## 56 : 0b 000 111 000 : Straight through test
+
+{{< tt-scanchain-switches "000111000" >}}
 
 * Author: Matt Venn
 * Description: Just connects inputs to outputs

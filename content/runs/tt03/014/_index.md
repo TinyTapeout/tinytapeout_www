@@ -4,7 +4,9 @@ title: "14 Sbox SKINNY 8 Bit"
 weight: 15
 ---
 
-## 14 : Sbox SKINNY 8 Bit
+## 14 : 0b 000 001 110 : Sbox SKINNY 8 Bit
+
+{{< tt-scanchain-switches "000001110" >}}
 
 * Author: Thorsten Knoll
 * Description: A circuit for the substitution of 8 bits. Made for the SKINNY cipher algorithm.

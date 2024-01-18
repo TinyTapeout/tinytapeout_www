@@ -4,7 +4,9 @@ title: "148 LEDChaser from LiteX test"
 weight: 149
 ---
 
-## 148 : LEDChaser from LiteX test
+## 148 : 0b 010 010 100 : LEDChaser from LiteX test
+
+{{< tt-scanchain-switches "010010100" >}}
 
 * Author: Nick Østergaard
 * Description: This is just a small demo of synthezing verilog from LiteX, this does not include any CPU.

@@ -4,7 +4,9 @@ title: "149 8-bit (E4M3) Floating Point Multiplier"
 weight: 150
 ---
 
-## 149 : 8-bit (E4M3) Floating Point Multiplier
+## 149 : 0b 010 010 101 : 8-bit (E4M3) Floating Point Multiplier
+
+{{< tt-scanchain-switches "010010101" >}}
 
 * Author: Clive Chan
 * Description: 8-bit (E4M3) Floating Point Multiplier

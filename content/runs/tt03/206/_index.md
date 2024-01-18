@@ -4,7 +4,9 @@ title: "206 Marquee"
 weight: 207
 ---
 
-## 206 : Marquee
+## 206 : 0b 011 001 110 : Marquee
+
+{{< tt-scanchain-switches "011001110" >}}
 
 * Author: Christopher 'ctag' Bero
 * Description: Scrolls 'ctag' across the 7seg.

@@ -4,7 +4,9 @@ title: "73 Arbiter Game"
 weight: 74
 ---
 
-## 73 : Arbiter Game
+## 73 : 0b 001 001 001 : Arbiter Game
+
+{{< tt-scanchain-switches "001001001" >}}
 
 * Author: Martin A. Heredia
 * Description: This is a game for 2 players. After a countdown, the player who press his/her button first wins. Countdown and winner should be displayed in output leds.

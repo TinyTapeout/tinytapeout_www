@@ -4,7 +4,9 @@ title: "63 QTChallenges"
 weight: 64
 ---
 
-## 63 : QTChallenges
+## 63 : 0b 000 111 111 : QTChallenges
+
+{{< tt-scanchain-switches "000111111" >}}
 
 * Author: Jason Blocklove
 * Description: This project implements 8 different benchmark circuits created 100% with ChatGPT-4.

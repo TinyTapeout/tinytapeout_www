@@ -4,7 +4,9 @@ title: "207 channel coding"
 weight: 208
 ---
 
-## 207 : channel coding
+## 207 : 0b 011 001 111 : channel coding
+
+{{< tt-scanchain-switches "011001111" >}}
 
 * Author: Asma Mohsin
 * Description: Convolutional coding is widely used in modern digital communication systems.We often get encoded data by using different polynomials having same constraint lengths (K).

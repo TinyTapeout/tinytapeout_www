@@ -4,7 +4,9 @@ title: "153 Test2"
 weight: 154
 ---
 
-## 153 : Test2
+## 153 : 0b 010 011 001 : Test2
+
+{{< tt-scanchain-switches "010011001" >}}
 
 * Author: Shaos
 * Description: Testing Flip-Flops

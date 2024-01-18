@@ -4,7 +4,9 @@ title: "199 Rotary Encoder Counter"
 weight: 200
 ---
 
-## 199 : Rotary Encoder Counter
+## 199 : 0b 011 000 111 : Rotary Encoder Counter
+
+{{< tt-scanchain-switches "011000111" >}}
 
 * Author: Vaishnav Achath
 * Description: Count Up/Down on the 7-segment accouring to rotary encoder input

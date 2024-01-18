@@ -4,7 +4,9 @@ title: "32 4-bit ALU"
 weight: 33
 ---
 
-## 32 : 4-bit ALU
+## 32 : 0b 000 100 000 : 4-bit ALU
+
+{{< tt-scanchain-switches "000100000" >}}
 
 * Author: ReJ aka Renaldas Zioma
 * Description: Digital design for a 4-bit ALU supporting 8 different operations and built-in 4-bit accumulator register

@@ -4,7 +4,9 @@ title: "202 Rotary encoder"
 weight: 203
 ---
 
-## 202 : Rotary encoder
+## 202 : 0b 011 001 010 : Rotary encoder
+
+{{< tt-scanchain-switches "011001010" >}}
 
 * Author: Wim Dams
 * Description: Reads in a (incremental) rotary encoder and shows the result on the seven-segment display

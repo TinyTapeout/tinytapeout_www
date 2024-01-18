@@ -4,7 +4,9 @@ title: "192 Counter"
 weight: 193
 ---
 
-## 192 : Counter
+## 192 : 0b 011 000 000 : Counter
+
+{{< tt-scanchain-switches "011000000" >}}
 
 * Author: Adam Zeloof
 * Description: It counts!

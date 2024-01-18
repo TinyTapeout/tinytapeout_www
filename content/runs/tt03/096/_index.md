@@ -4,7 +4,9 @@ title: "96 Duty Controller"
 weight: 97
 ---
 
-## 96 : Duty Controller
+## 96 : 0b 001 100 000 : Duty Controller
+
+{{< tt-scanchain-switches "001100000" >}}
 
 * Author: Marcelo Pouso / Miguel Correia
 * Description: Increase/Decrease a duty cycle of square signal.

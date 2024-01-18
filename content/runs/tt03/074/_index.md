@@ -4,7 +4,9 @@ title: "74 Frequency Divider"
 weight: 75
 ---
 
-## 74 : Frequency Divider
+## 74 : 0b 001 001 010 : Frequency Divider
+
+{{< tt-scanchain-switches "001001010" >}}
 
 * Author: Tanish Khanchandani
 * Description: Can enter a binary number and the clock is divided by 2^(number entered)

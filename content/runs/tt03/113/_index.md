@@ -4,7 +4,9 @@ title: "113 A LED Flasher"
 weight: 114
 ---
 
-## 113 : A LED Flasher
+## 113 : 0b 001 110 001 : A LED Flasher
+
+{{< tt-scanchain-switches "001110001" >}}
 
 * Author: Ben Everard
 * Description: Select different inputs to generate different LED patterns

@@ -4,7 +4,9 @@ title: "100 TinySensor"
 weight: 101
 ---
 
-## 100 : TinySensor
+## 100 : 0b 001 100 100 : TinySensor
+
+{{< tt-scanchain-switches "001100100" >}}
 
 * Author: Justin Pelan
 * Description: Using external hardware photodiodes as inputs, display light intensity on the 7-segment display

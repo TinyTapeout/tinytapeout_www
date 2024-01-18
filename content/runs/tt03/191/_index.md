@@ -4,7 +4,9 @@ title: "191 SRLD"
 weight: 192
 ---
 
-## 191 : SRLD
+## 191 : 0b 010 111 111 : SRLD
+
+{{< tt-scanchain-switches "010111111" >}}
 
 * Author: Chris Burton
 * Description: 8-bit Shift Register with latch and hex decode to display alternating nibbles

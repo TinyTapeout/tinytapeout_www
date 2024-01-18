@@ -4,7 +4,9 @@ title: "17 TinyFPGA attempt for TinyTapeout3"
 weight: 18
 ---
 
-## 17 : TinyFPGA attempt for TinyTapeout3
+## 17 : 0b 000 010 001 : TinyFPGA attempt for TinyTapeout3
+
+{{< tt-scanchain-switches "000010001" >}}
 
 * Author: Emilian Miron
 * Description: FPGA attempt

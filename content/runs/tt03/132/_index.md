@@ -4,7 +4,9 @@ title: "132 XLS: bit population count"
 weight: 133
 ---
 
-## 132 : XLS: bit population count
+## 132 : 0b 010 000 100 : XLS: bit population count
+
+{{< tt-scanchain-switches "010000100" >}}
 
 * Author: proppy
 * Description: Count bits set in the input.

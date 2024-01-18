@@ -4,7 +4,9 @@ title: "175 Pseudo-random number generator"
 weight: 176
 ---
 
-## 175 : Pseudo-random number generator
+## 175 : 0b 010 101 111 : Pseudo-random number generator
+
+{{< tt-scanchain-switches "010101111" >}}
 
 * Author: Thomas Böhm <thomas.bohm@gmail.com>
 * Description: Pseudo-random number generator using a 16-bit Fibonacci linear-feedback shift register

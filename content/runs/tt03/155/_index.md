@@ -4,7 +4,9 @@ title: "155 Nano-neuron"
 weight: 156
 ---
 
-## 155 : Nano-neuron
+## 155 : 0b 010 011 011 : Nano-neuron
+
+{{< tt-scanchain-switches "010011011" >}}
 
 * Author: Daniel Burke
 * Description: minimal low vector test

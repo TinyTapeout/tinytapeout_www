@@ -4,7 +4,9 @@ title: "13 8bit configurable galois lfsr"
 weight: 14
 ---
 
-## 13 : 8bit configurable galois lfsr
+## 13 : 0b 000 001 101 : 8bit configurable galois lfsr
+
+{{< tt-scanchain-switches "000001101" >}}
 
 * Author: Alexander Schönborn
 * Description: A 8bit configurable galois lfsr.

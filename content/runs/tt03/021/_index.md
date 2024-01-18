@@ -4,7 +4,9 @@ title: "21 Dot operation calculator"
 weight: 22
 ---
 
-## 21 : Dot operation calculator
+## 21 : 0b 000 010 101 : Dot operation calculator
+
+{{< tt-scanchain-switches "000010101" >}}
 
 * Author: Yannick Reiß
 * Description: Can calculate the result for 3 bit multiplication and division.

@@ -4,7 +4,9 @@ title: "62 FSK modem"
 weight: 63
 ---
 
-## 62 : FSK modem
+## 62 : 0b 000 111 110 : FSK modem
+
+{{< tt-scanchain-switches "000111110" >}}
 
 * Author: Balint Kovacs
 * Description: Very simple FSK modem, comparable to Bell 103

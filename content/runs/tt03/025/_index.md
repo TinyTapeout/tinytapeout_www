@@ -4,7 +4,9 @@ title: "25 Parallel Nibble to UART"
 weight: 26
 ---
 
-## 25 : Parallel Nibble to UART
+## 25 : 0b 000 011 001 : Parallel Nibble to UART
+
+{{< tt-scanchain-switches "000011001" >}}
 
 * Author: Andrew M
 * Description: Loads two half-bytes into registers, then sends over UART

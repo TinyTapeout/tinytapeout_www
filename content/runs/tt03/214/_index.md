@@ -4,7 +4,9 @@ title: "214 w5s8: universal turing machine core"
 weight: 215
 ---
 
-## 214 : w5s8: universal turing machine core
+## 214 : 0b 011 010 110 : w5s8: universal turing machine core
+
+{{< tt-scanchain-switches "011010110" >}}
 
 * Author: Andrew Foote
 * Description: State transition logic for a 5-state, 8-symbol universal turing machine

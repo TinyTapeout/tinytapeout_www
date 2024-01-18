@@ -4,7 +4,9 @@ title: "51 Neptune guitar tuner (fixed window)"
 weight: 52
 ---
 
-## 51 : Neptune guitar tuner (fixed window)
+## 51 : 0b 000 110 011 : Neptune guitar tuner (fixed window)
+
+{{< tt-scanchain-switches "000110011" >}}
 
 * Author: Pat Deegan
 * Description: It's a guitar tuner!  and so much more... (TODO)

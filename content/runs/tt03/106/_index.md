@@ -4,7 +4,9 @@ title: "106 small FFT"
 weight: 107
 ---
 
-## 106 : small FFT
+## 106 : 0b 001 101 010 : small FFT
+
+{{< tt-scanchain-switches "001101010" >}}
 
 * Author: Rice Shelley
 * Description: Computes a small fft

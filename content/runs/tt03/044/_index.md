@@ -4,7 +4,9 @@ title: "44 QTCore-A1"
 weight: 45
 ---
 
-## 44 : QTCore-A1
+## 44 : 0b 000 101 100 : QTCore-A1
+
+{{< tt-scanchain-switches "000101100" >}}
 
 * Author: Hammond Pearce
 * Description: An accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
@@ -290,7 +292,9 @@ For **Data Manipulation Instructions**:
 | 28      | Constant value: Bits for 7seg "9" |
 | 29-31   | Constant value: 1 |
 
-### 7seg
+### 7 : 0b 000 000 111seg
+
+{{< tt-scanchain-switches "000000111" >}}
 
 Tiny Tapeout 3 has a 7-segment display on the board. To make it useful with the QTCore-A1, 
 the processor helpfully includes the bit patterns stored at addresses 19-28.

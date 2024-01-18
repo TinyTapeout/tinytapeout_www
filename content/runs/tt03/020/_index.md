@@ -4,7 +4,9 @@ title: "20 CTF - Catch the fish"
 weight: 21
 ---
 
-## 20 : CTF - Catch the fish
+## 20 : 0b 000 010 100 : CTF - Catch the fish
+
+{{< tt-scanchain-switches "000010100" >}}
 
 * Author: Carin Schreiner
 * Description: Catch the fish is a whac-a-mole game.

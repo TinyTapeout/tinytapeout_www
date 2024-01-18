@@ -4,7 +4,9 @@ title: "145 TinyTapeout 2 LCD Nametag"
 weight: 146
 ---
 
-## 145 : TinyTapeout 2 LCD Nametag
+## 145 : 0b 010 010 001 : TinyTapeout 2 LCD Nametag
+
+{{< tt-scanchain-switches "010010001" >}}
 
 * Author: Tholin
 * Description: Echoes out a predefined text onto a 20x4 character LCD.

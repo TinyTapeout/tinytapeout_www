@@ -4,7 +4,9 @@ title: "240 Two Bit Universal FSM"
 weight: 241
 ---
 
-## 240 : Two Bit Universal FSM
+## 240 : 0b 011 110 000 : Two Bit Universal FSM
+
+{{< tt-scanchain-switches "011110000" >}}
 
 * Author: Emilio Alvarez
 * Description: A two bit FSM inspired by Rue Mohr's 1Bit CPU

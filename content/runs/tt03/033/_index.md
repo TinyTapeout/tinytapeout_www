@@ -4,7 +4,9 @@ title: "33 Pulse-Density Modulators"
 weight: 34
 ---
 
-## 33 : Pulse-Density Modulators
+## 33 : 0b 000 100 001 : Pulse-Density Modulators
+
+{{< tt-scanchain-switches "000100001" >}}
 
 * Author: Marco Merlin
 * Description: An implementation of a DDPM, PWM and Sigma-Delta Pulse-Density Modulators with python libraries myHDL and PuEDA.

@@ -4,7 +4,9 @@ title: "146 UART-CC"
 weight: 147
 ---
 
-## 146 : UART-CC
+## 146 : 0b 010 010 010 : UART-CC
+
+{{< tt-scanchain-switches "010010010" >}}
 
 * Author: Christina Cyr
 * Description: UART Template

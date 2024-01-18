@@ -4,7 +4,9 @@ title: "121 heart zoe mom dad"
 weight: 122
 ---
 
-## 121 : heart zoe mom dad
+## 121 : 0b 001 111 001 : heart zoe mom dad
+
+{{< tt-scanchain-switches "001111001" >}}
 
 * Author: zoe nguyen.  taylor
 * Description: outputs my name and my age (zoe 4)

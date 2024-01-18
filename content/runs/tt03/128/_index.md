@@ -4,7 +4,9 @@ title: "128 YaFPGA"
 weight: 129
 ---
 
-## 128 : YaFPGA
+## 128 : 0b 010 000 000 : YaFPGA
+
+{{< tt-scanchain-switches "010000000" >}}
 
 * Author: Frans Skarman
 * Description: Yet another FPGA

@@ -4,7 +4,9 @@ title: "38 Shift Register Ram"
 weight: 39
 ---
 
-## 38 : Shift Register Ram
+## 38 : 0b 000 100 110 : Shift Register Ram
+
+{{< tt-scanchain-switches "000100110" >}}
 
 * Author: Dakotath
 * Description: The device holds bits in shift registers to remember crap

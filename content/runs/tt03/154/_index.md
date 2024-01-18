@@ -4,7 +4,9 @@ title: "154 7-segment LED flasher"
 weight: 155
 ---
 
-## 154 : 7-segment LED flasher
+## 154 : 0b 010 011 010 : 7-segment LED flasher
+
+{{< tt-scanchain-switches "010011010" >}}
 
 * Author: Joseph Chiu
 * Description: Drives 7-segment LED display, alternating between NIC and JAC

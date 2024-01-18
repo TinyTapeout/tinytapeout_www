@@ -4,7 +4,9 @@ title: "204 Configurable Gray Code Counter"
 weight: 205
 ---
 
-## 204 : Configurable Gray Code Counter
+## 204 : 0b 011 001 100 : Configurable Gray Code Counter
+
+{{< tt-scanchain-switches "011001100" >}}
 
 * Author: Eric Swalens
 * Description: A configurable counter driven by 2-channel Gray code

@@ -4,7 +4,9 @@ title: "182 Whisk: 16-bit Serial RISC CPU"
 weight: 183
 ---
 
-## 182 : Whisk: 16-bit Serial RISC CPU
+## 182 : 0b 010 110 110 : Whisk: 16-bit Serial RISC CPU
+
+{{< tt-scanchain-switches "010110110" >}}
 
 * Author: Luke Wren
 * Description: Execute a simple 16-bit RISC-style instruction set from up to 64 kilobytes of external SPI SRAM.

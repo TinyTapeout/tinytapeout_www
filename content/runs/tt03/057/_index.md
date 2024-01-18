@@ -4,7 +4,9 @@ title: "57 Combo lock"
 weight: 58
 ---
 
-## 57 : Combo lock
+## 57 : 0b 000 111 001 : Combo lock
+
+{{< tt-scanchain-switches "000111001" >}}
 
 * Author: Benjamin Collier
 * Description: set, reset, and check for a combo

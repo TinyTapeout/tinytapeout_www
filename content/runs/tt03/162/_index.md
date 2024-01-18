@@ -4,7 +4,9 @@ title: "162 7-channel PWM driver controlled via SPI bus"
 weight: 163
 ---
 
-## 162 : 7-channel PWM driver controlled via SPI bus
+## 162 : 0b 010 100 010 : 7-channel PWM driver controlled via SPI bus
+
+{{< tt-scanchain-switches "010100010" >}}
 
 * Author: Ivan Krasin
 * Description: PWM driver with 7 channels and 256 PWM levels from 0 to 1

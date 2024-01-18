@@ -4,7 +4,9 @@ title: "5 Knight Rider Sensor Lights"
 weight: 6
 ---
 
-## 5 : Knight Rider Sensor Lights
+## 5 : 0b 000 000 101 : Knight Rider Sensor Lights
+
+{{< tt-scanchain-switches "000000101" >}}
 
 * Author: Kolos Koblasz
 * Description: The logic assertes output bits one by one, like KITT's sensor lights in Knight Rider.

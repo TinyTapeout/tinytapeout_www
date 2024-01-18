@@ -4,7 +4,9 @@ title: "1 ChipTune"
 weight: 2
 ---
 
-## 1 : ChipTune
+## 1 : 0b 000 000 001 : ChipTune
+
+{{< tt-scanchain-switches "000000001" >}}
 
 * Author: Wallie Everest
 * Description: Vintage 8-bit sound generator

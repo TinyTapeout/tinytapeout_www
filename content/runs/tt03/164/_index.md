@@ -4,7 +4,9 @@ title: "164 Ring OSC Speed Test"
 weight: 165
 ---
 
-## 164 : Ring OSC Speed Test
+## 164 : 0b 010 100 100 : Ring OSC Speed Test
+
+{{< tt-scanchain-switches "010100100" >}}
 
 * Author: Eric Smith
 * Description: Make two rings with the same number of stages but measure how their frequency differs.  Measure if they can influence eachother.

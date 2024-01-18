@@ -4,7 +4,9 @@ title: "241 Super Mario Tune on A Piezo Speaker"
 weight: 242
 ---
 
-## 241 : Super Mario Tune on A Piezo Speaker
+## 241 : 0b 011 110 001 : Super Mario Tune on A Piezo Speaker
+
+{{< tt-scanchain-switches "011110001" >}}
 
 * Author: Milosch Meriac
 * Description: Plays Super Mario Tune over a Piezo Speaker connected across io_out[1:0]

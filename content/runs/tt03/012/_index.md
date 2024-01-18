@@ -4,7 +4,9 @@ title: "12 Ascon's 5-bit S-box"
 weight: 13
 ---
 
-## 12 : Ascon's 5-bit S-box
+## 12 : 0b 000 001 100 : Ascon's 5-bit S-box
+
+{{< tt-scanchain-switches "000001100" >}}
 
 * Author: Fabio Campos
 * Description: Ascon's 5-bit S-box

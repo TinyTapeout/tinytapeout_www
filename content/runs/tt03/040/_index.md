@@ -4,7 +4,9 @@ title: "40 POV display"
 weight: 41
 ---
 
-## 40 : POV display
+## 40 : 0b 000 101 000 : POV display
+
+{{< tt-scanchain-switches "000101000" >}}
 
 * Author: Balint Kovacs
 * Description: Small POV display

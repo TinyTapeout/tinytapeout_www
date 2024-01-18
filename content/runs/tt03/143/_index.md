@@ -4,7 +4,9 @@ title: "143 XorShift32"
 weight: 144
 ---
 
-## 143 : XorShift32
+## 143 : 0b 010 001 111 : XorShift32
+
+{{< tt-scanchain-switches "010001111" >}}
 
 * Author: Ethan Mahintorabi
 * Description: XorShift32 random number generator

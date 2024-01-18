@@ -4,7 +4,9 @@ title: "85 Customizable UART String"
 weight: 86
 ---
 
-## 85 : Customizable UART String
+## 85 : 0b 001 010 101 : Customizable UART String
+
+{{< tt-scanchain-switches "001010101" >}}
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design Supports sending multiple ASCII characters over UART.

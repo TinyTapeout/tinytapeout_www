@@ -4,7 +4,9 @@ title: "189 Sigma-Delta ADC/DAC"
 weight: 190
 ---
 
-## 189 : Sigma-Delta ADC/DAC
+## 189 : 0b 010 111 101 : Sigma-Delta ADC/DAC
+
+{{< tt-scanchain-switches "010111101" >}}
 
 * Author: Adam Greig
 * Description: Simple ADC and DAC

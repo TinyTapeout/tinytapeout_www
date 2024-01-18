@@ -4,7 +4,9 @@ title: "161 GOL-Cell"
 weight: 162
 ---
 
-## 161 : GOL-Cell
+## 161 : 0b 010 100 001 : GOL-Cell
+
+{{< tt-scanchain-switches "010100001" >}}
 
 * Author: Shaos
 * Description: Game of Life Cell

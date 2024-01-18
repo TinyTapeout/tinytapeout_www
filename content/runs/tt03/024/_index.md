@@ -4,7 +4,9 @@ title: "24 Simple multiply"
 weight: 25
 ---
 
-## 24 : Simple multiply
+## 24 : 0b 000 011 000 : Simple multiply
+
+{{< tt-scanchain-switches "000011000" >}}
 
 * Author: Anton Maurovic
 * Description: Multiply two 8-bit numbers, get a 16-bit result.

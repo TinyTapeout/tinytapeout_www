@@ -4,7 +4,9 @@ title: "16 bad apple"
 weight: 17
 ---
 
-## 16 : bad apple
+## 16 : 0b 000 010 000 : bad apple
+
+{{< tt-scanchain-switches "000010000" >}}
 
 * Author: shadow1229
 * Description: Plays bad apple over a Piezo Speaker connected across io_out[1:0]. Based on https://github.com/meriac/tt02-play-tune

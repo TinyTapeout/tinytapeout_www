@@ -4,7 +4,9 @@ title: "72 RTL Locked QTCore-A1"
 weight: 73
 ---
 
-## 72 : RTL Locked QTCore-A1
+## 72 : 0b 001 001 000 : RTL Locked QTCore-A1
+
+{{< tt-scanchain-switches "001001000" >}}
 
 * Author: Luca Collini and Hammond Pearce
 * Description: A RTL locked accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
@@ -39,7 +41,9 @@ We store the key in a scan chained register. In order to have the design working
 15: DATA 249    ; logic locking unlock key 
 16: DATA 191    ; logic locking unlock key 
 ```
-### 7seg
+### 7 : 0b 000 000 111seg
+
+{{< tt-scanchain-switches "000000111" >}}
 
 Tiny Tapeout 3 has a 7-segment display on the board. To make it useful with the QTCore-A1, 
 the processor helpfully includes the bit patterns stored at addresses 16-26. Address 15 contains the Address of the 0 pattern.

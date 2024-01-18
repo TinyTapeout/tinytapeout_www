@@ -4,7 +4,9 @@ title: "200 Wolf sheep cabbage river crossing puzzle ASIC design"
 weight: 201
 ---
 
-## 200 : Wolf sheep cabbage river crossing puzzle ASIC design
+## 200 : 0b 011 001 000 : Wolf sheep cabbage river crossing puzzle ASIC design
+
+{{< tt-scanchain-switches "011001000" >}}
 
 * Author: maehw
 * Description: Play the wolf, goat and cabbage puzzle interactively.

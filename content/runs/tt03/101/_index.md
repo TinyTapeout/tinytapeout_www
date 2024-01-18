@@ -4,7 +4,9 @@ title: "101 Water-Level-Indicator-With-Auto-Motor-Control"
 weight: 102
 ---
 
-## 101 : Water-Level-Indicator-With-Auto-Motor-Control
+## 101 : 0b 001 100 101 : Water-Level-Indicator-With-Auto-Motor-Control
+
+{{< tt-scanchain-switches "001100101" >}}
 
 * Author: Ashutosh Kumar
 * Description: As water level of tank decreases/increases LED glow according to it.when water level touches the last then motor start and run until full the tank.

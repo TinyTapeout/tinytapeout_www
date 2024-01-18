@@ -4,7 +4,9 @@ title: "0 Test Inverter Project"
 weight: 1
 ---
 
-## 0 : Test Inverter Project
+## 0 : 0b 000 000 000 : Test Inverter Project
+
+{{< tt-scanchain-switches "000000000" >}}
 
 * Author: Matt Venn
 * Description: Inverts every line. This project is also used to fill any empty design spaces.

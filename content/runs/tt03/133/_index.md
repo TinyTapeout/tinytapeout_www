@@ -4,7 +4,9 @@ title: "133 RC5 decoder"
 weight: 134
 ---
 
-## 133 : RC5 decoder
+## 133 : 0b 010 000 101 : RC5 decoder
+
+{{< tt-scanchain-switches "010000101" >}}
 
 * Author: Jean THOMAS
 * Description: Increment/decrement a counter with the press of an IR remote button!

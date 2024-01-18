@@ -4,7 +4,9 @@ title: "71 Tiny binarized neural network"
 weight: 72
 ---
 
-## 71 : Tiny binarized neural network
+## 71 : 0b 001 000 111 : Tiny binarized neural network
+
+{{< tt-scanchain-switches "001000111" >}}
 
 * Author: ReJ aka Renaldas Zioma
 * Description: 8 neurons

@@ -4,7 +4,9 @@ title: "185 Vector dot product"
 weight: 186
 ---
 
-## 185 : Vector dot product
+## 185 : 0b 010 111 001 : Vector dot product
+
+{{< tt-scanchain-switches "010111001" >}}
 
 * Author: Robert Riachi
 * Description: Compute the dot product of two 2x1 vectors each containing 2 bit integers

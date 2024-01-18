@@ -4,7 +4,9 @@ title: "87 7-Seg 'Tiny Tapeout' Display"
 weight: 88
 ---
 
-## 87 : 7-Seg 'Tiny Tapeout' Display
+## 87 : 0b 001 010 111 : 7-Seg 'Tiny Tapeout' Display
+
+{{< tt-scanchain-switches "001010111" >}}
 
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This circuit will output a string of characters (’tiny tapeout’) to the 7-segment display.

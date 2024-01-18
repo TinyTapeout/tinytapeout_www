@@ -4,7 +4,9 @@ title: "89 5_1MUX"
 weight: 90
 ---
 
-## 89 : 5_1MUX
+## 89 : 0b 001 011 001 : 5_1MUX
+
+{{< tt-scanchain-switches "001011001" >}}
 
 * Author: saurabh kumar and diksha bothra 
 * Description: it's 5 is to 1 mux which trigger only  one input and gives  output according to the select lines 

@@ -4,7 +4,9 @@ title: "47 Synthesizable Digital Temperature Sensor"
 weight: 48
 ---
 
-## 47 : Synthesizable Digital Temperature Sensor
+## 47 : 0b 000 101 111 : Synthesizable Digital Temperature Sensor
+
+{{< tt-scanchain-switches "000101111" >}}
 
 * Author: Harald Pretl
 * Description: Measure the on-chip temperature and display on the LED display.

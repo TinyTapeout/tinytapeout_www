@@ -4,7 +4,9 @@ title: "236 Adi counter"
 weight: 237
 ---
 
-## 236 : Adi counter
+## 236 : 0b 011 101 100 : Adi counter
+
+{{< tt-scanchain-switches "011101100" >}}
 
 * Author: Prabal Dutta
 * Description: Test FSM

@@ -4,7 +4,9 @@ title: "28 LED Panel Driver"
 weight: 29
 ---
 
-## 28 : LED Panel Driver
+## 28 : 0b 000 011 100 : LED Panel Driver
+
+{{< tt-scanchain-switches "000011100" >}}
 
 * Author: Tom Keddie
 * Description: Drives a 16x16 P10 LED panel

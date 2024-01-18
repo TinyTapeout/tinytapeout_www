@@ -4,7 +4,9 @@ title: "177 Frequency Counter"
 weight: 178
 ---
 
-## 177 : Frequency Counter
+## 177 : 0b 010 110 001 : Frequency Counter
+
+{{< tt-scanchain-switches "010110001" >}}
 
 * Author: Andrew Ramsey
 * Description: Estimates the frequency of an input signal

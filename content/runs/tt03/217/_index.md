@@ -4,7 +4,9 @@ title: "217 serv - Serial RISCV CPU"
 weight: 218
 ---
 
-## 217 : serv - Serial RISCV CPU
+## 217 : 0b 011 011 001 : serv - Serial RISCV CPU
+
+{{< tt-scanchain-switches "011011001" >}}
 
 * Author: Greg Davill
 * Description: An award winning RISCV CPU!

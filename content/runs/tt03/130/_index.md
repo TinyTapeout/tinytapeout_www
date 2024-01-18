@@ -4,7 +4,9 @@ title: "130 bitslam"
 weight: 131
 ---
 
-## 130 : bitslam
+## 130 : 0b 010 000 010 : bitslam
+
+{{< tt-scanchain-switches "010000010" >}}
 
 * Author: Jake "ferris" Taylor
 * Description: bitslam is a programmable sound chip with 2 LFSR voices.

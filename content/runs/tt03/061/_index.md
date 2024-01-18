@@ -4,7 +4,9 @@ title: "61 MMM Finite State Machine (4 States)"
 weight: 62
 ---
 
-## 61 : MMM Finite State Machine (4 States)
+## 61 : 0b 000 111 101 : MMM Finite State Machine (4 States)
+
+{{< tt-scanchain-switches "000111101" >}}
 
 * Author: Alexandra Zhang Jiang
 * Description: Finite State Machine for the Magnetic Microsystems and Microrobotics Research Lab at UCI

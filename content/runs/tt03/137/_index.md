@@ -4,7 +4,9 @@ title: "137 4 bit counter on steamdeck"
 weight: 138
 ---
 
-## 137 : 4 bit counter on steamdeck
+## 137 : 0b 010 001 001 : 4 bit counter on steamdeck
+
+{{< tt-scanchain-switches "010001001" >}}
 
 * Author: 13arn
 * Description: copy of my tt01 submission, enable first input and press button to use the counter

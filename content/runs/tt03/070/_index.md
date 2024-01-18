@@ -4,7 +4,9 @@ title: "70 7 Segment Random Walk"
 weight: 71
 ---
 
-## 70 : 7 Segment Random Walk
+## 70 : 0b 001 000 110 : 7 Segment Random Walk
+
+{{< tt-scanchain-switches "001000110" >}}
 
 * Author: Richard Miller
 * Description: Random walk around the 7 segment display

@@ -4,7 +4,9 @@ title: "138 Shiftregister Challenge 40 Bit"
 weight: 139
 ---
 
-## 138 : Shiftregister Challenge 40 Bit
+## 138 : 0b 010 001 010 : Shiftregister Challenge 40 Bit
+
+{{< tt-scanchain-switches "010001010" >}}
 
 * Author: Thorsten Knoll
 * Description: The design is a 40 bit shiftregister with a hardcoded 40 bit number. The challenge is to find the correct 40 bit to enable the output to high. With all other numbers the output will be low.

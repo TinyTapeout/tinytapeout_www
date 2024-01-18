@@ -4,7 +4,9 @@ title: "163 hex shift register"
 weight: 164
 ---
 
-## 163 : hex shift register
+## 163 : 0b 010 100 011 : hex shift register
+
+{{< tt-scanchain-switches "010100011" >}}
 
 * Author: Eric Smith
 * Description: six 40-bit shift registers

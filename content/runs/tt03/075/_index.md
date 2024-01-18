@@ -4,7 +4,9 @@ title: "75 FullAdderusing4is1"
 weight: 76
 ---
 
-## 75 : FullAdderusing4is1
+## 75 : 0b 001 001 011 : FullAdderusing4is1
+
+{{< tt-scanchain-switches "001001011" >}}
 
 * Author: Marushika Suri  , Siya Sharma  , Rudakshi  Arora 
 * Description: This project is used to add 3-bit binary numbers

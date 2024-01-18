@@ -4,7 +4,9 @@ title: "247 RiscV Scan Chain based CPU -- block 3 -- registers"
 weight: 248
 ---
 
-## 247 : RiscV Scan Chain based CPU -- block 3 -- registers
+## 247 : 0b 011 110 111 : RiscV Scan Chain based CPU -- block 3 -- registers
+
+{{< tt-scanchain-switches "011110111" >}}
 
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 3 -- registers

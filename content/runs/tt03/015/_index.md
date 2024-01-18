@@ -4,7 +4,9 @@ title: "15 BinaryDoorLock"
 weight: 16
 ---
 
-## 15 : BinaryDoorLock
+## 15 : 0b 000 001 111 : BinaryDoorLock
+
+{{< tt-scanchain-switches "000001111" >}}
 
 * Author: Marcus Michaely
 * Description: Input is 8-Bit and only one combination opens the door

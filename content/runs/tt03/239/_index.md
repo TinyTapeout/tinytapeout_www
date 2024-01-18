@@ -4,7 +4,9 @@ title: "239 Laura's L"
 weight: 240
 ---
 
-## 239 : Laura's L
+## 239 : 0b 011 101 111 : Laura's L
+
+{{< tt-scanchain-switches "011101111" >}}
 
 * Author: Laura
 * Description: Makes an L on the 7 segment when you press buttons 1 & 2

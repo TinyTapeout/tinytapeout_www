@@ -4,7 +4,9 @@ title: "242 PSRANDOM"
 weight: 243
 ---
 
-## 242 : PSRANDOM
+## 242 : 0b 011 110 010 : PSRANDOM
+
+{{< tt-scanchain-switches "011110010" >}}
 
 * Author: CMUA F.Segura-Quijano, J.S.Moya
 * Description: Pseudo Random generator.

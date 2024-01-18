@@ -4,7 +4,9 @@ title: "3 Another Piece of Pi"
 weight: 4
 ---
 
-## 3 : Another Piece of Pi
+## 3 : 0b 000 000 011 : Another Piece of Pi
+
+{{< tt-scanchain-switches "000000011" >}}
 
 * Author: Meinhard Kissich, EAS Group, Graz University of Technology
 * Description: This design takes up the idea of James Ross [1], who submitted a circuit to Tiny Tapeout 02 that stores and outputs the first 1024 decimal digits of the number Pi (including the decimal point) to a 7-segment display. In contrast to his approach, a densely packed decimal encoding is used to store the data. With this approach, 1400 digits can be stored and output within the design area of 150um x 170um. However, at 1400 decimals and utilization of 38.99%, the limitation seems to be routing. Like James, I'm also interested to hear about better strategies to fit more information into the design with synthesizable Verilog code. [1] https://github.com/jar/tt02_freespeech

@@ -4,7 +4,9 @@ title: "8 KS-Signal"
 weight: 9
 ---
 
-## 8 : KS-Signal
+## 8 : 0b 000 001 000 : KS-Signal
+
+{{< tt-scanchain-switches "000001000" >}}
 
 * Author: Yannick Reiß
 * Description: Set KS-Signal based on track information.

@@ -4,7 +4,9 @@ title: "187 Funny Blinky"
 weight: 188
 ---
 
-## 187 : Funny Blinky
+## 187 : 0b 010 111 011 : Funny Blinky
+
+{{< tt-scanchain-switches "010111011" >}}
 
 * Author: regymm
 * Description: Blink the 8 output LEDs in a funny way.

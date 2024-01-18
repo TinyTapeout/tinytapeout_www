@@ -4,7 +4,9 @@ title: "65 Simple UART interface"
 weight: 66
 ---
 
-## 65 : Simple UART interface
+## 65 : 0b 001 000 001 : Simple UART interface
+
+{{< tt-scanchain-switches "001000001" >}}
 
 * Author: Aleksandr Zlobin
 * Description: UART interface with access to internal registers
