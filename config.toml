@@ -33,5 +33,10 @@ theme = "learn"
     title = "Documentation en Español"
     weight = 2
     languageName = "Español"
+  
+  [Languages.ua]
+    title = "документація укр"
+    weight = 3
+    languageName = "українська"
 
 #disableLanguages = ['es']
