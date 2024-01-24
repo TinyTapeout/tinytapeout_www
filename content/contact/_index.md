@@ -11,5 +11,5 @@ His [Zero to ASIC course](https://www.zerotoasiccourse.com) has enrolled 250 stu
 
 * Email: matt@mattvenn.net
 * Web: [mattvenn.net](https://mattvenn.net)
-* Linkedin:[https://www.linkedin.com/in/matt-venn/](https://www.linkedin.com/in/matt-venn/) 
-* Twitter [@matthewvenn](https://twitter.com/matthewvenn)
+* Linkedin: [https://www.linkedin.com/in/matt-venn/](https://www.linkedin.com/in/matt-venn/)
+* Twitter: [@matthewvenn](https://twitter.com/matthewvenn)
