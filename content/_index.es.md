@@ -35,10 +35,11 @@ Regístrate en la lista de correo para recibir las últimas noticias y para aseg
   {{< customer-card "Oklahoma State" "osu.png" "https://go.okstate.edu/" >}}
   {{< customer-card "Latin Practice" "latinpractice.png" "https://latinpractice.com/" >}}
   {{< customer-card "NYU" "nyu.png" "https://www.nyu.edu/" >}}
-  <!-- {{< customer-card "Digital University Kerala" "kerala.png" "https://duk.ac.in/" >}} -->
+  {{< customer-card "Digital University Kerala" "kerala.png" "https://duk.ac.in/" >}}
   {{< customer-card "New York Institute of technology" "nyit.png" "https://www.nyit.edu" >}}
   {{< customer-card "Hochschule Rheinmain" "hrm.png" "https://www.hs-rm.de/de/" >}}
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
+  {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/" >}}
 </div>
 
 # Testimonios
