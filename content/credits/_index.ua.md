@@ -13,9 +13,9 @@ weight: 200
 
 Tiny Tapeout був би неможливий без допомоги багатьох людей. Особливу подяку ми хочемо висловити їм:
 
-* Юрiй Шакед за розробку [wokwi](https://wokwi.com/) та багато іншого
+* Юрiю Шакеду за розробку [wokwi](https://wokwi.com/) та багато іншого
 * [Сильвену Муно](https://twitter.com/tnt) за допомогу в покращенні ланцюжка сканування
-* [Майк Томпсон](https://www.linkedin.com/in/michael-thompson-0a581a/) та [Мітч Бейлі](https://www.linkedin.com/in/mitch-bailey-8ba0b45/) за експертизу з верифікації
+* [Майку Томпсону](https://www.linkedin.com/in/michael-thompson-0a581a/) та [Мітчу Бейлі](https://www.linkedin.com/in/mitch-bailey-8ba0b45/) за експертизу з верифікації
 * [Jix](https://twitter.com/jix_) за офіційну підтримку верифікації
 * [Proppy](https://twitter.com/proppy) за допомогу з діями на GitHub
 * [Максимо Балестріні](https://twitter.com/maxiborga) за чудові візуалізації та інтерактивний переглядач GDS
@@ -26,4 +26,4 @@ Tiny Tapeout був би неможливий без допомоги багат
 * [Тіму Анселу та Google](https://www.youtube.com/watch?v=EczW2IWdnOM) за підтримку руху "кремній з відкритим кодом"
 * [Курс від нуля до ASIC](https://zerotoasiccourse.com/) спільноту за всю вашу підтримку
 * [Electronic Cats](https://electroniccats.com/) за підтримку в перекладі іспанською мовою
-* [Салік Аббасі](https://www.instagram.com/salikabbasi/) за вступну анімацію до відеороликів
+* [Саліку Аббасі](https://www.instagram.com/salikabbasi/) за вступну анімацію до відеороликів
