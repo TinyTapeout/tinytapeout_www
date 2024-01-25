@@ -10,6 +10,6 @@ weight: 10
 | [TT03](/runs/tt03) | 2023-03-01     | 2023-04-23 | [2304C](https://efabless.com/shuttle-status) | 249 \*  | 2024-01-15         | 2024-02-28                      |
 | [TT04](/runs/tt04) | 2023-07-01     | 2023-09-08 | [2309](https://efabless.com/shuttle-status)  | 143     | 2024-02-28         | 2024-04-15                      |
 | [TT05](/runs/tt05) | 2023-09-11     | 2023-11-04 | [2311](https://efabless.com/shuttle-status)  | 174     | 2024-04-12         | 2024-05-12                      |
-| TT06               | Por determinar | 2024-04    | 2404                                         | TBD     | TBD                | TBD                             |
+| TT06               | Por determinar | 2024-04-19 | 2404                                         | TBD     | TBD                | TBD                             |
 
 \* TT03 también incluye 149 diseños de TT02
