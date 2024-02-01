@@ -6,11 +6,11 @@ LastModifierDisplayName: matt venn
 
 # From idea to chip design in minutes!
 
-
 {{< youtube f4w1QOpHzOo >}}
 
-TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
+{{< countdown >}}
 
+TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
 
 # Get started
 
@@ -18,13 +18,29 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 * Then create your own design with the [Wokwi template](https://wokwi.com/projects/354858054593504257) or for advanced users, [an HDL](/hdl).
 * For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
+# Get your submission ready
+
+{{< youtube m62HLt4BjeA >}}
+
+# Submission templates
+
+* [Wokwi submission template](https://github.com/TinyTapeout/tt06-woki-template).
+* [Verilog submission template](https://github.com/TinyTapeout/tt06-verilog-template).
+
+# Submit your design
+
+* 160 x 100 um tile + ASIC + demonstration board: $150 + shipping with earlybird Efabless discount, $300 without.
+* Each extra tile: $50
+* By making an order, you agree to our [terms of service](terms).
+* Closing date is 19th of April
+
+{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Sign up
 
 Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 06.
 
 {{< mailchimp >}}
-
 
 # Our customers
 
