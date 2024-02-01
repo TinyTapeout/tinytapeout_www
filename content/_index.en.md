@@ -24,7 +24,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt06-woki-template).
+* [Wokwi submission template](https://github.com/TinyTapeout/tt06-wokwi-template).
 * [Verilog submission template](https://github.com/TinyTapeout/tt06-verilog-template).
 
 # Submit your design
