@@ -6,7 +6,7 @@ LastModifierDisplayName: matt venn
 
 # From idea to chip design in minutes!
 
-{{< youtube fCGPKdmM3Dc >}}
+{{< youtube qVWq_XZko-M >}}
 
 {{< countdown >}}
 
