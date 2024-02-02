@@ -6,7 +6,7 @@ LastModifierDisplayName: matt venn
 
 # From idea to chip design in minutes!
 
-{{< youtube f4w1QOpHzOo >}}
+{{< youtube fCGPKdmM3Dc >}}
 
 {{< countdown >}}
 
@@ -20,7 +20,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 # Get your submission ready
 
-{{< youtube m62HLt4BjeA >}}
+{{< youtube fCGPKdmM3Dc >}}
 
 # Submission templates
 
