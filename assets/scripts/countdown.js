@@ -19,7 +19,7 @@
 
   async function fetchStats() {
     const queryUrl = new URL('shuttles', databaseEndpoint);
-    queryUrl.searchParams.set('select', 'tiles_total,tiles_used,pcbs_total,pcbs_used,deadline');
+    queryUrl.searchParams.set('select', 'tiles_total,tiles_used,subsidized_pcbs_total,subsidized_pcbs_sold,deadline');
     queryUrl.searchParams.set('slug', `eq.${shuttleSlug}`);
     queryUrl.searchParams.set('apikey', supabaseKey);
     const res = await fetch(queryUrl);
@@ -27,9 +27,9 @@
     const shuttle = resJson[0];
     deadline = new Date(shuttle.deadline);
     tileStats.textContent = `${shuttle.tiles_used}/${shuttle.tiles_total}`;
-    pcbStats.textContent = `${shuttle.pcbs_used}/${shuttle.pcbs_total}`;
+    pcbStats.textContent = `${shuttle.subsidized_pcbs_sold}/${shuttle.subsidized_pcbs_total}`;
     tileProgress.style.width = `${(shuttle.tiles_used / shuttle.tiles_total) * 100}%`;
-    pcbProgress.style.width = `${(shuttle.pcbs_used / shuttle.pcbs_total) * 100}%`;
+    pcbProgress.style.width = `${(shuttle.subsidized_pcbs_sold / shuttle.subsidized_pcbs_total) * 100}%`;
     return resJson;
   }
 
