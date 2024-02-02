@@ -29,7 +29,7 @@ We are working on a much [faster mux based version here](https://github.com/Tiny
 
 ## What is the top clock speed?
 
-We think it will be around 50MHz.
+At least 50MHz. We have received silicon for our test run and are in the process of measuring it.
 
 ## How many ins and outs do I get?
 
