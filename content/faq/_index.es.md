@@ -25,11 +25,11 @@ Estamos trabajando en [una versión mucho más rápida, basada en multiplexores]
 
 8 entradas y 8 salidas.
 
-# Especificaciones de Chips para TT04 & TT05
+# Especificaciones de Chips para TT04, TT05 y TT06
 
 ## ¿Cuál es la velocidad de reloj máxima?
 
-Creemos que será alrededor de 50 MHz.
+Al menos 50 MHz. Hemos recibido silicio para nuestras pruebas y estamos en proceso de realizar pruebas y mediciones.
 
 ## ¿Cuántas entradas y salidas puedo tener?
 
@@ -44,7 +44,7 @@ Estamos usando el PDK de código abierto [Skywater 130nm](https://www.zerotoasic
 
 ## ¿Qué tan grande puede ser mi diseño?
 
-Para TT04 y TT05, el tamaño estándar de cada cuadro es de 160x100 um. Esto es suficiente para alrededor de 1000 compuertas lógicas digitales, dependiendo de su tamaño.
+Para TT04 a TT06, el tamaño estándar de cada cuadro es de alrededor de 160x100 um. Esto es suficiente para alrededor de 1000 compuertas lógicas digitales, dependiendo de su tamaño.
 También puedes comprar cuadros adicionales si necesitas más espacio.
 
 Aquí se encuentra una visión 3D del [GDS](https://zerotoasiccourse.com/terminology/gds) de mi [contador de segundos 7 segmentos](https://github.com/tinytapeout/tt04-verilog-demo), un pequeño diseño que incrementa un contador cada segundo y muestra el resultado en el display de 7 segmentos.
@@ -58,7 +58,6 @@ Haz click en la imagen para abrir el visor interactivo.
 Los chips se están demorando entre 6 a 9 meses en ser manufacturados. Luego, tenemos que gestionar embalaje, prueba y cumplimiento del pedido. Así que, ¡espere hasta 1 año de espera!
 
 Puedes encontrar una estimación al día de cada shuttle en la [página de series](/runs).
-
 
 # Preguntas Frecuentes de Wokwi
 
@@ -139,7 +138,7 @@ Puedes encontrarla en la [página de inicio](/es/digital_design/wokwi).
 ## ¿Cuántos espacios hay?
 
 * Para TT01 eran 498, para TT02 lo redujimos a 250 para intentar hacer entrar todos los espacios. TT03 será igual a TT02.
-* Para TT04 y TT05, el máximo es alrededor de 300, pero como esta vez se permiten diferentes tamaños, puede que hayan menos espacios.
+* Para TT04, TT05 y TT06, el máximo es alrededor de 300, pero como esta vez se permiten diferentes tamaños, puede que hayan menos espacios.
 
 ## ¿Cuáles de mis diseños serán enviados a fabricación?
 
@@ -211,19 +210,11 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 
 ## ¿Dónde esta el repositorio de presentación para el shuttle?
 
-* [Página de TT01](/runs/tt01/)
-* [Página de TT02](/runs/tt02/)
-* [Página de TT03](/runs/tt03/)
-* [Página de TT04](/runs/tt04/)
-
-## No puedo hacer un nuevo fork del repositorio de envíos. ¿Cómo inicio un nuevo proyecto?
-
-Comienza creando un nuevo repositorio de Github vacío.
-
-* A través de la línea de comando, puedes clonar el repositorio de envíos de tinytapeout, cambiarlo para que apunte a su nuevo repositorio vacío usando `git remote set-url <remote_name> <remote_url>`, y luego `git push`
-* A travéz de la inferfaz web de Github, [puedes importar un repositorio](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) usando la url del repositorio del TT05: https://github.com/TinyTapeout/tt05-submission-template
-
-En cualquier caso, es posible que necesites habilitar las Github Actions.
+* [Página de TT01](/es/runs/tt01/)
+* [Página de TT02](/es/runs/tt02/)
+* [Página de TT03](/es/runs/tt03/)
+* [Página de TT04](/es/runs/tt04/)
+* [Página de TT05](/es/runs/tt05/)
 
 # Preguntas frecuentes de ASIC
 
