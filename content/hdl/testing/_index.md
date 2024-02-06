@@ -40,7 +40,7 @@ Replace `tt_um_example user_project` with the actual name of your top level modu
 
 We use a Makefile to run the tests. You need to edit the [Makefile](https://github.com/TinyTapeout/tt06-verilog-template/blob/main/test/Makefile#L8) to include all your source files.
 
-To do that, go to the line starting with `VERILOG_SOURCES`, and expand it to list all your files. Separate entries by spaces. Paths are relative to the directory the makefile is in (which sould be 'src'). If you only have a single verilog file, you only need one additional entry: `$(PWD)/my_custom_verilog.v`
+To do that, go to the line starting with `VERILOG_SOURCES`, and expand it to list all your files. Separate entries by spaces. Paths are relative to the directory the makefile is in (which should be 'src'). If you only have a single verilog file, you only need one additional entry: `$(PWD)/my_custom_verilog.v`
 
 ## Writing your first test
 
@@ -50,9 +50,9 @@ It:
 
 * starts a clock, 
 * enables the design, 
-* sets inputs to 0
+* sets inputs to 0,
 * resets it,
-* sets the inputs to 20 and 30
+* sets the inputs to 20 and 30,
 * asserts the output is 50
 
 You can use the name of any of the wires defined in `tb.v` as values to set or read. `assert` is, in this case, a statement that will fail the test if the expression following it does not evaluate to True. A delay is also inserted in-between setting the input, and checking the output.

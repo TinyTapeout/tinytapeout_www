@@ -1,16 +1,16 @@
 ---
 title: "Tiny Tapeout"
-images: [/images/tinytapeout5.png]
+images: [/images/tinytapeout6.png]
 LastModifierDisplayName: cristian gonzalez
 ---
 
 # ¡Desde una idea hasta el diseño de un chip en minutos!
 
-{{< youtube f4w1QOpHzOo >}}
+{{< youtube qVWq_XZko-M >}}
 
-TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real.
-Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt04) más reciente.
+{{< countdown >}}
 
+TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
 
 # Primeros pasos
 
@@ -18,13 +18,29 @@ Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt04
 * Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/354858054593504257), o para usuarios avanzados, con [un HDL](/hdl).
 * Para obtener ayuda y soporte, revisa las [preguntas frecuentes](faq) y [únete a las conversaciones rápidas y amigables en Discord](https://discord.gg/qZHPrPsmt6).
 
+# Prepara tu envío
+
+{{< youtube fCGPKdmM3Dc >}}
+
+# Plantillas de envío
+
+* [Plantilla de envío Wokwi](https://github.com/TinyTapeout/tt06-wokwi-template).
+* [Plantilla de envío Verilog](https://github.com/TinyTapeout/tt06-verilog-template).
+
+# Envía tu diseño
+
+* Cuadro de tamaño 160 x 100 um + ASIC + placa de demostración: $150 + costos de envío con descuento *earlybird Efabless*, $300 sin descuento.
+* Cada cuadro adicional: $50
+* Al hacer un pedido, usted acepta nuestros [términos y condiciones](../../terms).
+* Fecha de cierre es el 19 de Abril.
+
+{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Regístrate
 
 Regístrate en la lista de correo para recibir las últimas noticias y para asegurarte de no perder la oportunidad de presentar un diseño en Tiny Tapeout 06.
 
 {{< mailchimp >}}
-
 
 # Nuestros clientes
 
