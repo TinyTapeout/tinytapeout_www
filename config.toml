@@ -25,7 +25,7 @@ theme = "learn"
 
 [Languages]
   [Languages.en]
-    title = "Documentation in English"
+    title = "Quicker, easier and cheaper to make your own chip!"
     weight = 1
     languageName = "English"
 
