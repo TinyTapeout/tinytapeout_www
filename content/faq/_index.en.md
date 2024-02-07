@@ -138,7 +138,7 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 ## How many spaces are there?
 
 * For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
-* TT04 & TT05, the maximum is around 300, but as different sizes are allowed, there may be less slots.
+* TT04, TT05 & TT06, the maximum is around 300, but as different sizes are allowed, there may be less slots.
 
 ## Which of my builds will be submitted for fabrication?
 
@@ -214,15 +214,7 @@ There are lots!
 * [TT02 page](/runs/tt02/)
 * [TT03 page](/runs/tt03/)
 * [TT04 page](/runs/tt04/)
-
-## I can't make a new fork of the submission repository. How do I start a new project?
-
-Start by creating a new empty GitHub repository. 
-
-* Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
-* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT05 repository url: https://github.com/TinyTapeout/tt05-submission-template 
-
-In either case, you may need to enable the Github actions.
+* [TT05 page](/runs/tt05/)
 
 # ASIC FAQs
 
