@@ -7,8 +7,6 @@ weight: 200
 
 [![efabless](/images/efabless.png)](https://efabless.com/)
 
-[![aisler](/images/aisler.png)](https://aisler.net/)
-
 # Team
 
 Tiny Tapeout would not be possible without a lot of people helping. We would especially like to thank:
