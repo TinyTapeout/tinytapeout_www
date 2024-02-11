@@ -2,7 +2,7 @@
 title: 'PCB (Tiny Tapeout 1-3)'
 linkTitle: PCB (TT02-03)
 description: 'PCBs for Tiny Tapeout 1, 2 and 3'
-weight: 25
+weight: 55
 ---
 
 {{< figure src="images/tt02_board_top.jpeg" title="PCB for TT01, 02 & 03" >}}

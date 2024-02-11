@@ -2,7 +2,7 @@
 title: 'PCB (Tiny Tapeout 4 and onwards)'
 linkTitle: PCB (TT04+)
 description: 'PCBs for Tiny Tapeout 4 and onwards'
-weight: 20
+weight: 50
 ---
 
 ## Carrier board
