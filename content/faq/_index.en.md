@@ -135,11 +135,6 @@ If you’re an advanced user, you can use the HDL of your choice. See the [HDL p
 
 You can access it on the [Getting Started Page](/digital_design/wokwi).
 
-## How many spaces are there?
-
-* For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
-* TT04, TT05 & TT06, the maximum is around 300, but as different sizes are allowed, there may be less slots.
-
 ## Which of my builds will be submitted for fabrication?
 
 If you update your project and want us to use your latest version, you have to [go to your submission](https://app.tinytapeout.com/) and create a new submission.
@@ -221,7 +216,7 @@ There are lots!
 
 ## What do all these acronyms you keep using mean?
 
-Sorry! I’m trying to keep it accessible but I’ll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
+Sorry! We are trying to keep it accessible but we'll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
 
 ## Why do I have fewer / more standard cells than I expected?
 
@@ -242,5 +237,5 @@ Some people have successfully increased the target density to around 62%. Altern
 
 ## How can I learn more about ASICs and how to design them?
 
-[Check out my Zero to ASIC course!](https://zerotoasiccourse.com/)
+[Check out Matt's Zero to ASIC course!](https://zerotoasiccourse.com/)
 
