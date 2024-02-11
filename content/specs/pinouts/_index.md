@@ -1,7 +1,7 @@
 ---
 title: 'Pinouts'
 description: 'Recommended pinouts for various protocols and Pmods'
-weight: 20
+weight: 30
 ---
 
 To ease bring-up and make it easier to reuse boards, TT advocates to use common pinouts wherever possible. If your design uses the same pinout as some of the other designs, it is much easier to connect external hardware or create custom boards that are suitable for those designs.
