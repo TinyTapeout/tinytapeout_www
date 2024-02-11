@@ -8,10 +8,12 @@ description: 165 designs, closed 2nd December 2022
 
 # Design details
 
-* [Github repository](https://github.com/TinyTapeout/tinytapeout-02)
-* [PDF datasheet](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf)
+* [Chip design repository](https://github.com/TinyTapeout/tinytapeout-02)
+* [Chip datasheet](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf)
+* [Demo board schematic & docs](https://github.com/TinyTapeout/tt123-demo-pcb)
 * [Verification](https://github.com/TinyTapeout/tinytapeout-02/blob/tt02/VERIFICATION.md)
-* [Efabless MPW submission](https://platform.efabless.com/projects/1410)
+* [Efabless MPW shuttle](https://platform.efabless.com/projects/1410)
+* [Silicon channel on the discord server](https://discord.gg/G47hur6fyA)
 
 # Launch stats
 
@@ -19,6 +21,7 @@ description: 165 designs, closed 2nd December 2022
 * Submission closed: 2 December 2022
 * Submitted to Efabless [2211Q chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
 * Chips expected September 2023, PCBs expected November 2023
+* Chips shipped early Feb 2024.
 
 # Project statistics
 
