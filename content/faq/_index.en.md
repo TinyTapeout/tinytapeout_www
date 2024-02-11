@@ -141,6 +141,10 @@ If you update your project and want us to use your latest version, you have to [
 
 You can keep updating your design up to the tapeout deadline.
 
+## Is it TinyTapeout or Tiny Tapeout?
+
+It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
+
 # Github FAQs
 
 ## When I commit my change, the GDS action isn't running
