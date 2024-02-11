@@ -26,7 +26,7 @@ Completing and understanding all the lessons will take around 3 hours.
 
 ### Support the development of SiliWiz!
 
-*   Design and order your own chip with [TinyTapeout](https://tinytapeout.com/)
+*   Design and order your own chip with [Tiny Tapeout](https://tinytapeout.com/)
 *   Share on social media with the [#SiliWiz](https://twitter.com/search?q%3D%2523siliwiz)
 *   [Sign up to the mailing list](https://zerotoasiccourse.com/newsletter)
 *   [Take Matt’s highly rated and more advanced Zero to ASIC course](https://zerotoasiccourse.com)

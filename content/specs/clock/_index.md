@@ -4,7 +4,7 @@ description: 'Clock generation and limitations'
 weight: 10
 ---
 
-The information in this document applies to Tiny Tapeout 04 and beyond.
+The information in this document applies to Tiny Tapeout 4 and beyond.
 
 Tiny Tapeout includes a clock input signal (`clk`), provided externally through the `mprj_io[6]` pin of the caravel chip (pin number 37 in the QFN-64 chip package).
 

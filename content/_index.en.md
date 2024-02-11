@@ -10,7 +10,7 @@ LastModifierDisplayName: matt venn
 
 {{< countdown >}}
 
-TinyTapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
+Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your digital designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
 
 # Get started
 
@@ -40,7 +40,7 @@ TinyTapeout is an educational project that makes it easier and cheaper than ever
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 06.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 6.
 
 {{< mailchimp >}}
 
@@ -64,10 +64,10 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
 
 > Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.
 
-> Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 2 evening of effort on my end. That's amazing!
+> Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. Tiny Tapeout provided a way for me to get in, while only spending 2 evening of effort on my end. That's amazing!
 
 > Just yesterday, I was dreaming of a tapeout cooperative, and it turns out to exist. Thanks to you all!! Looking forward to TT05!
 
-See what [people are saying about TinyTapeout](https://twitter.com/search?q=tinytapeout)!
+See what [people are saying about Tiny Tapeout](https://twitter.com/search?q=tinytapeout)!
 
 {{< git-info >}}

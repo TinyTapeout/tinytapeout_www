@@ -4,7 +4,7 @@ date: 2023-03-10T10:12:12+01:00
 weight: 80
 ---
 
-TinyTapeout is an educational project that makes it easier to teach digital design and practical to get those designs manufactured onto real chips.
+Tiny Tapeout is an educational project that makes it easier to teach digital design and practical to get those designs manufactured onto real chips.
 
 Our pricing model makes it easy to put many designs onto one chip that is then shared between students.
 

@@ -57,7 +57,7 @@ If you want to explore this design yourself:
 
 ### What next?
 
-[Leave feedback!](https://forms.gle/fY5phQRc2dnzBRmf9) Please let us know your thoughts and ideas for improvements. You can also use this form to request more information about SiliWiz and TinyTapeout for schools and universities.
+[Leave feedback!](https://forms.gle/fY5phQRc2dnzBRmf9) Please let us know your thoughts and ideas for improvements. You can also use this form to request more information about SiliWiz and Tiny Tapeout for schools and universities.
 
 *   Share a picture of your design on social media with the [#SiliWiz hashtag](https://twitter.com/search?q=siliwiz&src=typed_query)
 *   [Learn how to use logic gates to build simple circuits and get them manufactured!](http://tinytapeout.com)

@@ -4,11 +4,11 @@ weight: 140
 date: 2023-03-08T09:56:27+01:00
 ---
 
-TinyTapeout is an educational project that makes it easier and cheaper than ever to get simple digital designs manufactured on a real chip! 
+Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get simple digital designs manufactured on a real chip! 
 
 > Hi, I'm a professor for an Introduction to Digital Systems course and just found this and let's just say this has **fundamentally just changed our entire Computer Engineering curriculum**. It looks like we can actually have first-year students designing ASICs, then be able later to analyze performance while taking their electronics course and learning about MOSFETs as well as their embedded systems and computer architecture. Russell Trafford, Rowan University
 
-# Previous TinyTapeouts
+# Previous Tiny Tapeouts
 
 | Run  | Launched    | Closed     | Shuttle | Designs | Chips Expected | PCBs Expected |
 |------|-------------|------------|---------|---------|-------|------|
@@ -96,7 +96,7 @@ I want to change my VLSI class in the spring (April-June) to utilise your tiny c
 Built a CRC logic for the http://tinytapeout.com of @matthewvenn with my son. Looking forward if the tapeout happens 🥰 Yet either way, the workflow is astonishing. CI/CD for chip design 🤯
 
 ---
-Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. TinyTapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
+Thank you for doing it - I always wanted to join these OpenMPW shuttles, but never felt ready for it. Tiny Tapeout provided a way for me to get in, while only spending 1 evening of effort on my end. That's amazing! 
 
 ---
 Just made a 4-bit barrel shifter by using this http://tinytapeout.com toolkit. It's quick and fun to use. The GDS even generated within minutes. Everyone should try this.

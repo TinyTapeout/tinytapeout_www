@@ -129,7 +129,7 @@ Yes, you need to
 
 If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
-# TinyTapeout FAQs
+# Tiny Tapeout FAQs
 
 ## Where can I find the the template to get started?
 
@@ -204,7 +204,7 @@ There are lots!
 * runs/wokwi/reports/metrics.csv - a detailed summary report of the tool flow. It’s beyond the scope of this doc for now to explain it all.
 * runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 report of the standard cells used for your design. 
 * runs/wokwi/results/final/ (just the most important described here)
-    * gds - the final GDS file that will be added to the TinyTapeout submission.
+    * gds - the final GDS file that will be added to the Tiny Tapeout submission.
     * lef - an abstract version of the GDS with less information, used for routing.
     * verilog - the gate level verilog of your design.
 
