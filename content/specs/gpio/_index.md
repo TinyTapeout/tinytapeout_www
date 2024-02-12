@@ -30,3 +30,11 @@ The caravel chip uses the [sky130_ef_io_gpiov2_pad](https://skywater-pdk.readthe
 | IO suppply voltage \*        | 1.71V - 5.5V |
 
 \* The demo board provides 3.3V IO supply voltage. The input pins are not 5V tolerant.
+
+### Electrical Characteristics
+
+Note: the following measurements were takens on a single die at ~22 °C and may not be representative of future batches. They are only provided for reference.
+
+<img src="images/iv-curve-sink.png?featherlight=false" alt="Sink IV Curve" width="640" height="400" />
+
+<img src="images/iv-curve-source.png?featherlight=false" alt="Source IV Curve" width="640" height="400" />
