@@ -47,6 +47,8 @@ Example: a design that takes 1x2 tiles and uses 4 analog pins would cost $260 ($
 
 # Instructions for creating and submitting an analog design
 
+{{< youtube yFk6ZSBuAS0 >}}
+
 *Note*: Analog designs are currently in beta. There's a small chance that the changes will change before the deadline for Tiny Tapeout 6, or that we will have to postpone the analog design support to a future shuttle. If you have any questions, please join the [Tiny Tapeout Discord](https://tinytapeout.com/discord) and ask in the #analog channel.
 
 These instructions assume you are using the [Magic VLSI tool](http://opencircuitdesign.com/magic/), but you can do the same with Klayout or proprietary tools.
