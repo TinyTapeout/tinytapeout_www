@@ -102,6 +102,8 @@ A quick way to get started is to use this [tcl script](https://gist.github.com/u
 ## Resources
 
 * [Drawing an inverter with Magic by Ryan Ridley, Teo Ene, and James E. Stine](https://docs.google.com/document/d/1hSLKsz9xcEJgAMmYYer5cDwvPqas9_JGRUAgEORx1Yw/edit#heading=h.j6gtadx04fb6)
+* [Magic cheatsheet by Harald Pretl](https://github.com/iic-jku/osic-multitool/blob/main/magic-cheatsheet/magic_cheatsheet.pdf)
+* [Circuit designers etiquette by Harald Pretl](https://github.com/iic-jku/Circuit-Designers-Etiquette)
 * [Xschem tutorial by Stefan Schippers](https://www.youtube.com/watch?v=y0BB9ATpExU)
 * [Analog tutorials by Carsten Wulff](https://www.youtube.com/watch?v=y0BB9ATpExU)
 * [Analog tutorials by BMinch](https://www.youtube.com/watch?v=iLY49tnKbz4)
