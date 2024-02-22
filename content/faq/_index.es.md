@@ -135,11 +135,6 @@ Si eres un usuario avanzado, puedes usar el HDL de tu elección. Ve la [página 
 
 Puedes encontrarla en la [página de inicio](/es/digital_design/wokwi).
 
-## ¿Cuántos espacios hay?
-
-* Para TT01 eran 498, para TT02 lo redujimos a 250 para intentar hacer entrar todos los espacios. TT03 será igual a TT02.
-* Para TT04, TT05 y TT06, el máximo es alrededor de 300, pero como esta vez se permiten diferentes tamaños, puede que hayan menos espacios.
-
 ## ¿Cuáles de mis diseños serán enviados a fabricación?
 
 Si actualizas tu proyecto y quieres que usemos tu última versión, debes [ir a tus envíos](https://app.tinytapeout.com/) y crear un nuevo envío.
@@ -220,7 +215,7 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 
 ## ¿Qué significan todas estas siglas que usas siempre?
 
-¡Lo siento! ¡Estoy tratando de mantenerlo accesible pero inevitablemente usaré algún término de ASIC en algún momento! Consulta la [guía de términos aquí](https://zerotoasiccourse.com/terminology/) (está en inglés).
+¡Lo sentimos! ¡Estamos tratando de mantenerlo accesible pero inevitablemente usaremos algún término de ASIC en algún momento! Consulta la [guía de términos aquí](https://zerotoasiccourse.com/terminology/) (está en inglés).
 
 ## ¿Por qué tengo menos / más céldas estándar de lo que esperaba?
 
@@ -239,4 +234,4 @@ El enrutamiento tiende a utilizar más espacio que la lógica misma. Además, ti
 
 ## ¿Cómo puedo aprender más sobre ASICs y cómo diseñarlos?
 
-[¡Revisa mi curso Zero to ASIC!](https://zerotoasiccourse.com/)
+[¡Revisa el curso Zero to ASIC de Matt!](https://zerotoasiccourse.com/)
