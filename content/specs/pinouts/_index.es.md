@@ -8,16 +8,16 @@ Para hacer más fácil la puesta en marcha y la reutilización de placas, TT rec
 
 El uso de pinouts comunes no es obligatorio, pero sí es recomendado ya que TT es un shuttle comunitario. No dudes en desviarte de las recomendaciones si lo estimas necesario para tus diseños. Si utilizas un protocolo o Pmod que no se encuentra listado aquí, por favor haz una propuesta en el servidor de Discord.
 
-## Periféricos comunes
+#   Periféricos comunes
 
-**UART a USB**
+## UART a USB
 
 Si quieres interactuar con tu diseño a través de consola serial, puedes hacerlo a través del RP2040 integrado en la placa demo. Así, puedes conectar la placa demo mediante USB y enviar/recibir datos desde tu chip.
 
 ui_in[3]  - RX\
 uo_out[4] - TX
 
-**Salida VGA**
+## Salida VGA
 
 ![Tiny VGA](/../../specs/pinouts/images/tiny_vga.jpg)
 
@@ -38,7 +38,7 @@ uo_out[5] - G0\
 uo_out[6] - B0\
 uo_out[7] - hsync
 
-**RAM SPI**
+## RAM SPI
 
 El microcontrolador RP2040 de la placa demo puede configurarse para proveer RAM al chip a través de SPI gracias a [spi-ram-emu](https://github.com/MichaelBell/spi-ram-emu/).
 
@@ -51,11 +51,11 @@ uio[3] - GPIO24 - SCK
 
 Esto se asigna al pinout SPI estándar para Pmods, lo que quiere decir que un Pmod PSRAM podría ser usado como reemplazo directo.
 
-## Protocolos comunes (SPI, I2C y UART)
+#   Protocolos comunes (SPI, I2C y UART)
 
 Si quieres implementar protocolos que no se dirigen necesariamente a algún Pmod, te sugerimos usar el pinout para I2C, SPI y UART de las [especificaciones Pmod](https://digilent.com/reference/_media/reference/pmod/pmod-interface-specification-1_2_0.pdf)
 
-**SPI**
+## SPI
 
 El protocolo SPI utiliza CS, MOSI, MISO y SCK, y por ende solo requiere una fila de pins del conector Pmod, preferiblemente la fila superior. Ya que el estándar SPI debe enviar y recibir, se utiliza el Pmod bidireccional.
 
@@ -87,7 +87,7 @@ uio[5] - RST\
 uio[6] - WP\
 uio[7] - HLD
 
-**UART (control de flujo por hardware opcional)**
+## UART (control de flujo por hardware opcional)
 
 El protocolo UART utiliza TXD y RXD, y opcionalmente CTS y RTS. Solo se usa una fila del conector Pmod, preferiblemente la fila superior:
 
@@ -107,7 +107,7 @@ uio[7] - (RTS)
 
 Si tu diseño solo recibe o solo transmite, puedes escoger omitir TXD o RXD y luego utilizar los Pmod de solo-entrada o solo-salida.
 
-**I2C (interrupción y reset opcional)**
+## I2C (interrupción y reset opcional)
 
 El pinout para I2C usa SCL y SDA y opcionalmente INT y RESET para interrupciones y reset. Solo se usa una fila del conector Pmod, preferiblemente la fila superior:
 
