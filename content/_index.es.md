@@ -10,7 +10,7 @@ LastModifierDisplayName: cristian gonzalez
 
 {{< countdown >}}
 
-TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
+Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
 
 # Primeros pasos
 
@@ -26,11 +26,13 @@ TinyTapeout es un proyecto educativo que hace más fácil y barato que nunca obt
 
 * [Plantilla de envío Wokwi](https://github.com/TinyTapeout/tt06-wokwi-template).
 * [Plantilla de envío Verilog](https://github.com/TinyTapeout/tt06-verilog-template).
+* [Plantilla de señal análoga y mixta](https://github.com/TinyTapeout/tt06-analog-template).
 
 # Envía tu diseño
 
-* Cuadro de tamaño 160 x 100 um + ASIC + placa de demostración: $150 + costos de envío con descuento *earlybird Efabless*, $300 sin descuento.
-* Cada cuadro adicional: $50
+* Cuadro de tamaño 160 x 100 um + ASIC + placa de demostración: El precio estándar es de $300 sin incluir costos de envío.
+  Sin embargo, Efabless está patrocinando una oferta especial anticipada de **$150** (más costos de envío), limitada a un pedido por persona.
+* Cada cuadro adicional cuesta $50, y pines análogos extra están disponibles desde $40 por pin.
 * Al hacer un pedido, usted acepta nuestros [términos y condiciones](../../terms).
 * Fecha de cierre es el 19 de Abril.
 
@@ -66,6 +68,6 @@ Regístrate en la lista de correo para recibir las últimas noticias y para aseg
 
 > Justo ayer, estaba soñando con un programa cooperativo de tapeouts, y resulta que sí existe. ¡¡Muchas gracias a todos ustedes!! ¡Espero con ansias la serie TT05!
 
-¡Mira [lo que la gente dice sobre TinyTapeout](https://twitter.com/search?q=tinytapeout)!
+¡Mira [lo que la gente dice sobre Tiny Tapeout](https://twitter.com/search?q=tinytapeout)!
 
 {{< git-info >}}
