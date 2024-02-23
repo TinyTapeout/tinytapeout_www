@@ -7,6 +7,10 @@ weight: 55
 
 {{< figure src="images/tt02_board_top.jpeg" title="PCB for TT01, 02 & 03" >}}
 
+## Board overview
+
+{{< youtube QMsmkDeqELg >}}
+
 ## Carrier board
 
 PCB files: https://github.com/TinyTapeout/caravel-breakout-pcb
