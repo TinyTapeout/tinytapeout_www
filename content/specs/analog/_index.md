@@ -29,6 +29,8 @@ There are several templates available, each for a different number of tiles. The
 
 Most analog designs should fit into the smallest template, _tt_block_1x2_pg_ana.def_.
 
+**Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_en` pins to GND.
+
 ## Power ports
 
 The power ports need to be named `VPWR` and `VGND` and need to be placed on `metal 4`. They both need to have the same width, between 1.2 and 2.0 um. Their height should be at least 95% of the design's total height.
