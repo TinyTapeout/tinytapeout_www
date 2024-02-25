@@ -106,10 +106,11 @@ A quick way to get started is to use this [tcl script](https://gist.github.com/u
 * [Drawing an inverter with Magic by Ryan Ridley, Teo Ene, and James E. Stine](https://docs.google.com/document/d/1hSLKsz9xcEJgAMmYYer5cDwvPqas9_JGRUAgEORx1Yw/edit#heading=h.j6gtadx04fb6)
 * [Magic cheatsheet by Harald Pretl](https://github.com/iic-jku/osic-multitool/blob/main/magic-cheatsheet/magic_cheatsheet.pdf)
 * [Circuit designers etiquette by Harald Pretl](https://github.com/iic-jku/Circuit-Designers-Etiquette)
-* [Xschem tutorial by Stefan Schippers](https://www.youtube.com/watch?v=q3ZcpSkVVuc)
-* [Analog tutorials by Carsten Wulff](https://www.youtube.com/playlist?list=PLybHXZ9FyEhZfwQTKrLhm6ZZm4IDfGGla)
-* [Analog tutorials by BMinch](https://www.youtube.com/watch?v=iLY49tnKbz4)
-* [Magic layout demonstration by Tim Edwards](https://youtu.be/XvBpqKwzrFY?si=AyL0Wr3V4gb954yx)
+* [Xschem tutorial by Stefan Schippers (video)](https://www.youtube.com/watch?v=q3ZcpSkVVuc)
+* [Analog tutorials by Carsten Wulff (video)](https://www.youtube.com/playlist?list=PLybHXZ9FyEhZfwQTKrLhm6ZZm4IDfGGla)
+* [Analog design flow by Carsten Wulff](https://analogicus.com/rply_ex0_sky130nm/tutorial)
+* [Analog tutorials by BMinch (video)](https://www.youtube.com/watch?v=iLY49tnKbz4)
+* [Magic layout demonstration by Tim Edwards (video)](https://youtu.be/XvBpqKwzrFY?si=AyL0Wr3V4gb954yx)
 
 ## Export the GDS and LEF files
 
