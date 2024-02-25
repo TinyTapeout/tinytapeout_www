@@ -4,6 +4,10 @@ description: 'Analog pin specifications'
 weight: 15
 ---
 
+## PDK
+
+All Tiny Tapeout shuttles run on the Sky130A PDK. Make sure you simulate with Sky130A.
+
 ## Analog pins
 
 The analog pins are labeled `ua[0]` through `ua[7]` (ua stands for "user analog"). The number of pins that will actually be connected to pads depends on the number of analog pins that you defined in the `pinout` section in info.yaml (and paid for).
@@ -51,7 +55,9 @@ Example: a design that takes 1x2 tiles and uses 4 analog pins would cost $260 ($
 
 {{< youtube DQAA4MrG8pM >}}
 
-*Note*: Analog designs are currently in beta. There's a small chance that the changes will change before the deadline for Tiny Tapeout 6, or that we will have to postpone the analog design support to a future shuttle. If you have any questions, please join the [Tiny Tapeout Discord](https://tinytapeout.com/discord) and ask in the #analog channel.
+{{% notice tip %}}
+Analog designs are currently in beta. There's a small chance that the changes will change before the deadline for Tiny Tapeout 6, or that we will have to postpone the analog design support to a future shuttle. If you have any questions, please join the [Tiny Tapeout Discord](https://tinytapeout.com/discord) and ask in the #analog channel.
+{{% /notice %}}
 
 These instructions assume you are using the [Magic VLSI tool](http://opencircuitdesign.com/magic/), but you can do the same with Klayout or proprietary tools.
 
@@ -127,6 +133,10 @@ Export the GDS by running:
 ```
 gds write ../gds/tt_um_project_name.gds
 ```
+
+{{% notice tip %}}
+If you're using Magic - do not flatten the .mag file, leave it hierarchical to avoid weird DRC issues.
+{{% /notice %}}
 
 ## Submit your design
 
