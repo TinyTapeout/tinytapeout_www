@@ -11,7 +11,6 @@ weight: 195
 * Author: Jos van 't Hof
 * Description: A (7, 1/2) Convolutional Encoder following the CCSDS 131.0-B-4 standard.
 * [GitHub repository](https://github.com/Josvth/tt02-convolutional-encoder)
-* [Most recent GDS build](https://github.com/Josvth/tt02-convolutional-encoder/actions/runs/3826192543)
 * [Wokwi](https://wokwi.com/projects/349729432862196307) project
 * [Extra docs](https://github.com/Josvth/tt02-convolutional-encoder/blob/main/README.md)
 * Clock: 0 Hz

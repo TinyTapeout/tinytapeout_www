@@ -11,7 +11,6 @@ weight: 82
 * Author: Ananya
 * Description: 3 bit multiplier
 * [GitHub repository](https://github.com/Ananya3511/tt03-submission-template)
-* [Most recent GDS build](https://github.com/Ananya3511/tt03-submission-template/actions/runs/4784140909)
 * [Wokwi](https://wokwi.com/projects/362379207695863809) project
 * [Extra docs]()
 * Clock: 0 Hz

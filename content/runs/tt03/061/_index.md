@@ -11,7 +11,6 @@ weight: 62
 * Author: Alexandra Zhang Jiang
 * Description: Finite State Machine for the Magnetic Microsystems and Microrobotics Research Lab at UCI
 * [GitHub repository](https://github.com/Ale-ZJ/tt03-mmm-fsm)
-* [Most recent GDS build](https://github.com/Ale-ZJ/tt03-mmm-fsm/actions/runs/4770762721)
 * [Wokwi](https://wokwi.com/projects/362675777226104833) project
 * [Extra docs]()
 * Clock: 1000 Hz

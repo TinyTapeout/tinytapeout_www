@@ -11,7 +11,6 @@ weight: 76
 * Author: Marushika Suri  , Siya Sharma  , Rudakshi  Arora 
 * Description: This project is used to add 3-bit binary numbers
 * [GitHub repository](https://github.com/marsuri77/tt03-submission-template)
-* [Most recent GDS build](https://github.com/marsuri77/tt03-submission-template/actions/runs/4771137376)
 * [Wokwi](https://wokwi.com/projects/362592986761938945) project
 * [Extra docs]()
 * Clock: 1 Hz

@@ -11,7 +11,6 @@ weight: 17
 * Author: shadow1229
 * Description: Plays bad apple over a Piezo Speaker connected across io_out[1:0]. Based on https://github.com/meriac/tt02-play-tune
 * [GitHub repository](https://github.com/shadow1229/tt03-bad-apple)
-* [Most recent GDS build](https://github.com/shadow1229/tt03-bad-apple/actions/runs/4501496077)
 * HDL project
 * [Extra docs]()
 * Clock: 12000 Hz

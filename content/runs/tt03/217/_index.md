@@ -11,7 +11,6 @@ weight: 218
 * Author: Greg Davill
 * Description: An award winning RISCV CPU!
 * [GitHub repository](https://github.com/gregdavill/tt02-serv)
-* [Most recent GDS build](https://github.com/gregdavill/tt02-serv/actions/runs/3605331942)
 * HDL project
 * [Extra docs](https://github.com/olofk/serv/tree/main)
 * Clock: 0 Hz

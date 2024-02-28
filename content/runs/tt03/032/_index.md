@@ -11,7 +11,6 @@ weight: 33
 * Author: ReJ aka Renaldas Zioma
 * Description: Digital design for a 4-bit ALU supporting 8 different operations and built-in 4-bit accumulator register
 * [GitHub repository](https://github.com/rejunity/tt03-alu-4bit)
-* [Most recent GDS build](https://github.com/rejunity/tt03-alu-4bit/actions/runs/4619772549)
 * [Wokwi](https://wokwi.com/projects/360745091952588801) project
 * [Extra docs](README.md)
 * Clock: 0 Hz

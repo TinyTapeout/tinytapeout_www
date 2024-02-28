@@ -11,7 +11,6 @@ weight: 229
 * Author: bitluni
 * Description: Looong shift register. 22x8 bit
 * [GitHub repository](https://github.com/bitluni/tt02-option22)
-* [Most recent GDS build](https://github.com/bitluni/tt02-option22/actions/runs/3600925255)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

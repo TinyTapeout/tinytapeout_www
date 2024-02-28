@@ -11,7 +11,6 @@ weight: 141
 * Author: Tholin
 * Description: Measures time up to 99 minutes and 59 seconds by multiplexing 4 seven-segment displays.
 * [GitHub repository](https://github.com/89Mods/tt2-multiplexed-counter)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-multiplexed-counter/actions/runs/3603952664)
 * HDL project
 * [Extra docs]()
 * Clock: 1024 Hz

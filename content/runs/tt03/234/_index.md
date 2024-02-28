@@ -11,7 +11,6 @@ weight: 235
 * Author: bitluni
 * Description: Nothing to see here
 * [GitHub repository](https://github.com/bitluni/tt02-SecretFile)
-* [Most recent GDS build](https://github.com/bitluni/tt02-SecretFile/actions/runs/3605257412)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

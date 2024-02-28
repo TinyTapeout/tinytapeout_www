@@ -11,7 +11,6 @@ weight: 240
 * Author: Laura
 * Description: Makes an L on the 7 segment when you press buttons 1 & 2
 * [GitHub repository](https://github.com/mattvenn/tt02-laura)
-* [Most recent GDS build](https://github.com/mattvenn/tt02-laura/actions/runs/3612894827)
 * [Wokwi](https://wokwi.com/projects/341678527574180436) project
 * [Extra docs]()
 * Clock: 0 Hz

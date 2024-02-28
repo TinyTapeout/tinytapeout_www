@@ -11,7 +11,6 @@ weight: 239
 * Author: Camilo Soto
 * Description: Amaranth Gray 6 Bits gray counter
 * [GitHub repository](https://github.com/tucanae47/tt02-gray-counter)
-* [Most recent GDS build](https://github.com/tucanae47/tt02-gray-counter/actions/runs/3605848170)
 * HDL project
 * [Extra docs](https://github.com/tucanae47/tt02-gray-counter)
 * Clock: 3000 Hz

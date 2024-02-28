@@ -11,7 +11,6 @@ weight: 179
 * Author: Hirosh Dabui
 * Description: Asic of a Taillight controller of a 1965 Ford Thunderbird
 * [GitHub repository](https://github.com/splinedrive/thunderbird_taillight_1965)
-* [Most recent GDS build](https://github.com/splinedrive/thunderbird_taillight_1965/actions/runs/3568083400)
 * HDL project
 * [Extra docs]()
 * Clock: 6250 Hz Hz

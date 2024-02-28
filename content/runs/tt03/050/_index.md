@@ -11,7 +11,6 @@ weight: 51
 * Author: Enno Schnackenberg
 * Description: A Shift Register, A seven segment encoder (Hexadecimal), 1 Bit ALU, 3 Bit Adder and a suprise
 * [GitHub repository](https://github.com/Intubun/tt03-microtapeout)
-* [Most recent GDS build](https://github.com/Intubun/tt03-microtapeout/actions/runs/4352538245)
 * [Wokwi](https://wokwi.com/projects/358370685977079809) project
 * [Extra docs]()
 * Clock: 0 Hz

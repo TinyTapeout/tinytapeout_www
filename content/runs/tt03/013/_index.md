@@ -11,7 +11,6 @@ weight: 14
 * Author: Alexander Schönborn
 * Description: A 8bit configurable galois lfsr.
 * [GitHub repository](https://github.com/gr33nstyle/tt03-verilog-lfsr)
-* [Most recent GDS build](https://github.com/gr33nstyle/tt03-verilog-lfsr/actions/runs/4438911664)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

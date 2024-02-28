@@ -11,7 +11,6 @@ weight: 21
 * Author: Carin Schreiner
 * Description: Catch the fish is a whac-a-mole game.
 * [GitHub repository](https://github.com/SchreinerCarin/tt03-ctf)
-* [Most recent GDS build](https://github.com/SchreinerCarin/tt03-ctf/actions/runs/4514445631)
 * [Wokwi](https://wokwi.com/projects/360014965627378689) project
 * [Extra docs]()
 * Clock: 0 Hz

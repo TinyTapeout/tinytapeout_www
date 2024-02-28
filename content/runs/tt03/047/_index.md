@@ -11,7 +11,6 @@ weight: 48
 * Author: Harald Pretl
 * Description: Measure the on-chip temperature and display on the LED display.
 * [GitHub repository](https://github.com/hpretl/tt03-tempsensor)
-* [Most recent GDS build](https://github.com/hpretl/tt03-tempsensor/actions/runs/4784301820)
 * HDL project
 * [Extra docs](https://github.com/hpretl/tt03-tempsensor/blob/main/README.md)
 * Clock: 10000 Hz

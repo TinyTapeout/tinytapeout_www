@@ -11,7 +11,6 @@ weight: 15
 * Author: Thorsten Knoll
 * Description: A circuit for the substitution of 8 bits. Made for the SKINNY cipher algorithm.
 * [GitHub repository](https://github.com/ThorKn/tt03_sbox_8bit_skinny)
-* [Most recent GDS build](https://github.com/ThorKn/tt03_sbox_8bit_skinny/actions/runs/4439282137)
 * [Wokwi](https://wokwi.com/projects/359372419264319489) project
 * [Extra docs]()
 * Clock: 0 Hz

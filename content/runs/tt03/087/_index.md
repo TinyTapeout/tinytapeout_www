@@ -11,7 +11,6 @@ weight: 88
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This circuit will output a string of characters (’tiny tapeout’) to the 7-segment display.
 * [GitHub repository](https://github.com/psychogenic/tt03-7segstringdisplay)
-* [Most recent GDS build](https://github.com/psychogenic/tt03-7segstringdisplay/actions/runs/4773250517)
 * [Wokwi](https://wokwi.com/projects/347497504164545108) project
 * [Extra docs](https://wokwi.com/projects/347497504164545108)
 * Clock: 1 Hz

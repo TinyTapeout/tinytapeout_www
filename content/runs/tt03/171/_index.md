@@ -11,7 +11,6 @@ weight: 172
 * Author: Greg Steiert
 * Description: Implements a state machine stored in an external SPI flash
 * [GitHub repository](https://github.com/steieio/tt02-sfsm-wokwi)
-* [Most recent GDS build](https://github.com/steieio/tt02-sfsm-wokwi/actions/runs/3554534796)
 * [Wokwi](https://wokwi.com/projects/349228308755382868) project
 * [Extra docs](https://github.com/steieio/tt02-sfsm-wokwi/blob/main/README.md)
 * Clock: 0 Hz

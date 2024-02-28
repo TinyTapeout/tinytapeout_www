@@ -11,7 +11,6 @@ weight: 249
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 4 -- ALU
 * [GitHub repository](https://github.com/diferential/sc-rv-tt03-block4)
-* [Most recent GDS build](https://github.com/diferential/sc-rv-tt03-block4/actions/runs/4789409676)
 * HDL project
 * [Extra docs](https://github.com/diferntial/sc-rv-tt03-block4/blob/main/README.md)
 * Clock: 20000 Hz

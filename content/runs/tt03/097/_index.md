@@ -11,7 +11,6 @@ weight: 98
 * Author: Ryan Cornateanu
 * Description: 2bit ALU with a ripple carry adder that has the capability to perform 16 different calculations
 * [GitHub repository](https://github.com/ryancor/tt02-submission-template)
-* [Most recent GDS build](https://github.com/ryancor/tt02-submission-template/actions/runs/3537017872)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

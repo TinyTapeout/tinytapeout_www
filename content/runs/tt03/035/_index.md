@@ -11,7 +11,6 @@ weight: 36
 * Author: Søren Poulsen
 * Description: Shows time of day.
 * [GitHub repository](https://github.com/nikor/tt03-verilog-demo)
-* [Most recent GDS build](https://github.com/nikor/tt03-verilog-demo/actions/runs/4779005645)
 * HDL project
 * [Extra docs]()
 * Clock: 32 Hz

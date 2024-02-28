@@ -11,7 +11,6 @@ weight: 164
 * Author: Eric Smith
 * Description: six 40-bit shift registers
 * [GitHub repository](https://github.com/brouhaha/tt02-hex-sr)
-* [Most recent GDS build](https://github.com/brouhaha/tt02-hex-sr/actions/runs/3530029132)
 * HDL project
 * [Extra docs](https://github.com/brouhaha/tt02-hex-sr/blob/main/README.md)
 * Clock:  Hz

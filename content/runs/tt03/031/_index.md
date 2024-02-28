@@ -11,7 +11,6 @@ weight: 32
 * Author: Aidan McNay
 * Description: Detects whether a 31-bit number is prime or not
 * [GitHub repository](https://github.com/Aidan-McNay/31b-PrimeDetection)
-* [Most recent GDS build](https://github.com/Aidan-McNay/31b-PrimeDetection/actions/runs/4575033445)
 * HDL project
 * [Extra docs]()
 * Clock: 50000 (though could probably be faster) Hz

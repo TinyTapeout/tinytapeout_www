@@ -11,7 +11,6 @@ weight: 94
 * Author: Tom Keddie
 * Description: Displays a clock on a attached HD74480
 * [GitHub repository](https://github.com/TomKeddie/tinytapeout-2022-2)
-* [Most recent GDS build](https://github.com/TomKeddie/tinytapeout-2022-2/actions/runs/3529333424)
 * HDL project
 * [Extra docs](https://github.com/TomKeddie/tinytapeout-2022-2/blob/main/doc/README.md)
 * Clock: 1000 Hz

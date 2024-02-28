@@ -11,7 +11,6 @@ weight: 202
 * Author: maehw
 * Description: Low baudrate UART transmitter (8N1) with limited character set (0x40..0x5F; includes all capital letters in the ASCII table) loading.
 * [GitHub repository](https://github.com/maehw/tt02-wokwi-lowspeed-tiny-uart)
-* [Most recent GDS build](https://github.com/maehw/tt02-wokwi-lowspeed-tiny-uart/actions/runs/3596490239)
 * [Wokwi](https://wokwi.com/projects/341631511790879314) project
 * [Extra docs](https://github.com/maehw/tt02-wokwi-lowspeed-tiny-uart/blob/main/README.md)
 * Clock: 9600 Hz

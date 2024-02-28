@@ -11,7 +11,6 @@ weight: 225
 * Author: Mazen Saghir, ECE Department, American University of Beirut (mazen@aub.edu.lb)
 * Description: Seven segment display effect generator
 * [GitHub repository](https://github.com/mazensaghir/tt02-sevsegfx)
-* [Most recent GDS build](https://github.com/mazensaghir/tt02-sevsegfx/actions/runs/3612703382)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

@@ -11,7 +11,6 @@ weight: 29
 * Author: Tom Keddie
 * Description: Drives a 16x16 P10 LED panel
 * [GitHub repository](https://github.com/TomKeddie/tinytapeout-2023-1a)
-* [Most recent GDS build](https://github.com/TomKeddie/tinytapeout-2023-1a/actions/runs/4789487984)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

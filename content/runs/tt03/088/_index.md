@@ -11,7 +11,6 @@ weight: 89
 * Author: Pascual Bravo
 * Description: Chip de prueba
 * [GitHub repository](https://github.com/SergioRuiz181/tt03-submission-template)
-* [Most recent GDS build](https://github.com/SergioRuiz181/tt03-submission-template/actions/runs/4768336829)
 * [Wokwi](https://wokwi.com/projects/362633503928580097) project
 * [Extra docs]()
 * Clock: 0 Hz

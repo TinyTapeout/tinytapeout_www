@@ -11,7 +11,6 @@ weight: 216
 * Author: Shaos
 * Description: Binary Coded Ternary Test
 * [GitHub repository](https://github.com/ternary-info/tt02-submission-shaos3)
-* [Most recent GDS build](https://github.com/ternary-info/tt02-submission-shaos3/actions/runs/3601018889)
 * [Wokwi](https://wokwi.com/projects/349255310782759507) project
 * [Extra docs]()
 * Clock: 0 Hz

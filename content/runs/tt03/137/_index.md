@@ -11,7 +11,6 @@ weight: 138
 * Author: 13arn
 * Description: copy of my tt01 submission, enable first input and press button to use the counter
 * [GitHub repository](https://github.com/13arn/tt02_counter_steamdeck)
-* [Most recent GDS build](https://github.com/13arn/tt02_counter_steamdeck/actions/runs/3462179931)
 * [Wokwi](https://wokwi.com/projects/341541108650607187) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 114
 * Author: Ben Everard
 * Description: Select different inputs to generate different LED patterns
 * [GitHub repository](https://github.com/benevpi/tt02-LED-flasher)
-* [Most recent GDS build](https://github.com/benevpi/tt02-LED-flasher/actions/runs/3593379517)
 * [Wokwi](https://wokwi.com/projects/342981109408072274) project
 * [Extra docs](https://github.com/benevpi/tt02-LED-flasher/blob/main/README.md)
 * Clock: 0 Hz

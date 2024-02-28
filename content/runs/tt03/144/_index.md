@@ -11,7 +11,6 @@ weight: 145
 * Author: Jiaxun Yang
 * Description: Plays multiple Tunes over a Piezo Speaker connected across io_out[1:0]
 * [GitHub repository](https://github.com/FlyGoat/tt02-play-tune-flygoat)
-* [Most recent GDS build](https://github.com/FlyGoat/tt02-play-tune-flygoat/actions/runs/3471079918)
 * HDL project
 * [Extra docs](https://github.com/flygoat/tt02-play-tune-fg#readme)
 * Clock: 10000 Hz

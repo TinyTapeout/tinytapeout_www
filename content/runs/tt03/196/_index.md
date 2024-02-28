@@ -11,7 +11,6 @@ weight: 197
 * Author: David Richie
 * Description: 8-bit processor based on RISC-V ISA
 * [GitHub repository](https://github.com/browndeer/rv8u)
-* [Most recent GDS build](https://github.com/browndeer/rv8u/actions/runs/3603387504)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

@@ -11,7 +11,6 @@ weight: 109
 * Author: Tom Schucker
 * Description: 4bit 2-stage FIR filter
 * [GitHub repository](https://github.com/Tschucker/tt02-submission-tiny-fir)
-* [Most recent GDS build](https://github.com/Tschucker/tt02-submission-tiny-fir/actions/runs/3432858126)
 * [Wokwi](https://wokwi.com/projects/347894637149553236) project
 * [Extra docs](FIR_README.md)
 * Clock: 0 Hz

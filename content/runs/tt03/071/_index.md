@@ -11,7 +11,6 @@ weight: 72
 * Author: ReJ aka Renaldas Zioma
 * Description: 8 neurons
 * [GitHub repository](https://github.com/rejunity/tt03-tiny-bnn)
-* [Most recent GDS build](https://github.com/rejunity/tt03-tiny-bnn/actions/runs/4801780609)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

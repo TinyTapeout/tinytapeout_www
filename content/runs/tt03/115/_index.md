@@ -11,7 +11,6 @@ weight: 116
 * Author: Tholin
 * Description: Sound generator with two square-wave voices, one sawtooth voice and one noise channel. Can also be used as a general-purpose frequency generator.
 * [GitHub repository](https://github.com/89Mods/tt2-avalonsemi-TBB1143)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-avalonsemi-TBB1143/actions/runs/3603979862)
 * HDL project
 * [Extra docs](https://github.com/AvalonSemiconductors/tt2-avalonsemi-TBB1143/blob/main/README.md)
 * Clock: 6000 Hz

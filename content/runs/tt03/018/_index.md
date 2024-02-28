@@ -11,7 +11,6 @@ weight: 19
 * Author: Carin Schreiner
 * Description: This tiny tape out project takes two four bit numberbs and adds them.
 * [GitHub repository](https://github.com/SchreinerCarin/tt03-4bit-adder)
-* [Most recent GDS build](https://github.com/SchreinerCarin/tt03-4bit-adder/actions/runs/4622575482)
 * [Wokwi](https://wokwi.com/projects/354091612057990145) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,11 +11,10 @@ weight: 211
 * Author: Randy Glenn
 * Description: Displays an input 4-bit value as a hex digit
 * [GitHub repository](https://github.com/rglenn/tt02-rglenn-hex-to-7-seg)
-* [Most recent GDS build](https://github.com/rglenn/tt02-rglenn-hex-to-7-seg/actions/runs/3598979880)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz
-* External hardware: 
+* External hardware: Requires a 7-segment display as wired on the TT02 test board.
 
 
 
@@ -25,7 +24,7 @@ A modern take on the classic TIL311
 
 ### How to test
 
-after reset, the counter should increase by one every second
+7 segment display should display the digit inputted on data 0-3. Latch input will latch the data in on the rising edge. Blank input will clear the display. Decimal input is not latched.
 
 ### IO
 

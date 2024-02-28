@@ -11,7 +11,6 @@ weight: 188
 * Author: regymm
 * Description: Blink the 8 output LEDs in a funny way.
 * [GitHub repository](https://github.com/regymm/tt02-verilog-funnyblinky)
-* [Most recent GDS build](https://github.com/regymm/tt02-verilog-funnyblinky/actions/runs/3565974284)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

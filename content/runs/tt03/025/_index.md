@@ -11,7 +11,6 @@ weight: 26
 * Author: Andrew M
 * Description: Loads two half-bytes into registers, then sends over UART
 * [GitHub repository](https://github.com/andrewmourcos/tt03-verilog-demo)
-* [Most recent GDS build](https://github.com/andrewmourcos/tt03-verilog-demo/actions/runs/4789531906)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

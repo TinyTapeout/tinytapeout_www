@@ -11,7 +11,6 @@ weight: 161
 * Author: Wallace Everest
 * Description: Square root for use in RMS calculations
 * [GitHub repository](https://github.com/navray/tt02-square-root)
-* [Most recent GDS build](https://github.com/navray/tt02-square-root/actions/runs/3646011596)
 * HDL project
 * [Extra docs](https://github.com/navray/tt02-square-root/blob/main/README.md)
 * Clock: 1000 Hz

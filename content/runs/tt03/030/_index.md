@@ -11,7 +11,6 @@ weight: 31
 * Author: guianmonezm#4787
 * Description: basic 8bit CPU
 * [GitHub repository](https://github.com/guianmonezm/tt03-ezm_cpu)
-* [Most recent GDS build](https://github.com/guianmonezm/tt03-ezm_cpu/actions/runs/4356231732)
 * HDL project
 * [Extra docs](src/README.md)
 * Clock: 6000 Hz

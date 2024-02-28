@@ -11,13 +11,12 @@ weight: 105
 * Author: Seppe Van Dyck
 * Description: A self-contained physics simulation. This circuit simulates 4 spins of an Ising chain in  an external field.
 * [GitHub repository](https://github.com/svd321/tt02-Ising)
-* [Most recent GDS build](https://github.com/svd321/tt02-Ising/actions/runs/3581924092)
 * [Wokwi](https://wokwi.com/projects/347592305412145748) project
-* [Extra docs](README.md)
+* [Extra docs](https://github.com/svd321/tt02-Ising/blob/main/README.md)
 * Clock: 20 Hz
 * External hardware: None
 
-![picture](images/Overview_2.png)
+![picture](images/singlePictureSummary.png)
 
 ### How it works
 

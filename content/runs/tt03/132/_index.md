@@ -11,7 +11,6 @@ weight: 133
 * Author: proppy
 * Description: Count bits set in the input.
 * [GitHub repository](https://github.com/proppy/tt02-xls-popcount)
-* [Most recent GDS build](https://github.com/proppy/tt02-xls-popcount/actions/runs/3540723892)
 * HDL project
 * [Extra docs](https://github.com/proppy/tt02-xls-popcount/blob/main/README.md)
 * Clock: 0 Hz

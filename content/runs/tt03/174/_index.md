@@ -11,7 +11,6 @@ weight: 175
 * Author: Paul Campell
 * Description: 8-bit version of the MoonBase 4-bit CPU
 * [GitHub repository](https://github.com/OneRNG/tt-cpu8)
-* [Most recent GDS build](https://github.com/OneRNG/tt-cpu8/actions/runs/3572192785)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

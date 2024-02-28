@@ -11,7 +11,6 @@ weight: 234
 * Author: Tholin
 * Description: Example of how to use Logisim Evolution generated Verilog for TinyTapeout.
 * [GitHub repository](https://github.com/AvalonSemiconductors/tt02-logisim-example)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt02-logisim-example/actions/runs/4447757369)
 * HDL project
 * [Extra docs]()
 * Clock: 2 Hz

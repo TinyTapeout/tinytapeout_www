@@ -11,7 +11,6 @@ weight: 174
 * Author: Tim Victor
 * Description: Animation demo on seven-segment LED
 * [GitHub repository](https://github.com/timvgso/tinatapeworm)
-* [Most recent GDS build](https://github.com/timvgso/tinatapeworm/actions/runs/3574367774)
 * [Wokwi](https://wokwi.com/projects/348381622440034899) project
 * [Extra docs]()
 * Clock: 25 Hz

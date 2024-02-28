@@ -11,7 +11,6 @@ weight: 20
 * Author: Paul Campnell
 * Description: PDP8 core
 * [GitHub repository](https://github.com/MoonbaseOtago/tt03-pdp8)
-* [Most recent GDS build](https://github.com/MoonbaseOtago/tt03-pdp8/actions/runs/4475492751)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

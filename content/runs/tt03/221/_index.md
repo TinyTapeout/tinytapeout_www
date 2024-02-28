@@ -11,7 +11,6 @@ weight: 222
 * Author: Mikhail Svarichevsky
 * Description: Free-running oscillators to verify simulation vs reality + TRNG
 * [GitHub repository](https://github.com/BarsMonster/MicroAsicVI)
-* [Most recent GDS build](https://github.com/BarsMonster/MicroAsicVI/actions/runs/3609696287)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

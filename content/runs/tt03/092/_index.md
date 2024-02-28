@@ -11,7 +11,6 @@ weight: 93
 * Author: Fraser Price
 * Description: Simon32/64 Encryption
 * [GitHub repository](https://github.com/Fraserbc/tt02-simon)
-* [Most recent GDS build](https://github.com/Fraserbc/tt02-simon/actions/runs/3429009161)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

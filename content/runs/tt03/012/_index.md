@@ -11,7 +11,6 @@ weight: 13
 * Author: Fabio Campos
 * Description: Ascon's 5-bit S-box
 * [GitHub repository](https://github.com/sopmacF/tt03-ascon-sbox)
-* [Most recent GDS build](https://github.com/sopmacF/tt03-ascon-sbox/actions/runs/4445325562)
 * [Wokwi](https://wokwi.com/projects/359360834113498113) project
 * [Extra docs]()
 * Clock: 0 Hz

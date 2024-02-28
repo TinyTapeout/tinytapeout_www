@@ -11,7 +11,6 @@ weight: 7
 * Author: Dylan Garrett
 * Description: Store a single digit 0-9 and display it on a 7-segment display
 * [GitHub repository](https://github.com/dgarrett/tt03-num-latch)
-* [Most recent GDS build](https://github.com/dgarrett/tt03-num-latch/actions/runs/4402226868)
 * [Wokwi](https://wokwi.com/projects/358970514554149889) project
 * [Extra docs]()
 * Clock: 0 Hz

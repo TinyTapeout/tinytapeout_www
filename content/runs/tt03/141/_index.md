@@ -11,7 +11,6 @@ weight: 142
 * Author: proppy
 * Description: Increment output bits
 * [GitHub repository](https://github.com/proppy/tt02-xls-counter)
-* [Most recent GDS build](https://github.com/proppy/tt02-xls-counter/actions/runs/3728611750)
 * HDL project
 * [Extra docs](https://github.com/proppy/tt02-xls-counter/blob/main/README.md)
 * Clock: 10 Hz

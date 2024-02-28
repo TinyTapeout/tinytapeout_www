@@ -11,7 +11,6 @@ weight: 206
 * Author: Arthur Hazleden
 * Description: This circuit will convert 5-bit Baudot from a teletype machine to 8-bit ASCII.
 * [GitHub repository](https://github.com/Luthor2k/tt02-baudot)
-* [Most recent GDS build](https://github.com/Luthor2k/tt02-baudot/actions/runs/3641986231)
 * HDL project
 * [Extra docs](https://github.com/Luthor2k/tt02-baudot/blob/main/README.md)
 * Clock: 9600 Hz

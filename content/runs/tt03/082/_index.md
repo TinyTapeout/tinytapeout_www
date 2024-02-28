@@ -11,7 +11,6 @@ weight: 83
 * Author: Noah Hoffman
 * Description: Simple 2 minute timer that gives visual feedback on the seven-segment display for each 30-second increment that passes. This indicates when to move to the next quarter of the mouth. Each 30 second increment can be blocked by an input switch so the user has to acknowledge they are done with that section before moving forward. At the end of 2 minutes, all segments of the display will flash
 * [GitHub repository](https://github.com/13arn/tt03-toothbrush-timer)
-* [Most recent GDS build](https://github.com/13arn/tt03-toothbrush-timer/actions/runs/4788280213)
 * [Wokwi](https://wokwi.com/projects/362867354023533569) project
 * [Extra docs]()
 * Clock: 10000 Hz

@@ -11,7 +11,6 @@ weight: 11
 * Author: Niklas Fassbender
 * Description: Implementation of a 4-Bit Sbox for SKINNY
 * [GitHub repository](https://github.com/nikals99/tt03-skinny-sbox)
-* [Most recent GDS build](https://github.com/nikals99/tt03-skinny-sbox/actions/runs/4436749193)
 * [Wokwi](https://wokwi.com/projects/359353377078748161) project
 * [Extra docs]()
 * Clock: 0 Hz

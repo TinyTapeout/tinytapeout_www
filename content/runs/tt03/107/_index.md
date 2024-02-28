@@ -11,7 +11,6 @@ weight: 108
 * Author: William Moyes
 * Description: A silicon implementation of a simple optical computation
 * [GitHub repository](https://github.com/moyesw/tt02-moyesw-StreamIntegrator)
-* [Most recent GDS build](https://github.com/moyesw/tt02-moyesw-StreamIntegrator/actions/runs/3357095237)
 * [Wokwi](https://wokwi.com/projects/346553315158393428) project
 * [Extra docs]()
 * Clock: 0 Hz

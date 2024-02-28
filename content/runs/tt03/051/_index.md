@@ -11,7 +11,6 @@ weight: 52
 * Author: Pat Deegan
 * Description: It's a guitar tuner!  and so much more... (TODO)
 * [GitHub repository](https://github.com/psychogenic/tt03_neptune_constantwindow)
-* [Most recent GDS build](https://github.com/psychogenic/tt03_neptune_constantwindow/actions/runs/4759864994)
 * HDL project
 * [Extra docs](https://github.com/psychogenic/neptune/blob/main/README.md)
 * Clock: 1000 Hz

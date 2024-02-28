@@ -11,7 +11,6 @@ weight: 1
 * Author: Matt Venn
 * Description: Inverts every line. This project is also used to fill any empty design spaces.
 * [GitHub repository](https://github.com/TinyTapeout/tt03-test-invert)
-* [Most recent GDS build](https://github.com/TinyTapeout/tt03-test-invert/actions/runs/4669952692)
 * [Wokwi](https://wokwi.com/projects/361728533238569985) project
 * [Extra docs]()
 * Clock: 0 Hz

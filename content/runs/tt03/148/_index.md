@@ -11,7 +11,6 @@ weight: 149
 * Author: Nick Østergaard
 * Description: This is just a small demo of synthezing verilog from LiteX, this does not include any CPU.
 * [GitHub repository](https://github.com/nickoe/tinytapeout02-verilog-gds-test)
-* [Most recent GDS build](https://github.com/nickoe/tinytapeout02-verilog-gds-test/actions/runs/3595528327)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 6
 * Author: Kolos Koblasz
 * Description: The logic assertes output bits one by one, like KITT's sensor lights in Knight Rider.
 * [GitHub repository](https://github.com/KolosKoblasz/tt03-knight_rider)
-* [Most recent GDS build](https://github.com/KolosKoblasz/tt03-knight_rider/actions/runs/4409391582)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

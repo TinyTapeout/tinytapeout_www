@@ -11,7 +11,6 @@ weight: 232
 * Author: James R
 * Description: Single FFT butterfly with 2-bit resolution
 * [GitHub repository](https://github.com/jdrosent/tt02-submission-template)
-* [Most recent GDS build](https://github.com/jdrosent/tt02-submission-template/actions/runs/3603537611)
 * [Wokwi](https://wokwi.com/projects/349952820323025491) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 24
 * Author: Etienne de Maricourt
 * Description: Customized UART string transmitter
 * [GitHub repository](https://github.com/etiennedm/tt03-submission)
-* [Most recent GDS build](https://github.com/etiennedm/tt03-submission/actions/runs/4789735487)
 * [Wokwi](https://wokwi.com/projects/362911430638568449) project
 * [Extra docs]()
 * Clock: 300 Hz

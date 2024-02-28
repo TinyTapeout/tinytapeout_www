@@ -11,7 +11,6 @@ weight: 209
 * Author: Steve Burns
 * Description: Simple chisel based design based on Knuth's BinaryGDC algorithm using scan chains for I/O.
 * [GitHub repository](https://github.com/stevenmburns/tt02-scannable-gcd)
-* [Most recent GDS build](https://github.com/stevenmburns/tt02-scannable-gcd/actions/runs/3598246612)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

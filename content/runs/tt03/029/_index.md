@@ -11,7 +11,6 @@ weight: 30
 * Author: Mike Bell
 * Description: Implementation of a FIFO
 * [GitHub repository](https://github.com/MichaelBell/tt03-fifo)
-* [Most recent GDS build](https://github.com/MichaelBell/tt03-fifo/actions/runs/4691741936)
 * HDL project
 * [Extra docs]()
 * Clock: 50000 Hz

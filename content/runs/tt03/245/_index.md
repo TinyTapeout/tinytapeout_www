@@ -11,7 +11,6 @@ weight: 246
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 1 -- clocking
 * [GitHub repository](https://github.com/diferential/sc-rv-tt03-block1)
-* [Most recent GDS build](https://github.com/diferential/sc-rv-tt03-block1/actions/runs/4789576788)
 * HDL project
 * [Extra docs](https://github.com/diferntial/sc-rv-tt03-block1/blob/main/README.md)
 * Clock: 20000 Hz

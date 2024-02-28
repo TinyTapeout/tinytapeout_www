@@ -11,7 +11,6 @@ weight: 233
 * Author: Majdi Abdul Samad, ECE Dept., American University of Beirut (mia42@mail.aub.edu)
 * Description: Design of a small single-cycle CPU with simple RISC/Accumulator ISA
 * [GitHub repository](https://github.com/majdiabdulsamad/tt02-Femto)
-* [Most recent GDS build](https://github.com/majdiabdulsamad/tt02-Femto/actions/runs/3620410709)
 * HDL project
 * [Extra docs](README.md)
 * Clock: 5 Hz

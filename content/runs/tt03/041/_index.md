@@ -11,7 +11,6 @@ weight: 42
 * Author: jordan336
 * Description: Toy CPU is an 8 bit toy CPU for the Tiny Tapeout project.
 * [GitHub repository](https://github.com/jordan336/tt03-toy-cpu)
-* [Most recent GDS build](https://github.com/jordan336/tt03-toy-cpu/actions/runs/4739826802)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

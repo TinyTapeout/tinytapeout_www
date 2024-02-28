@@ -11,7 +11,6 @@ weight: 182
 * Author: Molteni Maria Chiara
 * Description: Chi function of Xoodoo protected by TI with three shares
 * [GitHub repository](https://github.com/mmolteni-secpat/tinytapeout02_chi3shares)
-* [Most recent GDS build](https://github.com/mmolteni-secpat/tinytapeout02_chi3shares/actions/runs/3566160473)
 * [Wokwi](https://wokwi.com/projects/341608574336631379) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 207
 * Author: Christopher 'ctag' Bero
 * Description: Scrolls 'ctag' across the 7seg.
 * [GitHub repository](https://github.com/ctag/tt02-submission-ctag)
-* [Most recent GDS build](https://github.com/ctag/tt02-submission-ctag/actions/runs/3597568966)
 * [Wokwi](https://wokwi.com/projects/349886696875098706) project
 * [Extra docs]()
 * Clock: 2 Hz

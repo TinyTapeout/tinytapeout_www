@@ -11,7 +11,6 @@ weight: 170
 * Author: David Siaw
 * Description: A stack based 4-bit calculator featuring a 4-bit wide 8 entry deep stack and 64 bits of random access memory.
 * [GitHub repository](https://github.com/davidsiaw/tt02-davidsiaw-stackcalc)
-* [Most recent GDS build](https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/actions/runs/3778658742)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

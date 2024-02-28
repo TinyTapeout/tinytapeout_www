@@ -11,7 +11,6 @@ weight: 163
 * Author: Ivan Krasin
 * Description: PWM driver with 7 channels and 256 PWM levels from 0 to 1
 * [GitHub repository](https://github.com/krasin/tt02-verilog-spi-7-channel-pwm-driver)
-* [Most recent GDS build](https://github.com/krasin/tt02-verilog-spi-7-channel-pwm-driver/actions/runs/3538860132)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

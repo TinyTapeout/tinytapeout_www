@@ -11,7 +11,6 @@ weight: 12
 * Author: Tim Henkes
 * Description: A little combination lock which requires three codes in the correct order to unlock
 * [GitHub repository](https://github.com/Syndace/tt03-stateful-lock)
-* [Most recent GDS build](https://github.com/Syndace/tt03-stateful-lock/actions/runs/4437445847)
 * [Wokwi](https://wokwi.com/projects/359357227471086593) project
 * [Extra docs]()
 * Clock: 0 Hz

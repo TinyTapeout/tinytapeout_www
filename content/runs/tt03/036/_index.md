@@ -11,7 +11,6 @@ weight: 37
 * Author: Norberto Hernandez-Como
 * Description: Converts a 4 digit binary number to decimal or to hexadecimal using a 7-segment display
 * [GitHub repository](https://github.com/jedicomo22/Norberto_IPN_V1)
-* [Most recent GDS build](https://github.com/jedicomo22/Norberto_IPN_V1/actions/runs/4663958722)
 * [Wokwi](https://wokwi.com/projects/361684719151591425) project
 * [Extra docs]()
 * Clock: 0 Hz

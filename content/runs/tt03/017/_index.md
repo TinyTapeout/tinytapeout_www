@@ -11,7 +11,6 @@ weight: 18
 * Author: Emilian Miron
 * Description: FPGA attempt
 * [GitHub repository](https://github.com/diferential/muxpga)
-* [Most recent GDS build](https://github.com/diferential/muxpga/actions/runs/4787584570)
 * HDL project
 * [Extra docs](https://github.com/diferential/muxpga/blob/main/README.md)
 * Clock: 1000 Hz

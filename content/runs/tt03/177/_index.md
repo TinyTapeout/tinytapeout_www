@@ -11,7 +11,6 @@ weight: 178
 * Author: Andrew Ramsey
 * Description: Estimates the frequency of an input signal
 * [GitHub repository](https://github.com/ARamsey118/tiny_tapeout_freq_counter)
-* [Most recent GDS build](https://github.com/ARamsey118/tiny_tapeout_freq_counter/actions/runs/3599337352)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

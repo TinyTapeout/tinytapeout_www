@@ -11,13 +11,12 @@ weight: 34
 * Author: Marco Merlin
 * Description: An implementation of a DDPM, PWM and Sigma-Delta Pulse-Density Modulators with python libraries myHDL and PuEDA.
 * [GitHub repository](https://github.com/bat52/tt03-ddpm-pwm)
-* [Most recent GDS build](https://github.com/bat52/tt03-ddpm-pwm/actions/runs/4572574989)
 * HDL project
 * [Extra docs](https://github.com/bat52/tt03-ddpm-pwm/blob/main/README.md)
 * Clock: 12500 Hz
 * External hardware: clock source
 
-![picture](images/ddpm.pdf)
+![picture](images/ddpm.png)
 
 ### How it works
 

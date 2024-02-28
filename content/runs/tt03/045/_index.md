@@ -11,7 +11,6 @@ weight: 46
 * Author: htfab
 * Description: 395 standard cells with a mux to select between them
 * [GitHub repository](https://github.com/htfab/microtapeout)
-* [Most recent GDS build](https://github.com/htfab/microtapeout/actions/runs/4782840402)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

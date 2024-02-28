@@ -11,7 +11,6 @@ weight: 131
 * Author: Jake "ferris" Taylor
 * Description: bitslam is a programmable sound chip with 2 LFSR voices.
 * [GitHub repository](https://github.com/yupferris/bitslam)
-* [Most recent GDS build](https://github.com/yupferris/bitslam/actions/runs/3457367260)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

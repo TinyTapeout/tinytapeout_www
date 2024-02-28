@@ -11,7 +11,6 @@ weight: 41
 * Author: Balint Kovacs
 * Description: Small POV display
 * [GitHub repository](https://github.com/dratini0/tt03-pov-display)
-* [Most recent GDS build](https://github.com/dratini0/tt03-pov-display/actions/runs/4759304457)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

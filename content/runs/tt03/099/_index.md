@@ -11,7 +11,6 @@ weight: 100
 * Author: Azdle
 * Description: A binary clock using multiplexed LEDs
 * [GitHub repository](https://github.com/azdle/binary-clock-asic)
-* [Most recent GDS build](https://github.com/azdle/binary-clock-asic/actions/runs/3467191965)
 * HDL project
 * [Extra docs](https://github.com/azdle/binary-clock-asic)
 * Clock: 200 Hz

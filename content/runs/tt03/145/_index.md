@@ -11,7 +11,6 @@ weight: 146
 * Author: Tholin
 * Description: Echoes out a predefined text onto a 20x4 character LCD.
 * [GitHub repository](https://github.com/89Mods/tt2-lcd-namebadge)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-lcd-namebadge/actions/runs/3603899616)
 * HDL project
 * [Extra docs]()
 * Clock: 100 Hz

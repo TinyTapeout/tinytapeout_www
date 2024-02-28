@@ -11,7 +11,6 @@ weight: 104
 * Author: Jens Schleusner
 * Description: A state machine to control german traffic lights at an intersection.
 * [GitHub repository](https://github.com/JensIMS/tt02-trafficlight)
-* [Most recent GDS build](https://github.com/JensIMS/tt02-trafficlight/actions/runs/3451257074)
 * [Wokwi](https://wokwi.com/projects/347690870424732244) project
 * [Extra docs]()
 * Clock: 1 Hz

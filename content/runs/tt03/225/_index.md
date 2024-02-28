@@ -11,7 +11,6 @@ weight: 226
 * Author: Thomas Zachariah
 * Description: Cycles through the characters of LAB11
 * [GitHub repository](https://github.com/tzachari/tt02-lab11)
-* [Most recent GDS build](https://github.com/tzachari/tt02-lab11/actions/runs/3603314668)
 * [Wokwi](https://wokwi.com/projects/341631644820570706) project
 * [Extra docs](https://github.com/tzachari/tt02-lab11)
 * Clock: 1 Hz

@@ -11,7 +11,6 @@ weight: 110
 * Author: Greg Steiert
 * Description: Configurable gates driving SR and D flip-flops
 * [GitHub repository](https://github.com/steieio/tt02-submission-universal-sr)
-* [Most recent GDS build](https://github.com/steieio/tt02-submission-universal-sr/actions/runs/3551163505)
 * [Wokwi](https://wokwi.com/projects/346916357828248146) project
 * [Extra docs](https://github.com/steieio/tt02-submission-universal-sr/blob/main/README.md)
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 155
 * Author: Joseph Chiu
 * Description: Drives 7-segment LED display, alternating between NIC and JAC
 * [GitHub repository](https://github.com/toybuilder/tt02-learn-tinytapeout)
-* [Most recent GDS build](https://github.com/toybuilder/tt02-learn-tinytapeout/actions/runs/3525820603)
 * [Wokwi](https://wokwi.com/projects/341490465660469844) project
 * [Extra docs]()
 * Clock: 0 Hz

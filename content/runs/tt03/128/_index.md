@@ -11,7 +11,6 @@ weight: 129
 * Author: Frans Skarman
 * Description: Yet another FPGA
 * [GitHub repository](https://github.com/TheZoq2/smolfpga)
-* [Most recent GDS build](https://github.com/TheZoq2/smolfpga/actions/runs/3457148891)
 * HDL project
 * [Extra docs](TODO)
 * Clock: 1000 Hz

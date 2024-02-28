@@ -11,7 +11,6 @@ weight: 97
 * Author: Marcelo Pouso / Miguel Correia
 * Description: Increase/Decrease a duty cycle of square signal.
 * [GitHub repository](https://github.com/migcorre/tt02-dc)
-* [Most recent GDS build](https://github.com/migcorre/tt02-dc/actions/runs/3471546682)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

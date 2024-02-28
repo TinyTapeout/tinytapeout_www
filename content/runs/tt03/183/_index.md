@@ -11,7 +11,6 @@ weight: 184
 * Author: Steven Bos
 * Description: This chip offers a scalable n-bit counter design that can be used as a program counter by setting the next address (eg. for a JMP instruction). It can work in 3 directions: counting up, down and pause.
 * [GitHub repository](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter)
-* [Most recent GDS build](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter/actions/runs/3569389065)
 * [Wokwi](https://wokwi.com/projects/341423712597181012) project
 * [Extra docs](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter/blob/main/README.md)
 * Clock: 0 Hz

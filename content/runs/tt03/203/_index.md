@@ -11,7 +11,6 @@ weight: 204
 * Author: ChrisPVille
 * Description: The FROG is an extremely minimal load-store 4-bit CPU
 * [GitHub repository](https://github.com/ChrisPVille/tt02-FROG4bitCPU)
-* [Most recent GDS build](https://github.com/ChrisPVille/tt02-FROG4bitCPU/actions/runs/3597417786)
 * HDL project
 * [Extra docs](README.md)
 * Clock: 0 Hz

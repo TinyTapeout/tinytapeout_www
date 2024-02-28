@@ -11,7 +11,6 @@ weight: 168
 * Author: cpldcpu
 * Description: A minimal 8 bit CPU
 * [GitHub repository](https://github.com/cpldcpu/tt02-mcpu5plus)
-* [Most recent GDS build](https://github.com/cpldcpu/tt02-mcpu5plus/actions/runs/3557667622)
 * HDL project
 * [Extra docs](https://github.com/cpldcpu/tt02-mcpu5plus)
 * Clock: high Hz

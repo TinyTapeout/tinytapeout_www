@@ -11,7 +11,6 @@ weight: 79
 * Author: Anish Paul , Pancham Mittal , Ramandeep 
 * Description:  This project is used to Add and Subtract 3-bit binary inputs 
 * [GitHub repository](https://github.com/Anishpaul04/tt03-submission-template)
-* [Most recent GDS build](https://github.com/Anishpaul04/tt03-submission-template/actions/runs/4772565672)
 * [Wokwi](https://wokwi.com/projects/362249236392794113) project
 * [Extra docs]()
 * Clock: 0 Hz

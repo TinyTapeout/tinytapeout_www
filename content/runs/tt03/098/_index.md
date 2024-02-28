@@ -11,7 +11,6 @@ weight: 99
 * Author: Aidan Good
 * Description: Custom RISC-V inspired microprocessor capable of simple arithmatic, branching, and jumps through a custom ISA.
 * [GitHub repository](https://github.com/AidanGood/tt02-McCoy)
-* [Most recent GDS build](https://github.com/AidanGood/tt02-McCoy/actions/runs/3616269229)
 * HDL project
 * [Extra docs](https://github.com/cpldcpu/tinytapeout_mcpu5/blob/main/README.md)
 * Clock: None Hz

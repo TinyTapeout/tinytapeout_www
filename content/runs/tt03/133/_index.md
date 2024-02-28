@@ -11,7 +11,6 @@ weight: 134
 * Author: Jean THOMAS
 * Description: Increment/decrement a counter with the press of an IR remote button!
 * [GitHub repository](https://github.com/jeanthom/tt02-rc5-receiver)
-* [Most recent GDS build](https://github.com/jeanthom/tt02-rc5-receiver/actions/runs/3527312692)
 * HDL project
 * [Extra docs]()
 * Clock: 562 Hz

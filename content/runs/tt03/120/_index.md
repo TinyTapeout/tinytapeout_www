@@ -12,7 +12,6 @@ weight: 121
 * Description: Potato-1 is part of a Brainfuck CPU. It is only the control logic, i.e. you have to bring your own registers, memory controller and io logic. It is very simple, hence likely very slow: You could probably run your brainfuck code on a potato and it would be equally fast, hence the name. The project picture was generated using DALL·E.
 
 * [GitHub repository](https://github.com/peppergrayxyz/Potato-1)
-* [Most recent GDS build](https://github.com/peppergrayxyz/Potato-1/actions/runs/3457925933)
 * HDL project
 * [Extra docs](https://github.com/peppergrayxyz/Potato-1)
 * Clock: 12500 Hz

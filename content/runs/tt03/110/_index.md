@@ -11,7 +11,6 @@ weight: 111
 * Author: Luis Ardila
 * Description: LUTRAM with 4 bit address and 8 bit output preloaded with a binary to 7 segments decoder, sadly it was too big for 0-F, so now it is 0-9?
 * [GitHub repository](https://github.com/leardilap/tt02-LUTRAM)
-* [Most recent GDS build](https://github.com/leardilap/tt02-LUTRAM/actions/runs/3405829618)
 * [Wokwi](https://wokwi.com/projects/347594509754827347) project
 * [Extra docs](https://github.com/leardilap/tt02-LUTRAM)
 * Clock: 0 Hz

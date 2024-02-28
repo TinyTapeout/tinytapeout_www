@@ -11,7 +11,6 @@ weight: 212
 * Author: Zach Mason
 * Description: Storage and variable speed readback segment digits
 * [GitHub repository](https://github.com/zymason/tt02-zymason)
-* [Most recent GDS build](https://github.com/zymason/tt02-zymason/actions/runs/3598834837)
 * HDL project
 * [Extra docs](None)
 * Clock: 6250 Hz

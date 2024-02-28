@@ -11,7 +11,6 @@ weight: 128
 * Author: Alan Green
 * Description: Pretty patterns and a siren straight from the 1970s
 * [GitHub repository](https://github.com/alanvgreen/tt02-siren)
-* [Most recent GDS build](https://github.com/alanvgreen/tt02-siren/actions/runs/3458952591)
 * [Wokwi](https://wokwi.com/projects/348242239268323922) project
 * [Extra docs]()
 * Clock: 12500 Hz

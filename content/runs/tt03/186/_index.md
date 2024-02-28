@@ -11,7 +11,6 @@ weight: 187
 * Author: regymm
 * Description: Calculate the value of Pi using the Monte Carlo method
 * [GitHub repository](https://github.com/regymm/tt02-verilog-mcpi)
-* [Most recent GDS build](https://github.com/regymm/tt02-verilog-mcpi/actions/runs/3565887575)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

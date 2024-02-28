@@ -11,7 +11,6 @@ weight: 39
 * Author: Dakotath
 * Description: The device holds bits in shift registers to remember crap
 * [GitHub repository](https://github.com/dakotath/tt03-submission-template)
-* [Most recent GDS build](https://github.com/dakotath/tt03-submission-template/actions/runs/4527029173)
 * [Wokwi](https://wokwi.com/projects/360295047631610881) project
 * [Extra docs]()
 * Clock: 5000 Hz

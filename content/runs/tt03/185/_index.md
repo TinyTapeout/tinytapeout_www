@@ -11,7 +11,6 @@ weight: 186
 * Author: Robert Riachi
 * Description: Compute the dot product of two 2x1 vectors each containing 2 bit integers
 * [GitHub repository](https://github.com/RobertRiachi/tt02-dot-product)
-* [Most recent GDS build](https://github.com/RobertRiachi/tt02-dot-product/actions/runs/3505363693)
 * [Wokwi](https://wokwi.com/projects/348787952842703444) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 203
 * Author: Wim Dams
 * Description: Reads in a (incremental) rotary encoder and shows the result on the seven-segment display
 * [GitHub repository](https://github.com/wimdams/tt02-rotary-encoder)
-* [Most recent GDS build](https://github.com/wimdams/tt02-rotary-encoder/actions/runs/3597409394)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

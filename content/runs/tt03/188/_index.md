@@ -11,7 +11,6 @@ weight: 189
 * Author: Adam Greig
 * Description: Generate the GPS C/A PRN sequences PRN1 through PRN32
 * [GitHub repository](https://github.com/adamgreig/tt02-gpa-ca-prn)
-* [Most recent GDS build](https://github.com/adamgreig/tt02-gps-ca-prn/actions/runs/3598293827)
 * HDL project
 * [Extra docs](https://github.com/adamgreig/tt02-gps-ca-prn)
 * Clock: 1000 Hz

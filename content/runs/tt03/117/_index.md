@@ -11,7 +11,6 @@ weight: 118
 * Author: argunda
 * Description: Detect phase shifts between 2 square waves.
 * [GitHub repository](https://github.com/argunda/tt02-TinyPFD)
-* [Most recent GDS build](https://github.com/argunda/tt02-TinyPFD/actions/runs/3454598339)
 * [Wokwi](https://wokwi.com/projects/348195845106041428) project
 * [Extra docs](https://ieeexplore.ieee.org/document/278348?subid1=20221113-1837-0613-a274-db851cd8a2cb)
 * Clock: 0 Hz

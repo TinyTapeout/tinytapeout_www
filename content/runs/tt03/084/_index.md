@@ -11,7 +11,6 @@ weight: 85
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a customizable padlock. Set a code for your digital safe!
 * [GitHub repository](https://github.com/psychogenic/tt03-padlock)
-* [Most recent GDS build](https://github.com/psychogenic/tt03-padlock/actions/runs/4773245432)
 * [Wokwi](https://wokwi.com/projects/347417602591556180) project
 * [Extra docs](https://wokwi.com/projects/347417602591556180)
 * Clock: 0 Hz

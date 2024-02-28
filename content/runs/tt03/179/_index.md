@@ -11,7 +11,6 @@ weight: 180
 * Author: myrtle
 * Description: small mux2 fpga test
 * [GitHub repository](https://github.com/gatecat/tt02-fpga-respin)
-* [Most recent GDS build](https://github.com/gatecat/tt02-fpga-respin/actions/runs/3563216549)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

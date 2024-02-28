@@ -11,7 +11,6 @@ weight: 96
 * Author: Jon Klein
 * Description: Sequentially enable and disable channels with configurable delay
 * [GitHub repository](https://github.com/loxodes/tt02-submission-loxodes)
-* [Most recent GDS build](https://github.com/loxodes/tt02-submission-loxodes/actions/runs/3405763799)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

@@ -11,7 +11,6 @@ weight: 130
 * Author: William Moyes
 * Description: A capable but slow microprocessor that fits in a very tight space
 * [GitHub repository](https://github.com/moyesw/TT02-M0)
-* [Most recent GDS build](https://github.com/moyesw/TT02-M0/actions/runs/3598275101)
 * HDL project
 * [Extra docs](https://github.com/moyesw/TT02-M0/blob/main/README.md)
 * Clock: 12500 Hz

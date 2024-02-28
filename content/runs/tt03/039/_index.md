@@ -11,7 +11,6 @@ weight: 40
 * Author: Emmanouel Matigakis
 * Description: Tiny sat solver.
 * [GitHub repository](https://github.com/emmatigakis/tt03-tinysat)
-* [Most recent GDS build](https://github.com/emmatigakis/tt03-tinysat/actions/runs/4716201039)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

@@ -11,7 +11,6 @@ weight: 43
 * Author: Daniel Wisehart
 * Description: Change only one output bit per count, but count with decimal digits instead of the usual reverse bit order grey counter.
 * [GitHub repository](https://github.com/dwisehart/tt03-submission)
-* [Most recent GDS build](https://github.com/dwisehart/tt03-submission/actions/runs/4780044080)
 * HDL project
 * [Extra docs]()
 * Clock: any Hz

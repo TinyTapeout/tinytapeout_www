@@ -11,7 +11,6 @@ weight: 92
 * Author: Francisco Brito Filho
 * Description: Simple adder used for educational purposes described in VHDL and ported to verilog using ghdl plugin.
 * [GitHub repository](https://github.com/staydh/tt03-verilog-adder4b)
-* [Most recent GDS build](https://github.com/staydh/tt03-verilog-adder4b/actions/runs/4788883737)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

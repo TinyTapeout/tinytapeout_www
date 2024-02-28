@@ -11,7 +11,6 @@ weight: 156
 * Author: Daniel Burke
 * Description: minimal low vector test
 * [GitHub repository](https://github.com/drburke3/tt02-nano-neuron)
-* [Most recent GDS build](https://github.com/drburke3/tt02-nano-neuron/actions/runs/3525911707)
 * [Wokwi](https://wokwi.com/projects/349047610915422802) project
 * [Extra docs]()
 * Clock: 0 Hz

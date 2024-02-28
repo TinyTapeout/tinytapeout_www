@@ -11,7 +11,6 @@ weight: 68
 * Author: Robbert
 * Description: Encodes and decodes data using Hamming 7,4 codes.
 * [GitHub repository](https://github.com/robbertvanginkel/tt03-hamming74)
-* [Most recent GDS build](https://github.com/robbertvanginkel/tt03-hamming74/actions/runs/4785845575)
 * HDL project
 * [Extra docs]()
 * Clock:  Hz

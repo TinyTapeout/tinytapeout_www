@@ -11,7 +11,6 @@ weight: 70
 * Author: Jan Gray(TT02), Marco Merlin (TT03)
 * Description: one fracturable 5-LUT that receives FPGA LUT configuration frames, serially evaluates LUT inputs and LUT outputs
 * [GitHub repository](https://github.com/bat52/tt03-s4ga)
-* [Most recent GDS build](https://github.com/bat52/tt03-s4ga/actions/runs/4780295834)
 * HDL project
 * [Extra docs](https://github.com/grayresearch/tt02-s4ga/blob/main/README.md)
 * Clock: 0 Hz

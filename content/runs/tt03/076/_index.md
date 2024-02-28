@@ -11,7 +11,6 @@ weight: 77
 * Author: Giresh and Aditya 
 * Description: The objective of this project is to create a circuit that can convert Binary Coded Decimal (BCD) numbers to their decimal equivalents. This will enable users to easily convert BCD numbers, which are commonly used in electronic devices, into the decimal format that is more commonly understood.
 * [GitHub repository](https://github.com/MIKEPENCE10CENT/tt03-submission-template)
-* [Most recent GDS build](https://github.com/MIKEPENCE10CENT/tt03-submission-template/actions/runs/4773049696)
 * [Wokwi](https://wokwi.com/projects/362371515213982721) project
 * [Extra docs]()
 * Clock: 0 Hz

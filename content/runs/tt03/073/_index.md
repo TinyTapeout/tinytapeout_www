@@ -11,7 +11,6 @@ weight: 74
 * Author: Martin A. Heredia
 * Description: This is a game for 2 players. After a countdown, the player who press his/her button first wins. Countdown and winner should be displayed in output leds.
 * [GitHub repository](https://github.com/maheredia/tt03-arbiter_game)
-* [Most recent GDS build](https://github.com/maheredia/tt03-arbiter_game/actions/runs/4781155702)
 * HDL project
 * [Extra docs](https://github.com/maheredia/tt03-arbiter_game/blob/main/README.md)
 * Clock: 1000 Hz

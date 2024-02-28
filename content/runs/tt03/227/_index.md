@@ -11,7 +11,6 @@ weight: 228
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays
 * [GitHub repository](https://github.com/bitluni/tt02-option23)
-* [Most recent GDS build](https://github.com/bitluni/tt02-option23/actions/runs/3601637562)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

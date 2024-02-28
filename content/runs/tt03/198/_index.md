@@ -11,7 +11,6 @@ weight: 199
 * Author: myrtle
 * Description: plays a melody, preloaded with jingle bells but re-programmable
 * [GitHub repository](https://github.com/gatecat/tt02-melody-gen)
-* [Most recent GDS build](https://github.com/gatecat/tt02-melody-gen/actions/runs/3596038280)
 * HDL project
 * [Extra docs]()
 * Clock: 25000 Hz

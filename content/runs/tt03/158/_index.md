@@ -11,7 +11,6 @@ weight: 159
 * Author: Daniel Estevez
 * Description: This project includes two independent designs: a design that calculates terms of the Fibonacci sequence and displays them in hex one character at a time on a 7-segment display, and a Gold code generator that generates the codes used by CCSDS X-band PN Delta-DOR.
 * [GitHub repository](https://github.com/daniestevez/tt02-gold-fibonacci)
-* [Most recent GDS build](https://github.com/daniestevez/tt02-gold-fibonacci/actions/runs/3526309994)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

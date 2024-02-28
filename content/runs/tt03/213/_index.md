@@ -11,7 +11,6 @@ weight: 214
 * Author: Kauna Lei
 * Description: 5bit moving average
 * [GitHub repository](https://github.com/klei22/Rolling-Average)
-* [Most recent GDS build](https://github.com/klei22/Rolling-Average/actions/runs/3599356675)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

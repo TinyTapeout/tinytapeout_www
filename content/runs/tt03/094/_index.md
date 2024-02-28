@@ -11,7 +11,6 @@ weight: 95
 * Author: Chris
 * Description: Display scrolling binary data from input pin on 8x8 SK9822 LED matrix display
 * [GitHub repository](https://github.com/chrisruk/matrixchip)
-* [Most recent GDS build](https://github.com/chrisruk/matrixchip/actions/runs/3500414798)
 * HDL project
 * [Extra docs](https://github.com/chrisruk/matrixchip/blob/main/README.md)
 * Clock: 6000 Hz

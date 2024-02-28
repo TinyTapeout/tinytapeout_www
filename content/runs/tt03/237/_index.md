@@ -11,7 +11,6 @@ weight: 238
 * Author: Sad Electronics
 * Description: Uses a series of flip flops to divide the clock
 * [GitHub repository](https://github.com/TinyTapeout/tt02-tinytapeout-clock-divider-asic)
-* [Most recent GDS build](https://github.com/TinyTapeout/tt02-tinytapeout-clock-divider-asic/actions/runs/3602210126)
 * [Wokwi](https://wokwi.com/projects/341353928049295956) project
 * [Extra docs]()
 * Clock: 0 Hz

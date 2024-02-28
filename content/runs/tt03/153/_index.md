@@ -11,7 +11,6 @@ weight: 154
 * Author: Shaos
 * Description: Testing Flip-Flops
 * [GitHub repository](https://github.com/shaos/tt02-submission-shaos)
-* [Most recent GDS build](https://github.com/shaos/tt02-submission-shaos/actions/runs/3598774914)
 * [Wokwi](https://wokwi.com/projects/348540666182107731) project
 * [Extra docs]()
 * Clock: 0 Hz

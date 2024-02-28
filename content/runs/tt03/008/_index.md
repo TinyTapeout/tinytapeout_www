@@ -11,7 +11,6 @@ weight: 9
 * Author: Yannick Reiß
 * Description: Set KS-Signal based on track information.
 * [GitHub repository](https://github.com/yannickreiss/TT3_KS-Signal)
-* [Most recent GDS build](https://github.com/yannickreiss/TT3_KS-Signal/actions/runs/4436390829)
 * [Wokwi](https://wokwi.com/projects/357106633951414273) project
 * [Extra docs]()
 * Clock: 10000 Hz

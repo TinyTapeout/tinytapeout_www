@@ -11,7 +11,6 @@ weight: 196
 * Author: myrtle
 * Description: serially programmed, subset of PIC ISA, MCU
 * [GitHub repository](https://github.com/gatecat/tt02-pic)
-* [Most recent GDS build](https://github.com/gatecat/tt02-pic/actions/runs/3595019454)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

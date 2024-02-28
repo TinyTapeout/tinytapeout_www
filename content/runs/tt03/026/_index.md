@@ -11,7 +11,6 @@ weight: 27
 * Author: yubex
 * Description: The design samples one data input and shows the current state and edge events using the 7 segment display. 
 * [GitHub repository](https://github.com/yubex/tt03-tiny-logic-analyzer)
-* [Most recent GDS build](https://github.com/yubex/tt03-tiny-logic-analyzer/actions/runs/4618646195)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

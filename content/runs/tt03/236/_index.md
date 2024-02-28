@@ -11,7 +11,6 @@ weight: 237
 * Author: Prabal Dutta
 * Description: Test FSM
 * [GitHub repository](https://github.com/prabaldutta/tt02-adi-demo)
-* [Most recent GDS build](https://github.com/prabaldutta/tt02-adi-demo/actions/runs/3603700069)
 * [Wokwi](https://wokwi.com/projects/341613097060926036) project
 * [Extra docs](none)
 * Clock: 1 Hz

@@ -11,7 +11,6 @@ weight: 190
 * Author: Adam Greig
 * Description: Simple ADC and DAC
 * [GitHub repository](https://github.com/adamgreig/tt02-adc-dac)
-* [Most recent GDS build](https://github.com/adamgreig/tt02-adc-dac/actions/runs/3598338001)
 * HDL project
 * [Extra docs](https://github.com/adamgreig/tt02-adc-dac)
 * Clock: 6000 Hz

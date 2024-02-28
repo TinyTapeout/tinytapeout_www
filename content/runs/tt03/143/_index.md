@@ -11,7 +11,6 @@ weight: 144
 * Author: Ethan Mahintorabi
 * Description: XorShift32 random number generator
 * [GitHub repository](https://github.com/QuantamHD/evan-submission)
-* [Most recent GDS build](https://github.com/QuantamHD/evan-submission/actions/runs/3464043042)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

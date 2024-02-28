@@ -1,20 +1,19 @@
 ---
 hidden: true
-title: "37 Simon Says"
+title: "37 Simon Says (fastclk)"
 weight: 38
 ---
 
-## 37 : 0b 000 100 101 : Simon Says
+## 37 : 0b 000 100 101 : Simon Says (fastclk)
 
 {{< tt-scanchain-switches "000100101" >}}
 
 * Author: Uri Shaked
 * Description: A simple memory game
 * [GitHub repository](https://github.com/wokwi/tt03-simon-game)
-* [Most recent GDS build](https://github.com/wokwi/tt03-simon-game/actions/runs/4789086425)
 * HDL project
 * [Extra docs](https://wokwi.com/projects/352319274216569857)
-* Clock: 4000 Hz
+* Clock: 35000 Hz
 * External hardware: Four push buttons (with pull-down resistors), four LEDs, and optionally a speaker/buzzer
 
 ![picture](images/tt-simon-game.jpg)
@@ -35,10 +34,10 @@ The game supports four clock speeds, which can be selected using the clk3 and cl
 
 | clk3 | clk1 | Clock Speed |
 |------|------|-------------|
-| 0    | 0    | 4KHz        |
-| 0    | 1    | 6KHz        |
-| 1    | 0    | 12KHz       |
-| 1    | 1    | 14KHz       |
+| 0    | 0    | 16KHz       |
+| 0    | 1    | 20KHz       |
+| 1    | 0    | 32KHz       |
+| 1    | 1    | 35KHz       |
 
 Setting the clock speed affects the speed of the game and the tone generator.
 

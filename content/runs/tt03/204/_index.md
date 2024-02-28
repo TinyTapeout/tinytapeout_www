@@ -11,7 +11,6 @@ weight: 205
 * Author: Eric Swalens
 * Description: A configurable counter driven by 2-channel Gray code
 * [GitHub repository](https://github.com/swalense/tt02-graycode_counter)
-* [Most recent GDS build](https://github.com/swalense/tt02-graycode_counter/actions/runs/3602237769)
 * HDL project
 * [Extra docs](https://github.com/swalense/tt02-graycode_counter#readme)
 * Clock: 5000 Hz

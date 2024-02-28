@@ -11,7 +11,6 @@ weight: 147
 * Author: Christina Cyr
 * Description: UART Template
 * [GitHub repository](https://github.com/Christina-Cyr/tt02-submission-UART-CC)
-* [Most recent GDS build](https://github.com/Christina-Cyr/tt02-submission-UART-CC/actions/runs/3477528411)
 * [Wokwi](https://wokwi.com/projects/347619669052490324) project
 * [Extra docs](https://github.com/Christina-Cyr/tt02-submission-UART-CC/blob/main/README.md)
 * Clock: 0 Hz

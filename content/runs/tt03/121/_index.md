@@ -11,7 +11,6 @@ weight: 122
 * Author: zoe nguyen.  taylor
 * Description: outputs my name and my age (zoe 4)
 * [GitHub repository](https://github.com/zoent/tt02-zoe-chip)
-* [Most recent GDS build](https://github.com/zoent/tt02-zoe-chip/actions/runs/3457593544)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

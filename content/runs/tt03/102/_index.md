@@ -11,7 +11,6 @@ weight: 103
 * Author: James Ross
 * Description: Write to, Read from, and Stream 16 addressable 8-bit words of memory
 * [GitHub repository](https://github.com/jar/tt02_sram)
-* [Most recent GDS build](https://github.com/jar/tt02_sram/actions/runs/3597741115)
 * HDL project
 * [Extra docs](https://github.com/jar/tt02_sram/blob/main/README.md)
 * Clock: 0 Hz

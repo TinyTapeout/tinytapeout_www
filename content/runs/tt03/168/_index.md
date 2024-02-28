@@ -11,7 +11,6 @@ weight: 169
 * Author: Paul Campell
 * Description: simple cpu
 * [GitHub repository](https://github.com/MoonbaseOtago/tt-cpu)
-* [Most recent GDS build](https://github.com/MoonbaseOtago/tt-cpu/actions/runs/3555302577)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

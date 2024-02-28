@@ -11,10 +11,9 @@ weight: 102
 * Author: Ashutosh Kumar
 * Description: As water level of tank decreases/increases LED glow according to it.when water level touches the last then motor start and run until full the tank.
 * [GitHub repository](https://github.com/kashi1729/tt03-submission-Water-Level-Indicator-With-Auto-Motor-controller)
-* [Most recent GDS build](https://github.com/kashi1729/tt03-submission-Water-Level-Indicator-With-Auto-Motor-controller/actions/runs/4785332822)
 * [Wokwi](https://wokwi.com/projects/362788954641333249) project
 * [Extra docs]()
-* Clock: 0 Hz
+* Clock: 500 Hz
 * External hardware: 
 
 
@@ -42,11 +41,11 @@ out5 -- connect to Red Led (moto)
 
 | # | Input        | Output       |
 |---|--------------|--------------|
-| 0 | c  | segment a -- Red Led (Full) |
-| 1 | l  | segment b -- Yellow1 (Half1) |
-| 2 | o  | segment c -- Yellow2 ( Half2) |
-| 3 | c  | segment d -- RED (Empty) |
-| 4 | k  | segment e -- RED (motor) |
-| 5 |    | segment f |
-| 6 | i  | segment g |
-| 7 | n  | dot |
+| 0 | clock  | segment a -- Red Led (Full) |
+| 1 | input A binary input  | segment b -- Yellow1 (Half1) |
+| 2 | input B binary input  | segment c -- Yellow2 ( Half2) |
+| 3 | none  | segment d -- RED (Empty) |
+| 4 | none  | segment e -- RED (motor) |
+| 5 | none  | segment f |
+| 6 | none  | segment g |
+| 7 | none  | dot |

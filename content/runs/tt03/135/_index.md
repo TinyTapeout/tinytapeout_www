@@ -11,7 +11,6 @@ weight: 136
 * Author: Milosch Meriac
 * Description: Plays Super Mario Tune over a Piezo Speaker connected across io_out[1:0]
 * [GitHub repository](https://github.com/meriac/tt02-play-tune)
-* [Most recent GDS build](https://github.com/meriac/tt02-play-tune/actions/runs/3529204634)
 * HDL project
 * [Extra docs](https://github.com/meriac/tt02-play-tune#readme)
 * Clock: 3125 Hz

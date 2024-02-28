@@ -11,7 +11,6 @@ weight: 185
 * Author: Steven Bos
 * Description: This chip offers various kinds of conversions and comparisons between binary encoded ternary and unary encoded ternary in both machine readible output and human readible (7-segment display decimal) output
 * [GitHub repository](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare)
-* [Most recent GDS build](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare/actions/runs/3569693118)
 * [Wokwi](https://wokwi.com/projects/341277789473735250) project
 * [Extra docs](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare/blob/main/README.md)
 * Clock: 0 Hz

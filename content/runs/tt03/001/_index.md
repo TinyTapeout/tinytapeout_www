@@ -11,7 +11,6 @@ weight: 2
 * Author: Wallie Everest
 * Description: Vintage 8-bit sound generator
 * [GitHub repository](https://github.com/WallieEverest/tt03)
-* [Most recent GDS build](https://github.com/WallieEverest/tt03/actions/runs/4751117777)
 * HDL project
 * [Extra docs](https://github.com/WallieEverest/tt03/blob/main/README.md)
 * Clock: 9600 Hz

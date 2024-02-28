@@ -11,7 +11,6 @@ weight: 126
 * Author: Rolf Widenfelt
 * Description: A 4-bit ALU inspired by Supercon.6 badge
 * [GitHub repository](https://github.com/rolfmobile99/tt02-submission-template)
-* [Most recent GDS build](https://github.com/rolfmobile99/tt02-submission-template/actions/runs/3538052048)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

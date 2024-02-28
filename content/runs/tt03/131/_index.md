@@ -11,7 +11,6 @@ weight: 132
 * Author: Thorsten Knoll
 * Description: 8x8 bit serial programmable, addressable and playable memory.
 * [GitHub repository](https://github.com/ThorKn/tinytapeout02_pattern_player)
-* [Most recent GDS build](https://github.com/ThorKn/tinytapeout02_pattern_player/actions/runs/3476982043)
 * [Wokwi](https://wokwi.com/projects/341620484740219475) project
 * [Extra docs]()
 * Clock: 0 Hz

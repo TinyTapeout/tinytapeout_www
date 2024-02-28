@@ -11,7 +11,6 @@ weight: 177
 * Author: JinGen Lim
 * Description: Converts a BCD input into a 7-segment display output
 * [GitHub repository](https://github.com/jglim/tt02-bcd-7seg)
-* [Most recent GDS build](https://github.com/jglim/tt02-bcd-7seg/actions/runs/3562022687)
 * [Wokwi](https://wokwi.com/projects/349546262775726676) project
 * [Extra docs](https://github.com/jglim/tt02-bcd-7seg/blob/main/README.md)
 * Clock: 0 Hz

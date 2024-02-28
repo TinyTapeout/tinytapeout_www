@@ -11,7 +11,6 @@ weight: 152
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab. Displays an 8-bit score from one of two players as a two-digit hexadecimal value.
 * [GitHub repository](https://github.com/NYIT-CNS/cns001-tt02-submission1)
-* [Most recent GDS build](https://github.com/NYIT-CNS/cns001-tt02-submission1/actions/runs/3599135291)
 * [Wokwi](https://wokwi.com/projects/349901899339661908) project
 * [Extra docs](https://github.com/arta-ns/tt02-cns-submission/blob/main/README.md)
 * Clock: 0 Hz

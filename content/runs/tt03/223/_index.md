@@ -11,7 +11,6 @@ weight: 224
 * Author: Chris Burton
 * Description: CRC-16/XModem and Even Parity calculator based on Ben Eater error detection videos.
 * [GitHub repository](https://github.com/8086net/tt02-CRC16)
-* [Most recent GDS build](https://github.com/8086net/tt02-CRC16/actions/runs/3603289629)
 * [Wokwi](https://wokwi.com/projects/349833797657690706) project
 * [Extra docs]()
 * Clock: 0 Hz

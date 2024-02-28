@@ -11,7 +11,6 @@ weight: 243
 * Author: CMUA F.Segura-Quijano, J.S.Moya
 * Description: Pseudo Random generator.
 * [GitHub repository](https://github.com/darkfsegura/tt03-verilog-cmua-psrandom)
-* [Most recent GDS build](https://github.com/darkfsegura/tt03-verilog-cmua-psrandom/actions/runs/4789351489)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

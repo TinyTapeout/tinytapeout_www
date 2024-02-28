@@ -11,7 +11,6 @@ weight: 213
 * Author: Bradley Boccuzzi
 * Description: Push the button to fill in segments of the LED display, they will continue to shift and fill in the display until the button is released.`
 * [GitHub repository](https://github.com/DaveyPocket/chaser_tt2)
-* [Most recent GDS build](https://github.com/DaveyPocket/chaser_tt2/actions/runs/3599130372)
 * [Wokwi](https://wokwi.com/projects/341178481588044372) project
 * [Extra docs]()
 * Clock: 0 Hz

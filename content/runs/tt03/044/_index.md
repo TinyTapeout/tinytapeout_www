@@ -11,7 +11,6 @@ weight: 45
 * Author: Hammond Pearce
 * Description: An accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
 * [GitHub repository](https://github.com/kiwih/tt03-verilog-qtcoreA1)
-* [Most recent GDS build](https://github.com/kiwih/tt03-verilog-qtcoreA1/actions/runs/4763642389)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz
@@ -292,9 +291,7 @@ For **Data Manipulation Instructions**:
 | 28      | Constant value: Bits for 7seg "9" |
 | 29-31   | Constant value: 1 |
 
-### 7 : 0b 000 000 111seg
-
-{{< tt-scanchain-switches "000000111" >}}
+### 7seg
 
 Tiny Tapeout 3 has a 7-segment display on the board. To make it useful with the QTCore-A1, 
 the processor helpfully includes the bit patterns stored at addresses 19-28.

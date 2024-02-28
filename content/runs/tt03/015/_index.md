@@ -11,7 +11,6 @@ weight: 16
 * Author: Marcus Michaely
 * Description: Input is 8-Bit and only one combination opens the door
 * [GitHub repository](https://github.com/marcusmichaely/tt03-submission-template)
-* [Most recent GDS build](https://github.com/marcusmichaely/tt03_8Bit_BinaryDoorLock/actions/runs/4779761390)
 * [Wokwi](https://wokwi.com/projects/359387860730498049) project
 * [Extra docs](https://github.com/marcusmichaely/tt03_8Bit_BinaryDoorLock/blob/main/README.md)
 * Clock: 0 Hz

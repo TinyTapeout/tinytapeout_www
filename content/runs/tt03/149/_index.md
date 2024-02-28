@@ -11,7 +11,6 @@ weight: 150
 * Author: Clive Chan
 * Description: 8-bit (E4M3) Floating Point Multiplier
 * [GitHub repository](https://github.com/cchan/fp8_mul)
-* [Most recent GDS build](https://github.com/cchan/fp8_mul/actions/runs/3534462711)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

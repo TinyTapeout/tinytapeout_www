@@ -11,7 +11,6 @@ weight: 183
 * Author: Luke Wren
 * Description: Execute a simple 16-bit RISC-style instruction set from up to 64 kilobytes of external SPI SRAM.
 * [GitHub repository](https://github.com/Wren6991/tt02-whisk-serial-processor)
-* [Most recent GDS build](https://github.com/Wren6991/tt02-whisk-serial-processor/actions/runs/3603452870)
 * HDL project
 * [Extra docs](https://github.com/Wren6991/tt02-whisk-serial-processor/blob/main/README.md)
 * Clock: 6000 Hz

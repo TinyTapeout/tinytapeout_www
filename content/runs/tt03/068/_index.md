@@ -11,7 +11,6 @@ weight: 69
 * Author: Clemens Nasenberg
 * Description: Mix two I2S streams according to selection
 * [GitHub repository](https://github.com/cnasenbe/tt03-chnasenb-i2s)
-* [Most recent GDS build](https://github.com/cnasenbe/tt03-chnasenb-i2s/actions/runs/4780316399)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

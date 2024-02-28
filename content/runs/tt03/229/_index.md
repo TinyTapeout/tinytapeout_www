@@ -11,7 +11,6 @@ weight: 230
 * Author: Michael Bartholic
 * Description: 4 word, 4 bit read/write RAM
 * [GitHub repository](https://github.com/theFestest/tt02-4x4-ram)
-* [Most recent GDS build](https://github.com/theFestest/tt02-4x4-ram/actions/runs/3603498286)
 * [Wokwi](https://wokwi.com/projects/341557831870186068) project
 * [Extra docs]()
 * Clock: 0 Hz

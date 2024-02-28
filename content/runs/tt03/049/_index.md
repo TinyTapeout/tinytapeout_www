@@ -8,10 +8,9 @@ weight: 50
 
 {{< tt-scanchain-switches "000110001" >}}
 
-* Author: Ioannis G. Intzes
+* Author: Ioannis G. Intzes, International Hellenic University - Department of Information and Electronic Engineering
 * Description: Increase and Decrease the PWM (Pulse-Width) to dim a LED.
 * [GitHub repository](https://github.com/IoannisIn/tt03-verilog-pwm)
-* [Most recent GDS build](https://github.com/IoannisIn/tt03-verilog-pwm/actions/runs/4742370395)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

@@ -11,7 +11,6 @@ weight: 157
 * Author: Davit Margarian (UDXS)
 * Description: Computes 4.2 fixed-point square root for any 7-bit integer
 * [GitHub repository](https://github.com/UDXS/sqrt-tt02)
-* [Most recent GDS build](https://github.com/UDXS/sqrt-tt02/actions/runs/3527098409)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

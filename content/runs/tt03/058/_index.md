@@ -11,7 +11,6 @@ weight: 59
 * Author: Jorge Marin, Daniel Arevalos
 * Description: Ring oscillator whose frecuency depends on temperature.
 * [GitHub repository](https://github.com/JorgeMarinN/tt03_ac3e-usm_ro-based_tempsens)
-* [Most recent GDS build](https://github.com/JorgeMarinN/tt03_ac3e-usm_ro-based_tempsens/actions/runs/4789239141)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

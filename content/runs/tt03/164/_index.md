@@ -11,7 +11,6 @@ weight: 165
 * Author: Eric Smith
 * Description: Make two rings with the same number of stages but measure how their frequency differs.  Measure if they can influence eachother.
 * [GitHub repository](https://github.com/ericsmi/tt02-verilog-ring-osc-demo)
-* [Most recent GDS build](https://github.com/ericsmi/tt02-verilog-ring-osc-demo/actions/runs/4546710353)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

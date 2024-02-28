@@ -11,7 +11,6 @@ weight: 171
 * Author: Leo Moser
 * Description: 1-bit ALU from the book `Structured Computer Organization: Andrew S. Tanenbaum`
 * [GitHub repository](https://github.com/mole99/tt02-1bit-alu)
-* [Most recent GDS build](https://github.com/mole99/tt02-1bit-alu/actions/runs/3553720305)
 * [Wokwi](https://wokwi.com/projects/340318610245288530) project
 * [Extra docs](https://github.com/mole99/tt02-1bit-alu/blob/main/README.md)
 * Clock: 0 Hz

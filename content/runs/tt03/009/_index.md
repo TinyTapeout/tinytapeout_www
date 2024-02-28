@@ -11,7 +11,6 @@ weight: 10
 * Author: Mike Bell
 * Description: Implementation of the CPU from HOVALAAG
 * [GitHub repository](https://github.com/MichaelBell/tt03-hovalaag)
-* [Most recent GDS build](https://github.com/MichaelBell/tt03-hovalaag/actions/runs/4582754393)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz
@@ -26,7 +25,7 @@ weight: 10
 This is an implementation of the VLIW processor from the game.  Thank you to @[nothings](https://twitter.com/nothings) for the fun game,
 making the assembler public domain, and for permission to create this hardware implementation.
 
-The processor uses 32-bit instructions and has 12-bit I/O.  The instruction and data are therefore passed in and out over 10 clocks per
+The processor uses 32-bit instructions and has 12-bit I/O.  The instruction and data are therefore passed in and out over 5 clocks per
 processor clock.
 
 More details in the [github repo](https://github.com/MichaelBell/tt03-hovalaag).
@@ -43,11 +42,11 @@ The subcycle counter can be reset independently of the rest of the processor, to
 
 | # | Input        | Output       |
 |---|--------------|--------------|
-| 0 | Clock  | Output 0 |
-| 1 | Reset disable (resets enabled when low)  | Output 1 |
-| 2 | Input 0 or Reset (when high)  | Output 2 |
-| 3 | Input 1 or Reset subcycle count (when high)  | Output 3 |
-| 4 | Input 2 or enable ROSC (when high and reset enabled)  | Output 4 |
-| 5 | Input 3  | Output 5 |
-| 6 | Input 4  | Output 6 |
-| 7 | Input 5  | Output 7 |
+| 0 | Input 0  | Output 0 |
+| 1 | Input 1  | Output 1 |
+| 2 | Input 2 or Reset (when high)  | Output 2 |
+| 3 | Input 3 or Reset subcycle count (when high)  | Output 3 |
+| 4 | Input 4 or enable ROSC (when high and reset enabled)  | Output 4 |
+| 5 | Input 5  | Output 5 |
+| 6 | Input 6  | Output 6 |
+| 7 | Input 7  | Output 7 |

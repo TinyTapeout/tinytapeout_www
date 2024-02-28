@@ -11,7 +11,6 @@ weight: 173
 * Author: youngpines
 * Description: small r2r
 * [GitHub repository](https://github.com/youngpines/tt02-youngpines-submission)
-* [Most recent GDS build](https://github.com/youngpines/tt02-youngpines-submission/actions/runs/3555030367)
 * [Wokwi](https://wokwi.com/projects/341571228858843732) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -11,7 +11,6 @@ weight: 107
 * Author: Rice Shelley
 * Description: Computes a small fft
 * [GitHub repository](https://github.com/RiceShelley/tiny-fft)
-* [Most recent GDS build](https://github.com/RiceShelley/tiny-fft/actions/runs/3429738875)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

@@ -11,7 +11,6 @@ weight: 60
 * Author: Juan Sanchez
 * Description: FSM look at table
 * [GitHub repository](https://github.com/Juander28/tt03-FSM-LOOK-AT-TABLE-LATAM)
-* [Most recent GDS build](https://github.com/Juander28/tt03-FSM-LOOK-AT-TABLE-LATAM/actions/runs/4776245390)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

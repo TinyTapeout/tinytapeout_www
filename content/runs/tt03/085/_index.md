@@ -11,7 +11,6 @@ weight: 86
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design Supports sending multiple ASCII characters over UART.
 * [GitHub repository](https://github.com/psychogenic/tt03-UARTstring)
-* [Most recent GDS build](https://github.com/psychogenic/tt03-UARTstring/actions/runs/4773250588)
 * [Wokwi](https://wokwi.com/projects/347144898258928211) project
 * [Extra docs](https://wokwi.com/projects/347144898258928211)
 * Clock: 300 Hz

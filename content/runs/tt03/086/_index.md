@@ -11,7 +11,6 @@ weight: 87
 * Author: Tiny Tapeout 02 (J. Rosenthal)
 * Description: This design implements a single character UART transmitter using registers made from D-flip flops and multiplexers.
 * [GitHub repository](https://github.com/psychogenic/tt03-UARTcharacter)
-* [Most recent GDS build](https://github.com/psychogenic/tt03-UARTcharacter/actions/runs/4773250581)
 * [Wokwi](https://wokwi.com/projects/347140425276981843) project
 * [Extra docs](https://wokwi.com/projects/347140425276981843)
 * Clock: 300 Hz

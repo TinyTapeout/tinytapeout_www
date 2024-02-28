@@ -11,7 +11,6 @@ weight: 153
 * Author: Bryan Bonilla Garay, Devin Alvarez, Ishaan Singh, Yu Feng Zhou, and N. Sertac Artan
 * Description: First test run of CNS Lab (second design)
 * [GitHub repository](https://github.com/NYIT-CNS/cns002-tt02-submission2)
-* [Most recent GDS build](https://github.com/NYIT-CNS/cns002-tt02-submission2/actions/runs/3603687221)
 * [Wokwi](https://wokwi.com/projects/349953952950780498) project
 * [Extra docs](https://github.com/arta-ns/tt02-cns-submission/blob/main/README.md)
 * Clock: 0 Hz

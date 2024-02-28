@@ -11,7 +11,6 @@ weight: 112
 * Author: Emil J Tywoniak
 * Description: Tap twice to the beat, the outputs will chase the beat. Or generate some audio noise!
 * [GitHub repository](https://github.com/ekliptik/tt02-chase-the-beat)
-* [Most recent GDS build](https://github.com/ekliptik/tt02-chase-the-beat/actions/runs/3544351091)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

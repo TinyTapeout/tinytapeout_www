@@ -11,7 +11,6 @@ weight: 73
 * Author: Luca Collini and Hammond Pearce
 * Description: A RTL locked accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
 * [GitHub repository](https://github.com/Lucaz97/tt03-RTLlocked-verilog-qtcoreA1)
-* [Most recent GDS build](https://github.com/Lucaz97/tt03-RTLlocked-verilog-qtcoreA1/actions/runs/4780876099)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz
@@ -41,9 +40,7 @@ We store the key in a scan chained register. In order to have the design working
 15: DATA 249    ; logic locking unlock key 
 16: DATA 191    ; logic locking unlock key 
 ```
-### 7 : 0b 000 000 111seg
-
-{{< tt-scanchain-switches "000000111" >}}
+### 7seg
 
 Tiny Tapeout 3 has a 7-segment display on the board. To make it useful with the QTCore-A1, 
 the processor helpfully includes the bit patterns stored at addresses 16-26. Address 15 contains the Address of the 0 pattern.

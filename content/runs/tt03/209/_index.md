@@ -11,7 +11,6 @@ weight: 210
 * Author: cy384
 * Description: Four bit adder with binary to 7 segment display decoder
 * [GitHub repository](https://github.com/cy384/tt02-submission-template)
-* [Most recent GDS build](https://github.com/cy384/tt02-submission-template/actions/runs/3598963586)
 * [Wokwi](https://wokwi.com/projects/341546888233747026) project
 * [Extra docs]()
 * Clock: 0 Hz

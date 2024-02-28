@@ -11,7 +11,6 @@ weight: 201
 * Author: maehw
 * Description: Play the wolf, goat and cabbage puzzle interactively.
 * [GitHub repository](https://github.com/maehw/tt02-wokwi-wolf-goat-cabbage)
-* [Most recent GDS build](https://github.com/maehw/tt02-wokwi-wolf-goat-cabbage/actions/runs/3595233571)
 * [Wokwi](https://wokwi.com/projects/341614346808328788) project
 * [Extra docs](https://github.com/maehw/tt02-wokwi-wolf-goat-cabbage/blob/main/README.md)
 * Clock: 0 Hz

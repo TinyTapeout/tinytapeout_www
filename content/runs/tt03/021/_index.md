@@ -11,7 +11,6 @@ weight: 22
 * Author: Yannick Reiß
 * Description: Can calculate the result for 3 bit multiplication and division.
 * [GitHub repository](https://github.com/yannickreiss/TT3_dot_op)
-* [Most recent GDS build](https://github.com/yannickreiss/TT3_dot_op/actions/runs/4552358729)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

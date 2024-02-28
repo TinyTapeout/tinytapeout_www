@@ -11,7 +11,6 @@ weight: 28
 * Author: Luke Vassallo
 * Description: An two channel XOR stream cipher with fully programmable 32-bit galois LFSRs.
 * [GitHub repository](https://github.com/LukeVassallo/tt03-xor-cipher)
-* [Most recent GDS build](https://github.com/LukeVassallo/tt03-xor-cipher/actions/runs/4593665296)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

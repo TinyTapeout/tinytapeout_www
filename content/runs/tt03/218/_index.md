@@ -11,7 +11,6 @@ weight: 219
 * Author: saicharan0112
 * Description: A Basic 4:2 compressor which contains 4 inputs and 1 carry_in bit which compresses to 2 outputs and 1 carry_out bit
 * [GitHub repository](https://github.com/saicharan0112/tt02-submission-template)
-* [Most recent GDS build](https://github.com/saicharan0112/tt02-submission-template/actions/runs/3782200126)
 * [Wokwi](https://wokwi.com/projects/349813388252021330) project
 * [Extra docs]()
 * Clock: 0 Hz

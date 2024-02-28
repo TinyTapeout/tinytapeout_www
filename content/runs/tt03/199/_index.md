@@ -11,7 +11,6 @@ weight: 200
 * Author: Vaishnav Achath
 * Description: Count Up/Down on the 7-segment accouring to rotary encoder input
 * [GitHub repository](https://github.com/vaishnavachath/tt02-submission-rotary-encoder-counter)
-* [Most recent GDS build](https://github.com/vaishnavachath/tt02-submission-rotary-encoder-counter/actions/runs/3595979401)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

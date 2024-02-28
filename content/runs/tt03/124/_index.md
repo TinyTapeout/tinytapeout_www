@@ -11,7 +11,6 @@ weight: 125
 * Author: Tom Schucker
 * Description: generates and checks prbs15 sequences
 * [GitHub repository](https://github.com/teaandtechtime/tt02-submission-prbs15)
-* [Most recent GDS build](https://github.com/teaandtechtime/tt02-submission-prbs15/actions/runs/3457691234)
 * [Wokwi](https://wokwi.com/projects/348260124451668562) project
 * [Extra docs]()
 * Clock: 0 Hz

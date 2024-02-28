@@ -11,7 +11,6 @@ weight: 35
 * Author: Grant Hernandez (@grant-h)
 * Description: A reconfigurable CRC engine
 * [GitHub repository](https://github.com/grant-h/tt03-crc-decelerator)
-* [Most recent GDS build](https://github.com/grant-h/tt03-crc-decelerator/actions/runs/4768282381)
 * HDL project
 * [Extra docs](https://github.com/grant-h/tt03-crc-decelerator)
 * Clock: any Hz

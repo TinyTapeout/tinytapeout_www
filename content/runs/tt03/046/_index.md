@@ -11,7 +11,6 @@ weight: 47
 * Author: ’Mohamed Nasser
 * Description: multiply two 8-b numbers in 4 chunks
 * [GitHub repository](https://github.com/mnasser431998/tt03-mnasser-demo)
-* [Most recent GDS build](https://github.com/mnasser431998/tt03-mnasser-demo/actions/runs/4747475129)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

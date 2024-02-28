@@ -11,7 +11,6 @@ weight: 115
 * Author: Fernando Dominguez Pousa
 * Description: 4-bit Multiplier based on single bit full adders
 * [GitHub repository](https://github.com/kuriousd/tt02-4bit-multiplier)
-* [Most recent GDS build](https://github.com/kuriousd/tt02-4bit-multiplier/actions/runs/3516782325)
 * HDL project
 * [Extra docs]()
 * Clock: 2500 Hz

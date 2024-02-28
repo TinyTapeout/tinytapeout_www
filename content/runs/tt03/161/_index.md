@@ -10,8 +10,7 @@ weight: 162
 
 * Author: Shaos
 * Description: Game of Life Cell
-* [GitHub repository](https://github.com/shaos-net/tt02-submission-shaos2)
-* [Most recent GDS build](https://github.com/shaos-net/tt02-submission-shaos2/actions/runs/3545474888)
+* [GitHub repository](https://github.com/shaos/tt02-submission-shaos2)
 * [Wokwi](https://wokwi.com/projects/349011320806310484) project
 * [Extra docs]()
 * Clock: 0 Hz

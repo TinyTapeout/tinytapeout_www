@@ -11,7 +11,6 @@ weight: 66
 * Author: Aleksandr Zlobin
 * Description: UART interface with access to internal registers
 * [GitHub repository](https://github.com/ZlobinAS/tt03-verilog-uart)
-* [Most recent GDS build](https://github.com/ZlobinAS/tt03-verilog-uart/actions/runs/4776848242)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

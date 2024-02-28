@@ -11,7 +11,6 @@ weight: 119
 * Author: Andre & Milosch Meriac
 * Description: Submission for tt02 - Rotating Dash
 * [GitHub repository](https://github.com/meriac/loading-animation)
-* [Most recent GDS build](https://github.com/meriac/loading-animation/actions/runs/3463507687)
 * [Wokwi](https://wokwi.com/projects/348121131386929746) project
 * [Extra docs](https://github.com/meriac/loading-animation/blob/main/README.md)
 * Clock: 10000 Hz
