@@ -31,7 +31,7 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 # Submit your design
 
 * 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.  
-  However, Efabless is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
+  However, [Efabless](https://efabless.com) is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
 * Each extra tile is $50, and extra analog pins start from $40 per pin.
 * By making an order, you agree to our [terms of service](terms).
 * Closing date is 19th of April
