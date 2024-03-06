@@ -33,7 +33,7 @@ There are several templates available, each for a different number of tiles. The
 
 Most analog designs should fit into the smallest template, _tt_block_1x2_pg_ana.def_, which is 160x225um in size.
 
-**Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_en` pins to GND.
+**Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_oe` pins to GND.
 
 ## Power ports
 
