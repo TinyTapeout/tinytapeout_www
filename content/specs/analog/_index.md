@@ -31,7 +31,7 @@ The pin locations must match one of the [Tiny Tapeout templates](https://github.
 
 There are several templates available, each for a different number of tiles. The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
 
-Most analog designs should fit into the smallest template, _tt_block_1x2_pg_ana.def_.
+Most analog designs should fit into the smallest template, _tt_block_1x2_pg_ana.def_, which is 160x225um in size.
 
 **Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_en` pins to GND.
 
