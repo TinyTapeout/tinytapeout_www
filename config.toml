@@ -30,7 +30,7 @@ theme = "learn"
     languageName = "English"
 
   [Languages.es]
-    title = "Documentation en Español"
+    title = "¡Hacer tu propio chip de forma más rápida, más fácil y más barata!"
     weight = 2
     languageName = "Español"
 
