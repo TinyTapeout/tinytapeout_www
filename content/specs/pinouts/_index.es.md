@@ -1,7 +1,7 @@
 ---
 title: 'Distribución de pines'
 description: 'Pinouts recomendados para varios protocolos y módulos periféricos'
-weight: 20
+weight: 31
 ---
 
 Para hacer más fácil la puesta en marcha y la reutilización de placas, TT recomienda utilizar distribuciones de pines *(pinouts)* comunes donde sea posible. Si tu diseño usa el mismo pinout que los otros diseños, será mucho más sencillo conectar hardware externo o crear placas propias que se puedan implementar en aquellos diseños.

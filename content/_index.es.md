@@ -10,11 +10,11 @@ LastModifierDisplayName: cristian gonzalez
 
 {{< countdown >}}
 
-Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca obtener tus diseños manufacturados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
+Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca hacer que tus diseños sean fabricados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
 
 # Primeros pasos
 
-* Si eres nuevo en el diseño digital - comienza tomando alguno de nuestras [lecciones aquí](digital_design).
+* Si eres nuevo en el diseño digital - comienza tomando alguna de nuestras [lecciones aquí](digital_design).
 * Después crea tu propio diseño con la [plantilla Wokwi](https://wokwi.com/projects/354858054593504257), o para usuarios avanzados, con [un HDL](/hdl).
 * Para obtener ayuda y soporte, revisa las [preguntas frecuentes](faq) y [únete a las conversaciones rápidas y amigables en Discord](https://discord.gg/qZHPrPsmt6).
 
@@ -31,7 +31,7 @@ Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca ob
 # Envía tu diseño
 
 * Cuadro de tamaño 160 x 100 um + ASIC + placa de demostración: El precio estándar es de $300 sin incluir costos de envío.
-  Sin embargo, Efabless está patrocinando una oferta especial anticipada de **$150** (más costos de envío), limitada a un pedido por persona.
+  Sin embargo, [Efabless](https://efabless.com) está patrocinando una oferta especial anticipada de **$150** (más costos de envío), limitada a un pedido por persona.
 * Cada cuadro adicional cuesta $50, y pines análogos extra están disponibles desde $40 por pin.
 * Al hacer un pedido, usted acepta nuestros [términos y condiciones](../../terms).
 * Fecha de cierre es el 19 de Abril.
