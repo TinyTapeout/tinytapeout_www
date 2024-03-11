@@ -39,4 +39,9 @@ theme = "learn"
     weight = 3
     languageName = "Українська"
 
-#disableLanguages = ['es']
+  [Languages.it]
+    title = "Crea il tuo microchip in modo più veloce, più semplice ed economico!"
+    weight = 4
+    languageName = "Italiano"
+
+#disableLanguages = ['es', 'it']
