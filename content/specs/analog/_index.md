@@ -16,7 +16,7 @@ For example, if you purchased two analog pins, only `ua[0]` and `ua[1]` will be 
 
 ## Specifications and limitations
 
-The path between the analog pads and the your project (the ua pins) is expected to have the following properties:
+The path between the analog pads and your project (the ua pins) is expected to have the following properties:
 
 - Resistance: < 500 ohm
 - Capacitance: < 5 pf
@@ -122,7 +122,7 @@ A quick way to get started is to use this [tcl script](https://gist.github.com/u
 
 Save the resulting GDS file in the `gds` folder, and the LEF file in the `lef` folder. The file names must match your `top_module` property (e.g. `gds/tt_um_example.gds`). 
 
-If you use magic to create your design, make sure to export the LEF file with the "-pinonly" option, e.g.:
+If you use Magic to create your design, make sure to export the LEF file with the "-pinonly" option, e.g.:
 
 ```
 lef write ../lef/tt_um_project_name.lef -pinonly
