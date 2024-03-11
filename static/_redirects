@@ -1,4 +1,9 @@
 # docs: https://developers.cloudflare.com/pages/platform/redirects/
 
 /discord https://discord.gg/qZHPrPsmt6
+/tt01 /runs/tt01
 /tt02 /runs/tt02
+/tt03 /runs/tt03
+/tt04 /runs/tt04
+/tt05 /runs/tt05
+/tt06 /runs/tt06
