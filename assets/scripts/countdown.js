@@ -26,10 +26,12 @@
     const resJson = await res.json();
     const shuttle = resJson[0];
     deadline = new Date(shuttle.deadline);
-    tileStats.textContent = `${shuttle.tiles_used}/${shuttle.tiles_total}`;
-    pcbStats.textContent = `${shuttle.subsidized_pcbs_sold}/${shuttle.subsidized_pcbs_total}`;
-    tileProgress.style.width = `${(shuttle.tiles_used / shuttle.tiles_total) * 100}%`;
-    pcbProgress.style.width = `${(shuttle.subsidized_pcbs_sold / shuttle.subsidized_pcbs_total) * 100}%`;
+    const tilesPercent = (shuttle.tiles_used / shuttle.tiles_total) * 100;
+    const pcbsPercent = (shuttle.subsidized_pcbs_sold / shuttle.subsidized_pcbs_total) * 100;
+    tileStats.textContent = `${Math.round(tilesPercent)}% sold`;
+    pcbStats.textContent = `${Math.round(pcbsPercent)}% sold`;
+    tileProgress.style.width = `${tilesPercent}%`;
+    pcbProgress.style.width = `${pcbsPercent}%`;
     return resJson;
   }
 
