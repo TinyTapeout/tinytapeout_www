@@ -132,7 +132,7 @@ Luego, podemos abrir y revisar el archivo de salida con el [formato de archivo d
 
 ¡Simularemos el diseño!
 
-1. Abre la [plantilla Wokwi](https://wokwi.com/projects/357178660283991041).
+1. Abre la [plantilla Wokwi](https://wokwi.com/projects/354858054593504257).
 2. Cambia la vista del editor desde la pestaña `tiny-tapeout-poc-new-internal-pulls.ino` a la pestaña `diagram.json`.
 3. Selecciona todo el contenido del archivo, elimínalo y reemplázalo con el contenido del archivo JSON generado `bcd_7segment_lut.diagram.json`.
 4. Ten en cuenta que tu navegador puede no responder por un momento (varios segundos) mientras Wokwi procesa los nuevos contenidos JSON.
@@ -209,7 +209,7 @@ uint16_t expected_out_val[2 << (DESIGN_NUM_USED_INPUTS-1)] = {
 
 ¡Vamos a simular y verificar el diseño!
 
-1. Abre la [plantilla Wokwi](https://wokwi.com/projects/357178660283991041).
+1. Abre la [plantilla Wokwi](https://wokwi.com/projects/354858054593504257).
 2. En la vista del editor `tiny-tapeout-poc-new-internal-pulls.ino`, selecciona todo el contenido del archivo, elimínalo y reemplázalo con el contenido del nuevo archivo `sketch.ino`.
 3. Cambia la vista del editor de la pestaña `tiny-tapeout-poc-new-internal-pulls.ino` a la pestaña `diagram.json`.
 4. Selecciona todo el contenido del archivo, elimínalo y reemplázalo con el contenido del nuevo archivo `JSON generado bcd_7segment_lut.diagram.json`.
