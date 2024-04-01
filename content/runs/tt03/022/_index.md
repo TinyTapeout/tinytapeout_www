@@ -1,15 +1,16 @@
 ---
 hidden: true
-title: "22 Random number guess game"
+title: "22 Random Number Guessing Game"
 weight: 23
 ---
 
-## 22 : Random number guess game
+## 22 : 0b 000 010 110 : Random Number Guessing Game
+
+{{< tt-scanchain-switches "000010110" >}}
 
 * Author: Yufei Zhen, Elaina Zodiatis, Khadijatou Dibba
 * Description: Guess 6-bit random number, 3 attemps in one round. 
 * [GitHub repository](https://github.com/lastminwarrior-fei/tt03-random-num-guess-game)
-* [Most recent GDS build](https://github.com/lastminwarrior-fei/tt03-random-num-guess-game/actions/runs/4790110145)
 * HDL project
 * [Extra docs]()
 * Clock: manual Hz

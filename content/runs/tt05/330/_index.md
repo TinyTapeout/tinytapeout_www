@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "330 Clock and Random Number Gen"
-weight: 120
+weight: 28
 ---
 
 ## 330 : Clock and Random Number Gen

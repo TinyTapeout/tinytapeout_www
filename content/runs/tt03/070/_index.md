@@ -4,12 +4,13 @@ title: "70 7 Segment Random Walk"
 weight: 71
 ---
 
-## 70 : 7 Segment Random Walk
+## 70 : 0b 001 000 110 : 7 Segment Random Walk
+
+{{< tt-scanchain-switches "001000110" >}}
 
 * Author: Richard Miller
 * Description: Random walk around the 7 segment display
 * [GitHub repository](https://github.com/millerresearch/tt03)
-* [Most recent GDS build](https://github.com/millerresearch/tt03/actions/runs/4780465465)
 * [Wokwi](https://wokwi.com/projects/361728681519813633) project
 * [Extra docs]()
 * Clock: 0 Hz

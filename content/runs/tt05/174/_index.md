@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "174 Perceptron and basic binary neural network"
-weight: 32
+weight: 37
 ---
 
 ## 174 : Perceptron and basic binary neural network

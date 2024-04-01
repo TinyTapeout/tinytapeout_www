@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "2 TinyTapeout 05 Loopback Test Module"
-weight: 74
+weight: 78
 ---
 
 ## 2 : TinyTapeout 05 Loopback Test Module

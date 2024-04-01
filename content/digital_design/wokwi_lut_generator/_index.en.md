@@ -11,7 +11,7 @@ Thanks to community member **maehw** for writing this article.
 
 ## Truth tables
 
-You have already learned about combinational logic that can be described by using a truth tables, e.g. the [full adder](https://tinytapeout.com/digital_design/puzzle_adder/).
+You have already learned about combinational logic that can be described by using a truth table, e.g. the [full adder](https://tinytapeout.com/digital_design/puzzle_adder/).
 
 Let's now have a look at at a decoder which converts a binary coded decimal digit (0..9) to control a [7-segment display](https://docs.wokwi.com/parts/wokwi-7segment). The input range can be covered using four bits (0..15=2^4-1), i.e. four input signals. We specify that valid input values are in the range 0..9, other values will show a blank display.
 
@@ -135,7 +135,7 @@ We can then open and inspect the output file with Wokwi's [diagram.json file for
 
 Let's simulate the design!
 
-1. Open the [Wokwi template](https://wokwi.com/projects/357178660283991041).
+1. Open the [Wokwi template](https://wokwi.com/projects/354858054593504257).
 1. Switch the editor view from tab `tiny-tapeout-poc-new-internal-pulls.ino` to tab `diagram.json`.
 1. Select the whole file content, delete it and replace it with the contents of the generated JSON file `bcd_7segment_lut.diagram.json`.
 1. Please note that your browser may be unresponsive for a moment (several seconds) as Wokwi is processing the new JSON contents.
@@ -213,7 +213,7 @@ uint16_t expected_out_val[2 << (DESIGN_NUM_USED_INPUTS-1)] = {
 
 Let's simulate and verify the design!
 
-1. Open the [Wokwi template](https://wokwi.com/projects/357178660283991041).
+1. Open the [Wokwi template](https://wokwi.com/projects/354858054593504257).
 1. In the editor view `tiny-tapeout-poc-new-internal-pulls.ino` select the whole file content, delete it and replace it with the contents of the newly generated `sketch.ino` file.
 1. Switch the editor view from tab `tiny-tapeout-poc-new-internal-pulls.ino` to tab `diagram.json`.
 1. Select the whole file content, delete it and replace it with the contents of the newly generated JSON file `bcd_7segment_lut.diagram.json`.

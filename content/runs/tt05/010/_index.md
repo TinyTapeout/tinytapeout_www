@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "10 Neural network on chip"
-weight: 5
+weight: 59
 ---
 
 ## 10 : Neural network on chip

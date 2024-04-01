@@ -4,12 +4,13 @@ title: "161 GOL-Cell"
 weight: 162
 ---
 
-## 161 : GOL-Cell
+## 161 : 0b 010 100 001 : GOL-Cell
+
+{{< tt-scanchain-switches "010100001" >}}
 
 * Author: Shaos
 * Description: Game of Life Cell
-* [GitHub repository](https://github.com/shaos-net/tt02-submission-shaos2)
-* [Most recent GDS build](https://github.com/shaos-net/tt02-submission-shaos2/actions/runs/3545474888)
+* [GitHub repository](https://github.com/shaos/tt02-submission-shaos2)
 * [Wokwi](https://wokwi.com/projects/349011320806310484) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -4,12 +4,13 @@ title: "135 Super Mario Tune on A Piezo Speaker"
 weight: 136
 ---
 
-## 135 : Super Mario Tune on A Piezo Speaker
+## 135 : 0b 010 000 111 : Super Mario Tune on A Piezo Speaker
+
+{{< tt-scanchain-switches "010000111" >}}
 
 * Author: Milosch Meriac
 * Description: Plays Super Mario Tune over a Piezo Speaker connected across io_out[1:0]
 * [GitHub repository](https://github.com/meriac/tt02-play-tune)
-* [Most recent GDS build](https://github.com/meriac/tt02-play-tune/actions/runs/3529204634)
 * HDL project
 * [Extra docs](https://github.com/meriac/tt02-play-tune#readme)
 * Clock: 3125 Hz

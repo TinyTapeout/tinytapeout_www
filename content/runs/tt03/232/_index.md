@@ -4,12 +4,13 @@ title: "232 Femto 4-bit CPU"
 weight: 233
 ---
 
-## 232 : Femto 4-bit CPU
+## 232 : 0b 011 101 000 : Femto 4-bit CPU
+
+{{< tt-scanchain-switches "011101000" >}}
 
 * Author: Majdi Abdul Samad, ECE Dept., American University of Beirut (mia42@mail.aub.edu)
 * Description: Design of a small single-cycle CPU with simple RISC/Accumulator ISA
 * [GitHub repository](https://github.com/majdiabdulsamad/tt02-Femto)
-* [Most recent GDS build](https://github.com/majdiabdulsamad/tt02-Femto/actions/runs/3620410709)
 * HDL project
 * [Extra docs](README.md)
 * Clock: 5 Hz

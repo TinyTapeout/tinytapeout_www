@@ -4,12 +4,13 @@ title: "129 M0: A 16-bit SUBLEQ Microprocessor"
 weight: 130
 ---
 
-## 129 : M0: A 16-bit SUBLEQ Microprocessor
+## 129 : 0b 010 000 001 : M0: A 16-bit SUBLEQ Microprocessor
+
+{{< tt-scanchain-switches "010000001" >}}
 
 * Author: William Moyes
 * Description: A capable but slow microprocessor that fits in a very tight space
 * [GitHub repository](https://github.com/moyesw/TT02-M0)
-* [Most recent GDS build](https://github.com/moyesw/TT02-M0/actions/runs/3598275101)
 * HDL project
 * [Extra docs](https://github.com/moyesw/TT02-M0/blob/main/README.md)
 * Clock: 12500 Hz

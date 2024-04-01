@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "99 7-segment display logic system "
-weight: 149
+weight: 9
 ---
 
 ## 99 : 7-segment display logic system 

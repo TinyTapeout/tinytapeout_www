@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "166 RNN (Demo)"
-weight: 160
+weight: 2
 ---
 
 ## 166 : RNN (Demo)

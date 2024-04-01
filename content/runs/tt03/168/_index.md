@@ -4,12 +4,13 @@ title: "168 4 bit CPU"
 weight: 169
 ---
 
-## 168 : 4 bit CPU
+## 168 : 0b 010 101 000 : 4 bit CPU
+
+{{< tt-scanchain-switches "010101000" >}}
 
 * Author: Paul Campell
 * Description: simple cpu
 * [GitHub repository](https://github.com/MoonbaseOtago/tt-cpu)
-* [Most recent GDS build](https://github.com/MoonbaseOtago/tt-cpu/actions/runs/3555302577)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

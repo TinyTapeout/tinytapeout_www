@@ -4,12 +4,13 @@ title: "102 16x8 SRAM & Streaming Signal Generator"
 weight: 103
 ---
 
-## 102 : 16x8 SRAM & Streaming Signal Generator
+## 102 : 0b 001 100 110 : 16x8 SRAM & Streaming Signal Generator
+
+{{< tt-scanchain-switches "001100110" >}}
 
 * Author: James Ross
 * Description: Write to, Read from, and Stream 16 addressable 8-bit words of memory
 * [GitHub repository](https://github.com/jar/tt02_sram)
-* [Most recent GDS build](https://github.com/jar/tt02_sram/actions/runs/3597741115)
 * HDL project
 * [Extra docs](https://github.com/jar/tt02_sram/blob/main/README.md)
 * Clock: 0 Hz

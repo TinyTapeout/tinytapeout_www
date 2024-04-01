@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "518 Field Programmable Neural Array"
-weight: 165
+weight: 107
 ---
 
 ## 518 : Field Programmable Neural Array

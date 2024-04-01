@@ -4,12 +4,13 @@ title: "34 CRC Decelerator"
 weight: 35
 ---
 
-## 34 : CRC Decelerator
+## 34 : 0b 000 100 010 : CRC Decelerator
+
+{{< tt-scanchain-switches "000100010" >}}
 
 * Author: Grant Hernandez (@grant-h)
 * Description: A reconfigurable CRC engine
 * [GitHub repository](https://github.com/grant-h/tt03-crc-decelerator)
-* [Most recent GDS build](https://github.com/grant-h/tt03-crc-decelerator/actions/runs/4768282381)
 * HDL project
 * [Extra docs](https://github.com/grant-h/tt03-crc-decelerator)
 * Clock: any Hz

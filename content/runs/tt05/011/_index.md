@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "11 Simple Leaky Integrate and Fire (LIF) Neuron"
-weight: 39
+weight: 34
 ---
 
 ## 11 : Simple Leaky Integrate and Fire (LIF) Neuron

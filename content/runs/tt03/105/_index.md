@@ -4,12 +4,13 @@ title: "105 Avalon Semiconductors '5401' 4-bit Microprocessor"
 weight: 106
 ---
 
-## 105 : Avalon Semiconductors '5401' 4-bit Microprocessor
+## 105 : 0b 001 101 001 : Avalon Semiconductors '5401' 4-bit Microprocessor
+
+{{< tt-scanchain-switches "001101001" >}}
 
 * Author: Tholin
 * Description: 4-bit CPU capable of addressing 4096 bytes program memory and 254 words data memory, with 6 words of on-chip RAM and two general-purpose input ports. Hopefully capable of more complex computation than previous CPU submissions.
 * [GitHub repository](https://github.com/89Mods/tt2-AvalonSemi-5401)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-AvalonSemi-5401/actions/runs/3986452998)
 * HDL project
 * [Extra docs](https://github.com/89Mods/tt2-AvalonSemi-5401/blob/main/README.md)
 * Clock: 6000 Hz

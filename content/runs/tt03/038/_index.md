@@ -4,12 +4,13 @@ title: "38 Shift Register Ram"
 weight: 39
 ---
 
-## 38 : Shift Register Ram
+## 38 : 0b 000 100 110 : Shift Register Ram
+
+{{< tt-scanchain-switches "000100110" >}}
 
 * Author: Dakotath
 * Description: The device holds bits in shift registers to remember crap
 * [GitHub repository](https://github.com/dakotath/tt03-submission-template)
-* [Most recent GDS build](https://github.com/dakotath/tt03-submission-template/actions/runs/4527029173)
 * [Wokwi](https://wokwi.com/projects/360295047631610881) project
 * [Extra docs]()
 * Clock: 5000 Hz

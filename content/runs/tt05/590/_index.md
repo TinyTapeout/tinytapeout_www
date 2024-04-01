@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "590 Hodgkin-Huxley Neuron"
-weight: 64
+weight: 126
 ---
 
 ## 590 : Hodgkin-Huxley Neuron

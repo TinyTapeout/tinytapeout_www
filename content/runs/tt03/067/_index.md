@@ -4,12 +4,13 @@ title: "67 Hamming(7,4) encoder decoder"
 weight: 68
 ---
 
-## 67 : Hamming(7,4) encoder decoder
+## 67 : 0b 001 000 011 : Hamming(7,4) encoder decoder
+
+{{< tt-scanchain-switches "001000011" >}}
 
 * Author: Robbert
 * Description: Encodes and decodes data using Hamming 7,4 codes.
 * [GitHub repository](https://github.com/robbertvanginkel/tt03-hamming74)
-* [Most recent GDS build](https://github.com/robbertvanginkel/tt03-hamming74/actions/runs/4785845575)
 * HDL project
 * [Extra docs]()
 * Clock:  Hz

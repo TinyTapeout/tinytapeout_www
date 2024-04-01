@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "98 IDK WHAT TO DO"
-weight: 137
+weight: 101
 ---
 
 ## 98 : IDK WHAT TO DO

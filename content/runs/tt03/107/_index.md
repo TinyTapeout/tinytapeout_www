@@ -4,12 +4,13 @@ title: "107 Stream Integrator"
 weight: 108
 ---
 
-## 107 : Stream Integrator
+## 107 : 0b 001 101 011 : Stream Integrator
+
+{{< tt-scanchain-switches "001101011" >}}
 
 * Author: William Moyes
 * Description: A silicon implementation of a simple optical computation
 * [GitHub repository](https://github.com/moyesw/tt02-moyesw-StreamIntegrator)
-* [Most recent GDS build](https://github.com/moyesw/tt02-moyesw-StreamIntegrator/actions/runs/3357095237)
 * [Wokwi](https://wokwi.com/projects/346553315158393428) project
 * [Extra docs]()
 * Clock: 0 Hz

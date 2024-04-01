@@ -4,12 +4,13 @@ title: "191 SRLD"
 weight: 192
 ---
 
-## 191 : SRLD
+## 191 : 0b 010 111 111 : SRLD
+
+{{< tt-scanchain-switches "010111111" >}}
 
 * Author: Chris Burton
 * Description: 8-bit Shift Register with latch and hex decode to display alternating nibbles
 * [GitHub repository](https://github.com/burtyb/tt02-srld)
-* [Most recent GDS build](https://github.com/burtyb/tt02-srld/actions/runs/3603612004)
 * [Wokwi](https://wokwi.com/projects/349790606404354643) project
 * [Extra docs]()
 * Clock: 16 Hz

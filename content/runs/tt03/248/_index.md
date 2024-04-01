@@ -4,12 +4,13 @@ title: "248 RiscV Scan Chain based CPU -- block 4 -- ALU"
 weight: 249
 ---
 
-## 248 : RiscV Scan Chain based CPU -- block 4 -- ALU
+## 248 : 0b 011 111 000 : RiscV Scan Chain based CPU -- block 4 -- ALU
+
+{{< tt-scanchain-switches "011111000" >}}
 
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 4 -- ALU
 * [GitHub repository](https://github.com/diferential/sc-rv-tt03-block4)
-* [Most recent GDS build](https://github.com/diferential/sc-rv-tt03-block4/actions/runs/4789409676)
 * HDL project
 * [Extra docs](https://github.com/diferntial/sc-rv-tt03-block4/blob/main/README.md)
 * Clock: 20000 Hz

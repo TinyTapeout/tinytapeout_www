@@ -4,12 +4,13 @@ title: "42 Base-10 grey counter counts from zero to a trillion"
 weight: 43
 ---
 
-## 42 : Base-10 grey counter counts from zero to a trillion
+## 42 : 0b 000 101 010 : Base-10 grey counter counts from zero to a trillion
+
+{{< tt-scanchain-switches "000101010" >}}
 
 * Author: Daniel Wisehart
 * Description: Change only one output bit per count, but count with decimal digits instead of the usual reverse bit order grey counter.
 * [GitHub repository](https://github.com/dwisehart/tt03-submission)
-* [Most recent GDS build](https://github.com/dwisehart/tt03-submission/actions/runs/4780044080)
 * HDL project
 * [Extra docs]()
 * Clock: any Hz

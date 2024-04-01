@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "41 Binary Counter"
-weight: 140
+weight: 134
 ---
 
 ## 41 : Binary Counter

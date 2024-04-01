@@ -4,12 +4,13 @@ title: "77 AI Decelerator"
 weight: 78
 ---
 
-## 77 : AI Decelerator
+## 77 : 0b 001 001 101 : AI Decelerator
+
+{{< tt-scanchain-switches "001001101" >}}
 
 * Author: Hunter Scott
 * Description: A 2x2 matrix multiplier, guaranteed to slow down your AI model training.
 * [GitHub repository](https://github.com/blueintegral/tt03-ai-decelerator)
-* [Most recent GDS build](https://github.com/blueintegral/tt03-ai-decelerator/actions/runs/4781716705)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

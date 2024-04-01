@@ -4,12 +4,13 @@ title: "88 Hola"
 weight: 89
 ---
 
-## 88 : Hola
+## 88 : 0b 001 011 000 : Hola
+
+{{< tt-scanchain-switches "001011000" >}}
 
 * Author: Pascual Bravo
 * Description: Chip de prueba
 * [GitHub repository](https://github.com/SergioRuiz181/tt03-submission-template)
-* [Most recent GDS build](https://github.com/SergioRuiz181/tt03-submission-template/actions/runs/4768336829)
 * [Wokwi](https://wokwi.com/projects/362633503928580097) project
 * [Extra docs]()
 * Clock: 0 Hz

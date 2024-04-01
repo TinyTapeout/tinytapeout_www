@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "7 TickTockTokens"
-weight: 38
+weight: 110
 ---
 
 ## 7 : TickTockTokens

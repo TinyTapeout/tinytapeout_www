@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "35 WS2812B LED strip driver"
-weight: 142
+weight: 26
 ---
 
 ## 35 : WS2812B LED strip driver

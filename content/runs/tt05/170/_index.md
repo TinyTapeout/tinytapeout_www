@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "170 Perceptron Hardcoded"
-weight: 115
+weight: 154
 ---
 
 ## 170 : Perceptron Hardcoded

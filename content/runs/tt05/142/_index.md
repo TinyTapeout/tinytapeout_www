@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "142 Standard cell generator and tester"
-weight: 76
+weight: 155
 ---
 
 ## 142 : Standard cell generator and tester

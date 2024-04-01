@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "582 Chonky Spiking Neural Net"
-weight: 148
+weight: 95
 ---
 
 ## 582 : Chonky Spiking Neural Net

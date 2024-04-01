@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "167 STDP Neuron"
-weight: 131
+weight: 27
 ---
 
 ## 167 : STDP Neuron

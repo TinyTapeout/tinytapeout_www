@@ -4,12 +4,13 @@ title: "133 RC5 decoder"
 weight: 134
 ---
 
-## 133 : RC5 decoder
+## 133 : 0b 010 000 101 : RC5 decoder
+
+{{< tt-scanchain-switches "010000101" >}}
 
 * Author: Jean THOMAS
 * Description: Increment/decrement a counter with the press of an IR remote button!
 * [GitHub repository](https://github.com/jeanthom/tt02-rc5-receiver)
-* [Most recent GDS build](https://github.com/jeanthom/tt02-rc5-receiver/actions/runs/3527312692)
 * HDL project
 * [Extra docs]()
 * Clock: 562 Hz

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "332 TT05 Analog Test"
-weight: 65
+weight: 10
 ---
 
 ## 332 : TT05 Analog Test

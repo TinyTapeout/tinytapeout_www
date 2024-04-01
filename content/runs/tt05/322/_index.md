@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "322 Digital Desk Clock"
-weight: 61
+weight: 69
 ---
 
 ## 322 : Digital Desk Clock

@@ -4,12 +4,13 @@ title: "185 Vector dot product"
 weight: 186
 ---
 
-## 185 : Vector dot product
+## 185 : 0b 010 111 001 : Vector dot product
+
+{{< tt-scanchain-switches "010111001" >}}
 
 * Author: Robert Riachi
 * Description: Compute the dot product of two 2x1 vectors each containing 2 bit integers
 * [GitHub repository](https://github.com/RobertRiachi/tt02-dot-product)
-* [Most recent GDS build](https://github.com/RobertRiachi/tt02-dot-product/actions/runs/3505363693)
 * [Wokwi](https://wokwi.com/projects/348787952842703444) project
 * [Extra docs]()
 * Clock: 0 Hz

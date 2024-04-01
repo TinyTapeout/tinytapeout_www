@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "130 I2C BERT"
-weight: 60
+weight: 8
 ---
 
 ## 130 : I2C BERT

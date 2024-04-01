@@ -4,12 +4,13 @@ title: "183 Scalable synchronous 4-bit tri-directional loadable counter"
 weight: 184
 ---
 
-## 183 : Scalable synchronous 4-bit tri-directional loadable counter
+## 183 : 0b 010 110 111 : Scalable synchronous 4-bit tri-directional loadable counter
+
+{{< tt-scanchain-switches "010110111" >}}
 
 * Author: Steven Bos
 * Description: This chip offers a scalable n-bit counter design that can be used as a program counter by setting the next address (eg. for a JMP instruction). It can work in 3 directions: counting up, down and pause.
 * [GitHub repository](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter)
-* [Most recent GDS build](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter/actions/runs/3569389065)
 * [Wokwi](https://wokwi.com/projects/341423712597181012) project
 * [Extra docs](https://github.com/aiunderstand/tt02-4bit-tristate-loadable-counter/blob/main/README.md)
 * Clock: 0 Hz

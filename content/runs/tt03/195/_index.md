@@ -4,12 +4,13 @@ title: "195 Tiny PIC-like MCU"
 weight: 196
 ---
 
-## 195 : Tiny PIC-like MCU
+## 195 : 0b 011 000 011 : Tiny PIC-like MCU
+
+{{< tt-scanchain-switches "011000011" >}}
 
 * Author: myrtle
 * Description: serially programmed, subset of PIC ISA, MCU
 * [GitHub repository](https://github.com/gatecat/tt02-pic)
-* [Most recent GDS build](https://github.com/gatecat/tt02-pic/actions/runs/3595019454)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

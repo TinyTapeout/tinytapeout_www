@@ -4,12 +4,13 @@ title: "174 8 bit CPU"
 weight: 175
 ---
 
-## 174 : 8 bit CPU
+## 174 : 0b 010 101 110 : 8 bit CPU
+
+{{< tt-scanchain-switches "010101110" >}}
 
 * Author: Paul Campell
 * Description: 8-bit version of the MoonBase 4-bit CPU
 * [GitHub repository](https://github.com/OneRNG/tt-cpu8)
-* [Most recent GDS build](https://github.com/OneRNG/tt-cpu8/actions/runs/3572192785)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

@@ -4,12 +4,13 @@ title: "233 Logisim demo - LED blinker"
 weight: 234
 ---
 
-## 233 : Logisim demo - LED blinker
+## 233 : 0b 011 101 001 : Logisim demo - LED blinker
+
+{{< tt-scanchain-switches "011101001" >}}
 
 * Author: Tholin
 * Description: Example of how to use Logisim Evolution generated Verilog for TinyTapeout.
 * [GitHub repository](https://github.com/AvalonSemiconductors/tt02-logisim-example)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt02-logisim-example/actions/runs/4447757369)
 * HDL project
 * [Extra docs]()
 * Clock: 2 Hz

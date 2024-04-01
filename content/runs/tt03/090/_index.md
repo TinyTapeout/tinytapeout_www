@@ -4,12 +4,13 @@ title: "90 3-bit 4-position register"
 weight: 91
 ---
 
-## 90 : 3-bit 4-position register
+## 90 : 0b 001 011 010 : 3-bit 4-position register
+
+{{< tt-scanchain-switches "001011010" >}}
 
 * Author: Chris Burton
 * Description: 3-bit 4-position register using Multiplexers
 * [GitHub repository](https://github.com/burtyb/tt03-3x4-Register)
-* [Most recent GDS build](https://github.com/burtyb/tt03-3x4-Register/actions/runs/4786343451)
 * [Wokwi](https://wokwi.com/projects/362886316051042305) project
 * [Extra docs]()
 * Clock: 0 Hz

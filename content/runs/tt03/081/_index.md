@@ -4,12 +4,13 @@ title: "81 3 bit multiplier "
 weight: 82
 ---
 
-## 81 : 3 bit multiplier 
+## 81 : 0b 001 010 001 : 3 bit multiplier 
+
+{{< tt-scanchain-switches "001010001" >}}
 
 * Author: Ananya
 * Description: 3 bit multiplier
 * [GitHub repository](https://github.com/Ananya3511/tt03-submission-template)
-* [Most recent GDS build](https://github.com/Ananya3511/tt03-submission-template/actions/runs/4784140909)
 * [Wokwi](https://wokwi.com/projects/362379207695863809) project
 * [Extra docs]()
 * Clock: 0 Hz

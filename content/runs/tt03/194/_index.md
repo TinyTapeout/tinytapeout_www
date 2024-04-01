@@ -4,12 +4,13 @@ title: "194 A (7, 1/2) Convolutional Encoder"
 weight: 195
 ---
 
-## 194 : A (7, 1/2) Convolutional Encoder
+## 194 : 0b 011 000 010 : A (7, 1/2) Convolutional Encoder
+
+{{< tt-scanchain-switches "011000010" >}}
 
 * Author: Jos van 't Hof
 * Description: A (7, 1/2) Convolutional Encoder following the CCSDS 131.0-B-4 standard.
 * [GitHub repository](https://github.com/Josvth/tt02-convolutional-encoder)
-* [Most recent GDS build](https://github.com/Josvth/tt02-convolutional-encoder/actions/runs/3826192543)
 * [Wokwi](https://wokwi.com/projects/349729432862196307) project
 * [Extra docs](https://github.com/Josvth/tt02-convolutional-encoder/blob/main/README.md)
 * Clock: 0 Hz

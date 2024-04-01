@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "160 Winner-Take-All Network (Verilog Demo)"
-weight: 121
+weight: 48
 ---
 
 ## 160 : Winner-Take-All Network (Verilog Demo)

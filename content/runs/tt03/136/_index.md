@@ -4,12 +4,13 @@ title: "136 Tiny rot13"
 weight: 137
 ---
 
-## 136 : Tiny rot13
+## 136 : 0b 010 001 000 : Tiny rot13
+
+{{< tt-scanchain-switches "010001000" >}}
 
 * Author: Phase Noise
 * Description: implements rot13 in the constraints of TT02
 * [GitHub repository](https://github.com/phasenoisepon/tt02-phasenoisepon)
-* [Most recent GDS build](https://github.com/phasenoisepon/tt02-phasenoisepon/actions/runs/3461901993)
 * HDL project
 * [Extra docs](https://github.com/phasenoisepon/tt02-phasenoisepon/blob/main/README.md)
 * Clock: 1000 Hz

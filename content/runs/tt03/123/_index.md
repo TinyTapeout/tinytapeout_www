@@ -4,12 +4,13 @@ title: "123 5-bit Galois LFSR"
 weight: 124
 ---
 
-## 123 : 5-bit Galois LFSR
+## 123 : 0b 001 111 011 : 5-bit Galois LFSR
+
+{{< tt-scanchain-switches "001111011" >}}
 
 * Author: Michael Bikovitsky
 * Description: 5-bit Galois LFSR with configurable taps and initial state. Outputs a value every second.
 * [GitHub repository](https://github.com/mbikovitsky/tt02-lfsr)
-* [Most recent GDS build](https://github.com/mbikovitsky/tt02-lfsr/actions/runs/3603167022)
 * HDL project
 * [Extra docs]()
 * Clock: 625 Hz

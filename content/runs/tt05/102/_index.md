@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "102 7 segment display"
-weight: 54
+weight: 62
 ---
 
 ## 102 : 7 segment display

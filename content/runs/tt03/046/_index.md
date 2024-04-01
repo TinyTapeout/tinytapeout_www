@@ -4,12 +4,13 @@ title: "46 nipple multiplier"
 weight: 47
 ---
 
-## 46 : nipple multiplier
+## 46 : 0b 000 101 110 : nipple multiplier
+
+{{< tt-scanchain-switches "000101110" >}}
 
 * Author: ’Mohamed Nasser
 * Description: multiply two 8-b numbers in 4 chunks
 * [GitHub repository](https://github.com/mnasser431998/tt03-mnasser-demo)
-* [Most recent GDS build](https://github.com/mnasser431998/tt03-mnasser-demo/actions/runs/4747475129)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

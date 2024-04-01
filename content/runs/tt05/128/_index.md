@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "128 Count via LFSR"
-weight: 145
+weight: 64
 ---
 
 ## 128 : Count via LFSR

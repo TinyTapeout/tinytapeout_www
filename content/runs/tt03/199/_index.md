@@ -4,12 +4,13 @@ title: "199 Rotary Encoder Counter"
 weight: 200
 ---
 
-## 199 : Rotary Encoder Counter
+## 199 : 0b 011 000 111 : Rotary Encoder Counter
+
+{{< tt-scanchain-switches "011000111" >}}
 
 * Author: Vaishnav Achath
 * Description: Count Up/Down on the 7-segment accouring to rotary encoder input
 * [GitHub repository](https://github.com/vaishnavachath/tt02-submission-rotary-encoder-counter)
-* [Most recent GDS build](https://github.com/vaishnavachath/tt02-submission-rotary-encoder-counter/actions/runs/3595979401)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

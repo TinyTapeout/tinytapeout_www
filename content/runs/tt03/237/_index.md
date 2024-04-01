@@ -4,12 +4,13 @@ title: "237 Clock divider ASIC"
 weight: 238
 ---
 
-## 237 : Clock divider ASIC
+## 237 : 0b 011 101 101 : Clock divider ASIC
+
+{{< tt-scanchain-switches "011101101" >}}
 
 * Author: Sad Electronics
 * Description: Uses a series of flip flops to divide the clock
 * [GitHub repository](https://github.com/TinyTapeout/tt02-tinytapeout-clock-divider-asic)
-* [Most recent GDS build](https://github.com/TinyTapeout/tt02-tinytapeout-clock-divider-asic/actions/runs/3602210126)
 * [Wokwi](https://wokwi.com/projects/341353928049295956) project
 * [Extra docs]()
 * Clock: 0 Hz

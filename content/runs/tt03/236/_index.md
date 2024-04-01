@@ -4,12 +4,13 @@ title: "236 Adi counter"
 weight: 237
 ---
 
-## 236 : Adi counter
+## 236 : 0b 011 101 100 : Adi counter
+
+{{< tt-scanchain-switches "011101100" >}}
 
 * Author: Prabal Dutta
 * Description: Test FSM
 * [GitHub repository](https://github.com/prabaldutta/tt02-adi-demo)
-* [Most recent GDS build](https://github.com/prabaldutta/tt02-adi-demo/actions/runs/3603700069)
 * [Wokwi](https://wokwi.com/projects/341613097060926036) project
 * [Extra docs](none)
 * Clock: 1 Hz

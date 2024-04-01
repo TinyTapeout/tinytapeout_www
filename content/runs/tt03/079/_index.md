@@ -4,12 +4,13 @@ title: "79 Asynchronous 3-Bit Down Counter"
 weight: 80
 ---
 
-## 79 : Asynchronous 3-Bit Down Counter
+## 79 : 0b 001 001 111 : Asynchronous 3-Bit Down Counter
+
+{{< tt-scanchain-switches "001001111" >}}
 
 * Author: Dikshant, Mohit, Sanidhya
 * Description: This Project works as a down counter which counts from 7 to 0
 * [GitHub repository](https://github.com/DIKSH4NT0615/tt03-submission-template)
-* [Most recent GDS build](https://github.com/DIKSH4NT0615/tt03-submission-template/actions/runs/4772046842)
 * [Wokwi](https://wokwi.com/projects/362336485347742721) project
 * [Extra docs]()
 * Clock: 0 Hz

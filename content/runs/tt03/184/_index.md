@@ -4,12 +4,13 @@ title: "184 Asynchronous Binary to Ternary Converter and Comparator"
 weight: 185
 ---
 
-## 184 : Asynchronous Binary to Ternary Converter and Comparator
+## 184 : 0b 010 111 000 : Asynchronous Binary to Ternary Converter and Comparator
+
+{{< tt-scanchain-switches "010111000" >}}
 
 * Author: Steven Bos
 * Description: This chip offers various kinds of conversions and comparisons between binary encoded ternary and unary encoded ternary in both machine readible output and human readible (7-segment display decimal) output
 * [GitHub repository](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare)
-* [Most recent GDS build](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare/actions/runs/3569693118)
 * [Wokwi](https://wokwi.com/projects/341277789473735250) project
 * [Extra docs](https://github.com/aiunderstand/tt02-async-binary-ternary-convert-compare/blob/main/README.md)
 * Clock: 0 Hz

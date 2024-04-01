@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "260 Multimode Modem"
-weight: 118
+weight: 74
 ---
 
 ## 260 : Multimode Modem

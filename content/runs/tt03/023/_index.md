@@ -4,12 +4,13 @@ title: "23 Desperate Tapeout"
 weight: 24
 ---
 
-## 23 : Desperate Tapeout
+## 23 : 0b 000 010 111 : Desperate Tapeout
+
+{{< tt-scanchain-switches "000010111" >}}
 
 * Author: Etienne de Maricourt
 * Description: Customized UART string transmitter
 * [GitHub repository](https://github.com/etiennedm/tt03-submission)
-* [Most recent GDS build](https://github.com/etiennedm/tt03-submission/actions/runs/4789735487)
 * [Wokwi](https://wokwi.com/projects/362911430638568449) project
 * [Extra docs]()
 * Clock: 300 Hz

@@ -1,11 +1,11 @@
 (function () {
-  const shuttleSlug = 'tt05';
+  const shuttleSlug = 'tt06';
   const supabaseProject = 'tinytapeout';
   const supabaseKey =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvdXZqeXhpaHB1ZGhibWJ1ZXBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2NTIxODYsImV4cCI6MTk5NDIyODE4Nn0.-A6x_iXHNEq6VOC2KEE1zDzcTT8PXnZNnu6LhzJqnvo';
   const databaseEndpoint = `https://${supabaseProject}.supabase.co/rest/v1/`;
 
-  let deadline = new Date('2023-11-04T20:00:00Z');
+  let deadline = new Date('2024-04-19T20:00:00Z');
 
   const daysElement = document.querySelector('.countdown-timer .cd-days');
   const hoursElement = document.querySelector('.countdown-timer .cd-hours');
@@ -19,17 +19,19 @@
 
   async function fetchStats() {
     const queryUrl = new URL('shuttles', databaseEndpoint);
-    queryUrl.searchParams.set('select', 'tiles_total,tiles_used,pcbs_total,pcbs_used,deadline');
+    queryUrl.searchParams.set('select', 'tiles_total,tiles_used,subsidized_pcbs_total,subsidized_pcbs_sold,deadline');
     queryUrl.searchParams.set('slug', `eq.${shuttleSlug}`);
     queryUrl.searchParams.set('apikey', supabaseKey);
     const res = await fetch(queryUrl);
     const resJson = await res.json();
     const shuttle = resJson[0];
     deadline = new Date(shuttle.deadline);
-    tileStats.textContent = `${shuttle.tiles_used}/${shuttle.tiles_total}`;
-    pcbStats.textContent = `${shuttle.pcbs_used}/${shuttle.pcbs_total}`;
-    tileProgress.style.width = `${(shuttle.tiles_used / shuttle.tiles_total) * 100}%`;
-    pcbProgress.style.width = `${(shuttle.pcbs_used / shuttle.pcbs_total) * 100}%`;
+    const tilesPercent = (shuttle.tiles_used / shuttle.tiles_total) * 100;
+    const pcbsPercent = (shuttle.subsidized_pcbs_sold / shuttle.subsidized_pcbs_total) * 100;
+    tileStats.textContent = `${Math.round(tilesPercent)}% sold`;
+    pcbStats.textContent = `${Math.round(pcbsPercent)}% sold`;
+    tileProgress.style.width = `${tilesPercent}%`;
+    pcbProgress.style.width = `${pcbsPercent}%`;
     return resJson;
   }
 

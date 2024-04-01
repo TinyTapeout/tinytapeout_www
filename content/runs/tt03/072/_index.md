@@ -4,12 +4,13 @@ title: "72 RTL Locked QTCore-A1"
 weight: 73
 ---
 
-## 72 : RTL Locked QTCore-A1
+## 72 : 0b 001 001 000 : RTL Locked QTCore-A1
+
+{{< tt-scanchain-switches "001001000" >}}
 
 * Author: Luca Collini and Hammond Pearce
 * Description: A RTL locked accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
 * [GitHub repository](https://github.com/Lucaz97/tt03-RTLlocked-verilog-qtcoreA1)
-* [Most recent GDS build](https://github.com/Lucaz97/tt03-RTLlocked-verilog-qtcoreA1/actions/runs/4780876099)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

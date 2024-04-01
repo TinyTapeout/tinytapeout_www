@@ -4,12 +4,13 @@ title: "128 YaFPGA"
 weight: 129
 ---
 
-## 128 : YaFPGA
+## 128 : 0b 010 000 000 : YaFPGA
+
+{{< tt-scanchain-switches "010000000" >}}
 
 * Author: Frans Skarman
 * Description: Yet another FPGA
 * [GitHub repository](https://github.com/TheZoq2/smolfpga)
-* [Most recent GDS build](https://github.com/TheZoq2/smolfpga/actions/runs/3457148891)
 * HDL project
 * [Extra docs](TODO)
 * Clock: 1000 Hz

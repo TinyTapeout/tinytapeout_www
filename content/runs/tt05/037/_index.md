@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "37 Tiny Tapeout 1"
-weight: 130
+weight: 49
 ---
 
 ## 37 : Tiny Tapeout 1

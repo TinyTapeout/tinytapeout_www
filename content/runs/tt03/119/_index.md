@@ -4,12 +4,13 @@ title: "119 tiny egg timer"
 weight: 120
 ---
 
-## 119 : tiny egg timer
+## 119 : 0b 001 110 111 : tiny egg timer
+
+{{< tt-scanchain-switches "001110111" >}}
 
 * Author: yubex
 * Description: tiny egg timer is a configurable small timer
 * [GitHub repository](https://github.com/yubex/tt02-tiny_egg_timer)
-* [Most recent GDS build](https://github.com/yubex/tt02-tiny_egg_timer/actions/runs/3455522008)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

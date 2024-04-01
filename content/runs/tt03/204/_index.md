@@ -4,12 +4,13 @@ title: "204 Configurable Gray Code Counter"
 weight: 205
 ---
 
-## 204 : Configurable Gray Code Counter
+## 204 : 0b 011 001 100 : Configurable Gray Code Counter
+
+{{< tt-scanchain-switches "011001100" >}}
 
 * Author: Eric Swalens
 * Description: A configurable counter driven by 2-channel Gray code
 * [GitHub repository](https://github.com/swalense/tt02-graycode_counter)
-* [Most recent GDS build](https://github.com/swalense/tt02-graycode_counter/actions/runs/3602237769)
 * HDL project
 * [Extra docs](https://github.com/swalense/tt02-graycode_counter#readme)
 * Clock: 5000 Hz

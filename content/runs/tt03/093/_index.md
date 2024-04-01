@@ -4,12 +4,13 @@ title: "93 HD74480 Clock"
 weight: 94
 ---
 
-## 93 : HD74480 Clock
+## 93 : 0b 001 011 101 : HD74480 Clock
+
+{{< tt-scanchain-switches "001011101" >}}
 
 * Author: Tom Keddie
 * Description: Displays a clock on a attached HD74480
 * [GitHub repository](https://github.com/TomKeddie/tinytapeout-2022-2)
-* [Most recent GDS build](https://github.com/TomKeddie/tinytapeout-2022-2/actions/runs/3529333424)
 * HDL project
 * [Extra docs](https://github.com/TomKeddie/tinytapeout-2022-2/blob/main/doc/README.md)
 * Clock: 1000 Hz

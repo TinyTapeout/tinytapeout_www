@@ -4,12 +4,13 @@ title: "178 Taillight controller of a 1965 Ford Thunderbird"
 weight: 179
 ---
 
-## 178 : Taillight controller of a 1965 Ford Thunderbird
+## 178 : 0b 010 110 010 : Taillight controller of a 1965 Ford Thunderbird
+
+{{< tt-scanchain-switches "010110010" >}}
 
 * Author: Hirosh Dabui
 * Description: Asic of a Taillight controller of a 1965 Ford Thunderbird
 * [GitHub repository](https://github.com/splinedrive/thunderbird_taillight_1965)
-* [Most recent GDS build](https://github.com/splinedrive/thunderbird_taillight_1965/actions/runs/3568083400)
 * HDL project
 * [Extra docs]()
 * Clock: 6250 Hz Hz

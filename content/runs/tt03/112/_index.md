@@ -4,12 +4,13 @@ title: "112 BCD to 7-segment encoder"
 weight: 113
 ---
 
-## 112 : BCD to 7-segment encoder
+## 112 : 0b 001 110 000 : BCD to 7-segment encoder
+
+{{< tt-scanchain-switches "001110000" >}}
 
 * Author: maehw
 * Description: Encode binary coded decimals (BCD) in the range 0..9 to 7-segment display control signals
 * [GitHub repository](https://github.com/maehw/tt02-bcd-7segment-encoder)
-* [Most recent GDS build](https://github.com/maehw/tt02-bcd-7segment-encoder/actions/runs/3594932611)
 * [Wokwi](https://wokwi.com/projects/347688030570545747) project
 * [Extra docs](https://github.com/maehw/wokwi-lookup-table-generator/blob/main/README.md)
 * Clock: 0 Hz

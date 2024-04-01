@@ -4,12 +4,13 @@ title: "65 Simple UART interface"
 weight: 66
 ---
 
-## 65 : Simple UART interface
+## 65 : 0b 001 000 001 : Simple UART interface
+
+{{< tt-scanchain-switches "001000001" >}}
 
 * Author: Aleksandr Zlobin
 * Description: UART interface with access to internal registers
 * [GitHub repository](https://github.com/ZlobinAS/tt03-verilog-uart)
-* [Most recent GDS build](https://github.com/ZlobinAS/tt03-verilog-uart/actions/runs/4776848242)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

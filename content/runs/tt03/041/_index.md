@@ -4,12 +4,13 @@ title: "41 Toy CPU"
 weight: 42
 ---
 
-## 41 : Toy CPU
+## 41 : 0b 000 101 001 : Toy CPU
+
+{{< tt-scanchain-switches "000101001" >}}
 
 * Author: jordan336
 * Description: Toy CPU is an 8 bit toy CPU for the Tiny Tapeout project.
 * [GitHub repository](https://github.com/jordan336/tt03-toy-cpu)
-* [Most recent GDS build](https://github.com/jordan336/tt03-toy-cpu/actions/runs/4739826802)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

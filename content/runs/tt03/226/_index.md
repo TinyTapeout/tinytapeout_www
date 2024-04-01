@@ -4,12 +4,13 @@ title: "226 Option23 Serial"
 weight: 227
 ---
 
-## 226 : Option23 Serial
+## 226 : 0b 011 100 010 : Option23 Serial
+
+{{< tt-scanchain-switches "011100010" >}}
 
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays
 * [GitHub repository](https://github.com/bitluni/tt02-option23ser)
-* [Most recent GDS build](https://github.com/bitluni/tt02-option23ser/actions/runs/3603145860)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

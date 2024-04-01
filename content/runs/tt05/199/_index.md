@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "199 7 segment seconds (VHDL Demo)"
-weight: 78
+weight: 121
 ---
 
 ## 199 : 7 segment seconds (VHDL Demo)

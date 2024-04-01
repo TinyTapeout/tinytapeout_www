@@ -4,12 +4,13 @@ title: "227 Option23"
 weight: 228
 ---
 
-## 227 : Option23
+## 227 : 0b 011 100 011 : Option23
+
+{{< tt-scanchain-switches "011100011" >}}
 
 * Author: bitluni
 * Description: Character ROM and bitmap shifter for POV displays
 * [GitHub repository](https://github.com/bitluni/tt02-option23)
-* [Most recent GDS build](https://github.com/bitluni/tt02-option23/actions/runs/3601637562)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

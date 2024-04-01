@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "526 DFFRAM Example (128 bytes)"
-weight: 85
+weight: 141
 ---
 
 ## 526 : DFFRAM Example (128 bytes)

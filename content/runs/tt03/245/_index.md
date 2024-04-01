@@ -4,12 +4,13 @@ title: "245 RiscV Scan Chain based CPU -- block 1 -- clocking"
 weight: 246
 ---
 
-## 245 : RiscV Scan Chain based CPU -- block 1 -- clocking
+## 245 : 0b 011 110 101 : RiscV Scan Chain based CPU -- block 1 -- clocking
+
+{{< tt-scanchain-switches "011110101" >}}
 
 * Author: Emilian Miron
 * Description: RiscV Scan Chain based CPU -- block 1 -- clocking
 * [GitHub repository](https://github.com/diferential/sc-rv-tt03-block1)
-* [Most recent GDS build](https://github.com/diferential/sc-rv-tt03-block1/actions/runs/4789576788)
 * HDL project
 * [Extra docs](https://github.com/diferntial/sc-rv-tt03-block1/blob/main/README.md)
 * Clock: 20000 Hz

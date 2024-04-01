@@ -4,12 +4,13 @@ title: "64 HiddenCPU"
 weight: 65
 ---
 
-## 64 : HiddenCPU
+## 64 : 0b 001 000 000 : HiddenCPU
+
+{{< tt-scanchain-switches "001000000" >}}
 
 * Author: HiddenRoom
 * Description: Basic 8 bit CPU.
 * [GitHub repository](https://github.com/HiddenRoom/tt03-hiddenCPU)
-* [Most recent GDS build](https://github.com/HiddenRoom/tt03-hiddenCPU/actions/runs/4771437008)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

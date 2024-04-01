@@ -4,12 +4,13 @@ title: "1 ChipTune"
 weight: 2
 ---
 
-## 1 : ChipTune
+## 1 : 0b 000 000 001 : ChipTune
+
+{{< tt-scanchain-switches "000000001" >}}
 
 * Author: Wallie Everest
 * Description: Vintage 8-bit sound generator
 * [GitHub repository](https://github.com/WallieEverest/tt03)
-* [Most recent GDS build](https://github.com/WallieEverest/tt03/actions/runs/4751117777)
 * HDL project
 * [Extra docs](https://github.com/WallieEverest/tt03/blob/main/README.md)
 * Clock: 9600 Hz

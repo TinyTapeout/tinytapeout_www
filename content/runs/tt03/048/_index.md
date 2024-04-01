@@ -4,12 +4,13 @@ title: "48 4-bits sequential ALU"
 weight: 49
 ---
 
-## 48 : 4-bits sequential ALU
+## 48 : 0b 000 110 000 : 4-bits sequential ALU
+
+{{< tt-scanchain-switches "000110000" >}}
 
 * Author: Diego Satizabal
 * Description: A 4-bits sequential ALU that takes operands and opcode seqentially and performs operations and outputs results
 * [GitHub repository](https://github.com/dsatizabal/tt03-dsp-4bits-sequential-alu)
-* [Most recent GDS build](https://github.com/dsatizabal/tt03-dsp-4bits-sequential-alu/actions/runs/4766900142)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

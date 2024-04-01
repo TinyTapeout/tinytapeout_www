@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "324 4-bit FIFO/LIFO"
-weight: 75
+weight: 172
 ---
 
 ## 324 : 4-bit FIFO/LIFO

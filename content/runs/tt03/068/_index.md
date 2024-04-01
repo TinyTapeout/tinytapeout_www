@@ -4,12 +4,13 @@ title: "68 I2S reeceiver, data mix and transmitter"
 weight: 69
 ---
 
-## 68 : I2S reeceiver, data mix and transmitter
+## 68 : 0b 001 000 100 : I2S reeceiver, data mix and transmitter
+
+{{< tt-scanchain-switches "001000100" >}}
 
 * Author: Clemens Nasenberg
 * Description: Mix two I2S streams according to selection
 * [GitHub repository](https://github.com/cnasenbe/tt03-chnasenb-i2s)
-* [Most recent GDS build](https://github.com/cnasenbe/tt03-chnasenb-i2s/actions/runs/4780316399)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

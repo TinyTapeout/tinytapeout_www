@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "71 ALU Chip"
-weight: 25
+weight: 50
 ---
 
 ## 71 : ALU Chip

@@ -4,12 +4,13 @@ title: "52 Neptune guitar tuner (proportional window)"
 weight: 53
 ---
 
-## 52 : Neptune guitar tuner (proportional window)
+## 52 : 0b 000 110 100 : Neptune guitar tuner (proportional window)
+
+{{< tt-scanchain-switches "000110100" >}}
 
 * Author: Pat Deegan
 * Description: It's a guitar tuner!  and so much more... (TODO)
 * [GitHub repository](https://github.com/psychogenic/tt03_neptune_proportional)
-* [Most recent GDS build](https://github.com/psychogenic/tt03_neptune_proportional/actions/runs/4759768398)
 * HDL project
 * [Extra docs](https://github.com/psychogenic/neptune/blob/main/README.md)
 * Clock: 1000 Hz

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "256 Wavetable Sound Generator"
-weight: 95
+weight: 43
 ---
 
 ## 256 : Wavetable Sound Generator

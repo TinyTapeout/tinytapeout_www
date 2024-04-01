@@ -1,5 +1,5 @@
 ---
-title: "Tiny Tapeout 03"
+title: "Tiny Tapeout 3"
 weight: 30
 description: 249 designs, closed 24th April 2023
 ---
@@ -108,7 +108,7 @@ More on [Twitter](https://twitter.com/search?q=tinytapeout).
 | 19 | [12-bit PDP8](019) | Paul Campnell|
 | 20 | [CTF - Catch the fish](020) | Carin Schreiner|
 | 21 | [Dot operation calculator](021) | Yannick Reiß|
-| 22 | [Random number guess game](022) | Yufei Zhen, Elaina Zodiatis, Khadijatou Dibba|
+| 22 | [Random Number Guessing Game](022) | Yufei Zhen, Elaina Zodiatis, Khadijatou Dibba|
 | 23 | [Desperate Tapeout](023) | Etienne de Maricourt|
 | 24 | [Simple multiply](024) | Anton Maurovic|
 | 25 | [Parallel Nibble to UART](025) | Andrew M|
@@ -123,7 +123,7 @@ More on [Twitter](https://twitter.com/search?q=tinytapeout).
 | 34 | [CRC Decelerator](034) | Grant Hernandez (@grant-h)|
 | 35 | [Simple clock](035) | Søren Poulsen|
 | 36 | [Binary to DEC and HEX](036) | Norberto Hernandez-Como|
-| 37 | [Simon Says](037) | Uri Shaked|
+| 37 | [Simon Says (fastclk)](037) | Uri Shaked|
 | 38 | [Shift Register Ram](038) | Dakotath|
 | 39 | [tinysat](039) | Emmanouel Matigakis|
 | 40 | [POV display](040) | Balint Kovacs|
@@ -135,7 +135,7 @@ More on [Twitter](https://twitter.com/search?q=tinytapeout).
 | 46 | [nipple multiplier](046) | ’Mohamed Nasser|
 | 47 | [Synthesizable Digital Temperature Sensor](047) | Harald Pretl|
 | 48 | [4-bits sequential ALU](048) | Diego Satizabal|
-| 49 | [Brightness control of LED with PWM](049) | Ioannis G. Intzes|
+| 49 | [Brightness control of LED with PWM](049) | Ioannis G. Intzes, International Hellenic University - Department of Information and Electronic Engineering|
 | 50 | [Microtapeout](050) | Enno Schnackenberg|
 | 51 | [Neptune guitar tuner (fixed window)](051) | Pat Deegan|
 | 52 | [Neptune guitar tuner (proportional window)](052) | Pat Deegan|
@@ -146,7 +146,7 @@ More on [Twitter](https://twitter.com/search?q=tinytapeout).
 | 57 | [Combo lock](057) | Benjamin Collier|
 | 58 | [ro-based_tempsense](058) | Jorge Marin, Daniel Arevalos|
 | 59 | [FSM_LAT](059) | Juan Sanchez|
-| 60 | [7 segment seconds](060) | Matt Venn|
+| 60 | [MMM Lab's Micro-robot Control Module](060) | Kevin Guan|
 | 61 | [MMM Finite State Machine (4 States)](061) | Alexandra Zhang Jiang|
 | 62 | [FSK modem](062) | Balint Kovacs|
 | 63 | [QTChallenges](063) | Jason Blocklove|

@@ -4,12 +4,13 @@ title: "206 Marquee"
 weight: 207
 ---
 
-## 206 : Marquee
+## 206 : 0b 011 001 110 : Marquee
+
+{{< tt-scanchain-switches "011001110" >}}
 
 * Author: Christopher 'ctag' Bero
 * Description: Scrolls 'ctag' across the 7seg.
 * [GitHub repository](https://github.com/ctag/tt02-submission-ctag)
-* [Most recent GDS build](https://github.com/ctag/tt02-submission-ctag/actions/runs/3597568966)
 * [Wokwi](https://wokwi.com/projects/349886696875098706) project
 * [Extra docs]()
 * Clock: 2 Hz

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "711 Frequency counter"
-weight: 159
+weight: 130
 ---
 
 ## 711 : Frequency counter

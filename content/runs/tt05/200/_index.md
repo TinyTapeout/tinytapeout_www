@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "200 4-Bit ALU"
-weight: 96
+weight: 93
 ---
 
 ## 200 : 4-Bit ALU

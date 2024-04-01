@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "163 Event-Based Denoising Circuit"
-weight: 31
+weight: 60
 ---
 
 ## 163 : Event-Based Denoising Circuit

@@ -4,12 +4,13 @@ title: "45 MicroTapeout (of sky130 cells)"
 weight: 46
 ---
 
-## 45 : MicroTapeout (of sky130 cells)
+## 45 : 0b 000 101 101 : MicroTapeout (of sky130 cells)
+
+{{< tt-scanchain-switches "000101101" >}}
 
 * Author: htfab
 * Description: 395 standard cells with a mux to select between them
 * [GitHub repository](https://github.com/htfab/microtapeout)
-* [Most recent GDS build](https://github.com/htfab/microtapeout/actions/runs/4782840402)
 * HDL project
 * [Extra docs]()
 * Clock: 10000 Hz

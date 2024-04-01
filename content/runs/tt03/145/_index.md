@@ -4,12 +4,13 @@ title: "145 TinyTapeout 2 LCD Nametag"
 weight: 146
 ---
 
-## 145 : TinyTapeout 2 LCD Nametag
+## 145 : 0b 010 010 001 : TinyTapeout 2 LCD Nametag
+
+{{< tt-scanchain-switches "010010001" >}}
 
 * Author: Tholin
 * Description: Echoes out a predefined text onto a 20x4 character LCD.
 * [GitHub repository](https://github.com/89Mods/tt2-lcd-namebadge)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-lcd-namebadge/actions/runs/3603899616)
 * HDL project
 * [Extra docs]()
 * Clock: 100 Hz

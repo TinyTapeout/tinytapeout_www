@@ -4,12 +4,13 @@ title: "203 FROG 4-Bit CPU"
 weight: 204
 ---
 
-## 203 : FROG 4-Bit CPU
+## 203 : 0b 011 001 011 : FROG 4-Bit CPU
+
+{{< tt-scanchain-switches "011001011" >}}
 
 * Author: ChrisPVille
 * Description: The FROG is an extremely minimal load-store 4-bit CPU
 * [GitHub repository](https://github.com/ChrisPVille/tt02-FROG4bitCPU)
-* [Most recent GDS build](https://github.com/ChrisPVille/tt02-FROG4bitCPU/actions/runs/3597417786)
 * HDL project
 * [Extra docs](README.md)
 * Clock: 0 Hz

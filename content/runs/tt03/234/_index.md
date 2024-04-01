@@ -4,12 +4,13 @@ title: "234 Secret File"
 weight: 235
 ---
 
-## 234 : Secret File
+## 234 : 0b 011 101 010 : Secret File
+
+{{< tt-scanchain-switches "011101010" >}}
 
 * Author: bitluni
 * Description: Nothing to see here
 * [GitHub repository](https://github.com/bitluni/tt02-SecretFile)
-* [Most recent GDS build](https://github.com/bitluni/tt02-SecretFile/actions/runs/3605257412)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

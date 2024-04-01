@@ -4,12 +4,13 @@ title: "25 Parallel Nibble to UART"
 weight: 26
 ---
 
-## 25 : Parallel Nibble to UART
+## 25 : 0b 000 011 001 : Parallel Nibble to UART
+
+{{< tt-scanchain-switches "000011001" >}}
 
 * Author: Andrew M
 * Description: Loads two half-bytes into registers, then sends over UART
 * [GitHub repository](https://github.com/andrewmourcos/tt03-verilog-demo)
-* [Most recent GDS build](https://github.com/andrewmourcos/tt03-verilog-demo/actions/runs/4789531906)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

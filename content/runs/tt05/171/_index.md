@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "171 Cheap and quick STDP"
-weight: 174
+weight: 19
 ---
 
 ## 171 : Cheap and quick STDP

@@ -4,12 +4,13 @@ title: "132 XLS: bit population count"
 weight: 133
 ---
 
-## 132 : XLS: bit population count
+## 132 : 0b 010 000 100 : XLS: bit population count
+
+{{< tt-scanchain-switches "010000100" >}}
 
 * Author: proppy
 * Description: Count bits set in the input.
 * [GitHub repository](https://github.com/proppy/tt02-xls-popcount)
-* [Most recent GDS build](https://github.com/proppy/tt02-xls-popcount/actions/runs/3540723892)
 * HDL project
 * [Extra docs](https://github.com/proppy/tt02-xls-popcount/blob/main/README.md)
 * Clock: 0 Hz

@@ -4,12 +4,13 @@ title: "142 XorShift32"
 weight: 143
 ---
 
-## 142 : XorShift32
+## 142 : 0b 010 001 110 : XorShift32
+
+{{< tt-scanchain-switches "010001110" >}}
 
 * Author: Ethan Mahintorabi
 * Description: XorShift32 random number generator
 * [GitHub repository](https://github.com/QuantamHD/ethan-evan-random-numbers)
-* [Most recent GDS build](https://github.com/QuantamHD/ethan-evan-random-numbers/actions/runs/3463641150)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

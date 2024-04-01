@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "232 tinyscanchain Test Design"
-weight: 70
+weight: 171
 ---
 
 ## 232 : tinyscanchain Test Design

@@ -4,12 +4,13 @@ title: "2 7 Segment Life"
 weight: 3
 ---
 
-## 2 : 7 Segment Life
+## 2 : 0b 000 000 010 : 7 Segment Life
+
+{{< tt-scanchain-switches "000000010" >}}
 
 * Author: icegoat9
 * Description: Simple 7-segment cellular automaton
 * [GitHub repository](https://github.com/icegoat9/tinytapeout03-7seglife)
-* [Most recent GDS build](https://github.com/icegoat9/tinytapeout03-7seglife/actions/runs/4775764691)
 * [Wokwi](https://wokwi.com/projects/357752736742764545) project
 * [Extra docs](https://github.com/icegoat9/tinytapeout03-7seglife/blob/main/README.md)
 * Clock: 6250 Hz

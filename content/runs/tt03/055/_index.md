@@ -4,12 +4,13 @@ title: "55 7 segment wokwi counter"
 weight: 56
 ---
 
-## 55 : 7 segment wokwi counter
+## 55 : 0b 000 110 111 : 7 segment wokwi counter
+
+{{< tt-scanchain-switches "000110111" >}}
 
 * Author: Matt Venn
 * Description: counts up from 0 to 9, incrementing once per second
 * [GitHub repository](https://github.com/TinyTapeout/tt03-test-7seg)
-* [Most recent GDS build](https://github.com/TinyTapeout/tt03-test-7seg/actions/runs/4766551854)
 * [Wokwi](https://wokwi.com/projects/340805072482992722) project
 * [Extra docs]()
 * Clock: 1 Hz

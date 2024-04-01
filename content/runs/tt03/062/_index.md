@@ -4,18 +4,19 @@ title: "62 FSK modem"
 weight: 63
 ---
 
-## 62 : FSK modem
+## 62 : 0b 000 111 110 : FSK modem
+
+{{< tt-scanchain-switches "000111110" >}}
 
 * Author: Balint Kovacs
 * Description: Very simple FSK modem, comparable to Bell 103
 * [GitHub repository](https://github.com/dratini0/tt03-fsk-modem)
-* [Most recent GDS build](https://github.com/dratini0/tt03-fsk-modem/actions/runs/4778901456)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz
 * External hardware: 
 
-
+![picture](images/fsk_modem.drawio.png)
 
 ### How it works
 

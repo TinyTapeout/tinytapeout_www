@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "108 Stochastic Multiplier"
-weight: 134
+weight: 38
 ---
 
 ## 108 : Stochastic Multiplier

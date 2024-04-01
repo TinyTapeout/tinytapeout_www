@@ -4,12 +4,13 @@ title: "94 Scrolling Binary Matrix display"
 weight: 95
 ---
 
-## 94 : Scrolling Binary Matrix display
+## 94 : 0b 001 011 110 : Scrolling Binary Matrix display
+
+{{< tt-scanchain-switches "001011110" >}}
 
 * Author: Chris
 * Description: Display scrolling binary data from input pin on 8x8 SK9822 LED matrix display
 * [GitHub repository](https://github.com/chrisruk/matrixchip)
-* [Most recent GDS build](https://github.com/chrisruk/matrixchip/actions/runs/3500414798)
 * HDL project
 * [Extra docs](https://github.com/chrisruk/matrixchip/blob/main/README.md)
 * Clock: 6000 Hz

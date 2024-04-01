@@ -4,12 +4,13 @@ title: "153 Test2"
 weight: 154
 ---
 
-## 153 : Test2
+## 153 : 0b 010 011 001 : Test2
+
+{{< tt-scanchain-switches "010011001" >}}
 
 * Author: Shaos
 * Description: Testing Flip-Flops
 * [GitHub repository](https://github.com/shaos/tt02-submission-shaos)
-* [Most recent GDS build](https://github.com/shaos/tt02-submission-shaos/actions/runs/3598774914)
 * [Wokwi](https://wokwi.com/projects/348540666182107731) project
 * [Extra docs]()
 * Clock: 0 Hz

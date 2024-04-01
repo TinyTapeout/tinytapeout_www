@@ -4,12 +4,13 @@ title: "61 MMM Finite State Machine (4 States)"
 weight: 62
 ---
 
-## 61 : MMM Finite State Machine (4 States)
+## 61 : 0b 000 111 101 : MMM Finite State Machine (4 States)
+
+{{< tt-scanchain-switches "000111101" >}}
 
 * Author: Alexandra Zhang Jiang
 * Description: Finite State Machine for the Magnetic Microsystems and Microrobotics Research Lab at UCI
 * [GitHub repository](https://github.com/Ale-ZJ/tt03-mmm-fsm)
-* [Most recent GDS build](https://github.com/Ale-ZJ/tt03-mmm-fsm/actions/runs/4770762721)
 * [Wokwi](https://wokwi.com/projects/362675777226104833) project
 * [Extra docs]()
 * Clock: 1000 Hz

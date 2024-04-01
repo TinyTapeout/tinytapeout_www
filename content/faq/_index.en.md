@@ -25,11 +25,11 @@ We are working on a much [faster mux based version here](https://github.com/Tiny
 
 8 ins and 8 outs.
 
-# Chip Specs for TT04 and TT05
+# Chip Specs for TT04, TT05 and TT06
 
 ## What is the top clock speed?
 
-We think it will be around 50MHz.
+At least 50MHz. We have received silicon for our test run and are in the process of measuring it.
 
 ## How many ins and outs do I get?
 
@@ -44,7 +44,7 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 
 ## How big can my design be?
 
-For TT04 and TT05, the standard tile size is 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04 to TT06, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.
@@ -123,28 +123,27 @@ No, unused gates will be optimised out by the ASIC tools.
 Yes, you need to 
 
 * [re-run the github action](#i-updated-and-saved-my-wokwi-design-how-do-i-re-run-the-github-action-to-update-the-gds-files).
-* Tell us to use your latest version using the (Tiny Tapeout application](https://app.tinytapeout.com/).
+* Tell us to use your latest version using the [Tiny Tapeout application](https://app.tinytapeout.com/).
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
 If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
-# TinyTapeout FAQs
+# Tiny Tapeout FAQs
 
 ## Where can I find the the template to get started?
 
 You can access it on the [Getting Started Page](/digital_design/wokwi).
-
-## How many spaces are there?
-
-* For TT01 it was 498, for TT02 we reduced it to 250 to try to fill all the slots. TT03 will be the same as TT02.
-* TT04 & TT05, the maximum is around 300, but as different sizes are allowed, there may be less slots.
 
 ## Which of my builds will be submitted for fabrication?
 
 If you update your project and want us to use your latest version, you have to [go to your submission](https://app.tinytapeout.com/) and create a new submission.
 
 You can keep updating your design up to the tapeout deadline.
+
+## Is it TinyTapeout or Tiny Tapeout?
+
+It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
 
 # Github FAQs
 
@@ -204,7 +203,7 @@ There are lots!
 * runs/wokwi/reports/metrics.csv - a detailed summary report of the tool flow. It’s beyond the scope of this doc for now to explain it all.
 * runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 report of the standard cells used for your design. 
 * runs/wokwi/results/final/ (just the most important described here)
-    * gds - the final GDS file that will be added to the TinyTapeout submission.
+    * gds - the final GDS file that will be added to the Tiny Tapeout submission.
     * lef - an abstract version of the GDS with less information, used for routing.
     * verilog - the gate level verilog of your design.
 
@@ -214,22 +213,14 @@ There are lots!
 * [TT02 page](/runs/tt02/)
 * [TT03 page](/runs/tt03/)
 * [TT04 page](/runs/tt04/)
-
-## I can't make a new fork of the submission repository. How do I start a new project?
-
-Start by creating a new empty GitHub repository. 
-
-* Via the command line you can then clone the tinytapeout submission repo, change it to point to your new empty repo using `git remote set-url <remote_name> <remote_url>` and then `git push`
-* Via the GitHub web interface, [you can import a repository](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) using the TT05 repository url: https://github.com/TinyTapeout/tt05-submission-template 
-
-In either case, you may need to enable the Github actions.
+* [TT05 page](/runs/tt05/)
 
 # ASIC FAQs
 
 
 ## What do all these acronyms you keep using mean?
 
-Sorry! I’m trying to keep it accessible but I’ll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
+Sorry! We are trying to keep it accessible but we'll inevitably use some ASIC terminology at some point! See the [terminology guide here](https://zerotoasiccourse.com/terminology/).
 
 ## Why do I have fewer / more standard cells than I expected?
 
@@ -250,5 +241,90 @@ Some people have successfully increased the target density to around 62%. Altern
 
 ## How can I learn more about ASICs and how to design them?
 
-[Check out my Zero to ASIC course!](https://zerotoasiccourse.com/)
+[Check out Matt's Zero to ASIC course!](https://zerotoasiccourse.com/)
 
+
+## How can I map an additional external clock to one of the GPIOs?
+
+Tiny Tapeout provides a set of 24 general-purpose I/O pins: 8 are input-only (`ui_in`), 8 are output-only (`uo_out`) and 8 are tri-state bi-directional (`uio_*`).
+By default, the `clk` input port is used as the main clock, generated by the on-board RP2040 chip. However, it is possible to use one of the inputs `ui_in` as auxiliary clock. In this
+case, special care must be taken when running the flow.
+
+As an example, let's assume two clocks are needed: the one generated by the RP2040 device, we name it `rp2040_clk`, and an auxiliary one generated by an off-board FPGA, we name it `fpga_clk`.
+Both clocks have the same frequency, but clearly unknown phase (i.e., they are mesochronous). Also, let's assume these clocks do never interact each other (i.e., no CDC). We also map
+the `fpga_clk` to pin `ui_in[0]`.
+
+To be able to run this scenario we need to tweak the configuration file `config.tcl` that will be used by the Tiny Tapeout workflow, so that:
+
+1. We instruct OpenLane to generate two clock trees, and not just the one related to the `clk` port;
+2. We tell OpenLane the two clocks are physically separated.
+
+The following lines are required in the `config.tcl` file:
+
+```
+1 set ::env(CLOCK_PORT) "ui_in\\\[0\\\]"
+2 set ::env(BASE_SDC_FILE) "$::env(DESIGN_DIR)/project.sdc"
+```
+
+Line 1 sets the `CLOCK_PORT` name, from the (default) `clk` to our `ui_in[0]`. Please notice the backslash pattern here! There is no need to set the `CLOCK_NET` variable to a list of clocks,
+since we are using a custom constraint file, namely `project.sdc`.
+
+Then, the contents of `project.sdc` are:
+
+```
+ 1 # Shared constants, copied from  base.sdc  
+ 2 set input_delay_value [ expr $::env(CLOCK_PERIOD) * $::env(IO_PCT) ]
+ 3 set output_delay_value [ expr $::env(CLOCK_PERIOD) * $::env(IO_PCT) ]
+ 4 set_max_fanout $::env(MAX_FANOUT_CONSTRAINT) [ current_design ]
+ 5 set cap_load [ expr $::env(OUTPUT_CAP_LOAD) / 1000.0 ] ;# fF -> pF
+ 6 
+ 7 # Remove clock net from inputs
+ 8 set idx [ lsearch [ all_inputs ] "clk" ]
+ 9 set all_inputs_wo_clk [ lreplace [ all_inputs ] $idx $idx ]
+10 set idx [ lsearch $all_inputs_wo_clk "ui_in\[0\]" ]
+11 set all_inputs_wo_clk [ lreplace $all_inputs_wo_clk $idx $idx ]
+12 
+13 #  clk   clock is generated by the RP2040 chip
+14 create_clock [ get_ports "clk" ]  -name rp2040_clk -period $::env(CLOCK_PERIOD)
+15 set_input_delay $input_delay_value -clock [ get_clocks rp2040_clk ] $all_inputs_wo_clk
+16 set_output_delay $output_delay_value -clock [ get_clocks rp2040_clk ] [ all_outputs ]
+17 set_clock_uncertainty $::env(SYNTH_CLOCK_UNCERTAINTY) [ get_clocks rp2040_clk ]
+18 set_clock_transition $::env(SYNTH_CLOCK_TRANSITION) [ get_clocks rp2040_clk ]
+19 
+20 #  ui_in[0]   clock is generated by the FPGA
+21 create_clock [ get_ports "ui_in\[0\]" ]  -name fpga_clk -period $::env(CLOCK_PERIOD)
+22 set_input_delay $input_delay_value -clock [ get_clocks fpga_clk ] $all_inputs_wo_clk
+23 set_output_delay $output_delay_value -clock [ get_clocks fpga_clk ] [ all_outputs ]
+24 set_clock_uncertainty $::env(SYNTH_CLOCK_UNCERTAINTY) [ get_clocks fpga_clk ]
+25 set_clock_transition $::env(SYNTH_CLOCK_TRANSITION) [ get_clocks fpga_clk ]
+26 
+27 # rp2040_clk  and  fpga_clk  are mesochronous, and they never interact
+28 set_clock_groups -asynchronous -group { rp2040_clk } -group { fpga_clk }
+29 
+30 # Miscellanea
+31 set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) $all_inputs_wo_clk
+32 set_load  $cap_load [ all_outputs ]
+33 set_timing_derate -early [ expr {1-$::env(SYNTH_TIMING_DERATE)} ]
+34 set_timing_derate -late [ expr {1+$::env(SYNTH_TIMING_DERATE)} ]
+```
+
+Please be careful of the backslash pattern here! It is different than the `config.tcl` case! If you run into the following error:
+
+```
+[ERROR]: The specified clock port 'ui_in[0]' does not exist in the top-level module.
+``
+
+chances are the backslashes are wrong!
+
+The above SDC is pretty much derived from the default `base.sdc` constraint file. Please remember once again that the two clocks have same frquency! The file has been organized, though:
+
+1. Clock-unrelated values are computed first. This works if and only if the two clocks have the same frequency!
+2. The `rp2040_clk` is generated first, with its own I/O delay and uncertainty;
+3. The `fpga_clk` is generated next;
+4. The two clocks are said to be independent;
+5. Miscellanea settings (e.g., timing derate) follow.
+
+With the above two clock trees are generated, STA analysis will be run on both clock trees and no CDC shall be found.
+
+Please note that the above works for OpenLane tag `2023.11.23`. More recent versions that include the `check_clock_ports.py` script will *not* work. This is due to the way the
+`check_clock_ports.py` works: it is not able to detect sliced ports (as in `ui_in[0]`).

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "47 Intructouction to PRBS"
-weight: 172
+weight: 61
 ---
 
 ## 47 : Intructouction to PRBS

@@ -13,7 +13,7 @@ Para comenzar el desafío, necesitas estar en el "modo simulación". Haz clic en
 
 **Desafío**
 
-Tu amigo ha estado trabajando duro para planificar unas vacaciones. (Des)afortunadamente, a ellos les encanta la lógica digital, así que en lugar de imprimirte un itinerario, te dibujaron el siguiente circuito digital.
+Tu amigo ha estado trabajando duro para planificar unas vacaciones. (Des)afortunadamente, le encanta la lógica digital, así que en lugar de imprimirte un itinerario, te dibujó el siguiente circuito digital.
 
 Dos vacaciones son posibles: ¿puedes usar los interruptores para averiguar a dónde irás, qué comerás y con qué recuerdo volverás?
 

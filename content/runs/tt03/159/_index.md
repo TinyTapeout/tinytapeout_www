@@ -4,12 +4,13 @@ title: "159 tinytapeout2-HELLo-3orLd-7seg"
 weight: 160
 ---
 
-## 159 : tinytapeout2-HELLo-3orLd-7seg
+## 159 : 0b 010 011 111 : tinytapeout2-HELLo-3orLd-7seg
+
+{{< tt-scanchain-switches "010011111" >}}
 
 * Author: Rakesh Peter
 * Description: HELLo-3orLd Runner on 7 segment Display
 * [GitHub repository](https://github.com/r4d10n/tt02-HELLo-3orLd-7seg)
-* [Most recent GDS build](https://github.com/r4d10n/tt02-HELLo-3orLd-7seg/actions/runs/3526720238)
 * [Wokwi](https://wokwi.com/projects/341609034095264340) project
 * [Extra docs](https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg/blob/main/README.md)
 * Clock: 1 Hz

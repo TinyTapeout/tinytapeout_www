@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "649 8-Bit Shift Register with Output Latches 74HC595"
-weight: 33
+weight: 42
 ---
 
 ## 649 : 8-Bit Shift Register with Output Latches 74HC595

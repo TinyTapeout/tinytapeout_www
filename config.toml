@@ -25,13 +25,23 @@ theme = "learn"
 
 [Languages]
   [Languages.en]
-    title = "Documentation in English"
+    title = "Quicker, easier and cheaper to make your own chip!"
     weight = 1
     languageName = "English"
 
   [Languages.es]
-    title = "Documentation en Español"
+    title = "¡Hacer tu propio chip de forma más rápida, más fácil y más barata!"
     weight = 2
     languageName = "Español"
 
-#disableLanguages = ['es']
+  [Languages.ua]
+    title = "Документація українською"
+    weight = 3
+    languageName = "Українська"
+
+  [Languages.it]
+    title = "Crea il tuo microchip in modo più veloce, più semplice ed economico!"
+    weight = 4
+    languageName = "Italiano"
+
+#disableLanguages = ['es', 'it']

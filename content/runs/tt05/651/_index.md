@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "651 Neptune guitar tuner (proportional window, version b, debug output on bidir pins, larger set of frequencies)"
-weight: 16
+weight: 127
 ---
 
 ## 651 : Neptune guitar tuner (proportional window, version b, debug output on bidir pins, larger set of frequencies)

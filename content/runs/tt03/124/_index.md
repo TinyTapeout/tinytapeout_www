@@ -4,12 +4,13 @@ title: "124 prbs15"
 weight: 125
 ---
 
-## 124 : prbs15
+## 124 : 0b 001 111 100 : prbs15
+
+{{< tt-scanchain-switches "001111100" >}}
 
 * Author: Tom Schucker
 * Description: generates and checks prbs15 sequences
 * [GitHub repository](https://github.com/teaandtechtime/tt02-submission-prbs15)
-* [Most recent GDS build](https://github.com/teaandtechtime/tt02-submission-prbs15/actions/runs/3457691234)
 * [Wokwi](https://wokwi.com/projects/348260124451668562) project
 * [Extra docs]()
 * Clock: 0 Hz

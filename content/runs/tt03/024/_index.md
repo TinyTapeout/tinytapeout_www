@@ -4,37 +4,36 @@ title: "24 Simple multiply"
 weight: 25
 ---
 
-## 24 : Simple multiply
+## 24 : 0b 000 011 000 : Simple multiply
+
+{{< tt-scanchain-switches "000011000" >}}
 
 * Author: Anton Maurovic
 * Description: Multiply two 8-bit numbers, get a 16-bit result.
 * [GitHub repository](https://github.com/algofoogle/anton1-tt03)
-* [Most recent GDS build](https://github.com/algofoogle/anton1-tt03/actions/runs/4789489833)
 * HDL project
-* [Extra docs]()
+* [Extra docs](https://github.com/algofoogle/anton1-tt03/blob/main/README.md)
 * Clock: Any Hz
 * External hardware: 
 
-
+![picture](images/vcd.png)
 
 ### How it works
 
-Do synchronous reset first, then on each rising clock edge...
+This very simple design streams in two 8-bit numbers (split into nibbles) and then streams out their 16-bit product (split into bytes).
+      
+Following a synchronous reset, each rising clock edge represents a new step in a sequence of 6 steps:
+(1) load first value's high nibble; (2) load first value's low nibble; (3) load second value's high nibble; (4) load second value's low nibble;
+(5) present high byte of product result at output; (6) present low byte of product result at output.
 
-Clock in each of two 8-bit values, one `nibble` at a time (high to low).
-
-Then clock out a 16-bit value, one byte (via `result`) at a time (high to low).
+It then repeats this sequence.
 
 
 ### How to test
 
-After synchronous reset, expect `result` output to be 0.
+After synchronous reset, expect `result` output to be 0. Set `nibble` to a value of your choice, then pulse the clock. Repeat 3 more times.
 
-Set `nibble` to a value of your choice, then pulse the clock.
-
-Repeat 3 more times.
-
-Then pulse the clock 1 more times, each time expecting to get a byte at the output `result`.
+Then pulse the clock 2 more times, each time expecting to get a byte at the output `result`.
 
 
 ### IO

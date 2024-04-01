@@ -4,12 +4,13 @@ title: "164 Ring OSC Speed Test"
 weight: 165
 ---
 
-## 164 : Ring OSC Speed Test
+## 164 : 0b 010 100 100 : Ring OSC Speed Test
+
+{{< tt-scanchain-switches "010100100" >}}
 
 * Author: Eric Smith
 * Description: Make two rings with the same number of stages but measure how their frequency differs.  Measure if they can influence eachother.
 * [GitHub repository](https://github.com/ericsmi/tt02-verilog-ring-osc-demo)
-* [Most recent GDS build](https://github.com/ericsmi/tt02-verilog-ring-osc-demo/actions/runs/4546710353)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

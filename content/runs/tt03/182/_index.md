@@ -4,12 +4,13 @@ title: "182 Whisk: 16-bit Serial RISC CPU"
 weight: 183
 ---
 
-## 182 : Whisk: 16-bit Serial RISC CPU
+## 182 : 0b 010 110 110 : Whisk: 16-bit Serial RISC CPU
+
+{{< tt-scanchain-switches "010110110" >}}
 
 * Author: Luke Wren
 * Description: Execute a simple 16-bit RISC-style instruction set from up to 64 kilobytes of external SPI SRAM.
 * [GitHub repository](https://github.com/Wren6991/tt02-whisk-serial-processor)
-* [Most recent GDS build](https://github.com/Wren6991/tt02-whisk-serial-processor/actions/runs/3603452870)
 * HDL project
 * [Extra docs](https://github.com/Wren6991/tt02-whisk-serial-processor/blob/main/README.md)
 * Clock: 6000 Hz

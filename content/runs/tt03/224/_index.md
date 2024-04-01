@@ -4,12 +4,13 @@ title: "224 SevSegFX"
 weight: 225
 ---
 
-## 224 : SevSegFX
+## 224 : 0b 011 100 000 : SevSegFX
+
+{{< tt-scanchain-switches "011100000" >}}
 
 * Author: Mazen Saghir, ECE Department, American University of Beirut (mazen@aub.edu.lb)
 * Description: Seven segment display effect generator
 * [GitHub repository](https://github.com/mazensaghir/tt02-sevsegfx)
-* [Most recent GDS build](https://github.com/mazensaghir/tt02-sevsegfx/actions/runs/3612703382)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

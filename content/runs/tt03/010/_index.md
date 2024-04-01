@@ -4,12 +4,13 @@ title: "10 SKINNY SBOX"
 weight: 11
 ---
 
-## 10 : SKINNY SBOX
+## 10 : 0b 000 001 010 : SKINNY SBOX
+
+{{< tt-scanchain-switches "000001010" >}}
 
 * Author: Niklas Fassbender
 * Description: Implementation of a 4-Bit Sbox for SKINNY
 * [GitHub repository](https://github.com/nikals99/tt03-skinny-sbox)
-* [Most recent GDS build](https://github.com/nikals99/tt03-skinny-sbox/actions/runs/4436749193)
 * [Wokwi](https://wokwi.com/projects/359353377078748161) project
 * [Extra docs]()
 * Clock: 0 Hz

@@ -4,12 +4,13 @@ title: "207 channel coding"
 weight: 208
 ---
 
-## 207 : channel coding
+## 207 : 0b 011 001 111 : channel coding
+
+{{< tt-scanchain-switches "011001111" >}}
 
 * Author: Asma Mohsin
 * Description: Convolutional coding is widely used in modern digital communication systems.We often get encoded data by using different polynomials having same constraint lengths (K).
 * [GitHub repository](https://github.com/AsmaMohsin1507/tt02-channel-coding)
-* [Most recent GDS build](https://github.com/AsmaMohsin1507/tt02-channel-coding/actions/runs/3601674491)
 * HDL project
 * [Extra docs](https://github.com/AsmaMohsin1507/tt02-channel-coding/blob/cccf2f01c80024d59eef60c292b57c8786c9e495/README.md)
 * Clock: 6000 Hz

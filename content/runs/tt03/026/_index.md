@@ -4,12 +4,13 @@ title: "26 tiny logic analyzer"
 weight: 27
 ---
 
-## 26 : tiny logic analyzer
+## 26 : 0b 000 011 010 : tiny logic analyzer
+
+{{< tt-scanchain-switches "000011010" >}}
 
 * Author: yubex
 * Description: The design samples one data input and shows the current state and edge events using the 7 segment display. 
 * [GitHub repository](https://github.com/yubex/tt03-tiny-logic-analyzer)
-* [Most recent GDS build](https://github.com/yubex/tt03-tiny-logic-analyzer/actions/runs/4618646195)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

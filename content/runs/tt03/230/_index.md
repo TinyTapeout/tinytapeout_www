@@ -4,12 +4,13 @@ title: "230 Digital padlock"
 weight: 231
 ---
 
-## 230 : Digital padlock
+## 230 : 0b 011 100 110 : Digital padlock
+
+{{< tt-scanchain-switches "011100110" >}}
 
 * Author: Jean THOMAS
 * Description: A 4-digit electronic padlock
 * [GitHub repository](https://github.com/jeanthom/tinytapout-lock)
-* [Most recent GDS build](https://github.com/jeanthom/tinytapout-lock/actions/runs/3603512851)
 * [Wokwi](https://wokwi.com/projects/341438392303616596) project
 * [Extra docs](README.md)
 * Clock: 100 Hz

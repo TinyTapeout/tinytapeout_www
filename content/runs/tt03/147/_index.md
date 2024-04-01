@@ -4,12 +4,13 @@ title: "147 3-bit 8-channel PWM driver"
 weight: 148
 ---
 
-## 147 : 3-bit 8-channel PWM driver
+## 147 : 0b 010 010 011 : 3-bit 8-channel PWM driver
+
+{{< tt-scanchain-switches "010010011" >}}
 
 * Author: Ivan Krasin
 * Description: PWM driver with 8 channels and 8 PWM levels from 0 to 1
 * [GitHub repository](https://github.com/krasin/tt02-verilog-3-bit-8-channel-pwm-driver)
-* [Most recent GDS build](https://github.com/krasin/tt02-verilog-3-bit-8-channel-pwm-driver/actions/runs/3495330033)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "454 Karplus-Strong String Synthesis"
-weight: 100
+weight: 86
 ---
 
 ## 454 : Karplus-Strong String Synthesis

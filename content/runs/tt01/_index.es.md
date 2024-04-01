@@ -1,7 +1,7 @@
 ---
-title: "Tiny Tapeout 01"
+title: "Tiny Tapeout 1"
 weight: 10
-description: 152 diseños, cerrado el 1 de Septiembre de 2022
+description: 152 diseños, cerrado el 1 de Septiembre 2022
 ---
 
 {{% toc %}}
@@ -12,23 +12,22 @@ description: 152 diseños, cerrado el 1 de Septiembre de 2022
 * [Hoja de datos en PDF](/tt01.pdf)
 * [Cómo funciona la cadena de escaneo, pinout y detalles técnicos](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md)
 * [Verificación](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/verification.md)
-* [La presentación de MPW de Efabless esta aquí](https://platform.efabless.com/projects/1229)
+* [Envío de MPW de Efabless esta aquí](https://platform.efabless.com/projects/1229)
 
 # Estadísticas de lanzamiento
 
 * Lanzamiento: 2022-08-17
 * Presentación cerrada: 2022-09-01
-* Enviado a Efabless el 2022-09-05 para la [lanzadera MPW7](https://efabless.com/shuttle-status) usando el PDK de código abierto Skywater 130nm
-* Se esperan chips para Noviembre de 2023. Como esta fue una prueba, no esperamos fabricar ni entregar PCBs
+* Enviado a Efabless el 2022-09-05 para el [shuttle MPW7](https://efabless.com/shuttle-status) utilizando el PDK de código abierto Skywater de 130 nm.
 
-# Estadísticas del proyecto
+# Estadísticas de proyecto
 
-* 152 proyectos presentados. Cada proyecto tiene es de um x 100 um.
-* 100 personas dispuestas a pagar 100 dólares por el montado del chip en una PCB.
-* 115 usaron el editor gráfico Wokwi, 31 Verilog, 3 XLS, 2 Chisel y 1 Amaranth.
-* 15 mil células estándar usadas en todos los proyectos.
-* El diseño con más células usadas fue de 600, el menor fue de 14.
-* El total del largo del cableado fue de 772 mm.
+* 152 proyectos enviados. Cada proyecto es de 100um x 100um.
+* 100 personas dispuestas a pagar 100USD por el chip montado en una PCB.
+* 115 personas usaron el editor gráfico Wokwi, 31 usaron Verilog, 3 usaron XLS, 2 usaron Chisel, 1 usó Amaranth.
+* 15 mil celdas estándar en total utilizadas en todos los proyectos.
+* La mayor cantidad de celdas utilizadas en un diseño fue de 600, la menor cantidad fue de 14.
+* Longitud total de cableado fue de 772 mm.
 
 # Imágenes
 
@@ -48,7 +47,7 @@ Por [Maximo Balestrini](https://twitter.com/maxiborga)
 
 Click para ejecutar un [visor de GDS interactivo creado automáticamente con Github Actions](https://proppy.github.io/tinytapeout-xls-test/)
 
-# Muestra de proyectos
+# Exposición de proyectos
 
 Tenemos muchos métodos para presentar en Tiny Tapeout, la versión gráfica de Wokwi y soporte de HDL para Verilog, Chisel, Amaranth, etc.
 
@@ -68,28 +67,28 @@ Tenemos muchos métodos para presentar en Tiny Tapeout, la versión gráfica de 
 
 # Contribuciones seleccionadas de la comunidad
 
-* [Vídeo de resumen](https://twitter.com/bovensiepen/status/1563600293472141313) 
+* [Video de resumen](https://twitter.com/bovensiepen/status/1563600293472141313) 
 * [Vista desplegada animada del GDS](https://twitter.com/ChrisPVille/status/1565566061814185984)
-* [Renders en 3D](https://twitter.com/maxiborga/status/1565081697057660928)
+* [Renderizados en 3D](https://twitter.com/maxiborga/status/1565081697057660928)
 
-# Testimonios / Endosos
+# Testimonios / Avales
 
-Quiero cambiar mi clase de VLSI en la primavera (Abril - Junio) para utilizar su infraestructura de chips pequeños. Si pudiera decir que cada estudiante de mi clase hizo algo, sería increíble.
+Quiero cambiar mi clase de VLSI en la primavera (Abril - Junio) para utilizar su infraestructura de chips pequeños. Si pudiera decir que cada estudiante de mi clase logró hacer algo, sería increíble.
 
 ---
 Enseño diseño digital en los Emiratos Árabes Unidos y estaría interesado en ponerme en contacto para aprender acerca de la próxima fecha de entrega donde mis estudiantes podrían enviar sus pruebas de infraestructura para el tapeout.
 
 ---
-Soy un profesor de CS y EE y en mi último año como estudiante de doctorado en la Universidad del Sureste de Noruega (USN). Como impartimos cursos tanto de electrónica digital como analógica, pensé que sería una gran oportunidad para que los estudiantes materializaran su trabajo.
+Soy un profesor de ciencias computacionales e ingeniería electrónica, y estoy en mi último año como estudiante de doctorado en la Universidad del Sureste de Noruega (USN). Como impartimos cursos tanto de electrónica digital como analógica, pensé que sería una gran oportunidad para que los estudiantes materializaran su trabajo.
 
 ---
-Construí una lógica de CRC para el http://tinytapeout.com de @matthewvenn con mi hijo. Espero que el tapeout suceda 🥰 de todos modos, el flujo de trabajo es asombroso. CI/CD para el diseño de chips 🤯
+Construí una lógica de CRC para el http://tinytapeout.com de @matthewvenn con mi hijo. Espero que el tapeout se concrete 🥰 De todos modos, el flujo de trabajo es asombroso. CI/CD para el diseño de chips 🤯
 
 ---
-Gracias por hacerlo - Siempre quise unirme a estos lanzamientos de OpenMPW, pero nunca me sentí listo. TinyTapeout me dió un camino para introducirme mientras solo tomaba una tarde de esfuerzo. !Es increíble!
+Gracias por hacer esto - siempre quise unirme a estos shuttles de Open MPW, pero nunca me sentí preparado. TinyTapeout me ha brindado una manera para poder hacerlo, y solo tuve que dedicar 2 veladas de esfuerzo de mi parte. ¡Eso es increíble!
 
 ---
-Acabo de hacer un desplazador de barril de 4 bits usando esta herramienta de http://tinytapeout.com. Es rápido y divertido de usar. Incluso el GDS se generó en cuestión de minutos. Todos deberían probarlo.
+Acabo de hacer un barrel shifter de 4 bits utilizando esta herramienta http://tinytapeout.com. Es muy rápida y divertida de usar. El GDS incluso se generó en minutos. Todos deberían probar esto.
 
 ---
 Más en [Twitter](https://twitter.com/search?q=tinytapeout).

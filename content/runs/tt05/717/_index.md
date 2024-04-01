@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "717 Multiplexed clock"
-weight: 155
+weight: 70
 ---
 
 ## 717 : Multiplexed clock

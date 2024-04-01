@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "647 RO and counter"
-weight: 161
+weight: 156
 ---
 
 ## 647 : RO and counter

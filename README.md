@@ -1,4 +1,4 @@
-# TinyTapeout website
+# Tiny Tapeout website
 
 Contribution instructions:
 

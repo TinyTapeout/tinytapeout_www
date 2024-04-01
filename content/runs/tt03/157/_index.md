@@ -4,12 +4,13 @@ title: "157 Breathing LED"
 weight: 158
 ---
 
-## 157 : Breathing LED
+## 157 : 0b 010 011 101 : Breathing LED
+
+{{< tt-scanchain-switches "010011101" >}}
 
 * Author: argunda
 * Description: Use the pwm output to drive an LED and it should look like it's breathing.
 * [GitHub repository](https://github.com/argunda/tt02-breathing-led)
-* [Most recent GDS build](https://github.com/argunda/tt02-breathing-led/actions/runs/3529467681)
 * HDL project
 * [Extra docs]()
 * Clock: 4000 Hz

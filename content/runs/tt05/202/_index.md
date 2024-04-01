@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "202 Miniature Programmable Interrupt Timer"
-weight: 102
+weight: 158
 ---
 
 ## 202 : Miniature Programmable Interrupt Timer

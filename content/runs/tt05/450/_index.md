@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "450 ChatGPT designed Spiking Neural Network"
-weight: 164
+weight: 119
 ---
 
 ## 450 : ChatGPT designed Spiking Neural Network

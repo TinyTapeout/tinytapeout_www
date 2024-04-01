@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "45 Hodgkin-Huxley Chip Design"
-weight: 69
+weight: 44
 ---
 
 ## 45 : Hodgkin-Huxley Chip Design

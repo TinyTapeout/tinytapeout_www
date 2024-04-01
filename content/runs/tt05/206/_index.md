@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "206 UART Transceiver"
-weight: 37
+weight: 3
 ---
 
 ## 206 : UART Transceiver

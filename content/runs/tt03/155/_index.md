@@ -4,12 +4,13 @@ title: "155 Nano-neuron"
 weight: 156
 ---
 
-## 155 : Nano-neuron
+## 155 : 0b 010 011 011 : Nano-neuron
+
+{{< tt-scanchain-switches "010011011" >}}
 
 * Author: Daniel Burke
 * Description: minimal low vector test
 * [GitHub repository](https://github.com/drburke3/tt02-nano-neuron)
-* [Most recent GDS build](https://github.com/drburke3/tt02-nano-neuron/actions/runs/3525911707)
 * [Wokwi](https://wokwi.com/projects/349047610915422802) project
 * [Extra docs]()
 * Clock: 0 Hz

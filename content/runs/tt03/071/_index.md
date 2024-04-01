@@ -4,12 +4,13 @@ title: "71 Tiny binarized neural network"
 weight: 72
 ---
 
-## 71 : Tiny binarized neural network
+## 71 : 0b 001 000 111 : Tiny binarized neural network
+
+{{< tt-scanchain-switches "001000111" >}}
 
 * Author: ReJ aka Renaldas Zioma
 * Description: 8 neurons
 * [GitHub repository](https://github.com/rejunity/tt03-tiny-bnn)
-* [Most recent GDS build](https://github.com/rejunity/tt03-tiny-bnn/actions/runs/4801780609)
 * HDL project
 * [Extra docs]()
 * Clock: 0 Hz

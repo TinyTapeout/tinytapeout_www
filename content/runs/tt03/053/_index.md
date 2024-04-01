@@ -4,12 +4,13 @@ title: "53 M segments"
 weight: 54
 ---
 
-## 53 : M segments
+## 53 : 0b 000 110 101 : M segments
+
+{{< tt-scanchain-switches "000110101" >}}
 
 * Author: Matt Venn
 * Description: pressing the first 4 buttons will put an M on the LEDs
 * [GitHub repository](https://github.com/mattvenn/tt03-m-segments)
-* [Most recent GDS build](https://github.com/mattvenn/tt03-m-segments/actions/runs/4294209140)
 * [Wokwi](https://wokwi.com/projects/357917324056483841) project
 * [Extra docs]()
 * Clock: 0 Hz

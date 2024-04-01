@@ -4,12 +4,13 @@ title: "139 TinyTapeout2 4-bit multiplier."
 weight: 140
 ---
 
-## 139 : TinyTapeout2 4-bit multiplier.
+## 139 : 0b 010 001 011 : TinyTapeout2 4-bit multiplier.
+
+{{< tt-scanchain-switches "010001011" >}}
 
 * Author: Tholin
 * Description: Multiplies two 4-bit numbers presented on the input pins and outputs an 8-bit result.
 * [GitHub repository](https://github.com/89Mods/tt2-4x4-multiply)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-4x4-multiply/actions/runs/3603903621)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

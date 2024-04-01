@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "270 Game of Life 8x8 (siLife)"
-weight: 170
+weight: 7
 ---
 
 ## 270 : Game of Life 8x8 (siLife)

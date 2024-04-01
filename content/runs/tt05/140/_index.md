@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "140 Matrix multiply coprocessor (8x8 1bit)"
-weight: 167
+weight: 91
 ---
 
 ## 140 : Matrix multiply coprocessor (8x8 1bit)

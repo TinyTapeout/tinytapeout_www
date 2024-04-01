@@ -4,12 +4,13 @@ title: "134 chiDOM"
 weight: 135
 ---
 
-## 134 : chiDOM
+## 134 : 0b 010 000 110 : chiDOM
+
+{{< tt-scanchain-switches "010000110" >}}
 
 * Author: Maria CHiara Molteni
 * Description: Chi function of Xoodoo protected at the first-order by DOM
 * [GitHub repository](https://github.com/mmolteni-secpat/tinytapeout02_chiDOM)
-* [Most recent GDS build](https://github.com/mmolteni-secpat/tinytapeout02_chiDOM/actions/runs/3460870665)
 * [Wokwi](https://wokwi.com/projects/341614374571475540) project
 * [Extra docs]()
 * Clock: 0 Hz

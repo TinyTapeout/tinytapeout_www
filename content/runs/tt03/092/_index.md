@@ -4,12 +4,13 @@ title: "92 SIMON Cipher"
 weight: 93
 ---
 
-## 92 : SIMON Cipher
+## 92 : 0b 001 011 100 : SIMON Cipher
+
+{{< tt-scanchain-switches "001011100" >}}
 
 * Author: Fraser Price
 * Description: Simon32/64 Encryption
 * [GitHub repository](https://github.com/Fraserbc/tt02-simon)
-* [Most recent GDS build](https://github.com/Fraserbc/tt02-simon/actions/runs/3429009161)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

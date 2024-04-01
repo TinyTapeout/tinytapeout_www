@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "172 Brain-Inspired Oscillatory Network"
-weight: 123
+weight: 29
 ---
 
 ## 172 : Brain-Inspired Oscillatory Network

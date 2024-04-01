@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "6 Current Based Leaky Integrate and Fire Model"
-weight: 99
+weight: 129
 ---
 
 ## 6 : Current Based Leaky Integrate and Fire Model

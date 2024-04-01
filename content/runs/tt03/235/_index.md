@@ -4,12 +4,13 @@ title: "235 Basic 4 bit cpu "
 weight: 236
 ---
 
-## 235 : Basic 4 bit cpu 
+## 235 : 0b 011 101 011 : Basic 4 bit cpu 
+
+{{< tt-scanchain-switches "011101011" >}}
 
 * Author: Noah Gaertner
 * Description: 4-bit CPU that does add, subtract, multiply, left and right shifts, conditional jump based on external signal, logical and bitwise AND and OR, equality and inequality checking, bitwise inversion, and logical NOT
 * [GitHub repository](https://github.com/noahgaertner/tt02-verilog-demo)
-* [Most recent GDS build](https://github.com/noahgaertner/tt02-verilog-demo/actions/runs/3672324842)
 * HDL project
 * [Extra docs](https://github.com/noahgaertner/tt02-verilog-demo/blob/main/README.md)
 * Clock: 50K (or lower, whatever) Hz

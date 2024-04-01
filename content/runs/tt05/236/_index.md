@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "236 Perceptron (Neuromeme)"
-weight: 22
+weight: 102
 ---
 
 ## 236 : Perceptron (Neuromeme)

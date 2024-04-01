@@ -4,12 +4,13 @@ title: "177 Frequency Counter"
 weight: 178
 ---
 
-## 177 : Frequency Counter
+## 177 : 0b 010 110 001 : Frequency Counter
+
+{{< tt-scanchain-switches "010110001" >}}
 
 * Author: Andrew Ramsey
 * Description: Estimates the frequency of an input signal
 * [GitHub repository](https://github.com/ARamsey118/tiny_tapeout_freq_counter)
-* [Most recent GDS build](https://github.com/ARamsey118/tiny_tapeout_freq_counter/actions/runs/3599337352)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

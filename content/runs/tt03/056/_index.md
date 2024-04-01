@@ -4,12 +4,13 @@ title: "56 Straight through test"
 weight: 57
 ---
 
-## 56 : Straight through test
+## 56 : 0b 000 111 000 : Straight through test
+
+{{< tt-scanchain-switches "000111000" >}}
 
 * Author: Matt Venn
 * Description: Just connects inputs to outputs
 * [GitHub repository](https://github.com/TinyTapeout/tt03-test-straight)
-* [Most recent GDS build](https://github.com/TinyTapeout/tt03-test-straight/actions/runs/4766610434)
 * [Wokwi](https://wokwi.com/projects/339501025136214612) project
 * [Extra docs]()
 * Clock: 0 Hz

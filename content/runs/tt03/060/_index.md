@@ -1,15 +1,16 @@
 ---
 hidden: true
-title: "60 7 segment seconds"
+title: "60 MMM Lab's Micro-robot Control Module"
 weight: 61
 ---
 
-## 60 : 7 segment seconds
+## 60 : 0b 000 111 100 : MMM Lab's Micro-robot Control Module
 
-* Author: Matt Venn
-* Description: Count up to 10, one second at a time.
+{{< tt-scanchain-switches "000111100" >}}
+
+* Author: Kevin Guan
+* Description: Ring Oscillator, Final State Machine, and PWM
 * [GitHub repository](https://github.com/kevinwguan/tt03-mmm-verilog)
-* [Most recent GDS build](https://github.com/kevinwguan/tt03-mmm-verilog/actions/runs/4790256160)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz
@@ -19,26 +20,23 @@ weight: 61
 
 ### How it works
 
-Uses a set of registers to divide the clock, and then some combinational logic
-to convert from binary to decimal for the display.
-
-Puts a slower square wave output on output 7.
+Look at pins for further information.
 
 
 ### How to test
 
-After reset, the counter should increase by one every second.
+Look at pins for further information.
 
 
 ### IO
 
 | # | Input        | Output       |
 |---|--------------|--------------|
-| 0 | clock  | segment a |
-| 1 | reset  | segment b |
-| 2 | none  | segment c |
-| 3 | none  | segment d |
-| 4 | none  | segment e |
-| 5 | none  | segment f |
-| 6 | none  | segment g |
-| 7 | none  | slow clock output |
+| 0 | reset  | clk out |
+| 1 | dc[2]  | counter[2] |
+| 2 | dc[1]  | counter[1] |
+| 3 | dc[0]  | counter[0] |
+| 4 | sel  | dut fsm right |
+| 5 | ext clk  | dut fsm left |
+| 6 | right sensor  | right motor |
+| 7 | left sensor  | left motor |

@@ -4,12 +4,13 @@ title: "95 Power supply sequencer"
 weight: 96
 ---
 
-## 95 : Power supply sequencer
+## 95 : 0b 001 011 111 : Power supply sequencer
+
+{{< tt-scanchain-switches "001011111" >}}
 
 * Author: Jon Klein
 * Description: Sequentially enable and disable channels with configurable delay
 * [GitHub repository](https://github.com/loxodes/tt02-submission-loxodes)
-* [Most recent GDS build](https://github.com/loxodes/tt02-submission-loxodes/actions/runs/3405763799)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

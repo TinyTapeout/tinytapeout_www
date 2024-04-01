@@ -4,12 +4,13 @@ title: "176 BCD to 7-Segment Decoder"
 weight: 177
 ---
 
-## 176 : BCD to 7-Segment Decoder
+## 176 : 0b 010 110 000 : BCD to 7-Segment Decoder
+
+{{< tt-scanchain-switches "010110000" >}}
 
 * Author: JinGen Lim
 * Description: Converts a BCD input into a 7-segment display output
 * [GitHub repository](https://github.com/jglim/tt02-bcd-7seg)
-* [Most recent GDS build](https://github.com/jglim/tt02-bcd-7seg/actions/runs/3562022687)
 * [Wokwi](https://wokwi.com/projects/349546262775726676) project
 * [Extra docs](https://github.com/jglim/tt02-bcd-7seg/blob/main/README.md)
 * Clock: 0 Hz

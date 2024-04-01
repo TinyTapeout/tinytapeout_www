@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "32 7 segment seconds (Verilog Demo)"
-weight: 35
+weight: 51
 ---
 
 ## 32 : 7 segment seconds (Verilog Demo)

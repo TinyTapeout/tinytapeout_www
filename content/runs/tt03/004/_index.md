@@ -4,12 +4,13 @@ title: "4 Wormy"
 weight: 5
 ---
 
-## 4 : Wormy
+## 4 : 0b 000 000 100 : Wormy
+
+{{< tt-scanchain-switches "000000100" >}}
 
 * Author: nqbit
 * Description: MC Wormy Pants squirms like a worm and grows just as fast.
 * [GitHub repository](https://github.com/nqbit/wormy)
-* [Most recent GDS build](https://github.com/nqbit/wormy/actions/runs/4361618632)
 * HDL project
 * [Extra docs](https://github.com/nqbit/wormy)
 * Clock: 300 Hz

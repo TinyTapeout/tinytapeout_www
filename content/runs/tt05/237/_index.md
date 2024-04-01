@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "237 4 Bit ALU"
-weight: 57
+weight: 148
 ---
 
 ## 237 : 4 Bit ALU

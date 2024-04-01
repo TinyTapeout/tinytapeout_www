@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "334 VGA Experiments"
-weight: 4
+weight: 67
 ---
 
 ## 334 : VGA Experiments

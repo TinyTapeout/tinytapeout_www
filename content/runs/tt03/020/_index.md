@@ -4,12 +4,13 @@ title: "20 CTF - Catch the fish"
 weight: 21
 ---
 
-## 20 : CTF - Catch the fish
+## 20 : 0b 000 010 100 : CTF - Catch the fish
+
+{{< tt-scanchain-switches "000010100" >}}
 
 * Author: Carin Schreiner
 * Description: Catch the fish is a whac-a-mole game.
 * [GitHub repository](https://github.com/SchreinerCarin/tt03-ctf)
-* [Most recent GDS build](https://github.com/SchreinerCarin/tt03-ctf/actions/runs/4514445631)
 * [Wokwi](https://wokwi.com/projects/360014965627378689) project
 * [Extra docs]()
 * Clock: 0 Hz

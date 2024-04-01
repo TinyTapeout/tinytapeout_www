@@ -4,12 +4,13 @@ title: "111 chase the beat"
 weight: 112
 ---
 
-## 111 : chase the beat
+## 111 : 0b 001 101 111 : chase the beat
+
+{{< tt-scanchain-switches "001101111" >}}
 
 * Author: Emil J Tywoniak
 * Description: Tap twice to the beat, the outputs will chase the beat. Or generate some audio noise!
 * [GitHub repository](https://github.com/ekliptik/tt02-chase-the-beat)
-* [Most recent GDS build](https://github.com/ekliptik/tt02-chase-the-beat/actions/runs/3544351091)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

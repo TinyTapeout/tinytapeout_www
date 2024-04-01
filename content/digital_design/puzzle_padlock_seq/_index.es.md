@@ -15,7 +15,7 @@ El circuito utilizado para este desafío utiliza tanto [lógica combinacional](/
 
 Este desafío utiliza flip-flops D para crear un circuito de lógica secuencial llamado máquina de estados finitos (FSM, por sus siglas en inglés). Luego se utiliza lógica combinacional para determinar con qué entradas el circuito cambia de estado.
 
-Por ejemplo, utilizando FSMs podríamos diseñar un circuito básico que se activa mientras una entrada es 1 y permanece activo hasta que la entrada pasa a 0. Para describir esto con máquinas de estados, podríamos decir que si el circuito está en el Estado 0 (S0) y la entrada es 1, entonces pasará al Estado 1 (S1). Mientras la entrada es 1, el circuito permanece en S1. Una vez que la entrada pasa a 0, el circuito vuelve a S0.
+Por ejemplo, utilizando FSMs podríamos diseñar un circuito básico que se activa mientras una entrada es 1 y permanece activo hasta que la entrada pasa a 0. Para describir esto con máquinas de estados, podríamos decir que si el circuito está en el Estado 0 (S0) y la entrada cambia a 1, entonces pasará al Estado 1 (S1). Mientras la entrada es 1, el circuito permanece en S1. Una vez que la entrada pasa a 0, el circuito vuelve a S0.
 
 Los FSMs se pueden explicar gráficamente utilizando diagramas de estados como este:
 
@@ -31,13 +31,13 @@ stateDiagram-v2
 
 El diagrama de estados representa todos los estados posibles en los que puede estar el sistema, describiendo cómo el sistema hace transiciones entre estados.
 
-Luego, la lógica digital puede utilizarse para implementar el FSM utilizando tres componentes principales: lógica de estado siguiente, un registro de estado y lógica de salida, como se muestra a continuación (crédito: Diapositivas del [Prof. Onur Mutlu de 2019, a partir de la página 49](https://safari.ethz.ch/digitaltechnik/spring2019/lib/exe/fetch.php?media=onur-digitaldesign-2019-lecture6-sequential-logic-afterlecture-corrected.pdf)).
+Luego, se puede utilizar lógica digital para implementar el FSM utilizando tres componentes principales: lógica de estado siguiente, un registro de estado, y lógica de salida, como se muestra a continuación (crédito: Diapositivas del [Prof. Onur Mutlu de 2019, a partir de la página 49](https://safari.ethz.ch/digitaltechnik/spring2019/lib/exe/fetch.php?media=onur-digitaldesign-2019-lecture6-sequential-logic-afterlecture-corrected.pdf)).
 
 ![FSMlogic](/images/puzzle_padlock_seq/fsmlogic.png)
 
 ### Desafío 1: Versión fácil
 
-Una caja fuerte que contiene preciosos equipos de semiconductores ha sido bloqueada utilizando compuertas lógicas. ¡Debe ingresar el código secuencial correcto para desbloquear el sistema y capturar los materiales!
+Una caja fuerte que contiene preciosos equipos de semiconductores ha sido bloqueada utilizando compuertas lógicas. ¡Debes ingresar el código secuencial correcto para desbloquear el sistema y capturar los materiales!
 
 Este desafío implementa la máquina de estados que se muestra a continuación:
 
@@ -54,17 +54,17 @@ stateDiagram-v2
 Nota: "!" se utiliza comúnmente para representar la negación, también conocida como "no". Por lo tanto, !Restablecer significa Restablecer = 0
 
 **Controles**
-* El botón de empuje se utiliza para ingresar su código.
+* El botón pulsador se utiliza para ingresar su código.
 * El interruptor 2 se utiliza para restablecer la caja fuerte.
 * Los interruptores 3 a 5 se utilizan para configurar el código.
 
 **Para comenzar**
 
-Presione el botón verde en la esquina superior izquierda del panel de simulación, luego haga clic para encender el interruptor 2 y presione el botón de empuje. El LED rojo etiquetado "Bloqueado" debería encenderse y el display de siete segmentos debería mostrar "L" (para bloqueado).
+Presiona el botón verde en la esquina superior izquierda del panel de simulación, luego haga clic para encender el interruptor 2 y presione el botón pulsador. El LED rojo etiquetado "Bloqueado" debería encenderse y el display de siete segmentos debería mostrar "L" (de *Locked*, bloqueado).
 
-A continuación, apague el interruptor 2 y comience a probar códigos. Configure un código utilizando los interruptores 3 a 5.
+A continuación, apaga el interruptor 2 y comience a probar códigos. Configure un código utilizando los interruptores 3 a 5.
 
-Si ingresa un código correcto, verá que el LED cian etiquetado "Desbloqueado!" se enciende. ¡Felicidades! El display de siete segmentos también debería mostrar "U" (para desbloqueado).
+Si ingresa un código correcto, verá que el LED cian etiquetado "Desbloqueado!" se enciende. ¡Felicidades! El display de siete segmentos también debería mostrar "U" (de *Unlocked*, desbloqueado).
 
 {{< wokwi 347019916696617554 >}}
 <br>
@@ -88,7 +88,7 @@ stateDiagram-v2
   locked: Bloqueado
   locked1: 1/3 Correcto
   locked2: 2/3 Correcto
-  unlocked: Desbloqueado!
+  unlocked: ¡Desbloqueado!
   idle   --> idle: !SW2
   idle   --> locked: SW2
   locked --> locked: Incorrecto
@@ -102,26 +102,26 @@ stateDiagram-v2
 {{< /mermaid >}}
 
 **Controles**
-* El botón de empuje se utiliza para ingresar el código.
+* El botón pulsador se utiliza para ingresar el código.
 * El interruptor 2 se utiliza para habilitar el candado. Para restablecer en cualquier momento, cambie el interruptor 2 a 0 y vuelva a 1.
 * Los interruptores 3 a 5 se utilizan para configurar el código.
 
 **Para comenzar**
 
-Coloque todos los interruptores en 0 y presione el botón de empuje. Aparecerá un "-" en el display de siete segmentos.
+Coloca todos los interruptores en 0 y presione el botón pulsador. Aparecerá un "-" en el display de siete segmentos.
 
-Cuando estés listo, enciende el interruptor 2 y presione el botón de empuje para comenzar el desafío. El LED amarillo se encenderá y el display de siete segmentos mostrará "L" para "bloqueado".
+Cuando estés listo, enciende el interruptor 2 y presiona el botón de empuje para comenzar el desafío. El LED amarillo se encenderá y el display de siete segmentos mostrará "L" para "bloqueado".
 
 A continuación, configure un código utilizando los interruptores 3 a 5. Si ingresa un código correcto, verá que el LED de color avanza de amarillo a magenta.
 
-Si tienes éxito, intenta llegar a las próximas etapas, encendiendo el LED blanco y finalmente el cian! Aparecerá un "U" para desbloqueado.
+Si tienes éxito, ¡intenta llegar a las próximas etapas, encendiendo el LED blanco y finalmente el cian! Aparecerá una "U" para "desbloqueado".
 
 Si no logras ingresar el código correcto en cualquier etapa, volverás al LED amarillo.
 
 {{< wokwi 346982355289768532 >}}
 <br>
 
-Sientete libre de jugar para tratar de descubrirlo. Siempre puedes volver a los tutoriales de [compuertas lógicas](/es/digital_design/logic_gates) y [flip-flops](/es/digital_design/puzzle_flipflop) si necesitas repasar.
+Siéntete libre de jugar para tratar de descubrirlo. Siempre puedes volver a los tutoriales de [compuertas lógicas](/es/digital_design/logic_gates) y [flip-flops](/es/digital_design/puzzle_flipflop) si necesitas repasar.
 
 {{%expand "Ver la solución" %}} | LED     | SW3     | SW4    | SW5    |
 |---------|---------|--------|--------|

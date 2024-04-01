@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "226 UART test"
-weight: 82
+weight: 75
 ---
 
 ## 226 : UART test

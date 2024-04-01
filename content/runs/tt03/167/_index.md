@@ -4,12 +4,13 @@ title: "167 Zinnia+ (MCPU5+) 8 Bit CPU"
 weight: 168
 ---
 
-## 167 : Zinnia+ (MCPU5+) 8 Bit CPU
+## 167 : 0b 010 100 111 : Zinnia+ (MCPU5+) 8 Bit CPU
+
+{{< tt-scanchain-switches "010100111" >}}
 
 * Author: cpldcpu
 * Description: A minimal 8 bit CPU
 * [GitHub repository](https://github.com/cpldcpu/tt02-mcpu5plus)
-* [Most recent GDS build](https://github.com/cpldcpu/tt02-mcpu5plus/actions/runs/3557667622)
 * HDL project
 * [Extra docs](https://github.com/cpldcpu/tt02-mcpu5plus)
 * Clock: high Hz

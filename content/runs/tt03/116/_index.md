@@ -4,12 +4,13 @@ title: "116 RGB LED Matrix Driver"
 weight: 117
 ---
 
-## 116 : RGB LED Matrix Driver
+## 116 : 0b 001 110 100 : RGB LED Matrix Driver
+
+{{< tt-scanchain-switches "001110100" >}}
 
 * Author: Matt M
 * Description: Drives a simple animation on SparkFun's RGB LED 8x8 matrix backpack
 * [GitHub repository](https://github.com/mm21/tinytapeout2-led-matrix)
-* [Most recent GDS build](https://github.com/mm21/tinytapeout2-led-matrix/actions/runs/3452839947)
 * HDL project
 * [Extra docs]()
 * Clock: 6250 Hz

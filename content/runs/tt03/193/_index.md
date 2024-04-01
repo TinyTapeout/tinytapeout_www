@@ -4,12 +4,13 @@ title: "193 2bitALU"
 weight: 194
 ---
 
-## 193 : 2bitALU
+## 193 : 0b 011 000 001 : 2bitALU
+
+{{< tt-scanchain-switches "011000001" >}}
 
 * Author: shan
 * Description: 2 bit ALU which performs 16 different operations
 * [GitHub repository](https://github.com/shan1293/tt02-2bitCPU)
-* [Most recent GDS build](https://github.com/shan1293/tt02-2bitCPU/actions/runs/3588691245)
 * HDL project
 * [Extra docs]()
 * Clock: none Hz

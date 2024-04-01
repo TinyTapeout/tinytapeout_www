@@ -4,12 +4,13 @@ title: "188 GPS C/A PRN Generator"
 weight: 189
 ---
 
-## 188 : GPS C/A PRN Generator
+## 188 : 0b 010 111 100 : GPS C/A PRN Generator
+
+{{< tt-scanchain-switches "010111100" >}}
 
 * Author: Adam Greig
 * Description: Generate the GPS C/A PRN sequences PRN1 through PRN32
 * [GitHub repository](https://github.com/adamgreig/tt02-gpa-ca-prn)
-* [Most recent GDS build](https://github.com/adamgreig/tt02-gps-ca-prn/actions/runs/3598293827)
 * HDL project
 * [Extra docs](https://github.com/adamgreig/tt02-gps-ca-prn)
 * Clock: 1000 Hz

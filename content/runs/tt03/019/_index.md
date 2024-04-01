@@ -4,12 +4,13 @@ title: "19 12-bit PDP8"
 weight: 20
 ---
 
-## 19 : 12-bit PDP8
+## 19 : 0b 000 010 011 : 12-bit PDP8
+
+{{< tt-scanchain-switches "000010011" >}}
 
 * Author: Paul Campnell
 * Description: PDP8 core
 * [GitHub repository](https://github.com/MoonbaseOtago/tt03-pdp8)
-* [Most recent GDS build](https://github.com/MoonbaseOtago/tt03-pdp8/actions/runs/4475492751)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

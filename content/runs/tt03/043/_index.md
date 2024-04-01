@@ -4,12 +4,13 @@ title: "43 ttFIR: Digital Finite Impulse Response (FIR) Filter"
 weight: 44
 ---
 
-## 43 : ttFIR: Digital Finite Impulse Response (FIR) Filter
+## 43 : 0b 000 101 011 : ttFIR: Digital Finite Impulse Response (FIR) Filter
+
+{{< tt-scanchain-switches "000101011" >}}
 
 * Author: Georg
-* Description: A 4-tap Finite Impulse Response (FIR) filter with 6 bit input signal, 6 bit filter coefficients, and 8 bit output signal. **Challenge for future tinytapeouts**: Increase number of taps.
+* Description: A 4-tap Finite Impulse Response (FIR) filter with 6 bit input signal, 6 bit filter coefficients, and 8 bit output signal. **Challenge for future tinytapeouts**: Increase number of taps, increase bit resolution.
 * [GitHub repository](https://github.com/gbsha/ttfir)
-* [Most recent GDS build](https://github.com/gbsha/ttfir/actions/runs/4778217802)
 * HDL project
 * [Extra docs](./README.md)
 * Clock: maximum available Hz

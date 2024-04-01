@@ -4,12 +4,13 @@ title: "165 TinyPID"
 weight: 166
 ---
 
-## 165 : TinyPID
+## 165 : 0b 010 100 101 : TinyPID
+
+{{< tt-scanchain-switches "010100101" >}}
 
 * Author: Aidan Medcalf
 * Description: Tiny PID controller with SPI configuration channel, SPI ADC and DAC driver
 * [GitHub repository](https://github.com/AidanMedcalf/tt02-pid)
-* [Most recent GDS build](https://github.com/AidanMedcalf/tt02-pid/actions/runs/3599278703)
 * HDL project
 * [Extra docs](https://github.com/AidanMedcalf/tt02-pid/blob/main/README.md)
 * Clock: 1 Hz

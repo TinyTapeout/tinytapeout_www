@@ -4,12 +4,13 @@ title: "196 RV8U - 8-bit RISC-V Microcore Processor"
 weight: 197
 ---
 
-## 196 : RV8U - 8-bit RISC-V Microcore Processor
+## 196 : 0b 011 000 100 : RV8U - 8-bit RISC-V Microcore Processor
+
+{{< tt-scanchain-switches "011000100" >}}
 
 * Author: David Richie
 * Description: 8-bit processor based on RISC-V ISA
 * [GitHub repository](https://github.com/browndeer/rv8u)
-* [Most recent GDS build](https://github.com/browndeer/rv8u/actions/runs/3603387504)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

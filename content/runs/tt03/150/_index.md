@@ -4,12 +4,13 @@ title: "150 Dice roll"
 weight: 151
 ---
 
-## 150 : Dice roll
+## 150 : 0b 010 010 110 : Dice roll
+
+{{< tt-scanchain-switches "010010110" >}}
 
 * Author: Tholin
 * Description: Will roll a random number from 1 - 6 on the 7-segment display, like a dice.
 * [GitHub repository](https://github.com/AvalonSemiconductors/tt2-diceroll)
-* [Most recent GDS build](https://github.com/AvalonSemiconductors/tt2-diceroll/actions/runs/4045546925)
 * HDL project
 * [Extra docs]()
 * Clock: 6000 Hz

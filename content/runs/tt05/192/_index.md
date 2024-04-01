@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "192 7 segment seconds"
-weight: 21
+weight: 108
 ---
 
 ## 192 : 7 segment seconds

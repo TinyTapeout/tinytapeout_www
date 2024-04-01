@@ -4,12 +4,13 @@ title: "44 QTCore-A1"
 weight: 45
 ---
 
-## 44 : QTCore-A1
+## 44 : 0b 000 101 100 : QTCore-A1
+
+{{< tt-scanchain-switches "000101100" >}}
 
 * Author: Hammond Pearce
 * Description: An accumulator-based 8-bit microarchitecture designed via GPT-4 conversations.
 * [GitHub repository](https://github.com/kiwih/tt03-verilog-qtcoreA1)
-* [Most recent GDS build](https://github.com/kiwih/tt03-verilog-qtcoreA1/actions/runs/4763642389)
 * HDL project
 * [Extra docs]()
 * Clock: 1000 Hz

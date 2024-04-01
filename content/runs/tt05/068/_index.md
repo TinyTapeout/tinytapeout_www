@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "68 Logic Gates Tapeout"
-weight: 6
+weight: 22
 ---
 
 ## 68 : Logic Gates Tapeout

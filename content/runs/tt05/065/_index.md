@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "65 Delta Modulation Spike Encoding"
-weight: 88
+weight: 122
 ---
 
 ## 65 : Delta Modulation Spike Encoding

@@ -4,12 +4,13 @@ title: "138 Shiftregister Challenge 40 Bit"
 weight: 139
 ---
 
-## 138 : Shiftregister Challenge 40 Bit
+## 138 : 0b 010 001 010 : Shiftregister Challenge 40 Bit
+
+{{< tt-scanchain-switches "010001010" >}}
 
 * Author: Thorsten Knoll
 * Description: The design is a 40 bit shiftregister with a hardcoded 40 bit number. The challenge is to find the correct 40 bit to enable the output to high. With all other numbers the output will be low.
 * [GitHub repository](https://github.com/ThorKn/tinytapeout02_shiftregister_challenge)
-* [Most recent GDS build](https://github.com/ThorKn/tinytapeout02_shiftregister_challenge/actions/runs/3476978715)
 * [Wokwi](https://wokwi.com/projects/341516949939814994) project
 * [Extra docs]()
 * Clock: 0 Hz

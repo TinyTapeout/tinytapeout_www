@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "227 Heart Rhythm Analyzer"
-weight: 143
+weight: 137
 ---
 
 ## 227 : Heart Rhythm Analyzer

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "230 Thermocouple-to-temperature converter (digital backend)"
-weight: 63
+weight: 79
 ---
 
 ## 230 : Thermocouple-to-temperature converter (digital backend)

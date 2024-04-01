@@ -4,12 +4,13 @@ title: "192 Counter"
 weight: 193
 ---
 
-## 192 : Counter
+## 192 : 0b 011 000 000 : Counter
+
+{{< tt-scanchain-switches "011000000" >}}
 
 * Author: Adam Zeloof
 * Description: It counts!
 * [GitHub repository](https://github.com/azzeloof/tt02-counter)
-* [Most recent GDS build](https://github.com/azzeloof/tt02-counter/actions/runs/3587718532)
 * [Wokwi](https://wokwi.com/projects/341279123277087315) project
 * [Extra docs](https://github.com/azzeloof/tt02-counter)
 * Clock: 600 Hz

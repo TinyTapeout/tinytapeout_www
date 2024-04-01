@@ -4,12 +4,13 @@ title: "66 MSF Clock"
 weight: 67
 ---
 
-## 66 : MSF Clock
+## 66 : 0b 001 000 010 : MSF Clock
+
+{{< tt-scanchain-switches "001000010" >}}
 
 * Author: Jamie Wood & Daniel Cannell
 * Description: MSF radio clock
 * [GitHub repository](https://github.com/JMW95/tt03-msf-clock)
-* [Most recent GDS build](https://github.com/JMW95/tt03-msf-clock/actions/runs/4780577983)
 * HDL project
 * [Extra docs]()
 * Clock: 12500 Hz

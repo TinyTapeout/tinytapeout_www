@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "294 6 bit Counter and Piano Music created by Chip Inventor"
-weight: 17
+weight: 168
 ---
 
 ## 294 : 6 bit Counter and Piano Music created by Chip Inventor

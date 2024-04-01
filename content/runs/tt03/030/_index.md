@@ -4,12 +4,13 @@ title: "30 ezm_cpu"
 weight: 31
 ---
 
-## 30 : ezm_cpu
+## 30 : 0b 000 011 110 : ezm_cpu
+
+{{< tt-scanchain-switches "000011110" >}}
 
 * Author: guianmonezm#4787
 * Description: basic 8bit CPU
 * [GitHub repository](https://github.com/guianmonezm/tt03-ezm_cpu)
-* [Most recent GDS build](https://github.com/guianmonezm/tt03-ezm_cpu/actions/runs/4356231732)
 * HDL project
 * [Extra docs](src/README.md)
 * Clock: 6000 Hz

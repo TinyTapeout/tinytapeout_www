@@ -4,12 +4,13 @@ title: "113 A LED Flasher"
 weight: 114
 ---
 
-## 113 : A LED Flasher
+## 113 : 0b 001 110 001 : A LED Flasher
+
+{{< tt-scanchain-switches "001110001" >}}
 
 * Author: Ben Everard
 * Description: Select different inputs to generate different LED patterns
 * [GitHub repository](https://github.com/benevpi/tt02-LED-flasher)
-* [Most recent GDS build](https://github.com/benevpi/tt02-LED-flasher/actions/runs/3593379517)
 * [Wokwi](https://wokwi.com/projects/342981109408072274) project
 * [Extra docs](https://github.com/benevpi/tt02-LED-flasher/blob/main/README.md)
 * Clock: 0 Hz

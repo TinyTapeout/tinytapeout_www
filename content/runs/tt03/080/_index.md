@@ -4,12 +4,13 @@ title: "80 Ring oscillator with skew correction"
 weight: 81
 ---
 
-## 80 : Ring oscillator with skew correction
+## 80 : 0b 001 010 000 : Ring oscillator with skew correction
+
+{{< tt-scanchain-switches "001010000" >}}
 
 * Author: Daniel Wisehart
 * Description: Fixing the problem of skew in a ring oscillator with a differential clock ring. 
 * [GitHub repository](https://github.com/dwisehart/tt03-ring-grey)
-* [Most recent GDS build](https://github.com/dwisehart/tt03-ring-grey/actions/runs/4789418143)
 * HDL project
 * [Extra docs]()
 * Clock: any Hz

@@ -4,12 +4,13 @@ title: "137 4 bit counter on steamdeck"
 weight: 138
 ---
 
-## 137 : 4 bit counter on steamdeck
+## 137 : 0b 010 001 001 : 4 bit counter on steamdeck
+
+{{< tt-scanchain-switches "010001001" >}}
 
 * Author: 13arn
 * Description: copy of my tt01 submission, enable first input and press button to use the counter
 * [GitHub repository](https://github.com/13arn/tt02_counter_steamdeck)
-* [Most recent GDS build](https://github.com/13arn/tt02_counter_steamdeck/actions/runs/3462179931)
 * [Wokwi](https://wokwi.com/projects/341541108650607187) project
 * [Extra docs]()
 * Clock: 0 Hz

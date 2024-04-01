@@ -4,12 +4,13 @@ title: "131 8x8 Bit Pattern Player"
 weight: 132
 ---
 
-## 131 : 8x8 Bit Pattern Player
+## 131 : 0b 010 000 011 : 8x8 Bit Pattern Player
+
+{{< tt-scanchain-switches "010000011" >}}
 
 * Author: Thorsten Knoll
 * Description: 8x8 bit serial programmable, addressable and playable memory.
 * [GitHub repository](https://github.com/ThorKn/tinytapeout02_pattern_player)
-* [Most recent GDS build](https://github.com/ThorKn/tinytapeout02_pattern_player/actions/runs/3476982043)
 * [Wokwi](https://wokwi.com/projects/341620484740219475) project
 * [Extra docs]()
 * Clock: 0 Hz
