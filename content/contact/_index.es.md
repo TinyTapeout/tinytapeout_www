@@ -5,6 +5,8 @@ weight: 100
 
 ### Contacto
 
+Para preguntas técnicas, por favor, consulte las [preguntas frecuentes](/faq) o pregunte en el [foro de Discord](/discord).
+
 #### Matthew Venn
 
 Matthew Venn es un comunicador de ciencia y tecnología e ingeniero electrónico. Con 20 años de experiencia, crea excelentes e innovadoras experiencias de aprendizaje para personas de todo el mundo.
