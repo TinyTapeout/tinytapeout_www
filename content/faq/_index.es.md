@@ -129,7 +129,7 @@ Sí; debes:
 
 Si eres un usuario avanzado, puedes usar el HDL de tu elección. Ve la [página de HDL](/es/hdl) para más información. 
 
-# Preguntas frecuentes de TinyTapeout
+# Preguntas frecuentes de Tiny Tapeout
 
 ## ¿Dónde puedo encontrar la plantilla para comenzar?
 
@@ -140,6 +140,10 @@ Puedes encontrarla en la [página de inicio](/es/digital_design/wokwi).
 Si actualizas tu proyecto y quieres que usemos tu última versión, debes [ir a tus envíos](https://app.tinytapeout.com/) y crear un nuevo envío.
 
 Puedes continuar actualizando tu diseño hasta la fecha límite del tapeout.
+
+## ¿Se escribe "TinyTapeout" o "Tiny Tapeout"?
+
+Es "Tiny Tapeout". Revisa la página de [Gestión de Marca](/branding) para más información.
 
 # Preguntas frecuentes de Github
 
@@ -182,7 +186,7 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 ## Actualicé y guardé mi diseño de wokwi, ¿cómo ejecuto de nuevo la Github Action para actualizar los archivos GDS?
 
 1. Ve a tu repositorio, haz clic en la pestaña de Actions,
-2. Depués haz clic en el flujo de trabajo ‘gds’
+2. Después haz clic en el flujo de trabajo ‘gds’
 3. Luego haz clic en el botón ‘Run workflow’
 4. Luego haz clic en el botón ‘Run workflow’
 
@@ -199,7 +203,7 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 * runs/wokwi/reports/metrics.csv - un informe resumen detallado del flujo de herramientas. Por ahora está más allá del alcance de este documento para explicarlo todo.
 * runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 - informe de las celdas estándar utilizadas para su diseño.
 * runs/wokwi/results/final/ (sólo se describen las más importantes aquí)
-    * gds - el archivo GDS final que se agregará a la presentación de TinyTapeout.
+    * gds - el archivo GDS final que se agregará a la presentación de Tiny Tapeout.
     * lef - una versión abstracta del GDS con menos información, utilizada para el enrutamiento.
     * verilog - el verilog a nivel de compuertas de tu diseño.
 
@@ -213,11 +217,12 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 
 # Preguntas frecuentes de ASIC
 
+
 ## ¿Qué significan todas estas siglas que usas siempre?
 
 ¡Lo sentimos! ¡Estamos tratando de mantenerlo accesible pero inevitablemente usaremos algún término de ASIC en algún momento! Consulta la [guía de términos aquí](https://zerotoasiccourse.com/terminology/) (está en inglés).
 
-## ¿Por qué tengo menos / más céldas estándar de lo que esperaba?
+## ¿Por qué tengo menos / más celdas estándar de lo que esperaba?
 
 La síntesis lógica tiene que convertir Verilog en una estructura de datos que tiene propiedades específicas para que una biblioteca de tecnología (como Sky 130) se pueda mapear en ella, para que realmente se pueda fabricar.
 
@@ -230,8 +235,96 @@ Sin embargo, si sólo tienes 8 celdas, tu diseño probablemente se ha optimizado
 El enrutamiento tiende a utilizar más espacio que la lógica misma. Además, tiene que haber espacio para que OpenLane agregue más celdas:
 
 * celdas tap - se aseguran de que el sustrato esté correctamente polarizado para los transistores.
-* [diodos antena ](https://www.zerotoasiccourse.com/terminology/antenna-report/) - protejen las compuertas de transistores durante la fabricación.
+* [diodos antena ](https://www.zerotoasiccourse.com/terminology/antenna-report/) - protegen las compuertas de transistores durante la fabricación.
+
+Algunas personas han logrado exitosamente incrementar la densidad objetivo a alrededor del 62%. Alternativamente, tienes la opción de comprar un cuadro adicional.
 
 ## ¿Cómo puedo aprender más sobre ASICs y cómo diseñarlos?
 
 [¡Revisa el curso Zero to ASIC de Matt!](https://zerotoasiccourse.com/)
+
+
+## ¿Cómo puedo mapear una señal de reloj externa a uno de los pines GPIO?
+
+Tiny Tapeout provee un set de 24 pines de entrada y salida (I/O) de propósito general (GP): 8 son solo entrada (`ui_in`), 8 son solo salida (`uo_out`), y 8 son bi-direccionales y tri-estado (`uio_*`).
+Por defecto, el puerto de entrada `clk` es usado como reloj principal, generada por el chip RP2040 integrado. Sin embargo, existe la posibilidad de usar uno de los puertos de entrada `ui_in` como reloj auxiliar. En este
+caso, se requiere tratado especial al ejecutar el flujo.
+
+Como ejemplo, supongamos que necesitamos dos relojes: el generado por el chip RP2040, el cual nombraremos `rp2040_clk`, y el reloj auxiliar generado por una FPGA externa, el cual llamaremos `fpga_clk`.
+Ambos relojes tienen la misma frecuencia, pero claramente se encuentran desfasados por una cantidad desconocida (es decir, son *mesócronos*). Además, vamos a asumir que los relojes nunca interactúan entre sí (es decir, sin cruce de dominios de reloj ([CDC](https://en.wikipedia.org/wiki/Clock_domain_crossing))).
+Además, vamos a mapear `fgpa_clk` al pin `ui_in[0]`.
+
+Para lograr ejecutar este escenario debemos cambiar un poco las configuraciones del archivo `config.tcl`, el cual es utilizado por el flujo de trabajo de Tiny Tapeout, de modo que:
+
+1. Le demos la instrucción a OpenLane para que genere dos árboles de relojes, y no solo aquel vinculado al puerto `clk`;
+2. Le digamos a OpenLane que ambos relojes están separados físicamente.
+
+Las siguientes líneas son requeridas en el archivo `config.tcl`:
+
+```
+1 set ::env(CLOCK_PORT) "ui_in\\\[0\\\]"
+2 set ::env(BASE_SDC_FILE) "$::env(DESIGN_DIR)/project.sdc"
+```
+
+La línea 1 configura el nombre `CLOCK_PORT`, del `clk` (por defecto) a nuestro `ui_in[0]`. ¡Fíjate en el patrón de las barras invertidas (`\`)! No es necesario configurar la variable `CLOCK_NET` a una lista de relojes,
+ya que estamos utilizando un archivo de restricciones personalizado, en este caso `project.sdc`.
+
+Luego, lo contenido en el archivo `project.sdc` es:
+
+```
+ 1 # Constantes compartidas, copiadas desde base.sdc  
+ 2 set input_delay_value [ expr $::env(CLOCK_PERIOD) * $::env(IO_PCT) ]
+ 3 set output_delay_value [ expr $::env(CLOCK_PERIOD) * $::env(IO_PCT) ]
+ 4 set_max_fanout $::env(MAX_FANOUT_CONSTRAINT) [ current_design ]
+ 5 set cap_load [ expr $::env(OUTPUT_CAP_LOAD) / 1000.0 ] ;# fF -> pF
+ 6 
+ 7 # Quitar red de relojes en la entrada
+ 8 set idx [ lsearch [ all_inputs ] "clk" ]
+ 9 set all_inputs_wo_clk [ lreplace [ all_inputs ] $idx $idx ]
+10 set idx [ lsearch $all_inputs_wo_clk "ui_in\[0\]" ]
+11 set all_inputs_wo_clk [ lreplace $all_inputs_wo_clk $idx $idx ]
+12 
+13 #  clk   Reloj es generado por el chip RP2040
+14 create_clock [ get_ports "clk" ]  -name rp2040_clk -period $::env(CLOCK_PERIOD)
+15 set_input_delay $input_delay_value -clock [ get_clocks rp2040_clk ] $all_inputs_wo_clk
+16 set_output_delay $output_delay_value -clock [ get_clocks rp2040_clk ] [ all_outputs ]
+17 set_clock_uncertainty $::env(SYNTH_CLOCK_UNCERTAINTY) [ get_clocks rp2040_clk ]
+18 set_clock_transition $::env(SYNTH_CLOCK_TRANSITION) [ get_clocks rp2040_clk ]
+19 
+20 #  ui_in[0]   Reloj es generado por la FPGA
+21 create_clock [ get_ports "ui_in\[0\]" ]  -name fpga_clk -period $::env(CLOCK_PERIOD)
+22 set_input_delay $input_delay_value -clock [ get_clocks fpga_clk ] $all_inputs_wo_clk
+23 set_output_delay $output_delay_value -clock [ get_clocks fpga_clk ] [ all_outputs ]
+24 set_clock_uncertainty $::env(SYNTH_CLOCK_UNCERTAINTY) [ get_clocks fpga_clk ]
+25 set_clock_transition $::env(SYNTH_CLOCK_TRANSITION) [ get_clocks fpga_clk ]
+26 
+27 # rp2040_clk  y  fpga_clk  son mesócronos y nunca interactúan
+28 set_clock_groups -asynchronous -group { rp2040_clk } -group { fpga_clk }
+29 
+30 # Misceláneo
+31 set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) $all_inputs_wo_clk
+32 set_load  $cap_load [ all_outputs ]
+33 set_timing_derate -early [ expr {1-$::env(SYNTH_TIMING_DERATE)} ]
+34 set_timing_derate -late [ expr {1+$::env(SYNTH_TIMING_DERATE)} ]
+```
+
+¡Por favor tener ojo con el patron de las barras invertidas aquí! Es ligeramente distinto a como eran en `config.tcl`. Si te encuentras con el siguiente error:
+
+```
+[ERROR]: The specified clock port 'ui_in[0]' does not exist in the top-level module.
+```
+
+¡es muy probable que te hayas equivocado con las barras invertidas!
+
+El archivo SDC mostrado arriba está más que nada derivado del archivo de restricciones por defecto `base.sdc`. Por favor y una vez más ¡no olvides que los dos relojes tienen exactamente la misma frecuencia! De cualquier manera, el archivo ha sido reorganizado:
+
+1. Los valores no relacionados al reloj son calculados primero. ¡Esto sirve si y solo si los dos relojes tienen la misma frecuencia!
+2. La señal `rp2040_clk` se genera primero, con su propio retraso e incertidumbre de I/O;
+3. La señal `fpga_clk` se genera a continuación;
+4. Ambos relojes se dice que son independientes;
+5. Le siguen varias configuraciones misceláneas (ej. reducción de timing).
+
+Con lo anterior, dos árboles de relojes son generados, análisis de timing estático *(STA analysis)* se ejecutará en ambos árboles, y no se generará CDC.
+
+Por favor notar que todo lo descrito funciona para OpenLane tag `2023.11.23`. Versiones más recientes que incluyen el script `check_clock_ports.py` *no* van a funcionar. Esto se debe a la forma en que
+funciona el script `check_clock_ports.py`: éste no es capaz de detectar puertos segmentados (como `ui_in[0]`).

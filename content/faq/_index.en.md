@@ -312,11 +312,11 @@ Please be careful of the backslash pattern here! It is different than the `confi
 
 ```
 [ERROR]: The specified clock port 'ui_in[0]' does not exist in the top-level module.
-``
+```
 
 chances are the backslashes are wrong!
 
-The above SDC is pretty much derived from the default `base.sdc` constraint file. Please remember once again that the two clocks have same frquency! The file has been organized, though:
+The above SDC is pretty much derived from the default `base.sdc` constraint file. Please remember once again that the two clocks have same frequency! The file has been organized, though:
 
 1. Clock-unrelated values are computed first. This works if and only if the two clocks have the same frequency!
 2. The `rp2040_clk` is generated first, with its own I/O delay and uncertainty;
