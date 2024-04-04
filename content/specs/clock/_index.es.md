@@ -18,10 +18,29 @@ El chip Caravel utiliza el macro [sky130_ef_io_gpiov2_pad](https://skywater-pdk.
 
 ## Generación de reloj
 
-La placa del Demo de Tiny Tapeout puede generar la señal de reloj para tus diseños. El reloj es generado por el microcontrolador integrado RP2040 ([código fuente del firmware aquí](https://github.com/TinyTapeout/tt-rp2040-firmware/blob/main/src/clkgen.c)).
+La placa del Demo de Tiny Tapeout puede generar la señal de reloj para tus diseños. La placa del Demo de Tiny Tapeout puede generar la señal de reloj para tus diseños. La frecuencia de la señal del reloj puede ser configurada por el usuario, entre 3 Hz y 66,5 MHz. El reloj es generado por el microcontrolador integrado RP2040, utilizando el hardware PWM periferal para dividir el reloj RP2040.
 
-El RP2040 puede generar una amplia gama de frecuencias, incluyendo 50 MHz, 48 MHz (útil para USB), 40 MHz, 25.179 MHz (útil para VGA), 10 MHz, 1 MHz. Si necesitas una señal de reloj muy lenta, como 1 Hz, esto se puede lograr con un programa sencillo de CircuitPython.
+La placa Demo ejecuta MicroPython, y la generación del reloj es controlada por un simple script de Python. Puedes encontrar el código fuente para el generador de reloj en el [repositorio de Tiny Tapeout Commander App](https://github.com/TinyTapeout/tt-commander-app/blob/main/src/ttcontrol/ttcontrol.py) (busca la función `set_clock_hz`). 
 
-Puedes ver la lista completa de frecuencias verificadas en el [README del firmware](https://github.com/TinyTapeout/tt-rp2040-firmware#clock-configurations). Si necesitas una frecuencia que no aparece en la lista, no dudes en [abrir una propuesta](https://github.com/TinyTapeout/tt-rp2040-firmware/issues/new) y consideraremos agregarla a la lista.
+Si tienes un Pi Pico (u otra placa basada en RP2040), puedes instalar MicroPython en éste y usar [la app Commander](https://commander.tinytapeout.com) para experimentar con la generación del reloj.
+
+### Reloj de baja frecuencia
+
+En caso de que necesites un reloj muy lento como 1 Hz, puedes generarlo con un programa simple de MicroPython de la siguiente forma:
+
+```python
+import machine
+import time
+
+GPIO_PROJECT_CLK = 0
+clk_pin = Pin(GPIO_PROJECT_CLK, Pin.OUT)
+while True:
+    clk_pin.value(1)
+    time.sleep(0.5)
+    clk_pin.value(0)
+    time.sleep(0.5)
+```
+
+### Ejemplo de señal de reloj
 
 {{< figure src="/../../specs/clock/images/clk_25_179.png" title="Señal de reloj de 25.179 MHz generada por el chip RP2040" >}}
