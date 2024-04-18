@@ -21,7 +21,7 @@ The path between the analog pads and your project (the ua pins) is expected to h
 - Resistance: < 500 ohm
 - Capacitance: < 5 pf
 
-Analog pins are **limited to 1.8V**. If you require 3.3V for your design, please contact us to discuss options.
+Analog pins are **limited to 1.8V and 4mA**. If you require 3.3V for your design, please contact us to discuss options.
 
 You are not allowed to use the **metal 5** layer in your design, as it's used by Tiny Tapeout's power grid.
 
