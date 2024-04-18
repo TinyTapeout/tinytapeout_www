@@ -1,5 +1,5 @@
 ---
-title: "Tiny Tapeout 02"
+title: "Tiny Tapeout 2"
 weight: 10
 description: 165 diseños, cerrado el 2 de diciembre de 2022
 ---
@@ -12,6 +12,7 @@ description: 165 diseños, cerrado el 2 de diciembre de 2022
 * [Hoja de datos en PDF](https//github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf)
 * [Verificación](https://github.com/TinyTapeout/tinytapeout-02/blob/tt02/VERIFICATION.md)
 * [Envío de Efabless MPW](https://platform.efabless.com/projects/1410)
+* [Servidor de Discord](https://discord.gg/G47hur6fyA)
 
 # Estadísticas de lanzamiento
 
@@ -19,6 +20,7 @@ description: 165 diseños, cerrado el 2 de diciembre de 2022
 * Envío cerrado: 2 de diciembre de 2022
 * Enviado a Efabless [2211Q chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm open source PDK
 * Se espera que los chips lleguen en septiembre de 2023, y las PCB en noviembre de 2023
+* Chips enviados a principios de Feb 2024.
 
 # Estadísticas del proyecto
 
