@@ -20,7 +20,7 @@ description: 249 designs, closed 24th April 2023
 * Envíado a Efabless [2304C chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm open source PDK.
 * Se espera que lleguen en octubre de 2023, y las PCB en diciembre de 2023.
 
-# Project statistics
+# Estadísticas de proyecto
 
 * 100 proyectos enviados, 149 projects agregados desde [TT02](/runs/tt02)
 * Tiempo de fabricación para todos los proyectos de 22.68 horas
