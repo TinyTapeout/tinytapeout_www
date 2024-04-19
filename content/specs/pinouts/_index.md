@@ -14,8 +14,15 @@ The use of common pinouts is not mandatory, but is recommended since TT is a com
 
 If you want to interact with your design over serial console you can do this via the builtin RP2040 on the demo board. This way you can connect the demo board via USB and send/receive data from your chip.
 
+You can use either:
+
 ui_in[3]  - RX\
 uo_out[4] - TX
+
+or:
+
+ui_in[7]  - RX\
+uo_out[0] - TX
 
 ## VGA Output
 
@@ -42,7 +49,7 @@ uo_out[7] - hsync
 
 The RP2040 on the demo board can be configured to provide RAM to the chip over SPI thanks to [spi-ram-emu](https://github.com/MichaelBell/spi-ram-emu/).
 
-Pinout:
+The pinout can be configured according to the project, but by default we suggest you use:
 
 uio[0] - GPIO21 - CS\
 uio[1] - GPIO22 - MOSI\
@@ -72,6 +79,13 @@ uio[4] - CS\
 uio[5] - MOSI\
 uio[6] - MISO\
 uio[7] - SCK
+
+Alternatively, you can use the middle PMOD on the side of the board, in order to save the bidi IOs for another purpose.  The pinout for that is:
+
+uo_out[4] - CS\
+uo_out[3] - MOSI\
+ui_in[2]  - MISO\
+uo_out[5] - SCK
 
 If your design only receives data or only sends data via SPI, you can choose to omit MOSI or MISO and use the output only or input only Pmod.
 SPI - dual I/O and quad I/O
@@ -124,3 +138,16 @@ uio[4] - (INT)\
 uio[5] - (RESET)\
 uio[6] - SCL\
 uio[7] - SDA
+
+## QSPI Flash and PSRAM
+
+[This Pmod](https://github.com/mole99/qspi-pmod) can provide access to external flash and RAM over SPI or QSPI.  The pinout is:
+
+uio[0]     CS0 (Flash)
+uio[1]     SD0/MOSI
+uio[2]     SD1/MISO
+uio[3]     SCK
+uio[4]     SD2
+uio[5]     SD3
+uio[6]     CS1 (RAM A)
+uio[7]     CS2 (RAM B)
