@@ -1,42 +1,30 @@
 ---
 title: "Tiny Tapeout"
 images: [/images/tinytapeout6.png]
-LastModifierDisplayName: matt venn
+LastModifierDisplayName: Gareth Halfacree
 ---
 
 # From idea to chip design in minutes!
 
+Tiny Tapeout helps you create, manufacture, and share your own custom chips (ASICs). For the first time, makers, students, and small companies can create their own chips without breaking the bank, signing NDAs, and needing a PhD in semiconductor design (but if you have one, that’s cool too).
+
 {{< youtube qVWq_XZko-M >}}
 
-{{< countdown >}}
+You can get your design made for at little as $150, using open source tools and a community of experts to help you along the way. We’re here to help you get started, and to make sure you have the resources you need to make a successful tapeout.
 
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
 
 # Get started
 
-* If you're new to digital design - start by taking some of our [lessons here](digital_design).
-* Then create your own design with the [Wokwi template](https://wokwi.com/projects/354858054593504257) or for advanced users, [an HDL](/hdl).
-* For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
+Tiny Tapeout is designed to be accessible to all, whether you're an absolute novice to chip design or you have years of experience with Hardware Design Languages (HDLs). If you're a teacher or lecturer in the topic, you'll also find Tiny Tapeout an invaluable educational resource.
 
-# Get your submission ready
+Choose your level of experience below to see how you can get started designing your own ASICs with Tiny Tapeout.
 
-{{< youtube fCGPKdmM3Dc >}}
+* [Tiny Tapeout for Beginners](get_started/beginners)
+* [Tiny Tapeout for Teachers/Universities](get_started/teachers)
+* [Tiny Tapeout for Analog/Mixed Signal Designers](get_started/analog)
 
-# Submission templates
-
-* [Wokwi submission template](https://github.com/TinyTapeout/tt06-wokwi-template).
-* [Verilog submission template](https://github.com/TinyTapeout/tt06-verilog-template).
-* [Analog and mixed signal template](https://github.com/TinyTapeout/tt06-analog-template).
-
-# Submit your design
-
-* 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.  
-  However, [Efabless](https://efabless.com) is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
-* Each extra tile is $50, and extra analog pins start from $40 per pin.
-* By making an order, you agree to our [terms of service](terms).
-* Closing date is 19th of April
-
-{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
+{{< countdown >}}
 
 # Sign up
 
