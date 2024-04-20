@@ -24,7 +24,6 @@ Choose your level of experience below to see how you can get started designing y
 * [Tiny Tapeout for Teachers/Universities](get_started/teachers)
 * [Tiny Tapeout for Analog/Mixed Signal Designers](get_started/analog)
 
-{{< countdown >}}
 
 # Sign up
 

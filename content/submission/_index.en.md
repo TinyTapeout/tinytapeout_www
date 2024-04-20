@@ -20,5 +20,3 @@ weight: 85
 * Closing date is 19th of April
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
-
-{{< countdown >}}
