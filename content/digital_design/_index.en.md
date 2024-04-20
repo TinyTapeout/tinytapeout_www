@@ -1,6 +1,6 @@
 ---
-title: "Digital Design Guide"
-weight: 60
+title: "Tutorial - Digital Design"
+weight: 15
 ---
 
 {{< children description="true" >}}

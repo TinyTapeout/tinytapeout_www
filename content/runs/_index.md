@@ -1,6 +1,6 @@
 ---
 title: Tiny Tapeout Chips
-weight: 10
+weight: 40
 ---
 
 ### Current chips

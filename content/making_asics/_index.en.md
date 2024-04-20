@@ -1,6 +1,6 @@
 ---
-title: "Making ASICs"
-weight: 70
+title: "Tutorial: Making ASICs"
+weight: 25
 ---
 
 You've used Wokwi or an HDL to make your digital design, but how do we go from there to an ASIC?
