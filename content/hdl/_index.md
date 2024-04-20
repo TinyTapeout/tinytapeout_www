@@ -1,7 +1,7 @@
 ---
-title: "Working with HDLs"
+title: "Tutorial: Working with HDLs"
 description: "Advice for working with hardware description languages"
-weight: 70
+weight: 30
 ---
 
 {{< children description="true" >}}

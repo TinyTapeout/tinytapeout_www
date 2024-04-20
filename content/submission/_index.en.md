@@ -1,6 +1,6 @@
 ---
 title: Submitting Your Design
-weight: 85
+weight: 40
 ---
 
 {{< youtube fCGPKdmM3Dc >}}
@@ -20,3 +20,7 @@ weight: 85
 * Closing date is 19th of April
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
+
+## Further Support
+
+If you have questions about the build and submission process, check out our [frequently asked questions](/faq/). If you're still stuck, [join our Discord](https://discord.gg/rPK2nSjxy8).

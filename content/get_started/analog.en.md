@@ -11,6 +11,10 @@ To get started, we recommend consulting our [HDL documentation](/hdl/), which in
 
 When your design is complete, you can [submit it](/submission/) for inclusion in the next Tiny Tapeout run.
 
+## Further Support
+
+If you have questions about how Tiny Tapeout works, how to use Wokwi, or need more information on the build and submission process, check out our [frequently asked questions](/faq/). If you're still stuck, [join our Discord](https://discord.gg/rPK2nSjxy8).
+
 # Sign up
 
 To keep up with the latest Tiny Tapeout news, including when new runs open for submissions, sign up to our mailing list below.

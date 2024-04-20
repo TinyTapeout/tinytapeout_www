@@ -16,6 +16,10 @@ If you'd like to dig deeper in to the inner workings of semiconductors and how T
 * Learn how semiconductors work at the most fundamental level using [our interactive tool SiliWiz](siliwiz).
 * Find out how our design flow converts your Wokwi project into a production-ready submission to a semiconductor fab [using open-source tools and the GitHub Actions system](making_asics).
 
+## Further Support
+
+If you have questions about how Tiny Tapeout works, how to use Wokwi, or need more information on the build and submission process, check out our [frequently asked questions](/faq/). If you're still stuck, [join our Discord](https://discord.gg/rPK2nSjxy8).
+
 # Sign up
 
 To keep up with the latest Tiny Tapeout news, including when new runs open for submissions, sign up to our mailing list below.

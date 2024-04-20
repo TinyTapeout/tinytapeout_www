@@ -27,7 +27,7 @@ Choose your level of experience below to see how you can get started designing y
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 6.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on the next Tiny Tapeout run.
 
 {{< mailchimp >}}
 
