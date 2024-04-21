@@ -8,6 +8,8 @@ LastModifierDisplayName: matt venn
 
 {{< youtube qVWq_XZko-M >}}
 
+{{< countdown >}}
+
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt06).
 
 # Get started

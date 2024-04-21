@@ -1,11 +1,11 @@
 (function () {
-  const shuttleSlug = 'tt06';
+  const shuttleSlug = 'tt07';
   const supabaseProject = 'tinytapeout';
   const supabaseKey =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvdXZqeXhpaHB1ZGhibWJ1ZXBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2NTIxODYsImV4cCI6MTk5NDIyODE4Nn0.-A6x_iXHNEq6VOC2KEE1zDzcTT8PXnZNnu6LhzJqnvo';
   const databaseEndpoint = `https://${supabaseProject}.supabase.co/rest/v1/`;
 
-  let deadline = new Date('2024-04-19T20:00:00Z');
+  let deadline = new Date('2024-06-01T20:00:00Z');
 
   const daysElement = document.querySelector('.countdown-timer .cd-days');
   const hoursElement = document.querySelector('.countdown-timer .cd-hours');
