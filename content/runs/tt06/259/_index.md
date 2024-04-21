@@ -33,7 +33,7 @@ https://personalpages.hs-kempten.de/~vollratj/InEl/SigmaDelta_ADC_real.html
 A high level simulator:
 https://personalpages.hs-kempten.de/~vollratj/InEl/SigmaDelta.html
 
-![Tiny Tapeout Tile](TTsigdelFunktion.png "Tiny Tapeout Tile")
+![Tiny Tapeout Tile](images/TTsigdelFunktion.png "Tiny Tapeout Tile")
 
 ### How to test
 
@@ -44,7 +44,7 @@ The out6,7 give a pwm signal changing with the input voltage.
 
 All subcircuits were tested in one testfile tb_sigdel do be able to observe all signals.
 
-![Figure: Circuit simulation](TTsigdelSim.jpg "Circuit simulation")
+![Figure: Circuit simulation](images/TTsigdelSim.jpg "Circuit simulation")
 
 ### BASYS3 board measurements
 
@@ -107,7 +107,7 @@ Higher fsCLK have lower capacitance.
 A better multiplexing to the 4 Bit output with a case statement was done at the FPGA
 and the routing of out[3:0] done to led[3:0].
 
-![Oscilloscope picture BASYS3](TTsigdelOsci.jpg "Oscilloscope picture BASYS3")
+![Oscilloscope picture BASYS3](images/TTsigdelOsci.jpg "Oscilloscope picture BASYS3")
 
 Figure: Oscilloscope picture BASYS3 FPGA not(inx)(blue) and inp[0](orange)
 

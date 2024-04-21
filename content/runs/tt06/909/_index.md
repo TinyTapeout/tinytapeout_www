@@ -24,7 +24,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
-![screenshot](screen.png)
+![screenshot](images/screen.png)
 
 ### How it works
 

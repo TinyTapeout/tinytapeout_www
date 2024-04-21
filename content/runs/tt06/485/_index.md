@@ -24,7 +24,7 @@ https://pages.hmc.edu/harris/cmosvlsi/4e/index.html
 
 Consider four designs of a 6-input AND gate shown below. Develop an expression for the delay of each path if the path electrical effort is H.  What design is fastest for H = 1? For H = 5? For H = 20?
 
-![](and-gate-designs.png)
+![](images/and-gate-designs.png)
 
 For this problem, H measures the capacitance the AND gate
 needs to drive.   It's the output capacitance divided by the input capacitance of one inverter. So H=20 means the output capacitance is the same as 20 inverters.
@@ -54,19 +54,19 @@ The linear delay model has several possible issues (Weste & Harris covers this),
 
 ### What I implemented
 
-![](and-gate-designs-h1.png)
-![](and-gate-designs-h5.png)
-![](and-gate-designs-h20.png)
+![](images/and-gate-designs-h1.png)
+![](images/and-gate-designs-h5.png)
+![](images/and-gate-designs-h20.png)
 
 ### How I determined the drive values
 
 The key is to notice that when we increase the drive of one cell, we increase the load on the previous cell. This changes the electrical effort of that cell. So, for part D we end up with the following chain
 
-![](and-gate-designs-dx.png)
+![](images/and-gate-designs-dx.png)
 
 There are equations one can use to optimize this but I just used mathematica because it's faster.   Here is how I solved H=20 for part D.
 
-![](SolveForDrive.png)
+![](images/SolveForDrive.png)
 
 Then I just used the cell with the nearest drive from the library and checked the result was within one inverter delay of the optimal value.
 
@@ -105,7 +105,7 @@ Here we keep the period constraint the same but increase the load.  At the end o
 
 ### Test structure
 
-![](Arch.png)
+![](images/Arch.png)
 
 ### Raw Delay Calculations
 

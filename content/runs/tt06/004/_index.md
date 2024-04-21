@@ -23,7 +23,7 @@ gradually change the timing between each pulse.
 
 Commands are sent via SPI.  Each SPI message should have 40 bits and
 be in the following format:
-`&lt;1-bit rw&gt;&lt;7-bit address&gt;&lt;32-bit data&gt;`
+`&amp;lt;1-bit rw&amp;gt;&amp;lt;7-bit address&amp;gt;&amp;lt;32-bit data&amp;gt;`
 
 The `rw` bit should be 1 to indicate a write.
 

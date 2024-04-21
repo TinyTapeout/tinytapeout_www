@@ -39,13 +39,13 @@ This TinyTapeout implements a System-on-Chip (SoC) design based on the FazyRV RI
 
 The overview shows the pinout for the TinyTapeout Demo PCB. A detailed description of the pins is given below.
 
-![Pinout overview](tt06_overview.png)
+![Pinout overview](images/tt06_overview.png)
 
 #### Block Diagram
 
 The block diagram outlines the on-chip peripherals and related addresses.
 
-![Block diagram](exotiny.png)
+![Block diagram](images/exotiny.png)
 
 ### How to test
 

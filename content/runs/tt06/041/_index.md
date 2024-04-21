@@ -28,7 +28,7 @@ arithmetic with 5 (five) reserved for the fraction.
 
 The next figure shows the simplified block diagram of the Neuron.
 
-![Neuron architecture](Neuron.png)
+![Neuron architecture](images/Neuron.png)
 
 The arithmetic pipeline is composed of a number of fixed-point units: multiplier, adder for
 accumulator and bias, activation function. These primitives are shared, so that a centralized
@@ -60,7 +60,7 @@ where the `tanh()` function is split are chosen by looking at up to the 4-th der
 `tanh()` function is odd symmetric, the digital implementation focuses on half of the problem in the
 1st quadrant. The other half of the problem on the 3rd quadrant is derived. The output is shown.
 
-![Derivatives](plot_derivatives.png)
+![Derivatives](images/plot_derivatives.png)
 
 #### Scalable Configuration Interface
 
@@ -87,9 +87,9 @@ For detailed information on the SCI protocol please refer to [this page](TBD).
 
 Examples of Write and Read accesses are shown.
 
-![Write access](SCI_Write.png)
+![Write access](images/SCI_Write.png)
 
-![Read access](SCI_Read.png)
+![Read access](images/SCI_Read.png)
 
 #### Network emulation
 
@@ -99,7 +99,7 @@ the 2-inputs neuron is repeadetely fed with iterative data, coming from either t
 (i.e., input values) or intermediate results (i.e., from the inner core). Mathematically, the MAC
 operation is distributed in time.
 
-![Network emulation](NetworkEmulation.png)
+![Network emulation](images/NetworkEmulation.png)
 
 ### Pinout
 
@@ -134,7 +134,7 @@ Debug signals are mapped to output pins `uo_out`. In total, 32 (thirty-two) sign
 the debug interface. Inputs `ui_in[7:6]` are used to control which ones, according to the following
 table.
 
-![Debug signals mux](DebugSignalsMux.png)
+![Debug signals mux](images/DebugSignalsMux.png)
 
 ### Configuration
 

@@ -24,7 +24,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
-![alt text](Logo.png)
+![alt text](images/Logo.png)
 
 ### How it works
 

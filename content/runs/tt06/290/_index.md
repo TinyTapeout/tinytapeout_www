@@ -100,7 +100,7 @@ The Minibyte CPU uses a very traditional register architecture where most data i
 
 The ALU operates on data from the A Register and either direct data from memory (indexed by the M register), or immediate data from the current instruction's operand (indexed by the PC register)
 
-![Minibyte Block Diagram](block_diagram.png)
+![Minibyte Block Diagram](images/block_diagram.png)
 
 *Note that DFT and testing features are not represented in the above block diagram
 
@@ -121,7 +121,7 @@ The Minibyte CPU has 4 format types for its instructions. The instruction memory
 
 As a visual reference, here is how we would expect a basic program to look in memory. Please note that all programs start executing from address 0x00 as shown.
 
-![Example Program Memory](program_layout.png)
+![Example Program Memory](images/program_layout.png)
 
 This program adds the numbers 0x05 and 0x03 together, and then loops back to the starting IP of 0x00
 
@@ -233,7 +233,7 @@ The Minibyte CPU has fairly exhaustive cocotb test suite that is able to test an
 
 To run the test suite, cd into the ./test directory of the project and run "make"
 
-![Simulation Results](sim_results.png)
+![Simulation Results](images/sim_results.png)
 
 #### On Live Silicon
 
@@ -282,7 +282,7 @@ To capture the output of the program with LEDs, it is recommended to add a D-Fli
 
 #### Demo Setup
 
-![Demo Schematic](demo_setup.png)
+![Demo Schematic](images/demo_setup.png)
 
 Something like the above schematic is recommended to run the Demo ROM. Note that we should use an inverter (like a 74x04 series chip) as shown on the CLK of the DFF, as we want data to be latched when WE falls back to 0 (after the data has had time to set up and make its way out of the chip). Please also note that you will probably need to run the CPU at a fairly low CLK frequency in order to see any LED activity with the naked eye.
 
@@ -290,7 +290,7 @@ Something like the above schematic is recommended to run the Demo ROM. Note that
 
 The sky is the limit as far as as what devices you attach to the CPU. If you are writing your own programs, you probably are going to want to attach some sort of external ROM to the main address and data buss. Here is a recommended setup to add an external EEPROM to the demo setup so that you can test your own programs.
 
-![External EEPROM Schematic](external_rom.png)
+![External EEPROM Schematic](images/external_rom.png)
 
 Beyond this, you will hopefully find that the Minibyte CPU can be paired with a wide variety 3.3V compatible parallel ROM/EPROM/EEPROM, SRAM, and IO expander modules.
 

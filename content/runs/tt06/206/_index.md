@@ -55,7 +55,7 @@ The register map has a seciton for the audio interface - and holds 8 registers f
 Default it will set amplifer volume on address 0x40 and amplifer audioformat to std i2s.
 More commands can be added by software through the system I2C interface.
 
-![FPGA test implementation](spdif_fpga_test_20p.jpg)
+![FPGA test implementation](images/spdif_fpga_test_20p.jpg)
 
 ### How to test
 

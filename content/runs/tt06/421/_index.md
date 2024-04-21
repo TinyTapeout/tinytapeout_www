@@ -29,16 +29,16 @@ You can also include images in this folder and reference them in the markdown. E
 This is a 75% implementation (the IO operations of `.` and `,` weren't implemented) of the esoteric language [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) as small factor processor.
 It works as any "regular" microprocessor would, executing the given ASCII values of each character as an opcode, following this state machine:
 
-![fsm](fsm.png)
+![fsm](images/fsm.png)
 
 With an internal implementation close to the following one:
 
-![diagram](diagram.png)
+![diagram](images/diagram.png)
 
 ### How to test
 
 This circuit has the following pinout:
-![pinout](pinout.png)
+![pinout](images/pinout.png)
 To drive it, you need to have an external address register, as it requests reads/writes data in alternating cycles, some memory organization to support, at the minimum, 256 x 8 of program memory and 256 x 8 of instruction memory (this can be expanded until 1KB memories by also using the *pc_ext* pins), and a clock, preferably at 20MHz. If you don't want for the program to access instruction memory, the pin *instr_addr* is only set if the address being requested is for instructions, so you can use that to avoid it.
 
 ### External hardware

@@ -14,7 +14,7 @@ weight: 97
 * [Extra docs](None)
 * Clock: 50000 Hz
 
-![Simon Says Game](tt-simon-game.jpg)
+![Simon Says Game](images/tt-simon-game.jpg)
 
 ### How it works
 

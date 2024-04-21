@@ -34,7 +34,7 @@ This project implements a digital temperature monitor by connecting a temperatur
 
 ### How it Works
 
-![Block diagram of the complete system.](tt06-blockdiag.png)
+![Block diagram of the complete system.](images/tt06-blockdiag.png)
 
 #### Mode of Operation
 

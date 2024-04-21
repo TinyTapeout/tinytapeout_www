@@ -26,7 +26,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-![](Signals.png)
+![](images/Signals.png)
 
 The Wave Generator is a project that deals with the generation of various signals. These signals are a sine function, a triangle function, a sawtooth function and a square pulse function. The desired function, which then provides the output value, can be selected using simple control signals.
 
@@ -71,7 +71,7 @@ $$ \text{Amplitude parameter} = k A$$
 $$\text{Phase parameter} = \frac{2f}{f_s}$$
 Where $A \in [-1+2^{-7}, 1-2^{-7}]$ is the desired amplitude and $f \in (0, \frac{f_s}{2}]$ is the desired frequency.
 
-![](Blockdia_sine.png)
+![](images/Blockdia_sine.png)
 
 #### Square pulse wave
 
@@ -82,7 +82,7 @@ $$ \text{Amplitude parameter} = 1-2^{-7} - (2-2^{-7})\frac{T_{on}}{T}$$
 $$\text{Phase parameter} = \frac{2-2^{-7}}{T f_s}$$
 Where $T > \frac{1}{f_s}$ is the desired period duration and $T_{on} \in (0, T)$ is the desired pulse width.
 
-![](Blockdia_square_pulse.png)
+![](images/Blockdia_square_pulse.png)
 
 #### Sawtooth wave
 
@@ -93,7 +93,7 @@ $$ \text{Amplitude parameter} = A$$
 $$\text{Phase parameter} = 2 A\frac{f}{f_s}$$
 Where $A \in [-1+2^{-7}, 1-2^{-7}]$ is the desired amplitude and $f \in (0, \frac{f_s}{2}]$ is the desired frequency.
 
-![](Blockdia_sawtooth.png)
+![](images/Blockdia_sawtooth.png)
 
 #### Triangle wave
 
@@ -103,13 +103,13 @@ The following formulas are required for the parameters:
 $$ \text{Amplitude parameter} = A$$
 $$\text{Phase parameter} = 4 A\frac{f}{f_s}$$
 
-![](Blockdia_triangle.png)
+![](images/Blockdia_triangle.png)
 
 #### SPI Interface
 
 The calculated value is output serially via the SPI interface. The below timing diagram  is used for this purpose. SPI is used in this project with CPOL=0 and CPHA=0. The SPI CLK requires 4 cycles of $f_{clk}$ for one cycle. The other properties can be taken from the timing diagram.
 
-![](SPI_Dia.png)
+![](images/SPI_Dia.png)
 
 ### How to test
 

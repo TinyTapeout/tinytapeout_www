@@ -36,11 +36,11 @@ Apply a clock signal of 2 MHz to the `clk` input. In TT06, the analog pin voltag
 
 Post layout simulation showing the output voltage `x1.vout` and the divided output voltage on ta `ua[0]` pin, with ~16.8 mega ohms load (the internal voltage divider). The output voltage stabilizes at ~5.07 V, and the divided output voltage at ~0.85 V. The current draw is about 355 nA.
 
-![output voltage and divided voltage](sim_graph_vout.png)
+![output voltage and divided voltage](images/sim_graph_vout.png)
 
 The following graph shows the input clock, the intermediate voltages at the output of each stage, the output voltage, and the divided voltage as they rise during the first 10 us of operation.
 
-![output voltage and intermediate voltages](sim_graph_stages.png)
+![output voltage and intermediate voltages](images/sim_graph_stages.png)
 
 
 ### IO

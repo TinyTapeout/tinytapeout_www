@@ -186,7 +186,7 @@ Results at [TT06_SAR](https://github.com/wulffern/tt06-sar/blob/main/ip/tt06_sar
 
 Below is a Power Spectrum of a sinusoidal input signal
 
-![typical fast slow  FFT](tran_Lay_tfs.png)
+![typical fast slow  FFT](images/tran_Lay_tfs.png)
 
 #### Known issues
 
