@@ -10,7 +10,7 @@ LastModifierDisplayName: matt venn
 
 {{< countdown >}}
 
-Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt05).
+Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt06).
 
 # Get started
 
@@ -24,9 +24,9 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt06-wokwi-template).
-* [Verilog submission template](https://github.com/TinyTapeout/tt06-verilog-template).
-* [Analog and mixed signal template](https://github.com/TinyTapeout/tt06-analog-template).
+* [Wokwi submission template](https://github.com/TinyTapeout/tt07-wokwi-template).
+* [Verilog submission template](https://github.com/TinyTapeout/tt07-verilog-template).
+* Analog and mixed signal template - Coming in the next few days
 
 # Submit your design
 
@@ -34,13 +34,13 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
   However, [Efabless](https://efabless.com) is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
 * Each extra tile is $50, and extra analog pins start from $40 per pin.
 * By making an order, you agree to our [terms of service](terms).
-* Closing date is 19th of April
+* Closing date is 1st of June
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 6.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 7.
 
 {{< mailchimp >}}
 

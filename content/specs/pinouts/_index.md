@@ -143,11 +143,11 @@ uio[7] - SDA
 
 [This Pmod](https://github.com/mole99/qspi-pmod) can provide access to external flash and RAM over SPI or QSPI.  The pinout is:
 
-uio[0]     CS0 (Flash)
-uio[1]     SD0/MOSI
-uio[2]     SD1/MISO
-uio[3]     SCK
-uio[4]     SD2
-uio[5]     SD3
-uio[6]     CS1 (RAM A)
+uio[0]     CS0 (Flash)\
+uio[1]     SD0/MOSI\
+uio[2]     SD1/MISO\
+uio[3]     SCK\
+uio[4]     SD2\
+uio[5]     SD3\
+uio[6]     CS1 (RAM A)\
 uio[7]     CS2 (RAM B)
