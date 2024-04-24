@@ -45,9 +45,11 @@ The actual metal area can be larger, but the port area must fit these dimensions
 
 Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is $100 (each tile is $50).
 
-In addition, there is a per-pin cost. The price for analog pins is $40 per pin for the first four pins (in a project), and $100 per pin for additional pins.
+In addition, there is a per-pin cost. The price for analog pins is $40 per pin for the first four pins on each Tiny Tapeout shuttle, and $100 per pin for additional pins.
 
-Example: a design that takes 1x2 tiles and uses 4 analog pins would cost $260 ($100 for the tiles, and $160 for the analog pins). This price is only for including the design in the shuttle, and does not include the cost of the ASIC, PCB, or shipping.
+Example: a design that takes 1x2 tiles and uses 2 analog pins would cost $180 ($100 for the tiles, and $80 for the analog pins). Another design that takes 2x2 tiles and uses 3 analog pins would cost $380 ($200 for the tiles, and $180 for the analog pins), assuming both designs are on the same shuttle.
+
+This price is only for including the design in the shuttle, and does not include the cost of the ASIC, PCB, or shipping.
 
 ---
 
