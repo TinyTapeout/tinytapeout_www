@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "291 32-Bit Galois Linear Feedback Shift Register"
-weight: 73
+title: "291 Minibyte CPU"
+weight: 100
 ---
 
-## 291 : 32-Bit Galois Linear Feedback Shift Register
+## 291 : Minibyte CPU
 
-* Author: icaris lab
-* Description: 32-bit Galois linear feedback shift register with taps at (32, 30, 26, 25).
-* [GitHub repository](https://github.com/icarislab/tt06_32bit-galois-prng_cu)
-* [GDS submitted](https://github.com/icarislab/tt06_32bit-galois-prng_cu/actions/runs/8692366865)
-* [Wokwi](https://wokwi.com/projects/394707429798790145) project
+* Author: Zach Frazee
+* Description: A super simple 8-bit CPU
+* [GitHub repository](https://github.com/zacharysfrazee/tt06-minibyte-cpu)
+* [GDS submitted](https://github.com/zacharysfrazee/tt06-minibyte-cpu/actions/runs/8750686348)
+* HDL project
 * [Extra docs](None)
 * Clock: 50000000 Hz
 
@@ -26,98 +26,287 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The project is a hardware implementation of a maximum-cycle 32-bit Galois linear feedback shift register (LFSR) with taps at registers (R32, R30, R26, R25). The LFSR is defined with the most-significant bit (MSB) at the left-most register R32 and the least-significant bit (LSB) at the right-most register R01. The LFSR shifts bits from left to right (R_n+1 -> R_n), with the R30, R26, and R25 populated by XORing bits from R_n+1 with R1, the LFSR output. The LFSR contains an initialization/fail-safe feedback that prevents the LFSR from entering an all-zero state. If the LFSR is ever in an all-zero state, a "1" value is inserted into R32.
+The Minibyte CPU is a simple "toy" 8-bit CPU that uses a custom RISC instruction set
 
-A schematic of the circuit may be found at:
+The CPU also has some built in DFT (Design For Test) features and a Demo ROM that can be enabled for easy testing
 
-https://wokwi.com/projects/394707429798790145
+This was created mostly as a learning/reference project to get more familiar with Verilog
 
-The circuit has 10 inputs:
+At some point between tapeout and silicon arriving, I intend to write a rudimentary assembler for creating programs that can be burned to EPROM/EEPROMs to be used with the CPU. Please monitor the main github repo for this project for eventual details.
 
-| Input    | Setting                     |
-| -------- | -------                     |
-| CLK      | Clock                       |
-| RST_N    | Not Used                    |
-| 01       | Not Used                    |
-| 02       | Manual R0 Input Value       |
-| 03       | Input Select                |
-| 04       | Not Used                    |
-| 05       | Not Used                    |
-| 06       | Not Used                    |
-| 07       | Not Used                    |
-| 08       | Not Used                    |
+#### Specs
 
-The CLK sets the clocking for the flip-flop registers for latching the LFSR values. In the schematic shown in the Wokwi project, a switch is used to select either the system clock or an externally provided or manual clock that allows the user to manually step through each latching event.
+```
+Max CLK Frequency: 50Mhz (untested)
 
-An 8-input DIP switch provides some flexibility to initalizing the LFSR. DIP03 (IN2) allows the user to toggle the Input Select function, which is a multiplexer that select whether the left-most register (R32) takes in as the input the LFSR feedback from R01, or a value that is manually selected by the user. If manual input is selected, the taps on R30, R26, and R25 are turned off and their inputs are shifted in from R_n+1.
+Data Buss Width:    8 bits
+Address Buss Width: 8 bits (only 7 bits usable due to limited IO)
 
-DIP02 (IN1) allows a the user to manually enter a 0 or a 1 value into the leftmost register.
+Registers:
+    A   - 8 bits wide - Accumulator
+    M   - 8 bits wide - Memory Address Pointer
+    PC  - 8 bits wide - Program Counter
+    IR  - 8 bits wide - Instruction Register
+    CCR - 2 bits wide - Condition Code Register
 
-The cicuit has 8 outputs. They output the values of the 8 right-most registers (R08, R07, R06, R05, R04, R03, R01, R01).
+Memory Mapped Registers:
+    R0  - 8 bits wide - Gen Purpose Reg 0
+    R1  - 8 bits wide - Gen Purpose Reg 1
+    R2  - 8 bits wide - Gen Purpose Reg 2
+    R3  - 8 bits wide - Gen Purpose Reg 3
+    R4  - 8 bits wide - Gen Purpose Reg 4
+    R5  - 8 bits wide - Gen Purpose Reg 5
+    R6  - 8 bits wide - Gen Purpose Reg 6
+    R7  - 8 bits wide - Gen Purpose Reg 7
 
-| Output   | Value in    |
-| -------- | -------     |
-| 01       | R08 |
-| 02       | R07 |
-| 03       | R06 |
-| 04       | R05 |
-| 05       | R04 |
-| 06       | R03 |
-| 07       | R02 |
-| 08       | R01 |
+Number of Instructions: 37
+
+ALU:
+    Data Inputs: 2x 8 bit inputs
+    Data Output: 8 bits (result) + 2 bits (flags)
+
+    Operations Supported:
+        PASSA - Passthrough input A
+        PASSB - Passthrough input B
+        ADD   - Add A and B
+        SUB   - Subtract B from A
+        AND   - Logical and of A, B
+        OR    - Logical or of A, B
+        XOR   - Logical xor of A, B
+        LSL   - Logical shift A left by B
+        LSR   - Logical shift A right by B
+        ASL   - Arithmetic shift A left by B
+        ASR   - Arithmetic shift A right by B
+        RSL   - Rotary shift A left by B
+        RSR   - Rotary shift A right by B
+
+    Flags:
+        Z - Set if the ALU result is zero, otherwise clear
+        N - Set if the ALU result is a negative 8 bit signed int, otherwise clear
+```
+
+#### Pinout
+
+```
+uio[7:0]    - DATA IN/OUT BUSS
+ui_in[7:0]  - DFT Test and Configuration Select
+uo_out[7]   - WE (Write Enable Signal)
+ou_out[6:0] - ADDR OUT BUSS
+```
+
+#### Architecture
+
+The Minibyte CPU uses a very traditional register architecture where most data is manipulated via a single accumulator (A Register)
+
+The ALU operates on data from the A Register and either direct data from memory (indexed by the M register), or immediate data from the current instruction's operand (indexed by the PC register)
+
+![Minibyte Block Diagram](images/block_diagram.png)
+
+*Note that DFT and testing features are not represented in the above block diagram
+
+#### Power Up State
+
+Upon reset, the device will be initialized with all registers cleared out to 0. This included the program counter (PC register). It is expected that the program memory will start at address 0x00 to begin execution.
+
+#### Instruction Set
+
+The Minibyte CPU has 4 format types for its instructions. The instruction memory is chunked into bytes, with some instructions only occupying a single byte, while others consume 2 bytes for an opcode and a following operand
+
+| Type               | Length      | Desc |
+| ------------------ | -------     | ------- |
+| Inherent           | 8 - bits    | IR with no operand |
+| Immediate          | 16 - bits   | IR with an operand containing DATA |
+| Direct             | 16 - bits   | IR with an operand containing an ADDRESS |
+| Indirect           | 16 - bits   | IR with an operand containing an ADDRESS that points to another ADDRESS |
+
+As a visual reference, here is how we would expect a basic program to look in memory. Please note that all programs start executing from address 0x00 as shown.
+
+![Example Program Memory](images/program_layout.png)
+
+This program adds the numbers 0x05 and 0x03 together, and then loops back to the starting IP of 0x00
+
+##### Inherent IR:
+
+| Type                  | OP[7:0]   |
+| --------------------- | -------   |
+| Inherent              | IR OPCODE |
+
+##### Immediate/Direct IR:
+
+| Type               | OP[15:8]  | OP[7:0]          |
+| ------------------ | -------   | -------          |
+| Immediate          | IR OPCODE | OPERAND DATA     |
+| Direct             | IR OPCODE | OPERAND ADDRESS  |
+| Indirect           | IR OPCODE | OPERAND ADDRESS  |
+
+##### 
+
+##### Opcode Table
+
+| OPCODE     | HEX   | Operand   | CCR      | Desc                                                                               |
+| ---------- | ----- | --------- | -------- | ---------------------------------------------------------------------------------- |
+| NOP        | 0x00  | N/A       | N/A      | No Operation                                                                       |
+| LDA_IMM    | 0x01  | Immediate | N/A      | Load A with immediate operand data                                                 |
+| LDA_DIR    | 0x02  | Direct    | N/A      | Load A with the data stored at the operand address                                 |
+| STA_DIR    | 0x03  | Direct    | N/A      | Store A at the operand address                                                     |
+| STA_IND    | 0x04  | Indirect  | N/A      | Store A at the address contained at the operand address                            |
+| ADD_IMM    | 0x05  | Immediate | N/A      | Add the immediate operand data to A                                                |
+| ADD_DIR    | 0x06  | Direct    | N/A      | Add the data stored at the operand address to A                                    |
+| SUB_IMM    | 0x07  | Immediate | N/A      | Subtract the immediate operand data from A                                         |
+| SUB_DIR    | 0x08  | Direct    | N/A      | Subtract the data stored at the operand address from A                             |
+| AND_IMM    | 0x09  | Immediate | N/A      | And the immediate operand data with A                                              |
+| AND_DIR    | 0x0A  | Direct    | N/A      | And the data stored at the operand address with A                                  |
+| OR_IMM     | 0x0B  | Immediate | N/A      | Or the immediate operand data with A                                               |
+| OR_DIR     | 0x0C  | Direct    | N/A      | Or the data stored at the operand address with A                                   |
+| XOR_IMM    | 0x0D  | Immediate | N/A      | Xor the immediate operand data with A                                              |
+| XOR_DIR    | 0x0E  | Direct    | N/A      | Xor the data stored at the operand address with A                                  |
+| LSL_IMM    | 0x0F  | Immediate | N/A      | Logical shift A left by the immediate operand data                                 |
+| LSL_DIR    | 0x10  | Direct    | N/A      | Logical shift A left by the data stored at the operand address                     |
+| LSR_IMM    | 0x11  | Immediate | N/A      | Logical shift A right by the immediate operand data                                |
+| LSR_DIR    | 0x12  | Direct    | N/A      | Logical shift A right by the data stored at the operand address                    |
+| ASL_IMM    | 0x13  | Immediate | N/A      | Arithmetic shift A left by the immediate operand data                              |
+| ASL_DIR    | 0x14  | Direct    | N/A      | Arithmetic shift A left by the data stored at the operand address                  |
+| ASR_IMM    | 0x15  | Immediate | N/A      | Arithmetic shift A right by the immediate operand data                             |
+| ASR_DIR    | 0x16  | Direct    | N/A      | Arithmetic shift A right by the data stored at the operand address                 |
+| RSL_IMM    | 0x17  | Immediate | N/A      | Rotate A left by the immediate operand                                             |
+| RSL_DIR    | 0x18  | Direct    | N/A      | Rotate A left by the data stored at the operand address                            |
+| RSR_IMM    | 0x19  | Immediate | N/A      | Rotate A right by the immediate operand data                                       |
+| RSR_DIR    | 0x1A  | Direct    | N/A      | Rotate A right by the data stored at the operand address                           |
+| JMP_DIR    | 0x1B  | Direct    | N/A      | Jump PC to the address specified by the operand                                    |
+| JMP_IND    | 0x1C  | Indirect  | N/A      | Jump PC to the address stored at the operand address                               |
+| BNE_DIR    | 0x1D  | Direct    | Z==CLEAR | Jump PC (if ALU z flag is clear) to the address specified by the operand           |
+| BNE_IND    | 0x1E  | Indirect  | Z==CLEAR | Jump PC (if ALU z flag is clear) to the address stored at the operand address      |
+| BEQ_DIR    | 0x1F  | Direct    | Z==SET   | Jump PC (if ALU z flag is set) to the address specified by the operand             |
+| BEQ_IND    | 0x20  | Indirect  | Z==SET   | Jump PC (if ALU z flag is set) to the address stored at the operand address        |
+| BPL_DIR    | 0x21  | Direct    | N==CLEAR | Jump PC (if ALU n flag is clear) to the address specified by the operand           |
+| BPL_IND    | 0x22  | Indirect  | N==CLEAR | Jump PC (if ALU n flag is clear) to the address stored at the operand address      |
+| BMI_DIR    | 0x23  | Direct    | N==SET   | Jump PC (if ALU n flag is set) to the address specified by the operand             |
+| BMI_IND    | 0x24  | Indirect  | N==SET   | Jump PC (if ALU n flag is set) to the address stored at the operand address        |
+
+#### DFT and Extra Features
+
+The Minibyte CPU has a few DFT features that should prove helpful on live silicon debug/testing. All functions are enabled by an active high signal, so ui_in[7:0] should be tied to zero during normal operation
+
+| ui_in Bit   | Feature                         |
+| ---------   | -------                         |
+| ui_in [7]   | Enable Gen Purpose Registers    |
+| ui_in [6:5] | Unused                          |
+| ui_in [4]   | Enable Demo ROM                 |
+| ui_in [3]   | Halt Control Unit on Next Fetch |
+| ui_in [2:0] | Debug Out Select                |
+
+##### Gen Purpose Registers
+
+The Gen Purpose Registers are a set of 8 memory mapped general purpose registers that can be accessed at the following addresses as long as ui_in [7] is tied high
+
+| Reg Name    | Mem Address |
+| ---------   | -------     |
+| Register R0 | 0x78        |
+| Register R1 | 0x79        |
+| Register R2 | 0x7A        |
+| Register R3 | 0x7B        |
+| Register R4 | 0x7C        |
+| Register R5 | 0x7D        |
+| Register R6 | 0x7E        |
+| Register R7 | 0x7F        |
+
+##### Debug Out Select
+
+The CPU has an extra mux between the normal addr out mux and the uo_out pins. To leverage this ui_in [2:0] can be used to select a debug signal to output on the uo_out[6:0] pins.
+
+| Debug Out Select    | Function                            |
+| ---------           | -------                             |
+| ui_in[2:0] = 0b000  | Normal Operation                    |
+| ui_in[2:0] = 0b001  | Output A[6:0] to uo_out[6:0]        |
+| ui_in[2:0] = 0b010  | Output A[7] to uo_out[0]            |
+| ui_in[2:0] = 0b011  | Output M[6:0] to uo_out[6:0]        |
+| ui_in[2:0] = 0b011  | Output PC[6:0] to uo_out[6:0]       |
+| ui_in[2:0] = 0b011  | Output IR[6:0] to uo_out[6:0]       |
+| ui_in[2:0] = 0b011  | Output CCR[1:0] to uo_out[1:0]      |
+| ui_in[2:0] = 0b011  | Output CU_STATE[6:0] to uo_out[6:0] |
 
 ### How to test
 
-The circuit can be tested by powering on the circuit, and first setting the Input Select switch (DIP03) to "1" to reset/initialize the entire LFSR to all-zeros. The Input Select switch can then be switched to "0" to allow the LFSR to run from its all-zero initialized value. The first 100 8-bit output values of the LFSR from this zeroized state may be observed using a logic analyzer, and should be:
+#### Simulation
 
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],[0 1 0 0 0 0 0 0],[0 0 1 0 0 0 0 0],
-[0 0 0 1 0 0 0 0],[0 0 0 0 1 0 0 0],[0 0 0 0 0 1 0 0],[0 0 0 0 0 0 1 0],
-[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],[1 1 0 0 0 0 0 0],
-[0 1 1 0 0 0 0 0],[0 0 1 1 0 0 0 0],[0 0 0 1 1 0 0 0],[1 0 0 0 1 1 0 0],
-[0 1 0 0 0 1 1 0],[1 0 1 0 0 0 1 1],[0 1 0 1 0 0 0 1],[0 0 1 0 1 0 0 0],
-[0 0 0 1 0 1 0 0],[0 0 0 0 1 0 1 0],[0 0 0 0 0 1 0 1],[0 0 0 0 0 0 1 0],
-[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],
-[0 1 0 0 0 0 0 0],[1 0 1 0 0 0 0 0],[0 1 0 1 0 0 0 0],[0 0 1 0 1 0 0 0],
-[0 0 0 1 0 1 0 0],[0 0 0 0 1 0 1 0],[0 0 0 0 0 1 0 1],[0 0 0 0 0 0 1 0],
-[0 0 0 0 0 0 0 1],[1 0 0 0 0 0 0 0],[0 1 0 0 0 0 0 0],[0 0 1 0 0 0 0 0],
-[0 0 0 1 0 0 0 0],[1 0 0 0 1 0 0 0],[0 1 0 0 0 1 0 0],[0 0 1 0 0 0 1 0],
-[0 0 0 1 0 0 0 1],[0 0 0 0 1 0 0 0],[0 0 0 0 0 1 0 0],[0 0 0 0 0 0 1 0],
-[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
-[1 0 0 0 0 0 0 0]
+The Minibyte CPU has fairly exhaustive cocotb test suite that is able to test and verify most of the device's intended functionality.
 
-A python implementation of the 32-bit Galois LFSR can be found at the link below. It may be used for testing the hardware for sequences longer than the initial 100 values.
+To run the test suite, cd into the ./test directory of the project and run "make"
 
-https://github.com/icarislab/tt06_32bit-fibonacci-prng_cu/main/docs/32-bit-fibonacci-prng_pythong_simulation.py
+![Simulation Results](images/sim_results.png)
+
+#### On Live Silicon
+
+The easiest way to test the Minibyte CPU on live silicon is to use the built-in Demo ROM
+
+To enable the Demo ROM, make sure that ui_in[4] and ui_in[7] are held high on reset, and remains high while the program runs
+
+Holding ui_in[4] will enable the Demo Rom and holding ui_in[7] high will enable the General Purpose Registers
+
+The Demo ROM will run the following program
+
+```
+PSEUDOCODE:
+    WHILE FOREVER{
+        //Part 1: Binary Count
+        SET A to 0
+
+        WHILE A <= 255 {
+            INCREMENT A
+
+            WRITE A to ADDRESS 0x40
+        }
+
+        //Part 2: Walking 1
+        SET A to 1
+
+        WHILE A > 0 {
+            LEFT SHIFT A by 1
+
+            WRITE A to ADDRESS 0x40
+        }
+
+        //Part 3: Deadbeef to RAM/Gen Purpose Registers and back out
+        LOAD 0xDEADBEEF into R0->R3
+
+        WRITE R0 to ADDRESS 0x40
+        WRITE R1 to ADDRESS 0x40
+        WRITE R2 to ADDRESS 0x40
+        WRITE R3 to ADDRESS 0x40
+    }
+```
+
+To capture the output of the program with LEDs, it is recommended to add a D-Flip Flop (such as a 74x273 series chip) on the output of the data buss (uio[7:0]). See External Hardware section below for more details
 
 ### External hardware
 
-No external hardware is required.
+#### Demo Setup
+
+![Demo Schematic](images/demo_setup.png)
+
+Something like the above schematic is recommended to run the Demo ROM. Note that we should use an inverter (like a 74x04 series chip) as shown on the CLK of the DFF, as we want data to be latched when WE falls back to 0 (after the data has had time to set up and make its way out of the chip). Please also note that you will probably need to run the CPU at a fairly low CLK frequency in order to see any LED activity with the naked eye.
+
+#### Other Setups
+
+The sky is the limit as far as as what devices you attach to the CPU. If you are writing your own programs, you probably are going to want to attach some sort of external ROM to the main address and data buss. Here is a recommended setup to add an external EEPROM to the demo setup so that you can test your own programs.
+
+![External EEPROM Schematic](images/external_rom.png)
+
+Beyond this, you will hopefully find that the Minibyte CPU can be paired with a wide variety 3.3V compatible parallel ROM/EPROM/EEPROM, SRAM, and IO expander modules.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | r08_val |  |
-| 1 | data_in | r07_val |  |
-| 2 | load_en | r06_val |  |
-| 3 |  | r05_val |  |
-| 4 |  | r04_val |  |
-| 5 |  | r03_val |  |
-| 6 |  | r02_val |  |
-| 7 |  | r01_val_LSFR_out |  |
+| 0 | DEBUG_OUT_SELECT_0 | ADDR_OUT_0 | DATA_0 |
+| 1 | DEBUG_OUT_SELECT_1 | ADDR_OUT_1 | DATA_1 |
+| 2 | DEBUG_OUT_SELECT_2 | ADDR_OUT_2 | DATA_2 |
+| 3 | DEMO_ROM_ENABLE | ADDR_OUT_3 | DATA_3 |
+| 4 |  | ADDR_OUT_4 | DATA_4 |
+| 5 |  | ADDR_OUT_5 | DATA_5 |
+| 6 |  | ADDR_OUT_6 | DATA_6 |
+| 7 |  | WE_OUT | DATA_7 |
 
 ### Chip location
 

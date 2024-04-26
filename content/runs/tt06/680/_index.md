@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "680 drEEm tEEm PPCA"
-weight: 151
+title: "680 ALU with a Gray and Octal decoders"
+weight: 164
 ---
 
-## 680 : drEEm tEEm PPCA
+## 680 : ALU with a Gray and Octal decoders
 
-* Author: Calvin Sokk, William Mingham Zhu, Calvin Yeh, Eric Liu
-* Description: Projectile Positioning Calculation Accelerator
-* [GitHub repository](https://github.com/calsokk/tt6_drEEm_tEEm_ppca)
-* [GDS submitted](https://github.com/calsokk/tt6_drEEm_tEEm_ppca/actions/runs/8751047037)
+* Author: Luis Antonio Quezada Santos, Santiago Robledo Acosta, José Miguel Rocha Pérez
+* Description: This is a simple 3 bit ALU with 4 operations: Substraction, Addition, XOR and AND which its output is conected to an Octal and Gray Decoders.
+* [GitHub repository](https://github.com/luisquezada93/-tt06-ALU-Decoders-Luis)
+* [GDS submitted](https://github.com/luisquezada93/-tt06-ALU-Decoders-Luis/actions/runs/8746725779)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,57 +26,47 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a simple shoot the target game in a 32 x 32 square which calculates the trajectory of a ball.
+This is a pure combinational design.
+This is a simple ALU (Arithmetic Logic Unit) whose output is connected to two different decorders, an Octal decoder for two 7 segments displays and an Gray decoder for the same two 7 segments displays. The output displays will show the result of the operations between two 3 bit numbers according to Sel_A_in and Sel_M_in.
 
-A target will randomly be generated in the top two rows of the playing field and your goal is to position your cannon, aim it, and hit the target. The ball that is shot can be bounced off the left and right walls, but once it hits the ceiling, the game is over.
+The Sel_A_in has the following operations according to its value.
 
-Your cannon will be at the bottom row of the 32 x 32 square. You will be able to move it left or right to any square on this bottom row. You will also have 7 different aiming positions.
+* Sel_A_in = 2'b00 , the ALU will be set in substraction. Num_A_in - Num_B_in.
+* Sel_A_in = 2'b01 , the ALU will be set in Adition. Num_A_in + Num_B_in.
+* Sel_A_in = 2'b10 , the ALU will be set in XOR. Num_A_in ^ Num_B_in.
+* Sel_A_in = 2'b11 , the ALU will be set in AND. Num_A_in & Num_B_in.
 
-Controls:
+The Sel_M_in has the following operations.
 
-- ui[0]: "Move Left"
-- ui[1]: "Move Right"
-- ui[2]: "Aim Left"
-- ui[3]: "Aim Right"
-- ui[4]: "Shoot"
+* Sel_M_in = 1'b0 , The output will be displayed in the octal system as the multiplexer selects the output of the Octal Decoder.
+* Sel_M_in = 1'b1 , The output will be displayed in the Gray system as the multiplexer selects the output of the Gray Decoder.
 
-All shots will be in a linear fashion. For example, if you select the default aim position (which is Left 2 and Up 1), the ball will be shot linearly with a slope that goes left 2 and up 1.
-
-Here are all the available aiming positions:
-
-1. Left 2 Up 1
-2. Left 1 Up 1
-3. Left 1 Up 2
-4. Up 1
-5. Right 1 Up 2
-6. Right 1 Up 1
-7. Right 2 Up 1
-
-The generated target's x and y position will be outputted in the uo[2:6] wires after the game is initialized. In the first cycle after initialization, these five bits will be driven to the x value and for the next cycle, they will be driven to the y value.
-
-After shooting the ball, wait until uo[0] ("Result Valid") is set to high. This indicates that the simulation is over and the ball has hit the top of the screen. Then, uo[1] ("Hit") will tell you whether or not the ball has hit the target.
+Note: The Gray Decoder has been specially decoded to be shown in a decimal system for the 7 segments displays.
 
 ### How to test
 
-To make sure that you hit the target, you will have to draw out the trajectory of the ball in the 32 x 32 grid.
+In order to test this device, you will need to input the numbers to the pin where Num_A_in and Num_B_in are located, this values go from 0 =3'b000 up to 7 = 3'b111. From this point forward modify the correponding bits on the correspondent selectors based on list displayed in How it works and see the result on the 7 segment displays (External).
 
 ### External hardware
 
-N/A
+For external hardware you'll need:
+. An external DC power source.
+. 14 330 ohms resistors.
+. 2 7 segments displays common cathode.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Move Left | Result Valid |  |
-| 1 | Move Right | Hit |  |
-| 2 | Aim Left | Select Data | target_x |
-| 3 | Aim Right | Select Data | target_x |
-| 4 | Shoot | Select Data | target_x |
-| 5 |  | Select Data | target_x |
-| 6 |  | Select Data | target_x |
-| 7 |  |  | 0 ? target_y = 30 : target_y = 31 |
+| 0 | Sel_A_in [0] | Disp_out[6] |  |
+| 1 | Sel_A_in [1] | Disp_out[7] | Disp_out[0] |
+| 2 | Num_B_in [0] | Disp_out[8] | Disp_out[1] |
+| 3 | Num_B_in [1] | Disp_out[9] | Disp_out[2] |
+| 4 | Num_B_in [2] | Disp_out[10] | Disp_out[3] |
+| 5 | Num_A_in [0] | Disp_out[11] | Disp_out[4] |
+| 6 | Num_A_in [1] | Disp_out[12] | Disp_out[5] |
+| 7 | Num_A_in [2] | Disp_out[13] | Sel_M_in |
 
 ### Chip location
 

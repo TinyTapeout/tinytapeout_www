@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "556 Sequence detector using 7-segment"
-weight: 139
+title: "556 Hardware Trojan Part II"
+weight: 104
 ---
 
-## 556 : Sequence detector using 7-segment
+## 556 : Hardware Trojan Part II
 
-* Author: Atharv Sharma & Lipika Gupta
-* Description: Detects sequence '1001' and displays '8.' on 7-segment led display, otherwise displays '-' only
-* [GitHub repository](https://github.com/atharv-004/tt06-sequence-counter)
-* [GDS submitted](https://github.com/atharv-004/tt06-sequence-counter/actions/runs/8753407035)
-* HDL project
+* Author: Jeremy Hong
+* Description: Pseudorandom number generator with and without hardware trojan
+* [GitHub repository](https://github.com/hongselectronics/HW_Trojan_Rev2)
+* [GDS submitted](https://github.com/hongselectronics/HW_Trojan_Rev2/actions/runs/8755314719)
+* [Wokwi](https://wokwi.com/projects/395055455727667201) project
 * [Extra docs](None)
-* Clock: 1 Hz
+* Clock: 10000 Hz
 
 <!---
 
@@ -24,38 +24,39 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
+### Credit
+
+My School and Instructor: [Wright State University](https://www.wright.edu/) EE-4550/6550 IC Hardware Security and Trust by [Dr. Saiyu Ren](https://people.wright.edu/saiyu.ren)
+
+My employer: [Two Six Technologies](https://twosixtech.com/)
+
+My teammates: [Celeste Irwin](https://www.linkedin.com/in/celeste-irwin-91b122225/) and [Nicholas Nissen](https://www.linkedin.com/in/nicholas-nissen-a512a823/)
+
 ### How it works
 
-- In this project, we have designed a sequence detector using finite state machine (FSM)
-- It is designed using verilog, and detects sequence '1001'
-- The logic is made using cases, and it detects the sequence while covering overlapping cases as well
+This pseudorandom number generator (PRNG) is compromised of scan flip-flops (SFF) and XOR gates. There are two PRNGs in this design, a PRNG with and without a hardware trojans
 
 ### How to test
 
-- If the sequence is detected, the output register z is set to logic 1 that displays '8.' on 7-segment display
-- If the sequence is not detected (the output register is 0), 7-segment display shows '-'
-- LEDs can be tested in two ways when ui_in [7:1] is kept 7'b1111111 (status for testing - condition = 7'b1111111):
-  1. If first 4 bits of reg seg_test (uio_in [7:4]) are 0 during testing, we can display numbers from 0 to 9 if we vary last 4 bits (uio_in[3:0]) from 0000 to 1001
-  2. If first 4 bits of reg seg_test (uio_in [7:4]) are 1 during testing, we can display each led seperately by varying last 4 bits (uio_in[3:0]) from 0000 to 0111
+Test by giving design a clock signal, and then set the PRNG by setting the scanin pins, and then toggle the scan enable pin. To reset turn off all the scanin pins and then leave the scan enable pin on for a few seconds.
 
 ### External hardware
 
-- We need to use 8 LEDs for 7-segment LED display output ([7:0] uo_out), so that the output can be displayed and verified accordingly at seg
-- In addition to this, we need to use an input source from which we can manipulate input logic onto the input register x (ui_in[0])
+Pattern generator and logic analyzer recommended.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | x | seg[0] | seg_test[0] |
-| 1 | condition[0] | seg[1] | seg_test[1] |
-| 2 | condition[1] | seg[2] | seg_test[2] |
-| 3 | condition[2] | seg[3] | seg_test[3] |
-| 4 | condition[3] | seg[4] | seg_test[4] |
-| 5 | condition[4] | seg[5] | seg_test[5] |
-| 6 | condition[5] | seg[6] | seg_test[6] |
-| 7 | condition[6] | seg[7] | seg_test[7] |
+| 0 | Scan Enable | PRNG 1 output Trojan Free | Input, ScanIn 8 |
+| 1 | ScanIn 1 | PRNG 2 output trojan inserted | Input, ScanIn 9 |
+| 2 | ScanIn 2 |  | Input, ScanIn 10 |
+| 3 | ScanIn 3 |  | Input, External Trojan Trigger |
+| 4 | ScanIn 4 |  | Output, single inverter test |
+| 5 | ScanIn 5 |  | Input, single inverter test |
+| 6 | ScanIn 6 |  | Input, 8 inverters test |
+| 7 | ScanIn 7 |  | Output, 8 inverters test |
 
 ### Chip location
 

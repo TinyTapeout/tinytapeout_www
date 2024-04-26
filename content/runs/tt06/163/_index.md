@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "163 1-Bit ALU 2"
-weight: 215
+title: "163 Workshop Hackaday Juli"
+weight: 217
 ---
 
-## 163 : 1-Bit ALU 2
+## 163 : Workshop Hackaday Juli
 
-* Author: FW
-* Description: Test Tapeout
-* [GitHub repository](https://github.com/aisvo1/TinyTapeoutTest)
-* [GDS submitted](https://github.com/aisvo1/TinyTapeoutTest/actions/runs/8674062351)
-* [Wokwi](https://wokwi.com/projects/395054466384583681) project
+* Author: Juli
+* Description: TinyTapeOut Workshop Hackaday project
+* [GitHub repository](https://github.com/jpdasilva/tinytapeout-workshop)
+* [GDS submitted](https://github.com/jpdasilva/tinytapeout-workshop/actions/runs/8673951165)
+* [Wokwi](https://wokwi.com/projects/395054820631340033) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,15 +26,14 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-1-Bit ALU
+I simply refuse to do this now
 
 ### How to test
 
-1-Bit ALU
+I simply refuse to do this now
 
 ### External hardware
 
-None
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
 

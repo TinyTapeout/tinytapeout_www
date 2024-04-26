@@ -1,60 +1,52 @@
 ---
 hidden: true
-title: "226 4-bit Stochastic Multiplier Compact with Stochastic Resonator"
-weight: 200
+title: "226 multimac"
+weight: 182
 ---
 
-## 226 : 4-bit Stochastic Multiplier Compact with Stochastic Resonator
+## 226 : multimac
 
-* Author:  Spandan Kottakota and David Parent
-* Description:  This is a 4-bit stochastic multiplier with a more compact architecture.  Also the Schmitt trigger on the input pins is used as a stochastic reonator.
-* [GitHub repository](https://github.com/davidparent/tt06-wokwi-stochastic-multiplier-spandan-davidparent)
-* [GDS submitted](https://github.com/davidparent/tt06-wokwi-stochastic-multiplier-spandan-davidparent/actions/runs/8664507099)
-* [Wokwi](https://wokwi.com/projects/394898807123828737) project
+* Author: Jonny Edwards
+* Description: a multi use multi-hit dot product accelerator
+* [GitHub repository](https://github.com/Fountaincoder/multimac)
+* [GDS submitted](https://github.com/Fountaincoder/multimac/actions/runs/8630222082)
+* HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
 
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
-
 ### How it works
 
-two four-bit || binary weighted vectors are read in and converted to two 1-bit serial stochastic streams with a PRBS and a comparator.  These signals are then fed into an AND gate, which multiplies the signal.  
-https://en.wikipedia.org/wiki/Stochastic_computing
-B. R. Gaines, “Origins of Stochastic Computing,” in Stochastic Computing: Techniques and Applications, W. J. Gross and V. C. Gaudet, Eds., Cham: Springer International Publishing, 2019, pp. 13–37. doi: 10.1007/978-3-030-03730-7_2.
-C. F. Frasser et al., “Using Stochastic Computing for Virtual Screening Acceleration,” Electronics, vol. 10, no. 23, p. 2981, Nov. 2021, doi: 10.3390/electronics10232981.
-M. Nobari and H. Jahanirad, “FPGA-based implementation of deep neural network using stochastic computing,” Appl. Soft Comput., vol. 137, p. 110166, Apr. 2023, doi: 10.1016/j.asoc.2023.110166.
-P. K. Gupta and R. Kumaresan, “Binary multiplication with PN sequences,” IEEE Trans. Acoust., vol. 36, no. 4, pp. 603–606, Apr. 1988, doi: 10.1109/29.1564.  
-A. Alaghi and J. P. Hayes, “Survey of Stochastic Computing,” ACM Trans. Embed. Comput. Syst., vol. 12, no. 2s, pp. 1–19, May 2013, doi: 10.1145/2465787.2465794.
+This is a simple circuit to calculate:
+
+- a vector dot product ie the sum of `w_i*x_i` where `i` can be anything up to about 40 (`insn=2`)
+- Minimum of a list of data (`insn=0`)
+- Maximum of a list of data (`insn=1`)
+
+It has been designed as a coprocessor. The data is first added by setting `load=1` and then supplying the data
+for the dot product the `index` and `data`. Each set is a `w`,`x` pair. Its a 4 bit system and runs when `run=1` and needs at least 16 clock cycles produce the answer. The answer is 12 bit value.
 
 ### How to test
 
-Use an ADLAM2000 and Python to control the reset and the clock. Hold A and B contents and watch the multiplier output. Use the DALM200 and Python to convert the signal back to binary weight signals.  The number of ones at any given time is the number
+I've tested this using a verilator simulation included below - I like the `cpp` workbench for this. The testing has been mainly for numerical stability.
 
 ### External hardware
 
-ADLAM2000
+I intend for this to be driven by the RP2040 and to work as a "coprocessor" for vector calculations
+Other.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | A0 | CK |  |
-| 1 | A1 | RST |  |
-| 2 | A2 | PRBS0 |  |
-| 3 | A3 | SM |  |
-| 4 | B0 | SS0 |  |
-| 5 | B1 | SS1 |  |
-| 6 | B2 | SR0 |  |
-| 7 | B3 |  |  |
+| 0 | index[0] | out[0] | out[8] |
+| 1 | index[1] | out[1] | out[9] |
+| 2 | index[2] | out[2] | out[10] |
+| 3 | index[3] | out[3] | out[11] |
+| 4 | data[0] | out[4] | instruction [0] |
+| 5 | data[1] | out[5] | instruction [1] |
+| 6 | data[2] | out[6] | load |
+| 7 | data[3] | out[7] | run |
 
 ### Chip location
 

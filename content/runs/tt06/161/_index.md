@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "161 test for tiny tapeout hackaday"
-weight: 231
+title: "161 Some_LEDs"
+weight: 95
 ---
 
-## 161 : test for tiny tapeout hackaday
+## 161 : Some_LEDs
 
-* Author: ivo-tt
-* Description: a useless test
-* [GitHub repository](https://github.com/ivo-tt/tiny-tapeout-01)
-* [GDS submitted](https://github.com/ivo-tt/tiny-tapeout-01/actions/runs/8674096242)
-* [Wokwi](https://wokwi.com/projects/395058308283408385) project
+* Author: marsPRE
+* Description: Nothing special 
+* [GitHub repository](https://github.com/marsPRE/tinytapeout_workshop)
+* [GDS submitted](https://github.com/marsPRE/tinytapeout_workshop/actions/runs/8673999176)
+* [Wokwi](https://wokwi.com/projects/395055035944909825) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,11 +26,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-It does not. Don't use it.
+I don't know how it works, yet.
 
 ### How to test
 
-If you are disappointed, it's your own fault.
+connect the right things
 
 ### External hardware
 
@@ -41,14 +41,14 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | a | 0 |  |
-| 1 | b | 1 |  |
-| 2 |  | 2 |  |
-| 3 |  | 3 |  |
-| 4 |  | 4 |  |
-| 5 |  | 5 |  |
-| 6 |  | 6 |  |
-| 7 |  | 7 |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

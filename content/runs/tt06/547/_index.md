@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "547 Serial to Parallel Register"
-weight: 59
+title: "547 3-bit ALU"
+weight: 117
 ---
 
-## 547 : Serial to Parallel Register
+## 547 : 3-bit ALU
 
-* Author: Ricardo M. Rocha Torres
-* Description: This is a simple Serial to Parallel Register
-* [GitHub repository](https://github.com/ricardorocha1202/Serie_Parallel)
-* [GDS submitted](https://github.com/ricardorocha1202/Serie_Parallel/actions/runs/8513423394)
+* Author: José Raña Gámez
+* Description: This device is a 3-bit ALU that generates 5 operations in parallel. The operations that the ALU performs are: addition, subtraction, multiplication, division and modulo operation. The device has 2 inputs; A[3-bit] and B[3-bit] along with a 3-bit selector (Selector[3-bit]). It also has a single 6-bit output (OutPut[6-bit]). In the end, the design entails 15 pins in total; 9 input and 6 output pins. The operation of this ALU is simple: At input A and B, the values ​​are set using switches, for example, A= 111 and B=101. To obtain the 5 different results through the different 5 operations that the ALU performs, the 3-bit selector (Selector[3-bits]) is used, therefore, using 3 switches we will place the result that we want to observe at the output.
+* [GitHub repository](https://github.com/JoseKaisen/ALU_3bits)
+* [GDS submitted](https://github.com/JoseKaisen/ALU_3bits/actions/runs/8655310910)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,51 +26,121 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-A erial-parallel register, is a digital circuit used to store data sequentially and then transfer it in parallel. It works in the following way:
+This device is a 3-bit ALU that generates 5 operations in parallel. The operations that the ALU performs are: addition, subtraction, multiplication, division and modulo operation.
+The device has 2 inputs; A[3-bit] and B[3-bit] along with a 3-bit selector (Selector[3-bit]). It also has a single 6-bit output (OutPut[6-bit]). In the end, the design entails 15 pins in total; 9 input and 6 output pins.
+The operation of this ALU is simple: At input A and B, the values ​​are set using switches, for example, A= 111 and B=101. To obtain the 5 different results through the different 5 operations that the ALU performs, the 3-bit selector (Selector[3-bits]) is used, therefore, using 3 switches we will place the result that we want to observe at the output.
+The selector works as follows: since the selector is 3-bit, we will have 2^3= 8 combinations, but in this case we will only use the first 5 combinations in this way:
 
-Serial Input: Data is input sequentially, bit by bit, through a single input line. These bits move through the register, being temporarily stored in the register's memory cells.
+Combination 1 for sum: 000
 
-Temporary Storage: As bits are entered, each bit is loaded into a memory cell within the register. This is typically done using a serial shifting mechanism, where each new bit pushes the next bit to the next memory cell, thus shifting all previous bits forward.
+Combination 2 for subtraction: 001
 
-Parallel Transfer: When all the bits have been entered into the register serially and temporarily stored, they can be transferred simultaneously or in parallel from the memory cells of the register to a parallel width data bus. This is achieved by loading each bit stored in the memory cells into parallel output lines that are connected to the data bus.Typically, type D latches or flip flops are used, which are controlled by the clock, which determines when a data chain begins or ends.
+Combination 3 for multiplication: 010
 
-Control and Synchronization: The operation of the serial-parallel register is controlled by control signals that indicate when to start inputting data, when to stop serial input, when to start parallel transfer, and when to stop transfer. Accurate synchronization is crucial to ensure that data moves correctly through the register and is transferred to the data bus at the right time.
+Combination 4 for division: 011
 
-For this project, a 4-bit serial-parallel register was made, which consists of a clock, a reset, the serial input and the parallel output.
+Combination 5 for module: 100
 
-The importance of this register is found in a binary search block used in converters such as ADC SAR by its acronym Digital Analog Converter successive approximation register which introduces a series of data into the system in serial form and requires a series in parallel to determine the value to convert.
+The remaining combinations do not have an assigned operating function, therefore, the remaining combinations will not generate any result at the output of the device.
 
 ### How to test
 
-The testbench used was proposed, carried out in ACTIVE HDL-Student Version, the stimuli used were.
+Choose two values of 3-bits for the inputs A and B by using switches, for example: A=111 and B=101.
+Then, use the 3-bit selector that has 3 switches to choose one of the 5 combinations to select an operation (sum[000], substraction[001], multiplication[010], division[011] and module[100]) so that it can be obtained the wanted results observed at the output (Leds).
 
-10ns period clock.
-Reset, through a formula which at 0 fs is 1 and 0 after 1 ns to clean the data and start with a known value with is 0.
-Serial input, a 20 ns clock.
+For example: we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 011 then the operation will be A=111 / B=101 (division).
 
-The parallel output is updated every 4 clock cycles and displays the result until it updates the next 4 clock cycles with a new result.
+Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 010 then the operation will be A=111 * B=101 (multiplication).
+
+Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 000 then the operation will be A=111 + B=101 (sum).
+
+The results will be shown at the 6-bit output that uses 6 Leds to demonstrate the results of any of the 5 operations available in the ALU.
 
 ### External hardware
 
-Wave generator:This controls the system clock externally
+3-bit input "A": uses 3 switches.
 
-Switch, connected in the reset and is used when we perform a conversion, It can also be used with a button or with a wave generator using a square pulse once. The reset switch value must be 0 to allow a value that is different from 0 on the parallel output.
+3-bit input "B": uses 3 switches.
 
-Logic Analyzer. This allows a serial signal to be introduced into the system that varies its values non-periodically to read its conversion in parallel, the same logic analyzer can read the output in parallel. Keysight 1681AD Logic Analyzer in INAOE con be used. Another way is to use an FPGA programmed with serial values and it can obtain the output values in parallel.
+3-bit input "Selector": uses 3 switches.
+
+6-bit output "Results": uses 6 Leds.
+
+The mentioned inputs and outputs are respectively connected to the pins of the project circuit as follows:
+
+## Inputs
+
+ui[0]: "First bit for input 'A'(input of 3-bits)"
+
+ui[1]: "Second bit for input 'A'(input of 3-bits)"
+
+ui[2]: "Third bit for input 'A'(input of 3-bits)"
+
+ui[3]: "First bit for input 'B'(input of 3-bits)"
+
+ui[4]: "Second bit for input 'B'(input of 3-bits)"
+
+ui[5]: "Third bit for input 'B'(input of 3-bits)"
+
+ui[6]: "Unused input bit"
+
+ui[7]: "Unused input bit"
+
+## Outputs
+
+uo[0]: "First bit for output 'Leds'(output of 6-bits)"
+
+uo[1]: "Second bit for output 'Leds'(output of 6-bits)"
+
+uo[2]: "Third bit for output 'Leds'(output of 6-bits)"
+
+uo[3]: "Fourth bit for output 'Leds'(output of 6-bits)"
+
+uo[4]: "Fifth bit for output 'Leds'(output of 6-bits)"
+
+uo[5]: "Sixth bit for output 'Leds'(output of 6-bits)"
+
+uo[6]: "Unused output bit"
+
+uo[7]: "Unused output bit"
+
+## Bidirectional pins
+
+uio[0]: "First bit for input 'ctrl'(input of 3-bits)"
+
+uio[1]: "Second bit for input 'ctrl'(input of 3-bits)"
+
+uio[2]: "Third bit for input 'ctrl'(input of 3-bits)"
+
+uio[3]: "Unused bidirectional I/O bit"
+
+uio[4]: "Unused bidirectional I/O bit"
+
+uio[5]: "Unused bidirectional I/O bit"
+
+uio[6]: "Unused bidirectional I/O bit"
+
+uio[7]: "Unused bidirectional I/O bit"
+
+For a better visualization, see Figure 1.
+
+![ALU_3bits](https://github.com/JoseKaisen/ALU_3bits/assets/164433211/c92f2f1b-d5cb-41ff-97b2-62917bac8b81)
+
+Figure 1: 'External Hardware pins conections visualization'
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | no use | no use | Bit 0 |
-| 1 | no use | no use | Bit 1 |
-| 2 | no use | no use | Bit 2 |
-| 3 | no use | no use | Bit 3 |
-| 4 | no use | no use | no use |
-| 5 | no use | no use | Serie_in |
-| 6 | no use | no use | rst |
-| 7 | no use | no use | clk |
+| 0 | First bit for input 'A'(input of 3-bits) | First bit for output 'Leds'(output of 6-bits) | First bit for input 'ctrl'(input of 3-bits) |
+| 1 | Second bit for input 'A'(input of 3-bits) | Second bit for output 'Leds'(output of 6-bits) | Second bit for input 'ctrl'(input of 3-bits) |
+| 2 | Third bit for input 'A'(input of 3-bits) | Third bit for output 'Leds'(output of 6-bits) | Third bit for input 'ctrl'(input of 3-bits) |
+| 3 | First bit for input 'B'(input of 3-bits) | Fourth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
+| 4 | Second bit for input 'B'(input of 3-bits) | Fifth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
+| 5 | Third bit for input 'B'(input of 3-bits) | Sixth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
+| 6 | Unused input bit | Unused output bit | Unused bidirectional I/O bit |
+| 7 | Unused input bit | Unused output bit | Unused bidirectional I/O bit |
 
 ### Chip location
 

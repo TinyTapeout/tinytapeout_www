@@ -1,44 +1,57 @@
 ---
 hidden: true
-title: "37 i4004 for TinyTapeout"
-weight: 25
+title: "37 luckyCube"
+weight: 74
 ---
 
-## 37 : i4004 for TinyTapeout
+## 37 : luckyCube
 
-* Author: ISHI-KAI
-* Description: i4004 for TinyTapeout by ISHI-KAI.
-* [GitHub repository](https://github.com/noritsuna/tt06-tt_um_i4004)
-* [GDS submitted](https://github.com/noritsuna/tt06-tt_um_i4004/actions/runs/8479565288)
-* HDL project
+* Author: Lejla Rahmanovic-Abdic
+* Description: Lucky Number 6
+* [GitHub repository](https://github.com/leyla224/jku-tt06-luckyCube)
+* [GDS submitted](https://github.com/leyla224/jku-tt06-luckyCube/actions/runs/8631299841)
+* [Wokwi](https://wokwi.com/projects/384711264596377601) project
 * [Extra docs](None)
-* Clock: 741000 Hz
+* Clock: 0 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-This is [i4004](https://ja.wikipedia.org/wiki/Intel_4004) Chip.
+In this project, goal was to create an engaging digital dice experience. The
+primary goal is to display the word "roll" on the LED display, accompanied by
+the illumination of the number "6" – a universally recognized lucky number in
+dice games.
 
 ### How to test
 
-No Test.
+Play with switch
 
 ### External hardware
 
--[MCS4 Memory System](https://github.com/ryomuk/tangnano-MCS4memory)
+- 
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | data0_pad | cmrom_pad |  |
-| 1 | data1_pad | cmram0_pad |  |
-| 2 | data2_pad | cmram1_pad |  |
-| 3 | data3_pad | cmram2_pad |  |
-| 4 | clk1_pad | cmram3_pad |  |
-| 5 | clk2_pad | sync_pad |  |
-| 6 | poc_pad |  |  |
-| 7 | test_pad |  |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

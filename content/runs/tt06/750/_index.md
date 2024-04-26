@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "750 Notre Dame Dorms LED"
-weight: 78
+title: "750 Array Multiplier"
+weight: 194
 ---
 
-## 750 : Notre Dame Dorms LED
+## 750 : Array Multiplier
 
-* Author: Allison Fleming & Daniel Yu
-* Description: Solves a puzzle based on the correct selection of Notre Dame dorms
-* [GitHub repository](https://github.com/aflemin7/tinytapeout)
-* [GDS submitted](https://github.com/aflemin7/tinytapeout/actions/runs/8756893364)
-* [Wokwi](https://wokwi.com/projects/390913889347409921) project
+* Author: UACJ Group A
+* Description: Array Multiplier
+* [GitHub repository](https://github.com/HHRB98/Array-multiplier)
+* [GDS submitted](https://github.com/HHRB98/Array-multiplier/actions/runs/8733464012)
+* HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,40 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-There are eight switches on this DIP Switch, each representing a dorm on campus. The LED can be lit up with a minimum of three switches turned on. These three switches represent the best male dorm (Alumni, Carroll, Keenan, or Dillon), the best female dorm (Flaherty, Welsh Fam, or PE), and the best gender-neutral dorm (Fischer Grad). For example, a valid combination would be Alumni, Flaherty, Fischer Grad.
-
-Switch #
-
-1- Alumni,
-2- Carroll,
-3- Keenan,
-4- Dillon,
-5- Flaherty,
-6- Welsh Fam,
-7- Pasquerilla East,
-8- Fischer Grad
+This project is centerd in the implementation of a verilog code for 4 bit Wallace tree multiplier. The design uses half adder and full adder Verilog designs.
 
 ### How to test
 
-This puzzle is supposed to be a trial and error practice for students to learn about logic gates. Thus, to test it, play around with using different switches to see what lights up the LED.
+On file Test, there is a testbench call wallace_tb.v Use the code to test the code.
 
 ### External hardware
 
-One external LED is needed
+You do not need any special external hardware
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | ui[0] | uo[0] |  |
+| 1 | ui[1] | uo[1] |  |
+| 2 | ui[2] | uo[2] |  |
+| 3 | ui[3] | uo[3] |  |
+| 4 | ui[4] | uo[4] |  |
+| 5 | ui[5] | uo[5] |  |
+| 6 | ui[6] | uo[6] |  |
+| 7 | ui[7] | uo[7] |  |
 
 ### Chip location
 

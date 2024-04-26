@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "271 TT06 Grab Bag"
-weight: 181
+title: "271 Tiny Opamp"
+weight: 221
 ---
 
-## 271 : TT06 Grab Bag
+## 271 : Tiny Opamp
 
-* Author: algofoogle (Anton Maurovic)
-* Description: Hopefully assorted basic analog experiments
-* [GitHub repository](https://github.com/algofoogle/tt06-grab-bag)
-* [GDS submitted](https://github.com/algofoogle/tt06-grab-bag/actions/runs/8758046031)
+* Author: argunda
+* Description: Super simple two stage opamp without miller compensation
+* [GitHub repository](https://github.com/argunda/tt06-tiny-opamp)
+* [GDS submitted](https://github.com/argunda/tt06-tiny-opamp/actions/runs/8758173841)
 * Analog project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,35 +26,34 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-So far this is pretty basic:
+This opamp has VDD=1.8V and VSS=0V. It's input common mode range is not very good so make sure your AC input signal is centered around 0.9V. The opamp is internally biased so you just need to apply a differential input.
 
-* A big-standard CMOS inverter... maybe a bit on the large side.
-* A simple 4-bit R2R DAC (actually 8-bit, but 4 LSB tied low).
-* A digital block that is a simple VGA controller, that lets you select from a few different tests, each driving 3x8-bit (24-bit RGB) outputs to 3 more 8-bit R2R DACs.
+It should be able to hit 60dB gain at low frequencies. Please do not connects loads requiring more than a few mA.
 
 ### How to test
 
-TBC, because this is all different since I started!
+Power up the chip, test opamp in closed loop configuration only.
+VOUT is analog pin 0.
+PLUS is a differential input on analog pin 1.
+MINUS is a differential input on analog pin 2.
 
 ### External hardware
 
-Probably some sort of X-ray machine to look inside the chip...?
-
-Come back later and I'll have a better explanation of how to hook up to a VGA display.
+At the bare minimum a resistor at the output is needed to test the opamp as a source-follower. Use multimeter or oscilloscope to probe the output.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | inv_in | inv_out_d |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | pause | blue |  |
+| 1 | new_game | green |  |
+| 2 | down_key | red |  |
+| 3 | up_key | hsync |  |
+| 4 |  | vsync |  |
+| 5 |  | speaker |  |
+| 6 |  | col0 |  |
+| 7 |  | row0 |  |
 
 ### Chip location
 

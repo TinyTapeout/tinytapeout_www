@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "676 Latin_bomba"
-weight: 207
+title: "676 SAP-1 Computer"
+weight: 90
 ---
 
-## 676 : Latin_bomba
+## 676 : SAP-1 Computer
 
-* Author: Arizaga Silva
-* Description: Circuito de control basado en maquina de estados para controlar el llenado de un deposito de agua a traves de una bomba
-* [GitHub repository](https://github.com/arizaga1/Latin_bomba)
-* [GDS submitted](https://github.com/arizaga1/Latin_bomba/actions/runs/8749553597)
+* Author: Jonathan Zhou, Rana Singh, Anika Agarwal
+* Description: Simple as Possible computer with multiplier and divider into ASIC
+* [GitHub repository](https://github.com/kevinwguan/tt06-SAP-1_Computer-)
+* [GDS submitted](https://github.com/kevinwguan/tt06-SAP-1_Computer-/actions/runs/8747673059)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -24,72 +24,65 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
-### LATINPRACTICE_2024
+### How it works
 
-![Logo](https://latinpracticecom.files.wordpress.com/2023/06/logo-lp-2-1.png)
+```
+  (Forked from Brandon Cruz's SAP-1 Design)
 
-Este proyecto  forma parte de la iniciativa LATINPRACTICE_2024
-con el cual se pretende que profesores universitarios y alumnos de nivel medio superior y superior, tengan acceso a herramientas de software libre para el diseño de circuitos integrados .
+  Originally, Malvino and Brown presented the SAP-1 architecture in a book called Digital Computer Electronics.
+  The design gained massive popularity when it was build as a bread board computer by Ben Eater on a series of YouTube videos.
+  The architecture contains various modules, including
+  - Clock
+  - Program Counter
+  - Register A
+  - Register B
+  - Adder
+  - Multiplier
+  - Divider
+  - Memory
+  - Instruction Register
+  - Bus
+  - Controller
+  This design doesn't have inputs, it is dependent only on the clock that coordinates sequence of the computer's operation.
+  Its operation consists on the communication that that bus provides between modules; the signal load dumps information into a module
+  and the enable signal allows the bus to receive a signal. The bus is 8-bit width since it is an 8 bit computer, and the registers
+  are also 8-bit registers.
+  The computer can only perform addition, whether it is positive numbers or negative numbers (substraction).
+  The signals information is stored within the memory module. There bus operations are coordinated with a series of multiplexers and
+  the instruction execution set gives the SAP-1 a total of six stages from 0 to 5, repeating all over again.
+  The more important module      is the controller. It controlls the assertion execution according to the stimuli from the stages.
+  The stages 3 to 5 five depend on the instructions of the operation codes.
+```
 
-Este proyecto es una máquina de estados sencilla que permite controlar el llenado y vaciado automático de un depósito superior de agua alimentado por una bomba conectada a un depósito inferior de agua.
+### How to test
 
-#### How it works
+```
+  Design Output Reading Section
+  The design is engineered to read the output signal generated from the bus, which contains the information
+  of the add and subtract operations executed by the design. Currently, the only method to read the signals
+  is through an oscilloscope. However, a significant enhancement would be the implementation of a state machine
+  controlling a 3 7-segment display to show the numbers on the 8-bit bus (up to 255).
+```
 
-El circuito consta de una máquina de estados tipo Mealy con tres estados (Espera, llenado y Alarma).
+### External hardware
 
-Las entradas del circuito corresponden a sensores que detectan la presencia o ausencia de agua (1 o 0 lógico), es decir son señales digitales. Un sensor para la cisterna (depósito inferior) y dos sensores para el depósito superior.
+List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
-EL circuito cuenta con dos salidas digitales, la primera para encender y apagar la bomba y la segunda para encender una luz o una alarma que indique que no hay agua en el depósito inferior.
-
-El proyecto utiliza un modelo de máquina de estados finitos con tres estados para controlar el llenado del depósito superior mediante una bomba. Los tres estados son:
-
-1. **Espera (`espera`)**: Este estado indica que el sistema está en espera de alguna acción. En este estado, la bomba está apagada (`bomba_o = 0`) y la alarma está desactivada (`alarma_o = 0`). La transición desde este estado ocurre cuando se detecta que el depósito superior está vacío y que hay agua en el depósito inferior (`sensores_i = 001`) o cuando se detecta que la cisterna está llena (`sensores_i = 111`)  o que no hay agua en el depósito inferior (`sensores_i = xx0`) que lo lleva al estado de alarma.
-
-2. **Llenado (`llenado`)**: En este estado, la bomba está encendida (`bomba_o = 1`) para llenar el depósito. La alarma permanece desactivada (`alarma_o = 0`). La transición desde este estado ocurre cuando se detecta que la cisterna está llena (`sensores_i = 111`), lo que indica que el depósito ha alcanzado su capacidad máxima  y regresa al estado de Espera o que no hay agua en el depósito inferior (`sensores_i = xx0`) que lo lleva al estado de alarma.
-
-3. **Alarma (`alarma`)**: Este estado se activa cuando se detecta una condición de alarma, como la falta de agua en el depósito inferior . En este estado, la bomba se apaga (`bomba_o = 0`) y se activa la alarma (`alarma_o = 1`). La transición desde este estado ocurre cuando se detecta que el depósito inferior está lleno (`sensores_i = XX1`), lo que indica que se ha resuelto la condición de alarma.
-
-Cada estado y transición está definido en el código Verilog proporcionado, lo que permite controlar el llenado del depósito mediante la activación y desactivación de la bomba en respuesta a las lecturas de los sensores.
-
-#### How to test
-
-TODO
-
-#### External hardware
-
-La asignación de entradas y salidas del diseño del control de la bomba a las entradas y salidas del proyecto Latinpractice son como se indica a continuación.
-
-ck:       Conectado a   uio_in[7].
-rst_i:    Conectado a   uio_in[6].
-sensores_i: Conectado a uio_in[5:3].
-alarma_o: Conectado a uio_out[1].
-bomba_o:  Conectado a uio_out[0].
-
-Como puede notarse, el proyecto de la bomba, para hacer más legible el código, indica cuando un puerto es de entrada colocando un _i al final del nombre del puerto (rst_i) y cuando un puerto es de salida un _o (bomba_o), excepto en el puerto de reloj.
-
-Las entradas de los sensores pueden ser emuladas con botones o con switches conectados a los puertos bidireccionales uio_in[5:3]. Las salidas pueden emularse utilizando LED's conectados a uio_out[0] y uio_out[1] a traveés de una resistencia limitadora de corriente.
-
-#### Authors
-
-- [@Arízaga-Silva](https://www.researchgate.net/profile/Juan-Antonio-Arizaga-Silva)
-
-- [@Sanchez-Rincón](https://www.researchgate.net/profile/Ismael_Rincon)
-
-- [@Muñiz-Montero](https://www.researchgate.net/profile/Carlos-Muniz-Montero)
+Oscilloscope
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | no used | no used | bomba_o |
-| 1 | no used | no used | alarma_o |
-| 2 | no used | no used | no used |
-| 3 | no used | no used | sensores_i[0] |
-| 4 | no used | no used | sensores_i[1] |
-| 5 | no used | no used | sensores_i[2] |
-| 6 | no used | no used | rst_i |
-| 7 | no used | no used | ck |
+| 0 |  | bus[0] |  |
+| 1 |  | bus[1] |  |
+| 2 |  | bus[2] |  |
+| 3 |  | bus[3] |  |
+| 4 |  | bus[4] |  |
+| 5 |  | bus[5] |  |
+| 6 |  | bus[6] |  |
+| 7 |  | bus[7] |  |
 
 ### Chip location
 

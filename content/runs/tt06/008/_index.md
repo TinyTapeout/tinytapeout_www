@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "8 FP4 x 8-bit matrix multiplier"
-weight: 235
+title: "8 Chisel Pong"
+weight: 103
 ---
 
-## 8 : FP4 x 8-bit matrix multiplier
+## 8 : Chisel Pong
 
-* Author: ReJ aka Renaldas Zioma
-* Description: 4-bit floating point (E3M0) x 8-bit matrix multiplier block
-* [GitHub repository](https://github.com/rejunity/tiny-asic-4bit-matrix-mul)
-* [GDS submitted](https://github.com/rejunity/tiny-asic-4bit-matrix-mul/actions/runs/8756604313)
+* Author: Tjark Petersen
+* Description: A basic Pong game using VGA implemented in Chisel.
+* [GitHub repository](https://github.com/tjarker/tiny-tapeout-pong)
+* [GDS submitted](https://github.com/tjarker/tiny-tapeout-pong/actions/runs/8754004711)
 * HDL project
 * [Extra docs](None)
-* Clock: 48000000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,30 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Matrix multiplication is implemented using a systolic array architecture.
+This is a Chisel template
 
 ### How to test
 
-Every cycle feed packed weight data to Input pins and input data to Bidirectional pins.
-Strobe Enable pin to start receiving results of the matrix multiplication on the Output pins.
+Currently we use cocotb, this shall change to ChiselTest
 
 ### External hardware
 
-MCU is necessary to feed weights and input data into the accelerator and fetch the results.
+non by default
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | 2nd FP4 weight LSB | result LSB | (in) activations LSB |
-| 1 | 2nd FP4 weight | result  | (in) activations |
-| 2 | 2nd FP4 weight | result  | (in) activations |
-| 3 | 2nd FP4 weight MSB | result  | (in) activations |
-| 4 | 1st FP4 weight LSB | result  | (in) activations |
-| 5 | 1st FP4 weight | result  | (in) activations |
-| 6 | 1st FP4 weight | result  | (in) activations |
-| 7 | 1st FP4 weight MSB | result MSB | (in) activations MSB |
+| 0 | left player up | r[1] | state[0] |
+| 1 | left player down | g[1] | state[1] |
+| 2 | right player up | b[1] | state[2] |
+| 3 | right player down | v-sync | v-sync |
+| 4 | engage left player autopilot | r[0] | h-sync |
+| 5 | engage right player autopilot | g[0] | left player lost |
+| 6 | not used | b[0] | right player lost |
+| 7 | not used | h-sync | game tick |
 
 ### Chip location
 

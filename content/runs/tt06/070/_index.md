@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "70 Projekt KEIS Hadner Thomas"
-weight: 12
+title: "70 UCSC HW Systems Collective, TDC - BUF2x1"
+weight: 211
 ---
 
-## 70 : Projekt KEIS Hadner Thomas
+## 70 : UCSC HW Systems Collective, TDC - BUF2x1
 
-* Author: Thomas Hadner
-* Description: Demodulator for RC Receiver with different Outputs
-* [GitHub repository](https://github.com/ThomasHadner/jku-tt06-pwm-analyzer-hadner)
-* [GDS submitted](https://github.com/ThomasHadner/jku-tt06-pwm-analyzer-hadner/actions/runs/8628730551)
+* Author: Phillip Marlowe, Tyler Sheaves, & Dustin Richmond
+* Description: A tiny TDC constructed entirely of standard cells. Skywater130 AND-2 delay element
+* [GitHub repository](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay)
+* [GDS submitted](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay/actions/runs/8758143688)
 * HDL project
 * [Extra docs](None)
-* Clock: 1000000 Hz
+* Clock: 17241379 Hz
 
 <!---
 
@@ -26,27 +26,30 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Decodes PWM-Signal from RC Receiver with counter and threshold values to decide wether to set the output to HIGH or LOW.
+A tiny TDC
 
 ### How to test
 
-The program can be tested by applying a PWM-Signal to the input with a longer pulse time than 1.9ms, then the output will go to HIGH. If then you apply a PWM-Signal with a pulse time lower than 1.1 the output will go to LOW.
+Setup VCS on you local machine, cd to test run:
+`make SIM=vcs GATES=yes`
 
-Additionally the 7-Segment-Display will always show how many outputs are currently active (HIGH).
+### External hardware
+
+Just pins
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | input PWM of channel 0 | segment a | output of channel 0 |
-| 1 | input PWM of channel 1 | segment b | output of channel 1 |
-| 2 | input PWM of channel 2 | segment c | output of channel 2 |
-| 3 | input PWM of channel 3 | segment d | output of channel 3 |
-| 4 | input PWM of channel 4 | segment e | output of channel 4 |
-| 5 | input PWM of channel 5 | segment f | output of channel 5 |
-| 6 | input PWM of channel 6 | segment g | output of channel 6 |
-| 7 | input PWM of channel 7 | UART Transmit Wire | output of channel 7 |
+| 0 | lanuch clock | hw[0] |  |
+| 1 | capture clock | hw[1] |  |
+| 2 | pg_src | hw[2] |  |
+| 3 | pg_bypass | hw[3] |  |
+| 4 | pg_in | hw[4] |  |
+| 5 | pg_tog | hw[5] |  |
+| 6 | valid_in | hw[6] |  |
+| 7 |  | valid_out |  |
 
 ### Chip location
 

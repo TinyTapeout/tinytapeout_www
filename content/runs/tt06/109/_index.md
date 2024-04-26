@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "109 RGB Mixer"
-weight: 68
+title: "109 Synthesized Time-to-Digital Converter (TDC) v2"
+weight: 138
 ---
 
-## 109 : RGB Mixer
+## 109 : Synthesized Time-to-Digital Converter (TDC) v2
 
-* Author: Zhe Wang
-* Description: Zero to ASIC demo project
-* [GitHub repository](https://github.com/zhwa/zeroasic)
-* [GDS submitted](https://github.com/zhwa/zeroasic/actions/runs/8593557831)
+* Author: Harald Pretl
+* Description: Synthesized TDC based on two Vernier delay rings
+* [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v2)
+* [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v2/actions/runs/8679868973)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,29 +26,35 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Debounce the inputs, drive an encoder module, and output a PWM signal for each encoder.
+This is a synthesized time-to-digital converter (TDC), consisting of two wavefront delay rings with a slightly different delay forming a Vernier TDC.
+
+The time between the rising edge of `start=ui_in[0]` and the rising edge of `stop=ui_in[1]` is measured by both rings and the output in 8b chunks. Based on analog simulation, the time resolution (typical process, room temperature) is on the order of 6ps.
 
 ### How to test
 
-Twist each encoder and the LEDs attached to the outputs should change in brightness.
+Apply two signals to `ui_in[0]` and `ui_in[1]`.
+
+After capturing (rising edge of `ui_in[1]`) the result (i.e., the time delay between rising edge of `ui_in[0]` and `ui_in[2]`) can be muxed-out to `uo_out[7:0]` using `ui_in[7:3]` as byte-wise selector. `ui_in[7:3]=0000` gives result byte 0, `ui_in[7:3]=0001` gives result byte 1, etc.
+
+The input `ui_in[2]` selects the output of ring 0 or ring 1.
 
 ### External hardware
 
-Use 3 digital encoders attached to the first 6 inputs.
+Two signal generators generating the logical signals with a programmable delay (important is ns resolution).
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | enc0 a | pwm0 |  |
-| 1 | enc0 b | pwm1 |  |
-| 2 | enc1 a | pwm2 |  |
-| 3 | enc1 b |  |  |
-| 4 | enc2 a |  |  |
-| 5 | enc2 b |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | Start signal of TDC | Result (LSB) |  |
+| 1 | Stop signal of the TDC | Result |  |
+| 2 | Select result of ring for output | Result |  |
+| 3 | output select (LSB) | Result |  |
+| 4 | output select | Result |  |
+| 5 | output select | Result |  |
+| 6 | output select | Result |  |
+| 7 | output select (MSB) | Result (MSB) |  |
 
 ### Chip location
 

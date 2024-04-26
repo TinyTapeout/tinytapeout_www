@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "416 Digital Temperature Monitor"
-weight: 154
+title: "416 X/Y Controller"
+weight: 127
 ---
 
-## 416 : Digital Temperature Monitor
+## 416 : X/Y Controller
 
-* Author: Priyansu Sahoo and Saroj Rout
-* Description: This projects reads 8-bit temperature data using SPI from a LM70 sensor.
-* [GitHub repository](https://github.com/silicon-efabless/tt06-silicon-tinytapeout-lm07)
-* [GDS submitted](https://github.com/silicon-efabless/tt06-silicon-tinytapeout-lm07/actions/runs/8719581599)
+* Author: Charles Pope
+* Description: Two-Axis position Controller (4 bits of range per axis)
+* [GitHub repository](https://github.com/CKPope/tt06-verilog-template)
+* [GDS submitted](https://github.com/CKPope/tt06-verilog-template/actions/runs/8692089022)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -24,69 +24,54 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
-### Objective
+### How it works
 
-This is an educational project for undergraduate engineering students with the objective of exposing them to real-world product design. In the process, the students learn a wide variety of engineering principles including product design, digital system design, mixed-signal modeling, digital design using Verilog, design verification, ASIC design flow, FPGA design flow, and documentation using gitHub.
+This design is a simple two-dimensional axis controller. It uses 4-bit wide counter, 4-bit Magnitude Comparator and a 4-bit wide target co-ordinate register for each dimension. A simple State Machine is used to acquire the target value for each dimension and then control the movement to the target co-ordinate value for each dimension in parallel operation. Comparisons of the current position and the target value for each dimension along the way and when the Traget is reached, the controller sits in a "AT-REST" state and waits for another motion directive. The Target values can change at any time after the Motion begins. New Target values will not be captured until the NEXT MOTION request. The controller can be RESET at any time with the rst_n input.
+![image](https://github.com/CKPope/tt06-verilog-template/assets/166442118/9af8d539-68c6-49d0-91ef-edca4c9abb46)
+![image](https://github.com/CKPope/tt06-verilog-template/assets/166442118/8d319750-3319-4897-a161-a58fdd493411)
 
-### Project Brief
+Inputs:
+Target X co-ordinate value (4 bits) on ui_in[7:4]
+Target Y co-ordinate value (4 bits) on ui_in[3:0]
+Motion Input (1 bit) on uio_in[0]; This signal is input after the target values are set. The movement begins after the signal is deactivated.
 
-This project implements a digital temperature monitor by connecting a temperature sensor ([LM70](datasheet-LM70-TI-tempSensor.pdf) [`docs/datasheet-LM70-TI-tempSensor.pdf`]) and a three-segment display to measure and display a range of $0-99^\circ C$ or $0-99^\circ F$ with an accuracy of $\pm 2^\circ C$.
+TT Infrastructure Signals:
+ena   : to enable the design operation
+rst_n : to reset the design
+clk   : to operate the pipelines of the design (up to 50 MHz).
+uio_oe[7:0] : are all configure for Input mode only
+uio_out[7:0]: are not used
 
-### How it Works
-
-![Block diagram of the complete system.](images/tt06-blockdiag.png)
-
-#### Mode of Operation
-
-| MODE | `ui_in[0]` | `ui_in[1]` | `ui_in[2]` | DESCRIPTION |
-|-|-|-|-|-|
-| 1 | `0` | `X` | `0` | External Display in deg-C |
-| 2 | `0` | `X` | `1` | External Display in deg-F |
-| 3 | `1` | `0` | `X` | MSB Onboard Display in deg-C |
-| 4 | `1` | `1` | `X` | LSB Onboard Display in deg-C |
-
-Figure 1 shows the general block diagram of the complete system. The temperature sensor (Texas Instrument LM70) has a dynamic range of 11 bits with a resolution of $\pm 0.25^\circ C$. In this project, we will only use MSB 8 bits with a resolution of $\pm 2^\circ C$. As shown in the timing diagram in the top right corner of the Figure 1, the LM 70 is configured as an SPI *peripheral*, with communication initiated by choosing the chip (CS) low. While CS is low, the data is clocked out of the sensor every *negative edge* of the SPI clock (SCK) and the design reads those data at the following *positive edge*. The design provides eight SCK clock pulses, and then the CS is pulled high to stop the communication.
-
-The serial 8-bit data are captured in a shift register, and the data is *latched* after 8 SCK clock pulses. Before the data are latched, it is multiplied by 2 (left shift by 1). This multiplication captures the fact that the LSB of the data is $2^\circ~C$.
-
-he exact equation to convert temperature in centigrade to Fahrenheit is $T_F = T_C 9/5 + 32$ . To keep the hardware simple, the implemented equation is approximated to $T_F = T_C 2 + 32$. By approximating $9/5$ by $2$, the hardware is simply a left shift by 1. But this approximation results in an error in the output that is a function of temperature: $0.62%$ error at $0^\circ C$ and $9.43%$ error at $100^\circ C$. Based on the input `ui_in[2]`, a MUX selects the temperature in Celsius or Fahrenheit.
-
-The data are then converted to binary coded decimal (BCD) decimal for the two temperature digits to be displayed. The BCD data are then converted to 8-bit 7-segment display format to drive an external display. To save output pins, the 7-segment for all three displays are connected to the ports `uo_out[7:0]` and the displays are *time multiplexed* using the select lines `uio_out[5:3]`. If the displays are switched fast enough (but not too fast), all three displays appear steady without any appearance of flicker.
-
-Since the demo PCB board has one 7-segment display, a provision in the design is made for test purpose where the temperature can be displayed on the onboard display, LSB and MSB one at a time. Kindly refer to the aforementioned 'Mode of Operation' table for further elucidation.
+Outputs:
+Current X position value (4 bits) on uo_out[7:4]
+Current Y position value (4 bits) on uo_out[3:0]
 
 ### How to test
 
-This project is designed with testability in mind so it can be tested with barebone PCB without any external hardware. The table below suggests different test modes for testing the design without any external hardware.
-
-| TestNo. | Mode | uio_in[2] | Ext. H/W | RP2040 | 7-seg Ouput |
-|-|-|-|-|-|-|
-| 1 | 3 | `0` | None | clk~10kHz | `0` |
-| 2 | 4 | `0` | None | clk~10kHz | `0` |
-| 3 | 3 | `SIO` from RP2040 | None | clk~10kHz and SIO | MSB of data sent by RP2040 |
-| 4 | 4 | `SIO` from RP2040 | None | clk~10kHz and SIO | LSB of data sent by RP2040 |
-
-For the first two tests, the `uio_in[2]` port is grounded and a clock frequency of approximately 10 kHz is provided to the design from the RP2040 as shown in Figure 1. And when the inputs (`ui_in[2:0]`) are configure in Mode `3` or `4`, the single 7-segment display should display `0` in both modes.
-
-Test 3 and 4 in the table above will use the RP2040 as a SPI peripheral and micro-python code will be written to emulate the temperature sensor LM70. This will allow us to test the entire design without connecting the external temperature sensor or display.
+Set the X/Y Target values on ui_in[7:4] for X and ui_in3:0] for Y.
+Press the Motion button and release.
+The Controller will advance the X and Y potions towards the target values by one increment for each clock.
+If one dimension's target value is reached before the other, the controller will hold the current position for that one while the other one continues to its destination.
+You may update the Target values at anytime after the motion has started. The controller will move towards the NEW target values onlyif the Motion button is pressed again.
 
 ### External hardware
 
-Needs a LM07 interfaced on the PCB. Detail hardware plan will be updated when we get close to receiveing the PCB.
+Connect input switches to the ui_in[7:0] pins for the target X/Y co-ordiate inputs. Connect a push-button to the uio_in[0] pin for the Motion button. Each input should have a resistor pull-down of about 10 KOhms to GND of the TT06 chip. Each switch or push-button must connect the TT06Chip VDD to the input when closed.
+Connect either low-current (5-10 ma) LEDS or a LED Driver device a Logic Analyzer to the uo_out[7:0] pins for X and Y position values (4-bit binary for each axis) to be displayed.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Ext/Int | 7seg-A | CS (O) |
-| 1 | Int-LSB | 7seg-B | SCK (O) |
-| 2 | Ext-CorF | 7seg-C | SIO (I) |
-| 3 |  | 7seg-D | 7seg-sel0 (O) |
-| 4 |  | 7seg-E | 7seg-sel1 (O) |
-| 5 |  | 7seg-F | 7seg-sel2 (O) |
-| 6 |  | 7seg-G |  |
-| 7 |  | 7seg-DP |  |
+| 0 | y_target0 | y_pos0 | motion_inp |
+| 1 | y_target1 | y_pos1 |  |
+| 2 | y_target2 | y_pos2 |  |
+| 3 | y_target3 | y_pos3 |  |
+| 4 | x_target0 | x_pos0 |  |
+| 5 | x_target1 | x_pos1 |  |
+| 6 | x_target2 | x_pos2 |  |
+| 7 | x_target3 | x_pos3 |  |
 
 ### Chip location
 

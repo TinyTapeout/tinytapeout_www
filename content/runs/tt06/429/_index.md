@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "429 Parallel / SPI modulation tester"
-weight: 89
+title: "429 Signed Unsigned multiplyer"
+weight: 167
 ---
 
-## 429 : Parallel / SPI modulation tester
+## 429 : Signed Unsigned multiplyer
 
-* Author: Chris Merrill
-* Description: PDM/PWM/PFM waveform output based on digital data in
-* [GitHub repository](https://github.com/cmerrill/tt06-cmerrill)
-* [GDS submitted](https://github.com/cmerrill/tt06-cmerrill/actions/runs/8739590879)
+* Author: Ole Henrik Moller
+* Description: Do a 4x4 multiplication 
+* [GitHub repository](https://github.com/jorgenkraghjakobsen/tt06-signed_unsigned_4x4_bit_multiplier)
+* [GDS submitted](https://github.com/jorgenkraghjakobsen/tt06-signed_unsigned_4x4_bit_multiplier/actions/runs/8756986314)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,61 +26,45 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is an attempt to build a DAC with multiple digital modulation schemes on the output.
-It was originally intended to use the analog pins to output the analog waveform as well, but I ran out of time.
+The combinational multiplier takes as input a 4-bit multiplicand and a 4-bit multiplier and produces as output an 8-bit product.
+The numbers may all be either unsigned or signed integers as controlled by the signed_mode input. All 4+4+8+1 signals are active high.
 
-The device will output four types of digital modulation to represent the analog input:
+The multiplier in unsigned mode uses an array of 4 x 4 cells that each consists of a full adder and an AND-gate (NAND-gate for a few cells in signed mode).
+The columns and rows of the array distribute the bits of the multiplicand and multiplier, respectively, to the two inputs of the AND-gate of each cell.
+The partial sums are fed from cell to cell diagonally (from upper left to lower right), while the carries are fed from cell to cell vertically.
+The sum that emanate at the right edge of the array constitute the lower half of the product, while the sum and carries at the lower edge of the array
+proceed to a ripple carry adder (with a carry-in of 0) that produces the upper part of the product.
 
-- PDM on `uo[0]`
-- PFM (fixed width pulse, variable spacing) on `uo[2]`
-- PFM (variable frequency, 50% duty cycle) on `uo[3]`
-- PWM on `uo[4]`
+For signed multiplication the multiplier above is modified by employing the Modified Baugh-Wooley multiplication algoritm, which avoids sign-extension
+of the multiplicand by flipping product bits in MSB positions of both operands (cancel out for cell that combine MSBs of both operands) with NAND-gates,
+and adding ones at the least and most significant bit positions of the final ripple-carry adder.
 
-The PDM signal is based on tracking an error accumulator, and has the fastest response to changing input. The PWM signal has a frequency that is 1/256th of the input clock frequency (~200kHz at 50MHz input).
-
-The two PFM modes are less useful for actual modulation, but they can effectively do a frequency sweep of the filter on the output.
+For a more detailed explanation of the Modified Baugh-Wooley algoritm see the book
+Computer Arithmetic, Algoritms and Hardware Designs by Behrooz Parhami, Oxford University Press, 2000, or the original article by
+C. R. Baugh and B. A. Wooley, A Two's Complement Parallel Array Multiplication Algoritm, IEEE Trans. Computers, Vol 22, pp. 1045-1047, December 1973.
 
 ### How to test
 
-After connecting the external RC filter, you need to set the clock rate and program the DAC.
-
-The modulation output rate can be divided down from the main clock input by up to 15. The `uio[0:3]` pins set the clock divisor.
-
-There are two ways to program the DAC, and they can be selected between using the `uio[7]` pin.
-
-**`uio[7]` = 0:** Parallel data input
-
-- The 8-bit DAC level is input via `ui[0:7]`
-- The data is latched onto the output on the rising edge of `uio[4]`
-
-**`uio[7]` = 1:** SPI data input
-
-- There is a SPI but with the pinout
-  - `uio[5]` -> SCLK
-  - `uio[6]` -> SDI
-  - `uio[4]` -> CS_L
-- The 8-bit DAC level is input as 8 bits of data sent over the SPI bus when CS_L is low.
-- The SCLK signal should be slower than the main CLK signal to the IC.
-- Data is latched onto the output on the rising edge of CS_L
-- This path is less validated than the parallel path.
+The multiplier may be tested using a TinyTapeout demoboard with various combinations of multiplicand and multipliers using the input switches and
+checking the expected product with the 7-segment LED display (with decimal point).
 
 ### External hardware
 
-The modulation outputs are all digital pulses of some sort. In order to get meaningful analog levels, you'll need to add an RC filter on the output pin that you are using. The cuttoff will depend on what your chosen frequency is and the type of modulation.
+None beyound the TinyTapeout demoboard.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | DAC Parallel Input, bit 0 | PDM Waveform Output | CLK_DIV[0] |
-| 1 | DAC Parallel Input, bit 1 |  | CLK_DIV[1] |
-| 2 | DAC Parallel Input, bit 2 | PFM Output, Single cycle pulse | CLK_DIV[2] |
-| 3 | DAC Parallel Input, bit 3 | PFM Output, 50% duty cycle | CLK_DIV[3] |
-| 4 | DAC Parallel Input, bit 4 | PWM Waveformn Output | SPI CS_L / Parallel Latch |
-| 5 | DAC Parallel Input, bit 5 |  | SPI SCLK |
-| 6 | DAC Parallel Input, bit 6 |  | SPI SDI |
-| 7 | DAC Parallel Input, bit 7 |  | Parallel/SPI Select (0 => Parallel, 1 => SPI) |
+| 0 | multiplier[0] | product[0] | signed_mode |
+| 1 | multiplier[1] | product[1] |  |
+| 2 | multiplier[2] | product[2] |  |
+| 3 | multiplier[3] | product[3] |  |
+| 4 | multiplicand[0] | product[4] |  |
+| 5 | multiplicand[1] | product[5] |  |
+| 6 | multiplicand[2] | product[6] |  |
+| 7 | multiplicand[3] | product[7] |  |
 
 ### Chip location
 

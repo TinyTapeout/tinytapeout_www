@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "267 VCII"
-weight: 29
+title: "267 A 555-Timer Clone for Tiny Tapeout 6"
+weight: 150
 ---
 
-## 267 : VCII
+## 267 : A 555-Timer Clone for Tiny Tapeout 6
 
-* Author: Alfiero Leoni
-* Description: Simple Voltage Conveyor
-* [GitHub repository](https://github.com/alfiero88/tt06-VCII)
-* [GDS submitted](https://github.com/alfiero88/tt06-VCII/actions/runs/8752262339)
+* Author: Vincent Fusco
+* Description: Blinks an LED the hard way
+* [GitHub repository](https://github.com/vincentfusco/tt06_555)
+* [GDS submitted](https://github.com/vincentfusco/tt06_555/actions/runs/8500042595)
 * Analog project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,22 +26,33 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The VCII (second generation Voltage Conveyor) is an analog block that has a low impedance current input pin (y), a high-impedance current output pin (x) and a low impedance output voltage pin (z) plus a reference voltage input pin (Ref) to provide the virtual ground reference for the circuit, behing used in single supply (for this design, ref is 0.9 V to be provided with a power supply). The VCII presents to main parameters: alpha and beta. Beta is the current gain, so placing a resisntance between x and ref and injecting a current in y, we should have that I(x) = beta*I(Y). Aplha is the voltage gain, i.e. the voltage produced at the node x due to the current flowing will be amplified in z. The relationship is V(z)=alpha*V(x). In this design, aplha and beta should be equal to 1, more or less.
+It duplicates the functionality of a 555 timer. Try configuring it in the "astable" configuration using external resistors and capacitors.
 
 ### How to test
 
-The VCII could be tested in TIA (transimpedance amplifier) configuration. A current should be injected into the y pin (if a current source is not available, a big resistor can be used in serias to a voltage supply) of few uA. Then an external resistor should be connected between x and Vref. The resistor will set the TIA gain e.g. a resistor of 10K with an input sine current of 2uA pp should produce an output sine voltage of 20 mVpp to the z pin.
+Find a 555 timer datasheet and attempt some of the suggested circuits.
+
+Connect pins to a breadboard with jumper wire.
+
+Construct circuit shown in Figure 7-5 at: https://www.ti.com/lit/ds/symlink/lmc555.pdf?ts=1711738020668.
+
+Test 2:
+
+Duplicate circuit in Figure 6-2 at: https://www.ti.com/lit/ds/symlink/lmc555.pdf?ts=1711738020668. Compare resulting maximum frequency. The CMOS-based TI 555-Timer has a maximum frequency of 3.0MHz. Compare.
 
 ### External hardware
 
-The transipedance gain resistor, oscilloscope, power supplies
+1. Wires for breadboard.
+2. Through-hole resistors and capacitors of various values, LEDs, etc.
+3. Breadboard.
+4. Oscilloscope (for maximum frequency test)
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
+| 0 | DI_RESET_N | DO_OUT |  |
 | 1 |  |  |  |
 | 2 |  |  |  |
 | 3 |  |  |  |

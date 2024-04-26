@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "289 X/Y Controller"
-weight: 127
+title: "289 Triple Watchdog"
+weight: 91
 ---
 
-## 289 : X/Y Controller
+## 289 : Triple Watchdog
 
-* Author: Charles Pope
-* Description: Two-Axis position Controller (4 bits of range per axis)
-* [GitHub repository](https://github.com/CKPope/tt06-verilog-template)
-* [GDS submitted](https://github.com/CKPope/tt06-verilog-template/actions/runs/8692089022)
+* Author: Ignacio Chechile
+* Description: A redundant watchdog to be part of a larger fault-tolerant supervisor/failover manager later on
+* [GitHub repository](https://github.com/ignaciosim/tt06-triple-watchdog)
+* [GDS submitted](https://github.com/ignaciosim/tt06-triple-watchdog/actions/runs/8679204952)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,52 +26,43 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This design is a simple two-dimensional axis controller. It uses 4-bit wide counter, 4-bit Magnitude Comparator and a 4-bit wide target co-ordinate register for each dimension. A simple State Machine is used to acquire the target value for each dimension and then control the movement to the target co-ordinate value for each dimension in parallel operation. Comparisons of the current position and the target value for each dimension along the way and when the Traget is reached, the controller sits in a "AT-REST" state and waits for another motion directive. The Target values can change at any time after the Motion begins. New Target values will not be captured until the NEXT MOTION request. The controller can be RESET at any time with the rst_n input.
-![image](https://github.com/CKPope/tt06-verilog-template/assets/166442118/9af8d539-68c6-49d0-91ef-edca4c9abb46)
-![image](https://github.com/CKPope/tt06-verilog-template/assets/166442118/8d319750-3319-4897-a161-a58fdd493411)
+The circuit is composed of three watchdog modules working in lockstep. They share a common clock, a common reset line (active low) and a common 8-bit input word. An external system must write a value in ui_in in order to kick the watchdog, and the value must be different than the previous one each time. The timeout is fixed and set in 1ms. Once the timeout happens, the WD module goes to IDLE mode until a reset is issued and each internal watchdog will set an output pin high.
 
-Inputs:
-Target X co-ordinate value (4 bits) on ui_in[7:4]
-Target Y co-ordinate value (4 bits) on ui_in[3:0]
-Motion Input (1 bit) on uio_in[0]; This signal is input after the target values are set. The movement begins after the signal is deactivated.
+#### Pinout
 
-TT Infrastructure Signals:
-ena   : to enable the design operation
-rst_n : to reset the design
-clk   : to operate the pipelines of the design (up to 50 MHz).
-uio_oe[7:0] : are all configure for Input mode only
-uio_out[7:0]: are not used
-
-Outputs:
-Current X position value (4 bits) on uo_out[7:4]
-Current Y position value (4 bits) on uo_out[3:0]
+| Pin               | Direction | Comment                                            |
+|-------------------|-----------|----------------------------------------------------|
+| clk               | input     |                                                    |
+| rst_n             | reset     | Active low                                         |
+| ui_in[8]          | input     | System must write a new value to kick the watchdog |
+| watchdog_expired1 | output    | 1: wd has expired; 0: wd has not expired           |
+| watchdog_expired2 | output    | 1: wd has expired; 0: wd has not expired           |
+| watchdog_expired3 | output    | 1: wd has expired; 0: wd has not expired           |
 
 ### How to test
 
-Set the X/Y Target values on ui_in[7:4] for X and ui_in3:0] for Y.
-Press the Motion button and release.
-The Controller will advance the X and Y potions towards the target values by one increment for each clock.
-If one dimension's target value is reached before the other, the controller will hold the current position for that one while the other one continues to its destination.
-You may update the Target values at anytime after the motion has started. The controller will move towards the NEW target values onlyif the Motion button is pressed again.
+- Provide a 10ns period clock in its clk input
+- Set rst_n to low
+- Write a value in ui_in before 1ms after reset is released
+- Write a different value in ui_in to prevent the watchdog expiring
 
 ### External hardware
 
-Connect input switches to the ui_in[7:0] pins for the target X/Y co-ordiate inputs. Connect a push-button to the uio_in[0] pin for the Motion button. Each input should have a resistor pull-down of about 10 KOhms to GND of the TT06 chip. Each switch or push-button must connect the TT06Chip VDD to the input when closed.
-Connect either low-current (5-10 ma) LEDS or a LED Driver device a Logic Analyzer to the uo_out[7:0] pins for X and Y position values (4-bit binary for each axis) to be displayed.
+None
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | y_target0 | y_pos0 | motion_inp |
-| 1 | y_target1 | y_pos1 |  |
-| 2 | y_target2 | y_pos2 |  |
-| 3 | y_target3 | y_pos3 |  |
-| 4 | x_target0 | x_pos0 |  |
-| 5 | x_target1 | x_pos1 |  |
-| 6 | x_target2 | x_pos2 |  |
-| 7 | x_target3 | x_pos3 |  |
+| 0 | ui_in[0] | watchdog_expired1 |  |
+| 1 | ui_in[1] | watchdog_expired2 |  |
+| 2 | ui_in[2] | watchdog_expired3 |  |
+| 3 | ui_in[3] |  |  |
+| 4 | ui_in[4] |  |  |
+| 5 | ui_in[5] |  |  |
+| 6 | ui_in[6] |  |  |
+| 7 | ui_in[7] |  |  |
 
 ### Chip location
 

@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "74 Moving average filter"
-weight: 176
+title: "74 Gray scale and Sobel filter"
+weight: 159
 ---
 
-## 74 : Moving average filter
+## 74 : Gray scale and Sobel filter
 
-* Author: Alexander Hofer
-* Description: 10-bit moving average filter designed to smooth input data streams.
-* [GitHub repository](https://github.com/AlexHoferW23/jku-tt06-averagefilter)
-* [GDS submitted](https://github.com/AlexHoferW23/jku-tt06-averagefilter/actions/runs/8627627258)
+* Author: Diana Natali Maldonado Ramirez
+* Description: It takes an image, converts it to grayscale, and then applies an edge detection algorithm.
+* [GitHub repository](https://github.com/DianaNatali/tt06_grayscale_sobel)
+* [GDS submitted](https://github.com/DianaNatali/tt06_grayscale_sobel/actions/runs/8758823349)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,34 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The design implements a moving average filter using a series of registers and a finite state machine (FSM).
-The filter calculates the average of a set of recent values in a data stream, determined by the FILTER_POWER parameter.
-This smooths out short-term fluctuations and highlights longer-term trends or cycles.
-The master module handles input and output processing, including bidirectional IO handling and filter selection based on input control signals.
+The project takes an image, converts it to grayscale, and then applies an edge detection algorithm.
 
 ### How to test
 
-To test the moving average filter, provide a series of digital input values to the 'ui_in' port and observe the smoothed output on 'uo_out'.
-The 'uio_in' can be used to control the filter's width and operational parameters.
-Test with varying input patterns and filter widths to evaluate the filter's response.
+Using cocotb
 
 ### External hardware
 
-There is no external Hardware
+Camera, screen
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Input for filter | Output for filter | Strobe input |
-| 1 | Input for filter | Output for filter | Strobe output |
-| 2 | Input for filter | Output for filter | Additional input bit |
-| 3 | Input for filter | Output for filter | Additional input bit |
-| 4 | Input for filter | Output for filter | Additional output bit |
-| 5 | Input for filter | Output for filter | Additional output bit |
-| 6 | Input for filter | Output for filter | Filter width input |
-| 7 | Input for filter | Output for filter | Filter width input |
+| 0 | spi_sck_i | spi_sdo_o | LFSR_enable_i |
+| 1 | spi_cs_i | lfsr_done | seed_stop_i |
+| 2 | spi_sdi_i | ena | lfsr_en_i |
+| 3 | select_process_i[0] | output_px[0] |  |
+| 4 | select_process_i[1] | output_px[1] |  |
+| 5 | start_sobel_i | output_px[2] |  |
+| 6 |  | output_px[3] |  |
+| 7 |  | output_px[4] |  |
 
 ### Chip location
 

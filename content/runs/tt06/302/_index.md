@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "302 Simple NCO"
-weight: 224
+title: "302 Hack a day Tiny Tapeout project"
+weight: 88
 ---
 
-## 302 : Simple NCO
+## 302 : Hack a day Tiny Tapeout project
 
-* Author: s1Pu11i
-* Description: Simple NCO which can also output sine, square or sawtooth.
-* [GitHub repository](https://github.com/s1Pu11i/tt06_simple_nco)
-* [GDS submitted](https://github.com/s1Pu11i/tt06_simple_nco/actions/runs/8750375569)
-* HDL project
+* Author: Manuel
+* Description: Circuit designed during the Hack a day workshop
+* [GitHub repository](https://github.com/mmartinortiz/tinytapeout-workshop)
+* [GDS submitted](https://github.com/mmartinortiz/tinytapeout-workshop/actions/runs/8673984119)
+* [Wokwi](https://wokwi.com/projects/395055351144787969) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,33 +26,25 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Simple NCO to generate a sine, square or sawtooth output.
-Sine wave is generated from a table and square and sawtooth from the phase accumulator.
-Note: Output is unsigned 8bit.
+TODO
 
 ### How to test
 
-Modeselection is done with the uio[1:0]:
-0: NONE, output is 0
-1: SINE
-2: SQUARE
-3: SAWTOOTH
-Frequency word is 16bit and is given as split into upper and lower part. Lower part is given with by
-uio[2]='1' and ui[7:0]=word and the upper part by uio[3]='1' and ui[7:0]=word.
+TODO
 
 ### External hardware
 
-None.
+TODO
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  | ModeSelectionBit0 |
-| 1 |  |  | ModeSelectionBit1 |
-| 2 |  |  | FrequencyWordLower8BitUpdateEnable |
-| 3 |  |  | FrequencyWordUpper8BitUpdateEnable |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
 | 4 |  |  |  |
 | 5 |  |  |  |
 | 6 |  |  |  |

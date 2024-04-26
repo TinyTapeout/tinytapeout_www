@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "619 SAP-1 Computer"
-weight: 90
+title: "619 Decodificador binario a display 7 segmentos hexadecimal"
+weight: 87
 ---
 
-## 619 : SAP-1 Computer
+## 619 : Decodificador binario a display 7 segmentos hexadecimal
 
-* Author: Jonathan Zhou, Rana Singh, Anika Agarwal
-* Description: Simple as Possible computer with multiplier and divider into ASIC
-* [GitHub repository](https://github.com/kevinwguan/tt06-SAP-1_Computer-)
-* [GDS submitted](https://github.com/kevinwguan/tt06-SAP-1_Computer-/actions/runs/8747673059)
+* Author: Victor Manuel Cante Saloma
+* Description: Muestra un número binario de 4 bits en un diplay de 7 segmentos (ánodo común) en hexadecimal
+* [GitHub repository](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal)
+* [GDS submitted](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/actions/runs/8671873725)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,63 +26,85 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-```
-  (Forked from Brandon Cruz's SAP-1 Design)
+The operation is quite simple; when entering a 4-bit binary number, this number is shown at the output on a 7-segment common anode display in hexadecimal. The input "h" is a 4-bit vector, and the output "S" is a 7-bit vector. For the output "S", the most significant bit corresponds to segment "a", and so on, until the least significant bit, which corresponds to segment "g", as shown in figure 1. Since the display is anode common, to indicate that a segment is on, it is indicated with a "0".
 
-  Originally, Malvino and Brown presented the SAP-1 architecture in a book called Digital Computer Electronics.
-  The design gained massive popularity when it was build as a bread board computer by Ben Eater on a series of YouTube videos.
-  The architecture contains various modules, including
-  - Clock
-  - Program Counter
-  - Register A
-  - Register B
-  - Adder
-  - Multiplier
-  - Divider
-  - Memory
-  - Instruction Register
-  - Bus
-  - Controller
-  This design doesn't have inputs, it is dependent only on the clock that coordinates sequence of the computer's operation.
-  Its operation consists on the communication that that bus provides between modules; the signal load dumps information into a module
-  and the enable signal allows the bus to receive a signal. The bus is 8-bit width since it is an 8 bit computer, and the registers
-  are also 8-bit registers.
-  The computer can only perform addition, whether it is positive numbers or negative numbers (substraction).
-  The signals information is stored within the memory module. There bus operations are coordinated with a series of multiplexers and
-  the instruction execution set gives the SAP-1 a total of six stages from 0 to 5, repeating all over again.
-  The more important module      is the controller. It controlls the assertion execution according to the stimuli from the stages.
-  The stages 3 to 5 five depend on the instructions of the operation codes.
-```
+![display](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/2a957009-3e5c-467f-bb9b-59fced5c5660)
+
+In the simulation shown in Figure 2, we can see that given a binary number that we introduce at the input, an output combination corresponds to the value to be shown on the 7-segment display in hexadecimal form, that is, given The binary number at the input corresponds to a 7-bit binary number, which is actually a pattern to light each segment of the 7-segment display, which obviously corresponds to the input number to be displayed.
+
+![Simu](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/149fd13c-fc7e-4d7d-ad5e-c58ad6342ed7)
+
+According to Figure 3, the connections of the proposed circuit to those of the project in general are detailed below.
+
+1. For the input, which is a 4-bit vector "h", the overall project pins connected to the proposed circuit are as follows:
+
+in[0]: "h[0]" //Bit 0
+
+in[1]: "h[1]" //Bit 1
+
+in[2]: "h[2]" //Bit 2
+
+in[3]: "h[3]" //Bit 3
+
+in[4]: "no use"
+
+in[5]: "no use"
+
+in[6]: "no use"
+
+in[7]: "no use"
+
+2. For the output, which is a 7-bit vector "S", the overall project pins connected to the proposed circuit are as follows:
+
+out[0]: "S[0]" //Segmento g
+
+out[1]: "S[1]" //Segmento f
+
+out[2]: "S[2]" //Segmento e
+
+out[3]: "S[3]" //Segmento d
+
+out[4]: "S[4]" //Segmento c
+
+out[5]: "S[5]" //Segmento b
+
+out[6]: "S[6]" //Segmento a
+
+out[7]: "no use"
+
+The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
+
+![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/99a0adce-a2cd-41c7-8f24-7b161d8f71af)
 
 ### How to test
 
-```
-  Design Output Reading Section
-  The design is engineered to read the output signal generated from the bus, which contains the information
-  of the add and subtract operations executed by the design. Currently, the only method to read the signals
-  is through an oscilloscope. However, a significant enhancement would be the implementation of a state machine
-  controlling a 3 7-segment display to show the numbers on the 8-bit bus (up to 255).
-```
+To check the operation, a 4-position dip switch is connected to the input, connected to a suitable power supply for the system, with its respective precautions (resistances), according to the number that you want to show on the display, for which appropriately connect each switch to the corresponding bit it represents. For the output, it is convenient to connect a 7-segment display (common anode) to corroborate its operation, according to the pins that correspond to each segment, mentioned in the previous section.
 
 ### External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A 4-position DIP Switch for the input, which will serve to form the 4-bit binary number, along with its proper power supply, and a 7-segment display (common anode), to visualize its operation, connected with due precautions to avoid damage. Added to all this is a breadboard to place these components.
 
-Oscilloscope
+![SWI-18-3](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/8f7e9bb3-00ba-4079-8a8b-cec0ac8dd407)
+
+![AR1112-KPS1203D-Fuente-de-Alimentacion-120V-3A-V8](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/fbd71bf7-a1f9-430b-b7fa-0b36cef450b8)
+
+![Displaysa](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/d4a507b2-7fe7-4070-b70c-3ea46773daba)
+
+![image](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/bbcf537b-4248-403d-90aa-4d02150d95c4)
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | bus[0] |  |
-| 1 |  | bus[1] |  |
-| 2 |  | bus[2] |  |
-| 3 |  | bus[3] |  |
-| 4 |  | bus[4] |  |
-| 5 |  | bus[5] |  |
-| 6 |  | bus[6] |  |
-| 7 |  | bus[7] |  |
+| 0 | Bit 0 | Segmento g | no use |
+| 1 | Bit 1 | Segmento f | no use |
+| 2 | Bit 2 | Segmento e | no use |
+| 3 | Bit 3 | Segmento d | no use |
+| 4 | no use | Segmento c | no use |
+| 5 | no use | Segmento b | no use |
+| 6 | no use | Segmento a | no use |
+| 7 | no use | no use | no use |
 
 ### Chip location
 

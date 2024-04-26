@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "76 SPI to RGBLED Decoder/Driver"
-weight: 222
+title: "76 RGB Mixer demo"
+weight: 102
 ---
 
-## 76 : SPI to RGBLED Decoder/Driver
+## 76 : RGB Mixer demo
 
-* Author: Andreas Scharnreitner
-* Description: Control multiple RGB LEDs (WS2812B) via SPI
-* [GitHub repository](https://github.com/schandreas/jku-tt06-spi-led)
-* [GDS submitted](https://github.com/schandreas/jku-tt06-spi-led/actions/runs/8642842784)
+* Author: Matt Venn
+* Description: Zero to ASIC demo project
+* [GitHub repository](https://github.com/mattvenn/tt06-rgb-mixer)
+* [GDS submitted](https://github.com/mattvenn/tt06-rgb-mixer/actions/runs/8753101289)
 * HDL project
 * [Extra docs](None)
-* Clock: 25000000 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,38 +26,31 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-When nCS is pulled low, each clock pulse on SCLK shifts a bit from MOSI into an internal register.
-The internal register length is 240 bits long (10 LEDs with 3 colors and 8 bit per color).
-The contents of this register are then used to generate output pulses.
-The output pulses encode bits of the color data. They are 1.25us in length. A pulse representing a 1
-has a high-time of 800ns and an low-time of 450ns. A pulse representing a 0 has a high-time of 400ns
-and a low-time of 850ns.
-Each LED consumes 24 bits. Subsequent bits are transmitted to LEDs further on the chain.
-When a full transmission (Every LED has received its 24 bits of color data) has occured, a reset occurs
-(output goes low for >= 50 us).
+Debounce the inputs, drive an encoder module, and output a PWM signal for each encoder.
 
 ### How to test
 
-Connect the LED_DATA pin to the DIN pin of a string of WS2812B LEDs. Use a microcontroller to shift in
-color data via the SPI Interface.
+Twist each encoder and the LEDs attached to the outputs should change in brightness.
+
+By setting the debug port to 0, 1 or 2, the internal value of each encoder is output on the bidirectional outputs.
 
 ### External hardware
 
-Any SPI Master (RPi, Arduino, MCU, etc.), and a String of 10 WS2812B LEDs.
+Use 3 digital encoders attached to the first 6 inputs.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | MOSI | LED_DATA |  |
-| 1 | SCLK |  |  |
-| 2 | nCS |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | enc0 a | pwm0 | encoder bit 0 |
+| 1 | enc0 b | pwm1 | encoder bit 1 |
+| 2 | enc1 a | pwm2 | encoder bit 2 |
+| 3 | enc1 b |  | encoder bit 3 |
+| 4 | enc2 a |  | encoder bit 4 |
+| 5 | enc2 b |  | encoder bit 5 |
+| 6 | debug bit 0 |  | encoder bit 6 |
+| 7 | debug bit 1 |  | encoder bit 7 |
 
 ### Chip location
 

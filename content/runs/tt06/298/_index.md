@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "298 Display test 1"
-weight: 44
+title: "298 Dice"
+weight: 105
 ---
 
-## 298 : Display test 1
+## 298 : Dice
 
 * Author: Mastro Gippo
-* Description: just a test
-* [GitHub repository](https://github.com/mastrogippo/tt06-verilog_test)
-* [GDS submitted](https://github.com/mastrogippo/tt06-verilog_test/actions/runs/8675730468)
-* HDL project
+* Description: Roll a dice
+* [GitHub repository](https://github.com/mastrogippo/tt06-mastrogippo)
+* [GDS submitted](https://github.com/mastrogippo/tt06-mastrogippo/actions/runs/8679404401)
+* [Wokwi](https://wokwi.com/projects/395054823837887489) project
 * [Extra docs](None)
 * Clock: 10000 Hz
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-I just copied [Uri's project](https://wokwi.com/projects/347069718502310484) and messed around with its verilog
+Pull IN0 high, dice will roll. Release and it will stop.
 
 ### How to test
 
-Connect 0-7 outputd to LCD pins: D4 D5 D6 D7 E
+Please don't
 
 ### External hardware
 
-Character LCD
+7seg display mapped a-g to OUT0-6, a button to VCC on IN0
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | s1 | D4 |  |
-| 1 | s2 | D5 |  |
-| 2 | e1 | D6 |  |
-| 3 | e2 | D7 |  |
-| 4 | e3 | RS |  |
-| 5 | e4 | E |  |
-| 6 | e5 |  |  |
-| 7 | e6 |  |  |
+| 0 | btn_r | da |  |
+| 1 |  | db |  |
+| 2 |  | dc |  |
+| 3 |  | dd |  |
+| 4 |  | de |  |
+| 5 |  | df |  |
+| 6 |  | dg |  |
+| 7 |  |  |  |
 
 ### Chip location
 

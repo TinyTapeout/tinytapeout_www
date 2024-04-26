@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "493 SynchMux"
-weight: 137
+title: "493 It's Alive"
+weight: 63
 ---
 
-## 493 : SynchMux
+## 493 : It's Alive
 
-* Author: bc2kaneda
-* Description: A 2 bit synchronous mux with output enable
-* [GitHub repository](https://github.com/bc2berlin/tt06)
-* [GDS submitted](https://github.com/bc2berlin/tt06/actions/runs/8693045232)
-* [Wokwi](https://wokwi.com/projects/395054508867644417) project
+* Author: Jonathan Anderson, Qubitbytes Ltd
+* Description: plays a cool tune
+* [GitHub repository](https://github.com/Qubitbytesltd/tt06-its-alive)
+* [GDS submitted](https://github.com/Qubitbytesltd/tt06-its-alive/actions/runs/8723962373)
+* HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 100000 Hz
 
 <!---
 
@@ -26,29 +26,42 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-If OE == 0 then Y[0:1], YP, Z[0:1] and ZP are in a high-z state.
+Why is it called It's Alive?  
+Because it was made within the last few days of the shuttle and only learnt Verilog within 24 hours.
 
-Output Y[0:1] = (SEL == 0) ? A[0:1] : B[0:1]
-Output Z[0:1] = (SEL == 0) ? ~A[0:1] : ~B[0:1]
+If it works, it should play a cool tune over a speaker or piezo buzzer
 
-Output YP and ZP are the parity of Y and Z respectively.
+### How to test
 
-POPCNT_Y[0:1] and POPCNT_Z[0:1] are the population count of {Y[0:1],YP} and {Z[0:1],ZP} respectively.
-These pins are never in high-z state.
+The clock must be set to 100khz or else the speed and pitch of the song will be affected.
+
+The reset button will restart the tune.
+
+The LED segment number will indicate the current song part, which starts at 4, finishes at 6, and loops around.  
+The LED segment dot, indicates song/processor activity.
+
+Connect a speaker or piezo buzzer to `uio[0]` bi-directional pin (output)  
+`Clock Speed: 100Khz`  
+`Reset Button: restarts tune`  
+`LED Segment: song/processor status`
+
+### External hardware
+
+speaker or piezo buzzer
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | CLK | POPCNT_Y0 | Y1 |
-| 1 | RST | POPCNT_Y1 | Y2 |
-| 2 | A1 | POPCNT_Z0 | YP |
-| 3 | A2 | POPCNT_Z1 | Z1 |
-| 4 | B1 |  | Z2 |
-| 5 | B2 |  | ZP |
-| 6 | SEL |  |  |
-| 7 | OE |  |  |
+| 0 |  | led segment a | speaker |
+| 1 |  | led segment b |  |
+| 2 |  | led segment c |  |
+| 3 |  | led segment d |  |
+| 4 |  | led segment e |  |
+| 5 |  | led segment f |  |
+| 6 |  | led segment g |  |
+| 7 |  | led segment dot |  |
 
 ### Chip location
 

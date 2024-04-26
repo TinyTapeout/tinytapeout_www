@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "681 TWI Monitor"
-weight: 53
+title: "681 EVEN AND ODD COUNTERS"
+weight: 86
 ---
 
-## 681 : TWI Monitor
+## 681 : EVEN AND ODD COUNTERS
 
-* Author: Nicklaus Thompson
-* Description: A Two Wire Interface (I2C) bus monitor
-* [GitHub repository](https://github.com/FangameEmpire/tt06-twi-monitor)
-* [GDS submitted](https://github.com/FangameEmpire/tt06-twi-monitor/actions/runs/8757529618)
-* HDL project
+* Author: Dr.LIPIKA GUPTA, DEVRAJ, JUGRAJ
+* Description: WE CAN CHOOSE TO COUNT EVEN AND ODD BCD
+* [GitHub repository](https://github.com/DevrajC03/Jugraj-Devraj-Counters)
+* [GDS submitted](https://github.com/DevrajC03/Jugraj-Devraj-Counters/actions/runs/8756755003)
+* [Wokwi](https://wokwi.com/projects/395599496098067457) project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 10000 Hz
 
 <!---
 
@@ -26,28 +26,32 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project is a Two-Wire Interface (I2C) monitor. The TWI side is essentially a shift register and does not respond like a slave or have an address. The system runs at 50 MHz and uses a UART baud rate of 115200. The system cannot currently capture repeated TWI frames, but captured single frames during  testing on an FPGA.
+Welcome, This is basically a even and odd BCD counter:-
+*If input 1 is high, the even counter is on,
+*If input 2 is high, the odd counter is on.
 
 ### How to test
 
-You can use an Arduino and any TWI-compatible module to generate TWI frames to view. The frames will be converted to three bytes, those being {addr, R/W}, {data}, and {{4{Addr Ack}}, {4{Data Ack}}}. I use Coolterm to view the hex output, you can download it at https://freeware.the-meiers.org/.
+We can test it by making input 1 high and connecting 7-segment display to output,
+if the even count of BCD is shown, the logic circuit is cleadred the test .
 
 ### External hardware
 
-This project needs an external UART to USB adapter if you want to connect it to your PC.
+* Push button
+* 7 - segment display
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | SDA_in | TX_out |  |
-| 1 | SCL_in |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
+| 0 | IN1 | OUT0 |  |
+| 1 | IN2 | OUT1 |  |
+| 2 |  | OUT2 |  |
+| 3 |  | OUT3 |  |
+| 4 |  | OUT4 |  |
+| 5 |  | OUT5 |  |
+| 6 |  | OUT6 |  |
 | 7 |  |  |  |
 
 ### Chip location

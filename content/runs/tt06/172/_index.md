@@ -1,52 +1,55 @@
 ---
 hidden: true
-title: "172 multimac"
-weight: 182
+title: "172 Die Roller"
+weight: 233
 ---
 
-## 172 : multimac
+## 172 : Die Roller
 
-* Author: Jonny Edwards
-* Description: a multi use multi-hit dot product accelerator
-* [GitHub repository](https://github.com/Fountaincoder/multimac)
-* [GDS submitted](https://github.com/Fountaincoder/multimac/actions/runs/8630222082)
+* Author: Nathan Gross
+* Description: Generates a random number when rolled with input 1-99
+* [GitHub repository](https://github.com/nathangross1/tt06-verilog-template)
+* [GDS submitted](https://github.com/nathangross1/tt06-verilog-template/actions/runs/8207055176)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
 
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
+
 ### How it works
 
-This is a simple circuit to calculate:
-
-- a vector dot product ie the sum of `w_i*x_i` where `i` can be anything up to about 40 (`insn=2`)
-- Minimum of a list of data (`insn=0`)
-- Maximum of a list of data (`insn=1`)
-
-It has been designed as a coprocessor. The data is first added by setting `load=1` and then supplying the data
-for the dot product the `index` and `data`. Each set is a `w`,`x` pair. Its a 4 bit system and runs when `run=1` and needs at least 16 clock cycles produce the answer. The answer is 12 bit value.
+Takes binary input die size from user and generates a random number from 1-die_size when input to roll is received. Uses clock counter for random number.
 
 ### How to test
 
-I've tested this using a verilator simulation included below - I like the `cpp` workbench for this. The testing has been mainly for numerical stability.
+Select die size with inputs 0-6, see that die size is displaying. roll die with input 7 repeatedly, noting random numbers from 1 to die size.
 
 ### External hardware
 
-I intend for this to be driven by the RP2040 and to work as a "coprocessor" for vector calculations
-Other.
+PMOD output splitter
+PMOD dual 7-segment display
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | index[0] | out[0] | out[8] |
-| 1 | index[1] | out[1] | out[9] |
-| 2 | index[2] | out[2] | out[10] |
-| 3 | index[3] | out[3] | out[11] |
-| 4 | data[0] | out[4] | instruction [0] |
-| 5 | data[1] | out[5] | instruction [1] |
-| 6 | data[2] | out[6] | load |
-| 7 | data[3] | out[7] | run |
+| 0 | Die Size bit 0 | Dual 7 segment data 0 |  |
+| 1 | Die Size bit 1 | Dual 7 segment data 1 |  |
+| 2 | Die Size bit 2 | Dual 7 segment data 2 |  |
+| 3 | Die Size bit 3 | Dual 7 segment data 3 |  |
+| 4 | Die Size bit 4 | Dual 7 segment data 4 |  |
+| 5 | Die Size bit 5 | Dual 7 segment data 5 |  |
+| 6 | Die Size bit 6 | Dual 7 segment data 6 |  |
+| 7 | Die Roll | Source selection |  |
 
 ### Chip location
 

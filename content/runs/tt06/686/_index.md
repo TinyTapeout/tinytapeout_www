@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "686 UACJ-MIE-Booth 4"
-weight: 198
+title: "686 serie_serie_register"
+weight: 188
 ---
 
-## 686 : UACJ-MIE-Booth 4
+## 686 : serie_serie_register
 
-* Author: UACJ Group A
-* Description: Booth 4 multiplier
-* [GitHub repository](https://github.com/HHRB98/UACJ-MIE-booth4)
-* [GDS submitted](https://github.com/HHRB98/UACJ-MIE-booth4/actions/runs/8746999207)
+* Author: C.A. Velázquez-Morales
+* Description: Registro Serie-Serie, con 4 registros y corrimiento hacia la izquierda o derecha
+* [GitHub repository](https://github.com/CarlosVel17/Serie_Serie)
+* [GDS submitted](https://github.com/CarlosVel17/Serie_Serie/actions/runs/8671254718)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,29 +26,45 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The Booth-4 algorithm is a multiplication algorithm that uses a combination of shifting and addition/subtraction operations to perform signed multiplication of two numbers. It is specifically designed to optimize the multiplication process by reducing the number of required partial products and improving efficiency.
+Se describe un registro Serie-Serie, con una terminal de entrada (data_in), terminales de control de reloj, reset negado y habilitación (clk, rst, ena). Se asigna una terminal para cambiar el tipo de corrimiento del registro (leri): ALTO para la izquierda y BAJO para la derecha. Se designa una salida del dato en el registro (data_out).
 
 ### How to test
 
-using test bench, applying phhysicial outputs and see output
+Se coloca Rst en un valor BAJO, y el Ena en un valor ALTO. El flanco del reloj clk irá actualizando el valor de 4 registros internos que realizarán el corrimiento (data_reg) con el valor del dato de entrada (data_in). Del mismo modo, la entrada de dirección (leri) asignará la dirección del corrimiento y el bit del registro interno que se mostrará en la salida (data_out).
+
+Banco de Prueba para Simulación en Active-HDL:
+
+![Captura de pantalla 2024-04-02 162549](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/02842b52-3a53-45a8-9a2f-76a47663987e)
+
+Imagen Simulación:
+
+![Captura de pantalla 2024-04-02 162240](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/95d3d1ef-d223-49ae-82ec-badb4adecea2)
+
+El diagrama que se presenta a continuación ilustra el RTL del circuito generado por Quartus II, se observa las entradas rst, clk y ena como las entradas básicas del circuito. Además se observa la entrada data_in como la entrada del dato, así como la entrada leri, que indica si el corrimiento del registro se realizará hacia la derecha (right) o hacia la izquierda (left). Del mismo modo se observa que el bit de entrada leri selecciona el bit que se considerará como el bit de salida data_out.
+
+![RTL](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/87f72d36-5895-42a6-a275-eaf8a13415c4)
+
+La conexión se propone como la siguiente imagen
+
+![Imagen_Diagrama](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/e222120c-f8e9-416c-8412-4c21e2337641)
 
 ### External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Se puede utilizar un generador de señales para el reloj (clk) y una base de tiempo para la habilitación (ena), así como botones o interruptores para las entradas y un led para visualizar la salida.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | X[0] | Z[0] | Y[0] |
-| 1 | X[1] | Z[1] | Y[1] |
-| 2 | X[2] | Z[2] | Y[2] |
-| 3 | X[3] | Z[3] | Y[3] |
-| 4 |  | Z[4] |  |
-| 5 |  | Z[5] |  |
-| 6 |  | Z[6] |  |
-| 7 |  | Z[7] |  |
+| 0 | data_in | Data_Out | No_Used |
+| 1 | clk | No_Used | No_Used |
+| 2 | rst | No_Used | No_Used |
+| 3 | ena | No_Used | No_Used |
+| 4 | leri | No_Used | No_Used |
+| 5 | No_Used | No_Used | No_Used |
+| 6 | No_Used | No_Used | No_Used |
+| 7 | No_Used | No_Used | No_Used |
 
 ### Chip location
 

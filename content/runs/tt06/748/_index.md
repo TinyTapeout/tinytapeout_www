@@ -1,54 +1,44 @@
 ---
 hidden: true
-title: "748 clk frequency divider controled by rom"
-weight: 108
+title: "748 Bit Control"
+weight: 64
 ---
 
-## 748 : clk frequency divider controled by rom
+## 748 : Bit Control
 
-* Author: Gilberto Ramos Valenzuela
-* Description: Clock divider control by ROM
-* [GitHub repository](https://github.com/brtgio/frq_divider_ROM_controled)
-* [GDS submitted](https://github.com/brtgio/frq_divider_ROM_controled/actions/runs/8707514950)
+* Author: K Opong-Mensah
+* Description: Bit pattern cycle on every clock cycle.
+* [GitHub repository](https://github.com/kdotom/bit_ctrl)
+* [GDS submitted](https://github.com/kdotom/bit_ctrl/actions/runs/8754368903)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 0 Hz
 
 ### How it works
 
-This is a clock divider. It works by dividing the frequency by a counter. The parameters for dividing were calculated for 27 frequencies, multiples of 50mHz. These parameters are stored in a ROM, which can be accessed by a 4-bit input, and it can output 28-bit data.
+This project outputs a different bit pattern on each clock cycle and then resets.
 
 ### How to test
 
-To function, it needs a 50MHz input. You select the frequency by choosing it from the table shown in the Readme.md. Then, you get the output through an output pin, which can be tested by an oscilloscope and fed into a microcontroller or any circuit requiring a square wave signal to function.
+To test this project, apply a reset signal, cycle the clock several times and compare to the expected outputs.
 
 ### External hardware
 
-Requires a 50MHz oscillator.
+GPIOs can be measured directly to test performance.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | F_select [0] |  | clk |
-| 1 | F_select [1] |  | clk_out |
-| 2 | F_select [2] |  |  |
-| 3 | F_select [3] |  |  |
-| 4 | F_select [4] |  |  |
-| 5 | reset_n |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 |  | out[0] |  |
+| 1 |  | out[1] |  |
+| 2 |  | out[2] |  |
+| 3 |  | out[3] |  |
+| 4 |  | out[4] |  |
+| 5 |  | out[5] |  |
+| 6 |  | out[6] |  |
+| 7 |  | out[7] |  |
 
 ### Chip location
 

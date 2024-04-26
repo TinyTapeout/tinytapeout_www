@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "544 Combination Lock"
-weight: 80
+title: "544 TT06 OTP Encryptor"
+weight: 24
 ---
 
-## 544 : Combination Lock
+## 544 : TT06 OTP Encryptor
 
-* Author: Eric Cheng
-* Description: 4-bit combination lock with a maximum of 3 attempts per lock and a master reset
-* [GitHub repository](https://github.com/echeng98/tt06-combolock)
-* [GDS submitted](https://github.com/echeng98/tt06-combolock/actions/runs/8681941227)
-* [Wokwi](https://wokwi.com/projects/395179352683141121) project
+* Author:  , Aimee Kang, Alexander Schaefer
+* Description: Encryption and Decryption Unit through Utilization of Psuedorandom One Time Pads
+* [GitHub repository](https://github.com/wmk7fe/tt06-otp-encryptor)
+* [GDS submitted](https://github.com/wmk7fe/tt06-otp-encryptor/actions/runs/8741806225)
+* HDL project
 * [Extra docs](None)
-* Clock: 10000 Hz
+* Clock: 50000 Hz
 
 <!---
 
@@ -26,58 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Everything is controlled using the CLOCK, RESET, and input pins.
-The first step after starting the simulation is pressing RESET.
-
-#### Setting a Passcode
-
-To set a passcode, IN0 will need to be set to HIGH for the duration
-of the setup. Then, create a combination of IN1, IN2, IN3, and IN4.
-This will be your passcode after setting IN0 back to LOW. The passcode
-can be reset anytime with IN0.
-OUT 0~3 represent the current password of the lock.
-
-#### Unlocking
-
-To unlock the combination lock, you will set IN1, IN2, IN3, and IN4 to
-the previous combination in `Setting a Passcode`. To verify, set IN5
-to HIGH. If correct, the LED at OUT4 will go HIGH.
-The lock will only be in an unlocked state if IN5 is held at HIGH.
-Returning IN5 back to LOW will lock the combination lock again.
-
-#### Number of Attempts
-
-The user will only have 3 tries to get the right combination before
-the input pins IN1, IN2, IN3, and IN4 become pin-locked (unusable). Once the
-lock become unusable, OUT5 will go LOW. A press of the RESET button will
-turn it back to normal.
+8 bit data inputs come through ui_in in the form of either plaintext or ciphertext. Bit 0 of uio_in is used to determine whether the chip will perform encryption or decryption. When it is high, decryption will be performed. When it is low, decryption will be performed. However, the enable signal must be high in both cases for either encryption or decryption to be performed. In the case of encryption, the chip will take an 8 bit value from an internal pseudorandom number generator to use as a one time pad. To create the ciphertext, the chip will xor the bits of the one time pad with their relative bits in the plaintext to create ciphertext. In order to later recover the plaintext, the one time pad is stored in an internal register file, and the index of the register of which the pad is stored in is outputed to bits 6 through 4 of uio_out. There are 8 registers in the register file (0-7). To decrypt ciphertext, the decrypt signal must be high (bit 0 of uio_in) and the index that the associated one time pad is stored in must be inputted to uio_in bits 3 through 1. Then, the one time pad will be recovered from the indexed register, the pad will be xored with the ciphertext, and the plaintext will be produced as output.
 
 ### How to test
 
-The normal flow of using the design is to first set a password of your
-liking (assuming you are the admin). Then, the lock would be free to use.
-If in a case where the user failed three times to unlock the lock, it is up
-to the admin to reset the pin-lock for continued use.
+Testing can be performed by ensuring that inputted plaintext can be recovered by taking the encrypted output and register index and feeding it into the system.
 
 ### External hardware
 
-A microcontroller (or other hardware of sorts) that allows only the admin
-to be able to reset the pin-lock is reccomended. Buttons, switches, or
-other forms of input are necessary for physical operation of the lock.
+External hardware with basic memory, wiring, and data displaying functionality should be suitable to test this chip. Verilog testing was performed by using one external register for data output, one external register for index output, and a means to read the data from the registers. Basic binary instrumentation may be needed if direct access to wires is not possible in order to shift the register index from the output bits of 6 through 4 to the input bits of 3 through 1.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Set | CurrPswd[0] |  |
-| 1 | Pswd[0] | CurrPswd[0] |  |
-| 2 | Pswd[1] | CurrPswd[0] |  |
-| 3 | Pswd[2] | CurrPswd[0] |  |
-| 4 | Pswd[3] | Unlocked |  |
-| 5 | Enter | PinLocked |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | data[0] | out[0] | decrypt |
+| 1 | data[1] | out[1] | r_num[0] |
+| 2 | data[2] | out[2] | r_num[1] |
+| 3 | data[3] | out[3] | r_num[2] |
+| 4 | data[4] | out[4] | index_out[0] |
+| 5 | data[5] | out[5] | index_out[1] |
+| 6 | data[6] | out[6] | index_out[2] |
+| 7 | data[7] | out[7] |  |
 
 ### Chip location
 

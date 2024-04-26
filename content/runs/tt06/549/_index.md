@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "549 Decodificador binario a display 7 segmentos hexadecimal"
-weight: 87
+title: "549 SumLatchUART_System"
+weight: 28
 ---
 
-## 549 : Decodificador binario a display 7 segmentos hexadecimal
+## 549 : SumLatchUART_System
 
-* Author: Victor Manuel Cante Saloma
-* Description: Muestra un número binario de 4 bits en un diplay de 7 segmentos (ánodo común) en hexadecimal
-* [GitHub repository](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal)
-* [GDS submitted](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/actions/runs/8671873725)
+* Author: Gilberto Ramos Valenzuela
+* Description:  4 bit adder
+* [GitHub repository](https://github.com/brtgio/UART_4-bits_ALU_System)
+* [GDS submitted](https://github.com/brtgio/UART_4-bits_ALU_System/actions/runs/8695197743)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,85 +26,46 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The operation is quite simple; when entering a 4-bit binary number, this number is shown at the output on a 7-segment common anode display in hexadecimal. The input "h" is a 4-bit vector, and the output "S" is a 7-bit vector. For the output "S", the most significant bit corresponds to segment "a", and so on, until the least significant bit, which corresponds to segment "g", as shown in figure 1. Since the display is anode common, to indicate that a segment is on, it is indicated with a "0".
+The system operates by receiving a 4-bit input and storing it in one of two registers, designated as Register A or Register B. Following this, the Arithmetic Logic Unit (ALU) receives a 4-bit operation selection code which dictates the specific operation to be executed on the input data. These operations can include addition, subtraction, bitwise AND, bitwise OR, and other logical or arithmetic operations depending on the design of the ALU.
 
-![display](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/2a957009-3e5c-467f-bb9b-59fced5c5660)
-
-In the simulation shown in Figure 2, we can see that given a binary number that we introduce at the input, an output combination corresponds to the value to be shown on the 7-segment display in hexadecimal form, that is, given The binary number at the input corresponds to a 7-bit binary number, which is actually a pattern to light each segment of the 7-segment display, which obviously corresponds to the input number to be displayed.
-
-![Simu](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/149fd13c-fc7e-4d7d-ad5e-c58ad6342ed7)
-
-According to Figure 3, the connections of the proposed circuit to those of the project in general are detailed below.
-
-1. For the input, which is a 4-bit vector "h", the overall project pins connected to the proposed circuit are as follows:
-
-in[0]: "h[0]" //Bit 0
-
-in[1]: "h[1]" //Bit 1
-
-in[2]: "h[2]" //Bit 2
-
-in[3]: "h[3]" //Bit 3
-
-in[4]: "no use"
-
-in[5]: "no use"
-
-in[6]: "no use"
-
-in[7]: "no use"
-
-2. For the output, which is a 7-bit vector "S", the overall project pins connected to the proposed circuit are as follows:
-
-out[0]: "S[0]" //Segmento g
-
-out[1]: "S[1]" //Segmento f
-
-out[2]: "S[2]" //Segmento e
-
-out[3]: "S[3]" //Segmento d
-
-out[4]: "S[4]" //Segmento c
-
-out[5]: "S[5]" //Segmento b
-
-out[6]: "S[6]" //Segmento a
-
-out[7]: "no use"
-
-The signals, both input and output, are logic highs and lows, that is, usually 5 volts to define a logic "1", and 0 volts for a logic "0". Let us remember that in the case of the output, an inverse logic is applied to the output since it is a common anode display, but in essence they are logical "1" and "0".
-
-![latin2](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/99a0adce-a2cd-41c7-8f24-7b161d8f71af)
+Once the operation is performed, the output is routed to a Universal Asynchronous Receiver-Transmitter (UART) transmitter. The UART transmitter facilitates the communication of the result to either a microcontroller or a standalone UART interface. This allows for seamless integration with larger systems or external devices, enabling the processed data to be utilized for various applications.
 
 ### How to test
 
-To check the operation, a 4-position dip switch is connected to the input, connected to a suitable power supply for the system, with its respective precautions (resistances), according to the number that you want to show on the display, for which appropriately connect each switch to the corresponding bit it represents. For the output, it is convenient to connect a 7-segment display (common anode) to corroborate its operation, according to the pins that correspond to each segment, mentioned in the previous section.
+#### Hardware Components
+
+To test the hardware, you will need the following components:
+
+1. Two push buttons with pull-up resistors, used for saving data to Register A and Register B respectively.
+2. Eight switches, designated for Data_input and OP_select operations.
+3. One LED indicator to signify the functioning of the Arithmetic Logic Unit (ALU).
+4. An output pin configured to transmit the Tx signal.
+5. A microcontroller or UART-capable device operating at a baud rate of 9600.
+
+To conduct testing, you'll need to connect a 50MHz clock signal to the clk pin. Begin by selecting operations according to the Operation table provided in the README section of this repository. The operands to be saved in registers range from 0000 to 1111, corresponding to decimal values 0 to 15.
+
+Given the utilization of an 8-bit output signal in the block diagram, no overflow is expected for most operations. However, when using the multiplication Op code, it's important to note that the maximum numbers to be multiplied are 1111 times 1111, resulting in 11100001, which equals 255 in decimal.
 
 ### External hardware
 
-A 4-position DIP Switch for the input, which will serve to form the 4-bit binary number, along with its proper power supply, and a 7-segment display (common anode), to visualize its operation, connected with due precautions to avoid damage. Added to all this is a breadboard to place these components.
-
-![SWI-18-3](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/8f7e9bb3-00ba-4079-8a8b-cec0ac8dd407)
-
-![AR1112-KPS1203D-Fuente-de-Alimentacion-120V-3A-V8](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/fbd71bf7-a1f9-430b-b7fa-0b36cef450b8)
-
-![Displaysa](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/d4a507b2-7fe7-4070-b70c-3ea46773daba)
-
-![image](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/assets/165434004/bbcf537b-4248-403d-90aa-4d02150d95c4)
+1. LED for UARTBUSY indicator.
+2. UART resiver to get data out.
+3. 2 push buttons with pull-up resistor.
+4. 50MHz ocilator or function generator
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Bit 0 | Segmento g | no use |
-| 1 | Bit 1 | Segmento f | no use |
-| 2 | Bit 2 | Segmento e | no use |
-| 3 | Bit 3 | Segmento d | no use |
-| 4 | no use | Segmento c | no use |
-| 5 | no use | Segmento b | no use |
-| 6 | no use | Segmento a | no use |
-| 7 | no use | no use | no use |
+| 0 | data_input [0] |  | clk |
+| 1 | data_input [1] |  | reset_n |
+| 2 | data_input [2] |  | save_a_n |
+| 3 | data_input [3] |  | save_b_n |
+| 4 | Op_select [4] |  | uart_tx_en |
+| 5 | Op_select [5] |  | uart_txd |
+| 6 | Op_select [6] |  | uartbusy |
+| 7 | Op_select [7] |  |  |
 
 ### Chip location
 

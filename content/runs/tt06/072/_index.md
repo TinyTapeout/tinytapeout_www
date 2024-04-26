@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "72 7-segment-FUN"
-weight: 227
+title: "72 UCSC HW Systems Collective, TDC - MUX2x1"
+weight: 120
 ---
 
-## 72 : 7-segment-FUN
+## 72 : UCSC HW Systems Collective, TDC - MUX2x1
 
-* Author: Armin Hartl
-* Description: Many different Animations on an 7-Segment-Display
-* [GitHub repository](https://github.com/akaArmin/jku-tt06-7-segment-FUN)
-* [GDS submitted](https://github.com/akaArmin/jku-tt06-7-segment-FUN/actions/runs/8630208928)
+* Author: Phillip Marlowe, Tyler Sheaves, & Dustin Richmond
+* Description: A tiny TDC constructed entirely of standard cells. Skywater130 MUX2x1 delay element
+* [GitHub repository](https://github.com/phillipmmarlowe/tt06_hsc_tdc_mux_delay)
+* [GDS submitted](https://github.com/phillipmmarlowe/tt06_hsc_tdc_mux_delay/actions/runs/8758062271)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 40000000 Hz
 
 <!---
 
@@ -26,29 +26,30 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Simplified is this project just a counter, which speed can be changed, combined with animations for a 7-segment display, which also can be switched trough.
+A tiny TDC
 
 ### How to test
 
-The default setting should display the numbers 0 to 9, which should change every second. The design can be tested by pressing the different input buttons and seeing if the speed respectively the animation changes.
+Setup VCS on you local machine, cd to test run:
+`make SIM=vcs GATES=yes`
 
 ### External hardware
 
-You might need a breadboard and buttons for the controls, as well as a 7-segment display if not available.
+Just pins
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | btn1_incAni | segment a1 |  |
-| 1 | btn2_decAni | segment b2 |  |
-| 2 | btn3_incSpeed | segment c3 |  |
-| 3 | btn4_decSpeed | segment d4 |  |
-| 4 |  | segment e5 |  |
-| 5 |  | segment f6 |  |
-| 6 |  | segment g7 |  |
-| 7 |  |  |  |
+| 0 | lanuch clock | hw[0] |  |
+| 1 | capture clock | hw[1] |  |
+| 2 | pg_src | hw[2] |  |
+| 3 | pg_bypass | hw[3] |  |
+| 4 | pg_in | hw[4] |  |
+| 5 | pg_tog | hw[5] |  |
+| 6 | valid_in | hw[6] |  |
+| 7 |  | valid_out |  |
 
 ### Chip location
 

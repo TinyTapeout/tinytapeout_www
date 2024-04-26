@@ -1,65 +1,59 @@
 ---
 hidden: true
-title: "165 Bestagon LED matrix driver"
-weight: 146
+title: "165 Keypad Decoder"
+weight: 175
 ---
 
-## 165 : Bestagon LED matrix driver
+## 165 : Keypad Decoder
 
-* Author: Marijn
-* Description: Driver for a hexagonal charlieplexed LED matrix
-* [GitHub repository](https://github.com/x3e/tt06-wokwi-template)
-* [GDS submitted](https://github.com/x3e/tt06-wokwi-template/actions/runs/8710630655)
-* [Wokwi](https://wokwi.com/projects/395054564978002945) project
+* Author: Slobodan Vrkacevic
+* Description: A simple controller that detects a pressed key in 4x4 keypad matrix, and displays it on 7-seg. display
+* [GitHub repository](https://github.com/wrkanet/tt06-keypad-decoder)
+* [GDS submitted](https://github.com/wrkanet/tt06-keypad-decoder/actions/runs/8693248441)
+* [Wokwi](https://wokwi.com/projects/394618582085551105) project
 * [Extra docs](None)
 * Clock: 1000 Hz
 
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
-
-We all  know the hexagon is the bestagon. If the cells in your eyes that catch light are hexagonal, it doesn't make sense that all displays use a square grid. This has to end now. That is why the Bestagon LED matrix driver is born.
-
 ### How it works
 
-This circuit can drive a charlieplexed hexagonal LED matrix. This matrix has columns with 3-4-5-4-3 pixels.
+The keypad rows are scanned one by one, and their state is
+stored into a local 16-bit register. Each bit in the register
+corresponds to one key on the keypad.
+
+The output of the 16-bit register is then converted to the
+7-segment display with some simple combinatorial logic.
+
+There are no debouncing, latching or some other advanced
+features.
+
+![Block Diagram](https://github.com/wrkanet/tt06-keypad-decoder/raw/main/docs/BlockDiagram.png?raw=true)
 
 ### How to test
 
-- Connect the display shown under "External hardware" (or if you want to see if the circuit is functioning: connect a few LEDs between the display output pins randomly)
-- Set the Display Enable pin low.
-- The Data pin is now sampled on each rising clock edge. The data shall be entered column wise, bottom to top, right to left (in the schematic below, "1" represents the first bit entered).
-  The following data may make you smile: 1001010100001010100
-- Now set the Display Enable pin high.
-- Keep pulsing the clock pin (at least 100Hz is recommended)
+Connect a keypad (take a look at the pinout table below),
+reset the hardware, and start pressing the keypad keys.
+The corresponding numbers, and characters, should be shown
+on the 7-segment display.
 
 ### External hardware
 
-Charlieplexed hexagonal display:
+Keypad matrix 4x4. For example:
 
-![Schematic with LED numbering](https://github.com/x3e/tt06-wokwi-template/blob/main/docs/schematic.png?raw=true)
-
-(Maybe add some resistors depending on what LEDs you chose. I recommend blue LEDs because they look cool.
+![Keypad matrix 4x4](https://github.com/wrkanet/tt06-keypad-decoder/raw/main/docs/KeypadMatrix4x4.png?raw=true)
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Data |  | Display pin 0 |
-| 1 | Display Enable |  | Display pin 1 |
-| 2 |  |  | Display pin 2 |
-| 3 |  |  | Display pin 3 |
-| 4 |  |  | Display pin 4 |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 |  | segment a | col 4 (input) |
+| 1 |  | segment b | col 3 (input) |
+| 2 |  | segment c | col 2 (input) |
+| 3 |  | segment d | col 1 (input) |
+| 4 |  | segment e | row 4 (output) |
+| 5 |  | segment f | row 3 (output) |
+| 6 |  | segment g | row 2 (output) |
+| 7 |  | dot | row 1 (output) |
 
 ### Chip location
 

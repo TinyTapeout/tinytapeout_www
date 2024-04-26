@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "301 Chisel Hello World"
-weight: 69
+title: "301 Tiny_Tapeout_6_Frank"
+weight: 229
 ---
 
-## 301 : Chisel Hello World
+## 301 : Tiny_Tapeout_6_Frank
 
-* Author: Martin Schoeberl
-* Description: A Chisel Hello World with Counting on the 7-segment display and showing/playing Morse Code of hello world
-* [GitHub repository](https://github.com/schoeberl/tt06-chisel-hello)
-* [GDS submitted](https://github.com/schoeberl/tt06-chisel-hello/actions/runs/8687888438)
-* HDL project
+* Author: Frank Hellmann
+* Description: 7Seg Around the Clock / FH display
+* [GitHub repository](https://github.com/sandman72/Tiny_Tapeout_6_Frank)
+* [GDS submitted](https://github.com/sandman72/Tiny_Tapeout_6_Frank/actions/runs/8680949822)
+* [Wokwi](https://wokwi.com/projects/395055359324730369) project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,38 +26,61 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a simple `Hello World` project for Chisel. It is a simple counter with 7-segment display output.
-And a Morse code generator writing out `hello world` in Morse code.
+This project was created during the Hackaday Conference 2024 and shows two simple animations on the 7seg display.
+It takes the clock input (10kHz) and divides it down depending on the input 7.
+The mode input 0 either shows the letters F and H or is switched to the rotation animation.
 
-The project displays a counter on the 7-segment display.
-It also writes out `hello world` in Morse code on the DP of the 7-segment display.
-Furthermore, it also playes the Morse code with PWM on the BIDIR PMOD, connected to
-a PmodAMP2.
+Inputs
 
-To better see the Morse code, the counter display can be disabled with
-switch 0.
+SW1 - IN0 = Mode (FH or Rotation Animation)
 
-### How to Test
+SW2 - IN1 = Blinking (turns dot on/off)
 
-Currently, we use cocotb, this shall change to ChiselTest.
+SW3 - IN2 = unused
 
-### External Hardware
+SW4 - IN3 = unused
 
-Audio PMOD (PmodAMP2) for audio output on the lower row of the BIDIR PMOD.
+SW5 - IN4 = unused
+
+SW6 - IN5 = Pause (if switched on, animation will freeze)
+
+SW7 - IN6 = Debug (if switched on, divider will stop)
+
+SW8 - IN7 = Divider (fast an slow)
+
+### How to test
+
+Apply clock (10khz) and watch the 7seg display
+
+If all inputs are off the 7seg display will show alternating letters F and H
+
+If switch SW1 is on the 7seg display will show the rotation animation
+
+Toggle SW2 to disable the dot blinking
+
+Toggle SW6 to pause
+
+Toggle SW8 to change speed
+
+SW7 is for debugging divider
+
+### External hardware
+
+The 7Seg LED display is used on outputs
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | switch on 7-segment | segment a |  |
-| 1 |  | segment b |  |
-| 2 |  | segment c |  |
-| 3 |  | segment d |  |
-| 4 |  | segment e | audio |
-| 5 |  | segment f | gain |
-| 6 |  | segment g |  |
-| 7 |  | dot: morse out | nshutdown |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

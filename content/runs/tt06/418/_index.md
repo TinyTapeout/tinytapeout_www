@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "418 DJ8 8-bit CPU"
-weight: 10
+title: "418 32-Bit Galois Linear Feedback Shift Register"
+weight: 73
 ---
 
-## 418 : DJ8 8-bit CPU
+## 418 : 32-Bit Galois Linear Feedback Shift Register
 
-* Author: DaveX
-* Description: DJ8 8-bit CPU with parallel Flash / RAM interface
-* [GitHub repository](https://github.com/dvxf/tt06-dj8)
-* [GDS submitted](https://github.com/dvxf/tt06-dj8/actions/runs/8750935211)
-* HDL project
+* Author: icaris lab
+* Description: 32-bit Galois linear feedback shift register with taps at (32, 30, 26, 25).
+* [GitHub repository](https://github.com/icarislab/tt06_32bit-galois-prng_cu)
+* [GDS submitted](https://github.com/icarislab/tt06_32bit-galois-prng_cu/actions/runs/8692366865)
+* [Wokwi](https://wokwi.com/projects/394707429798790145) project
 * [Extra docs](None)
-* Clock: 14000000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,93 +26,98 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-DJ8 is a 8-bit CPU, originally developped for XCS10XL featuring:
+The project is a hardware implementation of a maximum-cycle 32-bit Galois linear feedback shift register (LFSR) with taps at registers (R32, R30, R26, R25). The LFSR is defined with the most-significant bit (MSB) at the left-most register R32 and the least-significant bit (LSB) at the right-most register R01. The LFSR shifts bits from left to right (R_n+1 -> R_n), with the R30, R26, and R25 populated by XORing bits from R_n+1 with R1, the LFSR output. The LFSR contains an initialization/fail-safe feedback that prevents the LFSR from entering an all-zero state. If the LFSR is ever in an all-zero state, a "1" value is inserted into R32.
 
-* 8 x 8-bit register file
-* 3-4 cycles per instruction
-* 15-bit address bus
-* 8-bit data bus
+A schematic of the circuit may be found at:
 
-#### Memory Map
+https://wokwi.com/projects/394707429798790145
 
-| From | To | Description
-|--|--|--|
-| 0x0000 | 0x7fff | External memory
-| 0x8000 | 0xffff | Internal Test ROM (256 bytes, mirrored)
+The circuit has 10 inputs:
 
-###### External memory map if using the recommended setup (see [pinout](#pinout))
+| Input    | Setting                     |
+| -------- | -------                     |
+| CLK      | Clock                       |
+| RST_N    | Not Used                    |
+| 01       | Not Used                    |
+| 02       | Manual R0 Input Value       |
+| 03       | Input Select                |
+| 04       | Not Used                    |
+| 05       | Not Used                    |
+| 06       | Not Used                    |
+| 07       | Not Used                    |
+| 08       | Not Used                    |
 
-| From | To | Description
-|--|--|--|
-| 0x2000 | 0x3fff | External RAM (32 bytes)
-| 0x4000 | 0x5fff | External Flash ROM (16KB)
+The CLK sets the clocking for the flip-flop registers for latching the LFSR values. In the schematic shown in the Wokwi project, a switch is used to select either the system clock or an externally provided or manual clock that allows the user to manually step through each latching event.
 
-#### Pinout
+An 8-input DIP switch provides some flexibility to initalizing the LFSR. DIP03 (IN2) allows the user to toggle the Input Select function, which is a multiplexer that select whether the left-most register (R32) takes in as the input the LFSR feedback from R01, or a value that is manually selected by the user. If manual input is selected, the taps on R30, R26, and R25 are turned off and their inputs are shifted in from R_n+1.
 
-Due to TT06 IO constraints, pins are shared between *Address bus LSB* and *Data bus OUT*. It means that during memory write instructions, the address space is only 64 bytes.
+DIP02 (IN1) allows a the user to manually enter a 0 or a 1 value into the leftmost register.
 
-| Pins | Standard mode | During memory write execute+writeback cycles
-|--|--|--|
-| ui[7..0] | Data bus IN | Data bus IN
-| uio[7..0] | Address bus LSB (7..0) | ***Data bus OUT***
-| uo[6..0] | Address bus MSB (14..8) | Address bus MSB (14..8)
-| uo[7] | Write Enable | Write Enable
+The cicuit has 8 outputs. They output the values of the 8 right-most registers (R08, R07, R06, R05, R04, R03, R01, R01).
 
-You can connect a 8KB parallel Flash ROM + 32b SRAM without
-external logic and use uo[6] for RAM OE# and uo[5] for Flash ROM OE#.
-
-To get a bidirectional data bus (needed for SRAM), uio bus must be connected to ui bus with resistors. To be tested!
-
-#### Reset
-
-At reset time, PC is set to 0x4000.
-
-All other registers are set to 0x80.
+| Output   | Value in    |
+| -------- | -------     |
+| 01       | R08 |
+| 02       | R07 |
+| 03       | R06 |
+| 04       | R05 |
+| 05       | R04 |
+| 06       | R03 |
+| 07       | R02 |
+| 08       | R01 |
 
 ### How to test
 
-An internal test ROM with two demos is included for easy testing. Just select the corresponding DIP switches at reset time to start the demo (technically, a ***jmp GH*** instruction will be seen on the data bus thanks to the DIP switches values, with GH=0x8080 at reset).
+The circuit can be tested by powering on the circuit, and first setting the Input Select switch (DIP03) to "1" to reset/initialize the entire LFSR to all-zeros. The Input Select switch can then be switched to "0" to allow the LFSR to run from its all-zero initialized value. The first 100 8-bit output values of the LFSR from this zeroized state may be observed using a logic analyzer, and should be:
 
-#### Demo 1: Rotating LED indicator
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],[0 1 0 0 0 0 0 0],[0 0 1 0 0 0 0 0],
+[0 0 0 1 0 0 0 0],[0 0 0 0 1 0 0 0],[0 0 0 0 0 1 0 0],[0 0 0 0 0 0 1 0],
+[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],[1 1 0 0 0 0 0 0],
+[0 1 1 0 0 0 0 0],[0 0 1 1 0 0 0 0],[0 0 0 1 1 0 0 0],[1 0 0 0 1 1 0 0],
+[0 1 0 0 0 1 1 0],[1 0 1 0 0 0 1 1],[0 1 0 1 0 0 0 1],[0 0 1 0 1 0 0 0],
+[0 0 0 1 0 1 0 0],[0 0 0 0 1 0 1 0],[0 0 0 0 0 1 0 1],[0 0 0 0 0 0 1 0],
+[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[1 0 0 0 0 0 0 0],
+[0 1 0 0 0 0 0 0],[1 0 1 0 0 0 0 0],[0 1 0 1 0 0 0 0],[0 0 1 0 1 0 0 0],
+[0 0 0 1 0 1 0 0],[0 0 0 0 1 0 1 0],[0 0 0 0 0 1 0 1],[0 0 0 0 0 0 1 0],
+[0 0 0 0 0 0 0 1],[1 0 0 0 0 0 0 0],[0 1 0 0 0 0 0 0],[0 0 1 0 0 0 0 0],
+[0 0 0 1 0 0 0 0],[1 0 0 0 1 0 0 0],[0 1 0 0 0 1 0 0],[0 0 1 0 0 0 1 0],
+[0 0 0 1 0 0 0 1],[0 0 0 0 1 0 0 0],[0 0 0 0 0 1 0 0],[0 0 0 0 0 0 1 0],
+[0 0 0 0 0 0 0 1],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],[0 0 0 0 0 0 0 0],
+[1 0 0 0 0 0 0 0]
 
-| SW1 | SW2 | SW3 | SW4 | SW5 | SW6 | SW7 | SW8 |
-|--|--|--|--|--|--|--|--|
-| 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+A python implementation of the 32-bit Galois LFSR can be found at the link below. It may be used for testing the hardware for sequences longer than the initial 100 values.
 
-No external hardware needed. This demo shows a rotating indicator on the 7-segment display. Its speed can be changed with DIP switches, the internal delay loop is entirely deactivated when all switches are reset.
-
-#### Demo 2: Bytebeat Synthetizer
-
-| SW1 | SW2 | SW3 | SW4 | SW5 | SW6 | SW7 | SW8 |
-|--|--|--|--|--|--|--|--|
-| 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
-
-Modem handshakes sound like music to your hears? It's your lucky day! Become a DJ thanks to 256 lo-fi glitchy settings.
-
-Connect a speaker to uo[4] or use [Tiny Tapeout Simon Says PMOD](https://github.com/urish/tt-simon-pmod).
-
-It is highly recommended to add a simple low-pass RC filter on the speaker line to filter out the buzzing 8kHz carrier. Ideal cut-off frequency between 3kHz and 8kHz, TBD.
-
-Set SW1 and/or SW2 at reset time to adjust speed in case the design doesn't run at 14MHz.
+https://github.com/icarislab/tt06_32bit-fibonacci-prng_cu/main/docs/32-bit-fibonacci-prng_pythong_simulation.py
 
 ### External hardware
 
-* No external hardware needed for demos
-* Otherwise: Parallel Flash ROM + optional SRAM
+No external hardware is required.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | data in 0 | address out 8 | address out 0 / data out 0 |
-| 1 | data in 1 | address out 9 | address out 1 / data out 1 |
-| 2 | data in 2 | address out 10 | address out 2 / data out 2 |
-| 3 | data in 3 | address out 11 | address out 3 / data out 3 |
-| 4 | data in 4 | address out 12 | address out 4 / data out 4 |
-| 5 | data in 5 | address out 13 | address out 5 / data out 5 |
-| 6 | data in 6 | address out 14 | address out 6 / data out 6 |
-| 7 | data in 7 | write enable | address out 7 / data out 7 |
+| 0 |  | r08_val |  |
+| 1 | data_in | r07_val |  |
+| 2 | load_en | r06_val |  |
+| 3 |  | r05_val |  |
+| 4 |  | r04_val |  |
+| 5 |  | r03_val |  |
+| 6 |  | r02_val |  |
+| 7 |  | r01_val_LSFR_out |  |
 
 ### Chip location
 

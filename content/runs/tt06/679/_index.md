@@ -1,20 +1,20 @@
 ---
 hidden: true
-title: "679 Cambio de giro de motor CD"
-weight: 180
+title: "679 8bit ALU"
+weight: 35
 ---
 
-## 679 : Cambio de giro de motor CD
+## 679 : 8bit ALU
 
-* Author: Equipo6TESVG
-* Description: Cambio de giro de motor CD
-* [GitHub repository](https://github.com/JuanSebastianMoya7/tt06-32b_fibonacci)
-* [GDS submitted](https://github.com/JuanSebastianMoya7/tt06-32b_fibonacci/actions/runs/8757522643)
-* [Wokwi](https://wokwi.com/projects/395615790979120129) project
+* Author: David Parent,Chih-Kaun Ho, Edric Ong
+* Description: Building a simple 8-bit unsigned Arithmetic logic unit (ALU)
+* [GitHub repository](https://github.com/EdricOngKhaiJieh/8bitALU_verilog)
+* [GDS submitted](https://github.com/EdricOngKhaiJieh/8bitALU_verilog/actions/runs/8755837188)
+* HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 1000 Hz
 
-<!----
+<!---
 
 This file is used to generate your project datasheet. Please fill in the information below and delete any unused
 sections.
@@ -26,64 +26,32 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Cambio de giro de motor CD.
+<img width="860" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/0bfb7c71-4778-402a-9428-13c1d3adae90">
 
-A schematic of the circuit may be found at:
 
-https://wokwi.com/projects/395344363336889345
+### How to test
 
-The circuit has 10 inputs:
+<img width="857" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/a49bbcc7-b4ae-4c16-9147-324e2b67e3c3">
+<img width="859" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/601c812a-4820-44cb-8e97-a1b2c9cc2b98">
 
-| Input    | Setting                     |
-| -------- | -------                     |
-| CLK      | Not Used                    |
-| RST_N    | Not Used                    |
-| 01       | Input A                     |
-| 02       | Not Used                    |
-| 03       | Not Used                    |
-| 04       | Not Used                    |
-| 05       | Input B                     |
-| 06       | Not Used                    |
-| 07       | Not Used                    |
-| 08       | Input C                     |
-
-TENEMOS 3 ENTRADAS CON COMPUERTAS NOT LAS CUALES ESTAN RELACIONADAS CON DOS COMPUERTAS OR,LAS COMPUERTAS NOT LA RELACION QUE ENTRA ES LO CONTRARIO A LO QUE SALE POR EJEMPLO,SI ENTRA 1 SALE 0 Y SE ENTRA 0 NSALE 1 ESTAS ENTRADAS VAN RELACIONADAS CON LAS COMPUERTAS AND PERMITINDO QUE UN VALOR DE ENTRADA NO SEA MODIFICADO POR LA COMPUERTA NOT.LA OTRA ENTRADA DE LA COMPUERTA OR DEPENDE DE LO QUE SALE DE LAS COMPUERTAS NOT PERMITIENDO ASI EL CAMBIO, UNA SALIDA DE LA OR ENTRA AND QUE DEPENDE DE LO ANTERIOR Y OTRAS DE SUS ENTRADAS DEPENDE LE LA PRIMER ENTRADA SI EN LA AND ENTRA 1 Y 1 LA SALIDA ES 1 PERMITIENDO ASI EL GIRO SI LA COMNIACION DE ENTRADAS CAMBIAN A LA SEGUNDA AND EL CAMBIO SE DA DE RECHA A IZQUIERDA.
-
-| Output   | Value in    |
-| -------- | -------     |
-| 01       | A           |
-| 02       | Not Used    |
-| 03       | Not Used    |
-| 04       | Not Used    |
-| 05       | Not Used    |
-| 06       | Not Used    |
-| 07       | Not Used    |
-| 08       | B           |
-
-EN LA SALIDA A EL VALOR DE LA AND EN 1 EL CUAL HACER QUE EL MOTOR GIRE A LA DERECHA
-EN LA SALIDA B EL VALOR DE LA SEGUNDA AND EN 1 Y EL DE LA PRIMERA AND REGRESA A 0 ESO PROVOCA EL CAMBIO DE GIRO DE DERECHA A IZQUIERDA.
-
-A python implementation of the 32-bit Fibonacci LFSR can be found at the link below. It may be used for testing the hardware for sequences longer than the initial 100 values.
-
-https://github.com/icarislab/tt06_32bit-fibonacci-prng_cu/main/docs/32-bit-fibonacci-prng_pythong_simulation.py
 
 ### External hardware
 
-No external hardware is required.
+ADALM2000. https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm2000.html#eb-overview
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | E0 | S0 |  |
+| 0 | ui_in | uo_out |  |
 | 1 |  |  |  |
 | 2 |  |  |  |
 | 3 |  |  |  |
-| 4 | E4 |  |  |
+| 4 |  |  |  |
 | 5 |  |  |  |
 | 6 |  |  |  |
-| 7 | E7 | S7 |  |
+| 7 |  |  |  |
 
 ### Chip location
 

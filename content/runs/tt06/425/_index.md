@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "425 Trivium Non-Linear Feedback Shift Register"
-weight: 143
+title: "425 Anomaly Detection using Isolation trees"
+weight: 238
 ---
 
-## 425 : Trivium Non-Linear Feedback Shift Register
+## 425 : Anomaly Detection using Isolation trees
 
-* Author: icaris lab
-* Description: Trivium stream cipher used as a non-linear feedback shift register.
-* [GitHub repository](https://github.com/icarislab/tt06_trivium-prng_cu)
-* [GDS submitted](https://github.com/icarislab/tt06_trivium-prng_cu/actions/runs/8713810906)
-* [Wokwi](https://wokwi.com/projects/395357890431011841) project
+* Author: Eleftherios Batzolis
+* Description: Uses an isolation tree to check for anomalies during the operation of a device
+* [GitHub repository](https://github.com/Lefteris-B/i_tree)
+* [GDS submitted](https://github.com/Lefteris-B/i_tree/actions/runs/8723571228)
+* HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,81 +26,39 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The project is a hardware implementation of the Trivium stream cipher used as a non-linear feedback shift register (NLFSR). The NLFSR is defined with the least-significant bit (LSB) at the left-most register R0 and the most-significant bit (MSB) at the right-most register R287. The LFSR circular shifts bits from left to right (R_n -> R_n+1), with the three feedback taps:
+This projects is implementing Isolation forest algorithm using ML methods.
 
-R177 = (R174 * R175) + (R161 + R176) + R263
-R93 = (R90 * R91) + (R65 + R92) + R170
-R0  = (R285 * R286) + (R242 + R287) + R68
+The i_tree design encapsulates a Verilog implementation for detecting (infering) anomalies in sensor data, specifically tailored for integration into System on Chips (SoCs) with a focus on AI accelerators. This design comprises three primary modules: the InputBuffer, the IsolationTreeStateMachine, and the i_tree top module that orchestrates their interaction.
 
-The output of the NLFSR is:
+InputBuffer Module: This module collects incoming sensor data bit-by-bit until it accumulates a full byte. It utilizes a double-buffering mechanism to manage data efficiently, ensuring that data processing by downstream components does not block incoming sensor data collection. The buffer toggles between collecting new data and allowing the processed data to be consumed, controlled by internal logic that responds to the data processing status.
 
-z   = R65 + R92 + R161 + R176 + R242 + R287
+IsolationTreeStateMachine Module: Once a complete byte of data is ready, this state machine takes over. It processes the data to determine if an anomaly is present based on predefined criteria (currently, a simplistic check against a set byte pattern, but intended to be expanded to more complex algorithms). It operates in several states: IDLE, CHECK_ANOMALY, and PROCESS_DONE, transitioning between these states based on the presence of valid data and completing the processing cycle.
 
-The NLFSR contains an initialization/fail-safe feedback that prevents the LFSR from entering an all-zero state. If the LFSR is ever in an all-zero state, a "1" value is inserted into R0.
+Top Module (i_tree): This module integrates the InputBuffer and IsolationTreeStateMachine, routing signals between them. It feeds sensor data into the InputBuffer, takes the processed output, and directs it into the IsolationTreeStateMachine. It also handles the overall reset and clock signals for synchronization and system stability.
 
-A schematic of the circuit may be found at:
-
-https://wokwi.com/projects/395357890431011841
-
-The circuit has 10 inputs:
-
-| Input    | Setting                     |
-| -------- | -------                     |
-| CLK      | Clock                       |
-| RST_N    | Not Used                    |
-| 01       | Not Used                    |
-| 02       | Manual R0 Input Value       |
-| 03       | Input Select                |
-| 04       | Not Used                    |
-| 05       | Not Used                    |
-| 06       | Not Used                    |
-| 07       | Not Used                    |
-| 08       | Not Used                    |
-
-The CLK sets the clocking for the flip-flop registers for latching the NLFSR values. In the schematic shown in the Wokwi project, a switch is used to select either the system clock or an externally provided or manual clock that allows the user to manually step through each latching event.
-
-An 8-input DIP switch provides some flexibility to initalizing the NLFSR. DIP03 (IN2) allows the user to toggle the Input Select function, which is a multiplexer that select whether the left-most register (R0) takes in as the input the NLFSR feedback value or a value that is manually selected by the user. The switch also controls whether R93 and R177 takes in a NLFSR feedback or a value directly from R92 or R176, respectively.
-
-DIP02 (IN1) allows a the user to manually enter a 0 or a 1 value into the leftmost register.
-
-The cicuit has 8 outputs. They output the following values:
-
-| Output   | Value in    |
-| -------- | -------     |
-| 01       | R0  (NLFSR input)|
-| 02       | R65 |
-| 03       | R92 |
-| 04       | R161 |
-| 05       | R176 |
-| 06       | R242 |
-| 07       | R287 |
-| 08       | z (NLFSR output) |
-
-The output allows for some self-testing, where OUT08 = OUT02 + OUT03 + OUT04 + OUT05 + OUT06 + OUT07.
+Together, these modules form a robust system for real-time anomaly detection, designed with scalability and efficiency in mind, making it suitable for embedded applications where performance and space are critical constraints.
 
 ### How to test
 
-The circuit can be tested by powering on the circuit, and first setting the Input Select switch (DIP03) to "1" to reset/initialize the entire LFSR to all-zeros. The Input Select switch can then be switched to "0" to allow the LFSR to run from its all-zero initialized value. The output values of the NLFSR from this zeroized state may be observed using a logic analyzer, and can be compared with the values obtained for the python simulation:
-
-https://github.com/icarislab/tt06_biviumb-prng_cu/blob/main/docs/(TBD)
+1st 8bit value are the data used for the anomaly detection.
 
 ### External hardware
 
-No external hardware is required.
+Binary output sensor used for anomaly detection on workload of devices.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | r000_val |  |
-| 1 | data_in | INTERM_fb |  |
-| 2 | load_en | r092_val |  |
-| 3 |  | r093_val |  |
-| 4 |  | r176_val |  |
-| 5 |  | r177_val |  |
-| 6 |  | r287_val |  |
-| 7 |  | NLSFR_out |  |
+| 0 | sensor_data | anomaly_detected |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

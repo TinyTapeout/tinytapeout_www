@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "608 UART Transceiver"
-weight: 62
+title: "608 Parity Generator"
+weight: 110
 ---
 
-## 608 : UART Transceiver
+## 608 : Parity Generator
 
-* Author: Saad Khan, Saim Iqbal
-* Description: 8 bit data frame, with little endian transmit and receive signals
-* [GitHub repository](https://github.com/theuppercaseguy/GIKI-Tapeout)
-* [GDS submitted](https://github.com/theuppercaseguy/GIKI-Tapeout/actions/runs/8752023862)
-* HDL project
+* Author: Eric Ulteig
+* Description: TT06 Learning Exercise
+* [GitHub repository](https://github.com/Beird0/TT06_Parity-Generator)
+* [GDS submitted](https://github.com/Beird0/TT06_Parity-Generator/actions/runs/8742718865)
+* [Wokwi](https://wokwi.com/projects/395514572866576385) project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,30 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-to be added later
+Data present on the 8 input pins is converted and readable on the output pins.
 
 ### How to test
 
-to be added later
+Set the input switches and view the output LEDs.
 
 ### External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
-to be added later
+No external hardware is used.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | ui_in[0] | uo_out[0] | uio_in[0] |
-| 1 | ui_in[1] | uo_out[1] | uio_in[1] |
-| 2 | ui_in[2] | uo_out[2] | uio_in[2] |
-| 3 | ui_in[3] | uo_out[3] | uio_out[3] |
-| 4 | ui_in[4] | uo_out[4] | uio_out[4] |
-| 5 | ui_in[5] | uo_out[5] | uio_out[5] |
-| 6 | ui_in[6] | uo_out[6] | uio_out[6] |
-| 7 | ui_in[7] | uo_out[7] | uio_out[7] |
+| 0 | input1 | output1 |  |
+| 1 | input2 | output2 |  |
+| 2 | input3 | output3 |  |
+| 3 | input4 | output4 |  |
+| 4 | input5 |  |  |
+| 5 | input6 |  |  |
+| 6 | input7 |  |  |
+| 7 | input8 |  |  |
 
 ### Chip location
 

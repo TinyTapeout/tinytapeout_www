@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "2 UCSC HW Systems Collective, TDC - BUF2x1"
-weight: 211
+title: "2 UCSC HW Systems Collective, TDC"
+weight: 43
 ---
 
-## 2 : UCSC HW Systems Collective, TDC - BUF2x1
+## 2 : UCSC HW Systems Collective, TDC
 
-* Author: Phillip Marlowe, Tyler Sheaves, & Dustin Richmond
-* Description: A tiny TDC constructed entirely of standard cells. Skywater130 AND-2 delay element
-* [GitHub repository](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay)
-* [GDS submitted](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay/actions/runs/8758143688)
+* Author: Tyler Sheaves, Phillip Marlowe, & Dustin Richmond
+* Description: A tiny TDC constructed entirely of standard cells. Skywater130 FA-2 delay element
+* [GitHub repository](https://github.com/tsheaves/tt06_hsc_tdc)
+* [GDS submitted](https://github.com/tsheaves/tt06_hsc_tdc/actions/runs/8748882952)
 * HDL project
 * [Extra docs](None)
 * Clock: 17241379 Hz

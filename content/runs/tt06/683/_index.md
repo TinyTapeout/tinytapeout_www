@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "683 PWM_Sinewave_UART"
-weight: 47
+title: "683 Random number generator"
+weight: 184
 ---
 
-## 683 : PWM_Sinewave_UART
+## 683 : Random number generator
 
-* Author: Luis Gerardo Avila
-* Description: This project is a PWM signal generator that creates a sine wave, with frequency variation between 100 Hz and 700 Hz with steps of 100 in 100 Hz, which is manipulated through a UART interface
-* [GitHub repository](https://github.com/JerryAvila06/PWM_Sinewave)
-* [GDS submitted](https://github.com/JerryAvila06/PWM_Sinewave/actions/runs/8757359809)
+* Author: VineetaVNair & ShilpaPavithran
+* Description: Randomly generates bit stream
+* [GitHub repository](https://github.com/vinizz/tt06-RNG)
+* [GDS submitted](https://github.com/vinizz/tt06-RNG/actions/runs/8755179782)
 * HDL project
 * [Extra docs](None)
-* Clock: 25000000 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,31 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Through UART communication, a number from 1 to 7 is sent, indicating the frequencies set in the code, which are from 100 Hz to 700 Hz, then through a pin I generate a PWM signal which varies in time to generate a sine wave of the frequency that was requested.
+Based upon user choice, LFSR data is used to randomly generate bit streams
 
 ### How to test
 
-Only physical tests were carried out with the circuit, a Bluetooth antenna was added to the UART communication port, and a low pass filter was added to the output of the system to improve the signal a little and then it was measured with the oscilloscope and I verify that it delivers the requested frequencies.
+Vary input seed to change output bits randomly and observe the same when connected to LEDs.
 
 ### External hardware
 
--Bluetooth HC05.
--oscilloscope.
--A low pass filter.
+Displays and LED can be added
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | uart_rx | uart_tx | no use |
-| 1 | no use | no use | no use |
-| 2 | no use | pwm_outx | no use |
-| 3 | no use | no use | no use |
-| 4 | sw_11 | no use | no use |
-| 5 | sw_01 | no use | no use |
-| 6 | rst1 | no use | no use |
-| 7 | no use | no use | no use |
+| 0 | seed[0] | output_data[0] |  |
+| 1 | seed[1] | output_data[1] |  |
+| 2 | seed[2] | output_data[2] |  |
+| 3 | seed[3] | output_data[3] |  |
+| 4 | mode[0] | output_data[4] |  |
+| 5 | mode[1] | output_data[5] |  |
+| 6 |  | output_data[6] |  |
+| 7 |  | output_data[7] |  |
 
 ### Chip location
 

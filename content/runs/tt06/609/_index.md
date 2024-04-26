@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "609 serie_serie_register"
-weight: 188
+title: "609 24 H Clock"
+weight: 109
 ---
 
-## 609 : serie_serie_register
+## 609 : 24 H Clock
 
-* Author: C.A. Velázquez-Morales
-* Description: Registro Serie-Serie, con 4 registros y corrimiento hacia la izquierda o derecha
-* [GitHub repository](https://github.com/CarlosVel17/Serie_Serie)
-* [GDS submitted](https://github.com/CarlosVel17/Serie_Serie/actions/runs/8671254718)
+* Author: UABC Team
+* Description: typical 23h-format 4 digits clock. Two digits for hours and the other for minutes.
+* [GitHub repository](https://github.com/Miguelgrc032024/UABCReloj)
+* [GDS submitted](https://github.com/Miguelgrc032024/UABCReloj/actions/runs/8458389680)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 1000000 Hz
 
 <!---
 
@@ -26,45 +26,31 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Se describe un registro Serie-Serie, con una terminal de entrada (data_in), terminales de control de reloj, reset negado y habilitación (clk, rst, ena). Se asigna una terminal para cambiar el tipo de corrimiento del registro (leri): ALTO para la izquierda y BAJO para la derecha. Se designa una salida del dato en el registro (data_out).
+This is a typical 23h-format 4 digits clock. Two digits for hours and the other for minutes. Digits are in BCD format. It uses a 1 megahertz signal for reference.  One push button for setting the hour or minute and another push button for advancing forward the hours or the minutes. In order to display the hour it is needed four 7-segment-BCD decoders.
 
 ### How to test
 
-Se coloca Rst en un valor BAJO, y el Ena en un valor ALTO. El flanco del reloj clk irá actualizando el valor de 4 registros internos que realizarán el corrimiento (data_reg) con el valor del dato de entrada (data_in). Del mismo modo, la entrada de dirección (leri) asignará la dirección del corrimiento y el bit del registro interno que se mostrará en la salida (data_out).
-
-Banco de Prueba para Simulación en Active-HDL:
-
-![Captura de pantalla 2024-04-02 162549](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/02842b52-3a53-45a8-9a2f-76a47663987e)
-
-Imagen Simulación:
-
-![Captura de pantalla 2024-04-02 162240](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/95d3d1ef-d223-49ae-82ec-badb4adecea2)
-
-El diagrama que se presenta a continuación ilustra el RTL del circuito generado por Quartus II, se observa las entradas rst, clk y ena como las entradas básicas del circuito. Además se observa la entrada data_in como la entrada del dato, así como la entrada leri, que indica si el corrimiento del registro se realizará hacia la derecha (right) o hacia la izquierda (left). Del mismo modo se observa que el bit de entrada leri selecciona el bit que se considerará como el bit de salida data_out.
-
-![RTL](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/87f72d36-5895-42a6-a275-eaf8a13415c4)
-
-La conexión se propone como la siguiente imagen
-
-![Imagen_Diagrama](https://github.com/CarlosVel17/Serie_Serie/assets/165471233/e222120c-f8e9-416c-8412-4c21e2337641)
+A one MegaHertz clock signal must be connected to the clk pin. Reset goes from 1 to 0 to start the clock operation. In order to set the correct hour, a pulse signal is needed in the set pin, then M0 digit should be blinking, a pulse in the P0 pin will change this digit. A new pulse in the set pin will change the process to the M1, and another pulse to the H0 and H1.
 
 ### External hardware
 
-Se puede utilizar un generador de señales para el reloj (clk) y una base de tiempo para la habilitación (ena), así como botones o interruptores para las entradas y un led para visualizar la salida.
+3 push buttons,
+1 MHz signal generator,
+4 seven segment decoders.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | data_in | Data_Out | No_Used |
-| 1 | clk | No_Used | No_Used |
-| 2 | rst | No_Used | No_Used |
-| 3 | ena | No_Used | No_Used |
-| 4 | leri | No_Used | No_Used |
-| 5 | No_Used | No_Used | No_Used |
-| 6 | No_Used | No_Used | No_Used |
-| 7 | No_Used | No_Used | No_Used |
+| 0 | rst | M0[0] | H0[0] |
+| 1 | clk | M0[1] | H0[1] |
+| 2 | P0 | M0[2] | H0[2] |
+| 3 | set | M0[3] | H0[3] |
+| 4 |  | M1[0] | H1[0] |
+| 5 |  | M1[1] | H1[1] |
+| 6 |  | M1[2] | Dots |
+| 7 |  | M1[3] |  |
 
 ### Chip location
 

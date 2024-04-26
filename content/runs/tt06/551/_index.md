@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "551 mult_2b"
-weight: 204
+title: "551 BIT COMPARATOR"
+weight: 82
 ---
 
-## 551 : mult_2b
+## 551 : BIT COMPARATOR
 
-* Author: Juan Manuel Lpez Pasten
-* Description: Multiplixador de 2 bits utilizando compyertas logicas
-* [GitHub repository](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits)
-* [GDS submitted](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits/actions/runs/8671131120)
-* HDL project
+* Author: FELIPE SD
+* Description: Compare two bits 
+* [GitHub repository](https://github.com/felipe-SD/tt06-wokwi-template-BIT_TEST)
+* [GDS submitted](https://github.com/felipe-SD/tt06-wokwi-template-BIT_TEST/actions/runs/8712351716)
+* [Wokwi](https://wokwi.com/projects/395355133883896833) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,54 +26,38 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se realizó describiendo el circuito con compiertas lógicas utilizando multiplicaciones con compuertas AND y medios sumadores con la combinación de compuertas AND y XOR. Este circuito es completamente combinacional y es una aplicación práctica sencilla y didáctica para obtener un circuito físico final a partir de la descripción en verilog.
-
-<img src="mult_2b_1.png" alt="Multiplicador de 2 bits" width="400" height="300">
-
-
-|  A1  |  A0  |  B1  |  B0  |  P3  |  P2  |  P1  |  P0  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|   0  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
-|   0  |   0  |   0  |   1  |   0  |   0  |   0  |   0  |
-|   0  |   0  |   1  |   0  |   0  |   0  |   0  |   0  |
-|   0  |   0  |   1  |   1  |   0  |   0  |   0  |   0  |
-|   0  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
-|   0  |   1  |   0  |   1  |   0  |   0  |   0  |   1  |
-|   0  |   1  |   1  |   0  |   0  |   0  |   1  |   0  |
-|   0  |   1  |   1  |   1  |   0  |   0  |   1  |   1  |
-|   1  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
-|   1  |   0  |   0  |   1  |   0  |   0  |   1  |   0  |
-|   1  |   0  |   1  |   0  |   0  |   1  |   0  |   0  |
-|   1  |   0  |   1  |   1  |   0  |   1  |   1  |   0  |
-|   1  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
-|   1  |   1  |   0  |   1  |   0  |   0  |   1  |   1  |
-|   1  |   1  |   1  |   0  |   0  |   1  |   1  |   0  |
-|   1  |   1  |   1  |   1  |   1  |   0  |   0  |   1  |
+This test consist in compare two bits determinating wich one is bigger or are equals
 
 ### How to test
 
-Las entradas del circuito de 2 bits, a y b, deben conectarse a interruptores como lo pueden ser DIP switch, con sus respectivas resistencias. Las salida out de 4 bits se puede conectar a leds, de igual manera con sus respectivas resistencias para evitar dañar algún componente.
+To testo the project just insert 2 input bits (A and B) and then make a verification with the possible inputs
+00
+01
+10
+11
+you should check the three outputs, fist one when both are equal, and second and thrid when any other input is bigger.
+OUTPUT 1 = 1 when equals
+OUTPUT 2 = 1 when bigger
+OUTPUT 3 = 1 when bigger
 
 ### External hardware
 
-El hardware externo utilizado es:
-
--DIP switch 4 posiciones.
--4 lEDS.
+Use leds to check the output
+Used input with any desired devices.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | a (bit 0) | out (bit 0) | not used |
-| 1 | a (bit 1) | out (bit 1) | not used |
-| 2 | b (bit 0) | out (bit 2) | not used |
-| 3 | b (bit 1) | out (bit 3) | not used |
-| 4 | not used | not used | not used |
-| 5 | not used | not used | not used |
-| 6 | not used | not used | not used |
-| 7 | not used | not used | not used |
+| 0 | BIT A | OUTPUT A |  |
+| 1 | BIT B | OUTPUT B |  |
+| 2 |  | OUTPUT C |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

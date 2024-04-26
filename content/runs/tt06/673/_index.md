@@ -1,48 +1,65 @@
 ---
 hidden: true
-title: "673 Voting thingey"
-weight: 208
+title: "673 Notre Dame Dorms LED"
+weight: 78
 ---
 
-## 673 : Voting thingey
+## 673 : Notre Dame Dorms LED
 
-* Author: Zoda + Jade
-* Description: Does modified-consensus voting for redundant microcontrollers, as a vaguely functional-safety thing
-* [GitHub repository](https://github.com/jadebuilds/tt06-mcu-voting)
-* [GDS submitted](https://github.com/jadebuilds/tt06-mcu-voting/actions/runs/8731482013)
-* HDL project
+* Author: Allison Fleming & Daniel Yu
+* Description: Solves a puzzle based on the correct selection of Notre Dame dorms
+* [GitHub repository](https://github.com/aflemin7/tinytapeout)
+* [GDS submitted](https://github.com/aflemin7/tinytapeout/actions/runs/8756893364)
+* [Wokwi](https://wokwi.com/projects/390913889347409921) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
+
 ### How it works
 
-Our project used the 8 inputs as voters, expecting 1 as "FAIL" and 0 as "PASS" for votes in the system. As a default, if all systems vote for a pass, the consensus is pass. However, we also give the user the ability to customize the number of voters and the threshold of passing.
+There are eight switches on this DIP Switch, each representing a dorm on campus. The LED can be lit up with a minimum of three switches turned on. These three switches represent the best male dorm (Alumni, Carroll, Keenan, or Dillon), the best female dorm (Flaherty, Welsh Fam, or PE), and the best gender-neutral dorm (Fischer Grad). For example, a valid combination would be Alumni, Flaherty, Fischer Grad.
 
-For instnace, a user may have 8 voters and fail if 3 votes fail.
+Switch #
 
-This is for a safety system where redundant microcontrollers are used to control some safety critical hardware and we want to avoid single point faults.
+1- Alumni,
+2- Carroll,
+3- Keenan,
+4- Dillon,
+5- Flaherty,
+6- Welsh Fam,
+7- Pasquerilla East,
+8- Fischer Grad
 
 ### How to test
 
-Tested with the unit tests running `make -B` in test subfolder.
+This puzzle is supposed to be a trial and error practice for students to learn about logic gates. Thus, to test it, play around with using different switches to see what lights up the LED.
 
 ### External hardware
 
-N/A
+One external LED is needed
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | vote0 |  |  |
-| 1 | vote1 |  |  |
-| 2 | vote2 |  |  |
-| 3 | vote3 |  |  |
-| 4 | vote4 |  |  |
-| 5 | vote5 |  |  |
-| 6 | vote6 |  |  |
-| 7 | vote7 |  |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

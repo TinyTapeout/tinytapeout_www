@@ -1,77 +1,81 @@
 ---
 hidden: true
-title: "4 kstep"
-weight: 183
+title: "4 Most minimal extension of friend's 'CPU In a Week' in a day"
+weight: 202
 ---
 
-## 4 : kstep
+## 4 : Most minimal extension of friend's 'CPU In a Week' in a day
 
-* Author: Kevin OConnor
-* Description: Generate step/dir pulses for stepper motor drivers
-* [GitHub repository](https://github.com/KevinOConnor/tt06-kstep)
-* [GDS submitted](https://github.com/KevinOConnor/tt06-kstep/actions/runs/8758110061)
+* Author: Gregory Kollmer
+* Description: 8-bit Single-Cycle CPU
+* [GitHub repository](https://github.com/gak25/tt06-8bit-cpu-ext)
+* [GDS submitted](https://github.com/gak25/tt06-8bit-cpu-ext/actions/runs/8748986318)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-This project can produce timed pulses suitable for controlling stepper
-motor drivers.  It is similar to a PWM controller, but has additional
-control over the number of pulses generated and an ability to
-gradually change the timing between each pulse.
+This project is the most minimal extension (add CLR & MUL to ISA) of Ramyad Hadidi's 8-bit CPU that details the design and implementation of an 8-bit single-cycle microprocessor. The processor includes a register file and an Arithmetic Logic Unit (ALU). The design was crafted to handle a simple instruction set architecture (ISA) that supports basic ALU operations, load/store operations, and status checks for the ALU carry -- all within less than a week. While the current version lacks a program counter and external memory, thus omitting any form of jump operations, it provides a solid foundation for understanding basic computational operations within a custom CPU architecture.
 
-Commands are sent via SPI.  Each SPI message should have 40 bits and
-be in the following format:
-`&amp;lt;1-bit rw&amp;gt;&amp;lt;7-bit address&amp;gt;&amp;lt;32-bit data&amp;gt;`
+#### ISCA Overview
 
-The `rw` bit should be 1 to indicate a write.
-
-The following commands are available:
+The ISA is straightforward and is primarily focused on register operations and basic arithmetic/logic functions. Below is the breakdown of the instruction set:
 
 ```
-W 0x10 <pin polarity>: This controls default state of all uo_out pins.
-W 0x11 <any>: Clear shutdown state.
-W 0x12 <step_duration>: Set the duration of step pulses (in clock ticks).
-W 0x20 <count/add>: Set count (upper 16 bits), add (lower 16 bits), and submit.
-W 0x21 <interval>: Set interval between pulses (ticks). Submit with addr 0x20.
-W 0x22 <direction>: Set stepper direction (pin uo_out[1]) during step pulses.
-W 0x30 <any>: Reset last step time to zero.
-W 0x70 <clock>: Set the current clock counter.
-R 0x70: Read the current clock counter.
+// ISA --------------------------------------------------------------
+//-- R level
+`define MVR 4'b0000            // Move Register
+`define LDB 4'b0001            // Load Byte into Regsiter
+`define STB 4'b0010            // Store Byte from Regsiter
+`define RDS 4'b0011            // Read (store) processor status
+// 1'b0100 NOP
+// 1'b0101 NOP
+// 1'b0110 NOP
+// 1'b0111 NOP
+//-- Arithmatics
+`define NOT {1'b1, `ALU_NOT}
+`define AND {1'b1, `ALU_AND}
+`define ORA {1'b1, `ALU_ORA}
+`define ADD {1'b1, `ALU_ADD}
+`define SUB {1'b1, `ALU_SUB}
+`define XOR {1'b1, `ALU_XOR}
+`define INC {1'b1, `ALU_INC}
+`define MUL {1'b1, `ALU_MUL}
+// 1'b1111 NOP
 ```
-
-There are also two control pins separate from the SPI interface:
-`signal_irq` and `signal_shutdown`.  The `signal_irq` signal is raised
-high to indicate that there is space to submit a new schedule entry
-(via writes to address 0x21 and 0x20).  If the `signal_shutdown` reads
-a high value that the device will return all uo_out pins to their
-configured polarity (that is it will stop pulsing the step pin).  To
-clear the shutdown state, return the `signal_shutdown` to a low state
-and issue a write to address 0x11.
 
 ### How to test
 
-Configure an SPI device. Ensure that the signal_shutdown line is held
-low.  Issue an SPI set pin polarity command.  Issue a set pulse
-duration command.  Issue a set clock command.  Issue a set interval
-command.  Isuse a set count/add command.  Optionally issue additional
-interval,count,add commands.  Observe the step pulses on the uo_out[0]
-(step) pin.
+The processor has been tested through a suite of 12 testbenches, each designed to validate a specific functionality or operation. These testbenches cover basic ALU operations, data movement between registers, and the load/store functionalities. Although basic operational tests are passing, timing interactions between instructions have not been exhaustively verified, and it is anticipated that a sophisticated compiler would handle these timing considerations effectively, reminiscent of approaches taken in historical computing systems. [ADD TESTS FOR MUL EXTENSION]
+
+### External hardware
+
+Currently, the processor does not interface with any external hardware components. It operates entirely within a simulated environment where all inputs and outputs are managed through testbenches. This setup is ideal for educational purposes or for foundational experimentation in CPU design.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | step | spi_cs |
-| 1 |  | dir | spi_mosi |
-| 2 |  | other2 | spi_miso |
-| 3 |  | other3 | spi_sclk |
-| 4 |  | other4 | signal_irq |
-| 5 |  | other5 | signal_shutdown |
-| 6 |  | other6 |  |
-| 7 |  | other7 |  |
+| 0 | Register 1 (R1) Address bit 0 | Data out bit 0 (either register data / Processor stat) | Data in bit 0 / Register 3 (R3) Address bit 0 |
+| 1 | Register 1 (R1) Address bit 1 | Data out bit 1 (either register data / 0) | Data in bit 1 / Register 3 (R3) Address bit 1 |
+| 2 | Register 1 (R1) Address bit 2 | Data out bit 2 (either register data / 0) | Data in bit 2 / Register 3 (R3) Address bit 2 |
+| 3 | Register 1 (R1) Address bit 3 | Data out bit 3 (either register data / 0) | Data in bit 3 / Register 3 (R3) Address bit 3 |
+| 4 | Instruction ISA Opcode bit 0 | Data out bit 4 (either register data / 0) | Data in bit 4 / Register 2 (R2) Address bit 0 |
+| 5 | Instruction ISA Opcode bit 1 | Data out bit 5 (either register data / 0) | Data in bit 5 / Register 2 (R2) Address bit 1 |
+| 6 | Instruction ISA Opcode bit 2 | Data out bit 6 (either register data / 0) | Data in bit 6 / Register 2 (R2) Address bit 2 |
+| 7 | Instruction ISA Opcode bit 3 | Data out bit 7 (either register data / 0) | Data in bit 7 / Register 2 (R2) Address bit 3 |
 
 ### Chip location
 

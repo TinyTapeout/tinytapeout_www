@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "293 Servo Signal Tester"
-weight: 232
+title: "293 My Chip"
+weight: 131
 ---
 
-## 293 : Servo Signal Tester
+## 293 : My Chip
 
-* Author: Holunder
-* Description: If you provide a 4kHz Clock and 8 LED's as Output, the LED's will light up according to the Servo Signal on Input 0
-* [GitHub repository](https://github.com/holunder00/TinyTapeout_SecondTry)
-* [GDS submitted](https://github.com/holunder00/TinyTapeout_SecondTry/actions/runs/8723839495)
-* [Wokwi](https://wokwi.com/projects/395055722430895105) project
+* Author: Ani Hakobyan
+* Description: Design of my chip
+* [GitHub repository](https://github.com/AniBobChum/My-Chip)
+* [GDS submitted](https://github.com/AniBobChum/My-Chip/actions/runs/8676210159)
+* [Wokwi](https://wokwi.com/projects/393815624518031361) project
 * [Extra docs](None)
-* Clock: 4000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,35 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-If you apply a Servo Signal it will be processed via Flip-Flops so that the Servo Signal controls the Pin's on the Output.
-If the Servo Pulse is 1ms (0 degree) no LED will light up and if the Servo Pulse is 2ms (180 degrees) all the LED's will light up.
+It is a microchip that lights up an LED digital number and an LED light.
 
 ### How to test
 
-Add 8 LED's to the Output's and connect a Servo Signal to Input 0
+Test the project by starting the simulation in Wokwi then flicking switches.
 
 ### External hardware
 
-8 LED's and resistors. (If your LED's need more Output Power then the Chip can provide, use a driver)
-Maybe the resistors can have a low value, because the LED's are only ON when the Servo Signal is HIGH. So the maximum is 20% duty cicle.
-
-### How to use
-
-Add 8 LED's to the Output's and connect a Servo Signal to Input 0
+List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Servo Signal | LED 0 |  |
-| 1 |  | LED 1 |  |
-| 2 |  | LED 2 |  |
-| 3 |  | LED 3 |  |
-| 4 |  | LED 4 |  |
-| 5 |  | LED 5 |  |
-| 6 |  | LED 6 |  |
-| 7 |  | LED 7 |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

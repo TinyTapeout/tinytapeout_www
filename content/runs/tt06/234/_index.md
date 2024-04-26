@@ -1,59 +1,54 @@
 ---
 hidden: true
-title: "234 Keypad Decoder"
-weight: 175
+title: "234 8 Bit Digital QIF"
+weight: 66
 ---
 
-## 234 : Keypad Decoder
+## 234 : 8 Bit Digital QIF
 
-* Author: Slobodan Vrkacevic
-* Description: A simple controller that detects a pressed key in 4x4 keypad matrix, and displays it on 7-seg. display
-* [GitHub repository](https://github.com/wrkanet/tt06-keypad-decoder)
-* [GDS submitted](https://github.com/wrkanet/tt06-keypad-decoder/actions/runs/8693248441)
-* [Wokwi](https://wokwi.com/projects/394618582085551105) project
+* Author: David Parent
+* Description: The circuit will spike when the input is positive.  It will reset when the signal exceeds a predetermined value
+* [GitHub repository](https://github.com/davidparent/tt_um_tt6_verilog_davidparent)
+* [GDS submitted](https://github.com/davidparent/tt_um_tt6_verilog_davidparent/actions/runs/8632309382)
+* HDL project
 * [Extra docs](None)
-* Clock: 1000 Hz
+* Clock: 0 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-The keypad rows are scanned one by one, and their state is
-stored into a local 16-bit register. Each bit in the register
-corresponds to one key on the keypad.
-
-The output of the 16-bit register is then converted to the
-7-segment display with some simple combinatorial logic.
-
-There are no debouncing, latching or some other advanced
-features.
-
-![Block Diagram](https://github.com/wrkanet/tt06-keypad-decoder/raw/main/docs/BlockDiagram.png?raw=true)
+QIF
 
 ### How to test
 
-Connect a keypad (take a look at the pinout table below),
-reset the hardware, and start pressing the keypad keys.
-The corresponding numbers, and characters, should be shown
-on the 7-segment display.
+QIF
 
 ### External hardware
 
-Keypad matrix 4x4. For example:
-
-![Keypad matrix 4x4](https://github.com/wrkanet/tt06-keypad-decoder/raw/main/docs/KeypadMatrix4x4.png?raw=true)
+ADALM2000
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | segment a | col 4 (input) |
-| 1 |  | segment b | col 3 (input) |
-| 2 |  | segment c | col 2 (input) |
-| 3 |  | segment d | col 1 (input) |
-| 4 |  | segment e | row 4 (output) |
-| 5 |  | segment f | row 3 (output) |
-| 6 |  | segment g | row 2 (output) |
-| 7 |  | dot | row 1 (output) |
+| 0 | B0 | AS0 |  |
+| 1 | B1 | S1 |  |
+| 2 | B2 | S2 |  |
+| 3 | B3 | S3 |  |
+| 4 | B4 | S4 |  |
+| 5 | B5 | S5 |  |
+| 6 | B6 | S6 |  |
+| 7 | B7 | S7 |  |
 
 ### Chip location
 

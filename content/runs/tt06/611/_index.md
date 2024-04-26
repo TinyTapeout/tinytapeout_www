@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "611 Stepper"
-weight: 205
+title: "611 CDMA_2024"
+weight: 173
 ---
 
-## 611 : Stepper
+## 611 : CDMA_2024
 
-* Author: Miguel de Jesús Salazar Pedraza
-* Description: Stepper Control Bipolar Motor
-* [GitHub repository](https://github.com/miguelsape/msalazar)
-* [GDS submitted](https://github.com/miguelsape/msalazar/actions/runs/8527104447)
+* Author: Santiago Robledo Acosta, Jóse Miguel Rocha Pérez
+* Description: This is a CDMA circuit for lab testing in order to see the properties of Gold Codes in an Osciloscope
+* [GitHub repository](https://github.com/Santiago-Robledo/tt06-CDMA-2024)
+* [GDS submitted](https://github.com/Santiago-Robledo/tt06-CDMA-2024/actions/runs/8624139371)
 * HDL project
 * [Extra docs](None)
 * Clock: 1000000 Hz
@@ -26,29 +26,53 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The project consists of a state machine with 4 outputs, which is used to control a bipolar stepper motor.
+```
+  This is a very simple circuit, it consists in two LSFR register lineary connecated in an specific way in order to generate two m-sequences, in order to 
+  generate this pair of m-sequences, we input an initial vaule called seed, this is because we cannot generate a PN signal if the LSFR registers have an 
+  initial value of 0s. For this design we used two LSFR with 5 D Flip-Flops. With this we can generate a PN signal with a length of(2^5)-1.
+  With this PN signal and modulus 2 adding the signal we want to tranmit, we generate a CDMA signal, which we are going to study simulating a channel with
+  an OPAM in order to add noise to the CDMA and feed it back to the designed circuit to see the bit-error rate of this device.
+  With this we hope to study and put to test.
+  * CDMA
+  * Gold Sequences.
+  * The effect of the noise in the CDMA.
+  * Reception process with a simulated channel.
+  * Apply the knowledge aquired within the Latinpractice Bootcamp initiative and apply the knowledge to design and print in a silicon waffle the proposed device.
+```
 
 ### How to test
 
-The system has an external clock input, a reset input, a control input for selecting the direction of rotation of the motor, an enable input and 4 outputs for the stepper motor coils.
+```
+  As we used a hardware description language (Verilog), we created an specific testbench for the cdma.v, this testbench simply initializes the input signals
+  to 0 in order to generate the adequate signal such as the clock, a test signal to send that lasts 31 clock cycles (Spread-spectrum), a seed value to load both LSFR
+  The stimulus simple will assign a value to set_i and deactivate it to load the seed, after that, the LSFR have a linear feedback and will contantly generate the Gold signal
+  each clock cycle. With the test signal_i we the system will generate the CDMA signal and assign it to CDMA_o, the Gold signal is assigned to Gold_o, this is the tranmition process.
+
+  For the reception process, we simply assign the value of CDMA_o to receptor_i and the output will be observerd at receptor_o, we can observe that we recovered signal_i as 
+  it shows the same time diagram as receptor_o.
+
+  As for the LED_o it works as a simple indicator that the inputed seed is valid for transmission.
+
+  The template will include the verilog file with its testbench.
+```
 
 ### External hardware
 
-The system requires an external clock input to control the speed of the pulses and thus regulate the rotation speed of the motor.
+OPAM, Testboard, LED
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Unused | Unused | Output Bit 0 |
-| 1 | Unused | Unused | Output Bit 1 |
-| 2 | Unused | Unused | Output Bit 2 |
-| 3 | Unused | Unused | Output Bit 3 |
-| 4 | Unused | Unused | enable |
-| 5 | Unused | Unused | direction |
-| 6 | Unused | Unused | Unused |
-| 7 | Unused | Unused | Unused |
+| 0 | signal_i |  | cdma_o |
+| 1 | seed_i[0] |  | gold_o |
+| 2 | seed_i[1] |  | receptor_o |
+| 3 | seed_i[2] |  | led_o |
+| 4 | seed_i[3] |  |  |
+| 5 | seed_i[4] |  |  |
+| 6 | seed_i[5] |  |  |
+| 7 | load_i |  |  |
 
 ### Chip location
 

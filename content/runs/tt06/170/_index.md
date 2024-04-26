@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "170 10-bit Linear feedback shift register"
-weight: 114
+title: "170 Clock Domain Crossing FIFO"
+weight: 147
 ---
 
-## 170 : 10-bit Linear feedback shift register
+## 170 : Clock Domain Crossing FIFO
 
-* Author: Shivam Bhardwaj, Sachin Sharma, Pankaj Lodhi and Ambika Prasad Shah
-* Description: This Verilog module implements a 10-bit Linear Feedback Shift Register (LFSR) for generating pseudo-random sequences with clock and reset inputs.
-* [GitHub repository](https://github.com/beaprog/tt06-LFSR)
-* [GDS submitted](https://github.com/beaprog/tt06-LFSR/actions/runs/8649458875)
+* Author: Kenneth Wilke
+* Description: This FIFO buffers 4-bits data asynchronously across clock domains
+* [GitHub repository](https://github.com/KennethWilke/tt06-cdc-fifo)
+* [GDS submitted](https://github.com/KennethWilke/tt06-cdc-fifo/actions/runs/8656648890)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,29 +26,42 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This Verilog module defines a 10-bit Linear Feedback Shift Register (LFSR). It features clock (`clk`) and reset (`rst`) input pins. The output pin (`out`) delivers a pseudo-random sequence based on clock edges and reset conditions. It's designed for digital applications requiring pseudo-random sequence generation and pattern generation.
+This is a FIFO that can pass data asynchronously across clock domains. This was a project I created when I was first learning logic design, and it took me a couple weeks to settle on a design that I felt was clean and reusable.
+
+The FIFO can hold 32 4-bit values, or 16 bytes. So use them wisely and greatly!
+
+The original design can be found at <https://github.com/KennethWilke/sv-cdc-fifo>
+
+The architecture of this design was influenced by
+[this paper](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)
+written by Clifford E. Cummings of
+[Sunburst Design](http://www.sunburst-design.com) by the implementation was fully written by me.
 
 ### How to test
 
-We test it on Vivado and open sources (OpenROAD and OpenLane).
+Hold `write_reset` and `read_reset` LOW while running the clock for a bit to reset, then raise to initialize the module.
 
-### External hardware
+#### Writing to the FIFO
 
-defaults
+Prepare your data on the 4-bit `write_data` bus, ensure the `full` state is low and then raise `write_increment` for 1 cycle of `write_clock` to write data into the FIFO memory.
+
+#### Reading from the FIFO
+
+The FIFO will present the current output on the `read_data` bus. If `empty` is low, this output should be valid and you can acknowledge receive of this vallue by raising `read_increment` for 1 cycle of `read_clock`.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | clk | out |  |
-| 1 | rst |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | write_clock | empty | write_reset |
+| 1 | write_increment | full | read_reset |
+| 2 | read_clock |  |  |
+| 3 | read_increment |  |  |
+| 4 | write_data0 | read_data0 |  |
+| 5 | write_data1 | read_data1 |  |
+| 6 | write_data2 | read_data2 |  |
+| 7 | write_data3 | read_data3 |  |
 
 ### Chip location
 

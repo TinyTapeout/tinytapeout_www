@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "224 Silly 4b CPU v2"
-weight: 209
+title: "224 Keypad controller"
+weight: 5
 ---
 
-## 224 : Silly 4b CPU v2
+## 224 : Keypad controller
 
-* Author: Tommy Thorn
-* Description: A trivial little 4b CPU in the style of the PDP-8, 2nd try
-* [GitHub repository](https://github.com/tommythorn/tt06-tommythorn-4b-cpu)
-* [GDS submitted](https://github.com/tommythorn/tt06-tommythorn-4b-cpu/actions/runs/8657942608)
+* Author: Ian Tawileh
+* Description: Reads a keypad and displays the number on the 7 segment
+* [GitHub repository](https://github.com/mattvenn/tt06-ian-keypad-controller)
+* [GDS submitted](https://github.com/mattvenn/tt06-ian-keypad-controller/actions/runs/8621402325)
 * HDL project
 * [Extra docs](None)
-* Clock: 50 Hz
+* Clock: 1000 Hz
 
 <!---
 
@@ -26,116 +26,31 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-With ~ 200 gates and 8-inputs, 8-outputs, can we make a full CPU?  If
-we depend on external memory, we can do like the Intel 4004 and
-multiplex nibbles in and out.  However for this submission, we keep
-the memory on-chip which puts some severe constaints on the size of
-everything.  The only architeture that I could managed in that space
-is one that relies heavily on self-modifying code, like the beloved
-DEC PDP-8.
+This Project works by driving power to the Cols Columns one by one, then waits for any changes on the Rows (triggered by Human Input) and scans a case to find the combination between the row and col columns before finding the right combination and recording the corresponding key.
 
-Features:
-
-- Updatable code and data storage
-- Instructions include load, store, alu, and conditional branches
-- Can execute Fibonacci
-
-CPU state
-
-- 8 words of 6-bit memory, split into 2-bit of instruction and 4-bit
-  of operand.
-- 3-bit PC
-- 4-bit Accumulator (ACC)
-
-#### The Instruction Set
-
-All instructions have an opcode and an argument.
-
-- `load` value (loads value to the accumulator)
-- `store` address (stores the accumulator at the address, top bit ignored)
-- `add` value  (adds value to the accumulator)
-- `brzero` address (branches to address if the accumulator is zero)
-
-Obviously this is very limiting, but it does show the basic structure
-and could probably be tweaked to be more general with more time (but
-space is limited).
-
-#### Example Fibonacci Program
-
-```C
- int a = 1, b = 1;
- for (;;) {
-   int t = a;
-   a += b;
-   b = t;
-   if (b == 8) for (;;)
- }
-```
-
-```assembly
-0: load 1  // a is here
-1: store 4 // store to t at address 4
-
-2: add 1   // b is here
-3: store 0 // Update a at address 0
-
-4: load _  // t is here, value overwritten
-5: store 2 // update b
-
-6: add 8  //  -8 == 8
-7: brzero 7 // if acc - 8 == 0 we stop
-// otherwise roll over to 0
-```
-
-Execution trace:
-
-```
-$ make -C src -f test.mk | tail -50 | head -17
-        Running 0 (insn 0,  8)
-00500  pc 1 acc  8
-        Running 1 (insn 1,  4)
-00510  pc 2 acc  8
-        Running 2 (insn 2,  5)
-00520  pc 3 acc 13
-        Running 3 (insn 1,  0)
-00530  pc 4 acc 13
-        Running 4 (insn 0,  8)
-00540  pc 5 acc  8
-        Running 5 (insn 1,  2)
-00550  pc 6 acc  8
-        Running 6 (insn 2,  8)
-00560  pc 7 acc  0
-        Running 7 (insn 3,  7)
-        Running 7 (insn 3,  7)
-        Running 7 (insn 3,  7)
-```
-
-We actually computed fib all the way to 13 (largest that will fit in 4-bits).
-Explain how your project works
+This key is passed on to a decode module that finds the correct Seven Segment combination and then passes it on to the 1 digit seven Segment Display where it is displayed.
 
 ### How to test
 
-Use ui_in[7:4] and cmdarg and ui_in[3:2] as cmd.  Inputs are only
-registered on posedge of clock.  Keep rst_n high.  Then issue the
-sequence of commands as follows: (XXX please see tb in tt_um_tommythorn_4b_cpu_v2.v for now)
+Connect your keypad to the PMOD pins and experiment by clicking some buttons and seeing their outputs!
 
 ### External hardware
 
-Nothing required but without observing outputs it's a bit boring.
+Keypad PMOD: https://t.ly/lTZF0
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | clock | acc[0] |  |
-| 1 | cmd[0] | acc[1] |  |
-| 2 | cmd[1] | acc[2] |  |
-| 3 |  | acc[3] |  |
-| 4 | cmdarg[0] | pc[0] |  |
-| 5 | cmdarg[1] | pc[1] |  |
-| 6 | cmdarg[2] | pc[2] |  |
-| 7 | cmdarg[3] |  |  |
+| 0 | row0 | 7 segment display outputs | col0 |
+| 1 | row1 |  | col1 |
+| 2 | row2 |  | col2 |
+| 3 | row3 |  | col3 |
+| 4 |  |  | col counter 0 |
+| 5 |  |  | col counter 1 |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

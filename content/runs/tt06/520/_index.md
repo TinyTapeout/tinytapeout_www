@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "520 Double Inverter"
-weight: 145
+title: "520 Leaky Integrate and fire neuron(LIF)"
+weight: 122
 ---
 
-## 520 : Double Inverter
+## 520 : Leaky Integrate and fire neuron(LIF)
 
-* Author: Matt Venn
-* Description: A little inverter followed by a bigger one
-* [GitHub repository](https://github.com/mattvenn/tt06-inverter)
-* [GDS submitted](https://github.com/mattvenn/tt06-inverter/actions/runs/8617095811)
+* Author: Vyshnav P Dinesh
+* Description: Single node of integrate and fire neuron (LIF)
+* [GitHub repository](https://github.com/vyshnavthonichal/tt-um-duk-lif)
+* [GDS submitted](https://github.com/vyshnavthonichal/tt-um-duk-lif/actions/runs/8753273818)
 * Analog project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,17 +26,15 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Initially I just wanted to do an inverter, but then I thought I'll make the inverter much more powerful.
-The problem with much bigger output transistors is that their gate capacitance increases, and so the inverter is slower.
-My adding a primary, smaller inverter in front, I get much faster rise times on the big transistors.
+This is an analog implementation of rate based encoding technique using leaky integrate and fire neuron.
 
 ### How to test
 
-Apply a pulse to analog pin 1 and see it replicated on analog pin 0.
+The time varying input is applied to vin terminal, connect a threshold voltage in the Vth terminal and a rate encoded input single will produced in the Out terminal
 
 ### External hardware
 
-Oscilloscope
+Function generator, CRO, Multimeter.
 
 
 ### IO

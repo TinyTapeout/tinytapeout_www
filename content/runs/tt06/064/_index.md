@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "64 UCSC HW Systems Collective, TDC - MUX2x1"
-weight: 120
+title: "64 FP4 x 8-bit matrix multiplier"
+weight: 235
 ---
 
-## 64 : UCSC HW Systems Collective, TDC - MUX2x1
+## 64 : FP4 x 8-bit matrix multiplier
 
-* Author: Phillip Marlowe, Tyler Sheaves, & Dustin Richmond
-* Description: A tiny TDC constructed entirely of standard cells. Skywater130 MUX2x1 delay element
-* [GitHub repository](https://github.com/phillipmmarlowe/tt06_hsc_tdc_mux_delay)
-* [GDS submitted](https://github.com/phillipmmarlowe/tt06_hsc_tdc_mux_delay/actions/runs/8758062271)
+* Author: ReJ aka Renaldas Zioma
+* Description: 4-bit floating point (E3M0) x 8-bit matrix multiplier block
+* [GitHub repository](https://github.com/rejunity/tiny-asic-4bit-matrix-mul)
+* [GDS submitted](https://github.com/rejunity/tiny-asic-4bit-matrix-mul/actions/runs/8756604313)
 * HDL project
 * [Extra docs](None)
-* Clock: 40000000 Hz
+* Clock: 48000000 Hz
 
 <!---
 
@@ -26,30 +26,30 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-A tiny TDC
+Matrix multiplication is implemented using a systolic array architecture.
 
 ### How to test
 
-Setup VCS on you local machine, cd to test run:
-`make SIM=vcs GATES=yes`
+Every cycle feed packed weight data to Input pins and input data to Bidirectional pins.
+Strobe Enable pin to start receiving results of the matrix multiplication on the Output pins.
 
 ### External hardware
 
-Just pins
+MCU is necessary to feed weights and input data into the accelerator and fetch the results.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | lanuch clock | hw[0] |  |
-| 1 | capture clock | hw[1] |  |
-| 2 | pg_src | hw[2] |  |
-| 3 | pg_bypass | hw[3] |  |
-| 4 | pg_in | hw[4] |  |
-| 5 | pg_tog | hw[5] |  |
-| 6 | valid_in | hw[6] |  |
-| 7 |  | valid_out |  |
+| 0 | 2nd FP4 weight LSB | result LSB | (in) activations LSB |
+| 1 | 2nd FP4 weight | result  | (in) activations |
+| 2 | 2nd FP4 weight | result  | (in) activations |
+| 3 | 2nd FP4 weight MSB | result  | (in) activations |
+| 4 | 1st FP4 weight LSB | result  | (in) activations |
+| 5 | 1st FP4 weight | result  | (in) activations |
+| 6 | 1st FP4 weight | result  | (in) activations |
+| 7 | 1st FP4 weight MSB | result MSB | (in) activations MSB |
 
 ### Chip location
 
