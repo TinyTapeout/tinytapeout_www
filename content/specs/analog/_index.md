@@ -27,7 +27,7 @@ You are not allowed to use the **metal 5** layer in your design, as it's used by
 
 ## Pin locations
 
-The pin locations must match one of the [Tiny Tapeout templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt06/def/analog). The templates are available in DEF format, which is compatible with the [Magic VLSI layout tool](http://opencircuitdesign.com/magic/).
+The pin locations must match one of the [Tiny Tapeout templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt07/def/analog). The templates are available in DEF format, which is compatible with the [Magic VLSI layout tool](http://opencircuitdesign.com/magic/).
 
 There are several templates available, each for a different number of tiles. The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
 
@@ -67,12 +67,12 @@ Make sure the version of Magic matches the PDK.
 
 ## Create the repository
 
-Start your design from the [tt06-analog-template repository](https://github.com/TinyTapeout/tt06-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
+Start your design from the [tt07-analog-template repository](https://github.com/TinyTapeout/tt07-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
 
 ## Decide on the size of your design
 
 Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions. 
-Download one of the [analog templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt06/def/analog) as a starting point for your design.
+Download one of the [analog templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt07/def/analog) as a starting point for your design.
 
 The analog pins are labeled ua[0] through ua[7] (ua stands for "user analog"). The number of pins that will actually be connected to pads depends on the number of analog pins that you defined in the "pinout" section of info.yaml and purchased. 
 
