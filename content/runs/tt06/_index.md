@@ -1,7 +1,7 @@
 ---
 title: "Tiny Tapeout 6"
 weight: 50
-description: 238 designs, closed 19th April 2024
+description: 238 designs, closed 2024-04-19
 ---
 
 {{% toc %}}
@@ -209,7 +209,7 @@ description: 238 designs, closed 19th April 2024
 | 642 | [SPELL](642) | Uri Shaked|
 | 654 | [RNG3](654) | Luca Collini|
 | 672 | [4-Bit Full Adder and Subtractor with Hardware Trojan](672) | Jeremy Hong|
-| 673 | [Notre Dame Dorms LED](673) | Allison Fleming & Daniel Yu|
+| 673 | [Notre Dame Dorms LED](673) | Allison Fleming, Daniel Yu, Matthew Morrison|
 | 674 | [Tiny ALU](674) | Adam Majmudar|
 | 675 | [clk frequency divider controled by rom](675) | Gilberto Ramos Valenzuela|
 | 676 | [SAP-1 Computer](676) | Jonathan Zhou, Rana Singh, Anika Agarwal|

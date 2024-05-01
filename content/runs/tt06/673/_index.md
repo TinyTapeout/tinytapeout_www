@@ -6,7 +6,7 @@ weight: 78
 
 ## 673 : Notre Dame Dorms LED
 
-* Author: Allison Fleming & Daniel Yu
+* Author: Allison Fleming, Daniel Yu, Matthew Morrison
 * Description: Solves a puzzle based on the correct selection of Notre Dame dorms
 * [GitHub repository](https://github.com/aflemin7/tinytapeout)
 * [GDS submitted](https://github.com/aflemin7/tinytapeout/actions/runs/8756893364)
