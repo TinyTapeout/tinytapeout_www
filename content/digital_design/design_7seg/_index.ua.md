@@ -27,7 +27,7 @@ weight: 120
 
 Дизайн [натхненний роботою Ракеша Пітера з подачi tt01](https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg)
 
-{{< wokwi 347497504164545108 >}}
+{{< wokwi 397140982440144897 >}}
 <br>
 
 {{% feedback %}}
