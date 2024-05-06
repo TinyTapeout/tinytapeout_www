@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "427 CSIT-Luks"
-weight: 4
+title: "427 Lipsi: Probably the Smallest Processor in the World"
+weight: 192
 ---
 
-## 427 : CSIT-Luks
+## 427 : Lipsi: Probably the Smallest Processor in the World
 
-* Author: CSIT Team (Jan Furlan, Jurica Gašpar, Marko Marinović, Tin Sorić, Ivan Štignedec, Dino Terman, Jurica Kundrata)
-* Description: Camera lighting settings recommender.
-* [GitHub repository](https://github.com/jk2102/tt06-csit-luks)
-* [GDS submitted](https://github.com/jk2102/tt06-csit-luks/actions/runs/8723959561)
+* Author: Martin Schoeberl
+* Description: A tiny 8-bit accumulator based microprocssor.
+* [GitHub repository](https://github.com/schoeberl/tt06-lipsi)
+* [GDS submitted](https://github.com/schoeberl/tt06-lipsi/actions/runs/8696012345)
 * HDL project
 * [Extra docs](None)
-* Clock: 1000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,29 +26,33 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project implements a settings recommender for photography. The ISO, shutter speed and focal ratio values are inputed using a rotational encoder and a four-digit seven-segment display. After inputing the values, an external luxmeter is read via SPI interface and all of the values are used to retrieve the recommended setting from a LUT in an SPI Flash. The recommended value is displayed on the four-digit seven-segment display.
+This is the Lipsi processor. It executes  a hardcoded program
+counts up at a readable frequency. That number is displayed on
+the 7-segment display. Additionally, the DP blinks (in hhardware).
 
 ### How to test
 
-This project uses a user interface consisting of a rotational encoder and four-digit seven-segment display. After reset or power-up, first the ISO value is selected by rotating the encoder. The current value is displayed on the four-digit seven-segment display and it is confirmed by a short press on the rotational encoder. Next, the shutter speed is selected by rotating and confirmed by a short press of the encoder. Finally, the focal ratio is selected by rotating the encoder and it is confirmed by a medium press of the encoder. After reading the luxmeter and the flash-based LUT, the recommended settings value is shown on the four-digit seven-segment display.
+ChiselTest is used for waveform generation.
+Currently, we use cocotb, this shall change to ChiselTest.
+But that test is disabled
 
 ### External hardware
 
-External hardware comprises of a rotational encoder, a four-digit seven-segment display, SPI luxmeter (e.g. Pmod ALS) and SPI flash (e.g. MX25L3233FMI-08G).
+non by default.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | A (rot_encoder) | a (seven_seg) | an[0] (seven_seg) |
-| 1 | B (rot_encoder) | b (seven_seg) | an[1] (seven_seg) |
-| 2 | PB (rot_encoder) | c (seven_seg) | an[2] (seven_seg) |
-| 3 | MISO (spi_flash) | d (seven_seg) | an[3] (seven_seg) |
-| 4 | MISO (spi_sensor) | e (seven_seg) | SCLK (spi_flash, spi_sensor) |
-| 5 |  | f (seven_seg) | SS (spi_flash) |
-| 6 |  | g (seven_seg) | SS (spi_sensor) |
-| 7 |  | dp (seven_seg) | MOSI (spi_flash) |
+| 0 | input for Lipsi, also switch of blinking LED | segment a |  |
+| 1 | input for Lipsi | segment b |  |
+| 2 | input for Lipsi | segment c |  |
+| 3 | input for Lipsi | segment d |  |
+| 4 | input for Lipsi | segment e |  |
+| 5 | input for Lipsi | segment f |  |
+| 6 | input for Lipsi | segment g |  |
+| 7 | input for Lipsi | dp (blinking) |  |
 
 ### Chip location
 

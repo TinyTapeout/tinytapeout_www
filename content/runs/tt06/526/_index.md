@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "526 Programmable Thing"
-weight: 219
+title: "526 Analog Sigmoid"
+weight: 40
 ---
 
-## 526 : Programmable Thing
+## 526 : Analog Sigmoid
 
-* Author: James Meech
-* Description: Three different inverters with different numbers of MOSFETs in parallel
-* [GitHub repository](https://github.com/JamesTimothyMeech/tt06-programmable-thing)
-* [GDS submitted](https://github.com/JamesTimothyMeech/tt06-programmable-thing/actions/runs/8746902919)
+* Author: aleena
+* Description: Activation functions for neuromorphic computing
+* [GitHub repository](https://github.com/aleena-duk/tinytapeoutsig)
+* [GDS submitted](https://github.com/aleena-duk/tinytapeoutsig/actions/runs/8756035538)
 * Analog project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,15 +26,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-It is a set of inverters each with their own input and output pins.
+ReLu and sigmoid activation functions are included
 
 ### How to test
 
-Choose an inverter and find the pinout for it in the info.yaml file. The apply your input and measure the output.
+For ReLu:The output is same as the input value if it is positive and zero otherwise.
+For Sigmoid:Used for binary classification and predict the probability as output.
 
 ### External hardware
 
-Something to generate signals. This could be the TT06 printed circuit board or an expensive signal generator.
+A voltage source at analog pin 1 and analog pin 4 which is an output of an ANN
 
 
 ### IO

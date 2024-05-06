@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "678 Displays CIt"
-weight: 77
+title: "678 4 bit RAM"
+weight: 152
 ---
 
-## 678 : Displays CIt
+## 678 : 4 bit RAM
 
-* Author: Cambridge
-* Description: To display 'CIt' on 7 segment display
-* [GitHub repository](https://github.com/cittapeout/Citech)
-* [GDS submitted](https://github.com/cittapeout/Citech/actions/runs/8748673309)
-* [Wokwi](https://wokwi.com/projects/395522292785089537) project
+* Author: Alejandro Silva Juarez
+* Description: Is a Memory RAM (4 bits)
+* [GitHub repository](https://github.com/asilvaj1/tt04-submission_silva_ram)
+* [GDS submitted](https://github.com/asilvaj1/tt04-submission_silva_ram/actions/runs/8514227731)
+* HDL project
 * [Extra docs](None)
-* Clock: 1 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Worwi project using a D flipflop ring to display "CIt" on the 7 segment display.
+It is a 4 bit RAM
 
 ### How to test
 
-Turn on the required inputs ,turn off the unused inputs.
+It is tested with 4 inputs, the clock, the write enable input and the 4-bit input data, the output is 4 bits as well.
 
 ### External hardware
 
-None,beside the TT demo board.
+The chip may need a Microcontroller, Raspberry, Arduino or FPGA for data inputs and memory addresses or 8 switches can be placed for data inputs and memory addresses.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | run | led_a |  |
-| 1 | state_init[0] | led_b |  |
-| 2 | state_init[1] | led_c |  |
-| 3 | state_init[2] | led_d |  |
-| 4 | state_init[3] | led_e |  |
-| 5 | unused | led_f |  |
-| 6 | unused | led_g |  |
-| 7 | unused | led_h |  |
+| 0 | Memory entry address [0] | Memory output data [0] | RAM write enable input |
+| 1 | Memory entry address [1] | Memory output data [1] |  |
+| 2 | Memory entry address [2] | Memory output data [2] |  |
+| 3 | Memory entry address [3] | Memory output data [3] |  |
+| 4 | Memory input data [0] |  |  |
+| 5 | Memory input data [1] |  |  |
+| 6 | Memory input data [2] |  |  |
+| 7 | Memory input data [3] |  |  |
 
 ### Chip location
 

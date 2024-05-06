@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "108 Synthesized Time-to-Digital Converter (TDC)"
-weight: 19
+title: "108 Moving average filter"
+weight: 176
 ---
 
-## 108 : Synthesized Time-to-Digital Converter (TDC)
+## 108 : Moving average filter
 
-* Author: Harald Pretl
-* Description: Synthesized TDC based on an interleaved delay line
-* [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v1)
-* [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v1/actions/runs/8662018827)
+* Author: Alexander Hofer
+* Description: 10-bit moving average filter designed to smooth input data streams.
+* [GitHub repository](https://github.com/AlexHoferW23/jku-tt06-averagefilter)
+* [GDS submitted](https://github.com/AlexHoferW23/jku-tt06-averagefilter/actions/runs/8627627258)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,33 +26,34 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a simple synthesized time-to-digital converter (TDC), consisting of a delay line and parallel capture FF. Depending on `__TDC_INTERLEAVED__` either a simple or an interleaved delay line is implemented.
-
-In the TT 1x1 block size a 192-stage interleaved delay can be fitted.
+The design implements a moving average filter using a series of registers and a finite state machine (FSM).
+The filter calculates the average of a set of recent values in a data stream, determined by the FILTER_POWER parameter.
+This smooths out short-term fluctuations and highlights longer-term trends or cycles.
+The master module handles input and output processing, including bidirectional IO handling and filter selection based on input control signals.
 
 ### How to test
 
-Apply two signals to `ui_in[0]` and `clk`.
-
-After capturing (rising edge of `clk`) the result (i.e., the time delay between rising edge of `ui_in[0]` and `clk`) can be muxed-out to `uo_out[7:0]` using `ui_in[7:3]` as byte-wise selector. `ui_in[7:3]=0000` gives result byte 0, `ui_in[7:3]=0001` gives result byte 1, etc.
+To test the moving average filter, provide a series of digital input values to the 'ui_in' port and observe the smoothed output on 'uo_out'.
+The 'uio_in' can be used to control the filter's width and operational parameters.
+Test with varying input patterns and filter widths to evaluate the filter's response.
 
 ### External hardware
 
-Two signal generators generating logical signals with a programmable delay.
+There is no external Hardware
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Start signal of TDC (stop signal is clk) | Result LSB |  |
-| 1 |  | Result |  |
-| 2 |  | Result |  |
-| 3 |  | Result |  |
-| 4 | output select | Result |  |
-| 5 | output select | Result |  |
-| 6 | output select | Result |  |
-| 7 | output select | Result MSB |  |
+| 0 | Input for filter | Output for filter | Strobe input |
+| 1 | Input for filter | Output for filter | Strobe output |
+| 2 | Input for filter | Output for filter | Additional input bit |
+| 3 | Input for filter | Output for filter | Additional input bit |
+| 4 | Input for filter | Output for filter | Additional output bit |
+| 5 | Input for filter | Output for filter | Additional output bit |
+| 6 | Input for filter | Output for filter | Filter width input |
+| 7 | Input for filter | Output for filter | Filter width input |
 
 ### Chip location
 

@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "553 motor a pasos"
-weight: 174
+title: "553 IFSC Keypad Locker"
+weight: 72
 ---
 
-## 553 : motor a pasos
+## 553 : IFSC Keypad Locker
 
-* Author: Alan Tavira
-* Description: Motor a pasos con base de tiempo para control de velocidad, cambio de sentido de giro y de tipo de paso 
-* [GitHub repository](https://github.com/AlanTavira/motor_pasos)
-* [GDS submitted](https://github.com/AlanTavira/motor_pasos/actions/runs/8671431248)
-* HDL project
+* Author: Roddy Romero; Gabriel Mota; Luis Davi Paganella; Vinicius Westphal De Paula; 
+* Description: 4 digit Locker of an ordinary 4x4 contact keypad (based on Arduino keypad)
+* [GitHub repository](https://github.com/luisdavikp/tt06-IFSC_Keyboard_Locker)
+* [GDS submitted](https://github.com/luisdavikp/tt06-IFSC_Keyboard_Locker/actions/runs/8665127385)
+* [Wokwi](https://wokwi.com/projects/394640918790880257) project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 100 Hz
 
 <!---
 
@@ -26,62 +26,47 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-En este trabajo se realiza un motor a pasos con la implementación de una máquina de estados tipo moore. El cambio de un estado a otro se hace a diferentes velocidades, 1s, 0.5s, 0.25s y 0.125s, utilizando la base de tiempo realizada en el trabajo anterior. Se realizan 3 tipos de pasos para este motor los cuales son el paso completo, el medio paso y el paso doble y cada uno de estos puede ser realizado en el sentido horario o antihorario.
+The circuit consists of 8 input and output pins. 4 input and output pins are reserved for the 4 x 4 matrix keypad. The rows are connected to the output (0,1,2,3) while the columns are connected to the inputs (3,4,5,6). The circuit is powered at input pin 0. A high clock signal is recommended to prevent delays when keys are pressed, so the frequency was set as 100 Hz. Pins 1 and 2 are used for setting and resetting the circuit's flip-flops. This circuit does not require setting any flip-flops, so this input should be grounded. The Reset should be connected to a button because every time the circuit is started for the first time, the flip-flops may start with random states, which can impede the correct operation of the circuit. Therefore, the button is used to reset it the first time it is used and to be able to register a new password. Output pin 6 is the signal indicating whether a password is registered. Output pin 5 indicates the state of the lock; if the entered password matches the registered password, the signal is positive. Pin 7 is a verification signal indicating that the circuit is operating correctly.
 
-El motor a pasos puede implementarse como una máquina de estados en la cual tendremos 3 entradas y 4 salidas. Las entradas son :
+Basic Operating Principle:
 
--Selector de velocidad: Viene de una base de tiempo previamente realizada. En el código puede verse como un wire llamado vel. Si está en un valor alto se            cambia al siguiente estado mientras que en un valor bajo se mantiene en el mismo estado. Con esta entrada podemos variar la velocidad con la que cambian los        estados.
+The circuit must receive a signal from a 4x4 matrix contact keypad to register and receive password attempts. For this, the circuit must energize each row of the keypad so that when a button is pressed, the contact of that row x and column y sends a signal (x,y) to the circuit. Additionally, the circuit must automatically register 4 digits and then enter the "password attempt" mode, where all subsequent digits are used to attempt to enter the password.
 
--Sentido: Esta entrada indica si el motor a pasos tendrá el sentido antihorario u horario, en el código esta representada por la entrada sentido.
-
--Paso: Con esta entrada definimos si el paso será completo, medio o doble. En el código se define como paso.
-
-Las 4 bobinas de salidas se definen como I1, I2, I3 y I4.
-En la figura podemos ver el diagrama de la maquina de estados que representa al motor a pasos. La entrada H corresponde a la salida de la base de tiempo vel, la salida D al sentido y P al tipo de paso.
-![Captura de pantalla 2024-03-29 023219](https://github.com/AlanTavira/motor_pasos/assets/165334805/508a41f1-62bb-4e4e-992f-eff174756aaa)
-
-En la siguiente figura se presentan las conexiones de las entradas y salidas de la máquina de estados con las correspondientes al chip del proyecto.
-![Latin practice](https://github.com/AlanTavira/motor_pasos/assets/165334805/67f68115-d9df-45f5-ba97-3f7a0a1f40e0)
-
-Las entradas RST, select, sentido y paso son entradas que pueden ser controladas con un switch o push button ya que únicamente se requiere de un valor lógico alto o bajo para ellas. La entrada CLK corresponde al reloj, no se conecta al reloj del chip para poder tener más libertad en el valor de la frecuencia de la base de tiempo. Aunque originalmente se utilizó un reloj de 50MHz. Finalmente, las salidas I1, I2, I3 y I4 son las salidas de la máquina de estados. La frecuencia de operación de estas dependen del valor de la entrada select, ya que esta controla la velocidad del pulso de la base de tiempo que a su vez controla la velocidad a la que operara la máquina de estados (50MHz, 25MHz, 12.5MHz o 6.25MHz).
+Therefore, there are 8 registers to receive the Row x Column coordinates of the keypad. Since the password consists of 4 digits, there are 4 sets of these 8 registers connected in series. There are two main states: "Register password" and "Password attempt". Each state has 32 registers, grouped into 4 sets in series, each with 8 registers in parallel. All registers are connected with the clock in parallel.
 
 ### How to test
 
-Se utiliza un reloj de 50MHz para la máquina de estados y la base de tiempo. Dependiendo del selector de velocidad el cambio de un estado a otro se dará en 1s (cuando se cuenten todos los ciclos), 0.5s (conteo de la mitad de los ciclos), 0.25s (conteo de 1/4 del total de los ciclos) o 0.125s (1/8 de los ciclos). Si la entrada "paso" esta activa entonces el cambio será de medio paso y cuando este en bajo el paso será completo, si la entrada paso está en bajo y nos encontramos en un estado correspondiente a medio paso (4, 5, 6 o 7) entonces el paso será doble. Si la entrada "sentido" está en bajo entonces el cambio se dará en sentido horario y cuando la entrada este en un valor alto el sentido será antihorario. Por último, la salida de la base de tiempo nos indica si cambiar a otro estado (valor en alto) o permanecer en el mismo estado (valor en bajo).
+After turning on the circuit and restarting it for the first time, the circuit has 3 logical operating states: No key pressed, Key pressed, Key released.
 
-Para la simulación se cambia el parámetro f de la base de tiempo de 50000000 a 8 para facilitar la simulación. La señal de reset se deja en el valor fijo 0, el reloj tiene un periodo de 1ns, el select y el sentido se establecen con un periodo de 324ns y el paso con 162ns. De esta manera podemos ver todas las combinaciones para las entradas sentido y paso con una sola velocidad. En la figura se observan las salidas correspondientes a cada estado con el sentido horario (sentido=0) y el paso completo (paso=0).
-![Captura de pantalla 2024-03-29 142810](https://github.com/AlanTavira/motor_pasos/assets/165334805/d65b7fc1-5f99-46ff-a7cd-653481c8fb39)
+When no key is pressed, the clock signal is sent in parallel to 4 registers in series (Shift registers). These registers sequentially transfer only one positive signal in a loop. This allows the circuit to energize only one row of the keypad at a time.
 
-los estados cuando el sentido es horario (sentido=0) y se tienen medios pasos (paso=1) se tienen en la siguiente imagen
-![Captura de pantalla 2024-03-29 143019](https://github.com/AlanTavira/motor_pasos/assets/165334805/02d68eb8-24ca-4227-8e61-26c32dc8cc07)
+When a key is pressed, the signal travels through the 4 registers until it reaches the respective row that had contact with the column. When this row is reached, the closed contact of this row with the column of the pressed key energizes that column. The column sends the signal back to the circuit, which triggers a clock gating that blocks the clock signal to the registers. This way, the shift circuit is "paused" while the column is energized. To ensure that only one row is connected, there is a verification step. If it is confirmed that only one row is connected and the column is activated, a "button pressed" flip-flop is set. This flip-flop serves as a small delay to allow a clock step for the password registers. This permission is achieved with an AND gate, which connects the delay flip-flop and a control flip-flop, responsible for controlling the "password attempt" and "password registration" states. While no password is registered, the circuit first feeds the "password registration" registers.
 
-La imagen de abajo muestra la combinación de entradas correspondientes a un sentido antihorario (sentido=1) y ya que el paso es completo entre los estados 4 al 7 se considera un paso doble (paso=0).
-![Captura de pantalla 2024-03-29 143247](https://github.com/AlanTavira/motor_pasos/assets/165334805/c24b8aee-4a91-46e3-9f7e-e31c284b158f)
+When the key is released, the column is de-energized, and then the "button pressed" flip-flop is automatically reset, sending a low signal to the clock of the registers. Thus, when another key is pressed, the clock of the registers goes to the rising edge, and the coordinates data are shifted until reaching the 4th and last register.
 
-En la próxima imagen se regresa al medio paso (paso=1) pero ahora en sentido antihorario (sentido=1).
-![Captura de pantalla 2024-03-29 143401](https://github.com/AlanTavira/motor_pasos/assets/165334805/bd986e90-5792-4880-b192-3a5efff46c84)
-
-Finalmente, tenemos los diferentes valores que puede tomar el selector de velocidad (1s, 0.5s, 0.25s y 0.125s). Para cada caso las salidas son las mismas pero con una frecuencia más alta en comparación a la anterior.
-![Captura de pantalla 2024-03-29 143630](https://github.com/AlanTavira/motor_pasos/assets/165334805/1e33055f-3d42-4145-96e2-678d45808ec0)
-![Captura de pantalla 2024-03-29 143753](https://github.com/AlanTavira/motor_pasos/assets/165334805/00610d48-d335-4667-94d2-2a0c820199af)
+The last register of the "Password Register" sends a signal to the state control flip-flop, which is then set and starts blocking any clock from that set of registers. This activates the "Password Attempt" mode, where now the clock step is only for this other set of registers. When the same 4 digits are pressed in the exact order as those registered, a high signal is sent at the output, indicating that the password is correct.
 
 ### External hardware
 
-FPGA Cyclone II EP2C35F672C6ES
+- 1 Arduino 4x4 Matrix membrane Keyboard
+- 1 Step Button
+- Couple of LEDs
+
+![Diagram](images/diagram.png "Diagram")
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 | CLK |  |  |
-| 2 | RST | I4 |  |
-| 3 | select[0] | I3 |  |
-| 4 | select[1] | I2 | paso |
-| 5 |  | I1 | sentido |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | VCC | Keypad Row pin 1 |  |
+| 1 | RESET | Keypad Row pin 2 |  |
+| 2 | GND | Keypad Row pin 3 |  |
+| 3 | Keypad Column pin 1 | Keypad Row pin 4 |  |
+| 4 | Keypad Column pin 2 |  |  |
+| 5 | Keypad Column pin 3 | Locker State (LED 1) |  |
+| 6 | Keypad Column pin 4 | Registered Password Signal (LED 2) |  |
+| 7 |  | Line Verifier (LED 3) |  |
 
 ### Chip location
 

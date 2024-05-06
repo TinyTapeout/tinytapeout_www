@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "548 NCL LFSR"
-weight: 157
+title: "548 8-bit Binary Counter"
+weight: 38
 ---
 
-## 548 : NCL LFSR
+## 548 : 8-bit Binary Counter
 
-* Author: Tommy Thorn
-* Description: A trivial little example to try out self-timed logic
-* [GitHub repository](https://github.com/tommythorn/tt06-ncl-lfsr)
-* [GDS submitted](https://github.com/tommythorn/tt06-ncl-lfsr/actions/runs/8744366614)
+* Author: Aryan kannaujiya, Shivam Bhardwaj and Ambika Prasad Shah
+* Description:  This Verilog module defines a synchronous 8-bit counter, where the count increments on each rising edge of the clock input (clk). Additionally, it features an asynchronous reset input (rst_n), which,0 when activated, sets the counter output (out) to zero regardless of the clock signal.
+* [GitHub repository](https://github.com/aryan-kannaujiya/tt06-verilog-template)
+* [GDS submitted](https://github.com/aryan-kannaujiya/tt06-verilog-template/actions/runs/8739441942)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,27 +26,26 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Logic is dual redundantly encoded so we can distingush data (DATAx)
-and no data (NULL). ... to be filled in.
+The Verilog module implements a 8 bit binary counter with clock (`clk`), reset (`rst_n`), up count (`ui_in[2]`), down count(`ui_in[3]`), hold (`ui_in[4]`) ,output pins for binary (`out`), hexa decimal (`hex`) and decimal (`dec`). Upon a clock rising edge or reset assertion, it resets the output to 0 or increments it by 1, respectively. This design facilitates counting operations in digital systems, maintaining a 8-bit output range.
 
-### How to test
+### How to test2
 
-You can't really test without a scope and a way to drive inputs
+We test it on Vivado and open sources (OpenROAD and OpenLane).
 
 ### External hardware
 
-Scope
+defaults
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
+| 0 | clk | out |  |
+| 1 | rst_n | hex |  |
+| 2 | ui_in[2] | dec |  |
+| 3 | ui_in[3] |  |  |
+| 4 | ui_in[4] |  |  |
 | 5 |  |  |  |
 | 6 |  |  |  |
 | 7 |  |  |  |

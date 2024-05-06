@@ -1,62 +1,44 @@
 ---
 hidden: true
-title: "107 Animated 7-segment character display"
-weight: 94
+title: "107 i4004 for TinyTapeout"
+weight: 25
 ---
 
-## 107 : Animated 7-segment character display
+## 107 : i4004 for TinyTapeout
 
-* Author: Aron Dennen
-* Description: Displays 7-segment characters with animation
-* [GitHub repository](https://github.com/adennen/tt06-arond-project)
-* [GDS submitted](https://github.com/adennen/tt06-arond-project/actions/runs/8758050586)
+* Author: ISHI-KAI
+* Description: i4004 for TinyTapeout by ISHI-KAI.
+* [GitHub repository](https://github.com/noritsuna/tt06-tt_um_i4004)
+* [GDS submitted](https://github.com/noritsuna/tt06-tt_um_i4004/actions/runs/8479565288)
 * HDL project
 * [Extra docs](None)
-* Clock: 12500000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 741000 Hz
 
 ### How it works
 
-Animates the 7-segment display by reading in the input switches to create a custom 7-segment character. Nothing will be displayed until you toggle input 7 to start the character animation sequence.
-
-Inputs 0 through 6 map to outputs 0 though 6 (display segments a through g). Output 7 becomes active while input 7 is active.
-
-The uio inputs are used for an experimental pwm dimming feature, to enable pwm display dimming, set uio pin 7 active. uio inputs 0 through 6 set a 7-bit pwm dimming value on an 8-bit pwm unit. The pwm lsb input is tied to 0.
-
-The circuit works by iterating over the character bit pattern, enabling segments sequentially at a speed of about 0.12 seconds per segment.
+This is [i4004](https://ja.wikipedia.org/wiki/Intel_4004) Chip.
 
 ### How to test
 
-Toggle the input switches to create a character with inputs 0-6, toggle input 7 to start the character animation sequence.
-
-Optionally dim the display by enabling the pwm feature described above.
+No Test.
 
 ### External hardware
 
-none
+-[MCS4 Memory System](https://github.com/ryomuk/tangnano-MCS4memory)
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | input0 | seg0 | pwm_bit1 |
-| 1 | input1 | seg1 | pwm_bit2 |
-| 2 | input2 | seg2 | pwm_bit3 |
-| 3 | input3 | seg3 | pwm_bit4 |
-| 4 | input4 | seg4 | pwm_bit5 |
-| 5 | input5 | seg5 | pwm_bit6 |
-| 6 | input6 | seg6 | pwm_bit7 |
-| 7 | enable display | seg7 | usePwm |
+| 0 | data0_pad | cmrom_pad |  |
+| 1 | data1_pad | cmram0_pad |  |
+| 2 | data2_pad | cmram1_pad |  |
+| 3 | data3_pad | cmram2_pad |  |
+| 4 | clk1_pad | cmram3_pad |  |
+| 5 | clk2_pad | sync_pad |  |
+| 6 | poc_pad |  |  |
+| 7 | test_pad |  |  |
 
 ### Chip location
 

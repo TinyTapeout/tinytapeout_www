@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "164 8 Bit Digital QIF"
-weight: 66
+title: "164 Animated 7-segment character display"
+weight: 94
 ---
 
-## 164 : 8 Bit Digital QIF
+## 164 : Animated 7-segment character display
 
-* Author: David Parent
-* Description: The circuit will spike when the input is positive.  It will reset when the signal exceeds a predetermined value
-* [GitHub repository](https://github.com/davidparent/tt_um_tt6_verilog_davidparent)
-* [GDS submitted](https://github.com/davidparent/tt_um_tt6_verilog_davidparent/actions/runs/8632309382)
+* Author: Aron Dennen
+* Description: Displays 7-segment characters with animation
+* [GitHub repository](https://github.com/adennen/tt06-arond-project)
+* [GDS submitted](https://github.com/adennen/tt06-arond-project/actions/runs/8758050586)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 12500000 Hz
 
 <!---
 
@@ -26,29 +26,37 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-QIF
+Animates the 7-segment display by reading in the input switches to create a custom 7-segment character. Nothing will be displayed until you toggle input 7 to start the character animation sequence.
+
+Inputs 0 through 6 map to outputs 0 though 6 (display segments a through g). Output 7 becomes active while input 7 is active.
+
+The uio inputs are used for an experimental pwm dimming feature, to enable pwm display dimming, set uio pin 7 active. uio inputs 0 through 6 set a 7-bit pwm dimming value on an 8-bit pwm unit. The pwm lsb input is tied to 0.
+
+The circuit works by iterating over the character bit pattern, enabling segments sequentially at a speed of about 0.12 seconds per segment.
 
 ### How to test
 
-QIF
+Toggle the input switches to create a character with inputs 0-6, toggle input 7 to start the character animation sequence.
+
+Optionally dim the display by enabling the pwm feature described above.
 
 ### External hardware
 
-ADALM2000
+none
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | B0 | AS0 |  |
-| 1 | B1 | S1 |  |
-| 2 | B2 | S2 |  |
-| 3 | B3 | S3 |  |
-| 4 | B4 | S4 |  |
-| 5 | B5 | S5 |  |
-| 6 | B6 | S6 |  |
-| 7 | B7 | S7 |  |
+| 0 | input0 | seg0 | pwm_bit1 |
+| 1 | input1 | seg1 | pwm_bit2 |
+| 2 | input2 | seg2 | pwm_bit3 |
+| 3 | input3 | seg3 | pwm_bit4 |
+| 4 | input4 | seg4 | pwm_bit5 |
+| 5 | input5 | seg5 | pwm_bit6 |
+| 6 | input6 | seg6 | pwm_bit7 |
+| 7 | enable display | seg7 | usePwm |
 
 ### Chip location
 

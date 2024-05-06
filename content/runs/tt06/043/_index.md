@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "43 PILIPINAS"
-weight: 153
+title: "43 drops"
+weight: 239
 ---
 
-## 43 : PILIPINAS
+## 43 : drops
 
-* Author: Alexander Co Abad and Dino Dominic Ligutan
-* Description: 7-seg Display for PILIPINASLASALLE
-* [GitHub repository](https://github.com/alexandercoabad/PILIPINAS)
-* [GDS submitted](https://github.com/alexandercoabad/PILIPINAS/actions/runs/8614186498)
-* [Wokwi](https://wokwi.com/projects/392873974467527681) project
+* Author: Philipp Ploeckinger
+* Description: Arcade Style game, which lets you collect vertical droplets on an 8x8 pixel display
+* [GitHub repository](https://github.com/PloeckiPhil/jku-tt06-drops)
+* [GDS submitted](https://github.com/PloeckiPhil/jku-tt06-drops/actions/runs/8628550797)
+* HDL project
 * [Extra docs](None)
-* Clock: 1 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,53 +26,39 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Based from https://wokwi.com/projects/341279123277087315
-
-On power-up, the 7-segment display should display the text PILIPINASLASALLE one at a time per clock cycle. The "dp" output toggles every clock cycle.
-
-Setting the input pin 7 to HIGH allows for manual override of the BCD value. In this mode, input pins 0-3 controls the BCD value. The text displayed for each BCD value are tabulated below:
-| **in0** | **in1** | **in2** | **in3** | **Character** |
-|:-------:|:-------:|:-------:|:-------:|:-------------:|
-|   LOW   |   LOW   |   LOW   |   LOW   |       P       |
-|   LOW   |   LOW   |   LOW   |   HIGH  |       I       |
-|   LOW   |   LOW   |   HIGH  |   LOW   |       L       |
-|   LOW   |   LOW   |   HIGH  |   HIGH  |       I       |
-|   LOW   |   HIGH  |   LOW   |   LOW   |       P       |
-|   LOW   |   HIGH  |   LOW   |   HIGH  |       I       |
-|   LOW   |   HIGH  |   HIGH  |   LOW   |       N       |
-|   LOW   |   HIGH  |   HIGH  |   HIGH  |       A       |
-|   HIGH  |   LOW   |   LOW   |   LOW   |       S       |
-|   HIGH  |   LOW   |   LOW   |   HIGH  |       L       |
-|   HIGH  |   LOW   |   HIGH  |   LOW   |       A       |
-|   HIGH  |   LOW   |   HIGH  |   HIGH  |       S       |
-|   HIGH  |   HIGH  |   LOW   |   LOW   |       A       |
-|   HIGH  |   HIGH  |   LOW   |   HIGH  |       L       |
-|   HIGH  |   HIGH  |   HIGH  |   LOW   |       L       |
-|   HIGH  |   HIGH  |   HIGH  |   HIGH  |       E       |
+This project uses two mechanical buttons and an 8x8 display to plan arcade style game called drops.
+The goal is to move a bar horicontal in order to catch the vertical falling drops.
+The player starts with a fixed numer of lifes. Each time the drop is missed, the lifes are deducted by one.
+When all lifes are used, the game is over an can be restarted with the reset button.
 
 ### How to test
 
-Default mode: Set the clock input to a low frequency such as 1 Hz to see the text transition per clock cycle.
+After plugging everything in as specified in the info.yaml file, the display should light up.
+If this is not the case, change row and colum pins
 
-Manual mode: Set the input pin 7 to HIGH and toggle input pins 0-3. The character displayed for each input combination should be according to the table above.
+There are two things that need to be tested and eventually corrected:
+
+- Drop moving upwards: change the column pins (7 to 0, 0 to 7 etc)
+- Bar mowing in wrong direction: either change left and right button or siwcht row pins (7 to 0, 0 to 7 etc)
 
 ### External hardware
 
-7-segment display
+In addition to the Tiny Tapeout board there are two buttons, and an 8x8 display necessary.
+Base on your desired connection of the buttons you might need an additional power source.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | BCD Bit 3 (A) | segment a |  |
-| 1 | BCD Bit 2 (A) | segment b |  |
-| 2 | BCD Bit 1 (A) | segment c |  |
-| 3 | BCD Bit 0 (A) | segment d |  |
-| 4 |  | segment e |  |
-| 5 |  | segment f |  |
-| 6 |  | segment g |  |
-| 7 | Manual Input Mode | segment dp |  |
+| 0 | push button - right | display column 0 | display row 0 |
+| 1 | push button - left | display column 1 | display row 1 |
+| 2 |  | display column 2 | display row 2 |
+| 3 |  | display column 3 | display row 3 |
+| 4 |  | display column 4 | display row 4 |
+| 5 |  | display column 5 | display row 5 |
+| 6 |  | display column 6 | display row 6 |
+| 7 |  | display column 7 | display row 7 |
 
 ### Chip location
 

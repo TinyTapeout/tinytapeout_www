@@ -1,54 +1,51 @@
 ---
 hidden: true
-title: "204 Chisel Pong"
-weight: 103
+title: "204 The James Retro Byte 8 computer"
+weight: 55
 ---
 
-## 204 : Chisel Pong
+## 204 : The James Retro Byte 8 computer
 
-* Author: Tjark Petersen
-* Description: A basic Pong game using VGA implemented in Chisel.
-* [GitHub repository](https://github.com/tjarker/tiny-tapeout-pong)
-* [GDS submitted](https://github.com/tjarker/tiny-tapeout-pong/actions/runs/8754004711)
+* Author: James Ridey
+* Description: A 8bit microprocessor built from the ground up (nand2tetris)
+* [GitHub repository](https://github.com/AeroX2/tt06-jrb8-computer)
+* [GDS submitted](https://github.com/AeroX2/tt06-jrb8-computer/actions/runs/8723705761)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 0 Hz
 
 ### How it works
 
-This is a Chisel template
+This is a 8 bit computer I made a long time ago in Logisim Evolution, which I have now decided to port to Tinytapeout and getting manufactured.
+There is a little bit more information about how the CU works and the instructions supported but don't expect much
+https://docs.google.com/document/d/1ZVZw_Kt-KQHER0Wr5ty7JpUEeox_284Mih4rwE16FVM/edit?usp=sharing
 
 ### How to test
 
-Currently we use cocotb, this shall change to ChiselTest
+The input pins and the output pins have been assigned respectively to the ui_in and uo_out respectively. As for the uio_in/out that needs to be configured with a SPI RAM and a SPI EEPROM.
+
+The computer should start immediately once the clk starts driving it.
 
 ### External hardware
 
-non by default
+(check info.yaml for pins)
+
+- SPI RAM
+- SPI EEPROM
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | left player up | r[1] | state[0] |
-| 1 | left player down | g[1] | state[1] |
-| 2 | right player up | b[1] | state[2] |
-| 3 | right player down | v-sync | v-sync |
-| 4 | engage left player autopilot | r[0] | h-sync |
-| 5 | engage right player autopilot | g[0] | left player lost |
-| 6 | not used | b[0] | right player lost |
-| 7 | not used | h-sync | game tick |
+| 0 | input bit 0 | output bit 0 | cs rom |
+| 1 | input bit 1 | output bit 1 | mosi |
+| 2 | input bit 2 | output bit 2 | miso |
+| 3 | input bit 3 | output bit 3 | sck |
+| 4 | input bit 4 | output bit 4 | cs ram |
+| 5 | input bit 5 | output bit 5 |  |
+| 6 | input bit 6 | output bit 6 |  |
+| 7 | input bit 7 | output bit 7 | 24 addressing bit mode |
 
 ### Chip location
 

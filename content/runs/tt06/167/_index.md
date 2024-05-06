@@ -1,52 +1,45 @@
 ---
 hidden: true
-title: "167 8-bit PRNG"
-weight: 116
+title: "167 *NOT WORKING* HP 5082-7500 Decoder"
+weight: 39
 ---
 
-## 167 : 8-bit PRNG
+## 167 : *NOT WORKING* HP 5082-7500 Decoder
 
-* Author: Jakub Duchniewicz
-* Description: Pure Random Noise Generator using Linear Feedback Shift Register with 2 halves of the 16-bit internal states shifted in different directions and xor'ed
-* [GitHub repository](https://github.com/JDuchniewicz/tt06-PRNG)
-* [GDS submitted](https://github.com/JDuchniewicz/tt06-PRNG/actions/runs/8733263844)
-* HDL project
+* Author: Per Jensen
+* Description: Trying to recreate the decoding logic in the HP 5082-7500-display. At this moment project is not finished.
+* [GitHub repository](https://github.com/zaprodk/HP5082-7500_Decoder)
+* [GDS submitted](https://github.com/zaprodk/HP5082-7500_Decoder/actions/runs/8728097769)
+* [Wokwi](https://wokwi.com/projects/395444977868278785) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
-
 ### How it works
 
-The project is based on 16-bit [Linear Feedback Shift Register](https://en.wikipedia.org/wiki/Linear-feedback_shift_register) but with a small twist - at each clock cycle the LFSR combines it's output from 2 halves, upper half (bits 15 to 8) is rotated left and the lower (bits 7 to 0) are rotated right and XOR'ed at the end.
-
-Inspired by [this StackOverflow post](https://stackoverflow.com/questions/14497877/how-to-implement-a-pseudo-hardware-random-number-generator).
+This design should be able to recreate the old HP 5082-7500 display logic. This is a custom HP ASIC from the 70s, made on new silicon.
 
 ### How to test
 
-You can experiment with different initialization seeds and see how it changes the generated sequence - all 0 initialization does not work, the PRNG always returns 0s from such seed. The proposed usage of this project is as a noise generator that could be fed to e.g. musical synthesizer or be used as a non-cryptographic randomness generator.
+Connect inputs to 4-bit BCD input and LEDs to output x---y
+
+### External hardware
+
+BCD switch or counter
+LED dot-matrix-display.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Bit 0 initial PRNG seed | Bit 0 output noise |  |
-| 1 | Bit 1 initial PRNG seed | Bit 1 output noise |  |
-| 2 | Bit 2 initial PRNG seed | Bit 2 output noise |  |
-| 3 | Bit 3 initial PRNG seed | Bit 3 output noise |  |
-| 4 | Bit 4 initial PRNG seed | Bit 4 output noise |  |
-| 5 | Bit 5 initial PRNG seed | Bit 5 output noise |  |
-| 6 | Bit 6 initial PRNG seed | Bit 6 output noise |  |
-| 7 | Bit 7 initial PRNG seed | Bit 7 output noise |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

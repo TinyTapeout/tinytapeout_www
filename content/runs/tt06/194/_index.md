@@ -1,44 +1,54 @@
 ---
 hidden: true
-title: "194 8-bit CPU with Debugger"
-weight: 115
+title: "194 ANS Encoder/Decoder"
+weight: 15
 ---
 
-## 194 : 8-bit CPU with Debugger
+## 194 : ANS Encoder/Decoder
 
-* Author: Sean Patrick O'Brien
-* Description: 8-bit CPU with debugger accessible via I2C
-* [GitHub repository](https://github.com/obriensp/tt06-spo-be8-nomacro)
-* [GDS submitted](https://github.com/obriensp/tt06-spo-be8-nomacro/actions/runs/8757129187)
+* Author: Davide Asnaghi & Lenny Khazan
+* Description: Asymmetric Numeral Systems Encoder/Decoder
+* [GitHub repository](https://github.com/LK/tt06-ans)
+* [GDS submitted](https://github.com/LK/tt06-ans/actions/runs/8757566085)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 25000000 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-The CPU is based on Ben Eater's [8-bit breadboard CPU](https://eater.net/8bit). A built-in debugger allows pausing the CPU, loading programs, inspecting/modifying registers, etc.
+Big data goes in, small data comes out
 
 ### How to test
 
-The debugger is accessible over I2C at address 0x2A (0x54 write, 0x55 read). The provided `dbg` program can be used to load programs, inspect registers, etc.
+TBD
 
 ### External hardware
 
-Optionally, data can be provided on the input pins and consumed on the output pins. They are accessible to the CPU as the IN and OUT registers.
+None
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Input Port | Output Port |  |
-| 1 | Input Port | Output Port |  |
-| 2 | Input Port | Output Port | SCL |
-| 3 | Input Port | Output Port | SDA |
-| 4 | Input Port | Output Port | HALTED |
-| 5 | Input Port | Output Port |  |
-| 6 | Input Port | Output Port |  |
-| 7 | Input Port | Output Port |  |
+| 0 | input | output | cmd |
+| 1 | input | output | cmd |
+| 2 | input | output | in_vld |
+| 3 | input | output | out_rdy |
+| 4 |  |  | in_rdy |
+| 5 |  |  | out_vld |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

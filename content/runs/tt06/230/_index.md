@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "230 8-Bit CPU In a Week"
-weight: 135
+title: "230 Pulse Width Modulation"
+weight: 201
 ---
 
-## 230 : 8-Bit CPU In a Week
+## 230 : Pulse Width Modulation
 
-* Author: Ramyad Hadidi
-* Description: 8-bit Single-Cycle CPU
-* [GitHub repository](https://github.com/ramyadhadidi/tt06-8bit-cpu)
-* [GDS submitted](https://github.com/ramyadhadidi/tt06-8bit-cpu/actions/runs/8690510085)
+* Author: Shivam Bhardwaj, Sachin Sharma and Ambika Prasad Shah
+* Description: This Verilog module generates a Pulse Width Modulation (PWM) signal with adjustable duty cycle. It utilizes a 50MHz clock input and debounced buttons to increase or decrease the duty cycle, producing a 5MHz PWM output for various applications like motor speed control or LED brightness adjustment.
+* [GitHub repository](https://github.com/OnSachinSharma/tt06-verilog-PWM)
+* [GDS submitted](https://github.com/OnSachinSharma/tt06-verilog-PWM/actions/runs/8650528686)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,56 +26,36 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project details the design and implementation of an 8-bit single-cycle microprocessor. The processor includes a register file and an Arithmetic Logic Unit (ALU). The design was crafted to handle a simple instruction set architecture (ISA) that supports basic ALU operations, load/store operations, and status checks for the ALU carry -- all within less than a week. While the current version lacks a program counter and external memory, thus omitting any form of jump operations, it provides a solid foundation for understanding basic computational operations within a custom CPU architecture.
+We want to design Pulse width Modulation (PWM) with 50MHz input Frequency.
+The Verilog code defines a module named `tt_um_shivam` responsible for generating a Pulse Width Modulation (PWM) signal. It takes a 50MHz clock input (`clk`) and provides inputs for increasing the assigned pin (`ui_in[0]`) and decreasing the assigned pin (`ui_in[0]`) in the duty cycle. The PWM signal is output through the assigned pin `PWM_OUT` at a frequency of 5MHz.
 
-#### ISCA Overview
+The code implements debouncing logic for the increase and decrease duty cycle buttons using D flip-flops (`DFF_PWM` modules) to prevent rapid fluctuations due to button bouncing. It also includes counters for generating slow clock enable signals to facilitate debouncing.
 
-The ISA is straightforward and is primarily focused on register operations and basic arithmetic/logic functions. Below is the breakdown of the instruction set:
+The duty cycle can be adjusted by pressing the increase or decrease buttons, which are debounced to ensure reliable operation. The duty cycle can vary from 0% to 90% (in 10% increments), and the PWM signal is generated based on this duty cycle.
 
-```
-// ISA --------------------------------------------------------------
-//-- R level
-`define MVR 4'b0000            // Move Register
-`define LDB 4'b0001            // Load Byte into Regsiter
-`define STB 4'b0010            // Store Byte from Regsiter
-`define RDS 4'b0011            // Read (store) processor status
-// 1'b0100 NOP
-// 1'b0101 NOP
-// 1'b0110 NOP
-// 1'b0111 NOP
-
-//-- Arithmatics
-`define NOT {1'b1, `ALU_NOT}
-`define AND {1'b1, `ALU_AND}
-`define ORA {1'b1, `ALU_ORA}
-`define ADD {1'b1, `ALU_ADD}
-`define SUB {1'b1, `ALU_SUB}
-`define XOR {1'b1, `ALU_XOR}
-`define INC {1'b1, `ALU_INC}
-// 1'b1111 NOP
-```
+Overall, the code provides a flexible and robust PWM signal generator with adjustable duty cycle control.
 
 ### How to test
 
-The processor has been tested through a suite of 12 testbenches, each designed to validate a specific functionality or operation. These testbenches cover basic ALU operations, data movement between registers, and the load/store functionalities. Although basic operational tests are passing, timing interactions between instructions have not been exhaustively verified, and it is anticipated that a sophisticated compiler would handle these timing considerations effectively, reminiscent of approaches taken in historical computing systems.
+We check our design with the help of OpenROAD flow script (ORFS).
 
 ### External hardware
 
-Currently, the processor does not interface with any external hardware components. It operates entirely within a simulated environment where all inputs and outputs are managed through testbenches. This setup is ideal for educational purposes or for foundational experimentation in CPU design.
+default
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Register 1 (R1) Address bit 0 | Data out bit 0 (either register data / Processor stat) | Data in bit 0 / Register 3 (R3) Address bit 0 |
-| 1 | Register 1 (R1) Address bit 1 | Data out bit 1 (either register data / 0) | Data in bit 1 / Register 3 (R3) Address bit 1 |
-| 2 | Register 1 (R1) Address bit 2 | Data out bit 2 (either register data / 0) | Data in bit 2 / Register 3 (R3) Address bit 2 |
-| 3 | Register 1 (R1) Address bit 3 | Data out bit 3 (either register data / 0) | Data in bit 3 / Register 3 (R3) Address bit 3 |
-| 4 | Instruction ISA Opcode bit 0 | Data out bit 4 (either register data / 0) | Data in bit 4 / Register 2 (R2) Address bit 0 |
-| 5 | Instruction ISA Opcode bit 1 | Data out bit 5 (either register data / 0) | Data in bit 5 / Register 2 (R2) Address bit 1 |
-| 6 | Instruction ISA Opcode bit 2 | Data out bit 6 (either register data / 0) | Data in bit 6 / Register 2 (R2) Address bit 2 |
-| 7 | Instruction ISA Opcode bit 3 | Data out bit 7 (either register data / 0) | Data in bit 7 / Register 2 (R2) Address bit 3 |
+| 0 | clk | PWM_OUT |  |
+| 1 | ui_in[0] |  |  |
+| 2 | ui_in[1] |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

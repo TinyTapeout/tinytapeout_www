@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "300 Tiny_Tapeout_6_Frank"
-weight: 229
+title: "300 First TT Project"
+weight: 156
 ---
 
-## 300 : Tiny_Tapeout_6_Frank
+## 300 : First TT Project
 
-* Author: Frank Hellmann
-* Description: 7Seg Around the Clock / FH display
-* [GitHub repository](https://github.com/sandman72/Tiny_Tapeout_6_Frank)
-* [GDS submitted](https://github.com/sandman72/Tiny_Tapeout_6_Frank/actions/runs/8680949822)
-* [Wokwi](https://wokwi.com/projects/395055359324730369) project
+* Author: t4m
+* Description: First TinyTakeout Project at Hackaday
+* [GitHub repository](https://github.com/thornoff/tiny_tapeout_hackaday)
+* [GDS submitted](https://github.com/thornoff/tiny_tapeout_hackaday/actions/runs/8755392472)
+* [Wokwi](https://wokwi.com/projects/395054823569451009) project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,47 +26,15 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project was created during the Hackaday Conference 2024 and shows two simple animations on the 7seg display.
-It takes the clock input (10kHz) and divides it down depending on the input 7.
-The mode input 0 either shows the letters F and H or is switched to the rotation animation.
-
-Inputs
-
-SW1 - IN0 = Mode (FH or Rotation Animation)
-
-SW2 - IN1 = Blinking (turns dot on/off)
-
-SW3 - IN2 = unused
-
-SW4 - IN3 = unused
-
-SW5 - IN4 = unused
-
-SW6 - IN5 = Pause (if switched on, animation will freeze)
-
-SW7 - IN6 = Debug (if switched on, divider will stop)
-
-SW8 - IN7 = Divider (fast an slow)
+The default project just displays three segments lighting up.
 
 ### How to test
 
-Apply clock (10khz) and watch the 7seg display
-
-If all inputs are off the 7seg display will show alternating letters F and H
-
-If switch SW1 is on the 7seg display will show the rotation animation
-
-Toggle SW2 to disable the dot blinking
-
-Toggle SW6 to pause
-
-Toggle SW8 to change speed
-
-SW7 is for debugging divider
+You can use the project as a template to build more complicated 7 segment project.
 
 ### External hardware
 
-The 7Seg LED display is used on outputs
+List external hardware used in your project (e.g. PMOD, LED display, etc), if any
 
 
 ### IO

@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "618 SumLatchUART_System"
-weight: 28
+title: "618 NCL LFSR"
+weight: 157
 ---
 
-## 618 : SumLatchUART_System
+## 618 : NCL LFSR
 
-* Author: Gilberto Ramos Valenzuela
-* Description:  4 bit adder
-* [GitHub repository](https://github.com/brtgio/UART_4-bits_ALU_System)
-* [GDS submitted](https://github.com/brtgio/UART_4-bits_ALU_System/actions/runs/8695197743)
+* Author: Tommy Thorn
+* Description: A trivial little example to try out self-timed logic
+* [GitHub repository](https://github.com/tommythorn/tt06-ncl-lfsr)
+* [GDS submitted](https://github.com/tommythorn/tt06-ncl-lfsr/actions/runs/8744366614)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,46 +26,30 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The system operates by receiving a 4-bit input and storing it in one of two registers, designated as Register A or Register B. Following this, the Arithmetic Logic Unit (ALU) receives a 4-bit operation selection code which dictates the specific operation to be executed on the input data. These operations can include addition, subtraction, bitwise AND, bitwise OR, and other logical or arithmetic operations depending on the design of the ALU.
-
-Once the operation is performed, the output is routed to a Universal Asynchronous Receiver-Transmitter (UART) transmitter. The UART transmitter facilitates the communication of the result to either a microcontroller or a standalone UART interface. This allows for seamless integration with larger systems or external devices, enabling the processed data to be utilized for various applications.
+Logic is dual redundantly encoded so we can distingush data (DATAx)
+and no data (NULL). ... to be filled in.
 
 ### How to test
 
-#### Hardware Components
-
-To test the hardware, you will need the following components:
-
-1. Two push buttons with pull-up resistors, used for saving data to Register A and Register B respectively.
-2. Eight switches, designated for Data_input and OP_select operations.
-3. One LED indicator to signify the functioning of the Arithmetic Logic Unit (ALU).
-4. An output pin configured to transmit the Tx signal.
-5. A microcontroller or UART-capable device operating at a baud rate of 9600.
-
-To conduct testing, you'll need to connect a 50MHz clock signal to the clk pin. Begin by selecting operations according to the Operation table provided in the README section of this repository. The operands to be saved in registers range from 0000 to 1111, corresponding to decimal values 0 to 15.
-
-Given the utilization of an 8-bit output signal in the block diagram, no overflow is expected for most operations. However, when using the multiplication Op code, it's important to note that the maximum numbers to be multiplied are 1111 times 1111, resulting in 11100001, which equals 255 in decimal.
+You can't really test without a scope and a way to drive inputs
 
 ### External hardware
 
-1. LED for UARTBUSY indicator.
-2. UART resiver to get data out.
-3. 2 push buttons with pull-up resistor.
-4. 50MHz ocilator or function generator
+Scope
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | data_input [0] |  | clk |
-| 1 | data_input [1] |  | reset_n |
-| 2 | data_input [2] |  | save_a_n |
-| 3 | data_input [3] |  | save_b_n |
-| 4 | Op_select [4] |  | uart_tx_en |
-| 5 | Op_select [5] |  | uart_txd |
-| 6 | Op_select [6] |  | uartbusy |
-| 7 | Op_select [7] |  |  |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

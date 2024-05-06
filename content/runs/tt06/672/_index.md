@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "672 Array Multiplier"
-weight: 194
+title: "672 4-Bit Full Adder and Subtractor with Hardware Trojan"
+weight: 31
 ---
 
-## 672 : Array Multiplier
+## 672 : 4-Bit Full Adder and Subtractor with Hardware Trojan
 
-* Author: UACJ Group A
-* Description: Array Multiplier
-* [GitHub repository](https://github.com/HHRB98/Array-multiplier)
-* [GDS submitted](https://github.com/HHRB98/Array-multiplier/actions/runs/8733464012)
-* HDL project
+* Author: Jeremy Hong
+* Description: Externally triggered hardware trojan in a 4-bit full adder and subtractor
+* [GitHub repository](https://github.com/hongselectronics/FA_SUB_HWT)
+* [GDS submitted](https://github.com/hongselectronics/FA_SUB_HWT/actions/runs/8755641343)
+* [Wokwi](https://wokwi.com/projects/395567106413190145) project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 100000 Hz
 
 <!---
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project is centerd in the implementation of a verilog code for 4 bit Wallace tree multiplier. The design uses half adder and full adder Verilog designs.
+4-Bit Full Adder and Subtractor with hardware trojan inserted in the critical path
 
 ### How to test
 
-On file Test, there is a testbench call wallace_tb.v Use the code to test the code.
+Use DIP Switches, provide external input for last B input bit and hardware trojan trigger signal.
 
 ### External hardware
 
-You do not need any special external hardware
+Pattern Generator and logic analyzer
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | ui[0] | uo[0] |  |
-| 1 | ui[1] | uo[1] |  |
-| 2 | ui[2] | uo[2] |  |
-| 3 | ui[3] | uo[3] |  |
-| 4 | ui[4] | uo[4] |  |
-| 5 | ui[5] | uo[5] |  |
-| 6 | ui[6] | uo[6] |  |
-| 7 | ui[7] | uo[7] |  |
+| 0 | Add/Subtract | 7 Segment Display | Input - B3 |
+| 1 | A0 | 7 Segment Display | Input - Hardware Trojan Trigger |
+| 2 | B0 | 7 Segment Display | Output - LFSR 1 |
+| 3 | A1 | 7 Segment Display | Output - LFSR 2 |
+| 4 | B1 | 7 Segment Display | Output - LFSR 3 |
+| 5 | A2 | 7 Segment Display | Input - LFSR 3 |
+| 6 | B2 | 7 Segment Display | Input - LFSR 4 |
+| 7 | A3 | 7 Segment Display | Output - LFSR 7 |
 
 ### Chip location
 

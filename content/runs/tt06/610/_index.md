@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "610 4-Bit ALU"
-weight: 179
+title: "610 Sequence detector using 7-segment"
+weight: 139
 ---
 
-## 610 : 4-Bit ALU
+## 610 : Sequence detector using 7-segment
 
-* Author: Daniel Kaminski
-* Description: 4-Bit ALU with Cornell ECE2300 op-code instructions.
-* [GitHub repository](https://github.com/dgkaminski/tto6-submission)
-* [GDS submitted](https://github.com/dgkaminski/tto6-submission/actions/runs/8746736738)
+* Author: Atharv Sharma & Lipika Gupta
+* Description: Detects sequence '1001' and displays '8.' on 7-segment led display, otherwise displays '-' only
+* [GitHub repository](https://github.com/atharv-004/tt06-sequence-counter)
+* [GDS submitted](https://github.com/atharv-004/tt06-sequence-counter/actions/runs/8753407035)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 1 Hz
 
 <!---
 
@@ -26,40 +26,36 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project uses the Cornell University ECE2300 (SP24 taught by Zhiru Zhang) ISA to implement a 4-bit ALU. This ALU uses a top-level controller module to pipe the correct inputs and select the correct outputs (src/alu.v). The logical functions are implemented using the following instructions.
-
-| FS | Function | Logical Equivalent |
-| ------------- | ------------- | ------------- |
-| 000  | ADD  | A + B |
-| 001  | SUB  | A - B |
-| 010  | SRA (Shift Right Arithmetic) | A>>> |
-| 011  | SRL (Shift Right Logical) | A >> |
-| 100  | SLL (Shift Left Logical) | A << |
-| 101  | AND  | A & B |
-| 110  | OR  | A + B |
-| 111  | INVALID  | INVALID |
+- In this project, we have designed a sequence detector using finite state machine (FSM)
+- It is designed using verilog, and detects sequence '1001'
+- The logic is made using cases, and it detects the sequence while covering overlapping cases as well
 
 ### How to test
 
-Input your first value, A to UI[7:4], and B to UI[3:0]. You then put your function select (FS) input into UIO[2:0], and you can read your Y output at UO[7:4], your carry out at UO[3], overflow at UO[2], negative at UO[1], and zero at UO[0].
+- If the sequence is detected, the output register z is set to logic 1 that displays '8.' on 7-segment display
+- If the sequence is not detected (the output register is 0), 7-segment display shows '-'
+- LEDs can be tested in two ways when ui_in [7:1] is kept 7'b1111111 (status for testing - condition = 7'b1111111):
+  1. If first 4 bits of reg seg_test (uio_in [7:4]) are 0 during testing, we can display numbers from 0 to 9 if we vary last 4 bits (uio_in[3:0]) from 0000 to 1001
+  2. If first 4 bits of reg seg_test (uio_in [7:4]) are 1 during testing, we can display each led seperately by varying last 4 bits (uio_in[3:0]) from 0000 to 0111
 
 ### External hardware
 
-None! Just a way to input your desired values and read the outputs.
+- We need to use 8 LEDs for 7-segment LED display output ([7:0] uo_out), so that the output can be displayed and verified accordingly at seg
+- In addition to this, we need to use an input source from which we can manipulate input logic onto the input register x (ui_in[0])
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | B[0] | Z | FS[0] |
-| 1 | B[1] | N | FS[1] |
-| 2 | B[2] | V | FS[2] |
-| 3 | B[3] | C |  |
-| 4 | A[0] | Y[0] |  |
-| 5 | A[1] | Y[1] |  |
-| 6 | A[2] | Y[2] |  |
-| 7 | A[3] | Y[3] |  |
+| 0 | x | seg[0] | seg_test[0] |
+| 1 | condition[0] | seg[1] | seg_test[1] |
+| 2 | condition[1] | seg[2] | seg_test[2] |
+| 3 | condition[2] | seg[3] | seg_test[3] |
+| 4 | condition[3] | seg[4] | seg_test[4] |
+| 5 | condition[4] | seg[5] | seg_test[5] |
+| 6 | condition[5] | seg[6] | seg_test[6] |
+| 7 | condition[6] | seg[7] | seg_test[7] |
 
 ### Chip location
 

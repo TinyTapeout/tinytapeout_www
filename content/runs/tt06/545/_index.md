@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "545 PWM"
-weight: 61
+title: "545 Convertidor de Tiempo a Digital (TDC)"
+weight: 99
 ---
 
-## 545 : PWM
+## 545 : Convertidor de Tiempo a Digital (TDC)
 
-* Author: NoeReyes
-* Description: This project involves Pulse Width Modulation, enabling the duty cycle to be adjusted between 10% and 90% using switches.
-* [GitHub repository](https://github.com/Noe-Reyes/PWM)
-* [GDS submitted](https://github.com/Noe-Reyes/PWM/actions/runs/8670485165)
+* Author: Juan Vargas Ferrer & Luis Carlos Alvarez Simón
+* Description: El proyecto consiste en el diseño de un circuito Front end o interfaz para convertir a digital la señal proveniente de un sensor con salida en tiempo.
+* [GitHub repository](https://github.com/jferrer08/latinpractice)
+* [GDS submitted](https://github.com/jferrer08/latinpractice/actions/runs/8647119593)
 * HDL project
 * [Extra docs](None)
 * Clock: 50000000 Hz
@@ -24,50 +24,94 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
+### Convertidor de Tiempo a Digital (TDC)
+
 ### How it works
 
-Pulse Width Modulation (PWM) is a technique used in electronics to control the average voltage applied to a load by rapidly switching a digital signal on and off at varying duty cycles. This method is commonly employed in applications such as motor speed control, LED brightness adjustment, and power regulation. By adjusting the duty cycle of the signal, PWM enables precise control over the output voltage or power, allowing for efficient and flexible manipulation of electrical devices.
+El proyecto consiste en el diseño de un circuito Front end o interfaz para convertir a digital la señal proveniente de un sensor con salida en tiempo. La industria nos proporciona un sinfín de sensores para medir o monitorear diferentes variables físicas, dichos sensores pueden proporcionar su señal en diferentes formas; voltaje, corriente, frecuencia, tiempo (ancho de pulso), entre otras. El bloque que se propone se enfoca en la conversión de tiempo (definido entre el flanco de subida y bajada de un pulso) a un formato digital, también conocidos como circuitos **TDC (Time to Digital Converter)**, para posteriormente enviarlo vía RS232 para que pueda ser monitoreado en una PC o dispositivo compatible con el protocolo RS232.
 
-My project involves Pulse Width Modulation (PWM), allowing the duty cycle to be adjusted between 10% and 80% using 3 switches with 7 different combinations. Each combination increments the duty cycle by 10%. For example, '000' represents a 10% duty cycle, and '111' represents an 80% duty cycle. The PWM was designed for a frequency of 1KHz.
+En la *figura 1* se muestra el diagrama a bloques del sistema, como se observa se compone de un bloque llamado **contadorTDC**, el cual se encarga de realizar el conteo una vez que se recibe un pulso de entrada, cuando el pulso finaliza se guarda el dato generado en un registro y posteriormente se envía en al exterior en forma serial mediante el bloque **RS232_TX**. El bloque RS232_TX funciona a una velocidad de 9600 baudios con 8 bits de datos y paridad impar, de tal manera que en la PC o dispositivo usado para visualizar la información debe configurarse de la misma manera. El funcionamiento del sistema está controlado por la **máquina de estados**, cuyo funcionamiento es de la siguiente manera: cuando se recibe el flanco de subida del pulso de entrada el contador se activa y, al finalizar el pulso se pasa a un estado que hace que se almacene el valor del contador, posteriormente este valor es enviado al transmisor para que sea enviado de manera serial por el módulo **RS232_TX**, finalmente el sistema regresa al estado inicial para poder recibir un nuevo pulso.
 
-![PWM](https://github.com/Noe-Reyes/PWM/assets/165437989/048d0be0-40ac-4368-912a-0a85abb39774)
+![](images/topTDC.png)
+***Figura 1.** Diagrama a bloques del TDC.*
 
-The above image represents the PWM module that was designed.
+> [!NOTE]
+> En la *figura 2* se muestra el diagrama de conexión del sistema con los pines del Frame del chip y a continuación se proporciona una descripción de las señales en cada una de ellas.
 
-| [2:0] LOAD | Duty Cicle |
-|------------|------------|
-| 000        | 10%        |
-| 001        | 20%        |
-| 010        | 30%        |
-| 011        | 40%        |
-| 100        | 50%        |
-| 101        | 60%        |
-| 110        | 70%        |
-| 111        | 80%        |
 
-In the previous table, the variation of the duty cycle is shown as a function of the LOAD input combination.
+
+> - **clk -> clk**.- Señal de reloj del sistema, la cual será de 50MHz.
+
+
+
+> - **in_out[7] -> Pulso/señal**.- En este pin de entrada se introducirá el pulso de entrada que será convertido a digital por el sistema. El ancho del pulso debe estar entre 40ns a 5.1us. Este pulso puede ser proporcionado por un *generador de funciones* o la señal proveniente de un *sensor en forma de pulsos*.
+
+
+
+> - **in_out[6] -> reset**.- Este pin de entrada produce el *reset del módulo transmisor*, el cual debe ser activado para inicializar dicho múdulo, se recomienda conectar un *push button* configurado en pull down.
+
+
+
+> - **in_out[1] -> tx**.- Pin de salida por el cual se envía el dato digital de manera serial, dicho dato corresponde al valor digital del ancho del pulso de entrada, con una resolución igual al periodo de la señal de reloj. Para poder capturar el dato en una computadora mediante un monitor serial, se deberá conectar este pin a la terminal RX del módulo RS232 que recibirá el dato; el cual deberá tener la siguiente configuración:
+
+
+
+> - Baud rate: 9600
+> - Data bits: 8 bits
+> - Paridad: impar (odd)
+
+
+
+> - **in_out[0] -> eot**.- Pin de salida que permite monitorear la bandera que indica el final de una transmisión, en este pin puede ser conectado un *led*. Sin embargo, debido a la velocidad de transmisión éste será casi imperceptible, por lo que es opcional. Aún así podemos conectar un *osciloscopio* para su mejor visualización.
+
+
+
+![](images/design.fw.png)
+***Figura 2.** Diagrama a bloques del TDC dentro del área definda.*
 
 ### How to test
 
-The LOAD input should be connected to a switch, CLK is connected to a 50MHz clock, and RESET to a button. To ensure proper operation, press RESET to set the initial conditions. Once this is done, choose the LOAD input combination to set the desired duty cycle.
+Las pruebas se realizaron en **Modelsim** en su versión gratuita, para ello se hizo una adecuación generando un pequeño modulo PWM dentro de la aplicación para simular lo que sería la señal de un sensor, para este caso se opto por generar cuatro valores de PWM los cuales generan cuatro valores distintos que se transmiten por RS232, en la *figura 3* se muestra la primer combinación de PWM que corresponde a una combinación 00 y que genera un valor binario 00010011.
 
-### External hardware
+![](images/00.png)
+***Figura 3.** Combinación 00 que genera un valor binario 00010011.*
 
-The external hardware includes one LED, a 1k ohm resistor, and three 2-position switches.
+El siguiente valor de prueba fue la combinación 01 la cual genero un valor binario 00100111 y dicha simulación se puede observar en la *figura 4*, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](images/01.png)
+***Figura 4.** Combinación 01 que genera un valor binario 00100111.*
+
+A continuación el siguiente valor de prueba fue la combinación 10 la cual genero un valor binario 00111011 y dicha simulación se puede observar en la *figura 5*, en dicha figura se puede observar como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](images/10.png)
+***Figura 5.** Combinación 10 que genera un valor binario 00111011.*
+
+Para finalizar la última combinación 11 genero un valor binario 01001111 y dicha simulación se puede observar en la *figura 6*, en dicha figura se puede observar al igual que las anteriores como cambia el ancho de pulso que hace que se genere dicho valor binario.
+
+![](images/11.png)
+***Figura 6.** Combinación 11 que genera un valor binario 01001111.*
+
+Para finalizar la etapa de pruebas se opto por realizar una prueba en una **tarjeta de desarrollo AMIBA 2**, la cual cuenta con un FPGA Spartan 6 XC6SLX9, 216/576 Kb de Block RAM, un oscilador de 50 MHz, convertidor USB/RS232 (FTDI FT2232HL), leds de propósito general, switch de dos posiciones de propósito general, etc. En el siguiente [enlace](https://youtu.be/AC0O6wIpQp8) se podrá observar un video en el cual se muestran las distintas combinaciones simuladas anteriormente y además se puede ver el valor enviado por el puerto serial, el cual es monitoreado mediante la aplicación **Serial Debug Assistant**, como recurso extra se hizo uso de los leds de propósito general como apoyo para poder visualizar el valor generado y a su vez poder ver este valor en el monitor serial, que en nuestro caso se muestra en hexadecimal corroborando lo generado con lo enviado.
+
+<!---
+## External hardware
+
+TDC
+-->
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | load 0 |  |  |
-| 1 | load 1 |  |  |
-| 2 | load 2 |  |  |
+| 0 |  |  | eot |
+| 1 |  |  | tx |
+| 2 |  |  |  |
 | 3 |  |  |  |
 | 4 |  |  |  |
 | 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  | PWM |  |
+| 6 |  |  | reset |
+| 7 |  |  | stop |
 
 ### Chip location
 

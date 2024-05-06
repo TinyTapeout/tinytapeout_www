@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "101 Clock Domain Crossing FIFO"
-weight: 147
+title: "101 PILIPINAS"
+weight: 153
 ---
 
-## 101 : Clock Domain Crossing FIFO
+## 101 : PILIPINAS
 
-* Author: Kenneth Wilke
-* Description: This FIFO buffers 4-bits data asynchronously across clock domains
-* [GitHub repository](https://github.com/KennethWilke/tt06-cdc-fifo)
-* [GDS submitted](https://github.com/KennethWilke/tt06-cdc-fifo/actions/runs/8656648890)
-* HDL project
+* Author: Alexander Co Abad and Dino Dominic Ligutan
+* Description: 7-seg Display for PILIPINASLASALLE
+* [GitHub repository](https://github.com/alexandercoabad/PILIPINAS)
+* [GDS submitted](https://github.com/alexandercoabad/PILIPINAS/actions/runs/8614186498)
+* [Wokwi](https://wokwi.com/projects/392873974467527681) project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 1 Hz
 
 <!---
 
@@ -26,42 +26,53 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a FIFO that can pass data asynchronously across clock domains. This was a project I created when I was first learning logic design, and it took me a couple weeks to settle on a design that I felt was clean and reusable.
+Based from https://wokwi.com/projects/341279123277087315
 
-The FIFO can hold 32 4-bit values, or 16 bytes. So use them wisely and greatly!
+On power-up, the 7-segment display should display the text PILIPINASLASALLE one at a time per clock cycle. The "dp" output toggles every clock cycle.
 
-The original design can be found at <https://github.com/KennethWilke/sv-cdc-fifo>
-
-The architecture of this design was influenced by
-[this paper](http://www.sunburst-design.com/papers/CummingsSNUG2002SJ_FIFO1.pdf)
-written by Clifford E. Cummings of
-[Sunburst Design](http://www.sunburst-design.com) by the implementation was fully written by me.
+Setting the input pin 7 to HIGH allows for manual override of the BCD value. In this mode, input pins 0-3 controls the BCD value. The text displayed for each BCD value are tabulated below:
+| **in0** | **in1** | **in2** | **in3** | **Character** |
+|:-------:|:-------:|:-------:|:-------:|:-------------:|
+|   LOW   |   LOW   |   LOW   |   LOW   |       P       |
+|   LOW   |   LOW   |   LOW   |   HIGH  |       I       |
+|   LOW   |   LOW   |   HIGH  |   LOW   |       L       |
+|   LOW   |   LOW   |   HIGH  |   HIGH  |       I       |
+|   LOW   |   HIGH  |   LOW   |   LOW   |       P       |
+|   LOW   |   HIGH  |   LOW   |   HIGH  |       I       |
+|   LOW   |   HIGH  |   HIGH  |   LOW   |       N       |
+|   LOW   |   HIGH  |   HIGH  |   HIGH  |       A       |
+|   HIGH  |   LOW   |   LOW   |   LOW   |       S       |
+|   HIGH  |   LOW   |   LOW   |   HIGH  |       L       |
+|   HIGH  |   LOW   |   HIGH  |   LOW   |       A       |
+|   HIGH  |   LOW   |   HIGH  |   HIGH  |       S       |
+|   HIGH  |   HIGH  |   LOW   |   LOW   |       A       |
+|   HIGH  |   HIGH  |   LOW   |   HIGH  |       L       |
+|   HIGH  |   HIGH  |   HIGH  |   LOW   |       L       |
+|   HIGH  |   HIGH  |   HIGH  |   HIGH  |       E       |
 
 ### How to test
 
-Hold `write_reset` and `read_reset` LOW while running the clock for a bit to reset, then raise to initialize the module.
+Default mode: Set the clock input to a low frequency such as 1 Hz to see the text transition per clock cycle.
 
-#### Writing to the FIFO
+Manual mode: Set the input pin 7 to HIGH and toggle input pins 0-3. The character displayed for each input combination should be according to the table above.
 
-Prepare your data on the 4-bit `write_data` bus, ensure the `full` state is low and then raise `write_increment` for 1 cycle of `write_clock` to write data into the FIFO memory.
+### External hardware
 
-#### Reading from the FIFO
-
-The FIFO will present the current output on the `read_data` bus. If `empty` is low, this output should be valid and you can acknowledge receive of this vallue by raising `read_increment` for 1 cycle of `read_clock`.
+7-segment display
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | write_clock | empty | write_reset |
-| 1 | write_increment | full | read_reset |
-| 2 | read_clock |  |  |
-| 3 | read_increment |  |  |
-| 4 | write_data0 | read_data0 |  |
-| 5 | write_data1 | read_data1 |  |
-| 6 | write_data2 | read_data2 |  |
-| 7 | write_data3 | read_data3 |  |
+| 0 | BCD Bit 3 (A) | segment a |  |
+| 1 | BCD Bit 2 (A) | segment b |  |
+| 2 | BCD Bit 1 (A) | segment c |  |
+| 3 | BCD Bit 0 (A) | segment d |  |
+| 4 |  | segment e |  |
+| 5 |  | segment f |  |
+| 6 |  | segment g |  |
+| 7 | Manual Input Mode | segment dp |  |
 
 ### Chip location
 

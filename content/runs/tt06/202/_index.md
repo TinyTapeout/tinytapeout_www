@@ -1,54 +1,44 @@
 ---
 hidden: true
-title: "202 8080 CPU"
-weight: 60
+title: "202 8-bit CPU with Debugger"
+weight: 115
 ---
 
-## 202 : 8080 CPU
+## 202 : 8-bit CPU with Debugger
 
-* Author: Emily Schmidt
-* Description: It's an Intel 8080-compatible CPU core that can hopefully run Microsoft BASIC, CP/M, etc.
-* [GitHub repository](https://github.com/aiju/tt06-aiju-8080)
-* [GDS submitted](https://github.com/aiju/tt06-aiju-8080/actions/runs/8695486161)
+* Author: Sean Patrick O'Brien
+* Description: 8-bit CPU with debugger accessible via I2C
+* [GitHub repository](https://github.com/obriensp/tt06-spo-be8-nomacro)
+* [GDS submitted](https://github.com/obriensp/tt06-spo-be8-nomacro/actions/runs/8757129187)
 * HDL project
 * [Extra docs](None)
-* Clock: 1000000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 0 Hz
 
 ### How it works
 
-It's a 8080-compatible CPU. It needs the RP2040 to simulate RAM and I/O.
+The CPU is based on Ben Eater's [8-bit breadboard CPU](https://eater.net/8bit). A built-in debugger allows pausing the CPU, loading programs, inspecting/modifying registers, etc.
 
 ### How to test
 
-TBD
+The debugger is accessible over I2C at address 0x2A (0x54 write, 0x55 read). The provided `dbg` program can be used to load programs, inspect registers, etc.
 
 ### External hardware
 
-RP2040.
+Optionally, data can be provided on the input pins and consumed on the output pins. They are accessible to the CPU as the IN and OUT registers.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | bus_handshake_ack | bus_handshake_req | data_bus[0] |
-| 1 | debug_req | bus_state[0] | data_bus[1] |
-| 2 | int_req | bus_state[1] | data_bus[2] |
-| 3 |  | bus_io | data_bus[3] |
-| 4 |  | cpu_fetch | data_bus[4] |
-| 5 |  | cpu_in_debug | data_bus[5] |
-| 6 |  | cpu_halted | data_bus[6] |
-| 7 |  | cpu_int_ack | data_bus[7] |
+| 0 | Input Port | Output Port |  |
+| 1 | Input Port | Output Port |  |
+| 2 | Input Port | Output Port | SCL |
+| 3 | Input Port | Output Port | SDA |
+| 4 | Input Port | Output Port | HALTED |
+| 5 | Input Port | Output Port |  |
+| 6 | Input Port | Output Port |  |
+| 7 | Input Port | Output Port |  |
 
 ### Chip location
 

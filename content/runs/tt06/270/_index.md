@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "270 TinyRV1 CPU"
-weight: 71
+title: "270 Neurocore"
+weight: 13
 ---
 
-## 270 : TinyRV1 CPU
+## 270 : Neurocore
 
-* Author: Prof. Dr. Matthias Jung, Jonathan Hager, Philipp Wetzstein
-* Description: TinyRV1 compliant CPU that has to be attached to an external SPI memory. The ISA is described in the documentation
-* [GitHub repository](https://github.com/CEJMU/tt06_tinyrv1)
-* [GDS submitted](https://github.com/CEJMU/tt06_tinyrv1/actions/runs/8758341719)
+* Author: Kyrylo Kalashnikov
+* Description: 2x2 systolic array multiplier using 16bit floats
+* [GitHub repository](https://github.com/kir486680/tt6_test)
+* [GDS submitted](https://github.com/kir486680/tt6_test/actions/runs/8581902550)
 * HDL project
 * [Extra docs](None)
-* Clock: 12000000 Hz
+* Clock: 20000000 Hz
 
 <!---
 
@@ -26,29 +26,53 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The project consist of a RISC-V VHDL Model and supports the [Tiny RV1 ISA](https://github.com/cbatten/ece4750-tinyrv-isa) without MUL. In addition AND and XOR are supported.
+This is a an implementation of a classic systolic array multiplier with uart interface.
 
-#### How to test
+This implimention can multiply 2x2 matrix by another 2x2 matrix. The calculations are done in float16.
 
-To test our design you will need to use external hardware.
+### How to test
 
-#### External hardware
+Your "How to Test" section outlines a clear testing protocol for your systolic array multiplier with a UART interface, designed to multiply 2x2 matrices using float16 representations. To make it more structured and clear, I've refined your instructions below:
 
-To use our design you will need to use the provided spi_slave_tt06_with_memory and synthesize it for an 12 MHz FPGA.
+***
+
+### How to Test
+
+1. **Initialization Sequence**: Begin by sending the initialization sequence `11111110` to the device. This sequence prepares the device to start receiving data for matrix multiplication.
+
+2. **Sending Matrix Data**:
+
+   - You will need to send the elements of the two matrices you wish to multiply. Each matrix element is a float16 number, which must be transmitted as two separate 8-bit frames (high byte first).
+   - Since you are multiplying 2x2 matrices, you must send a total of 8 float16 numbers, equating to 16 data frames of 8 bits each.
+   - For clarity, send the matrix elements in row-major order. For example, if your matrices are A and B, with elements `a11, a12, a21, a22` for A and similarly for B, send them in the order `a11, a12, a21, a22, b11, b12, b21, b22`.
+
+3. **Receiving the Result**:
+
+   - Upon completion of the data processing, the device will first send back an acknowledgment sequence `11111110`, indicating that the multiplication process is complete and the device is about to send the result.
+   - Following this, expect to receive the result of the matrix multiplication in a similar format to the input. The device will send 4 float16 numbers (representing the resulting matrix elements) as 8-bit frames (high byte first), which you will need to interpret accordingly.
+
+4. **Interpreting the Results**:
+
+   - Collect the 8-bit frames received from the device and reconstruct them into float16 numbers to obtain the resulting matrix elements.
+   - These elements represent the resultant matrix from the multiplication of the two input matrices.
+
+### External hardware
+
+No external hardware is used for this project.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | SPI MISO | SPI MOSI | Register_1(5) |
-| 1 | unused | SPI SCLK | Register_1(6) |
-| 2 | unused | SPI CS | Register_1(7) |
-| 3 | unused | Register_1(0) | Register_1(8) |
-| 4 | unused | Register_1(1) | Register_1(9) |
-| 5 | unused | Register_1(2) | Register_1(10) |
-| 6 | unused | Register_1(3) | Register_1(11) |
-| 7 | unused | Register_1(4) | Register_1(12) |
+| 0 | RX input | RX output | Block multiply done status |
+| 1 |  |  | Calculation start signal |
+| 2 |  |  | Send State bit 0 |
+| 3 |  |  | Send State bit 1 |
+| 4 |  |  | Send State bit 2 |
+| 5 |  |  | Send State bit 3 |
+| 6 |  |  | Done send signal |
+| 7 |  |  | Send data signal |
 
 ### Chip location
 

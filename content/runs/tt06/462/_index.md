@@ -1,145 +1,78 @@
 ---
 hidden: true
-title: "462 tt06-RV32E_MinMCU"
-weight: 195
+title: "462 FazyRV-ExoTiny"
+weight: 220
 ---
 
-## 462 : tt06-RV32E_MinMCU
+## 462 : FazyRV-ExoTiny
 
-* Author: Weihao Liu
-* Description: Microcontroller RV32E implementation. Supports inputs, outputs, GPIOs, UART and SPI.
-* [GitHub repository](https://github.com/liu3hao/tt06-rv32e_minmcu)
-* [GDS submitted](https://github.com/liu3hao/tt06-rv32e_minmcu/actions/runs/8749777779)
+* Author: Meinhard Kissich
+* Description: A minimal SoC based on FazyRV that uses external QSPI ROM and RAM.
+* [GitHub repository](https://github.com/meiniKi/tt06-FazyRV-ExoTiny)
+* [GDS submitted](https://github.com/meiniKi/tt06-FazyRV-ExoTiny/actions/runs/8649098045)
 * HDL project
 * [Extra docs](None)
-* Clock: 24000000 Hz
+* Clock: 50000000 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-RV32E implementation for a minimum microcontroller that is designed for small HW projects. The microcontroller interfaces with an external NOR flash for program memory and a external PSRAM for RAM over SPI.
+This TinyTapeout implements a System-on-Chip (SoC) design based on the FazyRV RISC-V core. Documentation on the SoC can be found in [github.com/meiniKi/FazyRV-ExoTiny](https://github.com/meiniKi/FazyRV-ExoTiny). For details on the FazyRV core, please refer to [github.com/meiniKi/FazyRV](https://github.com/meiniKi/FazyRV).
 
-The MCU has the following peripherals:
+#### Features
 
-- 7 x input/output pins
-- Up to 5 input only pins
-- Up to 4 output only pins
-- 1 x UART (flow control can be enabled)
-- 1 x SPI bus
-- Debug interface over SPI to read out registers and program counter
+* Instantiates FazyRV with a chunk size of 2 bits.
+* Uses external instruction memory (QSPI ROM) and external data memory (QSPI RAM).
+* Provides 6 memory-mapped general-purpose outputs and  7 inputs.
+* Provides an SPI peripheral with programmable CPOL and a buffer of up to 4 bytes.
 
-There is only 1 SPI controller in the design and this controller is used to interface with program memory and RAM. This SPI controller can be configured to interface with other SPI peripherals too.
+#### Pinout Overview
 
-Tested with Lattice ice40-HX8K breakout board at 24MHz clock.
+The overview shows the pinout for the TinyTapeout Demo PCB. A detailed description of the pins is given below.
 
-### Pin allocation
+![Pinout overview](images/tt06_overview.png)
 
-PIN | UI_IN | UO_OUT | UIO
---|--|--|--
-0 | IN0/UART-CTS | UART-RX          | SPI-CS2
-1 | IN1          | OUT0/UART-RTS    | IO0
-2 | SPI-MISO     | OUT1             | IO1
-3 | IN2          | SPI-MOSI         | IO2
-4 | IN3          | SPI-CS1          | IO3
-5 | IN4          | SPI-SCLK         | IO4
-6 | EN_DEBUG     | OUT2             | IO5
-7 | UART-TX      | OUT3             | IO6
+#### Block Diagram
 
-### Memory space
+The block diagram outlines the on-chip peripherals and related addresses.
 
-Memory address | Description
---|--
-0x00000 - 0x0FFFF | Program memory, read-only (external memory)
-0x10000 - 0x1FFFF | RAM (external PSRAM)
-0x20000 - 0x2FFFF | Peripheral registers
-
-### Peripheral registers
-
-#### Pin control registers
-
-Address | Description
---|--
-0x20000 | Output values for the output pins (OUT0 to OUT3).
-0x20001 | Input values for the input pins (IN0 - IN4), read-only.
-0x20002 | Direction bits for the IO pins. Set to 1 for output, 0 for input.
-0x20003 | Input values for IO pins. The corresponding bit in the IO direction register has to be set to 0, for the input values to be set.
-0x20004 | Output values for IO pins. The corresponding bit in the IO direction register has to be set to 1, for the output value to be set.
-
-#### SPI peripheral registers
-
-The SPI controller interfaces with program memory and RAM. It can additionally be configured to interface with other SPI devices by configuring the output pins (OUT0-OUT3) as CS pins.
-
-##### 0x20005 - SPI control register
-
-As the SPI controller is shared for program memory and RAM access, the entire CPU is blocked until the SPI transaction is completed.
-
-Bit | Description
---|--
-0 | Set to 1 to start SPI transaction
-1 | Set to 1 to use OUT0 as CS pin
-2 | Set to 1 to use OUT1 as CS pin
-3 | Set to 1 to use OUT2 as CS pin
-4 | Set to 1 to use OUT3 as CS pin
-
-Note: Only 1 CS pin can be configured each time. When the OUTn pin are is as CS, that pin in the output bits register (0x20000) will be ignored.
-
-Address | Description
---|--
-0x20006 | SPI status register. Bit 0 is set to 1 when the SPI transaction is completed. This bit is cleared when an SPI transaction is started (by writing 1 to bit 0 of the SPI control register 0x20005).
-0x20008 | SPI TX byte. Byte to transmit to SPI peripheral
-0x2000C | SPI RX byte. Byte received from SPI peripheral
-
-#### UART peripheral registers
-
-##### 0x20010 - UART control register
-
-Bit | Description
---|--
-0 | Set to 1 to start TX
-1 | Set to 1 to clear RX byte availabe bit in the UART status register
-2 | Set to 1 to enable flow control. OUT0 is used as CTS and IN0 is used as RTS.
-
-##### 0x20011 - UART status register
-
-Bit | Description
---|--
-0 | When 1, the TX operation is completed
-1 | RX byte available bit, is set to 1 when there is a byte available in the RX buffer
-
-Address | Description
---|--
-0x20014 | UART Tx byte. Set byte to be written to external UART device
-0x20015 | Stores byte that is received from external UART device
-
-#### Debug mode
-
-To set the CPU into debug mode, set the EN_DEBUG pin to HIGH. In this mode, the CPU will continuosly output the program counter and all registers (excluding x0 register) over the SPI interface. OUT3 is used as the DEBUG_CS pin.
+![Block diagram](images/exotiny.png)
 
 ### How to test
 
-1. Load a program into the program memory
-2. Assert and deassert rst_n pin
-3. Interact with the program
+Once the design is enabled and released from reset, it first enables Quad Mode in the RAM. The Wishbone accesses are converted into QSPI transfers to exchange data. The first read from ROM (boot address: `0x00000000`) enabled Continuous Mode to reduce the latency. To get started, you can flash the demo firmware in `FazyRV-ExoTiny/demo`. See the repo for more information.
+
+**Important:** `rst_n` is not synchronized. Make sure it is released sufficient hold time after the rising clock edge and sufficient setup time before the falling edge. Do not release reset while `clk` is low. The design appears to be on the edge of implementability. An additional dff breaks convergence.
 
 ### External hardware
 
-This project requires at minimum the following:
+* QSPI ROM: W25Q128JV or compatible
+* QSPI RAM: APS6404L-3SQR or compatible
 
-- PMOD for SPI flash (example, digilent PMOD SF3)
-- PMOD for SPI PSRAM chip
+The design uses external ROM (Flash) and external RAM. All bus accesses in these regions are converted to QSPI transfers to read data from the ROM or to read/write data from/to the RAM, respectively. Alternatively, you can synthesize a model in an FPGA and attach it to the BIDIR PMOD header.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | IN0/UART-CTS | UART-RX | SPI-CS2 |
-| 1 | IN1 | OUT0/UART-RTS | IO0 |
-| 2 | SPI-MISO | OUT1 | IO1 |
-| 3 | IN2 | SPI-MOSI | IO2 |
-| 4 | IN3 | SPI-CS1 | IO3 |
-| 5 | IN4 | SPI-SCLK | IO4 |
-| 6 | EN_DEBUG | OUT2 | IO5 |
-| 7 | UART-TX | OUT3 | IO6 |
+| 0 | General purpose input (GPI) 0. | General purpose output (GPO) 0. | QSPI ROM chip select (low active). |
+| 1 | General purpose input (GPI) 1. | General purpose output (GPO) 1. | QSPI ROM/RAM SDO[0]. |
+| 2 | General purpose input (GPI) 2. | General purpose output (GPO) 2. | QSPI ROM/RAM SDO[1]. |
+| 3 | General purpose input (GPI) 3. | General purpose output (GPO) 3. | QSPI ROM/RAM SCK. |
+| 4 | General purpose input (GPI) 4. | General purpose output (GPO) 4. | QSPI ROM/RAM SDO[2]. |
+| 5 | General purpose input (GPI) 5. | General purpose output (GPO) 5. | QSPI ROM/RAM SDO[3]. |
+| 6 | General purpose input (GPI) 6. | (User) SPI SCK. | QSPI RAM chip select (low active). |
+| 7 | (User) SPI SDI. | (User) SPI SDO. | NC. |
 
 ### Chip location
 

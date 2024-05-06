@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "299 Inverters"
-weight: 34
+title: "299 Display test 1"
+weight: 44
 ---
 
-## 299 : Inverters
+## 299 : Display test 1
 
-* Author: James Meech
-* Description: A set of inverters
-* [GitHub repository](https://github.com/JamesTimothyMeech/TT06-beta)
-* [GDS submitted](https://github.com/JamesTimothyMeech/TT06-beta/actions/runs/8680786206)
+* Author: Mastro Gippo
+* Description: just a test
+* [GitHub repository](https://github.com/mastrogippo/tt06-verilog_test)
+* [GDS submitted](https://github.com/mastrogippo/tt06-verilog_test/actions/runs/8675730468)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000 Hz
 
 <!---
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project contains a set of inverters of different sizes connected between the input and output pins. Input and output zero is a D Flip Flop.
+I just copied [Uri's project](https://wokwi.com/projects/347069718502310484) and messed around with its verilog
 
 ### How to test
 
-Apply inputs to the inverters with a square wave or other signal generator and measure the output.
+Connect 0-7 outputd to LCD pins: D4 D5 D6 D7 E
 
 ### External hardware
 
-TT06 printed circuit board, signal generator, something to measure the output.
+Character LCD
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | D Flip Flop Input | D Flip Flop output | Bidirectional inverter 1 input |
-| 1 | Inverter 1 input | Inverter 1 output | Bidirectional inverter 1 output |
-| 2 | Inverter 2 input | Inverter 2 output | Bidirectional inverter 2 input |
-| 3 | Inverter 3 input | Inverter 3 output | Bidirectional inverter 2 output |
-| 4 | Inverter 4 input | Inverter 4 output | Bidirectional inverter 3 input |
-| 5 | Inverter 5 input | Inverter 5 output | Bidirectional inverter 3 output |
-| 6 | Inverter 6 input, also the output enable for all bidirectional pins connected to inverter inputs | Inverter 6 output | Bidirectional inverter 4 input |
-| 7 | Inverter 7 input, also the output enable for all bidirectional pins connected to inverter output | Inverter 7 output | Bidirectional inverter 4 output |
+| 0 | s1 | D4 |  |
+| 1 | s2 | D5 |  |
+| 2 | e1 | D6 |  |
+| 3 | e2 | D7 |  |
+| 4 | e3 | RS |  |
+| 5 | e4 | E |  |
+| 6 | e5 |  |  |
+| 7 | e6 |  |  |
 
 ### Chip location
 

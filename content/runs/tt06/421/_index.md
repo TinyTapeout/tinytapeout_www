@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "421 BF Processor"
-weight: 84
+title: "421 Bivium-B Non-Linear Feedback Shift Register"
+weight: 197
 ---
 
-## 421 : BF Processor
+## 421 : Bivium-B Non-Linear Feedback Shift Register
 
-* Author: Ivan Pancheniak
-* Description: Implementation of a Brainf*ck processor in hardware
-* [GitHub repository](https://github.com/loco-choco/tt-bf-processor)
-* [GDS submitted](https://github.com/loco-choco/tt-bf-processor/actions/runs/8748526353)
-* HDL project
+* Author: icaris lab
+* Description: Bivium-B stream cipher used as a non-linear feedback shift register.
+* [GitHub repository](https://github.com/icarislab/tt06_biviumb-prng_cu)
+* [GDS submitted](https://github.com/icarislab/tt06_biviumb-prng_cu/actions/runs/8709778889)
+* [Wokwi](https://wokwi.com/projects/395263962779770881) project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,43 +26,80 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a 75% implementation (the IO operations of `.` and `,` weren't implemented) of the esoteric language [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) as small factor processor.
-It works as any "regular" microprocessor would, executing the given ASCII values of each character as an opcode, following this state machine:
+The project is a hardware implementation of the Bivium-B stream cipher used as a non-linear feedback shift register (NLFSR). The NLFSR is defined with the least-significant bit (LSB) at the left-most register R0 and the most-significant bit (MSB) at the right-most register R176. The LFSR circular shifts bits from left to right (R_n -> R_n+1), with the two feedback taps:
 
-![fsm](images/fsm.png)
+R93 = (R90 * R91) + (R65 + R92) + R170
+R0  = (R174 * R175) + (R161 + R176) + R68
 
-With an internal implementation close to the following one:
+The output of the NLFSR is:
 
-![diagram](images/diagram.png)
+z   = R65 + R92 + R161 + R176
+
+The NLFSR contains an initialization/fail-safe feedback that prevents the LFSR from entering an all-zero state. If the LFSR is ever in an all-zero state, a "1" value is inserted into R0.
+
+A schematic of the circuit may be found at:
+
+https://wokwi.com/projects/395263962779770881
+
+The circuit has 10 inputs:
+
+| Input    | Setting                     |
+| -------- | -------                     |
+| CLK      | Clock                       |
+| RST_N    | Not Used                    |
+| 01       | Not Used                    |
+| 02       | Manual R0 Input Value       |
+| 03       | Input Select                |
+| 04       | Not Used                    |
+| 05       | Not Used                    |
+| 06       | Not Used                    |
+| 07       | Not Used                    |
+| 08       | Not Used                    |
+
+The CLK sets the clocking for the flip-flop registers for latching the NLFSR values. In the schematic shown in the Wokwi project, a switch is used to select either the system clock or an externally provided or manual clock that allows the user to manually step through each latching event.
+
+An 8-input DIP switch provides some flexibility to initalizing the NLFSR. DIP03 (IN2) allows the user to toggle the Input Select function, which is a multiplexer that select whether the left-most register (R0) takes in as the input the NLFSR feedback value or a value that is manually selected by the user. The switch also controls whether R93 takes in a NLFSR feedback or a value directly from R91.
+
+DIP02 (IN1) allows a the user to manually enter a 0 or a 1 value into the leftmost register.
+
+The cicuit has 8 outputs. They output the following values:
+
+| Output   | Value in    |
+| -------- | -------     |
+| 01       | R0  (NLFSR input)|
+| 02       | R68 |
+| 03       | (R174 * R175) + (R161 + R176) |
+| 04       | R65 |
+| 05       | R92 |
+| 06       | R161 |
+| 07       | R176 |
+| 08       | z (NLFSR output) |
+
+The output allows for some self-testing, where OUT01 = OUT02 + OUT03 and OUT08 = OUT004 + OUT05 + OUT06 + OUT07.
 
 ### How to test
 
-This circuit has the following pinout:
-![pinout](images/pinout.png)
-To drive it, you need to have an external address register, as it requests reads/writes data in alternating cycles, some memory organization to support, at the minimum, 256 x 8 of program memory and 256 x 8 of instruction memory (this can be expanded until 1KB memories by also using the *pc_ext* pins), and a clock, preferably at 20MHz. If you don't want for the program to access instruction memory, the pin *instr_addr* is only set if the address being requested is for instructions, so you can use that to avoid it.
+The circuit can be tested by powering on the circuit, and first setting the Input Select switch (DIP03) to "1" to reset/initialize the entire LFSR to all-zeros. The Input Select switch can then be switched to "0" to allow the LFSR to run from its all-zero initialized value. The output values of the NLFSR from this zeroized state may be observed using a logic analyzer, and can be compared with the values obtained for the python simulation:
+
+https://github.com/icarislab/tt06_biviumb-prng_cu/blob/main/docs/biviumb-prng_python_simulation.py
 
 ### External hardware
 
-These are some components that you can use for interfacing with the processor:
-
-- 256 x 8 SRAM
-- 8 bits to 13 bits Register
-- 256 x 8 to 1K x 8 ROM
-- LED bars with 8 segments to show the current value exiting the processor on the data bus (*uio_out*)
+No external hardware is required.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  | Write | Data_0 |
-| 1 |  | Addr | Data_1 |
-| 2 |  | Instr_Addr | Data_2 |
-| 3 |  | PC_Ext_8 | Data_3 |
-| 4 |  | PC_Ext_9 | Data_4 |
-| 5 |  | PC_Ext_10 | Data_5 |
-| 6 |  | PC_Ext_11 | Data_6 |
-| 7 |  | PC_Ext_12 | Data_7 |
+| 0 |  | r000_val |  |
+| 1 | data_in | r068_val |  |
+| 2 | load_en | INTERM_fb |  |
+| 3 |  | r065_val |  |
+| 4 |  | r092_val |  |
+| 5 |  | r161_val |  |
+| 6 |  | r176_val |  |
+| 7 |  | NLSFR_out |  |
 
 ### Chip location
 

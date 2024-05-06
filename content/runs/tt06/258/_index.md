@@ -1,91 +1,145 @@
 ---
 hidden: true
-title: "258 Izhikevich Neuron"
-weight: 106
+title: "258 tt06-RV32E_MinMCU"
+weight: 195
 ---
 
-## 258 : Izhikevich Neuron
+## 258 : tt06-RV32E_MinMCU
 
-* Author: ExAI Dmitri Lyalikov
-* Description: ASIC Digital Implementation of Izhikevich Neuron Model with configurable A, B Parameters
-* [GitHub repository](https://github.com/existential-ai/izhekevich_neuron)
-* [GDS submitted](https://github.com/existential-ai/izhekevich_neuron/actions/runs/8747719978)
+* Author: Weihao Liu
+* Description: Microcontroller RV32E implementation. Supports inputs, outputs, GPIOs, UART and SPI.
+* [GitHub repository](https://github.com/liu3hao/tt06-rv32e_minmcu)
+* [GDS submitted](https://github.com/liu3hao/tt06-rv32e_minmcu/actions/runs/8749777779)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 24000000 Hz
 
 ### How it works
 
-This is a simple Izhikevich model of a neuron. The Izhikevich model is a spiking neuron that is able to replicate the behavior of many different types of neurons. The model is described by the following equations:
-v' = 0.04v^2 + 5v + 140 - u + I
-u' = a(bv - u)
-if v >= 30 then v = c, u = u + d
+RV32E implementation for a minimum microcontroller that is designed for small HW projects. The microcontroller interfaces with an external NOR flash for program memory and a external PSRAM for RAM over SPI.
 
-The model has four parameters: a, b, c, and d. These parameters can be adjusted to replicate the behavior of different types of neurons. The model also has an input current I that can be used to stimulate the neuron. The model is implemented in the `izhikevich_neuron` module.
+The MCU has the following peripherals:
 
-The `izhikevich_neuron` module has the following ports:
+- 7 x input/output pins
+- Up to 5 input only pins
+- Up to 4 output only pins
+- 1 x UART (flow control can be enabled)
+- 1 x SPI bus
+- Debug interface over SPI to read out registers and program counter
 
-- `clk`: The clock signal
-- `reset`: The reset signal
-- `uo_out`: The output voltage of the neuron
-- `ui_in`: Configuration input for the neuron
-- `uio_in`: Configuration input for the neuron
+There is only 1 SPI controller in the design and this controller is used to interface with program memory and RAM. This SPI controller can be configured to interface with other SPI peripherals too.
 
-The followiing parameters and IO are exposed through these module pins:
-| Name                 | Bits | Direction | Pins            | Description                 |
-| ---------------------|------| ----------| ----------------|-----------------------------|
-| `Input Current`      | 5    | Input     | ui[0-4]         | Input current (mA)          |
-| `Neuron Mode`        | 3    | Input     | uio[0-2]        | See Table Below             |
-| `A Param`            | 4    | Input     | ui[5-7], uio[3] | 4-bit custom A-parameter    |
-| `B Param`            | 4    | Input     | uio[4:7]        | 4-bit custom B-parameter    |
-| `Membrane Potential` | 8    | Output    | uo[0:7]         | Signed 8-bit voltage (mV)   |
+Tested with Lattice ice40-HX8K breakout board at 24MHz clock.
 
-| Neuron Mode | Behavior                    | A   | B    | C   | D   |
-| ----------- | --------------------------- | --- | ---- | --- | --- |
-| 0           | RS (Regular Spiking)        | .02 | .02  | -65 | 8   |
-| 1           | IB (Intrinsically Bursting) | .02 | .02  | -55 | 4   |
-| 2           | CH (Chattering)             | .02 | .02  | -50 | 2   |
-| 3           | FS (Fast Spiking)           | 0.1 | 0.2  | -65 | 2   |
-| 4           | TC (Thalamo-Cortical)       | .02 | 0.25 | -65 | .05 |
-| 5           | RZ (Resonator)              | 0.1 | 0.25 | -65 | 2   |
-| 6           | LTS (Low Threshold Spiking) | .02 | 0.25 | -65 | 2   |
-| 7           | Custom                      | A   | B    | MRU | MRU |
+### Pin allocation
 
-MRU: Most Recently Used Value. For example in custom mode, if the user was previously in RS mode, the C and D values will be set to -65 and 8 respectively, but A-B will be set to the custom values.
+PIN | UI_IN | UO_OUT | UIO
+--|--|--|--
+0 | IN0/UART-CTS | UART-RX          | SPI-CS2
+1 | IN1          | OUT0/UART-RTS    | IO0
+2 | SPI-MISO     | OUT1             | IO1
+3 | IN2          | SPI-MOSI         | IO2
+4 | IN3          | SPI-CS1          | IO3
+5 | IN4          | SPI-SCLK         | IO4
+6 | EN_DEBUG     | OUT2             | IO5
+7 | UART-TX      | OUT3             | IO6
 
-Default state: RS mode
+### Memory space
+
+Memory address | Description
+--|--
+0x00000 - 0x0FFFF | Program memory, read-only (external memory)
+0x10000 - 0x1FFFF | RAM (external PSRAM)
+0x20000 - 0x2FFFF | Peripheral registers
+
+### Peripheral registers
+
+#### Pin control registers
+
+Address | Description
+--|--
+0x20000 | Output values for the output pins (OUT0 to OUT3).
+0x20001 | Input values for the input pins (IN0 - IN4), read-only.
+0x20002 | Direction bits for the IO pins. Set to 1 for output, 0 for input.
+0x20003 | Input values for IO pins. The corresponding bit in the IO direction register has to be set to 0, for the input values to be set.
+0x20004 | Output values for IO pins. The corresponding bit in the IO direction register has to be set to 1, for the output value to be set.
+
+#### SPI peripheral registers
+
+The SPI controller interfaces with program memory and RAM. It can additionally be configured to interface with other SPI devices by configuring the output pins (OUT0-OUT3) as CS pins.
+
+##### 0x20005 - SPI control register
+
+As the SPI controller is shared for program memory and RAM access, the entire CPU is blocked until the SPI transaction is completed.
+
+Bit | Description
+--|--
+0 | Set to 1 to start SPI transaction
+1 | Set to 1 to use OUT0 as CS pin
+2 | Set to 1 to use OUT1 as CS pin
+3 | Set to 1 to use OUT2 as CS pin
+4 | Set to 1 to use OUT3 as CS pin
+
+Note: Only 1 CS pin can be configured each time. When the OUTn pin are is as CS, that pin in the output bits register (0x20000) will be ignored.
+
+Address | Description
+--|--
+0x20006 | SPI status register. Bit 0 is set to 1 when the SPI transaction is completed. This bit is cleared when an SPI transaction is started (by writing 1 to bit 0 of the SPI control register 0x20005).
+0x20008 | SPI TX byte. Byte to transmit to SPI peripheral
+0x2000C | SPI RX byte. Byte received from SPI peripheral
+
+#### UART peripheral registers
+
+##### 0x20010 - UART control register
+
+Bit | Description
+--|--
+0 | Set to 1 to start TX
+1 | Set to 1 to clear RX byte availabe bit in the UART status register
+2 | Set to 1 to enable flow control. OUT0 is used as CTS and IN0 is used as RTS.
+
+##### 0x20011 - UART status register
+
+Bit | Description
+--|--
+0 | When 1, the TX operation is completed
+1 | RX byte available bit, is set to 1 when there is a byte available in the RX buffer
+
+Address | Description
+--|--
+0x20014 | UART Tx byte. Set byte to be written to external UART device
+0x20015 | Stores byte that is received from external UART device
+
+#### Debug mode
+
+To set the CPU into debug mode, set the EN_DEBUG pin to HIGH. In this mode, the CPU will continuosly output the program counter and all registers (excluding x0 register) over the SPI interface. OUT3 is used as the DEBUG_CS pin.
 
 ### How to test
 
-The cocotb test bench provides a sweep across all neuron modes and a sweep across all A and B parameters. The test bench also provides a sweep across all input currents. The test bench checks that the output voltage of the neuron is within the expected range for each configuration. This can be used to plot the output voltage of the neuron for different configurations.
+1. Load a program into the program memory
+2. Assert and deassert rst_n pin
+3. Interact with the program
 
 ### External hardware
 
-This module requires a driver to interface with the neuron. The driver should be able to set the input current and the neuron mode, and read the output voltage. The driver should also be able to reset the neuron and provide a clock signal.
+This project requires at minimum the following:
+
+- PMOD for SPI flash (example, digilent PMOD SF3)
+- PMOD for SPI PSRAM chip
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Input Current [0] | Membrane Potential [0] | Neuron Select [0] |
-| 1 | Input Current [1] | Membrane Potential [1] | Neuron Select [1] |
-| 2 | Input Current [2] | Membrane Potential [2] | Neuron Select [2] |
-| 3 | Input Current [3] | Membrane Potential [3] | A Parameter [3] |
-| 4 | Input Current [4] | Membrane Potential [4] | B Parameter [0] |
-| 5 | A Parameter [0] | Membrane Potential [5] | B Parameter [1] |
-| 6 | A Parameter [1] | Membrane Potential [6] | B Parameter [3] |
-| 7 | A Parameter [2] | Membrane Potential [7] | B Parameter [4] |
+| 0 | IN0/UART-CTS | UART-RX | SPI-CS2 |
+| 1 | IN1 | OUT0/UART-RTS | IO0 |
+| 2 | SPI-MISO | OUT1 | IO1 |
+| 3 | IN2 | SPI-MOSI | IO2 |
+| 4 | IN3 | SPI-CS1 | IO3 |
+| 5 | IN4 | SPI-SCLK | IO4 |
+| 6 | EN_DEBUG | OUT2 | IO5 |
+| 7 | UART-TX | OUT3 | IO6 |
 
 ### Chip location
 

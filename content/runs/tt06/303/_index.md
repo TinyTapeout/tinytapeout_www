@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "303 EFAB Demo 2"
-weight: 199
+title: "303 Simple NCO"
+weight: 224
 ---
 
-## 303 : EFAB Demo 2
+## 303 : Simple NCO
 
-* Author: Anton Maurovic
-* Description: Displays 'EFAB' on 7seg display
-* [GitHub repository](https://github.com/amm-efab/tt_efab_demo)
-* [GDS submitted](https://github.com/amm-efab/tt_efab_demo/actions/runs/8679702196)
-* [Wokwi](https://wokwi.com/projects/395142547244224513) project
+* Author: s1Pu11i
+* Description: Simple NCO which can also output sine, square or sawtooth.
+* [GitHub repository](https://github.com/s1Pu11i/tt06_simple_nco)
+* [GDS submitted](https://github.com/s1Pu11i/tt06_simple_nco/actions/runs/8750375569)
+* HDL project
 * [Extra docs](None)
-* Clock: 2 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,55 +26,37 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Wokwi project uses a D flip-flop ring to display "EFAB" on the 7-segment display.
+Simple NCO to generate a sine, square or sawtooth output.
+Sine wave is generated from a table and square and sawtooth from the phase accumulator.
+Note: Output is unsigned 8bit.
 
 ### How to test
 
-Works best with a slow clock (say, 2~10Hz) or manually stepping with the demo board's "step" button.
-
-Turn off all input switches, then power on the board. Expect to see "F" blinking on the display with each clock pulse.
-
-Switch on input switch 3, and "E" should start blinking.
-
-Switch on input switch 1, and it should cycle through "EFAb".
-
-Switch on input switch 8, and letter blinking should be disabled.
-
-These are the inputs:
-
-| In  | Signal | Function                           |
-|-----|--------|------------------------------------|
-| SW1 | `IN0`  | **Run**: Off = Reset; On = Run     |
-| SW2 | `IN1`  | (Unused)                           |
-| SW3 | `IN2`  | `state_init[0]`; Normally ON       |
-| SW4 | `IN3`  | `state_init[1]`; Normally off      |
-| SW5 | `IN4`  | `state_init[2]`; Normally off      |
-| SW6 | `IN5`  | `state_init[3]`; Normally off      |
-| SW7 | `IN6`  | (Unused)                           |
-| SW8 | `IN7`  | **Blink control**: On = no blink   |
-
-`state_init` specifies the initial state for the sequencing
-flip-flops during reset, and for normal operation the first (SW3)
-would be switched ON, and the other three (SW4..6) would be
-switched off.
+Modeselection is done with the uio[1:0]:
+0: NONE, output is 0
+1: SINE
+2: SQUARE
+3: SAWTOOTH
+Frequency word is 16bit and is given as split into upper and lower part. Lower part is given with by
+uio[2]='1' and ui[7:0]=word and the upper part by uio[3]='1' and ui[7:0]=word.
 
 ### External hardware
 
-None, besides the TT demo board.
+None.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | run | a |  |
-| 1 |  | b |  |
-| 2 | state_init[0] | c |  |
-| 3 | state_init[1] | d |  |
-| 4 | state_init[2] | e |  |
-| 5 | state_init[3] | f |  |
-| 6 |  | g |  |
-| 7 | no_blink | dot |  |
+| 0 |  |  | ModeSelectionBit0 |
+| 1 |  |  | ModeSelectionBit1 |
+| 2 |  |  | FrequencyWordLower8BitUpdateEnable |
+| 3 |  |  | FrequencyWordUpper8BitUpdateEnable |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

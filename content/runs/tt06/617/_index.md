@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "617 4 bit RAM"
-weight: 152
+title: "617 mult_2b"
+weight: 204
 ---
 
-## 617 : 4 bit RAM
+## 617 : mult_2b
 
-* Author: Alejandro Silva Juarez
-* Description: Is a Memory RAM (4 bits)
-* [GitHub repository](https://github.com/asilvaj1/tt04-submission_silva_ram)
-* [GDS submitted](https://github.com/asilvaj1/tt04-submission_silva_ram/actions/runs/8514227731)
+* Author: Juan Manuel Lpez Pasten
+* Description: Multiplixador de 2 bits utilizando compyertas logicas
+* [GitHub repository](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits)
+* [GDS submitted](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits/actions/runs/8671131120)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,29 +26,54 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-It is a 4 bit RAM
+EL proyecto es un multiplicador sencillo de 2 bits para cada entrada a,b. Se realizó describiendo el circuito con compiertas lógicas utilizando multiplicaciones con compuertas AND y medios sumadores con la combinación de compuertas AND y XOR. Este circuito es completamente combinacional y es una aplicación práctica sencilla y didáctica para obtener un circuito físico final a partir de la descripción en verilog.
+
+<img src="mult_2b_1.png" alt="Multiplicador de 2 bits" width="400" height="300">
+
+
+|  A1  |  A0  |  B1  |  B0  |  P3  |  P2  |  P1  |  P0  |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|   0  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
+|   0  |   0  |   0  |   1  |   0  |   0  |   0  |   0  |
+|   0  |   0  |   1  |   0  |   0  |   0  |   0  |   0  |
+|   0  |   0  |   1  |   1  |   0  |   0  |   0  |   0  |
+|   0  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
+|   0  |   1  |   0  |   1  |   0  |   0  |   0  |   1  |
+|   0  |   1  |   1  |   0  |   0  |   0  |   1  |   0  |
+|   0  |   1  |   1  |   1  |   0  |   0  |   1  |   1  |
+|   1  |   0  |   0  |   0  |   0  |   0  |   0  |   0  |
+|   1  |   0  |   0  |   1  |   0  |   0  |   1  |   0  |
+|   1  |   0  |   1  |   0  |   0  |   1  |   0  |   0  |
+|   1  |   0  |   1  |   1  |   0  |   1  |   1  |   0  |
+|   1  |   1  |   0  |   0  |   0  |   0  |   0  |   0  |
+|   1  |   1  |   0  |   1  |   0  |   0  |   1  |   1  |
+|   1  |   1  |   1  |   0  |   0  |   1  |   1  |   0  |
+|   1  |   1  |   1  |   1  |   1  |   0  |   0  |   1  |
 
 ### How to test
 
-It is tested with 4 inputs, the clock, the write enable input and the 4-bit input data, the output is 4 bits as well.
+Las entradas del circuito de 2 bits, a y b, deben conectarse a interruptores como lo pueden ser DIP switch, con sus respectivas resistencias. Las salida out de 4 bits se puede conectar a leds, de igual manera con sus respectivas resistencias para evitar dañar algún componente.
 
 ### External hardware
 
-The chip may need a Microcontroller, Raspberry, Arduino or FPGA for data inputs and memory addresses or 8 switches can be placed for data inputs and memory addresses.
+El hardware externo utilizado es:
+
+-DIP switch 4 posiciones.
+-4 lEDS.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Memory entry address [0] | Memory output data [0] | RAM write enable input |
-| 1 | Memory entry address [1] | Memory output data [1] |  |
-| 2 | Memory entry address [2] | Memory output data [2] |  |
-| 3 | Memory entry address [3] | Memory output data [3] |  |
-| 4 | Memory input data [0] |  |  |
-| 5 | Memory input data [1] |  |  |
-| 6 | Memory input data [2] |  |  |
-| 7 | Memory input data [3] |  |  |
+| 0 | a (bit 0) | out (bit 0) | not used |
+| 1 | a (bit 1) | out (bit 1) | not used |
+| 2 | b (bit 0) | out (bit 2) | not used |
+| 3 | b (bit 1) | out (bit 3) | not used |
+| 4 | not used | not used | not used |
+| 5 | not used | not used | not used |
+| 6 | not used | not used | not used |
+| 7 | not used | not used | not used |
 
 ### Chip location
 

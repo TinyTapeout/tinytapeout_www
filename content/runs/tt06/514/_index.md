@@ -1,10 +1,10 @@
 ---
 hidden: true
-title: "130 AudioChip_V2"
+title: "514 AudioChip_V2"
 weight: 121
 ---
 
-## 130 : AudioChip_V2
+## 514 : AudioChip_V2
 
 * Author: Thorsten Knoll
 * Description: The AudioChip plays waveforms on PWM outputs. The inputs alter these waveforms in many ways.
@@ -52,4 +52,4 @@ Lowpass filters for the PWM outputs.
 
 ### Chip location
 
-{{< shuttle-map "tt06" "130" >}}
+{{< shuttle-map "tt06" "514" >}}

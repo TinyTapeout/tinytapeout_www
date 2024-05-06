@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "677 Circuito PWM con ciclo de trabajo configurable"
-weight: 96
+title: "677 PWM Controller"
+weight: 79
 ---
 
-## 677 : Circuito PWM con ciclo de trabajo configurable
+## 677 : PWM Controller
 
-* Author: Maria Fernanda Tovany Salvador, Javier Trucios Alonso & Luis David Vazquez Perez
-* Description:  A partir de tres senales de entrada digitales selecciona el ciclo de trabajo de salida (PWM).
-* [GitHub repository](https://github.com/LuisVazpez12/PWM_configurable)
-* [GDS submitted](https://github.com/LuisVazpez12/PWM_configurable/actions/runs/8757612449)
+* Author: Ziyi Zhao, Yuchen Ma
+* Description:  A Low-Cost Pulse Width Modulation (PWM) Controller
+* [GitHub repository](https://github.com/Yuchen1203/tt06-PWM-Controller)
+* [GDS submitted](https://github.com/Yuchen1203/tt06-PWM-Controller/actions/runs/8754756153)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,37 +26,26 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-El PWM configurable de ciclo de trabajo incrementales un dispositivo diseñado para generar señales PWM (Modulación por Ancho de Pulso) con ciclos de trabajo incrementales basados en tres señales de entrada digitales. Este dispositivo permite una fácil configuración del ciclo de trabajo para adaptarse a una variedad de aplicaciones. El ciclo de trabajo será incremental con valor de 12.5% para cada combinación de entrada.
+The PWM generates a 10 MHz PWM signal whose duty cycle can be adjusted using two buttons.
+The PWM duty cycle can be increased or decreased in steps, constrained between 10% and 90%.
 
 ### How to test
 
-Usando los puertos de entrada en combinacion de estados logicos y con un uno logico en enable, puede visualizarse en la salida como la señal de ancho de pulso varia de acuerdo a las siguientes combinaciones:
-000=12.5%
-001=25%
-010=37.5%
-011=50%
-100=62.5%
-101=75%
-110=87.5%
-111=100%
-
-### External hardware
-
-Generador de señales para generar la señal de reloj de 10MHz, osciloscopio para poder visualizar el ancho del pulso.
+Change the inputs ui_in to simulate button presses and check if the PWM duty cycle increases or decreases as expected.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | no use | PWM | no use |
-| 1 | no use | no use | no use |
-| 2 | no use | no use | no use |
-| 3 | speed[0] | no use | no use |
-| 4 | speed[1] | no use | no use |
-| 5 | speed[3] | no use | no use |
-| 6 | enable | no use | no use |
-| 7 | clock | no use | no use |
+| 0 | increase_duty |  | PWM_OUT |
+| 1 | decrease_duty |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

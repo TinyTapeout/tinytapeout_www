@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "198 co processor for precision farming"
-weight: 107
+title: "198 Two ports USB CDC device"
+weight: 9
 ---
 
-## 198 : co processor for precision farming
+## 198 : Two ports USB CDC device
 
-* Author: MITS ECE
-* Description: The processor will detect the deviation in sensor data and the sensor fault
-* [GitHub repository](https://github.com/mitsece/tt06-verilog-mitssdd)
-* [GDS submitted](https://github.com/mitsece/tt06-verilog-mitssdd/actions/runs/8599590031)
+* Author: Maximo Balestrini
+* Description: USB CDC device with two ports each with a different application
+* [GitHub repository](https://github.com/mbalestrini/tt06_usb_cdc_devices)
+* [GDS submitted](https://github.com/mbalestrini/tt06_usb_cdc_devices/actions/runs/8758168087)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 48000000 Hz
 
 <!---
 
@@ -24,31 +24,55 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 
+### PRELIMINARY INFO
+
 ### How it works
 
-The processor will read the datas from the four sensors sequentially and analyse whether any deviation has been occoured with respect to the previous data and provide a warning signal also it continuously checks the senor datas and identify any fault has been occured and provides another warning signal with a signal providing the sensor identification.
+The design works as Full Speed (12Mbit/s) USB communications device class (or USB CDC class).  
+Most of the code is based on this repo: https://github.com/ulixxe/usb_cdc
+
+When connected to a pc the device should appear 1 or more serial ports. (COMX on Windows, /dev/ttyACMx on Linux and /dev/cu.usbmodemxxxx on OSX)  
+Linux requires that the user account belongs to the dialout group to grant permissions for virtual COM access.
+
+Channel 0 application: Input to serial  
+When the value from one of the inputs change from 0 to 1 or 1 to 0 it sends a character to the port.
+
+| pin | rise | fall |
+| --- | ---- | ---- |
+|input[0] | A | a |
+|input[1] | B | b |
+|input[2] | C | c |
+|input[3] | D | d |
+|input[4] | E | e |
+|input[5] | F | f |
+|input[6] | G | g |
+|input[7] | H | h |
 
 ### How to test
 
-If the sensor identifier data is 00 which means it is sensor1 and input data is 10000001 and this compared with the previously stored data which may be 10000100 for example ,then there is a deviation and the processor will provide output as 1 and the bidirectional as 00.
+(here goes a simple schematic some instructions)
 
 ### External hardware
 
-8 bit ADC is needed to convert the sensor data
+USB cable
+1.5k resistor
+
+optional:
+Buttons for the inputs
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Input data from the sensors | Deviation detector | Sensor identifier |
-| 1 | Input data from the sensors | Falut warning | Sensor identifier |
-| 2 | Input data from the sensors | Falut warning |  |
-| 3 | Input data from the sensors | Falut warning |  |
-| 4 | Input data from the sensors | Sensor identifier |  |
-| 5 | Input data from the sensors | Sensor identifier |  |
-| 6 | Input data from the sensors |  |  |
-| 7 | Input data from the sensors |  |  |
+| 0 | input_0 | usb_pu | usp_p |
+| 1 | input_1 | debug_led | usb_n |
+| 2 | input_2 | debug_usb_configured |  |
+| 3 | input_3 | debug_usb_tx_en |  |
+| 4 | input_4 | debug_frame[0] |  |
+| 5 | input_5 | debug_frame[1] |  |
+| 6 | input_6 | debug_frame[2] |  |
+| 7 | input_7 | debug_frame[3] |  |
 
 ### Chip location
 

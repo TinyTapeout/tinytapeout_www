@@ -1,146 +1,98 @@
 ---
 hidden: true
-title: "620 3-bit ALU"
-weight: 117
+title: "620 Latch RAM (64 bytes)"
+weight: 234
 ---
 
-## 620 : 3-bit ALU
+## 620 : Latch RAM (64 bytes)
 
-* Author: José Raña Gámez
-* Description: This device is a 3-bit ALU that generates 5 operations in parallel. The operations that the ALU performs are: addition, subtraction, multiplication, division and modulo operation. The device has 2 inputs; A[3-bit] and B[3-bit] along with a 3-bit selector (Selector[3-bit]). It also has a single 6-bit output (OutPut[6-bit]). In the end, the design entails 15 pins in total; 9 input and 6 output pins. The operation of this ALU is simple: At input A and B, the values ​​are set using switches, for example, A= 111 and B=101. To obtain the 5 different results through the different 5 operations that the ALU performs, the 3-bit selector (Selector[3-bits]) is used, therefore, using 3 switches we will place the result that we want to observe at the output.
-* [GitHub repository](https://github.com/JoseKaisen/ALU_3bits)
-* [GDS submitted](https://github.com/JoseKaisen/ALU_3bits/actions/runs/8655310910)
+* Author: Mike Bell
+* Description: 64 byte RAM built out of latches
+* [GitHub repository](https://github.com/MichaelBell/tt06-memory)
+* [GDS submitted](https://github.com/MichaelBell/tt06-memory/actions/runs/8758769642)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
 
-<!---
+### What's the project?
 
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
+A 64 byte RAM implemented using 512 latches.
 
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
-
-### How it works
-
-This device is a 3-bit ALU that generates 5 operations in parallel. The operations that the ALU performs are: addition, subtraction, multiplication, division and modulo operation.
-The device has 2 inputs; A[3-bit] and B[3-bit] along with a 3-bit selector (Selector[3-bit]). It also has a single 6-bit output (OutPut[6-bit]). In the end, the design entails 15 pins in total; 9 input and 6 output pins.
-The operation of this ALU is simple: At input A and B, the values ​​are set using switches, for example, A= 111 and B=101. To obtain the 5 different results through the different 5 operations that the ALU performs, the 3-bit selector (Selector[3-bits]) is used, therefore, using 3 switches we will place the result that we want to observe at the output.
-The selector works as follows: since the selector is 3-bit, we will have 2^3= 8 combinations, but in this case we will only use the first 5 combinations in this way:
-
-Combination 1 for sum: 000
-
-Combination 2 for subtraction: 001
-
-Combination 3 for multiplication: 010
-
-Combination 4 for division: 011
-
-Combination 5 for module: 100
-
-The remaining combinations do not have an assigned operating function, therefore, the remaining combinations will not generate any result at the output of the device.
+Resetting the project does not reset the RAM contents.
 
 ### How to test
 
-Choose two values of 3-bits for the inputs A and B by using switches, for example: A=111 and B=101.
-Then, use the 3-bit selector that has 3 switches to choose one of the 5 combinations to select an operation (sum[000], substraction[001], multiplication[010], division[011] and module[100]) so that it can be obtained the wanted results observed at the output (Leds).
+To read a byte from memory:
 
-For example: we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 011 then the operation will be A=111 / B=101 (division).
+* Set the `addr` pins to the desired address and set `wr_en` low
+* Pulse `clk`
+* `data_out` (the output pins) reads the value at the memory location.
 
-Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 010 then the operation will be A=111 * B=101 (multiplication).
+To write a byte to memory:
 
-Another example, we choose the values A=111 and B=101. Then, if the 3-bit selector has the combination 000 then the operation will be A=111 + B=101 (sum).
+* Set the `addr` pins to the desired address, set `data_in` (the bidirectional pins) to the desired value, and set `wr_en` high
+* Pulse `clk`
+* The memory location will be written on the next cycle.  The `data_out` pins will now read the old value at this address.
+* The next cycle can not be a write.
 
-The results will be shown at the 6-bit output that uses 6 Leds to demonstrate the results of any of the 5 operations available in the ALU.
+On the cycle immediately after a write the value of `wr_en` and `data_in` will be ignored - the cycle is always a read.  If `addr` is left the same then the value read will be the value just written to that location.
 
-### External hardware
+### How it works
 
-3-bit input "A": uses 3 switches.
+Setting values into latches reliably is a little tricky.  There are two important considerations:
 
-3-bit input "B": uses 3 switches.
+* The latch gate must only go high for the latches for the byte that is addressed.  The other latch gates must not glitch.
+* The data must be stable until the latch gate is definitely low again.
 
-3-bit input "Selector": uses 3 switches.
+To ensure the restrictions are met, writes take 2 cycles, and only 1 write can be in flight at once, so the cycle after any write is always treated as a read.
 
-6-bit output "Results": uses 6 Leds.
+The scheme used is described in detail below.
 
-The mentioned inputs and outputs are respectively connected to the pins of the project circuit as follows:
+#### Writing: Ensuring stable inputs to the latches.
 
-## Inputs
+The write address, `addr_write`, is always set to the same value for 2 clocks when doing a write.
+When the write is requested `addr_write` and `data_to_write` are captured.  `wr_en_next` is set high.
+If `wr_en_next` was already high the write is ignored, so the inputs to the latches aren't
+modified when a write is about to happen.
 
-ui[0]: "First bit for input 'A'(input of 3-bits)"
+On the next clock, `wr_en_valid` is set to `wr_en_next`.  `addr_write` is stable at this time so the
+`sel_byte` wires, that contain the result of the comparison of the write address with the byte address for each latch, will already be stable at the point `wr_en_valid` goes high.
 
-ui[1]: "Second bit for input 'A'(input of 3-bits)"
+`wr_en_ok` is a negative edge triggered flop that is set to `!wr_en_valid`.  This will therefore
+go low half a clock after `wr_en_valid` is set high.  And because two consecutive writes are not
+allowed it will always be high when `wr_en_valid` goes high.
 
-ui[2]: "Third bit for input 'A'(input of 3-bits)"
+The latch gate is set by `and`ing together `wr_en_valid`, `wr_en_ok` and the `sel_byte` for that byte.
+This means the latch gate for just the selected byte's latches goes high for the first half of
+the write clock cycle.  data_to_write is stable across this time (it can not change until the
+next clock rising edge), so will be cleanly captured by the latch when the latch gate goes low.
 
-ui[3]: "First bit for input 'B'(input of 3-bits)"
+#### Reading: Mux and tri-state buffer.
 
-ui[4]: "Second bit for input 'B'(input of 3-bits)"
+Reading the latches is straightforward.  However, a 64:1 mux for each bit is relatively area
+intensive, so instead for each bit we have 4 16:1 muxes feeding 4 tri-state buffers.
 
-ui[5]: "Third bit for input 'B'(input of 3-bits)"
+Only the tri-state buffer corresponding to the selected read address is enabled, and the output is
+taken from the wire driven by those 4 buffers.
 
-ui[6]: "Unused input bit"
+To minimize contention, the tri-state enable pin of the buffers is driven directly from a flop which
+captures the selected read address directly from the inputs, at the same cycle as the `addr_read` flops are set.
 
-ui[7]: "Unused input bit"
-
-## Outputs
-
-uo[0]: "First bit for output 'Leds'(output of 6-bits)"
-
-uo[1]: "Second bit for output 'Leds'(output of 6-bits)"
-
-uo[2]: "Third bit for output 'Leds'(output of 6-bits)"
-
-uo[3]: "Fourth bit for output 'Leds'(output of 6-bits)"
-
-uo[4]: "Fifth bit for output 'Leds'(output of 6-bits)"
-
-uo[5]: "Sixth bit for output 'Leds'(output of 6-bits)"
-
-uo[6]: "Unused output bit"
-
-uo[7]: "Unused output bit"
-
-## Bidirectional pins
-
-uio[0]: "First bit for input 'ctrl'(input of 3-bits)"
-
-uio[1]: "Second bit for input 'ctrl'(input of 3-bits)"
-
-uio[2]: "Third bit for input 'ctrl'(input of 3-bits)"
-
-uio[3]: "Unused bidirectional I/O bit"
-
-uio[4]: "Unused bidirectional I/O bit"
-
-uio[5]: "Unused bidirectional I/O bit"
-
-uio[6]: "Unused bidirectional I/O bit"
-
-uio[7]: "Unused bidirectional I/O bit"
-
-For a better visualization, see Figure 1.
-
-![ALU_3bits](https://github.com/JoseKaisen/ALU_3bits/assets/164433211/c92f2f1b-d5cb-41ff-97b2-62917bac8b81)
-
-Figure 1: 'External Hardware pins conections visualization'
+The combined output wire then goes to a final buffer before leaving the module, ensuring the outputs are driven cleanly.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | First bit for input 'A'(input of 3-bits) | First bit for output 'Leds'(output of 6-bits) | First bit for input 'ctrl'(input of 3-bits) |
-| 1 | Second bit for input 'A'(input of 3-bits) | Second bit for output 'Leds'(output of 6-bits) | Second bit for input 'ctrl'(input of 3-bits) |
-| 2 | Third bit for input 'A'(input of 3-bits) | Third bit for output 'Leds'(output of 6-bits) | Third bit for input 'ctrl'(input of 3-bits) |
-| 3 | First bit for input 'B'(input of 3-bits) | Fourth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
-| 4 | Second bit for input 'B'(input of 3-bits) | Fifth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
-| 5 | Third bit for input 'B'(input of 3-bits) | Sixth bit for output 'Leds'(output of 6-bits) | Unused bidirectional I/O bit |
-| 6 | Unused input bit | Unused output bit | Unused bidirectional I/O bit |
-| 7 | Unused input bit | Unused output bit | Unused bidirectional I/O bit |
+| 0 | addr[0] | data_out[0] | data_in[0] |
+| 1 | addr[1] | data_out[1] | data_in[1] |
+| 2 | addr[2] | data_out[2] | data_in[2] |
+| 3 | addr[3] | data_out[3] | data_in[3] |
+| 4 | addr[4] | data_out[4] | data_in[4] |
+| 5 | addr[5] | data_out[5] | data_in[5] |
+| 6 |  | data_out[6] | data_in[6] |
+| 7 | wr_en | data_out[7] | data_in[7] |
 
 ### Chip location
 

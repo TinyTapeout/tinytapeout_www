@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "45 PiMAC"
-weight: 119
+title: "45 Flappy Bird"
+weight: 225
 ---
 
-## 45 : PiMAC
+## 45 : Flappy Bird
 
-* Author: Steffen Reith
-* Description: A simple pipelined multiply and accumulate unit to compute a*b+c
-* [GitHub repository](https://github.com/SteffenReith/TT06_PiMac)
-* [GDS submitted](https://github.com/SteffenReith/TT06_PiMac/actions/runs/8745370239)
+* Author: Robin Hohensinn
+* Description: Flappy Bird
+* [GitHub repository](https://github.com/RobinH08/JKU-TT06-FlappyBird)
+* [GDS submitted](https://github.com/RobinH08/JKU-TT06-FlappyBird/actions/runs/8632170515)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,39 +26,34 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This circuit is a simple pipelined multiply and accumulate unit to compute a*b+c using SpinalHDL as a generator.
+The design of the chip allows playing a simplified version of Flappy Bird on an 8x8 LED matrix. For peripheral hardware, only two buttons for controlling the bird's position and an 8x8 LED matrix are required. After successful software testing using Waveform, the design was synthesized in a Github repository. Following successful Waveform testing, the circuit was verified for functionality using an FPGA chip.
 
-It uses the classic textbook method of multiplication with base 2. So if the numbers a and b
-are multiplied, the sum of the version of argument a shifted to the left by i bits must be summed up
-if and only if the ith bit of b is 1.
-
-These bit products, i.e. (a << i) * b(i), are determined in the individual stages of the pipeline
-and the result is calculated step by step.
-
-The full code can be found at https://github.com/SteffenReith/PiMAC
+The 8-bit outputs act as the "High" signals for the LED matrix, while another set of 8-bit outputs serve as the "LOW" signals, forming a grid pattern conceptually.
+This setup enables individual LEDs to be lit up through precise control of one row and one colomn.
+Ensuring correct installation of the LED matrix and using appropriately sized resistors for protection is essential.
 
 ### How to test
 
-Simply feed a, b, and c as 4 bit unsigned integer into the unit. The latency is 3 clocks, hence the
-(hopefully correct) answer can be found at the result output after 3 cycles.
+To test this version use waveform tests or an oscilloscop.
 
 ### External hardware
 
-No external hardware it needed.
+two buttons and a 8x8 Led Matrix
+https://de.aliexpress.com/item/32857281704.html?gatewayAdapt=glo2deu
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | a[0] | result[0] | c[0] |
-| 1 | a[1] | result[1] | c[1] |
-| 2 | a[2] | result[2] | c[2] |
-| 3 | a[3] | result[3] | c[3] |
-| 4 | b[0] | result[4] |  |
-| 5 | b[1] | result[5] |  |
-| 6 | b[2] | result[6] |  |
-| 7 | b[3] | result[7] |  |
+| 0 | up-Button | row of display-Matrix | col of display-Matrix |
+| 1 | down-Button | row of display-Matrix | col of display-Matrix |
+| 2 | not used | row of display-Matrix | col of display-Matrix |
+| 3 | not used | row of display-Matrix | col of display-Matrix |
+| 4 | not used | row of display-Matrix | col of display-Matrix |
+| 5 | not used | row of display-Matrix | col of display-Matrix |
+| 6 | not used | row of display-Matrix | col of display-Matrix |
+| 7 | not used | row of display-Matrix | col of display-Matrix |
 
 ### Chip location
 

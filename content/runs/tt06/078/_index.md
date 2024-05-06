@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "78 4-Bit CPU mit FSM"
-weight: 33
+title: "78 Projekt KEIS Hadner Thomas"
+weight: 12
 ---
 
-## 78 : 4-Bit CPU mit FSM
+## 78 : Projekt KEIS Hadner Thomas
 
-* Author: Jacqueline Gislai
-* Description: Mini CPU, that can do simple calculations and logic operations as well as storing and loading values and execute shifting operations
-* [GitHub repository](https://github.com/jacquygis/jku-tt06-MiniCPU)
-* [GDS submitted](https://github.com/jacquygis/jku-tt06-MiniCPU/actions/runs/8661828724)
+* Author: Thomas Hadner
+* Description: Demodulator for RC Receiver with different Outputs
+* [GitHub repository](https://github.com/ThomasHadner/jku-tt06-pwm-analyzer-hadner)
+* [GDS submitted](https://github.com/ThomasHadner/jku-tt06-pwm-analyzer-hadner/actions/runs/8628730551)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 1000000 Hz
 
 <!---
 
@@ -26,26 +26,27 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Based on the input information, a few operations can be used to process the input values. If there should be operations done with two or more values, store- and loading- operations have to be executed in between before going to the next calculation step.
+Decodes PWM-Signal from RC Receiver with counter and threshold values to decide wether to set the output to HIGH or LOW.
 
 ### How to test
 
-For example giving the CPU a value to store and next to load into the accumulator by giving the correct operation codes and the storage address.
-Next giving the CPU the next value and the operation that should be processes onto those to values, for example a AND function. The result will be given to the output converted to a 8-Bit signal.
+The program can be tested by applying a PWM-Signal to the input with a longer pulse time than 1.9ms, then the output will go to HIGH. If then you apply a PWM-Signal with a pulse time lower than 1.1 the output will go to LOW.
+
+Additionally the 7-Segment-Display will always show how many outputs are currently active (HIGH).
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | storage address Bit 0 | output data Bit 0 | input write-access in storage |
-| 1 | storage address Bit 1 | output data Bit 1 |  |
-| 2 | storage address Bit 2 | output data Bit 2 |  |
-| 3 | storage address Bit 3 | output data Bit 3 |  |
-| 4 | value of input data Bit 0 | output data Bit 4 | input Operation Code Bit 0 |
-| 5 | value of input data Bit 1 | output data Bit 5 | input Operation Code Bit 1 |
-| 6 | value of input data Bit 2 | output data Bit 6 | input Operation Code Bit 2 |
-| 7 | value of input data Bit 3 | output data Bit 7 | input Operation Code Bit 3 |
+| 0 | input PWM of channel 0 | segment a | output of channel 0 |
+| 1 | input PWM of channel 1 | segment b | output of channel 1 |
+| 2 | input PWM of channel 2 | segment c | output of channel 2 |
+| 3 | input PWM of channel 3 | segment d | output of channel 3 |
+| 4 | input PWM of channel 4 | segment e | output of channel 4 |
+| 5 | input PWM of channel 5 | segment f | output of channel 5 |
+| 6 | input PWM of channel 6 | segment g | output of channel 6 |
+| 7 | input PWM of channel 7 | UART Transmit Wire | output of channel 7 |
 
 ### Chip location
 

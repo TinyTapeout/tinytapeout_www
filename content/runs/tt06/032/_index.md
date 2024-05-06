@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "32 Flappy Bird"
-weight: 225
+title: "32 7-segment-FUN"
+weight: 227
 ---
 
-## 32 : Flappy Bird
+## 32 : 7-segment-FUN
 
-* Author: Robin Hohensinn
-* Description: Flappy Bird
-* [GitHub repository](https://github.com/RobinH08/JKU-TT06-FlappyBird)
-* [GDS submitted](https://github.com/RobinH08/JKU-TT06-FlappyBird/actions/runs/8632170515)
+* Author: Armin Hartl
+* Description: Many different Animations on an 7-Segment-Display
+* [GitHub repository](https://github.com/akaArmin/jku-tt06-7-segment-FUN)
+* [GDS submitted](https://github.com/akaArmin/jku-tt06-7-segment-FUN/actions/runs/8630208928)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,34 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-The design of the chip allows playing a simplified version of Flappy Bird on an 8x8 LED matrix. For peripheral hardware, only two buttons for controlling the bird's position and an 8x8 LED matrix are required. After successful software testing using Waveform, the design was synthesized in a Github repository. Following successful Waveform testing, the circuit was verified for functionality using an FPGA chip.
-
-The 8-bit outputs act as the "High" signals for the LED matrix, while another set of 8-bit outputs serve as the "LOW" signals, forming a grid pattern conceptually.
-This setup enables individual LEDs to be lit up through precise control of one row and one colomn.
-Ensuring correct installation of the LED matrix and using appropriately sized resistors for protection is essential.
+Simplified is this project just a counter, which speed can be changed, combined with animations for a 7-segment display, which also can be switched trough.
 
 ### How to test
 
-To test this version use waveform tests or an oscilloscop.
+The default setting should display the numbers 0 to 9, which should change every second. The design can be tested by pressing the different input buttons and seeing if the speed respectively the animation changes.
 
 ### External hardware
 
-two buttons and a 8x8 Led Matrix
-https://de.aliexpress.com/item/32857281704.html?gatewayAdapt=glo2deu
+You might need a breadboard and buttons for the controls, as well as a 7-segment display if not available.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | up-Button | row of display-Matrix | col of display-Matrix |
-| 1 | down-Button | row of display-Matrix | col of display-Matrix |
-| 2 | not used | row of display-Matrix | col of display-Matrix |
-| 3 | not used | row of display-Matrix | col of display-Matrix |
-| 4 | not used | row of display-Matrix | col of display-Matrix |
-| 5 | not used | row of display-Matrix | col of display-Matrix |
-| 6 | not used | row of display-Matrix | col of display-Matrix |
-| 7 | not used | row of display-Matrix | col of display-Matrix |
+| 0 | btn1_incAni | segment a1 |  |
+| 1 | btn2_decAni | segment b2 |  |
+| 2 | btn3_incSpeed | segment c3 |  |
+| 3 | btn4_decSpeed | segment d4 |  |
+| 4 |  | segment e5 |  |
+| 5 |  | segment f6 |  |
+| 6 |  | segment g7 |  |
+| 7 |  |  |  |
 
 ### Chip location
 

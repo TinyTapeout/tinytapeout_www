@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "35 Synthesized Time-to-Digital Converter (TDC) v2"
-weight: 138
+title: "35 Synthesized Time-to-Digital Converter (TDC)"
+weight: 19
 ---
 
-## 35 : Synthesized Time-to-Digital Converter (TDC) v2
+## 35 : Synthesized Time-to-Digital Converter (TDC)
 
 * Author: Harald Pretl
-* Description: Synthesized TDC based on two Vernier delay rings
-* [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v2)
-* [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v2/actions/runs/8679868973)
+* Description: Synthesized TDC based on an interleaved delay line
+* [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v1)
+* [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v1/actions/runs/8662018827)
 * HDL project
 * [Extra docs](None)
 * Clock: 50000000 Hz
@@ -26,35 +26,33 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a synthesized time-to-digital converter (TDC), consisting of two wavefront delay rings with a slightly different delay forming a Vernier TDC.
+This is a simple synthesized time-to-digital converter (TDC), consisting of a delay line and parallel capture FF. Depending on `__TDC_INTERLEAVED__` either a simple or an interleaved delay line is implemented.
 
-The time between the rising edge of `start=ui_in[0]` and the rising edge of `stop=ui_in[1]` is measured by both rings and the output in 8b chunks. Based on analog simulation, the time resolution (typical process, room temperature) is on the order of 6ps.
+In the TT 1x1 block size a 192-stage interleaved delay can be fitted.
 
 ### How to test
 
-Apply two signals to `ui_in[0]` and `ui_in[1]`.
+Apply two signals to `ui_in[0]` and `clk`.
 
-After capturing (rising edge of `ui_in[1]`) the result (i.e., the time delay between rising edge of `ui_in[0]` and `ui_in[2]`) can be muxed-out to `uo_out[7:0]` using `ui_in[7:3]` as byte-wise selector. `ui_in[7:3]=0000` gives result byte 0, `ui_in[7:3]=0001` gives result byte 1, etc.
-
-The input `ui_in[2]` selects the output of ring 0 or ring 1.
+After capturing (rising edge of `clk`) the result (i.e., the time delay between rising edge of `ui_in[0]` and `clk`) can be muxed-out to `uo_out[7:0]` using `ui_in[7:3]` as byte-wise selector. `ui_in[7:3]=0000` gives result byte 0, `ui_in[7:3]=0001` gives result byte 1, etc.
 
 ### External hardware
 
-Two signal generators generating the logical signals with a programmable delay (important is ns resolution).
+Two signal generators generating logical signals with a programmable delay.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Start signal of TDC | Result (LSB) |  |
-| 1 | Stop signal of the TDC | Result |  |
-| 2 | Select result of ring for output | Result |  |
-| 3 | output select (LSB) | Result |  |
+| 0 | Start signal of TDC (stop signal is clk) | Result LSB |  |
+| 1 |  | Result |  |
+| 2 |  | Result |  |
+| 3 |  | Result |  |
 | 4 | output select | Result |  |
 | 5 | output select | Result |  |
 | 6 | output select | Result |  |
-| 7 | output select (MSB) | Result (MSB) |  |
+| 7 | output select | Result MSB |  |
 
 ### Chip location
 

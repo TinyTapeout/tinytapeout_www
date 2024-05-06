@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "495 TT06 OTP Encryptor"
-weight: 24
+title: "495 BCD to single 7 segment display Converter"
+weight: 148
 ---
 
-## 495 : TT06 OTP Encryptor
+## 495 : BCD to single 7 segment display Converter
 
-* Author:  , Aimee Kang, Alexander Schaefer
-* Description: Encryption and Decryption Unit through Utilization of Psuedorandom One Time Pads
-* [GitHub repository](https://github.com/wmk7fe/tt06-otp-encryptor)
-* [GDS submitted](https://github.com/wmk7fe/tt06-otp-encryptor/actions/runs/8741806225)
-* HDL project
+* Author: Kelvin Kung
+* Description: BCD to single 7 segment display
+* [GitHub repository](https://github.com/kelvinutp/bcd-2-7segment-decoder)
+* [GDS submitted](https://github.com/kelvinutp/bcd-2-7segment-decoder/actions/runs/8699935440)
+* [Wokwi](https://wokwi.com/projects/395061443288867841) project
 * [Extra docs](None)
-* Clock: 50000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,29 +26,34 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-8 bit data inputs come through ui_in in the form of either plaintext or ciphertext. Bit 0 of uio_in is used to determine whether the chip will perform encryption or decryption. When it is high, decryption will be performed. When it is low, decryption will be performed. However, the enable signal must be high in both cases for either encryption or decryption to be performed. In the case of encryption, the chip will take an 8 bit value from an internal pseudorandom number generator to use as a one time pad. To create the ciphertext, the chip will xor the bits of the one time pad with their relative bits in the plaintext to create ciphertext. In order to later recover the plaintext, the one time pad is stored in an internal register file, and the index of the register of which the pad is stored in is outputed to bits 6 through 4 of uio_out. There are 8 registers in the register file (0-7). To decrypt ciphertext, the decrypt signal must be high (bit 0 of uio_in) and the index that the associated one time pad is stored in must be inputted to uio_in bits 3 through 1. Then, the one time pad will be recovered from the indexed register, the pad will be xored with the ciphertext, and the plaintext will be produced as output.
+It uses multiple logic gates to transfrom binary input to a decimal number to display in a 7 segment display
 
 ### How to test
 
-Testing can be performed by ensuring that inputted plaintext can be recovered by taking the encrypted output and register index and feeding it into the system.
+Input any binary number between 0-9.
+2^3=IN0 (most significant bit)
+2^2=IN1
+2^1=IN2
+2^0=IN3 (least significant bit)
 
 ### External hardware
 
-External hardware with basic memory, wiring, and data displaying functionality should be suitable to test this chip. Verilog testing was performed by using one external register for data output, one external register for index output, and a means to read the data from the registers. Basic binary instrumentation may be needed if direct access to wires is not possible in order to shift the register index from the output bits of 6 through 4 to the input bits of 3 through 1.
+For input use a dip switch with at least 4 outputs.
+For output use a single 7 segment display with common cathode.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | data[0] | out[0] | decrypt |
-| 1 | data[1] | out[1] | r_num[0] |
-| 2 | data[2] | out[2] | r_num[1] |
-| 3 | data[3] | out[3] | r_num[2] |
-| 4 | data[4] | out[4] | index_out[0] |
-| 5 | data[5] | out[5] | index_out[1] |
-| 6 | data[6] | out[6] | index_out[2] |
-| 7 | data[7] | out[7] |  |
+| 0 | B3 | A |  |
+| 1 | B2 | B |  |
+| 2 | B1 | C |  |
+| 3 | B0 | D |  |
+| 4 |  | E |  |
+| 5 |  | F |  |
+| 6 |  | G |  |
+| 7 |  |  |  |
 
 ### Chip location
 

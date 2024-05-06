@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "99 Die Roller"
-weight: 233
+title: "99 PiMAC"
+weight: 119
 ---
 
-## 99 : Die Roller
+## 99 : PiMAC
 
-* Author: Nathan Gross
-* Description: Generates a random number when rolled with input 1-99
-* [GitHub repository](https://github.com/nathangross1/tt06-verilog-template)
-* [GDS submitted](https://github.com/nathangross1/tt06-verilog-template/actions/runs/8207055176)
+* Author: Steffen Reith
+* Description: A simple pipelined multiply and accumulate unit to compute a*b+c
+* [GitHub repository](https://github.com/SteffenReith/TT06_PiMac)
+* [GDS submitted](https://github.com/SteffenReith/TT06_PiMac/actions/runs/8745370239)
 * HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,30 +26,39 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Takes binary input die size from user and generates a random number from 1-die_size when input to roll is received. Uses clock counter for random number.
+This circuit is a simple pipelined multiply and accumulate unit to compute a*b+c using SpinalHDL as a generator.
+
+It uses the classic textbook method of multiplication with base 2. So if the numbers a and b
+are multiplied, the sum of the version of argument a shifted to the left by i bits must be summed up
+if and only if the ith bit of b is 1.
+
+These bit products, i.e. (a << i) * b(i), are determined in the individual stages of the pipeline
+and the result is calculated step by step.
+
+The full code can be found at https://github.com/SteffenReith/PiMAC
 
 ### How to test
 
-Select die size with inputs 0-6, see that die size is displaying. roll die with input 7 repeatedly, noting random numbers from 1 to die size.
+Simply feed a, b, and c as 4 bit unsigned integer into the unit. The latency is 3 clocks, hence the
+(hopefully correct) answer can be found at the result output after 3 cycles.
 
 ### External hardware
 
-PMOD output splitter
-PMOD dual 7-segment display
+No external hardware it needed.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Die Size bit 0 | Dual 7 segment data 0 |  |
-| 1 | Die Size bit 1 | Dual 7 segment data 1 |  |
-| 2 | Die Size bit 2 | Dual 7 segment data 2 |  |
-| 3 | Die Size bit 3 | Dual 7 segment data 3 |  |
-| 4 | Die Size bit 4 | Dual 7 segment data 4 |  |
-| 5 | Die Size bit 5 | Dual 7 segment data 5 |  |
-| 6 | Die Size bit 6 | Dual 7 segment data 6 |  |
-| 7 | Die Roll | Source selection |  |
+| 0 | a[0] | result[0] | c[0] |
+| 1 | a[1] | result[1] | c[1] |
+| 2 | a[2] | result[2] | c[2] |
+| 3 | a[3] | result[3] | c[3] |
+| 4 | b[0] | result[4] |  |
+| 5 | b[1] | result[5] |  |
+| 6 | b[2] | result[6] |  |
+| 7 | b[3] | result[7] |  |
 
 ### Chip location
 

@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "744 8bit ALU"
-weight: 35
+title: "744 Displays CIt"
+weight: 77
 ---
 
-## 744 : 8bit ALU
+## 744 : Displays CIt
 
-* Author: David Parent,Chih-Kaun Ho, Edric Ong
-* Description: Building a simple 8-bit unsigned Arithmetic logic unit (ALU)
-* [GitHub repository](https://github.com/EdricOngKhaiJieh/8bitALU_verilog)
-* [GDS submitted](https://github.com/EdricOngKhaiJieh/8bitALU_verilog/actions/runs/8755837188)
-* HDL project
+* Author: Cambridge
+* Description: To display 'CIt' on 7 segment display
+* [GitHub repository](https://github.com/cittapeout/Citech)
+* [GDS submitted](https://github.com/cittapeout/Citech/actions/runs/8748673309)
+* [Wokwi](https://wokwi.com/projects/395522292785089537) project
 * [Extra docs](None)
-* Clock: 1000 Hz
+* Clock: 1 Hz
 
 <!---
 
@@ -26,32 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-<img width="860" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/0bfb7c71-4778-402a-9428-13c1d3adae90">
-
+Worwi project using a D flipflop ring to display "CIt" on the 7 segment display.
 
 ### How to test
 
-<img width="857" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/a49bbcc7-b4ae-4c16-9147-324e2b67e3c3">
-<img width="859" alt="image" src="https://github.com/EdricOngKhaiJieh/8bitALU_verilog/assets/80259537/601c812a-4820-44cb-8e97-a1b2c9cc2b98">
-
+Turn on the required inputs ,turn off the unused inputs.
 
 ### External hardware
 
-ADALM2000. https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm2000.html#eb-overview
+None,beside the TT demo board.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | ui_in | uo_out |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | run | led_a |  |
+| 1 | state_init[0] | led_b |  |
+| 2 | state_init[1] | led_c |  |
+| 3 | state_init[2] | led_d |  |
+| 4 | state_init[3] | led_e |  |
+| 5 | unused | led_f |  |
+| 6 | unused | led_g |  |
+| 7 | unused | led_h |  |
 
 ### Chip location
 

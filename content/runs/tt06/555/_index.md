@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "555 Clock"
-weight: 1
+title: "555 TDM Digital Clock"
+weight: 140
 ---
 
-## 555 : Clock
+## 555 : TDM Digital Clock
 
-* Author: Hilburn
-* Description: ASIC Desktop Clock
-* [GitHub repository](https://github.com/dr-skyler/tt_um_dr_skyler_clock)
-* [GDS submitted](https://github.com/dr-skyler/tt_um_dr_skyler_clock/actions/runs/8746545854)
+* Author: Hassan & Huzaifa tariq
+* Description: a digital clock that uses time division multiplexing, using 8 outputs to drive six seen segmetns displas
+* [GitHub repository](https://github.com/HUZAIFA-TARIQ/GIKI-TapeOut-2)
+* [GDS submitted](https://github.com/HUZAIFA-TARIQ/GIKI-TapeOut-2/actions/runs/8746213141)
 * HDL project
 * [Extra docs](None)
 * Clock: 50000000 Hz
@@ -26,29 +26,35 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Generates a 1 second pulse that increments a seconds, minutes, and hours timer that then gets decoded and displayed on the 7-segment display
+i dont know
+Explain how your project works
+it works because it works
 
 ### How to test
 
-Connect 7-segment display and adjust imput switches to desired clock frequency
+you dont
+Explain how to use your project
+you dont
 
 ### External hardware
 
-PMOD, 7-segment display, breadboard
+none
+List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+just switche and leds
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Clock 10 MHz | 7-seg[0] |  |
-| 1 | Clock 12 MHz | 7-seg[1] |  |
-| 2 | Clock 14 MHz | 7-seg[2] |  |
-| 3 | Clock 20 MHz | 7-seg[3] |  |
-| 4 | Show Minuetes | 7-seg[4] |  |
-| 5 | Show Hours | 7-seg[5] |  |
-| 6 |  | 7-seg[6] |  |
-| 7 |  | 7-seg[7] |  |
+| 0 | ui_in[0] | uo_out[0] | uio_out[0] |
+| 1 | ui_in[1] | uo_out[1] | uio_out[1] |
+| 2 | ui_in[2] | uo_out[2] | uio_out[2] |
+| 3 | ui_in[3] | uo_out[3] | uio_out[3] |
+| 4 | ui_in[4] | uo_out[4] | uio_out[4] |
+| 5 | ui_in[5] | uo_out[5] | uio_out[5] |
+| 6 | ui_in[6] | uo_out[6] | uio_in[6] |
+| 7 | ui_in[7] | uo_out[7] | uio_in[7] |
 
 ### Chip location
 

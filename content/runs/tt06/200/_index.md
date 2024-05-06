@@ -1,73 +1,66 @@
 ---
 hidden: true
-title: "200 Tiny Zuse"
-weight: 160
+title: "200 Snake Game"
+weight: 11
 ---
 
-## 200 : Tiny Zuse
+## 200 : Snake Game
 
-* Author: Florian Stolz
-* Description: Minimal Implementation of a Zuse Z3-style FPU for Addition/Subtraction
-* [GitHub repository](https://github.com/fstolzcode/tt06-tinyZuse)
-* [GDS submitted](https://github.com/fstolzcode/tt06-tinyZuse/actions/runs/8727519893)
+* Author: Stefan Hirschböck
+* Description: Simple implementation of the game Snake with VGA Output
+* [GitHub repository](https://github.com/histefan/jku-tt06-snake_game)
+* [GDS submitted](https://github.com/histefan/jku-tt06-snake_game/actions/runs/8627996846)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 25179000 Hz
+
+<!---
+
+This file is used to generate your project datasheet. Please fill in the information below and delete any unused
+sections.
+
+You can also include images in this folder and reference them in the markdown. Each image must be less than
+512 kb in size, and the combined size of all images must be less than 1 MB.
+-->
+
 
 ### How it works
 
-This is a partial recreation of the original Zuse Z3 ALU. In Germany the Zuse Z3 is generally regarded as the first computer, however, unlike the ENIAC it is not turing-complete.
-Even though it may not be the first turing-complete computer, to the best of my knowledge, it and its predecessor the Zuse Z1 contains the first implementation of a floating point unit.
-It works purely on floating point numbers and only understands a few commands: loading/storing, reading in data and performing addition/subtraction, multiplication/division and lastly
-computing the square root. It only employs two registers and 64 memory locations.
-
-This is not a faithful recreation, because I did not want to convert the relay-based logic 1:1 to verilog. Furthermore, the multiplication/divison and square root modules were not
-implemented because of space constraints. Obviously the memory is missing as well. However, it retains the original floating point format as well as algorithms.
+```
+ Simple implementation of the game "Snake" with VGA Output.
+  Due to size limitations snake can only grow to 9 body parts.
+  Game resets when snake touches border or any of its body parts
+  Vga output is compatible with tiny vga pmod.
+```
 
 ### How to test
 
-This project uses the Zuse Z3 floating point format. All floats must be normalized, meaning the mantissa must be within 1.0 to 1.99999... The mantissa is 15 bits long, but the MSB must always be 1.
-A number is represented via: +/- 1.x * 2 ^ e. E is the exponent: A signed 7 bit number! The sign is represented by a single bit (1 = positive, 0 = negative).
-
-The design was created for a 10 MHz clock and uses a 9600 baud UART connection for communication. It lets you load values into the FPU and perform addition or subtraction.
-The commands require a single byte and are defined as follows:
-
-0x81: Set the R1 register
-0x82: Set the R2 register
-
-0x84: Read the R1 register
-0x88: Read the R2 register
-0x90: Read the result register
-
-0xA0: Perform R1 + R2
-0xC0: Perform R1 - R2
-
-After sending 0x81 or 0x82 you need to send 3 additional bytes where the first bytes contains the sign bit (7) and the exponent (6:0), the following byte defines
-the mantissa bits 15 to 7. Remember that bit 15 must be 1. The last byte defines the lower mantissa bits. Notice how we transmit 16 bits but only use 15 bits of information.
-The lowest bit of the last byte is thus ignored. You do not get an ack from the board! Simply read the register back if you are unsure if the transmission worked.
-
-If you send a read command, you will receive 3 bytes in the exact same format as above. First the sign and exponent in the first byte followed by the mantissa bytes.
-
-If you send a addition/subtraction request, you will receive no answer. You will have to manually send the 0x90 command. Do not worry, the FSM waits until the FPU is done, so no
-reading of undefined data will happen!
+```
+  After reset snake can be controlled though inputs. When collecting an apple snake grows by 1 body part. 
+  clock has to be set to 25.179 Mhz for vga sync signal generation to work.
+  inputs should be done with push buttons. Not pressed is logic 0, pressed is logic 1
+  So an external circuit with pull down resistors should be used for input.
+  If no tiny VGA pmod is available a vga dac like in this project:https://tinytapeout.com/runs/tt04/178/
+  could probably also be used.
+```
 
 ### External hardware
 
-Use the on board RPi 2400 for uart connections. It uses the default uart ports suggested by tiny tapeout.
+VGA Display, external buttons for input
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 | rx |  |  |
-| 4 |  | tx |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | none | R1 | none |
+| 1 | none | G1 | none |
+| 2 | none | B1 | none |
+| 3 | none | vsync | none |
+| 4 | Right | R0 | none |
+| 5 | Left | G0 | none |
+| 6 | Down | B0 | none |
+| 7 | Up | hsync | none |
 
 ### Chip location
 

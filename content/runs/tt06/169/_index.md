@@ -1,16 +1,16 @@
 ---
 hidden: true
-title: "169 Workshop_chip"
-weight: 142
+title: "169 8-Bit CPU In a Week"
+weight: 135
 ---
 
-## 169 : Workshop_chip
+## 169 : 8-Bit CPU In a Week
 
-* Author: Inne Lemstra
-* Description: My first chip design, to be honest I'm not sure how far I will get.
-* [GitHub repository](https://github.com/Inne-Lemstra/HaD_chip_workshop)
-* [GDS submitted](https://github.com/Inne-Lemstra/HaD_chip_workshop/actions/runs/8673990303)
-* [Wokwi](https://wokwi.com/projects/395055341723330561) project
+* Author: Ramyad Hadidi
+* Description: 8-bit Single-Cycle CPU
+* [GitHub repository](https://github.com/ramyadhadidi/tt06-8bit-cpu)
+* [GDS submitted](https://github.com/ramyadhadidi/tt06-8bit-cpu/actions/runs/8690510085)
+* HDL project
 * [Extra docs](None)
 * Clock: 0 Hz
 
@@ -26,29 +26,56 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is the example project in Wokwi, used in the Hackaday Europe workshop. It does not have any changes in it at this point.
+This project details the design and implementation of an 8-bit single-cycle microprocessor. The processor includes a register file and an Arithmetic Logic Unit (ALU). The design was crafted to handle a simple instruction set architecture (ISA) that supports basic ALU operations, load/store operations, and status checks for the ALU carry -- all within less than a week. While the current version lacks a program counter and external memory, thus omitting any form of jump operations, it provides a solid foundation for understanding basic computational operations within a custom CPU architecture.
+
+#### ISCA Overview
+
+The ISA is straightforward and is primarily focused on register operations and basic arithmetic/logic functions. Below is the breakdown of the instruction set:
+
+```
+// ISA --------------------------------------------------------------
+//-- R level
+`define MVR 4'b0000            // Move Register
+`define LDB 4'b0001            // Load Byte into Regsiter
+`define STB 4'b0010            // Store Byte from Regsiter
+`define RDS 4'b0011            // Read (store) processor status
+// 1'b0100 NOP
+// 1'b0101 NOP
+// 1'b0110 NOP
+// 1'b0111 NOP
+
+//-- Arithmatics
+`define NOT {1'b1, `ALU_NOT}
+`define AND {1'b1, `ALU_AND}
+`define ORA {1'b1, `ALU_ORA}
+`define ADD {1'b1, `ALU_ADD}
+`define SUB {1'b1, `ALU_SUB}
+`define XOR {1'b1, `ALU_XOR}
+`define INC {1'b1, `ALU_INC}
+// 1'b1111 NOP
+```
 
 ### How to test
 
-Flip switches 0-7 to changes to switch on the segments on the display
+The processor has been tested through a suite of 12 testbenches, each designed to validate a specific functionality or operation. These testbenches cover basic ALU operations, data movement between registers, and the load/store functionalities. Although basic operational tests are passing, timing interactions between instructions have not been exhaustively verified, and it is anticipated that a sophisticated compiler would handle these timing considerations effectively, reminiscent of approaches taken in historical computing systems.
 
 ### External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Currently, the processor does not interface with any external hardware components. It operates entirely within a simulated environment where all inputs and outputs are managed through testbenches. This setup is ideal for educational purposes or for foundational experimentation in CPU design.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| 0 | Register 1 (R1) Address bit 0 | Data out bit 0 (either register data / Processor stat) | Data in bit 0 / Register 3 (R3) Address bit 0 |
+| 1 | Register 1 (R1) Address bit 1 | Data out bit 1 (either register data / 0) | Data in bit 1 / Register 3 (R3) Address bit 1 |
+| 2 | Register 1 (R1) Address bit 2 | Data out bit 2 (either register data / 0) | Data in bit 2 / Register 3 (R3) Address bit 2 |
+| 3 | Register 1 (R1) Address bit 3 | Data out bit 3 (either register data / 0) | Data in bit 3 / Register 3 (R3) Address bit 3 |
+| 4 | Instruction ISA Opcode bit 0 | Data out bit 4 (either register data / 0) | Data in bit 4 / Register 2 (R2) Address bit 0 |
+| 5 | Instruction ISA Opcode bit 1 | Data out bit 5 (either register data / 0) | Data in bit 5 / Register 2 (R2) Address bit 1 |
+| 6 | Instruction ISA Opcode bit 2 | Data out bit 6 (either register data / 0) | Data in bit 6 / Register 2 (R2) Address bit 2 |
+| 7 | Instruction ISA Opcode bit 3 | Data out bit 7 (either register data / 0) | Data in bit 7 / Register 2 (R2) Address bit 3 |
 
 ### Chip location
 

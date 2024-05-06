@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "166 4-bit stochastic multiplier traditional"
-weight: 236
+title: "166 Tiny 8-bit CPU"
+weight: 111
 ---
 
-## 166 : 4-bit stochastic multiplier traditional
+## 166 : Tiny 8-bit CPU
 
-* Author: Vedika Sharma and David PArent
-* Description: Two 4-bit || vectors are converted into 1-bit serial stochastic signals and then multiplied with a two input and gate. 
-* [GitHub repository](https://github.com/davidparent/tt06-woko-4bit-stocastic-muliplier-vedika-davidparent)
-* [GDS submitted](https://github.com/davidparent/tt06-woko-4bit-stocastic-muliplier-vedika-davidparent/actions/runs/8650669892)
-* [Wokwi](https://wokwi.com/projects/394888799427677185) project
+* Author: Ryota Suzuki
+* Description: Tiny 8-bit CPU with SPI Flash/PSRAM controller
+* [GitHub repository](https://github.com/JA1TYE/tt06-TYE-tiny-cpu)
+* [GDS submitted](https://github.com/JA1TYE/tt06-TYE-tiny-cpu/actions/runs/8674224237)
+* HDL project
 * [Extra docs](None)
-* Clock: 10000 Hz
+* Clock: 50000000 Hz
 
 <!---
 
@@ -26,35 +26,93 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-two four-bit || binary weighted vectors are read in and converted to two 1-bit serial stochastic streams with a PRBS and a comparator.  These signals are then fed into an AND gate, which multiplies the signal.  
-https://en.wikipedia.org/wiki/Stochastic_computing
-B. R. Gaines, “Origins of Stochastic Computing,” in Stochastic Computing: Techniques and Applications, W. J. Gross and V. C. Gaudet, Eds., Cham: Springer International Publishing, 2019, pp. 13–37. doi: 10.1007/978-3-030-03730-7_2.
-C. F. Frasser et al., “Using Stochastic Computing for Virtual Screening Acceleration,” Electronics, vol. 10, no. 23, p. 2981, Nov. 2021, doi: 10.3390/electronics10232981.
-M. Nobari and H. Jahanirad, “FPGA-based implementation of deep neural network using stochastic computing,” Appl. Soft Comput., vol. 137, p. 110166, Apr. 2023, doi: 10.1016/j.asoc.2023.110166.
-P. K. Gupta and R. Kumaresan, “Binary multiplication with PN sequences,” IEEE Trans. Acoust., vol. 36, no. 4, pp. 603–606, Apr. 1988, doi: 10.1109/29.1564.  
-A. Alaghi and J. P. Hayes, “Survey of Stochastic Computing,” ACM Trans. Embed. Comput. Syst., vol. 12, no. 2s, pp. 1–19, May 2013, doi: 10.1145/2465787.2465794.
+This design consists of these blocks:
+
+- CPU
+- Memory controller for SPI Flash (for instruction memory) / PSRAM (for data memory)
+- GPIO (Output only x4, In/Out x4)
+- SPI Tx (mode 0 only)
+
+Dedicated macro assembler is also available at [tt06-tmasm](https://github.com/JA1TYE/tt06-tmasm).
+
+#### CPU
+
+This design has an 8-bit CPU that has a simple instruction set.
+
+This CPU employs a Harvard architecture. So, it has an instruction bus and a data bus internally.
+Both buses have 16-bit address space.
+
+External SPI Flash is mapped to 0x0000-0xFFFF on the instruction memory space.
+CPU will read an instruction from 0x0000 after reset.
+
+PSRAM and some peripherals are mapped to the data memory space.
+Address map is below:
+
+|Address|Description|
+|---|---|
+|0x0000-0xEFFF|Mapped to SPI PSRAM|
+|0xF000|GPIO Direction Set Register|
+|0xF001|GPIO Output Data Register|
+|0xF002|GPIO Input Data Register|
+|0xF003|Reserved|
+|0xF004|SPI Divider Value Register|
+|0xF005|SPI CS Control Register|
+|0xF006|SPI Status Register|
+|0xF007|SPI Data Register|
+|0xF008-0xFFFF|0xF000-0xF007 are mirrored in every 8 bytes|
+
+#### Peripherals
+
+This design has GPIO and SPI peripherals.
+
+##### GPIO
+
+GPIO has 4x Output-only pins and 4x I/O pins.
+These pins are mapped 8-bit registers. Upper 4-bits represent output-only pins.
+
+|Address|Name|Description|
+|---|---|---|
+|0xF000|GPIO Direction|If bit is set, corresponding pin is configured as output, otherwise configured as input (Lower 4-bit only)|
+|0xF001|GPIO Output Data|Output data value|
+|0xF002|GPIO Input Data|Current pin status|
+
+##### SPI Tx
+
+SPI Tx only supports 8-bit data, mode 0.
+CS signal is not controlled automatically.
+
+|Address|Name|Description|
+|---|---|---|
+|0xF004|SPI Clock Divider Value|SPI SCLK frequency[Hz] = (Main Clock / 2) / (Value[3:0] + 1) |
+|0xF005|SPI CS Value|CS pin output value (Valid lowest bit only)|
+|0xF006|SPI Status|If bit[0] is set, transmission is ongoing|
+|0xF007|SPI Tx Data|When write data to this register, SPI transmission will be started|
 
 ### How to test
 
-Use an ADLAM2000 and Python to control the reset and the clock. Hold A and B contents and watch the multiplier output. Use the DALM200 and Python to convert the signal back to binary weight signals.  The number of ones at any given time is the number
+Write program to SPI Flash (by using ROM Writer etc.) and connect it to the board (Please also see the Pinout section).
+SPI PSRAM is also needed if you need data storage other than general-purpose regsiters.
+
+When you negate rst_n, then CPU will load instruction from 0x0000 on SPI Flash.
 
 ### External hardware
 
-ADLAM2000
+- SPI Flash Memory (W25Q128 etc.)
+- SPI PSRAM (IPS6404 etc.) if you want to use external memory
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | A0 | SSA |  |
-| 1 | A1 | SSB |  |
-| 2 | A2 | PRBS0 |  |
-| 3 | A3 | PRBS1 |  |
-| 4 | B0 | PRBS2 |  |
-| 5 | B1 | PRBS3 |  |
-| 6 | B2 | S_M |  |
-| 7 | B3 |  |  |
+| 0 | MISO input from SPI Flash/PSRAM | SCLK output to SPI Flash/PSRAM | General purpose I/O |
+| 1 |  | CS output to SPI Flash | General purpose I/O |
+| 2 |  | CS output to PSRAM | General purpose I/O |
+| 3 |  | MOSI output to SPI Flash/PSRAM | General purpose I/O |
+| 4 |  | SCLK output for debugging | General purpose output |
+| 5 |  | MOSI output for debugging | General purpose output |
+| 6 |  | CS output for debugging | General purpose output |
+| 7 |  | Fetch cycle indicator pulse for debbuging | General purpose output |
 
 ### Chip location
 

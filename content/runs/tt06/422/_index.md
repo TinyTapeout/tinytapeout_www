@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "422 Cyclic Redundancy Check 8 bit"
-weight: 149
+title: "422 Servotester"
+weight: 21
 ---
 
-## 422 : Cyclic Redundancy Check 8 bit
+## 422 : Servotester
 
-* Author: EconomIC Engineers
-* Description: Error detecting circuit commonly used in digital networks and storage devices to detect accidental changes to digital data.
-* [GitHub repository](https://github.com/ariz207/tt06-CRC8bit)
-* [GDS submitted](https://github.com/ariz207/tt06-CRC8bit/actions/runs/8700054588)
-* [Wokwi](https://wokwi.com/projects/394830069681034241) project
+* Author: Jonas Wuehr
+* Description: Generate a 50 Hz test signal for RC servos.
+* [GitHub repository](https://github.com/wuehr1999/tt06-wuehr1999-servotester)
+* [GDS submitted](https://github.com/wuehr1999/tt06-wuehr1999-servotester/actions/runs/8681035615)
+* HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
+* Clock: 10000000 Hz
 
 <!---
 
@@ -26,34 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-https://en.wikipedia.org/wiki/Cyclic_redundancy_check
-Explain how your project works
+It uses a 10 MHz clock to create a counter, which has it's carry signal every 50Hz. Then there is a second counter to create the 1 - 2 millisecond high signal according to the user input.
 
 ### How to test
 
-https://quickbirdstudios.com/blog/validate-data-with-crc/
-https://thepiandi.blogspot.com/2014/07/cyclic-redundancy-check-crc-of-ds18b20.html
-
-Explain how to use your project
+Connect a servo PWM signal to biderectional pin 7. According to the user input on the inputs it's position will change and be indicated on the 7-segment display.
 
 ### External hardware
 
-Needed will be LEDs, a clock or button to step clock, a switch for reset and inputs.
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A RC servo is required for testing.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Data Stream input | 8th bit |  |
-| 1 |  | 7th bit |  |
-| 2 |  | 6th bit |  |
-| 3 |  | 5th bit |  |
-| 4 |  | 4th bit |  |
-| 5 |  | 3rd bit |  |
-| 6 |  | 2nd bit |  |
-| 7 | Set for all flip flops | 1st bit |  |
+| 0 | position bit 0 |  |  |
+| 1 | position bit 1 |  |  |
+| 2 | position bit 2 |  |  |
+| 3 | position bit 3 |  |  |
+| 4 | position bit 4 |  |  |
+| 5 | position bit 5 |  |  |
+| 6 | position bit 6 |  |  |
+| 7 | position bit 7 |  | servo pulse |
 
 ### Chip location
 

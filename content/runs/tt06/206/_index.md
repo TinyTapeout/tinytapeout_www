@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "206 SPDIF to I2S decoder"
-weight: 161
+title: "206 co processor for precision farming"
+weight: 107
 ---
 
-## 206 : SPDIF to I2S decoder
+## 206 : co processor for precision farming
 
-* Author: Jørgen Kragh Jakobsen
-* Description: Convert audio from SPDIF to I2S format for ClassD amp MA12070p
-* [GitHub repository](https://github.com/jorgenkraghjakobsen/tt06-toi2s)
-* [GDS submitted](https://github.com/jorgenkraghjakobsen/tt06-toi2s/actions/runs/8756617721)
+* Author: MITS ECE
+* Description: The processor will detect the deviation in sensor data and the sensor fault
+* [GitHub repository](https://github.com/mitsece/tt06-verilog-mitssdd)
+* [GDS submitted](https://github.com/mitsece/tt06-verilog-mitssdd/actions/runs/8599590031)
 * HDL project
 * [Extra docs](None)
-* Clock: 48000000 Hz
+* Clock: 0 Hz
 
 <!---
 
@@ -26,60 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-SPDIF audio is a well known and commonly used industry standard for audio distibution on a single optical or electical interface. It signal both audio data and the clock in the same signal.
-I2S is a well known and commenly used industry standard for audio distibution on a 3 wire interface. It has clock(BCK), left/right sync(WS) and data signal(D0).
-
-Digial audio amplifiers and DAC's often use I2S as input interface.
-
-I have coded up a spdif converter that oversample the spdif using a 27Mhz system clock.
-One process regenerates the i2c_bck clock signal by counting number of system clock between
-spdif input data edges.
-The spdif singal is a phase mark kind of encoding with a couple of sync words. This decoder
-only looks for Left and right sync word that indecate when to toggle the i2c_ws signal.
-
-The audio PCM samples will get decode by looking for phase/mark changes and the pcm bits are
-shifted in to a left and right pcm_sample fifo.
-From here the i2s_d0 signal is generate by shifting out of the non active fifo in reversed order.
-
-#### Code base
-
-The system consist of 3 major block:
-
-- A register bank
-- I2C interface to read/write to the register bank
-- The audio interface
-
-The register back is written in Golang and generates HDL systemVerilog to support packed structs and packages. All systemVerilog sources are converted to verilog using sv2v during the FPGA build script used for testing.
-
-The register map has a seciton for the audio interface - and holds 8 registers for write operation through a dedicated I2C interface to the amplifier.
-Default it will set amplifer volume on address 0x40 and amplifer audioformat to std i2s.
-More commands can be added by software through the system I2C interface.
-
-![FPGA test implementation](images/spdif_fpga_test_20p.jpg)
+The processor will read the datas from the four sensors sequentially and analyse whether any deviation has been occoured with respect to the previous data and provide a warning signal also it continuously checks the senor datas and identify any fault has been occured and provides another warning signal with a signal providing the sensor identification.
 
 ### How to test
 
-If no smoke coming out after supply has been applied all good :-)
-
-Apply optical audio from a spdif source - if sounds good - it works :-)
+If the sensor identifier data is 00 which means it is sensor1 and input data is 10000001 and this compared with the previously stored data which may be 10000100 for example ,then there is a deviation and the processor will provide output as 1 and the bidirectional as 00.
 
 ### External hardware
 
-Amplifier module MA12070p and ftdi usb to i2c module :-)
+8 bit ADC is needed to convert the sensor data
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | rx_in | amp_i2s_bck | i2c_scl |
-| 1 | debug_in | amp_i2s_ws | i2c_sda |
-| 2 |  | amp_i2s_d0 | amp_i2c_scl |
-| 3 |  | amp_nenable | amp_i2c_sda |
-| 4 |  | amp_nmute |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  | pwm_out |  |
+| 0 | Input data from the sensors | Deviation detector | Sensor identifier |
+| 1 | Input data from the sensors | Falut warning | Sensor identifier |
+| 2 | Input data from the sensors | Falut warning |  |
+| 3 | Input data from the sensors | Falut warning |  |
+| 4 | Input data from the sensors | Sensor identifier |  |
+| 5 | Input data from the sensors | Sensor identifier |  |
+| 6 | Input data from the sensors |  |  |
+| 7 | Input data from the sensors |  |  |
 
 ### Chip location
 

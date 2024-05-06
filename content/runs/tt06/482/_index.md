@@ -1,10 +1,10 @@
 ---
 hidden: true
-title: "259 1st passive Sigma Delta ADC"
+title: "482 1st passive Sigma Delta ADC"
 weight: 124
 ---
 
-## 259 : 1st passive Sigma Delta ADC
+## 482 : 1st passive Sigma Delta ADC
 
 * Author: Joerg Vollrath
 * Description: External R1 and R2 and C2 realize a ADC
@@ -145,4 +145,4 @@ Martin Knauer, Jörg Vollrath, 'Implementation and Testing of a FPGA Based Sigma
 
 ### Chip location
 
-{{< shuttle-map "tt06" "259" >}}
+{{< shuttle-map "tt06" "482" >}}

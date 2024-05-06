@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "264 SiliconJackets_Systolic_Array"
-weight: 113
+title: "264 TinyRV1 CPU"
+weight: 71
 ---
 
-## 264 : SiliconJackets_Systolic_Array
+## 264 : TinyRV1 CPU
 
-* Author: SiliconJackets
-* Description: a tiny systolic array capable of row stationary operation
-* [GitHub repository](https://github.com/SiliconJackets/tt06-verilog-template)
-* [GDS submitted](https://github.com/SiliconJackets/tt06-verilog-template/actions/runs/8731442471)
+* Author: Prof. Dr. Matthias Jung, Jonathan Hager, Philipp Wetzstein
+* Description: TinyRV1 compliant CPU that has to be attached to an external SPI memory. The ISA is described in the documentation
+* [GitHub repository](https://github.com/CEJMU/tt06_tinyrv1)
+* [GDS submitted](https://github.com/CEJMU/tt06_tinyrv1/actions/runs/8758341719)
 * HDL project
 * [Extra docs](None)
-* Clock: 25000000 Hz
+* Clock: 12000000 Hz
 
 <!---
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This is a systolic array capable of matrix multiplication and 2D convolution using 9 processing elements
+The project consist of a RISC-V VHDL Model and supports the [Tiny RV1 ISA](https://github.com/cbatten/ece4750-tinyrv-isa) without MUL. In addition AND and XOR are supported.
 
-### How to test
+#### How to test
 
-this project needs to be connected to an external FPGA to feed in the data to compute on
+To test our design you will need to use external hardware.
 
-### External hardware
+#### External hardware
 
-FPGA connected to all 24 IO
+To use our design you will need to use the provided spi_slave_tt06_with_memory and synthesize it for an 12 MHz FPGA.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | readA[0] | write[0] | readB[0] |
-| 1 | readA[1] | write[1] | readB[1] |
-| 2 | readA[2] | write[2] | readB[2] |
-| 3 | readA[3] | write[3] | readB[3] |
-| 4 | readA[4] | write[4] | readB[4] |
-| 5 | readA[5] | write[5] | readB[5] |
-| 6 | readA[6] | write[6] | readB[6] |
-| 7 | readA[7] | write[7] | readB[7] |
+| 0 | SPI MISO | SPI MOSI | Register_1(5) |
+| 1 | unused | SPI SCLK | Register_1(6) |
+| 2 | unused | SPI CS | Register_1(7) |
+| 3 | unused | Register_1(0) | Register_1(8) |
+| 4 | unused | Register_1(1) | Register_1(9) |
+| 5 | unused | Register_1(2) | Register_1(10) |
+| 6 | unused | Register_1(3) | Register_1(11) |
+| 7 | unused | Register_1(4) | Register_1(12) |
 
 ### Chip location
 

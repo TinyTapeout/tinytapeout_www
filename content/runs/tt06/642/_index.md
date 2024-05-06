@@ -1,78 +1,136 @@
 ---
 hidden: true
-title: "642 FazyRV-ExoTiny"
-weight: 220
+title: "642 SPELL"
+weight: 189
 ---
 
-## 642 : FazyRV-ExoTiny
+## 642 : SPELL
 
-* Author: Meinhard Kissich
-* Description: A minimal SoC based on FazyRV that uses external QSPI ROM and RAM.
-* [GitHub repository](https://github.com/meiniKi/tt06-FazyRV-ExoTiny)
-* [GDS submitted](https://github.com/meiniKi/tt06-FazyRV-ExoTiny/actions/runs/8649098045)
+* Author: Uri Shaked
+* Description: SPELL is a minimal, cryptic, stack-based programming language crafted for The Skull CTF
+* [GitHub repository](https://github.com/urish/tt06-spell)
+* [GDS submitted](https://github.com/urish/tt06-spell/actions/runs/8621981131)
 * HDL project
 * [Extra docs](None)
-* Clock: 50000000 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 10000000 Hz
 
 ### How it works
 
-This TinyTapeout implements a System-on-Chip (SoC) design based on the FazyRV RISC-V core. Documentation on the SoC can be found in [github.com/meiniKi/FazyRV-ExoTiny](https://github.com/meiniKi/FazyRV-ExoTiny). For details on the FazyRV core, please refer to [github.com/meiniKi/FazyRV](https://github.com/meiniKi/FazyRV).
+SPELL is a minimal, stack-based programming language created for [The Skull CTF](https://skullctf.com).
 
-#### Features
+The language is defined by the following [cryptic piece of Arduino code](https://skullctf.com/spell):
 
-* Instantiates FazyRV with a chunk size of 2 bits.
-* Uses external instruction memory (QSPI ROM) and external data memory (QSPI RAM).
-* Provides 6 memory-mapped general-purpose outputs and  7 inputs.
-* Provides an SPI peripheral with programmable CPOL and a buffer of up to 4 bytes.
+```c
+void spell() {
 
-#### Pinout Overview
+                  uint8_t*a,pc=16,sp=0,
+               s[32]={0},op;while(!0){op=
+            EEPROM.read(pc);switch(+op){case
+          ',':delay(s[sp-1]);sp--;break;case'>':
+         s[sp-1]>>=1|1;break;case'<':s[sp-1]<<=1;
+        break;case'=':pc=s[sp-1]-1;sp--;break;case
+       '@':if(s[sp-2]){s[sp-2]--;pc=s[sp-1]-1;sp+=
+      1;}sp-=2;break;case'&':s[sp-2]&=s[sp-1];sp-=1;
+      break;case'|':s[sp-2]|=s[sp-1];sp-=1;break;case
+    '^':s[sp-2]^=s[sp-1];sp--;break;case'+':s[sp-2]+=
+   s[sp-1];sp=sp-1;break;case'-':s[sp-2]-=s[sp-1];sp--;
+   break;case'2':s[sp]=s[sp-1];sp=sp+1;break;case'?':s[
+ sp-1]=EEPROM.         read(s[sp-1]|0        );break;case
+  "!!!"[0]:             666,EEPROM              .write(s
+   [sp-1]                ,s[sp-2]                );sp=+
+    sp-02;               ;break;                 1;case
+    "Arr"[               1]:  s[+               sp-1]=
+    *(char*)            (s[+   sp-1           ]);break
+      ;case'w':*   (char*)(     s[+sp-1])  =s[sp-+2];
+        sp-=2;break;case+       'x':s[sp] =s[sp-1
+           ];s[sp-1]=s[sp   +    -2];s[sp-2]=s[
+            0|sp];break;    ;;    case"zzz"[0
+             ]:sleep();"   Arrr  ";break;case
+             255  :return;;  default:s  [sp]
+              =+   op;sp+=    1,1   ;}pc=
+               +    pc  +      1;      %>
 
-The overview shows the pinout for the TinyTapeout Demo PCB. A detailed description of the pins is given below.
+}
+```
 
-![Pinout overview](images/tt06_overview.png)
+This design is an hardware implementation of SPELL with the following features:
 
-#### Block Diagram
+- 32 bytes of program memory (volatile, simulates EEPROM)
+- 32 bytes of stack memory
+- 8 bytes of internal RAM
 
-The block diagram outlines the on-chip peripherals and related addresses.
+To load a program or inspect the internal state, the design provides access to the following registers via a simple serial interface:
 
-![Block diagram](images/exotiny.png)
+| Address | Register name | Description                                        |
+|---------|---------------|----------------------------------------------------|
+| 0x00    | PC            | Program counter                                    |
+| 0x01    | SP            | Stack pointer                                      |
+| 0x02    | EXEC          | Execute-in-place (write-only)                      |
+| 0x03    | STACK         | Stack access (read the top value, or push a value) |
+
+The serial interface is implemented using a shift register, which is controlled by the following signals:
+
+| Pin         | Type   | Description                                                       |
+|-------------|--------|-------------------------------------------------------------------|
+| `reg_sel`   | input  | Select the register to read/write                                 |
+| `load`      | input  | Load the selected register with the value from the shift register |
+| `dump`      | output | Dump the selected register value to the shift register            |
+| `shift_in`  | input  | Serial data input                                                 |
+| `shift_out` | output | Serial data output                                                |
+
+When `load` is high, the value from the shift register is loaded into the selected register. When `dump` is high, the value of the selected register is dumped into the shift register, and can be read after two clock cycles by reading `shift_out` (MSB first).
+
+For example, if you want to read the value of the program counter, you would:
+
+1. Set `reg_sel` to 0x00 and set `dump` to 1
+2. Wait for two clock cycles for the first bit (MSB) to appear on `shift_out`.
+3. Read the remaining bits from `shift_out` on each clock cycle.
+
+To write a value to the program counter, you would:
+
+1. Write the value to the shift register, one bit at a time, starting with the **MSB**.
+2. Set `reg_sel` to 0x00 and set `load` to 1.
+3. Wait for a single clock cycle for the value to be loaded.
+
+Writing an opcode to the `EXEC` register will execute the opcode in place, without modifying the program counter (unless the opcode is a jump instruction).
+
+The `STACK` register is used to push a value onto the stack or read the top value from the stack (for debugging purposes).
 
 ### How to test
 
-Once the design is enabled and released from reset, it first enables Quad Mode in the RAM. The Wishbone accesses are converted into QSPI transfers to exchange data. The first read from ROM (boot address: `0x00000000`) enabled Continuous Mode to reduce the latency. To get started, you can flash the demo firmware in `FazyRV-ExoTiny/demo`. See the repo for more information.
+To test SPELL, you need to load a program into the program memory and execute it. You can load the program by repeatedly executing the following steps for each byte of the program:
 
-**Important:** `rst_n` is not synchronized. Make sure it is released sufficient hold time after the rising clock edge and sufficient setup time before the falling edge. Do not release reset while `clk` is low. The design appears to be on the edge of implementability. An additional dff breaks convergence.
+1. Write the byte to the top of the stack (using the `STACK` register)
+2. Write the address of the byte in the program memory to top of the stack
+3. Write the opcode `!` to the `EXEC` register
+
+After loading the program, you can execute it by writing the address of the first byte in the program memory to the `PC` register, and then pulsing the `run` signal.
+
+#### Test program
+
+The following program which will rapidly blink an LED connected to the `uio[0]` pin. The program bytes should be loaded into the program memory starting at address 0:
+
+```python
+[1, 56, 119, 250, 44, 1, 54, 119, 250, 44, 3, 61]
+```
 
 ### External hardware
 
-* QSPI ROM: W25Q128JV or compatible
-* QSPI RAM: APS6404L-3SQR or compatible
-
-The design uses external ROM (Flash) and external RAM. All bus accesses in these regions are converted to QSPI transfers to read data from the ROM or to read/write data from/to the RAM, respectively. Alternatively, you can synthesize a model in an FPGA and attach it to the BIDIR PMOD header.
+None
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | General purpose input (GPI) 0. | General purpose output (GPO) 0. | QSPI ROM chip select (low active). |
-| 1 | General purpose input (GPI) 1. | General purpose output (GPO) 1. | QSPI ROM/RAM SDO[0]. |
-| 2 | General purpose input (GPI) 2. | General purpose output (GPO) 2. | QSPI ROM/RAM SDO[1]. |
-| 3 | General purpose input (GPI) 3. | General purpose output (GPO) 3. | QSPI ROM/RAM SCK. |
-| 4 | General purpose input (GPI) 4. | General purpose output (GPO) 4. | QSPI ROM/RAM SDO[2]. |
-| 5 | General purpose input (GPI) 5. | General purpose output (GPO) 5. | QSPI ROM/RAM SDO[3]. |
-| 6 | General purpose input (GPI) 6. | (User) SPI SCK. | QSPI RAM chip select (low active). |
-| 7 | (User) SPI SDI. | (User) SPI SDO. | NC. |
+| 0 | run | sleep | gpio[0] |
+| 1 | step | stop | gpio[1] |
+| 2 | load | wait_delay | gpio[2] |
+| 3 | dump | shift_out | gpio[3] |
+| 4 | shift_in |  | gpio[4] |
+| 5 | reg_sel[0] |  | gpio[5] |
+| 6 | reg_sel[1] |  | gpio[6] |
+| 7 |  |  | gpio[7] |
 
 ### Chip location
 

@@ -1,81 +1,73 @@
 ---
 hidden: true
-title: "14 Most minimal extension of friend's 'CPU In a Week' in a day"
-weight: 202
+title: "14 Tiny Zuse"
+weight: 160
 ---
 
-## 14 : Most minimal extension of friend's 'CPU In a Week' in a day
+## 14 : Tiny Zuse
 
-* Author: Gregory Kollmer
-* Description: 8-bit Single-Cycle CPU
-* [GitHub repository](https://github.com/gak25/tt06-8bit-cpu-ext)
-* [GDS submitted](https://github.com/gak25/tt06-8bit-cpu-ext/actions/runs/8748986318)
+* Author: Florian Stolz
+* Description: Minimal Implementation of a Zuse Z3-style FPU for Addition/Subtraction
+* [GitHub repository](https://github.com/fstolzcode/tt06-tinyZuse)
+* [GDS submitted](https://github.com/fstolzcode/tt06-tinyZuse/actions/runs/8727519893)
 * HDL project
 * [Extra docs](None)
-* Clock: 0 Hz
-
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
+* Clock: 10000000 Hz
 
 ### How it works
 
-This project is the most minimal extension (add CLR & MUL to ISA) of Ramyad Hadidi's 8-bit CPU that details the design and implementation of an 8-bit single-cycle microprocessor. The processor includes a register file and an Arithmetic Logic Unit (ALU). The design was crafted to handle a simple instruction set architecture (ISA) that supports basic ALU operations, load/store operations, and status checks for the ALU carry -- all within less than a week. While the current version lacks a program counter and external memory, thus omitting any form of jump operations, it provides a solid foundation for understanding basic computational operations within a custom CPU architecture.
+This is a partial recreation of the original Zuse Z3 ALU. In Germany the Zuse Z3 is generally regarded as the first computer, however, unlike the ENIAC it is not turing-complete.
+Even though it may not be the first turing-complete computer, to the best of my knowledge, it and its predecessor the Zuse Z1 contains the first implementation of a floating point unit.
+It works purely on floating point numbers and only understands a few commands: loading/storing, reading in data and performing addition/subtraction, multiplication/division and lastly
+computing the square root. It only employs two registers and 64 memory locations.
 
-#### ISCA Overview
-
-The ISA is straightforward and is primarily focused on register operations and basic arithmetic/logic functions. Below is the breakdown of the instruction set:
-
-```
-// ISA --------------------------------------------------------------
-//-- R level
-`define MVR 4'b0000            // Move Register
-`define LDB 4'b0001            // Load Byte into Regsiter
-`define STB 4'b0010            // Store Byte from Regsiter
-`define RDS 4'b0011            // Read (store) processor status
-// 1'b0100 NOP
-// 1'b0101 NOP
-// 1'b0110 NOP
-// 1'b0111 NOP
-//-- Arithmatics
-`define NOT {1'b1, `ALU_NOT}
-`define AND {1'b1, `ALU_AND}
-`define ORA {1'b1, `ALU_ORA}
-`define ADD {1'b1, `ALU_ADD}
-`define SUB {1'b1, `ALU_SUB}
-`define XOR {1'b1, `ALU_XOR}
-`define INC {1'b1, `ALU_INC}
-`define MUL {1'b1, `ALU_MUL}
-// 1'b1111 NOP
-```
+This is not a faithful recreation, because I did not want to convert the relay-based logic 1:1 to verilog. Furthermore, the multiplication/divison and square root modules were not
+implemented because of space constraints. Obviously the memory is missing as well. However, it retains the original floating point format as well as algorithms.
 
 ### How to test
 
-The processor has been tested through a suite of 12 testbenches, each designed to validate a specific functionality or operation. These testbenches cover basic ALU operations, data movement between registers, and the load/store functionalities. Although basic operational tests are passing, timing interactions between instructions have not been exhaustively verified, and it is anticipated that a sophisticated compiler would handle these timing considerations effectively, reminiscent of approaches taken in historical computing systems. [ADD TESTS FOR MUL EXTENSION]
+This project uses the Zuse Z3 floating point format. All floats must be normalized, meaning the mantissa must be within 1.0 to 1.99999... The mantissa is 15 bits long, but the MSB must always be 1.
+A number is represented via: +/- 1.x * 2 ^ e. E is the exponent: A signed 7 bit number! The sign is represented by a single bit (1 = positive, 0 = negative).
+
+The design was created for a 10 MHz clock and uses a 9600 baud UART connection for communication. It lets you load values into the FPU and perform addition or subtraction.
+The commands require a single byte and are defined as follows:
+
+0x81: Set the R1 register
+0x82: Set the R2 register
+
+0x84: Read the R1 register
+0x88: Read the R2 register
+0x90: Read the result register
+
+0xA0: Perform R1 + R2
+0xC0: Perform R1 - R2
+
+After sending 0x81 or 0x82 you need to send 3 additional bytes where the first bytes contains the sign bit (7) and the exponent (6:0), the following byte defines
+the mantissa bits 15 to 7. Remember that bit 15 must be 1. The last byte defines the lower mantissa bits. Notice how we transmit 16 bits but only use 15 bits of information.
+The lowest bit of the last byte is thus ignored. You do not get an ack from the board! Simply read the register back if you are unsure if the transmission worked.
+
+If you send a read command, you will receive 3 bytes in the exact same format as above. First the sign and exponent in the first byte followed by the mantissa bytes.
+
+If you send a addition/subtraction request, you will receive no answer. You will have to manually send the 0x90 command. Do not worry, the FSM waits until the FPU is done, so no
+reading of undefined data will happen!
 
 ### External hardware
 
-Currently, the processor does not interface with any external hardware components. It operates entirely within a simulated environment where all inputs and outputs are managed through testbenches. This setup is ideal for educational purposes or for foundational experimentation in CPU design.
+Use the on board RPi 2400 for uart connections. It uses the default uart ports suggested by tiny tapeout.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | Register 1 (R1) Address bit 0 | Data out bit 0 (either register data / Processor stat) | Data in bit 0 / Register 3 (R3) Address bit 0 |
-| 1 | Register 1 (R1) Address bit 1 | Data out bit 1 (either register data / 0) | Data in bit 1 / Register 3 (R3) Address bit 1 |
-| 2 | Register 1 (R1) Address bit 2 | Data out bit 2 (either register data / 0) | Data in bit 2 / Register 3 (R3) Address bit 2 |
-| 3 | Register 1 (R1) Address bit 3 | Data out bit 3 (either register data / 0) | Data in bit 3 / Register 3 (R3) Address bit 3 |
-| 4 | Instruction ISA Opcode bit 0 | Data out bit 4 (either register data / 0) | Data in bit 4 / Register 2 (R2) Address bit 0 |
-| 5 | Instruction ISA Opcode bit 1 | Data out bit 5 (either register data / 0) | Data in bit 5 / Register 2 (R2) Address bit 1 |
-| 6 | Instruction ISA Opcode bit 2 | Data out bit 6 (either register data / 0) | Data in bit 6 / Register 2 (R2) Address bit 2 |
-| 7 | Instruction ISA Opcode bit 3 | Data out bit 7 (either register data / 0) | Data in bit 7 / Register 2 (R2) Address bit 3 |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 | rx |  |  |
+| 4 |  | tx |  |
+| 5 |  |  |  |
+| 6 |  |  |  |
+| 7 |  |  |  |
 
 ### Chip location
 

@@ -1,18 +1,18 @@
 ---
 hidden: true
-title: "740 Random number generator"
-weight: 184
+title: "740 tt6-simplez"
+weight: 8
 ---
 
-## 740 : Random number generator
+## 740 : tt6-simplez
 
-* Author: VineetaVNair & ShilpaPavithran
-* Description: Randomly generates bit stream
-* [GitHub repository](https://github.com/vinizz/tt06-RNG)
-* [GDS submitted](https://github.com/vinizz/tt06-RNG/actions/runs/8755179782)
+* Author: Roland Coeurjoly
+* Description: Simplez
+* [GitHub repository](https://github.com/RCoeurjoly/tt06-simplez)
+* [GDS submitted](https://github.com/RCoeurjoly/tt06-simplez/actions/runs/8753100120)
 * HDL project
 * [Extra docs](None)
-* Clock: 10000000 Hz
+* Clock: 12000000 Hz
 
 <!---
 
@@ -26,29 +26,29 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-Based upon user choice, LFSR data is used to randomly generate bit streams
+https://github.com/Obijuan/simplez-fpga
 
 ### How to test
 
-Vary input seed to change output bits randomly and observe the same when connected to LEDs.
+https://github.com/Obijuan/simplez-fpga
 
 ### External hardware
 
-Displays and LED can be added
+https://github.com/Obijuan/simplez-fpga
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | seed[0] | output_data[0] |  |
-| 1 | seed[1] | output_data[1] |  |
-| 2 | seed[2] | output_data[2] |  |
-| 3 | seed[3] | output_data[3] |  |
-| 4 | mode[0] | output_data[4] |  |
-| 5 | mode[1] | output_data[5] |  |
-| 6 |  | output_data[6] |  |
-| 7 |  | output_data[7] |  |
+| 0 | RX Serial Input from Keyboard | LED 0 | Stop Signal Indicator |
+| 1 |  | LED 1 | TX Serial Output to Display |
+| 2 |  | LED 2 |  |
+| 3 |  | LED 3 |  |
+| 4 |  | LED 4 |  |
+| 5 |  | LED 5 |  |
+| 6 |  | LED 6 |  |
+| 7 |  | LED 7 |  |
 
 ### Chip location
 

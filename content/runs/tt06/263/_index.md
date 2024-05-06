@@ -1,15 +1,15 @@
 ---
 hidden: true
-title: "263 WoWA"
-weight: 18
+title: "263 Crossbar Array"
+weight: 178
 ---
 
-## 263 : WoWA
+## 263 : Crossbar Array
 
-* Author: Pat Deegan
-* Description: Is it really the World Worst ADC?  Maybe it'll be a wow-ADC instead... we'll see!
-* [GitHub repository](https://github.com/psychogenic/tt06-analog-wowa)
-* [GDS submitted](https://github.com/psychogenic/tt06-analog-wowa/actions/runs/8747855611)
+* Author: Kevin Guan
+* Description: Analog Matrix Multiplication with 64x64 array
+* [GitHub repository](https://github.com/kevinwguan/tt06-kevinwguan)
+* [GDS submitted](https://github.com/kevinwguan/tt06-kevinwguan/actions/runs/8756444254)
 * Analog project
 * [Extra docs](None)
 * Clock: 0 Hz
@@ -26,51 +26,31 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### How it works
 
-This project is a mixed signal design that glues together a few bits to create a simple ADC.  It uses
-
-* An analog comparator, based on the design done by Stefan Schippers in [Analog schematic capture and simulation](https://www.youtube.com/watch?v=q3ZcpSkVVuc), re-captured in xschem and laid out with magic;
-
-* The analog blob from the R2R DAC in [Matt Venn's R2R DAC TT06 submission](https://github.com/mattvenn/tt06-analog-r2r-dac);
-
-* A digital signal processor and front end, created using Amaranth; and
-
-* A few analog switches and a 2:1 analog mux, created and laid out for the project.
-
-While at it, I also laid out a version of the [p3 opamp from this project](https://github.com/argunda/tt06-tiny-opamp) and embedded it in for testing purposes.
-
-The ADC uses the DAC to set the threshold on the comparator and see what it says about the input signal--is it higher or lower--to perform a search and hone in on a digital value to output.  Doing it in this way, it manages to determine a v`alue in about 60 clock cycles.
-
-The analog output of the comparator, R2R DAC and p3 opamp are all provided through analog pins for testing and experimentation.
-
-A few options are available:
-
-* The system can perform a comparator calibration before each reading (which increases the processing time but should make things more reliable).  Enable this by holding the enable calibrations pin high;
-
-* Rather than feed the R2R DAC output to the comparator, it can receive input from an analog pin instead.  Set "use external threshold" input pin HIGH for this, and feed into appropriate analog pin.
+This is an analog crossbar array used as a placeholder for future ReRAM projects. Poly Resistors are used instead of ReRAM between Met1 and Met2. Thus, this project has a fixed weight matrix. This project performs 4x4 matrix multiplication in one run.
 
 ### How to test
 
-Bring enable comparator, and reset pin high, feed a target voltage (less than 1v8) into appropriate analog input pin, clock the device and watch the output bits on the digital side.
-
-When result ready output pin pulses high, the output bits are a calculated result.
+6 analog pins and 8-bit digital input bus are used. First 4 analog pins (i.e. ua[3:0]) are used as inputs to the crossbar. The ua[4] is the supply voltage 0-1.8V (default: keep at 1.8V). The ua[5] is the output analog pin used for observing the output current (summing junction). First 4 digital input pins (i.e. ui_in[3:0]) control the 4 4-bit muxes on the input side. The ui_in[4:7] is used to control the column selection.
 
 ### External hardware
 
-Voltage source for analog input.  Some way to look at outputs.
+List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+
+This project will need external off-the-shelf DACs and ADCs including a TIA or ADC that can convert output current into a readable voltage.
 
 
 ### IO
 
 | # | Input          | Output         | Bidirectional   |
 | - | -------------- | -------------- | --------------- |
-| 0 | reset | result bit 0 | result ready |
-| 1 | enable calibrations | result bit 1 | 0 |
-| 2 | enable comparator | result bit 2 | 0 |
-| 3 | use external threshold | result bit 3 | 0 |
-| 4 |  | result bit 4 | 1 |
-| 5 |  | result bit 5 | 1 |
-| 6 |  | result bit 6 | 1 |
-| 7 |  | result bit 7 | 1 |
+| 0 | bit control 1 |  |  |
+| 1 | bit control 2 |  |  |
+| 2 | bit control 3 |  |  |
+| 3 | bit control 4 |  |  |
+| 4 | write/select control 1 |  |  |
+| 5 | write/select control 2 |  |  |
+| 6 | write/select control 3 |  |  |
+| 7 | write/select control 4 |  |  |
 
 ### Chip location
 
