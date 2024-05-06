@@ -13,3 +13,7 @@ Contribution instructions:
 
 After testing your contribution works, please make a pull request.
 Thanks!
+
+# Adding redirects
+
+Add a line to static/_redirects

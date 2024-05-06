@@ -25,7 +25,7 @@ We are working on a much [faster mux based version here](https://github.com/Tiny
 
 8 ins and 8 outs.
 
-# Chip Specs for TT04, TT05 and TT06
+# Chip Specs for TT04 to TT07
 
 ## What is the top clock speed?
 
@@ -44,7 +44,7 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 
 ## How big can my design be?
 
-For TT04 to TT06, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04 to TT07, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.

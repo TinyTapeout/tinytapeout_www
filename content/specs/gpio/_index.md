@@ -38,3 +38,14 @@ Note: the following measurements were taken on a single die at ~22 °C and may n
 <img src="images/iv-curve-sink.png?featherlight=false" alt="Sink IV Curve" width="640" height="400" />
 
 <img src="images/iv-curve-source.png?featherlight=false" alt="Source IV Curve" width="640" height="400" />
+
+### Multiplexer measurements
+
+Note: the following measurements were taken on a single die at ~22 °C and may not be representative of future batches. They are only provided for reference.
+
+After Tiny Tapeout 3.5 silicon was received and tested the worst round trip latency was measured to be 20 ns as shown in the following scope screen captures.
+
+![Rising edge latency](images/tt3p5_rising_latency.png)
+![Falling edge latency](images/tt3p5_falling_latency.png)
+
+Delay variance between different IO pins has been measured at less than 2ns.
