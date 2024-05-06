@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "269 Dickson Charge Pump"
-weight: 56
+weight: 55
 ---
 
 ## 269 : Dickson Charge Pump
@@ -11,7 +11,7 @@ weight: 56
 * [GitHub repository](https://github.com/urish/tt06-charge-pump)
 * [GDS submitted](https://github.com/urish/tt06-charge-pump/actions/runs/8712145036)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -45,16 +45,22 @@ The following graph shows the input clock, the intermediate voltages at the outp
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 8 | vout_div           |
 
 ### Chip location
 

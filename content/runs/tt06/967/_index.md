@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "967 jku-tt06-advanced-counter"
-weight: 226
+weight: 225
 ---
 
 ## 967 : jku-tt06-advanced-counter
@@ -11,7 +11,7 @@ weight: 226
 * [GitHub repository](https://github.com/k12005911/jku-tt06-advanced-counter)
 * [GDS submitted](https://github.com/k12005911/jku-tt06-advanced-counter/actions/runs/8628055571)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -36,16 +36,17 @@ On the output side, for each digit an 8-bit-shift-register and a 7-segment-displ
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Button 0 In | Digit 0 Out | Up-Down-Select In |
-| 1 | Button 1 In | Digit 1 Out | Set-Carry In |
-| 2 |  |  | Set-Max In |
-| 3 |  |  | Refresh-Limits In |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  | Shift-Clk Out |
-| 7 |  |  | Not-Shift-Clk Out |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Button 0 In  | Digit 0 Out  |      |
+| 1 | Button 1 In  | Digit 1 Out  |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

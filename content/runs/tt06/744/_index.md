@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "744 Displays CIt"
-weight: 77
+weight: 76
 ---
 
 ## 744 : Displays CIt
@@ -11,7 +11,7 @@ weight: 77
 * [GitHub repository](https://github.com/cittapeout/Citech)
 * [GDS submitted](https://github.com/cittapeout/Citech/actions/runs/8748673309)
 * [Wokwi](https://wokwi.com/projects/395522292785089537) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1 Hz
 
 <!---
@@ -39,16 +39,17 @@ None,beside the TT demo board.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | run | led_a |  |
-| 1 | state_init[0] | led_b |  |
-| 2 | state_init[1] | led_c |  |
-| 3 | state_init[2] | led_d |  |
-| 4 | state_init[3] | led_e |  |
-| 5 | unused | led_f |  |
-| 6 | unused | led_g |  |
-| 7 | unused | led_h |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | run  | led_a  |      |
+| 1 | state_init[0]  | led_b  |      |
+| 2 | state_init[1]  | led_c  |      |
+| 3 | state_init[2]  | led_d  |      |
+| 4 | state_init[3]  | led_e  |      |
+| 5 | unused  | led_f  |      |
+| 6 | unused  | led_g  |      |
+| 7 | unused  | led_h  |      |
+
 
 ### Chip location
 

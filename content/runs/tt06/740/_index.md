@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "740 tt6-simplez"
-weight: 8
+weight: 7
 ---
 
 ## 740 : tt6-simplez
@@ -11,7 +11,7 @@ weight: 8
 * [GitHub repository](https://github.com/RCoeurjoly/tt06-simplez)
 * [GDS submitted](https://github.com/RCoeurjoly/tt06-simplez/actions/runs/8753100120)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 12000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ https://github.com/Obijuan/simplez-fpga
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | RX Serial Input from Keyboard | LED 0 | Stop Signal Indicator |
-| 1 |  | LED 1 | TX Serial Output to Display |
-| 2 |  | LED 2 |  |
-| 3 |  | LED 3 |  |
-| 4 |  | LED 4 |  |
-| 5 |  | LED 5 |  |
-| 6 |  | LED 6 |  |
-| 7 |  | LED 7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | RX Serial Input from Keyboard  | LED 0  |      |
+| 1 |   | LED 1  |      |
+| 2 |   | LED 2  |      |
+| 3 |   | LED 3  |      |
+| 4 |   | LED 4  |      |
+| 5 |   | LED 5  |      |
+| 6 |   | LED 6  |      |
+| 7 |   | LED 7  |      |
+
 
 ### Chip location
 

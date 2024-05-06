@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "897 soundgen"
-weight: 130
+weight: 129
 ---
 
 ## 897 : soundgen
@@ -11,7 +11,7 @@ weight: 130
 * [GitHub repository](https://github.com/dyanik9/jku-tt06-soundgen)
 * [GDS submitted](https://github.com/dyanik9/jku-tt06-soundgen/actions/runs/8629346943)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ piezo
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | nc | nc | nc |
-| 1 | nc | nc | nc |
-| 2 | nc | nc | nc |
-| 3 | nc | nc | nc |
-| 4 | nc | nc | nc |
-| 5 | nc | nc | nc |
-| 6 | nc | nc | pwm_pos |
-| 7 | nc | nc | pwm_neg |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | nc  | nc  |      |
+| 1 | nc  | nc  |      |
+| 2 | nc  | nc  |      |
+| 3 | nc  | nc  |      |
+| 4 | nc  | nc  |      |
+| 5 | nc  | nc  |      |
+| 6 | nc  | nc  |      |
+| 7 | nc  | nc  |      |
+
 
 ### Chip location
 

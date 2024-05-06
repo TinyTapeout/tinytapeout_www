@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "750 Array Multiplier"
-weight: 194
+weight: 193
 ---
 
 ## 750 : Array Multiplier
@@ -11,7 +11,7 @@ weight: 194
 * [GitHub repository](https://github.com/HHRB98/Array-multiplier)
 * [GDS submitted](https://github.com/HHRB98/Array-multiplier/actions/runs/8733464012)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ You do not need any special external hardware
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui[0] | uo[0] |  |
-| 1 | ui[1] | uo[1] |  |
-| 2 | ui[2] | uo[2] |  |
-| 3 | ui[3] | uo[3] |  |
-| 4 | ui[4] | uo[4] |  |
-| 5 | ui[5] | uo[5] |  |
-| 6 | ui[6] | uo[6] |  |
-| 7 | ui[7] | uo[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui[0]  | uo[0]  |      |
+| 1 | ui[1]  | uo[1]  |      |
+| 2 | ui[2]  | uo[2]  |      |
+| 3 | ui[3]  | uo[3]  |      |
+| 4 | ui[4]  | uo[4]  |      |
+| 5 | ui[5]  | uo[5]  |      |
+| 6 | ui[6]  | uo[6]  |      |
+| 7 | ui[7]  | uo[7]  |      |
+
 
 ### Chip location
 

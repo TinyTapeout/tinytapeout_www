@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "168 LED PWM controller"
-weight: 168
+weight: 167
 ---
 
 ## 168 : LED PWM controller
@@ -11,7 +11,7 @@ weight: 168
 * [GitHub repository](https://github.com/spiff42/tt06-exp-led-pwm)
 * [GDS submitted](https://github.com/spiff42/tt06-exp-led-pwm/actions/runs/8758125772)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 32768000 Hz
 
 <!---
@@ -58,16 +58,17 @@ Currently no external hardware is supported.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | duty[0] | PWM channel 0 |  |
-| 1 | duty[1] | PWM channel 1 | SDA |
-| 2 | duty[2] | PWM channel 2 | SCL |
-| 3 | duty[3] | PWM channel 3 |  |
-| 4 | duty[4] | PWM channel 4 |  |
-| 5 | duty[5] | PWM channel 5 |  |
-| 6 | duty[6] | PWM channel 6 |  |
-| 7 | duty[7] | PWM channel 7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | duty[0]  | PWM channel 0  |      |
+| 1 | duty[1]  | PWM channel 1  |      |
+| 2 | duty[2]  | PWM channel 2  |      |
+| 3 | duty[3]  | PWM channel 3  |      |
+| 4 | duty[4]  | PWM channel 4  |      |
+| 5 | duty[5]  | PWM channel 5  |      |
+| 6 | duty[6]  | PWM channel 6  |      |
+| 7 | duty[7]  | PWM channel 7  |      |
+
 
 ### Chip location
 

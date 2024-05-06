@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "417 Digital Temperature Monitor"
-weight: 154
+weight: 153
 ---
 
 ## 417 : Digital Temperature Monitor
@@ -11,7 +11,7 @@ weight: 154
 * [GitHub repository](https://github.com/silicon-efabless/tt06-silicon-tinytapeout-lm07)
 * [GDS submitted](https://github.com/silicon-efabless/tt06-silicon-tinytapeout-lm07/actions/runs/8719581599)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -77,16 +77,17 @@ Needs a LM07 interfaced on the PCB. Detail hardware plan will be updated when we
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Ext/Int | 7seg-A | CS (O) |
-| 1 | Int-LSB | 7seg-B | SCK (O) |
-| 2 | Ext-CorF | 7seg-C | SIO (I) |
-| 3 |  | 7seg-D | 7seg-sel0 (O) |
-| 4 |  | 7seg-E | 7seg-sel1 (O) |
-| 5 |  | 7seg-F | 7seg-sel2 (O) |
-| 6 |  | 7seg-G |  |
-| 7 |  | 7seg-DP |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Ext/Int  | 7seg-A  |      |
+| 1 | Int-LSB  | 7seg-B  |      |
+| 2 | Ext-CorF  | 7seg-C  |      |
+| 3 |   | 7seg-D  |      |
+| 4 |   | 7seg-E  |      |
+| 5 |   | 7seg-F  |      |
+| 6 |   | 7seg-G  |      |
+| 7 |   | 7seg-DP  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "200 Snake Game"
-weight: 11
+weight: 10
 ---
 
 ## 200 : Snake Game
@@ -11,7 +11,7 @@ weight: 11
 * [GitHub repository](https://github.com/histefan/jku-tt06-snake_game)
 * [GDS submitted](https://github.com/histefan/jku-tt06-snake_game/actions/runs/8627996846)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25179000 Hz
 
 <!---
@@ -51,16 +51,17 @@ VGA Display, external buttons for input
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | none | R1 | none |
-| 1 | none | G1 | none |
-| 2 | none | B1 | none |
-| 3 | none | vsync | none |
-| 4 | Right | R0 | none |
-| 5 | Left | G0 | none |
-| 6 | Down | B0 | none |
-| 7 | Up | hsync | none |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | none  | R1  |      |
+| 1 | none  | G1  |      |
+| 2 | none  | B1  |      |
+| 3 | none  | vsync  |      |
+| 4 | Right  | R0  |      |
+| 5 | Left  | G0  |      |
+| 6 | Down  | B0  |      |
+| 7 | Up  | hsync  |      |
+
 
 ### Chip location
 

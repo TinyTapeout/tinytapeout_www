@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "35 Synthesized Time-to-Digital Converter (TDC)"
-weight: 19
+weight: 18
 ---
 
 ## 35 : Synthesized Time-to-Digital Converter (TDC)
@@ -11,7 +11,7 @@ weight: 19
 * [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v1)
 * [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v1/actions/runs/8662018827)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -43,16 +43,17 @@ Two signal generators generating logical signals with a programmable delay.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Start signal of TDC (stop signal is clk) | Result LSB |  |
-| 1 |  | Result |  |
-| 2 |  | Result |  |
-| 3 |  | Result |  |
-| 4 | output select | Result |  |
-| 5 | output select | Result |  |
-| 6 | output select | Result |  |
-| 7 | output select | Result MSB |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Start signal of TDC (stop signal is clk)  | Result LSB  |      |
+| 1 |   | Result  |      |
+| 2 |   | Result  |      |
+| 3 |   | Result  |      |
+| 4 | output select  | Result  |      |
+| 5 | output select  | Result  |      |
+| 6 | output select  | Result  |      |
+| 7 | output select  | Result MSB  |      |
+
 
 ### Chip location
 

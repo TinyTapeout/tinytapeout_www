@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "299 Display test 1"
-weight: 44
+weight: 43
 ---
 
 ## 299 : Display test 1
@@ -11,7 +11,7 @@ weight: 44
 * [GitHub repository](https://github.com/mastrogippo/tt06-verilog_test)
 * [GDS submitted](https://github.com/mastrogippo/tt06-verilog_test/actions/runs/8675730468)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Character LCD
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | s1 | D4 |  |
-| 1 | s2 | D5 |  |
-| 2 | e1 | D6 |  |
-| 3 | e2 | D7 |  |
-| 4 | e3 | RS |  |
-| 5 | e4 | E |  |
-| 6 | e5 |  |  |
-| 7 | e6 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | s1  | D4  |      |
+| 1 | s2  | D5  |      |
+| 2 | e1  | D6  |      |
+| 3 | e2  | D7  |      |
+| 4 | e3  | RS  |      |
+| 5 | e4  | E  |      |
+| 6 | e5  |   |      |
+| 7 | e6  |   |      |
+
 
 ### Chip location
 

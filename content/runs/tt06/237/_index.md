@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "237 PLL blocks"
-weight: 237
+weight: 236
 ---
 
 ## 237 : PLL blocks
@@ -11,7 +11,7 @@ weight: 237
 * [GitHub repository](https://github.com/engrvip123/tt_um_vks_pll)
 * [GDS submitted](https://github.com/engrvip123/tt_um_vks_pll/actions/runs/8753400571)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -65,16 +65,27 @@ This design contains individual blocks used to realize a PLL circuit. These bloc
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | CP-1:QA | PFD-2:QA | FD-1:fo |
-| 1 | CP-1:QB | PFD-2:QB | FD-1:fo_by_8 |
-| 2 | FD-2:Clk | FD-2:fo_4 | PFD-1:A |
-| 3 | FD-3:fo | FD-2:fo_8 | PFD-1:B |
-| 4 |  | FD-3:fo_4 | PFD-1:QA |
-| 5 |  | FD-3:fo_8 | PFD-1:QB |
-| 6 | ref | FD-4:Out_4 | PFD-2:A |
-| 7 |  | FD-4:Out_8 | PFD-2:B |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | CP-1:QA  | PFD-2:QA  |      |
+| 1 | CP-1:QB  | PFD-2:QB  |      |
+| 2 | FD-2:Clk  | FD-2:fo_4  |      |
+| 3 | FD-3:fo  | FD-2:fo_8  |      |
+| 4 |   | FD-3:fo_4  |      |
+| 5 |   | FD-3:fo_8  |      |
+| 6 | ref  | FD-4:Out_4  |      |
+| 7 |   | FD-4:Out_8  |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | CP_bias           |
+| 1 | 0 | vout           |
+| 2 | 4 | vctrl           |
+| 3 | 1 | Osc_out           |
+| 4 | 3 | cp_bias           |
+| 5 | 2 | out           |
 
 ### Chip location
 

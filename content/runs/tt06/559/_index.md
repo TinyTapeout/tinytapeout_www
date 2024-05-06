@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "559 UART Transceiver"
-weight: 62
+weight: 61
 ---
 
 ## 559 : UART Transceiver
@@ -11,7 +11,7 @@ weight: 62
 * [GitHub repository](https://github.com/theuppercaseguy/GIKI-Tapeout)
 * [GDS submitted](https://github.com/theuppercaseguy/GIKI-Tapeout/actions/runs/8752023862)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -40,16 +40,17 @@ to be added later
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui_in[0] | uo_out[0] | uio_in[0] |
-| 1 | ui_in[1] | uo_out[1] | uio_in[1] |
-| 2 | ui_in[2] | uo_out[2] | uio_in[2] |
-| 3 | ui_in[3] | uo_out[3] | uio_out[3] |
-| 4 | ui_in[4] | uo_out[4] | uio_out[4] |
-| 5 | ui_in[5] | uo_out[5] | uio_out[5] |
-| 6 | ui_in[6] | uo_out[6] | uio_out[6] |
-| 7 | ui_in[7] | uo_out[7] | uio_out[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui_in[0]  | uo_out[0]  |      |
+| 1 | ui_in[1]  | uo_out[1]  |      |
+| 2 | ui_in[2]  | uo_out[2]  |      |
+| 3 | ui_in[3]  | uo_out[3]  |      |
+| 4 | ui_in[4]  | uo_out[4]  |      |
+| 5 | ui_in[5]  | uo_out[5]  |      |
+| 6 | ui_in[6]  | uo_out[6]  |      |
+| 7 | ui_in[7]  | uo_out[7]  |      |
+
 
 ### Chip location
 

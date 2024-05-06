@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "842 rng Test"
-weight: 14
+weight: 13
 ---
 
 ## 842 : rng Test
@@ -11,7 +11,7 @@ weight: 14
 * [GitHub repository](https://github.com/Lucaz97/tt06_RNG2)
 * [GDS submitted](https://github.com/Lucaz97/tt06_RNG2/actions/runs/8528401403)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -44,16 +44,17 @@ send one bit per clock cycle to the epsilon port. check is_random when valid is 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | epsilon | is_random |  |
-| 1 |  | is_random_triosy_lz |  |
-| 2 |  | valid |  |
-| 3 |  | valid_triosy_lz |  |
-| 4 |  | epsilon_triosy_lz |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | epsilon  | is_random  |      |
+| 1 |   | is_random_triosy_lz  |      |
+| 2 |   | valid  |      |
+| 3 |   | valid_triosy_lz  |      |
+| 4 |   | epsilon_triosy_lz  |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

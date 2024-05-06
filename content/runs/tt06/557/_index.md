@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "557 4-Bit ALU"
-weight: 179
+weight: 178
 ---
 
 ## 557 : 4-Bit ALU
@@ -11,7 +11,7 @@ weight: 179
 * [GitHub repository](https://github.com/dgkaminski/tto6-submission)
 * [GDS submitted](https://github.com/dgkaminski/tto6-submission/actions/runs/8746736738)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -50,16 +50,17 @@ None! Just a way to input your desired values and read the outputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | B[0] | Z | FS[0] |
-| 1 | B[1] | N | FS[1] |
-| 2 | B[2] | V | FS[2] |
-| 3 | B[3] | C |  |
-| 4 | A[0] | Y[0] |  |
-| 5 | A[1] | Y[1] |  |
-| 6 | A[2] | Y[2] |  |
-| 7 | A[3] | Y[3] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | B[0]  | Z  |      |
+| 1 | B[1]  | N  |      |
+| 2 | B[2]  | V  |      |
+| 3 | B[3]  | C  |      |
+| 4 | A[0]  | Y[0]  |      |
+| 5 | A[1]  | Y[1]  |      |
+| 6 | A[2]  | Y[2]  |      |
+| 7 | A[3]  | Y[3]  |      |
+
 
 ### Chip location
 

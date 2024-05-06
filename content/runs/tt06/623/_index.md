@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "623 PWM"
-weight: 61
+weight: 60
 ---
 
 ## 623 : PWM
@@ -11,7 +11,7 @@ weight: 61
 * [GitHub repository](https://github.com/Noe-Reyes/PWM)
 * [GDS submitted](https://github.com/Noe-Reyes/PWM/actions/runs/8670485165)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -58,16 +58,17 @@ The external hardware includes one LED, a 1k ohm resistor, and three 2-position 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | load 0 |  |  |
-| 1 | load 1 |  |  |
-| 2 | load 2 |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  | PWM |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | load 0  |   |      |
+| 1 | load 1  |   |      |
+| 2 | load 2  |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   | PWM  |      |
+
 
 ### Chip location
 

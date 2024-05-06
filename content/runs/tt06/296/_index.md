@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "296 Workshop_chip"
-weight: 142
+weight: 141
 ---
 
 ## 296 : Workshop_chip
@@ -11,7 +11,7 @@ weight: 142
 * [GitHub repository](https://github.com/Inne-Lemstra/HaD_chip_workshop)
 * [GDS submitted](https://github.com/Inne-Lemstra/HaD_chip_workshop/actions/runs/8673990303)
 * [Wokwi](https://wokwi.com/projects/395055341723330561) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

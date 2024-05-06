@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "229 Analog 8bit R2R DAC"
-weight: 126
+weight: 125
 ---
 
 ## 229 : Analog 8bit R2R DAC
@@ -11,7 +11,7 @@ weight: 126
 * [GitHub repository](https://github.com/mattvenn/tt06-analog-r2r-dac)
 * [GDS submitted](https://github.com/mattvenn/tt06-analog-r2r-dac/actions/runs/8590705228)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -49,16 +49,22 @@ A multimeter to measure the output voltage on analog pin 0.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | bit 0 |  | external data |
-| 1 | bit 1 |  | load divider |
-| 2 | bit 2 |  |  |
-| 3 | bit 3 |  |  |
-| 4 | bit 4 |  |  |
-| 5 | bit 5 |  |  |
-| 6 | bit 6 |  |  |
-| 7 | bit 7 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | bit 0  |   |      |
+| 1 | bit 1  |   |      |
+| 2 | bit 2  |   |      |
+| 3 | bit 3  |   |      |
+| 4 | bit 4  |   |      |
+| 5 | bit 5  |   |      |
+| 6 | bit 6  |   |      |
+| 7 | bit 7  |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 4 | DAC output           |
 
 ### Chip location
 

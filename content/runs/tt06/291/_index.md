@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "291 Minibyte CPU"
-weight: 100
+weight: 99
 ---
 
 ## 291 : Minibyte CPU
@@ -11,7 +11,7 @@ weight: 100
 * [GitHub repository](https://github.com/zacharysfrazee/tt06-minibyte-cpu)
 * [GDS submitted](https://github.com/zacharysfrazee/tt06-minibyte-cpu/actions/runs/8750686348)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -297,16 +297,17 @@ Beyond this, you will hopefully find that the Minibyte CPU can be paired with a 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | DEBUG_OUT_SELECT_0 | ADDR_OUT_0 | DATA_0 |
-| 1 | DEBUG_OUT_SELECT_1 | ADDR_OUT_1 | DATA_1 |
-| 2 | DEBUG_OUT_SELECT_2 | ADDR_OUT_2 | DATA_2 |
-| 3 | DEMO_ROM_ENABLE | ADDR_OUT_3 | DATA_3 |
-| 4 |  | ADDR_OUT_4 | DATA_4 |
-| 5 |  | ADDR_OUT_5 | DATA_5 |
-| 6 |  | ADDR_OUT_6 | DATA_6 |
-| 7 |  | WE_OUT | DATA_7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | DEBUG_OUT_SELECT_0  | ADDR_OUT_0  |      |
+| 1 | DEBUG_OUT_SELECT_1  | ADDR_OUT_1  |      |
+| 2 | DEBUG_OUT_SELECT_2  | ADDR_OUT_2  |      |
+| 3 | DEMO_ROM_ENABLE  | ADDR_OUT_3  |      |
+| 4 |   | ADDR_OUT_4  |      |
+| 5 |   | ADDR_OUT_5  |      |
+| 6 |   | ADDR_OUT_6  |      |
+| 7 |   | WE_OUT  |      |
+
 
 ### Chip location
 

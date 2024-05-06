@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "6 SPDIF to I2S decoder"
-weight: 161
+weight: 160
 ---
 
 ## 6 : SPDIF to I2S decoder
@@ -11,7 +11,7 @@ weight: 161
 * [GitHub repository](https://github.com/jorgenkraghjakobsen/tt06-toi2s)
 * [GDS submitted](https://github.com/jorgenkraghjakobsen/tt06-toi2s/actions/runs/8756617721)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 48000000 Hz
 
 <!---
@@ -70,16 +70,17 @@ Amplifier module MA12070p and ftdi usb to i2c module :-)
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | rx_in | amp_i2s_bck | i2c_scl |
-| 1 | debug_in | amp_i2s_ws | i2c_sda |
-| 2 |  | amp_i2s_d0 | amp_i2c_scl |
-| 3 |  | amp_nenable | amp_i2c_sda |
-| 4 |  | amp_nmute |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  | pwm_out |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | rx_in  | amp_i2s_bck  |      |
+| 1 | debug_in  | amp_i2s_ws  |      |
+| 2 |   | amp_i2s_d0  |      |
+| 3 |   | amp_nenable  |      |
+| 4 |   | amp_nmute  |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   | pwm_out  |      |
+
 
 ### Chip location
 

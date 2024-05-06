@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "294 8-bit PRNG"
-weight: 116
+weight: 115
 ---
 
 ## 294 : 8-bit PRNG
@@ -11,7 +11,7 @@ weight: 116
 * [GitHub repository](https://github.com/JDuchniewicz/tt06-PRNG)
 * [GDS submitted](https://github.com/JDuchniewicz/tt06-PRNG/actions/runs/8733263844)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -37,16 +37,17 @@ You can experiment with different initialization seeds and see how it changes th
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Bit 0 initial PRNG seed | Bit 0 output noise |  |
-| 1 | Bit 1 initial PRNG seed | Bit 1 output noise |  |
-| 2 | Bit 2 initial PRNG seed | Bit 2 output noise |  |
-| 3 | Bit 3 initial PRNG seed | Bit 3 output noise |  |
-| 4 | Bit 4 initial PRNG seed | Bit 4 output noise |  |
-| 5 | Bit 5 initial PRNG seed | Bit 5 output noise |  |
-| 6 | Bit 6 initial PRNG seed | Bit 6 output noise |  |
-| 7 | Bit 7 initial PRNG seed | Bit 7 output noise |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Bit 0 initial PRNG seed  | Bit 0 output noise  |      |
+| 1 | Bit 1 initial PRNG seed  | Bit 1 output noise  |      |
+| 2 | Bit 2 initial PRNG seed  | Bit 2 output noise  |      |
+| 3 | Bit 3 initial PRNG seed  | Bit 3 output noise  |      |
+| 4 | Bit 4 initial PRNG seed  | Bit 4 output noise  |      |
+| 5 | Bit 5 initial PRNG seed  | Bit 5 output noise  |      |
+| 6 | Bit 6 initial PRNG seed  | Bit 6 output noise  |      |
+| 7 | Bit 7 initial PRNG seed  | Bit 7 output noise  |      |
+
 
 ### Chip location
 

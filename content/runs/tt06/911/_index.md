@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "911 Moosic logic-locked design"
-weight: 57
+weight: 56
 ---
 
 ## 911 : Moosic logic-locked design
@@ -11,7 +11,7 @@ weight: 57
 * [GitHub repository](https://github.com/Coloquinte/locked-tapeout)
 * [GDS submitted](https://github.com/Coloquinte/locked-tapeout/actions/runs/8615804787)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -42,16 +42,17 @@ This is purely self-contained to demonstrate logic locking.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | DO_INCR | CNT_0 |  |
-| 1 | KEY_ENABLE | CNT_1 |  |
-| 2 | KEY_0 | CNT_2 |  |
-| 3 | KEY_1 | CNT_3 |  |
-| 4 | KEY_2 | CNT_4 |  |
-| 5 | KEY_3 | CNT_5 |  |
-| 6 | KEY_4 | CNT_6 |  |
-| 7 | KEY_5 | CNT_7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | DO_INCR  | CNT_0  |      |
+| 1 | KEY_ENABLE  | CNT_1  |      |
+| 2 | KEY_0  | CNT_2  |      |
+| 3 | KEY_1  | CNT_3  |      |
+| 4 | KEY_2  | CNT_4  |      |
+| 5 | KEY_3  | CNT_5  |      |
+| 6 | KEY_4  | CNT_6  |      |
+| 7 | KEY_5  | CNT_7  |      |
+
 
 ### Chip location
 

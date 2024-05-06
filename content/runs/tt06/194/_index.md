@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "194 ANS Encoder/Decoder"
-weight: 15
+weight: 14
 ---
 
 ## 194 : ANS Encoder/Decoder
 
-* Author: Davide Asnaghi & Lenny Khazan
+* Author: Davide Asnaghi &amp; Lenny Khazan
 * Description: Asymmetric Numeral Systems Encoder/Decoder
 * [GitHub repository](https://github.com/LK/tt06-ans)
 * [GDS submitted](https://github.com/LK/tt06-ans/actions/runs/8757566085)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ None
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | input | output | cmd |
-| 1 | input | output | cmd |
-| 2 | input | output | in_vld |
-| 3 | input | output | out_rdy |
-| 4 |  |  | in_rdy |
-| 5 |  |  | out_vld |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | input  | output  |      |
+| 1 | input  | output  |      |
+| 2 | input  | output  |      |
+| 3 | input  | output  |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

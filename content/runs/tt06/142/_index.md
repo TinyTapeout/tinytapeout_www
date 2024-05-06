@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "142 Ternary 1.58-bit x 8-bit matrix multiplier"
-weight: 132
+weight: 131
 ---
 
 ## 142 : Ternary 1.58-bit x 8-bit matrix multiplier
@@ -11,7 +11,7 @@ weight: 132
 * [GitHub repository](https://github.com/rejunity/tiny-asic-1_58bit-matrix-mul)
 * [GDS submitted](https://github.com/rejunity/tiny-asic-1_58bit-matrix-mul/actions/runs/8756435823)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 48000000 Hz
 
 <!---
@@ -40,16 +40,17 @@ MCU is necessary to feed weights and input data into the accelerator and fetch t
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | packed weights LSB | result LSB | (in) activations LSB |
-| 1 | packed weights | result  | (in) activations |
-| 2 | packed weights | result  | (in) activations |
-| 3 | packed weights | result  | (in) activations |
-| 4 | packed weights | result  | (in) activations |
-| 5 | packed weights | result  | (in) activations |
-| 6 | packed weights | result  | (in) activations |
-| 7 | packed weights MSB | result MSB | (in) activations MSB |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | packed weights LSB  | result LSB  |      |
+| 1 | packed weights  | result   |      |
+| 2 | packed weights  | result   |      |
+| 3 | packed weights  | result   |      |
+| 4 | packed weights  | result   |      |
+| 5 | packed weights  | result   |      |
+| 6 | packed weights  | result   |      |
+| 7 | packed weights MSB  | result MSB  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "430 EFAB Demo 2"
-weight: 199
+weight: 198
 ---
 
 ## 430 : EFAB Demo 2
@@ -11,7 +11,7 @@ weight: 199
 * [GitHub repository](https://github.com/amm-efab/tt_efab_demo)
 * [GDS submitted](https://github.com/amm-efab/tt_efab_demo/actions/runs/8679702196)
 * [Wokwi](https://wokwi.com/projects/395142547244224513) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 2 Hz
 
 <!---
@@ -65,16 +65,17 @@ None, besides the TT demo board.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | run | a |  |
-| 1 |  | b |  |
-| 2 | state_init[0] | c |  |
-| 3 | state_init[1] | d |  |
-| 4 | state_init[2] | e |  |
-| 5 | state_init[3] | f |  |
-| 6 |  | g |  |
-| 7 | no_blink | dot |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | run  | a  |      |
+| 1 |   | b  |      |
+| 2 | state_init[0]  | c  |      |
+| 3 | state_init[1]  | d  |      |
+| 4 | state_init[2]  | e  |      |
+| 5 | state_init[3]  | f  |      |
+| 6 |   | g  |      |
+| 7 | no_blink  | dot  |      |
+
 
 ### Chip location
 

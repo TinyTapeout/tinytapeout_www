@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "198 Two ports USB CDC device"
-weight: 9
+weight: 8
 ---
 
 ## 198 : Two ports USB CDC device
@@ -11,7 +11,7 @@ weight: 9
 * [GitHub repository](https://github.com/mbalestrini/tt06_usb_cdc_devices)
 * [GDS submitted](https://github.com/mbalestrini/tt06_usb_cdc_devices/actions/runs/8758168087)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 48000000 Hz
 
 <!---
@@ -63,16 +63,17 @@ Buttons for the inputs
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | input_0 | usb_pu | usp_p |
-| 1 | input_1 | debug_led | usb_n |
-| 2 | input_2 | debug_usb_configured |  |
-| 3 | input_3 | debug_usb_tx_en |  |
-| 4 | input_4 | debug_frame[0] |  |
-| 5 | input_5 | debug_frame[1] |  |
-| 6 | input_6 | debug_frame[2] |  |
-| 7 | input_7 | debug_frame[3] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | input_0  | usb_pu  |      |
+| 1 | input_1  | debug_led  |      |
+| 2 | input_2  | debug_usb_configured  |      |
+| 3 | input_3  | debug_usb_tx_en  |      |
+| 4 | input_4  | debug_frame[0]  |      |
+| 5 | input_5  | debug_frame[1]  |      |
+| 6 | input_6  | debug_frame[2]  |      |
+| 7 | input_7  | debug_frame[3]  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "238 Rule 30 Engine!"
-weight: 81
+weight: 80
 ---
 
 ## 238 : Rule 30 Engine!
@@ -11,7 +11,7 @@ weight: 81
 * [GitHub repository](https://github.com/andrewtron3000/tt06-verilog-template)
 * [GDS submitted](https://github.com/andrewtron3000/tt06-verilog-template/actions/runs/8747806238)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -56,16 +56,17 @@ The initial condition used for the Rule 30 iteration is defined on the input bus
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Initial Value LSB |  |  |
-| 1 | Initial Value |  |  |
-| 2 | Initial Value |  |  |
-| 3 | Initial Value |  |  |
-| 4 | Initial Value | UART TX |  |
-| 5 | Initial Value |  |  |
-| 6 | Initial Value |  |  |
-| 7 | Initial Value MSB |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Initial Value LSB  |   |      |
+| 1 | Initial Value  |   |      |
+| 2 | Initial Value  |   |      |
+| 3 | Initial Value  |   |      |
+| 4 | Initial Value  | UART TX  |      |
+| 5 | Initial Value  |   |      |
+| 6 | Initial Value  |   |      |
+| 7 | Initial Value MSB  |   |      |
+
 
 ### Chip location
 

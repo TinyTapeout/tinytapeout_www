@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "516 Relaxation oscillator"
-weight: 118
+weight: 117
 ---
 
 ## 516 : Relaxation oscillator
@@ -11,7 +11,7 @@ weight: 118
 * [GitHub repository](https://github.com/mattvenn/tt06-analog-relax-osc)
 * [GDS submitted](https://github.com/mattvenn/tt06-analog-relax-osc/actions/runs/8719175927)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -38,16 +38,22 @@ Measure the oscillator out on pin 0 (tbc, might cause issues due to the analog m
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | inverted output of oscillator |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | inverted output of oscillator  |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 10 | analog oscillator output           |
 
 ### Chip location
 

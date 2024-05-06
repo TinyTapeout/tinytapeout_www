@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "485 CSIT-Luks"
-weight: 4
+weight: 3
 ---
 
 ## 485 : CSIT-Luks
@@ -11,7 +11,7 @@ weight: 4
 * [GitHub repository](https://github.com/jk2102/tt06-csit-luks)
 * [GDS submitted](https://github.com/jk2102/tt06-csit-luks/actions/runs/8723959561)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -39,16 +39,17 @@ External hardware comprises of a rotational encoder, a four-digit seven-segment 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | A (rot_encoder) | a (seven_seg) | an[0] (seven_seg) |
-| 1 | B (rot_encoder) | b (seven_seg) | an[1] (seven_seg) |
-| 2 | PB (rot_encoder) | c (seven_seg) | an[2] (seven_seg) |
-| 3 | MISO (spi_flash) | d (seven_seg) | an[3] (seven_seg) |
-| 4 | MISO (spi_sensor) | e (seven_seg) | SCLK (spi_flash, spi_sensor) |
-| 5 |  | f (seven_seg) | SS (spi_flash) |
-| 6 |  | g (seven_seg) | SS (spi_sensor) |
-| 7 |  | dp (seven_seg) | MOSI (spi_flash) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | A (rot_encoder)  | a (seven_seg)  |      |
+| 1 | B (rot_encoder)  | b (seven_seg)  |      |
+| 2 | PB (rot_encoder)  | c (seven_seg)  |      |
+| 3 | MISO (spi_flash)  | d (seven_seg)  |      |
+| 4 | MISO (spi_sensor)  | e (seven_seg)  |      |
+| 5 |   | f (seven_seg)  |      |
+| 6 |   | g (seven_seg)  |      |
+| 7 |   | dp (seven_seg)  |      |
+
 
 ### Chip location
 

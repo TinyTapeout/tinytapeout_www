@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "0 Chip ROM"
-weight: 162
+weight: 161
 ---
 
 ## 0 : Chip ROM
@@ -11,7 +11,7 @@ weight: 162
 * [GitHub repository](https://github.com/TinyTapeout/tt-chip-rom)
 * [GDS submitted](https://github.com/TinyTapeout/tt-chip-rom/actions/runs/7626402631)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -63,16 +63,17 @@ You can read them by toggling the first four DIP switches and observing the on-b
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | addr[0] | data[0] |  |
-| 1 | addr[1] | data[1] |  |
-| 2 | addr[2] | data[2] |  |
-| 3 | addr[3] | data[3] |  |
-| 4 | addr[4] | data[4] |  |
-| 5 | addr[5] | data[5] |  |
-| 6 | addr[6] | data[6] |  |
-| 7 | addr[7] | data[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | addr[0]  | data[0]  |      |
+| 1 | addr[1]  | data[1]  |      |
+| 2 | addr[2]  | data[2]  |      |
+| 3 | addr[3]  | data[3]  |      |
+| 4 | addr[4]  | data[4]  |      |
+| 5 | addr[5]  | data[5]  |      |
+| 6 | addr[6]  | data[6]  |      |
+| 7 | addr[7]  | data[7]  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "12 8080 CPU"
-weight: 60
+weight: 59
 ---
 
 ## 12 : 8080 CPU
@@ -11,7 +11,7 @@ weight: 60
 * [GitHub repository](https://github.com/aiju/tt06-aiju-8080)
 * [GDS submitted](https://github.com/aiju/tt06-aiju-8080/actions/runs/8695486161)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ RP2040.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | bus_handshake_ack | bus_handshake_req | data_bus[0] |
-| 1 | debug_req | bus_state[0] | data_bus[1] |
-| 2 | int_req | bus_state[1] | data_bus[2] |
-| 3 |  | bus_io | data_bus[3] |
-| 4 |  | cpu_fetch | data_bus[4] |
-| 5 |  | cpu_in_debug | data_bus[5] |
-| 6 |  | cpu_halted | data_bus[6] |
-| 7 |  | cpu_int_ack | data_bus[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | bus_handshake_ack  | bus_handshake_req  |      |
+| 1 | debug_req  | bus_state[0]  |      |
+| 2 | int_req  | bus_state[1]  |      |
+| 3 |   | bus_io  |      |
+| 4 |   | cpu_fetch  |      |
+| 5 |   | cpu_in_debug  |      |
+| 6 |   | cpu_halted  |      |
+| 7 |   | cpu_int_ack  |      |
+
 
 ### Chip location
 

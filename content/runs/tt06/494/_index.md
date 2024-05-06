@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "494 Analog loopback"
-weight: 70
+weight: 69
 ---
 
 ## 494 : Analog loopback
@@ -11,7 +11,7 @@ weight: 70
 * [GitHub repository](https://github.com/TinyTapeout/tt06-analog-loopback)
 * [GDS submitted](https://github.com/TinyTapeout/tt06-analog-loopback/actions/runs/8324836549)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,27 @@ n/a
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | connected to 1           |
+| 1 | 0 | connected to 0           |
+| 2 | 4 | connected to 3           |
+| 3 | 1 | connected to 2           |
+| 4 | 3 | connected to 5           |
+| 5 | 2 | connected to 4           |
 
 ### Chip location
 

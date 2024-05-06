@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "609 24 H Clock"
-weight: 109
+weight: 108
 ---
 
 ## 609 : 24 H Clock
@@ -11,7 +11,7 @@ weight: 109
 * [GitHub repository](https://github.com/Miguelgrc032024/UABCReloj)
 * [GDS submitted](https://github.com/Miguelgrc032024/UABCReloj/actions/runs/8458389680)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -41,16 +41,17 @@ A one MegaHertz clock signal must be connected to the clk pin. Reset goes from 1
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | rst | M0[0] | H0[0] |
-| 1 | clk | M0[1] | H0[1] |
-| 2 | P0 | M0[2] | H0[2] |
-| 3 | set | M0[3] | H0[3] |
-| 4 |  | M1[0] | H1[0] |
-| 5 |  | M1[1] | H1[1] |
-| 6 |  | M1[2] | Dots |
-| 7 |  | M1[3] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | rst  | M0[0]  |      |
+| 1 | clk  | M0[1]  |      |
+| 2 | P0  | M0[2]  |      |
+| 3 | set  | M0[3]  |      |
+| 4 |   | M1[0]  |      |
+| 5 |   | M1[1]  |      |
+| 6 |   | M1[2]  |      |
+| 7 |   | M1[3]  |      |
+
 
 ### Chip location
 

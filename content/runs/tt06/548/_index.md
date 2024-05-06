@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "548 8-bit Binary Counter"
-weight: 38
+weight: 37
 ---
 
 ## 548 : 8-bit Binary Counter
@@ -11,7 +11,7 @@ weight: 38
 * [GitHub repository](https://github.com/aryan-kannaujiya/tt06-verilog-template)
 * [GDS submitted](https://github.com/aryan-kannaujiya/tt06-verilog-template/actions/runs/8739441942)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ defaults
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clk | out |  |
-| 1 | rst_n | hex |  |
-| 2 | ui_in[2] | dec |  |
-| 3 | ui_in[3] |  |  |
-| 4 | ui_in[4] |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clk  | out  |      |
+| 1 | rst_n  | hex  |      |
+| 2 | ui_in[2]  | dec  |      |
+| 3 | ui_in[3]  |   |      |
+| 4 | ui_in[4]  |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

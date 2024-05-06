@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "487 Trivium Non-Linear Feedback Shift Register"
-weight: 143
+weight: 142
 ---
 
 ## 487 : Trivium Non-Linear Feedback Shift Register
@@ -11,7 +11,7 @@ weight: 143
 * [GitHub repository](https://github.com/icarislab/tt06_trivium-prng_cu)
 * [GDS submitted](https://github.com/icarislab/tt06_trivium-prng_cu/actions/runs/8713810906)
 * [Wokwi](https://wokwi.com/projects/395357890431011841) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -91,16 +91,17 @@ No external hardware is required.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | r000_val |  |
-| 1 | data_in | INTERM_fb |  |
-| 2 | load_en | r092_val |  |
-| 3 |  | r093_val |  |
-| 4 |  | r176_val |  |
-| 5 |  | r177_val |  |
-| 6 |  | r287_val |  |
-| 7 |  | NLSFR_out |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | r000_val  |      |
+| 1 | data_in  | INTERM_fb  |      |
+| 2 | load_en  | r092_val  |      |
+| 3 |   | r093_val  |      |
+| 4 |   | r176_val  |      |
+| 5 |   | r177_val  |      |
+| 6 |   | r287_val  |      |
+| 7 |   | NLSFR_out  |      |
+
 
 ### Chip location
 

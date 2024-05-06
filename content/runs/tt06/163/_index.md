@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "163 Workshop Hackaday Juli"
-weight: 217
+weight: 216
 ---
 
 ## 163 : Workshop Hackaday Juli
@@ -11,7 +11,7 @@ weight: 217
 * [GitHub repository](https://github.com/jpdasilva/tinytapeout-workshop)
 * [GDS submitted](https://github.com/jpdasilva/tinytapeout-workshop/actions/runs/8673951165)
 * [Wokwi](https://wokwi.com/projects/395054820631340033) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

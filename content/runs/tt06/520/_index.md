@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "520 Leaky Integrate and fire neuron(LIF)"
-weight: 122
+weight: 121
 ---
 
 ## 520 : Leaky Integrate and fire neuron(LIF)
@@ -11,7 +11,7 @@ weight: 122
 * [GitHub repository](https://github.com/vyshnavthonichal/tt-um-duk-lif)
 * [GDS submitted](https://github.com/vyshnavthonichal/tt-um-duk-lif/actions/runs/8753273818)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,24 @@ Function generator, CRO, Multimeter.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 7 | Out           |
+| 1 | 9 | Vth           |
+| 2 | 8 | Vin           |
 
 ### Chip location
 

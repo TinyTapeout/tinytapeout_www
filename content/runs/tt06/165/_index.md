@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "165 Keypad Decoder"
-weight: 175
+weight: 174
 ---
 
 ## 165 : Keypad Decoder
@@ -11,7 +11,7 @@ weight: 175
 * [GitHub repository](https://github.com/wrkanet/tt06-keypad-decoder)
 * [GDS submitted](https://github.com/wrkanet/tt06-keypad-decoder/actions/runs/8693248441)
 * [Wokwi](https://wokwi.com/projects/394618582085551105) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 ### How it works
@@ -44,16 +44,17 @@ Keypad matrix 4x4. For example:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | segment a | col 4 (input) |
-| 1 |  | segment b | col 3 (input) |
-| 2 |  | segment c | col 2 (input) |
-| 3 |  | segment d | col 1 (input) |
-| 4 |  | segment e | row 4 (output) |
-| 5 |  | segment f | row 3 (output) |
-| 6 |  | segment g | row 2 (output) |
-| 7 |  | dot | row 1 (output) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | segment a  |      |
+| 1 |   | segment b  |      |
+| 2 |   | segment c  |      |
+| 3 |   | segment d  |      |
+| 4 |   | segment e  |      |
+| 5 |   | segment f  |      |
+| 6 |   | segment g  |      |
+| 7 |   | dot  |      |
+
 
 ### Chip location
 

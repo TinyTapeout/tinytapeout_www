@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "741 PWM_Sinewave_UART"
-weight: 47
+weight: 46
 ---
 
 ## 741 : PWM_Sinewave_UART
@@ -11,7 +11,7 @@ weight: 47
 * [GitHub repository](https://github.com/JerryAvila06/PWM_Sinewave)
 * [GDS submitted](https://github.com/JerryAvila06/PWM_Sinewave/actions/runs/8757359809)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25000000 Hz
 
 <!---
@@ -41,16 +41,17 @@ Only physical tests were carried out with the circuit, a Bluetooth antenna was a
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | uart_rx | uart_tx | no use |
-| 1 | no use | no use | no use |
-| 2 | no use | pwm_outx | no use |
-| 3 | no use | no use | no use |
-| 4 | sw_11 | no use | no use |
-| 5 | sw_01 | no use | no use |
-| 6 | rst1 | no use | no use |
-| 7 | no use | no use | no use |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | uart_rx  | uart_tx  |      |
+| 1 | no use  | no use  |      |
+| 2 | no use  | pwm_outx  |      |
+| 3 | no use  | no use  |      |
+| 4 | sw_11  | no use  |      |
+| 5 | sw_01  | no use  |      |
+| 6 | rst1  | no use  |      |
+| 7 | no use  | no use  |      |
+
 
 ### Chip location
 
