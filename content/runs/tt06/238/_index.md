@@ -58,14 +58,14 @@ The initial condition used for the Rule 30 iteration is defined on the input bus
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Initial Value LSB  |   |      |
-| 1 | Initial Value  |   |      |
-| 2 | Initial Value  |   |      |
-| 3 | Initial Value  |   |      |
-| 4 | Initial Value  | UART TX  |      |
-| 5 | Initial Value  |   |      |
-| 6 | Initial Value  |   |      |
-| 7 | Initial Value MSB  |   |      |
+| 0 | Initial Value LSB  |   |         |
+| 1 | Initial Value  |   |         |
+| 2 | Initial Value  |   |         |
+| 3 | Initial Value  |   |         |
+| 4 | Initial Value  | UART TX  |         |
+| 5 | Initial Value  |   |         |
+| 6 | Initial Value  |   |         |
+| 7 | Initial Value MSB  |   |         |
 
 
 ### Chip location

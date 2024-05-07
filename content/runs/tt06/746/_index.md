@@ -82,14 +82,14 @@ Las entradas de los sensores pueden ser emuladas con botones o con switches cone
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | no used  | no used  |      |
-| 1 | no used  | no used  |      |
-| 2 | no used  | no used  |      |
-| 3 | no used  | no used  |      |
-| 4 | no used  | no used  |      |
-| 5 | no used  | no used  |      |
-| 6 | no used  | no used  |      |
-| 7 | no used  | no used  |      |
+| 0 | no used  | no used  | bomba_o        |
+| 1 | no used  | no used  | alarma_o        |
+| 2 | no used  | no used  | no used        |
+| 3 | no used  | no used  | sensores_i[0]        |
+| 4 | no used  | no used  | sensores_i[1]        |
+| 5 | no used  | no used  | sensores_i[2]        |
+| 6 | no used  | no used  | rst_i        |
+| 7 | no used  | no used  | ck        |
 
 
 ### Chip location

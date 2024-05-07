@@ -43,14 +43,14 @@ The top level test under the test directory will have a circuit python equivalen
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | DATA_IN1  | DATA_BUS_COL_OUT[0]  |      |
-| 1 | RCLK_1  | DATA_BUS_COL_OUT[1]  |      |
-| 2 | LOAD_1  | DATA_BUS_COL_OUT[2]  |      |
-| 3 | DATA_IN2  | DATA_BUS_COL_OUT[3]  |      |
-| 4 | RCLK_2  | DATA_BUS_COL_OUT[4]  |      |
-| 5 | LOAD_2  | DATA_BUS_COL_OUT[5]  |      |
-| 6 |   | DATA_BUS_COL_OUT[6]  |      |
-| 7 |   | DATA_BUS_COL_OUT[7]  |      |
+| 0 | DATA_IN1  | DATA_BUS_COL_OUT[0]  | DATA_BUS_ROW_IN[0]        |
+| 1 | RCLK_1  | DATA_BUS_COL_OUT[1]  | DATA_BUS_ROW_IN[1]        |
+| 2 | LOAD_1  | DATA_BUS_COL_OUT[2]  | DATA_BUS_ROW_IN[2]        |
+| 3 | DATA_IN2  | DATA_BUS_COL_OUT[3]  | DATA_BUS_ROW_IN[3]        |
+| 4 | RCLK_2  | DATA_BUS_COL_OUT[4]  | DATA_BUS_ROW_IN[4]        |
+| 5 | LOAD_2  | DATA_BUS_COL_OUT[5]  | DATA_BUS_ROW_IN[5]        |
+| 6 |   | DATA_BUS_COL_OUT[6]  | DATA_BUS_ROW_IN[6]        |
+| 7 |   | DATA_BUS_COL_OUT[7]  | DATA_BUS_ROW_IN[7]        |
 
 
 ### Chip location

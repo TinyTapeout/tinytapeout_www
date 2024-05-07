@@ -44,14 +44,14 @@ This is purely self-contained to demonstrate logic locking.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | DO_INCR  | CNT_0  |      |
-| 1 | KEY_ENABLE  | CNT_1  |      |
-| 2 | KEY_0  | CNT_2  |      |
-| 3 | KEY_1  | CNT_3  |      |
-| 4 | KEY_2  | CNT_4  |      |
-| 5 | KEY_3  | CNT_5  |      |
-| 6 | KEY_4  | CNT_6  |      |
-| 7 | KEY_5  | CNT_7  |      |
+| 0 | DO_INCR  | CNT_0  |         |
+| 1 | KEY_ENABLE  | CNT_1  |         |
+| 2 | KEY_0  | CNT_2  |         |
+| 3 | KEY_1  | CNT_3  |         |
+| 4 | KEY_2  | CNT_4  |         |
+| 5 | KEY_3  | CNT_5  |         |
+| 6 | KEY_4  | CNT_6  |         |
+| 7 | KEY_5  | CNT_7  |         |
 
 
 ### Chip location

@@ -43,14 +43,14 @@ Keypad PMOD: https://t.ly/lTZF0
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | row0  | 7 segment display outputs  |      |
-| 1 | row1  |   |      |
-| 2 | row2  |   |      |
-| 3 | row3  |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | row0  | 7 segment display outputs  | col0        |
+| 1 | row1  |   | col1        |
+| 2 | row2  |   | col2        |
+| 3 | row3  |   | col3        |
+| 4 |   |   | col counter 0        |
+| 5 |   |   | col counter 1        |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

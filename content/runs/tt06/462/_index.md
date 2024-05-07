@@ -65,14 +65,14 @@ The design uses external ROM (Flash) and external RAM. All bus accesses in these
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | General purpose input (GPI) 0.  | General purpose output (GPO) 0.  |      |
-| 1 | General purpose input (GPI) 1.  | General purpose output (GPO) 1.  |      |
-| 2 | General purpose input (GPI) 2.  | General purpose output (GPO) 2.  |      |
-| 3 | General purpose input (GPI) 3.  | General purpose output (GPO) 3.  |      |
-| 4 | General purpose input (GPI) 4.  | General purpose output (GPO) 4.  |      |
-| 5 | General purpose input (GPI) 5.  | General purpose output (GPO) 5.  |      |
-| 6 | General purpose input (GPI) 6.  | (User) SPI SCK.  |      |
-| 7 | (User) SPI SDI.  | (User) SPI SDO.  |      |
+| 0 | General purpose input (GPI) 0.  | General purpose output (GPO) 0.  | QSPI ROM chip select (low active).        |
+| 1 | General purpose input (GPI) 1.  | General purpose output (GPO) 1.  | QSPI ROM/RAM SDO[0].        |
+| 2 | General purpose input (GPI) 2.  | General purpose output (GPO) 2.  | QSPI ROM/RAM SDO[1].        |
+| 3 | General purpose input (GPI) 3.  | General purpose output (GPO) 3.  | QSPI ROM/RAM SCK.        |
+| 4 | General purpose input (GPI) 4.  | General purpose output (GPO) 4.  | QSPI ROM/RAM SDO[2].        |
+| 5 | General purpose input (GPI) 5.  | General purpose output (GPO) 5.  | QSPI ROM/RAM SDO[3].        |
+| 6 | General purpose input (GPI) 6.  | (User) SPI SCK.  | QSPI RAM chip select (low active).        |
+| 7 | (User) SPI SDI.  | (User) SPI SDO.  | NC.        |
 
 
 ### Chip location

@@ -60,14 +60,14 @@ Use the on board RPi 2400 for uart connections. It uses the default uart ports s
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 | rx  |   |      |
-| 4 |   | tx  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 | rx  |   |         |
+| 4 |   | tx  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

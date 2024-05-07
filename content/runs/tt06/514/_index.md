@@ -41,14 +41,14 @@ Lowpass filters for the PWM outputs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | freq_bit_in_0  | pwm_1_out  |      |
-| 1 | freq_bit_in_1  | pwm_2_out  |      |
-| 2 | freq_bit_in_2  |   |      |
-| 3 | freq_bit_in_3  |   |      |
-| 4 | freq_bit_in_4  |   |      |
-| 5 | freq_bit_in_5  |   |      |
-| 6 | freq_bit_in_6  |   |      |
-| 7 | freq_bit_in_7  |   |      |
+| 0 | freq_bit_in_0  | pwm_1_out  | adsr_choice_in_0        |
+| 1 | freq_bit_in_1  | pwm_2_out  | adsr_choice_in_1        |
+| 2 | freq_bit_in_2  |   | adsr_choice_in_2        |
+| 3 | freq_bit_in_3  |   | adsr_switch_in        |
+| 4 | freq_bit_in_4  |   | freq_bit_in_8        |
+| 5 | freq_bit_in_5  |   | freq_bit_in_9        |
+| 6 | freq_bit_in_6  |   | freq_bit_in_10        |
+| 7 | freq_bit_in_7  |   | freq_bit_in_11        |
 
 
 ### Chip location

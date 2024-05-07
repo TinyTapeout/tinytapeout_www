@@ -47,14 +47,14 @@ ADLAM2000
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | A0  | SSA  |      |
-| 1 | A1  | SSB  |      |
-| 2 | A2  | PRBS0  |      |
-| 3 | A3  | PRBS1  |      |
-| 4 | B0  | PRBS2  |      |
-| 5 | B1  | PRBS3  |      |
-| 6 | B2  | S_M  |      |
-| 7 | B3  |   |      |
+| 0 | A0  | SSA  |         |
+| 1 | A1  | SSB  |         |
+| 2 | A2  | PRBS0  |         |
+| 3 | A3  | PRBS1  |         |
+| 4 | B0  | PRBS2  |         |
+| 5 | B1  | PRBS3  |         |
+| 6 | B2  | S_M  |         |
+| 7 | B3  |   |         |
 
 
 ### Chip location

@@ -43,14 +43,14 @@ This game utilizes the DIP switch and the 7-segment LED of the demo board.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Binary Number Input 0 (LSB)  | 7-segment-LED 0  |      |
-| 1 | Binary Number Input 1  | 7-segment-LED 1  |      |
-| 2 | Binary Number Input 2  | 7-segment-LED 2  |      |
-| 3 | Binary Number Input 3  | 7-segment-LED 3  |      |
-| 4 | Binary Number Input 4  | 7-segment-LED 4  |      |
-| 5 | Binary Number Input 5  | 7-segment-LED 5  |      |
-| 6 | Binary Number Input 6  | 7-segment-LED 6  |      |
-| 7 | Binary Number Input 7 (MSB)  | 7-segment-LED 7  |      |
+| 0 | Binary Number Input 0 (LSB)  | 7-segment-LED 0  |         |
+| 1 | Binary Number Input 1  | 7-segment-LED 1  |         |
+| 2 | Binary Number Input 2  | 7-segment-LED 2  |         |
+| 3 | Binary Number Input 3  | 7-segment-LED 3  |         |
+| 4 | Binary Number Input 4  | 7-segment-LED 4  |         |
+| 5 | Binary Number Input 5  | 7-segment-LED 5  |         |
+| 6 | Binary Number Input 6  | 7-segment-LED 6  |         |
+| 7 | Binary Number Input 7 (MSB)  | 7-segment-LED 7  |         |
 
 
 ### Chip location

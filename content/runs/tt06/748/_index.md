@@ -31,14 +31,14 @@ GPIOs can be measured directly to test performance.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | out[0]  |      |
-| 1 |   | out[1]  |      |
-| 2 |   | out[2]  |      |
-| 3 |   | out[3]  |      |
-| 4 |   | out[4]  |      |
-| 5 |   | out[5]  |      |
-| 6 |   | out[6]  |      |
-| 7 |   | out[7]  |      |
+| 0 |   | out[0]  |         |
+| 1 |   | out[1]  |         |
+| 2 |   | out[2]  |         |
+| 3 |   | out[3]  |         |
+| 4 |   | out[4]  |         |
+| 5 |   | out[5]  |         |
+| 6 |   | out[6]  |         |
+| 7 |   | out[7]  |         |
 
 
 ### Chip location

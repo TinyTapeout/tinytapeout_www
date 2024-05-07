@@ -46,14 +46,14 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Data Stream input  | 8th bit  |      |
-| 1 |   | 7th bit  |      |
-| 2 |   | 6th bit  |      |
-| 3 |   | 5th bit  |      |
-| 4 |   | 4th bit  |      |
-| 5 |   | 3rd bit  |      |
-| 6 |   | 2nd bit  |      |
-| 7 | Set for all flip flops  | 1st bit  |      |
+| 0 | Data Stream input  | 8th bit  |         |
+| 1 |   | 7th bit  |         |
+| 2 |   | 6th bit  |         |
+| 3 |   | 5th bit  |         |
+| 4 |   | 4th bit  |         |
+| 5 |   | 3rd bit  |         |
+| 6 |   | 2nd bit  |         |
+| 7 | Set for all flip flops  | 1st bit  |         |
 
 
 ### Chip location

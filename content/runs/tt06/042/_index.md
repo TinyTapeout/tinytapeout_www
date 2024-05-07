@@ -47,14 +47,14 @@ Note that the simulation results do not include all the parasitics, only the mai
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | osc_out  |      |
-| 1 |   | osc_div_2  |      |
-| 2 |   | osc_div_4  |      |
-| 3 |   | osc_div_8  |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   | osc_out  |         |
+| 1 |   | osc_div_2  |         |
+| 2 |   | osc_div_4  |         |
+| 3 |   | osc_div_8  |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

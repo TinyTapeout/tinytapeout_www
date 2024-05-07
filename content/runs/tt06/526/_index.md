@@ -42,14 +42,14 @@ A voltage source at analog pin 1 and analog pin 4 which is an output of an ANN
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 ### Analog pins
 

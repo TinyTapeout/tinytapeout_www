@@ -42,14 +42,14 @@ MCU is necessary to feed weights and input data into the accelerator and fetch t
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | 2nd FP4 weight LSB  | result LSB  |      |
-| 1 | 2nd FP4 weight  | result   |      |
-| 2 | 2nd FP4 weight  | result   |      |
-| 3 | 2nd FP4 weight MSB  | result   |      |
-| 4 | 1st FP4 weight LSB  | result   |      |
-| 5 | 1st FP4 weight  | result   |      |
-| 6 | 1st FP4 weight  | result   |      |
-| 7 | 1st FP4 weight MSB  | result MSB  |      |
+| 0 | 2nd FP4 weight LSB  | result LSB  | (in) activations LSB        |
+| 1 | 2nd FP4 weight  | result   | (in) activations        |
+| 2 | 2nd FP4 weight  | result   | (in) activations        |
+| 3 | 2nd FP4 weight MSB  | result   | (in) activations        |
+| 4 | 1st FP4 weight LSB  | result   | (in) activations        |
+| 5 | 1st FP4 weight  | result   | (in) activations        |
+| 6 | 1st FP4 weight  | result   | (in) activations        |
+| 7 | 1st FP4 weight MSB  | result MSB  | (in) activations MSB        |
 
 
 ### Chip location

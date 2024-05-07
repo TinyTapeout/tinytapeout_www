@@ -46,14 +46,14 @@ At the bare minimum a resistor at the output is needed to test the opamp as a so
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | pause  | blue  |      |
-| 1 | new_game  | green  |      |
-| 2 | down_key  | red  |      |
-| 3 | up_key  | hsync  |      |
-| 4 |   | vsync  |      |
-| 5 |   | speaker  |      |
-| 6 |   | col0  |      |
-| 7 |   | row0  |      |
+| 0 | pause  | blue  |         |
+| 1 | new_game  | green  |         |
+| 2 | down_key  | red  |         |
+| 3 | up_key  | hsync  |         |
+| 4 |   | vsync  |         |
+| 5 |   | speaker  |         |
+| 6 |   | col0  |         |
+| 7 |   | row0  |         |
 
 ### Analog pins
 

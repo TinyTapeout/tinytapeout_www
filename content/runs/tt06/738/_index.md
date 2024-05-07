@@ -190,14 +190,14 @@ options.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Rx Data  | UART TX  |      |
-| 1 | Rx Clock  | UART CTS  |      |
-| 2 | UART RTS  | UART DCD  |      |
-| 3 | TableData[0]  | Rx Error  |      |
-| 4 | TableData[1]  | Tx Error  |      |
-| 5 | TableData[2]  | Sending  |      |
-| 6 | TableData[3]  |   |      |
-| 7 | UART RX  | Tx Clock Stobe  |      |
+| 0 | Rx Data  | UART TX  | Rx Clock (bidi)        |
+| 1 | Rx Clock  | UART CTS  | Up/Down (bidi)        |
+| 2 | UART RTS  | UART DCD  | TableAddr[0]        |
+| 3 | TableData[0]  | Rx Error  | TableAddr[1]        |
+| 4 | TableData[1]  | Tx Error  | TableAddr[2]        |
+| 5 | TableData[2]  | Sending  | TableAddr[3]        |
+| 6 | TableData[3]  |   | TableAddr[4]        |
+| 7 | UART RX  | Tx Clock Stobe  | TableAddr[5]        |
 
 
 ### Chip location

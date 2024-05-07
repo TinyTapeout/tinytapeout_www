@@ -110,14 +110,14 @@ No external hardware is required.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | r08_val  |      |
-| 1 | data_in  | r07_val  |      |
-| 2 | load_en  | r06_val  |      |
-| 3 |   | r05_val  |      |
-| 4 |   | r04_val  |      |
-| 5 |   | r03_val  |      |
-| 6 |   | r02_val  |      |
-| 7 |   | r01_val_LSFR_out  |      |
+| 0 |   | r08_val  |         |
+| 1 | data_in  | r07_val  |         |
+| 2 | load_en  | r06_val  |         |
+| 3 |   | r05_val  |         |
+| 4 |   | r04_val  |         |
+| 5 |   | r03_val  |         |
+| 6 |   | r02_val  |         |
+| 7 |   | r01_val_LSFR_out  |         |
 
 
 ### Chip location

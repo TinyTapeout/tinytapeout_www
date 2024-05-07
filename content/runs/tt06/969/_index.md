@@ -51,14 +51,14 @@ The PWM output, set at approximately 25 kHz, regulates the fan speed.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | ADC_BIT_0  | segment_a  |      |
-| 1 | ADC_BIT_1  | segment_b  |      |
-| 2 | ADC_BIT_2  | segment_c  |      |
-| 3 | ADC_BIT_3  | segment_d  |      |
-| 4 | SET_BIT_0  | segment_e  |      |
-| 5 | SET_BIT_1  | segment_f  |      |
-| 6 | SET_BIT_2  | segment_g  |      |
-| 7 | SET_BIT_3  | PWM Output  |      |
+| 0 | ADC_BIT_0  | segment_a  | Controller_SET_BIT_0        |
+| 1 | ADC_BIT_1  | segment_b  | Controller_SET_BIT_1        |
+| 2 | ADC_BIT_2  | segment_c  | Controller_SET_BIT_2        |
+| 3 | ADC_BIT_3  | segment_d  | Controller_SET_BIT_3        |
+| 4 | SET_BIT_0  | segment_e  | Controller_SIGN_BIT_4        |
+| 5 | SET_BIT_1  | segment_f  |         |
+| 6 | SET_BIT_2  | segment_g  |         |
+| 7 | SET_BIT_3  | PWM Output  |         |
 
 
 ### Chip location

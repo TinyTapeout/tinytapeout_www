@@ -43,14 +43,14 @@ You need to provide an input signal to UA[0] and an output will come from UA[1] 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 ### Analog pins
 

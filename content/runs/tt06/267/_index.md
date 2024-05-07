@@ -52,14 +52,14 @@ Duplicate circuit in Figure 6-2 at: https://www.ti.com/lit/ds/symlink/lmc555.pdf
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | DI_RESET_N  | DO_OUT  |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | DI_RESET_N  | DO_OUT  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 ### Analog pins
 

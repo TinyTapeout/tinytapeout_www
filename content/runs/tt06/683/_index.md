@@ -41,14 +41,14 @@ Displays and LED can be added
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | seed[0]  | output_data[0]  |      |
-| 1 | seed[1]  | output_data[1]  |      |
-| 2 | seed[2]  | output_data[2]  |      |
-| 3 | seed[3]  | output_data[3]  |      |
-| 4 | mode[0]  | output_data[4]  |      |
-| 5 | mode[1]  | output_data[5]  |      |
-| 6 |   | output_data[6]  |      |
-| 7 |   | output_data[7]  |      |
+| 0 | seed[0]  | output_data[0]  |         |
+| 1 | seed[1]  | output_data[1]  |         |
+| 2 | seed[2]  | output_data[2]  |         |
+| 3 | seed[3]  | output_data[3]  |         |
+| 4 | mode[0]  | output_data[4]  |         |
+| 5 | mode[1]  | output_data[5]  |         |
+| 6 |   | output_data[6]  |         |
+| 7 |   | output_data[7]  |         |
 
 
 ### Chip location

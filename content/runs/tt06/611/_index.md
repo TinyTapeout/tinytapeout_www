@@ -65,14 +65,14 @@ OPAM, Testboard, LED
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | signal_i  |   |      |
-| 1 | seed_i[0]  |   |      |
-| 2 | seed_i[1]  |   |      |
-| 3 | seed_i[2]  |   |      |
-| 4 | seed_i[3]  |   |      |
-| 5 | seed_i[4]  |   |      |
-| 6 | seed_i[5]  |   |      |
-| 7 | load_i  |   |      |
+| 0 | signal_i  |   | cdma_o        |
+| 1 | seed_i[0]  |   | gold_o        |
+| 2 | seed_i[1]  |   | receptor_o        |
+| 3 | seed_i[2]  |   | led_o        |
+| 4 | seed_i[3]  |   |         |
+| 5 | seed_i[4]  |   |         |
+| 6 | seed_i[5]  |   |         |
+| 7 | load_i  |   |         |
 
 
 ### Chip location

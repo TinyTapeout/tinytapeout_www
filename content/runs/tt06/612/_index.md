@@ -42,14 +42,14 @@ The start/stop button toggles the clock, the lap time button pauses the display,
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | start/stop  | SPI MOSI  |      |
-| 1 | lap time  | SPI CS (active low)  |      |
-| 2 | reset (active high)  | SPI CLK  |      |
-| 3 |   | stopwatch enabled (counting up)  |      |
-| 4 |   | display enabled (goes low when showing lap time)  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | start/stop  | SPI MOSI  |         |
+| 1 | lap time  | SPI CS (active low)  |         |
+| 2 | reset (active high)  | SPI CLK  |         |
+| 3 |   | stopwatch enabled (counting up)  |         |
+| 4 |   | display enabled (goes low when showing lap time)  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

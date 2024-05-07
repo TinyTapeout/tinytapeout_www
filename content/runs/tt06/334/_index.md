@@ -78,14 +78,14 @@ This module requires a driver to interface with the neuron. The driver should be
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Input Current [0]  | Membrane Potential [0]  |      |
-| 1 | Input Current [1]  | Membrane Potential [1]  |      |
-| 2 | Input Current [2]  | Membrane Potential [2]  |      |
-| 3 | Input Current [3]  | Membrane Potential [3]  |      |
-| 4 | Input Current [4]  | Membrane Potential [4]  |      |
-| 5 | A Parameter [0]  | Membrane Potential [5]  |      |
-| 6 | A Parameter [1]  | Membrane Potential [6]  |      |
-| 7 | A Parameter [2]  | Membrane Potential [7]  |      |
+| 0 | Input Current [0]  | Membrane Potential [0]  | Neuron Select [0]        |
+| 1 | Input Current [1]  | Membrane Potential [1]  | Neuron Select [1]        |
+| 2 | Input Current [2]  | Membrane Potential [2]  | Neuron Select [2]        |
+| 3 | Input Current [3]  | Membrane Potential [3]  | A Parameter [3]        |
+| 4 | Input Current [4]  | Membrane Potential [4]  | B Parameter [0]        |
+| 5 | A Parameter [0]  | Membrane Potential [5]  | B Parameter [1]        |
+| 6 | A Parameter [1]  | Membrane Potential [6]  | B Parameter [3]        |
+| 7 | A Parameter [2]  | Membrane Potential [7]  | B Parameter [4]        |
 
 
 ### Chip location

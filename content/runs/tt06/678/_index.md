@@ -41,14 +41,14 @@ The chip may need a Microcontroller, Raspberry, Arduino or FPGA for data inputs 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Memory entry address [0]  | Memory output data [0]  |      |
-| 1 | Memory entry address [1]  | Memory output data [1]  |      |
-| 2 | Memory entry address [2]  | Memory output data [2]  |      |
-| 3 | Memory entry address [3]  | Memory output data [3]  |      |
-| 4 | Memory input data [0]  |   |      |
-| 5 | Memory input data [1]  |   |      |
-| 6 | Memory input data [2]  |   |      |
-| 7 | Memory input data [3]  |   |      |
+| 0 | Memory entry address [0]  | Memory output data [0]  | RAM write enable input        |
+| 1 | Memory entry address [1]  | Memory output data [1]  |         |
+| 2 | Memory entry address [2]  | Memory output data [2]  |         |
+| 3 | Memory entry address [3]  | Memory output data [3]  |         |
+| 4 | Memory input data [0]  |   |         |
+| 5 | Memory input data [1]  |   |         |
+| 6 | Memory input data [2]  |   |         |
+| 7 | Memory input data [3]  |   |         |
 
 
 ### Chip location

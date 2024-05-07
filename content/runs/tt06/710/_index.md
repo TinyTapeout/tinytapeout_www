@@ -95,14 +95,14 @@ Use Makerchip IDE (makerchip.com) for testing of RISC-V core only.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 | RX  | TX  |      |
-| 3 |   |   |      |
-| 4 |   | Data on TX  |      |
-| 5 |   | Data on RX  |      |
-| 6 |   | UART Controller in Program Mode  |      |
-| 7 | System Reset  | System Reset (LED)  |      |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 | RX  | TX  |         |
+| 3 |   |   |         |
+| 4 |   | Data on TX  |         |
+| 5 |   | Data on RX  |         |
+| 6 |   | UART Controller in Program Mode  |         |
+| 7 | System Reset  | System Reset (LED)  |         |
 
 
 ### Chip location

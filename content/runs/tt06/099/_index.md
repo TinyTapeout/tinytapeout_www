@@ -51,14 +51,14 @@ No external hardware it needed.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | a[0]  | result[0]  |      |
-| 1 | a[1]  | result[1]  |      |
-| 2 | a[2]  | result[2]  |      |
-| 3 | a[3]  | result[3]  |      |
-| 4 | b[0]  | result[4]  |      |
-| 5 | b[1]  | result[5]  |      |
-| 6 | b[2]  | result[6]  |      |
-| 7 | b[3]  | result[7]  |      |
+| 0 | a[0]  | result[0]  | c[0]        |
+| 1 | a[1]  | result[1]  | c[1]        |
+| 2 | a[2]  | result[2]  | c[2]        |
+| 3 | a[3]  | result[3]  | c[3]        |
+| 4 | b[0]  | result[4]  |         |
+| 5 | b[1]  | result[5]  |         |
+| 6 | b[2]  | result[6]  |         |
+| 7 | b[3]  | result[7]  |         |
 
 
 ### Chip location

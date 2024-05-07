@@ -41,14 +41,14 @@ defaults
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | clk  | out  |      |
-| 1 | rst_n  | hex  |      |
-| 2 | ui_in[2]  | dec  |      |
-| 3 | ui_in[3]  |   |      |
-| 4 | ui_in[4]  |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | clk  | out  |         |
+| 1 | rst_n  | hex  |         |
+| 2 | ui_in[2]  | dec  |         |
+| 3 | ui_in[3]  |   |         |
+| 4 | ui_in[4]  |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

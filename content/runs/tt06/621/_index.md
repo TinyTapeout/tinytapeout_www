@@ -63,14 +63,14 @@ Logic Analyzer. This allows a serial signal to be introduced into the system tha
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | no use  | no use  |      |
-| 1 | no use  | no use  |      |
-| 2 | no use  | no use  |      |
-| 3 | no use  | no use  |      |
-| 4 | no use  | no use  |      |
-| 5 | no use  | no use  |      |
-| 6 | no use  | no use  |      |
-| 7 | no use  | no use  |      |
+| 0 | no use  | no use  | Bit 0        |
+| 1 | no use  | no use  | Bit 1        |
+| 2 | no use  | no use  | Bit 2        |
+| 3 | no use  | no use  | Bit 3        |
+| 4 | no use  | no use  | no use        |
+| 5 | no use  | no use  | Serie_in        |
+| 6 | no use  | no use  | rst        |
+| 7 | no use  | no use  | clk        |
 
 
 ### Chip location

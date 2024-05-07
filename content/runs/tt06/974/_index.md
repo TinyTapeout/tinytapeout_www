@@ -569,14 +569,14 @@ Also need to download the Python based debugger.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | pa_in[0]/baud_div[0]  | pb_out[0]  |      |
-| 1 | pa_in[1]/baud_div[1]  | pb_out[1]  |      |
-| 2 | pa_in[2]/baud_div[2]  | pb_out[2]  |      |
-| 3 | pa_in[3]/baud_div[3]/rx  | pb_out[3]  |      |
-| 4 | pa_in[4]/baud_div[4]  | pb_out[4]/tx  |      |
-| 5 | pa_in[5]/baud_div[5]  | pb_out[5]  |      |
-| 6 | pa_in[6]/baud_div[6]  | pb_out[6]  |      |
-| 7 | pa_in[7]/baud_set  | pb_out[7]/baud_clk  |      |
+| 0 | pa_in[0]/baud_div[0]  | pb_out[0]  | ce0/ce_latch        |
+| 1 | pa_in[1]/baud_div[1]  | pb_out[1]  | mosi/dq1/ce0        |
+| 2 | pa_in[2]/baud_div[2]  | pb_out[2]  | miso/dq2/ce1        |
+| 3 | pa_in[3]/baud_div[3]/rx  | pb_out[3]  | sclk        |
+| 4 | pa_in[4]/baud_div[4]  | pb_out[4]/tx  | rx  /pc_io[0]/scl/sda        |
+| 5 | pa_in[5]/baud_div[5]  | pb_out[5]  | tx  /pc_io[1]/sda/scl        |
+| 6 | pa_in[6]/baud_div[6]  | pb_out[6]  | scl /pc_io[2]/dq2/rx        |
+| 7 | pa_in[7]/baud_set  | pb_out[7]/baud_clk  | sda/pc_io[3]/dq3        |
 
 
 ### Chip location

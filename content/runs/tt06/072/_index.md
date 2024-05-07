@@ -42,14 +42,14 @@ Just pins
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | lanuch clock  | hw[0]  |      |
-| 1 | capture clock  | hw[1]  |      |
-| 2 | pg_src  | hw[2]  |      |
-| 3 | pg_bypass  | hw[3]  |      |
-| 4 | pg_in  | hw[4]  |      |
-| 5 | pg_tog  | hw[5]  |      |
-| 6 | valid_in  | hw[6]  |      |
-| 7 |   | valid_out  |      |
+| 0 | lanuch clock  | hw[0]  |         |
+| 1 | capture clock  | hw[1]  |         |
+| 2 | pg_src  | hw[2]  |         |
+| 3 | pg_bypass  | hw[3]  |         |
+| 4 | pg_in  | hw[4]  |         |
+| 5 | pg_tog  | hw[5]  |         |
+| 6 | valid_in  | hw[6]  |         |
+| 7 |   | valid_out  |         |
 
 
 ### Chip location

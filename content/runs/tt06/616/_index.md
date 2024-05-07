@@ -198,14 +198,14 @@ but also the sizes common in FPGA DSP primitives.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Data0 see docs  | Result0 see docs  |      |
-| 1 | Data1 see docs  | Result1 see docs  |      |
-| 2 | Data2 see docs  | Result2 see docs  |      |
-| 3 | Data3 see docs  | Result3 see docs  |      |
-| 4 | Data4 see docs  | Result4 see docs  |      |
-| 5 | Data5 see docs  | Result5 see docs  |      |
-| 6 | Data6 see docs  | Result6 see docs  |      |
-| 7 | Data7 see docs  | Result7 see docs  |      |
+| 0 | Data0 see docs  | Result0 see docs  | Addr bit0 HI=1/lo=0 mux of Data and Result (input only)        |
+| 1 | Data1 see docs  | Result1 see docs  | unused        |
+| 2 | Data2 see docs  | Result2 see docs  | unused        |
+| 3 | Data3 see docs  | Result3 see docs  | Result mux registered=1/immediate=0 (input only)        |
+| 4 | Data4 see docs  | Result4 see docs  | DIV error overflow (output only)        |
+| 5 | Data5 see docs  | Result5 see docs  | DIV error divide-by-zero (output only)        |
+| 6 | Data6 see docs  | Result6 see docs  | OPSIGNED mode (input only)        |
+| 7 | Data7 see docs  | Result7 see docs  | MULDIV mode (input only)        |
 
 
 ### Chip location

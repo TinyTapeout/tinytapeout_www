@@ -46,14 +46,14 @@ To test, apply control voltage v_control_n and v_control_p, where the sum of the
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | out5  |      |
-| 1 |   | out4  |      |
-| 2 |   | out3  |      |
-| 3 |   | out2  |      |
-| 4 |   | out1  |      |
-| 5 |   | out0  |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   | out5  |         |
+| 1 |   | out4  |         |
+| 2 |   | out3  |         |
+| 3 |   | out2  |         |
+| 4 |   | out1  |         |
+| 5 |   | out0  |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 ### Analog pins
 

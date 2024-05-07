@@ -186,14 +186,14 @@ Some devices to peform SPI transactions
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | clk_sclk  | clk_miso  |      |
-| 1 | clk_mosi  | sampled_miso  |      |
-| 2 | clk_cs  | pwm  |      |
-| 3 | sampled_sclk  |   |      |
-| 4 | sampled_mosi  |   |      |
-| 5 | sampled_cs  |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | clk_sclk  | clk_miso  | IO0        |
+| 1 | clk_mosi  | sampled_miso  | IO1        |
+| 2 | clk_cs  | pwm  | IO2        |
+| 3 | sampled_sclk  |   | IO3        |
+| 4 | sampled_mosi  |   | IO4        |
+| 5 | sampled_cs  |   | IO5        |
+| 6 |   |   | IO6        |
+| 7 |   |   | IO7        |
 
 
 ### Chip location

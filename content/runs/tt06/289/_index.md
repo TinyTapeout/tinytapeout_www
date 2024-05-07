@@ -55,14 +55,14 @@ None
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | ui_in[0]  | watchdog_expired1  |      |
-| 1 | ui_in[1]  | watchdog_expired2  |      |
-| 2 | ui_in[2]  | watchdog_expired3  |      |
-| 3 | ui_in[3]  |   |      |
-| 4 | ui_in[4]  |   |      |
-| 5 | ui_in[5]  |   |      |
-| 6 | ui_in[6]  |   |      |
-| 7 | ui_in[7]  |   |      |
+| 0 | ui_in[0]  | watchdog_expired1  |         |
+| 1 | ui_in[1]  | watchdog_expired2  |         |
+| 2 | ui_in[2]  | watchdog_expired3  |         |
+| 3 | ui_in[3]  |   |         |
+| 4 | ui_in[4]  |   |         |
+| 5 | ui_in[5]  |   |         |
+| 6 | ui_in[6]  |   |         |
+| 7 | ui_in[7]  |   |         |
 
 
 ### Chip location

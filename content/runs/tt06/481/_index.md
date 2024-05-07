@@ -41,14 +41,14 @@ none.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | seg_a  |      |
-| 1 |   | seg_b  |      |
-| 2 |   | seg_c  |      |
-| 3 |   | seg_d  |      |
-| 4 |   | seg_e  |      |
-| 5 |   | seg_f  |      |
-| 6 |   | seg_g  |      |
-| 7 |   |   |      |
+| 0 |   | seg_a  |         |
+| 1 |   | seg_b  |         |
+| 2 |   | seg_c  |         |
+| 3 |   | seg_d  |         |
+| 4 |   | seg_e  |         |
+| 5 |   | seg_f  |         |
+| 6 |   | seg_g  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

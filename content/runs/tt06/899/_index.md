@@ -61,14 +61,14 @@ Four push buttons (with pull-down resistors), four LEDs, and optionally a speake
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | btn1  | led1  |      |
-| 1 | btn2  | led2  |      |
-| 2 | btn3  | led3  |      |
-| 3 | btn4  | led4  |      |
-| 4 | seginv  | speaker  |      |
-| 5 |   | dig1  |      |
-| 6 |   | dig2  |      |
-| 7 |   |   |      |
+| 0 | btn1  | led1  | seg_a        |
+| 1 | btn2  | led2  | seg_b        |
+| 2 | btn3  | led3  | seg_c        |
+| 3 | btn4  | led4  | seg_d        |
+| 4 | seginv  | speaker  | seg_e        |
+| 5 |   | dig1  | seg_f        |
+| 6 |   | dig2  | seg_g        |
+| 7 |   |   |         |
 
 
 ### Chip location

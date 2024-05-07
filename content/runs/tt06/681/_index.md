@@ -45,14 +45,14 @@ if the even count of BCD is shown, the logic circuit is cleadred the test .
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | IN1  | OUT0  |      |
-| 1 | IN2  | OUT1  |      |
-| 2 |   | OUT2  |      |
-| 3 |   | OUT3  |      |
-| 4 |   | OUT4  |      |
-| 5 |   | OUT5  |      |
-| 6 |   | OUT6  |      |
-| 7 |   |   |      |
+| 0 | IN1  | OUT0  |         |
+| 1 | IN2  | OUT1  |         |
+| 2 |   | OUT2  |         |
+| 3 |   | OUT3  |         |
+| 4 |   | OUT4  |         |
+| 5 |   | OUT5  |         |
+| 6 |   | OUT6  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

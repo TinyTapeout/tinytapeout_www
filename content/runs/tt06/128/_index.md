@@ -56,14 +56,14 @@ But i recommend using at least an arduino microcontroller because timing and rep
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | FIR Input data Bit 0  | FIR Output data Bit 0  |      |
-| 1 | FIR Input data Bit 1  | FIR Output data Bit 1  |      |
-| 2 | FIR Input data Bit 2  | FIR Output data Bit 2  |      |
-| 3 | FIR Input data Bit 3  | FIR Output data Bit 3  |      |
-| 4 | FIR Input data Bit 4  | FIR Output data Bit 4  |      |
-| 5 | FIR Input data Bit 5  | FIR Output data Bit 5  |      |
-| 6 | FIR Input data Bit 6  | FIR Output data Bit 6  |      |
-| 7 | FIR Input data Bit 7  | FIR Output data Bit 7  |      |
+| 0 | FIR Input data Bit 0  | FIR Output data Bit 0  | FIR Output data Bit 8        |
+| 1 | FIR Input data Bit 1  | FIR Output data Bit 1  | FIR Output data Bit 9        |
+| 2 | FIR Input data Bit 2  | FIR Output data Bit 2  | FIR Output data Bit 10        |
+| 3 | FIR Input data Bit 3  | FIR Output data Bit 3  | not used        |
+| 4 | FIR Input data Bit 4  | FIR Output data Bit 4  | not used        |
+| 5 | FIR Input data Bit 5  | FIR Output data Bit 5  | not used        |
+| 6 | FIR Input data Bit 6  | FIR Output data Bit 6  | FIR CONFIG ENABLE        |
+| 7 | FIR Input data Bit 7  | FIR Output data Bit 7  | FIR TVALID Input        |
 
 
 ### Chip location

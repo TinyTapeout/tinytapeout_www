@@ -51,14 +51,14 @@ Binary output sensor used for anomaly detection on workload of devices.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | sensor_data  | anomaly_detected  |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | sensor_data  | anomaly_detected  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

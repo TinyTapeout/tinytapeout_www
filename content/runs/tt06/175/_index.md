@@ -128,14 +128,14 @@ Nothing required but without observing outputs it's a bit boring.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | clock  | acc[0]  |      |
-| 1 | cmd[0]  | acc[1]  |      |
-| 2 | cmd[1]  | acc[2]  |      |
-| 3 |   | acc[3]  |      |
-| 4 | cmdarg[0]  | pc[0]  |      |
-| 5 | cmdarg[1]  | pc[1]  |      |
-| 6 | cmdarg[2]  | pc[2]  |      |
-| 7 | cmdarg[3]  |   |      |
+| 0 | clock  | acc[0]  |         |
+| 1 | cmd[0]  | acc[1]  |         |
+| 2 | cmd[1]  | acc[2]  |         |
+| 3 |   | acc[3]  |         |
+| 4 | cmdarg[0]  | pc[0]  |         |
+| 5 | cmdarg[1]  | pc[1]  |         |
+| 6 | cmdarg[2]  | pc[2]  |         |
+| 7 | cmdarg[3]  |   |         |
 
 
 ### Chip location

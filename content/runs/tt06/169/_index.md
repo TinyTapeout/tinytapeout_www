@@ -68,14 +68,14 @@ Currently, the processor does not interface with any external hardware component
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Register 1 (R1) Address bit 0  | Data out bit 0 (either register data / Processor stat)  |      |
-| 1 | Register 1 (R1) Address bit 1  | Data out bit 1 (either register data / 0)  |      |
-| 2 | Register 1 (R1) Address bit 2  | Data out bit 2 (either register data / 0)  |      |
-| 3 | Register 1 (R1) Address bit 3  | Data out bit 3 (either register data / 0)  |      |
-| 4 | Instruction ISA Opcode bit 0  | Data out bit 4 (either register data / 0)  |      |
-| 5 | Instruction ISA Opcode bit 1  | Data out bit 5 (either register data / 0)  |      |
-| 6 | Instruction ISA Opcode bit 2  | Data out bit 6 (either register data / 0)  |      |
-| 7 | Instruction ISA Opcode bit 3  | Data out bit 7 (either register data / 0)  |      |
+| 0 | Register 1 (R1) Address bit 0  | Data out bit 0 (either register data / Processor stat)  | Data in bit 0 / Register 3 (R3) Address bit 0        |
+| 1 | Register 1 (R1) Address bit 1  | Data out bit 1 (either register data / 0)  | Data in bit 1 / Register 3 (R3) Address bit 1        |
+| 2 | Register 1 (R1) Address bit 2  | Data out bit 2 (either register data / 0)  | Data in bit 2 / Register 3 (R3) Address bit 2        |
+| 3 | Register 1 (R1) Address bit 3  | Data out bit 3 (either register data / 0)  | Data in bit 3 / Register 3 (R3) Address bit 3        |
+| 4 | Instruction ISA Opcode bit 0  | Data out bit 4 (either register data / 0)  | Data in bit 4 / Register 2 (R2) Address bit 0        |
+| 5 | Instruction ISA Opcode bit 1  | Data out bit 5 (either register data / 0)  | Data in bit 5 / Register 2 (R2) Address bit 1        |
+| 6 | Instruction ISA Opcode bit 2  | Data out bit 6 (either register data / 0)  | Data in bit 6 / Register 2 (R2) Address bit 2        |
+| 7 | Instruction ISA Opcode bit 3  | Data out bit 7 (either register data / 0)  | Data in bit 7 / Register 2 (R2) Address bit 3        |
 
 
 ### Chip location

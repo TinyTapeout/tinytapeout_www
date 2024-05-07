@@ -299,14 +299,14 @@ Beyond this, you will hopefully find that the Minibyte CPU can be paired with a 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | DEBUG_OUT_SELECT_0  | ADDR_OUT_0  |      |
-| 1 | DEBUG_OUT_SELECT_1  | ADDR_OUT_1  |      |
-| 2 | DEBUG_OUT_SELECT_2  | ADDR_OUT_2  |      |
-| 3 | DEMO_ROM_ENABLE  | ADDR_OUT_3  |      |
-| 4 |   | ADDR_OUT_4  |      |
-| 5 |   | ADDR_OUT_5  |      |
-| 6 |   | ADDR_OUT_6  |      |
-| 7 |   | WE_OUT  |      |
+| 0 | DEBUG_OUT_SELECT_0  | ADDR_OUT_0  | DATA_0        |
+| 1 | DEBUG_OUT_SELECT_1  | ADDR_OUT_1  | DATA_1        |
+| 2 | DEBUG_OUT_SELECT_2  | ADDR_OUT_2  | DATA_2        |
+| 3 | DEMO_ROM_ENABLE  | ADDR_OUT_3  | DATA_3        |
+| 4 |   | ADDR_OUT_4  | DATA_4        |
+| 5 |   | ADDR_OUT_5  | DATA_5        |
+| 6 |   | ADDR_OUT_6  | DATA_6        |
+| 7 |   | WE_OUT  | DATA_7        |
 
 
 ### Chip location

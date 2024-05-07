@@ -44,14 +44,14 @@ ADALM2000. https://www.analog.com/en/resources/evaluation-hardware-and-software/
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | ui_in  | uo_out  |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | ui_in  | uo_out  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

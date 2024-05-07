@@ -60,14 +60,14 @@ W and S control the left paddle. Up and down arrow keys control the right paddle
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Paddle 1 encoder A  | R0  |      |
-| 1 | Paddle 1 encoder B  | G0  |      |
-| 2 | Paddle 2 encoder A  | B0  |      |
-| 3 | Paddle 2 encoder B  | VSYNC  |      |
-| 4 |   | R1  |      |
-| 5 |   | G1  |      |
-| 6 |   | B1  |      |
-| 7 |   | HSYNC  |      |
+| 0 | Paddle 1 encoder A  | R0  |         |
+| 1 | Paddle 1 encoder B  | G0  |         |
+| 2 | Paddle 2 encoder A  | B0  |         |
+| 3 | Paddle 2 encoder B  | VSYNC  |         |
+| 4 |   | R1  |         |
+| 5 |   | G1  |         |
+| 6 |   | B1  |         |
+| 7 |   | HSYNC  |         |
 
 
 ### Chip location

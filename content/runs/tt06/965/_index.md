@@ -140,14 +140,14 @@ Through the SPI interface it is possible to get an analogue signal through a sui
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | parameter bit 0 (LSB)  | output wave bit 0  |      |
-| 1 | parameter bit 1  | output wave bit 1  |      |
-| 2 | parameter bit 2  | output wave bit 2  |      |
-| 3 | parameter bit 3  | output wave bit 3  |      |
-| 4 | parameter bit 4  | output wave bit 4  |      |
-| 5 | parameter bit 5  | output wave bit 5  |      |
-| 6 | parameter bit 6  | output wave bit 6  |      |
-| 7 | parameter bit 7 (MSB)  | output wave bit 7  |      |
+| 0 | parameter bit 0 (LSB)  | output wave bit 0  | (input) enable pin        |
+| 1 | parameter bit 1  | output wave bit 1  | (input) waveform bit 0 pin        |
+| 2 | parameter bit 2  | output wave bit 2  | (input) waveform bit 1 pin        |
+| 3 | parameter bit 3  | output wave bit 3  | (input) set phase pin        |
+| 4 | parameter bit 4  | output wave bit 4  | (input) set amplitude pin        |
+| 5 | parameter bit 5  | output wave bit 5  | (output) spi cs pin        |
+| 6 | parameter bit 6  | output wave bit 6  | (output) spi mosi pin        |
+| 7 | parameter bit 7 (MSB)  | output wave bit 7  | (output) spi clk pin        |
 
 
 ### Chip location

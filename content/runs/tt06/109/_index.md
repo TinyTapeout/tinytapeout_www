@@ -47,14 +47,14 @@ Two signal generators generating the logical signals with a programmable delay (
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Start signal of TDC  | Result (LSB)  |      |
-| 1 | Stop signal of the TDC  | Result  |      |
-| 2 | Select result of ring for output  | Result  |      |
-| 3 | output select (LSB)  | Result  |      |
-| 4 | output select  | Result  |      |
-| 5 | output select  | Result  |      |
-| 6 | output select  | Result  |      |
-| 7 | output select (MSB)  | Result (MSB)  |      |
+| 0 | Start signal of TDC  | Result (LSB)  |         |
+| 1 | Stop signal of the TDC  | Result  |         |
+| 2 | Select result of ring for output  | Result  |         |
+| 3 | output select (LSB)  | Result  |         |
+| 4 | output select  | Result  |         |
+| 5 | output select  | Result  |         |
+| 6 | output select  | Result  |         |
+| 7 | output select (MSB)  | Result (MSB)  |         |
 
 
 ### Chip location

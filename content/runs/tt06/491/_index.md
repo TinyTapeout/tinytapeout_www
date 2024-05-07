@@ -55,14 +55,14 @@ These are some components that you can use for interfacing with the processor:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | Write  |      |
-| 1 |   | Addr  |      |
-| 2 |   | Instr_Addr  |      |
-| 3 |   | PC_Ext_8  |      |
-| 4 |   | PC_Ext_9  |      |
-| 5 |   | PC_Ext_10  |      |
-| 6 |   | PC_Ext_11  |      |
-| 7 |   | PC_Ext_12  |      |
+| 0 |   | Write  | Data_0        |
+| 1 |   | Addr  | Data_1        |
+| 2 |   | Instr_Addr  | Data_2        |
+| 3 |   | PC_Ext_8  | Data_3        |
+| 4 |   | PC_Ext_9  | Data_4        |
+| 5 |   | PC_Ext_10  | Data_5        |
+| 6 |   | PC_Ext_11  | Data_6        |
+| 7 |   | PC_Ext_12  | Data_7        |
 
 
 ### Chip location

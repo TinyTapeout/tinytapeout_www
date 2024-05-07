@@ -46,14 +46,14 @@ There is no external Hardware
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Input for filter  | Output for filter  |      |
-| 1 | Input for filter  | Output for filter  |      |
-| 2 | Input for filter  | Output for filter  |      |
-| 3 | Input for filter  | Output for filter  |      |
-| 4 | Input for filter  | Output for filter  |      |
-| 5 | Input for filter  | Output for filter  |      |
-| 6 | Input for filter  | Output for filter  |      |
-| 7 | Input for filter  | Output for filter  |      |
+| 0 | Input for filter  | Output for filter  | Strobe input        |
+| 1 | Input for filter  | Output for filter  | Strobe output        |
+| 2 | Input for filter  | Output for filter  | Additional input bit        |
+| 3 | Input for filter  | Output for filter  | Additional input bit        |
+| 4 | Input for filter  | Output for filter  | Additional output bit        |
+| 5 | Input for filter  | Output for filter  | Additional output bit        |
+| 6 | Input for filter  | Output for filter  | Filter width input        |
+| 7 | Input for filter  | Output for filter  | Filter width input        |
 
 
 ### Chip location

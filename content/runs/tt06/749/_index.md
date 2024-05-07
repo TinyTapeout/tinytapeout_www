@@ -23,14 +23,14 @@ https://wokwi.com/projects/395618714068432897
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | Out0  |      |
-| 1 | In1  | Out1  |      |
-| 2 | In2  | Out2  |      |
-| 3 |   | Out3  |      |
-| 4 |   | Out4  |      |
-| 5 |   | Out5  |      |
-| 6 |   | Out6  |      |
-| 7 |   | Out7  |      |
+| 0 |   | Out0  |         |
+| 1 | In1  | Out1  |         |
+| 2 | In2  | Out2  |         |
+| 3 |   | Out3  |         |
+| 4 |   | Out4  |         |
+| 5 |   | Out5  |         |
+| 6 |   | Out6  |         |
+| 7 |   | Out7  |         |
 
 
 ### Chip location

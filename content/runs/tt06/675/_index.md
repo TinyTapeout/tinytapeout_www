@@ -41,14 +41,14 @@ Requires a 50MHz oscillator.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | F_select [0]  |   |      |
-| 1 | F_select [1]  |   |      |
-| 2 | F_select [2]  |   |      |
-| 3 | F_select [3]  |   |      |
-| 4 | F_select [4]  |   |      |
-| 5 | reset_n  |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | F_select [0]  |   | clk        |
+| 1 | F_select [1]  |   | clk_out        |
+| 2 | F_select [2]  |   |         |
+| 3 | F_select [3]  |   |         |
+| 4 | F_select [4]  |   |         |
+| 5 | reset_n  |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

@@ -49,14 +49,14 @@ Pattern generator and logic analyzer recommended.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Scan Enable  | PRNG 1 output Trojan Free  |      |
-| 1 | ScanIn 1  | PRNG 2 output trojan inserted  |      |
-| 2 | ScanIn 2  |   |      |
-| 3 | ScanIn 3  |   |      |
-| 4 | ScanIn 4  |   |      |
-| 5 | ScanIn 5  |   |      |
-| 6 | ScanIn 6  |   |      |
-| 7 | ScanIn 7  |   |      |
+| 0 | Scan Enable  | PRNG 1 output Trojan Free  | Input, ScanIn 8        |
+| 1 | ScanIn 1  | PRNG 2 output trojan inserted  | Input, ScanIn 9        |
+| 2 | ScanIn 2  |   | Input, ScanIn 10        |
+| 3 | ScanIn 3  |   | Input, External Trojan Trigger        |
+| 4 | ScanIn 4  |   | Output, single inverter test        |
+| 5 | ScanIn 5  |   | Input, single inverter test        |
+| 6 | ScanIn 6  |   | Input, 8 inverters test        |
+| 7 | ScanIn 7  |   | Output, 8 inverters test        |
 
 
 ### Chip location

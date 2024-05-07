@@ -67,14 +67,14 @@ None, besides the TT demo board.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | run  | a  |      |
-| 1 |   | b  |      |
-| 2 | state_init[0]  | c  |      |
-| 3 | state_init[1]  | d  |      |
-| 4 | state_init[2]  | e  |      |
-| 5 | state_init[3]  | f  |      |
-| 6 |   | g  |      |
-| 7 | no_blink  | dot  |      |
+| 0 | run  | a  |         |
+| 1 |   | b  |         |
+| 2 | state_init[0]  | c  |         |
+| 3 | state_init[1]  | d  |         |
+| 4 | state_init[2]  | e  |         |
+| 5 | state_init[3]  | f  |         |
+| 6 |   | g  |         |
+| 7 | no_blink  | dot  |         |
 
 
 ### Chip location

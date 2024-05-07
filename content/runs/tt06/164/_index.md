@@ -49,14 +49,14 @@ none
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input0  | seg0  |      |
-| 1 | input1  | seg1  |      |
-| 2 | input2  | seg2  |      |
-| 3 | input3  | seg3  |      |
-| 4 | input4  | seg4  |      |
-| 5 | input5  | seg5  |      |
-| 6 | input6  | seg6  |      |
-| 7 | enable display  | seg7  |      |
+| 0 | input0  | seg0  | pwm_bit1        |
+| 1 | input1  | seg1  | pwm_bit2        |
+| 2 | input2  | seg2  | pwm_bit3        |
+| 3 | input3  | seg3  | pwm_bit4        |
+| 4 | input4  | seg4  | pwm_bit5        |
+| 5 | input5  | seg5  | pwm_bit6        |
+| 6 | input6  | seg6  | pwm_bit7        |
+| 7 | enable display  | seg7  | usePwm        |
 
 
 ### Chip location

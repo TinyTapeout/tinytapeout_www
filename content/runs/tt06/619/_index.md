@@ -97,14 +97,14 @@ A 4-position DIP Switch for the input, which will serve to form the 4-bit binary
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Bit 0  | Segmento g  |      |
-| 1 | Bit 1  | Segmento f  |      |
-| 2 | Bit 2  | Segmento e  |      |
-| 3 | Bit 3  | Segmento d  |      |
-| 4 | no use  | Segmento c  |      |
-| 5 | no use  | Segmento b  |      |
-| 6 | no use  | Segmento a  |      |
-| 7 | no use  | no use  |      |
+| 0 | Bit 0  | Segmento g  | no use        |
+| 1 | Bit 1  | Segmento f  | no use        |
+| 2 | Bit 2  | Segmento e  | no use        |
+| 3 | Bit 3  | Segmento d  | no use        |
+| 4 | no use  | Segmento c  | no use        |
+| 5 | no use  | Segmento b  | no use        |
+| 6 | no use  | Segmento a  | no use        |
+| 7 | no use  | no use  | no use        |
 
 
 ### Chip location

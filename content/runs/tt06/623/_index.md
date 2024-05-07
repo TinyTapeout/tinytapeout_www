@@ -60,14 +60,14 @@ The external hardware includes one LED, a 1k ohm resistor, and three 2-position 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | load 0  |   |      |
-| 1 | load 1  |   |      |
-| 2 | load 2  |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   | PWM  |      |
+| 0 | load 0  |   |         |
+| 1 | load 1  |   |         |
+| 2 | load 2  |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   | PWM  |         |
 
 
 ### Chip location

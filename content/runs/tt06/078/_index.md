@@ -39,14 +39,14 @@ Additionally the 7-Segment-Display will always show how many outputs are current
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input PWM of channel 0  | segment a  |      |
-| 1 | input PWM of channel 1  | segment b  |      |
-| 2 | input PWM of channel 2  | segment c  |      |
-| 3 | input PWM of channel 3  | segment d  |      |
-| 4 | input PWM of channel 4  | segment e  |      |
-| 5 | input PWM of channel 5  | segment f  |      |
-| 6 | input PWM of channel 6  | segment g  |      |
-| 7 | input PWM of channel 7  | UART Transmit Wire  |      |
+| 0 | input PWM of channel 0  | segment a  | output of channel 0        |
+| 1 | input PWM of channel 1  | segment b  | output of channel 1        |
+| 2 | input PWM of channel 2  | segment c  | output of channel 2        |
+| 3 | input PWM of channel 3  | segment d  | output of channel 3        |
+| 4 | input PWM of channel 4  | segment e  | output of channel 4        |
+| 5 | input PWM of channel 5  | segment f  | output of channel 5        |
+| 6 | input PWM of channel 6  | segment g  | output of channel 6        |
+| 7 | input PWM of channel 7  | UART Transmit Wire  | output of channel 7        |
 
 
 ### Chip location

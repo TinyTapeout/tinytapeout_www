@@ -45,14 +45,14 @@ non by default.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input for Lipsi, also switch of blinking LED  | segment a  |      |
-| 1 | input for Lipsi  | segment b  |      |
-| 2 | input for Lipsi  | segment c  |      |
-| 3 | input for Lipsi  | segment d  |      |
-| 4 | input for Lipsi  | segment e  |      |
-| 5 | input for Lipsi  | segment f  |      |
-| 6 | input for Lipsi  | segment g  |      |
-| 7 | input for Lipsi  | dp (blinking)  |      |
+| 0 | input for Lipsi, also switch of blinking LED  | segment a  |         |
+| 1 | input for Lipsi  | segment b  |         |
+| 2 | input for Lipsi  | segment c  |         |
+| 3 | input for Lipsi  | segment d  |         |
+| 4 | input for Lipsi  | segment e  |         |
+| 5 | input for Lipsi  | segment f  |         |
+| 6 | input for Lipsi  | segment g  |         |
+| 7 | input for Lipsi  | dp (blinking)  |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ PMOD, 7-segment display, breadboard
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Clock 10 MHz  | 7-seg[0]  |      |
-| 1 | Clock 12 MHz  | 7-seg[1]  |      |
-| 2 | Clock 14 MHz  | 7-seg[2]  |      |
-| 3 | Clock 20 MHz  | 7-seg[3]  |      |
-| 4 | Show Minuetes  | 7-seg[4]  |      |
-| 5 | Show Hours  | 7-seg[5]  |      |
-| 6 |   | 7-seg[6]  |      |
-| 7 |   | 7-seg[7]  |      |
+| 0 | Clock 10 MHz  | 7-seg[0]  |         |
+| 1 | Clock 12 MHz  | 7-seg[1]  |         |
+| 2 | Clock 14 MHz  | 7-seg[2]  |         |
+| 3 | Clock 20 MHz  | 7-seg[3]  |         |
+| 4 | Show Minuetes  | 7-seg[4]  |         |
+| 5 | Show Hours  | 7-seg[5]  |         |
+| 6 |   | 7-seg[6]  |         |
+| 7 |   | 7-seg[7]  |         |
 
 
 ### Chip location

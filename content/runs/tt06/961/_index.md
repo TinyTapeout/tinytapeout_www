@@ -57,14 +57,14 @@ Microntroller/computer (e.g. STM32, Arduino, Raspberry Pi, ...), ws2812b LED (st
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | i2c SCL alternative for PNP open collector  |      |
-| 1 |   | i2c SDA alternative for PNP open collector  |      |
-| 2 |   | ws2812b LED output  |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   | i2c SCL alternative for PNP open collector  | i2c SCL        |
+| 1 |   | i2c SDA alternative for PNP open collector  | i2c SDA        |
+| 2 |   | ws2812b LED output  |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

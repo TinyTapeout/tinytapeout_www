@@ -58,14 +58,14 @@ Given the utilization of an 8-bit output signal in the block diagram, no overflo
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data_input [0]  |   |      |
-| 1 | data_input [1]  |   |      |
-| 2 | data_input [2]  |   |      |
-| 3 | data_input [3]  |   |      |
-| 4 | Op_select [4]  |   |      |
-| 5 | Op_select [5]  |   |      |
-| 6 | Op_select [6]  |   |      |
-| 7 | Op_select [7]  |   |      |
+| 0 | data_input [0]  |   | clk        |
+| 1 | data_input [1]  |   | reset_n        |
+| 2 | data_input [2]  |   | save_a_n        |
+| 3 | data_input [3]  |   | save_b_n        |
+| 4 | Op_select [4]  |   | uart_tx_en        |
+| 5 | Op_select [5]  |   | uart_txd        |
+| 6 | Op_select [6]  |   | uartbusy        |
+| 7 | Op_select [7]  |   |         |
 
 
 ### Chip location

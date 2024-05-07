@@ -49,14 +49,14 @@ Generador de señales para generar la señal de reloj de 10MHz, osciloscopio par
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | no use  | PWM  |      |
-| 1 | no use  | no use  |      |
-| 2 | no use  | no use  |      |
-| 3 | speed[0]  | no use  |      |
-| 4 | speed[1]  | no use  |      |
-| 5 | speed[3]  | no use  |      |
-| 6 | enable  | no use  |      |
-| 7 | clock  | no use  |      |
+| 0 | no use  | PWM  | no use        |
+| 1 | no use  | no use  | no use        |
+| 2 | no use  | no use  | no use        |
+| 3 | speed[0]  | no use  | no use        |
+| 4 | speed[1]  | no use  | no use        |
+| 5 | speed[3]  | no use  | no use        |
+| 6 | enable  | no use  | no use        |
+| 7 | clock  | no use  | no use        |
 
 
 ### Chip location

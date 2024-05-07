@@ -42,14 +42,14 @@ TT06 printed circuit board, signal generator, an oscilliscope or similar to meas
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | D Flip Flop Input  | D Flip Flop output  |      |
-| 1 | Inverter 1 input  | Inverter 1 output  |      |
-| 2 | Inverter 2 input  | Inverter 2 output  |      |
-| 3 | Inverter 3 input  | Inverter 3 output  |      |
-| 4 | Inverter 4 input  | Inverter 4 output  |      |
-| 5 | Inverter 5 input  | Inverter 5 output  |      |
-| 6 | Inverter 6 input, also the output enable for all bidirectional pins connected to inverter inputs  | Inverter 6 output  |      |
-| 7 | Inverter 7 input, also the output enable for all bidirectional pins connected to inverter output  | Inverter 7 output  |      |
+| 0 | D Flip Flop Input  | D Flip Flop output  | Bidirectional inverter 1 input        |
+| 1 | Inverter 1 input  | Inverter 1 output  | Bidirectional inverter 1 output        |
+| 2 | Inverter 2 input  | Inverter 2 output  | Bidirectional inverter 2 input        |
+| 3 | Inverter 3 input  | Inverter 3 output  | Bidirectional inverter 2 output        |
+| 4 | Inverter 4 input  | Inverter 4 output  | Bidirectional inverter 3 input        |
+| 5 | Inverter 5 input  | Inverter 5 output  | Bidirectional inverter 3 output        |
+| 6 | Inverter 6 input, also the output enable for all bidirectional pins connected to inverter inputs  | Inverter 6 output  | Bidirectional inverter 4 input        |
+| 7 | Inverter 7 input, also the output enable for all bidirectional pins connected to inverter output  | Inverter 7 output  | Bidirectional inverter 4 output        |
 
 
 ### Chip location

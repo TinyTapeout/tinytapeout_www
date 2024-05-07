@@ -65,14 +65,14 @@ Manual mode: Set the input pin 7 to HIGH and toggle input pins 0-3. The characte
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | BCD Bit 3 (A)  | segment a  |      |
-| 1 | BCD Bit 2 (A)  | segment b  |      |
-| 2 | BCD Bit 1 (A)  | segment c  |      |
-| 3 | BCD Bit 0 (A)  | segment d  |      |
-| 4 |   | segment e  |      |
-| 5 |   | segment f  |      |
-| 6 |   | segment g  |      |
-| 7 | Manual Input Mode  | segment dp  |      |
+| 0 | BCD Bit 3 (A)  | segment a  |         |
+| 1 | BCD Bit 2 (A)  | segment b  |         |
+| 2 | BCD Bit 1 (A)  | segment c  |         |
+| 3 | BCD Bit 0 (A)  | segment d  |         |
+| 4 |   | segment e  |         |
+| 5 |   | segment f  |         |
+| 6 |   | segment g  |         |
+| 7 | Manual Input Mode  | segment dp  |         |
 
 
 ### Chip location

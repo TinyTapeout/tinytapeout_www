@@ -35,14 +35,14 @@ N/A
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | vote0  |   |      |
-| 1 | vote1  |   |      |
-| 2 | vote2  |   |      |
-| 3 | vote3  |   |      |
-| 4 | vote4  |   |      |
-| 5 | vote5  |   |      |
-| 6 | vote6  |   |      |
-| 7 | vote7  |   |      |
+| 0 | vote0  |   |         |
+| 1 | vote1  |   |         |
+| 2 | vote2  |   |         |
+| 3 | vote3  |   |         |
+| 4 | vote4  |   |         |
+| 5 | vote5  |   |         |
+| 6 | vote6  |   |         |
+| 7 | vote7  |   |         |
 
 
 ### Chip location

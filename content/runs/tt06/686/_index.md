@@ -57,14 +57,14 @@ Se puede utilizar un generador de señales para el reloj (clk) y una base de tie
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data_in  | Data_Out  |      |
-| 1 | clk  | No_Used  |      |
-| 2 | rst  | No_Used  |      |
-| 3 | ena  | No_Used  |      |
-| 4 | leri  | No_Used  |      |
-| 5 | No_Used  | No_Used  |      |
-| 6 | No_Used  | No_Used  |      |
-| 7 | No_Used  | No_Used  |      |
+| 0 | data_in  | Data_Out  | No_Used        |
+| 1 | clk  | No_Used  | No_Used        |
+| 2 | rst  | No_Used  | No_Used        |
+| 3 | ena  | No_Used  | No_Used        |
+| 4 | leri  | No_Used  | No_Used        |
+| 5 | No_Used  | No_Used  | No_Used        |
+| 6 | No_Used  | No_Used  | No_Used        |
+| 7 | No_Used  | No_Used  | No_Used        |
 
 
 ### Chip location

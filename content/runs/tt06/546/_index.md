@@ -41,14 +41,14 @@ These pins are never in high-z state.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | CLK  | POPCNT_Y0  |      |
-| 1 | RST  | POPCNT_Y1  |      |
-| 2 | A1  | POPCNT_Z0  |      |
-| 3 | A2  | POPCNT_Z1  |      |
-| 4 | B1  |   |      |
-| 5 | B2  |   |      |
-| 6 | SEL  |   |      |
-| 7 | OE  |   |      |
+| 0 | CLK  | POPCNT_Y0  | Y1        |
+| 1 | RST  | POPCNT_Y1  | Y2        |
+| 2 | A1  | POPCNT_Z0  | YP        |
+| 3 | A2  | POPCNT_Z1  | Z1        |
+| 4 | B1  |   | Z2        |
+| 5 | B2  |   | ZP        |
+| 6 | SEL  |   |         |
+| 7 | OE  |   |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ https://github.com/Obijuan/simplez-fpga
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | RX Serial Input from Keyboard  | LED 0  |      |
-| 1 |   | LED 1  |      |
-| 2 |   | LED 2  |      |
-| 3 |   | LED 3  |      |
-| 4 |   | LED 4  |      |
-| 5 |   | LED 5  |      |
-| 6 |   | LED 6  |      |
-| 7 |   | LED 7  |      |
+| 0 | RX Serial Input from Keyboard  | LED 0  | Stop Signal Indicator        |
+| 1 |   | LED 1  | TX Serial Output to Display        |
+| 2 |   | LED 2  |         |
+| 3 |   | LED 3  |         |
+| 4 |   | LED 4  |         |
+| 5 |   | LED 5  |         |
+| 6 |   | LED 6  |         |
+| 7 |   | LED 7  |         |
 
 
 ### Chip location

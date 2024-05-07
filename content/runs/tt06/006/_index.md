@@ -72,14 +72,14 @@ Amplifier module MA12070p and ftdi usb to i2c module :-)
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | rx_in  | amp_i2s_bck  |      |
-| 1 | debug_in  | amp_i2s_ws  |      |
-| 2 |   | amp_i2s_d0  |      |
-| 3 |   | amp_nenable  |      |
-| 4 |   | amp_nmute  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   | pwm_out  |      |
+| 0 | rx_in  | amp_i2s_bck  | i2c_scl        |
+| 1 | debug_in  | amp_i2s_ws  | i2c_sda        |
+| 2 |   | amp_i2s_d0  | amp_i2c_scl        |
+| 3 |   | amp_nenable  | amp_i2c_sda        |
+| 4 |   | amp_nmute  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   | pwm_out  |         |
 
 
 ### Chip location

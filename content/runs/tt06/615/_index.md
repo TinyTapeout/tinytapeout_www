@@ -74,14 +74,14 @@ FPGA Cyclone II EP2C35F672C6ES
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 | CLK  |   |      |
-| 2 | RST  | I4  |      |
-| 3 | select[0]  | I3  |      |
-| 4 | select[1]  | I2  |      |
-| 5 |   | I1  |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   |         |
+| 1 | CLK  |   |         |
+| 2 | RST  | I4  |         |
+| 3 | select[0]  | I3  |         |
+| 4 | select[1]  | I2  | paso        |
+| 5 |   | I1  | sentido        |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

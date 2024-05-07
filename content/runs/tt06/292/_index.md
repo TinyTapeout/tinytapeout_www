@@ -52,14 +52,14 @@ Charlieplexed hexagonal display:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Data  |   |      |
-| 1 | Display Enable  |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | Data  |   | Display pin 0        |
+| 1 | Display Enable  |   | Display pin 1        |
+| 2 |   |   | Display pin 2        |
+| 3 |   |   | Display pin 3        |
+| 4 |   |   | Display pin 4        |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

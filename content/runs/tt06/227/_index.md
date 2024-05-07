@@ -118,14 +118,14 @@ It may be useful to have buttons to use on the GPIO inputs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Interrupt 0  | UART TX  |      |
-| 1 | Interrupt 1  | UART RTS  |      |
-| 2 | SPI MISO  | SPI DC  |      |
-| 3 | GP in3  | SPI MOSI  |      |
-| 4 | GP in4  | SPI CS  |      |
-| 5 | GP in5  | SPI SCK  |      |
-| 6 | GP in6  | Debug UART TX  |      |
-| 7 | UART RX  | Debug signal  |      |
+| 0 | Interrupt 0  | UART TX  | Flash CS        |
+| 1 | Interrupt 1  | UART RTS  | SD0        |
+| 2 | SPI MISO  | SPI DC  | SD1        |
+| 3 | GP in3  | SPI MOSI  | SCK        |
+| 4 | GP in4  | SPI CS  | SD2        |
+| 5 | GP in5  | SPI SCK  | SD3        |
+| 6 | GP in6  | Debug UART TX  | RAM A CS        |
+| 7 | UART RX  | Debug signal  | RAM B CS        |
 
 
 ### Chip location

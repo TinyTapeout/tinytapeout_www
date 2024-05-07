@@ -41,14 +41,14 @@ You might need a breadboard and buttons for the controls, as well as a 7-segment
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | btn1_incAni  | segment a1  |      |
-| 1 | btn2_decAni  | segment b2  |      |
-| 2 | btn3_incSpeed  | segment c3  |      |
-| 3 | btn4_decSpeed  | segment d4  |      |
-| 4 |   | segment e5  |      |
-| 5 |   | segment f6  |      |
-| 6 |   | segment g7  |      |
-| 7 |   |   |      |
+| 0 | btn1_incAni  | segment a1  |         |
+| 1 | btn2_decAni  | segment b2  |         |
+| 2 | btn3_incSpeed  | segment c3  |         |
+| 3 | btn4_decSpeed  | segment d4  |         |
+| 4 |   | segment e5  |         |
+| 5 |   | segment f6  |         |
+| 6 |   | segment g7  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

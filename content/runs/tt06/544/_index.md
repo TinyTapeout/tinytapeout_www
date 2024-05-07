@@ -41,14 +41,14 @@ External hardware with basic memory, wiring, and data displaying functionality s
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data[0]  | out[0]  |      |
-| 1 | data[1]  | out[1]  |      |
-| 2 | data[2]  | out[2]  |      |
-| 3 | data[3]  | out[3]  |      |
-| 4 | data[4]  | out[4]  |      |
-| 5 | data[5]  | out[5]  |      |
-| 6 | data[6]  | out[6]  |      |
-| 7 | data[7]  | out[7]  |      |
+| 0 | data[0]  | out[0]  | decrypt        |
+| 1 | data[1]  | out[1]  | r_num[0]        |
+| 2 | data[2]  | out[2]  | r_num[1]        |
+| 3 | data[3]  | out[3]  | r_num[2]        |
+| 4 | data[4]  | out[4]  | index_out[0]        |
+| 5 | data[5]  | out[5]  | index_out[1]        |
+| 6 | data[6]  | out[6]  | index_out[2]        |
+| 7 | data[7]  | out[7]  |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ piezo
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | nc  | nc  |      |
-| 1 | nc  | nc  |      |
-| 2 | nc  | nc  |      |
-| 3 | nc  | nc  |      |
-| 4 | nc  | nc  |      |
-| 5 | nc  | nc  |      |
-| 6 | nc  | nc  |      |
-| 7 | nc  | nc  |      |
+| 0 | nc  | nc  | nc        |
+| 1 | nc  | nc  | nc        |
+| 2 | nc  | nc  | nc        |
+| 3 | nc  | nc  | nc        |
+| 4 | nc  | nc  | nc        |
+| 5 | nc  | nc  | nc        |
+| 6 | nc  | nc  | pwm_pos        |
+| 7 | nc  | nc  | pwm_neg        |
 
 
 ### Chip location

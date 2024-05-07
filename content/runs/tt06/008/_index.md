@@ -41,14 +41,14 @@ non by default
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | left player up  | r[1]  |      |
-| 1 | left player down  | g[1]  |      |
-| 2 | right player up  | b[1]  |      |
-| 3 | right player down  | v-sync  |      |
-| 4 | engage left player autopilot  | r[0]  |      |
-| 5 | engage right player autopilot  | g[0]  |      |
-| 6 | not used  | b[0]  |      |
-| 7 | not used  | h-sync  |      |
+| 0 | left player up  | r[1]  | state[0]        |
+| 1 | left player down  | g[1]  | state[1]        |
+| 2 | right player up  | b[1]  | state[2]        |
+| 3 | right player down  | v-sync  | v-sync        |
+| 4 | engage left player autopilot  | r[0]  | h-sync        |
+| 5 | engage right player autopilot  | g[0]  | left player lost        |
+| 6 | not used  | b[0]  | right player lost        |
+| 7 | not used  | h-sync  | game tick        |
 
 
 ### Chip location

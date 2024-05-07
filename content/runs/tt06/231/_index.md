@@ -228,14 +228,14 @@ the IC comes back.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Enable ADC  | ADC LSB  |      |
-| 1 |   | ADC MSB-6  |      |
-| 2 |   | ADC MSB-5  |      |
-| 3 |   | ADC MSB-4  |      |
-| 4 |   | ADC MSB-3  |      |
-| 5 |   | ADC MSB-2  |      |
-| 6 |   | ADC MSB-1  |      |
-| 7 |   | ADC MSB (two's complement)  |      |
+| 0 | Enable ADC  | ADC LSB  | Conversion Done        |
+| 1 |   | ADC MSB-6  |         |
+| 2 |   | ADC MSB-5  |         |
+| 3 |   | ADC MSB-4  |         |
+| 4 |   | ADC MSB-3  |         |
+| 5 |   | ADC MSB-2  |         |
+| 6 |   | ADC MSB-1  |         |
+| 7 |   | ADC MSB (two's complement)  |         |
 
 ### Analog pins
 

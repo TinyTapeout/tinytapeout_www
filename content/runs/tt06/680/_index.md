@@ -59,14 +59,14 @@ For external hardware you'll need:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Sel_A_in [0]  | Disp_out[6]  |      |
-| 1 | Sel_A_in [1]  | Disp_out[7]  |      |
-| 2 | Num_B_in [0]  | Disp_out[8]  |      |
-| 3 | Num_B_in [1]  | Disp_out[9]  |      |
-| 4 | Num_B_in [2]  | Disp_out[10]  |      |
-| 5 | Num_A_in [0]  | Disp_out[11]  |      |
-| 6 | Num_A_in [1]  | Disp_out[12]  |      |
-| 7 | Num_A_in [2]  | Disp_out[13]  |      |
+| 0 | Sel_A_in [0]  | Disp_out[6]  |         |
+| 1 | Sel_A_in [1]  | Disp_out[7]  | Disp_out[0]        |
+| 2 | Num_B_in [0]  | Disp_out[8]  | Disp_out[1]        |
+| 3 | Num_B_in [1]  | Disp_out[9]  | Disp_out[2]        |
+| 4 | Num_B_in [2]  | Disp_out[10]  | Disp_out[3]        |
+| 5 | Num_A_in [0]  | Disp_out[11]  | Disp_out[4]        |
+| 6 | Num_A_in [1]  | Disp_out[12]  | Disp_out[5]        |
+| 7 | Num_A_in [2]  | Disp_out[13]  | Sel_M_in        |
 
 
 ### Chip location

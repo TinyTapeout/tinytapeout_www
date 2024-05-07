@@ -48,14 +48,14 @@ Pullup resistors are needed to communicate through i2c, if not provided.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | encoder_a  | motor_positive  |      |
-| 1 | encoder_b  | motor_negative  |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 | scl  |   |      |
+| 0 | encoder_a  | motor_positive  | sda        |
+| 1 | encoder_b  | motor_negative  |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 | scl  |   |         |
 
 
 ### Chip location

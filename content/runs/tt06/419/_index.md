@@ -105,14 +105,14 @@ Set SW1 and/or SW2 at reset time to adjust speed in case the design doesn't run 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data in 0  | address out 8  |      |
-| 1 | data in 1  | address out 9  |      |
-| 2 | data in 2  | address out 10  |      |
-| 3 | data in 3  | address out 11  |      |
-| 4 | data in 4  | address out 12  |      |
-| 5 | data in 5  | address out 13  |      |
-| 6 | data in 6  | address out 14  |      |
-| 7 | data in 7  | write enable  |      |
+| 0 | data in 0  | address out 8  | address out 0 / data out 0        |
+| 1 | data in 1  | address out 9  | address out 1 / data out 1        |
+| 2 | data in 2  | address out 10  | address out 2 / data out 2        |
+| 3 | data in 3  | address out 11  | address out 3 / data out 3        |
+| 4 | data in 4  | address out 12  | address out 4 / data out 4        |
+| 5 | data in 5  | address out 13  | address out 5 / data out 5        |
+| 6 | data in 6  | address out 14  | address out 6 / data out 6        |
+| 7 | data in 7  | write enable  | address out 7 / data out 7        |
 
 
 ### Chip location

@@ -64,14 +64,14 @@ interval,count,add commands.  Observe the step pulses on the uo_out[0]
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | step  |      |
-| 1 |   | dir  |      |
-| 2 |   | other2  |      |
-| 3 |   | other3  |      |
-| 4 |   | other4  |      |
-| 5 |   | other5  |      |
-| 6 |   | other6  |      |
-| 7 |   | other7  |      |
+| 0 |   | step  | spi_cs        |
+| 1 |   | dir  | spi_mosi        |
+| 2 |   | other2  | spi_miso        |
+| 3 |   | other3  | spi_sclk        |
+| 4 |   | other4  | signal_irq        |
+| 5 |   | other5  | signal_shutdown        |
+| 6 |   | other6  |         |
+| 7 |   | other7  |         |
 
 
 ### Chip location

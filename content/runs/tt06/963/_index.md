@@ -59,14 +59,14 @@ You do not need any special external hardware.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input signal bit 0  | output signal bit 0  |      |
-| 1 | input signal bit 1  | output signal bit 1  |      |
-| 2 | input signal bit 2  | output signal bit 2  |      |
-| 3 | input signal bit 3  | output signal bit 3  |      |
-| 4 | input signal bit 4  | output signal bit 4  |      |
-| 5 | input signal bit 5  | output signal bit 5  |      |
-| 6 | input signal bit 6  | output signal bit 6  |      |
-| 7 | input signal bit 7  | output signal bit 7  |      |
+| 0 | input signal bit 0  | output signal bit 0  | input coefficient bit 0        |
+| 1 | input signal bit 1  | output signal bit 1  | input coefficient bit 1        |
+| 2 | input signal bit 2  | output signal bit 2  | input coefficient bit 2        |
+| 3 | input signal bit 3  | output signal bit 3  | input coefficient bit 3        |
+| 4 | input signal bit 4  | output signal bit 4  | input coefficient bit 4        |
+| 5 | input signal bit 5  | output signal bit 5  | input coefficient bit 5        |
+| 6 | input signal bit 6  | output signal bit 6  | input coefficient bit 6        |
+| 7 | input signal bit 7  | output signal bit 7  | input coefficient bit 7        |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ Camera, screen
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | spi_sck_i  | spi_sdo_o  |      |
-| 1 | spi_cs_i  | lfsr_done  |      |
-| 2 | spi_sdi_i  | ena  |      |
-| 3 | select_process_i[0]  | output_px[0]  |      |
-| 4 | select_process_i[1]  | output_px[1]  |      |
-| 5 | start_sobel_i  | output_px[2]  |      |
-| 6 |   | output_px[3]  |      |
-| 7 |   | output_px[4]  |      |
+| 0 | spi_sck_i  | spi_sdo_o  | LFSR_enable_i        |
+| 1 | spi_cs_i  | lfsr_done  | seed_stop_i        |
+| 2 | spi_sdi_i  | ena  | lfsr_en_i        |
+| 3 | select_process_i[0]  | output_px[0]  |         |
+| 4 | select_process_i[1]  | output_px[1]  |         |
+| 5 | start_sobel_i  | output_px[2]  |         |
+| 6 |   | output_px[3]  |         |
+| 7 |   | output_px[4]  |         |
 
 
 ### Chip location

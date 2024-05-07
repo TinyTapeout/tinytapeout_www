@@ -66,14 +66,14 @@ El hardware externo utilizado es:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | a (bit 0)  | out (bit 0)  |      |
-| 1 | a (bit 1)  | out (bit 1)  |      |
-| 2 | b (bit 0)  | out (bit 2)  |      |
-| 3 | b (bit 1)  | out (bit 3)  |      |
-| 4 | not used  | not used  |      |
-| 5 | not used  | not used  |      |
-| 6 | not used  | not used  |      |
-| 7 | not used  | not used  |      |
+| 0 | a (bit 0)  | out (bit 0)  | not used        |
+| 1 | a (bit 1)  | out (bit 1)  | not used        |
+| 2 | b (bit 0)  | out (bit 2)  | not used        |
+| 3 | b (bit 1)  | out (bit 3)  | not used        |
+| 4 | not used  | not used  | not used        |
+| 5 | not used  | not used  | not used        |
+| 6 | not used  | not used  | not used        |
+| 7 | not used  | not used  | not used        |
 
 
 ### Chip location

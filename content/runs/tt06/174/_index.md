@@ -54,14 +54,14 @@ No external hardware is used
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | loadIt[0]  | newBit  |      |
-| 1 | loadIt[1]  |   |      |
-| 2 | enable  |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | loadIt[0]  | newBit  |         |
+| 1 | loadIt[1]  |   |         |
+| 2 | enable  |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

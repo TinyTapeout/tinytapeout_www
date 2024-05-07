@@ -41,14 +41,14 @@ None,beside the TT demo board.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | run  | led_a  |      |
-| 1 | state_init[0]  | led_b  |      |
-| 2 | state_init[1]  | led_c  |      |
-| 3 | state_init[2]  | led_d  |      |
-| 4 | state_init[3]  | led_e  |      |
-| 5 | unused  | led_f  |      |
-| 6 | unused  | led_g  |      |
-| 7 | unused  | led_h  |      |
+| 0 | run  | led_a  |         |
+| 1 | state_init[0]  | led_b  |         |
+| 2 | state_init[1]  | led_c  |         |
+| 3 | state_init[2]  | led_d  |         |
+| 4 | state_init[3]  | led_e  |         |
+| 5 | unused  | led_f  |         |
+| 6 | unused  | led_g  |         |
+| 7 | unused  | led_h  |         |
 
 
 ### Chip location

@@ -53,14 +53,14 @@ VGA Display, external buttons for input
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | none  | R1  |      |
-| 1 | none  | G1  |      |
-| 2 | none  | B1  |      |
-| 3 | none  | vsync  |      |
-| 4 | Right  | R0  |      |
-| 5 | Left  | G0  |      |
-| 6 | Down  | B0  |      |
-| 7 | Up  | hsync  |      |
+| 0 | none  | R1  | none        |
+| 1 | none  | G1  | none        |
+| 2 | none  | B1  | none        |
+| 3 | none  | vsync  | none        |
+| 4 | Right  | R0  | none        |
+| 5 | Left  | G0  | none        |
+| 6 | Down  | B0  | none        |
+| 7 | Up  | hsync  | none        |
 
 
 ### Chip location

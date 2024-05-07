@@ -41,14 +41,14 @@ A RC servo is required for testing.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | position bit 0  |   |      |
-| 1 | position bit 1  |   |      |
-| 2 | position bit 2  |   |      |
-| 3 | position bit 3  |   |      |
-| 4 | position bit 4  |   |      |
-| 5 | position bit 5  |   |      |
-| 6 | position bit 6  |   |      |
-| 7 | position bit 7  |   |      |
+| 0 | position bit 0  |   |         |
+| 1 | position bit 1  |   |         |
+| 2 | position bit 2  |   |         |
+| 3 | position bit 3  |   |         |
+| 4 | position bit 4  |   |         |
+| 5 | position bit 5  |   |         |
+| 6 | position bit 6  |   |         |
+| 7 | position bit 7  |   | servo pulse        |
 
 
 ### Chip location

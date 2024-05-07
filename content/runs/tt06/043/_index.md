@@ -51,14 +51,14 @@ Base on your desired connection of the buttons you might need an additional powe
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | push button - right  | display column 0  |      |
-| 1 | push button - left  | display column 1  |      |
-| 2 |   | display column 2  |      |
-| 3 |   | display column 3  |      |
-| 4 |   | display column 4  |      |
-| 5 |   | display column 5  |      |
-| 6 |   | display column 6  |      |
-| 7 |   | display column 7  |      |
+| 0 | push button - right  | display column 0  | display row 0        |
+| 1 | push button - left  | display column 1  | display row 1        |
+| 2 |   | display column 2  | display row 2        |
+| 3 |   | display column 3  | display row 3        |
+| 4 |   | display column 4  | display row 4        |
+| 5 |   | display column 5  | display row 5        |
+| 6 |   | display column 6  | display row 6        |
+| 7 |   | display column 7  | display row 7        |
 
 
 ### Chip location

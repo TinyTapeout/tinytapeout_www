@@ -46,14 +46,14 @@ For output use a single 7 segment display with common cathode.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | B3  | A  |      |
-| 1 | B2  | B  |      |
-| 2 | B1  | C  |      |
-| 3 | B0  | D  |      |
-| 4 |   | E  |      |
-| 5 |   | F  |      |
-| 6 |   | G  |      |
-| 7 |   |   |      |
+| 0 | B3  | A  |         |
+| 1 | B2  | B  |         |
+| 2 | B1  | C  |         |
+| 3 | B0  | D  |         |
+| 4 |   | E  |         |
+| 5 |   | F  |         |
+| 6 |   | G  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

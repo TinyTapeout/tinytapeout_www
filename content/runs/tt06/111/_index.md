@@ -31,14 +31,14 @@ Optionally, data can be provided on the input pins and consumed on the output pi
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Input Port  | Output Port  |      |
-| 1 | Input Port  | Output Port  |      |
-| 2 | Input Port  | Output Port  |      |
-| 3 | Input Port  | Output Port  |      |
-| 4 | Input Port  | Output Port  |      |
-| 5 | Input Port  | Output Port  |      |
-| 6 | Input Port  | Output Port  |      |
-| 7 | Input Port  | Output Port  |      |
+| 0 | Input Port  | Output Port  |         |
+| 1 | Input Port  | Output Port  |         |
+| 2 | Input Port  | Output Port  | SCL        |
+| 3 | Input Port  | Output Port  | SDA        |
+| 4 | Input Port  | Output Port  | HALTED        |
+| 5 | Input Port  | Output Port  |         |
+| 6 | Input Port  | Output Port  |         |
+| 7 | Input Port  | Output Port  |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ Dip switch and 7 segment display screen.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | A0  | a  |      |
-| 1 | A1  | b  |      |
-| 2 | B0  | c  |      |
-| 3 | B1  | d  |      |
-| 4 | Multiply  | e  |      |
-| 5 | Sum  | f  |      |
-| 6 | Subtract  | g  |      |
-| 7 |   |   |      |
+| 0 | A0  | a  |         |
+| 1 | A1  | b  |         |
+| 2 | B0  | c  |         |
+| 3 | B1  | d  |         |
+| 4 | Multiply  | e  |         |
+| 5 | Sum  | f  |         |
+| 6 | Subtract  | g  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

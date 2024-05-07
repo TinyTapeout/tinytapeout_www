@@ -64,14 +64,14 @@ Connect either low-current (5-10 ma) LEDS or a LED Driver device a Logic Analyze
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | y_target0  | y_pos0  |      |
-| 1 | y_target1  | y_pos1  |      |
-| 2 | y_target2  | y_pos2  |      |
-| 3 | y_target3  | y_pos3  |      |
-| 4 | x_target0  | x_pos0  |      |
-| 5 | x_target1  | x_pos1  |      |
-| 6 | x_target2  | x_pos2  |      |
-| 7 | x_target3  | x_pos3  |      |
+| 0 | y_target0  | y_pos0  | motion_inp        |
+| 1 | y_target1  | y_pos1  |         |
+| 2 | y_target2  | y_pos2  |         |
+| 3 | y_target3  | y_pos3  |         |
+| 4 | x_target0  | x_pos0  |         |
+| 5 | x_target1  | x_pos1  |         |
+| 6 | x_target2  | x_pos2  |         |
+| 7 | x_target3  | x_pos3  |         |
 
 
 ### Chip location

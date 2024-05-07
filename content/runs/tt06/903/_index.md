@@ -57,14 +57,14 @@ Oscilloscope to observe the outputs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | A0  | Q0  |      |
-| 1 | A1  | Q1  |      |
-| 2 | A2  | Q2  |      |
-| 3 | A3  | Q3  |      |
-| 4 | ENPB  | RCOB  |      |
-| 5 | ENTB  |   |      |
-| 6 | LOADB  |   |      |
-| 7 | UP  |   |      |
+| 0 | A0  | Q0  |         |
+| 1 | A1  | Q1  |         |
+| 2 | A2  | Q2  |         |
+| 3 | A3  | Q3  |         |
+| 4 | ENPB  | RCOB  |         |
+| 5 | ENTB  |   |         |
+| 6 | LOADB  |   |         |
+| 7 | UP  |   |         |
 
 
 ### Chip location

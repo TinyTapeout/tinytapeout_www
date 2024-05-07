@@ -38,14 +38,14 @@ Change the inputs ui_in to simulate button presses and check if the PWM duty cyc
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | increase_duty  |   |      |
-| 1 | decrease_duty  |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | increase_duty  |   | PWM_OUT        |
+| 1 | decrease_duty  |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

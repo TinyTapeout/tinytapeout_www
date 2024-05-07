@@ -48,14 +48,14 @@ You can also include images in this folder and reference them in the markdown. E
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | x  | seg[0]  |      |
-| 1 | condition[0]  | seg[1]  |      |
-| 2 | condition[1]  | seg[2]  |      |
-| 3 | condition[2]  | seg[3]  |      |
-| 4 | condition[3]  | seg[4]  |      |
-| 5 | condition[4]  | seg[5]  |      |
-| 6 | condition[5]  | seg[6]  |      |
-| 7 | condition[6]  | seg[7]  |      |
+| 0 | x  | seg[0]  | seg_test[0]        |
+| 1 | condition[0]  | seg[1]  | seg_test[1]        |
+| 2 | condition[1]  | seg[2]  | seg_test[2]        |
+| 3 | condition[2]  | seg[3]  | seg_test[3]        |
+| 4 | condition[3]  | seg[4]  | seg_test[4]        |
+| 5 | condition[4]  | seg[5]  | seg_test[5]        |
+| 6 | condition[5]  | seg[6]  | seg_test[6]        |
+| 7 | condition[6]  | seg[7]  | seg_test[7]        |
 
 
 ### Chip location

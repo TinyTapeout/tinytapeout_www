@@ -41,14 +41,14 @@ None
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input  | output  |      |
-| 1 | input  | output  |      |
-| 2 | input  | output  |      |
-| 3 | input  | output  |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | input  | output  | cmd        |
+| 1 | input  | output  | cmd        |
+| 2 | input  | output  | in_vld        |
+| 3 | input  | output  | out_rdy        |
+| 4 |   |   | in_rdy        |
+| 5 |   |   | out_vld        |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

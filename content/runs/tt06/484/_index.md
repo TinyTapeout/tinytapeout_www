@@ -83,14 +83,14 @@ RC filter.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | debug encoder (skip ADC)  | binary bit 0  |      |
-| 1 | debug ADC (skip encoder)  | binary bit 1  |      |
-| 2 | unary selector bit 0  | binary bit 2  |      |
-| 3 | unary selector bit 1  | binary bit 3  |      |
-| 4 | (debug mode only)  | unary bit 1  |      |
-| 5 | (debug mode only)  | unary bit 5  |      |
-| 6 | (debug mode only)  | unary bit 9  |      |
-| 7 | (debug mode only)  | unary bit 13  |      |
+| 0 | debug encoder (skip ADC)  | binary bit 0  | xor of unary bits 0, 4, 8, 12        |
+| 1 | debug ADC (skip encoder)  | binary bit 1  | xor of unary bits 1, 5, 9, 13        |
+| 2 | unary selector bit 0  | binary bit 2  | xor of unary bits 2, 6, 10, 14        |
+| 3 | unary selector bit 1  | binary bit 3  | xor of unary bits 3, 7, 11        |
+| 4 | (debug mode only)  | unary bit 1  | unary bit 4*sel        |
+| 5 | (debug mode only)  | unary bit 5  | unary bit 4*sel+1        |
+| 6 | (debug mode only)  | unary bit 9  | unary bit 4*sel+2        |
+| 7 | (debug mode only)  | unary bit 13  | unary bit 4*sel+3        |
 
 ### Analog pins
 

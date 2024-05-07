@@ -79,14 +79,14 @@ Needs a LM07 interfaced on the PCB. Detail hardware plan will be updated when we
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Ext/Int  | 7seg-A  |      |
-| 1 | Int-LSB  | 7seg-B  |      |
-| 2 | Ext-CorF  | 7seg-C  |      |
-| 3 |   | 7seg-D  |      |
-| 4 |   | 7seg-E  |      |
-| 5 |   | 7seg-F  |      |
-| 6 |   | 7seg-G  |      |
-| 7 |   | 7seg-DP  |      |
+| 0 | Ext/Int  | 7seg-A  | CS (O)        |
+| 1 | Int-LSB  | 7seg-B  | SCK (O)        |
+| 2 | Ext-CorF  | 7seg-C  | SIO (I)        |
+| 3 |   | 7seg-D  | 7seg-sel0 (O)        |
+| 4 |   | 7seg-E  | 7seg-sel1 (O)        |
+| 5 |   | 7seg-F  | 7seg-sel2 (O)        |
+| 6 |   | 7seg-G  |         |
+| 7 |   | 7seg-DP  |         |
 
 
 ### Chip location

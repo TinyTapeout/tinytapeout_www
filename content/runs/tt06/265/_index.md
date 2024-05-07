@@ -171,14 +171,14 @@ Voltage source for analog input.  Some way to look at outputs, nominally through
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | reset  | result bit 0  |      |
-| 1 | enable calibrations  | result bit 1  |      |
-| 2 | enable comparator  | result bit 2  |      |
-| 3 | use external threshold  | result bit 3  |      |
-| 4 |   | result bit 4  |      |
-| 5 |   | result bit 5  |      |
-| 6 |   | result bit 6  |      |
-| 7 |   | result bit 7  |      |
+| 0 | reset  | result bit 0  | result ready        |
+| 1 | enable calibrations  | result bit 1  | 0        |
+| 2 | enable comparator  | result bit 2  | 0        |
+| 3 | use external threshold  | result bit 3  | 0        |
+| 4 |   | result bit 4  | 1        |
+| 5 |   | result bit 5  | 1        |
+| 6 |   | result bit 6  | 1        |
+| 7 |   | result bit 7  | 1        |
 
 ### Analog pins
 

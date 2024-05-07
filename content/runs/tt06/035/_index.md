@@ -45,14 +45,14 @@ Two signal generators generating logical signals with a programmable delay.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Start signal of TDC (stop signal is clk)  | Result LSB  |      |
-| 1 |   | Result  |      |
-| 2 |   | Result  |      |
-| 3 |   | Result  |      |
-| 4 | output select  | Result  |      |
-| 5 | output select  | Result  |      |
-| 6 | output select  | Result  |      |
-| 7 | output select  | Result MSB  |      |
+| 0 | Start signal of TDC (stop signal is clk)  | Result LSB  |         |
+| 1 |   | Result  |         |
+| 2 |   | Result  |         |
+| 3 |   | Result  |         |
+| 4 | output select  | Result  |         |
+| 5 | output select  | Result  |         |
+| 6 | output select  | Result  |         |
+| 7 | output select  | Result MSB  |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ This project requires an external SPI SRAM, and also an external VGA breakout bo
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | vga_r  |      |
-| 1 |   | vga_g  |      |
-| 2 |   | vga_b  |      |
-| 3 |   | vga_hs  |      |
-| 4 |   | vga_vs  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   | vga_r  | sram_cs_n        |
+| 1 |   | vga_g  | sram_so        |
+| 2 |   | vga_b  | sram_sio2        |
+| 3 |   | vga_hs  | sram_si        |
+| 4 |   | vga_vs  | sram_sck        |
+| 5 |   |   | sram_sio3        |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

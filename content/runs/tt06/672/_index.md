@@ -41,14 +41,14 @@ Pattern Generator and logic analyzer
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Add/Subtract  | 7 Segment Display  |      |
-| 1 | A0  | 7 Segment Display  |      |
-| 2 | B0  | 7 Segment Display  |      |
-| 3 | A1  | 7 Segment Display  |      |
-| 4 | B1  | 7 Segment Display  |      |
-| 5 | A2  | 7 Segment Display  |      |
-| 6 | B2  | 7 Segment Display  |      |
-| 7 | A3  | 7 Segment Display  |      |
+| 0 | Add/Subtract  | 7 Segment Display  | Input - B3        |
+| 1 | A0  | 7 Segment Display  | Input - Hardware Trojan Trigger        |
+| 2 | B0  | 7 Segment Display  | Output - LFSR 1        |
+| 3 | A1  | 7 Segment Display  | Output - LFSR 2        |
+| 4 | B1  | 7 Segment Display  | Output - LFSR 3        |
+| 5 | A2  | 7 Segment Display  | Input - LFSR 3        |
+| 6 | B2  | 7 Segment Display  | Input - LFSR 4        |
+| 7 | A3  | 7 Segment Display  | Output - LFSR 7        |
 
 
 ### Chip location

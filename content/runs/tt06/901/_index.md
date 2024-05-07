@@ -66,14 +66,14 @@ out7 = in3 or inD
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | switch0  | gatey0  |      |
-| 1 | switch1  | gatey1  |      |
-| 2 | switch2  | gatey2  |      |
-| 3 | switch3  | gatey3  |      |
-| 4 | switch4  | gatey4  |      |
-| 5 | switch5  | gatey5  |      |
-| 6 | switch6  | gatey6  |      |
-| 7 | switch7  | gatey7  |      |
+| 0 | switch0  | gatey0  | switch8        |
+| 1 | switch1  | gatey1  | switch9        |
+| 2 | switch2  | gatey2  | switchA        |
+| 3 | switch3  | gatey3  | switchB        |
+| 4 | switch4  | gatey4  | switchC        |
+| 5 | switch5  | gatey5  | switchD        |
+| 6 | switch6  | gatey6  | switchE        |
+| 7 | switch7  | gatey7  | switchF        |
 
 
 ### Chip location

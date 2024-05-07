@@ -43,14 +43,14 @@ Use 3 digital encoders attached to the first 6 inputs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | enc0 a  | pwm0  |      |
-| 1 | enc0 b  | pwm1  |      |
-| 2 | enc1 a  | pwm2  |      |
-| 3 | enc1 b  |   |      |
-| 4 | enc2 a  |   |      |
-| 5 | enc2 b  |   |      |
-| 6 | debug bit 0  |   |      |
-| 7 | debug bit 1  |   |      |
+| 0 | enc0 a  | pwm0  | encoder bit 0        |
+| 1 | enc0 b  | pwm1  | encoder bit 1        |
+| 2 | enc1 a  | pwm2  | encoder bit 2        |
+| 3 | enc1 b  |   | encoder bit 3        |
+| 4 | enc2 a  |   | encoder bit 4        |
+| 5 | enc2 b  |   | encoder bit 5        |
+| 6 | debug bit 0  |   | encoder bit 6        |
+| 7 | debug bit 1  |   | encoder bit 7        |
 
 
 ### Chip location

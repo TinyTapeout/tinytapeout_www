@@ -59,14 +59,14 @@ current feedforward, prebiasing, soft-switching, PID and other more advanced fea
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | adcVoltage[0]  | convStart  |      |
-| 1 | adcVoltage[1]  | rd_cs  |      |
-| 2 | adcVoltage[2]  | syncRectifierLs  |      |
-| 3 | adcVoltage[3]  | syncRectifierHs  |      |
-| 4 | adcVoltage[4]  |   |      |
-| 5 | adcVoltage[5]  |   |      |
-| 6 | adcVoltage[6]  |   |      |
-| 7 | adcVoltage[7]  |   |      |
+| 0 | adcVoltage[0]  | convStart  | busy        |
+| 1 | adcVoltage[1]  | rd_cs  |         |
+| 2 | adcVoltage[2]  | syncRectifierLs  |         |
+| 3 | adcVoltage[3]  | syncRectifierHs  |         |
+| 4 | adcVoltage[4]  |   |         |
+| 5 | adcVoltage[5]  |   |         |
+| 6 | adcVoltage[6]  |   |         |
+| 7 | adcVoltage[7]  |   |         |
 
 
 ### Chip location

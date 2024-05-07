@@ -46,14 +46,14 @@ https://de.aliexpress.com/item/32857281704.html?gatewayAdapt=glo2deu
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | up-Button  | row of display-Matrix  |      |
-| 1 | down-Button  | row of display-Matrix  |      |
-| 2 | not used  | row of display-Matrix  |      |
-| 3 | not used  | row of display-Matrix  |      |
-| 4 | not used  | row of display-Matrix  |      |
-| 5 | not used  | row of display-Matrix  |      |
-| 6 | not used  | row of display-Matrix  |      |
-| 7 | not used  | row of display-Matrix  |      |
+| 0 | up-Button  | row of display-Matrix  | col of display-Matrix        |
+| 1 | down-Button  | row of display-Matrix  | col of display-Matrix        |
+| 2 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 3 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 4 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 5 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 6 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 7 | not used  | row of display-Matrix  | col of display-Matrix        |
 
 
 ### Chip location

@@ -85,14 +85,14 @@ The combined output wire then goes to a final buffer before leaving the module, 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | addr[0]  | data_out[0]  |      |
-| 1 | addr[1]  | data_out[1]  |      |
-| 2 | addr[2]  | data_out[2]  |      |
-| 3 | addr[3]  | data_out[3]  |      |
-| 4 | addr[4]  | data_out[4]  |      |
-| 5 | addr[5]  | data_out[5]  |      |
-| 6 |   | data_out[6]  |      |
-| 7 | wr_en  | data_out[7]  |      |
+| 0 | addr[0]  | data_out[0]  | data_in[0]        |
+| 1 | addr[1]  | data_out[1]  | data_in[1]        |
+| 2 | addr[2]  | data_out[2]  | data_in[2]        |
+| 3 | addr[3]  | data_out[3]  | data_in[3]        |
+| 4 | addr[4]  | data_out[4]  | data_in[4]        |
+| 5 | addr[5]  | data_out[5]  | data_in[5]        |
+| 6 |   | data_out[6]  | data_in[6]        |
+| 7 | wr_en  | data_out[7]  | data_in[7]        |
 
 
 ### Chip location

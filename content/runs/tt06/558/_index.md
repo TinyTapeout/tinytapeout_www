@@ -64,14 +64,14 @@ The suggested unit R value is 10 kOhm.  The equivalent output resistance of the 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | d_in[0]  | d_out_0[0]  |      |
-| 1 | d_in[1]  | d_out_0[1]  |      |
-| 2 | d_in[2]  | d_out_1[0]  |      |
-| 3 | d_in[3]  | d_out_1[1]  |      |
-| 4 | d_in[4]  | d_out_2[0]  |      |
-| 5 | d_in[5]  | d_out_2[1]  |      |
-| 6 | d_in[6]  | d_out_3[0]  |      |
-| 7 | d_in[8]  | d_out_3[1]  |      |
+| 0 | d_in[0]  | d_out_0[0]  | en_enc        |
+| 1 | d_in[1]  | d_out_0[1]  | en_dith        |
+| 2 | d_in[2]  | d_out_1[0]  |         |
+| 3 | d_in[3]  | d_out_1[1]  |         |
+| 4 | d_in[4]  | d_out_2[0]  |         |
+| 5 | d_in[5]  | d_out_2[1]  |         |
+| 6 | d_in[6]  | d_out_3[0]  |         |
+| 7 | d_in[8]  | d_out_3[1]  | ena_and_rst_n        |
 
 
 ### Chip location

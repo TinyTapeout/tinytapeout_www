@@ -38,14 +38,14 @@ On the output side, for each digit an 8-bit-shift-register and a 7-segment-displ
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Button 0 In  | Digit 0 Out  |      |
-| 1 | Button 1 In  | Digit 1 Out  |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | Button 0 In  | Digit 0 Out  | Up-Down-Select In        |
+| 1 | Button 1 In  | Digit 1 Out  | Set-Carry In        |
+| 2 |   |   | Set-Max In        |
+| 3 |   |   | Refresh-Limits In        |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   | Shift-Clk Out        |
+| 7 |   |   | Not-Shift-Clk Out        |
 
 
 ### Chip location

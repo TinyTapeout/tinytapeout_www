@@ -136,14 +136,14 @@ Hopefully there are no typos or transcription errors.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | sel[0]  | b[0]  |      |
-| 1 | sel[1]  | b[1]  |      |
-| 2 | sel[2]  | b[2]  |      |
-| 3 | sel[3]  | b[3]  |      |
-| 4 | h[0]  | &(A[5:0])  |      |
-| 5 | h[1]  | ntest  |      |
-| 6 | h[2]  | count  |      |
-| 7 | ntest  | overflow  |      |
+| 0 | sel[0]  | b[0]  | a[0]        |
+| 1 | sel[1]  | b[1]  | a[1]        |
+| 2 | sel[2]  | b[2]  | a[2]        |
+| 3 | sel[3]  | b[3]  | a[3]        |
+| 4 | h[0]  | &(A[5:0])  | a[4]        |
+| 5 | h[1]  | ntest  | a[5]        |
+| 6 | h[2]  | count  | a[6]        |
+| 7 | ntest  | overflow  | a[7]        |
 
 
 ### Chip location

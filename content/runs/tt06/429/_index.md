@@ -57,14 +57,14 @@ None beyound the TinyTapeout demoboard.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | multiplier[0]  | product[0]  |      |
-| 1 | multiplier[1]  | product[1]  |      |
-| 2 | multiplier[2]  | product[2]  |      |
-| 3 | multiplier[3]  | product[3]  |      |
-| 4 | multiplicand[0]  | product[4]  |      |
-| 5 | multiplicand[1]  | product[5]  |      |
-| 6 | multiplicand[2]  | product[6]  |      |
-| 7 | multiplicand[3]  | product[7]  |      |
+| 0 | multiplier[0]  | product[0]  | signed_mode        |
+| 1 | multiplier[1]  | product[1]  |         |
+| 2 | multiplier[2]  | product[2]  |         |
+| 3 | multiplier[3]  | product[3]  |         |
+| 4 | multiplicand[0]  | product[4]  |         |
+| 5 | multiplicand[1]  | product[5]  |         |
+| 6 | multiplicand[2]  | product[6]  |         |
+| 7 | multiplicand[3]  | product[7]  |         |
 
 
 ### Chip location

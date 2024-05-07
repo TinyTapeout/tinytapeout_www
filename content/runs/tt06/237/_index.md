@@ -67,14 +67,14 @@ This design contains individual blocks used to realize a PLL circuit. These bloc
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | CP-1:QA  | PFD-2:QA  |      |
-| 1 | CP-1:QB  | PFD-2:QB  |      |
-| 2 | FD-2:Clk  | FD-2:fo_4  |      |
-| 3 | FD-3:fo  | FD-2:fo_8  |      |
-| 4 |   | FD-3:fo_4  |      |
-| 5 |   | FD-3:fo_8  |      |
-| 6 | ref  | FD-4:Out_4  |      |
-| 7 |   | FD-4:Out_8  |      |
+| 0 | CP-1:QA  | PFD-2:QA  | FD-1:fo        |
+| 1 | CP-1:QB  | PFD-2:QB  | FD-1:fo_by_8        |
+| 2 | FD-2:Clk  | FD-2:fo_4  | PFD-1:A        |
+| 3 | FD-3:fo  | FD-2:fo_8  | PFD-1:B        |
+| 4 |   | FD-3:fo_4  | PFD-1:QA        |
+| 5 |   | FD-3:fo_8  | PFD-1:QB        |
+| 6 | ref  | FD-4:Out_4  | PFD-2:A        |
+| 7 |   | FD-4:Out_8  | PFD-2:B        |
 
 ### Analog pins
 

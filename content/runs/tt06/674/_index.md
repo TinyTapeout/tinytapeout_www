@@ -43,14 +43,14 @@ No external hardware is needed.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | rs[0]  | alu_out[0]  |      |
-| 1 | rs[1]  | alu_out[1]  |      |
-| 2 | rs[2]  | alu_out[2]  |      |
-| 3 | rs[3]  | alu_out[3]  |      |
-| 4 | rt[0]  |   |      |
-| 5 | rt[1]  |   |      |
-| 6 | rt[2]  |   |      |
-| 7 | rt[3]  |   |      |
+| 0 | rs[0]  | alu_out[0]  | alu_arithmetic_mux[0]        |
+| 1 | rs[1]  | alu_out[1]  | alu_arithmetic_mux[1]        |
+| 2 | rs[2]  | alu_out[2]  |         |
+| 3 | rs[3]  | alu_out[3]  |         |
+| 4 | rt[0]  |   |         |
+| 5 | rt[1]  |   |         |
+| 6 | rt[2]  |   |         |
+| 7 | rt[3]  |   |         |
 
 
 ### Chip location

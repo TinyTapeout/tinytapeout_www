@@ -50,14 +50,14 @@ Any SPI Master (RPi, Arduino, MCU, etc.), and a String of 10 WS2812B LEDs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | MOSI  | LED_DATA  |      |
-| 1 | SCLK  |   |      |
-| 2 | nCS  |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | MOSI  | LED_DATA  |         |
+| 1 | SCLK  |   |         |
+| 2 | nCS  |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

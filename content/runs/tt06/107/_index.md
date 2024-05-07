@@ -31,14 +31,14 @@ No Test.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data0_pad  | cmrom_pad  |      |
-| 1 | data1_pad  | cmram0_pad  |      |
-| 2 | data2_pad  | cmram1_pad  |      |
-| 3 | data3_pad  | cmram2_pad  |      |
-| 4 | clk1_pad  | cmram3_pad  |      |
-| 5 | clk2_pad  | sync_pad  |      |
-| 6 | poc_pad  |   |      |
-| 7 | test_pad  |   |      |
+| 0 | data0_pad  | cmrom_pad  |         |
+| 1 | data1_pad  | cmram0_pad  |         |
+| 2 | data2_pad  | cmram1_pad  |         |
+| 3 | data3_pad  | cmram2_pad  |         |
+| 4 | clk1_pad  | cmram3_pad  |         |
+| 5 | clk2_pad  | sync_pad  |         |
+| 6 | poc_pad  |   |         |
+| 7 | test_pad  |   |         |
 
 
 ### Chip location

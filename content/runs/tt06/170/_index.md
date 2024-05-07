@@ -54,14 +54,14 @@ The FIFO will present the current output on the `read_data` bus. If `empty` is l
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | write_clock  | empty  |      |
-| 1 | write_increment  | full  |      |
-| 2 | read_clock  |   |      |
-| 3 | read_increment  |   |      |
-| 4 | write_data0  | read_data0  |      |
-| 5 | write_data1  | read_data1  |      |
-| 6 | write_data2  | read_data2  |      |
-| 7 | write_data3  | read_data3  |      |
+| 0 | write_clock  | empty  | write_reset        |
+| 1 | write_increment  | full  | read_reset        |
+| 2 | read_clock  |   |         |
+| 3 | read_increment  |   |         |
+| 4 | write_data0  | read_data0  |         |
+| 5 | write_data1  | read_data1  |         |
+| 6 | write_data2  | read_data2  |         |
+| 7 | write_data3  | read_data3  |         |
 
 
 ### Chip location

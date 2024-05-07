@@ -41,14 +41,14 @@ Use 3 digital encoders attached to the first 6 inputs.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | enc0 a  | pwm0  |      |
-| 1 | enc0 b  | pwm1  |      |
-| 2 | enc1 a  | pwm2  |      |
-| 3 | enc1 b  |   |      |
-| 4 | enc2 a  |   |      |
-| 5 | enc2 b  |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | enc0 a  | pwm0  |         |
+| 1 | enc0 b  | pwm1  |         |
+| 2 | enc1 a  | pwm2  |         |
+| 3 | enc1 b  |   |         |
+| 4 | enc2 a  |   |         |
+| 5 | enc2 b  |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

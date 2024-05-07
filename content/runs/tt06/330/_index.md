@@ -114,14 +114,14 @@ The last 27 words represent the network weights ( 3 ins x 3 neurons x 3 layers )
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Input Spike 0  | Output Spike 0  |      |
-| 1 | Input Spike 1  | Output Spike 1  |      |
-| 2 | Input Spike 2  | Output Spike 2  |      |
-| 3 | Spike Input Register Enable  | End of Writing Parameters into Memory  |      |
-| 4 | RSNN enable  | Parameter Data Written  |      |
-| 5 | Serial Data IN  |   |      |
-| 6 | Parameter Load  |   |      |
-| 7 | Test selection  |   |      |
+| 0 | Input Spike 0  | Output Spike 0  | out_test 0        |
+| 1 | Input Spike 1  | Output Spike 1  | out_test 1        |
+| 2 | Input Spike 2  | Output Spike 2  | out_test 2        |
+| 3 | Spike Input Register Enable  | End of Writing Parameters into Memory  | out_test 3        |
+| 4 | RSNN enable  | Parameter Data Written  | out_test 4        |
+| 5 | Serial Data IN  |   | out_test 5        |
+| 6 | Parameter Load  |   | out_test 6        |
+| 7 | Test selection  |   | out_test 7        |
 
 
 ### Chip location

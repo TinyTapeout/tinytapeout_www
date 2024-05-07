@@ -83,14 +83,14 @@ You do not need any special external hardware.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | alu operation select bit 0  | status bit 0 (wrong operation flag)  |      |
-| 1 | alu operation select bit 1  | status bit 1 (zero flag)  |      |
-| 2 | alu operation select bit 2  | status bit 2 (sign flag)  |      |
-| 3 | alu operation select bit 3  | status bit 3 (carry flag)  |      |
-| 4 |   | status bit 4 (overflow flag)  |      |
-| 5 |   | counter bit 0  |      |
-| 6 |   | counter bit 1  |      |
-| 7 |   | counter bit 2  |      |
+| 0 | alu operation select bit 0  | status bit 0 (wrong operation flag)  | data port bit 0        |
+| 1 | alu operation select bit 1  | status bit 1 (zero flag)  | data port bit 1        |
+| 2 | alu operation select bit 2  | status bit 2 (sign flag)  | data port bit 2        |
+| 3 | alu operation select bit 3  | status bit 3 (carry flag)  | data port bit 3        |
+| 4 |   | status bit 4 (overflow flag)  | data port bit 4        |
+| 5 |   | counter bit 0  | data port bit 5        |
+| 6 |   | counter bit 1  | data port bit 6        |
+| 7 |   | counter bit 2  | data port bit 7        |
 
 
 ### Chip location

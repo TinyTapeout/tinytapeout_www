@@ -41,14 +41,14 @@ You need a PMOD 7 segment disp 1286-1065-ND, 4 button  PMOD 1286-1145-ND
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Start  |   |      |
-| 1 | Reset  |   |      |
-| 2 | Player 1  |   |      |
-| 3 | Player 2  |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | Start  |   |         |
+| 1 | Reset  |   |         |
+| 2 | Player 1  |   |         |
+| 3 | Player 2  |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

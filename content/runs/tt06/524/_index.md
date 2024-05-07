@@ -42,14 +42,14 @@ A multimeter to measure the output voltage on analog pin 0.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Inhibitory current bit  |   |      |
-| 1 | Inhibitory current bit  |   |      |
-| 2 | Inhibitory current bit  |   |      |
-| 3 | Inhibitory current bit  |   |      |
-| 4 | Inhibitory current bit  |   |      |
-| 5 | Inhibitory current bit  |   |      |
-| 6 | Inhibitory current bit  |   |      |
-| 7 | Inhibitory current bit  |   |      |
+| 0 | Inhibitory current bit  |   | Excitatory current bit        |
+| 1 | Inhibitory current bit  |   | Excitatory current bit        |
+| 2 | Inhibitory current bit  |   | Excitatory current bit        |
+| 3 | Inhibitory current bit  |   | Excitatory current bit        |
+| 4 | Inhibitory current bit  |   | Excitatory current bit        |
+| 5 | Inhibitory current bit  |   | Excitatory current bit        |
+| 6 | Inhibitory current bit  |   | Excitatory current bit        |
+| 7 | Inhibitory current bit  |   | Excitatory current bit        |
 
 ### Analog pins
 

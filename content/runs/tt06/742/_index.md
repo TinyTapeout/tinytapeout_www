@@ -69,14 +69,14 @@ N/A
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Move Left  | Result Valid  |      |
-| 1 | Move Right  | Hit  |      |
-| 2 | Aim Left  | Select Data  |      |
-| 3 | Aim Right  | Select Data  |      |
-| 4 | Shoot  | Select Data  |      |
-| 5 |   | Select Data  |      |
-| 6 |   | Select Data  |      |
-| 7 |   |   |      |
+| 0 | Move Left  | Result Valid  |         |
+| 1 | Move Right  | Hit  |         |
+| 2 | Aim Left  | Select Data  | target_x        |
+| 3 | Aim Right  | Select Data  | target_x        |
+| 4 | Shoot  | Select Data  | target_x        |
+| 5 |   | Select Data  | target_x        |
+| 6 |   | Select Data  | target_x        |
+| 7 |   |   | 0 ? target_y = 30 : target_y = 31        |
 
 
 ### Chip location

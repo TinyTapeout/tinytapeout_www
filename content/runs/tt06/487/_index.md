@@ -93,14 +93,14 @@ No external hardware is required.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | r000_val  |      |
-| 1 | data_in  | INTERM_fb  |      |
-| 2 | load_en  | r092_val  |      |
-| 3 |   | r093_val  |      |
-| 4 |   | r176_val  |      |
-| 5 |   | r177_val  |      |
-| 6 |   | r287_val  |      |
-| 7 |   | NLSFR_out  |      |
+| 0 |   | r000_val  |         |
+| 1 | data_in  | INTERM_fb  |         |
+| 2 | load_en  | r092_val  |         |
+| 3 |   | r093_val  |         |
+| 4 |   | r176_val  |         |
+| 5 |   | r177_val  |         |
+| 6 |   | r287_val  |         |
+| 7 |   | NLSFR_out  |         |
 
 
 ### Chip location

@@ -75,14 +75,14 @@ PS: You may be surprised when you press the F6 key :)
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | PS/2 Clock  | Dit Output  |      |
-| 1 | PS/2 Data  |   |      |
-| 2 |   |   |      |
-| 3 |   | Dah Output  |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   | Morse Code Output  |      |
-| 7 |   | Morse Code Output (Buzzer)  |      |
+| 0 | PS/2 Clock  | Dit Output  |         |
+| 1 | PS/2 Data  |   |         |
+| 2 |   |   |         |
+| 3 |   | Dah Output  |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   | Morse Code Output  |         |
+| 7 |   | Morse Code Output (Buzzer)  |         |
 
 
 ### Chip location

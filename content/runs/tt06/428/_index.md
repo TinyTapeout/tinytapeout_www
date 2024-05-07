@@ -50,14 +50,14 @@ Audio PMOD (PmodAMP2) for audio output on the lower row of the BIDIR PMOD.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | switch on 7-segment  | segment a  |      |
-| 1 |   | segment b  |      |
-| 2 |   | segment c  |      |
-| 3 |   | segment d  |      |
-| 4 |   | segment e  |      |
-| 5 |   | segment f  |      |
-| 6 |   | segment g  |      |
-| 7 |   | dot: morse out  |      |
+| 0 | switch on 7-segment  | segment a  |         |
+| 1 |   | segment b  |         |
+| 2 |   | segment c  |         |
+| 3 |   | segment d  |         |
+| 4 |   | segment e  | audio        |
+| 5 |   | segment f  | gain        |
+| 6 |   | segment g  |         |
+| 7 |   | dot: morse out  | nshutdown        |
 
 
 ### Chip location

@@ -89,14 +89,14 @@ Then the bitstream will be `400ccccd_40533333_408ccccd_40b00000` and start sendi
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Bit 0 Input  | Bit 0 Output  |      |
-| 1 | Bit 1 Input  | Bit 1 Output  |      |
-| 2 | Bit 2 Input  | Bit 2 Output  |      |
-| 3 | Bit 3 Input  | Bit 3 Output  |      |
-| 4 | Bit 4 Input  | Bit 4 Output  |      |
-| 5 | Bit 5 Input  | Bit 5 Output  |      |
-| 6 | Bit 6 Input  | Bit 6 Output  |      |
-| 7 | Bit 7 Input  | Bit 7 Output  |      |
+| 0 | Bit 0 Input  | Bit 0 Output  | Output used as valid Signal        |
+| 1 | Bit 1 Input  | Bit 1 Output  | Output used as valid Signal        |
+| 2 | Bit 2 Input  | Bit 2 Output  | Output used as valid Signal        |
+| 3 | Bit 3 Input  | Bit 3 Output  | Output used as valid Signal        |
+| 4 | Bit 4 Input  | Bit 4 Output  | 0        |
+| 5 | Bit 5 Input  | Bit 5 Output  | 0        |
+| 6 | Bit 6 Input  | Bit 6 Output  | 0        |
+| 7 | Bit 7 Input  | Bit 7 Output  | 0        |
 
 
 ### Chip location

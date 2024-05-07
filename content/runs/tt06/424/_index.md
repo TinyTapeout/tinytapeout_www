@@ -41,14 +41,14 @@ N/A
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | segment a  |      |
-| 1 |   | segment b  |      |
-| 2 |   | segment c  |      |
-| 3 |   | segment d  |      |
-| 4 |   | segment e  |      |
-| 5 |   | segment f  |      |
-| 6 |   | segment g  |      |
-| 7 |   | dot  |      |
+| 0 |   | segment a  |         |
+| 1 |   | segment b  |         |
+| 2 |   | segment c  |         |
+| 3 |   | segment d  |         |
+| 4 |   | segment e  |         |
+| 5 |   | segment f  |         |
+| 6 |   | segment g  |         |
+| 7 |   | dot  |         |
 
 
 ### Chip location

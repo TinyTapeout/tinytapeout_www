@@ -72,14 +72,14 @@ Para cualquier duda en cuanto a las pruebas del circuito, pueden mandar un corre
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   | P2        |
+| 1 |   |   | P1        |
+| 2 |   |   | P0        |
+| 3 |   |   | Qc        |
+| 4 |   |   | Qb        |
+| 5 |   |   | Qa        |
+| 6 |   |   | no used        |
+| 7 |   |   | SE        |
 
 
 ### Chip location

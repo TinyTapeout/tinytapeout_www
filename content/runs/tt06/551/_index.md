@@ -50,14 +50,14 @@ Used input with any desired devices.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | BIT A  | OUTPUT A  |      |
-| 1 | BIT B  | OUTPUT B  |      |
-| 2 |   | OUTPUT C  |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | BIT A  | OUTPUT A  |         |
+| 1 | BIT B  | OUTPUT B  |         |
+| 2 |   | OUTPUT C  |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

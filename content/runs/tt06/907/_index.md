@@ -54,14 +54,14 @@ A fifth button is connected to input 5, and is used to start a game.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Red Button  | Red Lamp  |      |
-| 1 | Yellow Button  | Yellow Lamp  |      |
-| 2 | Green Button  | Green Lamp  |      |
-| 3 | Blue Button  | Blue Lamp  |      |
-| 4 | Start Game  |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | Red Button  | Red Lamp  |         |
+| 1 | Yellow Button  | Yellow Lamp  |         |
+| 2 | Green Button  | Green Lamp  |         |
+| 3 | Blue Button  | Blue Lamp  |         |
+| 4 | Start Game  |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

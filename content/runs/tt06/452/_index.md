@@ -33,14 +33,14 @@ The `out` pins will contain the value read from the RAM.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | addr[0]  | out[0]  |      |
-| 1 | addr[1]  | out[1]  |      |
-| 2 | addr[2]  | out[2]  |      |
-| 3 | addr[3]  | out[3]  |      |
-| 4 | addr[4]  | out[4]  |      |
-| 5 | addr[5]  | out[5]  |      |
-| 6 | addr[6]  | out[6]  |      |
-| 7 | wen  | out[7]  |      |
+| 0 | addr[0]  | out[0]  | in[0]        |
+| 1 | addr[1]  | out[1]  | in[1]        |
+| 2 | addr[2]  | out[2]  | in[2]        |
+| 3 | addr[3]  | out[3]  | in[3]        |
+| 4 | addr[4]  | out[4]  | in[4]        |
+| 5 | addr[5]  | out[5]  | in[5]        |
+| 6 | addr[6]  | out[6]  | in[6]        |
+| 7 | wen  | out[7]  | in[7]        |
 
 
 ### Chip location

@@ -43,14 +43,14 @@ This project will need external off-the-shelf DACs and ADCs including a TIA or A
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | bit control 1  |   |      |
-| 1 | bit control 2  |   |      |
-| 2 | bit control 3  |   |      |
-| 3 | bit control 4  |   |      |
-| 4 | write/select control 1  |   |      |
-| 5 | write/select control 2  |   |      |
-| 6 | write/select control 3  |   |      |
-| 7 | write/select control 4  |   |      |
+| 0 | bit control 1  |   |         |
+| 1 | bit control 2  |   |         |
+| 2 | bit control 3  |   |         |
+| 3 | bit control 4  |   |         |
+| 4 | write/select control 1  |   |         |
+| 5 | write/select control 2  |   |         |
+| 6 | write/select control 3  |   |         |
+| 7 | write/select control 4  |   |         |
 
 ### Analog pins
 

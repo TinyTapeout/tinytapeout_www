@@ -70,14 +70,14 @@ other forms of input are necessary for physical operation of the lock.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Set  | CurrPswd[0]  |      |
-| 1 | Pswd[0]  | CurrPswd[0]  |      |
-| 2 | Pswd[1]  | CurrPswd[0]  |      |
-| 3 | Pswd[2]  | CurrPswd[0]  |      |
-| 4 | Pswd[3]  | Unlocked  |      |
-| 5 | Enter  | PinLocked  |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | Set  | CurrPswd[0]  |         |
+| 1 | Pswd[0]  | CurrPswd[0]  |         |
+| 2 | Pswd[1]  | CurrPswd[0]  |         |
+| 3 | Pswd[2]  | CurrPswd[0]  |         |
+| 4 | Pswd[3]  | Unlocked  |         |
+| 5 | Enter  | PinLocked  |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

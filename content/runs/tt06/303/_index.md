@@ -49,14 +49,14 @@ None.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   |   |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 |   |   | ModeSelectionBit0        |
+| 1 |   |   | ModeSelectionBit1        |
+| 2 |   |   | FrequencyWordLower8BitUpdateEnable        |
+| 3 |   |   | FrequencyWordUpper8BitUpdateEnable        |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

@@ -41,14 +41,14 @@ Waveform Generator and Logic Analyzer.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | selec  | out[0]  |      |
-| 1 | clk_ref  | out[1]  |      |
-| 2 | VCO  | out[2]  |      |
-| 3 | reset  | out[3]  |      |
-| 4 |   | out[4]  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | selec  | out[0]  |         |
+| 1 | clk_ref  | out[1]  |         |
+| 2 | VCO  | out[2]  |         |
+| 3 | reset  | out[3]  |         |
+| 4 |   | out[4]  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

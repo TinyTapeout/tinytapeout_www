@@ -51,14 +51,14 @@ A multimeter to measure the output voltage on analog pin 0.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | bit 0  |   |      |
-| 1 | bit 1  |   |      |
-| 2 | bit 2  |   |      |
-| 3 | bit 3  |   |      |
-| 4 | bit 4  |   |      |
-| 5 | bit 5  |   |      |
-| 6 | bit 6  |   |      |
-| 7 | bit 7  |   |      |
+| 0 | bit 0  |   | external data        |
+| 1 | bit 1  |   | load divider        |
+| 2 | bit 2  |   |         |
+| 3 | bit 3  |   |         |
+| 4 | bit 4  |   |         |
+| 5 | bit 5  |   |         |
+| 6 | bit 6  |   |         |
+| 7 | bit 7  |   |         |
 
 ### Analog pins
 

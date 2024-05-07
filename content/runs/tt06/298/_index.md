@@ -41,14 +41,14 @@ Please don't
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | btn_r  | da  |      |
-| 1 |   | db  |      |
-| 2 |   | dc  |      |
-| 3 |   | dd  |      |
-| 4 |   | de  |      |
-| 5 |   | df  |      |
-| 6 |   | dg  |      |
-| 7 |   |   |      |
+| 0 | btn_r  | da  |         |
+| 1 |   | db  |         |
+| 2 |   | dc  |         |
+| 3 |   | dd  |         |
+| 4 |   | de  |         |
+| 5 |   | df  |         |
+| 6 |   | dg  |         |
+| 7 |   |   |         |
 
 
 ### Chip location

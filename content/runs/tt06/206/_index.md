@@ -41,14 +41,14 @@ If the sensor identifier data is 00 which means it is sensor1 and input data is 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Input data from the sensors  | Deviation detector  |      |
-| 1 | Input data from the sensors  | Falut warning  |      |
-| 2 | Input data from the sensors  | Falut warning  |      |
-| 3 | Input data from the sensors  | Falut warning  |      |
-| 4 | Input data from the sensors  | Sensor identifier  |      |
-| 5 | Input data from the sensors  | Sensor identifier  |      |
-| 6 | Input data from the sensors  |   |      |
-| 7 | Input data from the sensors  |   |      |
+| 0 | Input data from the sensors  | Deviation detector  | Sensor identifier        |
+| 1 | Input data from the sensors  | Falut warning  | Sensor identifier        |
+| 2 | Input data from the sensors  | Falut warning  |         |
+| 3 | Input data from the sensors  | Falut warning  |         |
+| 4 | Input data from the sensors  | Sensor identifier  |         |
+| 5 | Input data from the sensors  | Sensor identifier  |         |
+| 6 | Input data from the sensors  |   |         |
+| 7 | Input data from the sensors  |   |         |
 
 
 ### Chip location

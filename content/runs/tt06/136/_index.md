@@ -50,14 +50,14 @@ Now, a CIC decimated and ADPCM encoded output of the microphone data will stream
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | clk  | outValid  |      |
-| 1 | slow_clk  |   |      |
-| 2 | block_enable  |   |      |
-| 3 | pdm_in  |   |      |
-| 4 |   | encPcm[0]  |      |
-| 5 |   | encPcm[1]  |      |
-| 6 |   | encPcm[2]  |      |
-| 7 |   | encPcm[3]  |      |
+| 0 | clk  | outValid  |         |
+| 1 | slow_clk  |   |         |
+| 2 | block_enable  |   |         |
+| 3 | pdm_in  |   |         |
+| 4 |   | encPcm[0]  |         |
+| 5 |   | encPcm[1]  |         |
+| 6 |   | encPcm[2]  |         |
+| 7 |   | encPcm[3]  |         |
 
 
 ### Chip location

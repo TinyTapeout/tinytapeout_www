@@ -45,14 +45,14 @@ Type CR or LF to enter "continuous mode". The design will loop through all chann
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | adc_dout  | adc_clk  |      |
-| 1 | adc_eoc  | adc_cs  |      |
-| 2 | UART RxD  | adc_din  |      |
-| 3 | UART CTS_n (opposite polarity)  | UART TxD  |      |
-| 4 |   | UART RTSn (opposite polarity)  |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | adc_dout  | adc_clk  |         |
+| 1 | adc_eoc  | adc_cs  |         |
+| 2 | UART RxD  | adc_din  |         |
+| 3 | UART CTS_n (opposite polarity)  | UART TxD  |         |
+| 4 |   | UART RTSn (opposite polarity)  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
 
 
 ### Chip location

@@ -1139,14 +1139,14 @@ Supporting a Pmod for I2S would be one possibility.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | data_in[0]  | R1  |      |
-| 1 | data_in[1]  | G1  |      |
-| 2 | data_in[2]  | B1  |      |
-| 3 | data_in[3]  | vsync  |      |
-| 4 | rx_alt_in[0]  | R0  |      |
-| 5 | rx_alt_in[1]  | G0  |      |
-| 6 |   | B0  |      |
-| 7 |   | hsync  |      |
+| 0 | data_in[0]  | R1  | addr_out[0]        |
+| 1 | data_in[1]  | G1  | addr_out[1]        |
+| 2 | data_in[2]  | B1  | addr_out[2]        |
+| 3 | data_in[3]  | vsync  | addr_out[3]        |
+| 4 | rx_alt_in[0]  | R0  | tx_out[0]        |
+| 5 | rx_alt_in[1]  | G0  | tx_out[1]        |
+| 6 |   | B0  | rx_in[0] / Gm1_active_out        |
+| 7 |   | hsync  | rx_in[1] / RBm1_pixelclk_out        |
 
 
 ### Chip location

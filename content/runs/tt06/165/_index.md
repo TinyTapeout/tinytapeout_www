@@ -46,14 +46,14 @@ Keypad matrix 4x4. For example:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | segment a  |      |
-| 1 |   | segment b  |      |
-| 2 |   | segment c  |      |
-| 3 |   | segment d  |      |
-| 4 |   | segment e  |      |
-| 5 |   | segment f  |      |
-| 6 |   | segment g  |      |
-| 7 |   | dot  |      |
+| 0 |   | segment a  | col 4 (input)        |
+| 1 |   | segment b  | col 3 (input)        |
+| 2 |   | segment c  | col 2 (input)        |
+| 3 |   | segment d  | col 1 (input)        |
+| 4 |   | segment e  | row 4 (output)        |
+| 5 |   | segment f  | row 3 (output)        |
+| 6 |   | segment g  | row 2 (output)        |
+| 7 |   | dot  | row 1 (output)        |
 
 
 ### Chip location

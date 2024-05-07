@@ -41,14 +41,14 @@ External hardware comprises of a rotational encoder, a four-digit seven-segment 
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | A (rot_encoder)  | a (seven_seg)  |      |
-| 1 | B (rot_encoder)  | b (seven_seg)  |      |
-| 2 | PB (rot_encoder)  | c (seven_seg)  |      |
-| 3 | MISO (spi_flash)  | d (seven_seg)  |      |
-| 4 | MISO (spi_sensor)  | e (seven_seg)  |      |
-| 5 |   | f (seven_seg)  |      |
-| 6 |   | g (seven_seg)  |      |
-| 7 |   | dp (seven_seg)  |      |
+| 0 | A (rot_encoder)  | a (seven_seg)  | an[0] (seven_seg)        |
+| 1 | B (rot_encoder)  | b (seven_seg)  | an[1] (seven_seg)        |
+| 2 | PB (rot_encoder)  | c (seven_seg)  | an[2] (seven_seg)        |
+| 3 | MISO (spi_flash)  | d (seven_seg)  | an[3] (seven_seg)        |
+| 4 | MISO (spi_sensor)  | e (seven_seg)  | SCLK (spi_flash, spi_sensor)        |
+| 5 |   | f (seven_seg)  | SS (spi_flash)        |
+| 6 |   | g (seven_seg)  | SS (spi_sensor)        |
+| 7 |   | dp (seven_seg)  | MOSI (spi_flash)        |
 
 
 ### Chip location

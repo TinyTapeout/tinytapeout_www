@@ -47,14 +47,14 @@ Add 8 LED's to the Output's and connect a Servo Signal to Input 0
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Servo Signal  | LED 0  |      |
-| 1 |   | LED 1  |      |
-| 2 |   | LED 2  |      |
-| 3 |   | LED 3  |      |
-| 4 |   | LED 4  |      |
-| 5 |   | LED 5  |      |
-| 6 |   | LED 6  |      |
-| 7 |   | LED 7  |      |
+| 0 | Servo Signal  | LED 0  |         |
+| 1 |   | LED 1  |         |
+| 2 |   | LED 2  |         |
+| 3 |   | LED 3  |         |
+| 4 |   | LED 4  |         |
+| 5 |   | LED 5  |         |
+| 6 |   | LED 6  |         |
+| 7 |   | LED 7  |         |
 
 
 ### Chip location

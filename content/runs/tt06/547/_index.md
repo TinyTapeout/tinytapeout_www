@@ -133,14 +133,14 @@ Figure 1: 'External Hardware pins conections visualization'
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | First bit for input 'A'(input of 3-bits)  | First bit for output 'Leds'(output of 6-bits)  |      |
-| 1 | Second bit for input 'A'(input of 3-bits)  | Second bit for output 'Leds'(output of 6-bits)  |      |
-| 2 | Third bit for input 'A'(input of 3-bits)  | Third bit for output 'Leds'(output of 6-bits)  |      |
-| 3 | First bit for input 'B'(input of 3-bits)  | Fourth bit for output 'Leds'(output of 6-bits)  |      |
-| 4 | Second bit for input 'B'(input of 3-bits)  | Fifth bit for output 'Leds'(output of 6-bits)  |      |
-| 5 | Third bit for input 'B'(input of 3-bits)  | Sixth bit for output 'Leds'(output of 6-bits)  |      |
-| 6 | Unused input bit  | Unused output bit  |      |
-| 7 | Unused input bit  | Unused output bit  |      |
+| 0 | First bit for input 'A'(input of 3-bits)  | First bit for output 'Leds'(output of 6-bits)  | First bit for input 'ctrl'(input of 3-bits)        |
+| 1 | Second bit for input 'A'(input of 3-bits)  | Second bit for output 'Leds'(output of 6-bits)  | Second bit for input 'ctrl'(input of 3-bits)        |
+| 2 | Third bit for input 'A'(input of 3-bits)  | Third bit for output 'Leds'(output of 6-bits)  | Third bit for input 'ctrl'(input of 3-bits)        |
+| 3 | First bit for input 'B'(input of 3-bits)  | Fourth bit for output 'Leds'(output of 6-bits)  | Unused bidirectional I/O bit        |
+| 4 | Second bit for input 'B'(input of 3-bits)  | Fifth bit for output 'Leds'(output of 6-bits)  | Unused bidirectional I/O bit        |
+| 5 | Third bit for input 'B'(input of 3-bits)  | Sixth bit for output 'Leds'(output of 6-bits)  | Unused bidirectional I/O bit        |
+| 6 | Unused input bit  | Unused output bit  | Unused bidirectional I/O bit        |
+| 7 | Unused input bit  | Unused output bit  | Unused bidirectional I/O bit        |
 
 
 ### Chip location

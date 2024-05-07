@@ -188,14 +188,14 @@ If the mode signal is 1, all bytes transmitted via SPI are shifted into the shad
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | mode  | R[1]  |      |
-| 1 | debug_i[0]  | G[1]  |      |
-| 2 | debug_i[1]  | B[1]  |      |
-| 3 |   | vsync  |      |
-| 4 |   | R[0]  |      |
-| 5 |   | G[0]  |      |
-| 6 |   | B[0]  |      |
-| 7 |   | hsync  |      |
+| 0 | mode  | R[1]  | CS        |
+| 1 | debug_i[0]  | G[1]  | MOSI        |
+| 2 | debug_i[1]  | B[1]  | MISO        |
+| 3 |   | vsync  | SCK        |
+| 4 |   | R[0]  | next_vertical        |
+| 5 |   | G[0]  | next_frame        |
+| 6 |   | B[0]  | debug_o[0]        |
+| 7 |   | hsync  | debug_o[1]        |
 
 
 ### Chip location

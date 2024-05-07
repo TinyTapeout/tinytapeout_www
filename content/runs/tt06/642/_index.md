@@ -123,14 +123,14 @@ None
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | run  | sleep  |      |
-| 1 | step  | stop  |      |
-| 2 | load  | wait_delay  |      |
-| 3 | dump  | shift_out  |      |
-| 4 | shift_in  |   |      |
-| 5 | reg_sel[0]  |   |      |
-| 6 | reg_sel[1]  |   |      |
-| 7 |   |   |      |
+| 0 | run  | sleep  | gpio[0]        |
+| 1 | step  | stop  | gpio[1]        |
+| 2 | load  | wait_delay  | gpio[2]        |
+| 3 | dump  | shift_out  | gpio[3]        |
+| 4 | shift_in  |   | gpio[4]        |
+| 5 | reg_sel[0]  |   | gpio[5]        |
+| 6 | reg_sel[1]  |   | gpio[6]        |
+| 7 |   |   | gpio[7]        |
 
 
 ### Chip location

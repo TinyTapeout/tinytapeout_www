@@ -65,14 +65,14 @@ No external hardware is used for this project.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | RX input  | RX output  |      |
-| 1 |   |   |      |
-| 2 |   |   |      |
-| 3 |   |   |      |
-| 4 |   |   |      |
-| 5 |   |   |      |
-| 6 |   |   |      |
-| 7 |   |   |      |
+| 0 | RX input  | RX output  | Block multiply done status        |
+| 1 |   |   | Calculation start signal        |
+| 2 |   |   | Send State bit 0        |
+| 3 |   |   | Send State bit 1        |
+| 4 |   |   | Send State bit 2        |
+| 5 |   |   | Send State bit 3        |
+| 6 |   |   | Done send signal        |
+| 7 |   |   | Send data signal        |
 
 
 ### Chip location

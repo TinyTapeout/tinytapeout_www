@@ -58,14 +58,14 @@ speaker or piezo buzzer
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 |   | led segment a  |      |
-| 1 |   | led segment b  |      |
-| 2 |   | led segment c  |      |
-| 3 |   | led segment d  |      |
-| 4 |   | led segment e  |      |
-| 5 |   | led segment f  |      |
-| 6 |   | led segment g  |      |
-| 7 |   | led segment dot  |      |
+| 0 |   | led segment a  | speaker        |
+| 1 |   | led segment b  |         |
+| 2 |   | led segment c  |         |
+| 3 |   | led segment d  |         |
+| 4 |   | led segment e  |         |
+| 5 |   | led segment f  |         |
+| 6 |   | led segment g  |         |
+| 7 |   | led segment dot  |         |
 
 
 ### Chip location

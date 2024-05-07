@@ -39,14 +39,14 @@ Other.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | index[0]  | out[0]  |      |
-| 1 | index[1]  | out[1]  |      |
-| 2 | index[2]  | out[2]  |      |
-| 3 | index[3]  | out[3]  |      |
-| 4 | data[0]  | out[4]  |      |
-| 5 | data[1]  | out[5]  |      |
-| 6 | data[2]  | out[6]  |      |
-| 7 | data[3]  | out[7]  |      |
+| 0 | index[0]  | out[0]  | out[8]        |
+| 1 | index[1]  | out[1]  | out[9]        |
+| 2 | index[2]  | out[2]  | out[10]        |
+| 3 | index[3]  | out[3]  | out[11]        |
+| 4 | data[0]  | out[4]  | instruction [0]        |
+| 5 | data[1]  | out[5]  | instruction [1]        |
+| 6 | data[2]  | out[6]  | load        |
+| 7 | data[3]  | out[7]  | run        |
 
 
 ### Chip location

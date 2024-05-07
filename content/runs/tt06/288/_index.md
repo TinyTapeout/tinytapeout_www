@@ -41,14 +41,14 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | a  | 0  |      |
-| 1 | b  | 1  |      |
-| 2 |   | 2  |      |
-| 3 |   | 3  |      |
-| 4 |   | 4  |      |
-| 5 |   | 5  |      |
-| 6 |   | 6  |      |
-| 7 |   | 7  |      |
+| 0 | a  | 0  |         |
+| 1 | b  | 1  |         |
+| 2 |   | 2  |         |
+| 3 |   | 3  |         |
+| 4 |   | 4  |         |
+| 5 |   | 5  |         |
+| 6 |   | 6  |         |
+| 7 |   | 7  |         |
 
 
 ### Chip location

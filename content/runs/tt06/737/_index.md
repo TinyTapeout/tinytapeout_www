@@ -46,14 +46,14 @@ There are additional hardware such as:
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | inv  | segment[0]  |      |
-| 1 | mode  | segment[1]  |      |
-| 2 | start  | segment[2]  |      |
-| 3 | stop  | segment[3]  |      |
-| 4 |   | segment[4]  |      |
-| 5 |   | segment[5]  |      |
-| 6 |   | segment[6]  |      |
-| 7 |   | segment[7]  |      |
+| 0 | inv  | segment[0]  | digit[0]        |
+| 1 | mode  | segment[1]  | digit[1]        |
+| 2 | start  | segment[2]  | digit[2]        |
+| 3 | stop  | segment[3]  | digit[3]        |
+| 4 |   | segment[4]  |         |
+| 5 |   | segment[5]  |         |
+| 6 |   | segment[6]  |         |
+| 7 |   | segment[7]  |         |
 
 
 ### Chip location

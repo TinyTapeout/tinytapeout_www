@@ -105,14 +105,14 @@ When you negate rst_n, then CPU will load instruction from 0x0000 on SPI Flash.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | MISO input from SPI Flash/PSRAM  | SCLK output to SPI Flash/PSRAM  |      |
-| 1 |   | CS output to SPI Flash  |      |
-| 2 |   | CS output to PSRAM  |      |
-| 3 |   | MOSI output to SPI Flash/PSRAM  |      |
-| 4 |   | SCLK output for debugging  |      |
-| 5 |   | MOSI output for debugging  |      |
-| 6 |   | CS output for debugging  |      |
-| 7 |   | Fetch cycle indicator pulse for debbuging  |      |
+| 0 | MISO input from SPI Flash/PSRAM  | SCLK output to SPI Flash/PSRAM  | General purpose I/O        |
+| 1 |   | CS output to SPI Flash  | General purpose I/O        |
+| 2 |   | CS output to PSRAM  | General purpose I/O        |
+| 3 |   | MOSI output to SPI Flash/PSRAM  | General purpose I/O        |
+| 4 |   | SCLK output for debugging  | General purpose output        |
+| 5 |   | MOSI output for debugging  | General purpose output        |
+| 6 |   | CS output for debugging  | General purpose output        |
+| 7 |   | Fetch cycle indicator pulse for debbuging  | General purpose output        |
 
 
 ### Chip location

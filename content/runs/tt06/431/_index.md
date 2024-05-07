@@ -63,14 +63,14 @@ You would probably want to connect this to other devices that would find it usef
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | Data In 0  | Data Out 0  |      |
-| 1 | Data In 1  | Data Out 1  |      |
-| 2 | Data In 2  | Data Out 2  |      |
-| 3 | Data In 3  | Data Out 3  |      |
-| 4 | Data In 4  | Data Out 4  |      |
-| 5 | Data In 5  | Data Out 5  |      |
-| 6 | Data In 6  | Data Out 6  |      |
-| 7 | Data In 7  | Data Out 7  |      |
+| 0 | Data In 0  | Data Out 0  | Deque Select        |
+| 1 | Data In 1  | Data Out 1  | End Select        |
+| 2 | Data In 2  | Data Out 2  | Push        |
+| 3 | Data In 3  | Data Out 3  | Pop        |
+| 4 | Data In 4  | Data Out 4  | Deque 0 Empty        |
+| 5 | Data In 5  | Data Out 5  | Deque 0 Full        |
+| 6 | Data In 6  | Data Out 6  | Deque 1 Empty        |
+| 7 | Data In 7  | Data Out 7  | Deque 1 Full        |
 
 
 ### Chip location

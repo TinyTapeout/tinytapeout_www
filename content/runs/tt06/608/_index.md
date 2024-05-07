@@ -41,14 +41,14 @@ No external hardware is used.
 
 | #             | Input    | Output   | Bidirectional   |
 | ------------- | -------- | -------- | --------------- |
-| 0 | input1  | output1  |      |
-| 1 | input2  | output2  |      |
-| 2 | input3  | output3  |      |
-| 3 | input4  | output4  |      |
-| 4 | input5  |   |      |
-| 5 | input6  |   |      |
-| 6 | input7  |   |      |
-| 7 | input8  |   |      |
+| 0 | input1  | output1  |         |
+| 1 | input2  | output2  |         |
+| 2 | input3  | output3  |         |
+| 3 | input4  | output4  |         |
+| 4 | input5  |   |         |
+| 5 | input6  |   |         |
+| 6 | input7  |   |         |
+| 7 | input8  |   |         |
 
 
 ### Chip location
