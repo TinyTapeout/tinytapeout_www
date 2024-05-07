@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "224 Keypad controller"
-weight: 5
+weight: 4
 ---
 
 ## 224 : Keypad controller
@@ -11,7 +11,7 @@ weight: 5
 * [GitHub repository](https://github.com/mattvenn/tt06-ian-keypad-controller)
 * [GDS submitted](https://github.com/mattvenn/tt06-ian-keypad-controller/actions/runs/8621402325)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -41,16 +41,17 @@ Keypad PMOD: https://t.ly/lTZF0
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | row0 | 7 segment display outputs | col0 |
-| 1 | row1 |  | col1 |
-| 2 | row2 |  | col2 |
-| 3 | row3 |  | col3 |
-| 4 |  |  | col counter 0 |
-| 5 |  |  | col counter 1 |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | row0  | 7 segment display outputs  |      |
+| 1 | row1  |   |      |
+| 2 | row2  |   |      |
+| 3 | row3  |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

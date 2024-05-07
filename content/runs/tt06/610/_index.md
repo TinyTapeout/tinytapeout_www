@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "610 Sequence detector using 7-segment"
-weight: 139
+weight: 138
 ---
 
 ## 610 : Sequence detector using 7-segment
 
-* Author: Atharv Sharma & Lipika Gupta
+* Author: Atharv Sharma &amp; Lipika Gupta
 * Description: Detects sequence '1001' and displays '8.' on 7-segment led display, otherwise displays '-' only
 * [GitHub repository](https://github.com/atharv-004/tt06-sequence-counter)
 * [GDS submitted](https://github.com/atharv-004/tt06-sequence-counter/actions/runs/8753407035)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1 Hz
 
 <!---
@@ -46,16 +46,17 @@ You can also include images in this folder and reference them in the markdown. E
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | x | seg[0] | seg_test[0] |
-| 1 | condition[0] | seg[1] | seg_test[1] |
-| 2 | condition[1] | seg[2] | seg_test[2] |
-| 3 | condition[2] | seg[3] | seg_test[3] |
-| 4 | condition[3] | seg[4] | seg_test[4] |
-| 5 | condition[4] | seg[5] | seg_test[5] |
-| 6 | condition[5] | seg[6] | seg_test[6] |
-| 7 | condition[6] | seg[7] | seg_test[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | x  | seg[0]  |      |
+| 1 | condition[0]  | seg[1]  |      |
+| 2 | condition[1]  | seg[2]  |      |
+| 3 | condition[2]  | seg[3]  |      |
+| 4 | condition[3]  | seg[4]  |      |
+| 5 | condition[4]  | seg[5]  |      |
+| 6 | condition[5]  | seg[6]  |      |
+| 7 | condition[6]  | seg[7]  |      |
+
 
 ### Chip location
 

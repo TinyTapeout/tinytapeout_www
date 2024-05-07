@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "673 Notre Dame Dorms LED"
-weight: 78
+weight: 77
 ---
 
 ## 673 : Notre Dame Dorms LED
@@ -11,7 +11,7 @@ weight: 78
 * [GitHub repository](https://github.com/aflemin7/tinytapeout)
 * [GDS submitted](https://github.com/aflemin7/tinytapeout/actions/runs/8756893364)
 * [Wokwi](https://wokwi.com/projects/390913889347409921) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -50,16 +50,17 @@ One external LED is needed
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

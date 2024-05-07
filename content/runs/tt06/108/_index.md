@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "108 Moving average filter"
-weight: 176
+weight: 175
 ---
 
 ## 108 : Moving average filter
@@ -11,7 +11,7 @@ weight: 176
 * [GitHub repository](https://github.com/AlexHoferW23/jku-tt06-averagefilter)
 * [GDS submitted](https://github.com/AlexHoferW23/jku-tt06-averagefilter/actions/runs/8627627258)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -44,16 +44,17 @@ There is no external Hardware
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Input for filter | Output for filter | Strobe input |
-| 1 | Input for filter | Output for filter | Strobe output |
-| 2 | Input for filter | Output for filter | Additional input bit |
-| 3 | Input for filter | Output for filter | Additional input bit |
-| 4 | Input for filter | Output for filter | Additional output bit |
-| 5 | Input for filter | Output for filter | Additional output bit |
-| 6 | Input for filter | Output for filter | Filter width input |
-| 7 | Input for filter | Output for filter | Filter width input |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Input for filter  | Output for filter  |      |
+| 1 | Input for filter  | Output for filter  |      |
+| 2 | Input for filter  | Output for filter  |      |
+| 3 | Input for filter  | Output for filter  |      |
+| 4 | Input for filter  | Output for filter  |      |
+| 5 | Input for filter  | Output for filter  |      |
+| 6 | Input for filter  | Output for filter  |      |
+| 7 | Input for filter  | Output for filter  |      |
+
 
 ### Chip location
 

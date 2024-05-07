@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "676 SAP-1 Computer"
-weight: 90
+weight: 89
 ---
 
 ## 676 : SAP-1 Computer
@@ -11,7 +11,7 @@ weight: 90
 * [GitHub repository](https://github.com/kevinwguan/tt06-SAP-1_Computer-)
 * [GDS submitted](https://github.com/kevinwguan/tt06-SAP-1_Computer-/actions/runs/8747673059)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -73,16 +73,17 @@ Oscilloscope
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | bus[0] |  |
-| 1 |  | bus[1] |  |
-| 2 |  | bus[2] |  |
-| 3 |  | bus[3] |  |
-| 4 |  | bus[4] |  |
-| 5 |  | bus[5] |  |
-| 6 |  | bus[6] |  |
-| 7 |  | bus[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | bus[0]  |      |
+| 1 |   | bus[1]  |      |
+| 2 |   | bus[2]  |      |
+| 3 |   | bus[3]  |      |
+| 4 |   | bus[4]  |      |
+| 5 |   | bus[5]  |      |
+| 6 |   | bus[6]  |      |
+| 7 |   | bus[7]  |      |
+
 
 ### Chip location
 

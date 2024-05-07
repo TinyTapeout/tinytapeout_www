@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "742 drEEm tEEm PPCA"
-weight: 151
+weight: 150
 ---
 
 ## 742 : drEEm tEEm PPCA
@@ -11,7 +11,7 @@ weight: 151
 * [GitHub repository](https://github.com/calsokk/tt6_drEEm_tEEm_ppca)
 * [GDS submitted](https://github.com/calsokk/tt6_drEEm_tEEm_ppca/actions/runs/8751047037)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -67,16 +67,17 @@ N/A
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Move Left | Result Valid |  |
-| 1 | Move Right | Hit |  |
-| 2 | Aim Left | Select Data | target_x |
-| 3 | Aim Right | Select Data | target_x |
-| 4 | Shoot | Select Data | target_x |
-| 5 |  | Select Data | target_x |
-| 6 |  | Select Data | target_x |
-| 7 |  |  | 0 ? target_y = 30 : target_y = 31 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Move Left  | Result Valid  |      |
+| 1 | Move Right  | Hit  |      |
+| 2 | Aim Left  | Select Data  |      |
+| 3 | Aim Right  | Select Data  |      |
+| 4 | Shoot  | Select Data  |      |
+| 5 |   | Select Data  |      |
+| 6 |   | Select Data  |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

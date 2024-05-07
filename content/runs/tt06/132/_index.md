@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "132 Karplus-Strong String Synthesis"
-weight: 163
+weight: 162
 ---
 
 ## 132 : Karplus-Strong String Synthesis
@@ -11,7 +11,7 @@ weight: 163
 * [GitHub repository](https://github.com/pyamnihc/tt06_um_ks_pyamnihc)
 * [GDS submitted](https://github.com/pyamnihc/tt06_um_ks_pyamnihc/actions/runs/8743491773)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 256000 Hz
 
 <!---
@@ -42,16 +42,17 @@ The 8-bit signed sound samples are sent out at `f_sck = 256 kHz` through this in
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ~rst_n_prbs_15, ~rst_n_prbs_7 |  | sck_i |
-| 1 | load_prbs_15, load_prbs_7 |  | sdi_i |
-| 2 | freeze_prbs_15 |  | sdo_o |
-| 3 | freeze_prbs_7 |  | cs_ni |
-| 4 | i2s_noise_sel |  | i2s_sck_o |
-| 5 | ~rst_n_ks_string |  | i2s_ws_o |
-| 6 | pluck |  | i2s_sd_o |
-| 7 |  |  | prbs_15 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ~rst_n_prbs_15, ~rst_n_prbs_7  |   |      |
+| 1 | load_prbs_15, load_prbs_7  |   |      |
+| 2 | freeze_prbs_15  |   |      |
+| 3 | freeze_prbs_7  |   |      |
+| 4 | i2s_noise_sel  |   |      |
+| 5 | ~rst_n_ks_string  |   |      |
+| 6 | pluck  |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

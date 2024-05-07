@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "174 ASG"
-weight: 76
+weight: 75
 ---
 
 ## 174 : ASG
@@ -11,7 +11,7 @@ weight: 76
 * [GitHub repository](https://github.com/SteffenReith/TT06_ASG)
 * [GDS submitted](https://github.com/SteffenReith/TT06_ASG/actions/runs/8745363637)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -52,16 +52,17 @@ No external hardware is used
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | loadIt[0] | newBit |  |
-| 1 | loadIt[1] |  |  |
-| 2 | enable |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | loadIt[0]  | newBit  |      |
+| 1 | loadIt[1]  |   |      |
+| 2 | enable  |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

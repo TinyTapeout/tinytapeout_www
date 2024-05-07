@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "615 motor a pasos"
-weight: 174
+weight: 173
 ---
 
 ## 615 : motor a pasos
@@ -11,7 +11,7 @@ weight: 174
 * [GitHub repository](https://github.com/AlanTavira/motor_pasos)
 * [GDS submitted](https://github.com/AlanTavira/motor_pasos/actions/runs/8671431248)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -72,16 +72,17 @@ FPGA Cyclone II EP2C35F672C6ES
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 | CLK |  |  |
-| 2 | RST | I4 |  |
-| 3 | select[0] | I3 |  |
-| 4 | select[1] | I2 | paso |
-| 5 |  | I1 | sentido |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 | CLK  |   |      |
+| 2 | RST  | I4  |      |
+| 3 | select[0]  | I3  |      |
+| 4 | select[1]  | I2  |      |
+| 5 |   | I1  |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

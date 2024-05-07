@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "687 UACJ-Wallace multiplier"
-weight: 98
+weight: 97
 ---
 
 ## 687 : UACJ-Wallace multiplier
@@ -11,7 +11,7 @@ weight: 98
 * [GitHub repository](https://github.com/HHRB98/UACJ-MIE-Wallace)
 * [GDS submitted](https://github.com/HHRB98/UACJ-MIE-Wallace/actions/runs/8733795721)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ You do not need any special external hardware.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui[0] | uo [0] |  |
-| 1 | ui[1] | uo [1] |  |
-| 2 | ui[2] | uo [2] |  |
-| 3 | ui[3] | uo [3] |  |
-| 4 | ui[4] | uo [4] |  |
-| 5 | ui[5] | uo [5] |  |
-| 6 | ui[6] | uo [6] |  |
-| 7 | ui[7] | uo [7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui[0]  | uo [0]  |      |
+| 1 | ui[1]  | uo [1]  |      |
+| 2 | ui[2]  | uo [2]  |      |
+| 3 | ui[3]  | uo [3]  |      |
+| 4 | ui[4]  | uo [4]  |      |
+| 5 | ui[5]  | uo [5]  |      |
+| 6 | ui[6]  | uo [6]  |      |
+| 7 | ui[7]  | uo [7]  |      |
+
 
 ### Chip location
 

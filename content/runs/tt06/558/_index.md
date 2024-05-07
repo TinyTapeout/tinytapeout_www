@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "558 8-bit DEM R2R DAC"
-weight: 191
+weight: 190
 ---
 
 ## 558 : 8-bit DEM R2R DAC
@@ -11,7 +11,7 @@ weight: 191
 * [GitHub repository](https://github.com/ejfogleman/ef_smsdac)
 * [GDS submitted](https://github.com/ejfogleman/ef_smsdac/actions/runs/8745545111)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -62,16 +62,17 @@ The suggested unit R value is 10 kOhm.  The equivalent output resistance of the 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | d_in[0] | d_out_0[0] | en_enc |
-| 1 | d_in[1] | d_out_0[1] | en_dith |
-| 2 | d_in[2] | d_out_1[0] |  |
-| 3 | d_in[3] | d_out_1[1] |  |
-| 4 | d_in[4] | d_out_2[0] |  |
-| 5 | d_in[5] | d_out_2[1] |  |
-| 6 | d_in[6] | d_out_3[0] |  |
-| 7 | d_in[8] | d_out_3[1] | ena_and_rst_n |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | d_in[0]  | d_out_0[0]  |      |
+| 1 | d_in[1]  | d_out_0[1]  |      |
+| 2 | d_in[2]  | d_out_1[0]  |      |
+| 3 | d_in[3]  | d_out_1[1]  |      |
+| 4 | d_in[4]  | d_out_2[0]  |      |
+| 5 | d_in[5]  | d_out_2[1]  |      |
+| 6 | d_in[6]  | d_out_3[0]  |      |
+| 7 | d_in[8]  | d_out_3[1]  |      |
+
 
 ### Chip location
 

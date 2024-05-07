@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "32 7-segment-FUN"
-weight: 227
+weight: 226
 ---
 
 ## 32 : 7-segment-FUN
@@ -11,7 +11,7 @@ weight: 227
 * [GitHub repository](https://github.com/akaArmin/jku-tt06-7-segment-FUN)
 * [GDS submitted](https://github.com/akaArmin/jku-tt06-7-segment-FUN/actions/runs/8630208928)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ You might need a breadboard and buttons for the controls, as well as a 7-segment
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | btn1_incAni | segment a1 |  |
-| 1 | btn2_decAni | segment b2 |  |
-| 2 | btn3_incSpeed | segment c3 |  |
-| 3 | btn4_decSpeed | segment d4 |  |
-| 4 |  | segment e5 |  |
-| 5 |  | segment f6 |  |
-| 6 |  | segment g7 |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | btn1_incAni  | segment a1  |      |
+| 1 | btn2_decAni  | segment b2  |      |
+| 2 | btn3_incSpeed  | segment c3  |      |
+| 3 | btn4_decSpeed  | segment d4  |      |
+| 4 |   | segment e5  |      |
+| 5 |   | segment f6  |      |
+| 6 |   | segment g7  |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

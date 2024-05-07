@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "614 MULDIV unit (8-bit signed/unsigned)"
-weight: 67
+weight: 66
 ---
 
 ## 614 : MULDIV unit (8-bit signed/unsigned)
@@ -11,7 +11,7 @@ weight: 67
 * [GitHub repository](https://github.com/dlmiles/tt06-muldiv8)
 * [GDS submitted](https://github.com/dlmiles/tt06-muldiv8/actions/runs/8743393425)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -196,16 +196,17 @@ but also the sizes common in FPGA DSP primitives.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Data0 see docs | Result0 see docs | Addr bit0 HI=1/lo=0 mux of Data and Result (input only) |
-| 1 | Data1 see docs | Result1 see docs | unused |
-| 2 | Data2 see docs | Result2 see docs | unused |
-| 3 | Data3 see docs | Result3 see docs | Result mux registered=1/immediate=0 (input only) |
-| 4 | Data4 see docs | Result4 see docs | DIV error overflow (output only) |
-| 5 | Data5 see docs | Result5 see docs | DIV error divide-by-zero (output only) |
-| 6 | Data6 see docs | Result6 see docs | OPSIGNED mode (input only) |
-| 7 | Data7 see docs | Result7 see docs | MULDIV mode (input only) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Data0 see docs  | Result0 see docs  |      |
+| 1 | Data1 see docs  | Result1 see docs  |      |
+| 2 | Data2 see docs  | Result2 see docs  |      |
+| 3 | Data3 see docs  | Result3 see docs  |      |
+| 4 | Data4 see docs  | Result4 see docs  |      |
+| 5 | Data5 see docs  | Result5 see docs  |      |
+| 6 | Data6 see docs  | Result6 see docs  |      |
+| 7 | Data7 see docs  | Result7 see docs  |      |
+
 
 ### Chip location
 

@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "555 TDM Digital Clock"
-weight: 140
+weight: 139
 ---
 
 ## 555 : TDM Digital Clock
 
-* Author: Hassan & Huzaifa tariq
+* Author: Hassan &amp; Huzaifa tariq
 * Description: a digital clock that uses time division multiplexing, using 8 outputs to drive six seen segmetns displas
 * [GitHub repository](https://github.com/HUZAIFA-TARIQ/GIKI-TapeOut-2)
 * [GDS submitted](https://github.com/HUZAIFA-TARIQ/GIKI-TapeOut-2/actions/runs/8746213141)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -45,16 +45,17 @@ just switche and leds
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui_in[0] | uo_out[0] | uio_out[0] |
-| 1 | ui_in[1] | uo_out[1] | uio_out[1] |
-| 2 | ui_in[2] | uo_out[2] | uio_out[2] |
-| 3 | ui_in[3] | uo_out[3] | uio_out[3] |
-| 4 | ui_in[4] | uo_out[4] | uio_out[4] |
-| 5 | ui_in[5] | uo_out[5] | uio_out[5] |
-| 6 | ui_in[6] | uo_out[6] | uio_in[6] |
-| 7 | ui_in[7] | uo_out[7] | uio_in[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui_in[0]  | uo_out[0]  |      |
+| 1 | ui_in[1]  | uo_out[1]  |      |
+| 2 | ui_in[2]  | uo_out[2]  |      |
+| 3 | ui_in[3]  | uo_out[3]  |      |
+| 4 | ui_in[4]  | uo_out[4]  |      |
+| 5 | ui_in[5]  | uo_out[5]  |      |
+| 6 | ui_in[6]  | uo_out[6]  |      |
+| 7 | ui_in[7]  | uo_out[7]  |      |
+
 
 ### Chip location
 

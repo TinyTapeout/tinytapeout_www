@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "545 Convertidor de Tiempo a Digital (TDC)"
-weight: 99
+weight: 98
 ---
 
 ## 545 : Convertidor de Tiempo a Digital (TDC)
 
-* Author: Juan Vargas Ferrer & Luis Carlos Alvarez Simón
+* Author: Juan Vargas Ferrer &amp; Luis Carlos Alvarez Simón
 * Description: El proyecto consiste en el diseño de un circuito Front end o interfaz para convertir a digital la señal proveniente de un sensor con salida en tiempo.
 * [GitHub repository](https://github.com/jferrer08/latinpractice)
 * [GDS submitted](https://github.com/jferrer08/latinpractice/actions/runs/8647119593)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -102,16 +102,17 @@ TDC
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  | eot |
-| 1 |  |  | tx |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  | reset |
-| 7 |  |  | stop |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

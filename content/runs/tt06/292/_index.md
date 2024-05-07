@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "292 Bestagon LED matrix driver"
-weight: 146
+weight: 145
 ---
 
 ## 292 : Bestagon LED matrix driver
@@ -11,7 +11,7 @@ weight: 146
 * [GitHub repository](https://github.com/x3e/tt06-wokwi-template)
 * [GDS submitted](https://github.com/x3e/tt06-wokwi-template/actions/runs/8710630655)
 * [Wokwi](https://wokwi.com/projects/395054564978002945) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -50,16 +50,17 @@ Charlieplexed hexagonal display:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Data |  | Display pin 0 |
-| 1 | Display Enable |  | Display pin 1 |
-| 2 |  |  | Display pin 2 |
-| 3 |  |  | Display pin 3 |
-| 4 |  |  | Display pin 4 |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Data  |   |      |
+| 1 | Display Enable  |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

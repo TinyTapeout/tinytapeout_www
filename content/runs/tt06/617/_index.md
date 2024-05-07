@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "617 mult_2b"
-weight: 204
+weight: 203
 ---
 
 ## 617 : mult_2b
@@ -11,7 +11,7 @@ weight: 204
 * [GitHub repository](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits)
 * [GDS submitted](https://github.com/JuanManuelLopezPasten/Multiplicador-2-bits/actions/runs/8671131120)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -64,16 +64,17 @@ El hardware externo utilizado es:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | a (bit 0) | out (bit 0) | not used |
-| 1 | a (bit 1) | out (bit 1) | not used |
-| 2 | b (bit 0) | out (bit 2) | not used |
-| 3 | b (bit 1) | out (bit 3) | not used |
-| 4 | not used | not used | not used |
-| 5 | not used | not used | not used |
-| 6 | not used | not used | not used |
-| 7 | not used | not used | not used |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | a (bit 0)  | out (bit 0)  |      |
+| 1 | a (bit 1)  | out (bit 1)  |      |
+| 2 | b (bit 0)  | out (bit 2)  |      |
+| 3 | b (bit 1)  | out (bit 3)  |      |
+| 4 | not used  | not used  |      |
+| 5 | not used  | not used  |      |
+| 6 | not used  | not used  |      |
+| 7 | not used  | not used  |      |
+
 
 ### Chip location
 

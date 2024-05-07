@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "486 Double Inverter"
-weight: 145
+weight: 144
 ---
 
 ## 486 : Double Inverter
@@ -11,7 +11,7 @@ weight: 145
 * [GitHub repository](https://github.com/mattvenn/tt06-inverter)
 * [GDS submitted](https://github.com/mattvenn/tt06-inverter/actions/runs/8617095811)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -41,16 +41,23 @@ Oscilloscope
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | output           |
+| 1 | 0 | input           |
 
 ### Chip location
 

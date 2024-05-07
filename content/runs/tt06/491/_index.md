@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "491 BF Processor"
-weight: 84
+weight: 83
 ---
 
 ## 491 : BF Processor
@@ -11,7 +11,7 @@ weight: 84
 * [GitHub repository](https://github.com/loco-choco/tt-bf-processor)
 * [GDS submitted](https://github.com/loco-choco/tt-bf-processor/actions/runs/8748526353)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -53,16 +53,17 @@ These are some components that you can use for interfacing with the processor:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | Write | Data_0 |
-| 1 |  | Addr | Data_1 |
-| 2 |  | Instr_Addr | Data_2 |
-| 3 |  | PC_Ext_8 | Data_3 |
-| 4 |  | PC_Ext_9 | Data_4 |
-| 5 |  | PC_Ext_10 | Data_5 |
-| 6 |  | PC_Ext_11 | Data_6 |
-| 7 |  | PC_Ext_12 | Data_7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | Write  |      |
+| 1 |   | Addr  |      |
+| 2 |   | Instr_Addr  |      |
+| 3 |   | PC_Ext_8  |      |
+| 4 |   | PC_Ext_9  |      |
+| 5 |   | PC_Ext_10  |      |
+| 6 |   | PC_Ext_11  |      |
+| 7 |   | PC_Ext_12  |      |
+
 
 ### Chip location
 

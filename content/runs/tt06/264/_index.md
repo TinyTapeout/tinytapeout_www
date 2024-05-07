@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "264 TinyRV1 CPU"
-weight: 71
+weight: 70
 ---
 
 ## 264 : TinyRV1 CPU
@@ -11,7 +11,7 @@ weight: 71
 * [GitHub repository](https://github.com/CEJMU/tt06_tinyrv1)
 * [GDS submitted](https://github.com/CEJMU/tt06_tinyrv1/actions/runs/8758341719)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 12000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ To use our design you will need to use the provided spi_slave_tt06_with_memory a
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | SPI MISO | SPI MOSI | Register_1(5) |
-| 1 | unused | SPI SCLK | Register_1(6) |
-| 2 | unused | SPI CS | Register_1(7) |
-| 3 | unused | Register_1(0) | Register_1(8) |
-| 4 | unused | Register_1(1) | Register_1(9) |
-| 5 | unused | Register_1(2) | Register_1(10) |
-| 6 | unused | Register_1(3) | Register_1(11) |
-| 7 | unused | Register_1(4) | Register_1(12) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | SPI MISO  | SPI MOSI  |      |
+| 1 | unused  | SPI SCLK  |      |
+| 2 | unused  | SPI CS  |      |
+| 3 | unused  | Register_1(0)  |      |
+| 4 | unused  | Register_1(1)  |      |
+| 5 | unused  | Register_1(2)  |      |
+| 6 | unused  | Register_1(3)  |      |
+| 7 | unused  | Register_1(4)  |      |
+
 
 ### Chip location
 

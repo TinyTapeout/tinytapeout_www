@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "452 DFFRAM Example (128 bytes)"
-weight: 165
+weight: 164
 ---
 
 ## 452 : DFFRAM Example (128 bytes)
@@ -11,7 +11,7 @@ weight: 165
 * [GitHub repository](https://github.com/TinyTapeout/tt06-dffram-example)
 * [GDS submitted](https://github.com/TinyTapeout/tt06-dffram-example/actions/runs/8724088110)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -31,16 +31,17 @@ The `out` pins will contain the value read from the RAM.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | addr[0] | out[0] | in[0] |
-| 1 | addr[1] | out[1] | in[1] |
-| 2 | addr[2] | out[2] | in[2] |
-| 3 | addr[3] | out[3] | in[3] |
-| 4 | addr[4] | out[4] | in[4] |
-| 5 | addr[5] | out[5] | in[5] |
-| 6 | addr[6] | out[6] | in[6] |
-| 7 | wen | out[7] | in[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | addr[0]  | out[0]  |      |
+| 1 | addr[1]  | out[1]  |      |
+| 2 | addr[2]  | out[2]  |      |
+| 3 | addr[3]  | out[3]  |      |
+| 4 | addr[4]  | out[4]  |      |
+| 5 | addr[5]  | out[5]  |      |
+| 6 | addr[6]  | out[6]  |      |
+| 7 | wen  | out[7]  |      |
+
 
 ### Chip location
 

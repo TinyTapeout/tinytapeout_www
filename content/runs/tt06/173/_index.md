@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "173 4-bit Stochastic Multiplier Compact with Stochastic Resonator"
-weight: 200
+weight: 199
 ---
 
 ## 173 : 4-bit Stochastic Multiplier Compact with Stochastic Resonator
@@ -11,7 +11,7 @@ weight: 200
 * [GitHub repository](https://github.com/davidparent/tt06-wokwi-stochastic-multiplier-spandan-davidparent)
 * [GDS submitted](https://github.com/davidparent/tt06-wokwi-stochastic-multiplier-spandan-davidparent/actions/runs/8664507099)
 * [Wokwi](https://wokwi.com/projects/394898807123828737) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -45,16 +45,17 @@ ADLAM2000
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | A0 | CK |  |
-| 1 | A1 | RST |  |
-| 2 | A2 | PRBS0 |  |
-| 3 | A3 | SM |  |
-| 4 | B0 | SS0 |  |
-| 5 | B1 | SS1 |  |
-| 6 | B2 | SR0 |  |
-| 7 | B3 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | A0  | CK  |      |
+| 1 | A1  | RST  |      |
+| 2 | A2  | PRBS0  |      |
+| 3 | A3  | SM  |      |
+| 4 | B0  | SS0  |      |
+| 5 | B1  | SS1  |      |
+| 6 | B2  | SR0  |      |
+| 7 | B3  |   |      |
+
 
 ### Chip location
 

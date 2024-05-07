@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "160 32-Bit Fibonacci Linear Feedback Shift Register"
-weight: 230
+weight: 229
 ---
 
 ## 160 : 32-Bit Fibonacci Linear Feedback Shift Register
@@ -11,7 +11,7 @@ weight: 230
 * [GitHub repository](https://github.com/icarislab/tt06_32bit-fibonacci-prng_cu)
 * [GDS submitted](https://github.com/icarislab/tt06_32bit-fibonacci-prng_cu/actions/runs/8622498197)
 * [Wokwi](https://wokwi.com/projects/394704587372210177) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -108,16 +108,17 @@ No external hardware is required.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | r25_val |  |
-| 1 | data_in | r26_val |  |
-| 2 | load_en | r27_val |  |
-| 3 |  | r28_val |  |
-| 4 |  | r29_val |  |
-| 5 |  | r30_val |  |
-| 6 |  | r31_val |  |
-| 7 |  | r32_val_LSFR_out |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | r25_val  |      |
+| 1 | data_in  | r26_val  |      |
+| 2 | load_en  | r27_val  |      |
+| 3 |   | r28_val  |      |
+| 4 |   | r29_val  |      |
+| 5 |   | r30_val  |      |
+| 6 |   | r31_val  |      |
+| 7 |   | r32_val_LSFR_out  |      |
+
 
 ### Chip location
 

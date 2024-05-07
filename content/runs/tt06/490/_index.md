@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "490 Simple FET OpAmp with Sky130."
-weight: 37
+weight: 36
 ---
 
 ## 490 : Simple FET OpAmp with Sky130.
@@ -11,7 +11,7 @@ weight: 37
 * [GitHub repository](https://github.com/dsatizabal/tt06-fet-opamp)
 * [GDS submitted](https://github.com/dsatizabal/tt06-fet-opamp/actions/runs/8722858246)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -68,16 +68,25 @@ Power source, resistors, signal generator, oscilloscope.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 4 | ZEF           |
+| 1 | 1 | V-           |
+| 2 | 3 | V+           |
+| 3 | 2 | Vout           |
 
 ### Chip location
 

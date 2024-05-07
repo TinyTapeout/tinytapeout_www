@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "684 Stepper"
-weight: 205
+weight: 204
 ---
 
 ## 684 : Stepper
@@ -11,7 +11,7 @@ weight: 205
 * [GitHub repository](https://github.com/miguelsape/msalazar)
 * [GDS submitted](https://github.com/miguelsape/msalazar/actions/runs/8527104447)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ The system requires an external clock input to control the speed of the pulses a
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Unused | Unused | Output Bit 0 |
-| 1 | Unused | Unused | Output Bit 1 |
-| 2 | Unused | Unused | Output Bit 2 |
-| 3 | Unused | Unused | Output Bit 3 |
-| 4 | Unused | Unused | enable |
-| 5 | Unused | Unused | direction |
-| 6 | Unused | Unused | Unused |
-| 7 | Unused | Unused | Unused |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Unused  | Unused  |      |
+| 1 | Unused  | Unused  |      |
+| 2 | Unused  | Unused  |      |
+| 3 | Unused  | Unused  |      |
+| 4 | Unused  | Unused  |      |
+| 5 | Unused  | Unused  |      |
+| 6 | Unused  | Unused  |      |
+| 7 | Unused  | Unused  |      |
+
 
 ### Chip location
 

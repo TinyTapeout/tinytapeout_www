@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "420 Servo Signal Tester"
-weight: 232
+weight: 231
 ---
 
 ## 420 : Servo Signal Tester
@@ -11,7 +11,7 @@ weight: 232
 * [GitHub repository](https://github.com/holunder00/TinyTapeout_SecondTry)
 * [GDS submitted](https://github.com/holunder00/TinyTapeout_SecondTry/actions/runs/8723839495)
 * [Wokwi](https://wokwi.com/projects/395055722430895105) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 4000 Hz
 
 <!---
@@ -45,16 +45,17 @@ Add 8 LED's to the Output's and connect a Servo Signal to Input 0
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Servo Signal | LED 0 |  |
-| 1 |  | LED 1 |  |
-| 2 |  | LED 2 |  |
-| 3 |  | LED 3 |  |
-| 4 |  | LED 4 |  |
-| 5 |  | LED 5 |  |
-| 6 |  | LED 6 |  |
-| 7 |  | LED 7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Servo Signal  | LED 0  |      |
+| 1 |   | LED 1  |      |
+| 2 |   | LED 2  |      |
+| 3 |   | LED 3  |      |
+| 4 |   | LED 4  |      |
+| 5 |   | LED 5  |      |
+| 6 |   | LED 6  |      |
+| 7 |   | LED 7  |      |
+
 
 ### Chip location
 

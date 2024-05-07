@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "416 X/Y Controller"
-weight: 127
+weight: 126
 ---
 
 ## 416 : X/Y Controller
@@ -11,7 +11,7 @@ weight: 127
 * [GitHub repository](https://github.com/CKPope/tt06-verilog-template)
 * [GDS submitted](https://github.com/CKPope/tt06-verilog-template/actions/runs/8692089022)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -62,16 +62,17 @@ Connect either low-current (5-10 ma) LEDS or a LED Driver device a Logic Analyze
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | y_target0 | y_pos0 | motion_inp |
-| 1 | y_target1 | y_pos1 |  |
-| 2 | y_target2 | y_pos2 |  |
-| 3 | y_target3 | y_pos3 |  |
-| 4 | x_target0 | x_pos0 |  |
-| 5 | x_target1 | x_pos1 |  |
-| 6 | x_target2 | x_pos2 |  |
-| 7 | x_target3 | x_pos3 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | y_target0  | y_pos0  |      |
+| 1 | y_target1  | y_pos1  |      |
+| 2 | y_target2  | y_pos2  |      |
+| 3 | y_target3  | y_pos3  |      |
+| 4 | x_target0  | x_pos0  |      |
+| 5 | x_target1  | x_pos1  |      |
+| 6 | x_target2  | x_pos2  |      |
+| 7 | x_target3  | x_pos3  |      |
+
 
 ### Chip location
 

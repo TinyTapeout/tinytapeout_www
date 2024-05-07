@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "681 EVEN AND ODD COUNTERS"
-weight: 86
+weight: 85
 ---
 
 ## 681 : EVEN AND ODD COUNTERS
@@ -11,7 +11,7 @@ weight: 86
 * [GitHub repository](https://github.com/DevrajC03/Jugraj-Devraj-Counters)
 * [GDS submitted](https://github.com/DevrajC03/Jugraj-Devraj-Counters/actions/runs/8756755003)
 * [Wokwi](https://wokwi.com/projects/395599496098067457) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -43,16 +43,17 @@ if the even count of BCD is shown, the logic circuit is cleadred the test .
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | IN1 | OUT0 |  |
-| 1 | IN2 | OUT1 |  |
-| 2 |  | OUT2 |  |
-| 3 |  | OUT3 |  |
-| 4 |  | OUT4 |  |
-| 5 |  | OUT5 |  |
-| 6 |  | OUT6 |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | IN1  | OUT0  |      |
+| 1 | IN2  | OUT1  |      |
+| 2 |   | OUT2  |      |
+| 3 |   | OUT3  |      |
+| 4 |   | OUT4  |      |
+| 5 |   | OUT5  |      |
+| 6 |   | OUT6  |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

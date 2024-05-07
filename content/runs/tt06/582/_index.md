@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "582 Universal Motor and Actuator Controller"
-weight: 83
+weight: 82
 ---
 
 ## 582 : Universal Motor and Actuator Controller
@@ -11,7 +11,7 @@ weight: 83
 * [GitHub repository](https://github.com/BatuCem/tt06-mnslab-bldc-0)
 * [GDS submitted](https://github.com/BatuCem/tt06-mnslab-bldc-0/actions/runs/8756640953)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -46,16 +46,17 @@ Pullup resistors are needed to communicate through i2c, if not provided.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | encoder_a | motor_positive | sda |
-| 1 | encoder_b | motor_negative |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 | scl |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | encoder_a  | motor_positive  |      |
+| 1 | encoder_b  | motor_negative  |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 | scl  |   |      |
+
 
 ### Chip location
 

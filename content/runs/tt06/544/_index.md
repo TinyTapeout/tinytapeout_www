@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "544 TT06 OTP Encryptor"
-weight: 24
+weight: 23
 ---
 
 ## 544 : TT06 OTP Encryptor
@@ -11,7 +11,7 @@ weight: 24
 * [GitHub repository](https://github.com/wmk7fe/tt06-otp-encryptor)
 * [GDS submitted](https://github.com/wmk7fe/tt06-otp-encryptor/actions/runs/8741806225)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000 Hz
 
 <!---
@@ -39,16 +39,17 @@ External hardware with basic memory, wiring, and data displaying functionality s
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | data[0] | out[0] | decrypt |
-| 1 | data[1] | out[1] | r_num[0] |
-| 2 | data[2] | out[2] | r_num[1] |
-| 3 | data[3] | out[3] | r_num[2] |
-| 4 | data[4] | out[4] | index_out[0] |
-| 5 | data[5] | out[5] | index_out[1] |
-| 6 | data[6] | out[6] | index_out[2] |
-| 7 | data[7] | out[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | data[0]  | out[0]  |      |
+| 1 | data[1]  | out[1]  |      |
+| 2 | data[2]  | out[2]  |      |
+| 3 | data[3]  | out[3]  |      |
+| 4 | data[4]  | out[4]  |      |
+| 5 | data[5]  | out[5]  |      |
+| 6 | data[6]  | out[6]  |      |
+| 7 | data[7]  | out[7]  |      |
+
 
 ### Chip location
 

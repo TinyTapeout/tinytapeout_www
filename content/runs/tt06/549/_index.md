@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "549 SumLatchUART_System"
-weight: 28
+weight: 27
 ---
 
 ## 549 : SumLatchUART_System
@@ -11,7 +11,7 @@ weight: 28
 * [GitHub repository](https://github.com/brtgio/UART_4-bits_ALU_System)
 * [GDS submitted](https://github.com/brtgio/UART_4-bits_ALU_System/actions/runs/8695197743)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -56,16 +56,17 @@ Given the utilization of an 8-bit output signal in the block diagram, no overflo
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | data_input [0] |  | clk |
-| 1 | data_input [1] |  | reset_n |
-| 2 | data_input [2] |  | save_a_n |
-| 3 | data_input [3] |  | save_b_n |
-| 4 | Op_select [4] |  | uart_tx_en |
-| 5 | Op_select [5] |  | uart_txd |
-| 6 | Op_select [6] |  | uartbusy |
-| 7 | Op_select [7] |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | data_input [0]  |   |      |
+| 1 | data_input [1]  |   |      |
+| 2 | data_input [2]  |   |      |
+| 3 | data_input [3]  |   |      |
+| 4 | Op_select [4]  |   |      |
+| 5 | Op_select [5]  |   |      |
+| 6 | Op_select [6]  |   |      |
+| 7 | Op_select [7]  |   |      |
+
 
 ### Chip location
 

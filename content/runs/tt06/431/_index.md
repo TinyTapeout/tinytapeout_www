@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "431 Dual Deque"
-weight: 125
+weight: 124
 ---
 
 ## 431 : Dual Deque
@@ -11,7 +11,7 @@ weight: 125
 * [GitHub repository](https://github.com/couchand/tt06-dual-deque)
 * [GDS submitted](https://github.com/couchand/tt06-dual-deque/actions/runs/8694032397)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 Two independent double-ended queues in one tiny footprint.
@@ -61,16 +61,17 @@ You would probably want to connect this to other devices that would find it usef
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Data In 0 | Data Out 0 | Deque Select |
-| 1 | Data In 1 | Data Out 1 | End Select |
-| 2 | Data In 2 | Data Out 2 | Push |
-| 3 | Data In 3 | Data Out 3 | Pop |
-| 4 | Data In 4 | Data Out 4 | Deque 0 Empty |
-| 5 | Data In 5 | Data Out 5 | Deque 0 Full |
-| 6 | Data In 6 | Data Out 6 | Deque 1 Empty |
-| 7 | Data In 7 | Data Out 7 | Deque 1 Full |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Data In 0  | Data Out 0  |      |
+| 1 | Data In 1  | Data Out 1  |      |
+| 2 | Data In 2  | Data Out 2  |      |
+| 3 | Data In 3  | Data Out 3  |      |
+| 4 | Data In 4  | Data Out 4  |      |
+| 5 | Data In 5  | Data Out 5  |      |
+| 6 | Data In 6  | Data Out 6  |      |
+| 7 | Data In 7  | Data Out 7  |      |
+
 
 ### Chip location
 

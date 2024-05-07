@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "421 Bivium-B Non-Linear Feedback Shift Register"
-weight: 197
+weight: 196
 ---
 
 ## 421 : Bivium-B Non-Linear Feedback Shift Register
@@ -11,7 +11,7 @@ weight: 197
 * [GitHub repository](https://github.com/icarislab/tt06_biviumb-prng_cu)
 * [GDS submitted](https://github.com/icarislab/tt06_biviumb-prng_cu/actions/runs/8709778889)
 * [Wokwi](https://wokwi.com/projects/395263962779770881) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -90,16 +90,17 @@ No external hardware is required.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | r000_val |  |
-| 1 | data_in | r068_val |  |
-| 2 | load_en | INTERM_fb |  |
-| 3 |  | r065_val |  |
-| 4 |  | r092_val |  |
-| 5 |  | r161_val |  |
-| 6 |  | r176_val |  |
-| 7 |  | NLSFR_out |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | r000_val  |      |
+| 1 | data_in  | r068_val  |      |
+| 2 | load_en  | INTERM_fb  |      |
+| 3 |   | r065_val  |      |
+| 4 |   | r092_val  |      |
+| 5 |   | r161_val  |      |
+| 6 |   | r176_val  |      |
+| 7 |   | NLSFR_out  |      |
+
 
 ### Chip location
 

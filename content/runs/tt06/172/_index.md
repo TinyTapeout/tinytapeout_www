@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "172 Die Roller"
-weight: 233
+weight: 232
 ---
 
 ## 172 : Die Roller
@@ -11,7 +11,7 @@ weight: 233
 * [GitHub repository](https://github.com/nathangross1/tt06-verilog-template)
 * [GDS submitted](https://github.com/nathangross1/tt06-verilog-template/actions/runs/8207055176)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,17 @@ PMOD dual 7-segment display
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Die Size bit 0 | Dual 7 segment data 0 |  |
-| 1 | Die Size bit 1 | Dual 7 segment data 1 |  |
-| 2 | Die Size bit 2 | Dual 7 segment data 2 |  |
-| 3 | Die Size bit 3 | Dual 7 segment data 3 |  |
-| 4 | Die Size bit 4 | Dual 7 segment data 4 |  |
-| 5 | Die Size bit 5 | Dual 7 segment data 5 |  |
-| 6 | Die Size bit 6 | Dual 7 segment data 6 |  |
-| 7 | Die Roll | Source selection |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Die Size bit 0  | Dual 7 segment data 0  |      |
+| 1 | Die Size bit 1  | Dual 7 segment data 1  |      |
+| 2 | Die Size bit 2  | Dual 7 segment data 2  |      |
+| 3 | Die Size bit 3  | Dual 7 segment data 3  |      |
+| 4 | Die Size bit 4  | Dual 7 segment data 4  |      |
+| 5 | Die Size bit 5  | Dual 7 segment data 5  |      |
+| 6 | Die Size bit 6  | Dual 7 segment data 6  |      |
+| 7 | Die Roll  | Source selection  |      |
+
 
 ### Chip location
 

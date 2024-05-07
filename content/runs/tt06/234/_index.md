@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "234 8 Bit Digital QIF"
-weight: 66
+weight: 65
 ---
 
 ## 234 : 8 Bit Digital QIF
@@ -11,7 +11,7 @@ weight: 66
 * [GitHub repository](https://github.com/davidparent/tt_um_tt6_verilog_davidparent)
 * [GDS submitted](https://github.com/davidparent/tt_um_tt6_verilog_davidparent/actions/runs/8632309382)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ ADALM2000
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | B0 | AS0 |  |
-| 1 | B1 | S1 |  |
-| 2 | B2 | S2 |  |
-| 3 | B3 | S3 |  |
-| 4 | B4 | S4 |  |
-| 5 | B5 | S5 |  |
-| 6 | B6 | S6 |  |
-| 7 | B7 | S7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | B0  | AS0  |      |
+| 1 | B1  | S1  |      |
+| 2 | B2  | S2  |      |
+| 3 | B3  | S3  |      |
+| 4 | B4  | S4  |      |
+| 5 | B5  | S5  |      |
+| 6 | B6  | S6  |      |
+| 7 | B7  | S7  |      |
+
 
 ### Chip location
 

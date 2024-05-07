@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "235 Programmable Thing"
-weight: 219
+weight: 218
 ---
 
 ## 235 : Programmable Thing
@@ -11,7 +11,7 @@ weight: 219
 * [GitHub repository](https://github.com/JamesTimothyMeech/tt06-programmable-thing)
 * [GDS submitted](https://github.com/JamesTimothyMeech/tt06-programmable-thing/actions/runs/8746902919)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,27 @@ TT06 printed circuit board, signal generator, an oscilliscope or similar to meas
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 1 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 2 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 3 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 4 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 5 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 6 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
-| 7 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch | Not used, grounded internally | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 1 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 2 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 3 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 4 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 5 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 6 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+| 7 | Control pin to connect one of the 16 resistors between ua[0] and ground using an analog switch  | Not used, grounded internally  |      |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | Internal programmable resistor connected to this pin           |
+| 1 | 0 | Analog pin not used           |
+| 2 | 4 | Analog pin not used           |
+| 3 | 1 | Analog pin not used           |
+| 4 | 3 | Analog inverter output           |
+| 5 | 2 | Analog inverter input           |
 
 ### Chip location
 

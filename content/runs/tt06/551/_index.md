@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "551 BIT COMPARATOR"
-weight: 82
+weight: 81
 ---
 
 ## 551 : BIT COMPARATOR
@@ -11,7 +11,7 @@ weight: 82
 * [GitHub repository](https://github.com/felipe-SD/tt06-wokwi-template-BIT_TEST)
 * [GDS submitted](https://github.com/felipe-SD/tt06-wokwi-template-BIT_TEST/actions/runs/8712351716)
 * [Wokwi](https://wokwi.com/projects/395355133883896833) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -48,16 +48,17 @@ Used input with any desired devices.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | BIT A | OUTPUT A |  |
-| 1 | BIT B | OUTPUT B |  |
-| 2 |  | OUTPUT C |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | BIT A  | OUTPUT A  |      |
+| 1 | BIT B  | OUTPUT B  |      |
+| 2 |   | OUTPUT C  |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

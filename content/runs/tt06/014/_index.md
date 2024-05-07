@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "14 Tiny Zuse"
-weight: 160
+weight: 159
 ---
 
 ## 14 : Tiny Zuse
@@ -11,7 +11,7 @@ weight: 160
 * [GitHub repository](https://github.com/fstolzcode/tt06-tinyZuse)
 * [GDS submitted](https://github.com/fstolzcode/tt06-tinyZuse/actions/runs/8727519893)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 ### How it works
@@ -58,16 +58,17 @@ Use the on board RPi 2400 for uart connections. It uses the default uart ports s
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 | rx |  |  |
-| 4 |  | tx |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 | rx  |   |      |
+| 4 |   | tx  |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

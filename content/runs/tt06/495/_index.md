@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "495 BCD to single 7 segment display Converter"
-weight: 148
+weight: 147
 ---
 
 ## 495 : BCD to single 7 segment display Converter
@@ -11,7 +11,7 @@ weight: 148
 * [GitHub repository](https://github.com/kelvinutp/bcd-2-7segment-decoder)
 * [GDS submitted](https://github.com/kelvinutp/bcd-2-7segment-decoder/actions/runs/8699935440)
 * [Wokwi](https://wokwi.com/projects/395061443288867841) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -44,16 +44,17 @@ For output use a single 7 segment display with common cathode.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | B3 | A |  |
-| 1 | B2 | B |  |
-| 2 | B1 | C |  |
-| 3 | B0 | D |  |
-| 4 |  | E |  |
-| 5 |  | F |  |
-| 6 |  | G |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | B3  | A  |      |
+| 1 | B2  | B  |      |
+| 2 | B1  | C  |      |
+| 3 | B0  | D  |      |
+| 4 |   | E  |      |
+| 5 |   | F  |      |
+| 6 |   | G  |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

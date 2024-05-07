@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "622 Combination Lock"
-weight: 80
+weight: 79
 ---
 
 ## 622 : Combination Lock
@@ -11,7 +11,7 @@ weight: 80
 * [GitHub repository](https://github.com/echeng98/tt06-combolock)
 * [GDS submitted](https://github.com/echeng98/tt06-combolock/actions/runs/8681941227)
 * [Wokwi](https://wokwi.com/projects/395179352683141121) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -68,16 +68,17 @@ other forms of input are necessary for physical operation of the lock.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Set | CurrPswd[0] |  |
-| 1 | Pswd[0] | CurrPswd[0] |  |
-| 2 | Pswd[1] | CurrPswd[0] |  |
-| 3 | Pswd[2] | CurrPswd[0] |  |
-| 4 | Pswd[3] | Unlocked |  |
-| 5 | Enter | PinLocked |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Set  | CurrPswd[0]  |      |
+| 1 | Pswd[0]  | CurrPswd[0]  |      |
+| 2 | Pswd[1]  | CurrPswd[0]  |      |
+| 3 | Pswd[2]  | CurrPswd[0]  |      |
+| 4 | Pswd[3]  | Unlocked  |      |
+| 5 | Enter  | PinLocked  |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

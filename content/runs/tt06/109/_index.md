@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "109 Synthesized Time-to-Digital Converter (TDC) v2"
-weight: 138
+weight: 137
 ---
 
 ## 109 : Synthesized Time-to-Digital Converter (TDC) v2
@@ -11,7 +11,7 @@ weight: 138
 * [GitHub repository](https://github.com/iic-jku/jku-tt06-tdc-v2)
 * [GDS submitted](https://github.com/iic-jku/jku-tt06-tdc-v2/actions/runs/8679868973)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -45,16 +45,17 @@ Two signal generators generating the logical signals with a programmable delay (
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Start signal of TDC | Result (LSB) |  |
-| 1 | Stop signal of the TDC | Result |  |
-| 2 | Select result of ring for output | Result |  |
-| 3 | output select (LSB) | Result |  |
-| 4 | output select | Result |  |
-| 5 | output select | Result |  |
-| 6 | output select | Result |  |
-| 7 | output select (MSB) | Result (MSB) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Start signal of TDC  | Result (LSB)  |      |
+| 1 | Stop signal of the TDC  | Result  |      |
+| 2 | Select result of ring for output  | Result  |      |
+| 3 | output select (LSB)  | Result  |      |
+| 4 | output select  | Result  |      |
+| 5 | output select  | Result  |      |
+| 6 | output select  | Result  |      |
+| 7 | output select (MSB)  | Result (MSB)  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "621 Serial to Parallel Register"
-weight: 59
+weight: 58
 ---
 
 ## 621 : Serial to Parallel Register
@@ -11,7 +11,7 @@ weight: 59
 * [GitHub repository](https://github.com/ricardorocha1202/Serie_Parallel)
 * [GDS submitted](https://github.com/ricardorocha1202/Serie_Parallel/actions/runs/8513423394)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -61,16 +61,17 @@ Logic Analyzer. This allows a serial signal to be introduced into the system tha
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | no use | no use | Bit 0 |
-| 1 | no use | no use | Bit 1 |
-| 2 | no use | no use | Bit 2 |
-| 3 | no use | no use | Bit 3 |
-| 4 | no use | no use | no use |
-| 5 | no use | no use | Serie_in |
-| 6 | no use | no use | rst |
-| 7 | no use | no use | clk |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | no use  | no use  |      |
+| 1 | no use  | no use  |      |
+| 2 | no use  | no use  |      |
+| 3 | no use  | no use  |      |
+| 4 | no use  | no use  |      |
+| 5 | no use  | no use  |      |
+| 6 | no use  | no use  |      |
+| 7 | no use  | no use  |      |
+
 
 ### Chip location
 

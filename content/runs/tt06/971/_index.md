@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "971 PS/2 Keyboard to Morse Code Encoder"
-weight: 41
+weight: 40
 ---
 
 ## 971 : PS/2 Keyboard to Morse Code Encoder
@@ -11,7 +11,7 @@ weight: 41
 * [GitHub repository](https://github.com/byte-me404/jku-tt06-ps2-morse-encoder)
 * [GDS submitted](https://github.com/byte-me404/jku-tt06-ps2-morse-encoder/actions/runs/8645502273)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -73,16 +73,17 @@ PS: You may be surprised when you press the F6 key :)
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | PS/2 Clock | Dit Output |  |
-| 1 | PS/2 Data |  |  |
-| 2 |  |  |  |
-| 3 |  | Dah Output |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  | Morse Code Output |  |
-| 7 |  | Morse Code Output (Buzzer) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | PS/2 Clock  | Dit Output  |      |
+| 1 | PS/2 Data  |   |      |
+| 2 |   |   |      |
+| 3 |   | Dah Output  |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   | Morse Code Output  |      |
+| 7 |   | Morse Code Output (Buzzer)  |      |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "232 4-bit stochastic multiplier traditional"
-weight: 236
+weight: 235
 ---
 
 ## 232 : 4-bit stochastic multiplier traditional
@@ -11,7 +11,7 @@ weight: 236
 * [GitHub repository](https://github.com/davidparent/tt06-woko-4bit-stocastic-muliplier-vedika-davidparent)
 * [GDS submitted](https://github.com/davidparent/tt06-woko-4bit-stocastic-muliplier-vedika-davidparent/actions/runs/8650669892)
 * [Wokwi](https://wokwi.com/projects/394888799427677185) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -45,16 +45,17 @@ ADLAM2000
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | A0 | SSA |  |
-| 1 | A1 | SSB |  |
-| 2 | A2 | PRBS0 |  |
-| 3 | A3 | PRBS1 |  |
-| 4 | B0 | PRBS2 |  |
-| 5 | B1 | PRBS3 |  |
-| 6 | B2 | S_M |  |
-| 7 | B3 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | A0  | SSA  |      |
+| 1 | A1  | SSB  |      |
+| 2 | A2  | PRBS0  |      |
+| 3 | A3  | PRBS1  |      |
+| 4 | B0  | PRBS2  |      |
+| 5 | B1  | PRBS3  |      |
+| 6 | B2  | S_M  |      |
+| 7 | B3  |   |      |
+
 
 ### Chip location
 

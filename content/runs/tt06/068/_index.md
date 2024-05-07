@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "68 kstep"
-weight: 183
+weight: 182
 ---
 
 ## 68 : kstep
@@ -11,7 +11,7 @@ weight: 183
 * [GitHub repository](https://github.com/KevinOConnor/tt06-kstep)
 * [GDS submitted](https://github.com/KevinOConnor/tt06-kstep/actions/runs/8758110061)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 ### How it works
@@ -62,16 +62,17 @@ interval,count,add commands.  Observe the step pulses on the uo_out[0]
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | step | spi_cs |
-| 1 |  | dir | spi_mosi |
-| 2 |  | other2 | spi_miso |
-| 3 |  | other3 | spi_sclk |
-| 4 |  | other4 | signal_irq |
-| 5 |  | other5 | signal_shutdown |
-| 6 |  | other6 |  |
-| 7 |  | other7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | step  |      |
+| 1 |   | dir  |      |
+| 2 |   | other2  |      |
+| 3 |   | other3  |      |
+| 4 |   | other4  |      |
+| 5 |   | other5  |      |
+| 6 |   | other6  |      |
+| 7 |   | other7  |      |
+
 
 ### Chip location
 

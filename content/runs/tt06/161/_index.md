@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "161 Some_LEDs"
-weight: 95
+weight: 94
 ---
 
 ## 161 : Some_LEDs
@@ -11,7 +11,7 @@ weight: 95
 * [GitHub repository](https://github.com/marsPRE/tinytapeout_workshop)
 * [GDS submitted](https://github.com/marsPRE/tinytapeout_workshop/actions/runs/8673999176)
 * [Wokwi](https://wokwi.com/projects/395055035944909825) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |      |
+| 1 |   |   |      |
+| 2 |   |   |      |
+| 3 |   |   |      |
+| 4 |   |   |      |
+| 5 |   |   |      |
+| 6 |   |   |      |
+| 7 |   |   |      |
+
 
 ### Chip location
 

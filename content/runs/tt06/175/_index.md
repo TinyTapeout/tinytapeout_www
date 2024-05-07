@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "175 Silly 4b CPU v2"
-weight: 209
+weight: 208
 ---
 
 ## 175 : Silly 4b CPU v2
@@ -11,7 +11,7 @@ weight: 209
 * [GitHub repository](https://github.com/tommythorn/tt06-tommythorn-4b-cpu)
 * [GDS submitted](https://github.com/tommythorn/tt06-tommythorn-4b-cpu/actions/runs/8657942608)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50 Hz
 
 <!---
@@ -126,16 +126,17 @@ Nothing required but without observing outputs it's a bit boring.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clock | acc[0] |  |
-| 1 | cmd[0] | acc[1] |  |
-| 2 | cmd[1] | acc[2] |  |
-| 3 |  | acc[3] |  |
-| 4 | cmdarg[0] | pc[0] |  |
-| 5 | cmdarg[1] | pc[1] |  |
-| 6 | cmdarg[2] | pc[2] |  |
-| 7 | cmdarg[3] |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clock  | acc[0]  |      |
+| 1 | cmd[0]  | acc[1]  |      |
+| 2 | cmd[1]  | acc[2]  |      |
+| 3 |   | acc[3]  |      |
+| 4 | cmdarg[0]  | pc[0]  |      |
+| 5 | cmdarg[1]  | pc[1]  |      |
+| 6 | cmdarg[2]  | pc[2]  |      |
+| 7 | cmdarg[3]  |   |      |
+
 
 ### Chip location
 
