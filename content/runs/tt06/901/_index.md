@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "901 Gate Guesser"
-weight: 169
+weight: 168
 ---
 
 ## 901 : Gate Guesser
@@ -11,7 +11,7 @@ weight: 169
 * [GitHub repository](https://github.com/faramire/TT06-gate-guesser)
 * [GDS submitted](https://github.com/faramire/TT06-gate-guesser/actions/runs/8654554716)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -64,16 +64,17 @@ out7 = in3 or inD
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | switch0 | gatey0 | switch8 |
-| 1 | switch1 | gatey1 | switch9 |
-| 2 | switch2 | gatey2 | switchA |
-| 3 | switch3 | gatey3 | switchB |
-| 4 | switch4 | gatey4 | switchC |
-| 5 | switch5 | gatey5 | switchD |
-| 6 | switch6 | gatey6 | switchE |
-| 7 | switch7 | gatey7 | switchF |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | switch0  | gatey0  | switch8        |
+| 1 | switch1  | gatey1  | switch9        |
+| 2 | switch2  | gatey2  | switchA        |
+| 3 | switch3  | gatey3  | switchB        |
+| 4 | switch4  | gatey4  | switchC        |
+| 5 | switch5  | gatey5  | switchD        |
+| 6 | switch6  | gatey6  | switchE        |
+| 7 | switch7  | gatey7  | switchF        |
+
 
 ### Chip location
 

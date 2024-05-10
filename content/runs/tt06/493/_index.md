@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "493 It's Alive"
-weight: 63
+weight: 62
 ---
 
 ## 493 : It's Alive
@@ -11,7 +11,7 @@ weight: 63
 * [GitHub repository](https://github.com/Qubitbytesltd/tt06-its-alive)
 * [GDS submitted](https://github.com/Qubitbytesltd/tt06-its-alive/actions/runs/8723962373)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 100000 Hz
 
 <!---
@@ -56,16 +56,17 @@ speaker or piezo buzzer
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | led segment a | speaker |
-| 1 |  | led segment b |  |
-| 2 |  | led segment c |  |
-| 3 |  | led segment d |  |
-| 4 |  | led segment e |  |
-| 5 |  | led segment f |  |
-| 6 |  | led segment g |  |
-| 7 |  | led segment dot |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | led segment a  | speaker        |
+| 1 |   | led segment b  |         |
+| 2 |   | led segment c  |         |
+| 3 |   | led segment d  |         |
+| 4 |   | led segment e  |         |
+| 5 |   | led segment f  |         |
+| 6 |   | led segment g  |         |
+| 7 |   | led segment dot  |         |
+
 
 ### Chip location
 

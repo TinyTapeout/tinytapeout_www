@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "675 clk frequency divider controled by rom"
-weight: 108
+weight: 107
 ---
 
 ## 675 : clk frequency divider controled by rom
@@ -11,7 +11,7 @@ weight: 108
 * [GitHub repository](https://github.com/brtgio/frq_divider_ROM_controled)
 * [GDS submitted](https://github.com/brtgio/frq_divider_ROM_controled/actions/runs/8707514950)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Requires a 50MHz oscillator.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | F_select [0] |  | clk |
-| 1 | F_select [1] |  | clk_out |
-| 2 | F_select [2] |  |  |
-| 3 | F_select [3] |  |  |
-| 4 | F_select [4] |  |  |
-| 5 | reset_n |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | F_select [0]  |   | clk        |
+| 1 | F_select [1]  |   | clk_out        |
+| 2 | F_select [2]  |   |         |
+| 3 | F_select [3]  |   |         |
+| 4 | F_select [4]  |   |         |
+| 5 | reset_n  |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

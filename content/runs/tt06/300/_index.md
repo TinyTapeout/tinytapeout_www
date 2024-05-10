@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "300 First TT Project"
-weight: 156
+weight: 155
 ---
 
 ## 300 : First TT Project
@@ -11,7 +11,7 @@ weight: 156
 * [GitHub repository](https://github.com/thornoff/tiny_tapeout_hackaday)
 * [GDS submitted](https://github.com/thornoff/tiny_tapeout_hackaday/actions/runs/8755392472)
 * [Wokwi](https://wokwi.com/projects/395054823569451009) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

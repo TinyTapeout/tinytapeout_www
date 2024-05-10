@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "206 co processor for precision farming"
-weight: 107
+weight: 106
 ---
 
 ## 206 : co processor for precision farming
@@ -11,7 +11,7 @@ weight: 107
 * [GitHub repository](https://github.com/mitsece/tt06-verilog-mitssdd)
 * [GDS submitted](https://github.com/mitsece/tt06-verilog-mitssdd/actions/runs/8599590031)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ If the sensor identifier data is 00 which means it is sensor1 and input data is 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Input data from the sensors | Deviation detector | Sensor identifier |
-| 1 | Input data from the sensors | Falut warning | Sensor identifier |
-| 2 | Input data from the sensors | Falut warning |  |
-| 3 | Input data from the sensors | Falut warning |  |
-| 4 | Input data from the sensors | Sensor identifier |  |
-| 5 | Input data from the sensors | Sensor identifier |  |
-| 6 | Input data from the sensors |  |  |
-| 7 | Input data from the sensors |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Input data from the sensors  | Deviation detector  | Sensor identifier        |
+| 1 | Input data from the sensors  | Falut warning  | Sensor identifier        |
+| 2 | Input data from the sensors  | Falut warning  |         |
+| 3 | Input data from the sensors  | Falut warning  |         |
+| 4 | Input data from the sensors  | Sensor identifier  |         |
+| 5 | Input data from the sensors  | Sensor identifier  |         |
+| 6 | Input data from the sensors  |   |         |
+| 7 | Input data from the sensors  |   |         |
+
 
 ### Chip location
 

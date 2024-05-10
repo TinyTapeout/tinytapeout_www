@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "738 FSK Modem +HDLC +UART (PoC)"
-weight: 45
+weight: 44
 ---
 
 ## 738 : FSK Modem +HDLC +UART (PoC)
@@ -11,7 +11,7 @@ weight: 45
 * [GitHub repository](https://github.com/dlmiles/tt06-poc-fskmodem-hdlctrx)
 * [GDS submitted](https://github.com/dlmiles/tt06-poc-fskmodem-hdlctrx/actions/runs/8749102893)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -188,16 +188,17 @@ options.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Rx Data | UART TX | Rx Clock (bidi) |
-| 1 | Rx Clock | UART CTS | Up/Down (bidi) |
-| 2 | UART RTS | UART DCD | TableAddr[0] |
-| 3 | TableData[0] | Rx Error | TableAddr[1] |
-| 4 | TableData[1] | Tx Error | TableAddr[2] |
-| 5 | TableData[2] | Sending | TableAddr[3] |
-| 6 | TableData[3] |  | TableAddr[4] |
-| 7 | UART RX | Tx Clock Stobe | TableAddr[5] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Rx Data  | UART TX  | Rx Clock (bidi)        |
+| 1 | Rx Clock  | UART CTS  | Up/Down (bidi)        |
+| 2 | UART RTS  | UART DCD  | TableAddr[0]        |
+| 3 | TableData[0]  | Rx Error  | TableAddr[1]        |
+| 4 | TableData[1]  | Tx Error  | TableAddr[2]        |
+| 5 | TableData[2]  | Sending  | TableAddr[3]        |
+| 6 | TableData[3]  |   | TableAddr[4]        |
+| 7 | UART RX  | Tx Clock Stobe  | TableAddr[5]        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "422 Servotester"
-weight: 21
+weight: 20
 ---
 
 ## 422 : Servotester
@@ -11,7 +11,7 @@ weight: 21
 * [GitHub repository](https://github.com/wuehr1999/tt06-wuehr1999-servotester)
 * [GDS submitted](https://github.com/wuehr1999/tt06-wuehr1999-servotester/actions/runs/8681035615)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ A RC servo is required for testing.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | position bit 0 |  |  |
-| 1 | position bit 1 |  |  |
-| 2 | position bit 2 |  |  |
-| 3 | position bit 3 |  |  |
-| 4 | position bit 4 |  |  |
-| 5 | position bit 5 |  |  |
-| 6 | position bit 6 |  |  |
-| 7 | position bit 7 |  | servo pulse |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | position bit 0  |   |         |
+| 1 | position bit 1  |   |         |
+| 2 | position bit 2  |   |         |
+| 3 | position bit 3  |   |         |
+| 4 | position bit 4  |   |         |
+| 5 | position bit 5  |   |         |
+| 6 | position bit 6  |   |         |
+| 7 | position bit 7  |   | servo pulse        |
+
 
 ### Chip location
 

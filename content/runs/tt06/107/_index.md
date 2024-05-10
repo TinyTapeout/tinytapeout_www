@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "107 i4004 for TinyTapeout"
-weight: 25
+weight: 24
 ---
 
 ## 107 : i4004 for TinyTapeout
@@ -11,7 +11,7 @@ weight: 25
 * [GitHub repository](https://github.com/noritsuna/tt06-tt_um_i4004)
 * [GDS submitted](https://github.com/noritsuna/tt06-tt_um_i4004/actions/runs/8479565288)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 741000 Hz
 
 ### How it works
@@ -29,16 +29,17 @@ No Test.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | data0_pad | cmrom_pad |  |
-| 1 | data1_pad | cmram0_pad |  |
-| 2 | data2_pad | cmram1_pad |  |
-| 3 | data3_pad | cmram2_pad |  |
-| 4 | clk1_pad | cmram3_pad |  |
-| 5 | clk2_pad | sync_pad |  |
-| 6 | poc_pad |  |  |
-| 7 | test_pad |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | data0_pad  | cmrom_pad  |         |
+| 1 | data1_pad  | cmram0_pad  |         |
+| 2 | data2_pad  | cmram1_pad  |         |
+| 3 | data3_pad  | cmram2_pad  |         |
+| 4 | clk1_pad  | cmram3_pad  |         |
+| 5 | clk2_pad  | sync_pad  |         |
+| 6 | poc_pad  |   |         |
+| 7 | test_pad  |   |         |
+
 
 ### Chip location
 

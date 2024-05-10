@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "518 Integrated Distorion Pedal"
-weight: 48
+weight: 47
 ---
 
 ## 518 : Integrated Distorion Pedal
@@ -11,7 +11,7 @@ weight: 48
 * [GitHub repository](https://github.com/nanikgeorge/IntegratedGuitarPedal)
 * [GDS submitted](https://github.com/nanikgeorge/IntegratedGuitarPedal/actions/runs/8755923110)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -41,16 +41,23 @@ You need to provide an input signal to UA[0] and an output will come from UA[1] 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 11 | IN           |
+| 1 | 6 | OUT           |
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "167 *NOT WORKING* HP 5082-7500 Decoder"
-weight: 39
+weight: 38
 ---
 
 ## 167 : *NOT WORKING* HP 5082-7500 Decoder
@@ -11,7 +11,7 @@ weight: 39
 * [GitHub repository](https://github.com/zaprodk/HP5082-7500_Decoder)
 * [GDS submitted](https://github.com/zaprodk/HP5082-7500_Decoder/actions/runs/8728097769)
 * [Wokwi](https://wokwi.com/projects/395444977868278785) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -30,16 +30,17 @@ LED dot-matrix-display.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

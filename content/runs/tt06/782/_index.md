@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "782 14 Hour Simple Computer"
-weight: 186
+weight: 185
 ---
 
 ## 782 : 14 Hour Simple Computer
@@ -11,7 +11,7 @@ weight: 186
 * [GitHub repository](https://github.com/petersn/tt06-submission)
 * [GDS submitted](https://github.com/petersn/tt06-submission/actions/runs/8758277739)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ This project requires an external SPI SRAM, and also an external VGA breakout bo
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | vga_r | sram_cs_n |
-| 1 |  | vga_g | sram_so |
-| 2 |  | vga_b | sram_sio2 |
-| 3 |  | vga_hs | sram_si |
-| 4 |  | vga_vs | sram_sck |
-| 5 |  |  | sram_sio3 |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | vga_r  | sram_cs_n        |
+| 1 |   | vga_g  | sram_so        |
+| 2 |   | vga_b  | sram_sio2        |
+| 3 |   | vga_hs  | sram_si        |
+| 4 |   | vga_vs  | sram_sck        |
+| 5 |   |   | sram_sio3        |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

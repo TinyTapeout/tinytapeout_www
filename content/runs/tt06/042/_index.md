@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "42 Oscillating Bones"
-weight: 172
+weight: 171
 ---
 
 ## 42 : Oscillating Bones
@@ -11,7 +11,7 @@ weight: 172
 * [GitHub repository](https://github.com/urish/tt06-oscillating-bones)
 * [GDS submitted](https://github.com/urish/tt06-oscillating-bones/actions/runs/8711104507)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -45,16 +45,17 @@ Note that the simulation results do not include all the parasitics, only the mai
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | osc_out |  |
-| 1 |  | osc_div_2 |  |
-| 2 |  | osc_div_4 |  |
-| 3 |  | osc_div_8 |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | osc_out  |         |
+| 1 |   | osc_div_2  |         |
+| 2 |   | osc_div_4  |         |
+| 3 |   | osc_div_8  |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

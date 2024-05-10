@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "672 4-Bit Full Adder and Subtractor with Hardware Trojan"
-weight: 31
+weight: 30
 ---
 
 ## 672 : 4-Bit Full Adder and Subtractor with Hardware Trojan
@@ -11,7 +11,7 @@ weight: 31
 * [GitHub repository](https://github.com/hongselectronics/FA_SUB_HWT)
 * [GDS submitted](https://github.com/hongselectronics/FA_SUB_HWT/actions/runs/8755641343)
 * [Wokwi](https://wokwi.com/projects/395567106413190145) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 100000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Pattern Generator and logic analyzer
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Add/Subtract | 7 Segment Display | Input - B3 |
-| 1 | A0 | 7 Segment Display | Input - Hardware Trojan Trigger |
-| 2 | B0 | 7 Segment Display | Output - LFSR 1 |
-| 3 | A1 | 7 Segment Display | Output - LFSR 2 |
-| 4 | B1 | 7 Segment Display | Output - LFSR 3 |
-| 5 | A2 | 7 Segment Display | Input - LFSR 3 |
-| 6 | B2 | 7 Segment Display | Input - LFSR 4 |
-| 7 | A3 | 7 Segment Display | Output - LFSR 7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Add/Subtract  | 7 Segment Display  | Input - B3        |
+| 1 | A0  | 7 Segment Display  | Input - Hardware Trojan Trigger        |
+| 2 | B0  | 7 Segment Display  | Output - LFSR 1        |
+| 3 | A1  | 7 Segment Display  | Output - LFSR 2        |
+| 4 | B1  | 7 Segment Display  | Output - LFSR 3        |
+| 5 | A2  | 7 Segment Display  | Input - LFSR 3        |
+| 6 | B2  | 7 Segment Display  | Input - LFSR 4        |
+| 7 | A3  | 7 Segment Display  | Output - LFSR 7        |
+
 
 ### Chip location
 

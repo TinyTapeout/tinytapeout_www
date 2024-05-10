@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "110 SPI to RGBLED Decoder/Driver"
-weight: 222
+weight: 221
 ---
 
 ## 110 : SPI to RGBLED Decoder/Driver
@@ -11,7 +11,7 @@ weight: 222
 * [GitHub repository](https://github.com/schandreas/jku-tt06-spi-led)
 * [GDS submitted](https://github.com/schandreas/jku-tt06-spi-led/actions/runs/8642842784)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25000000 Hz
 
 <!---
@@ -48,16 +48,17 @@ Any SPI Master (RPi, Arduino, MCU, etc.), and a String of 10 WS2812B LEDs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | MOSI | LED_DATA |  |
-| 1 | SCLK |  |  |
-| 2 | nCS |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | MOSI  | LED_DATA  |         |
+| 1 | SCLK  |   |         |
+| 2 | nCS  |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

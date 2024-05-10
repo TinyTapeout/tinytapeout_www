@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "553 IFSC Keypad Locker"
-weight: 72
+weight: 71
 ---
 
 ## 553 : IFSC Keypad Locker
@@ -11,7 +11,7 @@ weight: 72
 * [GitHub repository](https://github.com/luisdavikp/tt06-IFSC_Keyboard_Locker)
 * [GDS submitted](https://github.com/luisdavikp/tt06-IFSC_Keyboard_Locker/actions/runs/8665127385)
 * [Wokwi](https://wokwi.com/projects/394640918790880257) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 100 Hz
 
 <!---
@@ -57,16 +57,17 @@ The last register of the "Password Register" sends a signal to the state control
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | VCC | Keypad Row pin 1 |  |
-| 1 | RESET | Keypad Row pin 2 |  |
-| 2 | GND | Keypad Row pin 3 |  |
-| 3 | Keypad Column pin 1 | Keypad Row pin 4 |  |
-| 4 | Keypad Column pin 2 |  |  |
-| 5 | Keypad Column pin 3 | Locker State (LED 1) |  |
-| 6 | Keypad Column pin 4 | Registered Password Signal (LED 2) |  |
-| 7 |  | Line Verifier (LED 3) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | VCC  | Keypad Row pin 1  |         |
+| 1 | RESET  | Keypad Row pin 2  |         |
+| 2 | GND  | Keypad Row pin 3  |         |
+| 3 | Keypad Column pin 1  | Keypad Row pin 4  |         |
+| 4 | Keypad Column pin 2  |   |         |
+| 5 | Keypad Column pin 3  | Locker State (LED 1)  |         |
+| 6 | Keypad Column pin 4  | Registered Password Signal (LED 2)  |         |
+| 7 |   | Line Verifier (LED 3)  |         |
+
 
 ### Chip location
 

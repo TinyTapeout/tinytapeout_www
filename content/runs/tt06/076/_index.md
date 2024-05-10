@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "76 RGB Mixer demo"
-weight: 102
+weight: 101
 ---
 
 ## 76 : RGB Mixer demo
@@ -11,7 +11,7 @@ weight: 102
 * [GitHub repository](https://github.com/mattvenn/tt06-rgb-mixer)
 * [GDS submitted](https://github.com/mattvenn/tt06-rgb-mixer/actions/runs/8753101289)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -41,16 +41,17 @@ Use 3 digital encoders attached to the first 6 inputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | enc0 a | pwm0 | encoder bit 0 |
-| 1 | enc0 b | pwm1 | encoder bit 1 |
-| 2 | enc1 a | pwm2 | encoder bit 2 |
-| 3 | enc1 b |  | encoder bit 3 |
-| 4 | enc2 a |  | encoder bit 4 |
-| 5 | enc2 b |  | encoder bit 5 |
-| 6 | debug bit 0 |  | encoder bit 6 |
-| 7 | debug bit 1 |  | encoder bit 7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | enc0 a  | pwm0  | encoder bit 0        |
+| 1 | enc0 b  | pwm1  | encoder bit 1        |
+| 2 | enc1 a  | pwm2  | encoder bit 2        |
+| 3 | enc1 b  |   | encoder bit 3        |
+| 4 | enc2 a  |   | encoder bit 4        |
+| 5 | enc2 b  |   | encoder bit 5        |
+| 6 | debug bit 0  |   | encoder bit 6        |
+| 7 | debug bit 1  |   | encoder bit 7        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "170 Clock Domain Crossing FIFO"
-weight: 147
+weight: 146
 ---
 
 ## 170 : Clock Domain Crossing FIFO
@@ -11,7 +11,7 @@ weight: 147
 * [GitHub repository](https://github.com/KennethWilke/tt06-cdc-fifo)
 * [GDS submitted](https://github.com/KennethWilke/tt06-cdc-fifo/actions/runs/8656648890)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -52,16 +52,17 @@ The FIFO will present the current output on the `read_data` bus. If `empty` is l
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | write_clock | empty | write_reset |
-| 1 | write_increment | full | read_reset |
-| 2 | read_clock |  |  |
-| 3 | read_increment |  |  |
-| 4 | write_data0 | read_data0 |  |
-| 5 | write_data1 | read_data1 |  |
-| 6 | write_data2 | read_data2 |  |
-| 7 | write_data3 | read_data3 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | write_clock  | empty  | write_reset        |
+| 1 | write_increment  | full  | read_reset        |
+| 2 | read_clock  |   |         |
+| 3 | read_increment  |   |         |
+| 4 | write_data0  | read_data0  |         |
+| 5 | write_data1  | read_data1  |         |
+| 6 | write_data2  | read_data2  |         |
+| 7 | write_data3  | read_data3  |         |
+
 
 ### Chip location
 

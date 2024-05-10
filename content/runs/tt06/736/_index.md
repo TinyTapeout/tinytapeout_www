@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "736 UACJ-MIE-Booth 4"
-weight: 198
+weight: 197
 ---
 
 ## 736 : UACJ-MIE-Booth 4
@@ -11,7 +11,7 @@ weight: 198
 * [GitHub repository](https://github.com/HHRB98/UACJ-MIE-booth4)
 * [GDS submitted](https://github.com/HHRB98/UACJ-MIE-booth4/actions/runs/8746999207)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | X[0] | Z[0] | Y[0] |
-| 1 | X[1] | Z[1] | Y[1] |
-| 2 | X[2] | Z[2] | Y[2] |
-| 3 | X[3] | Z[3] | Y[3] |
-| 4 |  | Z[4] |  |
-| 5 |  | Z[5] |  |
-| 6 |  | Z[6] |  |
-| 7 |  | Z[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | X[0]  | Z[0]  | Y[0]        |
+| 1 | X[1]  | Z[1]  | Y[1]        |
+| 2 | X[2]  | Z[2]  | Y[2]        |
+| 3 | X[3]  | Z[3]  | Y[3]        |
+| 4 |   | Z[4]  |         |
+| 5 |   | Z[5]  |         |
+| 6 |   | Z[6]  |         |
+| 7 |   | Z[7]  |         |
+
 
 ### Chip location
 

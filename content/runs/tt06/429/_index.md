@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "429 Signed Unsigned multiplyer"
-weight: 167
+weight: 166
 ---
 
 ## 429 : Signed Unsigned multiplyer
@@ -11,7 +11,7 @@ weight: 167
 * [GitHub repository](https://github.com/jorgenkraghjakobsen/tt06-signed_unsigned_4x4_bit_multiplier)
 * [GDS submitted](https://github.com/jorgenkraghjakobsen/tt06-signed_unsigned_4x4_bit_multiplier/actions/runs/8756986314)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -55,16 +55,17 @@ None beyound the TinyTapeout demoboard.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | multiplier[0] | product[0] | signed_mode |
-| 1 | multiplier[1] | product[1] |  |
-| 2 | multiplier[2] | product[2] |  |
-| 3 | multiplier[3] | product[3] |  |
-| 4 | multiplicand[0] | product[4] |  |
-| 5 | multiplicand[1] | product[5] |  |
-| 6 | multiplicand[2] | product[6] |  |
-| 7 | multiplicand[3] | product[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | multiplier[0]  | product[0]  | signed_mode        |
+| 1 | multiplier[1]  | product[1]  |         |
+| 2 | multiplier[2]  | product[2]  |         |
+| 3 | multiplier[3]  | product[3]  |         |
+| 4 | multiplicand[0]  | product[4]  |         |
+| 5 | multiplicand[1]  | product[5]  |         |
+| 6 | multiplicand[2]  | product[6]  |         |
+| 7 | multiplicand[3]  | product[7]  |         |
+
 
 ### Chip location
 

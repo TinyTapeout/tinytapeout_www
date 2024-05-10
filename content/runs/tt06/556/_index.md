@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "556 Hardware Trojan Part II"
-weight: 104
+weight: 103
 ---
 
 ## 556 : Hardware Trojan Part II
@@ -11,7 +11,7 @@ weight: 104
 * [GitHub repository](https://github.com/hongselectronics/HW_Trojan_Rev2)
 * [GDS submitted](https://github.com/hongselectronics/HW_Trojan_Rev2/actions/runs/8755314719)
 * [Wokwi](https://wokwi.com/projects/395055455727667201) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -47,16 +47,17 @@ Pattern generator and logic analyzer recommended.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Scan Enable | PRNG 1 output Trojan Free | Input, ScanIn 8 |
-| 1 | ScanIn 1 | PRNG 2 output trojan inserted | Input, ScanIn 9 |
-| 2 | ScanIn 2 |  | Input, ScanIn 10 |
-| 3 | ScanIn 3 |  | Input, External Trojan Trigger |
-| 4 | ScanIn 4 |  | Output, single inverter test |
-| 5 | ScanIn 5 |  | Input, single inverter test |
-| 6 | ScanIn 6 |  | Input, 8 inverters test |
-| 7 | ScanIn 7 |  | Output, 8 inverters test |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Scan Enable  | PRNG 1 output Trojan Free  | Input, ScanIn 8        |
+| 1 | ScanIn 1  | PRNG 2 output trojan inserted  | Input, ScanIn 9        |
+| 2 | ScanIn 2  |   | Input, ScanIn 10        |
+| 3 | ScanIn 3  |   | Input, External Trojan Trigger        |
+| 4 | ScanIn 4  |   | Output, single inverter test        |
+| 5 | ScanIn 5  |   | Input, single inverter test        |
+| 6 | ScanIn 6  |   | Input, 8 inverters test        |
+| 7 | ScanIn 7  |   | Output, 8 inverters test        |
+
 
 ### Chip location
 

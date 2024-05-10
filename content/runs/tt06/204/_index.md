@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "204 The James Retro Byte 8 computer"
-weight: 55
+weight: 54
 ---
 
 ## 204 : The James Retro Byte 8 computer
@@ -11,7 +11,7 @@ weight: 55
 * [GitHub repository](https://github.com/AeroX2/tt06-jrb8-computer)
 * [GDS submitted](https://github.com/AeroX2/tt06-jrb8-computer/actions/runs/8723705761)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -36,16 +36,17 @@ The computer should start immediately once the clk starts driving it.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | input bit 0 | output bit 0 | cs rom |
-| 1 | input bit 1 | output bit 1 | mosi |
-| 2 | input bit 2 | output bit 2 | miso |
-| 3 | input bit 3 | output bit 3 | sck |
-| 4 | input bit 4 | output bit 4 | cs ram |
-| 5 | input bit 5 | output bit 5 |  |
-| 6 | input bit 6 | output bit 6 |  |
-| 7 | input bit 7 | output bit 7 | 24 addressing bit mode |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | input bit 0  | output bit 0  | cs rom        |
+| 1 | input bit 1  | output bit 1  | mosi        |
+| 2 | input bit 2  | output bit 2  | miso        |
+| 3 | input bit 3  | output bit 3  | sck        |
+| 4 | input bit 4  | output bit 4  | cs ram        |
+| 5 | input bit 5  | output bit 5  |         |
+| 6 | input bit 6  | output bit 6  |         |
+| 7 | input bit 7  | output bit 7  | 24 addressing bit mode        |
+
 
 ### Chip location
 

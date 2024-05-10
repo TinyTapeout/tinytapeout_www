@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "965 Wave Generator"
-weight: 166
+weight: 165
 ---
 
 ## 965 : Wave Generator
@@ -11,7 +11,7 @@ weight: 166
 * [GitHub repository](https://github.com/MayrMichael/jku-tt06-wave-generator)
 * [GDS submitted](https://github.com/MayrMichael/jku-tt06-wave-generator/actions/runs/8627616879)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -138,16 +138,17 @@ Through the SPI interface it is possible to get an analogue signal through a sui
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | parameter bit 0 (LSB) | output wave bit 0 | (input) enable pin |
-| 1 | parameter bit 1 | output wave bit 1 | (input) waveform bit 0 pin |
-| 2 | parameter bit 2 | output wave bit 2 | (input) waveform bit 1 pin |
-| 3 | parameter bit 3 | output wave bit 3 | (input) set phase pin |
-| 4 | parameter bit 4 | output wave bit 4 | (input) set amplitude pin |
-| 5 | parameter bit 5 | output wave bit 5 | (output) spi cs pin |
-| 6 | parameter bit 6 | output wave bit 6 | (output) spi mosi pin |
-| 7 | parameter bit 7 (MSB) | output wave bit 7 | (output) spi clk pin |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | parameter bit 0 (LSB)  | output wave bit 0  | (input) enable pin        |
+| 1 | parameter bit 1  | output wave bit 1  | (input) waveform bit 0 pin        |
+| 2 | parameter bit 2  | output wave bit 2  | (input) waveform bit 1 pin        |
+| 3 | parameter bit 3  | output wave bit 3  | (input) set phase pin        |
+| 4 | parameter bit 4  | output wave bit 4  | (input) set amplitude pin        |
+| 5 | parameter bit 5  | output wave bit 5  | (output) spi cs pin        |
+| 6 | parameter bit 6  | output wave bit 6  | (output) spi mosi pin        |
+| 7 | parameter bit 7 (MSB)  | output wave bit 7  | (output) spi clk pin        |
+
 
 ### Chip location
 

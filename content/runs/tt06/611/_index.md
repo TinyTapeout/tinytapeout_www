@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "611 CDMA_2024"
-weight: 173
+weight: 172
 ---
 
 ## 611 : CDMA_2024
@@ -11,7 +11,7 @@ weight: 173
 * [GitHub repository](https://github.com/Santiago-Robledo/tt06-CDMA-2024)
 * [GDS submitted](https://github.com/Santiago-Robledo/tt06-CDMA-2024/actions/runs/8624139371)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -63,16 +63,17 @@ OPAM, Testboard, LED
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | signal_i |  | cdma_o |
-| 1 | seed_i[0] |  | gold_o |
-| 2 | seed_i[1] |  | receptor_o |
-| 3 | seed_i[2] |  | led_o |
-| 4 | seed_i[3] |  |  |
-| 5 | seed_i[4] |  |  |
-| 6 | seed_i[5] |  |  |
-| 7 | load_i |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | signal_i  |   | cdma_o        |
+| 1 | seed_i[0]  |   | gold_o        |
+| 2 | seed_i[1]  |   | receptor_o        |
+| 3 | seed_i[2]  |   | led_o        |
+| 4 | seed_i[3]  |   |         |
+| 5 | seed_i[4]  |   |         |
+| 6 | seed_i[5]  |   |         |
+| 7 | load_i  |   |         |
+
 
 ### Chip location
 

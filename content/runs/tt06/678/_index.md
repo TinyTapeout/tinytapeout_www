@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "678 4 bit RAM"
-weight: 152
+weight: 151
 ---
 
 ## 678 : 4 bit RAM
@@ -11,7 +11,7 @@ weight: 152
 * [GitHub repository](https://github.com/asilvaj1/tt04-submission_silva_ram)
 * [GDS submitted](https://github.com/asilvaj1/tt04-submission_silva_ram/actions/runs/8514227731)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ The chip may need a Microcontroller, Raspberry, Arduino or FPGA for data inputs 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Memory entry address [0] | Memory output data [0] | RAM write enable input |
-| 1 | Memory entry address [1] | Memory output data [1] |  |
-| 2 | Memory entry address [2] | Memory output data [2] |  |
-| 3 | Memory entry address [3] | Memory output data [3] |  |
-| 4 | Memory input data [0] |  |  |
-| 5 | Memory input data [1] |  |  |
-| 6 | Memory input data [2] |  |  |
-| 7 | Memory input data [3] |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Memory entry address [0]  | Memory output data [0]  | RAM write enable input        |
+| 1 | Memory entry address [1]  | Memory output data [1]  |         |
+| 2 | Memory entry address [2]  | Memory output data [2]  |         |
+| 3 | Memory entry address [3]  | Memory output data [3]  |         |
+| 4 | Memory input data [0]  |   |         |
+| 5 | Memory input data [1]  |   |         |
+| 6 | Memory input data [2]  |   |         |
+| 7 | Memory input data [3]  |   |         |
+
 
 ### Chip location
 

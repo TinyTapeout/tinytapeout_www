@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "267 A 555-Timer Clone for Tiny Tapeout 6"
-weight: 150
+weight: 149
 ---
 
 ## 267 : A 555-Timer Clone for Tiny Tapeout 6
@@ -11,7 +11,7 @@ weight: 150
 * [GitHub repository](https://github.com/vincentfusco/tt06_555)
 * [GDS submitted](https://github.com/vincentfusco/tt06_555/actions/runs/8500042595)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -50,16 +50,24 @@ Duplicate circuit in Figure 6-2 at: https://www.ti.com/lit/ds/symlink/lmc555.pdf
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | DI_RESET_N | DO_OUT |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | DI_RESET_N  | DO_OUT  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 7 | V_THRESH_I           |
+| 1 | 9 | V_TRIG_B_I           |
+| 2 | 8 | V_DISCH_O           |
 
 ### Chip location
 

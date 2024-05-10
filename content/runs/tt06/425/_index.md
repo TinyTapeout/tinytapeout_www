@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "425 Anomaly Detection using Isolation trees"
-weight: 238
+weight: 237
 ---
 
 ## 425 : Anomaly Detection using Isolation trees
@@ -11,7 +11,7 @@ weight: 238
 * [GitHub repository](https://github.com/Lefteris-B/i_tree)
 * [GDS submitted](https://github.com/Lefteris-B/i_tree/actions/runs/8723571228)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -49,16 +49,17 @@ Binary output sensor used for anomaly detection on workload of devices.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | sensor_data | anomaly_detected |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | sensor_data  | anomaly_detected  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "424 DEFAULT"
-weight: 75
+weight: 74
 ---
 
 ## 424 : DEFAULT
@@ -11,7 +11,7 @@ weight: 75
 * [GitHub repository](https://github.com/nubcore/default-tape)
 * [GDS submitted](https://github.com/nubcore/default-tape/actions/runs/8681904975)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ N/A
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | segment a |  |
-| 1 |  | segment b |  |
-| 2 |  | segment c |  |
-| 3 |  | segment d |  |
-| 4 |  | segment e |  |
-| 5 |  | segment f |  |
-| 6 |  | segment g |  |
-| 7 |  | dot |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | segment a  |         |
+| 1 |   | segment b  |         |
+| 2 |   | segment c  |         |
+| 3 |   | segment d  |         |
+| 4 |   | segment e  |         |
+| 5 |   | segment f  |         |
+| 6 |   | segment g  |         |
+| 7 |   | dot  |         |
+
 
 ### Chip location
 

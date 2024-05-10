@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "814 UART interface to ADC TLV2556 (VHDL Test)"
-weight: 101
+weight: 100
 ---
 
 ## 814 : UART interface to ADC TLV2556 (VHDL Test)
@@ -11,7 +11,7 @@ weight: 101
 * [GitHub repository](https://github.com/sanojn/tt06-vhdl-adc_interface)
 * [GDS submitted](https://github.com/sanojn/tt06-vhdl-adc_interface/actions/runs/8758635732)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 48000000 Hz
 
 <!---
@@ -43,16 +43,17 @@ Type CR or LF to enter "continuous mode". The design will loop through all chann
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | adc_dout | adc_clk |  |
-| 1 | adc_eoc | adc_cs |  |
-| 2 | UART RxD | adc_din |  |
-| 3 | UART CTS_n (opposite polarity) | UART TxD |  |
-| 4 |  | UART RTSn (opposite polarity) |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | adc_dout  | adc_clk  |         |
+| 1 | adc_eoc  | adc_cs  |         |
+| 2 | UART RxD  | adc_din  |         |
+| 3 | UART CTS_n (opposite polarity)  | UART TxD  |         |
+| 4 |   | UART RTSn (opposite polarity)  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

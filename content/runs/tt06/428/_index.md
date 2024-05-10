@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "428 Chisel Hello World"
-weight: 69
+weight: 68
 ---
 
 ## 428 : Chisel Hello World
@@ -11,7 +11,7 @@ weight: 69
 * [GitHub repository](https://github.com/schoeberl/tt06-chisel-hello)
 * [GDS submitted](https://github.com/schoeberl/tt06-chisel-hello/actions/runs/8687888438)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -48,16 +48,17 @@ Audio PMOD (PmodAMP2) for audio output on the lower row of the BIDIR PMOD.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | switch on 7-segment | segment a |  |
-| 1 |  | segment b |  |
-| 2 |  | segment c |  |
-| 3 |  | segment d |  |
-| 4 |  | segment e | audio |
-| 5 |  | segment f | gain |
-| 6 |  | segment g |  |
-| 7 |  | dot: morse out | nshutdown |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | switch on 7-segment  | segment a  |         |
+| 1 |   | segment b  |         |
+| 2 |   | segment c  |         |
+| 3 |   | segment d  |         |
+| 4 |   | segment e  | audio        |
+| 5 |   | segment f  | gain        |
+| 6 |   | segment g  |         |
+| 7 |   | dot: morse out  | nshutdown        |
+
 
 ### Chip location
 

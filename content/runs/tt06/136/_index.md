@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "136 ADPCM Encoder Audio Compressor"
-weight: 129
+weight: 128
 ---
 
 ## 136 : ADPCM Encoder Audio Compressor
@@ -11,7 +11,7 @@ weight: 129
 * [GitHub repository](https://github.com/hesscharlie/tt06-ADPCM-Compressor)
 * [GDS submitted](https://github.com/hesscharlie/tt06-ADPCM-Compressor/actions/runs/8742606001)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -48,16 +48,17 @@ Now, a CIC decimated and ADPCM encoded output of the microphone data will stream
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clk | outValid |  |
-| 1 | slow_clk |  |  |
-| 2 | block_enable |  |  |
-| 3 | pdm_in |  |  |
-| 4 |  | encPcm[0] |  |
-| 5 |  | encPcm[1] |  |
-| 6 |  | encPcm[2] |  |
-| 7 |  | encPcm[3] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clk  | outValid  |         |
+| 1 | slow_clk  |   |         |
+| 2 | block_enable  |   |         |
+| 3 | pdm_in  |   |         |
+| 4 |   | encPcm[0]  |         |
+| 5 |   | encPcm[1]  |         |
+| 6 |   | encPcm[2]  |         |
+| 7 |   | encPcm[3]  |         |
+
 
 ### Chip location
 

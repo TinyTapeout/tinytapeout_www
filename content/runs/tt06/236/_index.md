@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "236 easy PAL"
-weight: 6
+weight: 5
 ---
 
 ## 236 : easy PAL
@@ -11,7 +11,7 @@ weight: 6
 * [GitHub repository](https://github.com/matztron/tt06-PAL)
 * [GDS submitted](https://github.com/matztron/tt06-PAL/actions/runs/8652618389)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -94,16 +94,17 @@ No external HW is needed. However to see your glorious boolean functions come to
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Combinatorial input 0 | Combinatorial output 0 | Config pin: This pin is used to apply the config bit that will be shifted in on a rising clock edge. |
-| 1 | Combinatorial input 1 | Combinatorial output 1 | Enable pin: If HIGH (1) the result of the logic function is applied to all outputs. |
-| 2 | Combinatorial input 2 | Combinatorial output 2 | Clock pin: Used for the shift register to sample in the [config pin] data (see uio[0]). |
-| 3 | Combinatorial input 3 | Combinatorial output 3 | unused |
-| 4 | Combinatorial input 4 | Combinatorial output 3 | unused |
-| 5 | Combinatorial input 5 | unused - tied to 0 | unused |
-| 6 | Combinatorial input 6 | unused - tied to 0 | unused |
-| 7 | Combinatorial input 7 | unused - tied to 0 | unused |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Combinatorial input 0  | Combinatorial output 0  | Config pin: This pin is used to apply the config bit that will be shifted in on a rising clock edge.        |
+| 1 | Combinatorial input 1  | Combinatorial output 1  | Enable pin: If HIGH (1) the result of the logic function is applied to all outputs.        |
+| 2 | Combinatorial input 2  | Combinatorial output 2  | Clock pin: Used for the shift register to sample in the [config pin] data (see uio[0]).        |
+| 3 | Combinatorial input 3  | Combinatorial output 3  | unused        |
+| 4 | Combinatorial input 4  | Combinatorial output 3  | unused        |
+| 5 | Combinatorial input 5  | unused - tied to 0  | unused        |
+| 6 | Combinatorial input 6  | unused - tied to 0  | unused        |
+| 7 | Combinatorial input 7  | unused - tied to 0  | unused        |
+
 
 ### Chip location
 

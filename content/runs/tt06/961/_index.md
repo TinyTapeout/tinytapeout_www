@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "961 ledcontroller"
-weight: 196
+weight: 195
 ---
 
 ## 961 : ledcontroller
@@ -11,7 +11,7 @@ weight: 196
 * [GitHub repository](https://github.com/Gatsch/jku-tt06-ledcontroller)
 * [GDS submitted](https://github.com/Gatsch/jku-tt06-ledcontroller/actions/runs/8639075025)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25000000 Hz
 
 <!---
@@ -55,16 +55,17 @@ Microntroller/computer (e.g. STM32, Arduino, Raspberry Pi, ...), ws2812b LED (st
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | i2c SCL alternative for PNP open collector | i2c SCL |
-| 1 |  | i2c SDA alternative for PNP open collector | i2c SDA |
-| 2 |  | ws2812b LED output |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | i2c SCL alternative for PNP open collector  | i2c SCL        |
+| 1 |   | i2c SDA alternative for PNP open collector  | i2c SDA        |
+| 2 |   | ws2812b LED output  |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "298 Dice"
-weight: 105
+weight: 104
 ---
 
 ## 298 : Dice
@@ -11,7 +11,7 @@ weight: 105
 * [GitHub repository](https://github.com/mastrogippo/tt06-mastrogippo)
 * [GDS submitted](https://github.com/mastrogippo/tt06-mastrogippo/actions/runs/8679404401)
 * [Wokwi](https://wokwi.com/projects/395054823837887489) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Please don't
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | btn_r | da |  |
-| 1 |  | db |  |
-| 2 |  | dc |  |
-| 3 |  | dd |  |
-| 4 |  | de |  |
-| 5 |  | df |  |
-| 6 |  | dg |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | btn_r  | da  |         |
+| 1 |   | db  |         |
+| 2 |   | dc  |         |
+| 3 |   | dd  |         |
+| 4 |   | de  |         |
+| 5 |   | df  |         |
+| 6 |   | dg  |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

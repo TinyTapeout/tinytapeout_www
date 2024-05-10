@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "303 Simple NCO"
-weight: 224
+weight: 223
 ---
 
 ## 303 : Simple NCO
@@ -11,7 +11,7 @@ weight: 224
 * [GitHub repository](https://github.com/s1Pu11i/tt06_simple_nco)
 * [GDS submitted](https://github.com/s1Pu11i/tt06_simple_nco/actions/runs/8750375569)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -47,16 +47,17 @@ None.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  | ModeSelectionBit0 |
-| 1 |  |  | ModeSelectionBit1 |
-| 2 |  |  | FrequencyWordLower8BitUpdateEnable |
-| 3 |  |  | FrequencyWordUpper8BitUpdateEnable |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   | ModeSelectionBit0        |
+| 1 |   |   | ModeSelectionBit1        |
+| 2 |   |   | FrequencyWordLower8BitUpdateEnable        |
+| 3 |   |   | FrequencyWordUpper8BitUpdateEnable        |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

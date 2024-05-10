@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "8 Chisel Pong"
-weight: 103
+weight: 102
 ---
 
 ## 8 : Chisel Pong
@@ -11,7 +11,7 @@ weight: 103
 * [GitHub repository](https://github.com/tjarker/tiny-tapeout-pong)
 * [GDS submitted](https://github.com/tjarker/tiny-tapeout-pong/actions/runs/8754004711)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ non by default
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | left player up | r[1] | state[0] |
-| 1 | left player down | g[1] | state[1] |
-| 2 | right player up | b[1] | state[2] |
-| 3 | right player down | v-sync | v-sync |
-| 4 | engage left player autopilot | r[0] | h-sync |
-| 5 | engage right player autopilot | g[0] | left player lost |
-| 6 | not used | b[0] | right player lost |
-| 7 | not used | h-sync | game tick |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | left player up  | r[1]  | state[0]        |
+| 1 | left player down  | g[1]  | state[1]        |
+| 2 | right player up  | b[1]  | state[2]        |
+| 3 | right player down  | v-sync  | v-sync        |
+| 4 | engage left player autopilot  | r[0]  | h-sync        |
+| 5 | engage right player autopilot  | g[0]  | left player lost        |
+| 6 | not used  | b[0]  | right player lost        |
+| 7 | not used  | h-sync  | game tick        |
+
 
 ### Chip location
 

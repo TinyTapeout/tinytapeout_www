@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "419 DJ8 8-bit CPU"
-weight: 10
+weight: 9
 ---
 
 ## 419 : DJ8 8-bit CPU
@@ -11,7 +11,7 @@ weight: 10
 * [GitHub repository](https://github.com/dvxf/tt06-dj8)
 * [GDS submitted](https://github.com/dvxf/tt06-dj8/actions/runs/8750935211)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 14000000 Hz
 
 <!---
@@ -103,16 +103,17 @@ Set SW1 and/or SW2 at reset time to adjust speed in case the design doesn't run 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | data in 0 | address out 8 | address out 0 / data out 0 |
-| 1 | data in 1 | address out 9 | address out 1 / data out 1 |
-| 2 | data in 2 | address out 10 | address out 2 / data out 2 |
-| 3 | data in 3 | address out 11 | address out 3 / data out 3 |
-| 4 | data in 4 | address out 12 | address out 4 / data out 4 |
-| 5 | data in 5 | address out 13 | address out 5 / data out 5 |
-| 6 | data in 6 | address out 14 | address out 6 / data out 6 |
-| 7 | data in 7 | write enable | address out 7 / data out 7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | data in 0  | address out 8  | address out 0 / data out 0        |
+| 1 | data in 1  | address out 9  | address out 1 / data out 1        |
+| 2 | data in 2  | address out 10  | address out 2 / data out 2        |
+| 3 | data in 3  | address out 11  | address out 3 / data out 3        |
+| 4 | data in 4  | address out 12  | address out 4 / data out 4        |
+| 5 | data in 5  | address out 13  | address out 5 / data out 5        |
+| 6 | data in 6  | address out 14  | address out 6 / data out 6        |
+| 7 | data in 7  | write enable  | address out 7 / data out 7        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "654 RNG3"
-weight: 155
+weight: 154
 ---
 
 ## 654 : RNG3
@@ -11,7 +11,7 @@ weight: 155
 * [GitHub repository](https://github.com/Lucaz97/RNG3_tt)
 * [GDS submitted](https://github.com/Lucaz97/RNG3_tt/actions/runs/8560273862)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -44,16 +44,17 @@ send one bit per clock cycle to the epsilon port. check is_random when valid is 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | epsilon | is_random |  |
-| 1 |  | valid |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | epsilon  | is_random  |         |
+| 1 |   | valid  |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

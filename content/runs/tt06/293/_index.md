@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "293 My Chip"
-weight: 131
+weight: 130
 ---
 
 ## 293 : My Chip
@@ -11,7 +11,7 @@ weight: 131
 * [GitHub repository](https://github.com/AniBobChum/My-Chip)
 * [GDS submitted](https://github.com/AniBobChum/My-Chip/actions/runs/8676210159)
 * [Wokwi](https://wokwi.com/projects/393815624518031361) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

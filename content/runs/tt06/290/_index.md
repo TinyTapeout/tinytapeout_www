@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "290 1-Bit ALU 2"
-weight: 215
+weight: 214
 ---
 
 ## 290 : 1-Bit ALU 2
@@ -11,7 +11,7 @@ weight: 215
 * [GitHub repository](https://github.com/aisvo1/TinyTapeoutTest)
 * [GDS submitted](https://github.com/aisvo1/TinyTapeoutTest/actions/runs/8674062351)
 * [Wokwi](https://wokwi.com/projects/395054466384583681) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

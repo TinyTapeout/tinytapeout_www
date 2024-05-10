@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "162 RGB Mixer"
-weight: 68
+weight: 67
 ---
 
 ## 162 : RGB Mixer
@@ -11,7 +11,7 @@ weight: 68
 * [GitHub repository](https://github.com/zhwa/zeroasic)
 * [GDS submitted](https://github.com/zhwa/zeroasic/actions/runs/8593557831)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Use 3 digital encoders attached to the first 6 inputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | enc0 a | pwm0 |  |
-| 1 | enc0 b | pwm1 |  |
-| 2 | enc1 a | pwm2 |  |
-| 3 | enc1 b |  |  |
-| 4 | enc2 a |  |  |
-| 5 | enc2 b |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | enc0 a  | pwm0  |         |
+| 1 | enc0 b  | pwm1  |         |
+| 2 | enc1 a  | pwm2  |         |
+| 3 | enc1 b  |   |         |
+| 4 | enc2 a  |   |         |
+| 5 | enc2 b  |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

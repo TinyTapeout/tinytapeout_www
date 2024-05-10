@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "230 Pulse Width Modulation"
-weight: 201
+weight: 200
 ---
 
 ## 230 : Pulse Width Modulation
@@ -11,7 +11,7 @@ weight: 201
 * [GitHub repository](https://github.com/OnSachinSharma/tt06-verilog-PWM)
 * [GDS submitted](https://github.com/OnSachinSharma/tt06-verilog-PWM/actions/runs/8650528686)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -46,16 +46,17 @@ default
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clk | PWM_OUT |  |
-| 1 | ui_in[0] |  |  |
-| 2 | ui_in[1] |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clk  | PWM_OUT  |         |
+| 1 | ui_in[0]  |   |         |
+| 2 | ui_in[1]  |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

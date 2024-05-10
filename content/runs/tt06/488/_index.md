@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "488 Analog Test Circuit ITS: VCO"
-weight: 36
+weight: 35
 ---
 
 ## 488 : Analog Test Circuit ITS: VCO
@@ -11,7 +11,7 @@ weight: 36
 * [GitHub repository](https://github.com/nurirfansyah/tt06-analog-its_ip_alits01)
 * [GDS submitted](https://github.com/nurirfansyah/tt06-analog-its_ip_alits01/actions/runs/8757979613)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -44,16 +44,24 @@ To test, apply control voltage v_control_n and v_control_p, where the sum of the
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | out5 |  |
-| 1 |  | out4 |  |
-| 2 |  | out3 |  |
-| 3 |  | out2 |  |
-| 4 |  | out1 |  |
-| 5 |  | out0 |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | out5  |         |
+| 1 |   | out4  |         |
+| 2 |   | out3  |         |
+| 3 |   | out2  |         |
+| 4 |   | out1  |         |
+| 5 |   | out0  |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 1 | out           |
+| 1 | 3 | vcon_n           |
+| 2 | 2 | vcon_p           |
 
 ### Chip location
 

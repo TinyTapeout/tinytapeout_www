@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "111 8-bit CPU with Debugger (Lite)"
-weight: 177
+weight: 176
 ---
 
 ## 111 : 8-bit CPU with Debugger (Lite)
@@ -11,7 +11,7 @@ weight: 177
 * [GitHub repository](https://github.com/obriensp/tt06-spo-be8)
 * [GDS submitted](https://github.com/obriensp/tt06-spo-be8/actions/runs/8652503485)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -29,16 +29,17 @@ Optionally, data can be provided on the input pins and consumed on the output pi
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Input Port | Output Port |  |
-| 1 | Input Port | Output Port |  |
-| 2 | Input Port | Output Port | SCL |
-| 3 | Input Port | Output Port | SDA |
-| 4 | Input Port | Output Port | HALTED |
-| 5 | Input Port | Output Port |  |
-| 6 | Input Port | Output Port |  |
-| 7 | Input Port | Output Port |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Input Port  | Output Port  |         |
+| 1 | Input Port  | Output Port  |         |
+| 2 | Input Port  | Output Port  | SCL        |
+| 3 | Input Port  | Output Port  | SDA        |
+| 4 | Input Port  | Output Port  | HALTED        |
+| 5 | Input Port  | Output Port  |         |
+| 6 | Input Port  | Output Port  |         |
+| 7 | Input Port  | Output Port  |         |
+
 
 ### Chip location
 

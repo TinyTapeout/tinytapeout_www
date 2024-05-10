@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "233 VCII"
-weight: 29
+weight: 28
 ---
 
 ## 233 : VCII
@@ -11,7 +11,7 @@ weight: 29
 * [GitHub repository](https://github.com/alfiero88/tt06-VCII)
 * [GDS submitted](https://github.com/alfiero88/tt06-VCII/actions/runs/8752262339)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,25 @@ The transipedance gain resistor, oscilloscope, power supplies
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 4 | output           |
+| 1 | 1 | output           |
+| 2 | 3 | input           |
+| 3 | 2 | input           |
 
 ### Chip location
 

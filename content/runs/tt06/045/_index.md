@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "45 Flappy Bird"
-weight: 225
+weight: 224
 ---
 
 ## 45 : Flappy Bird
@@ -11,7 +11,7 @@ weight: 225
 * [GitHub repository](https://github.com/RobinH08/JKU-TT06-FlappyBird)
 * [GDS submitted](https://github.com/RobinH08/JKU-TT06-FlappyBird/actions/runs/8632170515)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -44,16 +44,17 @@ https://de.aliexpress.com/item/32857281704.html?gatewayAdapt=glo2deu
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | up-Button | row of display-Matrix | col of display-Matrix |
-| 1 | down-Button | row of display-Matrix | col of display-Matrix |
-| 2 | not used | row of display-Matrix | col of display-Matrix |
-| 3 | not used | row of display-Matrix | col of display-Matrix |
-| 4 | not used | row of display-Matrix | col of display-Matrix |
-| 5 | not used | row of display-Matrix | col of display-Matrix |
-| 6 | not used | row of display-Matrix | col of display-Matrix |
-| 7 | not used | row of display-Matrix | col of display-Matrix |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | up-Button  | row of display-Matrix  | col of display-Matrix        |
+| 1 | down-Button  | row of display-Matrix  | col of display-Matrix        |
+| 2 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 3 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 4 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 5 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 6 | not used  | row of display-Matrix  | col of display-Matrix        |
+| 7 | not used  | row of display-Matrix  | col of display-Matrix        |
+
 
 ### Chip location
 

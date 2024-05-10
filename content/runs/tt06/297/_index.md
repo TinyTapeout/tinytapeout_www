@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "297 PCKY´s Successive Approximation Game"
-weight: 27
+weight: 26
 ---
 
 ## 297 : PCKY´s Successive Approximation Game
@@ -11,7 +11,7 @@ weight: 27
 * [GitHub repository](https://github.com/pcky/tt06-wokwi)
 * [GDS submitted](https://github.com/pcky/tt06-wokwi/actions/runs/8739672808)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000 Hz
 
 <!---
@@ -41,16 +41,17 @@ This game utilizes the DIP switch and the 7-segment LED of the demo board.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Binary Number Input 0 (LSB) | 7-segment-LED 0 |  |
-| 1 | Binary Number Input 1 | 7-segment-LED 1 |  |
-| 2 | Binary Number Input 2 | 7-segment-LED 2 |  |
-| 3 | Binary Number Input 3 | 7-segment-LED 3 |  |
-| 4 | Binary Number Input 4 | 7-segment-LED 4 |  |
-| 5 | Binary Number Input 5 | 7-segment-LED 5 |  |
-| 6 | Binary Number Input 6 | 7-segment-LED 6 |  |
-| 7 | Binary Number Input 7 (MSB) | 7-segment-LED 7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Binary Number Input 0 (LSB)  | 7-segment-LED 0  |         |
+| 1 | Binary Number Input 1  | 7-segment-LED 1  |         |
+| 2 | Binary Number Input 2  | 7-segment-LED 2  |         |
+| 3 | Binary Number Input 3  | 7-segment-LED 3  |         |
+| 4 | Binary Number Input 4  | 7-segment-LED 4  |         |
+| 5 | Binary Number Input 5  | 7-segment-LED 5  |         |
+| 6 | Binary Number Input 6  | 7-segment-LED 6  |         |
+| 7 | Binary Number Input 7 (MSB)  | 7-segment-LED 7  |         |
+
 
 ### Chip location
 

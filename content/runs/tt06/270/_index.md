@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "270 Neurocore"
-weight: 13
+weight: 12
 ---
 
 ## 270 : Neurocore
@@ -11,7 +11,7 @@ weight: 13
 * [GitHub repository](https://github.com/kir486680/tt6_test)
 * [GDS submitted](https://github.com/kir486680/tt6_test/actions/runs/8581902550)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 20000000 Hz
 
 <!---
@@ -63,16 +63,17 @@ No external hardware is used for this project.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | RX input | RX output | Block multiply done status |
-| 1 |  |  | Calculation start signal |
-| 2 |  |  | Send State bit 0 |
-| 3 |  |  | Send State bit 1 |
-| 4 |  |  | Send State bit 2 |
-| 5 |  |  | Send State bit 3 |
-| 6 |  |  | Done send signal |
-| 7 |  |  | Send data signal |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | RX input  | RX output  | Block multiply done status        |
+| 1 |   |   | Calculation start signal        |
+| 2 |   |   | Send State bit 0        |
+| 3 |   |   | Send State bit 1        |
+| 4 |   |   | Send State bit 2        |
+| 5 |   |   | Send State bit 3        |
+| 6 |   |   | Done send signal        |
+| 7 |   |   | Send data signal        |
+
 
 ### Chip location
 

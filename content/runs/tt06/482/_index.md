@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "482 1st passive Sigma Delta ADC"
-weight: 124
+weight: 123
 ---
 
 ## 482 : 1st passive Sigma Delta ADC
@@ -11,7 +11,7 @@ weight: 124
 * [GitHub repository](https://github.com/JVollrath/tt06_jv_sigdel_v)
 * [GDS submitted](https://github.com/JVollrath/tt06_jv_sigdel_v/actions/runs/8537922080)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -132,16 +132,17 @@ Martin Knauer, Jörg Vollrath, 'Implementation and Testing of a FPGA Based Sigma
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Input voltage input voltage R1, uo5 R2, C attached | ADC 0 LSB |  |
-| 1 | Sampling clock conf1 | ADC 1 |  |
-| 2 | Sampling clock conf2 | ADC 2 |  |
-| 3 | OSR conf1 | ADC 3 MSB |  |
-| 4 | OSR conf2 | replicate ui0 |  |
-| 5 | SINC1,2,3 conf1 | invert ui0 R2 |  |
-| 6 | SINC1,2,3 conf2 | pwm upper |  |
-| 7 | pwm output enable | pwm lower |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Input voltage input voltage R1, uo5 R2, C attached  | ADC 0 LSB  |         |
+| 1 | Sampling clock conf1  | ADC 1  |         |
+| 2 | Sampling clock conf2  | ADC 2  |         |
+| 3 | OSR conf1  | ADC 3 MSB  |         |
+| 4 | OSR conf2  | replicate ui0  |         |
+| 5 | SINC1,2,3 conf1  | invert ui0 R2  |         |
+| 6 | SINC1,2,3 conf2  | pwm upper  |         |
+| 7 | pwm output enable  | pwm lower  |         |
+
 
 ### Chip location
 

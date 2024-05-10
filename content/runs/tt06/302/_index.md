@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "302 Hack a day Tiny Tapeout project"
-weight: 88
+weight: 87
 ---
 
 ## 302 : Hack a day Tiny Tapeout project
@@ -11,7 +11,7 @@ weight: 88
 * [GitHub repository](https://github.com/mmartinortiz/tinytapeout-workshop)
 * [GDS submitted](https://github.com/mmartinortiz/tinytapeout-workshop/actions/runs/8673984119)
 * [Wokwi](https://wokwi.com/projects/395055351144787969) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ TODO
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

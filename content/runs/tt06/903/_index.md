@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "903 sn74169"
-weight: 158
+weight: 157
 ---
 
 ## 903 : sn74169
@@ -11,7 +11,7 @@ weight: 158
 * [GitHub repository](https://github.com/andychip1/sn74169)
 * [GDS submitted](https://github.com/andychip1/sn74169/actions/runs/8746609882)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -55,16 +55,17 @@ Oscilloscope to observe the outputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | A0 | Q0 |  |
-| 1 | A1 | Q1 |  |
-| 2 | A2 | Q2 |  |
-| 3 | A3 | Q3 |  |
-| 4 | ENPB | RCOB |  |
-| 5 | ENTB |  |  |
-| 6 | LOADB |  |  |
-| 7 | UP |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | A0  | Q0  |         |
+| 1 | A1  | Q1  |         |
+| 2 | A2  | Q2  |         |
+| 3 | A3  | Q3  |         |
+| 4 | ENPB  | RCOB  |         |
+| 5 | ENTB  |   |         |
+| 6 | LOADB  |   |         |
+| 7 | UP  |   |         |
+
 
 ### Chip location
 

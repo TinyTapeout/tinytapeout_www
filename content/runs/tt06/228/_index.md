@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "228 10-bit Linear feedback shift register"
-weight: 114
+weight: 113
 ---
 
 ## 228 : 10-bit Linear feedback shift register
@@ -11,7 +11,7 @@ weight: 114
 * [GitHub repository](https://github.com/beaprog/tt06-LFSR)
 * [GDS submitted](https://github.com/beaprog/tt06-LFSR/actions/runs/8649458875)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ defaults
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clk | out |  |
-| 1 | rst |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clk  | out  |         |
+| 1 | rst  |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

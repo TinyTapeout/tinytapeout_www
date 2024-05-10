@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "751 Voting thingey"
-weight: 208
+weight: 207
 ---
 
 ## 751 : Voting thingey
@@ -11,7 +11,7 @@ weight: 208
 * [GitHub repository](https://github.com/jadebuilds/tt06-mcu-voting)
 * [GDS submitted](https://github.com/jadebuilds/tt06-mcu-voting/actions/runs/8731482013)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -33,16 +33,17 @@ N/A
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | vote0 |  |  |
-| 1 | vote1 |  |  |
-| 2 | vote2 |  |  |
-| 3 | vote3 |  |  |
-| 4 | vote4 |  |  |
-| 5 | vote5 |  |  |
-| 6 | vote6 |  |  |
-| 7 | vote7 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | vote0  |   |         |
+| 1 | vote1  |   |         |
+| 2 | vote2  |   |         |
+| 3 | vote3  |   |         |
+| 4 | vote4  |   |         |
+| 5 | vote5  |   |         |
+| 6 | vote6  |   |         |
+| 7 | vote7  |   |         |
+
 
 ### Chip location
 

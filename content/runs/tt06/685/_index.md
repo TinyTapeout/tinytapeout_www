@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "685 TinyTapeout SPI Master"
-weight: 212
+weight: 211
 ---
 
 ## 685 : TinyTapeout SPI Master
 
-* Author: Samit & Fahim
+* Author: Samit &amp; Fahim
 * Description: SPI Msster 
 * [GitHub repository](https://github.com/ReinstatedSamit/tt_um_I2C_to_SPI)
 * [GDS submitted](https://github.com/ReinstatedSamit/tt_um_I2C_to_SPI/actions/runs/8748688536)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 400000 Hz
 
 <!---
@@ -38,16 +38,17 @@ Set `sel` low and observe that the bidirectional pins are mirrored to the output
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | i2c_data_in | sck_o |  |
-| 1 | i2c_clk_in | mosi_o |  |
-| 2 | miso_i | i2c_data_out |  |
-| 3 |  | i2c_clk_out |  |
-| 4 |  | i2c_data_oe |  |
-| 5 | i2c_wb_err_i | i2c_clk_oe |  |
-| 6 | i2c_wb_rty_i |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | i2c_data_in  | sck_o  |         |
+| 1 | i2c_clk_in  | mosi_o  |         |
+| 2 | miso_i  | i2c_data_out  |         |
+| 3 |   | i2c_clk_out  |         |
+| 4 |   | i2c_data_oe  |         |
+| 5 | i2c_wb_err_i  | i2c_clk_oe  |         |
+| 6 | i2c_wb_rty_i  |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

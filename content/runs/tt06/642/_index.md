@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "642 SPELL"
-weight: 189
+weight: 188
 ---
 
 ## 642 : SPELL
@@ -11,7 +11,7 @@ weight: 189
 * [GitHub repository](https://github.com/urish/tt06-spell)
 * [GDS submitted](https://github.com/urish/tt06-spell/actions/runs/8621981131)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 ### How it works
@@ -121,16 +121,17 @@ None
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | run | sleep | gpio[0] |
-| 1 | step | stop | gpio[1] |
-| 2 | load | wait_delay | gpio[2] |
-| 3 | dump | shift_out | gpio[3] |
-| 4 | shift_in |  | gpio[4] |
-| 5 | reg_sel[0] |  | gpio[5] |
-| 6 | reg_sel[1] |  | gpio[6] |
-| 7 |  |  | gpio[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | run  | sleep  | gpio[0]        |
+| 1 | step  | stop  | gpio[1]        |
+| 2 | load  | wait_delay  | gpio[2]        |
+| 3 | dump  | shift_out  | gpio[3]        |
+| 4 | shift_in  |   | gpio[4]        |
+| 5 | reg_sel[0]  |   | gpio[5]        |
+| 6 | reg_sel[1]  |   | gpio[6]        |
+| 7 |   |   | gpio[7]        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "263 Crossbar Array"
-weight: 178
+weight: 177
 ---
 
 ## 263 : Crossbar Array
@@ -11,7 +11,7 @@ weight: 178
 * [GitHub repository](https://github.com/kevinwguan/tt06-kevinwguan)
 * [GDS submitted](https://github.com/kevinwguan/tt06-kevinwguan/actions/runs/8756444254)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -41,16 +41,27 @@ This project will need external off-the-shelf DACs and ADCs including a TIA or A
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | bit control 1 |  |  |
-| 1 | bit control 2 |  |  |
-| 2 | bit control 3 |  |  |
-| 3 | bit control 4 |  |  |
-| 4 | write/select control 1 |  |  |
-| 5 | write/select control 2 |  |  |
-| 6 | write/select control 3 |  |  |
-| 7 | write/select control 4 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | bit control 1  |   |         |
+| 1 | bit control 2  |   |         |
+| 2 | bit control 3  |   |         |
+| 3 | bit control 4  |   |         |
+| 4 | write/select control 1  |   |         |
+| 5 | write/select control 2  |   |         |
+| 6 | write/select control 3  |   |         |
+| 7 | write/select control 4  |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 11 | bit 1           |
+| 1 | 6 | bit 2           |
+| 2 | 10 | bit 3           |
+| 3 | 7 | bit 4           |
+| 4 | 9 | write 1           |
+| 5 | 8 | select 1           |
 
 ### Chip location
 

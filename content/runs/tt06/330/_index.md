@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "330 ChatGPT designed Recurrent Spiking Neural Network"
-weight: 170
+weight: 169
 ---
 
 ## 330 : ChatGPT designed Recurrent Spiking Neural Network
@@ -11,7 +11,7 @@ weight: 170
 * [GitHub repository](https://github.com/Andreou-JHULabOrg/tinytapeout_06_chatgpt_rsnn)
 * [GDS submitted](https://github.com/Andreou-JHULabOrg/tinytapeout_06_chatgpt_rsnn/actions/runs/8758255062)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -112,16 +112,17 @@ The last 27 words represent the network weights ( 3 ins x 3 neurons x 3 layers )
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Input Spike 0 | Output Spike 0 | out_test 0 |
-| 1 | Input Spike 1 | Output Spike 1 | out_test 1 |
-| 2 | Input Spike 2 | Output Spike 2 | out_test 2 |
-| 3 | Spike Input Register Enable | End of Writing Parameters into Memory | out_test 3 |
-| 4 | RSNN enable | Parameter Data Written | out_test 4 |
-| 5 | Serial Data IN |  | out_test 5 |
-| 6 | Parameter Load |  | out_test 6 |
-| 7 | Test selection |  | out_test 7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Input Spike 0  | Output Spike 0  | out_test 0        |
+| 1 | Input Spike 1  | Output Spike 1  | out_test 1        |
+| 2 | Input Spike 2  | Output Spike 2  | out_test 2        |
+| 3 | Spike Input Register Enable  | End of Writing Parameters into Memory  | out_test 3        |
+| 4 | RSNN enable  | Parameter Data Written  | out_test 4        |
+| 5 | Serial Data IN  |   | out_test 5        |
+| 6 | Parameter Load  |   | out_test 6        |
+| 7 | Test selection  |   | out_test 7        |
+
 
 ### Chip location
 

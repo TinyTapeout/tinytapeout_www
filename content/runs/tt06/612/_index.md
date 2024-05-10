@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "612 Simple Stopwatch"
-weight: 3
+weight: 2
 ---
 
 ## 612 : Simple Stopwatch
@@ -11,7 +11,7 @@ weight: 3
 * [GitHub repository](https://github.com/faramire/TT06-simple-clock)
 * [GDS submitted](https://github.com/faramire/TT06-simple-clock/actions/runs/8758880495)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -40,16 +40,17 @@ The start/stop button toggles the clock, the lap time button pauses the display,
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | start/stop | SPI MOSI |  |
-| 1 | lap time | SPI CS (active low) |  |
-| 2 | reset (active high) | SPI CLK |  |
-| 3 |  | stopwatch enabled (counting up) |  |
-| 4 |  | display enabled (goes low when showing lap time) |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | start/stop  | SPI MOSI  |         |
+| 1 | lap time  | SPI CS (active low)  |         |
+| 2 | reset (active high)  | SPI CLK  |         |
+| 3 |   | stopwatch enabled (counting up)  |         |
+| 4 |   | display enabled (goes low when showing lap time)  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

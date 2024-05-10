@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "619 Decodificador binario a display 7 segmentos hexadecimal"
-weight: 87
+weight: 86
 ---
 
 ## 619 : Decodificador binario a display 7 segmentos hexadecimal
@@ -11,7 +11,7 @@ weight: 87
 * [GitHub repository](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal)
 * [GDS submitted](https://github.com/vicmcantes/decodificador-binario-a-7-segmentos-hexadecimal/actions/runs/8671873725)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -95,16 +95,17 @@ A 4-position DIP Switch for the input, which will serve to form the 4-bit binary
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Bit 0 | Segmento g | no use |
-| 1 | Bit 1 | Segmento f | no use |
-| 2 | Bit 2 | Segmento e | no use |
-| 3 | Bit 3 | Segmento d | no use |
-| 4 | no use | Segmento c | no use |
-| 5 | no use | Segmento b | no use |
-| 6 | no use | Segmento a | no use |
-| 7 | no use | no use | no use |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Bit 0  | Segmento g  | no use        |
+| 1 | Bit 1  | Segmento f  | no use        |
+| 2 | Bit 2  | Segmento e  | no use        |
+| 3 | Bit 3  | Segmento d  | no use        |
+| 4 | no use  | Segmento c  | no use        |
+| 5 | no use  | Segmento b  | no use        |
+| 6 | no use  | Segmento a  | no use        |
+| 7 | no use  | no use  | no use        |
+
 
 ### Chip location
 
