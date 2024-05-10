@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "909 Pong"
-weight: 193
+weight: 192
 ---
 
 ## 909 : Pong
@@ -11,7 +11,7 @@ weight: 193
 * [GitHub repository](https://github.com/alex-segura/tt06-pong)
 * [GDS submitted](https://github.com/alex-segura/tt06-pong/actions/runs/7875283322)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25175000 Hz
 
 <!---
@@ -58,16 +58,17 @@ W and S control the left paddle. Up and down arrow keys control the right paddle
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Paddle 1 encoder A | R0 |  |
-| 1 | Paddle 1 encoder B | G0 |  |
-| 2 | Paddle 2 encoder A | B0 |  |
-| 3 | Paddle 2 encoder B | VSYNC |  |
-| 4 |  | R1 |  |
-| 5 |  | G1 |  |
-| 6 |  | B1 |  |
-| 7 |  | HSYNC |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Paddle 1 encoder A  | R0  |         |
+| 1 | Paddle 1 encoder B  | G0  |         |
+| 2 | Paddle 2 encoder A  | B0  |         |
+| 3 | Paddle 2 encoder B  | VSYNC  |         |
+| 4 |   | R1  |         |
+| 5 |   | G1  |         |
+| 6 |   | B1  |         |
+| 7 |   | HSYNC  |         |
+
 
 ### Chip location
 

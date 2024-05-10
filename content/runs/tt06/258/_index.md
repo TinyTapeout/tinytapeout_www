@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "258 tt06-RV32E_MinMCU"
-weight: 195
+weight: 194
 ---
 
 ## 258 : tt06-RV32E_MinMCU
@@ -11,7 +11,7 @@ weight: 195
 * [GitHub repository](https://github.com/liu3hao/tt06-rv32e_minmcu)
 * [GDS submitted](https://github.com/liu3hao/tt06-rv32e_minmcu/actions/runs/8749777779)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 24000000 Hz
 
 ### How it works
@@ -130,16 +130,17 @@ This project requires at minimum the following:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | IN0/UART-CTS | UART-RX | SPI-CS2 |
-| 1 | IN1 | OUT0/UART-RTS | IO0 |
-| 2 | SPI-MISO | OUT1 | IO1 |
-| 3 | IN2 | SPI-MOSI | IO2 |
-| 4 | IN3 | SPI-CS1 | IO3 |
-| 5 | IN4 | SPI-SCLK | IO4 |
-| 6 | EN_DEBUG | OUT2 | IO5 |
-| 7 | UART-TX | OUT3 | IO6 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | IN0/UART-CTS  | UART-RX  | SPI-CS2        |
+| 1 | IN1  | OUT0/UART-RTS  | IO0        |
+| 2 | SPI-MISO  | OUT1  | IO1        |
+| 3 | IN2  | SPI-MOSI  | IO2        |
+| 4 | IN3  | SPI-CS1  | IO3        |
+| 5 | IN4  | SPI-SCLK  | IO4        |
+| 6 | EN_DEBUG  | OUT2  | IO5        |
+| 7 | UART-TX  | OUT3  | IO6        |
+
 
 ### Chip location
 

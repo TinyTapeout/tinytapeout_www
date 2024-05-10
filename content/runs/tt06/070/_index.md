@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "70 UCSC HW Systems Collective, TDC - BUF2x1"
-weight: 211
+weight: 210
 ---
 
 ## 70 : UCSC HW Systems Collective, TDC - BUF2x1
 
-* Author: Phillip Marlowe, Tyler Sheaves, & Dustin Richmond
+* Author: Phillip Marlowe, Tyler Sheaves, &amp; Dustin Richmond
 * Description: A tiny TDC constructed entirely of standard cells. Skywater130 AND-2 delay element
 * [GitHub repository](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay)
 * [GDS submitted](https://github.com/phillipmmarlowe/tt06_hsc_tdc_buf_delay/actions/runs/8758143688)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 17241379 Hz
 
 <!---
@@ -40,16 +40,17 @@ Just pins
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | lanuch clock | hw[0] |  |
-| 1 | capture clock | hw[1] |  |
-| 2 | pg_src | hw[2] |  |
-| 3 | pg_bypass | hw[3] |  |
-| 4 | pg_in | hw[4] |  |
-| 5 | pg_tog | hw[5] |  |
-| 6 | valid_in | hw[6] |  |
-| 7 |  | valid_out |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | lanuch clock  | hw[0]  |         |
+| 1 | capture clock  | hw[1]  |         |
+| 2 | pg_src  | hw[2]  |         |
+| 3 | pg_bypass  | hw[3]  |         |
+| 4 | pg_in  | hw[4]  |         |
+| 5 | pg_tog  | hw[5]  |         |
+| 6 | valid_in  | hw[6]  |         |
+| 7 |   | valid_out  |         |
+
 
 ### Chip location
 

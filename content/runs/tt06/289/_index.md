@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "289 Triple Watchdog"
-weight: 91
+weight: 90
 ---
 
 ## 289 : Triple Watchdog
@@ -11,7 +11,7 @@ weight: 91
 * [GitHub repository](https://github.com/ignaciosim/tt06-triple-watchdog)
 * [GDS submitted](https://github.com/ignaciosim/tt06-triple-watchdog/actions/runs/8679204952)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -53,16 +53,17 @@ None
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui_in[0] | watchdog_expired1 |  |
-| 1 | ui_in[1] | watchdog_expired2 |  |
-| 2 | ui_in[2] | watchdog_expired3 |  |
-| 3 | ui_in[3] |  |  |
-| 4 | ui_in[4] |  |  |
-| 5 | ui_in[5] |  |  |
-| 6 | ui_in[6] |  |  |
-| 7 | ui_in[7] |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui_in[0]  | watchdog_expired1  |         |
+| 1 | ui_in[1]  | watchdog_expired2  |         |
+| 2 | ui_in[2]  | watchdog_expired3  |         |
+| 3 | ui_in[3]  |   |         |
+| 4 | ui_in[4]  |   |         |
+| 5 | ui_in[5]  |   |         |
+| 6 | ui_in[6]  |   |         |
+| 7 | ui_in[7]  |   |         |
+
 
 ### Chip location
 

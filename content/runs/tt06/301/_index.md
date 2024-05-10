@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "301 Tiny_Tapeout_6_Frank"
-weight: 229
+weight: 228
 ---
 
 ## 301 : Tiny_Tapeout_6_Frank
@@ -11,7 +11,7 @@ weight: 229
 * [GitHub repository](https://github.com/sandman72/Tiny_Tapeout_6_Frank)
 * [GDS submitted](https://github.com/sandman72/Tiny_Tapeout_6_Frank/actions/runs/8680949822)
 * [Wokwi](https://wokwi.com/projects/395055359324730369) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -71,16 +71,17 @@ The 7Seg LED display is used on outputs
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

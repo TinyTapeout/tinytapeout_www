@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "74 Gray scale and Sobel filter"
-weight: 159
+weight: 158
 ---
 
 ## 74 : Gray scale and Sobel filter
@@ -11,7 +11,7 @@ weight: 159
 * [GitHub repository](https://github.com/DianaNatali/tt06_grayscale_sobel)
 * [GDS submitted](https://github.com/DianaNatali/tt06_grayscale_sobel/actions/runs/8758823349)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ Camera, screen
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | spi_sck_i | spi_sdo_o | LFSR_enable_i |
-| 1 | spi_cs_i | lfsr_done | seed_stop_i |
-| 2 | spi_sdi_i | ena | lfsr_en_i |
-| 3 | select_process_i[0] | output_px[0] |  |
-| 4 | select_process_i[1] | output_px[1] |  |
-| 5 | start_sobel_i | output_px[2] |  |
-| 6 |  | output_px[3] |  |
-| 7 |  | output_px[4] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | spi_sck_i  | spi_sdo_o  | LFSR_enable_i        |
+| 1 | spi_cs_i  | lfsr_done  | seed_stop_i        |
+| 2 | spi_sdi_i  | ena  | lfsr_en_i        |
+| 3 | select_process_i[0]  | output_px[0]  |         |
+| 4 | select_process_i[1]  | output_px[1]  |         |
+| 5 | start_sobel_i  | output_px[2]  |         |
+| 6 |   | output_px[3]  |         |
+| 7 |   | output_px[4]  |         |
+
 
 ### Chip location
 

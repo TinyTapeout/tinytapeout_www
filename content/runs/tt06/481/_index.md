@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "481 HELP for tinyTapeout"
-weight: 187
+weight: 186
 ---
 
 ## 481 : HELP for tinyTapeout
@@ -11,7 +11,7 @@ weight: 187
 * [GitHub repository](https://github.com/AriellaE/tt06-help)
 * [GDS submitted](https://github.com/AriellaE/tt06-help/actions/runs/8734282437)
 * [Wokwi](https://wokwi.com/projects/395414987024660481) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ none.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  | seg_a |  |
-| 1 |  | seg_b |  |
-| 2 |  | seg_c |  |
-| 3 |  | seg_d |  |
-| 4 |  | seg_e |  |
-| 5 |  | seg_f |  |
-| 6 |  | seg_g |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   | seg_a  |         |
+| 1 |   | seg_b  |         |
+| 2 |   | seg_c  |         |
+| 3 |   | seg_d  |         |
+| 4 |   | seg_e  |         |
+| 5 |   | seg_f  |         |
+| 6 |   | seg_g  |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

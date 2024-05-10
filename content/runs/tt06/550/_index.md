@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "550 Power Management IC"
-weight: 128
+weight: 127
 ---
 
 ## 550 : Power Management IC
@@ -11,7 +11,7 @@ weight: 128
 * [GitHub repository](https://github.com/wongmatthew73/tt06-mw-pmic)
 * [GDS submitted](https://github.com/wongmatthew73/tt06-mw-pmic/actions/runs/8749048323)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -57,16 +57,17 @@ current feedforward, prebiasing, soft-switching, PID and other more advanced fea
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | adcVoltage[0] | convStart | busy |
-| 1 | adcVoltage[1] | rd_cs |  |
-| 2 | adcVoltage[2] | syncRectifierLs |  |
-| 3 | adcVoltage[3] | syncRectifierHs |  |
-| 4 | adcVoltage[4] |  |  |
-| 5 | adcVoltage[5] |  |  |
-| 6 | adcVoltage[6] |  |  |
-| 7 | adcVoltage[7] |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | adcVoltage[0]  | convStart  | busy        |
+| 1 | adcVoltage[1]  | rd_cs  |         |
+| 2 | adcVoltage[2]  | syncRectifierLs  |         |
+| 3 | adcVoltage[3]  | syncRectifierHs  |         |
+| 4 | adcVoltage[4]  |   |         |
+| 5 | adcVoltage[5]  |   |         |
+| 6 | adcVoltage[6]  |   |         |
+| 7 | adcVoltage[7]  |   |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "39 playwithnumbers"
-weight: 54
+weight: 53
 ---
 
 ## 39 : playwithnumbers
@@ -11,7 +11,7 @@ weight: 54
 * [GitHub repository](https://github.com/rukija15/jku-tt06-playwithnumbers)
 * [GDS submitted](https://github.com/rukija15/jku-tt06-playwithnumbers/actions/runs/8628491821)
 * [Wokwi](https://wokwi.com/projects/384804985843168257) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project: seven segment display
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

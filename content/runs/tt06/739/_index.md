@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "739 DIP Switch to HEX 7-segment Display"
-weight: 93
+weight: 92
 ---
 
 ## 739 : DIP Switch to HEX 7-segment Display
@@ -11,7 +11,7 @@ weight: 93
 * [GitHub repository](https://github.com/lancemitrex/tt06-verilog-template)
 * [GDS submitted](https://github.com/lancemitrex/tt06-verilog-template/actions/runs/8757062538)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -49,16 +49,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "907 Iron Violet"
-weight: 30
+weight: 29
 ---
 
 ## 907 : Iron Violet
@@ -11,7 +11,7 @@ weight: 30
 * [GitHub repository](https://github.com/johnbentcope/iron_violet)
 * [GDS submitted](https://github.com/johnbentcope/iron_violet/actions/runs/8756043710)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -52,16 +52,17 @@ A fifth button is connected to input 5, and is used to start a game.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Red Button | Red Lamp |  |
-| 1 | Yellow Button | Yellow Lamp |  |
-| 2 | Green Button | Green Lamp |  |
-| 3 | Blue Button | Blue Lamp |  |
-| 4 | Start Game |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Red Button  | Red Lamp  |         |
+| 1 | Yellow Button  | Yellow Lamp  |         |
+| 2 | Green Button  | Green Lamp  |         |
+| 3 | Blue Button  | Blue Lamp  |         |
+| 4 | Start Game  |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

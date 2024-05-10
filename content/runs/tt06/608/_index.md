@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "608 Parity Generator"
-weight: 110
+weight: 109
 ---
 
 ## 608 : Parity Generator
@@ -11,7 +11,7 @@ weight: 110
 * [GitHub repository](https://github.com/Beird0/TT06_Parity-Generator)
 * [GDS submitted](https://github.com/Beird0/TT06_Parity-Generator/actions/runs/8742718865)
 * [Wokwi](https://wokwi.com/projects/395514572866576385) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ No external hardware is used.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | input1 | output1 |  |
-| 1 | input2 | output2 |  |
-| 2 | input3 | output3 |  |
-| 3 | input4 | output4 |  |
-| 4 | input5 |  |  |
-| 5 | input6 |  |  |
-| 6 | input7 |  |  |
-| 7 | input8 |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | input1  | output1  |         |
+| 1 | input2  | output2  |         |
+| 2 | input3  | output3  |         |
+| 3 | input4  | output4  |         |
+| 4 | input5  |   |         |
+| 5 | input6  |   |         |
+| 6 | input7  |   |         |
+| 7 | input8  |   |         |
+
 
 ### Chip location
 

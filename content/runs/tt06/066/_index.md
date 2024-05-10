@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "66 CORA-16"
-weight: 136
+weight: 135
 ---
 
 ## 66 : CORA-16
@@ -11,7 +11,7 @@ weight: 136
 * [GitHub repository](https://github.com/couchand/tt06-cora16)
 * [GDS submitted](https://github.com/couchand/tt06-cora16/actions/runs/8758486396)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -148,16 +148,17 @@ Load Immediate Word | `0011 1111 wwww wwww wwww wwww` | Set the accumulator to `
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Data In 0 | Data Out 0 | SPI MOSI |
-| 1 | Data In 1 | Data Out 1 | SPI CS |
-| 2 | Data In 2 | Data Out 2 | SPI CLK |
-| 3 | Data In 3 | Data Out 3 | SPI MISO |
-| 4 | Data In 4 | Data Out 4 | Step |
-| 5 | Data In 5 | Data Out 5 | Busy |
-| 6 | Data In 6 | Data Out 6 | Halt |
-| 7 | Data In 7 | Data Out 7 | Trap |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Data In 0  | Data Out 0  | SPI MOSI        |
+| 1 | Data In 1  | Data Out 1  | SPI CS        |
+| 2 | Data In 2  | Data Out 2  | SPI CLK        |
+| 3 | Data In 3  | Data Out 3  | SPI MISO        |
+| 4 | Data In 4  | Data Out 4  | Step        |
+| 5 | Data In 5  | Data Out 5  | Busy        |
+| 6 | Data In 6  | Data Out 6  | Halt        |
+| 7 | Data In 7  | Data Out 7  | Trap        |
+
 
 ### Chip location
 

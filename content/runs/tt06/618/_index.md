@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "618 NCL LFSR"
-weight: 157
+weight: 156
 ---
 
 ## 618 : NCL LFSR
@@ -11,7 +11,7 @@ weight: 157
 * [GitHub repository](https://github.com/tommythorn/tt06-ncl-lfsr)
 * [GDS submitted](https://github.com/tommythorn/tt06-ncl-lfsr/actions/runs/8744366614)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,17 @@ Scope
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

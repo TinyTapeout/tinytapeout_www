@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "47 4-Bit CPU mit FSM"
-weight: 33
+weight: 32
 ---
 
 ## 47 : 4-Bit CPU mit FSM
@@ -11,7 +11,7 @@ weight: 33
 * [GitHub repository](https://github.com/jacquygis/jku-tt06-MiniCPU)
 * [GDS submitted](https://github.com/jacquygis/jku-tt06-MiniCPU/actions/runs/8661828724)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -36,16 +36,17 @@ Next giving the CPU the next value and the operation that should be processes on
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | storage address Bit 0 | output data Bit 0 | input write-access in storage |
-| 1 | storage address Bit 1 | output data Bit 1 |  |
-| 2 | storage address Bit 2 | output data Bit 2 |  |
-| 3 | storage address Bit 3 | output data Bit 3 |  |
-| 4 | value of input data Bit 0 | output data Bit 4 | input Operation Code Bit 0 |
-| 5 | value of input data Bit 1 | output data Bit 5 | input Operation Code Bit 1 |
-| 6 | value of input data Bit 2 | output data Bit 6 | input Operation Code Bit 2 |
-| 7 | value of input data Bit 3 | output data Bit 7 | input Operation Code Bit 3 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | storage address Bit 0  | output data Bit 0  | input write-access in storage        |
+| 1 | storage address Bit 1  | output data Bit 1  |         |
+| 2 | storage address Bit 2  | output data Bit 2  |         |
+| 3 | storage address Bit 3  | output data Bit 3  |         |
+| 4 | value of input data Bit 0  | output data Bit 4  | input Operation Code Bit 0        |
+| 5 | value of input data Bit 1  | output data Bit 5  | input Operation Code Bit 1        |
+| 6 | value of input data Bit 2  | output data Bit 6  | input Operation Code Bit 2        |
+| 7 | value of input data Bit 3  | output data Bit 7  | input Operation Code Bit 3        |
+
 
 ### Chip location
 

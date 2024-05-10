@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "746 Latin_bomba"
-weight: 207
+weight: 206
 ---
 
 ## 746 : Latin_bomba
@@ -11,7 +11,7 @@ weight: 207
 * [GitHub repository](https://github.com/arizaga1/Latin_bomba)
 * [GDS submitted](https://github.com/arizaga1/Latin_bomba/actions/runs/8749553597)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -80,16 +80,17 @@ Las entradas de los sensores pueden ser emuladas con botones o con switches cone
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | no used | no used | bomba_o |
-| 1 | no used | no used | alarma_o |
-| 2 | no used | no used | no used |
-| 3 | no used | no used | sensores_i[0] |
-| 4 | no used | no used | sensores_i[1] |
-| 5 | no used | no used | sensores_i[2] |
-| 6 | no used | no used | rst_i |
-| 7 | no used | no used | ck |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | no used  | no used  | bomba_o        |
+| 1 | no used  | no used  | alarma_o        |
+| 2 | no used  | no used  | no used        |
+| 3 | no used  | no used  | sensores_i[0]        |
+| 4 | no used  | no used  | sensores_i[1]        |
+| 5 | no used  | no used  | sensores_i[2]        |
+| 6 | no used  | no used  | rst_i        |
+| 7 | no used  | no used  | ck        |
+
 
 ### Chip location
 

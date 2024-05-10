@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "295 Tiny Shader"
-weight: 17
+weight: 16
 ---
 
 ## 295 : Tiny Shader
@@ -11,7 +11,7 @@ weight: 17
 * [GitHub repository](https://github.com/mole99/tt06-tiny-shader)
 * [GDS submitted](https://github.com/mole99/tt06-tiny-shader/actions/runs/8755142843)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25175000 Hz
 
 <!---
@@ -186,16 +186,17 @@ If the mode signal is 1, all bytes transmitted via SPI are shifted into the shad
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | mode | R[1] | CS |
-| 1 | debug_i[0] | G[1] | MOSI |
-| 2 | debug_i[1] | B[1] | MISO |
-| 3 |  | vsync | SCK |
-| 4 |  | R[0] | next_vertical |
-| 5 |  | G[0] | next_frame |
-| 6 |  | B[0] | debug_o[0] |
-| 7 |  | hsync | debug_o[1] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | mode  | R[1]  | CS        |
+| 1 | debug_i[0]  | G[1]  | MOSI        |
+| 2 | debug_i[1]  | B[1]  | MISO        |
+| 3 |   | vsync  | SCK        |
+| 4 |   | R[0]  | next_vertical        |
+| 5 |   | G[0]  | next_frame        |
+| 6 |   | B[0]  | debug_o[0]        |
+| 7 |   | hsync  | debug_o[1]        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "812 Universal gates"
-weight: 171
+weight: 170
 ---
 
 ## 812 : Universal gates
@@ -11,7 +11,7 @@ weight: 171
 * [GitHub repository](https://github.com/htfab/unigate-wokwi)
 * [GDS submitted](https://github.com/htfab/unigate-wokwi/actions/runs/8758711749)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -29,16 +29,17 @@ None
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | a | i | u21(a..d) |
-| 1 | b | j | u31(a..f) |
-| 2 | c | k | u22(a..f).1 |
-| 3 | d | l | u22(a..f).2 |
-| 4 | e | m | u41(a..j) |
-| 5 | f | n | nand(e, f) |
-| 6 | g | o | u21(g..j) |
-| 7 | h | p | u31(k..p) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | a  | i  | u21(a..d)        |
+| 1 | b  | j  | u31(a..f)        |
+| 2 | c  | k  | u22(a..f).1        |
+| 3 | d  | l  | u22(a..f).2        |
+| 4 | e  | m  | u41(a..j)        |
+| 5 | f  | n  | nand(e, f)        |
+| 6 | g  | o  | u21(g..j)        |
+| 7 | h  | p  | u31(k..p)        |
+
 
 ### Chip location
 

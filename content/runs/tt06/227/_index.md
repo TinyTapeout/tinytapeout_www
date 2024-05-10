@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "227 TinyQV Risc-V SoC"
-weight: 190
+weight: 189
 ---
 
 ## 227 : TinyQV Risc-V SoC
@@ -11,7 +11,7 @@ weight: 190
 * [GitHub repository](https://github.com/MichaelBell/tt06-tinyQV)
 * [GDS submitted](https://github.com/MichaelBell/tt06-tinyQV/actions/runs/8603516052)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 64000000 Hz
 
 <!---
@@ -116,16 +116,17 @@ It may be useful to have buttons to use on the GPIO inputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Interrupt 0 | UART TX | Flash CS |
-| 1 | Interrupt 1 | UART RTS | SD0 |
-| 2 | SPI MISO | SPI DC | SD1 |
-| 3 | GP in3 | SPI MOSI | SCK |
-| 4 | GP in4 | SPI CS | SD2 |
-| 5 | GP in5 | SPI SCK | SD3 |
-| 6 | GP in6 | Debug UART TX | RAM A CS |
-| 7 | UART RX | Debug signal | RAM B CS |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Interrupt 0  | UART TX  | Flash CS        |
+| 1 | Interrupt 1  | UART RTS  | SD0        |
+| 2 | SPI MISO  | SPI DC  | SD1        |
+| 3 | GP in3  | SPI MOSI  | SCK        |
+| 4 | GP in4  | SPI CS  | SD2        |
+| 5 | GP in5  | SPI SCK  | SD3        |
+| 6 | GP in6  | Debug UART TX  | RAM A CS        |
+| 7 | UART RX  | Debug signal  | RAM B CS        |
+
 
 ### Chip location
 

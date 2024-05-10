@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "37 luckyCube"
-weight: 74
+weight: 73
 ---
 
 ## 37 : luckyCube
@@ -11,7 +11,7 @@ weight: 74
 * [GitHub repository](https://github.com/leyla224/jku-tt06-luckyCube)
 * [GDS submitted](https://github.com/leyla224/jku-tt06-luckyCube/actions/runs/8631299841)
 * [Wokwi](https://wokwi.com/projects/384711264596377601) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -42,16 +42,17 @@ Play with switch
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

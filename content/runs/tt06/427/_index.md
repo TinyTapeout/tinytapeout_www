@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "427 Lipsi: Probably the Smallest Processor in the World"
-weight: 192
+weight: 191
 ---
 
 ## 427 : Lipsi: Probably the Smallest Processor in the World
@@ -11,7 +11,7 @@ weight: 192
 * [GitHub repository](https://github.com/schoeberl/tt06-lipsi)
 * [GDS submitted](https://github.com/schoeberl/tt06-lipsi/actions/runs/8696012345)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -43,16 +43,17 @@ non by default.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | input for Lipsi, also switch of blinking LED | segment a |  |
-| 1 | input for Lipsi | segment b |  |
-| 2 | input for Lipsi | segment c |  |
-| 3 | input for Lipsi | segment d |  |
-| 4 | input for Lipsi | segment e |  |
-| 5 | input for Lipsi | segment f |  |
-| 6 | input for Lipsi | segment g |  |
-| 7 | input for Lipsi | dp (blinking) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | input for Lipsi, also switch of blinking LED  | segment a  |         |
+| 1 | input for Lipsi  | segment b  |         |
+| 2 | input for Lipsi  | segment c  |         |
+| 3 | input for Lipsi  | segment d  |         |
+| 4 | input for Lipsi  | segment e  |         |
+| 5 | input for Lipsi  | segment f  |         |
+| 6 | input for Lipsi  | segment g  |         |
+| 7 | input for Lipsi  | dp (blinking)  |         |
+
 
 ### Chip location
 

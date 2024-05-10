@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "33 Asynchronous Down Counter"
-weight: 216
+weight: 215
 ---
 
 ## 33 : Asynchronous Down Counter
@@ -11,7 +11,7 @@ weight: 216
 * [GitHub repository](https://github.com/AlenMusic12/jku-tt06-downcounter)
 * [GDS submitted](https://github.com/AlenMusic12/jku-tt06-downcounter/actions/runs/8630006877)
 * [Wokwi](https://wokwi.com/projects/384437973887503361) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,17 @@ Pressing the button in succession will make the counter count.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

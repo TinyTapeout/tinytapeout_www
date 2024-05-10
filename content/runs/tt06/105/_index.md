@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "105 TTRPG Dice + simple I2C peripheral"
-weight: 26
+weight: 25
 ---
 
 ## 105 : TTRPG Dice + simple I2C peripheral
@@ -11,7 +11,7 @@ weight: 26
 * [GitHub repository](https://github.com/sanojn/tt06_ttrpg_dice)
 * [GDS submitted](https://github.com/sanojn/tt06_ttrpg_dice/actions/runs/8738887319)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 32768 Hz
 
 ### How it works
@@ -115,16 +115,17 @@ Set the clock frequency to 10 MHz or above. It should be possible to access the 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Btn4 | segA | PWM capable GPIO pin (bidir) |
-| 1 | Btn6 | segB | SDA (bidir) |
-| 2 | Btn8 | segC | SCL (input) |
-| 3 | Btn10 | segD | 1s digit common (output) |
-| 4 | Btn12 | segE | 10s digit common (output) |
-| 5 | Btn20 | segF | Button polarity (input) |
-| 6 | Btn100 | segG | Segment polarity (input) |
-| 7 | GPIO input | DP | Common polarity (input) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Btn4  | segA  | PWM capable GPIO pin (bidir)        |
+| 1 | Btn6  | segB  | SDA (bidir)        |
+| 2 | Btn8  | segC  | SCL (input)        |
+| 3 | Btn10  | segD  | 1s digit common (output)        |
+| 4 | Btn12  | segE  | 10s digit common (output)        |
+| 5 | Btn20  | segF  | Button polarity (input)        |
+| 6 | Btn100  | segG  | Segment polarity (input)        |
+| 7 | GPIO input  | DP  | Common polarity (input)        |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "969 PI-Based Fan Controller"
-weight: 203
+weight: 202
 ---
 
 ## 969 : PI-Based Fan Controller
@@ -11,7 +11,7 @@ weight: 203
 * [GitHub repository](https://github.com/DomnikBrandstetter/jku-tt06-PID_FanCTRL)
 * [GDS submitted](https://github.com/DomnikBrandstetter/jku-tt06-PID_FanCTRL/actions/runs/8627696873)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000000 Hz
 
 <!---
@@ -49,16 +49,17 @@ The PWM output, set at approximately 25 kHz, regulates the fan speed.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ADC_BIT_0 | segment_a | Controller_SET_BIT_0 |
-| 1 | ADC_BIT_1 | segment_b | Controller_SET_BIT_1 |
-| 2 | ADC_BIT_2 | segment_c | Controller_SET_BIT_2 |
-| 3 | ADC_BIT_3 | segment_d | Controller_SET_BIT_3 |
-| 4 | SET_BIT_0 | segment_e | Controller_SIGN_BIT_4 |
-| 5 | SET_BIT_1 | segment_f |  |
-| 6 | SET_BIT_2 | segment_g |  |
-| 7 | SET_BIT_3 | PWM Output |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ADC_BIT_0  | segment_a  | Controller_SET_BIT_0        |
+| 1 | ADC_BIT_1  | segment_b  | Controller_SET_BIT_1        |
+| 2 | ADC_BIT_2  | segment_c  | Controller_SET_BIT_2        |
+| 3 | ADC_BIT_3  | segment_d  | Controller_SET_BIT_3        |
+| 4 | SET_BIT_0  | segment_e  | Controller_SIGN_BIT_4        |
+| 5 | SET_BIT_1  | segment_f  |         |
+| 6 | SET_BIT_2  | segment_g  |         |
+| 7 | SET_BIT_3  | PWM Output  |         |
+
 
 ### Chip location
 

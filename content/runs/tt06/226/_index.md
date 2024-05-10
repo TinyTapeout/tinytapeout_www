@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "226 multimac"
-weight: 182
+weight: 181
 ---
 
 ## 226 : multimac
@@ -11,7 +11,7 @@ weight: 182
 * [GitHub repository](https://github.com/Fountaincoder/multimac)
 * [GDS submitted](https://github.com/Fountaincoder/multimac/actions/runs/8630222082)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### How it works
@@ -37,16 +37,17 @@ Other.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | index[0] | out[0] | out[8] |
-| 1 | index[1] | out[1] | out[9] |
-| 2 | index[2] | out[2] | out[10] |
-| 3 | index[3] | out[3] | out[11] |
-| 4 | data[0] | out[4] | instruction [0] |
-| 5 | data[1] | out[5] | instruction [1] |
-| 6 | data[2] | out[6] | load |
-| 7 | data[3] | out[7] | run |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | index[0]  | out[0]  | out[8]        |
+| 1 | index[1]  | out[1]  | out[9]        |
+| 2 | index[2]  | out[2]  | out[10]        |
+| 3 | index[3]  | out[3]  | out[11]        |
+| 4 | data[0]  | out[4]  | instruction [0]        |
+| 5 | data[1]  | out[5]  | instruction [1]        |
+| 6 | data[2]  | out[6]  | load        |
+| 7 | data[3]  | out[7]  | run        |
+
 
 ### Chip location
 

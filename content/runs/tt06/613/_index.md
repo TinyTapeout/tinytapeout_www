@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "613 Clock"
-weight: 1
+weight: 0
 ---
 
 ## 613 : Clock
@@ -11,7 +11,7 @@ weight: 1
 * [GitHub repository](https://github.com/dr-skyler/tt_um_dr_skyler_clock)
 * [GDS submitted](https://github.com/dr-skyler/tt_um_dr_skyler_clock/actions/runs/8746545854)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ PMOD, 7-segment display, breadboard
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Clock 10 MHz | 7-seg[0] |  |
-| 1 | Clock 12 MHz | 7-seg[1] |  |
-| 2 | Clock 14 MHz | 7-seg[2] |  |
-| 3 | Clock 20 MHz | 7-seg[3] |  |
-| 4 | Show Minuetes | 7-seg[4] |  |
-| 5 | Show Hours | 7-seg[5] |  |
-| 6 |  | 7-seg[6] |  |
-| 7 |  | 7-seg[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Clock 10 MHz  | 7-seg[0]  |         |
+| 1 | Clock 12 MHz  | 7-seg[1]  |         |
+| 2 | Clock 14 MHz  | 7-seg[2]  |         |
+| 3 | Clock 20 MHz  | 7-seg[3]  |         |
+| 4 | Show Minuetes  | 7-seg[4]  |         |
+| 5 | Show Hours  | 7-seg[5]  |         |
+| 6 |   | 7-seg[6]  |         |
+| 7 |   | 7-seg[7]  |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "1 TinyTapeout 06 Factory Test"
-weight: 210
+weight: 209
 ---
 
 ## 1 : TinyTapeout 06 Factory Test
@@ -11,7 +11,7 @@ weight: 210
 * [GitHub repository](https://github.com/TinyTapeout/tt06-factory-test)
 * [GDS submitted](https://github.com/TinyTapeout/tt06-factory-test/actions/runs/8526408598)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -38,16 +38,17 @@ Set `sel` low and observe that the bidirectional pins are mirrored to the output
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | sel | data_o[0] | data_i[0] / counter_o[0] |
-| 1 |  | data_o[1] | data_i[1] / counter_o[1] |
-| 2 |  | data_o[2] | data_i[2] / counter_o[2] |
-| 3 |  | data_o[3] | data_i[3] / counter_o[3] |
-| 4 |  | data_o[4] | data_i[4] / counter_o[4] |
-| 5 |  | data_o[5] | data_i[5] / counter_o[5] |
-| 6 |  | data_o[6] | data_i[6] / counter_o[6] |
-| 7 |  | data_o[7] | data_i[7] / counter_o[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | sel  | data_o[0]  | data_i[0] / counter_o[0]        |
+| 1 |   | data_o[1]  | data_i[1] / counter_o[1]        |
+| 2 |   | data_o[2]  | data_i[2] / counter_o[2]        |
+| 3 |   | data_o[3]  | data_i[3] / counter_o[3]        |
+| 4 |   | data_o[4]  | data_i[4] / counter_o[4]        |
+| 5 |   | data_o[5]  | data_i[5] / counter_o[5]        |
+| 6 |   | data_o[6]  | data_i[6] / counter_o[6]        |
+| 7 |   | data_o[7]  | data_i[7] / counter_o[7]        |
+
 
 ### Chip location
 

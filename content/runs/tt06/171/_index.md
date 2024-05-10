@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "171 Frequency to digital converters (asynchronous and synchronous)"
-weight: 51
+weight: 50
 ---
 
 ## 171 : Frequency to digital converters (asynchronous and synchronous)
@@ -11,7 +11,7 @@ weight: 51
 * [GitHub repository](https://github.com/EduHolg/FDC_chip)
 * [GDS submitted](https://github.com/EduHolg/FDC_chip/actions/runs/8670266733)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ Waveform Generator and Logic Analyzer.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | selec | out[0] |  |
-| 1 | clk_ref | out[1] |  |
-| 2 | VCO | out[2] |  |
-| 3 | reset | out[3] |  |
-| 4 |  | out[4] |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | selec  | out[0]  |         |
+| 1 | clk_ref  | out[1]  |         |
+| 2 | VCO  | out[2]  |         |
+| 3 | reset  | out[3]  |         |
+| 4 |   | out[4]  |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

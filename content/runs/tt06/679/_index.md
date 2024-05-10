@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "679 8bit ALU"
-weight: 35
+weight: 34
 ---
 
 ## 679 : 8bit ALU
@@ -11,7 +11,7 @@ weight: 35
 * [GitHub repository](https://github.com/EdricOngKhaiJieh/8bitALU_verilog)
 * [GDS submitted](https://github.com/EdricOngKhaiJieh/8bitALU_verilog/actions/runs/8755837188)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -42,16 +42,17 @@ ADALM2000. https://www.analog.com/en/resources/evaluation-hardware-and-software/
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | ui_in | uo_out |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | ui_in  | uo_out  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "552 2 bit Binary Calculator"
-weight: 23
+weight: 22
 ---
 
 ## 552 : 2 bit Binary Calculator
@@ -11,7 +11,7 @@ weight: 23
 * [GitHub repository](https://github.com/alexishereok/binary-calculator)
 * [GDS submitted](https://github.com/alexishereok/binary-calculator/actions/runs/8724928800)
 * [Wokwi](https://wokwi.com/projects/395034561853515777) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ Dip switch and 7 segment display screen.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | A0 | a |  |
-| 1 | A1 | b |  |
-| 2 | B0 | c |  |
-| 3 | B1 | d |  |
-| 4 | Multiply | e |  |
-| 5 | Sum | f |  |
-| 6 | Subtract | g |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | A0  | a  |         |
+| 1 | A1  | b  |         |
+| 2 | B0  | c  |         |
+| 3 | B1  | d  |         |
+| 4 | Multiply  | e  |         |
+| 5 | Sum  | f  |         |
+| 6 | Subtract  | g  |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

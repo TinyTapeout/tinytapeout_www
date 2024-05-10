@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "103 GOA - grogu on ASIC"
-weight: 7
+weight: 6
 ---
 
 ## 103 : GOA - grogu on ASIC
@@ -11,7 +11,7 @@ weight: 7
 * [GitHub repository](https://github.com/scorbetta/tt06-scorbetta-goa)
 * [GDS submitted](https://github.com/scorbetta/tt06-scorbetta-goa/actions/runs/8662433685)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 25 Hz
 
 ### GOA - grogu on ASIC
@@ -170,16 +170,17 @@ control and status information is sent to and retrieved from the ASIC through th
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | FPGA clock | Shared debug output dbug_out[0] | SCI_CSN |
-| 1 | Active-low FPGA reset | Shared debug output dbug_out[1] | SCI_REQ |
-| 2 | Loopback data | Shared debug output dbug_out[2] | SCI_RESP |
-| 3 |  | Shared debug output dbug_out[3] | SCI_ACK |
-| 4 |  | Shared debug output dbug_out[4] |  |
-| 5 |  | Shared debug output dbug_out[5] |  |
-| 6 | Debug select [0] | Shared debug output dbug_out[6] |  |
-| 7 | Debug select [1] | Shared debug output dbug_out[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | FPGA clock  | Shared debug output dbug_out[0]  | SCI_CSN        |
+| 1 | Active-low FPGA reset  | Shared debug output dbug_out[1]  | SCI_REQ        |
+| 2 | Loopback data  | Shared debug output dbug_out[2]  | SCI_RESP        |
+| 3 |   | Shared debug output dbug_out[3]  | SCI_ACK        |
+| 4 |   | Shared debug output dbug_out[4]  |         |
+| 5 |   | Shared debug output dbug_out[5]  |         |
+| 6 | Debug select [0]  | Shared debug output dbug_out[6]  |         |
+| 7 | Debug select [1]  | Shared debug output dbug_out[7]  |         |
+
 
 ### Chip location
 

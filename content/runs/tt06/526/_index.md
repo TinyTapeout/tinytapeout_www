@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "526 Analog Sigmoid"
-weight: 40
+weight: 39
 ---
 
 ## 526 : Analog Sigmoid
@@ -11,7 +11,7 @@ weight: 40
 * [GitHub repository](https://github.com/aleena-duk/tinytapeoutsig)
 * [GDS submitted](https://github.com/aleena-duk/tinytapeoutsig/actions/runs/8756035538)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,26 @@ A voltage source at analog pin 1 and analog pin 4 which is an output of an ANN
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 11 | in1           |
+| 1 | 6 | out1           |
+| 2 | 10 | gnd1           |
+| 3 | 7 | in2           |
+| 4 | 9 | out2           |
 
 ### Chip location
 

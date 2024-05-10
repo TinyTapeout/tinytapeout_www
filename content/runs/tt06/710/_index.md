@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "710 UART-Programmable RISC-V 32I Core"
-weight: 123
+weight: 122
 ---
 
 ## 710 : UART-Programmable RISC-V 32I Core
@@ -11,7 +11,7 @@ weight: 123
 * [GitHub repository](https://github.com/enieman/uart_programmable_rv32i)
 * [GDS submitted](https://github.com/enieman/uart_programmable_rv32i/actions/runs/8204648169)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -93,16 +93,17 @@ Use Makerchip IDE (makerchip.com) for testing of RISC-V core only.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  |  |
-| 1 |  |  |  |
-| 2 | RX | TX |  |
-| 3 |  |  |  |
-| 4 |  | Data on TX |  |
-| 5 |  | Data on RX |  |
-| 6 |  | UART Controller in Program Mode |  |
-| 7 | System Reset | System Reset (LED) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   |         |
+| 1 |   |   |         |
+| 2 | RX  | TX  |         |
+| 3 |   |   |         |
+| 4 |   | Data on TX  |         |
+| 5 |   | Data on RX  |         |
+| 6 |   | UART Controller in Program Mode  |         |
+| 7 | System Reset  | System Reset (LED)  |         |
+
 
 ### Chip location
 

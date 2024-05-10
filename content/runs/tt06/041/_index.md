@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "41 2 Player Game"
-weight: 206
+weight: 205
 ---
 
 ## 41 : 2 Player Game
@@ -11,7 +11,7 @@ weight: 206
 * [GitHub repository](https://github.com/gabejessil/tt06-verilog-template)
 * [GDS submitted](https://github.com/gabejessil/tt06-verilog-template/actions/runs/8207313067)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 20000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ You need a PMOD 7 segment disp 1286-1065-ND, 4 button  PMOD 1286-1145-ND
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Start |  |  |
-| 1 | Reset |  |  |
-| 2 | Player 1 |  |  |
-| 3 | Player 2 |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Start  |   |         |
+| 1 | Reset  |   |         |
+| 2 | Player 1  |   |         |
+| 3 | Player 2  |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

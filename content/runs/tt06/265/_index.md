@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "265 WoWA"
-weight: 18
+weight: 17
 ---
 
 ## 265 : WoWA
@@ -11,7 +11,7 @@ weight: 18
 * [GitHub repository](https://github.com/psychogenic/tt06-analog-wowa)
 * [GDS submitted](https://github.com/psychogenic/tt06-analog-wowa/actions/runs/8747855611)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -169,16 +169,27 @@ Voltage source for analog input.  Some way to look at outputs, nominally through
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | reset | result bit 0 | result ready |
-| 1 | enable calibrations | result bit 1 | 0 |
-| 2 | enable comparator | result bit 2 | 0 |
-| 3 | use external threshold | result bit 3 | 0 |
-| 4 |  | result bit 4 | 1 |
-| 5 |  | result bit 5 | 1 |
-| 6 |  | result bit 6 | 1 |
-| 7 |  | result bit 7 | 1 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | reset  | result bit 0  | result ready        |
+| 1 | enable calibrations  | result bit 1  | 0        |
+| 2 | enable comparator  | result bit 2  | 0        |
+| 3 | use external threshold  | result bit 3  | 0        |
+| 4 |   | result bit 4  | 1        |
+| 5 |   | result bit 5  | 1        |
+| 6 |   | result bit 6  | 1        |
+| 7 |   | result bit 7  | 1        |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 11 | Comparator out           |
+| 1 | 6 | p3 opamp out           |
+| 2 | 10 | p3 opamp plus           |
+| 3 | 7 | p3 opamp minus/ext threshold for comp           |
+| 4 | 9 | Analog input to ADC           |
+| 5 | 8 | Matt's DAC output           |
 
 ### Chip location
 

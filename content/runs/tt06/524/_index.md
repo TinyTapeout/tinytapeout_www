@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "524 Analog Current Comparator"
-weight: 185
+weight: 184
 ---
 
 ## 524 : Analog Current Comparator
@@ -11,7 +11,7 @@ weight: 185
 * [GitHub repository](https://github.com/rejunity/tt06-analog-current-comparator)
 * [GDS submitted](https://github.com/rejunity/tt06-analog-current-comparator/actions/runs/8754839133)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -40,16 +40,25 @@ A multimeter to measure the output voltage on analog pin 0.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Inhibitory current bit |  | Excitatory current bit |
-| 1 | Inhibitory current bit |  | Excitatory current bit |
-| 2 | Inhibitory current bit |  | Excitatory current bit |
-| 3 | Inhibitory current bit |  | Excitatory current bit |
-| 4 | Inhibitory current bit |  | Excitatory current bit |
-| 5 | Inhibitory current bit |  | Excitatory current bit |
-| 6 | Inhibitory current bit |  | Excitatory current bit |
-| 7 | Inhibitory current bit |  | Excitatory current bit |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Inhibitory current bit  |   | Excitatory current bit        |
+| 1 | Inhibitory current bit  |   | Excitatory current bit        |
+| 2 | Inhibitory current bit  |   | Excitatory current bit        |
+| 3 | Inhibitory current bit  |   | Excitatory current bit        |
+| 4 | Inhibitory current bit  |   | Excitatory current bit        |
+| 5 | Inhibitory current bit  |   | Excitatory current bit        |
+| 6 | Inhibitory current bit  |   | Excitatory current bit        |
+| 7 | Inhibitory current bit  |   | Excitatory current bit        |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 10 | Main comparator output           |
+| 1 | 7 | Summed currents (debug)           |
+| 2 | 9 | 2nd comparator input (debug)           |
+| 3 | 8 | 2nd comparator output (debug)           |
 
 ### Chip location
 

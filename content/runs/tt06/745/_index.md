@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "745 Cambio de giro de motor CD"
-weight: 180
+weight: 179
 ---
 
 ## 745 : Cambio de giro de motor CD
@@ -11,7 +11,7 @@ weight: 180
 * [GitHub repository](https://github.com/JuanSebastianMoya7/tt06-32b_fibonacci)
 * [GDS submitted](https://github.com/JuanSebastianMoya7/tt06-32b_fibonacci/actions/runs/8757522643)
 * [Wokwi](https://wokwi.com/projects/395615790979120129) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!----
@@ -74,16 +74,17 @@ No external hardware is required.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | E0 | S0 |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 | E4 |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 | E7 | S7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | E0  | S0  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 | E4  |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 | E7  | S7  |         |
+
 
 ### Chip location
 

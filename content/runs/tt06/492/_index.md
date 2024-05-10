@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "492 TT06 Grab Bag"
-weight: 181
+weight: 180
 ---
 
 ## 492 : TT06 Grab Bag
@@ -11,7 +11,7 @@ weight: 181
 * [GitHub repository](https://github.com/algofoogle/tt06-grab-bag)
 * [GDS submitted](https://github.com/algofoogle/tt06-grab-bag/actions/runs/8758046031)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -45,16 +45,27 @@ Come back later and I'll have a better explanation of how to hook up to a VGA di
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | inv_in | inv_out_d |  |
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | inv_in  | inv_out_d  |         |
+| 1 |   |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | inv_out_a           |
+| 1 | 0 | a1           |
+| 2 | 4 | a2           |
+| 3 | 1 | a3           |
+| 4 | 3 | a4           |
+| 5 | 2 | a5           |
 
 ### Chip location
 

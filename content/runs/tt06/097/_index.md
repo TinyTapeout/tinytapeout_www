@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "97 spi_pwm"
-weight: 144
+weight: 143
 ---
 
 ## 97 : spi_pwm
@@ -11,7 +11,7 @@ weight: 144
 * [GitHub repository](https://github.com/djuara-rbz/tt_spi_pwm)
 * [GDS submitted](https://github.com/djuara-rbz/tt_spi_pwm/actions/runs/8360838162)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -184,16 +184,17 @@ Some devices to peform SPI transactions
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | clk_sclk | clk_miso | IO0 |
-| 1 | clk_mosi | sampled_miso | IO1 |
-| 2 | clk_cs | pwm | IO2 |
-| 3 | sampled_sclk |  | IO3 |
-| 4 | sampled_mosi |  | IO4 |
-| 5 | sampled_cs |  | IO5 |
-| 6 |  |  | IO6 |
-| 7 |  |  | IO7 |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | clk_sclk  | clk_miso  | IO0        |
+| 1 | clk_mosi  | sampled_miso  | IO1        |
+| 2 | clk_cs  | pwm  | IO2        |
+| 3 | sampled_sclk  |   | IO3        |
+| 4 | sampled_mosi  |   | IO4        |
+| 5 | sampled_cs  |   | IO5        |
+| 6 |   |   | IO6        |
+| 7 |   |   | IO7        |
+
 
 ### Chip location
 

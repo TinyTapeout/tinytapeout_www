@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "288 test for tiny tapeout hackaday"
-weight: 231
+weight: 230
 ---
 
 ## 288 : test for tiny tapeout hackaday
@@ -11,7 +11,7 @@ weight: 231
 * [GitHub repository](https://github.com/ivo-tt/tiny-tapeout-01)
 * [GDS submitted](https://github.com/ivo-tt/tiny-tapeout-01/actions/runs/8674096242)
 * [Wokwi](https://wokwi.com/projects/395058308283408385) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ List external hardware used in your project (e.g. PMOD, LED display, etc), if an
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | a | 0 |  |
-| 1 | b | 1 |  |
-| 2 |  | 2 |  |
-| 3 |  | 3 |  |
-| 4 |  | 4 |  |
-| 5 |  | 5 |  |
-| 6 |  | 6 |  |
-| 7 |  | 7 |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | a  | 0  |         |
+| 1 | b  | 1  |         |
+| 2 |   | 2  |         |
+| 3 |   | 3  |         |
+| 4 |   | 4  |         |
+| 5 |   | 5  |         |
+| 6 |   | 6  |         |
+| 7 |   | 7  |         |
+
 
 ### Chip location
 

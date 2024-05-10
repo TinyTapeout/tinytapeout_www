@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "546 SynchMux"
-weight: 137
+weight: 136
 ---
 
 ## 546 : SynchMux
@@ -11,7 +11,7 @@ weight: 137
 * [GitHub repository](https://github.com/bc2berlin/tt06)
 * [GDS submitted](https://github.com/bc2berlin/tt06/actions/runs/8693045232)
 * [Wokwi](https://wokwi.com/projects/395054508867644417) project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -39,16 +39,17 @@ These pins are never in high-z state.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | CLK | POPCNT_Y0 | Y1 |
-| 1 | RST | POPCNT_Y1 | Y2 |
-| 2 | A1 | POPCNT_Z0 | YP |
-| 3 | A2 | POPCNT_Z1 | Z1 |
-| 4 | B1 |  | Z2 |
-| 5 | B2 |  | ZP |
-| 6 | SEL |  |  |
-| 7 | OE |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | CLK  | POPCNT_Y0  | Y1        |
+| 1 | RST  | POPCNT_Y1  | Y2        |
+| 2 | A1  | POPCNT_Z0  | YP        |
+| 3 | A2  | POPCNT_Z1  | Z1        |
+| 4 | B1  |   | Z2        |
+| 5 | B2  |   | ZP        |
+| 6 | SEL  |   |         |
+| 7 | OE  |   |         |
+
 
 ### Chip location
 

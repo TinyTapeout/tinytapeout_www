@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "975 Temperature Sensor NG"
-weight: 32
+weight: 31
 ---
 
 ## 975 : Temperature Sensor NG
@@ -11,7 +11,7 @@ weight: 32
 * [GitHub repository](https://github.com/iic-jku/jku-tt06-tempsens-ng)
 * [GDS submitted](https://github.com/iic-jku/jku-tt06-tempsens-ng/actions/runs/8662012587)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 10000000 Hz
 
 <!---
@@ -48,16 +48,17 @@ Requires a logic analyzer or similar to inspect the digital outputs.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | DAC code [0] | out[0] or out[8] or out[16] | debug sel [0] |
-| 1 | DAC code [1] | out[1] or out[9] or out[17] | debug sel [1] |
-| 2 | DAC code [2] | out[2] or out[10] or out[18] | debug sel [2] |
-| 3 | DAC code [3] | out[3] or out[11] or out[19] | debug sel [3] |
-| 4 | DAC code [4] | out[4] or out[12] | debug out [0] |
-| 5 | DAC code [5] | out[5] or out[13] | debug out [1] |
-| 6 | output selection [0] | out[6] or out[14] | debug out [2] |
-| 7 | output selection [1] | out[7] or out[15] | debug out [3] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | DAC code [0]  | out[0] or out[8] or out[16]  | debug sel [0]        |
+| 1 | DAC code [1]  | out[1] or out[9] or out[17]  | debug sel [1]        |
+| 2 | DAC code [2]  | out[2] or out[10] or out[18]  | debug sel [2]        |
+| 3 | DAC code [3]  | out[3] or out[11] or out[19]  | debug sel [3]        |
+| 4 | DAC code [4]  | out[4] or out[12]  | debug out [0]        |
+| 5 | DAC code [5]  | out[5] or out[13]  | debug out [1]        |
+| 6 | output selection [0]  | out[6] or out[14]  | debug out [2]        |
+| 7 | output selection [1]  | out[7] or out[15]  | debug out [3]        |
+
 
 ### Chip location
 

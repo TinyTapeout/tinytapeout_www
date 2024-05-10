@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "743 TWI Monitor"
-weight: 53
+weight: 52
 ---
 
 ## 743 : TWI Monitor
@@ -11,7 +11,7 @@ weight: 53
 * [GitHub repository](https://github.com/FangameEmpire/tt06-twi-monitor)
 * [GDS submitted](https://github.com/FangameEmpire/tt06-twi-monitor/actions/runs/8757529618)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -39,16 +39,17 @@ This project needs an external UART to USB adapter if you want to connect it to 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | SDA_in | TX_out |  |
-| 1 | SCL_in |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | SDA_in  | TX_out  |         |
+| 1 | SCL_in  |   |         |
+| 2 |   |   |         |
+| 3 |   |   |         |
+| 4 |   |   |         |
+| 5 |   |   |         |
+| 6 |   |   |         |
+| 7 |   |   |         |
+
 
 ### Chip location
 

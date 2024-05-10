@@ -1,17 +1,17 @@
 ---
 hidden: true
 title: "747 Circuito PWM con ciclo de trabajo configurable"
-weight: 96
+weight: 95
 ---
 
 ## 747 : Circuito PWM con ciclo de trabajo configurable
 
-* Author: Maria Fernanda Tovany Salvador, Javier Trucios Alonso & Luis David Vazquez Perez
+* Author: Maria Fernanda Tovany Salvador, Javier Trucios Alonso &amp; Luis David Vazquez Perez
 * Description:  A partir de tres senales de entrada digitales selecciona el ciclo de trabajo de salida (PWM).
 * [GitHub repository](https://github.com/LuisVazpez12/PWM_configurable)
 * [GDS submitted](https://github.com/LuisVazpez12/PWM_configurable/actions/runs/8757612449)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -47,16 +47,17 @@ Generador de señales para generar la señal de reloj de 10MHz, osciloscopio par
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | no use | PWM | no use |
-| 1 | no use | no use | no use |
-| 2 | no use | no use | no use |
-| 3 | speed[0] | no use | no use |
-| 4 | speed[1] | no use | no use |
-| 5 | speed[3] | no use | no use |
-| 6 | enable | no use | no use |
-| 7 | clock | no use | no use |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | no use  | PWM  | no use        |
+| 1 | no use  | no use  | no use        |
+| 2 | no use  | no use  | no use        |
+| 3 | speed[0]  | no use  | no use        |
+| 4 | speed[1]  | no use  | no use        |
+| 5 | speed[3]  | no use  | no use        |
+| 6 | enable  | no use  | no use        |
+| 7 | clock  | no use  | no use        |
+
 
 ### Chip location
 

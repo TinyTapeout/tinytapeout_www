@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "483 Parallel / SPI modulation tester"
-weight: 89
+weight: 88
 ---
 
 ## 483 : Parallel / SPI modulation tester
@@ -11,7 +11,7 @@ weight: 89
 * [GitHub repository](https://github.com/cmerrill/tt06-cmerrill)
 * [GDS submitted](https://github.com/cmerrill/tt06-cmerrill/actions/runs/8739590879)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 50000000 Hz
 
 <!---
@@ -71,16 +71,17 @@ The modulation outputs are all digital pulses of some sort. In order to get mean
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | DAC Parallel Input, bit 0 | PDM Waveform Output | CLK_DIV[0] |
-| 1 | DAC Parallel Input, bit 1 |  | CLK_DIV[1] |
-| 2 | DAC Parallel Input, bit 2 | PFM Output, Single cycle pulse | CLK_DIV[2] |
-| 3 | DAC Parallel Input, bit 3 | PFM Output, 50% duty cycle | CLK_DIV[3] |
-| 4 | DAC Parallel Input, bit 4 | PWM Waveformn Output | SPI CS_L / Parallel Latch |
-| 5 | DAC Parallel Input, bit 5 |  | SPI SCLK |
-| 6 | DAC Parallel Input, bit 6 |  | SPI SDI |
-| 7 | DAC Parallel Input, bit 7 |  | Parallel/SPI Select (0 => Parallel, 1 => SPI) |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | DAC Parallel Input, bit 0  | PDM Waveform Output  | CLK_DIV[0]        |
+| 1 | DAC Parallel Input, bit 1  |   | CLK_DIV[1]        |
+| 2 | DAC Parallel Input, bit 2  | PFM Output, Single cycle pulse  | CLK_DIV[2]        |
+| 3 | DAC Parallel Input, bit 3  | PFM Output, 50% duty cycle  | CLK_DIV[3]        |
+| 4 | DAC Parallel Input, bit 4  | PWM Waveformn Output  | SPI CS_L / Parallel Latch        |
+| 5 | DAC Parallel Input, bit 5  |   | SPI SCLK        |
+| 6 | DAC Parallel Input, bit 6  |   | SPI SDI        |
+| 7 | DAC Parallel Input, bit 7  |   | Parallel/SPI Select (0 => Parallel, 1 => SPI)        |
+
 
 ### Chip location
 

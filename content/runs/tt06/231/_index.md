@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "231 TT06 8-bit SAR ADC"
-weight: 16
+weight: 15
 ---
 
 ## 231 : TT06 8-bit SAR ADC
@@ -11,7 +11,7 @@ weight: 16
 * [GitHub repository](https://github.com/wulffern/tt06-sar)
 * [GDS submitted](https://github.com/wulffern/tt06-sar/actions/runs/8736345260)
 * Analog project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 4000000 Hz
 
 <!---
@@ -226,16 +226,23 @@ the IC comes back.
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | Enable ADC | ADC LSB | Conversion Done |
-| 1 |  | ADC MSB-6 |  |
-| 2 |  | ADC MSB-5 |  |
-| 3 |  | ADC MSB-4 |  |
-| 4 |  | ADC MSB-3 |  |
-| 5 |  | ADC MSB-2 |  |
-| 6 |  | ADC MSB-1 |  |
-| 7 |  | ADC MSB (two's complement) |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | Enable ADC  | ADC LSB  | Conversion Done        |
+| 1 |   | ADC MSB-6  |         |
+| 2 |   | ADC MSB-5  |         |
+| 3 |   | ADC MSB-4  |         |
+| 4 |   | ADC MSB-3  |         |
+| 5 |   | ADC MSB-2  |         |
+| 6 |   | ADC MSB-1  |         |
+| 7 |   | ADC MSB (two's complement)  |         |
+
+### Analog pins
+
+| `ua`#        | `analog`#        | Description         |
+| ------------ | ---------------- | ------------------- |
+| 0 | 5 | Negative ADC input           |
+| 1 | 0 | Positive ADC input           |
 
 ### Chip location
 

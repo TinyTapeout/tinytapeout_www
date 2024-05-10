@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "737 4-Digit Scanning Digital Timer Counter"
-weight: 218
+weight: 217
 ---
 
 ## 737 : 4-Digit Scanning Digital Timer Counter
@@ -11,7 +11,7 @@ weight: 218
 * [GitHub repository](https://github.com/Shofuuu/tt06-timer_counter-UGM)
 * [GDS submitted](https://github.com/Shofuuu/tt06-timer_counter-UGM/actions/runs/8758515010)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 1000 Hz
 
 <!---
@@ -44,16 +44,17 @@ There are additional hardware such as:
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | inv | segment[0] | digit[0] |
-| 1 | mode | segment[1] | digit[1] |
-| 2 | start | segment[2] | digit[2] |
-| 3 | stop | segment[3] | digit[3] |
-| 4 |  | segment[4] |  |
-| 5 |  | segment[5] |  |
-| 6 |  | segment[6] |  |
-| 7 |  | segment[7] |  |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | inv  | segment[0]  | digit[0]        |
+| 1 | mode  | segment[1]  | digit[1]        |
+| 2 | start  | segment[2]  | digit[2]        |
+| 3 | stop  | segment[3]  | digit[3]        |
+| 4 |   | segment[4]  |         |
+| 5 |   | segment[5]  |         |
+| 6 |   | segment[6]  |         |
+| 7 |   | segment[7]  |         |
+
 
 ### Chip location
 

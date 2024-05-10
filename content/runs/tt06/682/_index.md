@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "682 Generador digital trifásico"
-weight: 65
+weight: 64
 ---
 
 ## 682 : Generador digital trifásico
@@ -11,7 +11,7 @@ weight: 65
 * [GitHub repository](https://github.com/DeusJR/generador3f)
 * [GDS submitted](https://github.com/DeusJR/generador3f/actions/runs/8640837361)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 <!---
@@ -70,16 +70,17 @@ Para cualquier duda en cuanto a las pruebas del circuito, pueden mandar un corre
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 |  |  | P2 |
-| 1 |  |  | P1 |
-| 2 |  |  | P0 |
-| 3 |  |  | Qc |
-| 4 |  |  | Qb |
-| 5 |  |  | Qa |
-| 6 |  |  | no used |
-| 7 |  |  | SE |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 |   |   | P2        |
+| 1 |   |   | P1        |
+| 2 |   |   | P0        |
+| 3 |   |   | Qc        |
+| 4 |   |   | Qb        |
+| 5 |   |   | Qa        |
+| 6 |   |   | no used        |
+| 7 |   |   | SE        |
+
 
 ### Chip location
 

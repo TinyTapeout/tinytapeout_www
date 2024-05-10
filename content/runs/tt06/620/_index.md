@@ -1,7 +1,7 @@
 ---
 hidden: true
 title: "620 Latch RAM (64 bytes)"
-weight: 234
+weight: 233
 ---
 
 ## 620 : Latch RAM (64 bytes)
@@ -11,7 +11,7 @@ weight: 234
 * [GitHub repository](https://github.com/MichaelBell/tt06-memory)
 * [GDS submitted](https://github.com/MichaelBell/tt06-memory/actions/runs/8758769642)
 * HDL project
-* [Extra docs](None)
+* [Extra docs]()
 * Clock: 0 Hz
 
 ### What's the project?
@@ -83,16 +83,17 @@ The combined output wire then goes to a final buffer before leaving the module, 
 
 ### IO
 
-| # | Input          | Output         | Bidirectional   |
-| - | -------------- | -------------- | --------------- |
-| 0 | addr[0] | data_out[0] | data_in[0] |
-| 1 | addr[1] | data_out[1] | data_in[1] |
-| 2 | addr[2] | data_out[2] | data_in[2] |
-| 3 | addr[3] | data_out[3] | data_in[3] |
-| 4 | addr[4] | data_out[4] | data_in[4] |
-| 5 | addr[5] | data_out[5] | data_in[5] |
-| 6 |  | data_out[6] | data_in[6] |
-| 7 | wr_en | data_out[7] | data_in[7] |
+| #             | Input    | Output   | Bidirectional   |
+| ------------- | -------- | -------- | --------------- |
+| 0 | addr[0]  | data_out[0]  | data_in[0]        |
+| 1 | addr[1]  | data_out[1]  | data_in[1]        |
+| 2 | addr[2]  | data_out[2]  | data_in[2]        |
+| 3 | addr[3]  | data_out[3]  | data_in[3]        |
+| 4 | addr[4]  | data_out[4]  | data_in[4]        |
+| 5 | addr[5]  | data_out[5]  | data_in[5]        |
+| 6 |   | data_out[6]  | data_in[6]        |
+| 7 | wr_en  | data_out[7]  | data_in[7]        |
+
 
 ### Chip location
 
