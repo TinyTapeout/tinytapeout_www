@@ -11,11 +11,14 @@
   const hoursElement = document.querySelector('.countdown-timer .cd-hours');
   const minutesElement = document.querySelector('.countdown-timer .cd-minutes');
   const secondsElement = document.querySelector('.countdown-timer .cd-seconds');
+  
+  const tileStats = document.querySelector('.tile-stats .counter');
+  const tileProgress = document.querySelector('.tile-stats .progress-bar-inner');
+  const pcbStats = document.querySelector('.pcb-stats .counter');
+  const pcbProgress = document.querySelector('.pcb-stats .progress-bar-inner');
 
-  let tileStats = document.querySelector('.tile-stats .counter');
-  let tileProgress = document.querySelector('.tile-stats .progress-bar-inner');
-  let pcbStats = document.querySelector('.pcb-stats .counter');
-  let pcbProgress = document.querySelector('.pcb-stats .progress-bar-inner');
+  const shuttleStats = document.querySelector('.countdown-wrapper .shuttle-stats');
+  shuttleStats.href = `https://app.tinytapeout.com/shuttles/${shuttleSlug}`;
 
   async function fetchStats() {
     const queryUrl = new URL('shuttles', databaseEndpoint);
