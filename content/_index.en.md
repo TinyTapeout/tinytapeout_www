@@ -24,8 +24,8 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt07-wokwi-template).
-* [Verilog submission template](https://github.com/TinyTapeout/tt07-verilog-template).
+* [Wokwi submission template](https://github.com/TinyTapeout/tt08-wokwi-template).
+* [Verilog submission template](https://github.com/TinyTapeout/tt08-verilog-template).
 * Analog and mixed signal template - Coming in the next few days
 
 # Submit your design
