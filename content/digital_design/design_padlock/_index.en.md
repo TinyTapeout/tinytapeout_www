@@ -29,7 +29,7 @@ This design implements a customizable padlock. Set a code for your digital safe!
 
 Press the green button in the top left of the simulation pane. 
 
-Set your desired code using Switches 3 to 5. Once you've done so, toggle Switch 8 to on then back off--the safe is now set!
+Set your desired code using Switches 3 to 5. Once you've done so, toggle Switch 8 to on, press the button, then toggle Switch 8 back off--the safe is now set!
 
 Turn on Switch 2, and press the push button. The red LED labeled "Locked" should turn on and the seven segment display should show "L" (for locked).
 
@@ -37,7 +37,7 @@ Next turn off Switch 2 to begin entering codes.
 
 If you enter a correct code, you will see cyan LED labeled "Unlocked!" turn on. Congratulations! The seven segment display should also show "U" (for unlocked).
 
-{{< wokwi 347417602591556180 >}}
+{{< wokwi 397142450561071105 >}}
 <br>
 
 {{% feedback %}}
