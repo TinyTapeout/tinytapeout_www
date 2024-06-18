@@ -82,8 +82,8 @@ The following templates are currently available:
 
 - `tt_analog_1x2.def` - 1x2 tiles, digital power supply (1.8V)
 - `tt_analog_2x2.def` - 2x2 tiles, digital power supply (1.8V)
-- `tt_analog_1x2_3v3.def` - 1x2 tiles, both 1.8V (VPWR) and 3.3V (VAPWR) power supplies
-- `tt_analog_2x2_3v3.def` - 2x2 tiles, both 1.8V (VPWR) and 3.3V (VAPWR) power supplies
+- `tt_analog_1x2_3v3.def` - 1x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
+- `tt_analog_2x2_3v3.def` - 2x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
 
 ## Edit the info.yaml file
 
