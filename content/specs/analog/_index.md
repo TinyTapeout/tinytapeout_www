@@ -35,13 +35,19 @@ Most analog designs should fit into the smallest template, _tt_analog_1x2.def_, 
 
 ## Power pins
 
-The power pins need to be named `VPWR` and `VGND` and need to be placed on `metal 4`. They both need to have the same width, between 1.2 and 2.0 um. Their height should be at least 95% of the design's total height.
+The following power pins are available:
 
-The actual metal area can be larger, but the area defined as a pin must fit these dimensions.
+* VGND: Ground rail
+* VDPWR: 1.8V digital core voltage
+* VAPWR: 3.3V analog supply rail (optional, requires a different template)
 
-`VPWR` is the digital voltage supploy (nominally 1.8 V), and is available in all analog templates. 
+Power pins need to be vertical stripes on met4 layer and must adhere to the following rules:
 
-In addition, projects using the `tt_analog_\*_3v3.def` templates can also define a `VAPWR` pin, which will be connected to a 3.3 V analog voltage supply.
+1. Start within the bottom 10 µm of the module and extend at least to the top 10 µm of the module.
+2. Minimum width of 1.2 um.
+3. Projects utilizing the 3.3V rail MUST use the `tt_analog_*_3v3.def` templates.
+4. Multiple power pins of each type can be used with varying dimensions as long as the above constraints are met.
+5. The actual metal area can be larger or have a different shape, but the area defined as a pin must comply with these constraints.
 
 ## Pricing
 
