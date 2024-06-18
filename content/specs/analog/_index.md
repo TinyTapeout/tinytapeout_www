@@ -59,10 +59,6 @@ This price is only for including the design in the shuttle, and does not include
 
 {{< youtube DQAA4MrG8pM >}}
 
-{{% notice tip %}}
-Analog designs are currently in beta. There's a small chance that the changes will change before the deadline for Tiny Tapeout 6, or that we will have to postpone the analog design support to a future shuttle. If you have any questions, please join the [Tiny Tapeout Discord](https://tinytapeout.com/discord) and ask in the #analog channel.
-{{% /notice %}}
-
 These instructions assume you are using the [Magic VLSI tool](http://opencircuitdesign.com/magic/), but you can do the same with Klayout or proprietary tools.
 
 Make sure the version of Magic matches the PDK.
