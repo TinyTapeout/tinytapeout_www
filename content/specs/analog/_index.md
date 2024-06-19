@@ -20,6 +20,7 @@ The path between the analog pads and your project (the ua pins) is expected to h
 
 - Resistance: < 500 ohm
 - Capacitance: < 5 pf
+- Max current: 4 mA
 
 You are not allowed to use the **metal 5** layer in your design, as it's used by Tiny Tapeout's power grid.
 
