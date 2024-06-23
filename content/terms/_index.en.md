@@ -19,7 +19,7 @@ Subject to the terms hereof, you may participate in the Program by submitting a 
 
 
 1.2. 
-All Designs must comply with and be submitted to Tiny Tapeout in accordance with the applicable terms, specifications, guidelines, and other requirements for the Production Run set forth on the Website and/or associated Tiny Tapeout GitHub pages (collectively, “**Production Run Requirements**”). Each Production Run is limited to the number of Design slots detailed on the Website. In order to submit a Design, you must submit to Tiny Tapeout all documentation, materials and other information requested in the Production Run Requirements (“**Design Documentation**”). Tiny Tapeout may refuse to accept any Design or otherwise permit any individual or entity to participate in the Program and/or any Production Run in its sole discretion, including, without limitation, in the event of any failure to comply with these Terms or any applicable Production Run Requirements.   
+All Designs must comply with and be submitted to Tiny Tapeout in accordance with the applicable terms, specifications, guidelines, and other requirements for the Production Run set forth on the Website and/or associated Tiny Tapeout GitHub pages (collectively, “**Production Run Requirements**”). Each Production Run is limited to the number of Design slots detailed on the Website. In order to submit a Design, you must submit to Tiny Tapeout all documentation, materials and other information requested in the Production Run Requirements (“**Design Documentation**”). Tiny Tapeout may refuse to accept any Design or otherwise permit any individual or entity to participate in the Program and/or any Production Run in its sole discretion, including, without limitation, in the event of any failure to comply with these Terms or any applicable Production Run Requirements. In the event that your Design is not accepted for inclusion in a particular Production Run following your payment of any applicable Fees (as defined below) payable hereunder for such Design, Tiny Tapeout will provide you with a voucher for future Production Runs in the amount of such Fees.  
 
 
 1.3. 
@@ -61,7 +61,7 @@ In order to participate in the Program, you may be required to access and/or use
 
 
 4.1. 
-All right, title and interest in the Combined Design are solely and exclusively owned by Tiny Tapeout. You retain all right, title and interest in your Designs and/or Design Documentation. All Designs and Design Documentation must be licensed under terms and conditions compatible with the Apache License, Version 2.0, available at: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0) (“**Apache 2.0 License**”). By submitting any Design and/or Design Documentation hereunder, you represent and warrant that such Design and/or Design Documentation is licensed under and governed by the Apache 2.0 License or terms and conditions compatible therewith. 
+All right, title and interest in the Combined Design are solely and exclusively owned by Tiny Tapeout. You retain all right, title and interest in your Designs and/or Design Documentation. All Designs and Design Documentation must be licensed under terms and conditions compatible with the Apache License, Version 2.0, available at: [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0) (“**Apache 2.0 License**”). By submitting any Design and/or Design Documentation hereunder, you represent and warrant that (i) such Design and/or Design Documentation is licensed under and governed by the Apache 2.0 License or terms and conditions compatible therewith (collectively, “**Design License Terms**”); (ii) your development and production of such Design and/or Design Documentation complies with the Design License Terms and/or any applicable third party terms and conditions of any software, code, or other intellectual property used in connection therewith (“**Third Party Terms**”); and (iii) you have all necessary rights and the full power and authority to license such Design and/or Design Documentation under the Design License Terms, including, without limitation, pursuant to any applicable Third Party Terms. 
 
 
 4.2. 
@@ -147,7 +147,7 @@ These Terms shall be governed by the laws of the State of Israel, without refere
 
 ## Last Updated
 
-October 4, 2023.  
+June 23, 2024.  
 
  
 
