@@ -46,7 +46,7 @@ Power pins need to be vertical stripes on met4 layer and must adhere to the foll
 
 1. Start within the bottom 10 µm of the module and extend at least to the top 10 µm of the module.
 2. Minimum width of 1.2 um.
-3. Projects utilizing the 3.3V rail MUST use the `tt_analog_*_3v3.def` templates.
+3. Projects utilizing the 3.3V rail MUST use the `tt_analog_*_3v3.def` templates and set `uses_3v3: true` in `info.yaml`.
 4. Multiple power pins of each type can be used with varying dimensions as long as the above constraints are met.
 5. The actual metal area can be larger or have a different shape, but the area defined as a pin must comply with these constraints.
 
