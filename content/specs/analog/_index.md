@@ -114,11 +114,11 @@ Edit [docs/info.md](docs/info.md) and add a description of your project.
 
 Use your preferred analog flow to design, simulate, layout, extract, LVS and post layout simulate.
 
-A quick way to get started is to use this [tcl script](https://gist.github.com/urish/ba71f2fa68505a1b665000bce08d3874) to draw and label the power ports.
+A quick way to get started is to use this [tcl script](https://github.com/TinyTapeout/tt-support-tools/blob/tt08/def/analog/magic_init_project.tcl) to draw and label the power ports.
 
 * Download the script
-* Edit it to change the cellname and GDS and LEF export paths
-* Start Magic and in the tcl command window, write `source tt-analog-draw.tcl`
+* Edit it to change the module name and configure the pin template and power stripes
+* Start Magic and in the tcl command window, write `source magic_init_project.tcl`
 
 ## Resources
 
