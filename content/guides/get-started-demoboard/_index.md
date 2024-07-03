@@ -450,3 +450,91 @@ and
 bidir_byte = 0b00011111
 ```
 would set `uio[4]` HIGH, uio 5-7 LOW, and leave the lower pins alone. 
+
+## Sample config.ini
+
+```
+#### DEFAULT Section ####
+
+[DEFAULT]
+# project: project to load by default: simon says
+project = tt_um_urish_simon
+
+# start in reset (bool)
+start_in_reset = no
+
+# mode can be any of
+#  - SAFE: all RP2040 pins inputs
+#  - ASIC_RP_CONTROL: TT inputs,nrst and clock driven, outputs monitored
+#  - ASIC_MANUAL_INPUTS: basically same as safe, but intent is clear
+mode = ASIC_RP_CONTROL
+
+# log_level can be one of
+#  - DEBUG
+#  - INFO
+#  - WARN
+#  - ERROR
+log_level = INFO
+
+
+# default RP2040 system clock
+rp_clock_frequency = 125e6
+
+
+
+
+#### PROJECT OVERRIDES ####
+
+
+[tt_um_test]
+clock_frequency = 10
+start_in_reset = no
+input_byte = 1
+
+[tt_um_factory_test]
+clock_frequency = 10
+start_in_reset = no
+input_byte = 1
+
+
+[tt_um_psychogenic_neptuneproportional]
+# set clock to 4kHz
+clock_frequency = 4000
+# clock config 4k, disp single bits
+input_byte = 0b11001000
+mode = ASIC_RP_CONTROL
+
+
+[wokwi_7seg_tiny_tapeout_display]
+rp_clock_frequency = 50_000_000
+clock_frequency = 5
+mode = ASIC_RP_CONTROL
+
+
+[tt_um_loopback]
+# ui_in[0] == 1 means bidirs on output
+clock_frequency = 1000
+input_byte = 1
+
+# bidir_direction, 1 bit means we will
+# write to it (RP pin is output), 
+# 0 means read from (RP is input)
+# set to all output
+bidir_direction = 0xff
+bidir_byte = 0b110010101
+
+
+
+[tt_um_vga_clock]
+# need to set RP clock freq to get a nice
+# VGA clock at 31.5MHz
+rp_clock_frequency = 126e6
+clock_frequency = 31.5e6
+mode = ASIC_RP_CONTROL
+
+
+[tt_um_urish_simon]
+clock_frequency = 50000
+mode = ASIC_MANUAL_INPUTS
+```
+
