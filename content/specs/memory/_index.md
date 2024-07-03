@@ -23,6 +23,10 @@ Here are a few examples of projects that use registers as memory:
 - [Register based 32 byte RAM](https://github.com/TinyTapeout/tt06-256-bits-dff-mem) - uses 264 DFFs (32 bytes of memory + 8 bits for the output register), and utilizes 70% of the tile area.
 - [Simon Says game](https://github.com/urish/tt06-simon-game) - uses 188 DFFs for the game state, and utilizes 76% of the tile area (for both logic and memory)
 
+#### Using latch-based memory
+
+Latches are more area-efficient than registers, but they are also more complex to use. We've seen people fit as many as 512 bits into a single Tiny Tapeout tile. Check out the [64 byte latch-based memory example from Michael Bell](https://github.com/MichaelBell/tt06-memory/blob/main/docs/info.md) for more details (the example uses 88% of a single tile area).
+
 #### Using DFF RAM
 
 The [DFF RAM compiler](https://github.com/AUCOHL/DFFRAM) creates a dense array of DFFs that can be used as memory. It's more efficient than using registers, but it's also less flexible: you can only read / write one address at a time, and there are only a few sizes available.

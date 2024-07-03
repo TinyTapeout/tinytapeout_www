@@ -82,7 +82,7 @@
     }
   }
 
-  .shuttle-stats {
+  #body a.shuttle-stats {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,6 +93,10 @@
     margin-left: 16px;
     padding: 16px;
     border-radius: 4px;
+  }
+
+  #body a.shuttle-stats:after {
+    display: none; /* disables the underline added by Hugo */
   }
 
   .shuttle-stats .item {
@@ -133,8 +137,8 @@
 
 <div class="countdown-wrapper">
   <div class="countdown-timer">
-    <div class="heading">TT07<br />Closes in</div>
-    <div class="heading-mobile">TT07 Closes in</div>
+    <div class="heading">TT08<br />Closes in</div>
+    <div class="heading-mobile">TT08 Closes in</div>
     <div class="countdown-timer-tiles">
       <div class="tile">
         <p class="value cd-days">44</p>
@@ -154,7 +158,7 @@
       </div>
     </div>
   </div>
-  <div class="shuttle-stats">
+  <a class="shuttle-stats">
     <div class="item tile-stats">
       <span class="title">
         <span class="title-text">Tiles</span>
@@ -173,7 +177,7 @@
         <div class="progress-bar-inner"></div>
       </div>
     </div>
-  </div>
+  </a>
 </div>
 
 {{ $js := resources.Get "scripts/countdown.js" | js.Build | resources.Minify }} {{ $secureJS := $js

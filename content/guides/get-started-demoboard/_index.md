@@ -25,6 +25,7 @@ There's a little video that goes through much of this so you can see it in actio
 
 {{< figure src="images/tt04db-render.png" title="TT04 demoboard" >}}
 
+
 The TT04 ASIC includes [143 different digital designs](https://tinytapeout.com/runs/tt04/#all-projects), any of which may be *enabled* so that you can send and receive information to it using whichever combination of the
 
  * 8 input;
@@ -283,7 +284,6 @@ The complete directions for OS updates are part of the [SDK documentation, under
   * wait until the drive disappears
   
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
-
 
 
 ### Automatic Configuration

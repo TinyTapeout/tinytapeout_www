@@ -37,7 +37,7 @@ A continuación, apaga el interruptor 2 para comenzar a ingresar códigos.
 
 Si ingresas un código correcto, verás el LED cian etiquetado como "Desbloqueado!" encenderse. ¡Felicidades! El display de 7 segmentos también debería mostrar "U" (por desbloqueado).
 
-{{< wokwi 347417602591556180 >}}
+{{< wokwi 397142450561071105 >}}
 <br>
 
 {{% feedback %}}

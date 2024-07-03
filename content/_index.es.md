@@ -40,7 +40,7 @@ Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca ha
 
 # Regístrate
 
-Regístrate en la lista de correo para recibir las últimas noticias y para asegurarte de no perder la oportunidad de presentar un diseño en Tiny Tapeout 06.
+Regístrate en la lista de correo para recibir las últimas noticias y para asegurarte de no perder la oportunidad de presentar un diseño en Tiny Tapeout 8.
 
 {{< mailchimp >}}
 
