@@ -40,7 +40,7 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 7.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 8.
 
 {{< mailchimp >}}
 
