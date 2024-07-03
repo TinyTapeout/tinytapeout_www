@@ -23,7 +23,8 @@ There's a little video that goes through much of this so you can see it in actio
 ### Overview and bring-up
 
 
-{{< figure src="images/tt04db-render.jpg" title="TT04 demoboard" >}}
+{{< figure src="images/tt04db-render.png" title="TT04 demoboard" >}}
+
 
 The TT04 ASIC includes [143 different digital designs](https://tinytapeout.com/runs/tt04/#all-projects), any of which may be *enabled* so that you can send and receive information to it using whichever combination of the
 
@@ -50,8 +51,8 @@ All the I/O expects 3.3V logic levels, so the 5V coming in through the USB recep
 After inspecting the boards for damage, and ensuring the carrier board is well seated on the demoboard, give the system 5V through the USB connector.
 
 Operating normally, the power LEDs on the top right of the demoboard will light up (though the 1v8 may be a bit dim), and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
-pe
-The is the [factory test](https://tinytapeout.com/runs/tt04/001/) project, loaded by default, being ticked and shows the system is alive.
+
+This is the [factory test](https://tinytapeout.com/runs/tt04/001/) project, loaded by default, being ticked and shows the system is alive.
 
 If you have a way to monitor power use, you should see a draw of around 180-200 milliAmps, on the 5V supply and not much more.
 
@@ -221,9 +222,9 @@ The important things on the filesystem are:
   * ttboard/ has all the SDK modules
   * shuttles/ contains the design listings as JSON files for the chip
 
-Any standard means of accessing the micropython FS should work.  I've used [rshell](https://pypi.org/project/rshell/) a great deal but have found it lacking in some regards.  Of late, I've turned to [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
+Any standard means of accessing the micropython FS should work.  [rshell](https://pypi.org/project/rshell/) may be used but is lacking in some regards.  Another option is [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
 
-You can learn about that in [its documentation](https://mpy-repl-tool.readthedocs.io/en/latest/).  I like that it lets you easily detect connected boards
+You can learn about that in [its documentation](https://mpy-repl-tool.readthedocs.io/en/latest/).  It lets you easily detect connected boards
 
 ```
 python3 -m there detect
@@ -285,10 +286,255 @@ The complete directions for OS updates are part of the [SDK documentation, under
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
 
 
+### Automatic Configuration
+
+The SDK includes support for a `config.ini` file that can setup default behaviour on a system-wide basis, as well as do preliminary setup on an individual project basis.
+
+The configuration file is split into sections, indicated by `[brackets]`, and they are of two types:
+
+`[DEFAULT]`
+Which is always present, and contains settings applied at boot-up and whenever there is no override in project sections, and
+
+`[project_name]`
+sections, which apply only when a specific project is loaded (who's name must match the section name exactly whatever).
+
+Each entry in a section is of the form:
+```
+name = value
+```
+where the name is one from the list below, and the value may be a string, a boolean or a numerical value, depending on the particular option.
+
+
+## Example
+
+A simple configuration for system defaults and a single project might be
+
+```
+[DEFAULT]
+project = tt_um_urish_simon
+mode = ASIC_RP_CONTROL
+
+[tt_um_urish_simon]
+clock_frequency = 50000
+mode = ASIC_MANUAL_INPUTS
+```
+
+This would load the *tt_um_urish_simon* project by default, letting the PMOD extension board drive the inputs, but for other projects assume the inputs are driven by the RP2040 (hence the *ASIC_RP_CONTROL* default mode).
+
+
+
+### System defaults
+
+In the `[DEFAULT]` section, the following options are recognized:
+
+## `project`
+A string value with the name of the default project to load at start-up, e.g.
+
+```
+project = tt_um_test
+```
+
+## `mode`
+The tinytapeout chip inputs may be driven by the RP2040 on-board, or from external sources (the DIP switch, the PMODs).  When
+
+```
+mode = ASIC_RP_CONTROL
+```
+The pins from the RP2040 that are tied to the TT chip project inputs are setup as outputs (meaning you can write values from the RP2040 to the project inputs).
+If you want to use the PMOD or DIP switches, set this instead to
+
+```
+mode = ASIC_MANUAL_INPUTS
+```
+
+
+## `rp_clock_frequency`
+There are two clocks involved with the TT demoboard: one is the project clock, the other is the clock internal to the RP2040.  There are instances, for example to get an exact value of clocking for the project which is derived from the RP2040 clock using PWM, where you may want to specify the clocking for the MCU.  This option allows you to set this.  You may pass an integer, or a scientific notation value, i.e.
+
+```
+rp_clock_frequency = 125000000
+```
+and
+```
+rp_clock_frequency = 125e6
+```
+are equivalent.
+
+
+## `start_in_reset`
+The project may be put in reset by default by specifying 
+
+```
+start_in_reset = yes
+```
+In this case, it will require code somewhere that actually uses the SDK to perform a 
+```
+   tt.reset_project(False)
+```
+call on the demoboard object.  If you don't want this, leave the value to `no`.
+
+## `log_level`
+The verbosity of the SDK logging may be set using this option.  Valid values are `DEBUG`, `INFO`, `WARN` and `ERROR`.
+
+
+
+### Project-specific settings
+
+Projects may have their own `[section]` in the config.ini file, my creating such a section using the official project name, e.g.
+
+```
+[tt_um_urish_simon]
+# ...
+
+```
+
+for Uri's simon game.  The settings in this section would apply any time this project is loaded, including during boot-up if this is the project specified by the default `project` option.  
+
+All lines until the next `[section]` or the end of the file will apply to this project.  The following options are available and behave identically as in the *DEFAULT* section described above:
+
+   * mode (ASIC_RP_CONTROL or ASIC_MANUAL_INPUTS)
+   * rp_clock_frequency (the RP2040 internal clock frequency)
+   * start_in_reset (`yes` or `no` boolean to indicate "hold on reset" when loaded)
+   
+In addition to these, there are a few project related options that make life easier:
+
+
+## `clock_frequency`
+
+Most projects are synchronous logic and need to be clocked.  This option allows you to specify that auto clocking of the project should be enabled, and to state at which frequency this should be.  The value is an integer, so you can spell it out or use scientific notation
+
+```
+clock_frequency = 50000
+
+# or, say 10MHz
+
+clock_frequency = 10e6
+```
+
+## `input_byte`
+
+If you need to send a stream of input, it'll be necessary to script something up, but for setting initial state of the inputs to some known and valid value, the *input_byte* option is ideal.  Set this value to an integer and the various input bits will be set accordingly.
+
+```
+input_byte = 255
+```
+would set all the inputs high, whereas
+
+```
+input_byte = 0b00010011
+```
+would set the 0th, first and fourth bits high, all others low.
+
+Note that this setting is only respected when mode is `ASIC_RP_CONTROL`.
+
+
+## `bidir_direction`
+
+The 8 bidirectional pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *bidir_direction* option.  Any bit set to one will make the corresponding pin on the RP2040 an output.  E.g.
+
+```
+bidir_direction = 0b11110000
+```
+would configure the pins connected to the high nibble as outputs.
+
+## `bidir_byte`
+
+If any of the RP2040 pins connected to the bidir I/O is configured as an output, the corresponding bit in *bidir_byte* will be written accordingly on project load.  This only applies to pins set as outputs with the *bidir_direction* option above.  For example, if that was set to *0b11110000* as above, then 
+both
+
+```
+bidir_byte = 0b00010000
+```
+and 
+```
+bidir_byte = 0b00011111
+```
+would set `uio[4]` HIGH, uio 5-7 LOW, and leave the lower pins alone. 
+
+## Sample config.ini
+
+```
+#### DEFAULT Section ####
+
+[DEFAULT]
+# project: project to load by default: simon says
+project = tt_um_urish_simon
+
+# start in reset (bool)
+start_in_reset = no
+
+# mode can be any of
+#  - SAFE: all RP2040 pins inputs
+#  - ASIC_RP_CONTROL: TT inputs,nrst and clock driven, outputs monitored
+#  - ASIC_MANUAL_INPUTS: basically same as safe, but intent is clear
+mode = ASIC_RP_CONTROL
+
+# log_level can be one of
+#  - DEBUG
+#  - INFO
+#  - WARN
+#  - ERROR
+log_level = INFO
+
+
+# default RP2040 system clock
+rp_clock_frequency = 125e6
 
 
 
 
+#### PROJECT OVERRIDES ####
 
 
+[tt_um_test]
+clock_frequency = 10
+start_in_reset = no
+input_byte = 1
+
+[tt_um_factory_test]
+clock_frequency = 10
+start_in_reset = no
+input_byte = 1
+
+
+[tt_um_psychogenic_neptuneproportional]
+# set clock to 4kHz
+clock_frequency = 4000
+# clock config 4k, disp single bits
+input_byte = 0b11001000
+mode = ASIC_RP_CONTROL
+
+
+[wokwi_7seg_tiny_tapeout_display]
+rp_clock_frequency = 50_000_000
+clock_frequency = 5
+mode = ASIC_RP_CONTROL
+
+
+[tt_um_loopback]
+# ui_in[0] == 1 means bidirs on output
+clock_frequency = 1000
+input_byte = 1
+
+# bidir_direction, 1 bit means we will
+# write to it (RP pin is output), 
+# 0 means read from (RP is input)
+# set to all output
+bidir_direction = 0xff
+bidir_byte = 0b110010101
+
+
+
+[tt_um_vga_clock]
+# need to set RP clock freq to get a nice
+# VGA clock at 31.5MHz
+rp_clock_frequency = 126e6
+clock_frequency = 31.5e6
+mode = ASIC_RP_CONTROL
+
+
+[tt_um_urish_simon]
+clock_frequency = 50000
+mode = ASIC_MANUAL_INPUTS
+```
 
