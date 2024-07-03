@@ -42,6 +42,8 @@ Fine print:
 * The number of projects assumes each project is one tile (~160 x 100 um). For larger projects, or projects using analog pins, the number of projects will be less.
 * Each PCB kit includes one chip with all the projects from the shuttle, assembled on a [PCB](/specs/pcb) and ready to use.
 * Check the [shuttle schedule](/runs/) for the deadline of the next shuttle and the expected delivery date.
+* All submissions must comply with our [terms of service](/terms).
+
 
 ## For Universities
 
