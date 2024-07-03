@@ -51,8 +51,8 @@ All the I/O expects 3.3V logic levels, so the 5V coming in through the USB recep
 After inspecting the boards for damage, and ensuring the carrier board is well seated on the demoboard, give the system 5V through the USB connector.
 
 Operating normally, the power LEDs on the top right of the demoboard will light up (though the 1v8 may be a bit dim), and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
-pe
-The is the [factory test](https://tinytapeout.com/runs/tt04/001/) project, loaded by default, being ticked and shows the system is alive.
+
+This is the [factory test](https://tinytapeout.com/runs/tt04/001/) project, loaded by default, being ticked and shows the system is alive.
 
 If you have a way to monitor power use, you should see a draw of around 180-200 milliAmps, on the 5V supply and not much more.
 
@@ -222,9 +222,9 @@ The important things on the filesystem are:
   * ttboard/ has all the SDK modules
   * shuttles/ contains the design listings as JSON files for the chip
 
-Any standard means of accessing the micropython FS should work.  I've used [rshell](https://pypi.org/project/rshell/) a great deal but have found it lacking in some regards.  Of late, I've turned to [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
+Any standard means of accessing the micropython FS should work.  [rshell](https://pypi.org/project/rshell/) may be used but is lacking in some regards.  Another option is [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
 
-You can learn about that in [its documentation](https://mpy-repl-tool.readthedocs.io/en/latest/).  I like that it lets you easily detect connected boards
+You can learn about that in [its documentation](https://mpy-repl-tool.readthedocs.io/en/latest/).  It lets you easily detect connected boards
 
 ```
 python3 -m there detect
