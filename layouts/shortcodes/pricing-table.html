@@ -2,7 +2,7 @@
 <div class="pricing-table">
   {{ $plans := .Get "plans" | transform.Unmarshal }}
   {{ range $plans }}
-  <a class="pricing-plan" href="{{ .link }}" target="_blank" rel="no-follow">
+  <div class="pricing-plan">
     <h2>{{ .name }}</h2>
     <ul class="features">
       {{ range .features }}
@@ -10,6 +10,14 @@
       {{ end }}
     </ul>
     <p class="price">{{ .price }}</p>
-  </a>
+    
+    <a href="/contact" target="_blank" rel="no-follow" class="button">
+      Contact us
+    </a>
+
+    <a href="{{ .link }}" target="_blank" rel="no-follow">
+      Customize plan
+    </a>
+  </div>
   {{ end }}
 </div>

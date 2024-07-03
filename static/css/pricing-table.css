@@ -3,10 +3,6 @@
   justify-content: flex-start;
 }
 
-#body .pricing-table a:after {
-  display: none; /* disables the underline added by Hugo */
-}
-
 .pricing-table .pricing-plan {
   max-width: 250px;
   border: 1px solid #ccc;
@@ -16,6 +12,18 @@
   width: 30%;
   text-align: center;
   margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pricing-table .pricing-plan {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 .pricing-table .pricing-plan:hover {
@@ -33,9 +41,14 @@
 
 .pricing-table .pricing-plan .features {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .pricing-table .pricing-plan .features li {
   margin: 10px 0;
+}
+
+.pricing-table .pricing-plan a {
+  margin-bottom: 16px;
 }
