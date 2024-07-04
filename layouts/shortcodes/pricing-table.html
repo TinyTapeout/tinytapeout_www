@@ -1,0 +1,23 @@
+<link href="{{"css/pricing-table.css" | relURL}}?{{ now.Unix }}" rel="stylesheet">
+<div class="pricing-table">
+  {{ $plans := .Get "plans" | transform.Unmarshal }}
+  {{ range $plans }}
+  <div class="pricing-plan">
+    <h2>{{ .name }}</h2>
+    <ul class="features">
+      {{ range .features }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+    <p class="price">{{ .price }}</p>
+    
+    <a href="/contact" target="_blank" rel="no-follow" class="button">
+      Contact us
+    </a>
+
+    <a href="{{ .link }}" target="_blank" rel="no-follow">
+      Customize plan
+    </a>
+  </div>
+  {{ end }}
+</div>

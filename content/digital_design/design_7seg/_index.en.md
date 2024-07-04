@@ -27,7 +27,7 @@ The truth table for the design can be found in the [Design Spreadsheet](https://
 
 Design [inspired by Rakesh Peter's tt01 submission](https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg)
 
-{{< wokwi 347497504164545108 >}}
+{{< wokwi 397140982440144897 >}}
 <br>
 
 {{% feedback %}}

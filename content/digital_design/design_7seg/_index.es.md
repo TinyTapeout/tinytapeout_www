@@ -27,7 +27,7 @@ La tabla de verdad para el diseño se puede encontrar en la [hoja de cálculo de
 
 Diseño [inspirado en la presentación tt01 de Rakesh Peter](https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg).
 
-{{< wokwi 347497504164545108 >}}
+{{< wokwi 397140982440144897 >}}
 <br>
 
 {{% feedback %}}
