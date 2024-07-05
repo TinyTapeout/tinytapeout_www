@@ -30,7 +30,7 @@ git clone https://github.com/TinyTapeout/tt08-factory-test ~/factory-test
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export OPENLANE2_TAG=2.0.7
+export OPENLANE2_TAG=2.0.8
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
