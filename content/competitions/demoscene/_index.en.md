@@ -1,7 +1,7 @@
 ---
 title: Demoscene
 tags: [competition]
-description: "Build a sound and graphics demo in 1 tile"
+description: "Build a sound and graphics demo in less than 161 x 225 microns of 130nm ASIC"
 weight: 10
 ---
 
