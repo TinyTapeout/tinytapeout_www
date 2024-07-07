@@ -41,6 +41,7 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 * Best sound track,
 * Best single tile design,
 * Best graphics,
+* Most impressive for the size,
 * Rulebreaker - example using more than 2 tiles, using RP2040 for something. be aware that judges must be able to test your design with no additional hardware,
 * Mixed signal - uses some analog in the design,
 * Most useful design,
