@@ -45,7 +45,7 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 * Rulebreaker - example using more than 2 tiles, using RP2040 for something. be aware that judges must be able to test your design with no additional hardware,
 * Mixed signal - uses some analog in the design,
 * Most useful design,
-* Best design submitted 1 week before the deadline!
+* Secret category announced 1 week before the deadline!
 
 ## How to enter
 
@@ -59,11 +59,14 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ## Prizes
 
+![prizes](images/demoscene_prizes.png)
+
 * All entrants will get a [VGA](https://github.com/mole99/tiny-vga) and [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
 * Winners of each category will receive combinations of:
     * Matt’s first ASIC die mounted in an epoxy cube, numbered and signed,
     * ASIC baseball caps,
     * Free tiles for future tapeouts,
+    * Silicon wafers,
     * Previous TT chips.
 
 ## Small print
