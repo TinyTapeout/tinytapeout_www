@@ -7,17 +7,13 @@ weight: 10
 
 ## Demo scene competition!
 
-![demoscene](images/demoscene.png)
+{{< youtube tycS0vGcZIY >}}
 
 The [home computer demo scene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
 The Tiny Tapeout demo scene sticks to the same video / sound output format, but you create your own ASIC hardware!
 
 All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
-
-## Invitro!
-
-{{< youtube tycS0vGcZIY >}}
 
 ## What are the rules?
 
