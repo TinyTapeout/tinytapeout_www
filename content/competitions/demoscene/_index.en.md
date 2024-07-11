@@ -15,6 +15,10 @@ The Tiny Tapeout demo scene sticks to the same video / sound output format, but 
 
 All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
 
+## Invitro!
+
+{{< youtube tycS0vGcZIY >}}
+
 ## What are the rules?
 
 * 2 tiles or less.
