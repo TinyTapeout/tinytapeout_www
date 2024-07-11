@@ -53,9 +53,10 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ## How to get help
 
-* Discuss on the [competition channel](https://discord.com/channels/1009193568256135208/1259420274445516891) discord community channel. Join the [discord here](/discord).
-* [Quick start VGA graphics at the VGA playground](https://tinytapeout.github.io/vga-playground/).
-* [Audio output demo](https://github.com/MichaelBell/tt08-pwm-example).
+* Discuss on the [competition channel](https://discord.com/channels/1009193568256135208/1259420274445516891) discord community channel. Join the [discord here](/discord)
+* [Quick start VGA graphics at the VGA playground](https://tinytapeout.github.io/vga-playground/)
+* [Audio output demo](https://github.com/MichaelBell/tt08-pwm-example)
+* [Bitmap Fonts](https://github.com/ianhan/BitmapFonts)
 
 ## Prizes
 
