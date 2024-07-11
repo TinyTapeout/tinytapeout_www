@@ -69,6 +69,14 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
     * Silicon wafers,
     * Previous TT chips.
 
+## Judges
+
+Confirmed so far:
+
+* [Bitluni](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ)
+* [Charles Lohr](http://cnlohr.net/)
+* [Sprite_tm](https://spritesmods.com/)
+
 ## Small print
 
 1. How will the competition be judged? A panel of appointed judges will vote and have the final say. The submissions will be judged on the results the judge gets on their boards.
