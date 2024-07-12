@@ -9,7 +9,7 @@ weight: 50
 
 ## Carrier board
 
-PCB files: https://github.com/TinyTapeout/caravel-breakout-pcb
+PCB files: https://github.com/TinyTapeout/breakout-pcb
 
 Chips are mounted on a carrier board, we expect all TT chips to be in QFN.
 

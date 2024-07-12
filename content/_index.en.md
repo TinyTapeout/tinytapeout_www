@@ -10,7 +10,11 @@ LastModifierDisplayName: matt venn
 
 {{< countdown >}}
 
-Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip! See what other people are making by [taking a look at what was submitted for the last run](/runs/tt06).
+Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
+
+Read the [paper here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
+
+See what other people are making by [taking a look at what was submitted on our previous shuttles](/runs/).
 
 # Get started
 

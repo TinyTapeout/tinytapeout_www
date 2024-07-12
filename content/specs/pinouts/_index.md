@@ -28,11 +28,13 @@ uo_out[0] - TX
 
 ![Tiny VGA](images/tiny_vga.jpg)
 
-For VGA output it is recommended to use the pinout for [Tiny VGA](https://github.com/mole99/tiny-vga). The board is open source and uses only one Pmod so that you can still use the bidirectional Pmod or something else.
+For VGA output, we recommended using the pinout of [Tiny VGA](https://github.com/mole99/tiny-vga). The board is open source and requires only one Pmod connector, so you can use the bidirectional Pmod connector of your Tiny Tapeout board for something else.
 
-Even if you plan on designing your own carrier board it makes sense to use the pinout from Tiny VGA so that others can try your design.
+In case you plan to design your own carrier board, it still makes sense to use the pinout of Tiny VGA so that others can easily try out your design.
 
-Note: Tiny VGA may be available to buy from Tiny Tapeout at a later date. For now it is possible to build the board yourself.
+How to acquire a Tiny VGA?
+
+You can either manufacture a Tiny VGA yourself or order one from the [Tiny Tapeout Store](https://store.tinytapeout.com/products/TinyVGA-Pmod-p678647356).
 
 Pinout:
 
