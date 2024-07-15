@@ -14,6 +14,22 @@ Contribution instructions:
 After testing your contribution works, please make a pull request.
 Thanks!
 
-# Adding redirects
+## Developing the cloudflare functions (dynamic content)
+
+You'll need a recent version of node.js and npm. First, install wrangler:
+
+```bash
+npm i -g @cloudflare/wrangler
+```
+
+Then, you can run the functions locally with:
+
+```bash
+npm run dev
+```
+
+Note: for the static content to be served correctly, you need to run `hugo` first (or `hugo -w` to watch for changes).
+
+## Adding redirects
 
 Add a line to static/_redirects
