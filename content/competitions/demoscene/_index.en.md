@@ -53,7 +53,7 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 ## How to enter
 
 * Once your design is passing the GitHub actions, submit it to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of 6th the September.
-* Once submitted to the form, we will send you a coupon for a free tile on TT08.
+* Once submitted to the form, we will send you a coupon within 48 hours for a free tile on TT08.
 * You must also submit your design to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com).
 
 ## How to get help
