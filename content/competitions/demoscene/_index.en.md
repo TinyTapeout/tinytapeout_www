@@ -13,7 +13,7 @@ The [home computer demo scene](https://en.wikipedia.org/wiki/Demoscene) has resu
 
 The Tiny Tapeout demo scene sticks to the same video / sound output format, but you create your own ASIC hardware!
 
-All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
+All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
 
 ## What are the rules?
 
@@ -62,7 +62,7 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ![prizes](images/demoscene_prizes.png)
 
-* All entrants will get a [VGA](https://github.com/mole99/tiny-vga) and [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
+* All entrants who purchase the demoboard will get free [VGA](https://github.com/mole99/tiny-vga), [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
 * Winners of each category will receive combinations of:
     * Matt’s first ASIC die mounted in an epoxy cube, numbered and signed,
     * ASIC baseball caps,
@@ -71,8 +71,6 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
     * Previous TT chips.
 
 ## Judges
-
-Confirmed so far:
 
 * [Bitluni](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ)
 * [Charles Lohr](http://cnlohr.net/)
