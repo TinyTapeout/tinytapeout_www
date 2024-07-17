@@ -11,7 +11,7 @@ weight: 10
 
 The [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
-The Tiny Tapeout demoscene sticks to the same video / sound output format, but you create your own ASIC hardware!
+The Tiny Tapeout demoscene competition sticks to the same audio/visual output format, but instead of using an existing computer, you create your own ASIC hardware!
 
 All entrants will receive 1 free tile for their design.
 
