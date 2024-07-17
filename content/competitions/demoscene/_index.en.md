@@ -5,13 +5,13 @@ description: "Build a sound and graphics demo in less than 161 x 225 microns of 
 weight: 10
 ---
 
-## Demo scene competition!
+## Demoscene competition!
 
 {{< youtube tycS0vGcZIY >}}
 
-The [home computer demo scene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
+The [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
-The Tiny Tapeout demo scene sticks to the same video / sound output format, but you create your own ASIC hardware!
+The Tiny Tapeout demoscene sticks to the same video / sound output format, but you create your own ASIC hardware!
 
 All entrants will receive 1 free tile for their design.
 
