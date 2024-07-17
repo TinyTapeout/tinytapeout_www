@@ -13,6 +13,8 @@ The [home computer demo scene](https://en.wikipedia.org/wiki/Demoscene) has resu
 
 The Tiny Tapeout demo scene sticks to the same video / sound output format, but you create your own ASIC hardware!
 
+All entrants will receive 1 free tile for their design.
+
 All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
 
 ## What are the rules?
@@ -34,6 +36,7 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
     * Judges will read the datasheet to understand how to set the inputs and clock,
     * Reset.
 * Must be submitted to TT08.
+* Entrants can submit multiple designs.
 
 ## Categories
 
@@ -49,7 +52,9 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 
 ## How to enter
 
-* Submit your design's URL to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of 6th the September.
+* Once your design is passing the GitHub actions, submit it to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of 6th the September.
+* Once submitted to the form, we will send you a coupon for a free tile on TT08.
+* You must also submit your design to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com).
 
 ## How to get help
 
