@@ -17,4 +17,4 @@ In this video I explain how it works and take a look at OpenLane and the logs pr
 
 And if you want to know how those GDS files are turned into an actual microchip, you'll enjoy this factory tour!
 
-{{< aBDJQ9NYTEU >}}
+{{< youtube aBDJQ9NYTEU >}}
