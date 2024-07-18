@@ -77,9 +77,14 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 
 ## Judges
 
-* [Bitluni](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ)
-* [Charles Lohr](http://cnlohr.net/)
-* [Sprite_tm](https://spritesmods.com/)
+We have some fantastic judges lined up:
+
+* Bitluni - best known for his [youtube channel](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ) showcasing his [hacks](https://youtu.be/muuhgrige5Q?si=h7A-GAaD8sdKA_Qy) and [investigations](https://youtu.be/z4uxC7ISd-c?si=VUvGwlB5MwNviq_d), Luni has also made the [best chip ever](https://youtu.be/DdF_nzMW_i8?si=F1zM9HOBrpG6yZhO) on Tiny Tapeout and started his computer journey in the demoscene.
+
+* cnlohr - famed for squeezing [incredible amounts of functionality into the tiniest devices](https://youtu.be/j-QazXghkLY?si=v0-jduEzJHjFaqXS), he most recently persuaded a 10 cent microcontroller to [transmit LORA](https://youtu.be/eIdHBDSQHyw?si=dQ4GrKh07SfiKPnR)!
+
+* Sprite_tm - legendary hacker who brought us the [Vectrex multi cart](https://spritesmods.com/?art=veccart), ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k) and made the [Hackaday FPGA Gameboy badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/).
+
 
 ## Small print
 
