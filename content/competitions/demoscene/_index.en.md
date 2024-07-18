@@ -35,7 +35,7 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
     * Enable the project,
     * Judges will read the datasheet to understand how to set the inputs and clock,
     * Reset.
-* Must be submitted to TT08.
+* Must be submitted to TT08 (closes September 6th).
 * Entrants can submit multiple designs.
 
 ## Categories
