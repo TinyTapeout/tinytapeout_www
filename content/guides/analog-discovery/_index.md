@@ -31,7 +31,7 @@ We'll walk through every important step, below, and that is a good way to get to
 ## What you need
 
    1. An Analog Discovery 3 and its *WaveForms* program installed, connected to the computer;
-   2. The *tt05analogdemoFull.dwf3work* workspace opened in *WaveForms*;
+   2. The [tt05analogdemoFull.dwf3work](tt05analogdemoFull.dwf3work) workspace opened in *WaveForms*;
    3. A TT05 demoboard and ASIC, also connected to the computer via USB;
    4. To have things wired up
 
