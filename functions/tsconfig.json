@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib": ["esnext"],
+    "jsx": "react",
+    "types": ["@cloudflare/workers-types"]
+  }
+}

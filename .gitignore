@@ -1,4 +1,6 @@
-*.swp
-public
-.hugo_build.lock
 .DS_Store
+.hugo_build.lock
+.wrangler
+*.swp
+node_modules
+public

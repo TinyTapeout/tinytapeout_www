@@ -5,15 +5,17 @@ description: "Build a sound and graphics demo in less than 161 x 225 microns of 
 weight: 10
 ---
 
-## Demo scene competition!
+## Demoscene competition!
 
 {{< youtube tycS0vGcZIY >}}
 
-The [home computer demo scene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
+The [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
-The Tiny Tapeout demo scene sticks to the same video / sound output format, but you create your own ASIC hardware!
+The Tiny Tapeout demoscene competition sticks to the same audio/visual output format, but instead of using an existing computer, you create your own ASIC hardware!
 
-All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
+All entrants will receive 1 free tile for their design.
+
+All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
 
 ## What are the rules?
 
@@ -33,7 +35,8 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
     * Enable the project,
     * Judges will read the datasheet to understand how to set the inputs and clock,
     * Reset.
-* Must be submitted to TT08.
+* Must be submitted to TT08 (closes September 6th).
+* Entrants can submit multiple designs.
 
 ## Categories
 
@@ -49,7 +52,9 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ## How to enter
 
-* Submit your design's URL to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of 6th the September.
+* Once your design is passing the GitHub actions, submit it to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of 6th the September.
+* Once submitted to the form, we will send you a coupon within 48 hours for a free tile on TT08.
+* You must also submit your design to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com).
 
 ## How to get help
 
@@ -62,7 +67,7 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ![prizes](images/demoscene_prizes.png)
 
-* All entrants will get a [VGA](https://github.com/mole99/tiny-vga) and [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
+* All entrants who purchase the demoboard will get free [VGA](https://github.com/mole99/tiny-vga), [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
 * Winners of each category will receive combinations of:
     * Matt’s first ASIC die mounted in an epoxy cube, numbered and signed,
     * ASIC baseball caps,
@@ -72,11 +77,14 @@ All entrants will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audi
 
 ## Judges
 
-Confirmed so far:
+We have some fantastic judges lined up:
 
-* [Bitluni](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ)
-* [Charles Lohr](http://cnlohr.net/)
-* [Sprite_tm](https://spritesmods.com/)
+* Bitluni - best known for his [youtube channel](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ) showcasing his [hacks](https://youtu.be/muuhgrige5Q?si=h7A-GAaD8sdKA_Qy) and [investigations](https://youtu.be/z4uxC7ISd-c?si=VUvGwlB5MwNviq_d), Luni has also made the [best chip ever](https://youtu.be/DdF_nzMW_i8?si=F1zM9HOBrpG6yZhO) on Tiny Tapeout and started his computer journey in the demoscene.
+
+* cnlohr - famed for squeezing [incredible amounts of functionality into the tiniest devices](https://youtu.be/j-QazXghkLY?si=v0-jduEzJHjFaqXS), he most recently persuaded a 10 cent microcontroller to [transmit LORA](https://youtu.be/eIdHBDSQHyw?si=dQ4GrKh07SfiKPnR)!
+
+* Sprite_tm - legendary hacker who brought us the [Vectrex multi cart](https://spritesmods.com/?art=veccart), ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k) and made the [Hackaday FPGA Gameboy badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/).
+
 
 ## Small print
 

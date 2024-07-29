@@ -1,0 +1,45 @@
+{
+  "name": "tinytapeout-website",
+  "version": "1.0.0",
+  "description": "https://www.tinytapeout.com",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyTapeout/tinytapeout_www.git"
+  },
+  "keywords": [
+    "tinytapeout"
+  ],
+  "author": "Uri Shaked",
+  "homepage": "https://www.tinytapeout.com",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "prepare": "husky",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240712.0",
+    "@types/markdown-it": "^14.1.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "prettier --write"
+    ],
+    "**/*.{js,css}": [
+      "prettier --write"
+    ]
+  }
+}
