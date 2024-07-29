@@ -69,7 +69,7 @@ There are a few ways to do this, the commander app being the easiest, but there'
 
 ### Commander App
 
-The commander app can let interact with and configure the demoboard from a web browser.
+The commander app lets you interact with and configure the demoboard from a web browser.
 
 It uses the web serial API, so is currently limited to either [Chrome](https://www.google.com/search?q=chrome+browser), [Edge](https://www.microsoft.com/en-us/edge) or [Opera](https://www.opera.com/) .
 
@@ -83,7 +83,7 @@ Clicking on *CONNECT TO BOARD* will, assuming the board is connected and detecte
 
 {{< figure src="images/commander-selectdevice.png" title="Commander select device" >}}
 
-The one marked "Board connected in FS mode" or somethnig to that effect is the one you want.  Select it and click connect.
+The one marked "Board connected in FS mode" or similar is the one you want.  Select it and click connect.
 
 If all went well you'll see something like this:
 {{< figure src="images/commander-connected.png" title="Commander connected" >}}

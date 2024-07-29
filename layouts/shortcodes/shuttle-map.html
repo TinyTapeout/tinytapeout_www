@@ -1,15 +1,10 @@
 {{ $validShuttles := slice "tt04" "tt05" "tt06" "tt07" }}
 
 {{ $shuttle := .Get 0 }}
-{{ $muxAddress := .Get 1 }}
 
 {{ if in $validShuttles $shuttle }}
     {{ $svgPath := printf "static/runs/%s/map.svg" $shuttle }}
     {{ $svgContent := readFile $svgPath }}
-    {{ if ne $muxAddress "" }}
-        {{ $svgContent = replace $svgContent "%MUX_ADDRESS%" $muxAddress }}
-        {{ $svgContent = replace $svgContent "/* %EXTRA_STYLES% */" "rect.tile.project {fill: #e9e;}"}}
-    {{ end }}
     <div style="text-align: center">
       {{ $svgContent | safeHTML }}
     </div>
