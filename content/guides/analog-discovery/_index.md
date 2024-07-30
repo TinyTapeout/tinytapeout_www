@@ -10,13 +10,13 @@ This is an example of using the [Digilent Analog Discovery 3](https://digilent.c
 
 
 There is a sample *WaveForms* workspace that is ready to use that can 
-   * talk to the demoboard REPL over serial to setup the correct project;
-   * drive the demoboard inputs to dynamically control the project;
-   * monitor and measure the ring oscillator and DAC outputs; and
-   * graph the results and output CSV files with data.
+   * Talk to the demoboard REPL over serial to setup the correct project,
+   * Drive the demoboard inputs to dynamically control the project,
+   * Monitor and measure the ring oscillator and DAC outputs, and
+   * Graph the results and output CSV files with data.
 
 
-The purpose here is to walk-through the entire process while introducing various features of the AD3 and some of the ways to use it.  If you just want the bullet point list of steps without any details, skip to the end of this page.
+The purpose here is to walk-through the entire process while introducing various features of the AD3 and some of the ways to use it.
 
 
 ### WaveForms Installation
@@ -26,14 +26,14 @@ To play along, an Analog Discovery 3 is required, as is its front-end applicatio
 
 ### Running The Full Test Suite
 
-We'll walk through every important step, below, and that is a good way to get to know the Analog Discovery.  However, if you want to just get going and explore things on your own, you may simply wire things up and run the pre-built workspace on the AD3, you may just follow the directions in this section.
+We'll walk through every important step, below, and that is a good way to get to know the Analog Discovery.  However, if you want to just get going and explore things on your own, you can wire things up, load the provided workspace on the AD3 and follow the bullet point list of steps.
 
 ## What you need
 
    1. An Analog Discovery 3 and its *WaveForms* program installed, connected to the computer;
    2. The [tt05analogdemoFull.dwf3work](tt05analogdemoFull.dwf3work) workspace opened in *WaveForms*;
    3. A TT05 demoboard and ASIC, also connected to the computer via USB;
-   4. To have things wired up
+   4. The AD3 and demo board correctly wired
 
 The basic wiring is:
 
@@ -58,23 +58,21 @@ If you also want to run the oscillator frequency vs core voltage characterizatio
    * wire *V+* from the AD3 to the 1V8 pin on the demoboard top header
 
 
-This is optional as you may skip the test at the prompt
-{{< figure src="images/47.png" title="Test run prompt" >}}
+This is optional and you can skip the test when prompted.
 
 or simply get the boring result of no-frequency-variation (since the core voltage won't actually be set by the AD3).
 
 ## How to run
 
+We'll walk through these steps one at a time, below, but if you'd like to just get started and run the test suite, these are the steps. Following the entire sequence is only important if you've set things to drive the core supply from the AD3, but it doesn't hurt even if you haven't.
 
-Assuming you've wired everything up, these are the steps to run the test suite.  Following the entire sequence is only important if you've set things to drive the core supply from the AD3, but it doesn't hurt even if you haven't
-
-   1. connect the AD3 to USB
-   2. open the WaveForms program and load the workspace file
-   3. switch to the *Supplies* tab, ensure Positive supply is set to 1.8V and press the "play" button on that tab to enable the core voltage.  Make sure both the "master enable" and "positive supply" have green checkmarks;
-   4. switch to the *Script* tab, find the *powerupHighZ* tab in there and press its "play" button to run it, then click *Yes* to the "Do you want to put all DIO into High-Z" prompt
-   5. connect the demoboard to USB
-   6. press "play" button on the *demoboardsetup* script tab, and specify the correct "com port" (ttyACM0 is the default, and usually valid, under linux)
-   7. press "play" on the *powerupHighZ*, again... but this time click "No" to the first prompt and then "Yes" to "Do you wish to restore Patterns signals to PP?"
+   1. Connect the AD3 to USB
+   2. Open the WaveForms program and load the workspace file
+   3. Switch to the *Supplies* tab, ensure Positive supply is set to 1.8V and press the "play" button on that tab to enable the core voltage.  Make sure both the "master enable" and "positive supply" have green checkmarks;
+   4. Switch to the *Script* tab, find the *powerupHighZ* tab in there and press its "play" button to run it, then click *Yes* to the "Do you want to put all DIO into High-Z" prompt
+   5. Connect the demoboard to USB
+   6. Press "play" button on the *demoboardsetup* script tab, and specify the correct "com port" (ttyACM0 is the default, and usually valid, under linux)
+   7. Press "play" on the *powerupHighZ*, again... but this time click "No" to the first prompt and then "Yes" to "Do you wish to restore Patterns signals to PP?"
 
 Now, everything should be in a good state, and you shouldn't have to go through that dance again unless you power down.
 
@@ -84,9 +82,9 @@ Clicking the "play" button on the *tests* tab in Script will run the tests--simp
 
 
 
+### Full Walkthrough
 
-
-### The Oscilloscope
+## The Oscilloscope
 
 When you launch waveforms you get a welcome screen with all the available instruments.
 
@@ -98,9 +96,9 @@ If you click on one of them, for example the oscilloscope, it will open up a new
 
 The oscilloscope has two channels, aptly named 1 and 2.  Each channel has a + and a - pin.  In this case, the 
 
- * 1+ is connected to the *m33* pin in the top header (the ring oscillator output);
- * 2+ is connected to the *m35* pin (the DAC output); and 
- * both 1- and 2- are connected to GND pads.
+ * 1+ is connected to the *m33* pin in the top header (the ring oscillator output),
+ * 2+ is connected to the *m35* pin (the DAC output), and
+ * Both 1- and 2- are connected to GND pads.
  
 
 
@@ -108,10 +106,12 @@ The oscilloscope has two channels, aptly named 1 and 2.  Each channel has a + an
 
 ## Ring Oscillator 
 
-For this to work, the analog test project must loaded and configured.  This could be done through the [commander app](https://commander.tinytapeout.com/), but it's sometimes quicker to connect to the REPL directly via a serial terminal and use the SDK to:
+For this to work, the analog test project must loaded and configured.  This may be done through the [commander app](https://commander.tinytapeout.com/), but it's sometimes quicker to connect to the REPL directly via a serial terminal and use the SDK directly to:
 
- * load the project, by calling *enable()* on the project in the shuttle; and 
- * set the input bits so that the ring oscillator is on, using the *input_byte* to set all the bits in one go
+ * Load the project, by calling *enable()* on the project in the shuttle, and 
+ * Set the input bits so that the ring oscillator is on, using the *input_byte* to set all the bits in one go
+ 
+Here, we won't use the commander.  The script in the workspace will connects through the serial port and issues the required commands.  Doing it manually looks like this when connected to the REPL:
  
 ```
 
@@ -148,8 +148,8 @@ There are numerous tools available on the scope.  For automated measurements of 
 
 Things can get crowded, so two interesting things to note are:
 
- * the arrow above the channel pane allows it to be set to auto-hide; and
- * grabbing a pane by it's title, "Measurements" here, allows it to be dragged to other positions.
+ * The arrow above the channel pane allows it to be set to auto-hide, and
+ * Grabbing a pane by it's title, "Measurements" here, allows it to be dragged to other positions.
  
 
 {{< figure src="images/16.png" title="Measurements pane reposition" >}}
@@ -174,8 +174,7 @@ To look at the DAC function, channel 2 can be re-enabled using the checkbox and 
 There's a good deal of cross-talk, likely owing to the dangly wires used to probe the analog pins, so the ring oscillator is disabled while the DAC is enabled, by setting the in3 bit and clearing the rest, in the REPL:
 
 ```
->>> tt.input_byte = 0
->>> tt.in3(1)
+>>> tt.input_byte = 1<<3
 >>> print(bin(tt.input_byte))
 0b1000
 ```
@@ -287,7 +286,7 @@ The *Scope1* is the name of the scope tab/instrument itself, and the attributes 
 
 Thus, the recommended approach is to:
 
- 1) Perform all your setup using the waveform tools and GUIs; and then
+ 1) Perform all your setup using the waveform tools and GUIs, and then
  2) Use those instruments and measurements as needed in the script interface
  
 The language is Javascript and the Script section in the Help tab, along with the code completion and debugger make development rather straightforward, after a bit of exploring.  Nice and simple.
@@ -466,21 +465,20 @@ The core supply voltage may now be controlled using these functions:
 ```
 
 So now we need only:
-  * enable the ring oscillator
-  * set the core voltage
-  * use the scope to acquire
-  * gather the frequency measurement data
-  * increment to next core voltage and loop
-  
+  * Enable the ring oscillator,
+  * Set the core voltage,
+  * Use the scope to acquire,
+  * Gather the frequency measurement data, and
+  * Increment to next core voltage and loop.
 
 
 {{< figure src="images/44.png" title="Characterizing frequency vs core V" >}}
 
 
 One noteworthy thing is that we should ensure the core remains powered after doing project selection on the demoboard so, after removing the F2 0R jumper, and connecting V+ to the 1v8 input on the demoboard top header:
-  * enable the supply in the Supplies tab, at 1v8, using the Master Enable
-  * select the project anew, using REPL or commander app
-  * keep the V+ supply powered 
+  * Enable the supply in the Supplies tab, at 1v8, using the Master Enable,
+  * Select the project anew, using REPL or commander app,
+  * Keep the V+ supply powered 
   
 Another thing to note is that having the inputs driven during the demoboard's RP2040 boot up will interfere with reading the chip ROM on the ASIC and may confuse the system.  To avoid this, DIO should either be disconnected or tri-stated.
 
