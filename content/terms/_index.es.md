@@ -19,7 +19,7 @@ Sujeto a a los términos del mismo, usted podría participar en el Programa envi
 
 
 1.2. 
-Todos los Diseños deben ajustarse y enviarse a Tiny Tipeout de acuerdo con los términos aplicables, especificaciones, directrices y otros requerimientos para la Serie de Producción establecida en el sitio web y/o páginas GitHub asociadas de Tiny Tapeout (colectivamente, “**Requerimientos de Serie de Producción**”). Cada Serie de Serie de Producción está limitada al número de espacios de Diseño detallados en el sitio web. Para enviar un Diseño, debe enviar a Tiny Tapeout toda la documentación, materiales y otra información requerida en los Requerimiento de Serie de Producción(“**Documentación de Diseño**”). Tiny Tapeout puede negarse a aceptar cualquier Diseño o permitir de cualquier otro modo que cualquier persona o entidad participe en el Programa y/o cualquier Serie de Producción a su entera discreción, incluyendo, sin limitación, en el caso de cualquier incumplimiento con estos Términos o cualquiera de los Requerimientos Serie de Producción aplicables.
+Todos los Diseños deben ajustarse y enviarse a Tiny Tipeout de acuerdo con los términos aplicables, especificaciones, directrices y otros requerimientos para la Serie de Producción establecida en el sitio web y/o páginas GitHub asociadas de Tiny Tapeout (colectivamente, “**Requerimientos de Serie de Producción**”). Cada Serie de Serie de Producción está limitada al número de espacios de Diseño detallados en el sitio web. Para enviar un Diseño, debe enviar a Tiny Tapeout toda la documentación, materiales y otra información requerida en los Requerimiento de Serie de Producción(“**Documentación de Diseño**”). Tiny Tapeout puede negarse a aceptar cualquier Diseño o permitir de cualquier otro modo que cualquier persona o entidad participe en el Programa y/o cualquier Serie de Producción a su entera discreción, incluyendo, sin limitación, en el caso de cualquier incumplimiento con estos Términos o cualquiera de los Requerimientos Serie de Producción aplicables. En el caso de que su Diseño no sea aceptado para su inclusión en una determinada Serie de Producción tras el pago de las Tarifas aplicables (según se define a continuación) en la presente por dicho Diseño, Tiny Tapeout le proporcionará un vale para futuras Series de Producción por el monto de dichas Tarifas.
 
 
 1.3. 
@@ -41,7 +41,7 @@ Todos los chips son fabricados y distribuidos por fabricantes externos autorizad
 
 
 2.2. 
-EL PROGRAMA Y CHIPS SON PROPORCIONADOS A USTED "TAL CUAL", CON TODOS SUS DEFECTOS Y SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO LIMITÁNDOSE A, CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, APTITUD PARA UN PROPÓSITO EN PARTICULAR, CALIDAD SATISFACTORIA O AUSENCIA DE INFRACCIÓN. EL CHIP ES ÚNICAMENTE UNA TARJETA DE DESARROLLO Y NO ES DISTRIBUIDA CON ALGUNA CARCASA O CERTIFICACIÓN DE CUALQUIER TIPO. TINY TAPEOUT Y SUS FABRICANTES NO REALIZAN NINGUNA PRUEBA DE NINGÚN CHIP O DISEÑOS FABRICADOS. TINY TAPEOUT NO OFRECE NINGUNA DECLARACIÓN, GARANTÍA O COMPROMISO CON RESPECTO A LA FUNCIONALIDAD, LA CALIDAD, EL RENDIMIENTO O FUNCIONAMIENTO DEL CHIP O DE SU DISEÑO FABRICADO O DE OTRO TIPO. No obstante lo anterior, en caso de que su Diseño fabricado incluido en el Chip no sea funcional, siempre que el defecto o la falta de conformidad no es resultado de su error o de otro acto de omisión, o cualquier otra causa fuera del control razonable fde Tiny Tapeout, como único y exclusivo recurso, Tiny Tapeout le proveerá as your sole and exclusive remedy, Tiny Tapeout le proporcionará un cupón para futuras Series de Producción por el importe de los honorarios (como se define a continuación) que haya pagado en relación con el Diseño aplicable. 
+EL PROGRAMA Y CHIPS SON PROPORCIONADOS A USTED "TAL CUAL", CON TODOS SUS DEFECTOS Y SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUYENDO, PERO NO LIMITÁNDOSE A, CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, APTITUD PARA UN PROPÓSITO EN PARTICULAR, CALIDAD SATISFACTORIA O AUSENCIA DE INFRACCIÓN. EL CHIP ES ÚNICAMENTE UNA TARJETA DE DESARROLLO Y NO ES DISTRIBUIDA CON ALGUNA CARCASA O CERTIFICACIÓN DE CUALQUIER TIPO. TINY TAPEOUT Y SUS FABRICANTES NO REALIZAN NINGUNA PRUEBA DE NINGÚN CHIP O DISEÑOS FABRICADOS. TINY TAPEOUT NO OFRECE NINGUNA DECLARACIÓN, GARANTÍA O COMPROMISO CON RESPECTO A LA FUNCIONALIDAD, LA CALIDAD, EL RENDIMIENTO O FUNCIONAMIENTO DEL CHIP O DE SU DISEÑO FABRICADO O DE OTRO TIPO. No obstante lo anterior, en caso de que su Diseño fabricado incluido en el Chip no sea funcional, siempre que el defecto o la falta de conformidad no es resultado de su error o de otro acto de omisión, o cualquier otra causa fuera del control razonable fde Tiny Tapeout, como único y exclusivo recurso, Tiny Tapeout le proveerá as your sole and exclusive remedy, Tiny Tapeout le proporcionará un vale para futuras Series de Producción por el importe de los Tarifas (como se define a continuación) que haya pagado en relación con el Diseño aplicable. 
 
 
 2.3. 
@@ -49,7 +49,7 @@ Si usted ha comprado una copia física de un Chip en virtud de la presente, envi
 
 
 2.4. 
-Todos los plazos, fechas de producción y fechas de entrega de la Serie de Producción aplicable son únicamente estimadas y están sujetas a cambios en cualquier momento. Por la presente, usted reconoce y acepta que Tiny Tapeout no será responsable de cualquier retraso o interrupción en la fabricación o distribución de cualquier Chip aplicable o incumplimiento de plazos, fechas de producción o fechas de entrega de la Serie de Producción. No obstante lo anterior, Tiny Tapeout se esforzará por notificarle por escrito cualquier retraso o falla. En el caso de que alguna de las Series de Producción no es completada o finalizada por cualquier razón, como única y exclusiva solución, Tiny Tapeout le reembolsará los Honorarios que haya pagado por la presente en relación al Diseño aplicable.
+Todos los plazos, fechas de producción y fechas de entrega de la Serie de Producción aplicable son únicamente estimadas y están sujetas a cambios en cualquier momento. Por la presente, usted reconoce y acepta que Tiny Tapeout no será responsable de cualquier retraso o interrupción en la fabricación o distribución de cualquier Chip aplicable o incumplimiento de plazos, fechas de producción o fechas de entrega de la Serie de Producción. No obstante lo anterior, Tiny Tapeout se esforzará por notificarle por escrito cualquier retraso o falla. En el caso de que alguna de las Series de Producción no es completada o finalizada por cualquier razón, como única y exclusiva solución, Tiny Tapeout le reembolsará las Tarifas que haya pagado por la presente en relación al Diseño aplicable.
 
 
 ## 3. Servicios de Terceros
@@ -68,86 +68,85 @@ Todos los derechos, títulos e intereses sobre el Diseño Combinado son propieda
 En el caso de que usted envíe o proporcione a Tiny Tapeout cualquier mejora, solicitud, recomendación, corrección u otros comentarios respecto al Programa u otros productos y servicios de Tiny Tapeout (colectivamente, “**Retroalimentación**”), por la presente, usted concede a Tiny Tapeout una licencia irrevocable, no exclusiva, perpetua, libre de regalías y transferible, con derecho a sublicenciar, para utilizar e incorporar en sus productos y servicios cualquier Retroalimentación y para revelar, reproducir, distribuir y explotar de cualquier otro modo la Retroalimentación sin ningún pago o atribución a usted. La Retroalimentación, incluso si se designan como confidenciales, no crearán ninguna obligación de confidencialidad en virtud del presente documento. 
 
 
-## 5. Representations and Warranties
+## 5. Declaraciones y Garantías
 
 Por la presente usted declara y garantiza que: (i) es el legítimo propietario de todos los derechos sobre cualquier Diseño y cualquier Documentación de Diseño relacionada que usted presente en virtud del presente, o que está legalmente autorizado por todos los legítimos propietarios de los mismos para presentar dicho Diseño y/o Documentación de Diseño para los fines aquí establecidos; (ii) la presentación de cualquier Diseño y/o cualquier Documentación de Diseño y la inclusión del Diseño en el Chip de acuerdo con los términos del presente no infringe ni infringirá ningún derecho de propiedad intelectual u otros derechos de terceros; (iii) asume la plena responsabilidad por la exactitud, calidad, integridad, legalidad, fiabilidad y adecuación de todos los Diseños y/o Documentación de Diseño que usted presente; (iv) su Diseño, Documentación de Diseño, su presentación de su Diseño y/o Documentación de Diseño en virtud del presente, y la inclusión del Diseño en el Chip aplicable de acuerdo con los términos del presente cumplen con todas las leyes y regulaciones aplicables, incluidas, entre otras, las leyes y regulaciones aplicables de importación, exportación y reexportación; (v) ningún Diseño y/o Documentación de Diseño contiene (a) ningún material ilegal, difamatorio, calumnioso, engañoso, fraudulento, discriminatorio, obsceno, pornográfico u ofensivo de otra manera, y (b) ningún virus, gusanos u otros componentes dañinos o maliciosos; y (vi) el Diseño no está destinado a ninguna aplicación o propósito ilegal, engañoso, fraudulento o discriminatorio.
 
 
-## 6. Export Control
+## 6. Control de Exportación
 
 
 6.1.
-You hereby undertake and agree to comply with all applicable national and foreign import, export and reexport control laws and regulations, including, without limitation, the Export Administration Regulations (“**EAR**”) maintained by the U.S. Department of Commerce, trade and economic sanctions maintained by the US Treasury Department Office of Foreign Assets Control, and the International Traffic in Arms Regulations (“**ITAR**”) maintained by the US Department of State and any similar laws and regulations of any other jurisdiction (collectively, “**Export Control Laws**”). You agree to provide Tiny Tapeout with all information, documentation and certifications requested by Tiny Tapeout to comply with and verify compliance with applicable Export Control Laws (collectively, “**Export Control Information**”). You hereby represent, warrant and covenant that all such Export Control Information is accurate, complete and up to date.  
-
+Usted se compromete y acepta cumplir con todas las leyes y regulaciones de control de importación, exportación y reexportación nacionales y extranjeras aplicables, incluidas, sin limitación, las Regulaciones de Administración de Exportaciones (“**EAR**”, por sus siglas en inglés) mantenidas por el Departamento de Comercio de EE. UU., las sanciones comerciales y económicas mantenidas por la Oficina de Control de Activos Extranjeros del Departamento de Administración de EE.UU.., y las Regulaciones Internacionales de Tráfico de Armas (“**ITAR**", por sus siglas en inglés) mantenidas por el Departamento de Estado de EE. UU. y cualquier ley y regulación similar de cualquier otra jurisdicción (colectivamente, “**Leyes de Control de Exportaciones**”). Usted acepta proporcionar a Tiny Tapeout toda la información, documentación y certificaciones solicitadas por Tiny Tapeout para cumplir y verificar el cumplimiento de las Leyes de Control de Exportaciones aplicables (colectivamente, “**Información de Control de Exportaciones**”). Usted declara, garantiza y conviene que toda dicha Información de Control de Exportaciones es precisa, completa y está actualizada.
 
 6.2.
-You are solely and exclusively liable for ensuring that your Designs and/or Design Documentation, the submission thereof for the purposes set forth in these Terms, and the inclusion of your Designs on a Chip hereunder complies with applicable Export Controls Laws, including, without limitation, the determination to seek or obtain any required licenses or approvals. You shall not, directly or indirectly, sell, export, reexport, transfer, divert, or otherwise dispose of any Chips or components thereof to any country, territory, entity, or person prohibited by applicable Export Controls Laws, without obtaining any prior authorization from applicable governmental authorities required by applicable Export Control Laws.
+Usted es únicamente responsable de asegurar que sus Diseños y/o Documentación de Diseño, su presentación para los fines establecidos en estos Términos, y la inclusión de tus Diseños en un Chip conforme a lo establecido aquí cumpla con las leyes aplicables de Control de Exportaciones, incluyendo, sin limitación, la determinación de buscar u obtener cualquier licencia o aprobación requerida. No deberá, directa o indirectamente, vender, exportar, reexportar, transferir, desviar o disponer de cualquier Chip o componentes del mismo a ningún país, territorio, entidad o persona prohibida por las leyes aplicables de Control de Exportaciones, sin obtener la autorización previa de las autoridades gubernamentales aplicables requerida por las leyes de Control de Exportaciones correspondientes.
 
 
 6.3
-You hereby represent and warrant that: (i) no Design and/or Design Documentation you submit hereunder: (a) would be subject to ITAR, or (b) if subject to EAR, would be controlled for purposes other than Anti-Terrorism purposes or would be classified as EAR99; and (ii) you are not (a) located in a country to which export, reexport, transfer or release is prohibited by applicable Export Control Laws, (b) under the control of an entity organized in or a resident of a country to which export, re-export, transfer or release is prohibited by applicable Export Control Laws, or (c) a person prohibited under applicable law from receiving items subject to applicable Export Control Laws, or otherwise with whom it is prohibited to transact under applicable Export Control Laws.   
+Por la presente, usted declara y garantiza que: (i) ningún Diseño y/o Documentación de Diseño que usted presente conforme a lo establecido aquí: (a) estaría sujeto a ITAR, o (b) si estuviera sujeto a EAR, estaría controlado para propósitos distintos a los de Antiterrorismo o estaría clasificado como EAR99; y (ii) usted no está (a) ubicado en un país al cual la exportación, reexportación, transferencia o liberación está prohibida por las leyes aplicables de Control de Exportaciones, (b) bajo el control de una entidad organizada en o residente de un país al cual la exportación, reexportación, transferencia o liberación está prohibida por las leyes aplicables de Control de Exportaciones, o (c) una persona prohibida bajo la ley aplicable de recibir artículos sujetos a las leyes aplicables de Control de Exportaciones, o con la cual está prohibido transaccionar conforme a las leyes aplicables de Control de Exportaciones.   
 
 
-## 7. Fees; Payment
+## 7. Tarifas; Pago
 
-By entering into these Terms, you hereby agree to pay the applicable fees specified on the Website (the “**Fees**”). All Fees are exclusive of and do not include any sales, use, value-added, or other taxes, charges and/or duties, which shall be your responsibility. Except as expressly set forth herein, all Fees are non-refundable.
-
-
-## 8. Indemnification
-
-You shall indemnify, defend and hold Tiny Tapeout, and its directors, officers, employees, independent contractors, and/or affiliates harmless (the “**Indemnified Parties**”) from and against any and all costs, liabilities, damages, losses and expenses, including, but not limited to, reasonable attorneys' fees resulting from or arising out of any claim, suit, action, arbitration or proceeding brought by a third party against an Indemnified Party relating to: (a) your breach or alleged breach of any of your representations, warranties, covenants or obligations hereunder; (b) your breach of applicable law or infringement or misappropriation of any intellectual property rights of a third party; (c) your use of the Chip; and/or (d) your negligence or willful misconduct. 
+Al aceptar estos Términos, usted acepta pagar las tarifas aplicables especificadas en el Sitio Web (las “Tarifas”). Todas las Tarifas son exclusivas y no incluyen ningún impuesto de ventas, uso, valor añadido u otros impuestos, cargos y/o aranceles, los cuales serán su responsabilidad. Excepto como se establece expresamente aquí, todas las Tarifas no son reembolsables.
 
 
-## 9. Limitation of Liability
+## 8. Indemnificación
 
-TINY TAPEOUT SHALL NOT BE LIABLE FOR OR ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF BUSINESS, LOSS OF GOODWILL, LOSS OF OR DAMAGE TO REPUTATION, LOSS OF OR DAMAGE TO ANY PROPERTY OR MATERIALS, HOWEVER CAUSED, UNDER ANY CAUSE OF ACTION AND REGARDLESS OF THE THEORY OF LIABILITY. IN NO EVENT WILL TINY TAPEOUT’S AGGREGATE LIABILITY HEREUNDER EXCEED THE TOTAL FEES PAID TO TINY TAPEOUT HEREUNDER IN THE TWELVE-MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE LIABILITY.
+Usted indemnizará, defenderá y mantendrá indemne a Tiny Tapeout, y a sus directores, oficiales, empleados, contratistas independientes y/o afiliados (las “**Partes Indemnizadas**”) de y contra cualquier y todos los costos, responsabilidades, daños, pérdidas y gastos, incluidos, pero no limitados a, honorarios razonables de abogados resultantes de o derivados de cualquier reclamación, demanda, acción, arbitraje o procedimiento presentado por un tercero contra una Parte Indemnizada relacionado con: (a) su incumplimiento o presunto incumplimiento de cualquiera de sus declaraciones, garantías, convenios u obligaciones aquí establecidas; (b) su incumplimiento de la ley aplicable o infracción o apropiación indebida de cualquier derecho de propiedad intelectual de un tercero; (c) su uso del Chip; y/o (d) su negligencia o mala conducta intencional.
 
 
-## 10. Term and Termination
+## 9. Limitación de Responsabilidad
+
+TINY TAPEOUT NO SERÁ RESPONSABLE POR NINGÚN DAÑO INDIRECTO, INCIDENTAL, PUNITIVO, ESPECIAL O CONSECUENTE, NI POR NINGUNA PÉRDIDA DE BENEFICIOS, PÉRDIDA DE INGRESOS, PÉRDIDA DE NEGOCIOS, PÉRDIDA DE BUENA VOLUNTAD, PÉRDIDA O DAÑO A LA REPUTACIÓN, PÉRDIDA O DAÑO A CUALQUIER PROPIEDAD O MATERIALES, CAUSADO DE CUALQUIER MANERA, BAJO CUALQUIER CAUSA DE ACCIÓN Y SIN IMPORTAR LA TEORÍA DE RESPONSABILIDAD. EN NINGÚN CASO LA RESPONSABILIDAD TOTAL DE TINY TAPEOUT AQUÍ EXCEDERÁ LAS TARIFAS TOTALES PAGADAS A TINY TAPEOUT AQUÍ EN EL PERÍODO DE DOCE MESES INMEDIATAMENTE ANTERIOR AL EVENTO QUE DÉ LUGAR A LA RESPONSABILIDAD.
+
+
+## 10. Plazo y Terminación
 
 
 10.1.
-These Terms shall commence on the date of your acceptance of these Terms and shall remain in effect until terminated in accordance with the terms hereof. 
+Estos Términos comenzarán en la fecha de su aceptación de estos Términos y permanecerán en vigor hasta que se terminen de acuerdo con los términos aquí establecidos.
 
 
 10.2.
-Either Party may terminate these Terms if the other party materially breaches or otherwise fails to comply with any material provision of these Terms and such breach or failure is not cured within thirty (30) days after written notice of such breach or failure or immediately if such breach or failure is not capable of being cured. Notwithstanding the foregoing, either party may terminate these Terms upon written notice to the other party in the event of the insolvency of either party, the voluntary filing by or, if not dismissed within sixty (60) days, the filing against either party of a petition in bankruptcy or a petition for reorganization, any assignment by either party for the benefit of creditors; the appointment of a receiver or a trustee for either party; or the placement of either party's assets in the hands of a trustee or receiver. 
+Cualquiera de las partes podrá rescindir estos Términos si la otra parte incumple materialmente o de otro modo no cumple con alguna disposición material de estos Términos y dicho incumplimiento o falta no se subsana dentro de los treinta (30) días posteriores a la notificación por escrito de dicho incumplimiento o falta, o inmediatamente si dicho incumplimiento o falta no puede ser subsanado. No obstante lo anterior, cualquiera de las partes podrá rescindir estos Términos mediante notificación por escrito a la otra parte en caso de insolvencia de cualquiera de las partes, la presentación voluntaria por o, si no se desestima dentro de los sesenta (60) días, la presentación contra cualquiera de las partes de una solicitud de quiebra o una solicitud de reorganización, cualquier cesión por parte de cualquiera de las partes en beneficio de los acreedores; la designación de un síndico o un fideicomisario para cualquiera de las partes; o la colocación de los activos de cualquiera de las partes en manos de un fideicomisario o síndico. 
 
 
 10.3.
-Provisions in these Terms that by their nature should survive termination or expiration of these Terms, will so survive and remain in full force and effect following such termination or expiration, including, without limitation, Sections 1.4, 1.5, 2.2, 2.3, 4-9 and 12.
+Las disposiciones de estos Términos que, por su naturaleza, deban sobrevivir a la terminación o expiración de estos Términos, lo harán y permanecerán en pleno vigor y efecto tras dicha terminación o expiración, incluyendo, sin limitación, las Secciones 1.4, 1.5, 2.2, 2.3, 4-9 y 12.
 
 
-## 11. Force Majeure
+## 11. Fuerza Mayor
 
-Failure of either party to perform any of the provisions of these Terms by reason of any of the following shall not constitute an event of default or breach of these Terms: strikes, picket lines, boycott efforts, fires, floods, freezes, accidents, war (whether or not declared), revolution, riots, insurrections, acts of God, acts of government (including without limitation any agency or department of the United States of America), acts of the public enemy, scarcity or rationing of gasoline or other fuel or vital products, inability to obtain materials or labor, public health emergencies or pandemics, or other causes which are reasonably beyond the control of the defaulting party.
+La falta de desempeño por parte de cualquiera de las partes de cualquiera de las disposiciones de estos Términos debido a cualquiera de los siguientes eventos no constituirá un evento de incumplimiento o violación de estos Términos: huelgas, protestas, esfuerzos de boicot, incendios, inundaciones, heladas, accidentes, guerra (declarada o no), revolución, disturbios, insurrecciones, actos de Dios, actos de gobierno (incluyendo, sin limitación, cualquier agencia o departamento de los Estados Unidos de América), actos del enemigo público, escasez o racionamiento de gasolina u otros combustibles o productos vitales, imposibilidad de obtener materiales o mano de obra, emergencias de salud pública o pandemias, u otras causas que estén razonablemente fuera del control de la parte incumplidora.
 
 
-## 12. Miscellaneous
+## 12. Misceláneo
 
 
 12.1.
-These Terms constitute the entire agreement between you and Tiny Tapeout regarding the subject hereof and supersedes all other agreements, understandings and communications, whether written or oral. If any provision of these Terms is held by a court of competent jurisdiction to be unenforceable for any reason, such provision shall be interpreted to give maximum effect to its terms as possible under law, and the remaining provisions hereof shall be unaffected and continue in full force and effect. 
+Estos Términos constituyen el acuerdo completo entre usted y Tiny Tapeout respecto al asunto aquí presente y reemplazan todos los demás acuerdos, entendimientos y comunicaciones, ya sean escritos u orales. Si alguna disposición de estos Términos es considerada por un tribunal de jurisdicción competente como inaplicable por cualquier motivo, dicha disposición será interpretada para darle el máximo efecto a sus términos según lo permitido por la ley, y las disposiciones restantes no se verán afectadas y continuarán en pleno vigor y efecto.
 
 
 12.2.
-Tiny Tapeout may from time to time change these Terms (other than in respect of any prior Production Run, previously submitted Designs and/or previously purchased Chips). Changes will take effect 7 days after their initial posting on the Website, unless Tiny Tapeout amends the Terms to comply with legal requirements. In such cases, the amendments will become effective immediately upon their initial posting, or as required.  
+Tiny Tapeout podrá, de vez en cuando, cambiar estos Términos (excepto en lo que respecta a cualquier Serie de Producción anterior, Diseños previamente enviados y/o Chips previamente comprados). Los cambios entrarán en vigor 7 días después de su publicación inicial en el Sitio Web, a menos que Tiny Tapeout modifique los Términos para cumplir con requisitos legales. En tales casos, las modificaciones entrarán en vigor inmediatamente después de su publicación inicial o según sea necesario.
 
 
 12.3.
-Nothing in these Terms creates any agency, employment, joint venture, or partnership relationship between the parties. 
+Nada en estos Términos crea ninguna relación de agencia, empleo, empresa conjunta o asociación entre las partes.
 
 
 12.4.
-You may not assign or transfer your rights and obligations under the Terms without Tiny Tapeout’s prior written consent. 
+Usted no podrá ceder ni transferir sus derechos y obligaciones bajo estos Términos sin el consentimiento previo por escrito de Tiny Tapeout. 
 
 
 12.5.
-These Terms shall be governed by the laws of the State of Israel, without reference to its conflict of laws rules. Any dispute, claim or controversy arising out of, connected with, or relating to these Terms will be submitted to the sole and exclusive jurisdiction of the competent court located in Tel Aviv, Israel.   
+Estos Términos se regirán por las leyes del Estado de Israel, sin referencia a sus reglas de conflicto de leyes. Cualquier disputa, reclamación o controversia que surja, esté conectada con, o se relacione con estos Términos se someterá a la única y exclusiva jurisdicción del tribunal competente ubicado en Tel Aviv, Israel.   
 
-## Last Updated
+## Última actualización
 
-October 4, 2023.  
+Junio 23, 2024.  
 
  
 
