@@ -26,3 +26,4 @@ The following chips are planned for the future. The dates are estimates and may 
 |------|---------------------|-------------------------|
 | TT09 | 2024-11-08          | June 2025               |
 | TT10 | 2025-03-07          | Nov 2025                |
+| TT11 | 2025-06-02          | Dec 2025                |
