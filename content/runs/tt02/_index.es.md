@@ -10,6 +10,7 @@ description: 165 diseños, cerrado el 2 de diciembre de 2022
 
 * [Repositorio de Github](https://github.com/TinyTapeout/tinytapeout-02)
 * [Hoja de datos en PDF](https//github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf)
+* [Esquemático de la tarjeta de demostración & documentación](https://github.com/TinyTapeout/tt123-demo-pcb)
 * [Verificación](https://github.com/TinyTapeout/tinytapeout-02/blob/tt02/VERIFICATION.md)
 * [Envío de Efabless MPW](https://platform.efabless.com/projects/1410)
 * [Servidor de Discord](https://discord.gg/G47hur6fyA)
@@ -51,7 +52,7 @@ description: 165 diseños, cerrado el 2 de diciembre de 2022
 * [RV8U - Microcore de 8 bits RISC-V](https://tinytapeout.com/runs/tt02/107)
 * [CPU de 8 bits](https://tinytapeout.com/runs/tt02/085/)
 
-## Testimonios / Endosos
+## Testimonios / Avales
 
 Un flujo de trabajo de desarrollo de chips educativos completamente en el navegador,
 ¡desde la entrada gráfica hasta la salida GDSII para #sky130! Impresionante trabajo de
