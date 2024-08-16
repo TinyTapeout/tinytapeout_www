@@ -19,7 +19,7 @@ description: 165 diseños, cerrado el 2 de diciembre de 2022
 
 * Lanzado: 9 de noviembre de 2022
 * Envío cerrado: 2 de diciembre de 2022
-* Enviado a Efabless [2211Q chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm open source PDK
+* Enviado al shuttle Efabless [2211Q chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm open source PDK
 * Se espera que los chips lleguen en septiembre de 2023, y las PCB en noviembre de 2023
 * Chips enviados a principios de Feb 2024.
 
@@ -62,7 +62,7 @@ Un flujo de trabajo de desarrollo de chips educativos completamente en el navega
 La semana pasada diseñé un circuito integrado para #tinytapeout, mi primer diseño de circuito digital que no incluye ningún tipo de cpu.
 
 ---
-Todavía no puedo superar lo fluido que es el flujo de trabajo de diseño ASIC de la #tinytapeout
+Todavía no puedo superar lo fluído que es el flujo de trabajo de diseño ASIC de la #tinytapeout
 
 ---
 ¡Gracias @matthewvenn y a todos los que hicieron posible #tinytapeout! Hice una simple máquina de estados finitos basada en una presentación de UTexas (enlazada abajo), ¡pero la hice toda en mi nuevo Steamdeck!
@@ -82,8 +82,8 @@ Más en [Twitter](https://twitter.com/search?q=tinytapeout).
 | 2 | [Reloj HD74480](002) | Tom Keddie|
 | 3 | [Pantalla de matriz binaria desplazable](003) | Chris|
 | 4 | [Secuenciador de fuente de alimentación](004) | Jon Klein|
-| 5 | [Controlador de servicio](005) | Marcelo Pouso / Miguel Correia|
-| 6 | [S4GA: FPGA SRAM serie súper lenta](006) | Jan Gray|
+| 5 | [Controlador de ciclo de trabajo](005) | Marcelo Pouso / Miguel Correia|
+| 6 | [S4GA: FPGA SRAM serial súper lenta](006) | Jan Gray|
 | 7 | [ALU](007) | Ryan Cornateanu|
 | 8 | [El microprocesador McCoy de 8 bits](008) | Aidan Good|
 | 9 | [reloj binario](009) | Azdle|
@@ -148,7 +148,7 @@ Más en [Twitter](https://twitter.com/search?q=tinytapeout).
 | 68 | [Respiración LED](068) | argunda|
 | 69 | [Fibonacci y código de oro](069) | Daniel Estevez|
 | 70 | [tinytapeout2-HELLo-3orLd-7seg](070) | Rakesh Peter|
-| 71 | [No restaurar la raíz cuadrada](071) | Wallace Everest|
+| 71 | [Raíz cuadrada no restauradora](071) | Wallace Everest|
 | 72 | [GOL-Cell](072) | Shaos|
 | 73 | [Controlador PWM de 7 canales controlado a través del bus SPI](073) | Ivan Krasin|
 | 74 | [registro de desplazamiento hex](074) | Eric Smith|
@@ -223,7 +223,7 @@ Más en [Twitter](https://twitter.com/search?q=tinytapeout).
 | 143 | [Femto CPU de 4 bits](143) | Majdi Abdul Samad|
 | 144 | [Demostración de Logisim - LED blinker](144) | Tholin|
 | 145 | [Archivo secreto](145) | bitluni|
-| 146 | [Decodificador hexadecimal a siete semgentos](146) | Samuel Sun|
+| 146 | [Decodificador hexadecimal a siete segmentos](146) | Samuel Sun|
 | 147 | [Generador PWM](147) | Jason Lu|
 | 148 | [Sumador de 3 bits](148) | MG|
 | 149 | [Matemáticas continuas](149) | Sophia Li|

@@ -17,7 +17,7 @@ description: 174 designs, closed 4th November 2023
 
 * Lanzamiento: 11 de septiembre de 2023
 * Envío cerrado: 4 de noviembre de 2023
-* Enviado a Efabless [2311C chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm de código abierto PDK.
+* Enviado al shuttle Efabless [2311C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm de código abierto PDK.
 * Se espera que los chips lleguen en abril de 2024, y las PCB en junio de 2024
 
 # Mapa de chips

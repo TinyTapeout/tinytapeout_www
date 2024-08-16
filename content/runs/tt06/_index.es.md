@@ -17,7 +17,7 @@ description: 238 designs, closed 2024-04-19
 
 * Lanzamiento: 30 de enero de 2024
 * Envío cerrado: 19 de abril de 2024
-* Enviado a Effables [2404C chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm de código abierto PDK.
+* Enviado al shuttle Effables [2404C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm de código abierto PDK.
 * Se espera que los chips lleguen en octuubre de 2024,y las PCB en diciembre de 2024
 
 # Mapa de chips

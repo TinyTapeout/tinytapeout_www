@@ -1,6 +1,6 @@
 ---
 hidden: true
-title: "Proyecto de prueba de inversor 0"
+title: "0 Test Inverter Project"
 weight: 1
 ---
 
@@ -25,7 +25,7 @@ Usa 8 inversores para invertir cada línea
 
 ### Cómo probar
 
-Configure el interruptor de entrada en on para apagar el led correspondiente
+Configure el interruptor de entrada en ON para apagar el led correspondiente
 
 ### Entrada/Salida
 

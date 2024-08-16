@@ -17,7 +17,7 @@ description: 143 designs, closed 8th September 2023
 
 * Lanzamiento: 1 de julio de 2023
 * Envío cerrado: 8 de septiembre de 2023
-* Enviado a Effabless [2309C chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm de código abierto PDK.
+* Enviado al shuttle Effabless [2309C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm de código abierto PDK.
 * Se espera que los chips lleguen en febrero de 2024, y las PCB en marzo del 2024
 
 # Estadisticas de proyecto
@@ -48,7 +48,7 @@ description: 143 designs, closed 8th September 2023
 
 # Testimonios
 
-Davey: TinyTapeout me ha dado la increíble oportunidad de seguir algo que creía que sólo podría hacer tras años de educación terciaria, ¡silicio personalizado de mi diseño! La configuración de los flujos de trabajo CI/CD del equipo hace muy sencillo para cualquiera iniciar con los ASIC, ¡Motivo a la gente a que le dé una oportunidad! 
+Davey: TinyTapeout me ha dado la increíble oportunidad de seguir algo que creía que sólo podría hacer tras años de educación terciaria, ¡silicio personalizado diseñado por mí! La configuración de los flujos de trabajo CI/CD del equipo hace muy sencillo para cualquiera iniciar con los ASIC, ¡Motivo a la gente a que le dé una oportunidad! 
 
 ----
 
@@ -62,11 +62,11 @@ La comunidad de Discord también fue de mucha ayuda respondiendo rápidamente cu
 
 ----
 
-Ashley: Fue un placer participar en TinyTapeout. ¡El flujo de diseño fue increiblemente simple! En base a mi experiencia previa con herramientas para diseño de silicio es realmente excelente que el proceso de RTL a GDS pasa al click de un botón con solo unos pocos archivos de configuración y todos ellos alojados en GitHub. Cualquier pregunta que tuve fue respondida rápidamente por el equipo y otros miembros del equipo en Discord. ¡Estoy deseando probar mi diseño cuando el silicio llegue!
+Ashley: Fue un placer participar en TinyTapeout. ¡El flujo de diseño fue increíblemente simple! En base a mi experiencia previa con herramientas para diseño de silicio es realmente excelente que el proceso de RTL a GDS pasa al click de un botón con solo unos pocos archivos de configuración y todos ellos alojados en GitHub. Cualquier pregunta que tuve fue respondida rápidamente por el equipo y otros miembros del equipo en Discord. ¡Estoy deseando probar mi diseño cuando el silicio llegue!
 
 ----
 
-Donnel: Tiny Tapeout es un cambio radical para estudiantes univesitarios. Nos ha otorgado a mi compañero y a mí la oportunidad única de crear e implementar nuestro propio diseño en un ASIC, algo que a menudo está fuera del alcance para estudiantes universitarios. No puedo enfatizar cuanto aprendí a través de todo el proceso, y el conocimiento es realmente invaluable para mi. ¡No podría estar más agradecido por la experiencia!
+Donnel: Tiny Tapeout es un cambio radical para estudiantes univesitarios. Nos ha otorgado a mi compañero y a mí la oportunidad única de crear e implementar nuestro propio diseño en un ASIC, algo que a menudo está fuera del alcance para estudiantes universitarios. No me canso de repetir cuánto aprendí a través de todo el proceso, y el conocimiento es realmente invaluable para mi. ¡No podría estar más agradecido por la experiencia!
 
 ----
 
@@ -74,7 +74,7 @@ mgyenik77: Gracias al duro esfuerzo del equipo de Tiny Tapeout, hacer tu propio 
 
 ----
 
-Robojan: Tiny Tapeout es un proyecto increíble donde ingenieros pueden adquirir experiencia practica diseñando un chip digital. Frecuentemente he soñado sobre crear el diseño de un chip, pero pensaba que no era viable hacerlo como un proyecto de hobby. Cuando encontré Tiny Tapeout en Youtube estuve enganchado. Inmediatamente creé un diseño y lo envié. El proceso fue relativamente simple, pero cuando tuve algunas preguntas ¡la comunidad estuvo dispuesta a ayudar!
+Robojan: Tiny Tapeout es un proyecto increíble donde ingenieros pueden adquirir experiencia práctica diseñando un chip digital. Frecuentemente he soñado sobre crear el diseño de un chip, pero pensaba que no era viable hacerlo como un proyecto de hobby. Cuando encontré Tiny Tapeout en Youtube estuve enganchado. Inmediatamente creé un diseño y lo envié. El proceso fue relativamente simple, pero cuando tuve algunas preguntas ¡la comunidad estuvo dispuesta a ayudar!
 
 ----
 
@@ -87,7 +87,7 @@ Las herramientas son muy intuitivas, y los tutoriales hechos por el equipo son m
 
 ----
 
-Devin: Participar en Tiny Tapeout ha sido ina increíble experiencia y ha representado la realización de un sueño que he tenido desde que estaba en la escuela secundaria. La existencia de una forma barata y eficaz manufacturada fuera del marco universitario representa en mi opinión el mayor impulso a la industria VLSI desde su creación. Leí un artículo de VLSI de 1991 "Magic como herramienta de diseño de PC para el diseño de circuitos VLSI de bajo presupuesto" de O.G. Berkes y R. W. Williams donde ellos soñaban con que el diseño de chips estuviera al alcance de los estudiantes de secundaria. Finalmente con la llegada de Tiny Tapeout este sueño puede acabar acercándose a la realidad.
+Devin: Participar en Tiny Tapeout ha sido una increíble experiencia y ha representado la realización de un sueño que he tenido desde que estaba en la escuela secundaria. La existencia de una forma barata y eficaz para mandar a fabricar chips interesantes fuera del marco universitario representa en mi opinión el mayor impulso a la industria VLSI desde su creación. Leí un artículo de VLSI de 1991 "Magic como herramienta de diseño de PC para el diseño de circuitos VLSI de bajo presupuesto" de O.G. Berkes y R. W. Williams donde ellos soñaban con que el diseño de chips estuviera al alcance de los estudiantes de secundaria. Finalmente con la llegada de Tiny Tapeout este sueño puede acabar acercándose a la realidad.
 
 ----
 

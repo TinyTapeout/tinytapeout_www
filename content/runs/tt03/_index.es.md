@@ -17,7 +17,7 @@ description: 249 designs, closed 24th April 2023
 
 * Lanzamiento: 1 de marzo de 2023
 * Presentación cerrada: 24 de abril de 2023
-* Envíado a Efabless [2304C chipIgnite](https://efabless.com/shuttle-status) transporte utilizando Skywater 130nm open source PDK.
+* Envíado al shuttle Efabless [2304C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm open source PDK.
 * Se espera que lleguen en octubre de 2023, y las PCB en diciembre de 2023.
 
 # Estadísticas de proyecto
@@ -67,18 +67,18 @@ Increible! Envié mi diseño a #TinyTapeout ! Estoy emocionado! Gracias
 
 ---
 
-Solo por un momento, ¡gracias! No creía que en algún momento podría hacer algo como esto,  especialmente con tan bajo costo o estrés.
+Me tomaré el tiempo para decir, ¡gracias! No creía que en algún momento podría hacer algo como esto,  especialmente con tan bajo costo o estrés.
 Para contextualizar, en el trabajo estuve probando un ASIC que un proveedor diseñó para nosotros, y eso fue todo lo contrario a estas dos cosas.
 
 ---
 
-¡Hurra! También lo mandé a último minuto, no había sentido esa prisa desde la fecha límite de la última tarea de mi universidad... Es genial que el diseño de un chip pueda ser hecho en un fin de semana, espero tener los demás diseños, y gracias a todos los que ha contribuído a la plataforma, ¡es realmente fácil de usar!
+¡Hurra! También lo mandé a último minuto, no había sentido esa prisa desde la fecha límite de la última tarea de mi universidad... Es genial que el diseño de un chip pueda ser hecho en un fin de semana, espero tener los demás diseños, y gracias a todos los que han contribuído a la plataforma, ¡es realmente fácil de usar!
 
 ---
 
 Acabo de enviar mi proyecto a último minuto a tt03, ¡quiero felicitarlos por todos los recursos y el proyecto en general!
 
-Nunca había hecho hardware antes (solo software), pero después de leer el codigo actualizado por Petzold a principios de este año y escuchando a una entrevista con Jim Keller, tuve mi interés centrado por ver que ocurre con las capas que usualmente doy por sentadas. Es realmente genial encontrar algo como tiny tapeout, una buena motivación para installar algunas de las herramientas y probarlas.
+Nunca había hecho hardware antes (solo software), pero después de leer el codigo actualizado por Petzold a principios de este año y escuchando a una entrevista con Jim Keller, tuve mi interés centrado por ver qué ocurre con las capas que usualmente doy por sentadas. Es realmente genial encontrar algo como tiny tapeout, una buena motivación para instalar algunas de las herramientas y probarlas.
 
 ---
 Más en [Twitter](https://twitter.com/search?q=tinytapeout).
