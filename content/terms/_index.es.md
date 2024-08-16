@@ -3,10 +3,13 @@ title: "Términos"
 date: 2023-10-04T09:57:17+01:00
 weight: 150
 ---
+ 
+# ADVERTENCIA O DISCLAIMER 
+La información ofrecida en esta página es traducción al español y no está legalmente aprobada. Se le recomienda visitar los [términos](https://tinytapeout.com/terms/) en el inglés original.
 
 # Términos y Condiciones de Tiny Tapeout
 
-Estos Términos y Condiciones (los “**Términos**”) rigen su participación en el programa de diseño de chips semiconductores de Tiny Tapeout (el “**Programa**”). Los Términos constituyen un acuerdo vinculante entre usted y Tiny Tapeout Ltd. (“**Tiny Tapeout**”). Al enviar un Diseño (tal como se define a continuación) o de otra manera participando en el Programa, usted indica que está de acuerdo con estos Términos. Si usted no está de acuerdo con estos términos no debería participar en el Programa. Si usted es una persona moral que acepta estas condiciones en nombre de una entidad jurídica, por la presente declara y garantiza que está autorizado a aceptar estos Terminos en nombre de dicha entidad y a vincular dicha entidad a estos Términos.
+Estos Términos y Condiciones (los “**Términos**”) rigen su participación en el programa de diseño de chips semiconductores de Tiny Tapeout (el “**Programa**”). Los Términos constituyen un acuerdo vinculante entre usted y Tiny Tapeout Ltd. (“**Tiny Tapeout**”). Al enviar un Diseño (tal como se define a continuación) o de otra manera participando en el Programa, usted indica que está de acuerdo con estos Términos. Si usted no está de acuerdo con estos términos no debería participar en el Programa. Si usted es una persona moral que acepta estas condiciones en nombre de una entidad jurídica, por la presente declara y garantiza que está autorizado a aceptar estos Términos en nombre de dicha entidad y a vincular dicha entidad a estos Términos.
 
 
 
@@ -27,7 +30,7 @@ Sujeto a los términos del mismo, usted autoriza a Tiny Tapeout y sus contratist
 
 
 1.4. 
-Usted es única y exclusivamente responsable for cualquier Diseño que envíe como parte del Programa. Usted reconoce y acepta que Tiny Tapeout no tiene la obligación de verificar, revisar, probar o evaluar ningún Diseño o Documentación de Diseño enviada por usted. Al incluir su Diseño en un Chip, Tiny Tapeout no hace ninguna declaración o garantía en relación con dicho diseño, incluyendo, sin limitación, respecto a la calidad, seguridad, adaptabilidad, legalidad o rendimiento del mismo. La inclusión de su Diseño en un Chip no constituye ningún aval, patrocinio o recomendación de dicho Diseño por Tiny Tapeout.
+Usted es única y exclusivamente responsable por cualquier Diseño que envíe como parte del Programa. Usted reconoce y acepta que Tiny Tapeout no tiene la obligación de verificar, revisar, probar o evaluar ningún Diseño o Documentación de Diseño enviada por usted. Al incluir su Diseño en un Chip, Tiny Tapeout no hace ninguna declaración o garantía en relación con dicho diseño, incluyendo, sin limitación, respecto a la calidad, seguridad, adaptabilidad, legalidad o rendimiento del mismo. La inclusión de su Diseño en un Chip no constituye ningún aval, patrocinio o recomendación de dicho Diseño por Tiny Tapeout.
 
 
 1.5. 
