@@ -46,6 +46,17 @@ export function ProjectPage({ shuttle, project, docs, shuttleMapSvg }: IProjectP
             GitHub repository
           </a>
         </li>
+        {project.macro.startsWith('tt_um_wokwi_') && (
+          <li>
+            <a
+              href={`https://wokwi.com/projects/${project.macro.replace('tt_um_wokwi_', '')}`}
+              target="_blank"
+              rel="noopener"
+            >
+              View in Wokwi
+            </a>
+          </li>
+        )}
         <li>Clock: {project.clock_hz} Hz</li>
       </ul>
 
