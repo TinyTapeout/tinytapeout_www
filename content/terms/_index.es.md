@@ -4,7 +4,7 @@ date: 2023-10-04T09:57:17+01:00
 weight: 150
 ---
  
-# ADVERTENCIA O DISCLAIMER 
+# DISCLAIMER 
 La información ofrecida en esta página es traducción al español y no está legalmente aprobada. Se le recomienda visitar los [términos](https://tinytapeout.com/terms/) en el inglés original.
 
 # Términos y Condiciones de Tiny Tapeout
