@@ -7,11 +7,12 @@
 
   let deadline = new Date('2024-09-06T20:00:00Z');
 
+  const timerContainerElement = document.querySelector('.countdown-timer .countdown-timer-tiles');
   const daysElement = document.querySelector('.countdown-timer .cd-days');
   const hoursElement = document.querySelector('.countdown-timer .cd-hours');
   const minutesElement = document.querySelector('.countdown-timer .cd-minutes');
   const secondsElement = document.querySelector('.countdown-timer .cd-seconds');
-  
+
   const tileStats = document.querySelector('.tile-stats .counter');
   const tileProgress = document.querySelector('.tile-stats .progress-bar-inner');
   const pcbStats = document.querySelector('.pcb-stats .counter');
@@ -22,7 +23,10 @@
 
   async function fetchStats() {
     const queryUrl = new URL('shuttles', databaseEndpoint);
-    queryUrl.searchParams.set('select', 'tiles_total,tiles_used,subsidized_pcbs_total,subsidized_pcbs_sold,deadline');
+    queryUrl.searchParams.set(
+      'select',
+      'tiles_total,tiles_used,subsidized_pcbs_total,subsidized_pcbs_sold,deadline',
+    );
     queryUrl.searchParams.set('slug', `eq.${shuttleSlug}`);
     queryUrl.searchParams.set('apikey', supabaseKey);
     const res = await fetch(queryUrl);
@@ -64,7 +68,7 @@
             },
           },
           ref: '1',
-        })
+        }),
       );
       heartbeatTimer = setInterval(() => {
         ws.send(
@@ -73,7 +77,7 @@
             topic: 'phoenix',
             payload: {},
             ref: '1',
-          })
+          }),
         );
       }, 30000);
     };
@@ -89,7 +93,7 @@
         heartbeatTimer = null;
       }
       ws = null;
-    }
+    };
   }
 
   fetchStats();
@@ -127,6 +131,10 @@
     hoursElement.textContent = pad(hours);
     minutesElement.textContent = pad(minutes);
     secondsElement.textContent = pad(seconds);
+    timerContainerElement.setAttribute(
+      'title',
+      deadline.toLocaleString(undefined, { timeZoneName: 'short' }),
+    );
   }
 
   update();
