@@ -7,6 +7,7 @@ import { loadProjectDocs, loadProjectInfo } from '../../../model/project.js';
 import { loadShuttleIndex, loadShuttleMapSvg } from '../../../model/shuttle.js';
 import { fetchTextAsset } from '../../../utils/context.js';
 import { notFound } from '../../../utils/notFound.js';
+import { getBaseURL } from '../../../utils/urls.js';
 
 const cache = caches.default;
 
@@ -60,8 +61,11 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   const shuttleMapSvg = await loadShuttleMapSvg(context, shuttle);
   const title = `${projectInfo.address} ${projectInfo.title}`;
 
+  const previewImageUrl = getBaseURL(context) + `/runs/${shuttle}/${project}/social-preview`;
+
   const response = new Response(
     templateText
+      .replace('</title>', `</title><meta property="og:image" content="${previewImageUrl}" />`)
       .replaceAll('__ttreplace_shuttle_id__', shuttle)
       .replaceAll('__ttreplace_project_id__', project)
       .replaceAll('{{SHUTTLE_TITLE}}', shuttleIndex.name)
