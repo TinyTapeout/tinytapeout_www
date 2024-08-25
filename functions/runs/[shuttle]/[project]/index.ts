@@ -65,7 +65,16 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
 
   const response = new Response(
     templateText
-      .replace('</title>', `</title><meta property="og:image" content="${previewImageUrl}" />`)
+      .replace(
+        '</title>',
+        [
+          `</title>`,
+          `<meta property="og:image" content="${previewImageUrl}" />`,
+          `<meta property="og:image:width" content="1200" />`,
+          `<meta property="og:image:height" content="630" />`,
+          '<meta name="twitter:card" content="summary_large_image"/>',
+        ].join('\n'),
+      )
       .replaceAll('__ttreplace_shuttle_id__', shuttle)
       .replaceAll('__ttreplace_project_id__', project)
       .replaceAll('{{SHUTTLE_TITLE}}', shuttleIndex.name)

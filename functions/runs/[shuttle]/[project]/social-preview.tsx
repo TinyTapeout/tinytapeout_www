@@ -7,22 +7,6 @@ import React from 'react';
 import { loadProjectInfo } from '../../../model/project.js';
 import { loadShuttleIndex } from '../../../model/shuttle.js';
 
-export interface IShuttleIndex {
-  version: number;
-  updated: Date;
-  shuttles: Shuttle[];
-}
-
-export interface Shuttle {
-  id: string;
-  name: string;
-  repo: string;
-  gds_url: string;
-  rom_data: null | string;
-  tiles: number;
-  projects: number;
-}
-
 const cache = caches.default;
 
 export const onRequest: PagesFunction<Env> = async (context) => {
