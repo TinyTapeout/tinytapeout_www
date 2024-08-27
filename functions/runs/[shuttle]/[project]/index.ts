@@ -8,12 +8,13 @@ import { loadShuttleIndex, loadShuttleMapSvg } from '../../../model/shuttle.js';
 import { fetchTextAsset } from '../../../utils/context.js';
 import { notFound } from '../../../utils/notFound.js';
 import { getBaseURL } from '../../../utils/urls.js';
+import { isSkipCache } from '../../../utils/cache.js';
 
 const cache = caches.default;
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const cached = await cache.match(context.request);
-  if (cached) {
+  if (cached && !isSkipCache(context)) {
     return cached;
   }
 

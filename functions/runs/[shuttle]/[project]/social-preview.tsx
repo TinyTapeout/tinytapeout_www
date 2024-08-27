@@ -6,12 +6,13 @@ import { ImageResponse } from '@cloudflare/pages-plugin-vercel-og/api';
 import React from 'react';
 import { loadProjectInfo } from '../../../model/project.js';
 import { loadShuttleIndex } from '../../../model/shuttle.js';
+import { isSkipCache } from '../../../utils/cache.js';
 
 const cache = caches.default;
 
 export const onRequest: PagesFunction<Env> = async (context) => {
   const cached = await cache.match(context.request);
-  if (cached) {
+  if (cached && !isSkipCache(context)) {
     return cached;
   }
 
