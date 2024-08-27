@@ -30,11 +30,19 @@ export function ProjectPage({ shuttle, project, docs, shuttleMapSvg }: IProjectP
   const hasAnalogPins = project.analog_pins?.length || false;
   const scanchain = scanchainShuttles.includes(shuttle);
 
+  const renderUrl = `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${project.macro}/render.png`;
+
   return (
     <div>
       <h2>
         {project.address} : {project.title}
       </h2>
+
+      <img
+        src={renderUrl}
+        alt="Design render"
+        style={{ maxWidth: '128px', float: 'right', clear: 'right', margin: '0 0 1em 0' }}
+      />
 
       {scanchain && <ScanchainSwitches address={project.address} />}
 

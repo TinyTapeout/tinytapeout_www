@@ -13,7 +13,7 @@ export function ScanchainSwitches({ address }: { address: number }) {
       viewBox="0 0 52.9 97.4"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      style={{ float: 'right', maxWidth: '20vw' }}
+      style={{ float: 'right', maxWidth: '20vw', clear: 'right' }}
     >
       <defs>
         <linearGradient id="a">
