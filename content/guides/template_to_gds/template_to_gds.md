@@ -1,28 +1,28 @@
 ---
-
 title: 'GDS File Creation from Template'.
 linkTitle: 'Create GDS Files With Our Github Template'.
 description: 'The detailed procedure to get GDS from a wokwi template repo'.
 weight: 60
 ---
 
+
 This guide will help you through the essential steps to set up a GitHub repository, enable actions, and successfully commit your design for TinyTapeout. Follow each step carefully.
 
-1\. Use the Template Repository
+## Use the Template Repository
 -------------------------------
 
 Start by using the template repository to create your own copy of the project. This will help you build upon an existing foundation.
 
 ![Use Template Repository](template.png)
 
-2\. Enable GitHub Actions
+## Enable GitHub Actions
 -------------------------
 
 Enabling GitHub Actions allows automated tasks to run, like testing or building your project. Make sure to activate actions for your repository.
 
 ![Enable GitHub Actions](gitpages.png)
 
-3\. Update info.yaml
+## Update info.yaml
 --------------------
 
 The `info.yaml` file contains important configuration details about your project. Follow the subsections below to update this file properly.
@@ -52,70 +52,70 @@ If your design needs more than one tile, update the `tiles` field in the `info.y
 
 ![info.yaml](infoyaml.png) ![Commit the modified info.yaml](commitinfo.png)
 
-4\. Documentation
+## Documentation
 -----------------
 
 Make sure to write clear documentation about your project for others to understand it. The `README.md` file is a good place to start.
 
 ![Documentation](documentation.png)
 
-5\. Commit Changes
+## Commit Changes
 ------------------
 
 After making changes to the files, commit them to your repository. This saves your progress and updates the code.
 
 ![Commit Changes](commit-changes.png)
 
-6\. Actions
+## Actions
 -----------
 
 GitHub Actions will automatically run after committing. You can see the results under the "Actions" tab in your repository.
 
 ![Actions](actions-tab.png)
 
-7\. Docs Action Result
+## Docs Action Result
 ----------------------
 
 The Docs action generates project documentation. Check the result to ensure your documentation is correctly built.
 
 ![Docs Action Result](docs-action-result.png)
 
-8\. GDS Action Result
+## GDS Action Result
 ---------------------
 
 The GDS action generates the physical layout of your design. Review the results to ensure the GDS file is correctly generated.
 
 ![GDS Action Result](gds-action-result.png)
 
-9\. 3D Viewer
+## 3D Viewer
 -------------
 
 You can view the 3D model of your chip layout in the 3D viewer. This helps visualize how your design will look.
 
 ![3D Viewer](3d-viewer.png)
 
-10\. Post your GDS!
+## Post your GDS!
 -------------------
 
 Once everything is set up, submit your GDS file for fabrication.
 
 ![Post Your GDS!](post-gds.png)
 
-11\. Status Lights
+## Status Lights
 ------------------
 
 Status lights give you a quick overview of whether your actions are passing or failing. Check these lights to monitor progress.
 
 ![Status Lights](status-lights.png)
 
-12\. GDS Fail
+## GDS Fail
 -------------
 
 If the GDS generation fails, review the error logs in the Actions tab and correct the design.
 
 ![GDS Fail](gds-fail.png)
 
-13\. Submitting
+## Submitting
 ---------------
 
 Finally, after ensuring everything is correct, submit your design to the team for final review and fabrication.
