@@ -1,9 +1,10 @@
 ---
 
-title: 'GDS File Creation from Template'
-linkTitle: 'Create GDS Files With Our Github Template'
-description: 'The detailed procedure to get GDS from a wokwi template repo'
-=========================================
+title: 'GDS File Creation from Template'.
+linkTitle: 'Create GDS Files With Our Github Template'.
+description: 'The detailed procedure to get GDS from a wokwi template repo'.
+weight: 60
+---
 
 This guide will help you through the essential steps to set up a GitHub repository, enable actions, and successfully commit your design for TinyTapeout. Follow each step carefully.
 
