@@ -1,7 +1,7 @@
 ---
-title: 'GDS File Creation from Template'.
-linkTitle: 'Create GDS Files With Our Github Template'.
-description: 'The detailed procedure to get GDS from a wokwi template repo'.
+title: 'GDS File Creation from Template'
+linkTitle: 'Create GDS Files With Our Github Template'
+description: 'The detailed procedure to get GDS from a wokwi template repo'
 weight: 60
 ---
 
