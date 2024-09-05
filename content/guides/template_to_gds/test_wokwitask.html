@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Setup Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        /* Global Image Size Control */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #ccc;
+        }
+        h3 {
+            margin-left: 20px;
+        }
+        p {
+            margin-left: 20px;
+        }
+        /* Specific Image Size Control (for fine-tuning individual images) */
+        .small-img {
+            max-width: 300px; /* Smaller images */
+        }
+        .medium-img {
+            max-width: 600px; /* Medium images */
+        }
+        .large-img {
+            max-width: 900px; /* Larger images */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create GDS Files With Our Github Template </h1>
+        <p>This guide will help you through the essential steps to set up a GitHub repository, enable actions, and successfully commit your design for TinyTapeout. Follow each step carefully.</p>
+
+        <h2>1. Use the Template Repository</h2>
+        <p>Start by using the template repository to create your own copy of the project. This will help you build upon an existing foundation.</p>
+        <!-- Insert image or screenshot of the template repo with medium size -->
+        <img src="template.png" alt="Use Template Repository" class="medium-img">
+
+        <h2>2. Enable GitHub Actions</h2>
+        <p>Enabling GitHub Actions allows automated tasks to run, like testing or building your project. Make sure to activate actions for your repository.</p>
+        <!-- Insert image or screenshot of enabling GitHub actions with large size -->
+        <img src="gitpages.png" alt="Enable GitHub Actions" class="medium-img">
+
+        <h2>3. Update info.yaml</h2>
+        <p>The <code>info.yaml</code> file contains important configuration details about your project. Follow the subsections below to update this file properly.</p>
+        <!-- Insert image showing where info.yaml is located -->
+        <!-- <img src="update-info-yaml.png" alt="Update info.yaml" class="medium-img"> -->
+
+        <h3>a. Name and Description</h3>
+        <p>Update the <code>name</code> and <code>description</code> fields in the <code>info.yaml</code> file. These fields describe your project and give it a unique identity.</p>
+        <!-- Example of YAML code for name and description -->
+        <pre>
+name: "Your Project Name"
+description: "A brief description of your project"
+        </pre>
+        <!-- Insert image showing the YAML structure -->
+        <!-- <img src="name-description.png" alt="Name and Description in info.yaml" class="small-img"> -->
+
+        <h3>b. Set the Wokwi ID</h3>
+        <p>Add your Wokwi project ID in the <code>info.yaml</code> file under the <code>wokwi_id</code> field to connect your design to your Wokwi simulation.</p>
+        <!-- Example of Wokwi ID in YAML -->
+        <pre>
+wokwi_id: '408122667678580737'
+        </pre>
+        <p> wokwi_id is found from the number succeeding the URL in your WOKWI Project</p>
+        <!-- Insert image showing Wokwi ID -->
+        <img src="WOKWI_Project_ID.png" alt="Set the Wokwi ID" class="medium-img">
+
+        <h3>c. Using More Tiles</h3>
+        <p>If your design needs more than one tile, update the <code>tiles</code> field in the <code>info.yaml</code> file. This allows you to expand the area for your design.</p>
+        <!-- Example of using multiple tiles in YAML -->
+       
+        <!-- Insert image showing multiple tiles setup -->
+        <img src="infoyaml.png" alt="info.yaml" class="medium-img">
+        <img src="commitinfo.png" alt="Commit the modified info.yaml" class="medium-img">
+
+        <h2>4. Documentation</h2>
+        <p>Make sure to write clear documentation about your project for others to understand it. The <code>README.md</code> file is a good place to start.</p>
+        <!-- Insert image showing documentation section in the repo -->
+        <img src="documentation.png" alt="Documentation" class="medium-img">
+
+        <h2>5. Commit Changes</h2>
+        <p>After making changes to the files, commit them to your repository. This saves your progress and updates the code.</p>
+        <!-- Insert image showing commit changes -->
+        <img src="commit-changes.png" alt="Commit Changes" class="medium-img">
+
+        <h2>6. Actions</h2>
+        <p>GitHub Actions will automatically run after committing. You can see the results under the "Actions" tab in your repository.</p>
+        <!-- Insert image showing GitHub Actions tab -->
+        <img src="actions-tab.png" alt="Actions" class="medium-img">
+
+        <h2>7. Docs Action Result</h2>
+        <p>The Docs action generates project documentation. Check the result to ensure your documentation is correctly built.</p>
+        <!-- Insert image showing Docs action result -->
+        <img src="docs-action-result.png" alt="Docs Action Result" class="medium-img">
+
+        <h2>8. GDS Action Result</h2>
+        <p>The GDS action generates the physical layout of your design. Review the results to ensure the GDS file is correctly generated.</p>
+        <!-- Insert image showing GDS action result -->
+        <img src="gds-action-result.png" alt="GDS Action Result" class="large-img">
+
+        <h2>9. 3D Viewer</h2>
+        <p>You can view the 3D model of your chip layout in the 3D viewer. This helps visualize how your design will look.</p>
+        <!-- Insert image showing 3D viewer -->
+        <img src="3d-viewer.png" alt="3D Viewer" class="medium-img">
+
+        <h2>10. Post your GDS!</h2>
+        <p>Once everything is set up, submit your GDS file for fabrication.</p>
+        <!-- Insert image or icon indicating the GDS post action -->
+        <img src="post-gds.png" alt="Post Your GDS!" class="medium-img">
+
+        <h2>11. Status Lights</h2>
+        <p>Status lights give you a quick overview of whether your actions are passing or failing. Check these lights to monitor progress.</p>
+        <!-- Insert image showing status lights -->
+        <img src="status-lights.png" alt="Status Lights" class="small-img">
+
+        <h2>12. GDS Fail</h2>
+        <p>If the GDS generation fails, review the error logs in the Actions tab and correct the design.</p>
+        <!-- Insert image showing GDS fail example -->
+        <img src="gds-fail.png" alt="GDS Fail" class="medium-img">
+
+        <h2>13. Submitting</h2>
+        <p>Finally, after ensuring everything is correct, submit your design to the team for final review and fabrication.</p>
+        <!-- Insert image showing the submission process -->
+        <img src="submitting.png" alt="Submitting Your Design" class="medium-img">
+
+    </div>
+</body>
+</html>
