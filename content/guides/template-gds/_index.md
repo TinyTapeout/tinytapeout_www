@@ -6,8 +6,6 @@ weight: 60
 ---
 
 
-### Introduction
-
 This guide will walk you through the process of preparing your design for submission using the TinyTapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3d viewer.
 If you don't already have a GitHub account, please create one before proceeding.
 
@@ -24,7 +22,7 @@ If you don't already have a GitHub account, please create one before proceeding.
    - Click the ‘Use this template’ button to generate your own copy of the repository.
 ![Use Template Repository](images/template.png)
 ## Step 2: Enable GitHub Actions
-
+GitHub Actions allow automated tasks to run. They are enabled by default, but we need to enable them to publish the results
 1. **Go to Repository Settings**:
    - Access your repository’s settings page.
    
