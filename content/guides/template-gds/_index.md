@@ -8,16 +8,17 @@ weight: 60
 
 ### Introduction
 
-This guide will walk you through the process of preparing your design for submission using the TinyTapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing. If you don't already have a GitHub account, please create one before proceeding.
+This guide will walk you through the process of preparing your design for submission using the TinyTapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3d viewer.
+If you don't already have a GitHub account, please create one before proceeding.
 
 ### Working with WOKWI Designs
 
 ## Step 1: Access the GitHub Template
 
-1. **Create a GitHub Account**: If you don’t have a GitHub account, sign up for one.
+1. **Create a GitHub Account**: If you don’t have a GitHub account, sign up for one from [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 2. **Navigate to the Template Repository**: 
-   - We offer two types of repositories: one for Wokwi designs and another for Verilog or other HDLs. For this guide, we'll use the Wokwi template.
+   - We offer two types of repositories: one for Wokwi designs and another for Verilog or other HDLs. For this guide, we'll use the [Wokwi template](https://github.com/TinyTapeout/tt08-wokwi-template).
 
 3. **Create Your Repository**:
    - Click the ‘Use this template’ button to generate your own copy of the repository.
