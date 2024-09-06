@@ -1,4 +1,4 @@
-# Create GDS from Tinytapeout Git Templates
+# Step-by-Step Procedure for Preparing Your Design for Submission
 
 ## Introduction
 
