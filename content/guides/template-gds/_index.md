@@ -6,15 +6,13 @@ weight: 60
 ---
 
 
-# Create GDS from Tinytapeout Git Templates
-
-## Introduction
+### Introduction
 
 This guide will walk you through the process of preparing your design for submission using the TinyTapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing. If you don't already have a GitHub account, please create one before proceeding.
 
-## Working with WOKWI Designs
+### Working with WOKWI Designs
 
-### Step 1: Access the GitHub Template
+## Step 1: Access the GitHub Template
 
 1. **Create a GitHub Account**: If you don’t have a GitHub account, sign up for one.
 
@@ -24,7 +22,7 @@ This guide will walk you through the process of preparing your design for submis
 3. **Create Your Repository**:
    - Click the ‘Use this template’ button to generate your own copy of the repository.
 ![Use Template Repository](images/template.png)
-### Step 2: Enable GitHub Actions
+## Step 2: Enable GitHub Actions
 
 1. **Go to Repository Settings**:
    - Access your repository’s settings page.
@@ -35,7 +33,7 @@ This guide will walk you through the process of preparing your design for submis
 3. **Allow Actions**:
    - Ensure that actions are enabled to create the results page.
 ![Enable GitHub Actions](images/gitpages.png)
-### Step 3: Edit the `info.yaml` File
+## Step 3: Edit the `info.yaml` File
 
 1. **Adjust Wokwi ID**:
    - For Wokwi projects, update the Wokwi ID in the `info.yaml` file to match the ID from your Wokwi project.
@@ -53,7 +51,7 @@ This guide will walk you through the process of preparing your design for submis
 ![info.yaml](images/info_yaml.png) 
 
 ![Commit the modified info.yaml](images/commitinfo.png)
-### Step 4: Edit the `info.md` File in the Docs Directory
+## Step 4: Edit the `info.md` File in the Docs Directory
 
 1. **Update Documentation**:
    - Include detailed instructions on how to experiment with your design. This documentation is useful for users receiving the chip and for you to recall design details later.
@@ -61,7 +59,7 @@ This guide will walk you through the process of preparing your design for submis
 2. **Enhance Documentation**:
    - Add pictures and links to additional resources if needed. Save and commit your changes.
 ![Documentation](images/documentation.png)
-### Step 5: Review GitHub Actions Results
+## Step 5: Review GitHub Actions Results
 
 1. **Access Actions Tab**:
    - Go to the ‘Actions’ tab in your repository to view results.
@@ -78,7 +76,7 @@ This guide will walk you through the process of preparing your design for submis
 4. **Share Your Design**:
    - Post a screenshot of your design on social media with a description and the hashtag #TinyTapeout.
 
-### Step 6: Troubleshoot Problems
+## Step 6: Troubleshoot Problems
 
 1. **Handle GDS Action Failures**:
    - If the GDS action fails, it might be due to issues with your design or its size. Review logs and GDS artefacts for errors. If necessary, join the Discord chat server for assistance.
@@ -86,7 +84,7 @@ This guide will walk you through the process of preparing your design for submis
 2. **Check Logs**:
    - Examine the synthesis log file for design errors. For size issues, consider reducing the design size or increasing the number of tiles in the `info.yaml`.
 
-### Step 7: Submit Your Design
+## Step 7: Submit Your Design
 
 1. **Go to Submission Page**:
    - Visit [TinyTapeout’s submission page](https://tinytapeout.com) and click the button to access the submission application.
@@ -98,7 +96,7 @@ This guide will walk you through the process of preparing your design for submis
    - To finalize your project, submit a revision. Once committed to the shuttle, any changes will require creating a new version.
 
 
-## Working with an HDL
+### Working with an HDL
 
 1. **Overview**:
    - Learn how to submit a Verilog or other HDL project to TinyTapeout. Refer to the resources available on the ‘working with HDLs’ page.
@@ -109,7 +107,7 @@ This guide will walk you through the process of preparing your design for submis
 3. **Testing Your HDL Design**:
    - Use a Makefile and a top-level test bench for testing. Consider gate-level verification to ensure accuracy.
 
-### GitHub Actions for ASIC File Creation
+## GitHub Actions for ASIC File Creation
 
 1. **Understand GitHub Actions**:
    - GitHub actions in the `.github` directory automate the process of creating GDS files. The workflows are defined in YAML files.
