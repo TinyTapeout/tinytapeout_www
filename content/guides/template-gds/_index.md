@@ -124,6 +124,12 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
     - isolate a cell, where are the mosfets
 
 
+3. **Manual Action Check**:
+
+    - Usually, on each commit, the workflow runs automatically, However in a scenario that you changed WOKWI design itself and now you want to check the action result, Manual action workflow is to be opted. 
+
+    <img src="images/manual_action_test_gds.png" alt=" Action Manual" width="550"/>
+
 ## Next Steps
 
 try adding a new standard cell and re-run the action (how to re-run)
