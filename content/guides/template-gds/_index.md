@@ -1,3 +1,11 @@
+---
+title: 'Create GDS from Tinytapeout Git Templates'
+linkTitle: 'Template to GDS'
+description: 'preparing your design for submission using the TinyTapeout GitHub template'
+weight: 60
+---
+
+
 # Create GDS from Tinytapeout Git Templates
 
 ## Introduction
