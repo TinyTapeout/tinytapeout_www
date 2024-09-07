@@ -28,9 +28,9 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt08-wokwi-template)
-* [Verilog submission template](https://github.com/TinyTapeout/tt08-verilog-template)
-* [Analog and mixed signal template](https://github.com/TinyTapeout/tt08-analog-template)
+* [Wokwi submission template](https://github.com/TinyTapeout/tt09-wokwi-template)
+* [Verilog submission template](https://github.com/TinyTapeout/tt09-verilog-template)
+* [Analog and mixed signal template](https://github.com/TinyTapeout/tt09-analog-template)
 
 # Submit your design
 
@@ -44,7 +44,7 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 8.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 9.
 
 {{< mailchimp >}}
 
