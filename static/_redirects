@@ -10,4 +10,5 @@
 /tt07 /runs/tt07
 /start/tt04 /guides/get-started-demoboard
 /start/tt05 /guides/get-started-demoboard
+/start/tt06 /guides/get-started-demoboard
 /start/max7219 https://github.com/urish/tt05-silife-max/blob/main/docs/bringup.md#connections
