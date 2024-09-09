@@ -7,7 +7,7 @@ weight: 60
 
 This document explains how to harden your Tiny Tapeout projects locally, to speed up iteration times. The whole process should take roughly 10 minutes.
 
-It uses the [factory-test](https://github.com/TinyTapeout/tt08-factory-test) project as an example.
+It uses the [factory-test](https://github.com/TinyTapeout/tt09-factory-test) project as an example.
 
 ### 1. Environment Setup
 
@@ -22,7 +22,7 @@ Note: On some systems, the python binary is called `python` and not `python3`.
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
-git clone https://github.com/TinyTapeout/tt08-factory-test ~/factory-test
+git clone https://github.com/TinyTapeout/tt09-factory-test ~/factory-test
 ```
 
 ### 2. Python and Pip Dependencies
@@ -43,7 +43,7 @@ pip install -r ~/factory-test/tt/requirements.txt
 
 ### 3. Set up environment variables
 
-We will set up `PDK_ROOT` to point to the directory that will contain the PDK. `PDK` and `OPENLANE` specify, respecively, the version of the PDK and of OpenLane 2 we will use: 
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `OPENLANE` specify, respecively, the version of the PDK and the version of OpenLane 2 you will use: 
 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
@@ -61,25 +61,32 @@ pip install openlane==$OPENLANE2_TAG
 
 ### 5. Download the PDK
 
-We will first install the [volare](https://github.com/efabless/volare) PDK version manager:
+First, you will install the [volare](https://github.com/efabless/volare) PDK version manager:
 ```sh
 pip install volare
 ```
 
-Then we will download and enable, e.g., version `cd1748bb197f9b7af62a54507de6624e30363943` of the PDK:
+Then you will set the `GITHUB_TOKEN` environment variable to a valid [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+
+At this point, you can use the command `volare ls-remote` to see all available versions of the PDK.
+To make sure you use the same version as the TinyTapeout GDS actions, you shall inspect the [TT09 project submission workflow](https://github.com/TinyTapeout/tinytapeout-09/blob/main/.github/workflows/project_submission.yaml) and set the environment variable `PDK_VERSION` to the same version you find in there. You can use the following shell command:
+```sh
+export PDK_VERSION=$(curl https://raw.githubusercontent.com/TinyTapeout/tinytapeout-09/main/.github/workflows/project_submission.yaml | grep "PDK_VERSION: " | awk -F": " '{print $2}' | sed "s/'//g" )
 ```
-volare fetch --pdk sky130 cd1748bb197f9b7af62a54507de6624e30363943
-volare enable --pdk sky130 cd1748bb197f9b7af62a54507de6624e30363943
+
+Finally, you will download and enable the chosen version of the PDK:
 ```
-To see all available versions, you can issue the command `volare ls-remote`.
+volare fetch --pdk sky130 $PDK_VERSION
+volare enable --pdk sky130 $PDK_VERSION
+```
 
 ### 6. Clone tt-support-tools
 
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt08` branch) inside the `tt` directory of your project:
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt09` branch) inside the `tt` directory of your project:
 
 ```sh
 cd ~/factory-test
-git clone -b tt08 https://github.com/TinyTapeout/tt-support-tools tt
+git clone -b tt09 https://github.com/TinyTapeout/tt-support-tools tt
 ```
 
 ### 7. Harden your project
@@ -93,7 +100,8 @@ cd ~/factory-test
 ./tt/tt_tool.py --create-user-config --openlane2
 ```
 
-Then run the following command to harden the project locally:
+Then run the following command to harden the project locally.
+Notice that this command requires you to have Docker (or a compatible container engine) installed and running.   
 
 ```sh
 ./tt/tt_tool.py --harden --openlane2
