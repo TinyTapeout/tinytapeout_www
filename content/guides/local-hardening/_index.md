@@ -9,7 +9,7 @@ This document explains how to harden your Tiny Tapeout projects locally, to spee
 
 It uses the [factory-test](https://github.com/TinyTapeout/tt08-factory-test) project as an example.
 
-### Environment Setup
+### 1. Environment Setup
 
 You need Python 3.11 or newer installed on your system. You can test which python version you have by running:
 
@@ -25,30 +25,12 @@ We assume your project was cloned to `~/factory-test`. If you don't have a proje
 git clone https://github.com/TinyTapeout/tt08-factory-test ~/factory-test
 ```
 
-#### 1. Set up environment variables
+### 2. Python and Pip Dependencies
+
+Create a dedicated directory for the virtual Python environment and initialize it:
 
 ```sh
-export PDK_ROOT=~/ttsetup/pdk
-export PDK=sky130A
-export OPENLANE2_TAG=2.0.8
-```
-
-Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
-
-#### 2. Clone tt-support-tools
-
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt08` branch) inside the `tt` directory of your project:
-
-```sh
-cd ~/factory-test
-git clone -b tt08 https://github.com/TinyTapeout/tt-support-tools tt
-```
-
-#### 3. Python and Pip Dependencies
-
-Make sure you have a recent version of python installed (3.11 or newer). Set up a virtual environment:
-
-```sh
+mkdir ~/ttsetup
 python3 -m venv ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
@@ -59,15 +41,48 @@ Then install the dependencies:
 pip install -r ~/factory-test/tt/requirements.txt
 ```
 
-Install the right version of openlane 2:
+### 3. Set up environment variables
+
+We will set up `PDK_ROOT` to point to the directory that will contain the PDK. `PDK` and `OPENLANE` specify, respecively, the version of the PDK and of OpenLane 2 we will use: 
+
+```sh
+export PDK_ROOT=~/ttsetup/pdk
+export PDK=sky130A
+export OPENLANE2_TAG=2.0.8
+```
+
+Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
+
+### 4. Install OpenLane 2
 
 ```sh
 pip install openlane==$OPENLANE2_TAG
 ```
 
-Note: On some systems, the python binary is called `python` and not `python3`.
+### 5. Download the PDK
 
-#### 4. Harden your project
+We will first install the [volare](https://github.com/efabless/volare) PDK version manager:
+```sh
+pip install volare
+```
+
+Then we will download and enable, e.g., version `cd1748bb197f9b7af62a54507de6624e30363943` of the PDK:
+```
+volare fetch --pdk sky130 cd1748bb197f9b7af62a54507de6624e30363943
+volare enable --pdk sky130 cd1748bb197f9b7af62a54507de6624e30363943
+```
+To see all available versions, you can issue the command `volare ls-remote`.
+
+### 6. Clone tt-support-tools
+
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt08` branch) inside the `tt` directory of your project:
+
+```sh
+cd ~/factory-test
+git clone -b tt08 https://github.com/TinyTapeout/tt-support-tools tt
+```
+
+### 7. Harden your project
 
 Congratulations, you are ready to harden your project!
 
