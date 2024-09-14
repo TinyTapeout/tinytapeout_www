@@ -75,11 +75,11 @@ export function ProjectPage({
           </li>
         )}
         <li>Clock: {project.clock_hz} Hz</li>
-        {feedback?.length && (
+        {feedback?.length ? (
           <li>
             <a href="#feedback">Feedback</a>: {summarizeFeedback(feedback)}{' '}
           </li>
-        )}
+        ) : null}
       </ul>
 
       <div dangerouslySetInnerHTML={{ __html: projectDocs }} />
@@ -94,12 +94,12 @@ export function ProjectPage({
         </>
       )}
 
-      {feedback?.length && (
+      {feedback?.length ? (
         <>
           <h3 id="feedback">User feedback</h3>
           <ProjectFeedbackList feedback={feedback} />
         </>
-      )}
+      ) : null}
 
       {shuttleMapSvg && (
         <>
