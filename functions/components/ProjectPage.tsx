@@ -3,10 +3,12 @@
 
 import MarkdownIt from 'markdown-it';
 import React from 'react';
+import { IProjectFeedbackList, summarizeFeedback } from '../model/feedback.js';
 import { markdownHeadingLimiter, markdownImagePathTransformer } from '../model/project.js';
 import { scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
 import { AnalogPinout } from './AnalogPinout.js';
 import { PinoutTable } from './PinoutTable.js';
+import { ProjectFeedbackList } from './ProjectFeedbackList.js';
 import { ScanchainSwitches } from './ScanchainSwitches.js';
 import { ShuttleMap } from './ShuttleMap.js';
 
@@ -14,10 +16,17 @@ export interface IProjectPropProps {
   shuttle: string;
   project: IShuttleIndexProject;
   docs: string;
+  feedback: IProjectFeedbackList | null;
   shuttleMapSvg: string | null;
 }
 
-export function ProjectPage({ shuttle, project, docs, shuttleMapSvg }: IProjectPropProps) {
+export function ProjectPage({
+  shuttle,
+  project,
+  docs,
+  feedback,
+  shuttleMapSvg,
+}: IProjectPropProps) {
   const md = MarkdownIt();
 
   // Add base URL to image paths
@@ -66,6 +75,11 @@ export function ProjectPage({ shuttle, project, docs, shuttleMapSvg }: IProjectP
           </li>
         )}
         <li>Clock: {project.clock_hz} Hz</li>
+        {feedback?.length && (
+          <li>
+            <a href="#feedback">Feedback</a>: {summarizeFeedback(feedback)}{' '}
+          </li>
+        )}
       </ul>
 
       <div dangerouslySetInnerHTML={{ __html: projectDocs }} />
@@ -77,6 +91,13 @@ export function ProjectPage({ shuttle, project, docs, shuttleMapSvg }: IProjectP
         <>
           <h3>Analog pins</h3>
           <AnalogPinout project={project} />
+        </>
+      )}
+
+      {feedback?.length && (
+        <>
+          <h3 id="feedback">User feedback</h3>
+          <ProjectFeedbackList feedback={feedback} />
         </>
       )}
 
