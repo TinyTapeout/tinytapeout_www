@@ -6,7 +6,7 @@ description: 165 designs, closed 2nd December 2022
 
 {{% toc %}}
 
-# Design details
+## Design details
 
 * [Chip design repository](https://github.com/TinyTapeout/tinytapeout-02)
 * [Chip datasheet](https://github.com/TinyTapeout/tinytapeout-02/raw/tt02/datasheet.pdf)
@@ -15,7 +15,7 @@ description: 165 designs, closed 2nd December 2022
 * [Efabless MPW shuttle](https://platform.efabless.com/projects/1410)
 * [Silicon channel on the discord server](https://discord.gg/G47hur6fyA)
 
-# Launch stats
+## Launch stats
 
 * Launched: 9 November 2022
 * Submission closed: 2 December 2022
@@ -23,7 +23,7 @@ description: 165 designs, closed 2nd December 2022
 * Chips expected September 2023, PCBs expected November 2023
 * Chips shipped early Feb 2024.
 
-# Project statistics
+## Project statistics
 
 * 165 projects submitted. Each project is 150 x 170um
 * Youngest submitter: [4 years old](https://tinytapeout.com/runs/tt02/031)
@@ -37,22 +37,22 @@ description: 165 designs, closed 2nd December 2022
 
 ![whole die](images/tinytapeout.png)
 
-# Project Showcase
+## Project Showcase
 
-## Wokwi projects
+### Wokwi projects
 * [UART-CC](https://tinytapeout.com/runs/tt02/057)
 * [Nano-neuron](https://tinytapeout.com/runs/tt02/066)
 * [Worm in a Maze](https://tinytapeout.com/runs/tt02/084)
 * [Wolf sheep cabbage river crossing puzzle ASIC design](https://tinytapeout.com/runs/tt02/111)
 
-## HDL projects 
+### HDL projects 
 * [Avalon Semiconductors 'TBB1143' Programmable Sound Generator](https://tinytapeout.com/runs/tt02/024/)
 * [Pi (π) to 1000+ decimal places](https://tinytapeout.com/runs/tt02/036)
 * [FPGA test](https://tinytapeout.com/runs/tt02/090)
 * [RV8U - 8-bit RISC-V Microcore Processor](https://tinytapeout.com/runs/tt02/107)
 * [8-bit CPU](https://tinytapeout.com/runs/tt02/085/)
 
-# Testimonials / Endorsements
+## Testimonials / Endorsements
 
 An educational chip development workflow entirely in-browser, 
 from graphic entry to GDSII output for #sky130! Stunning work by 
@@ -74,7 +74,7 @@ Aside from that, It was amazing how seamless and easy was the whole process.
 ---
 More on [Twitter](https://twitter.com/search?q=tinytapeout).
 
-# All projects
+## All projects
 | Index | Title | Author |
 | ----- | ----- | -------|
 | 0 | [Test Inverter Project](000) | Matt Venn|
