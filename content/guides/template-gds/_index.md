@@ -197,7 +197,7 @@ __View Logs__:
 
 __Common Pitfalls__:
 
-- The seting of permissions to publish pages.
+- The setting of permissions to publish pages.
       
    - Fix: Refer and follow the [steps to enable](#enable-github-actions) the pages.
 
