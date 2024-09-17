@@ -86,7 +86,9 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 ## Wokwi Actions
 
 1. **Access Actions Tab**:
-   - Go to the ‘Actions’ tab in your repository to view results. Note that each commit will trigger these actions to run again. Find out more: how the GitHub actions work to build the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) files for your project, you can check [here](https://tinytapeout.com/making_asics/).
+   - Go to the ‘Actions’ tab in your repository to view results. 
+   - Each commit will trigger these actions to run again. 
+   - Find out more: how the GitHub actions work to build the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) files for your project, you can check [here](https://tinytapeout.com/making_asics/).
     
 2. **Actions for Wokwi**:
 
@@ -98,28 +100,30 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
        <img src="images/actions.png" alt="actionslist" width="300" style="border: 1px solid #000;"/>
 
-    Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
+    - Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
 
 ## Troubleshoot Action Failures 
 
 1. **Docs Action**:
-
    - This action generates a preview of how your documentation will look.
+
    - Check the action result to get the status of the check. 
 
-   <img src="images/CheckActions.png" alt="Docs Action Result" width="550"/>
+     <img src="images/CheckActions.png" alt="Docs Action Result" width="550" style="border: 1px solid #000;" />
    
-   - View the Errors and Modify your Docs based on the Error showed, commit the new info.md for actions to rerun. [Tips]() for common cause of errors is shown in the end of this guide.
+   - View the Errors and Modify your Docs based on the Error displayed, commit the new info.md for actions to rerun. 
 
-   <img src="images/checkerrors.png" alt="Docs Action error" width="550"/>
+     <img src="images/checkerrors.png" alt="Docs Action error" width="550" style="border: 1px solid #000;"/>
 
-   - Committing the change will re-run the action and you will be able to check if your change has fixed the problem.
+   - [Tips](#tips) for common cause of errors is shown in the end of this guide.
 
-    <img src="images/changes_docscheck_success.png" alt="Docs Action success" width="550"/>
+   - Committing the changes will re-run the action and you will be able to check if your change has fixed the problem.
 
-    - Download the PDF to verify formatting and content.
+     <img src="images/changes_docscheck_success.png" alt="Docs Action success" width="550" style="border: 1px solid #000;"/>
 
-    <img src="images/actions_pdf.png" alt="Docs Action pdf" width="300"/>
+   - Download the PDF to verify formatting, your project datasheet and content.
+
+      <img src="images/actions_pdf.png" alt="Docs Action pdf" width="300" style="border: 1px solid #000;"/>
 
 
 <!-- ![Docs Action Result](images/CheckActions.png)
@@ -129,32 +133,82 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 ![Docs Success PDF](images/actions_pdf.png) -->
 
 2. **GDS Action**:
+- This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details.
+- __Action View__: Similar to docs action, the gds action result can be viewed from Actions Tab and selecting 'gds' under the list of 'All workflows'. The 'gds' action also has other jobs 'precheck' and 'viewer' which are dependent on the main 'gds' job.
+- __Summary__:The gds action if succesful generates a   summary of 
+1. __gds summary__:
 
-   - This action results in warnings, utilization statistics, and cell usage.
-   - View Action results.
-   - what do the metrics mean - what standard cells are in use? is that what you expected? explain why the results here might not match your drawing
-   - Use the 3D viewer to inspect your design by panning, zooming, and toggling layer visibility. open the 3d viewer
-    guide to the viewer, what each part does, the short cut keys.
-    - isolate a cell, where are the mosfets
+   - Synthesis Warnings section is to display the warnings in your design. Synthesis of a design refers to  conversion of high level description of digital system to the target technology library, converting the generic gates into specific gates from a technology library (such as NAND, NOR, flip-flops, etc.) based on the fabrication process.
+      <img src="images/gdsummary.png" alt="STD" width="500" style="border: 1px solid #000;"/>
 
 
-3. **Manual Action Check**:
+   - Standard cell usage according to the category of cells. These cells are comprised of Sky130nm PDK from [Skywater Technologies](https://skywater-pdk.readthedocs.io/en/main/index.html).
+   - The details for each of the standard cells utilised in your project can be viewed by clicking on specific cells. 
+   <img src="images/view_std_Cells.png" alt="STD" width="500" style="border: 1px solid #000;"/>
 
-    - Usually, on each commit, the workflow runs automatically, However in a scenario that you changed WOKWI design itself and now you want to check the action result, Manual action workflow is to be opted. 
+   - The cell usage table includes additional cells such as fill cells and tap cells that are not part of your original design. certain cells like fill cells and tap cells are automatically inserted during the physical design stage to ensure the integrity of the layout and meet the manufacturing requirements. For instance, Tap cells are to prevent latch-up conditions and Fill cells are to maintain uniform density across the chip and avoid uneven metal deposition. 
 
-    <img src="images/manual_action_test_gds.png" alt=" Action Manual" width="550"/>
+2. __precheck summary__:
+   - The precheck summary includes the Layout pre-requisites required to be met before sending for a tapeout.
+      <img src="images/prechecksummary.png" alt="PCS" width="300" style="border: 1px solid #000;"/>
+3. __viewer summary__:
+   - This section offers a unique feature that allows you to view the layout abstraction of your design.
+   - The layout 2D Preview is directly shown in the same page.
+   - The 3D view of your layout can be seen by clicking on '__open 3D viewer__'.
+
+      <img src="images/3dviewer.png" alt="PCS" width="300" style="border: 1px solid #000;"/>
+      
+
+  
+ __3D Viewer__:
+   - The 3D GDS of your design is rendered in a web browser tab. The key strokes for few operations are as below
+      - 1: Hide Fill, Decap, Tap cells
+      - 2: Hide top cell geometry
+      - 3: Isolate selection / back
+      - 4: Zoom to selection
+   - There are other controls like Layer visibility, cell/Instances visibilty etc. 
+   <img src="images/gdsoutput.png" alt="PCS" width="500" style="border: 1px solid #000;"/>
+   - To zoom on to the layout, sliding the mouse roller or regular zoom gesture with the mousepad works.
+   - The panning of layout can be done typically by clicking and dragging.
+   - The layout can be moved by Shift + Left click + drag. 
+   - The layer visibility can be toggled using the checkboxes on the right of viewer under the 'layers' section.
+   - For Instance, you can observe the MOSFET typically contains Active Area made of diffusion material, Gate terminal made of  polysilicon and metal layers, vias for signal routing.
+   <img src="images/or_layout_annotated.png" alt="PCS1" width="500" style="border: 1px solid #000;"/>
+   - Similarly, the Cells/Instances section can be utilised to toggle the visibiity of cells.
+   - You can get layout view of an isolated cell selected from the whole view by selecting a required portion with  keystroke of 3. In the example shown below, the isolated cell is a four input OR gate. 
+   <img src="images/isolate_Cells.png" alt="PCS2" width="500" style="border: 1px solid #000;"/>
 
 ## Next Steps
+Usually, on each commit, the workflow runs automatically, However in a scenario that you changed WOKWI design itself and now you want to check the action result, Manual action workflow is to be opted. For instance, the 'gds' action is selected to run manually as shown.
 
-try adding a new standard cell and re-run the action (how to re-run)
+<img src="images/manual_action_test_gds.png" alt=" Action Manual" width="550" style="border: 1px solid #000;"/>
 
+In such a case of change in logic of your Wokwi design, the standard cells that are inferred also change and this change can be noticed from the summary section of the latest workflow run under the Actions Tab of your repository.
 
 ## Tips
-where to look if an action fails.  common causes
-    no permissions to publish page
-    issue with info.yaml incorrect wowi Id
-    issue with no docs / default docs
+__View Logs__:
+- The logs for each of the actions can be viewed and downloaded from the 'Artifacts' section of the actions summary page in your repository. 
 
+   <img src="images/logs.png" alt=" Action Manual" width="550" style="border: 1px solid #000;"/>
+
+- The errors for any action can be viewed from the logs or the jobs section.
+
+   <img src="images/checkerrors.png" alt=" Action Manual" width="550" style="border: 1px solid #000;"/>
+
+__Common Pitfalls__:
+
+- The seting of permissions to publish pages.
+      
+   - Fix: Refer and follow the [steps to enable](#enable-github-actions) the pages.
+
+- Incorrect Wokwi Project ID
+
+   - Fix: The Project Id for your projet is found on the address bar of your wokwi project page. Recheck with the digits. Do not include any quotes for the number in the 'wokwi_id' field of info.yaml. Also note that your wokwi project should be in compliance with the [Tiny Tapeout template](https://wokwi.com/projects/354858054593504257).
+
+- Missing Docs or Unaltered docs
+
+   - Fix: Leaving the info.md in its default original form leads to failure of docs action. The info.md doc should always be modified according to your project. 
+  
 <!-- 
 
 ## Working with an HDL
