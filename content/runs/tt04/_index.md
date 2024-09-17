@@ -6,21 +6,21 @@ description: 143 designs, closed 8th September 2023
 
 {{% toc %}}
 
-# Design details
+## Design details
 
 * [Github repository](https://github.com/TinyTapeout/tinytapeout-04)
 * [PDF datasheet](https://tinytapeout.github.io/tinytapeout-04/datasheet.pdf)
 * [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-04)
 * [Shuttle index](https://tinytapeout.github.io/tinytapeout-04/shuttle_index.json)
 
-# Launch stats
+## Launch stats
 
 * Launched: 1 July 2023
 * Submission closed: 8 September 2023
 * Submitted to Efabless [2309C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
 * Chips expected Febuary 2024, PCBs expected March 2024
 
-# Project statistics
+## Project statistics
 
 * 143 projects
 * submissions from over 30 countries
@@ -42,11 +42,11 @@ description: 143 designs, closed 8th September 2023
     - music     : 4
 
 
-# Whole die render
+## Whole die render
 
 ![whole die](images/tinytapeout-tt04.png)
 
-# Testimonials
+## Testimonials
 
 Davey: TinyTapeout provided an amazing opportunity for me to pursue something I thought I could only reach after years of tertiary education, custom silicon of my design! The CI/CD workflows setup by the team make it trivial for anyone to get started with ASICs, highly encourage people to give it a go! 
 
@@ -100,7 +100,7 @@ KPW: Bloop. Just submitted my first chip design to #TinyTapeout  using #Rust  HD
 
 Phansel: GCC and Python opened up computing to students and enthusiasts; Tiny Tapeout blew the gates open on the semiconductor digital design process! I’m immensely thankful for the TT team’s efforts towards infrastructure and accessibility; without the tooling's short iteration time & pointed feedback, I couldn’t have imagined a project and figured out how to make it work in the same weekend.
 
-# Project Showcase
+## Project Showcase
 
 * [VGA ray caster game](033)
 * [Chiptune vintage 8 bit sound generator](037)
@@ -121,7 +121,7 @@ Phansel: GCC and Python opened up computing to students and enthusiasts; Tiny Ta
 * [Clock synchronizer](215)
 * [Randomizer and status checker](288)
 
-# All projects
+## All projects
 | Index | Title | Author |
 | ----- | ----- | -------|
 | 0 | [Chip ROM](000) | Uri Shaked|

@@ -3,12 +3,13 @@
 
 import { renderToString } from 'react-dom/server';
 import { ProjectPage } from '../../../components/ProjectPage.js';
+import { loadProjectFeedback } from '../../../model/feedback.js';
 import { loadProjectDocs, loadProjectInfo } from '../../../model/project.js';
 import { loadShuttleIndex, loadShuttleMapSvg } from '../../../model/shuttle.js';
+import { isSkipCache } from '../../../utils/cache.js';
 import { fetchTextAsset } from '../../../utils/context.js';
 import { notFound } from '../../../utils/notFound.js';
 import { getBaseURL } from '../../../utils/urls.js';
-import { isSkipCache } from '../../../utils/cache.js';
 
 const cache = caches.default;
 
@@ -42,9 +43,10 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   }
 
   // Not a legacy URL - fetch the project data
-  const [projectInfo, projectDocs] = await Promise.all([
+  const [projectInfo, projectDocs, projectFeedback] = await Promise.all([
     loadProjectInfo(shuttle, project),
     loadProjectDocs(shuttle, project),
+    loadProjectFeedback(shuttle, project),
   ]);
 
   if (!projectInfo || projectDocs == null) {
@@ -88,6 +90,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
             shuttle,
             project: projectInfo,
             docs: projectDocs,
+            feedback: projectFeedback,
             shuttleMapSvg,
           }),
         ),

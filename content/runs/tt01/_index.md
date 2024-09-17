@@ -6,7 +6,7 @@ description: 152 designs, closed 1st September 2022
 
 {{% toc %}}
 
-# Design details
+## Design details
 
 * [Github repository](https://github.com/tinytapeout/tinytapeout-mpw7)
 * [PDF datasheet](/tt01.pdf)
@@ -14,14 +14,14 @@ description: 152 designs, closed 1st September 2022
 * [Verification](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/verification.md)
 * [Efabless MPW submission is here](https://platform.efabless.com/projects/1229)
 
-# Launch stats
+## Launch stats
 
 * Launched: 2022-08-17
 * Submission closed: 2022-09-01
 * Submitted to Efabless 2022-09-05 for the [MPW7 shuttle](https://efabless.com/shuttle-status) using Skywater 130nm open source PDK
 * Chips expected November 2023. As this was a trial run, we are not expecting to manufacture or deliver PCBs
 
-# Project statistics
+## Project statistics
 
 * 152 projects submitted. Each project is 100um x 100um
 * 100 people willing to pay $100 for the chip mounted on a PCB.
@@ -30,49 +30,49 @@ description: 152 designs, closed 1st September 2022
 * Most cells used in a design was 600, the least was 14.
 * Total wire length 772 mm.
 
-# Images
+## Images
 
-## Whole die
+### Whole die
 
 ![whole die](/images/whole_die.png)
 
-## Render of whole die
+### Render of whole die
 
 ![render](/images/render.png)
 
 By [Maximo Balestrini](https://twitter.com/maxiborga)
 
-## Zoom on 6 individual designs
+### Zoom on 6 individual designs
 
 ![zoom](/images/zoom.png)
 
 Click to launch an interactive GDS [Viewer automatically created by the Github Action](https://proppy.github.io/tinytapeout-xls-test/) 
 
-# Project Showcase
+## Project Showcase
 
 We had several methods for submitting to Tiny Tapeout, the Wokwi graphical version, and HDL support for Verilog, Chisel, Amaranth etc.
 
-## Wokwi projects
+### Wokwi projects
 
 * [LFSR](https://wokwi.com/projects/341344337258349139)
 * [PopCount](https://wokwi.com/projects/340285391309374034)
 * [RGB LED driver](https://wokwi.com/projects/341188777753969234)
 * [BCD counter](https://wokwi.com/projects/341296149788885588)
 
-## HDL projects
+### HDL projects
 
 * [4bit CPU](https://github.com/tommythorn/tinytapeout-4-bit-cpu)
 * [6bit CORDIC](https://github.com/sfmth/tinytapeout-tinycordic)
 * [Ring oscillator research test](https://github.com/BarsMonster/MicroASICV)
 * [FPGA](https://github.com/gatecat/tinytapeout-fpga-test)
 
-# Selected community contributions
+## Selected community contributions
 
 * [Overview video](https://twitter.com/bovensiepen/status/1563600293472141313) 
 * [Animated GDS exploded view](https://twitter.com/ChrisPVille/status/1565566061814185984)
 * [3D renders](https://twitter.com/maxiborga/status/1565081697057660928)
 
-# Testimonials / Endorsements
+## Testimonials / Endorsements
 
 I want to change my VLSI class in the spring (April-June) to utilise your tiny chip infrastructure. If I could say every student in my class got something made, that would be awesome.
 

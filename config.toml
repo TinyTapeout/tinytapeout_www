@@ -10,11 +10,6 @@ theme = "learn"
 [markup.goldmark.renderer]
   unsafe= true
 
-[markup]
-  [markup.tableOfContents]
-    endLevel = 2
-    startLevel = 1
-
 [params]
   Description = "Quicker, easier and cheaper than ever to make your own chip!"
   themeVariant = "tinytapeout"
