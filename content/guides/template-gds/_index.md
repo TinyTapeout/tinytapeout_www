@@ -62,7 +62,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 ##  Edit the `info.md` File in the Docs Directory
 
   **Update Documentation**:
-   - Include detailed instructions on how to experiment with your design. This documentation is useful for users receiving the chip and for you to recall design details later. Note that leaving the info.md unmodified will cause the 'docs' action to fail. Save and commit your changes. Commit can be done in similar way as in Step 2.
+   - Include detailed instructions on how to experiment with your design. This documentation is useful for users receiving the chip and for you to recall design details later. Note that leaving the info.md unmodified will cause the 'docs' action to fail. Save and commit your changes as you did before.
 
    <img src="images/documentation.png" alt="doc" width="550"/>
 <!-- ![Documentation](images/documentation.png) -->
@@ -71,20 +71,19 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 ## Wokwi Actions
 
 1. **Access Actions Tab**:
-   - Go to the ‘Actions’ tab in your repository to view results. Note that each commit will trigger these actions to run again. Find out more: how the GitHub actions work to build the GDS (link to zero to asic GDS terminology page) files for your project, you can check here (link to /making_asics).
+   - Go to the ‘Actions’ tab in your repository to view results. Note that each commit will trigger these actions to run again. Find out more: how the GitHub actions work to build the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) files for your project, you can check [here](https://tinytapeout.com/making_asics/).
     
 2. **Actions for Wokwi**:
 
     - docs: This action generates a preview of how your documentation will look.
-    - fpga:
-    - gds: Action to generate the gds for your project, results for warnings, utilization statistics, and cell usage.
-    - wokwi test:
+    - fpga: This action generates bitstream for a compatible FPGA
+    - gds: This action generates the gds for your project, results for warnings, utilization statistics, and cell usage.
+    - wokwi test: This action will test the design if you created a truth table for your wokwi design.
     
 
     <img src="images/actions.png" alt="actionslist" width="300"/>
 
-    Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green
-    Now, the Action results are to be watched to resolve the action failures.
+    Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
 
 ## Troubleshoot Action Failures 
 
@@ -99,7 +98,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
    <img src="images/checkerrors.png" alt="Docs Action error" width="550"/>
 
-   - Commit will redpo the check and observe the status. 
+   - Committing the change will re-run the action and you will be able to check if your change has fixed the problem.
 
     <img src="images/changes_docscheck_success.png" alt="Docs Action success" width="550"/>
 
