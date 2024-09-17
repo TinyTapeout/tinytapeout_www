@@ -9,24 +9,31 @@ weight: 60
 This guide will walk you through the process of preparing your design for submission using the TinyTapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3d viewer.
 If you don't already have a GitHub account, please create one before proceeding.
 
+## Pre-requisites
+
+**Check Wokwi Project**: The digital design that you want to tapeout can be created following this [video tutorial](https://tinytapeout.com/digital_design/wokwi/). Note that your wokwi project should comply with the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257).
+
+**Github Account**:  If you don’t have a GitHub account, sign up for one from [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
+
 
 ## Access the GitHub Template
 
-1. **Create a GitHub Account**: If you don’t have a GitHub account, sign up for one from [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
+1. **Navigate to the Template Repository**: 
+   - GitHub templates are predefined configurations or starter files that streamline the creation of new repositories, issues, or pull requests.
+   - Repository Templates are used to create new repositories with predefined structure and files (e.g., documentation, configuration files). 
+   - There two types of template repositories: one for Wokwi designs and another for Verilog or other HDLs. For this guide, we'll use the [Wokwi Template](https://github.com/TinyTapeout/tt09-wokwi-template). 
 
-2. **Navigate to the Template Repository**: 
-   - We offer two types of repositories: one for Wokwi designs and another for Verilog or other HDLs. For this guide, we'll use the [Wokwi template](https://github.com/TinyTapeout/tt08-wokwi-template).
 
-3. **Create Your Repository**:
+2. **Create Your Repository**:
    - Click the ‘Use this template’ button to generate your own copy of the repository.
 
-   <img src="images/template.png" alt="Use Template Repository" width="550"/>
+   <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>
 <!-- ![Use Template Repository](images/template.png) -->
 
 ## Enable GitHub Actions
-GitHub Actions allow automated tasks to run. They are enabled by default, but we need to enable them to publish the results
+GitHub Actions allow automated tasks to run. They are enabled by default, but we need to enable them to publish the results.
 1. **Go to Repository Settings**:
-   - Access your repository’s settings page.
+   - Access your repository’s settings page of the repo that is created by you from the template.
 
 2. **Configure Build and Deploy Source**:
    - Navigate to the “Pages” section and set the build and deploy source to GitHub Actions.
@@ -34,27 +41,33 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 3. **Allow Actions**:
    - Ensure that actions are enabled to create the results page.
 
-   <img src="images/gitpages.png" alt="Enable Git Actions" width="550"/>
+   <img src="images/gitpages.png" alt="Enable Git Actions" width="550" style="border: 1px solid #000;" />
 <!-- ![Enable GitHub Actions](images/gitpages.png) -->
 ##  Edit the `info.yaml` File
 
 1. **Adjust Wokwi ID**:
-   - For Wokwi projects, update the Wokwi ID in the `info.yaml` file to match the ID from your Wokwi project.
-   - For HDL projects, use the source files section as covered in a separate guide titled [Working with an HDL]().
-
-   <img src="images/WOKWI_Project_ID.png" alt="Wokwi ID" width="550"/>
+   - For Wokwi projects, update the Wokwi ID in the `info.yaml` file of yur repository to match the ID from your Wokwi project.
+   
+    <img src="images/WOKWI_Project_ID.png" alt="Wokwi ID" width="550" style="border: 1px solid #000;"/>
 <!-- ![Set the Wokwi ID](images/WOKWI_Project_ID.png) -->
 
-2. **Fill Out Metadata**:
-   - Enter the title, author information, and your Discord username if applicable.
-3. **Describe Pins**:
-   - Provide descriptions for the pins to aid in testing other designs. 
+2. **Fill Metadata**:
+   - Enter the 'title', 'author', and your 'discord' username if applicable.
+   - It is recommended to include a brief project description in the 'description' field.
+   - For the Wokwi projects, the 'language' field should be set to 'Wokwi'.
+   - If your project has clock frequency specification, provide the frequency in Hz under the 'clock_hz' field.
 
-   <img src="images/info_yaml.png" alt="yamlinfo" width="550"/>
+    <img src="images/wokwi_metadata.png" alt="WokwiMD" width="550" style="border: 1px solid #000;"/>
+3. **Describe Pins**:
+   - Provide descriptions for the pins to aid in testing the designs. 
+   - The Pin description are the inputs and outputs utilised in your Wokwi Project. You can refer the Wokwi project diagram to fill the pin description fields. 
+   - Note that the unused pins are to be left blank and additional pins cannot be included. 
+
+        <img src="images/info_yaml.png" alt="yamlinfo" width="200" style="border: 1px solid #000;"/>
 
     - Save your changes by clicking the commit button.
 
-    <img src="images/commitinfo.png" alt="commitinfo" width="550"/>
+       <img src="images/commitinfo.png" alt="commitinfo" width="550" style="border: 1px solid #000;"/>
 <!-- 
 ![info.yaml](images/info_yaml.png)  -->
 
@@ -62,9 +75,11 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 ##  Edit the `info.md` File in the Docs Directory
 
   **Update Documentation**:
-   - Include detailed instructions on how to experiment with your design. This documentation is useful for users receiving the chip and for you to recall design details later. Note that leaving the info.md unmodified will cause the 'docs' action to fail. Save and commit your changes as you did before.
+   - Include detailed instructions on how to experiment with your design. - This documentation is useful for users receiving the chip and for you to recall design details later and also generates the datasheet for your project. 
+   - Note that leaving the info.md unmodified will cause the 'docs' action to fail. 
+   - Save and commit your changes as you did before.
 
-   <img src="images/documentation.png" alt="doc" width="550"/>
+      <img src="images/documentation.png" alt="doc" width="550" style="border: 1px solid #000;"/>
 <!-- ![Documentation](images/documentation.png) -->
 
 
@@ -75,13 +90,13 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
     
 2. **Actions for Wokwi**:
 
-    - docs: This action generates a preview of how your documentation will look.
-    - fpga: This action generates bitstream for a compatible FPGA
-    - gds: This action generates the gds for your project, results for warnings, utilization statistics, and cell usage.
-    - wokwi test: This action will test the design if you created a truth table for your wokwi design.
+    - __docs__: This action generates a preview of how your documentation will look.
+    - __fpga__: This action generates bitstream for a compatible FPGA
+    - __gds__: This action generates the gds for your project, results for warnings, utilization statistics, and cell usage.
+    - __wokwi test__: This action will test the design if you created a truth table for your wokwi design.
     
 
-    <img src="images/actions.png" alt="actionslist" width="300"/>
+       <img src="images/actions.png" alt="actionslist" width="300" style="border: 1px solid #000;"/>
 
     Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
 
