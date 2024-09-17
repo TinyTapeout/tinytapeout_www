@@ -63,7 +63,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
    - The Pin description are the inputs and outputs utilised in your Wokwi Project. You can refer the Wokwi project diagram to fill the pin description fields. 
    - Note that the unused pins are to be left blank and additional pins cannot be included. 
 
-        <img src="images/info_yaml.png" alt="yamlinfo" width="200" style="border: 1px solid #000;"/>
+        <img src="images/info_yaml.png" alt="yamlinfo" width="100" style="border: 1px solid #000;"/>
 
     - Save your changes by clicking the commit button.
 
@@ -98,7 +98,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
     - __wokwi test__: This action will test the design if you created a truth table for your wokwi design.
     
 
-       <img src="images/actions.png" alt="actionslist" width="300" style="border: 1px solid #000;"/>
+       <img src="images/actions.png" alt="actionslist" width="100" style="border: 1px solid #000;"/>
 
     - Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
 
@@ -123,7 +123,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
    - Download the PDF to verify formatting, your project datasheet and content.
 
-      <img src="images/actions_pdf.png" alt="Docs Action pdf" width="300" style="border: 1px solid #000;"/>
+      <img src="images/actions_pdf.png" alt="Docs Action pdf" width="200" style="border: 1px solid #000;"/>
 
 
 <!-- ![Docs Action Result](images/CheckActions.png)
@@ -144,13 +144,16 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
    - Standard cell usage according to the category of cells. These cells are comprised of Sky130nm PDK from [Skywater Technologies](https://skywater-pdk.readthedocs.io/en/main/index.html).
    - The details for each of the standard cells utilised in your project can be viewed by clicking on specific cells. 
-   <img src="images/view_std_Cells.png" alt="STD" width="500" style="border: 1px solid #000;"/>
+
+      <img src="images/view_std_cells.png" alt="STD" width="500" style="border: 1px solid #000;"/>
 
    - The cell usage table includes additional cells such as fill cells and tap cells that are not part of your original design. certain cells like fill cells and tap cells are automatically inserted during the physical design stage to ensure the integrity of the layout and meet the manufacturing requirements. For instance, Tap cells are to prevent latch-up conditions and Fill cells are to maintain uniform density across the chip and avoid uneven metal deposition. 
 
 2. __precheck summary__:
    - The precheck summary includes the Layout pre-requisites required to be met before sending for a tapeout.
+
       <img src="images/prechecksummary.png" alt="PCS" width="300" style="border: 1px solid #000;"/>
+      
 3. __viewer summary__:
    - This section offers a unique feature that allows you to view the layout abstraction of your design.
    - The layout 2D Preview is directly shown in the same page.
