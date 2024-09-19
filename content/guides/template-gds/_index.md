@@ -49,7 +49,6 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
       - The Pin description are the inputs and outputs utilised in your Wokwi Project. You can refer the Wokwi project diagram to fill the pin description fields. 
       - Note that the unused pins are to be left blank and additional pins cannot be included. 
       - Save your changes by clicking the commit button.
-
 {{< figure src="images/commitinfo.png" title="Commit your changes" style="width:500px;" >}}   
 
 <!-- 
@@ -62,8 +61,6 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
    - Note that leaving the info.md unmodified will cause the 'docs' action to fail. 
    - Save and commit your changes as you did before.
 {{< figure src="images/documentation.png" title="Design Documentation" style="width:500px;" >}}  
-
-
 ## Wokwi Actions
 
    1. Access Actions Tab:
@@ -79,7 +76,6 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
       - wokwi test: This action will test the design if you created a truth table for your Wokwi design.
       - Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
 {{< figure src="images/actions.png" title="Github Actions of this template" style="width:300px;">}}   
-
 ## Troubleshoot Action Failures 
 
    1. Docs Action:
