@@ -75,7 +75,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
       - gds: This action generates the gds for your project, results for warnings, utilization statistics, and cell usage.
       - wokwi test: This action will test the design if you created a truth table for your Wokwi design.
       - Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
-{{< figure src="images/actions.png" title="Github Actions of this template" style="width:300px;">}}   
+ 
 ## Troubleshoot Action Failures 
 
    1. Docs Action:
@@ -86,15 +86,11 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
       - View the Errors and Modify your Docs based on the Error displayed, commit the new info.md for actions to rerun. 
 {{< figure src="images/CheckActions.png" title="docs Action Result" style="width:500px;" >}}   
 {{< figure src="images/checkerrors.png" title="docs Action error" style="width:500px;" >}}   
-
       - [Tips](#tips) for common cause of errors is shown in the end of this guide.
-
       - Committing the changes will re-run the action and you will be able to check if your change has fixed the problem.
 {{< figure src="images/changes_docscheck_success.png" title="docs Action Status Check" style="width:500px;" >}}   
-
-
       - Download the PDF to verify formatting, your project datasheet and content.
-{{< figure src="images/actions_pdf.png" title="Design Datasheet" style="width:500px;" >}}   
+
       
 
 
@@ -108,31 +104,25 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
       - This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details.
 
-      - Action View:
-         - Similar to docs action, the gds action result can be viewed from Actions Tab and selecting 'gds' under the list of 'All workflows'. The 'gds' action also has other jobs 'precheck' and 'viewer' which are dependent on the main 'gds' job.
+      - Action View: Similar to docs action, the gds action result can be viewed from Actions Tab and selecting 'gds' under the list of 'All workflows'. The 'gds' action also has other jobs 'precheck' and 'viewer' which are dependent on the main 'gds' job.
 
 ## View your Design Summary:
 The gds action if succesful generates a   summary of 
 
    1. gds summary:
       - Synthesis Warnings section is to display the warnings in your design. Synthesis of a design refers to  conversion of high level description of digital system to the target technology library, converting the generic gates into specific gates from a technology library (such as NAND, NOR, flip-flops, etc.) based on the fabrication process.
-
 {{< figure src="images/gdsummary.png" title="gds Action Summary" style="width:500px;" >}}   
-
       - Standard cell usage according to the category of cells. These cells are comprised of Sky130nm PDK from [Skywater Technologies](https://skywater-pdk.readthedocs.io/en/main/index.html).
       - The details for each of the standard cells utilised in your project can be viewed by clicking on specific cells. 
-
 {{< figure src="images/view_std_cells.png" title="View Standard Cells" style="width:500px;" >}}   
       - The cell usage table includes additional cells such as fill cells and tap cells that are not part of your original design. certain cells like fill cells and tap cells are automatically inserted during the physical design stage to ensure the integrity of the layout and meet the manufacturing requirements. For instance, Tap cells are to prevent latch-up conditions and Fill cells are to maintain uniform density across the chip and avoid uneven metal deposition. 
 
    2. precheck summary:
       - The precheck summary includes the Layout pre-requisites required to be met before sending for a tapeout.
 {{< figure src="images/prechecksummary.png" title="Summary of precheck job" style="width:500px;" >}}   
-
-      
+   
    3. viewer summary:
       - This section offers a unique feature that allows you to view the layout abstraction of your design.
-      
       - The 3D view of your layout can be seen by clicking on 'open 3D viewer'.
 {{< figure src="images/3dviewer.png" title="3D viewer Button" style="width:500px;" >}}   
 
@@ -142,10 +132,10 @@ The gds action if succesful generates a   summary of
    2. 3D Viewer: 
       - Click on 'open 3D viewer'
       - The 3D GDS of your design is rendered in a web browser tab. The key strokes for few operations are as below
-      - 1: Hide Fill, Decap, Tap cells
-      - 2: Hide top cell geometry
-      - 3: Isolate selection / back
-      - 4: Zoom to selection
+            1. Hide Fill, Decap, Tap cells
+            2. Hide top cell geometry
+            3. Isolate selection / back
+            4. Zoom to selection
       - There are other controls like Layer visibility, cell/Instances visibilty etc. 
 {{< figure src="images/gdsoutput.png" title="3D view of GDS" style="width:500px;" >}}   
       - To zoom on to the layout, sliding the mouse roller or regular zoom gesture with the mousepad works.
@@ -172,20 +162,17 @@ In such a case of change in logic of your Wokwi design, the standard cells that 
       - The logs for each of the actions can be viewed and downloaded from the 'Artifacts' section of the actions summary page in your repository. 
 {{< figure src="images/logs.png" title="View Logs" style="width:500px;" >}}   
        - The errors for any action can be viewed from the logs or the jobs section.
-{{< figure src="images/checkerror.png" title="View Errors if any for an action" style="width:500px;">}}   
+{{< figure src="images/checkerrors.png" title="View Errors if any for an action" style="width:500px;">}}   
 
    2. Common Pitfalls:
 
       a. The setting of permissions to publish pages.
-      
          - Fix: Refer and follow the [steps to enable](#enable-github-actions) the pages.
 
       b. Incorrect Wokwi Project ID
-
          - Fix: The Project Id for your projet is found on the address bar of your Wokwi project page. Recheck with the digits. Do not include any quotes for the number in the 'wokwi_id' field of info.yaml. Also note that your Wokwi project should be in compliance with the [Tiny Tapeout template](https://wokwi.com/projects/354858054593504257).
 
       c. Missing Docs or Unaltered docs
-
          - Fix: Leaving the info.md in its default original form leads to failure of docs action. The info.md doc should always be modified according to your project. 
   
 <!-- 
