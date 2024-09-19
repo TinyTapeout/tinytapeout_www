@@ -26,63 +26,42 @@ This guide will walk you through the process of preparing your design for submis
 2. Create Your Repository:
    - Click the ‘Use this template’ button to generate your own copy of the repository.
 
-   <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>
-<!-- ![Use Template Repository](images/template.png) -->
+{{< figure src="images/template.png" title="Template Repo" style="width:500px;" >}}
 
 ## Enable GitHub Actions
 GitHub Actions allow automated tasks to run. They are enabled by default, but we need to enable them to publish the results.
-   1. Go to Repository Settings:
-      - Access your repository’s settings page of the repo that is created by you from the template.
-
-   2. Configure Build and Deploy Source:
-      - Navigate to the “Pages” section and set the build and deploy source to GitHub Actions.
-
-   3. Allow Actions:
-      - Ensure that actions are enabled to create the results page.
-
-{{< figure src="images/gitpages.png" title="Enable Git Actions" >}}
-  
-
+   1. Go to Repository Settings: Access your repository’s settings page of the repo that is created by you from the template.
+   2. Configure Build and Deploy Source: Navigate to the “Pages” section and set the build and deploy source to GitHub Actions.
+   3. Allow Actions: Ensure that actions are enabled to create the results page.
+{{< figure src="images/gitpages.png" title="Enable Git Actions" style="width:500px;" >}}
 ##  Edit the `info.yaml` File
 
-   1. Adjust Wokwi ID:
-      - For Wokwi projects, update the Wokwi ID in the `info.yaml` file of yur repository to match the ID from your Wokwi project.
-
-{{< figure src="images/WOKWI_Project_ID.png" title="Wokwi ID" >}}   
-
-
+   1. Adjust Wokwi ID: For Wokwi projects, update the Wokwi ID in the `info.yaml` file of yur repository to match the ID from your Wokwi project.
+{{< figure src="images/WOKWI_Project_ID.png" title="Wokwi ID" style="width:500px;" >}}   
    2. Fill Metadata:
       - Enter the 'title', 'author', and your 'discord' username if applicable.
       - It is recommended to include a brief project description in the 'description' field.
       - For the Wokwi projects, the 'language' field should be set to 'Wokwi'.
       - If your project has clock frequency specification, provide the frequency in Hz under the 'clock_hz' field.
-
-{{< figure src="images/wokwi_metadata.png" title="Metadata" >}}   
-
-
+{{< figure src="images/wokwi_metadata.png" title="Metadata" style="width:500px;" >}}   
    3. Describe Pins:
-
-      - Provide descriptions for the pins to aid in testing the designs. 
+      - Provide descriptions for the pins in info.yaml under 'pinout' section to aid in testing the designs. 
       - The Pin description are the inputs and outputs utilised in your Wokwi Project. You can refer the Wokwi project diagram to fill the pin description fields. 
       - Note that the unused pins are to be left blank and additional pins cannot be included. 
+      - Save your changes by clicking the commit button.
 
-{{< figure src="images/info_yaml.png" title="I/O Pins Description" >}}   
-
-    - Save your changes by clicking the commit button.
-
-{{< figure src="images/commitinfo.png" title="Commit your changes" >}}   
+{{< figure src="images/commitinfo.png" title="Commit your changes" style="width:500px;" >}}   
 
 <!-- 
 ![info.yaml](images/info_yaml.png)  -->
 
 <!-- ![Commit the modified info.yaml](images/commitinfo.png) -->
 ##  Edit the `info.md` File in the Docs Directory:
-   - Update Documentation:
-      - Include detailed instructions on how to experiment with your design. 
-      - This documentation is useful for users receiving the chip and for you to recall design details later and also generates the datasheet for your project. 
-      - Note that leaving the info.md unmodified will cause the 'docs' action to fail. 
-      - Save and commit your changes as you did before.
-{{< figure src="images/documentation.png" title="Design Documentation" >}}  
+   - Include detailed instructions on how to experiment with your design. 
+   - This documentation is useful for users receiving the chip and for you to recall design details later and also generates the datasheet for your project. 
+   - Note that leaving the info.md unmodified will cause the 'docs' action to fail. 
+   - Save and commit your changes as you did before.
+{{< figure src="images/documentation.png" title="Design Documentation" style="width:500px;" >}}  
 
 
 ## Wokwi Actions
@@ -99,7 +78,7 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
       - gds: This action generates the gds for your project, results for warnings, utilization statistics, and cell usage.
       - wokwi test: This action will test the design if you created a truth table for your Wokwi design.
       - Note that red indicates failure and green indicates success. Only the actions 'docs' and 'gds' need to be green.
-{{< figure src="images/actions.png" title="Github Actions of this template" >}}   
+{{< figure src="images/actions.png" title="Github Actions of this template" style="width:300px;">}}   
 
 ## Troubleshoot Action Failures 
 
@@ -109,17 +88,17 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
       - Check the action result to get the status of the check. 
       - View the Errors and Modify your Docs based on the Error displayed, commit the new info.md for actions to rerun. 
-{{< figure src="images/CheckActions.png" title="docs Action Result" >}}   
-{{< figure src="images/checkerrors.png" title="docs Action error" >}}   
+{{< figure src="images/CheckActions.png" title="docs Action Result" style="width:500px;" >}}   
+{{< figure src="images/checkerrors.png" title="docs Action error" style="width:500px;" >}}   
 
       - [Tips](#tips) for common cause of errors is shown in the end of this guide.
 
       - Committing the changes will re-run the action and you will be able to check if your change has fixed the problem.
-{{< figure src="images/changes_docscheck_success.png" title="docs Action Status Check" >}}   
+{{< figure src="images/changes_docscheck_success.png" title="docs Action Status Check" style="width:500px;" >}}   
 
 
       - Download the PDF to verify formatting, your project datasheet and content.
-{{< figure src="images/actions_pdf.png" title="Design Datasheet" >}}   
+{{< figure src="images/actions_pdf.png" title="Design Datasheet" style="width:500px;" >}}   
       
 
 
@@ -142,24 +121,24 @@ The gds action if succesful generates a   summary of
    1. gds summary:
       - Synthesis Warnings section is to display the warnings in your design. Synthesis of a design refers to  conversion of high level description of digital system to the target technology library, converting the generic gates into specific gates from a technology library (such as NAND, NOR, flip-flops, etc.) based on the fabrication process.
 
-{{< figure src="images/gdsummary.png" title="gds Action Summary" >}}   
+{{< figure src="images/gdsummary.png" title="gds Action Summary" style="width:500px;" >}}   
 
       - Standard cell usage according to the category of cells. These cells are comprised of Sky130nm PDK from [Skywater Technologies](https://skywater-pdk.readthedocs.io/en/main/index.html).
       - The details for each of the standard cells utilised in your project can be viewed by clicking on specific cells. 
 
-{{< figure src="images/view_std_cells.png" title="View Standard Cells" >}}   
+{{< figure src="images/view_std_cells.png" title="View Standard Cells" style="width:500px;" >}}   
       - The cell usage table includes additional cells such as fill cells and tap cells that are not part of your original design. certain cells like fill cells and tap cells are automatically inserted during the physical design stage to ensure the integrity of the layout and meet the manufacturing requirements. For instance, Tap cells are to prevent latch-up conditions and Fill cells are to maintain uniform density across the chip and avoid uneven metal deposition. 
 
    2. precheck summary:
       - The precheck summary includes the Layout pre-requisites required to be met before sending for a tapeout.
-{{< figure src="images/prechecksummary.png" title="Summary of precheck job" >}}   
+{{< figure src="images/prechecksummary.png" title="Summary of precheck job" style="width:500px;" >}}   
 
       
    3. viewer summary:
       - This section offers a unique feature that allows you to view the layout abstraction of your design.
       
       - The 3D view of your layout can be seen by clicking on 'open 3D viewer'.
-{{< figure src="images/3dviewer.png" title="3D viewer Button" >}}   
+{{< figure src="images/3dviewer.png" title="3D viewer Button" style="width:500px;" >}}   
 
 ## View GDS Of Your Design:  
    1. 2D Viewer: 
@@ -172,22 +151,22 @@ The gds action if succesful generates a   summary of
       - 3: Isolate selection / back
       - 4: Zoom to selection
       - There are other controls like Layer visibility, cell/Instances visibilty etc. 
-{{< figure src="images/gdsoutput.png" title="3D view of GDS" >}}   
+{{< figure src="images/gdsoutput.png" title="3D view of GDS" style="width:500px;" >}}   
       - To zoom on to the layout, sliding the mouse roller or regular zoom gesture with the mousepad works.
       - The panning of layout can be done typically by clicking and dragging.
       - The layout can be moved by Shift + Left click + drag. 
       - The layer visibility can be toggled using the checkboxes on the right of viewer under the 'layers' section.
       - For Instance, you can observe the MOSFET typically contains Active Area made of diffusion material, Gate terminal made of  polysilicon and metal layers, vias for signal routing.
-{{< figure src="images/or_layout_annotated.png" title="Cells and Layers Selection" >}}   
+{{< figure src="images/or_layout_annotated.png" title="Cells and Layers Selection" style="width:500px;" >}}   
 
       - Similarly, the Cells/Instances section can be utilised to toggle the visibiity of cells.
       - You can get layout view of an isolated cell selected from the whole view by selecting a required portion with  keystroke of 3. In the example shown below, the isolated cell is a four input OR gate. 
-{{< figure src="images/isolate_Cells.png" title="Isolate Cells View" >}}   
+{{< figure src="images/isolate_Cells.png" title="Isolate Cells View" style="width:500px;" >}}   
 
 
 ## Next Steps
 Usually, on each commit, the workflow runs automatically, However in a scenario that you changed Wokwi design itself and now you want to check the action result, Manual action workflow is to be opted. For instance, the 'gds' action is selected to run manually as shown.
-{{< figure src="images/manual_action_test_gds.png" title="Re-run Workflow" >}}   
+{{< figure src="images/manual_action_test_gds.png" title="Re-run Workflow" style="width:500px;" >}}   
 
 
 In such a case of change in logic of your Wokwi design, the standard cells that are inferred also change and this change can be noticed from the summary section of the latest workflow run under the Actions Tab of your repository.
@@ -195,9 +174,9 @@ In such a case of change in logic of your Wokwi design, the standard cells that 
 ## Tips
    1. View Logs:
       - The logs for each of the actions can be viewed and downloaded from the 'Artifacts' section of the actions summary page in your repository. 
-{{< figure src="images/logs.png" title="View Logs" >}}   
+{{< figure src="images/logs.png" title="View Logs" style="width:500px;" >}}   
        - The errors for any action can be viewed from the logs or the jobs section.
-{{< figure src="images/checkerror.png" title="View Errors if any for an action" >}}   
+{{< figure src="images/checkerror.png" title="View Errors if any for an action" style="width:500px;">}}   
 
    2. Common Pitfalls:
 
