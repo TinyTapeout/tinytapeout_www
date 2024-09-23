@@ -7,7 +7,7 @@ weight: 60
 
 This document explains how to harden your Tiny Tapeout projects locally, to speed up iteration times. The whole process should take roughly 10 minutes.
 
-It uses the [factory-test](https://github.com/TinyTapeout/tt08-factory-test) project as an example.
+It uses the [factory-test](https://github.com/TinyTapeout/tt09-factory-test) project as an example.
 
 ### Environment Setup
 
@@ -22,7 +22,7 @@ Note: On some systems, the python binary is called `python` and not `python3`.
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
-git clone https://github.com/TinyTapeout/tt08-factory-test ~/factory-test
+git clone https://github.com/TinyTapeout/tt09-factory-test ~/factory-test
 ```
 
 #### 1. Set up environment variables
@@ -30,18 +30,18 @@ git clone https://github.com/TinyTapeout/tt08-factory-test ~/factory-test
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export OPENLANE2_TAG=2.0.8
+export OPENLANE2_TAG=2.1.7
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
 
 #### 2. Clone tt-support-tools
 
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt08` branch) inside the `tt` directory of your project:
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt09` branch) inside the `tt` directory of your project:
 
 ```sh
 cd ~/factory-test
-git clone -b tt08 https://github.com/TinyTapeout/tt-support-tools tt
+git clone -b tt09 https://github.com/TinyTapeout/tt-support-tools tt
 ```
 
 #### 3. Python and Pip Dependencies
