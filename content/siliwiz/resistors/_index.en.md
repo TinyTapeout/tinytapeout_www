@@ -60,7 +60,7 @@ After we’ve finished our design we can turn each layer into a mask. A mask all
 
 ![](../images/image7.png)
 
-[Photolithography](https://www.zerotoasiccourse.com/terminology/photolithography/) is the key step that allows us to take the patterns we create in a tool like SiliWiz and miniaturise them down to the nanometer scale. It also lets us easily tile the same design over the silicon wafer to make the individual chips. It allows us to use a prepared image of the chip to make millions of copies reliably and rapidly.
+[Photolithography](https://www.zerotoasiccourse.com/terminology/photolithography/) is the key technology that allows us to take the patterns we create in a tool like SiliWiz and miniaturise them down to the nanometer scale. It also lets us easily tile the same design over the silicon wafer to make the individual chips. It allows us to use a prepared image of the chip to make millions of copies reliably and rapidly.
 
 
 {{% notice tip %}}

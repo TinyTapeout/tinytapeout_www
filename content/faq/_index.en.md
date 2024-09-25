@@ -12,20 +12,7 @@ weight: 90
 
 Join the [discord community with this link](https://discord.gg/rPK2nSjxy8).
 
-# Chip Specs for TT01, TT02 & TT03
-
-## What is the top clock speed?
-
-We think it will be around 12.5KHz. It's slow because we're currently using a serial scan chain to connect all the designs.
-We have a built in [clock divider](https://github.com/tinytapeout/tinytapeout-02/blob/tt02/INFO.md#clock-divider) that can further reduce this speed down to 255 times slower than the top clock speed.
-
-We are working on a much [faster mux based version here](https://github.com/TinyTapeout/tt-multiplexer).
-
-## How many ins and outs do I get?
-
-8 ins and 8 outs.
-
-# Chip Specs for TT04 to TT07
+# Chip Specs for TT04 to TT09
 
 ## What is the top clock speed?
 
@@ -36,7 +23,7 @@ At least 50MHz. We have received silicon for our test run and are in the process
 * clock and **nreset** (low to reset)
 * 8 ins
 * 8 outs
-* 8 bidirectional ios
+* 8 bidirectional IOs
 
 ## What PDK is used for the manufacture?
 
@@ -44,7 +31,7 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 
 ## How big can my design be?
 
-For TT04 to TT07, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04 to TT09, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.
@@ -58,6 +45,21 @@ Click the picture to open an interactive viewer.
 The chips are taking between 6 and 9 months to manufacture. Then we need to do PCBA, test and order fulfillment. So expect up to 1 year's wait time!
 
 You can find an up to date estimate for each shuttle in the [runs page](/runs).
+
+# Purchasing / Product FAQs
+
+## What is the price?
+
+You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1) to check pricing.
+The first 80 orders from individuals are sponsored by Efabless, so you get 1 tile, 1 ASIC mounted on 1 demo board PCB for $150 + postage. After those first 80 are gone, the price goes up to $300.
+
+## How many chips will I receive? Can I order more?
+
+You only get 1 chip. If you want more chips you have to order more of the PCBs at $250 each - the early bird price is only available once per person.
+
+## Can I buy older chips?
+
+Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/) and are sold for around $75 and $250 respectively. We only sell spares, so there is no guarantee there will be any.
 
 # Wokwi FAQs
 

@@ -6,25 +6,25 @@ description: 135 designs, closed 2024-09-06
 
 {{% toc %}}
 
-# Design details
+## Design details
 
 * [Github repository](https://github.com/TinyTapeout/tinytapeout-08)
 * [PDF datasheet](https://tinytapeout.github.io/tinytapeout-08/datasheet.pdf)
 * [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-08)
 * [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-08/shuttle_index.json)
 
-# Launch stats
+## Launch stats
 
 * Launched: 10 June 2024
 * Submission closed: 6 September 2024
 * Submitted to Efabless [2409C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
 * Chips expected April 2025, PCBs expected May 2025
 
-# Chip map
+## Chip map
 
 {{< shuttle-map "tt08" >}}
 
-# All projects
+## All projects
 
 | Address | Title                                                                                               | Author                                                                                                                                             |
 |---------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|

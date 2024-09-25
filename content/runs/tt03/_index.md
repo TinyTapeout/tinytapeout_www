@@ -6,21 +6,21 @@ description: 249 designs, closed 24th April 2023
 
 {{% toc %}}
 
-# Design details
+## Design details
 
 * [Github repository](https://github.com/TinyTapeout/tinytapeout-03)
 * [PDF datasheet](https://github.com/TinyTapeout/tinytapeout-03/raw/main/datasheet.pdf)
 * [Verification](https://github.com/TinyTapeout/tinytapeout-03/blob/main/VERIFICATION.md)
 * [Efabless MPW submission](https://platform.efabless.com/projects/1971)
 
-# Launch stats
+## Launch stats
 
 * Launched: 1 March 2023
 * Submission closed: 24 April 2023
 * Submitted to Efabless [2304C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
 * Chips expected October 2023, PCBs expected December 2023
 
-# Project statistics
+## Project statistics
 
 * 100 projects submitted, 149 projects added from [TT02](/runs/tt02)
 * build time for all projects 22.68 hours
@@ -40,11 +40,11 @@ description: 249 designs, closed 24th April 2023
     - music     : 4
     - counter   : 4
 
-# Whole die render
+## Whole die render
 
 ![whole die](images/tinytapeout-03.png)
 
-# Project Showcase
+## Project Showcase
 
 * [12 bit PDP8](./019)
 * [Prime detector](./031)
@@ -56,7 +56,7 @@ description: 249 designs, closed 24th April 2023
 * [Ring oscillator temperature sensor](./058)
 * [Locked QTCore-A1](./072)
 
-# Testimonials / Endorsements
+## Testimonials / Endorsements
 
 Awesome! Sent my design to #TinyTapeout ! Emotion! Thanks 
 @matthewvenn , @marunmagesh and crew, for making it possible!
@@ -83,7 +83,7 @@ I've never done any hardware before (just software), but after reading the updat
 ---
 More on [Twitter](https://twitter.com/search?q=tinytapeout).
 
-# All projects
+## All projects
 | Index | Title | Author |
 | ----- | ----- | -------|
 | 0 | [Test Inverter Project](000) | Matt Venn|
