@@ -25,7 +25,16 @@ We assume your project was cloned to `~/factory-test`. If you don't have a proje
 git clone https://github.com/TinyTapeout/tt09-factory-test ~/factory-test
 ```
 
-### 2. Python and Pip Dependencies
+### 2. Clone tt-support-tools
+
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt09` branch) inside the `tt` directory of your project:
+
+```sh
+cd ~/factory-test
+git clone -b tt09 https://github.com/TinyTapeout/tt-support-tools tt
+```
+
+### 3. Python and Pip Dependencies
 
 Create a dedicated directory for the virtual Python environment and initialize it:
 
@@ -41,7 +50,7 @@ Then install the dependencies:
 pip install -r ~/factory-test/tt/requirements.txt
 ```
 
-### 3. Set up environment variables
+### 4. Set up environment variables
 
 Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `OPENLANE` specify, respecively, the version of the PDK and the version of OpenLane 2 you will use: 
 
@@ -53,43 +62,13 @@ export OPENLANE2_TAG=2.0.8
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
 
-### 4. Install OpenLane 2
+### 5. Install OpenLane 2
 
 ```sh
 pip install openlane==$OPENLANE2_TAG
 ```
 
-### 5. Download the PDK
-
-First, you will install the [volare](https://github.com/efabless/volare) PDK version manager:
-```sh
-pip install volare
-```
-
-Then you will set the `GITHUB_TOKEN` environment variable to a valid [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
-
-At this point, you can use the command `volare ls-remote` to see all available versions of the PDK.
-To make sure you use the same version as the TinyTapeout GDS actions, you shall inspect the [TT09 project submission workflow](https://github.com/TinyTapeout/tinytapeout-09/blob/main/.github/workflows/project_submission.yaml) and set the environment variable `PDK_VERSION` to the same version you find in there. You can use the following shell command:
-```sh
-export PDK_VERSION=$(curl https://raw.githubusercontent.com/TinyTapeout/tinytapeout-09/main/.github/workflows/project_submission.yaml | grep "PDK_VERSION: " | awk -F": " '{print $2}' | sed "s/'//g" )
-```
-
-Finally, you will download and enable the chosen version of the PDK:
-```
-volare fetch --pdk sky130 $PDK_VERSION
-volare enable --pdk sky130 $PDK_VERSION
-```
-
-### 6. Clone tt-support-tools
-
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt09` branch) inside the `tt` directory of your project:
-
-```sh
-cd ~/factory-test
-git clone -b tt09 https://github.com/TinyTapeout/tt-support-tools tt
-```
-
-### 7. Harden your project
+### 6. Harden your project
 
 Congratulations, you are ready to harden your project!
 
