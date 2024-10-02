@@ -16,6 +16,8 @@ Thanks!
 
 ## Developing the cloudflare functions (dynamic content)
 
+**You only need this if you are working on dynamic content. It's not needed for static content.**
+
 You'll need a recent version of node.js and npm. First, install wrangler:
 
 ```bash
