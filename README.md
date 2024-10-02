@@ -19,7 +19,7 @@ Thanks!
 You'll need a recent version of node.js and npm. First, install wrangler:
 
 ```bash
-npm i -g @cloudflare/wrangler
+npm i -g wrangler
 ```
 
 Then, you can run the functions locally with:
