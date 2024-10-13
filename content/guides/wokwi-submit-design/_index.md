@@ -29,7 +29,7 @@ Before you begin, make sure you have:
 
 In Tiny Tapeout:
 
-* **Tiles** are individual design slots on the chip. Most participants have a free tile for their design.
+* **Tiles** are individual design slots on the chip.
 * **Chips** are the actual physical chips manufactured. They contain all the tiles from different participants.
 
 > **Note:** While you have a free tile for your design, receiving a physical PCB with your chip requires an additional purchase.
@@ -66,9 +66,9 @@ In Tiny Tapeout:
   
 > **Note:** You'll need to submit any revisions if changes are made before final submission.
 
-### Apply Your Free Tile Coupon
+### If you have a coupon code for a free tile
 
-* During the submission, you'll have the option to apply a coupon for your free tile. (Feel free to ask for a coupon code.)
+* During the submission, if you have a coupon code for a free tile, you'll have the option to apply a coupon for your free tile. (Feel free to ask for a coupon code.)
 * Validate the coupon to ensure your tile is free of charge.
 
 ### Congratulations!
@@ -96,26 +96,26 @@ If you make any changes to your design after submission, you must update your su
 
 If you'd like to receive a physical PCB with your chip:
 
-* Pre-purchase your PCB here: [Tiny Tapeout Prepurchase](#).
+* Pre-purchase your PCB here: [Tiny Tapeout Prepurchase](https://app.tinytapeout.com/prepurchase).
   
 > **Note:** Only the first 100 boards are subsidized by Efabless, so act fast!
 
 ## About Efabless
 
-Efabless is our manufacturing partner, helping to make chip fabrication accessible. [Learn more about them here](#).
+Efabless is our manufacturing partner, helping to make chip fabrication accessible. [Learn more about them here](https://efabless.com/).
 
 ## Updating Documentation After the Shuttle Ends
 
 Once the shuttle run has ended, to update your documentation:
 
-* Follow this guide: [Updating Docs Post-Shuttle](#).
+* Follow this guide: [Updating Docs Post-Shuttle](https://docs.google.com/document/d/16YdQM4Lh3ZazVcNXhO2Ssty5hzKGp0fj3FKmcbMlFZo/edit#heading=h.mcvyaz7a8clr).
 
 ## Get Inspired by Other Designs
 
 Looking for ideas or want to see what others have created?
 
-* Browse past runs: [Tiny Tapeout Runs](#).
-* Check out a sample datasheet: [Sample Datasheet PDF (TT07)](#).
+* Browse past runs: [Tiny Tapeout Runs](https://tinytapeout.com/runs/).
+* Check out a sample datasheet: [Sample Datasheet PDF (TT07)](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
 
 ---
 
