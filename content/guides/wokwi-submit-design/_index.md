@@ -38,7 +38,7 @@ In Tiny Tapeout:
 
 ### Log In to Tiny Tapeout
 
-* Go to: [app.tinytapeout.com](http://app.tinytapeout.com)
+* Go to: [tinytapeout.com](https://tinytapeout.com/)
 * Click on **"Login with GitHub"**.
 * Authorize the application if prompted.
 
@@ -68,7 +68,7 @@ In Tiny Tapeout:
 
 ### If you have a coupon code for a free tile
 
-* During the submission, if you have a coupon code for a free tile, you'll have the option to apply a coupon for your free tile. (Feel free to ask for a coupon code.)
+* During the submission, if you have a coupon for a free tile, paste the code in and press the 'apply' link.
 * Validate the coupon to ensure your tile is free of charge.
 
 ### Congratulations!
@@ -83,7 +83,7 @@ If you make any changes to your design after submission, you must update your su
 
 1. Make changes to your design in your GitHub repository.
 2. Ensure that all Actions (GDS and Docs) are passing.
-3. Log back in to [app.tinytapeout.com](http://app.tinytapeout.com).
+3. Log back in to the submission portal: i.e. go to [tinytapeout.com](https://tinytapeout.com) and click "Submit your design"
 4. Resubmit your repository as before.
 5. The system will recognize that you're updating an existing submission.
 
