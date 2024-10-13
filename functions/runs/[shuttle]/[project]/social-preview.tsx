@@ -7,6 +7,7 @@ import React from 'react';
 import { loadProjectInfo } from '../../../model/project.js';
 import { loadShuttleIndex } from '../../../model/shuttle.js';
 import { isSkipCache } from '../../../utils/cache.js';
+import { loadGithubOGImage } from '../../../utils/github.js';
 
 const cache = caches.default;
 
@@ -29,6 +30,8 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     return notFound;
   }
 
+  const githubPreviewImage = await loadGithubOGImage(projectInfo.repo);
+
   return new ImageResponse(
     (
       <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%' }}>
@@ -41,7 +44,10 @@ export const onRequest: PagesFunction<Env> = async (context) => {
           }}
         >
           <img
-            src={`https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${project}/render.png`}
+            src={
+              githubPreviewImage ??
+              `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${project}/render.png`
+            }
             style={{
               position: 'absolute',
               width: '100vw',
