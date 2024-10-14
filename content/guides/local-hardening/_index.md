@@ -57,7 +57,7 @@ Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export OPENLANE2_TAG=2.0.8
+export OPENLANE2_TAG=2.1.9
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
