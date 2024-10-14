@@ -1,11 +1,9 @@
 ---
-title: 'Submit Wokwi Design'
-linktitle: 'Submit Wokwi Design'
-description: 'Submit Wokwi Design'
+title: 'Submit your Wokwi Design'
+linktitle: 'Submit your Wokwi Design'
+description: 'Submit your Wokwi Design'
 weight: 60
 ---
-
-# How to Submit Your Design to Tiny Tapeout
 
 ## What You'll Achieve
 
@@ -32,44 +30,41 @@ In Tiny Tapeout:
 * **Tiles** are individual design slots on the chip.
 * **Chips** are the actual physical chips manufactured. They contain all the tiles from different participants.
 
-> **Note:** While you have a free tile for your design, receiving a physical PCB with your chip requires an additional purchase.
-
 ## Step-by-Step Submission Guide
 
 ### Log In to Tiny Tapeout
 
-* Go to: [tinytapeout.com](https://tinytapeout.com/)
+* Go to: [app.tinytapeout.com](https://app.tinytapeout.com/)
 * Click on **"Login with GitHub"**.
 * Authorize the application if prompted.
 
 ### Submit Your Repository
 
-{{< figure src="images/submit_design_1.png" >}}
-
-* Once logged in, you'll see a field to paste your repository URL.
-* Copy your GitHub repository URL.
-
+* Once logged in, press the **Create a new project** button.
+* Copy and paste your GitHub repository URL into the Github field.
 
 {{< figure src="images/submit_design_2.png" >}}
 {{< figure src="images/submit_design_3.png" >}}
 
-* Paste it into the field and click **"Submit"**.
-
-### Complete the Submission Process
-
-* You have now submitted your design, but it’s not yet part of the tapeout. 
-
-{{< figure src="images/submit_design_4.png" >}}
-
-* Click **"Submit a New Revision"** to add your design to the shuttle.
-* Your design will then be added to the Tapeout.
-  
-> **Note:** You'll need to submit any revisions if changes are made before final submission.
+* Click the **"Create Project"** button.
 
 ### If you have a coupon code for a free tile
 
 * During the submission, if you have a coupon for a free tile, paste the code in and press the 'apply' link.
 * Validate the coupon to ensure your tile is free of charge.
+
+### Complete the Submission Process
+
+* You have now submitted your design, but it’s not yet part of the tapeout. * You have to submit a specific version of your design by pressing the **Submit a new revision** button.
+
+{{< figure src="images/submit_design_4.png" >}}
+
+* Your design will then be added to the Tapeout.
+  
+{{% notice warning %}}
+Every time you make a change to your design you'll need to update the GDS and then submit a new revision. Designs can be changed up to the deadline.
+{{% /notice %}}
+
 
 ### Congratulations!
 
@@ -82,23 +77,17 @@ If you make any changes to your design after submission, you must update your su
 ### How to Update
 
 1. Make changes to your design in your GitHub repository.
-2. Ensure that all Actions (GDS and Docs) are passing.
-3. Log back in to the submission portal: i.e. go to [tinytapeout.com](https://tinytapeout.com) and click "Submit your design"
-4. Resubmit your repository as before.
-5. The system will recognize that you're updating an existing submission.
-
-### Tips
-
-* Double-check your design before submitting to avoid the need for updates.
-* Stay aware of submission deadlines to ensure your design is included.
+1. Ensure that all Actions (GDS and Docs) are passing.
+1. If you only changed the Wokwi design, you'll have to [re-run the GitHub action](/guides/wokwi-to-gds/#tips).
+1. Log back in to the submission portal: i.e. go to [app.tinytapeout.com](https://app.tinytapeout.com).
+1. Select the project you want to update
+1. Click the **Submit a new revision** button.
 
 ## Purchasing a PCB
 
-If you'd like to receive a physical PCB with your chip:
-
-* Pre-purchase your PCB here: [Tiny Tapeout Prepurchase](https://app.tinytapeout.com/prepurchase).
+If you'd like to receive a physical PCB with your chip you can either select that option when you submit your design for the first time or you can [buy a PCB and chip here](https://app.tinytapeout.com/prepurchase).
   
-> **Note:** Only the first 100 boards are subsidized by Efabless, so act fast!
+> **Note:** Only the first 80 boards are subsidized by [Efabless](https://efabless.com), so act fast!
 
 ## About Efabless
 
