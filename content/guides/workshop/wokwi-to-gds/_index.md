@@ -1,8 +1,7 @@
 ---
-title: 'Wokwi to GDS'
-linkTitle: 'Wokwi to GDS'
-description: 'Create the GDS of your design from your Wokwi design'
-weight: 60
+title: 'Create the GDS'
+description: 'Create the GDS of your design with a GitHub action'
+weight: 40
 ---
 
 This guide will walk you through the process of preparing your Wokwi design for submission using the Tiny Tapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3d viewer.

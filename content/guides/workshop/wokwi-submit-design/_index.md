@@ -1,7 +1,6 @@
 ---
-title: 'Submit your Wokwi Design'
-linktitle: 'Submit your Wokwi Design'
-description: 'Submit your Wokwi Design'
+title: 'Submit your design'
+description: 'Get your design manufactured on Tiny Tapeout'
 weight: 60
 ---
 
