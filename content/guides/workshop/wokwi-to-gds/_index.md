@@ -36,26 +36,26 @@ The `info.yaml` is used to tell us the important details of your project, which 
 
 * Update the Wokwi ID in the `info.yaml` file of yur repository to match the ID from your Wokwi project.
 
-{{< figure src="images/WOKWI_Project_ID.png">}}   
+![](images/WOKWI_Project_ID.png?width=50pc)
 
 * Fill Metadata:
   - Enter the 'title', 'author', and your 'discord' username
   - Include a brief project description in the 'description' field.
   - If your project needs a specific clock frequency, provide the frequency in Hz under the 'clock_hz' field.
 
-{{< figure src="images/wokwi_metadata.png">}}   
+![](images/wokwi_metadata.png?width=50pc)
 
 * Describe the pins:
   - Provide descriptions for the pins to aid in testing the designs. 
   - Unused pins are to be left blank and additional pins cannot be included. 
 
-{{< figure src="images/info_yaml.png">}}   
+![](images/info_yaml.png?width=30pc)
 
 ## Save your changes
 
 Clicking the commit button will save your changes.
 
-{{< figure src="images/commitinfo.png">}}   
+![](images/commitinfo.png?width=70pc)
 
 ## Write some documentation
 
@@ -67,8 +67,6 @@ We put all the project information into a [datasheet](https://tinytapeout.github
 {{% notice warning %}}
 Leaving the info.md unmodified will cause the 'docs' action to fail. 
 {{% /notice %}}
-
-{{< figure src="images/documentation.png">}}  
 
 ## GitHub Actions
 
@@ -82,7 +80,7 @@ We use a few different actions to do different tasks:
 
 To see the currently running and historical actions, go to the ‘Actions’ tab in your repository.
 
-{{< figure src="images/actions_button.png">}}   
+![](images/actions_button.png?width=50pc)
     
 {{% notice tip %}}
 Red indicates failure and green indicates success. Only the 'docs' and 'gds' actions need to be green.
@@ -112,7 +110,7 @@ The cell usage table includes additional cells such as fill cells and tap cells 
 
 The precheck summary shows the results of all the tests we run on the design. All the checks need to be green to submit to the chip.
 
-{{< figure src="images/prechecksummary.png">}}   
+![](images/prechecksummary.png?width=50pc)
 
 #### Viewer
 
@@ -140,7 +138,7 @@ This section gives you the 3D viewer link and the 2D render of your design. Open
 
 Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's covered in the next section.
 
-For now, try the following ideas:
+## If you have time, try these next steps
 
 * Add a new cell in your Wokwi design and re-trigger the GitHub action to see the result (see the tips section below for how to do that).
 * If you're familiar with Verilog, you can take a look at the [Verilog template](https://github.com/TinyTapeout/tt09-verilog-template) and see how more advanced designs can be realised.

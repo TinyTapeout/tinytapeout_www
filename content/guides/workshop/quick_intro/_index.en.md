@@ -6,15 +6,7 @@ weight: 20
 
 SiliWiz is an online tool that will help you get a basic understanding of how semiconductors work. By drawing shapes in the canvas you can create MOSFETs and then see their cross section and simulate how they work.
 
-### Aim
-
-*   How to draw and simulate a MOSFET
-*   Understand the cross section view
-*   Understand how to read the simulation plot
-*   What to do next
-
-
-### Draw a MOSFET
+## Draw a MOSFET
 
 In this lesson we will learn how to draw a [MOSFET](https://www.zerotoasiccourse.com/terminology/mosfet/). MOSFET stands for Metal Oxide Semiconductor Field Effect Transistor.
 
@@ -30,21 +22,21 @@ In an N type MOSFET built on a P type substrate, the majority charge carriers ar
 
 That describes what’s happening physically inside a transistor. If that doesn’t make total sense though, don’t worry. How a MOSFET works will become clearer once we start making one.
 
-### SiliWiz controls
+## SiliWiz controls
 
 Here’s an overview of the SiliWiz user interface:
 
 ![](/siliwiz/images/image54.png?width=80pc)
 
-You can try it out with [this link](https://app.siliwiz.com/?preset=blank).
+Load the inverter example [here](https://app.siliwiz.com/) and try the following controls:
 
-#### Layers
+### Layers
 
 *   Control which layers are visible with the 👁 icon
 *   Choose which layer is active by clicking on the colour or the text
 *   Hover the mouse over the text to get a brief description of the layer’s purpose
 
-#### Canvas
+### Canvas
 
 *   Load a preset
 *   Undo ↶ and Redo ↷ buttons
@@ -52,18 +44,17 @@ You can try it out with [this link](https://app.siliwiz.com/?preset=blank).
 *   Click and drag to draw shapes on the canvas
 *   Click an existing shape to change its dimensions, delete it or label it
 
-#### Cross section and graph view
+### Cross section and graph view
 
 *   Switch between cross section and graph view
-*   In cross section you can drag the slider to choose where to cross section
+*   In cross section you can drag the slider to choose where to see the cross section
 *   In graph view you can adjust the sliders to change the simulation parameters
 
-
-### Let’s get drawing!
+## Let’s get drawing!
 
 The base layer of a silicon chip is called the substrate. In most cases this is a P [doped](https://www.zerotoasiccourse.com/terminology/doping/) silicon wafer. Instead of being pure silicon, it has a minute quantity of impurities added to increase the wafer’s conductivity, changing from an insulator to a semi-conductor.
 
-Go to the [SiliWiz page](https://app.siliwiz.com/?preset=blank), select the **p substrate** layer, then left-click-drag to draw a square that fills the whole canvas.
+Create a new blank [SiliWiz page](https://app.siliwiz.com/?preset=blank), select the **p substrate** layer, then left-click-drag to draw a square that fills the whole canvas.
 
 ![](/siliwiz/images/image12.png?width=20pc)
 
@@ -71,9 +62,10 @@ The **p substrate** needs to be at 0 volts, so we are going to connect it to th
 
 The **p tap** is formed inside the substrate and makes it easier to connect to 0 volts. It's made by bombarding the substrate with atoms of a P type semiconductor, for example Boron. The atoms only hit the substrate where there is a hole in the mask.
 
-In the corner draw a small square of **p tap**. Then we connect that up through a **metal1 via** to a **metal1** contact labelled **vss**.
-
-Click the **metal1** contact, and choose the option ‘Set Label’. or S on the keyboard. Then type **vss** to set the label.
+1. In the corner draw a small square of **p tap**.
+2. Over the top of **p tap** draw a square of **metal1 via**
+3. Over the top of the **metal1 vai** draw a square of **metal1** to make a contact.
+4. Click the **metal1** contact, and choose the option ‘Set Label’. or S on the keyboard. Then type **vss** to connect the substrate to 0 volts.
 
 ![](/siliwiz/images/image9.png)
 
@@ -91,11 +83,11 @@ Drag the cross section slider up and down so you can see the layers clearly. If 
 
 Look at the cross section of the MOSFET - the **n diffusion** got split! Now we have 2 **n type** sections with a **p type** in between. What happened?
 
-### Split diffusion
+## Split diffusion
 
-We could have drawn the gate first, and then the diffusion, but drawing the diffusion first lets us more easily align the gate in the middle. When the chip is made, the gate is put down first, and then the diffusion mask is used. The gate protects the P substrate from the N type diffusion, so we end up with 2 regions of N type and a region of P in the middle.
+When the chip is made, the gate is created first, and then the diffusion mask is used . The gate protects the P substrate from the N type diffusion, so we end up with 2 regions of N type and a region of P in the middle.
 
-### Drain, Source and Gate
+## Drain, Source and Gate
 
 To see how well our MOSFET works we need to connect up the gate, drain and source. The body is the **p substrate**, and we’ve already connected that to vss.
 
@@ -109,7 +101,7 @@ For an N MOSFET to work, the body needs to be kept at the same or lower voltage 
 
 Label the gate **in**, the source **vss** and the drain **vdd**. We’ve already connected the body to vss. If you get stuck, check [my solution here](http://app.siliwiz.com/?preset=nmosfet).
 
-### VGS curves
+## VGS curves
 
 In this experiment, we’re going to see what happens when we increase the gate voltage from 0v to 5v and measure the current that flows from vdd to vss. Current is a measure of how many charge carriers are flowing per second, it tells us how ‘switched on’ the MOSFET is. Current is measured in [Amps](https://en.wikipedia.org/wiki/Ampere).
 
@@ -131,7 +123,7 @@ Try changing the width of the gate of the MOSFET and see how this affects the cu
 
 If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
 
-### SiliWiz stackup
+## SiliWiz stackup
 
 When a factory develops a way to make a chip, they need to share that information with the chip designers - that’s you! 
 
@@ -150,7 +142,7 @@ After we’ve finished our design we can turn each layer into a mask. A mask all
 
 [Photolithography](https://www.zerotoasiccourse.com/terminology/photolithography/) is the key technology that allows us to take the patterns we create in a tool like SiliWiz and miniaturise them down to the nanometer scale. It also lets us easily tile the same design over the silicon wafer to make the individual chips. It allows us to use a prepared image of the chip to make millions of copies reliably and rapidly.
 
-### Next steps
+## If you have time, try these next steps
 
 If you're interested to learn more about microelectronics with SiliWiz, you can try going through all the lessons [here](/siliwiz). Have fun!
 

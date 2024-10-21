@@ -94,7 +94,7 @@ After you've chosen a component, it gets added to your schematic. Now let's wire
 
 For more Wokwi tips, check the [FAQ](https://tinytapeout.com/faq/#how-do-i-do-x-y-z-with-wokwi).
 
-## Simulate!
+## Simulate
 
 Once you've wired your new logic gate up, press the play button to simulate and see how it works.
 
@@ -102,13 +102,13 @@ Once you've wired your new logic gate up, press the play button to simulate and 
 If you see the ERC Warnings box in the top right, these are important to solve. Ask for help if you can't work it out.
 {{% /notice %}}
 
-## Next steps
+## Save your design!
+
+Before you go much further, press the **save** button to keep your design safe.
+
+## If you have time, try these next steps
 
 After you've placed and simulated your first components with Wokwi, you can start to build more complex circuits. This tool is mostly useful for beginners making circuits of less than 100 gates. More than that and you'd move onto a hardware description language like Verilog.
-
-Before you go much further, press the **save** button to keep your design safe for the next step.
-
-### Some ideas to try
 
 * Try a few logic gates in sequence or combination. Write down the truth table (what happens on the output for every combination of inputs).
 * Try one of the [digital design lesson plans](/digital_design).

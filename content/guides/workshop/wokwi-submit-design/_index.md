@@ -4,14 +4,7 @@ description: 'Get your design manufactured on Tiny Tapeout'
 weight: 60
 ---
 
-## What You'll Achieve
-
-By the end of this guide you'll:
-
-* Submit your design to the Tiny Tapeout shuttle for manufacturing.
-* Understand how Tiny Tapeout aggregates hundreds of designs into one chip.
-* Learn how to update your submission if you make changes.
-* Learn how to purchase a PCB.
+This guide will show you how to submit your design to Tiny Tapeout and understand the difference between tiles and chips.
 
 ## Prerequisites
 
@@ -26,15 +19,15 @@ Before you begin, make sure you have:
 
 In Tiny Tapeout:
 
-* **Tiles** are individual design slots on the chip.
-* **Chips** are the actual physical chips manufactured. They contain all the tiles from different participants.
+* **Tiles** are the individual designs on the chip. If your project gets more complex you can use more tiles.
+* **Chips** are the actual physical chips manufactured. They contain all the tiles from all the participants.
 
 ## Step-by-Step Submission Guide
 
 ### Log In to Tiny Tapeout
 
 * Go to: [app.tinytapeout.com](https://app.tinytapeout.com/)
-* Click on **"Login with GitHub"**.
+* Click the **"Sign in with GitHub"** button.
 * Authorize the application if prompted.
 
 ### Submit Your Repository
@@ -50,11 +43,11 @@ In Tiny Tapeout:
 ### If you have a coupon code for a free tile
 
 * During the submission, if you have a coupon for a free tile, paste the code in and press the 'apply' link.
-* Validate the coupon to ensure your tile is free of charge.
 
 ### Complete the Submission Process
 
-* You have now submitted your design, but it’s not yet part of the tapeout. * You have to submit a specific version of your design by pressing the **Submit a new revision** button.
+* You have now submitted your design, but it’s not yet part of the tapeout. 
+* You have to submit a specific version of your design by pressing the **Submit a new revision** button.
 
 {{< figure src="images/submit_design_4.png" >}}
 
@@ -64,10 +57,9 @@ In Tiny Tapeout:
 Every time you make a change to your design you'll need to update the GDS and then submit a new revision. Designs can be changed up to the deadline.
 {{% /notice %}}
 
-
 ### Congratulations!
 
-You've successfully submitted your design to the Tiny Tapeout shuttle. Your design is now queued for inclusion in the next manufacturing run.
+You've successfully submitted your design to the Tiny Tapeout shuttle. We usually manufacture 4 chips per year, and we will include your design on the next chip.
 
 ## Important: Updating Your Submission
 
@@ -98,14 +90,9 @@ Once the shuttle run has ended, to update your documentation:
 
 * Follow this guide: [Updating Docs Post-Shuttle](https://docs.google.com/document/d/16YdQM4Lh3ZazVcNXhO2Ssty5hzKGp0fj3FKmcbMlFZo/edit#heading=h.mcvyaz7a8clr).
 
-## Get Inspired by Other Designs
+## If you have time, try these next steps
 
 Looking for ideas or want to see what others have created?
 
 * Browse past runs: [Tiny Tapeout Runs](https://tinytapeout.com/runs/).
 * Check out a sample datasheet: [Sample Datasheet PDF (TT07)](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
-
----
-
-That's it! You’ve successfully learned how to use the Tiny Tapeout GitHub template to turn your design into ASIC files for manufacturing. Happy hacking!
-
