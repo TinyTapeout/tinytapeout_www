@@ -6,7 +6,7 @@ weight: 10
 
 The information in this document applies to Tiny Tapeout 4 and beyond.
 
-Tiny Tapeout includes a clock input signal (`clk`), provided externally through the `mprj_io[6]` pin of the caravel chip (pin number 37 in the QFN-64 chip package).
+Tiny Tapeout includes a clock input signal (`clk`), provided externally through the `mprj_io[6]` pin of the chip (pin number 37 in the QFN-64 chip package).
 
 ![QFN-64 chip clk pin](images/pinout_clk.svg)
 
@@ -14,7 +14,7 @@ Tiny Tapeout includes a clock input signal (`clk`), provided externally through 
 
 Internally, both the `clk` and `rst_n` pins are handled like any other input pins. We expect a latency (insertion delay) of up to 10 nanoseconds between the chip's I/O pad and your project's clock.
 
-The caravel chip uses the [sky130_ef_io_gpiov2_pad](https://skywater-pdk.readthedocs.io/en/main/contents/libraries/sky130_fd_io/docs/user_guide.html#sky130-fd-io-gpiov2-additional-features) macro for the I/O pads. The documentation specifies a maximum input frequency of 66 MHz. Therefore, we believe that the maximum clock frequency for your designs will be around 66 MHz.
+The chip uses the [sky130_ef_io_gpiov2_pad](https://skywater-pdk.readthedocs.io/en/main/contents/libraries/sky130_fd_io/docs/user_guide.html#sky130-fd-io-gpiov2-additional-features) macro for the I/O pads. The documentation specifies a maximum input frequency of 66 MHz. Therefore, we believe that the maximum clock frequency for your designs will be around 66 MHz.
 
 ## Clock Generation
 
