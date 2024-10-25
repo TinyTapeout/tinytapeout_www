@@ -2,6 +2,8 @@
 title: 'Submit your design'
 description: 'Get your design manufactured on Tiny Tapeout'
 weight: 60
+aliases:
+    - /guides/workshop/wokwi-submit-design
 ---
 
 This guide will show you how to submit your design to Tiny Tapeout and understand the difference between tiles and chips.
@@ -15,12 +17,12 @@ Before you begin, make sure you have:
 
 {{< figure src="images/passing_indicators.png" >}}
 
-## Understanding Tiles and Chips
+### Understanding Tiles and Chips
 
 In Tiny Tapeout:
 
 * **Tiles** are the individual designs on the chip. If your project gets more complex you can use more tiles.
-* **Chips** are the actual physical chips manufactured. They contain all the tiles from all the participants.
+* **Chips** are the actual physical chips manufactured. They contain all the tiles from all the participants. We mount the chips onto the [demoboard](/specs/pcb) before sending to you.
 
 ## Step-by-Step Submission Guide
 
@@ -47,7 +49,7 @@ In Tiny Tapeout:
 ### Complete the Submission Process
 
 * You have now submitted your design, but it’s not yet part of the tapeout. 
-* You have to submit a specific version of your design by pressing the **Submit a new revision** button.
+* You now have to submit a specific version of your design by pressing the **Submit a new revision** button.
 
 {{< figure src="images/submit_design_4.png" >}}
 
@@ -63,36 +65,31 @@ You've successfully submitted your design to the Tiny Tapeout shuttle. We usuall
 
 ## Important: Updating Your Submission
 
-If you make any changes to your design after submission, you must update your submission.
+If you make any changes to your design after submission, you **must** update your submission.
 
 ### How to Update
 
-1. Make changes to your design in your GitHub repository.
-1. Ensure that all Actions (GDS and Docs) are passing.
-1. If you only changed the Wokwi design, you'll have to [re-run the GitHub action](/guides/wokwi-to-gds/#tips).
+1. If you only changed the Wokwi design, you can [re-run the GitHub action](/guides/wokwi-to-gds/#tips).
+1. Otherwise, make changes to your design in your GitHub repository.
+1. Check the GDS and Docs actions are passing.
 1. Log back in to the submission portal: i.e. go to [app.tinytapeout.com](https://app.tinytapeout.com).
-1. Select the project you want to update
+1. Select the project you want to update.
 1. Click the **Submit a new revision** button.
 
 ## Purchasing a PCB
 
-If you'd like to receive a physical PCB with your chip you can either select that option when you submit your design for the first time or you can [buy a PCB and chip here](https://app.tinytapeout.com/prepurchase).
+If you'd like to receive a physical PCB with your chip you can either select that option when you submit your design for the first time or you can [buy the chip and PCB here](https://app.tinytapeout.com/prepurchase).
   
-> **Note:** Only the first 80 boards are subsidized by [Efabless](https://efabless.com), so act fast!
-
-## About Efabless
+{{% notice tip %}} 
+Only the first 80 boards are subsidized by [Efabless](https://efabless.com), so act fast!
+{{% /notice %}} 
 
 Efabless is our manufacturing partner, helping to make chip fabrication accessible. [Learn more about them here](https://efabless.com/).
 
-## Updating Documentation After the Shuttle Ends
-
-Once the shuttle run has ended, to update your documentation:
-
-* Follow this guide: [Updating Docs Post-Shuttle](https://docs.google.com/document/d/16YdQM4Lh3ZazVcNXhO2Ssty5hzKGp0fj3FKmcbMlFZo/edit#heading=h.mcvyaz7a8clr).
 
 ## If you have time, try these next steps
 
-Looking for ideas or want to see what others have created?
-
-* Browse past runs: [Tiny Tapeout Runs](https://tinytapeout.com/runs/).
-* Check out a sample datasheet: [Sample Datasheet PDF (TT07)](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
+* You can continue to update your design until the shuttle closing date.
+* Take a look at our [previous chips](https://tinytapeout.com/runs/).
+* Check out the [Tiny Tapeout 7 datasheet](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
+* Once the shuttle run has ended you can update your documentation by following this [guide](https://docs.google.com/document/d/16YdQM4Lh3ZazVcNXhO2Ssty5hzKGp0fj3FKmcbMlFZo/edit#heading=h.mcvyaz7a8clr).

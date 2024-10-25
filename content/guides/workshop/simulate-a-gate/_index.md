@@ -3,6 +3,8 @@ title: 'Simulate a logic gate'
 linkTitle: 'Draw and simulate a logic gate with Wokwi'
 description: 'Draw and simulate a logic gate with Wokwi'
 weight: 30
+aliases:
+    - /guides/workshop/wokwi-get-started
 ---
 
 This guide will show you how to wire up a logic gate and simulate it in Wokwi.

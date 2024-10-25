@@ -2,6 +2,8 @@
 title: Draw your own MOSFET
 description: "Learn the basics of SiliWiz by drawing a MOSFET"
 weight: 20
+aliases:
+    - /guides/workshop/quick_intro
 ---
 
 SiliWiz is an online tool that will help you get a basic understanding of how semiconductors work. By drawing shapes in the canvas you can create MOSFETs and then see their cross section and simulate how they work.
@@ -119,7 +121,7 @@ The i(vdd) means to plot the current instead of the voltage. The \*-1000 means t
 
 What does the graph show us? To start with, when the gate is less than around one volt, there is no current flowing. The MOSFET is off. Once we get past a threshold, the MOSFET starts to conduct and lets more and more current flow. This value is called the gate-source threshold.
 
-Try changing the width of the gate of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
+Try changing the length (the horizontal size) of the gate of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
 
 If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
 
@@ -144,8 +146,7 @@ After we’ve finished our design we can turn each layer into a mask. A mask all
 
 ## If you have time, try these next steps
 
-If you're interested to learn more about microelectronics with SiliWiz, you can try going through all the lessons [here](/siliwiz). Have fun!
-
-You can also watch this video I made inside the IHP semiconductor factory.
+* If you're interested to learn more about microelectronics with SiliWiz, you can try going through all the lessons [here](/siliwiz). Have fun!
+* I visited IHP semiconductor factory to see how chips are made first hand. You can watch it below.
 
 {{< youtube aBDJQ9NYTEU >}}

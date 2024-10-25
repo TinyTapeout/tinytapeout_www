@@ -2,14 +2,16 @@
 title: 'Create the GDS'
 description: 'Create the GDS of your design with a GitHub action'
 weight: 40
+aliases:
+    - /guides/workshop/wokwi-to-gds
 ---
 
-This guide will walk you through the process of preparing your Wokwi design for submission using the Tiny Tapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3d viewer.
+This guide will walk you through the process of preparing your Wokwi design for submission using the Tiny Tapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3D viewer.
 
 ## Prerequisites
 
 * Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257).
-* GitHub Account: If you don’t have a GitHub account, sign up for one from [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
+* GitHub Account: If you don’t have a GitHub account, sign up for one [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 ## Use the GitHub Template
 
@@ -34,11 +36,11 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
 
 The `info.yaml` is used to tell us the important details of your project, which Wokwi project it is, who its by, what it does, how to test.
 
-* Update the Wokwi ID in the `info.yaml` file of yur repository to match the ID from your Wokwi project.
+* Update the Wokwi ID in the `info.yaml` file of your repository to match the ID from your Wokwi project.
 
 ![](images/WOKWI_Project_ID.png?width=50pc)
 
-* Fill Metadata:
+* Update metadata:
   - Enter the 'title', 'author', and your 'discord' username
   - Include a brief project description in the 'description' field.
   - If your project needs a specific clock frequency, provide the frequency in Hz under the 'clock_hz' field.
@@ -83,7 +85,7 @@ To see the currently running and historical actions, go to the ‘Actions’ tab
 ![](images/actions_button.png?width=50pc)
     
 {{% notice tip %}}
-Red indicates failure and green indicates success. Only the 'docs' and 'gds' actions need to be green.
+Red indicates failure and green indicates success. Only the 'docs' and 'gds' actions need to be green to submit your design.
 {{% /notice %}}
 
 ### Docs Action
@@ -110,8 +112,6 @@ The cell usage table includes additional cells such as fill cells and tap cells 
 
 The precheck summary shows the results of all the tests we run on the design. All the checks need to be green to submit to the chip.
 
-![](images/prechecksummary.png?width=50pc)
-
 #### Viewer
 
 This section gives you the 3D viewer link and the 2D render of your design. Open the 3D viewer by clicking the link.
@@ -136,7 +136,7 @@ This section gives you the 3D viewer link and the 2D render of your design. Open
 
 ## Congratulations!
 
-Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's covered in the next section.
+Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's covered in the next guide.
 
 ## If you have time, try these next steps
 
@@ -146,7 +146,6 @@ Once you have the GDS and Docs jobs completing successfully, you are ready to su
 
 ## Tips
 
-On each commit the GitHub actions runs automatically. However if you change your Wokwi design, you might want to force the action to run again without making a commit. 
-To do this you can use the 'Run workflow' button.
+On each commit the GitHub actions runs automatically. However, if you change your Wokwi design, you can force the action to run again by using the 'Run workflow' button.
 
 {{< figure src="images/manual_action_test_gds.png" title="Re-run Workflow" >}}   
