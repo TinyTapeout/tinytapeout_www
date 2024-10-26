@@ -142,6 +142,7 @@ Once you have the GDS and Docs jobs completing successfully, you are ready to su
 
 * Add a new cell in your Wokwi design and re-trigger the GitHub action to see the result (see the tips section below for how to do that).
 * If you're familiar with Verilog, you can take a look at the [Verilog template](https://github.com/TinyTapeout/tt09-verilog-template) and see how more advanced designs can be realised.
+* Take a look at the Verilog exported from your design. Here's the [template](https://wokwi.com/api/projects/354858054593504257/verilog). Open the link and change the ID for yours.
 * Watch the video about [how the GitHub action works behind the scenes](/making_asics).
 
 ## Tips
