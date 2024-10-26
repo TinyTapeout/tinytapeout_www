@@ -1,5 +1,5 @@
 ---
-title: 'Submit your design'
+title: '4 - Submit your design'
 description: 'Get your design manufactured on Tiny Tapeout'
 weight: 60
 aliases:

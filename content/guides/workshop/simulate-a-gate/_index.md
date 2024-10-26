@@ -1,5 +1,5 @@
 ---
-title: 'Simulate a logic gate'
+title: '2 -  Simulate a logic gate'
 linkTitle: 'Draw and simulate a logic gate with Wokwi'
 description: 'Draw and simulate a logic gate with Wokwi'
 weight: 30
