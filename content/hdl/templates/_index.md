@@ -5,7 +5,7 @@ description: "Handy templates to help submit faster with an HDL"
 
 # Verilog
 
-https://github.com/TinyTapeout/tt08-verilog-template
+https://github.com/TinyTapeout/tt09-verilog-template
 
 This repo shows how to:
 
