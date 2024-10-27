@@ -1,6 +1,6 @@
 ---
 title: "Terms"
-date: 2023-10-04T09:57:17+01:00
+date: 2024-10-27T13:55:41+00:00
 weight: 150
 ---
 
@@ -77,16 +77,27 @@ You hereby represent and warrant that: (i) you are the rightful owner of all rig
 
 
 6.1.
-You hereby undertake and agree to comply with all applicable national and foreign import, export and reexport control laws and regulations, including, without limitation, the Export Administration Regulations (“**EAR**”) maintained by the U.S. Department of Commerce, trade and economic sanctions maintained by the US Treasury Department Office of Foreign Assets Control, and the International Traffic in Arms Regulations (“**ITAR**”) maintained by the US Department of State and any similar laws and regulations of any other jurisdiction (collectively, “**Export Control Laws**”). You agree to provide Tiny Tapeout with all information, documentation and certifications requested by Tiny Tapeout to comply with and verify compliance with applicable Export Control Laws (collectively, “**Export Control Information**”). You hereby represent, warrant and covenant that all such Export Control Information is accurate, complete and up to date.  
+You hereby undertake and agree to comply with all applicable national and foreign import, export and reexport control laws and regulations, including, without limitation, the Export Administration Regulations (“**EAR**”) maintained by the U.S. Department of Commerce, trade and economic sanctions maintained by the US Treasury Department Office of Foreign Assets Control (“**OFAC**”), and the International Traffic in Arms Regulations (“**ITAR**”) maintained by the US Department of State and any similar laws and regulations of any other jurisdiction (collectively, “**Export Control Laws**”). You agree to provide Tiny Tapeout with all information, documentation and certifications requested by Tiny Tapeout to comply with and verify compliance with applicable Export Control Laws (collectively, “**Export Control Information**”). You hereby represent, warrant and covenant that all such Export Control Information is accurate, complete and up to date.
 
 
 6.2.
-You are solely and exclusively liable for ensuring that your Designs and/or Design Documentation, the submission thereof for the purposes set forth in these Terms, and the inclusion of your Designs on a Chip hereunder complies with applicable Export Controls Laws, including, without limitation, the determination to seek or obtain any required licenses or approvals. You shall not, directly or indirectly, sell, export, reexport, transfer, divert, or otherwise dispose of any Chips or components thereof to any country, territory, entity, or person prohibited by applicable Export Controls Laws, without obtaining any prior authorization from applicable governmental authorities required by applicable Export Control Laws.
+You are solely and exclusively liable for ensuring that your Designs and/or Design Documentation, the submission thereof for the purposes set forth in these Terms, and the inclusion of your Designs on a Chip hereunder complies with applicable Export Controls Laws, including, without limitation, the determination to seek or obtain any required licenses or approvals. You shall not, without obtaining any prior authorization from applicable governmental
+authorities required by applicable Export Control Laws, directly or indirectly, sell, export, reexport, transfer, divert, or otherwise dispose of any Chips or components thereof to any
+country, territory, entity, or person prohibited by applicable Export Controls Laws, including, for the avoidance of doubt, (i) any country or territory subject to comprehensive, government-wide, or broad sectoral sanctions (currently consisting of Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela, and the Crimea, Donetsk, Kherson, Luhansk, and Zaporizhzhia regions of Ukraine) (together, “**Sanctioned Countries**”), (ii) any individual or entity designated on OFAC’s List of Specially Designated Nationals and Blocked Persons or the U.S. Department of Commerce’s Entity List, Denied Persons List, Unverified List, or Military End-User List, or (iii)
+any entity owned 50% or greater, or otherwise controlled by, the persons described in (ii) (such persons in (ii) and (iii), together, “**Sanctioned Persons**”).
 
 
-6.3
-You hereby represent and warrant that: (i) no Design and/or Design Documentation you submit hereunder: (a) would be subject to ITAR, or (b) if subject to EAR, would be controlled for purposes other than Anti-Terrorism purposes or would be classified as EAR99; and (ii) you are not (a) located in a country to which export, reexport, transfer or release is prohibited by applicable Export Control Laws, (b) under the control of an entity organized in or a resident of a country to which export, re-export, transfer or release is prohibited by applicable Export Control Laws, or (c) a person prohibited under applicable law from receiving items subject to applicable Export Control Laws, or otherwise with whom it is prohibited to transact under applicable Export Control Laws.   
+6.3.
+You hereby represent and warrant that: (i) no Design and/or Design Documentation you submit hereunder would be subject to the ITAR, (ii) if such Design and/or Design Documentation is subject to the EAR, it is not controlled for purposes other than “Anti-Terrorism” (also known as “AT”) purposes or is classified as EAR99; and (iii) you are not (a) located in a country to which export, reexport, transfer or release is prohibited by applicable Export Control Laws (including, for the avoidance of doubt, any Sanctioned Country or any other destination for which an export license is required under Export Control Laws), (b) under the control of an entity organized in or a resident of a country described in (a), or (c) a Sanctioned Person.
 
+
+6.4.
+Any agreement between you and any of your customers relating to any Chips produced hereunder shall require such customers to abide by Export Control Laws and to provide assurances to that effect to Tiny Tapeout upon Tiny Tapeout’s request. You will immediately notify Tiny Tapeout of any known or suspected violation of this provision of Section 6 of the agreement.
+
+
+6.5.
+In the event you become a Sanctioned Person, are found to be in violation of Export Control Laws, or otherwise unable to comply Export Control Laws, you shall (i) immediately cease any activity involving any Chips produced hereunder, and related technical information and documentation, and (ii) inform Tiny Tapeout within three (3) business days of the occurrence. 
+Tiny Tapeout in its sole discretion has the right to terminate this Agreement, suspend, cease, or terminate performance hereunder, or modify Tiny Tapeout’s business relationship with you based on its interpretation of Export Control Laws and in order to comply with such laws.
 
 ## 7. Fees; Payment
 
@@ -147,7 +158,7 @@ These Terms shall be governed by the laws of the State of Israel, without refere
 
 ## Last Updated
 
-June 23, 2024.  
+October 27, 2024.  
 
  
 
