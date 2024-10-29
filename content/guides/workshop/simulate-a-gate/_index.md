@@ -113,5 +113,7 @@ Before you go much further, press the **save** button to keep your design safe.
 After you've placed and simulated your first components with Wokwi, you can start to build more complex circuits. This tool is mostly useful for beginners making circuits of less than 100 gates. More than that and you'd move onto a hardware description language like Verilog.
 
 * Try a few logic gates in sequence or combination. Write down the truth table (what happens on the output for every combination of inputs).
+* Make the 7 segment display the first letter of your name when you set the input to a secret code.
 * Try one of the [digital design lesson plans](/digital_design).
 * Look at some of the Wokwi designs that people [submitted to a previous shuttle](https://app.tinytapeout.com/shuttles/tt06). Each Wokwi design is marked with the **W** logo, and clicking the logo opens the schematic.
+* If you want to try with Verilog, see the [HDL guide](/hdl).
