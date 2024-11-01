@@ -66,7 +66,7 @@ The **p tap** is formed inside the substrate and makes it easier to connect to 
 
 1. In the corner draw a small square of **p tap**.
 2. Over the top of **p tap** draw a square of **metal1 via**
-3. Over the top of the **metal1 vai** draw a square of **metal1** to make a contact.
+3. Over the top of the **metal1 via** draw a square of **metal1** to make a contact.
 4. Click the **metal1** contact, and choose the option ‘Set Label’. or S on the keyboard. Then type **vss** to connect the substrate to 0 volts.
 
 ![](/siliwiz/images/image9.png)
