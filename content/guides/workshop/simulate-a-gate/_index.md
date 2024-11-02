@@ -55,7 +55,7 @@ Wokwi starts in **drawing** mode where we can add new components and wire them u
 * Toggle the input switches and see how the outputs are updated to be the inverse of the first 4 inputs.
 
 {{% notice tip %}}
-If you select the red input swithes with the mouse, you can then type the numbers 1 to 8 to toggle the switches.
+If you select the red input switches with the mouse, you can then type the numbers 1 to 8 to toggle the switches.
 {{% /notice %}}
 
 ## Add a logic gate
