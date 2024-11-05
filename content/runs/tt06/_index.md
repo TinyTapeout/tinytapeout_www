@@ -103,7 +103,6 @@ description: 238 designs, closed 2024-04-19
 | 236 | [easy PAL](236) | Matthias Musch|
 | 237 | [PLL blocks](237) | Vipul Sharma|
 | 238 | [Rule 30 Engine!](238) | andrewtron3000|
-| 239 | [TT06 Analog Factory Test](239) | Sylvain Munaut|
 | 258 | [tt06-RV32E_MinMCU](258) | Weihao Liu|
 | 263 | [Crossbar Array](263) | Kevin Guan|
 | 264 | [TinyRV1 CPU](264) | Prof. Dr. Matthias Jung, Jonathan Hager, Philipp Wetzstein|
@@ -165,6 +164,7 @@ description: 238 designs, closed 2024-04-19
 | 493 | [It's Alive](493) | Jonathan Anderson, Qubitbytes Ltd|
 | 494 | [Analog loopback](494) | Matt Venn|
 | 495 | [BCD to single 7 segment display Converter](495) | Kelvin Kung|
+| 512 | [TT06 Analog Factory Test](512) | Sylvain Munaut|
 | 514 | [AudioChip_V2](514) | Thorsten Knoll|
 | 516 | [Relaxation oscillator](516) | Matt Venn|
 | 518 | [Integrated Distorion Pedal](518) | Nanik Adnani|
