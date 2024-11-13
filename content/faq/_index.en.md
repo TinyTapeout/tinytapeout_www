@@ -12,7 +12,7 @@ weight: 90
 
 Join the [discord community with this link](https://discord.gg/rPK2nSjxy8).
 
-# Chip Specs for TT04 to TT09
+# Chip Specs for TT04 to TT10
 
 ## What is the top clock speed?
 
@@ -31,7 +31,7 @@ We are using the open source Skywater 130nm [PDK](https://www.zerotoasiccourse.c
 
 ## How big can my design be?
 
-For TT04 to TT09, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
+For TT04 to TT10, the standard tile size is about 160x100 um. This is enough for about 1000 digital logic gates, depending on their size. 
 You can also buy extra tiles if you need more room.
 
 Here's a 3D view of the [GDS](https://zerotoasiccourse.com/terminology/gds) of my [7 segment seconds counter](https://github.com/tinytapeout/tt04-verilog-demo), a small design that increments a counter every second and shows the result on the 7 segment display.
@@ -172,7 +172,7 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ## I got an error on my GitHub GDS action.
 
-The best way to let me know is to [open an issue on the template repository with a link to your wokwi design](https://github.com/tinytapeout/tt05-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) and I’ll get back to you.
+The best way to let me know is to ask a question in our [community discord chat](https://tinytapeout.com/discord), in the #questions channel. Include a link to your repository and the error message.
 
 ## I got an error on my GitHub Documentation action.
 
@@ -208,14 +208,6 @@ There are lots!
     * gds - the final GDS file that will be added to the Tiny Tapeout submission.
     * lef - an abstract version of the GDS with less information, used for routing.
     * verilog - the gate level verilog of your design.
-
-## Where is the submission repository for the shuttle?
-
-* [TT01 page](/runs/tt01/)
-* [TT02 page](/runs/tt02/)
-* [TT03 page](/runs/tt03/)
-* [TT04 page](/runs/tt04/)
-* [TT05 page](/runs/tt05/)
 
 # ASIC FAQs
 
