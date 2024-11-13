@@ -7,7 +7,7 @@ weight: 60
 
 This document explains how to harden your Tiny Tapeout projects locally, to speed up iteration times. The whole process should take roughly 10 minutes.
 
-It uses the [factory-test](https://github.com/TinyTapeout/tt09-factory-test) project as an example.
+It uses the [factory-test](https://github.com/TinyTapeout/tt10-factory-test) project as an example.
 
 ### 1. Environment Setup
 
@@ -22,16 +22,16 @@ Note: On some systems, the python binary is called `python` and not `python3`.
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
-git clone https://github.com/TinyTapeout/tt09-factory-test ~/factory-test
+git clone https://github.com/TinyTapeout/tt10-factory-test ~/factory-test
 ```
 
 ### 2. Clone tt-support-tools
 
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt09` branch) inside the `tt` directory of your project:
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt10` branch) inside the `tt` directory of your project:
 
 ```sh
 cd ~/factory-test
-git clone -b tt09 https://github.com/TinyTapeout/tt-support-tools tt
+git clone -b tt10 https://github.com/TinyTapeout/tt-support-tools tt
 ```
 
 ### 3. Python and Pip Dependencies
