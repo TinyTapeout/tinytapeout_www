@@ -7,11 +7,11 @@ Gracias al miembro de la comunidad **Tholin** por escribir este artículo origin
 
 Para estar completamente seguro de que tu diseño de hardware funciona como quieres, es posible escribir pruebas unitarias de Verilog. Esta guía te mostrará cómo escribir pruebas simples para tus diseños de hardware y crear un flujo de Github Actions para ejecutar automáticamente tus pruebas cada vez que hagas un push a tu repositorio.
 
-Este documento hace referencia al diseño de ejemplo de un sumador incluido en la [plantilla de Verilog](https://github.com/TinyTapeout/tt06-verilog-template/tree/main).
+Este documento hace referencia al diseño de ejemplo de un sumador incluido en la [plantilla de Verilog](https://github.com/TinyTapeout/tt10-verilog-template/tree/main).
 
 # La prueba puede ser ejecutada en una Github Action
 
-Revisa las [GitHub actions](https://github.com/TinyTapeout/tt06-verilog-template/actions), la prueba debería estar en verde y pasar. Puedes consultar los logs de una prueba reciente para ver qué está pasando.
+Revisa las [GitHub actions](https://github.com/TinyTapeout/tt10-verilog-template/actions), la prueba debería estar en verde y pasar. Puedes consultar los logs de una prueba reciente para ver qué está pasando.
 
 Incluso si desarrollas pruebas en tu computador personal, sigue siendo una buena idea mantener la acción habilitada. Si llegase a fallar, recibirás un email.
 
@@ -32,19 +32,19 @@ Deberías instalar pytest incluso si estás usando la Suite CAD completa, ya que
 
 ## Módulo de banco de pruebas (testbench)
 
-El [archivo del testbench](https://github.com/TinyTapeout/tt06-verilog-template/blob/main/test/tb.v#L26) `tb.v` instancia el proyecto de ejemplo y lo conecta. Vas a querer cambiar la instancia para que su nombre coincida con el de tu módulo.
+El [archivo del testbench](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/tb.v#L26) `tb.v` instancia el proyecto de ejemplo y lo conecta. Vas a querer cambiar la instancia para que su nombre coincida con el de tu módulo.
 
 Reemplaza `tt_um_example user_project` con el nombre real de tu módulo principal (top module).
 
 ## Makefile
 
-Utilizamos un makefile para ejecutar tus pruebas. Vas a necesitar modificar el [Makefile](https://github.com/TinyTapeout/tt06-verilog-template/blob/main/test/Makefile#L8) para que incluya todos tus archivos fuente.
+Utilizamos un makefile para ejecutar tus pruebas. Vas a necesitar modificar el [Makefile](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/Makefile#L8) para que incluya todos tus archivos fuente.
 
 Para hacer esto, ve a la línea que comienza con `VERILOG_SOURCES`, y expándela para que incluya todos tus archivos. Separa cada entrada por espacios. Las rutas son relativas al directorio donde se encuentra el makefile (el cual debería ser 'src'). Si solo tienes un único archivo verilog, solo tienes que agregar una única entrada adicional: `$(PWD)/my_custom_verilog.v`
 
 ## Escribiendo tu primera prueba
 
-Ahora puedes finalmente comenzar a escribir pruebas. Echa un vistazo al [ejemplo](https://github.com/TinyTapeout/tt06-verilog-template/blob/main/test/test.py).
+Ahora puedes finalmente comenzar a escribir pruebas. Echa un vistazo al [ejemplo](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/test.py).
 
 Éste:
 
@@ -104,7 +104,7 @@ sky130_fd_sc_hd__and4_1 _319_ (.A(\second_counter[7] ),
     .Q(\seg7.counter[0] ));
 ```
 
-Puedes observar que las celdas estándar también tienen puertos de alimentación, así que algo que debe cambiar es que el diseño debe ser alimentado. Esto se hace automáticamente por tí cuando la prueba es ejecutada como parte de la [GDS action](https://github.com/TinyTapeout/tt06-verilog-template/blob/main/.github/workflows/gds.yaml#L26).
+Puedes observar que las celdas estándar también tienen puertos de alimentación, así que algo que debe cambiar es que el diseño debe ser alimentado. Esto se hace automáticamente por tí cuando la prueba es ejecutada como parte de la [GDS action](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/.github/workflows/gds.yaml#L26).
 
 Ahora cada vez que se gatille la GDS action, ¡tu testbench será ejecutado como una Prueba a Nivel de Compuerta automáticamente!
 

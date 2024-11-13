@@ -29,7 +29,7 @@ See what other people are making by [taking a look at what was submitted on our 
 # Submission templates
 
 * [Wokwi submission template](https://github.com/TinyTapeout/tt09-wokwi-template)
-* [Verilog submission template](https://github.com/TinyTapeout/tt09-verilog-template)
+* [Verilog submission template](https://github.com/TinyTapeout/tt10-verilog-template)
 * [Analog and mixed signal template](https://github.com/TinyTapeout/tt09-analog-template)
 
 # Submit your design
