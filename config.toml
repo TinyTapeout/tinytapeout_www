@@ -3,9 +3,14 @@ languageCode = 'en-us'
 title = 'Tiny Tapeout'
 theme = "learn"
 
+
 [security]
   [security.funcs]
     getenv = ['^HUGO_', '^CI$', '^CF_']
+
+[[menu.shortcuts]]
+  name = "<i class='fa fa-shopping-basket'></i> Store"
+  url = "https://store.tinytapeout.com/"
 
 [markup.goldmark.renderer]
   unsafe= true
@@ -14,6 +19,7 @@ theme = "learn"
   Description = "Quicker, easier and cheaper than ever to make your own chip!"
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
+  disableLightbox = true
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
