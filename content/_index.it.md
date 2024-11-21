@@ -25,7 +25,7 @@ Tiny Tapeout è un progetto educativo che rende più semplice ed economico che m
 # Modelli di invio del progetto
 
 - [Template progetto con Wokwi](https://github.com/TinyTapeout/tt06-wokwi-template).
-- [Template progetto con Verilog](https://github.com/TinyTapeout/tt06-verilog-template).
+- [Template progetto con Verilog](https://github.com/TinyTapeout/tt10-verilog-template).
 - [Template progetto con segnale analogico e misto](https://github.com/TinyTapeout/tt06-analog-template).
 
 # Invia il tuo progetto

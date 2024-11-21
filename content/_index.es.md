@@ -25,7 +25,7 @@ Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca ha
 # Plantillas de envío
 
 * [Plantilla de envío Wokwi](https://github.com/TinyTapeout/tt09-wokwi-template).
-* [Plantilla de envío Verilog](https://github.com/TinyTapeout/tt09-verilog-template).
+* [Plantilla de envío Verilog](https://github.com/TinyTapeout/tt10-verilog-template).
 * [Plantilla de señal análoga y mixta](https://github.com/TinyTapeout/tt09-analog-template).
 
 # Envía tu diseño

@@ -25,7 +25,7 @@ TinyTapeout - це освітній проект, який дозволяє пр
 # Шаблони подачі заявок
 
 * [Шаблон подачі заявки на Wokwi](https://github.com/TinyTapeout/tt06-wokwi-template).
-* [Шаблон подачі Verilog](https://github.com/TinyTapeout/tt06-verilog-template).
+* [Шаблон подачі Verilog](https://github.com/TinyTapeout/tt10-verilog-template).
 * [Шаблон аналогового та змішаного сигналу](https://github.com/TinyTapeout/tt06-analog-template).
 
 # Submit your design

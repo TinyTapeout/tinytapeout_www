@@ -7,10 +7,15 @@ import { IShuttleIndexProject } from '../model/shuttle.js';
 export function AnalogPinout({ project }: { project: IShuttleIndexProject }) {
   const rows: React.ReactNode[] = [];
 
+  const breakoutPin = (analog: number) => {
+    return analog < 6 ? 'A' + analog : 'B' + (analog - 6);
+  };
+
   for (const [ua, analog] of project.analog_pins.entries()) {
     rows.push(
       <tr key={ua}>
         <td>{ua}</td>
+        <td>{breakoutPin(analog)}</td>
         <td>{analog}</td>
         <td>{project.pinout[`ua[${ua}]`]}</td>
       </tr>,
@@ -24,9 +29,8 @@ export function AnalogPinout({ project }: { project: IShuttleIndexProject }) {
           <th>
             <code>ua</code>
           </th>
-          <th>
-            <code>analog</code>
-          </th>
+          <th>PCB Pin</th>
+          <th>Internal index</th>
           <th>Description</th>
         </tr>
       </thead>

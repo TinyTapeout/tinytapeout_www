@@ -66,7 +66,7 @@ The **p tap** is formed inside the substrate and makes it easier to connect to 
 
 1. In the corner draw a small square of **p tap**.
 2. Over the top of **p tap** draw a square of **metal1 via**
-3. Over the top of the **metal1 vai** draw a square of **metal1** to make a contact.
+3. Over the top of the **metal1 via** draw a square of **metal1** to make a contact.
 4. Click the **metal1** contact, and choose the option ‘Set Label’. or S on the keyboard. Then type **vss** to connect the substrate to 0 volts.
 
 ![](/siliwiz/images/image9.png)
@@ -121,7 +121,7 @@ The i(vdd) means to plot the current instead of the voltage. The \*-1000 means t
 
 What does the graph show us? To start with, when the gate is less than around one volt, there is no current flowing. The MOSFET is off. Once we get past a threshold, the MOSFET starts to conduct and lets more and more current flow. This value is called the gate-source threshold.
 
-Try changing the length (the horizontal size) of the gate of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
+Try changing the Width of the gate (in) of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
 
 If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
 
