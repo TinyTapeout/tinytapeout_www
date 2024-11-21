@@ -5,7 +5,11 @@ weight: 200
 
 # Sponsored by
 
-[![efabless](/images/efabless.png)](https://efabless.com/)
+<a href="https://efabless.com"> <img src="/images/efabless.png" alt="Efabless"> </a>
+
+# Chip imaging by
+
+<a href="https://texplained.com"> <img src="/images/texplained.png" alt="Texplained"> </a>
 
 # Team
 
