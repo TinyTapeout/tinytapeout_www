@@ -27,7 +27,8 @@ export function markdownImagePathTransformer(shuttle: string, macro: string) {
     let src = token.attrGet('src');
     const alt = token.content;
     if (src?.toLowerCase().includes('://') == false) {
-      src = `https://index.tinytapeout.com/${shuttle}/${macro}/docs/${src}`;
+      const normalizedSrc = src.replace(/^(\.\.\/)*(\.\.)?\/+docs\//g, '');
+      src = `https://index.tinytapeout.com/${shuttle}/${macro}/docs/${normalizedSrc}`;
     }
     return `<img src="${src}" alt="${alt}" loading="lazy" />`;
   };
