@@ -1,6 +1,6 @@
 ---
-title: 'Analog pins'
-description: 'Analog pin specifications'
+title: 'Analog Specs'
+description: 'Analog specifications'
 weight: 15
 ---
 
@@ -30,11 +30,14 @@ You are not allowed to use the **metal 5** layer in your design, as it's used by
 
 The pin locations must match one of the [Tiny Tapeout templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt10/def/analog). The templates are available in DEF format, which is compatible with the [Magic VLSI layout tool](http://opencircuitdesign.com/magic/).
 
-There are several templates available, each for a different number of tiles. The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
-
-Most analog designs should fit into the smallest template, _tt_analog_1x2.def_, which is 160x225um in size.
+The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
 
 **Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_oe` pins to GND.
+
+## Area
+
+* 1x2 tiles = 160x225um
+* 2x2 tiles = 334x225um
 
 ## Power pins
 
@@ -65,6 +68,8 @@ Example:
 * i.e. as a customer you are using a total of **5** analog pins on the shuttle.
 
 This price is only for including the design in the shuttle, and does not include the cost of the ASIC, PCB, or shipping.
+
+For more information on pricing, check the [calculator](https://app.tinytapeout.com/calculator?tiles=2&pcbs=1).
 
 ---
 
