@@ -1,0 +1,1333 @@
+[
+    {
+        "project": {
+            "author": "Matt Venn",
+            "title": "M segments",
+            "description": "Setting the correct input will show a 3 on the display",
+            "how_it_works": "AND gates connect to the 7 segment display",
+            "how_to_test": "Turning on the first 4 inputs will show a 3 on the display",
+            "external_hw": "None",
+            "doc_link": "https://github.com/mattvenn/tinytapeout_m_segments/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "339688086163161683",
+            "picture": "msegments.png",
+            "inputs": [
+                "input 1",
+                "input 2",
+                "input 3",
+                "input 4",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "dot"
+            ],
+            "git_url": "https://github.com/mattvenn/tinytapeout_m_segments"
+        }
+    },
+    {
+        "project": {
+            "author": "Leo Moser",
+            "title": "1-bit ALU",
+            "description": "1-bit ALU from the book `Structured Computer Organization: Andrew S. Tanenbaum`",
+            "how_it_works": "The 1-bit ALU implements 4 different operations: AND, NOT, OR, ADD.\nThe current operating mode can be selected via F0 and F1. F0=0 and F1=0 results in A AND B. F0=1 and F1=0 results in NOT B. F0=0 and F1=1 results in A OR B. F0=1 and F1=1 results in A ADD B. Where A and B are the inputs for the operation.\nAdditional inputs can change the way of operation:\n`ENA` and `ENB` enable/disable the respective input. `INVA` inverts A before applying the operation. `CIN` is used as input for the full adder.\nMultiple 1bit ALUs could be chained to create a wider ALU. ",
+            "how_to_test": "Set the operating mode via the DIP switches with F0 and F1.\nNext, set the input with A and B and enable both signals with ENA=1 and ENB=1. If you choose to invert A, set INVA to 1, otherwise to 0. For F0=1 and F1=1 you can set CIN as additional input for the ADD operation.\nThe 7-segment display shows either a `0` or a `1` depending on the output. If the ADD operation is selected, the dot of the 7-segment display represents the COUT. ",
+            "external_hw": "None",
+            "doc_link": "https://github.com/mole99/wokwi-1bit-alu/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "340318610245288530",
+            "picture": "img/1bit-alu.png",
+            "inputs": [
+                "CIN",
+                "INVA",
+                "A",
+                "ENA",
+                "B",
+                "ENB",
+                "F0",
+                "F1"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "COUT"
+            ],
+            "git_url": "https://github.com/mole99/wokwi-1bit-alu"
+        }
+    },
+    {
+        "project": {
+            "author": "Ivan Krasin",
+            "title": "Guess My Number",
+            "description": "A tiny game to guess an 8-bit number based on 7-segment display hints",
+            "how_it_works": "8 input bits define a number guess. The 7-segment display shows how far the guess with 0 being a win and larger numbers meaning that the guess is off. The goal is to find a number that gives 0.",
+            "how_to_test": "Set all inputs to zero, it must show something like 6 or 7 on a 7-segment display.",
+            "external_hw": "",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "0",
+            "picture": "",
+            "inputs": [
+                "bit 0 of a guess",
+                "bit 1 of a guess",
+                "bit 2 of a guess",
+                "bit 3 of a guess",
+                "bit 4 of a guess",
+                "bit 5 of a guess",
+                "bit 6 of a guess",
+                "bit 7 of a guess"
+            ],
+            "outputs": [
+                "7-segment display + a dot."
+            ],
+            "git_url": "https://github.com/krasin/wokwi-guess-my-number"
+        }
+    },
+    {
+        "project": {
+            "author": "Johannes Hoff",
+            "title": "Barrelshifter",
+            "description": "Shifts a 6 bit number up to 0-3 bits left",
+            "how_it_works": "An 6 bit input value and 2 bit shift amount is provided, and the shifted value will be in the output",
+            "how_to_test": "Choose an input value (like 6'b001010) and a shift amount (like 2'b10) and combine it into input pins (like 8'b00101010) and observe that the output is the shifted input (like 8'b10100000)",
+            "external_hw": "",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341136771628663380",
+            "picture": "",
+            "inputs": [
+                "bit 5 (most significant) of input value",
+                "bit 4 of input value",
+                "bit 3 of input value",
+                "bit 2 of input value",
+                "bit 1 of input value",
+                "bit 0 (least significant) of input value",
+                "bit 5 (most significant) of shift amount",
+                "bit 0 (least significant) of shift amount"
+            ],
+            "outputs": [
+                "bit 7 (most significant) of shifted value",
+                "bit 6 of shifted value",
+                "bit 5 of shifted value",
+                "bit 4 of shifted value",
+                "bit 3 of shifted value",
+                "bit 2 of shifted value",
+                "bit 1 of shifted value",
+                "bit 0 (least significant) of shifted value"
+            ],
+            "git_url": "https://github.com/johshoff/barrelshifter-wokwi-gds"
+        }
+    },
+    {
+        "project": {
+            "author": "Harry Snell",
+            "title": "PDM driver",
+            "description": "5-bit pulse density modulation encoder (aka sigma-delta converter)",
+            "how_it_works": "The pdm_input is registered when write_en is high. The registered input is added to an accummulator on each cycle. The overflow bit of the sum is pdm_output.",
+            "how_to_test": "Set reset low and write_en high, provide a clock (frequency not important) and put a 5-bit number on pdm_input and see how the average value on pdm_out changes",
+            "external_hw": "Clock source, switches for input. LED, RC circuit, logic analyser or oscilloscope to view output",
+            "doc_link": "https://github.com/H-S-S-11/tinytapeout-verilog-test/blob/main/README.md",
+            "clock_hz": 200,
+            "language": "Verilog",
+            "wokwi_id": "341154068332282450",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "write_en",
+                "pdm_input[0]",
+                "pdm_input[1]",
+                "pdm_input[2]",
+                "pdm_input[3]",
+                "pdm_input[4]"
+            ],
+            "outputs": [
+                "pdm_out",
+                "pdm_out_n",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/H-S-S-11/tinytapeout-verilog-test"
+        }
+    },
+    {
+        "project": {
+            "author": "Seth Kerr",
+            "title": "2x 1 to 4 Frequency Divider",
+            "description": "A simple flip-flop based frequency divider",
+            "how_it_works": "The Frequency Divider works by taking 4 frequencies and selecting 2 with select pins as inputs and through a flip-flop chain, divides the input into 4 frequencies. The frequency breaks down to f/2, f/4, f/8, and f/16.",
+            "how_to_test": "The most simple test of the frequency divider is to use the source clock on pin one, and attach an oscilloscope to the outputs and measure their frequency.",
+            "external_hw": "external clock sources are necessary to test all inputs. A simple adjustable astable 555 is recommended",
+            "doc_link": "",
+            "clock_hz": "16Hz",
+            "language": "wokwi",
+            "wokwi_id": "341160201697624660",
+            "picture": "",
+            "inputs": [
+                "clock (default f(1) input option)",
+                "f(1), 2 - second f(1) input option",
+                "f(2), 1 - default f(2) input option",
+                "f(2), 2 - second f(2) input option",
+                "f(1) select - selects which f(1) input frequency to use",
+                "f(2) select - selects which f(2) input frequency to use",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "f(1)/2 - Frequency 1 divided in half",
+                "f(1)/4 - Frequency 1 divided in quarters",
+                "f(1)/8 - Frequency 1 divided in eighths",
+                "f(1)/16 - Frequency 1 divided into sixteenths",
+                "f(2)/2 - Frequency 2 divided in half",
+                "f(2)/4 - Frequency 2 divided in quarters",
+                "f(2)/8 - Frequency 2 divided in eighths",
+                "f(2)/16 - Frequency 2 divided into sixteenths"
+            ],
+            "git_url": "https://github.com/skerr92/tinytapeout_frequency_div"
+        }
+    },
+    {
+        "project": {
+            "author": "JinGen Lim",
+            "title": "BCD to Decimal Decoder",
+            "description": "Converts a BCD input into a decimal output",
+            "how_it_works": "Accepts BCD through 4 input pins, and outputs the decimal equivalent (output pins 0 to 7). This is a functional clone of the DM7447, but does not include values 8 and 9 due to package constraints.",
+            "how_to_test": "Write to the BCD input (IN0:0, IN1:2, IN2:4, IN3:8). One corresponding decimal output pin will be driven high.",
+            "external_hw": "None",
+            "doc_link": "https://github.com/jglim/tinytapeout_bcd-dec/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341161378978988626",
+            "picture": "ds.png",
+            "inputs": [
+                "input 1 (BCD 1)",
+                "input 2 (BCD 2)",
+                "input 3 (BCD 4)",
+                "input 4 (BCD 8)",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "decimal output 0",
+                "decimal output 1",
+                "decimal output 2",
+                "decimal output 3",
+                "decimal output 4",
+                "decimal output 5",
+                "decimal output 6",
+                "decimal output 7"
+            ],
+            "git_url": "https://github.com/jglim/tinytapeout_bcd-dec"
+        }
+    },
+    {
+        "project": {
+            "author": "JinGen Lim",
+            "title": "BCD to 7-Segment Decoder",
+            "description": "Converts a BCD input into a 7-segment display output",
+            "how_it_works": "The IC accepts four binary-coded decimal input signals, and generates a corresponding 7-segment output signal",
+            "how_to_test": "Connect the segment outputs to a 7-segment display. Configure the input (IN0:0, IN1:2, IN2:4, IN3:8). The input value will be shown on the 7-segment display",
+            "external_hw": "None",
+            "doc_link": "https://github.com/jglim/tinytapeout_bcd-7seg/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341152580068442706",
+            "picture": "ds.png",
+            "inputs": [
+                "input 1 (BCD 1)",
+                "input 2 (BCD 2)",
+                "input 3 (BCD 4)",
+                "input 4 (BCD 8)",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "none"
+            ],
+            "git_url": "https://github.com/jglim/tinytapeout_bcd-7seg"
+        }
+    },
+    {
+        "project": {
+            "author": "Shahzaib Kashif",
+            "title": "Barrel Shifter",
+            "description": "shifts the data n times, where n is the input provided via inputs",
+            "how_it_works": "muxes connect to output",
+            "how_to_test": "give input through input ports and toggle select pins to visualise shifting",
+            "external_hw": "None",
+            "doc_link": "https://github.com/shahzaibk23/tinytapeout-barrel-shifter/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341167691532337747",
+            "picture": "circuit.jpeg",
+            "inputs": [
+                "input 1",
+                "input 2",
+                "input 3",
+                "input 4",
+                "shift type",
+                "select 1",
+                "select 2",
+                "hardcode 0"
+            ],
+            "outputs": [
+                "output bit 1",
+                "output bit 2",
+                "output bit 3",
+                "output bit 4",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/shahzaibk23/tinytapeout-barrel-shifter"
+        }
+    },
+    {
+        "project": {
+            "author": "Thomas B\u00f6hm <thomas.bohm@gmail.com>",
+            "title": "Pseudo-random number generator",
+            "description": "Pseudo-random number generator using a 16-bit Fibonacci linear-feedback shift register",
+            "how_it_works": "16 flip flops are connected in a chain, and the output of some is XORed together and fed back into the first flip flop. The outputs that are XORed together are chosen in such a way as to give the longest possible cycle (2^16-1). All bits being zero is a special case and is treated separately (all negative outputs of the flip flops are ANDed together to generate a 1 as feedback).\nOn each clock pulse (pin 1) one new bit is generated. Setting load_en (pin 3) to HIGH allows the loading of a user defined value through the data_in pin (pin2). On each clock pulse one bit is read into the flip flop chain. When load_en (pin 3) is set to LOW the computed feedback bit is fed back into the flip flops.\nThe outputs of the last 8 flip flops are connected to the output pins. For each clock pulse a random bit is generated and the other 7 are shifted. ",
+            "how_to_test": "Set the switch for pin 1 so that the push button generates the clock. Press on it and see the output change on the hex display.\nUsing pin 2 and 3 a custom value can be loaded into the flip flops. ",
+            "external_hw": "None",
+            "doc_link": "https://github.com/tcptomato/tinytapeout//blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341178154799333971",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "data_in",
+                "load_en",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "random bit 0",
+                "random bit 1",
+                "random bit 2",
+                "random bit 3",
+                "random bit 4",
+                "random bit 5",
+                "random bit 6",
+                "random bit 7"
+            ],
+            "git_url": "https://github.com/tcptomato/tinytapeout"
+        }
+    },
+    {
+        "project": {
+            "author": "Pramit Pal",
+            "title": "BCD to 7 Segment Decoder",
+            "description": "Setting the DIP switches as a BCD Value displays the BCD Value 0-9 in the 7 segment display",
+            "how_it_works": "Display BCD Value given by user with the 7 segment display",
+            "how_to_test": "Turning on the last 4 input switches to display BCD Value",
+            "external_hw": "None",
+            "doc_link": "https://github.com/pramitpal/tinytapeout_pramit/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341162950004834900",
+            "picture": "BCD_7Segment_decoder_diagram.png",
+            "inputs": [
+                "input 4",
+                "none",
+                "none",
+                "none",
+                "input 3",
+                "input 2",
+                "input 1",
+                "input 0"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "dot"
+            ],
+            "git_url": "https://github.com/pramitpal/tinytapeout_pramit"
+        }
+    },
+    {
+        "project": {
+            "author": "Daniel Estevez",
+            "title": "Fibonacci & Gold Code",
+            "description": "This project includes two independent designs: a design that calculates terms of the Fibonacci sequence and displays them in hex one character at a time on a 7-segment display, and a Gold code generator that generates the codes used by CCSDS X-band PN Delta-DOR.",
+            "how_it_works": "The Fibonacci calculator uses 56-bit integers, so the terms of the Fibonacci sequence are displayed using 7 hex characters. Since the TinyTapeout PCB only has one 7-segment display, the terms of the Fibonacci sequence are displayed one hex character at a time, in LSB order. The dot of the 7-segment display lights up whenever the LSB is being displayed. On each clock cycle, 4-bits of the next Fibonacci term are calculated using a 4-bit adder, and 4-bits of the current term are displayed in the 7-segment display. The 7-segment display is ANDed with the project clock, so that the digits flash on the display. The Gold code generator computes a CCSDS X-band PN Delta-DOR Gold code one bit at a time using LFSRs. The output bit is shown on the 7-segment display dot. 6-bits of the second LFSR can be loaded in parallel using 6 project inputs in order to be able to generate different sequences. One of the project inputs is used to select whether the 7-segment display dot is driven by the Fibonacci calculator or by the Gold code generator.",
+            "how_to_test": "The project can be tested by manually driving the clock using a push button or switch. Just by de-asserting the reset and driving the clock, the digits of the Fibonacci sequence terms should appear on the 7-segment display. The output select input needs to be set to Gold code (high level) in order to test the gold code generator. The load enable input (active-low), as well as the 6 inputs corresponding to the load for the B register can be used to select the sequence to generate. The load value can be set in the 6 load inputs, and then the load enable should be pulsed to perform the load. This can be done with the clock running or stopped, as the load enable is asynchronous. After the load enable is de-asserted, for each clock cycle a new bit of the Gold code sequence should appear in the 7-segment display dot.",
+            "external_hw": "No external hardware is needed",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "verilog",
+            "wokwi_id": "341164910646919762",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "output select (high selects Gold code; low selects Fibonacci LSB marker) & Gold code load value bit 0",
+                "Fibonacci reset (active-low; asynchronous) & Gold code load value bit 1",
+                "Gold code load enable (active-low; asynchronous)",
+                "Gold code load value bit 2",
+                "Gold code load value bit 3",
+                "Gold code load value bit 4",
+                "Gold code load value bit 5"
+            ],
+            "outputs": [
+                {
+                    "segment a": "Fibonacci hex digit"
+                },
+                {
+                    "segment b": "Fibonacci hex digit"
+                },
+                {
+                    "segment c": "Fibonacci hex digit"
+                },
+                {
+                    "segment d": "Fibonacci hex digit"
+                },
+                {
+                    "segment e": "Fibonacci hex digit"
+                },
+                {
+                    "segment f": "Fibonacci hex digit"
+                },
+                {
+                    "segment g": "Fibonacci hex digit"
+                },
+                {
+                    "none": "Gold code output / Fibonacci LSB digit marker"
+                }
+            ],
+            "git_url": "https://github.com/daniestevez/tinytapeout-verilog"
+        }
+    },
+    {
+        "project": {
+            "author": "Adam Greig",
+            "title": "GPS C/A PRN Generator",
+            "description": "Generate any of the GPS C/A PRN sequences from PRN0 to PRN31",
+            "how_it_works": "Instantiates the GPS G1 and G2 LFSRs to generate a pseudo-random sequence, then selects the G2 output taps based on the input signals to output the chosen sequence.",
+            "how_to_test": "Apply clock to the in[0], pulse reset on in[1], choose a PRN between 0 and 31 using in[2:7], then the G1 sequence is emitted on out[0], the G2 sequence on out[1], and the selected PRN on out[2]. The first 20 bits of PRN2 are 11100100001110000011.",
+            "external_hw": "None",
+            "doc_link": "https://github.com/adamgreig/tinytapeout-prn/",
+            "clock_hz": 1000,
+            "language": "Amaranth",
+            "wokwi_id": "341342096033055316",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "prn[0]",
+                "prn[1]",
+                "prn[2]",
+                "prn[3]",
+                "prn[4]",
+                "none"
+            ],
+            "outputs": [
+                "G1 subsequence",
+                "G2 subsequence",
+                "Selected PRN",
+                "None",
+                "None",
+                "None",
+                "None",
+                "None"
+            ],
+            "git_url": "https://github.com/adamgreig/tinytapeout-prn"
+        }
+    },
+    {
+        "project": {
+            "author": "Tommy Thorn",
+            "title": "PDP-0: 4-bit CPU in the style of PDP-1/TX-0",
+            "description": "The tiny 4-bit CPU packs a 3b program counter, an accumulator, and 8 6b words.",
+            "how_it_works": "The two top bits in each word form the opcode (load, store, add, branch-if-zero) while the remaining four are the immediate field that the opcode uses.  Load and store only access the immediate field of the word.  The IO implements a simple command protocol to reset, load data, load code, and run.  The output are used for the PC and the Accumulator.  The test bench shows how to load a fibonacci computing program.",
+            "how_to_test": "Use the command protocol to load programs and run them (see test bench)",
+            "external_hw": "Besides interactining with the IOs, nothing is needed",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "Verilog",
+            "wokwi_id": "341193419111006803",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "cmd[0]",
+                "cmd[1]",
+                "not used",
+                "cmdarg[0]",
+                "cmdarg[1]",
+                "cmdarg[2]",
+                "cmdarg[3]"
+            ],
+            "outputs": [
+                "acc[0]",
+                "acc[1]",
+                "acc[2]",
+                "acc[3]",
+                "pc[0]",
+                "pc[1]",
+                "pc[2]",
+                "Not used, wired to 0"
+            ],
+            "git_url": "https://github.com/tommythorn/tinytapeout-4-bit-cpu"
+        }
+    },
+    {
+        "project": {
+            "author": "Uri Shaked (Wokwi)",
+            "title": "Game of Life - Cell Neighbor Count",
+            "description": "Logic to decide about the fate of a cell in the game of life: die, stay alive, or spring to life",
+            "how_it_works": "The 8 inputs represent the current state of the neighboring cells (0 = dead, 1 = alive). The fate of the cell is in bits 2 and 3 of the output. The cell will be alive if either bit 2 is on and it was alive in the previous generation, or if bit 3 is on. Otherwise, it'll die.",
+            "how_to_test": "Connect 8 DIP switches to the 8 input pins, and LEDs to bits 2 and 3 of the output. Observe the value of the output bits: bit 2 should be on when either two or three of the DIP switches are on, and bit 3 should be on when exactly three DIP switches are on.",
+            "external_hw": "",
+            "doc_link": "https://github.com/wokwi/tt-game-of-life-cell-popcnt/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341266732010177108",
+            "picture": "",
+            "inputs": [
+                "in0",
+                "in1",
+                "in2",
+                "in3",
+                "in4",
+                "in5",
+                "in6",
+                "in7"
+            ],
+            "outputs": [
+                "none",
+                "none",
+                "2 or 3 inputs are high",
+                "exactly 3 inputs are high",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/wokwi/tt-game-of-life-cell-popcnt"
+        }
+    },
+    {
+        "project": {
+            "author": "Christian Fibich",
+            "title": "Traffic Light FSM",
+            "description": "FSM controlling two (red-yellow-green) traffic lights",
+            "how_it_works": "State machine that implements a typical Austrian traffic light: Red -> Red+Yellow -> Green -> Green Blinking -> Yellow -> Red. Generated using a hacked-together Verilog->Wokwi flow :D.",
+            "how_to_test": "Starts in 'error' mode (yellow blinking). Switch SW1 (reset) to 1 and back to 0 to start operation. 'error' mode can be reached by toggling SW2.",
+            "external_hw": "2 red LEDs, 2 yellow LEDs, 2 green LEDs and current limiting resistors",
+            "doc_link": "",
+            "clock_hz": 2,
+            "language": "wokwi",
+            "wokwi_id": "341410909669818963",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "enter_error_mode",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "red 1",
+                "yellow 1",
+                "green 1",
+                "red 2",
+                "yellow 2",
+                "green 2",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/cfib/trafficlight-fsm"
+        }
+    },
+    {
+        "project": {
+            "author": "Christian Lyder Jacobsen",
+            "title": "7 Segment Figure Eight",
+            "description": "",
+            "how_it_works": "",
+            "how_to_test": "",
+            "external_hw": "",
+            "doc_link": "https://github.com/clj/tinytapeout-verilog-7seg-figure-eight/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "Verilog",
+            "wokwi_id": "341063825089364563",
+            "picture": "fig8.gif",
+            "inputs": [
+                "clock",
+                "reset",
+                "speed lsb",
+                "speed",
+                "speed msb",
+                "tail",
+                "direction",
+                "led invert"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "none"
+            ],
+            "git_url": "https://github.com/clj/tinytapeout-verilog-7seg-figure-eight"
+        }
+    },
+    {
+        "project": {
+            "author": "Sirawit Lappisatepun",
+            "title": "Logic-2G57-2G58",
+            "description": "Replication of TI's Little Logic 1G57 and 1G58 configurable logic gates.",
+            "how_it_works": "This design replicates the circuit inside a TI configurable logic gates 74xx1G57 (and by including an inverted output, it will work as a 74xx1G58 as well). Since there are still I/O pins left, I included two of these configurables, and also one 74xx1G79 D Flip-Flop (again, an inverted output means this will also work as a 74xx1G80).",
+            "how_to_test": "You could refer to TI's 1G79/1G80/1G57/1G58 datasheet to test the device according to the pinout listed below.",
+            "external_hw": "",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341431339142087251",
+            "picture": "",
+            "inputs": [
+                "dff_clock",
+                "dff_data",
+                "gate1_in0",
+                "gate1_in1",
+                "gate1_in2",
+                "gate2_in0",
+                "gate2_in1",
+                "gate2_in2"
+            ],
+            "outputs": [
+                "dff_out",
+                "dff_out_bar",
+                "gate1_out",
+                "gate1_out_bar",
+                "gate2_out",
+                "gate2_out_bar",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/Sirawit7205/tinytapeout-2G57-2G58"
+        }
+    },
+    {
+        "project": {
+            "author": "Sirawit Lappisatepun",
+            "title": "Logic-2G97-2G98",
+            "description": "Replication of TI's Little Logic 1G97 and 1G98 configurable logic gates.",
+            "how_it_works": "This design replicates the circuit inside a TI configurable logic gates 74xx1G97 (and by including an inverted output, it will work as a 74xx1G98 as well). Since there are still I/O pins left, I included two of these configurables, and also one 74xx1G79 D Flip-Flop (again, an inverted output means this will also work as a 74xx1G80).",
+            "how_to_test": "You could refer to TI's 1G79/1G80/1G97/1G98 datasheet to test the device according to the pinout listed below.",
+            "external_hw": "",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341432030163108435",
+            "picture": "",
+            "inputs": [
+                "dff_clock",
+                "dff_data",
+                "gate1_in0",
+                "gate1_in1",
+                "gate1_in2",
+                "gate2_in0",
+                "gate2_in1",
+                "gate2_in2"
+            ],
+            "outputs": [
+                "dff_out",
+                "dff_out_bar",
+                "gate1_out",
+                "gate1_out_bar",
+                "gate2_out",
+                "gate2_out_bar",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/Sirawit7205/tinytapeout-2G97-2G98"
+        }
+    },
+    {
+        "project": {
+            "author": "Matt M",
+            "title": "RGB LED Matrix Driver",
+            "description": "Drives a simple animation on SparkFun's RGB LED 8x8 matrix backpack",
+            "how_it_works": "Implements an SPI master to drive an animation with overlapping green/blue waves and a moving white diagonal. Some 7-segment wires are used for a 'sanity check' animation.",
+            "how_to_test": "Wire accordingly and use a clock up to 12.5 KHz. Asynchronous reset is synchronized to the clock.",
+            "external_hw": "RGB LED matrix backpack from SparkFun: https://www.sparkfun.com/products/retired/760",
+            "doc_link": "",
+            "clock_hz": 12500,
+            "language": "Verilog",
+            "wokwi_id": "0",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "SCLK",
+                "MOSI",
+                "segment c",
+                "segment d",
+                "segment e",
+                "nCS",
+                "segment g",
+                "none (always high)"
+            ],
+            "git_url": "https://github.com/mm21/tinytapeout-led-matrix"
+        }
+    },
+    {
+        "project": {
+            "author": "Jean THOMAS",
+            "title": "Digital padlock",
+            "description": "A 4-digit electronic padlock",
+            "how_it_works": "Each buttons press is detected by a rising edge detector, and each button press is decoded into a binary code. That binary code is stored in a shift-register which is continuously checked against a reference value ('the padlock code').",
+            "how_to_test": "Connect a clock generator to the clock input, connect all four buttons with a debounce circuit - the buttons should act as active high.",
+            "external_hw": "",
+            "doc_link": "README.md",
+            "clock_hz": 100,
+            "language": "wokwi",
+            "wokwi_id": "341438392303616596",
+            "picture": "high-level-diagram.png",
+            "inputs": [
+                "clock",
+                "Button A",
+                "Button B",
+                "Button C",
+                "Button D",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "Button press detected",
+                "Code valid"
+            ],
+            "git_url": "https://github.com/jeanthom/tinytapout-lock"
+        }
+    },
+    {
+        "project": {
+            "author": "Aidan Medcalf",
+            "title": "TinyIO",
+            "description": "Tiny I/O expander with SPI interface",
+            "how_it_works": "TinyIO takes 7 bits in as digital outputs, and sends 3 bits out from its digital inputs.",
+            "how_to_test": "7-bit SPI transaction. Supply nCE, SIN and SCK.",
+            "external_hw": "SPI driver",
+            "doc_link": "https://github.com/AidanMedcalf/tinytapeout-tinyio/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "Verilog",
+            "wokwi_id": "341432284947153491",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "serial clock",
+                "chip enable",
+                "serial in",
+                "in0",
+                "in1",
+                "in2"
+            ],
+            "outputs": [
+                "out0",
+                "out1",
+                "out2",
+                "out3",
+                "out4",
+                "out5",
+                "out6",
+                "serial out"
+            ],
+            "git_url": "https://github.com/AidanMedcalf/tinytapeout-tinyio"
+        }
+    },
+    {
+        "project": {
+            "author": "Hirosh Dabui",
+            "title": "4-bit-asychronous multiplier",
+            "description": "Asychronous 4-bit multiplier that return 8-bit",
+            "how_it_works": "2x4bit operands and 8bit result",
+            "how_to_test": "Feed the 4-bit-operands and get the multiplication",
+            "external_hw": "2x4-switches and 8 leds",
+            "doc_link": "https://github.com/splinedrive/tinytapeout-verilog-4x4-multiplier/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341493393195532884",
+            "picture": "gds_4x4_mul.svg",
+            "inputs": [
+                "input a0",
+                "input a1",
+                "input a2",
+                "input a0",
+                "input b1",
+                "input b2",
+                "input b3",
+                "input b3"
+            ],
+            "outputs": [
+                "output c[0]",
+                "output c[1]",
+                "output c[2]",
+                "output c[3]",
+                "output c[4]",
+                "output c[5]",
+                "output c[6]",
+                "output c[7]"
+            ],
+            "git_url": "https://github.com/splinedrive/tinytapeout-verilog-4x4-multiplier"
+        }
+    },
+    {
+        "project": {
+            "author": "Thorsten Knoll",
+            "title": "Shiftregister 8 Bit",
+            "description": "A simple shiftregister with 8 bit depth, made from D-FlipFlops. Programmable with data and clk, reset. All 8 bits will be mapped to the output.",
+            "how_it_works": "Programm the shiftregister with the data (IN0) and clk (IN1) inputs. With reset enabled, the FlipFlops will be cleared with the next risign edge on the clk. The outputs (OUT0 - OUT7) are driven by the shiftregister bits.",
+            "how_to_test": "Each rising edge at the clk input pushs a new data bit into the re\u01f5ister. Reset happens with the next clk. See the complete state of the register at the 8 outputs.",
+            "external_hw": "A dipswitch and two button for the inputs. 8 LEDs connected to the outputs.",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341506274933867090",
+            "picture": "shiftregister.png",
+            "inputs": [
+                "clk",
+                "data",
+                "reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "out 0",
+                "out 1",
+                "out 2",
+                "out 3",
+                "out 4",
+                "out 5",
+                "out 6",
+                "out 7"
+            ],
+            "git_url": "https://github.com/ThorKn/tinytapeout_shiftregister_8bit"
+        }
+    },
+    {
+        "project": {
+            "author": "Davit Markarian",
+            "title": "SQRT7",
+            "description": "Finds Square Root of 7-bit number, outputs in 4.2 fixed format",
+            "how_it_works": "Uses Newton's method to solve sqrt in 3 cycles",
+            "how_to_test": "",
+            "external_hw": "Clock circuit, Query Switches, LEDs for output, and/or 7-segment display (with converters)",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "verilog",
+            "wokwi_id": "341449297858921043",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "query 1-7"
+            ],
+            "outputs": [
+                "fractional output 1-2",
+                "integer output  1-4"
+            ],
+            "git_url": "https://github.com/UDXS/tinytapeout-sqrt"
+        }
+    },
+    {
+        "project": {
+            "author": "Thorsten Knoll",
+            "title": "Shiftregister Challenge 40 Bit",
+            "description": "The design is a 40 bit shiftregister with a hardcoded 40 bit number. The challenge is to find the correct 40 bit to enable the output to high. With all other numbers the output will be low.",
+            "how_it_works": "Shift a 40 bit number into the chip with the two inputs data (IN0) and clk (IN1). If the shifted 40 bit match the hardcoded internal 40 bit, then and only then the output will become high. Having only the mikrochip without the design files, one might need reverse engineering and/or side channel attacks to fing the correct 40 bit.",
+            "how_to_test": "Get the correct 40 bit from the design and shift them into the shiftregister. Each rising edge at the clk will push the next bit into the register. At the correct 40 bit, the output will enable high.",
+            "external_hw": "To test when knowing the correct 40 bit, only a dipswitch (data), a button (clk) and a LED (output) is needed. Without knowing the number it becomes the challenge and more hardware might be required.",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341516949939814994",
+            "picture": "shiftregister_challenge.png",
+            "inputs": [
+                "data",
+                "clk",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "output",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/ThorKn/tinytapeout_shiftregister_challenge"
+        }
+    },
+    {
+        "project": {
+            "author": "todd1251",
+            "title": "Figure 8 pattern generator",
+            "description": "Generates a figure 8 pattern on the 7-segment display",
+            "how_it_works": "",
+            "how_to_test": "",
+            "external_hw": "",
+            "doc_link": "",
+            "clock_hz": 1,
+            "language": "wokwi",
+            "wokwi_id": "341243232292700755",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "none"
+            ],
+            "git_url": "https://github.com/todd1251/tinytapeout-figure8"
+        }
+    },
+    {
+        "project": {
+            "author": "Miron Zadora",
+            "title": "Picture Printer",
+            "description": "Outputs the Edinburgh Hacklab logo pixel by pixel",
+            "how_it_works": "It outputs the image pixel by pixel, line by line, left to right, top to bottom. 1 pixel per clock cycle. Image is 41 by 41 pixels. 1 = black pixel, 0 = white pixel.",
+            "how_to_test": "Supply a clock to 1st input and hold 2nd input high for one clock cycle to reset. Everything in the design happens on the rising edge of the clock. Connect external hardware described below.",
+            "external_hw": "Something to decode and display the image. E.g. An arduino connected to the chip Clock and Pixel Output pins could be used to display the 1s and 0s coming from the chip as '@' and '.' characters in a serial console, putting a newline every 41 characters (41 is the width of the image)",
+            "doc_link": "https://github.com/ElectricPotato/tinytapeout-picture-printer-b/blob/main/README.md",
+            "clock_hz": 1000,
+            "language": "verilog",
+            "wokwi_id": "341542971476279892",
+            "picture": "images/img1_ehlab.png",
+            "inputs": [
+                "Clock",
+                "Synchronous reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "Pixel output",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "git_url": "https://github.com/ElectricPotato/tinytapeout-picture-printer-b"
+        }
+    },
+    {
+        "project": {
+            "author": "Michael Gargano",
+            "title": "4-bit ALU with 7 segment display decoder hexadecimal output",
+            "description": "a 4-bit ALU with 8 different possible operations on an internal accumulator whose current 4-bit state is displayed in hexadecimal on the segmented display",
+            "how_it_works": "3-bit decoder picks operation pass-through, bit-wise (NOT, AND, OR, XOR), two's complement, add, or subtract circuit based on selection and stores the result in a 4-bit accumulator, after the pressing the step button, the 4-bit to 7-segment display decoder circuits then take that value and display it hexadecimal",
+            "how_to_test": "select one of the 8 alu operations [switches 4-2] (pass-through 0, bit-wise NOT 1, bit-wise AND 2, bit-wise OR 3, bit-wise XOR 4, add 5, two's compliment 6, subtract 7) then input a 4-bit number [switches 8-5], press step button to perform the selected computation and the display will indicate current 4-bit accumulator value in hex, dot indicates if a carry is output during addition or subtraction",
+            "external_hw": "None",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341538994733974098",
+            "picture": "",
+            "inputs": [
+                "clock (or single step with step button)",
+                "alu operation selection bit 2",
+                "alu operation selection bit 1",
+                "alu operation selection bit 0",
+                "input bit 3",
+                "input bit 2",
+                "input bit 1",
+                "input bit 0"
+            ],
+            "outputs": [
+                "segment a of hex output",
+                "segment b of hex output",
+                "segment c of hex output",
+                "segment d of hex output",
+                "segment e of hex output",
+                "segment f of hex output",
+                "segment g of hex output",
+                "dot (indicates carry)"
+            ],
+            "git_url": "https://github.com/mgargano/tinytapeout_alu_with_4bit_7segmetdisplay_decoder"
+        }
+    },
+    {
+        "project": {
+            "author": "Michael Christen",
+            "title": "An optionally cumulative adder",
+            "description": "Increment with clock and add previous result or current A + B",
+            "how_it_works": "A, B are 3 bits, there's a clock and a selctor to use A or (A + B)'",
+            "how_to_test": "Toggle clock to run increment, swap between acumulating or just adding with switch 2; 3-5 are A, 6-8 are B",
+            "external_hw": "LEDs and switches would be handy",
+            "doc_link": "https://wokwi.com/projects/341569483755749970",
+            "clock_hz": 1,
+            "language": "wokwi",
+            "wokwi_id": "341569483755749970",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "none"
+            ],
+            "git_url": "https://github.com/michael-christen/wokwi-verilog-asic-experiment"
+        }
+    },
+    {
+        "project": {
+            "author": "Joseph Chiu",
+            "title": "7-segment LED flasher",
+            "description": "Drives 7-segment LED display, alternating between NIC and JAC",
+            "how_it_works": "Master clock is fed through a prescaler with four tap-points which feeds a 4-bit ripple counter (there are 6 total bits, but the top two bits are discarded). 2:1 muxes are chained to act like a 8:1 mux for each LED segment position. As the counter runs, this results in each segment being turned on or off as needed to render the display sequence (NIC JAC ).  The highest order bit is used to blink the decimal point on/off. ",
+            "how_to_test": "IN5 and IN6 selects the clock prescaler. OUT0-OUT7 are the LED segment outputs.",
+            "external_hw": "Signals are assigned per the tinytapeout wokwi simulator and intended to run on the project PCB",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341490465660469844",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "none",
+                "none",
+                "none",
+                "none",
+                "Prescale select bit 0",
+                "Prescale select bit 1",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "segment dp"
+            ],
+            "git_url": "https://github.com/toybuilder/learn-tinytapeout"
+        }
+    },
+    {
+        "project": {
+            "author": "Rakesh Peter",
+            "title": "tinytapeout-HELLo-3orLd-7seg",
+            "description": "HELLo-3orLd Runner on 7 segment Display",
+            "how_it_works": "BCD Counter with 7 seg Decoder",
+            "how_to_test": "All toggle switches in zero position and clock switch on for auto runner. Individual BCD bits can be toggled using corresponding inputs with clock switch off.",
+            "external_hw": "none",
+            "doc_link": "https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg/blob/main/README.md",
+            "clock_hz": 1,
+            "language": "wokwi",
+            "wokwi_id": "341609034095264340",
+            "picture": "HELLo-3orld-7seg.png",
+            "inputs": [
+                "clock",
+                "reset",
+                "none",
+                "dp toggle",
+                "BCD bit 3",
+                "BCD bit 2",
+                "BCD bit 1",
+                "BCD bit 0"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "segment dp"
+            ],
+            "git_url": "https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg"
+        }
+    },
+    {
+        "project": {
+            "author": "maehw",
+            "title": "Wolf sheep cabbage river crossing puzzle ASIC design (\ud83d\udc3a\ud83d\udc10\ud83e\udd6c\ud83d\udea3)",
+            "description": "Play the wolf, goat and cabbage puzzle interactively.",
+            "how_it_works": "Truth table with the game logic (hidden easter egg). The inputs are the positions of the farmer, wolf, goat and cabbage. The 7-segment display shows the status of the game (won or lost).",
+            "how_to_test": "Slide the input switches, think, have a look at the 7-segment display.",
+            "external_hw": "Input switches and 7-segment display",
+            "doc_link": "https://github.com/maehw/wokwi-verilog-gds-wolf-goat-cabbage/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341614346808328788",
+            "picture": "wokwi-simulation-io-mapping.png",
+            "inputs": [
+                "not connected because it is typically used for clocked designs and may be used in the future of this design",
+                "input signal F for the position of the farmer (\ud83e\uddd1\u200d\ud83c\udf3e/\ud83d\udea3)",
+                "input signal W for the position of the wolf (\ud83d\udc3a)",
+                "input signal G for the position of the goat (\ud83d\udc10)",
+                "input signal C for the position of the cabbage (\ud83e\udd6c)",
+                "here be dragons or an easter egg",
+                "unused",
+                "unused"
+            ],
+            "outputs": [
+                "output signal ~E, i.e. the top and bottom segments light up, when the game is over \u274c\u274c\u274c due to an unattended situation on any river bank side",
+                "output signal ~R i.e. the top-right and bottom-right segments light up, to indicate an unattended situation on the right river bank (game over \u274c)",
+                "output signal ~R i.e. the top-right and bottom-right segments light up, to indicate an unattended situation on the right river bank (game over \u274c)",
+                "output signal ~E, i.e. the top and bottom segments light up, when the game is over \u274c\u274c\u274c due to an unattended situation on any river bank side",
+                "output signal ~L i.e. the top-left and bottom-left segments light up, to indicate an unattended situation on the left river bank (game over \u274c)",
+                "output signal ~L i.e. the top-left and bottom-left segments light up, to indicate an unattended situation on the left river bank (game over \u274c)",
+                "here be dragons or an easter egg",
+                "output signal A to light up the \"dot LED\" of the 7 segment display as an indicator that all objects have reached the right bank of the river and the game is won! \ud83c\udf89\ud83c\udf89\ud83c\udf89"
+            ],
+            "git_url": "https://github.com/maehw/wokwi-verilog-gds-wolf-goat-cabbage"
+        }
+    },
+    {
+        "project": {
+            "author": "Thorsten Knoll",
+            "title": "8x8 Bit Pattern Player",
+            "description": "8x8 bit serial programmable, addressable and playable memory.",
+            "how_it_works": "The 8x8 memory is a 64-bit shiftregister, consisting of 64 serial chained D-FlipFlops (data: IN0, clk_sr: IN1). 8 memoryslots of each 8 bit can be directly addressed via addresslines (3 bit: IN2, IN3, IN4) or from a clockdriven player (3 bit counter, clk_pl: IN7). A mode selector line (mode: IN5) sets the operation mode to addressing or to player. The 8 outputs are driven by the 8 bit of the addressed memoryslot.",
+            "how_to_test": "Programm the memory: Start by filling the 64 bit shiftregister via data and clk_sr, each rising edge on clk_sr shifts a new data bit into the register. Select mode: Set mode input for direct addressing or clockdriven player. Address mode: Address a memoryslot via the three addresslines and watch the memoryslot at the outputs. Player mode: Each rising edge at clk_pl enables the next memoryslot to the outputs.",
+            "external_hw": "You could programm, address and play the 8x8 Bit Pattern Player with a breadboard, two clock buttons and some dipswitches on the input side. Add some LED to the output side. Just like the WOKWI simulation.",
+            "doc_link": "",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341620484740219475",
+            "picture": "pattern_player.png",
+            "inputs": [
+                "data",
+                "clk_sr",
+                "address_0",
+                "address_1",
+                "address_2",
+                "mode",
+                "none",
+                "clk_pl"
+            ],
+            "outputs": [
+                "bit 0",
+                "bit 1",
+                "bit 2",
+                "bit 3",
+                "bit 4",
+                "bit 5",
+                "bit 6",
+                "bit 7"
+            ],
+            "git_url": "https://github.com/ThorKn/tinytapeout_pattern_player"
+        }
+    },
+    {
+        "project": {
+            "author": "Rajarshi Roy",
+            "title": "Figure of 8 orbit animation",
+            "description": "Stepping using button will show a figure of 8 orbit animation on 7 segment display",
+            "how_it_works": "Signal goes through ring shift register, each flop in shift register is connected to a segment in the display.",
+            "how_to_test": "In button stepping mode, turn on switch 8 and press multiple times to fill figure of 8 with signal from switch 7, then toggle switch 7, step once, turn off switch 8, then keep stepping to see the orbit animation.",
+            "external_hw": "None",
+            "doc_link": "https://github.com/rajarshiroy/tinytapout0_rajarshi/blob/main/README.md",
+            "clock_hz": 0,
+            "language": "wokwi",
+            "wokwi_id": "341614536664547922",
+            "picture": "",
+            "inputs": [
+                "clock",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "value of signal to enter into ring shift register when switch 8 is enabled",
+                "insert new signal from switch 7 into ring shift register"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "dot shows when switch 8 is enabled"
+            ],
+            "git_url": "https://github.com/rajarshiroy/tinytapout0_rajarshi"
+        }
+    },
+    {
+        "project": {
+            "author": "maehw",
+            "title": "Low-speed UART transmitter with limited character set loading",
+            "description": "300(?) baud UART transmitter (8N1) with limited character set (0x40..0x5F; includes all capital letters in the ASCII table) loading.",
+            "how_it_works": "The heart of the design is a 13 bit shift register (built from D flip-flops). When a word has been transmitted, it will be transmitted again and again until a new word is loaded into the shift register or the output is disabled (the word will keep on cycling internally).",
+            "how_to_test": "Load a character into the design and attach a UART receiver (or oscilloscope or logic analyzer) on the output side.",
+            "external_hw": "UART receiver or oscilloscope or logic analyzer (optional)",
+            "doc_link": "https://github.com/maehw/wokwi-verilog-gds-lowspeed-tiny-uart/blob/main/README.md",
+            "clock_hz": 300,
+            "language": "wokwi",
+            "wokwi_id": "341631511790879314",
+            "picture": "wokwi-simulation-io-mapping.png",
+            "inputs": [
+                "300 Hz input clock signal (or different value supported by the whole",
+                "bit b0 (the least significant bit) of the loaded and transmitted character",
+                "bit b1 of the loaded and transmitted character",
+                "bit b2 of the loaded and transmitted character",
+                "bit b3 of the loaded and transmitted character",
+                "bit b4 of the loaded and transmitted character",
+                "load word into shift register from parallel input (IN1..IN5) (1) or cycle the existing word with start/stop bits around it (0)",
+                {
+                    "output enable (for gated output signals)": "1 output is enabled, 0 output is disabled (permanently set to HIGH/1)"
+                }
+            ],
+            "outputs": [
+                "UART (serial output pin, direct throughput)",
+                "UART (serial output pin, gated by enable signal)",
+                "UART (serial output pin, reverse polarity, direct throughput)",
+                "UART (serial output pin, reverse polarity, gated by enable signal)",
+                "UART (MSBit, direct throughput); typically set to 1 or can be used to sniffing the word cycling through the shift register)",
+                "UART (MSBit, reverse polarity, direct throughput); same usage as above",
+                "UART (MSBit, gated by enable signal); typically set to 1 or can be used to sniffing the word cycling through the shift register)",
+                "UART (MSBit, reverse polarity, gated by enable signal); same usage as above"
+            ],
+            "git_url": "https://github.com/maehw/wokwi-verilog-gds-lowspeed-tiny-uart"
+        }
+    },
+    {
+        "project": {
+            "author": "Thomas Zachariah",
+            "title": "LAB11",
+            "description": "Cycles through the characters of LAB11",
+            "how_it_works": "Gates & flip-flops connected to the 7-segment display change the state of corresponding LED segments to form the next character, each cycle",
+            "how_to_test": "Set to desired clock speed \u2013 characters are most readable at the lowest speed",
+            "external_hw": "None",
+            "doc_link": "https://github.com/tzachari/tinytapeout-lab11",
+            "clock_hz": 2,
+            "language": "wokwi",
+            "wokwi_id": "341631644820570706",
+            "picture": "tinytapeout-lab11.gif",
+            "inputs": [
+                "clock",
+                "reset",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none",
+                "none"
+            ],
+            "outputs": [
+                "segment a",
+                "segment b",
+                "segment c",
+                "segment d",
+                "segment e",
+                "segment f",
+                "segment g",
+                "none"
+            ],
+            "git_url": "https://github.com/tzachari/tinytapeout-lab11"
+        }
+    }
+]

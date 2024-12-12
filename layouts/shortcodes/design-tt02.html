@@ -1,5 +1,16 @@
-{{ $designs := getJSON "designs/designs-tt02.json" }}
 {{ $wanted := .Get 0 }}
+
+{{ $designs := dict}}
+{{ $designs_path := "data/designs/designs-tt02.json" }}
+
+{{ with resources.Get $designs_path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $designs = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Designs file not found: %s" $designs_path }}
+{{ end }}
+
 {{ range $designs }}
   {{ if eq .project.git_url $wanted }}
   | {{  .documentation.title }} | |
@@ -10,4 +21,3 @@
   {{ if .documentation.picture }} | Picture | ![pic]({{ .project.git_url }}/raw/main/{{ .project.picture }}?width=40pc) | {{ end }}
   {{ end }}
 {{ end }}
-
