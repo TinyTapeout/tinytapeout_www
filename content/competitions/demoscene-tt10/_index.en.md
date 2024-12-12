@@ -1,5 +1,5 @@
 ---
-title: TT08 Demoscene
+title: TT10 Demoscene
 tags: [competition]
 description: "Build a sound and graphics demo in less than 161 x 225 microns of 130nm ASIC"
 weight: 10
@@ -35,12 +35,12 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
     * Enable the project,
     * Judges will read the datasheet to understand how to set the inputs and clock,
     * Reset.
-* Must be submitted to TT08 (closes September 6th).
+* Must be submitted to TT10 (closes March 7th 2025).
 * Entrants can submit multiple designs.
 
 ## Categories
 
-* Newcomer - TT08 must be your first tapeout on Tiny Tapeout,
+* Newcomer - TT10 must be your first tapeout on Tiny Tapeout,
 * Best sound track,
 * Best single tile design,
 * Best graphics,
@@ -52,9 +52,9 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 
 ## How to enter
 
-* Once your design is passing the GitHub actions, submit it to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date of September 6th.
-* Once submitted to the form, we will send you a coupon within 48 hours for a free tile on TT08.
-* You must also submit your design to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com).
+* Once your design is passing the GitHub actions, submit it to the [competition form](https://forms.gle/WtNjEgWybs3vCQPF9) before the closing date.
+* Once submitted to the form, we will send you a coupon within 48 hours for a free tile on TT10.
+* You then use to coupon to submit your design to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com).
 
 ## How to get help
 
@@ -77,21 +77,14 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 
 ## Judges
 
-We have some fantastic judges lined up:
-
-* Bitluni - best known for his [youtube channel](https://www.youtube.com/channel/UCp_5PO66faM4dBFbFFBdPSQ) showcasing his [hacks](https://youtu.be/muuhgrige5Q?si=h7A-GAaD8sdKA_Qy) and [investigations](https://youtu.be/z4uxC7ISd-c?si=VUvGwlB5MwNviq_d), Luni has also made the [best chip ever](https://youtu.be/DdF_nzMW_i8?si=F1zM9HOBrpG6yZhO) on Tiny Tapeout and started his computer journey in the demoscene.
-
-* cnlohr - famed for squeezing [incredible amounts of functionality into the tiniest devices](https://youtu.be/j-QazXghkLY?si=v0-jduEzJHjFaqXS), he most recently persuaded a 10 cent microcontroller to [transmit LORA](https://youtu.be/eIdHBDSQHyw?si=dQ4GrKh07SfiKPnR)!
-
-* Sprite_tm - legendary hacker who brought us the [Vectrex multi cart](https://spritesmods.com/?art=veccart), ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k) and made the [Hackaday FPGA Gameboy badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/).
-
+TBD!
 
 ## Small print
 
 1. How will the competition be judged? A panel of appointed judges will vote and have the final say. The submissions will be judged on the results the judge gets on their boards.
-2. Will there be any extension to the deadline? No, it’s September 6th.
+2. Will there be any extension to the deadline? No!
 3. You can change the documentation used by the judges up to the point of judging the design. Any changes must be submitted to the chip datasheet by pull request to the GitHub repository.
-4. When will the competition be judged? 2 weeks after 75% of the boards have been received by entrants (estimated June 2025).
+4. When will the competition be judged? 2 weeks after 75% of the boards have been received by entrants (estimated December 2025).
 5. Your design must not depend on any other hardware.
 6. You are not limited to a maximum clock frequency, but if the judges can’t get the design to work (because their ASIC is slower for example) then you run the risk of not qualifying. You are advised to use ~80MHz or less.
 7. You are advised to stick with a standard VGA timing, if it doesn’t work on the judge’s display you run the risk of not qualifying.
