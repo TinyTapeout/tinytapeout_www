@@ -1,5 +1,5 @@
 ---
-title: TT08 Demoscene
+title: TT08 Demoscene (closed)
 tags: [competition]
 description: "Build a sound and graphics demo in less than 161 x 225 microns of 130nm ASIC"
 weight: 10
