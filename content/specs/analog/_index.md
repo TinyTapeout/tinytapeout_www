@@ -69,7 +69,7 @@ Example:
 
 This price is only for including the design in the shuttle, and does not include the cost of the ASIC, PCB, or shipping.
 
-For more information on pricing, check the [calculator](https://app.tinytapeout.com/calculator?tiles=2&pcbs=1).
+For more information on pricing, check the [calculator](https://app.tinytapeout.com/calculator?tiles=2&pcbs=1&analog-pins=2).
 
 ---
 
