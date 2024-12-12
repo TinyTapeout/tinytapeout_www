@@ -1,6 +1,7 @@
 ---
 title: "Tiny Tapeout"
 images: [/images/tinytapeout6.png]
+description: "From idea to chip design in minutes! Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip."
 LastModifierDisplayName: matt venn
 ---
 
