@@ -28,7 +28,7 @@ You are not allowed to use the **metal 5** layer in your design, as it's used by
 
 ## Pin locations
 
-The pin locations must match one of the [Tiny Tapeout templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt09/def/analog). The templates are available in DEF format, which is compatible with the [Magic VLSI layout tool](http://opencircuitdesign.com/magic/).
+The pin locations must match one of the [Tiny Tapeout templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt10/def/analog). The templates are available in DEF format, which is compatible with the [Magic VLSI layout tool](http://opencircuitdesign.com/magic/).
 
 There are several templates available, each for a different number of tiles. The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
 
@@ -78,12 +78,12 @@ Make sure the version of Magic matches the PDK.
 
 ## Create the repository
 
-Start your design from the [tt09-analog-template repository](https://github.com/TinyTapeout/tt09-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
+Start your design from the [tt10-analog-template repository](https://github.com/TinyTapeout/tt10-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
 
 ## Decide on the size of your design
 
 Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions. 
-Download one of the [analog pin templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt09/def/analog) as a starting point for your design.
+Download one of the [analog pin templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt10/def/analog) as a starting point for your design.
 
 The following templates are currently available:
 
@@ -120,7 +120,7 @@ Edit [docs/info.md](docs/info.md) and add a description of your project.
 
 Use your preferred analog flow to design, simulate, layout, extract, LVS and post layout simulate.
 
-A quick way to get started is to use this [tcl script](https://github.com/TinyTapeout/tt-support-tools/blob/tt09/def/analog/magic_init_project.tcl) to draw and label the power ports.
+A quick way to get started is to use this [tcl script](https://github.com/TinyTapeout/tt-support-tools/blob/tt10/def/analog/magic_init_project.tcl) to draw and label the power ports.
 
 * Download the script
 * Edit it to change the module name and configure the pin template and power stripes
