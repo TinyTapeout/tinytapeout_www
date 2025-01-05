@@ -17,7 +17,7 @@ This guide will walk you through the process of preparing your Wokwi design for 
 
 GitHub templates are a collection of files with a predefined structure. Ours contains all the files and settings necessary to convert your design to the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) we need for manufacture.
 
-* Go to the [Wokwi Template](https://github.com/TinyTapeout/tt09-wokwi-template)
+* Go to the [Wokwi Template](https://github.com/TinyTapeout/tt10-wokwi-template)
 * Click the ‘Use this template’ button to generate your own copy of the repository.
 
    <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>
