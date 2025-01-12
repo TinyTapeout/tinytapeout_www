@@ -45,3 +45,20 @@ export function summarizeFeedback(feedback: Array<{ status: ProjectFeedbackStatu
     .map(([status, count]) => `${statusMap[status as ProjectFeedbackStatus]} ${count}`)
     .join(' ');
 }
+
+export interface IShuttleFeedbackItem {
+  shuttle: string;
+  title: string;
+  macro: string;
+  working: number;
+}
+
+export type IAllShuttlesFeedbackList = Array<IShuttleFeedbackItem>;
+
+export async function loadAllProjectFeedback() {
+  const response = await fetch(`https://app.tinytapeout.com/api/shuttles/feedback`);
+  if (!response.ok) {
+    return null;
+  }
+  return (await response.json()) as IAllShuttlesFeedbackList;
+}
