@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { renderToString } from 'react-dom/server';
-import { HighlightProjects } from '../components/HighlightProjects.js';
+import { SiliconProvenProjects } from '../components/SiliconProvenProjects.js';
 import { isSkipCache } from '../utils/cache.js';
 import { fetchTextAsset } from '../utils/context.js';
 import { notFound } from '../utils/notFound.js';
@@ -19,7 +19,10 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
 
   // Not a legacy URL - fetch the project data
 
-  const templateText = await fetchTextAsset(context, 'https://tinytapeout.com/runs/highlights/');
+  const templateText = await fetchTextAsset(
+    context,
+    'https://tinytapeout.com/runs/silicon-proven/',
+  );
   if (!templateText) {
     return notFound(context);
   }
@@ -32,7 +35,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   const response = new Response(
     templateText.replaceAll(
       '{{CONTENT}}',
-      renderToString(<HighlightProjects feedback={feedback} />),
+      renderToString(<SiliconProvenProjects feedback={feedback} />),
     ),
     {
       headers: {

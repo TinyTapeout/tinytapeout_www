@@ -1,7 +1,7 @@
 import React from 'react';
 import { IAllShuttlesFeedbackList } from '../model/feedback.js';
 
-export function HighlightProjects(props: { feedback: IAllShuttlesFeedbackList }) {
+export function SiliconProvenProjects(props: { feedback: IAllShuttlesFeedbackList }) {
   const rows: React.ReactNode[] = [];
 
   const sortedFeedback = [...props.feedback].sort((a, b) => {
