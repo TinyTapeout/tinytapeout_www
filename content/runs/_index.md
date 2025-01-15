@@ -13,7 +13,7 @@ weight: 10
 | [TT04](/runs/tt04)                                | 2023-07-01 | 2023-09-08 | [2309](https://efabless.com/shuttle-status)  | 143     | 2024-03-26     | Shipped 2024-05-24      |
 | [TT05](/runs/tt05)                                | 2023-09-11 | 2023-11-04 | [2311](https://efabless.com/shuttle-status)  | 174     | 2024-06-10     | Shipped 2024-07-05      |
 | [TT06](/runs/tt06)                                | 2024-01-30 | 2024-04-19 | [2404](https://efabless.com/shuttle-status)  | 238     | 2024-11-04     | Shipped 2024-12-07      |
-| [TT07](/runs/tt07)                                | 2024-04-22 | 2024-06-01 | [2406](https://efabless.com/shuttle-status)  | 120     | 2024-11-25     | 2025-01-31              |
+| [TT07](/runs/tt07)                                | 2024-04-22 | 2024-06-01 | [2406](https://efabless.com/shuttle-status)  | 120     | 2024-11-25     | Shipped 2025-01-15      |
 | [TT08](/runs/tt08)                                | 2024-06-10 | 2024-09-06 | [2409](https://efabless.com/shuttle-status)  | 135     | 2025-04-01     | 2025-05-12              |
 | [TT IHP 0.2](/runs/ttihp0p2)                      | 2024-10-22 | 2024-11-04 | IHP                                          | 95      | 2025-03-30     | None - test shuttle     |
 | [TT09](/runs/tt09)                                | 2024-09-07 | 2024-11-10 | [2411](https://efabless.com/shuttle-status)  | 369     | 2025-05-15     | 2025-06-30              |
