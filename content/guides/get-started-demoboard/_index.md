@@ -7,7 +7,7 @@ weight: 50
 
 
 
-If you've got hold of a TinyTapeout 04 ASIC and demoboard, this quickstart guide will get you going by walking through:
+If you've got hold of a TinyTapeout 04/05/06/07 ASIC and demoboard, this quickstart guide will get you going by walking through:
 
  * overview and bring-up;
  * interaction through the browser, using the commander app;
@@ -109,6 +109,17 @@ You might skip that step and single step the clock, using the *INTERACT* tab.
 
 Here you can also reset the project, set the inputs.  If the author provided it, some information on the project pinout and access to the REPL are available in their own tabs.
 
+### Troubleshooting
+
+In case the commander app does not detect your TT chip correctly, it'll report the shuttle name as "unknown". This is usually caused by driving the ui_in pins through the INPUT Pmod port, and, in older firmware versions (pre 2.0.3), by having some of the input switches in the "on" position.
+
+To fix this, do the following:
+
+1. Make sure that the INPUT Pmod port is not connected to anything.
+2. Make sure that all the input switches are in the "off" position or upgrade to the [latest firmware](https://github.com/TinyTapeout/tt-micropython-firmware/releases). Note that upgrading the firmware will erase all files on the Demo Board, including any changes
+you made to config.ini or any files you uploaded to it.
+3. You can also skip the shuttle detection by setting the `force_shuttle` option in config.ini (see below).
+
 ### SDK and REPL 
 
 The microcontroller on the demoboards, the [RP2040](https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html) is powerful enough to run [MicroPython](https://micropython.org/)--a lean implementation of Python3--and is connected not only to the project MUX but to all the ASIC I/O as well as the clock and reset pins.
@@ -195,15 +206,14 @@ In your scripts and modules, the easiest thing is to treat the DemoBoard object 
 ```
 from ttboard.demoboard import DemoBoard
 
-mytt = DemoBoard.get()
+tt = DemoBoard.get()
 
-mytt.shuttle.tt_um_myproject.enable()
+tt.shuttle.tt_um_myproject.enable()
 
-mytt.input_byte = 0xfe
-print(f'Output from project is now: {mytt.output_byte}')
+tt.ui_in = 0xfe
+print(f'Output from project is now: {tt.uo_out}')
 
-# ... etc
-
+# ...
 ```
 
 Other than that, the [SDK documentation](https://github.com/TinyTapeout/tt-micropython-firmware#tt4-micropython-sdk) and various [sample tests](https://github.com/TinyTapeout/tt-micropython-firmware/tree/main/src/examples) will be your best guides.
@@ -411,43 +421,43 @@ clock_frequency = 50000
 clock_frequency = 10e6
 ```
 
-## `input_byte`
+## `ui_in`
 
-If you need to send a stream of input, it'll be necessary to script something up, but for setting initial state of the inputs to some known and valid value, the *input_byte* option is ideal.  Set this value to an integer and the various input bits will be set accordingly.
+If you need to send a stream of input, it'll be necessary to script something up, but for setting initial state of the inputs to some known and valid value, the *ui_in* option is ideal.  Set this value to an integer and the various input bits will be set accordingly.
 
 ```
-input_byte = 255
+ui_in = 255
 ```
 would set all the inputs high, whereas
 
 ```
-input_byte = 0b00010011
+ui_in = 0b00010011
 ```
 would set the 0th, first and fourth bits high, all others low.
 
 Note that this setting is only respected when mode is `ASIC_RP_CONTROL`.
 
 
-## `bidir_direction`
+## `uio_oe_pico`
 
-The 8 bidirectional pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *bidir_direction* option.  Any bit set to one will make the corresponding pin on the RP2040 an output.  E.g.
+The 8 bidirectional (uio) pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *uio_oe_pico* option.  Any bit set to one will make the corresponding pin on the RP2040 an output.  E.g.
 
 ```
-bidir_direction = 0b11110000
+uio_oe_pico = 0b11110000
 ```
 would configure the pins connected to the high nibble as outputs.
 
-## `bidir_byte`
+## `uio_in`
 
-If any of the RP2040 pins connected to the bidir I/O is configured as an output, the corresponding bit in *bidir_byte* will be written accordingly on project load.  This only applies to pins set as outputs with the *bidir_direction* option above.  For example, if that was set to *0b11110000* as above, then 
+If any of the RP2040 pins connected to the bidir I/O is configured as an output, the corresponding bit in *uio_in* will be written accordingly on project load.  This only applies to pins set as outputs with the *uio_oe_pico* option above.  For example, if that was set to *0b11110000* as above, then 
 both
 
 ```
-bidir_byte = 0b00010000
+uio_in = 0b00010000
 ```
 and 
 ```
-bidir_byte = 0b00011111
+uio_in = 0b00011111
 ```
 would set `uio[4]` HIGH, uio 5-7 LOW, and leave the lower pins alone. 
 
@@ -480,50 +490,21 @@ log_level = INFO
 # default RP2040 system clock
 rp_clock_frequency = 125e6
 
-
+# force_shuttle
+# by default, system attempts to figure out which ASIC is on board
+# using the chip ROM.  This can be a problem if you have something
+# connected to the demoboard.  If you want to bypass this step and
+# manually set the shuttle, uncomment this and set the option to
+# a valid shuttle
+# force_shuttle = tt06
 
 
 #### PROJECT OVERRIDES ####
 
-
-[tt_um_test]
-clock_frequency = 10
-start_in_reset = no
-input_byte = 1
-
 [tt_um_factory_test]
 clock_frequency = 10
 start_in_reset = no
-input_byte = 1
-
-
-[tt_um_psychogenic_neptuneproportional]
-# set clock to 4kHz
-clock_frequency = 4000
-# clock config 4k, disp single bits
-input_byte = 0b11001000
-mode = ASIC_RP_CONTROL
-
-
-[wokwi_7seg_tiny_tapeout_display]
-rp_clock_frequency = 50_000_000
-clock_frequency = 5
-mode = ASIC_RP_CONTROL
-
-
-[tt_um_loopback]
-# ui_in[0] == 1 means bidirs on output
-clock_frequency = 1000
-input_byte = 1
-
-# bidir_direction, 1 bit means we will
-# write to it (RP pin is output), 
-# 0 means read from (RP is input)
-# set to all output
-bidir_direction = 0xff
-bidir_byte = 0b110010101
-
-
+ui_in = 1
 
 [tt_um_vga_clock]
 # need to set RP clock freq to get a nice
@@ -531,7 +512,6 @@ bidir_byte = 0b110010101
 rp_clock_frequency = 126e6
 clock_frequency = 31.5e6
 mode = ASIC_RP_CONTROL
-
 
 [tt_um_urish_simon]
 clock_frequency = 50000
