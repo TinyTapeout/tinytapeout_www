@@ -518,3 +518,6 @@ clock_frequency = 50000
 mode = ASIC_MANUAL_INPUTS
 ```
 
+### TT07 Specific Errata
+
+For Tiny Tapeout 7, we had an error in the carrier board, swapping the `CTRL_SEL_nRST` and `CTRL_SEL_INC` pins. The MicroPython SDK already [includes a workaround for this issue](https://github.com/TinyTapeout/tt-micropython-firmware/commit/eee4e08dddeacb91c1e6828b3fde60dc5cf6a8ef), so this shouldn't have any impact for most users. However, if you are writing your own firmware or designing a custom PCB that interfaces with the carrier board, you should be aware of this issue.
