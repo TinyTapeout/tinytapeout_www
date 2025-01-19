@@ -25,8 +25,9 @@ weight: 10
 
 The following chips are planned for the future. The dates are estimates and may change.
 
-| Run  | Submission deadline | Estimated delivery date |
-|------|---------------------|-------------------------|
-| TT11 | 2025-06-02          | Jan 2026                |
-| TT12 | 2025-09-05          | May 2026                |
-| TT13 | 2025-11-08          | July 2026               |
+| Run      | Submission deadline | Estimated delivery date |
+| -------- | ------------------- | ----------------------- |
+| TT11     | 2025-06-02          | Jan 2026                |
+| TTIHP25A | 2025-09-01          | Apr 2026                |
+| TT12     | 2025-09-05          | May 2026                |
+| TT13     | 2025-11-08          | July 2026               |
