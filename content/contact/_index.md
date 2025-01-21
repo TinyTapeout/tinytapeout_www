@@ -11,7 +11,7 @@ For technical questions, please check the [FAQ](/faq) or ask on the [discord for
 
 Matthew Venn is a science & technology communicator and electronic engineer. He brings 20 years of experience to create excellent and innovative learning experiences for people all over the world.
 
-His [Zero to ASIC course](https://www.zerotoasiccourse.com) has enrolled 250 students and submitted chips to every Google shuttle run with 45 course contributed designs.
+His [Zero to ASIC course](https://www.zerotoasiccourse.com) has enrolled 500 students and submitted chips to every Google shuttle run with 45 course contributed designs.
 
 * Email: matt@tinytapeout.com
 * Web: [mattvenn.net](https://mattvenn.net)
