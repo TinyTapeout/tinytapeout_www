@@ -64,7 +64,8 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
   {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/" >}} 
   {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}}
-  {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}} 
+  {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
+  {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
 </div>
 
 # Testimonials
