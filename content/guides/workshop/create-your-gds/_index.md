@@ -10,14 +10,14 @@ This guide will walk you through the process of preparing your Wokwi design for 
 
 ## Prerequisites
 
-* Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257).
+* Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257) or from the [advanced template project](https://wokwi.com/projects/419323243133324289).
 * GitHub Account: If you don’t have a GitHub account, sign up for one [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 ## Use the GitHub Template
 
 GitHub templates are a collection of files with a predefined structure. Ours contains all the files and settings necessary to convert your design to the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) we need for manufacture.
 
-* Go to the [Wokwi Template](https://github.com/TinyTapeout/tt09-wokwi-template)
+* Go to the [Wokwi Template](https://github.com/TinyTapeout/tt10-wokwi-template)
 * Click the ‘Use this template’ button to generate your own copy of the repository.
 
    <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>

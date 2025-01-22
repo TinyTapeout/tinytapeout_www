@@ -1,6 +1,7 @@
 ---
 title: "Tiny Tapeout"
 images: [/images/tinytapeout6.png]
+description: "From idea to chip design in minutes! Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip."
 LastModifierDisplayName: matt venn
 ---
 
@@ -19,7 +20,7 @@ See what other people are making by [taking a look at what was submitted on our 
 # Get started
 
 * If you're new to digital design - start by taking some of our [lessons here](digital_design).
-* Then create your own design with the [Wokwi template](https://wokwi.com/projects/354858054593504257) or for advanced users, [an HDL](/hdl).
+* Then create your own design with the [basic Wokwi template](https://wokwi.com/projects/354858054593504257), [advanced Wokwi template](https://wokwi.com/projects/419323243133324289) or for advanced users, [an HDL](/hdl).
 * For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 # Get your submission ready
@@ -28,7 +29,7 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt09-wokwi-template)
+* [Wokwi submission template](https://github.com/TinyTapeout/tt10-wokwi-template)
 * [Verilog submission template](https://github.com/TinyTapeout/tt10-verilog-template)
 * [Analog and mixed signal template](https://github.com/TinyTapeout/tt10-analog-template)
 
@@ -63,7 +64,8 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
   {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/" >}} 
   {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}}
-  {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}} 
+  {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
+  {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
 </div>
 
 # Testimonials
