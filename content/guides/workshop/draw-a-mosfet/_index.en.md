@@ -2,6 +2,7 @@
 title: 1 - Draw your own MOSFET
 description: "Learn the basics of SiliWiz by drawing a MOSFET"
 weight: 20
+draft: true
 aliases:
     - /guides/workshop/quick_intro
 ---
@@ -89,6 +90,8 @@ Look at the cross section of the MOSFET - the **n diffusion** got split! Now we
 
 When the chip is made, the gate is created first, and then the diffusion mask is used . The gate protects the P substrate from the N type diffusion, so we end up with 2 regions of N type and a region of P in the middle.
 
+The PN junction is a fundamental part of how diodes, transistors and MOSFETs work.
+
 ## Drain, Source and Gate
 
 To see how well our MOSFET works we need to connect up the gate, drain and source. The body is the **p substrate**, and we’ve already connected that to vss.
@@ -97,7 +100,7 @@ We need to draw the layers to connect the MOSFET’s gate, drain and source to c
 
 ![](/siliwiz/images/image48.png?width=80pc)
 
-The red **polysilicon** forms the gate, but which way round is the source and the drain - the cross section shows the MOSFET is symmetrical!
+The red **polysilicon** forms the gate, but which way round is the source and the drain? The cross section shows the MOSFET is symmetrical!
 
 For an N MOSFET to work, the body needs to be kept at the same or lower voltage as one of the remaining terminals. We normally do this by connecting one of the terminals to the same voltage as the body, and because this is where the charge carriers come from, its called the source. The other becomes the drain.
 
@@ -121,9 +124,9 @@ The i(vdd) means to plot the current instead of the voltage. The \*-1000 means t
 
 What does the graph show us? To start with, when the gate is less than around one volt, there is no current flowing. The MOSFET is off. Once we get past a threshold, the MOSFET starts to conduct and lets more and more current flow. This value is called the gate-source threshold.
 
-Try changing the Width of the gate (in) of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
+1. Try changing the Width of the gate (in) of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
 
-If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
+2. If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
 
 ## SiliWiz stackup
 
