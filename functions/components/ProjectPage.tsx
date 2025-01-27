@@ -41,6 +41,9 @@ export function ProjectPage({
 
   const renderUrl = `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${project.macro}/render.png`;
 
+  const threeDModelUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${project.macro}/${project.macro}.gds.gltf`;
+  const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?model=${encodeURIComponent(threeDModelUrl)}`;
+
   return (
     <div>
       <h2>
@@ -61,6 +64,11 @@ export function ProjectPage({
         <li>
           <a href={project.repo} target="_blank" rel="noopener">
             GitHub repository
+          </a>
+        </li>
+        <li>
+          <a href={threeDViewerUrl} target="_blank" rel="noopener">
+            Open in 3D viewer
           </a>
         </li>
         {project.macro.startsWith('tt_um_wokwi_') && (
