@@ -113,7 +113,7 @@ Let's explore a different project:
 
 ## Next Steps
 
-If you finish early or want to explore more:
+To explore more:
 
 * Browse other TT05 designs
 * Try these recommended projects:
