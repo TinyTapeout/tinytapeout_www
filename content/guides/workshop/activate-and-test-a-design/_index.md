@@ -50,6 +50,9 @@ Key components include:
 ### Using the Commander Interface
 
 1. Open the [commander](https://commander.tinytapeout.com/) interface
+
+{{< figure src="images/commander_view.png" title="Commander View" >}}
+
 2. Verify your setup:
    * Check that TT05 is detected
    * Confirm firmware version is 2.0.3 (or higher)
@@ -79,8 +82,6 @@ The default factory test is a counter that runs automatically.
 ### Loading Your First Test Design
 
 Let's try a simple logic gate design:
-
-{{< figure src="images/commander_view.png" title="Commander View" >}}
 
 1. In the commander interface, enable [this](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409488188706817) design.
    * Enter "38" in the index field \
