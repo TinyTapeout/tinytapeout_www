@@ -52,7 +52,7 @@ Key components include:
 1. Open the [commander](https://commander.tinytapeout.com/) interface
 2. Verify your setup:
    * Check that TT05 is detected
-   * Confirm firmware version is 2.0.3
+   * Confirm firmware version is 2.0.3 (or higher)
 
    {{< figure src="images/commander_info.png" title="Commander Info" >}}
 
@@ -62,7 +62,7 @@ Key components include:
      * Request a replacement devkit if needed
 
 {{% notice warning %}}
-If you don't see firmware version 2.0.3 or the TT05 isn't detected, don't proceed until you've resolved these issues.
+If you don't see firmware version 2.0.3 (or higher) or the TT05 isn't detected, don't proceed until you've resolved these issues.
 {{% /notice %}}
 
 ### Testing the Factory Design
