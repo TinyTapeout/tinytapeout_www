@@ -33,7 +33,7 @@ Key components include:
 1. Ensure your devkit is in its default state:
    * All DIP switches should be OFF
    * Nothing should be plugged in except the USB cable
-   * The devkit should look exactly like the image above
+   * The devkit should look exactly like the image below
 
    {{< figure src="images/devkit_unplugged.png" title="Devkit - Unplugged" >}}
 
