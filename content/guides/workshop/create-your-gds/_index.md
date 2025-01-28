@@ -1,5 +1,5 @@
 ---
-title: '3 - Create the GDS'
+title: '4 - Create the GDS'
 description: 'Create the GDS of your design with a GitHub action'
 weight: 40
 aliases:

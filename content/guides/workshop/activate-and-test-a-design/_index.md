@@ -1,5 +1,5 @@
 ---
-title: 'Activate and Test a Design'
+title: '3 - Activate and Test a Design'
 description: 'Learn how to activate and test designs on the TT05 devkit'
 weight: 70
 ---
@@ -79,6 +79,8 @@ The default factory test is a counter that runs automatically.
 ### Loading Your First Test Design
 
 Let's try a simple logic gate design:
+
+{{< figure src="images/commander_view.png" title="Commander View" >}}
 
 1. In the commander interface, enable [this](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409488188706817) design.
    * Enter "38" in the index field \
