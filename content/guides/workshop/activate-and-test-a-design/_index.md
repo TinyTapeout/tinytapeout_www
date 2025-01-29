@@ -11,14 +11,14 @@ This guide will show you how to activate a design on your TT05 devkit and test i
 Before you begin, make sure you have:
 
 * A TT05 devkit
-* A USB cable to connect the devkit to your laptop
+* A USB C cable to connect the devkit to your laptop
 * Access to the internet to load the [commander](https://commander.tinytapeout.com/) interface
 
 ## Understanding Your Devkit
 
 Before connecting anything, let's familiarize ourselves with the key components of your devkit:
 
-{{< figure src="images/devkit_annotated.png" title="TT05 Devkit Components" >}}
+![](images/devkit_annotated.png?width=60pc)
 
 Key components include:
 * Reset button - Resets the current design
@@ -33,36 +33,29 @@ Key components include:
 1. Ensure your devkit is in its default state:
    * All DIP switches should be OFF
    * Nothing should be plugged in except the USB cable
-   * The devkit should look exactly like the image below
-
-   {{< figure src="images/devkit_unplugged.png" title="Devkit - Unplugged" >}}
 
 2. Connect to your laptop:
    * Use the provided USB cable
    * You should see the 7-segment display start a binary count
    * This indicates the factory test is running correctly
 
-   {{< figure src="images/devkit_on.png" title="Devkit - Powered On" >}}
-
-
-   
+![](images/devkit_on.png?width=60pc)
 
 ### Using the Commander Interface
 
-1. Open the [commander](https://commander.tinytapeout.com/) interface
+1. Go to [https://commander.tinytapeout.com/](https://commander.tinytapeout.com/) to open the commander interface
 
-{{< figure src="images/commander_view.png" title="Commander View" >}}
+![](images/commander_view.png)
 
 2. Verify your setup:
    * Check that TT05 is detected
    * Confirm firmware version is 2.0.3 (or higher)
 
-   {{< figure src="images/commander_info.png" title="Commander Info" >}}
+If something is wrong:
 
-   * If either check fails:
-     * Verify all DIP switches are off
-     * Ensure nothing else is plugged in
-     * Request a replacement devkit if needed
+* Verify all DIP switches are off
+* Ensure nothing else is plugged in
+* Request a replacement devkit if needed
 
 {{% notice warning %}}
 If you don't see firmware version 2.0.3 (or higher) or the TT05 isn't detected, don't proceed until you've resolved these issues.
@@ -73,7 +66,7 @@ If you don't see firmware version 2.0.3 (or higher) or the TT05 isn't detected, 
 The default factory test is a counter that runs automatically.
 
 1. Observe the counter:
-   * Watch the 7-segment display counting up
+   * Watch the 7-segment display - does it look like its counting?
    * Press the reset button. What happens?
 2. Experiment with clock speeds:
    * Try different clock speed settings in the commander interface
@@ -110,13 +103,11 @@ Let's explore a different project:
 
 2. Experiment with the design:
    * What does it do?
-   * Try using the reset button
-   * Open the [Wokwi design](https://wokwi.com/projects/379764885531576321) to understand how it works
+   * Can you reset it with the reset button?
+   * Look at the [Wokwi design](https://wokwi.com/projects/379764885531576321). Can you see why the reset button didn't work?
    * After checking the design, can you reset the counter?
 
-## Next Steps
-
-To explore more:
+## If you have time, try these next steps
 
 * Browse other TT05 designs
 * Try these recommended projects:
