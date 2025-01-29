@@ -32,7 +32,7 @@ pins that specific project is using.  Since [TT06](https://tinytapeout.com/runs/
 
 {{< figure src="images/tt07db.jpg" title="TT07 demoboard" >}}
 
-The ASIC comes installed on a [carrier PCB](https://github.com/tinytapeout/breakout-pcb) which is itself installed on the [TT Demoboard](https://github.com/TinyTapeout/tt-demo-pcb#tinytapeout-demo-board)
+The ASIC comes installed on a [carrier PCB](https://github.com/tinytapeout/carrier-pcb) which is itself installed on the [TT Demoboard](https://github.com/TinyTapeout/tt-demo-pcb#tinytapeout-demo-board)
 
 The demoboard is designed to allow for interaction with design either through the on-board input DIP switches and 7-segment display, or with external circuits through the various pin and PMOD headers on the board. Having the ASIC on a carrier, rather than directly on the demoboard, leaves the adventurous free to design their own custom PCB and easily migrate the chip.
 
