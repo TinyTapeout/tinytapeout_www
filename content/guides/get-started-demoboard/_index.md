@@ -319,7 +319,7 @@ name = value
 where the name is one from the list below, and the value may be a string, a boolean or a numerical value, depending on the particular option.
 
 
-## Example
+#### Example
 
 A simple configuration for system defaults and a single project might be
 
@@ -341,14 +341,14 @@ This would load the *tt_um_urish_simon* project by default, letting the PMOD ext
 
 In the `[DEFAULT]` section, the following options are recognized:
 
-## `project`
+#### `project`
 A string value with the name of the default project to load at start-up, e.g.
 
 ```
 project = tt_um_test
 ```
 
-## `mode`
+#### `mode`
 The tinytapeout chip inputs may be driven by the RP2040 on-board, or from external sources (the DIP switch, the PMODs).  When
 
 ```
@@ -362,7 +362,7 @@ mode = ASIC_MANUAL_INPUTS
 ```
 
 
-## `rp_clock_frequency`
+#### `rp_clock_frequency`
 There are two clocks involved with the TT demoboard: one is the project clock, the other is the clock internal to the RP2040.  There are instances, for example to get an exact value of clocking for the project which is derived from the RP2040 clock using PWM, where you may want to specify the clocking for the MCU.  This option allows you to set this.  You may pass an integer, or a scientific notation value, i.e.
 
 ```
@@ -375,7 +375,7 @@ rp_clock_frequency = 125e6
 are equivalent.
 
 
-## `start_in_reset`
+#### `start_in_reset`
 The project may be put in reset by default by specifying 
 
 ```
@@ -387,7 +387,7 @@ In this case, it will require code somewhere that actually uses the SDK to perfo
 ```
 call on the demoboard object.  If you don't want this, leave the value to `no`.
 
-## `log_level`
+#### `log_level`
 The verbosity of the SDK logging may be set using this option.  Valid values are `DEBUG`, `INFO`, `WARN` and `ERROR`.
 
 
@@ -413,7 +413,7 @@ All lines until the next `[section]` or the end of the file will apply to this p
 In addition to these, there are a few project related options that make life easier:
 
 
-## `clock_frequency`
+#### `clock_frequency`
 
 Most projects are synchronous logic and need to be clocked.  This option allows you to specify that auto clocking of the project should be enabled, and to state at which frequency this should be.  The value is an integer, so you can spell it out or use scientific notation
 
@@ -425,7 +425,7 @@ clock_frequency = 50000
 clock_frequency = 10e6
 ```
 
-## `ui_in`
+#### `ui_in`
 
 If you need to send a stream of input, it'll be necessary to script something up, but for setting initial state of the inputs to some known and valid value, the *ui_in* option is ideal.  Set this value to an integer and the various input bits will be set accordingly.
 
@@ -442,7 +442,7 @@ would set the 0th, first and fourth bits high, all others low.
 Note that this setting is only respected when mode is `ASIC_RP_CONTROL`.
 
 
-## `uio_oe_pico`
+#### `uio_oe_pico`
 
 The 8 bidirectional (uio) pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *uio_oe_pico* option.  Any bit set to one will make the corresponding pin on the RP2040 an output.  E.g.
 
@@ -451,7 +451,7 @@ uio_oe_pico = 0b11110000
 ```
 would configure the pins connected to the high nibble as outputs.
 
-## `uio_in`
+#### `uio_in`
 
 If any of the RP2040 pins connected to the bidir I/O is configured as an output, the corresponding bit in *uio_in* will be written accordingly on project load.  This only applies to pins set as outputs with the *uio_oe_pico* option above.  For example, if that was set to *0b11110000* as above, then 
 both
@@ -465,7 +465,7 @@ uio_in = 0b00011111
 ```
 would set `uio[4]` HIGH, uio 5-7 LOW, and leave the lower pins alone. 
 
-## Sample config.ini
+### Sample config.ini
 
 ```
 #### DEFAULT Section ####
@@ -522,6 +522,6 @@ clock_frequency = 50000
 mode = ASIC_MANUAL_INPUTS
 ```
 
-### TT07 Specific Errata
+## TT07 Specific Errata
 
 For Tiny Tapeout 7, we had an error in the breakout board, swapping the `CTRL_SEL_nRST` and `CTRL_SEL_INC` pins. The MicroPython SDK already [includes a workaround for this issue](https://github.com/TinyTapeout/tt-micropython-firmware/commit/eee4e08dddeacb91c1e6828b3fde60dc5cf6a8ef), so this shouldn't have any impact for most users. However, if you are writing your own firmware or designing a custom PCB that interfaces with the breakout board, you should be aware of this issue.
