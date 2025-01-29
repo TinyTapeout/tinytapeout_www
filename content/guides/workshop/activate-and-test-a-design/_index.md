@@ -1,7 +1,7 @@
 ---
 title: '3 - Activate and Test a Design'
 description: 'Learn how to activate and test designs on the TT05 devkit'
-weight: 70
+weight: 35
 ---
 
 This guide will show you how to activate a design on your TT05 devkit and test it successfully. You'll learn how to use the basic features of the devkit and try out different designs.
