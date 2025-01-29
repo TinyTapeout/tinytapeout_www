@@ -157,7 +157,7 @@ uio[7]     CS2 (RAM B)
 
 ## Game Controllers
 
-[The SNES Controller PMOD](https://github.com/psychogenic/gamepad-pmod) takes the simple controller protocol and makes it unidirectional, so you don't have to sacrifice bidirectional pins to leverage input from one or two SNES controllers.  Let the games begin!
+[The Gamepad PMOD](https://github.com/psychogenic/gamepad-pmod) takes the simple controller protocol and makes it unidirectional, so you don't have to sacrifice bidirectional pins to leverage input from one or two SNES, Super Famicom or other compatible controllers.  Let the games begin!
 
 ![SNES controller compatible PMOD](images/snespmod.jpg)
 
