@@ -32,9 +32,9 @@ pins that specific project is using.  Since [TT06](https://tinytapeout.com/runs/
 
 {{< figure src="images/tt07db.jpg" title="TT07 demoboard" >}}
 
-The ASIC comes installed on a [carrier PCB](https://github.com/tinytapeout/carrier-pcb) which is itself installed on the [TT Demoboard](https://github.com/TinyTapeout/tt-demo-pcb#tinytapeout-demo-board)
+The ASIC comes installed on a [breakout PCB](https://github.com/tinytapeout/breakout-pcb) which is itself installed on the [TT Demoboard](https://github.com/TinyTapeout/tt-demo-pcb#tinytapeout-demo-board)
 
-The demoboard is designed to allow for interaction with design either through the on-board input DIP switches and 7-segment display, or with external circuits through the various pin and PMOD headers on the board. Having the ASIC on a carrier, rather than directly on the demoboard, leaves the adventurous free to design their own custom PCB and easily migrate the chip.
+The demoboard is designed to allow for interaction with design either through the on-board input DIP switches and 7-segment display, or with external circuits through the various pin and PMOD headers on the board. Having the ASIC on a breakout, rather than directly on the demoboard, leaves the adventurous free to design their own custom PCB and easily migrate the chip.
 
 The demoboard has a number of headers for interaction and expansion.  The "PMODs" follow the [digilent PMOD spec and spacing](https://digilent.com/reference/pmod/start) and make it pretty simple to create extensions to interact with designs.  Some of these, like for [VGA Output](https://tinytapeout.com/specs/pinouts/#vga-output), [Gamepad Controllers](https://tinytapeout.com/specs/pinouts/#vga-output) are listed on the [pinout specs](https://tinytapeout.com/specs/pinouts/) page.
 
@@ -46,7 +46,7 @@ All the I/O expects 3.3V logic levels, so the 5V coming in through the USB recep
 
 ## Bring-up
 
-After inspecting the boards for damage, and ensuring the carrier board is well seated on the demoboard, give the system 5V through the USB connector.
+After inspecting the boards for damage, and ensuring the breakout board is well seated on the demoboard, give the system 5V through the USB connector.
 
 Operating normally, the power LEDs on the top right of the demoboard will light up, and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
 
@@ -524,4 +524,4 @@ mode = ASIC_MANUAL_INPUTS
 
 ### TT07 Specific Errata
 
-For Tiny Tapeout 7, we had an error in the carrier board, swapping the `CTRL_SEL_nRST` and `CTRL_SEL_INC` pins. The MicroPython SDK already [includes a workaround for this issue](https://github.com/TinyTapeout/tt-micropython-firmware/commit/eee4e08dddeacb91c1e6828b3fde60dc5cf6a8ef), so this shouldn't have any impact for most users. However, if you are writing your own firmware or designing a custom PCB that interfaces with the carrier board, you should be aware of this issue.
+For Tiny Tapeout 7, we had an error in the breakout board, swapping the `CTRL_SEL_nRST` and `CTRL_SEL_INC` pins. The MicroPython SDK already [includes a workaround for this issue](https://github.com/TinyTapeout/tt-micropython-firmware/commit/eee4e08dddeacb91c1e6828b3fde60dc5cf6a8ef), so this shouldn't have any impact for most users. However, if you are writing your own firmware or designing a custom PCB that interfaces with the breakout board, you should be aware of this issue.

@@ -9,7 +9,7 @@ weight: 50
 
 ## Placa montadora
 
-Archivos PCB: https://github.com/TinyTapeout/carrier-pcb
+Archivos PCB: https://github.com/TinyTapeout/breakout-pcb
 
 Los chips son montados en una placa portadora, se espera que todos los chips de TT sean en QFN.
 

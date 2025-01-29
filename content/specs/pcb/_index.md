@@ -7,13 +7,13 @@ weight: 50
 
 {{< figure src="images/tt04_board_annotated.jpeg" title="PCB for TT04 and beyond" >}}
 
-## Carrier board
+## Breakout board
 
-PCB files: https://github.com/TinyTapeout/carrier-pcb
+PCB files: https://github.com/TinyTapeout/breakout-pcb
 
-Chips are mounted on a carrier board, we expect all TT chips to be in QFN.
+Chips are mounted on a breakout board, we expect all TT chips to be in QFN.
 
-The carrier board makes it easy to:
+The breakout board makes it easy to:
 
 * access all the chip signals
 * build your own motherboard without having to solder a bare ASIC chip
@@ -24,7 +24,7 @@ The demo board is a work in progress: https://github.com/TinyTapeout/tt-demo-pcb
 
 The main features of the demo board are:
 
-  * hosts and powers the ASIC carrier;
+  * hosts and powers the ASIC breakout;
   
   * includes facilities to interact with projects "stand-alone" (input DIP switches and 7-segment output display);
   
