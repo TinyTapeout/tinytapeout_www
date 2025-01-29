@@ -6,7 +6,6 @@ weight: 50
 ---
 
 
-
 If you've got hold of a TinyTapeout 04/05/06/07 ASIC and demoboard, this quickstart guide will get you going by walking through:
 
  * overview and bring-up;
@@ -14,7 +13,7 @@ If you've got hold of a TinyTapeout 04/05/06/07 ASIC and demoboard, this quickst
  * accessing and using the microPython SDK and filesystem; and
  * easy updates to the OS and SDK.
  
-There's a little video that goes through much of this so you can see it in action
+Here's a little video that goes through much of this so you can see it in action (the board shape has changed a bit since it was recorded, but the functionality is quite similar)
 
 {{< youtube dSuhCZxXQcw >}}
 
@@ -22,23 +21,22 @@ There's a little video that goes through much of this so you can see it in actio
 
 ### Overview and bring-up
 
-
-{{< figure src="images/tt04db-render.png" title="TT04 demoboard" >}}
-
-
-The TT04 ASIC includes [143 different digital designs](https://tinytapeout.com/runs/tt04/#all-projects), any of which may be *enabled* so that you can send and receive information to it using whichever combination of the
+The Tiny Tapeout ASICs include hundreds of different designs--[143 on TT04](https://tinytapeout.com/runs/tt04/#all-projects) and [369 on TT09](https://tinytapeout.com/runs/tt09/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
 
  * 8 input;
- * 8 output; and
+ * 8 output;
  * 8 bi-directional 
 
-pins that specific project is using.
+pins that specific project is using.  Since [TT06](https://tinytapeout.com/runs/tt06/), there are also up to 6 [analog](https://tinytapeout.com/specs/analog/) support for analog and mixed signal, users.
+
+
+{{< figure src="images/tt07db.jpg" title="TT07 demoboard" >}}
 
 The ASIC comes installed on a [carrier PCB](https://github.com/tinytapeout/breakout-pcb) which is itself installed on the [TT Demoboard](https://github.com/TinyTapeout/tt-demo-pcb#tinytapeout-demo-board)
 
-The demoboard is designed to allow for interaction with design either through the on-board input DIP switches and 7-segment display, or with external circuits through the various pin headers and PMODs on the board. Having the ASIC on a carrier, rather than directly on the demoboard, leaves the adventurous free to design their own custom PCB and easily migrate the chip.
+The demoboard is designed to allow for interaction with design either through the on-board input DIP switches and 7-segment display, or with external circuits through the various pin and PMOD headers on the board. Having the ASIC on a carrier, rather than directly on the demoboard, leaves the adventurous free to design their own custom PCB and easily migrate the chip.
 
-The demoboard has a number of headers for interaction and expansion.  The "PMODs" follow the [digilent PMOD spec and spacing](https://digilent.com/reference/pmod/start) and make it pretty simple to create extensions to interact with designs.
+The demoboard has a number of headers for interaction and expansion.  The "PMODs" follow the [digilent PMOD spec and spacing](https://digilent.com/reference/pmod/start) and make it pretty simple to create extensions to interact with designs.  Some of these, like for [VGA Output](https://tinytapeout.com/specs/pinouts/#vga-output), [Gamepad Controllers](https://tinytapeout.com/specs/pinouts/#vga-output) are listed on the [pinout specs](https://tinytapeout.com/specs/pinouts/) page.
 
 ## Power
 
@@ -50,9 +48,9 @@ All the I/O expects 3.3V logic levels, so the 5V coming in through the USB recep
 
 After inspecting the boards for damage, and ensuring the carrier board is well seated on the demoboard, give the system 5V through the USB connector.
 
-Operating normally, the power LEDs on the top right of the demoboard will light up (though the 1v8 may be a bit dim), and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
+Operating normally, the power LEDs on the top right of the demoboard will light up, and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
 
-This is the [factory test](https://tinytapeout.com/runs/tt04/001/) project, loaded by default, being ticked and shows the system is alive.
+This is the [factory test](https://tinytapeout.com/runs/tt07/tt_um_factory_test) project, loaded by default, being ticked and shows the system is alive.
 
 If you have a way to monitor power use, you should see a draw of around 180-200 milliAmps, on the 5V supply and not much more.
 
@@ -61,9 +59,9 @@ If you have a way to monitor power use, you should see a draw of around 180-200 
 
 Maybe you'd like to enable a project other than the factory test?  
 
-TT04 introduced a brand new, and much faster, way to direct input and output to designs on the chip.  This multiplexer (MUX), needs to be told just which project you'd like to interact with.
+Since TT04 a multiplexer on the chip decides which projects are powered and enabled to communicate through the I/O. This MUX, needs to be told just which project you'd like to interact with.
 
-To handle most of the details, we put a microcontroller (an RP2040, like on the [Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html) on the demoboard.  But you still have to somehow tell it which project you'd like to enable.
+To handle most of the details, we put a microcontroller (an RP2040, like in the [Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html)) on the demoboard.  But you still have to somehow tell it which project you'd like to enable.
 
 There are a few ways to do this, the commander app being the easiest, but there's also a config.ini file and a whole Python SDK you can use.  All are described below.
 
@@ -71,7 +69,7 @@ There are a few ways to do this, the commander app being the easiest, but there'
 
 The commander app lets you interact with and configure the demoboard from a web browser.
 
-It uses the web serial API, so is currently limited to either [Chrome](https://www.google.com/search?q=chrome+browser), [Edge](https://www.microsoft.com/en-us/edge) or [Opera](https://www.opera.com/) .
+It uses the web serial API, so is currently limited to either [Chrome](https://www.google.com/search?q=chrome+browser), [Edge](https://www.microsoft.com/en-us/edge), [Opera](https://www.opera.com/) and [Brave](https://brave.com/).
 
 
 With the demoboard USB plugged into a computer, use one of those browsers to access [https://commander.tinytapeout.com/](https://commander.tinytapeout.com/).
@@ -88,11 +86,11 @@ The one marked "Board connected in FS mode" or similar is the one you want.  Sel
 If all went well you'll see something like this:
 {{< figure src="images/commander-connected.png" title="Commander connected" >}}
 
-With the shuttle being set to *tt04*.  Some debug output is visible in the black box at the bottom, where you can glean more info, such as the SDK release detected.
+With the shuttle being set to *tt07* (or whichever chip you actually have on hand).  Some debug output is visible in the black box at the bottom, where you can glean more info, such as the SDK release detected.
 
 To activate a project:
 
-   1)  Click the project drop-down and find the project you want
+   1)  Click the project drop-down and find the project you want.  All the projects for the detected chip shuttle will be present
  
 {{< figure src="images/commander-projectselect.png" title="Commander project selection" >}}
 
@@ -174,8 +172,7 @@ ttboard.project_mux: Enable design wokwi_traffic_light
 
 ```
 
-And tab-completion will work, too: `tt.shuttle.<TAB><TAB>` will list all the attributes, including all the projects you can enable.
-
+And tab-completion should work, too: `tt.shuttle.tt_um<TAB><TAB>` will list all the projects you can enable.
 
 
 You can control the auto-clocking using
@@ -216,6 +213,13 @@ print(f'Output from project is now: {tt.uo_out}')
 # ...
 ```
 
+## cocotb tests
+
+You're encouraged to create [cocotb](https://www.cocotb.org/) testbenches when creating a design.  If you took the time to do that, I have great news: it's fairly easy to re-use these tests and run them, pretty much as-is, against the actual chip with hardware-in-the-loop.
+
+To do this, the installed SDK includes [microcotb](https://github.com/psychogenic/microcotb), a miny version of cocotb that can run right on the demo boards.  There are some [examples included in the SDK](https://github.com/TinyTapeout/tt-micropython-firmware/tree/main/src/examples) and a [video is available](https://www.youtube.com/watch?v=g8cmUiP3KGQ) that goes over using the library.
+
+
 Other than that, the [SDK documentation](https://github.com/TinyTapeout/tt-micropython-firmware#tt4-micropython-sdk) and various [sample tests](https://github.com/TinyTapeout/tt-micropython-firmware/tree/main/src/examples) will be your best guides.
 
 
@@ -230,7 +234,7 @@ The important things on the filesystem are:
   * config.ini: default startup and project-specific configuration
   * main.py: runs on boot
   * ttboard/ has all the SDK modules
-  * shuttles/ contains the design listings as JSON files for the chip
+  * shuttles/ contains the design listings as both JSON files and more efficient binary blobs for the chip
 
 Any standard means of accessing the micropython FS should work.  [rshell](https://pypi.org/project/rshell/) may be used but is lacking in some regards.  Another option is [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
 
@@ -286,11 +290,11 @@ $ tt push config.ini /
 
 The complete directions for OS updates are part of the [SDK documentation, under Installation](https://github.com/TinyTapeout/tt-micropython-firmware#installation) but really the process is simply to:
 
-  * download anything on the FS that you wish to preserve (it will all be overwritten by this process)
+  * download anything on the filesystem that you wish to preserve (for instance, if you've customized the [config.ini](https://github.com/TinyTapeout/tt-micropython-firmware?tab=readme-ov-file#initialization) it would be overwritten by this process)
   * get the UF2 file for the [latest SDK release](https://github.com/TinyTapeout/tt-micropython-firmware/releases)
   * hold the BOOT button on the demoboard while connecting to USB
   * release the BOOT button, see the RPI-RP2 drive appear
-  * copy the UF2 file, e.g. `tt-demo-rp2040-v1.0.0.uf2`, to the RPI-RP2 drive
+  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.3.uf2`, to the RPI-RP2 drive
   * wait until the drive disappears
   
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
