@@ -157,11 +157,11 @@ uio[7]     CS2 (RAM B)
 
 ## Game Controllers
 
-[The Gamepad PMOD](https://github.com/psychogenic/gamepad-pmod) takes the simple controller protocol and makes it unidirectional, so you don't have to sacrifice bidirectional pins to leverage input from one or two SNES, Super Famicom or other compatible controllers.  Let the games begin!
+[The Gamepad Pmod](https://github.com/psychogenic/gamepad-pmod) takes the simple controller protocol and makes it unidirectional, so you don't have to sacrifice bidirectional pins to leverage input from one or two SNES, Super Famicom or other compatible controllers. Let the games begin!
 
-![SNES controller compatible PMOD](images/snespmod.jpg)
+![SNES controller compatible Pmod](images/snespmod.jpg)
 
-It only uses 3 of the input pins, so it's possible to share the pins with other PMODs using the female host port.
+It only uses 3 of the input pins, so it's possible to share the pins with other Pmods using the female host port.
 
 The pinout is
 
@@ -169,6 +169,31 @@ ui_in[4]     LATCH\
 ui_in[5]     CLOCK\
 ui_in[6]     DATA
 
-And the easiest way to get started is with the [game_controller_pmod](https://github.com/psychogenic/vga-playground/blob/gaming-pmod/src/examples/gaming/gaming_pmod.v#L110), from the vga-playground sample.
+To get started, check out the `gamepad_pmod_single` and `gamepad_pmod_dual` modules from the [VGA Playground Gamepad example code](https://github.com/TinyTapeout/vga-playground/blob/main/src/examples/common/gamepad_pmod.v). You can copy this file into your own project and connect it to the gamepad Pmod like this:
 
+```verilog
+  gamepad_pmod_single gamepad (
+      // Inputs:
+      .rst_n(rst_n),
+      .clk(clk),
+      .pmod_data(ui_in[6]),
+      .pmod_clk(ui_in[5]),
+      .pmod_latch(ui_in[4]),
+
+      // Outputs:
+      .is_present(gamepad_is_present),
+      .b(gamepad_b),
+      .y(gamepad_y),
+      .select(gamepad_select),
+      .start(gamepad_start),
+      .up(gamepad_up),
+      .down(gamepad_down),
+      .left(gamepad_left),
+      .right(gamepad_right),
+      .a(gamepad_a),
+      .x(gamepad_x),
+      .l(gamepad_l),
+      .r(gamepad_r)
+  );
+```
 
