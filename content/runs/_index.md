@@ -17,7 +17,7 @@ weight: 10
 | [TT08](/runs/tt08)                                | 2024-06-10 | 2024-09-06 | [2409](https://efabless.com/shuttle-status)  | 135     | 2025-04-01     | 2025-05-12              |
 | [TT IHP 0.2](/runs/ttihp0p2)                      | 2024-10-22 | 2024-11-04 | IHP                                          | 95      | 2025-11-30     | None - test shuttle     |
 | [TT09](/runs/tt09)                                | 2024-09-07 | 2024-11-10 | [2411](https://efabless.com/shuttle-status)  | 369     | 2025-05-15     | 2025-06-30              |
-| [TT10](https://app.tinytapeout.com/shuttles/tt10) | 2024-11-11 | 2025-03-07 | 2504                                         | TBD     | 2025-10-01     | 2025-11-15              |
+| [TT10](https://app.tinytapeout.com/shuttles/tt10) | 2024-11-11 | 2025-03-10 | 2504                                         | TBD     | 2025-10-01     | 2025-11-15              |
 
 \* TT03 also includes 149 designs from TT02 for a total of 249 designs.
 
