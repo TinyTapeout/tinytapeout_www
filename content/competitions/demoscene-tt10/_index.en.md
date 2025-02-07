@@ -17,6 +17,10 @@ All entrants will receive 1 free tile for their design.
 
 All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA](https://github.com/mole99/tiny-vga) and [Audio](https://github.com/MichaelBell/tt-audio-pmod) PMOD expansion module!
 
+## Get Inspired
+
+Check out [these amazing entries](/competitions/demoscene-tt08-entries/) from the TT08 competition!
+
 ## What are the rules?
 
 * 2 tiles or less.
