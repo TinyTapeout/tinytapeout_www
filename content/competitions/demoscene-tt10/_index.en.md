@@ -34,6 +34,7 @@ Check out [these amazing entries](/competitions/demoscene-tt08-entries/) from th
         * [One sprite pony](https://tinytapeout.com/runs/tt05/326/)
 * Audio pinout following [Mike's audio PMOD pinout](https://github.com/MichaelBell/tt-audio-pmod). 
     * Mike has an [example project here](https://github.com/MichaelBell/tt08-pwm-example) that creates a sine wave on the audio output pin.
+* If you enter the game category, use [our gamepad PMOD](/specs/pinouts/#game-controllers)
 * No other hardware required.
 * Start up sequence using the commander app:
     * Enable the project,
@@ -51,7 +52,7 @@ Check out [these amazing entries](/competitions/demoscene-tt08-entries/) from th
 * Most impressive for the size,
 * Rulebreaker - example using more than 2 tiles, using RP2040 for something. be aware that judges must be able to test your design with no additional hardware,
 * Mixed signal - uses some analog in the design,
-* Game - TBD standardise on the controller,
+* Game - using our [gamepad PMOD](/specs/pinouts/#game-controllers),
 * Secret category announced 1 week before the deadline!
 
 ## How to enter
