@@ -19,6 +19,12 @@ description: 95 designs, closed 2024-11-04
 * Submitted to IHP using sg13g2 130nm open source PDK
 * Chips expected March 2025 (but won't be shipped)
 
+## Funding
+
+IHP PDK support for Tiny Tapeout was funded by The SwissChips Initiative.
+
+The manufacturing of Tiny Tapeout IHP 0p2 silicon was funded by the German BMBF project FMD-QNC (16ME0831).
+
 ## Chip map
 
 {{< shuttle-map "ttihp0p2" >}}
