@@ -14,6 +14,8 @@ The analog pins are labeled `ua[0]` through `ua[5]` (ua stands for "user analog"
 
 For example, if you purchased two analog pins, only `ua[0]` and `ua[1]` will be connected to the pads. The remaining pins will **not be connected**.
 
+You must use the pins in order, starting from 0.
+
 Even though there are 8 pins in the templates, you can only use the first 6.
 
 ## Specifications and limitations
