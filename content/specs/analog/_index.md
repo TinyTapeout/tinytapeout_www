@@ -41,6 +41,8 @@ The templates include all the eight analog pins, but only the pins that you paid
 * 1x2 tiles = 160x225um
 * 2x2 tiles = 334x225um
 
+Note that these are approximate. 3.3v designs are slightly narrower as an additional power FET is required. Make sure to use our templates linked above.
+
 ## Power pins
 
 The following power pins are available:
