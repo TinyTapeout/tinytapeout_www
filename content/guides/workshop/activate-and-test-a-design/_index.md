@@ -28,18 +28,19 @@ Key components include:
 * 7-segment display - Shows the output,
 * DIP switches - Controls the input signals.
 
+If you're interested to see more details, take a look at the [infographic that comes with the board](https://github.com/TinyTapeout/tt-demo-pcb/blob/tt06/doc/historic/README.md#tt05).
+
 ## Step-by-Step Guide
 
 ### Initial Setup
 
 1. Ensure your devkit is in its default state:
-   * All DIP switches should be OFF,
+   * All DIP switches should be OFF (to the left),
    * Nothing should be plugged in except the USB cable.
 
 2. Connect to your laptop:
    * Use the provided USB cable,
-   * You should see the 7-segment display start a binary count,
-   * This indicates the factory test is running correctly.
+   * You should see the 7-segment display start a binary count, this indicates the factory test is running correctly.
 
 ![](images/devkit_on.png?width=60pc)
 
@@ -78,15 +79,14 @@ The default factory test is a counter that runs automatically.
 
 Let's try a simple logic gate design:
 
-1. In the commander interface, enable [this](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409488188706817) design.
+1. In the commander interface, enable *38 Supercon Workshop* design.
    * Enter "38" in the index field \
    OR
    * Search for "supercon workshop"
    * Click the "Select" button
 
-2. Open the design page:
-   * Click the [Wokwi link](https://wokwi.com/projects/380409488188706817) to view the original design
-   * You'll see a collection of logic gates
+2. Open the [design's page](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409488188706817).
+   * Click the [Wokwi link](https://wokwi.com/projects/380409488188706817) to view the Wokwi design
 
    {{< figure src="images/wokwi_38.png" title="Wokwi Design 38" >}}
 
@@ -100,7 +100,7 @@ Let's try a simple logic gate design:
 Let's explore a different project:
 
 1. Load the counter project:
-   * Navigate to the TT05 design [tt_um_wokwi_379764885531576321](https://tinytapeout.com/runs/tt05/tt_um_wokwi_379764885531576321)
+   * Navigate to the [#128: Count via LFSR design](https://tinytapeout.com/runs/tt05/tt_um_wokwi_379764885531576321)
    * Select it in the commander interface
 
 2. Experiment with the design:
@@ -108,6 +108,10 @@ Let's explore a different project:
    * Can you reset it with the reset button?
    * Look at the [Wokwi design](https://wokwi.com/projects/379764885531576321). Can you see why the reset button didn't work?
    * After checking the design, can you reset the counter?
+
+3. Click the *Pinout* page of the commander
+   * If the designer documents their design, then you can see the pinout directly inside the commander app
+![pinout](images/pinout.png)
 
 ## If you have time, try these next steps
 
