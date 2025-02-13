@@ -19,6 +19,8 @@ python3 --version
 
 Note: On some systems, the python binary is called `python` and not `python3`.
 
+You also need a recent version of Docker installed on your system.
+
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
@@ -80,7 +82,7 @@ cd ~/factory-test
 ```
 
 Then run the following command to harden the project locally.
-Notice that this command requires you to have Docker (or a compatible container engine) installed and running.   
+Notice that this command **requires you to have Docker** (or a compatible container engine) installed and running.   
 
 ```sh
 ./tt/tt_tool.py --harden --openlane2
