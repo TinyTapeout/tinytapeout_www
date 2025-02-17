@@ -7,7 +7,7 @@ weight: 5
 
 ## Demoscene competition!
 
-{{< youtube tycS0vGcZIY >}}
+{{< youtube FKi5gY6M0rw >}}
 
 The [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
