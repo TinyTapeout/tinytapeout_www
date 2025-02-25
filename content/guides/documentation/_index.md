@@ -91,6 +91,8 @@ docs(tt_um_urish_simon): update pinout info
    * Address any feedback or requested changes from the maintainer
    * Once approved, your documentation updates will be merged
 
-{{< alert >}}
+     
+
+{{% notice warning %}}
 Note: only changes to the project's documentation (including title, author, pinout, etc.) will be accepted. We will not accept changes to the sources, top level module name, number of tiles / analog pins, etc.
-{{< /alert >}}
+{{% /notice %}}
