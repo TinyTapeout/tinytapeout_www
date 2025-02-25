@@ -6,6 +6,10 @@ weight: 60
 
 This guide will show you how to update your project's documentation in the Tiny Tapeout shuttle repository.
 
+{{% notice warning %}}
+Note: only changes to the project's documentation (including title, author, pinout, etc.) will be accepted. We will not accept changes to the sources, top level module name, number of tiles / analog pins, etc.
+{{% /notice %}}
+
 ## Step-by-Step Guide
 
 1. Go to the shuttle's GitHub repo:
@@ -93,6 +97,3 @@ docs(tt_um_urish_simon): update pinout info
 
      
 
-{{% notice warning %}}
-Note: only changes to the project's documentation (including title, author, pinout, etc.) will be accepted. We will not accept changes to the sources, top level module name, number of tiles / analog pins, etc.
-{{% /notice %}}

@@ -92,4 +92,4 @@ Efabless is our manufacturing partner, helping to make chip fabrication accessib
 * You can continue to update your design until the shuttle closing date.
 * Take a look at our [previous chips](https://tinytapeout.com/runs/).
 * Check out the [Tiny Tapeout 7 datasheet](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
-* Once the shuttle run has ended you can update your documentation by following this [guide](https://docs.google.com/document/d/16YdQM4Lh3ZazVcNXhO2Ssty5hzKGp0fj3FKmcbMlFZo/edit#heading=h.mcvyaz7a8clr).
+* Once the shuttle run has ended you can update your documentation by following this [guide](/guides/documentation).
