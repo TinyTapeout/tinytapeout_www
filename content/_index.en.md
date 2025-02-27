@@ -66,6 +66,7 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}}
   {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
   {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
+  {{< customer-card "Graz University of Technology" "tugraz.png" "https://www.tugraz.at/" >}}
 </div>
 
 # Testimonials
