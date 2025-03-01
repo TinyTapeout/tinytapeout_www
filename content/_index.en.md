@@ -9,8 +9,6 @@ LastModifierDisplayName: matt venn
 
 {{< youtube qVWq_XZko-M >}}
 
-{{< countdown >}}
-
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
 
 Read the [paper here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
@@ -36,16 +34,12 @@ See what other people are making by [taking a look at what was submitted on our 
 # Submit your design
 
 * 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.  
-  However, [Efabless](https://efabless.com) is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
 * Each extra tile is $50, and extra analog pins start from $40 per pin.
 * By making an order, you agree to our [terms of service](terms).
-* Closing date is 10th of March 2025.
-
-{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 10.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on the next Tiny Tapeout shuttle.
 
 {{< mailchimp >}}
 
