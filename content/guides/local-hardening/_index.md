@@ -19,6 +19,8 @@ python3 --version
 
 Note: On some systems, the python binary is called `python` and not `python3`.
 
+If you have an older python version, you can [install uv](https://docs.astral.sh/uv/getting-started/installation/) as an alternative.
+
 You also need a recent version of Docker installed on your system.
 
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
@@ -43,6 +45,14 @@ Create a dedicated directory for the virtual Python environment and initialize i
 ```sh
 mkdir ~/ttsetup
 python3 -m venv ~/ttsetup/venv
+source ~/ttsetup/venv/bin/activate
+```
+
+Or, if you are using [uv](https://docs.astral.sh/uv/):
+
+```sh
+mkdir ~/ttsetup
+uv venv --python 3.12 ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
 
