@@ -61,6 +61,7 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
   {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
   {{< customer-card "Graz University of Technology" "tugraz.png" "https://www.tugraz.at/" >}}
+  {{< customer-card "University of Salerno, Fisciano" "unisa.png" "https://www.linkedin.com/feed/update/urn:li:activity:7302956712246808577/" >}}
 </div>
 
 # Testimonials
