@@ -17,7 +17,7 @@ description: 95 designs, closed 2024-11-04
 * Launched: 22 October 2024
 * Submission closed: 4 November 2024
 * Submitted to IHP using sg13g2 130nm open source PDK
-* Chips expected March 2025 (but won't be shipped)
+* Chips expected Nov 2025 (but won't be shipped)
 
 ## Funding
 
