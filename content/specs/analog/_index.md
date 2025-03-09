@@ -50,6 +50,7 @@ The following power pins are available:
 * VGND: Ground rail
 * VDPWR: 1.8V digital core voltage
 * VAPWR: 3.3V analog supply rail (optional, requires a different template)
+* A draw of around 20mA from the power supply will result in a 0.1V drop through the PDN.
 
 Power pins need to be vertical stripes on met4 layer and must adhere to the following rules:
 

@@ -17,8 +17,6 @@ We will share more news soon, [follow us](https://www.linkedin.com/company/tinyt
 
 {{< youtube qVWq_XZko-M >}}
 
-{{< countdown >}}
-
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
 
 Read the [paper here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
@@ -44,16 +42,12 @@ See what other people are making by [taking a look at what was submitted on our 
 # Submit your design
 
 * 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.  
-  However, [Efabless](https://efabless.com) is sponsoring a special early bird offer of **$150** (plus shipping), limited to one order per person.
 * Each extra tile is $50, and extra analog pins start from $40 per pin.
 * By making an order, you agree to our [terms of service](terms).
-* Closing date is 7th of March 2025.
-
-{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Sign up
 
-Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on Tiny Tapeout 10.
+Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on the next Tiny Tapeout shuttle.
 
 {{< mailchimp >}}
 
@@ -70,10 +64,12 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "New York Institute of technology" "nyit.png" "https://www.nyit.edu" >}}
   {{< customer-card "Hochschule Rheinmain" "hrm.png" "https://www.hs-rm.de/de/" >}}
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
-  {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/" >}} 
+  {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/en/ce/chips/" >}} 
   {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}}
   {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
   {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
+  {{< customer-card "Graz University of Technology" "tugraz.png" "https://www.tugraz.at/" >}}
+  {{< customer-card "University of Salerno, Fisciano" "unisa.png" "https://www.linkedin.com/feed/update/urn:li:activity:7302956712246808577/" >}}
 </div>
 
 # Testimonials
