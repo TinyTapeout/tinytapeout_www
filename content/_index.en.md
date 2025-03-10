@@ -9,7 +9,7 @@ LastModifierDisplayName: matt venn
 
 Efabless has [just shut down](https://www.linkedin.com/posts/tinytapeout_were-very-sad-to-hear-that-efabless-corporation-activity-7301638170297720832-n7Ru?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBBa0IBN25zxsEN43Y0wLw41Q7UfjJhMV0). 
 
-TT10 is currently on pause and is unlikely to run on the Sky130 PDK.
+TT10 is currently on pause and is unlikely to run on the Sky130 PDK. Read the [FAQ](https://tinytapeout.com/efabless-faq).
 
 We will share more news soon, [follow us](https://www.linkedin.com/company/tinytapeout/) to stay up to date.
 

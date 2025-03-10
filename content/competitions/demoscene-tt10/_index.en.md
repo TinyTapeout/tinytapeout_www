@@ -5,7 +5,9 @@ description: "Build a sound and graphics demo in less than 161 x 225 microns of 
 weight: 5
 ---
 
-## Demoscene competition!
+## TT10 Demoscene competition has been cancelled
+
+Due to Efabless shutdown. See our FAQ here: https://tinytapeout.com/efabless-faq
 
 {{< youtube FKi5gY6M0rw >}}
 
