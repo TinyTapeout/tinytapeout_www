@@ -28,23 +28,12 @@ In Tiny Tapeout:
 
 ### Log In to Tiny Tapeout
 
-* Go to: [app.tinytapeout.com](https://app.tinytapeout.com/)
+* Go to: [https://app.tinytapeout.com/projects/create?workshop=hackaday-berlin&coupon=fill-me](https://app.tinytapeout.com/projects/create?workshop=hackaday-berlin&coupon=fill-me)
 * Click the **"Sign in with GitHub"** button.
 * Authorize the application if prompted.
-
-### Submit Your Repository
-
-* Once logged in, press the **Create a new project** button.
 * Copy and paste your GitHub repository URL into the Github field.
-
-{{< figure src="images/submit_design_2.png" >}}
-{{< figure src="images/submit_design_3.png" >}}
-
+* Ask an assistant for your coupon and type it in the coupon field.
 * Click the **"Create Project"** button.
-
-### If you have a coupon code for a free tile
-
-* During the submission, if you have a coupon for a free tile, paste the code in and press the 'apply' link.
 
 ### Complete the Submission Process
 
@@ -75,17 +64,6 @@ If you make any changes to your design after submission, you **must** update you
 1. Log back in to the submission portal: i.e. go to [app.tinytapeout.com](https://app.tinytapeout.com).
 1. Select the project you want to update.
 1. Click the **Submit a new revision** button.
-
-## Purchasing a PCB
-
-If you'd like to receive a physical PCB with your chip you can either select that option when you submit your design for the first time or you can [buy the chip and PCB here](https://app.tinytapeout.com/prepurchase).
-  
-{{% notice tip %}} 
-Only the first 80 boards are subsidized by [Efabless](https://efabless.com), so act fast!
-{{% /notice %}} 
-
-Efabless is our manufacturing partner, helping to make chip fabrication accessible. [Learn more about them here](https://efabless.com/).
-
 
 ## If you have time, try these next steps
 
