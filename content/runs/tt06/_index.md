@@ -13,6 +13,13 @@ description: 238 designs, closed 2024-04-19
 * [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-06)
 * [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-06/shuttle_index.json)
 
+## Imaging
+
+Thanks to [Texplained](https://www.texplained.com/) for imaging our chips!
+
+* Interactive viewer: https://tinytapeout.github.io/tt06-chip-imaging/#url=data/tt06.json
+* High resolution images: https://siliconpr0n.org/archive/doku.php?id=tiny-tapeout:tiny-tapeout:tt06
+
 ## Launch stats
 
 * Launched: 30 January 2024
