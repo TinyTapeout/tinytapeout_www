@@ -15,9 +15,10 @@ weight: 10
 | [TT06](/runs/tt06)                                | 2024-01-30 | 2024-04-19 | CI-2404  | 238     | 2024-11-04     | Shipped 2024-12-07      |
 | [TT07](/runs/tt07)                                | 2024-04-22 | 2024-06-01 | CI-2406  | 120     | 2024-11-25     | Shipped 2025-01-15      |
 | [TT08](/runs/tt08)                                | 2024-06-10 | 2024-09-06 | CI-2409  | 135     | TBD            | TBD                     |
-| [TT IHP 0.2](/runs/ttihp0p2)                      | 2024-10-22 | 2024-11-04 | IHP-2504 | 95      | 2025-11-30     | None - test shuttle     |
+| [TT IHP 0.2](/runs/ttihp0p2)                      | 2024-10-22 | 2024-11-04 | IHP-2504 | 95      | 2025-11-28     | None - test shuttle     |
 | [TT09](/runs/tt09)                                | 2024-09-07 | 2024-11-10 | CI-2411  | 369     | TBD            | TBD                     |
 | [TT10](https://app.tinytapeout.com/shuttles/tt10) | 2024-11-11 | Cancelled  | -        | -       | -              | -                       |
+| [TTIHP25A](/runs/ttihp25a)                        | 2025-03-12 | 2025-03-28 | IHP      | 548     | 2025-11-28     | 2026-02-01              |
 
 \* TT03 also includes 149 designs from TT02 for a total of 249 designs.
 
