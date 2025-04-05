@@ -4,8 +4,11 @@
 
 import argparse
 import json
+import os
 import re
 import urllib.request
+
+SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 
 def main():
@@ -16,23 +19,36 @@ def main():
     args = parser.parse_args()
 
     # Download and parse JSON
-    url = f"https://index.tinytapeout.com/{args.run}.json?fields=macro,address,title,author"
+    url = f"https://index.tinytapeout.com/{args.run}.json?fields=type,macro,address,title,author,subtile_addr"
     headers = {"User-Agent": "Mozilla/5.0"}
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req) as response:
         data = json.loads(response.read().decode())
 
-    # Generate the project table
-    data["projects"].sort(key=lambda x: x["address"])
+    # Sort by address first, then by subtile_addr if present
+    def sort_key(x):
+        addr = x["address"]
+        subtile_addr = x.get("subtile_addr")
+        if subtile_addr is not None:
+            return (addr, int(subtile_addr))
+        return (addr, 0)
+
+    data["projects"].sort(key=sort_key)
     table_lines = ["| Address | Title | Author |", "| ----- | ----- | -------|"]
     for item in data["projects"]:
+        project_type = item.get("type")
+        if project_type == "group":
+            continue
+        addr = str(item["address"])
+        if project_type == "subtile":
+            addr += f"/{item['subtile_addr']}"
         table_lines.append(
-            f"| {item['address']} | [{item['title']}]({item['macro']}) | {item['author']} |"
+            f"| {addr} | [{item['title']}]({item['macro']}) | {item['author']} |"
         )
     table_content = "\n".join(table_lines)
 
     # Read the existing index.md file
-    index_path = f"content/runs/{args.run}/_index.md"
+    index_path = os.path.abspath(f"{SCRIPT_PATH}/../content/runs/{args.run}/_index.md")
     try:
         with open(index_path, "r", encoding="utf-8") as f:
             content = f.read()
@@ -43,9 +59,7 @@ def main():
     # Find the existing table if it exists
     if "| Index | Title | Author |" in content:
         # Replace the existing table
-        pattern = (
-            r"\|[\s]*Address[\s]*\|[\s]*Title[\s]*\|[\s]*Author[\s]*\|[\s\S]*?(?=\n\n|\Z)"
-        )
+        pattern = r"\|[\s]*Address[\s]*\|[\s]*Title[\s]*\|[\s]*Author[\s]*\|[\s\S]*?(?=\n\n|\Z)"
         new_content = re.sub(pattern, table_content, content)
     else:
         # Append the table at the end

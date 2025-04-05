@@ -39,9 +39,11 @@ export function ProjectPage({
   const hasAnalogPins = project.analog_pins?.length || false;
   const scanchain = scanchainShuttles.includes(shuttle);
 
-  const renderUrl = `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${project.macro}/render.png`;
+  const gdsMacro = project.type === 'subtile' ? project.subtile_group : project.macro;
 
-  const gdsUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${project.macro}/${project.macro}.gds`;
+  const renderUrl = `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${gdsMacro}/render.png`;
+
+  const gdsUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${gdsMacro}/${gdsMacro}.gds`;
   const threeDViewerParams = new URLSearchParams({
     model: gdsUrl,
     process: shuttle.startsWith('ttihp') ? 'SG13G2' : 'SKY130',

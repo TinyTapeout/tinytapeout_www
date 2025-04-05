@@ -16,6 +16,8 @@ export interface IShuttleIndex<F extends keyof IShuttleIndexProject = any> {
 }
 
 export interface IShuttleIndexProject {
+  /** The type of project. The default is 'project'. */
+  type?: 'project' | 'group' | 'subtile';
   macro: string;
   address: number;
   title: string;
@@ -27,6 +29,9 @@ export interface IShuttleIndexProject {
   repo: string;
   commit: string;
   pinout: Record<string, string>;
+  subtile_group?: string;
+  subtile_addr?: number;
+  subtile_addr_bits?: number;
 }
 
 export async function loadShuttleIndex<F extends keyof IShuttleIndexProject>(
