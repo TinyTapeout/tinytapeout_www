@@ -69,7 +69,7 @@ Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=ihp-sg13g2
-export OPENLANE_IMAGE_OVERRIDE=ghcr.io/tinytapeout/openlane2:ihp-v3.0.0.dev17
+export OPENLANE_IMAGE_OVERRIDE=ghcr.io/tinytapeout/openlane2:ihp-v3.0.0.dev23
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
@@ -77,7 +77,8 @@ Note: the values of these values may change in the future - you can consult the 
 ### 5. Install OpenLane 2
 
 ```sh
-pip install https://github.com/TinyTapeout/openlane2/releases/download/ihp-v3.0.0.dev17/openlane-3.0.0.dev17-py3-none-any.whl
+pip install https://github.com/TinyTapeout/libparse-python/releases/download/0.3.1-dev1/libparse-0.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+pip install https://github.com/TinyTapeout/openlane2/releases/download/ihp-v3.0.0.dev23/openlane-3.0.0.dev23-py3-none-any.whl
 ```
 
 ### 6. Install the IHP PDK
