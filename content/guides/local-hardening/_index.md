@@ -7,7 +7,7 @@ weight: 60
 
 This document explains how to harden your Tiny Tapeout projects locally, to speed up iteration times. The whole process should take roughly 10 minutes.
 
-It uses the [factory-test](https://github.com/TinyTapeout/tt10-factory-test) project as an example.
+It uses the [factory-test](https://github.com/TinyTapeout/ttihp25b-factory-test) project as an example.
 
 ### 1. Environment Setup
 
@@ -26,16 +26,16 @@ You also need a recent version of Docker installed on your system.
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
-git clone https://github.com/TinyTapeout/tt10-factory-test ~/factory-test
+git clone https://github.com/TinyTapeout/ttihp25b-factory-test ~/factory-test
 ```
 
 ### 2. Clone tt-support-tools
 
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`tt10` branch) inside the `tt` directory of your project:
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`ttihp25b` branch) inside the `tt` directory of your project:
 
 ```sh
 cd ~/factory-test
-git clone -b tt10 https://github.com/TinyTapeout/tt-support-tools tt
+git clone -b ttihp25b https://github.com/TinyTapeout/tt-support-tools tt
 ```
 
 ### 3. Python and Pip Dependencies
@@ -64,12 +64,12 @@ pip install -r ~/factory-test/tt/requirements.txt
 
 ### 4. Set up environment variables
 
-Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `OPENLANE` specify, respecively, the version of the PDK and the version of OpenLane 2 you will use: 
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `OPENLANE_IMAGE_OVERRIDE` specify, respecively, the version of the PDK and the version of OpenLane 2 you will use: 
 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
-export PDK=sky130A
-export OPENLANE2_TAG=2.2.9
+export PDK=ihp-sg13g2
+export OPENLANE_IMAGE_OVERRIDE=ghcr.io/tinytapeout/openlane2:ihp-v3.0.0.dev17
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables") 
@@ -77,10 +77,16 @@ Note: the values of these values may change in the future - you can consult the 
 ### 5. Install OpenLane 2
 
 ```sh
-pip install openlane==$OPENLANE2_TAG
+pip install https://github.com/TinyTapeout/openlane2/releases/download/ihp-v3.0.0.dev17/openlane-3.0.0.dev17-py3-none-any.whl
 ```
 
-### 6. Harden your project
+### 6. Install the IHP PDK
+
+```sh
+git clone -b tt2025 https://github.com/TinyTapeout/IHP-Open-PDK $PDK_ROOT
+```
+
+### 7. Harden your project
 
 Congratulations, you are ready to harden your project!
 
@@ -88,20 +94,20 @@ First, generate the openlane configuration file:
 
 ```sh
 cd ~/factory-test
-./tt/tt_tool.py --create-user-config --openlane2
+./tt/tt_tool.py --create-user-config --ihp
 ```
 
 Then run the following command to harden the project locally.
 Notice that this command **requires you to have Docker** (or a compatible container engine) installed and running.   
 
 ```sh
-./tt/tt_tool.py --harden --openlane2
+./tt/tt_tool.py --harden --ihp
 ```
 
 It's also recommended to run the following command, checking for any synthesis / clock warnings:
 
 ```sh
-./tt/tt_tool.py --print-warnings --openlane2
+./tt/tt_tool.py --print-warnings
 ```
 
 ### Rehardening
@@ -115,13 +121,13 @@ source ~/ttsetup/venv/bin/activate
 If you make changes to your project configuration (e.g. increase the number of tiles), you'll need to update the openlane configuration file by running the following command in your project's directory:
 
 ```sh
-./tt/tt_tool.py --create-user-config --openlane2
+./tt/tt_tool.py --create-user-config --ihp
 ```
 
 To reharden, run:
 
 ```sh
-./tt/tt_tool.py --harden --openlane2
+./tt/tt_tool.py --harden --ihp
 ```
 
 ### Running the RTL tests
@@ -153,7 +159,7 @@ sudo apt install librsvg2-bin pngquant
 then you can use `tt_tool` to generate a render of the GDS as follows:
 
 ```sh
-./tt/tt_tool.py --create-png --openlane2
+./tt/tt_tool.py --create-png
 ```
 
 The resulting optimised PNG file is called `gds_render.png` (but note that other `gds_render*` intermediate files are also left behind).
