@@ -1,17 +1,9 @@
 ---
-title: "Tiny Tapeout"
+title: 'Tiny Tapeout'
 images: [/images/tinytapeout6.png]
-description: "From idea to chip design in minutes! Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip."
+description: 'From idea to chip design in minutes! Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip.'
 LastModifierDisplayName: matt venn
 ---
-
-# Important news!
-
-Efabless has [just shut down](https://www.linkedin.com/posts/tinytapeout_were-very-sad-to-hear-that-efabless-corporation-activity-7301638170297720832-n7Ru?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBBa0IBN25zxsEN43Y0wLw41Q7UfjJhMV0). 
-
-TT10 is currently on pause and is unlikely to run on the Sky130 PDK. Read the [FAQ](https://tinytapeout.com/efabless-faq).
-
-We will share more news soon, [follow us](https://www.linkedin.com/company/tinytapeout/) to stay up to date.
 
 # From idea to chip design in minutes!
 
@@ -25,9 +17,9 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Get started
 
-* If you're new to digital design - start by taking some of our [lessons here](digital_design).
-* Then create your own design with the [basic Wokwi template](https://wokwi.com/projects/354858054593504257), [advanced Wokwi template](https://wokwi.com/projects/419323243133324289) or for advanced users, [an HDL](/hdl).
-* For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
+- If you're new to digital design - start by taking some of our [lessons here](digital_design).
+- Then create your own design with the [basic Wokwi template](https://wokwi.com/projects/354858054593504257), [advanced Wokwi template](https://wokwi.com/projects/419323243133324289) or for advanced users, [an HDL](/hdl).
+- For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 # Get your submission ready
 
@@ -35,15 +27,15 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Submission templates
 
-* [Wokwi submission template](https://github.com/TinyTapeout/tt10-wokwi-template)
-* [Verilog submission template](https://github.com/TinyTapeout/tt10-verilog-template)
-* [Analog and mixed signal template](https://github.com/TinyTapeout/tt10-analog-template)
+- [Wokwi submission template](https://github.com/TinyTapeout/ttihp-wokwi-template)
+- [Verilog submission template](https://github.com/TinyTapeout/ttihp-verilog-template)
+- Analog and mixed signal template - currently under development
 
 # Submit your design
 
-* 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.  
-* Each extra tile is $50, and extra analog pins start from $40 per pin.
-* By making an order, you agree to our [terms of service](terms).
+- 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.
+- Each extra tile is $50, and extra analog pins start from $40 per pin.
+- By making an order, you agree to our [terms of service](terms).
 
 # Sign up
 

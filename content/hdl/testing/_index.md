@@ -7,11 +7,11 @@ Thanks to community member **Tholin** for originally writing this article.
 
 To make absolutely sure that your hardware design is functional as you want it, it is possible to write Verilog unit tests. This guide will show you how to write a simple test for your hardware design, and create a GitHub actions pipeline to automatically run your tests every time you push to your repository.
 
-This document refers to the example adder design included in the [Verilog template](https://github.com/TinyTapeout/tt10-verilog-template/tree/main).
+This document refers to the example adder design included in the [Verilog template](https://github.com/TinyTapeout/ttihp-verilog-template/tree/main).
 
 ## The test can run in a GitHub action
 
-Check the [GitHub actions](https://github.com/TinyTapeout/tt10-verilog-template/actions), the test should be green and passing. You can check the logs of a recent test to see what happens. 
+Check the [GitHub actions](https://github.com/TinyTapeout/ttihp-verilog-template/actions), the test should be green and passing. You can check the logs of a recent test to see what happens. 
 
 Even if you develop tests on your PC, it's a good idea to keep the action enabled. If it ever fails you'll receive an email.
 
@@ -32,19 +32,19 @@ You should install pytest even if using the full CAD Suite, as it enables cocotb
 
 ## Testbench module
 
-The testbench `tb.v` [file](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/tb.v#L26) instantiates the example project and wires it up. You'll want to change the instantiation so it matches the name of your module.
+The testbench `tb.v` [file](https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/test/tb.v#L26) instantiates the example project and wires it up. You'll want to change the instantiation so it matches the name of your module.
 
 Replace `tt_um_example user_project` with the actual name of your top level module. 
 
 ## Makefile
 
-We use a Makefile to run the tests. You need to edit the [Makefile](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/Makefile#L8) to include all your source files.
+We use a Makefile to run the tests. You need to edit the [Makefile](https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/test/Makefile#L8) to include all your source files.
 
 To do that, go to the line starting with `VERILOG_SOURCES`, and expand it to list all your files. Separate entries by spaces. Paths are relative to the directory the makefile is in (which should be 'src'). If you only have a single verilog file, you only need one additional entry: `$(PWD)/my_custom_verilog.v`
 
 ## Writing your first test
 
-Now, you can actually get started writing tests. Have a look at the [example](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/test/test.py).
+Now, you can actually get started writing tests. Have a look at the [example](https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/test/test.py).
 
 It:
 
@@ -104,7 +104,7 @@ sky130_fd_sc_hd__and4_1 _319_ (.A(\second_counter[7] ),
     .Q(\seg7.counter[0] ));
 ```
 
-You can see the standard cells also have power ports, so one thing that has to change is the design must be powered. That happens automatically for you when the test is run as part of the [GDS action](https://github.com/TinyTapeout/tt10-verilog-template/blob/main/.github/workflows/gds.yaml#L26).
+You can see the standard cells also have power ports, so one thing that has to change is the design must be powered. That happens automatically for you when the test is run as part of the [GDS action](https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/.github/workflows/gds.yaml#L26).
 
 Whenever the GDS action is triggered, your testbench will be run as a Gate Level test automatically!
 
