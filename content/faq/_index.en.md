@@ -51,7 +51,6 @@ You can find an up to date estimate for each shuttle in the [runs page](/runs).
 ## What is the price?
 
 You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1) to check pricing.
-The first 80 orders from individuals are sponsored by Efabless, so you get 1 tile, 1 ASIC mounted on 1 demo board PCB for $150 + postage. After those first 80 are gone, the price goes up to $300.
 
 ## How many chips will I receive? Can I order more?
 
@@ -59,7 +58,7 @@ You only get 1 chip. If you want more chips you have to order more of the PCBs a
 
 ## Can I buy older chips?
 
-Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/) and are sold for around $75 and $250 respectively. We only sell spares, so there is no guarantee there will be any.
+Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/). We only sell spares, so there is no guarantee there will be any.
 
 # Wokwi FAQs
 

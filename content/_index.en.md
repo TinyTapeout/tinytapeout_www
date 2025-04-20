@@ -9,6 +9,8 @@ LastModifierDisplayName: matt venn
 
 {{< youtube qVWq_XZko-M >}}
 
+{{< countdown >}}
+
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
 
 Read the [paper here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
@@ -33,9 +35,11 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Submit your design
 
-- 160 x 100 um tile + ASIC + demonstration board: The standard price is $300 plus shipping.
-- Each extra tile is $50, and extra analog pins start from $40 per pin.
+- 200 x 150 um tile + ASIC + demonstration board: The price for the current open source IHP shuttle is 150 € plus shipping.
+- Each extra tile is 50 €.
 - By making an order, you agree to our [terms of service](terms).
+
+{{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
 # Sign up
 
