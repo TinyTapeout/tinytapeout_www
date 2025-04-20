@@ -35,8 +35,8 @@
     deadline = new Date(shuttle.deadline);
     const tilesPercent = (shuttle.tiles_used / shuttle.tiles_total) * 100;
     const pcbsPercent = (shuttle.subsidized_pcbs_sold / shuttle.subsidized_pcbs_total) * 100;
-    tileStats.textContent = `${Math.round(tilesPercent)}% sold`;
-    pcbStats.textContent = `${Math.round(pcbsPercent)}% sold`;
+    tileStats.textContent = `${Math.round(100 - tilesPercent)}% left`;
+    pcbStats.textContent = `${Math.round(100 - pcbsPercent)}% left`;
     tileProgress.style.width = `${tilesPercent}%`;
     pcbProgress.style.width = `${pcbsPercent}%`;
     return resJson;
