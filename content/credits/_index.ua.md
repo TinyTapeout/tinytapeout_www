@@ -5,8 +5,6 @@ weight: 200
 
 # Спонсори
 
-[![efabless](/images/efabless.png)](https://efabless.com/)
-
 # Команда
 
 Tiny Tapeout був би неможливий без допомоги багатьох людей. Особливу подяку ми хочемо висловити їм:

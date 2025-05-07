@@ -5,8 +5,6 @@ weight: 200
 
 # Patrocinado por
 
-[![efabless](/images/efabless.png)](https://efabless.com/)
-
 # Equipo
 
 Tiny Tapeout no sería posible sin la ayuda de muchas personas. Nos gustaría agradecer especialmente a:
