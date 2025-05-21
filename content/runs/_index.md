@@ -29,6 +29,8 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
+| TTSKY25a | Sep 2025            | Apr 2026                |
+| TTSKY25b | Nov 2025            | Jun 2026                |
 | TTIHP26a | Q1 2026             | Q3 2026                 |
 
 We're working on additional shuttle options for the second half of 2025 and 2026. Watch out the [efabless shutdown faq](https://tinytapeout.com/efabless-faq) for details and updates.
