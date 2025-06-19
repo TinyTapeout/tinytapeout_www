@@ -20,3 +20,5 @@
 /tt05-logic-gates https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409019830656001
 /inverter-start https://app.siliwiz.com/?preset=inverter_start
 /inverter-model https://www.zerotoasiccourse.com/post/3d_sky_inverter/
+/runs/tt06/decap https://htfab.github.io/tt06-chip-imaging/#url=data/tt06.json
+/runs/tt07/decap https://htfab.github.io/tt07-chip-imaging/#url=data/tt07.json
