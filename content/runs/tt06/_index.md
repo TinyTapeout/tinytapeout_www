@@ -17,7 +17,7 @@ description: 238 designs, closed 2024-04-19
 
 Thanks to [Texplained](https://www.texplained.com/) for imaging our chips!
 
-* Interactive viewer: https://tinytapeout.com/runs/tt06/decap
+* Interactive viewer: https://tinytapeout.com/decap/tt06
 * High resolution images: https://siliconpr0n.org/archive/doku.php?id=tiny-tapeout:tiny-tapeout:tt06
 
 ## Launch stats
