@@ -16,9 +16,11 @@ export function SiliconProvenProjects(props: { feedback: IAllShuttlesFeedbackLis
     return b.shuttle.localeCompare(a.shuttle);
   });
 
+  let index = 0;
   for (const item of sortedFeedback) {
     rows.push(
       <tr key={item.shuttle} data-shuttle={item.shuttle}>
+        <td>{index}</td>
         <td>
           <a href={`/runs/${item.shuttle}`}>{item.shuttle.toUpperCase()}</a>
         </td>
@@ -28,6 +30,7 @@ export function SiliconProvenProjects(props: { feedback: IAllShuttlesFeedbackLis
         <td>{item.working}</td>
       </tr>,
     );
+    index++;
   }
 
   return (
@@ -46,6 +49,7 @@ export function SiliconProvenProjects(props: { feedback: IAllShuttlesFeedbackLis
       <table>
         <thead>
           <tr>
+            <th style={{ width: 48 }}>#</th>
             <th style={{ width: 64 }}>Shuttle</th>
             <th>Title</th>
             <th style={{ width: 48 }}>✅</th>
