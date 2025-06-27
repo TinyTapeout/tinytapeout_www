@@ -64,6 +64,7 @@ Clicking the commit button will save your changes.
 We put all the project information into a [datasheet](https://tinytapeout.github.io/tinytapeout-06/datasheet.pdf). You can use Markdown to write your documentation, telling everyone what your chip does and how to test it.
 
 * Edit the `info.md` File in the docs directory.
+* You need to change both the 'how it works' and 'how to test' sections.
 * Save and commit your changes as you did before.
 
 {{% notice warning %}}

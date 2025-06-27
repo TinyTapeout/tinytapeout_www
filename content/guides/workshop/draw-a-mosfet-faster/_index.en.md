@@ -24,9 +24,13 @@ That describes what’s happening physically inside a transistor. If that doesn�
 
 ## SiliWiz
 
+Here's the what the tool looks like. It has 3 important sections.
+
 ![](/siliwiz/images/image54.png?width=80pc)
 
-Load the [quick start MOSFET template](https://app.siliwiz.com/?preset=nmosfet_start).
+Load the quick start template in a new tab:
+
+* [Quick start MOSFET template](https://app.siliwiz.com/?preset=nmosfet_start).
 
 The base layer of a silicon chip is called the substrate. In most cases this is a P [doped](https://www.zerotoasiccourse.com/terminology/doping/) silicon wafer. Instead of being pure silicon, it has a minute quantity of impurities added to increase the wafer’s conductivity, changing from an insulator to a semi-conductor.
 

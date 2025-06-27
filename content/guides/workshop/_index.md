@@ -8,5 +8,4 @@ weight: 85
 
 {{< children description="true" >}}
 
-* [Quiz](https://docs.google.com/forms/d/e/1FAIpQLSfGm5MKuqEaU3wO0Cxh6_ZJ3OO1kMqhVF6jKlVLzNsVY-6Paw/viewform?usp=sf_link)
-* [Feedback form](https://bit.ly/tt-ws-feedback)
+* [Feedback & Quiz](https://docs.google.com/forms/d/e/1FAIpQLSfGm5MKuqEaU3wO0Cxh6_ZJ3OO1kMqhVF6jKlVLzNsVY-6Paw/viewform?usp=sf_link)
