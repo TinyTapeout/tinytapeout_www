@@ -28,7 +28,7 @@ In Tiny Tapeout:
 
 ### Log In to Tiny Tapeout
 
-* Go to: [https://app.tinytapeout.com/projects/create?workshop=hackaday-berlin&coupon=fill-me](https://app.tinytapeout.com/projects/create?workshop=hackaday-berlin&coupon=fill-me)
+* Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create)
 * Click the **"Sign in with GitHub"** button.
 * Authorize the application if prompted.
 * Copy and paste your GitHub repository URL into the Github field.
