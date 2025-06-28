@@ -21,7 +21,8 @@ aliases:
 | [TT09](/runs/tt09)                                | 2024-09-07 | 2024-11-10 | CI-2411  | 369     | TBD            | TBD                     |
 | TT10                                              | 2024-11-11 | Cancelled  | -        | -       | -              | -                       |
 | [TTIHP25a](/runs/ttihp25a)                        | 2025-03-12 | 2025-03-28 | IHP      | 547     | 2025-11-28     | 2026-02-01              |
-| [TTIHP25b](https://app.tinytapeout.com/shuttles/ttihp25b) | 2025-04-20 | 2025-09-01 | IHP-2509 | TBD     | 2026-02-20     | 2026-04-01              |
+| [TTIHP25b](https://app.tinytapeout.com/shuttles/ttihp25b) | 2025-04-20 | 2025-09-01 | IHP-2509 | TBD     | 2026-02-20     | 2026-04-15              |
+| [TTSKY25a](https://app.tinytapeout.com/shuttles/ttsky25a) | 2025-06-27 | 2025-09-15 | CC-2509  | TBD     | 2026-02-14     | 2026-04-15              |
 
 \* TT03 also includes 149 designs from TT02 for a total of 249 designs.
 
@@ -31,8 +32,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
-| TTSKY25a | Sep 2025            | Apr 2026                |
 | TTSKY25b | Nov 2025            | Jun 2026                |
 | TTIHP26a | Q1 2026             | Q3 2026                 |
 
-We're working on additional shuttle options for the second half of 2025 and 2026. Watch out the [efabless shutdown faq](https://tinytapeout.com/efabless-faq) for details and updates.
+We're working on additional shuttle options for the 2025 Q4 and 2026. Watch out the [efabless shutdown faq](https://tinytapeout.com/efabless-faq) for details and updates.
