@@ -439,7 +439,13 @@ ui_in = 0b00010011
 ```
 would set the 0th, first and fourth bits high, all others low.
 
-Note that this setting is only respected when mode is `ASIC_RP_CONTROL`.
+Note that this setting is only respected when mode is `ASIC_RP_CONTROL`. Here is an example of how to change the mode to `ASIC_RP_CONTROL`:
+
+```python
+from ttboard.mode import RPMode
+
+tt.mode = RPMode.ASIC_RP_CONTROL
+```
 
 
 #### `uio_oe_pico`
