@@ -294,7 +294,7 @@ The complete directions for OS updates are part of the [SDK documentation, under
   * get the UF2 file for the [latest SDK release](https://github.com/TinyTapeout/tt-micropython-firmware/releases)
   * hold the BOOT button on the demoboard while connecting to USB
   * release the BOOT button, see the RPI-RP2 drive appear
-  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.3.uf2`, to the RPI-RP2 drive
+  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.4.uf2`, to the RPI-RP2 drive
   * wait until the drive disappears
   
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
