@@ -1,10 +1,7 @@
-{{ $css := resources.Get "css/countdown.css" | resources.Minify }}
-<style>{{ $css.Content | safeCSS }}</style>
-
-<div class="countdown-wrapper">
+<div class="countdown-wrapper" data-shuttle="{{ .Get "shuttle" }}" data-deadline="{{ .Get "deadline" }}" data-pcbs="{{ .Get "pcbs" }}">
   <div class="countdown-timer">
-    <div class="heading">IHP25b<br />Closes in</div>
-    <div class="heading-mobile">IHP25b Closes in</div>
+    <div class="heading">{{ .Get "name" }}<br />Closes in</div>
+    <div class="heading-mobile">{{ .Get "name" }} Closes in</div>
     <div class="countdown-timer-tiles">
       <div class="tile">
         <p class="value cd-days">44</p>
@@ -46,9 +43,18 @@
   </a>
 </div>
 
-{{ $js := resources.Get "scripts/countdown.js" | js.Build | resources.Minify }} {{ $secureJS := $js
-| resources.Fingerprint }}
-<script
-  src="{{ $js.RelPermalink }}?{{ now.Unix }}"
-  integrity="{{ $secureJS.Data.Integrity }}"
-></script>
+<!-- Only load the countdown script once -->
+{{ if not (.Page.Scratch.Get "countdown:done") }}
+
+  <!-- Styles -->
+  {{ $css := resources.Get "css/countdown.css" | resources.Minify }}
+  <style>{{ $css.Content | safeCSS }}</style>
+
+  <!-- Scripts -->
+  {{ $js := resources.Get "scripts/countdown.js" | js.Build | resources.Minify }}
+  {{ $secureJS := $js | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}?{{ now.Unix }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+
+  {{ .Page.Scratch.Set "countdown:done" true }}
+{{ end }}
+

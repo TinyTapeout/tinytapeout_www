@@ -9,7 +9,9 @@ LastModifierDisplayName: matt venn
 
 {{< youtube qVWq_XZko-M >}}
 
-{{< countdown >}}
+{{< countdown shuttle="ttihp25b" name="IHP25b" deadline="2025-09-01T20:00:00Z" pcbs="150" >}}
+
+{{< countdown shuttle="ttsky25a" name="SKY25a" deadline="2025-09-15T20:00:00Z" pcbs="200" >}}
 
 Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
 
