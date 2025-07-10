@@ -54,7 +54,7 @@ You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=
 
 ## How many chips will I receive? Can I order more?
 
-You only get 1 chip. If you want more chips you have to order more of the PCBs at $250 each - the early bird price is only available once per person.
+You only get 1 chip. If you want more chips you have to order more of the devkit PCBs - the early bird price is only available once per person.
 
 ## Can I buy older chips?
 

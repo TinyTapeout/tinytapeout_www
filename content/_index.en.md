@@ -7,22 +7,21 @@ LastModifierDisplayName: matt venn
 
 # From idea to chip design in minutes!
 
+Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
+Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
+
 {{< youtube qVWq_XZko-M >}}
 
+# Our open shuttles
 {{< countdown shuttle="ttihp25b" name="IHP25b" deadline="2025-09-01T20:00:00Z" pcbs="150" >}}
 
 {{< countdown shuttle="ttsky25a" name="SKY25a" deadline="2025-09-15T20:00:00Z" pcbs="200" >}}
-
-Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
-
-Read the [paper here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
-
-See what other people are making by [taking a look at what was submitted on our previous shuttles](/runs/).
 
 # Get started
 
 - If you're new to digital design - start by taking some of our [lessons here](digital_design).
 - Then create your own design with the [basic Wokwi template](https://wokwi.com/projects/354858054593504257), [advanced Wokwi template](https://wokwi.com/projects/419323243133324289) or for advanced users, [an HDL](/hdl).
+- See what other people are making by [taking a look at what was submitted on our previous shuttles](/runs/).
 - For help and support, check the [FAQ](faq) and [join the fast & friendly conversations on Discord](https://discord.gg/qZHPrPsmt6).
 
 # Get your submission ready
@@ -31,14 +30,19 @@ See what other people are making by [taking a look at what was submitted on our 
 
 # Submission templates
 
-- [Wokwi submission template](https://github.com/TinyTapeout/ttihp-wokwi-template)
-- [Verilog submission template](https://github.com/TinyTapeout/ttihp-verilog-template)
-- Analog and mixed signal template - currently under development
+**If you had a design on TT08, 09 or 10 that was affected by the [Efabless shutdown](/efabless-faq), you can use your existing repository.**
+
+- [IHP Wokwi submission template](https://github.com/TinyTapeout/ttihp-wokwi-template)
+- [IHP Verilog submission template](https://github.com/TinyTapeout/ttihp-verilog-template)
+- [SKY Wokwi submission template](https://github.com/TinyTapeout/ttsky-wokwi-template)
+- [SKY Verilog submission template](https://github.com/TinyTapeout/ttsky-verilog-template)
+- [SKY Analog submission template](https://github.com/TinyTapeout/ttsky-analog-template)
 
 # Submit your design
 
-- 200 x 150 um tile + ASIC + demonstration board: The price for the current open source IHP shuttle is 150 € plus shipping.
-- Each extra tile is 50 €.
+- Pricing depends on the size of your design, the shuttle you use and whether its analog or digital.
+- Use the [calculator to check current prices](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1).
+- Early bird prices are currently reserved for projects affected by the Efabless shutdown.
 - By making an order, you agree to our [terms of service](terms).
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
