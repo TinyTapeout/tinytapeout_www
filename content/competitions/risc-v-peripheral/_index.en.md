@@ -80,6 +80,8 @@ You are also free to submit your design as a standalone module to Tiny Tapeout, 
 
 ### Judges
 
+Judging will happen shortly after tapeout of TTSKY25a (15th September). We will not wait for silicon to arrive to judge the competition so make sure your docs are in good order!
+
 * Mike Bell (author of TinyQV)
 * Matt Venn
 * TBD  
