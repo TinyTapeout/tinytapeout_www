@@ -2,14 +2,14 @@
 title: TTSKY25a RISC-V Peripheral
 tags: [competition]
 description: "Build a Peripheral, Get It on Silicon - Join the Open-Source RISC-V Peripheral Challenge!"
-weight: 5
+weight: 1
 ---
 
 ## Build a Peripheral, Get It on Silicon - Join the Open-Source RISC-V Peripheral Challenge!
 
 What if your Verilog code could live forever in silicon?
 
-![riscv competition](images/riscv_compo.png?width=40pc)
+![riscv competition](images/riscv_compo.jpg?width=40pc)
 
 We're launching a collaborative competition to crowdsource the coolest, weirdest, and most useful peripherals for a RISC-V microcontroller - and we're taping it out on TTSKY25a with [ChipFoundry.io](https://ChipFoundry.io).
 
