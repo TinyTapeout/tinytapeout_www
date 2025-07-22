@@ -31,6 +31,8 @@ All entrants who also purchase the demoboard will get a free [QSPI Pmod](https:/
 * Designs must be submitted by 5th September.
 * Only digital designs can be accepted (but you are free to use any HDL, providing it can be compiled to verilog for integration)
 * Entrants can submit multiple designs, but in the case where we are running out of space, priority will be given to the first submission.
+* The SPI controller must be included.
+* You can't change the config.json to get higher density (as all designs will be hardened together at the end).
 
 ### Categories
 
@@ -59,6 +61,7 @@ Then follow the instructions given in the template's README. Simply put this mea
 2. Designs should normally avoid using in7 and out0 to simplify testing in TinyQV Micropython.
 3. Test and document it
 4. Once the GDS and Docs action are green, make a pull request to TinyQV [https://github.com/tinytapeout/ttsky25a-tinyqv](https://github.com/tinytapeout/ttsky25a-tinyqv)  
+5. You are encouraged to share your design's aims and pinout in the [discord forum](https://discord.com/channels/1009193568256135208/1396915746264711311) so we can increase the chance that several peripherals can be used at the same time.
 
 You are also free to submit your design as a standalone module to Tiny Tapeout, you'll be able to access it via the demoboard's RP2040 co-processor.
 
@@ -92,3 +95,4 @@ Judging will happen shortly after tapeout of TTSKY25a (15th September). We will 
 2. Will there be any extension to the deadline? No!
 3. If your designs uses in7 and out0 it will prevent the use of micropython for testing.
 4. You are not limited to a maximum clock frequency, but you're advised to stick with TinyQV's default of 64MHz.
+5. You cannot remove the SPI controller, but we will accept PRs to the template to reduce utilization of the SPI controller (as long as it doesn't break the functionality). The SPI controller in your repo must match one from the template (any revision, so it's fine if you don't update)
