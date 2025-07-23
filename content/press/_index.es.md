@@ -12,10 +12,10 @@ date: 2023-03-08T09:56:27+01:00
 
 | Serie  | Abierto en    | Cerrado en     | Shuttle | Diseños | Chips esperados en | PCBs esperados en |
 |--------|---------------|----------------|---------|---------|--------------------|-------------------|
-| [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Dic 2023 | - |
-| [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 2023 | Ene 2024 |
-| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (incluye 149 de TT02) | Dic 2023 | Feb 2024 |
-| [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Abr 2024 |
+| [TT01](/chips/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Dic 2023 | - |
+| [TT02](/chips/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 2023 | Ene 2024 |
+| [TT03](/chips/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (incluye 149 de TT02) | Dic 2023 | Feb 2024 |
+| [TT04](/chips/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Abr 2024 |
 
 # Artículos
 
@@ -38,24 +38,24 @@ date: 2023-03-08T09:56:27+01:00
 
 ## Proyectos de Wokwi
 
-* [UART-CC](/runs/tt02/057)
-* [Nano-neuron](/runs/tt02/066)
-* [Gusano en un Laberinto](/runs/tt02/084)
-* [Diseño ASIC de acertijo del lobo, la cabra y la col](/runs/tt02/111)
-* [Aleatorizador y verificador de estado](/runs/tt04/288)
+* [UART-CC](/chips/tt02/057)
+* [Nano-neuron](/chips/tt02/066)
+* [Gusano en un Laberinto](/chips/tt02/084)
+* [Diseño ASIC de acertijo del lobo, la cabra y la col](/chips/tt02/111)
+* [Aleatorizador y verificador de estado](/chips/tt04/288)
 
 ## Proyectos HDL
 
-* [Generador de Sonidos Programable AvalonSemiconductors 'TBB1143'](/runs/tt02/024/)
-* [Pi (π) de +1000 decimales](/runs/tt02/036)
-* [FPGA](/runs/tt02/090)
-* [RV8U - Microprocesador RISC-V de 8-bits](/runs/tt02/107)
-* [CPU de 8-bit](/runs/tt02/085/)
-* [PDP8 de 12-bits](/runs/tt03/019)
-* [Sensor digital sintetizable de temperatura](/runs/tt03/047/)
-* [Juego que utiliza Raycasting](/runs/tt04/033)
-* [ROTFPGA](/runs/tt04/197)
-* [Sintetizador de cuerdas con salida I2S](/runs/tt04/052)
+* [Generador de Sonidos Programable AvalonSemiconductors 'TBB1143'](/chips/tt02/024/)
+* [Pi (π) de +1000 decimales](/chips/tt02/036)
+* [FPGA](/chips/tt02/090)
+* [RV8U - Microprocesador RISC-V de 8-bits](/chips/tt02/107)
+* [CPU de 8-bit](/chips/tt02/085/)
+* [PDP8 de 12-bits](/chips/tt03/019)
+* [Sensor digital sintetizable de temperatura](/chips/tt03/047/)
+* [Juego que utiliza Raycasting](/chips/tt04/033)
+* [ROTFPGA](/chips/tt04/197)
+* [Sintetizador de cuerdas con salida I2S](/chips/tt04/052)
 
 # Testimonios
 

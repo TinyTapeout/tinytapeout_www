@@ -21,13 +21,13 @@ Here's a little video that goes through much of this so you can see it in action
 
 ### Overview and bring-up
 
-The Tiny Tapeout ASICs include hundreds of different designs--[143 on TT04](https://tinytapeout.com/runs/tt04/#all-projects) and [369 on TT09](https://tinytapeout.com/runs/tt09/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
+The Tiny Tapeout ASICs include hundreds of different designs--[143 on TT04](https://tinytapeout.com/chips/tt04/#all-projects) and [369 on TT09](https://tinytapeout.com/chips/tt09/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
 
  * 8 input;
  * 8 output;
  * 8 bi-directional 
 
-pins that specific project is using.  Since [TT06](https://tinytapeout.com/runs/tt06/), there are also up to 6 [analog](https://tinytapeout.com/specs/analog/) support for analog and mixed signal, users.
+pins that specific project is using.  Since [TT06](https://tinytapeout.com/chips/tt06/), there are also up to 6 [analog](https://tinytapeout.com/specs/analog/) support for analog and mixed signal, users.
 
 
 {{< figure src="images/tt07db.jpg" title="TT07 demoboard" >}}
@@ -50,7 +50,7 @@ After inspecting the boards for damage, and ensuring the breakout board is well 
 
 Operating normally, the power LEDs on the top right of the demoboard will light up, and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
 
-This is the [factory test](https://tinytapeout.com/runs/tt07/tt_um_factory_test) project, loaded by default, being ticked and shows the system is alive.
+This is the [factory test](https://tinytapeout.com/chips/tt07/tt_um_factory_test) project, loaded by default, being ticked and shows the system is alive.
 
 If you have a way to monitor power use, you should see a draw of around 180-200 milliAmps, on the 5V supply and not much more.
 

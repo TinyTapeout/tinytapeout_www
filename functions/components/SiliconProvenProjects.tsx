@@ -22,10 +22,10 @@ export function SiliconProvenProjects(props: { feedback: IAllShuttlesFeedbackLis
       <tr key={item.shuttle} data-shuttle={item.shuttle}>
         <td>{index}</td>
         <td>
-          <a href={`/runs/${item.shuttle}`}>{item.shuttle.toUpperCase()}</a>
+          <a href={`/chips/${item.shuttle}`}>{item.shuttle.toUpperCase()}</a>
         </td>
         <td>
-          <a href={`/runs/${item.shuttle}/${item.macro}`}>{item.title}</a>
+          <a href={`/chips/${item.shuttle}/${item.macro}`}>{item.title}</a>
         </td>
         <td>{item.working}</td>
       </tr>,

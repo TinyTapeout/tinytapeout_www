@@ -6,7 +6,7 @@ weight: 60
 ---
 
 
-This is an example of using the [Digilent Analog Discovery 3](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start) multi-function test and measurement device to characterize a project on the [Tiny Tapeout 05 ASIC](/runs/tt05/), in particular [#271: Analog Testmacro](https://tinytapeout.com/runs/tt05/tt_um_tt05_analog_test), which is a test analog circuit included on TT05 containing both a ring oscillator and a 3-bit DAC.
+This is an example of using the [Digilent Analog Discovery 3](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start) multi-function test and measurement device to characterize a project on the [Tiny Tapeout 05 ASIC](/chips/tt05/), in particular [#271: Analog Testmacro](https://tinytapeout.com/chips/tt05/tt_um_tt05_analog_test), which is a test analog circuit included on TT05 containing both a ring oscillator and a 3-bit DAC.
 
 
 There is a sample *WaveForms* workspace that is ready to use that can 

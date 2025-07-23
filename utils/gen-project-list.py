@@ -48,7 +48,7 @@ def main():
     table_content = "\n".join(table_lines)
 
     # Read the existing index.md file
-    index_path = os.path.abspath(f"{SCRIPT_PATH}/../content/runs/{args.run}/_index.md")
+    index_path = os.path.abspath(f"{SCRIPT_PATH}/../content/chips/{args.run}/_index.md")
     try:
         with open(index_path, "r", encoding="utf-8") as f:
             content = f.read()

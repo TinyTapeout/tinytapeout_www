@@ -10,7 +10,7 @@ weight: 60
 * [канал цифрового дизайну](https://discord.com/channels/1009193568256135208/1016726411400200292)
 * [Wokwi канал](https://discord.com/channels/1009193568256135208/1009193692084580472)
 
-# Найкращі добірки від [TinyTapeout 1](/runs/tt01)
+# Найкращі добірки від [TinyTapeout 1](/chips/tt01)
 
 {{% design-tt01 "https://github.com/mole99/wokwi-1bit-alu" %}}
 ---

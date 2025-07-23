@@ -1,13 +1,13 @@
 # docs: https://developers.cloudflare.com/pages/platform/redirects/
 
 /discord https://discord.gg/qZHPrPsmt6
-/tt01 /runs/tt01
-/tt02 /runs/tt02
-/tt03 /runs/tt03
-/tt04 /runs/tt04
-/tt05 /runs/tt05
-/tt06 /runs/tt06
-/tt07 /runs/tt07
+/tt01 /chips/tt01
+/tt02 /chips/tt02
+/tt03 /chips/tt03
+/tt04 /chips/tt04
+/tt05 /chips/tt05
+/tt06 /chips/tt06
+/tt07 /chips/tt07
 /start/tt04 /guides/get-started-demoboard
 /start/tt05 /guides/get-started-demoboard
 /start/tt06 /guides/get-started-demoboard
@@ -16,9 +16,13 @@
 /start/max7219 https://github.com/urish/tt05-silife-max/blob/main/docs/bringup.md#connections
 /efabless-faq  https://docs.google.com/document/d/12KPutDPBst7FF0ncB1qyxErDYeATmXoQLGjRq38dfjU/edit?usp=sharing
 /ihp-loan-terms https://docs.google.com/document/d/1WtGn-7dEI8DE0_RgPk6PuWoxy45sBSRpaw6Ct_vuRwc/edit
-/sponsorship https://docs.google.com/presentation/d/1Th3FBU-fFsgwQL9yUWOT8dbF_aAqUFRh-LCLgxS09SU/edit?usp=sharing
-/tt05-logic-gates https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409019830656001
+/sponsorship https://docs.google.com/presentation/d/1Th3FBU-fFsgwQL9yUWOT8dbF_aAqUFRh-LCLgxS09SU/edit?usp=sharing
+/tt05-logic-gates https://tinytapeout.com/chips/tt05/tt_um_wokwi_380409019830656001
 /inverter-start https://app.siliwiz.com/?preset=inverter_start
 /inverter-model https://www.zerotoasiccourse.com/post/3d_sky_inverter/
 /decap/tt06 https://htfab.github.io/tt06-chip-imaging/#url=data/tt06.json
 /decap/tt07 https://htfab.github.io/tt07-chip-imaging/#url=data/tt07.json
+
+# Redirect /runs -> /chips
+/runs /chips/
+/runs/* /chips/:splat
