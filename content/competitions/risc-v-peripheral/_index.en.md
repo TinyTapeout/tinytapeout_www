@@ -85,8 +85,9 @@ You are also free to submit your design as a standalone module to Tiny Tapeout, 
 
 Judging will happen shortly after tapeout of TTSKY25a (15th September). We will not wait for silicon to arrive to judge the competition so make sure your docs are in good order!
 
-* Mike Bell (author of TinyQV)
-* Matt Venn
+* [Andrew "bunnie" Huang](https://www.bunniestudios.com/) - One of the world’s most renowned hardware hackers, best known for reverse-engineering the original Xbox. He is the author of The Essential Guide to Electronics in Shenzhen and a passionate advocate for hardware freedom and security.
+* [Mike "RebelMike" Bell](https://rebel-lion.uk/@mike) - Coder, narrowboater, puzzle hunter, and author of TinyQV
+* [Matt Venn](https://www.mattvenn.net/) - Open Silicon pioneer known for Tiny Tapeout and the Zero to ASIC courses 
 * TBD  
 
 ### Small print
