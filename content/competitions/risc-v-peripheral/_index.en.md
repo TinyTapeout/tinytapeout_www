@@ -28,7 +28,7 @@ All entrants who also purchase the demoboard will get a free [QSPI Pmod](https:/
 ### What are the rules?
 
 * Designs must use 2 tiles or less.
-* Designs must be submitted by making a pull request on TinyQV by the 5th September.
+* Designs must be submitted by making a pull request on TinyQV by **23:59 PT 5th September**.
 * Only digital designs can be accepted (but you are free to use any HDL, providing it can be compiled to verilog for integration)
 * Entrants can submit multiple designs, but in the case where we are running out of space, priority will be given to the first submission.
 * The SPI controller used for testing cannot be removed.
