@@ -21,17 +21,17 @@ It's collaborative, it's competitive, and it's an amazing excuse to learn, teach
 
 Submit your peripheral, share your creativity, and help make a crowd-designed chip that we can all be proud of.
 
-All entrants will receive 1 free tile for their design.
+This competition is free to enter, but if you want a physical copy of the finished chip you will have to purchase the demoboard separately.
 
-All entrants who also purchase the demoboard will get a free [QSPI Pmod](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602) to be able to experiment with the microcontroller.
+All entrants who also purchase the demoboard will get a free [QSPI Pmod](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602) required by the TinyQV microcontroller.
 
 ### What are the rules?
 
 * Designs must use 2 tiles or less.
-* Designs must be submitted by 5th September.
+* Designs must be submitted by making a pull request on TinyQV by the 5th September.
 * Only digital designs can be accepted (but you are free to use any HDL, providing it can be compiled to verilog for integration)
 * Entrants can submit multiple designs, but in the case where we are running out of space, priority will be given to the first submission.
-* The SPI controller must be included.
+* The SPI controller used for testing cannot be removed.
 * You can't change the config.json to get higher density (as all designs will be hardened together at the end).
 
 ### Categories
@@ -55,15 +55,15 @@ Start with one of the two templates:
     * 32 bit data bus
     * 6 bit address range
 
-Then follow the instructions given in the template's README. Simply put this means:
+Then follow the instructions given in the template's README. An overview of the process is:
 
-1. Replace the example design with your own
+1. Replace the example design with your own.
 2. Designs should normally avoid using in7 and out0 to simplify testing in TinyQV Micropython.
-3. Test and document it
-4. Once the GDS and Docs action are green, make a pull request to TinyQV [https://github.com/tinytapeout/ttsky25a-tinyqv](https://github.com/tinytapeout/ttsky25a-tinyqv)  
+3. Test and document it.
+4. Once the GDS and Docs action are green, make a pull request to TinyQV [https://github.com/tinytapeout/ttsky25a-tinyqv](https://github.com/tinytapeout/ttsky25a-tinyqv).
 5. You are encouraged to share your design's aims and pinout in the [discord forum](https://discord.com/channels/1009193568256135208/1396915746264711311) so we can increase the chance that several peripherals can be used at the same time.
 
-You are also free to submit your design as a standalone module to Tiny Tapeout, you'll be able to access it via the demoboard's RP2040 co-processor.
+If you want, you can also submit your design as a standalone module to Tiny Tapeout. You'll be able to drive the SPI interface with the demoboard's RP2040. This carries a cost of 70 euros per tile.
 
 ## How to get help
 
@@ -92,8 +92,8 @@ Judging will happen shortly after tapeout of TTSKY25a (15th September). We will 
 
 ### Small print
 
-1. How will the competition be judged? A panel of appointed judges will vote and have the final say. The submissions will be judged on the results the judge gets on their boards.
-2. Will there be any extension to the deadline? No!
-3. If your designs uses in7 and out0 it will prevent the use of micropython for testing.
+1. How will the competition be judged? A panel of appointed judges will vote and have the final say. 
+2. There will not be any extensions made to the deadline.
+3. If your designs uses in7 and out0 it will prevent the use of MicroPython for testing.
 4. You are not limited to a maximum clock frequency, but you're advised to stick with TinyQV's default of 64MHz.
-5. You cannot remove the SPI controller, but we will accept PRs to the template to reduce utilization of the SPI controller (as long as it doesn't break the functionality). The SPI controller in your repo must match one from the template (any revision, so it's fine if you don't update)
+5. You cannot remove the SPI controller, but we will accept PRs to the template to reduce utilization of the SPI controller (as long as it doesn't break the functionality). The SPI controller in your repo must match one from the template (any revision, so it's fine if you don't update).
