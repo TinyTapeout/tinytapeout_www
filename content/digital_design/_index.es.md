@@ -10,7 +10,7 @@ Si necesitas ayuda, [únete al chat](https://discord.gg/qZHPrPsmt6) y pregunta e
 * [diseño digital](https://discord.com/channels/1009193568256135208/1016726411400200292)
 * [Wokwi](https://discord.com/channels/1009193568256135208/1009193692084580472)
 
-# Selecciones principales de [TinyTapeout 1](/runs/tt01)
+# Selecciones principales de [TinyTapeout 1](/chips/tt01)
 
 {{% design-tt01 "https://github.com/mole99/wokwi-1bit-alu" %}}
 ---

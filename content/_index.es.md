@@ -10,7 +10,7 @@ LastModifierDisplayName: cristian gonzalez
 
 {{< countdown >}}
 
-Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca hacer que tus diseños sean fabricados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/runs/tt05) más reciente.
+Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca hacer que tus diseños sean fabricados en un chip real. Revisa lo que otras personas están creando viendo la [hoja de datos](/chips/tt05) más reciente.
 
 # Primeros pasos
 

@@ -47,5 +47,5 @@ export async function loadShuttleIndex<F extends keyof IShuttleIndexProject>(
 }
 
 export async function loadShuttleMapSvg(context: Context, shuttle: string) {
-  return await fetchTextAsset(context, `https://tinytapeout.com/runs/${shuttle}/map.svg`);
+  return await fetchTextAsset(context, `https://tinytapeout.com/chips/${shuttle}/map.svg`);
 }

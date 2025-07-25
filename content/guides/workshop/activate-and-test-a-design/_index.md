@@ -2,7 +2,6 @@
 title: '5 - Optional - Activate and Test a Design'
 description: 'Learn how to activate and test designs on the TT05 devkit'
 weight: 65
-draft: true 
 ---
 
 This guide will show you how to activate a design on your TT05 devkit and test it successfully. You'll learn how to use the basic features of the devkit and try out different designs.
@@ -86,7 +85,7 @@ Let's try a simple logic gate design:
    * Search for "supercon workshop"
    * Click the "Select" button
 
-2. Open the [design's page](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380409488188706817).
+2. Open the [design's page](https://tinytapeout.com/chips/tt05/tt_um_wokwi_380409488188706817).
    * Click the [Wokwi link](https://wokwi.com/projects/380409488188706817) to view the Wokwi design
 
    {{< figure src="images/wokwi_38.png" title="Wokwi Design 38" >}}
@@ -101,7 +100,7 @@ Let's try a simple logic gate design:
 Let's explore a different project:
 
 1. Load the counter project:
-   * Navigate to the [#128: Count via LFSR design](https://tinytapeout.com/runs/tt05/tt_um_wokwi_379764885531576321)
+   * Navigate to the [#128: Count via LFSR design](https://tinytapeout.com/chips/tt05/tt_um_wokwi_379764885531576321)
    * Select it in the commander interface
 
 2. Experiment with the design:
@@ -118,8 +117,8 @@ Let's explore a different project:
 
 * Browse other TT05 designs
 * Try these recommended projects:
-  * [Interesting Pattern Generator](https://tinytapeout.com/runs/tt05/tt_um_wokwi_380412382001715201)
-  * [Skullfet Design](https://tinytapeout.com/runs/tt05/tt_um_urish_skullfet)
+  * [Interesting Pattern Generator](https://tinytapeout.com/chips/tt05/tt_um_wokwi_380412382001715201)
+  * [Skullfet Design](https://tinytapeout.com/chips/tt05/tt_um_urish_skullfet)
 
 {{% notice tip %}}
 Look for designs with good documentation and clear testing instructions.

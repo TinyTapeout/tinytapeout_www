@@ -10,7 +10,7 @@ LastModifierDisplayName: robert margelli
 
 {{< countdown >}}
 
-Tiny Tapeout è un progetto educativo che rende più semplice ed economico che mai realizzare i tuoi progetti digitali su un vero chip! Scopri cosa stanno facendo gli altri [dando un'occhiata a ciò che è stato inviato nell'ultimo tapeout](/runs/tt05).
+Tiny Tapeout è un progetto educativo che rende più semplice ed economico che mai realizzare i tuoi progetti digitali su un vero chip! Scopri cosa stanno facendo gli altri [dando un'occhiata a ciò che è stato inviato nell'ultimo tapeout](/chips/tt05).
 
 # Per iniziare
 

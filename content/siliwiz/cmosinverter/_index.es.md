@@ -53,7 +53,7 @@ Si quieres explorar este diseño por tu cuenta, aquí tienes:
 
 * [la vista 3D](https://gds-viewer.tinytapeout.com/?model=https://tinytapeout.github.io/tt02-test-invert/tinytapeout.gds.gltf)
 * [el diseño de la lógica](https://wokwi.com/projects/341535056611770964)
-* [más información acerca del diseño](https://tinytapeout.com/runs/tt02/000/)
+* [más información acerca del diseño](https://tinytapeout.com/chips/tt02/000/)
 
 ### ¿Qué procede?
 

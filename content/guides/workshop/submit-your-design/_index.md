@@ -68,6 +68,6 @@ If you make any changes to your design after submission, you **must** update you
 ## If you have time, try these next steps
 
 * You can continue to update your design until the shuttle closing date.
-* Take a look at our [previous chips](https://tinytapeout.com/runs/).
+* Take a look at our [previous chips](https://tinytapeout.com/chips/).
 * Check out the [Tiny Tapeout 7 datasheet](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
 * Once the shuttle run has ended you can update your documentation by following this [guide](/guides/documentation).

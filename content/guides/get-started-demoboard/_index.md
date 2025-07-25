@@ -21,13 +21,13 @@ Here's a little video that goes through much of this so you can see it in action
 
 ### Overview and bring-up
 
-The Tiny Tapeout ASICs include hundreds of different designs--[143 on TT04](https://tinytapeout.com/runs/tt04/#all-projects) and [369 on TT09](https://tinytapeout.com/runs/tt09/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
+The Tiny Tapeout ASICs include hundreds of different designs--[143 on TT04](https://tinytapeout.com/chips/tt04/#all-projects) and [369 on TT09](https://tinytapeout.com/chips/tt09/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
 
  * 8 input;
  * 8 output;
  * 8 bi-directional 
 
-pins that specific project is using.  Since [TT06](https://tinytapeout.com/runs/tt06/), there are also up to 6 [analog](https://tinytapeout.com/specs/analog/) support for analog and mixed signal, users.
+pins that specific project is using.  Since [TT06](https://tinytapeout.com/chips/tt06/), there are also up to 6 [analog](https://tinytapeout.com/specs/analog/) support for analog and mixed signal, users.
 
 
 {{< figure src="images/tt07db.jpg" title="TT07 demoboard" >}}
@@ -50,7 +50,7 @@ After inspecting the boards for damage, and ensuring the breakout board is well 
 
 Operating normally, the power LEDs on the top right of the demoboard will light up, and the letter "t" will hold on the 7-segment for a moment, then go through a speedy little sequence and finally start toggling the segments in a binary counter dance (see the video for an example).
 
-This is the [factory test](https://tinytapeout.com/runs/tt07/tt_um_factory_test) project, loaded by default, being ticked and shows the system is alive.
+This is the [factory test](https://tinytapeout.com/chips/tt07/tt_um_factory_test) project, loaded by default, being ticked and shows the system is alive.
 
 If you have a way to monitor power use, you should see a draw of around 180-200 milliAmps, on the 5V supply and not much more.
 
@@ -294,7 +294,7 @@ The complete directions for OS updates are part of the [SDK documentation, under
   * get the UF2 file for the [latest SDK release](https://github.com/TinyTapeout/tt-micropython-firmware/releases)
   * hold the BOOT button on the demoboard while connecting to USB
   * release the BOOT button, see the RPI-RP2 drive appear
-  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.3.uf2`, to the RPI-RP2 drive
+  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.4.uf2`, to the RPI-RP2 drive
   * wait until the drive disappears
   
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
@@ -439,7 +439,13 @@ ui_in = 0b00010011
 ```
 would set the 0th, first and fourth bits high, all others low.
 
-Note that this setting is only respected when mode is `ASIC_RP_CONTROL`.
+Note that this setting is only respected when mode is `ASIC_RP_CONTROL`. Here is an example of how to change the mode to `ASIC_RP_CONTROL`:
+
+```python
+from ttboard.mode import RPMode
+
+tt.mode = RPMode.ASIC_RP_CONTROL
+```
 
 
 #### `uio_oe_pico`

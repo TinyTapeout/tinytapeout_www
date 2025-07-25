@@ -44,7 +44,7 @@ Click the picture to open an interactive viewer.
 
 The chips are taking between 6 and 9 months to manufacture. Then we need to do PCBA, test and order fulfillment. So expect up to 1 year's wait time!
 
-You can find an up to date estimate for each shuttle in the [runs page](/runs).
+You can find an up to date estimate for each shuttle in the [chips page](/chips).
 
 # Purchasing / Product FAQs
 
@@ -54,7 +54,7 @@ You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=
 
 ## How many chips will I receive? Can I order more?
 
-You only get 1 chip. If you want more chips you have to order more of the PCBs at $250 each - the early bird price is only available once per person.
+You only get 1 chip. If you want more chips you have to order more of the devkit PCBs - the early bird price is only available once per person.
 
 ## Can I buy older chips?
 
@@ -113,7 +113,7 @@ Tiny Tapeout will support a wide range of clock frequencies (we anticipate up to
 
 ## Are there some examples of projects people have made?
 
-Check the [runs](/runs) page.
+Check the [chips](/chips) page.
 
 ## Do I need to delete unused digital gates?
 

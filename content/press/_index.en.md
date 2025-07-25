@@ -12,10 +12,10 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 
 | Run  | Launched    | Closed     | Shuttle | Designs | Chips Expected | PCBs Expected |
 |------|-------------|------------|---------|---------|-------|------|
-| [TT01](/runs/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Dec 2023 | - |
-| [TT02](/runs/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 2023 | Jan 2024 |
-| [TT03](/runs/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (includes 149 from TT02) | Dec 2023 | Feb 2024 |
-| [TT04](/runs/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Apr 2024 |
+| [TT01](/chips/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Dec 2023 | - |
+| [TT02](/chips/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 2023 | Jan 2024 |
+| [TT03](/chips/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (includes 149 from TT02) | Dec 2023 | Feb 2024 |
+| [TT04](/chips/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Apr 2024 |
 
 # Articles
 
@@ -38,24 +38,24 @@ Tiny Tapeout is an educational project that makes it easier and cheaper than eve
 
 ## Wokwi projects
 
-* [UART-CC](/runs/tt02/057)
-* [Nano-neuron](/runs/tt02/066)
-* [Worm in a Maze](/runs/tt02/084)
-* [Wolf sheep cabbage river crossing puzzle ASIC design](/runs/tt02/111)
-* [Randomiser and status checker](/runs/tt04/288)
+* [UART-CC](/chips/tt02/057)
+* [Nano-neuron](/chips/tt02/066)
+* [Worm in a Maze](/chips/tt02/084)
+* [Wolf sheep cabbage river crossing puzzle ASIC design](/chips/tt02/111)
+* [Randomiser and status checker](/chips/tt04/288)
 
 ## HDL projects 
 
-* [Avalon Semiconductors 'TBB1143' Programmable Sound Generator](/runs/tt02/024/)
-* [Pi (π) to 1000+ decimal places](/runs/tt02/036)
-* [FPGA](/runs/tt02/090)
-* [RV8U - 8-bit RISC-V Microcore Processor](/runs/tt02/107)
-* [8-bit CPU](/runs/tt02/085/)
-* [12 bit PDP8](/runs/tt03/019)
-* [Synthesizable Digital Temperature Sensor](/runs/tt03/047/)
-* [Raycaster game](/runs/tt04/033)
-* [ROT FPGA](/runs/tt04/197)
-* [String synthesiser with I2S out](/runs/tt04/052)
+* [Avalon Semiconductors 'TBB1143' Programmable Sound Generator](/chips/tt02/024/)
+* [Pi (π) to 1000+ decimal places](/chips/tt02/036)
+* [FPGA](/chips/tt02/090)
+* [RV8U - 8-bit RISC-V Microcore Processor](/chips/tt02/107)
+* [8-bit CPU](/chips/tt02/085/)
+* [12 bit PDP8](/chips/tt03/019)
+* [Synthesizable Digital Temperature Sensor](/chips/tt03/047/)
+* [Raycaster game](/chips/tt04/033)
+* [ROT FPGA](/chips/tt04/197)
+* [String synthesiser with I2S out](/chips/tt04/052)
 
 # Testimonials
 
