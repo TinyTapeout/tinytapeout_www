@@ -57,7 +57,7 @@ Haz click en la imagen para abrir el visor interactivo.
 
 Los chips se están demorando entre 6 a 9 meses en ser manufacturados. Luego, tenemos que gestionar embalaje, prueba y cumplimiento del pedido. Así que, ¡espere hasta 1 año de espera!
 
-Puedes encontrar una estimación al día de cada shuttle en la [página de series](/runs).
+Puedes encontrar una estimación al día de cada shuttle en la [página de chips](/chips).
 
 # Preguntas Frecuentes de Wokwi
 
@@ -112,7 +112,7 @@ Tiny Tapeout va a brindar soporte a una amplia gama de frecuencias de reloj (esp
 
 ## ¿Hay ejemplos de proyectos que otras personas han hecho?
 
-Revisa la página de [series](/runs).
+Revisa la página de [chips](/chips).
 
 ## ¿Es necesario eliminar compuertas lógicas no utilizadas?
 
@@ -209,11 +209,11 @@ Es posible que no hayas llenado suficientes campos, requerimos que se llenen los
 
 ## ¿Dónde esta el repositorio de presentación para el shuttle?
 
-* [Página de TT01](/es/runs/tt01/)
-* [Página de TT02](/es/runs/tt02/)
-* [Página de TT03](/es/runs/tt03/)
-* [Página de TT04](/es/runs/tt04/)
-* [Página de TT05](/es/runs/tt05/)
+* [Página de TT01](/chips/tt01/)
+* [Página de TT02](/chips/tt02/)
+* [Página de TT03](/chips/tt03/)
+* [Página de TT04](/chips/tt04/)
+* [Página de TT05](/chips/tt05/)
 
 # Preguntas frecuentes de ASIC
 

@@ -41,7 +41,7 @@ Fine print:
 * The prices do not include shipping.
 * The number of projects assumes each project is one tile (~160 x 100 um). For larger projects, or projects using analog pins, the number of projects will be less.
 * Each PCB kit includes one chip with all the projects from the shuttle, assembled on a [PCB](/specs/pcb) and ready to use.
-* Check the [shuttle schedule](/runs/) for the deadline of the next shuttle and the expected delivery date.
+* Check the [shuttle schedule](/chips/) for the deadline of the next shuttle and the expected delivery date.
 * All submissions must comply with our [terms of service](/terms).
 
 
@@ -51,7 +51,7 @@ To run a Tiny Tapeout course at a university level for students with prior exper
 
 We recommend experimenting with the Tiny Tapeout design flow using a simple FPGA project to begin, before [trying out the submission process](/submission/).
 
-When students have completed their chip designs, whether wholly original or based on [projects from previous Tiny Tapeout chips](/runs/), you can submit them for production using a credit card - or contact us to purchase prepaid credits.
+When students have completed their chip designs, whether wholly original or based on [projects from previous Tiny Tapeout chips](/chips/), you can submit them for production using a credit card - or contact us to purchase prepaid credits.
 
 For more advanced students, Tiny Tapeout also supports [mixed-signal and analog designs](/specs/analog).
 

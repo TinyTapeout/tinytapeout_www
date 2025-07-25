@@ -29,11 +29,11 @@ Check out [these amazing entries](/competitions/demoscene-tt08-entries/) from th
 * VGA pinout following [Leo's VGA PMOD pinout](https://github.com/mole99/tiny-vga)
     * your VGA timing should follow something from [http://www.tinyvga.com/vga-timing](http://www.tinyvga.com/vga-timing) or [https://tomverbeure.github.io/video_timings_calculator](https://tomverbeure.github.io/video_timings_calculator) 
     * The following projects have all been tested and work with one judge’s panel:
-        * [Flappy VGA](https://tinytapeout.com/runs/tt05/134)
-        * [VGA experiments](https://tinytapeout.com/runs/tt05/334)
-        * [VGA dino game](https://tinytapeout.com/runs/tt05/458)
-        * [VGA SPI ROM](https://tinytapeout.com/runs/tt05/645)
-        * [One sprite pony](https://tinytapeout.com/runs/tt05/326/)
+        * [Flappy VGA](https://tinytapeout.com/chips/tt05/134)
+        * [VGA experiments](https://tinytapeout.com/chips/tt05/334)
+        * [VGA dino game](https://tinytapeout.com/chips/tt05/458)
+        * [VGA SPI ROM](https://tinytapeout.com/chips/tt05/645)
+        * [One sprite pony](https://tinytapeout.com/chips/tt05/326/)
 * Audio pinout following [Mike's audio PMOD pinout](https://github.com/MichaelBell/tt-audio-pmod). 
     * Mike has an [example project here](https://github.com/MichaelBell/tt08-pwm-example) that creates a sine wave on the audio output pin.
 * If you enter the game category, use [our gamepad PMOD](/specs/pinouts/#game-controllers)

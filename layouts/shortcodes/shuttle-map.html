@@ -3,7 +3,7 @@
 {{ $shuttle := .Get 0 }}
 
 {{ if in $validShuttles $shuttle }}
-    {{ $svgPath := printf "static/runs/%s/map.svg" $shuttle }}
+    {{ $svgPath := printf "static/chips/%s/map.svg" $shuttle }}
     {{ $svgContent := readFile $svgPath }}
     <div style="text-align: center">
       {{ $svgContent | safeHTML }}

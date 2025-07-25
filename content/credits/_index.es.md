@@ -16,7 +16,7 @@ Tiny Tapeout no sería posible sin la ayuda de muchas personas. Nos gustaría ag
 * [Proppy](https://twitter.com/proppy) por ayudar con Github actions
 * [Maximo Balestrini](https://twitter.com/maxiborga) por todos los increíbles renderizados y el visor GDS interactivo
 * James Rosenthal por ofrecer ejemplos con diseño digital
-* Todas las personas que fueron parte de [TinyTapeout 01](/runs/tt01) y ofrecieron su tiempo de manera voluntaria para mejorar la documentación y probar el flujo
+* Todas las personas que fueron parte de [TinyTapeout 01](/chips/tt01) y ofrecieron su tiempo de manera voluntaria para mejorar la documentación y probar el flujo
 * El equipo de [YosysHQ](https://www.yosyshq.com/) y todos los otros desarrolladores de herramientas EDA de código abierto
 * [Efabless](https://efabless.com/) por realizar los lanzamientos y proporcionar OpenLane y patrocinio
 * [Tim Ansell y Google](https://www.youtube.com/watch?v=EczW2IWdnOM) por apoyar al movimiento silicio de código abierto
