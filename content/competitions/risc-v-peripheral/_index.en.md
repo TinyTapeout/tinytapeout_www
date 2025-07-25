@@ -37,6 +37,7 @@ All entrants who also purchase the demoboard will get a free [QSPI Pmod](https:/
 ### Categories
 
 * Newcomer - this must be your first tapeout on Tiny Tapeout,
+* Best Byte Peripheral
 * Best documented
 * Best tested
 * Most unusual
