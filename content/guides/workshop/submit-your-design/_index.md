@@ -32,7 +32,7 @@ In Tiny Tapeout:
 * Click the **"Sign in with GitHub"** button.
 * Authorize the application if prompted.
 * Copy and paste your GitHub repository URL into the Github field.
-* Ask an assistant for your coupon and type it in the coupon field.
+* Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
 * Click the **"Create Project"** button.
 
 ### Complete the Submission Process
