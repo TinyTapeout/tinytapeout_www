@@ -183,13 +183,3 @@ then you can use `tt_tool` to generate a render of the GDS as follows:
 ```
 
 The resulting optimised PNG file is called `gds_render.png` (but note that other `gds_render*` intermediate files are also left behind).
-
-### Speeding up Routing
-
-For larger designs (or when close to maximum utilisation), routing can take a long time.  If you have multiple CPU cores, you can try adding the following line to your `config.json`:
-
-```none
-"ROUTING_CORES": 8,
-```
-
-to speed things up (replace 8 with the number of CPU cores in your system).  Note you should not commit this change to git.
