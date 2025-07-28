@@ -1,17 +1,17 @@
 ---
-title: TTSKY25a RISC-V Peripheral
+title: Crowd Sourced RISC-V
 tags: [competition]
-description: "Build a Peripheral, Get It on Silicon - Join the Open-Source RISC-V Peripheral Challenge!"
+description: "Help build a crowd sourced microcontroller - Join the Open-Source RISC-V peripheral challenge!"
 weight: 1
 ---
 
-## Build a Peripheral, Get It on Silicon - Join the Open-Source RISC-V Peripheral Challenge!
+## Help build a crowd sourced microcontroller - Join the Open-Source RISC-V peripheral challenge!"
 
 What if your Verilog code could live forever in silicon?
 
 ![riscv competition](images/riscv_compo.jpg?width=40pc)
 
-We're launching a collaborative competition to crowdsource the coolest, weirdest, and most useful peripherals for a RISC-V microcontroller - and we're taping it out on TTSKY25a with [ChipFoundry.io](https://ChipFoundry.io).
+We're launching a collaborative competition to crowdsource the coolest, weirdest, and most useful peripherals for a RISC-V microcontroller - and we're taping it out on [TTSKY25a](https://app.tinytapeout.com/shuttles/ttsky25a) with [ChipFoundry.io](https://ChipFoundry.io).
 
 Whether you're a hardware hacker, HDL hobbyist, student, or seasoned silicon wrangler, this is your chance to contribute to an open-source, community-built microcontroller that actually gets manufactured.
 
@@ -23,7 +23,7 @@ Submit your peripheral, share your creativity, and help make a crowd-designed ch
 
 This competition is free to enter, but if you want a physical copy of the finished chip you will have to purchase the demoboard separately.
 
-All entrants who also purchase the demoboard will get a free [QSPI Pmod](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602) required by the TinyQV microcontroller.
+All entrants who also purchase the demoboard will get a free [QSPI Pmod](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602) required by the [TinyQV](https://github.com/tinytapeout/ttsky25a-tinyqv) microcontroller.
 
 ### What are the rules?
 
