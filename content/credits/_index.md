@@ -3,19 +3,28 @@ title: "Credits"
 weight: 200
 ---
 
+# GF180 work funded by
+
+<a href="https://www.tillitis.se/"> <img src="/images/tillitis.png" alt="Tillitis"> </a>
+
+# SKY130 early bird sponsored by
+
+<a href="https://chipfoundry.io"> <img src="/images/chipfoundry.png" alt="ChipFoundry"> </a>
+
 # Chip imaging by
 
-<a href="https://texplained.com"> <img src="/images/texplained.png" alt="Texplained"> </a>
+<a href="https://texplained.com"> <img src="/images/texplained.jpg" alt="Texplained"> </a>
 
 # Team
 
 Tiny Tapeout would not be possible without a lot of people helping. We would especially like to thank:
 
-* Uri Shaked for [wokwi](https://wokwi.com/) development and lots more
-* [Patrick Deegan](https://psychogenic.com/) for PCBs, software, documentation and lots more
+* Uri Shaked for [Wokwi](https://wokwi.com/) development and lots more
+* [Patrick Deegan](https://psychogenic.com/) for PCBs, software, documentation, SpASICs and lots more
 * [Sylvain Munaut](https://twitter.com/tnt) for help with scan chain improvements
-* [Mike Thompson](https://www.linkedin.com/in/michael-thompson-0a581a/) and [Mitch Bailey](https://www.linkedin.com/in/mitch-bailey-8ba0b45/) for verification expertise
 * [Tim Edwards](https://www.linkedin.com/in/tim-edwards-4376a18/) and [Harald Pretl](https://www.linkedin.com/in/harald-pretl-4911ba10/) for ASIC expertise
+* [Alexander Mordvintsev](https://znah.net/) for the [GDS simulation](https://znah.net/tt09/)
+* [Mike Thompson](https://www.linkedin.com/in/michael-thompson-0a581a/) and [Mitch Bailey](https://www.linkedin.com/in/mitch-bailey-8ba0b45/) for verification expertise
 * [Jix](https://twitter.com/jix_) for formal verification support
 * [Proppy](https://twitter.com/proppy) for help with GitHub actions
 * [Maximo Balestrini](https://twitter.com/maxiborga) for all the amazing renders and the interactive GDS viewer
