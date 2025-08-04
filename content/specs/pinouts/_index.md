@@ -47,6 +47,22 @@ uo_out[5] - G0\
 uo_out[6] - B0\
 uo_out[7] - hsync
 
+
+## Audio Output
+
+For audio output, we recommend using the [TT Audio Pmod](https://github.com/MichaelBell/tt-audio-pmod). This open-source Pmod provides a simple way to output audio from your Tiny Tapeout design.
+
+The pinout for the TT Audio Pmod is:
+
+uio_out[7] or uo_out[7] - Audio Output
+
+For stereo audio output, we recommend using pins 6 and 7 with the following convention:
+
+uio_out[6] or uo_out[6] - Left Channel  
+uio_out[7] or uo_out[7] - Right Channel
+
+This pinout allows for both mono and stereo audio output while maintaining compatibility with existing audio Pmods.
+
 ## SPI RAM
 
 The RP2040 on the demo board can be configured to provide RAM to the chip over SPI thanks to [spi-ram-emu](https://github.com/MichaelBell/spi-ram-emu/).
