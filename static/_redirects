@@ -26,3 +26,13 @@
 # Redirect /runs -> /chips
 /runs /chips/
 /runs/* /chips/:splat
+
+# Redirects for links on postcards POCA-01
+/poca-01-1 https://tinytapeout.com/runs/tt06/
+/poca-01-2 https://tinytapeout.com/runs/tt06/
+/poca-01-3 https://tinytapeout.com/runs/tt06/
+/poca-01-4 https://tinytapeout.com/runs/tt06/tt_um_vaf_555_timer
+/poca-01-5 https://tinytapeout.com/runs/tt05/tt_um_urish_skullfet
+/poca-01-6 https://tinytapeout.com/runs/tt05/tt_um_vga_clock
+/poca-01-7 https://tinytapeout.com/runs/tt05/tt_um_vga_clock
+/poca-01-8 https://siliconpr0n.org/archive/doku.php?id=tiny-tapeout:tiny-tapeout:tt06
