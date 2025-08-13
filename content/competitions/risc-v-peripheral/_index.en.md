@@ -88,9 +88,9 @@ Judging will happen shortly after tapeout of TTSKY25a (15th September). We will 
 
 * [Andrew "bunnie" Huang](https://www.bunniestudios.com/) - One of the world’s most renowned hardware hackers, best known for reverse-engineering the original Xbox. He is the author of The Essential Guide to Electronics in Shenzhen and a passionate advocate for hardware freedom and security.
 * [Yuning Liang](https://www.linkedin.com/in/yuningliang/) - CEO and founder of [DeepComputing](https://deepcomputing.io/news/). In 2024, he received the "RISC-V Community Contributor Award" and was recognized as an "Ubuntu Summit Contributor." A FOSDEM 2025 RISC-V Track Keynote Speaker and Ubuntu Summit 2024 RISC-V Invited Speaker, Yuning is known for advocating open source and RISC-V technologies and believes in cross-cultural collaboration and problem-solving.
+* [Omar Chebib](https://www.linkedin.com/in/omar-chebib/) - Senior embedded software engineer at Espressif Systems, specialized in RISC-V microcontrollers and low-level design. Developed ESP32-C3 support for QEMU. Passionate about RISC-V technology and FPGA hardware design, creating 8-bit peripherals in Verilog in his spare time.
 * [Mike "RebelMike" Bell](https://rebel-lion.uk/@mike) - Coder, narrowboater, puzzle hunter, and author of TinyQV
 * [Matt Venn](https://www.mattvenn.net/) - Open Silicon pioneer known for Tiny Tapeout and the [Zero to ASIC courses](https://zerotoasiccourse.com).
-* More TBD  
 
 ### Small print
 
