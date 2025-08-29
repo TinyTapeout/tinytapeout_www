@@ -540,9 +540,7 @@ The analog I/O from the breakout board is accessed via u.fl connectors on the br
 
 If you wish to interact with an analog project, remove the offending resistors (R42-R48, R51-R55) or replace them with a high value (>=1Meg):
 
-
 {{< figure src="images/tt06-analog-pulldowns.png" title="TT06 analog pulldowns" >}}
-
 
 ## TT07 Specific Errata
 
@@ -550,12 +548,8 @@ If you wish to interact with an analog project, remove the offending resistors (
 
 For Tiny Tapeout 7, we had an error in the breakout board, swapping the `CTRL_SEL_nRST` and `CTRL_SEL_INC` pins. The MicroPython SDK already [includes a workaround for this issue](https://github.com/TinyTapeout/tt-micropython-firmware/commit/eee4e08dddeacb91c1e6828b3fde60dc5cf6a8ef), so this shouldn't have any impact for most users. However, if you are writing your own firmware or designing a custom PCB that interfaces with the breakout board, you should be aware of this issue.
 
-
 ### Analog pull-downs (bis)
 
-Back for an encore, the analog pull-down issue from TT06 has returned, this time thanks to the assembly house somehow using out of date information.
+Back for an encore, the analog pull-down issue from TT06 has returned.
 
 You can get more info [above, in the TT06 errata](#analog-pull-downs), but short version is the Analog I/O pulldowns on the demoboard have low values that excessively load analog outputs.  The easiest solution is to depopulate R42-R48, and R51-R55 (or at least those tied to the I/O of interest), located under the breakout board.
-
-
-
