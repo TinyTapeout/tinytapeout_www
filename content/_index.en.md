@@ -13,7 +13,6 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 {{< youtube qVWq_XZko-M >}}
 
 # Our open shuttles
-{{< countdown shuttle="ttihp25b" name="IHP25b" deadline="2025-09-01T20:00:00Z" pcbs="150" >}}
 
 {{< countdown shuttle="ttsky25a" name="SKY25a" deadline="2025-09-15T20:00:00Z" pcbs="200" >}}
 
