@@ -30,11 +30,21 @@ In Tiny Tapeout:
 
 <!-- * Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create) -->
 * Go to: [https://staging.tinytapeout-app.pages.dev/](https://staging.tinytapeout-app.pages.dev/)
-* Click the **"Sign in with GitHub"** button.
+* Click the **Sign in with GitHub** button.
 * Authorize the application if prompted.
-* Click the **"Create a new project"** button.
+
+### Submit Your Repository
+
+* Once logged in, press the **Create a new project** button.
 * Copy and paste your GitHub repository URL into the Github field.
+
+{{< figure src="images/submit_design_2.png" >}}
+{{< figure src="images/submit_design_3.png" >}}
+
 * Click the **"Create Project"** button.
+
+### If you have a coupon code for a free tile
+
 * Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
 * This should drop the price to 0 and you can click the **"Submit Project"** button.
 
