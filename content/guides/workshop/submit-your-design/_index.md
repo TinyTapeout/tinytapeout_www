@@ -28,12 +28,15 @@ In Tiny Tapeout:
 
 ### Log In to Tiny Tapeout
 
-* Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create)
+<!-- * Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create) -->
+* Go to: [https://staging.tinytapeout-app.pages.dev/](https://staging.tinytapeout-app.pages.dev/)
 * Click the **"Sign in with GitHub"** button.
 * Authorize the application if prompted.
+* Click the **"Create a new project"** button.
 * Copy and paste your GitHub repository URL into the Github field.
-* Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
 * Click the **"Create Project"** button.
+* Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
+* This should drop the price to 0 and you can click the **"Submit Project"** button.
 
 ### Complete the Submission Process
 
