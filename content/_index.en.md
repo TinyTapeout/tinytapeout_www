@@ -12,10 +12,6 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 
 {{< youtube qVWq_XZko-M >}}
 
-# Our open shuttles
-
-{{< countdown shuttle="ttsky25a" name="SKY25a" deadline="2025-09-15T20:00:00Z" pcbs="200" >}}
-
 # Get started
 
 - If you're new to digital design - start by taking some of our [lessons here](digital_design).
