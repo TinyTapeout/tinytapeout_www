@@ -28,8 +28,7 @@ In Tiny Tapeout:
 
 ### Log In to Tiny Tapeout
 
-<!-- * Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create) -->
-* Go to: [https://staging.tinytapeout-app.pages.dev/](https://staging.tinytapeout-app.pages.dev/)
+* Go to: [https://app.tinytapeout.com/projects/create](https://app.tinytapeout.com/projects/create)
 * Click the **Sign in with GitHub** button.
 * Authorize the application if prompted.
 
