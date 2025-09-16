@@ -8,9 +8,9 @@ description: 237 designs, closed 2025-09-15
 
 ## Design details
 
-- [Github repository](https://github.com/TinyTapeout/tinytapeout-ihp-25a)
-- [PDF datasheet](https://tinytapeout.github.io/tinytapeout-ihp-25a/datasheet.pdf)
-- [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-ihp-25a/shuttle_index.json)
+- [Github repository](https://github.com/TinyTapeout/tinytapeout-sky-25a)
+- [PDF datasheet](https://tinytapeout.github.io/tinytapeout-sky-25a/datasheet.pdf)
+- [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-sky-25a/shuttle_index.json)
 
 ## Shuttle information
 
