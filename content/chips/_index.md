@@ -22,7 +22,7 @@ aliases:
 | TT10                                              | 2024-11-11 | Cancelled  | -        | -       | -              | -                       |
 | [TTIHP25a](/chips/ttihp25a)                        | 2025-03-12 | 2025-03-28 | IHP-2504 | 547     | 2025-11-28     | 2026-02-01              |
 | [TTIHP25b](/chips/ttihp25b)                        | 2025-04-20 | 2025-09-01 | IHP-2509 | 81      | 2026-02-20     | 2026-04-15              |
-| [TTSKY25a](https://app.tinytapeout.com/shuttles/ttsky25a) | 2025-06-27 | 2025-09-15 | CC-2509  | TBD     | 2026-02-14     | 2026-04-15              |
+| [TTSKY25a](/chips/ttsky25a)                        | 2025-06-27 | 2025-09-15 | CC-2509  | 237     | 2026-02-14     | 2026-04-15              |
 
 \* TT03 also includes 149 designs from TT02 for a total of 249 designs.
 
