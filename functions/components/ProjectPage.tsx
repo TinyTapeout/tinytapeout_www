@@ -43,9 +43,9 @@ export function ProjectPage({
 
   const renderUrl = `https://raw.githubusercontent.com/TinyTapeout/tinytapeout-project-renders/main/shuttles/${shuttle}/${gdsMacro}/render.png`;
 
-  const gdsUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${gdsMacro}/${gdsMacro}.gds`;
+  const oasUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${gdsMacro}/${gdsMacro}.oas`;
   const threeDViewerParams = new URLSearchParams({
-    model: gdsUrl,
+    model: oasUrl,
     process: shuttle.startsWith('ttihp') ? 'SG13G2' : 'SKY130',
   });
   const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?${threeDViewerParams.toString()}`;
