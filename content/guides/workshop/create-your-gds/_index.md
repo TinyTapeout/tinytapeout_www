@@ -34,22 +34,25 @@ GitHub Actions allow automated tasks to run. They are enabled by default, but we
   
 ## Edit the `info.yaml` File
 
-The `info.yaml` is used to tell us the important details of your project, which Wokwi project it is, who its by, what it does, how to test.
+The `info.yaml` is used to tell us the important details of your project, which Wokwi project it is, who its by, what it does and how to test.
 
 * Update the Wokwi ID in the `info.yaml` file of your repository to match the ID from your Wokwi project.
 
 ![](images/WOKWI_Project_ID.png?width=50pc)
 
-* Update metadata:
-  - Enter the 'title', 'author', and your 'discord' username
+* Update the project information:
+  - Enter the 'title', 'author', and your 'discord' username if you have one.
   - Include a brief project description in the 'description' field.
   - If your project needs a specific clock frequency, provide the frequency in Hz under the 'clock_hz' field.
+  - These are used to generate the datasheet and the design's public webpage.
 
 ![](images/wokwi_metadata.png?width=50pc)
 
 * Describe the pins:
-  - Provide descriptions for the pins to aid in testing the designs. 
-  - Unused pins are to be left blank and additional pins cannot be included. 
+  - For any pins you use, provide a description of what it does.
+  - Don't delete unused pins, just leave them blank.
+
+This example shows the description for a design with 2 inputs and 5 outputs.
 
 ![](images/info_yaml.png?width=30pc)
 
@@ -61,7 +64,7 @@ Clicking the commit button will save your changes.
 
 ## Write some documentation
 
-We put all the project information into a [datasheet](https://tinytapeout.github.io/tinytapeout-06/datasheet.pdf). You can use Markdown to write your documentation, telling everyone what your chip does and how to test it.
+We put all the project information into the [datasheet](https://tinytapeout.github.io/tinytapeout-06/datasheet.pdf) and the design's public page on the website. You can use Markdown to write your documentation, telling everyone what your chip does and how to test it.
 
 * Edit the `info.md` File in the docs directory.
 * You need to change both the 'how it works' and 'how to test' sections.
@@ -71,15 +74,19 @@ We put all the project information into a [datasheet](https://tinytapeout.github
 Leaving the info.md unmodified will cause the 'docs' action to fail. 
 {{% /notice %}}
 
+Here's an example that would help you or someone else test the design when you receive it on the chip:
+
+![](images/doc_example.png?width=70pc)
+
 ## GitHub Actions
 
 GitHub actions are a service provided free of charge for open source projects. They usually start a virtual machine, install and then run some software.
 Each commit will trigger these actions to run. 
 We use a few different actions to do different tasks:
 
-- docs: This action checks your docs and then generates a PDF preview.
-- gds: This action generates the GDS for your project, and shows the results.
-- wokwi test: This action will test the design if you created a truth table for your Wokwi design.
+- **docs** This action checks your docs and then generates a PDF preview.
+- **gds** This action generates the GDS for your project, and shows the results.
+- **wokwi test** This action will test the design if you created a truth table for your Wokwi design.
 
 To see the currently running and historical actions, go to the ‘Actions’ tab in your repository.
 
@@ -92,6 +99,7 @@ Red indicates failure and green indicates success. Only the 'docs' and 'gds' act
 ### Docs Action
 
 This action generates a preview of how your documentation will look. You can download a PDF preview to check it.
+
 If you have a failure, you can check the log to see what the problem is. The most common error is missing fields in `info.yaml` or leaving `info.md` unchanged.
 
 {{< figure src="images/checkerrors.png">}}   
@@ -99,6 +107,11 @@ If you have a failure, you can check the log to see what the problem is. The mos
 ### GDS Action
 
 This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details. 
+If you have a failure, you can check the log to see what the problem is. The most common errors are:
+
+* Not [enabling the GitHub action](/guides/workshop/create-your-gds/#allow-github-actions-to-publish) to publish
+* Not resolving [ERC warnings](/guides/workshop/simulate-a-gate/#simulate) in the Wokwi design
+* If you get stuck, ask a TA!
 
 #### Cell usage
 
@@ -137,7 +150,7 @@ This section gives you the 3D viewer link and the 2D render of your design. Open
 
 ## Congratulations!
 
-Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's covered in the next guide.
+Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's coming up soon!
 
 ## If you have time, try these next steps
 
