@@ -17,7 +17,7 @@ This guide will walk you through the process of preparing your Wokwi design for 
 
 GitHub templates are a collection of files with a predefined structure. Ours contains all the files and settings necessary to convert your design to the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) we need for manufacture.
 
-* Go to the [GitHub Wokwi Template](https://github.com/TinyTapeout/ttihp-wokwi-template)
+* Go to the [GitHub Wokwi Template](https://github.com/TinyTapeout/ttsky-wokwi-template)
 * Click the ‘Use this template’ button to generate your own copy of the repository.
 
    <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>
@@ -155,7 +155,7 @@ Once you have the GDS and Docs jobs completing successfully, you are ready to su
 ## If you have time, try these next steps
 
 * Add a new cell in your Wokwi design and re-trigger the GitHub action to see the result (see the tips section below for how to do that).
-* If you're familiar with Verilog, you can take a look at the [Verilog template](https://github.com/TinyTapeout/ttihp-verilog-template) and see how more advanced designs can be realised.
+* If you're familiar with Verilog, you can take a look at the [Verilog template](https://github.com/TinyTapeout/ttsky-verilog-template) and see how more advanced designs can be realised.
 * Take a look at the Verilog exported from your design. Here's what [gets exported from the template](https://wokwi.com/api/projects/354858054593504257/verilog). Edit the URL and change the ID for your design's.
 * Watch the video about [how the GitHub action works behind the scenes](/making_asics).
 
