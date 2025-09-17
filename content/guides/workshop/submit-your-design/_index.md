@@ -46,6 +46,7 @@ In Tiny Tapeout:
 
 * Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
 * This should drop the price to 0 and you can click the **"Submit Project"** button.
+* If you want to optionally own a copy of the chip, you can pay for it here.
 
 ### Complete the Submission Process
 
@@ -57,7 +58,8 @@ In Tiny Tapeout:
 * Your design will then be added to the Tapeout.
   
 {{% notice warning %}}
-Every time you make a change to your design you'll need to update the GDS and then submit a new revision. Designs can be changed up to the deadline.
+Every time you make a change to your design you'll need to update the GDS and then submit a new revision. Designs can be changed up to the tapeout closing date.
+No new revisions will be accepted after the closing date.
 {{% /notice %}}
 
 ### Congratulations!
