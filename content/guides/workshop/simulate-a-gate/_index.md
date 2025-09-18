@@ -67,7 +67,7 @@ Now it's time to add a new component to your chip!
 
 {{< figure src="images/logic_gates.png" >}}
 
-Pick one of the gates. We recommend starting with one of the first 5. Leave the MUX and Flip-Flops for later.
+Pick one of the gates. We recommend starting with one of the first 5. Leave the MUX and Flip-Flops for later. Avoid the DSR Flip-Flop.
 
 ## Wire it up
 
