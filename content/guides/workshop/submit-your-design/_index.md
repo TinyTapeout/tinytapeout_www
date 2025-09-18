@@ -12,8 +12,8 @@ This guide will show you how to submit your design to Tiny Tapeout and understan
 
 Before you begin, make sure you have:
 
-* A GitHub repository created from the latest Wokwi or Verilog Tiny Tapeout template.
-* Passing GDS and Docs Actions in your repository. This ensures your design meets the required standards.
+* A GitHub repository created from the Wokwi Tiny Tapeout template.
+* Passing GDS and Docs Actions in your repository.
 
 {{< figure src="images/passing_indicators.png" >}}
 
@@ -22,7 +22,7 @@ Before you begin, make sure you have:
 In Tiny Tapeout:
 
 * **Tiles** are the individual designs on the chip. If your project gets more complex you can use more tiles.
-* **Chips** are the actual physical chips manufactured. They contain all the tiles from all the participants. We mount the chips onto the [demoboard](/specs/pcb) before sending to you.
+* **Chips** are the actual physical chips manufactured. They contain all the tiles from all the participants. We mount the chips onto the [demoboard](/specs/pcb).
 
 ## Step-by-Step Submission Guide
 
@@ -46,7 +46,7 @@ In Tiny Tapeout:
 
 * Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
 * This should drop the price to 0 and you can click the **"Submit Project"** button.
-* If you want to optionally own a copy of the chip, you can pay for it here.
+* If you want to order your own copy of the chip, you can pay for it here.
 
 ### Complete the Submission Process
 
