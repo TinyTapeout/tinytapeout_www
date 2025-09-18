@@ -12,6 +12,12 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 
 {{< youtube qVWq_XZko-M >}}
 
+# Our open shuttles
+
+{{< countdown shuttle="ttsky25b" name="SKY25b" deadline="2025-11-10T20:00:00Z" pcbs="80" >}}
+
+\* This shuttle might be delayed if ChipFoundry is unable to meet a minimum order quantity on their shuttle.
+
 # Get started
 
 - If you're new to digital design - start by taking some of our [lessons here](digital_design).
