@@ -1,13 +1,13 @@
 ---
 title: 'Hardening Tiny Tapeout Projects Locally'
 linkTitle: 'Local hardening'
-description: 'Local equivalent to the GitHub Actions workflow, using OpenLane 2'
+description: 'Hardening your Tiny Tapeout projects with LibreLane, to speed up iteration times'
 weight: 60
 ---
 
 This document explains how to harden your Tiny Tapeout projects locally, to speed up iteration times. The whole process should take roughly 10 minutes.
 
-It uses the [factory-test](https://github.com/TinyTapeout/ttsky25a-factory-test) project as an example.
+It uses the [factory-test](https://github.com/TinyTapeout/ttsky25b-factory-test) project as an example.
 
 ### 1. Environment Setup
 
@@ -26,19 +26,17 @@ You also need a recent version of Docker installed on your system.
 We assume your project was cloned to `~/factory-test`. If you don't have a project yet, and want to follow these instructions to prepare your local setup, you can clone the `factory-test` repo by running the following command:
 
 ```sh
-git clone https://github.com/TinyTapeout/ttsky25a-factory-test ~/factory-test
+git clone https://github.com/TinyTapeout/ttsky25b-factory-test ~/factory-test
 ```
 
 ### 2. Clone tt-support-tools
 
-Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`ttsky25a` branch) inside the `tt` directory of your project:
+Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`main` branch) inside the `tt` directory of your project:
 
 ```sh
 cd ~/factory-test
-git clone -b ttsky25a https://github.com/TinyTapeout/tt-support-tools tt
+git clone https://github.com/TinyTapeout/tt-support-tools tt
 ```
-
-Note: for IHP projects, you should use the `ttihp25b` branch instead of `ttsky25a`.
 
 ### 3. Python and Pip Dependencies
 
@@ -66,20 +64,20 @@ pip install -r ~/factory-test/tt/requirements.txt
 
 ### 4. Set up environment variables
 
-Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `OPENLANE2_TAG` specify, respecively, the version of the PDK and the version of OpenLane 2 you will use: 
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively, the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use: 
 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export OPENLANE2_TAG=2.2.9
+export LIBRELANE_TAG=2.4.2
 ```
 
-Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look for the step named "Set up environment variables")
+Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look at the "default" value for the input called "librelane-version")
 
-### 5. Install OpenLane 2
+### 5. Install LibreLane
 
 ```sh
-pip install openlane==$OPENLANE2_TAG
+pip install librelane==$LIBRELANE_TAG
 ```
 
 #### IHP Specific Instructions
@@ -88,15 +86,10 @@ For IHP projects, you need to set the following environment variables:
 
 ```sh
 export PDK=ihp-sg13g2
-export OPENLANE_IMAGE_OVERRIDE=ghcr.io/tinytapeout/openlane2:ihp-v3.0.0.dev17
+export LIBRELANE_TAG=3.0.0.dev39
 ```
 
-And then install OpenLane 2 by running the following commands:
-
-```sh
-pip install https://github.com/TinyTapeout/libparse-python/releases/download/0.3.1-dev1/libparse-0.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-pip install https://github.com/TinyTapeout/openlane2/releases/download/ihp-v3.0.0.dev17/openlane-3.0.0.dev17-py3-none-any.whl
-```
+And then install LibreLane as mentioned above (`pip install librelane==$LIBRELANE_TAG`).
 
 Finally, you need to install the IHP PDK by running the following command:
 
@@ -110,7 +103,7 @@ Congratulations, you are ready to harden your project!
 
 Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below.
 
-First, generate the openlane configuration file:
+First, generate the LibreLane configuration file:
 
 ```sh
 cd ~/factory-test
@@ -138,7 +131,7 @@ Once you set your environment, you can reharden at any time. Before running `tt_
 source ~/ttsetup/venv/bin/activate
 ```
 
-If you make changes to your project configuration (e.g. increase the number of tiles), you'll need to update the openlane configuration file by running the following command in your project's directory:
+If you make changes to your project configuration (e.g. increase the number of tiles), you'll need to update the LibreLane configuration file by running the following command in your project's directory:
 
 ```sh
 ./tt/tt_tool.py --create-user-config
