@@ -11,9 +11,9 @@ Wokwi is a web based schematic and simulation tool. As well as ASIC design, it c
 
 ## Start from our Wokwi Template
 
-To start with, you need to create a copy of the our template.
+To start with, you need to create a copy of the template.
 
-* Open the Wokwi [template](https://wokwi.com/projects/354858054593504257).
+* Open the Wokwi [Template](https://wokwi.com/projects/354858054593504257).
 * You'll need to sign up to be able to save. Press the **sign up** button in the top right corner.
 * If you already have a GitHub or Google account, you can use that.
 * Once you've signed in, press the **Save** dropdown button and choose **Save a copy**.

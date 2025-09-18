@@ -10,7 +10,7 @@ This guide will walk you through the process of preparing your Wokwi design for 
 
 ## Prerequisites
 
-* Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257) or from the [advanced template project](https://wokwi.com/projects/419323243133324289).
+* Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi Template](https://wokwi.com/projects/354858054593504257).
 * GitHub Account: If you don’t have a GitHub account, sign up for one [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 ## Use the GitHub Template
