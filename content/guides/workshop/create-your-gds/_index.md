@@ -128,7 +128,9 @@ The precheck summary shows the results of all the tests we run on the design. Al
 
 #### Viewer
 
-This section gives you the 3D viewer link and the 2D render of your design. Open the 3D viewer by clicking the link.
+This section gives you the 3D viewer link and the 2D render of your design. Open the 3D viewer by clicking the "open 3D viewer" link.
+
+Can you match the logic gates you used in the Wokwi design with the standard cells in the physical layout?
 
 {{< figure src="images/gdsoutput.png">}}   
 
