@@ -85,3 +85,6 @@ If you make any changes to your design after submission, you **must** update you
 * Take a look at our [previous chips](https://tinytapeout.com/chips/).
 * Check out the [Tiny Tapeout 7 datasheet](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf).
 * Once the shuttle run has ended you can update your documentation by following this [guide](/guides/documentation).
+* Take a look at this great video by Branch Education:
+
+{{< youtube _Pqfjer8-O4 >}}
