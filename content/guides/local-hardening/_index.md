@@ -64,7 +64,7 @@ pip install -r ~/factory-test/tt/requirements.txt
 
 ### 4. Set up environment variables
 
-Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively, the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use: 
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively, the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use:
 
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
@@ -73,6 +73,14 @@ export LIBRELANE_TAG=2.4.2
 ```
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look at the "default" value for the input called "librelane-version")
+
+#### GF180 (GlobalFoundries 180nm) Specific Instructions
+
+For GF180 projects, you need to set the following environment variables, in addition to the ones above:
+
+```sh
+export PDK=gf180mcuD
+```
 
 ### 5. Install LibreLane
 
@@ -101,7 +109,8 @@ git clone -b tt2025 https://github.com/TinyTapeout/IHP-Open-PDK $PDK_ROOT
 
 Congratulations, you are ready to harden your project!
 
-Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below.
+Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for
+GF180 projects, you would need to add the `--gf` flag.
 
 First, generate the LibreLane configuration file:
 
@@ -111,7 +120,7 @@ cd ~/factory-test
 ```
 
 Then run the following command to harden the project locally.
-Notice that this command **requires you to have Docker** (or a compatible container engine) installed and running.   
+Notice that this command **requires you to have Docker** (or a compatible container engine) installed and running.
 
 ```sh
 ./tt/tt_tool.py --harden
