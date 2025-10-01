@@ -170,6 +170,20 @@ cp ../runs/wokwi/final/pnl/$TOP_MODULE.pnl.v gate_level_netlist.v
 make -B GATES=yes
 ```
 
+### Viewing the design in OpenROAD GUI and KLayout
+
+To view the hardened design in the OpenROAD GUI, you can use the following command:
+
+```sh
+./tt/tt_tool.py --open-in-openroad
+```
+
+For KLayout, you can use:
+
+```sh
+./tt/tt_tool.py --open-in-klayout
+```
+
 ### Exporting the hardened design to a PNG file
 
 Make sure you have the `librsvg2-bin` and `pngquant` packages installed:
