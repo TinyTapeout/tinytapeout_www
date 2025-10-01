@@ -12,6 +12,10 @@ description: 237 designs, closed 2025-09-15
 - [PDF datasheet](https://tinytapeout.github.io/tinytapeout-sky-25a/datasheet.pdf)
 - [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-sky-25a/shuttle_index.json)
 
+## Imaging
+
+* Interactive viewer: https://tinytapeout.com/decap/ttsky25a
+
 ## Shuttle information
 
 - Launched: 27 June 2025
