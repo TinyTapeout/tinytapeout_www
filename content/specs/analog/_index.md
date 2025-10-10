@@ -6,7 +6,7 @@ weight: 15
 
 ## PDK
 
-All Tiny Tapeout shuttles run on the Sky130A PDK. Make sure you simulate with Sky130A.
+Tiny Tapeout shuttles use the sky130A, ihp-sg13g2, and gfmcu180D open source PDKs. Make sure you simulate with the correct PDK for your shuttle.
 
 ## Analog pins
 
@@ -18,7 +18,7 @@ You must use the pins in order, starting from 0.
 
 Even though there are 8 pins in the templates, you can only use the first 6.
 
-## Specifications and limitations
+## Specifications and limitations - sky130A
 
 The path between the analog pads and your project (the ua pins) is expected to have the following properties:
 
@@ -36,7 +36,7 @@ The templates include all the eight analog pins, but only the pins that you paid
 
 **Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_oe` pins to GND.
 
-## Area
+## Area - sky130A
 
 * 1x2 tiles = 160x225um
 * 2x2 tiles = 334x225um
@@ -60,16 +60,16 @@ Power pins need to be vertical stripes on met4 layer and must adhere to the foll
 4. Multiple power pins of each type can be used with varying dimensions as long as the above constraints are met.
 5. The actual metal area can be larger or have a different shape, but the area defined as a pin must comply with these constraints.
 
-## Pricing
+## Pricing (sky130A)
 
-Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is $100 (each tile is $50).
+Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is 140€ (each tile is 50€).
 
-In addition, there is a cost for each analog pin attributable to a given customer (rather than project) on a given shuttle. The price for analog pins is $40 per pin for the first 4 pins you need on the Tiny Tapeout shuttle, and $100 per pin for additional pins.
+In addition, there is a cost for each analog pin attributable to a given customer (rather than project) on a given shuttle. The price for analog pins is 40€ per pin for the first 2 pins you need on the Tiny Tapeout shuttle, and 100€ per pin for additional pins.
 
 Example:
 
-* You submit a design requiring 1x2 tiles and 2 analog pins. This costs you $180 ($100 for the tiles, and $80 for the analog pins).
-* You then submit another design on the same shuttle, itself requiring 2x2 tiles and 3 analog pins. This would cost you $380 ($200 for the tiles, and $180 for the analog pins).
+* You submit a design requiring 1x2 tiles and 2 analog pins. This costs you 220€ (140€ for the tiles, and 80€ for the analog pins).
+* You then submit another design on the same shuttle, itself requiring 2x2 tiles and 3 analog pins. This would cost you 580€ (280€ for the tiles, and 300€ for the analog pins).
 * i.e. as a customer you are using a total of **5** analog pins on the shuttle.
 
 This price is only for including the design in the shuttle, and does not include the cost of the ASIC, PCB, or shipping.
