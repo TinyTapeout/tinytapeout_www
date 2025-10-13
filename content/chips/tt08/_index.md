@@ -18,7 +18,7 @@ description: 135 designs, closed 2024-09-06
 * Launched: 10 June 2024
 * Submission closed: 6 September 2024
 * Submitted to Efabless [2409C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
-* Chips expected April 2025, PCBs expected May 2025
+* Chips arrived October 2025, PCBs expected December 2025
 
 ## Chip map
 
