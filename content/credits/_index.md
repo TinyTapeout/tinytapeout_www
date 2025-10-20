@@ -3,7 +3,7 @@ title: "Credits"
 weight: 200
 ---
 
-# GF180 work funded by
+# GF180MCU work funded by
 
 <a href="https://www.tillitis.se/"> <img src="/images/tillitis.png" alt="Tillitis"> </a>
 
