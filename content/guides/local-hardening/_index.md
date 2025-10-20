@@ -74,9 +74,9 @@ export LIBRELANE_TAG=2.4.2
 
 Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look at the "default" value for the input called "librelane-version")
 
-#### GF180 (GlobalFoundries 180nm) Specific Instructions
+#### GF180MCU (GlobalFoundries 180nm) Specific Instructions
 
-For GF180 projects, you need to set the following environment variables, in addition to the ones above:
+For GF180MCU projects, you need to set the following environment variables, in addition to the ones above:
 
 ```sh
 export PDK=gf180mcuD
@@ -110,7 +110,7 @@ git clone -b tt2025 https://github.com/TinyTapeout/IHP-Open-PDK $PDK_ROOT
 Congratulations, you are ready to harden your project!
 
 Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for
-GF180 projects, you would need to add the `--gf` flag.
+GF180MCU projects, you would need to add the `--gf` flag.
 
 First, generate the LibreLane configuration file:
 
