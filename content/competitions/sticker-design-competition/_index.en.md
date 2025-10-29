@@ -54,7 +54,6 @@ All of the above and...
 - Everybody that submits designs to the competition will receive free stickers
 - Each person that submits designs which are chosen for production will receive a prize of a tile for a future shuttle,
   maximum one tile per person
-- Winners will be selected by Tiny Tapeout and confirmed
 
 ## Further details
 - Submissions are accepted until the 15th November 2025
