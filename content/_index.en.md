@@ -14,7 +14,7 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 
 # Our open shuttles
 
-{{< countdown shuttle="ttsky25b" name="SKY25b" deadline="2025-11-10T20:00:00Z" pcbs="80" >}}
+{{< countdown shuttle="ttgf0p2" name="GF0p2" deadline="2025-11-24T20:00:00Z" pcbs="0" >}}
 
 # Get started
 
