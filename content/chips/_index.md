@@ -23,7 +23,7 @@ aliases:
 | [TTIHP25a](/chips/ttihp25a)                        | 2025-03-12 | 2025-03-28 | IHP-2504 | 547     | 2025-11-28     | 2026-02-01              |
 | [TTIHP25b](/chips/ttihp25b)                        | 2025-04-20 | 2025-09-01 | IHP-2509 | 81      | 2026-02-20     | 2026-04-15              |
 | [TTSKY25a](/chips/ttsky25a)                        | 2025-06-27 | 2025-09-15 | CC-2509  | 237     | 2026-02-14     | 2026-04-15              |
-| [TTSKY25b](https://app.tinytapeout.com/shuttles/ttsky25b) | 2025-09-18 | 2025-11-10 | CI-2511  | TBD     | 2026-04-11  | 2026-06-15              |
+| [TTSKY25b](https://app.tinytapeout.com/shuttles/ttsky25b) | 2025-09-18 | 2025-11-10 | CI-2511  | TBD     | 2026-05-02  | 2026-06-30              |
 
 ### Future chips
 
