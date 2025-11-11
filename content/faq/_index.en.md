@@ -56,6 +56,20 @@ You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=
 
 You only get 1 chip. If you want more chips you have to order more of the devkit PCBs - the early bird price is only available once per person.
 
+## What is a 'devkit'?
+A devkit (short for development kit) (also stylised as DevKit or dev-kit) is a set of components that provide an interface
+to the shuttle's ASIC. The devkit consists of two PCBs (printed circuit boards) - a 'demo board' and a 'breakout board'.
+
+The breakout board contains the shuttle's ASIC, and connects to the demo board via a set of pins. The demo board contains
+a microcontroller and relevant firmware for you to interface with it via the [Tiny Tapeout Commander](https://commander.tinytapeout.com/).
+The demo board also contains additional connectors and components (LEDs, 7 segment display, DIP switches) for you to
+interact with.
+
+The devkit we provide is a pre-assembled board, so it is ready for you to use as soon as you receive it. There are no
+plans to provide a DIY devkit, however the files are available on GitHub ([github.com/TinyTapeout/tt-demo-pcb](https://github.com/TinyTapeout/tt-demo-pcb)).
+
+When you purchase 1 devkit, you will receive 1 demo board and 1 breakout board.
+
 ## Can I buy older chips?
 
 Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/). We only sell spares, so there is no guarantee there will be any.
