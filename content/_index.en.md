@@ -71,6 +71,7 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
   {{< customer-card "Graz University of Technology" "tugraz.png" "https://www.tugraz.at/" >}}
   {{< customer-card "University of Salerno, Fisciano" "unisa.png" "https://www.linkedin.com/feed/update/urn:li:activity:7302956712246808577/" >}}
+  {{< customer-card "Linköping University" "liu.jpg" "https://liu.se/en" >}}
 </div>
 
 # Testimonials
