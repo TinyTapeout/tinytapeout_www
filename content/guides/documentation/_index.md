@@ -23,6 +23,7 @@ Note: only changes to the project's documentation (including title, author, pino
 | Tiny Tapeout IHP 25a | [https://github.com/TinyTapeout/tinytapeout-ihp-25a](https://github.com/TinyTapeout/tinytapeout-ihp-25a) |
 | Tiny Tapeout IHP 25b | [https://github.com/TinyTapeout/tinytapeout-ihp-25b](https://github.com/TinyTapeout/tinytapeout-ihp-25b) |
 | Tiny Tapeout SKY 25a | [https://github.com/TinyTapeout/tinytapeout-sky-25a](https://github.com/TinyTapeout/tinytapeout-sky-25a) |
+| Tiny Tapeout SKY 25b | [https://github.com/TinyTapeout/tinytapeout-sky-25b](https://github.com/TinyTapeout/tinytapeout-sky-25b) |
 
 For other shuttles, you can find the repo link in the [chips page](https://tinytapeout.com/chips/): click on the shuttles name, the look for the "Github repository" link in the "Design details" section.
 
