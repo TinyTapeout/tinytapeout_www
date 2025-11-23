@@ -76,33 +76,25 @@ Note: the values of these values may change in the future - you can consult the 
 
 #### GF180MCU (GlobalFoundries 180nm) Specific Instructions
 
-For GF180MCU projects, you need to set the following environment variables, in addition to the ones above:
+For GF180MCU projects, you need to set the following environment variables, overriding the ones above:
 
 ```sh
 export PDK=gf180mcuD
+```
+
+#### IHP Specific Instructions
+
+For IHP projects, you need to set the following environment variables, overriding the ones above:
+
+```sh
+export PDK=ihp-sg13g2
+export LIBRELANE_TAG=3.0.0.dev44
 ```
 
 ### 5. Install LibreLane
 
 ```sh
 pip install librelane==$LIBRELANE_TAG
-```
-
-#### IHP Specific Instructions
-
-For IHP projects, you need to set the following environment variables:
-
-```sh
-export PDK=ihp-sg13g2
-export LIBRELANE_TAG=3.0.0.dev39
-```
-
-And then install LibreLane as mentioned above (`pip install librelane==$LIBRELANE_TAG`).
-
-Finally, you need to install the IHP PDK by running the following command:
-
-```sh
-git clone -b tt2025 https://github.com/TinyTapeout/IHP-Open-PDK $PDK_ROOT
 ```
 
 ### 6. Harden your project
