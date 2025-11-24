@@ -9,6 +9,7 @@ aliases:
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
+| [TTIHP26a](https://app.tinytapeout.com/shuttles/ttihp26a) | 2025-11-25 | 2026-03-23 | IHP-2603 | Open    | 2026-07-31     | 2026-09-16       |
 | [TTGF0p2](https://app.tinytapeout.com/shuttles/ttgf0p2)   | 2025-11-06 | 2025-11-24 | Wafer.space Run 1 | TBD     | 2026-03-15     | None - test shuttle     |
 | [TTSKY25b](/chips/ttsky25b)                        | 2025-09-18 | 2025-11-10 | CI-2511  | 317     | 2026-05-02     | 2026-06-30              |
 | [TTSKY25a](/chips/ttsky25a)                        | 2025-06-27 | 2025-09-15 | CC-2509  | 237     | 2026-02-14     | 2026-04-15              |
@@ -33,5 +34,4 @@ The following chips are planned for the future. The dates are estimates and may 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
 | TTSKY26a | Mar 2026            | Sep 2026                |
-| TTIHP26a | Mar 2026            | Sep 2026                |
 | TTSKY26b | Jun 2026            | Dec 2026                |

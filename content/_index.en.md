@@ -14,7 +14,7 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 
 # Our open shuttles
 
-{{< countdown shuttle="ttgf0p2" name="GF0p2" deadline="2025-11-24T20:00:00Z" pcbs="0" >}}
+{{< countdown shuttle="ttihp26a" name="IHP26a" deadline="2026-03-23T20:00:00Z" pcbs="100" >}}
 
 # Get started
 
@@ -28,8 +28,6 @@ Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tap
 {{< youtube fCGPKdmM3Dc >}}
 
 # Submission templates
-
-**If you had a design on TT08, 09 or 10 that was affected by the [Efabless shutdown](/efabless-faq), you can use your existing repository.**
 
 - [IHP Wokwi submission template](https://github.com/TinyTapeout/ttihp-wokwi-template)
 - [IHP Verilog submission template](https://github.com/TinyTapeout/ttihp-verilog-template)
