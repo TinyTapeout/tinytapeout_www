@@ -1,14 +1,14 @@
 ---
 title: 'Tiny Tapeout'
 images: [/images/tinytapeout6.png]
-description: 'From idea to chip design in minutes! Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip.'
+description: 'Tiny Tapeout makes it more accessible than ever to get your designs manufactured on a real chip!'
 LastModifierDisplayName: matt venn
 ---
 
 # From idea to chip design in minutes!
 
-Tiny Tapeout is an educational project that makes it easier and cheaper than ever to get your designs manufactured on a real chip!
-Read more [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
+Tiny Tapeout makes it more accessible than ever to get your designs manufactured on a real chip!
+Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone).
 
 {{< youtube qVWq_XZko-M >}}
 
