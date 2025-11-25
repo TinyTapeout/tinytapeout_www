@@ -5,7 +5,7 @@ import MarkdownIt from 'markdown-it';
 import React from 'react';
 import { IProjectFeedbackList, summarizeFeedback } from '../model/feedback.js';
 import { markdownHeadingLimiter, markdownImagePathTransformer } from '../model/project.js';
-import { scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
+import { getShuttlePdk, scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
 import { AnalogPinout } from './AnalogPinout.js';
 import { PinoutTable } from './PinoutTable.js';
 import { ProjectFeedbackList } from './ProjectFeedbackList.js';
@@ -46,7 +46,7 @@ export function ProjectPage({
   const oasUrl = `https://shuttle-assets.tinytapeout.com/${shuttle}/${gdsMacro}/${gdsMacro}.oas`;
   const threeDViewerParams = new URLSearchParams({
     model: oasUrl,
-    process: shuttle.startsWith('ttihp') ? 'SG13G2' : 'SKY130',
+    pdk: getShuttlePdk(shuttle),
   });
   const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?${threeDViewerParams.toString()}`;
 

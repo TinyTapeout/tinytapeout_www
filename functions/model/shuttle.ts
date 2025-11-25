@@ -49,3 +49,13 @@ export async function loadShuttleIndex<F extends keyof IShuttleIndexProject>(
 export async function loadShuttleMapSvg(context: Context, shuttle: string) {
   return await fetchTextAsset(context, `https://tinytapeout.com/chips/${shuttle}/map.svg`);
 }
+
+export function getShuttlePdk(shuttle: string) {
+  if (shuttle.startsWith('ttgf')) {
+    return 'gf180mcuD';
+  }
+  if (shuttle.startsWith('ttihp')) {
+    return 'ihp-sg13g2';
+  }
+  return 'sky130A';
+}
