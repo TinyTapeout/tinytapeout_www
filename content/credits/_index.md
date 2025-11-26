@@ -6,6 +6,10 @@ weight: 200
 # GF180MCU work funded by
 
 <a href="https://www.tillitis.se/"> <img src="/images/tillitis.png" alt="Tillitis"> </a>
+<a href="https://wit.com"> <img src="/images/WIT.png" alt="WIT"> </a>
+
+# GF180MCU runs sponsored by
+<a href="https://wafer.space"> <img src="/images/waferspace.webp" alt="wafer.space"> </a>
 
 # SKY130 early bird sponsored by
 
