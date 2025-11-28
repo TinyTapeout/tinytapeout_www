@@ -138,6 +138,7 @@ A quick way to get started is to use this [tcl script](https://github.com/TinyTa
 
 ## Resources
 
+* Matt's [Zero to ASIC analog course](https://zerotoasiccourse.com/analog)
 * [Drawing an inverter with Magic by Ryan Ridley, Teo Ene, and James E. Stine](https://docs.google.com/document/d/1hSLKsz9xcEJgAMmYYer5cDwvPqas9_JGRUAgEORx1Yw/edit#heading=h.j6gtadx04fb6)
 * [Magic cheatsheet by Harald Pretl](https://github.com/iic-jku/osic-multitool/blob/main/magic-cheatsheet/magic_cheatsheet.pdf)
 * [Circuit designers etiquette by Harald Pretl](https://github.com/iic-jku/Circuit-Designers-Etiquette)
