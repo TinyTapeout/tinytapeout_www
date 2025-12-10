@@ -27,6 +27,10 @@ aliases:
 | [TT02](/chips/tt02)                                | 2022-11-09 | 2022-12-02 | CI-2211Q | 165     | 2023-10-17     | Shipped 2024-01-25      |
 | [TT01](/chips/tt01)                                | 2022-08-17 | 2022-09-01 | MPW7     | 152     | 2024-01-30     | None - test shuttle     |
 
+{{% notice note %}}
+Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/prepurchase](https://app.tinytapeout.com/prepurchase).
+{{% /notice %}}
+
 ### Future chips
 
 The following chips are planned for the future. The dates are estimates and may change.
