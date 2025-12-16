@@ -35,6 +35,7 @@ export function ProjectPage({
       throwOnError: true,
       strict: true, // be faithful to LaTeX math
       trust: false, // prevent commands which cause adverse behaviour
+      maxSize: 80,
     },
   });
 
