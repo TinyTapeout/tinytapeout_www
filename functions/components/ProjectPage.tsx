@@ -3,6 +3,7 @@
 
 import MarkdownIt from 'markdown-it';
 import React from 'react';
+import katex from 'katex';
 import { IProjectFeedbackList, summarizeFeedback } from '../model/feedback.js';
 import { markdownHeadingLimiter, markdownImagePathTransformer } from '../model/project.js';
 import { getShuttlePdk, scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
@@ -27,7 +28,15 @@ export function ProjectPage({
   feedback,
   shuttleMapSvg,
 }: IProjectPropProps) {
-  const md = MarkdownIt();
+  const md = MarkdownIt().use(require('markdown-it-texmath'), {
+    engine: katex,
+    // see https://katex.org/docs/options for all options
+    katexOptions: {
+      throwOnError: true,
+      strict: true, // be faithful to LaTeX math
+      trust: false, // prevent commands which cause adverse behaviour
+    },
+  });
 
   // Add base URL to image paths
   md.renderer.rules['image'] = markdownImagePathTransformer(shuttle, project.macro);
