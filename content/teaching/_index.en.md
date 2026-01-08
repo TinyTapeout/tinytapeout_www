@@ -49,7 +49,7 @@ Fine print:
 
 To run a Tiny Tapeout course at a university level for students with prior experience in hardware design languages (HDLs), you can refer to our [HDL documentation](/hdl/) - though the [digital design tutorial](/digital_design/) is available for students with less experience, while [SiliWiz](/siliwiz) provides a hands-on look at how semiconductors work at the lowest level.
 
-We recommend experimenting with the Tiny Tapeout design flow using a simple FPGA project to begin, before [trying out the submission process](/submission/).
+We recommend experimenting with the Tiny Tapeout design flow using a simple FPGA project to begin, before [trying out the submission process](/#get-your-submission-ready).
 
 When students have completed their chip designs, whether wholly original or based on [projects from previous Tiny Tapeout chips](/chips/), you can submit them for production using a credit card - or contact us to purchase prepaid credits.
 
