@@ -130,9 +130,9 @@ you made to config.ini or any files you uploaded to it.
 
 ### SDK and REPL 
 
-The microcontroller on the demoboards, the [RP2040](https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html) is powerful enough to run [MicroPython](https://micropython.org/)--a lean implementation of Python3--and is connected not only to the project MUX but to all the ASIC I/O as well as the clock and reset pins.
+The microcontroller on the demoboards, the [RP2350](https://www.raspberrypi.com/products/rp2350/) is powerful enough to run [MicroPython](https://micropython.org/)--a lean implementation of Python3--and is connected not only to the project MUX but to all the ASIC I/O as well as the clock and reset pins.
 
-So a [micropython SDK](https://github.com/TinyTapeout/tt-micropython-firmware#tt4-micropython-sdk) was was created to make common tasks simple and most interactions with projects quite easy.
+So a [micropython SDK](https://github.com/TinyTapeout/tt-micropython-firmware) was was created to make common tasks simple and most interactions with projects quite easy.
 
 
 ## Accessing the REPL
@@ -304,7 +304,7 @@ The complete directions for OS updates are part of the [SDK documentation, under
   * get the UF2 file for the [latest SDK release](https://github.com/TinyTapeout/tt-micropython-firmware/releases)
   * hold the BOOT button on the demoboard while connecting to USB
   * release the BOOT button, see the RPI-RP2 drive appear
-  * copy the UF2 file, e.g. `tt-demo-rp2040-v2.0.4.uf2`, to the RPI-RP2 drive
+  * copy the UF2 file, e.g. `tt-demo-rp2350-v3.0.0.uf2`, to the RPI-RP2 drive
   * wait until the drive disappears
   
 At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
@@ -345,7 +345,7 @@ clock_frequency = 50000
 mode = ASIC_MANUAL_INPUTS
 ```
 
-This would load the *tt_um_urish_simon* project by default, letting the PMOD extension board drive the inputs, but for other projects assume the inputs are driven by the RP2040 (hence the *ASIC_RP_CONTROL* default mode).
+This would load the *tt_um_urish_simon* project by default, letting the PMOD extension board drive the inputs, but for other projects assume the inputs are driven by the RP2 (hence the *ASIC_RP_CONTROL* default mode).
 
 
 
@@ -361,12 +361,12 @@ project = tt_um_test
 ```
 
 #### `mode`
-The tinytapeout chip inputs may be driven by the RP2040 on-board, or from external sources (the DIP switch, the PMODs).  When
+The tinytapeout chip inputs may be driven by the RP2 on-board, or from external sources (the DIP switch, the PMODs).  When
 
 ```
 mode = ASIC_RP_CONTROL
 ```
-The pins from the RP2040 that are tied to the TT chip project inputs are setup as outputs (meaning you can write values from the RP2040 to the project inputs).
+The pins from the RP2 that are tied to the TT chip project inputs are setup as outputs (meaning you can write values from the RP2350 to the project inputs).
 If you want to use the PMOD or DIP switches, set this instead to
 
 ```
@@ -375,7 +375,7 @@ mode = ASIC_MANUAL_INPUTS
 
 
 #### `rp_clock_frequency`
-There are two clocks involved with the TT demoboard: one is the project clock, the other is the clock internal to the RP2040.  There are instances, for example to get an exact value of clocking for the project which is derived from the RP2040 clock using PWM, where you may want to specify the clocking for the MCU.  This option allows you to set this.  You may pass an integer, or a scientific notation value, i.e.
+There are two clocks involved with the TT demoboard: one is the project clock, the other is the clock internal to the RP2350.  There are instances, for example to get an exact value of clocking for the project which is derived from the RP2350 clock using PWM, where you may want to specify the clocking for the MCU.  This option allows you to set this.  You may pass an integer, or a scientific notation value, i.e.
 
 ```
 rp_clock_frequency = 125000000
@@ -419,7 +419,7 @@ for Uri's simon game.  The settings in this section would apply any time this pr
 All lines until the next `[section]` or the end of the file will apply to this project.  The following options are available and behave identically as in the *DEFAULT* section described above:
 
    * mode (ASIC_RP_CONTROL or ASIC_MANUAL_INPUTS)
-   * rp_clock_frequency (the RP2040 internal clock frequency)
+   * rp_clock_frequency (the RP2350 internal clock frequency)
    * start_in_reset (`yes` or `no` boolean to indicate "hold on reset" when loaded)
    
 In addition to these, there are a few project related options that make life easier:
@@ -462,7 +462,7 @@ tt.mode = RPMode.ASIC_RP_CONTROL
 
 #### `uio_oe_pico`
 
-The 8 bidirectional (uio) pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *uio_oe_pico* option.  Any bit set to one will make the corresponding pin on the RP2040 an output.  E.g.
+The 8 bidirectional (uio) pins may be configured as either inputs or outputs. To specify the direction of these pins, use the *uio_oe_pico* option.  Any bit set to one will make the corresponding pin on the RP2 an output.  E.g.
 
 ```
 uio_oe_pico = 0b11110000
@@ -471,7 +471,7 @@ would configure the pins connected to the high nibble as outputs.
 
 #### `uio_in`
 
-If any of the RP2040 pins connected to the bidir I/O is configured as an output, the corresponding bit in *uio_in* will be written accordingly on project load.  This only applies to pins set as outputs with the *uio_oe_pico* option above.  For example, if that was set to *0b11110000* as above, then 
+If any of the RP2 pins connected to the bidir I/O is configured as an output, the corresponding bit in *uio_in* will be written accordingly on project load.  This only applies to pins set as outputs with the *uio_oe_pico* option above.  For example, if that was set to *0b11110000* as above, then 
 both
 
 ```
@@ -496,7 +496,7 @@ project = tt_um_urish_simon
 start_in_reset = no
 
 # mode can be any of
-#  - SAFE: all RP2040 pins inputs
+#  - SAFE: all RP2 I/O connected pins inputs
 #  - ASIC_RP_CONTROL: TT inputs,nrst and clock driven, outputs monitored
 #  - ASIC_MANUAL_INPUTS: basically same as safe, but intent is clear
 mode = ASIC_RP_CONTROL
@@ -509,7 +509,7 @@ mode = ASIC_RP_CONTROL
 log_level = INFO
 
 
-# default RP2040 system clock
+# default RP2 system clock
 rp_clock_frequency = 125e6
 
 # force_shuttle
