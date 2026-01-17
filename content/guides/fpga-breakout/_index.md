@@ -104,7 +104,8 @@ If you have a design based on a [Tiny Tapeout Verilog Template](https://github.c
 ```
  (OSS CAD Suite⦘ user@computron:/tmp/ftest$ tt/tt_fpga.py harden 
  
- 2026-01-17 10:03:09,518 - tt_fpga    - INFO     - Creating FPGA bitstream for [000 : unknown]                                                               /----------------------------------------------------------------------------\                                                                                                           
+ 2026-01-17 10:03:09,518 - tt_fpga    - INFO     - Creating FPGA bitstream for [000 : unknown]
+ /----------------------------------------------------------------------------\     
  |  yosys -- Yosys Open SYnthesis Suite                                       |                                                                                                           
  |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |                                                                                                           
  |  Distributed under an ISC-like license, type "license" to see terms        |                                                                                                           
