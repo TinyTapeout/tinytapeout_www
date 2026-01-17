@@ -6,7 +6,7 @@ weight: 55
 ---
 
 
-If you've got hold of a Tiny Tapeout ETR demoboard and ASIC of FPGA breakout, this quickstart guide will get you going by walking through:
+If you've got hold of a Tiny Tapeout ETR demoboard and ASIC or FPGA breakout, this quickstart guide will get you going by walking through:
 
  * overview and bring-up;
  * interaction through the browser, using the commander app;
