@@ -5,31 +5,30 @@ description: 'Test digital projects using the demoboard compatible FPGA'
 weight: 65
 ---
 
+With this FPGA board you don't have to wait for an ASIC to test your digital design.
 
-You don't have to wait for an ASIC to test your digital design using the demoboard, with this FPGA breakout board.
+Here we'll:
 
-Here we'll
+ * Get an overview of the breakout;
+ * Harden a digital design; and
+ * Get it running on the demoboard; 
 
- * get an overview of the breakout;
- * harden a digital design; and
- * get it running on the demoboard; 
-
-    
 ## Overview
 
 The [FPGA breakout](https://github.com/TinyTapeout/breakout-pcb/tree/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k) has a [Lattice UP5K](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus) FPGA on a PCB with headers and a [pinout](https://github.com/TinyTapeout/breakout-pcb/blob/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k/fabricfox.pcf) compatible with the [Tiny Tapeout demoboard](https://github.com/TinyTapeout/tt-demo-pcb), which includes all the digital I/O as well as the project reset and clock (both routed to global buffer input pins on the FPGA).
 
 {{< figure src="images/ttetrdb-top.jpg" title="FPGA breakout on demoboard" >}}
 
-In addition to required supporting components, the board has an RGB LED, and a LED to indicate when it is in an unprogrammed state.  What it does *not* have is a flash chip to hold bitstream data.
 
-Instead, the FPGA is configured such that it awaits configuration on power-up/reset.  The demoboard handles this by controlling the FPGA reset and SPI lines in a way that is transparent: just as you would with a TT ASIC, on the demoboard REPL provided with the [microPython SDK](https://github.com/TinyTapeout/tt-micropython-firmware), you can use the shuttle to enable any of the bitstreams present, e.g.
+The board has a LED to indicate the unprogrammed state.  
+
+The FPGA awaits configuration on power-up/rese and the demoboard can handle this through FPGA reset and SPI lines.  Just as you would with a TT ASIC, on the demoboard REPL provided with the [microPython SDK](https://github.com/TinyTapeout/tt-micropython-firmware), you can use the shuttle to enable any of the bitstreams present, e.g.
 
 ```
 >>> tt.shuttle.tt_um_factory_test.enable()
 ```
 
-This will actually reset the FPGA, and feed the contents of the `tt_um_factory_test.bin` bitstream to configure the FPGA.  All the standard SDK features work as well, so if there's a relevant section in the [config.ini](https://github.com/TinyTapeout/tt-micropython-firmware?tab=readme-ov-file#automatic-load-and-default-config) file specifying, say, a clock frequency then the project will be auto-clocked on loading.
+This will reset the FPGA, and feed the contents of the `bitstreams/tt_um_factory_test.bin` file to configure the FPGA.  All the standard SDK features work as well, so if there's a relevant section in the [config.ini](https://github.com/TinyTapeout/tt-micropython-firmware?tab=readme-ov-file#automatic-load-and-default-config) file specifying, say, a clock frequency then the project will be auto-clocked on loading.
 
 
 
@@ -39,15 +38,12 @@ It is easy to harden Verilog projects targetting the FPGA breakout.
 
 ### Requirements and Setup
 
-You only really need three things to transform your HDL into a valid bitstream for the FPGA:
-
-  1) The yosys, project IceStorm and supporting tools that do the heavy lifting;
+  1) [**OSS-CAD-Suite**](https://github.com/YosysHQ/oss-cad-suite-build) to provide Yosys, and the rest of the open source FPGA toolchain;
   
   2) The [PCF file](https://github.com/TinyTapeout/breakout-pcb/blob/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k/fabricfox.pcf) that indicates the pin mappings and lets the PnR complete the process; and 
   
-  3) To then upload the resulting bitstream binary file to the right place (under `/bitstreams`) on the demoboard, and perhaps configure it.
-  
-To make this a whole lot easier and straightforward, YosysHQ releases [**OSS CAD Suite**](https://github.com/YosysHQ/oss-cad-suite-build), a binary software distribution that includes everything needed for synthesis and place-and-route.
+  3) Resulting bitstream binary files must be uploaded to the right place (under `/bitstreams`) on the demoboard.
+
 
 To handle the specifics related to our boards and SDK, the [Tiny Tapeout Tools](https://github.com/tinyTapeout/tt-support-tools) include utilities that make life a lot easier.
 
