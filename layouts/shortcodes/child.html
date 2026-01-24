@@ -1,0 +1,10 @@
+{{ $src := cond (.IsNamedParams) (.Get "src") (.Get 0)}}
+
+<div class="children-li">
+    {{ with .Page.GetPage $src }}
+        <a href="{{.RelPermalink}}">{{ .Title }}</a>
+        {{if .Description }}
+            <p style="margin: 0">{{.Description}}</p>
+        {{ end }}
+    {{ end }}
+</div>
