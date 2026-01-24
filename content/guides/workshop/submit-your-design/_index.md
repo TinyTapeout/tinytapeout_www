@@ -1,6 +1,7 @@
 ---
-title: '4 - Submit your design'
-description: 'Get your design manufactured on Tiny Tapeout'
+title: Submit your design
+pre: "4 - "
+description: Get your design manufactured on Tiny Tapeout
 weight: 60
 aliases:
     - /guides/workshop/wokwi-submit-design

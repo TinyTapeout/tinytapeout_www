@@ -1,6 +1,7 @@
 ---
-title: 1 - Draw your own MOSFET
-description: "Learn the basics of SiliWiz by drawing a MOSFET"
+title: Draw your own MOSFET
+pre: "1 - "
+description: Learn the basics of SiliWiz by drawing a MOSFET
 weight: 20
 ---
 

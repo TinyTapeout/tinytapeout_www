@@ -1,6 +1,7 @@
 ---
-title: '2 - Simulate a logic gate'
-description: 'Draw and simulate a logic gate with Wokwi'
+title: Simulate a logic gate
+pre: "2 - "
+description: Draw and simulate a logic gate with Wokwi
 weight: 30
 aliases:
     - /guides/workshop/wokwi-get-started

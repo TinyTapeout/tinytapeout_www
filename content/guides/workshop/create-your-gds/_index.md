@@ -1,6 +1,7 @@
 ---
-title: '3 - Create the GDS'
-description: 'Create the GDS of your design with a GitHub action'
+title: Create the GDS
+pre: "3 - "
+description: Create the GDS of your design with a GitHub action
 weight: 40
 aliases:
     - /guides/workshop/wokwi-to-gds
