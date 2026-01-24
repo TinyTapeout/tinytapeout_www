@@ -1,0 +1,15 @@
+{{ $src := cond (.IsNamedParams) (.Get "src") (.Get 0) }}
+{{ $width := cond (.IsNamedParams) (.Get "width") (.Get 0) }}
+{{ $caption := cond (.IsNamedParams) (.Get "caption") ("") }}
+
+<figure>
+    <video autoplay loop muted width="auto" style="display: block; margin: 48px auto; width: {{$width}}">
+        <source src={{$src}} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    {{if $caption}}
+    <figcaption>
+        <h4>{{$caption}}</h4>
+    </figcaption>
+    {{end}}
+</figure>
