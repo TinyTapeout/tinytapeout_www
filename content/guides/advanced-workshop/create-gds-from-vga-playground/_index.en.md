@@ -73,8 +73,8 @@ that our module name is unique - it is currently set to `tt_um_vga_example` in t
 it follows the following format: `tt_um_USERNAME_PROJECTNAME`, where `USERNAME` is your username, and `PROJECTNAME` is
 what you decided to call the project.
 
-- Update the module name in `src/project.v` to be unique.
-- Update the module name in `test/tb.v` to the one you just used.
+- Update the module name in `src/project.v` to the module name you chose.
+- Update the module name in `test/tb.v` to the same module name.
 - Commit your changes to the repo.
 
 ### Update info.yaml
