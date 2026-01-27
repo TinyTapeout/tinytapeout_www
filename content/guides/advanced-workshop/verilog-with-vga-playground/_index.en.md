@@ -1,7 +1,7 @@
 ---
 title: 1 - Verilog with VGA Playground
 description: Experiment and create graphics with VGA Playground
-weight: 70
+weight: 10
 ---
 
 This guide will show you how to create and adapt a Verilog design capable of outputting graphics over VGA.
