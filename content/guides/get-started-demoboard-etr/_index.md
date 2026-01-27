@@ -8,14 +8,15 @@ weight: 55
 
 If you've got hold of a Tiny Tapeout ETR demoboard and ASIC or FPGA breakout, this quickstart guide will get you going by walking through:
 
- * overview and bring-up;
- * interaction through the browser, using the commander app;
- * accessing and using the microPython SDK and filesystem; 
- * easy updates to the OS and SDK; and
- * some notes about analog support.
+ * A board overview and [bring-up](#bring-up);
+ * [Interaction](#selecting-projects) through the browser, using the commander app;
+ * [Accessing](#sdk-and-repl) and using the microPython SDK and [filesystem](#filesystem); 
+ * [Updates](#ossdk-updates) to the OS and SDK;
+ * [Configuring](#system-defaults) default behaviour; and
+ * Some notes about [analog support](#analog).
 
 
-## Overview and bring-up
+## Overview
 
 The Tiny Tapeout ASICs include hundreds of different designs--[316 on TTSKY25B](https://tinytapeout.com/chips/ttsky25b/)--any of which present on the chip you have may be *enabled* so that you can send and receive information to it using whichever combination of the
 
@@ -235,85 +236,31 @@ Other than that, the [SDK documentation](https://github.com/TinyTapeout/tt-micro
 
 
 
-### Filesystem Access
+### Filesystem
 
-The underlying micropython OS is the standard system used by the Raspberry Pi Pico and if you want to use uPython shouldn't need much thought or maintenance.  The SDK, scripts and configuration reside in the filesystem provided and you may want to tweak these, add your own scripts, etc.
+The underlying micropython OS is built for the RP2350 and, in addition to standard uPython modules, includes the [Tiny Tapeout SDK](https://github.com/TinyTapeout/tt-micropython-firmware), built-in.
 
 The important things on the filesystem are:
 
   * config.ini: default startup and project-specific configuration
-  * main.py: runs on boot
-  * ttboard/ has all the SDK modules
+  * main.py: runs on boot and by default does setup and instantiates the `tt` handle to the SDK functionality
   * shuttles/ contains the design listings as both JSON files and more efficient binary blobs for the chip
+  * bitstreams/ is where binary hardware descriptions are stored, when using the FPGA breakout
 
-Any standard means of accessing the micropython FS should work.  [rshell](https://pypi.org/project/rshell/) may be used but is lacking in some regards.  Another option is [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
+Any standard means of accessing the micropython FS should work.  [mpremote](https://docs.micropython.org/en/latest/reference/mpremote.html) is a powerful and standard tool for interacting with micropython and the filesystem, though other options include [rshell](https://pypi.org/project/rshell/) and [mpy-repl-tool](https://pypi.org/project/mpy-repl-tool/).  
 
-You can learn about that in [its documentation](https://mpy-repl-tool.readthedocs.io/en/latest/).  It lets you easily detect connected boards
-
-```
-python3 -m there detect
-
-```
-
-inspect files
-
-```
-python3 -m there cat /config.ini
-```
-
-and transfer files back and forth
-
-```
-# recursively pull all the SDK under /ttboard
-python3 -m there pull -r /ttboard /tmp
-
-```
-
-I do find the `-m there` syntax cumbersome and a bit weird, so I added a function
-
-```
-
-tt() {
-	python3 -m there $@; 
-}
-
-```
-
-to my `~/.bashrc` file and a shorthand, so now I can just use `tt` in its place
-
-
-```
-
-$ tt  ls
-/config.ini
-/examples
-/first_boot.log
-/main.py
-/release_v1.0.0
-/shuttles
-/ttboard
-
-$ tt push config.ini /
-```
+You can find a quick guide an examples of filesystem access in the [TT micropython SDK documentation](https://github.com/TinyTapeout/tt-micropython-firmware/tree/ttdbv3?tab=readme-ov-file#filesystem-access)
 
 ### OS/SDK Updates
 
-The complete directions for OS updates are part of the [SDK documentation, under Installation](https://github.com/TinyTapeout/tt-micropython-firmware#installation) but really the process is simply to:
+The complete directions for OS updates are part of the [SDK documentation, under Installation](https://github.com/TinyTapeout/tt-micropython-firmware#installation) but really the process is simply to hold the BOOT button when connecting the demoboard to USB, and then copy over an [SDK UF2 release](https://github.com/TinyTapeout/tt-micropython-firmware/releases).
 
-  * download anything on the filesystem that you wish to preserve (for instance, if you've customized the [config.ini](https://github.com/TinyTapeout/tt-micropython-firmware?tab=readme-ov-file#initialization) it would be overwritten by this process)
-  * get the UF2 file for the [latest SDK release](https://github.com/TinyTapeout/tt-micropython-firmware/releases)
-  * hold the BOOT button on the demoboard while connecting to USB
-  * release the BOOT button, see the RPI-RP2 drive appear
-  * copy the UF2 file, e.g. `tt-demo-rp2350-v3.0.0.uf2`, to the RPI-RP2 drive
-  * wait until the drive disappears
-  
-At this point, the entire flash will have be re-written with a fresh OS, SDK and supporting files.
+See the [installation](https://github.com/TinyTapeout/tt-micropython-firmware#installation) section of the SDK docs for more details.
 
 
 ### Automatic Configuration
 
 The SDK includes support for a `config.ini` file that can setup default behaviour on a system-wide basis, as well as do preliminary setup on an individual project basis.
-
 
 
 The configuration file is split into sections, indicated by `[brackets]`, and they are of two types:
@@ -545,7 +492,7 @@ mode = ASIC_MANUAL_INPUTS
 
 Some projects may be analog or mixed signal designs.  With the SKY130 ASICs, chips have 12 pins dedicated to analog, while projects may use up to 6 of these I/O.  Chips from other PDKs may have support for different numbers of such pins.
 
-To support these various use cases, analog signals are routed from the breakouts to a standard 100mil header up top.  Each of these lines is pulled down with a large resistance to avoid them floating.
+To support these various use cases, analog signals are routed from the breakouts to a standard 100mil header up top.  Each of these lines is pulled down with a large 10 MegaOhm resistance, to avoid them floating without loading the circuit.
 
 The mapping for a given project--i.e. which pins on the header should be used--is listed on that project's specific page.
 
