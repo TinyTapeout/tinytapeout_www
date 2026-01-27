@@ -50,13 +50,11 @@ You must retain the folder structure - the files in `src` must go into the repo'
 go into the repo's `test` folder.
 {{% /notice %}}
 
-
+#### Commit using GitHub web interface
 {{% notice tip %}}
-Follow the section below regarding committing files to GitHub if you're unsure how. You don't need to follow it if
-you're already familiar with the GitHub web interface or using git via the terminal.
+Follow this section if you're not familiar with using git from the terminal.
 {{% /notice %}}
 
-#### Commit using GitHub web interface
 - Navigate to your repository on GitHub.
 - Click the "+" button next to the "<> Code" button, and select "Upload files".
 
