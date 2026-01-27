@@ -63,6 +63,9 @@ wire [9:0] moving_x = pin_x - counter;
 The simulation should update and your display should match the figure below - congratulations!
 {{< figure-video src="images/stripes-ltr.mp4" width="35vw" caption="Stripes moving from left to right" >}}
 
+#### What next?
+Now you've seen how to make some modifications, have some fun and see what you can come up with! Remember, you can pick
+one of three presets to modify: "Stripes", "Logo" or "Checkers".
 
 ## Tips & tricks
 The simulator is a really useful tool for rapidly prototyping your design, but it's important to always verify with
