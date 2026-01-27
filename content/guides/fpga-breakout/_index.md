@@ -22,7 +22,7 @@ The [FPGA breakout](https://github.com/TinyTapeout/breakout-pcb/tree/nextgenv3/A
 
 The board has a LED to indicate the unprogrammed state.  
 
-The FPGA awaits configuration on power-up/rese and the demoboard can handle this through FPGA reset and SPI lines.  Just as you would with a TT ASIC, on the demoboard REPL provided with the [microPython SDK](https://github.com/TinyTapeout/tt-micropython-firmware), you can use the shuttle to enable any of the bitstreams present, e.g.
+The FPGA awaits configuration on power-up/reset and the demoboard can handle this through FPGA reset and SPI lines.  Just as you would with a TT ASIC, on the demoboard REPL provided with the [microPython SDK](https://github.com/TinyTapeout/tt-micropython-firmware), you can use the shuttle to enable any of the bitstreams present, e.g.
 
 ```
 >>> tt.shuttle.tt_um_factory_test.enable()
