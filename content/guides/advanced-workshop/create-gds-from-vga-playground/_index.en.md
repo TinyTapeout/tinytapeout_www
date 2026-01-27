@@ -8,7 +8,7 @@ This guide will teach you how to create all the files that you need to get your 
 this, you'll have a GitHub repository containing your modified VGA design which is ready for submission.
 
 ## Prerequisites
-- Modified VGA Playground project: see the previous exercise if you haven't done it already.
+- Modified VGA Playground project: see the [previous exercise](../verilog-with-vga-playground) if you haven't done it already.
 - GitHub Account: if you don't have a GitHub account, sign up for one [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
 ## Prepare your project
