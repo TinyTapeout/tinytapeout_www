@@ -43,10 +43,11 @@ You'll now have a zip file containing a collection of source files.
 
 {{< figure src="images/vgap-zip-contents.png" title="Downloaded project from VGA Playground">}}
 
-- Commit **all** of these files to the GitHub repository.
+- Commit **all** of these files to your new repository.
 
 {{% notice info %}}
-You must retain the folder structure - the files in `src` must go into the repo's `src` folder.
+You must retain the folder structure - the files in `src` must go into the repo's `src` folder, and the files in `test`
+go into the repo's `test` folder.
 {{% /notice %}}
 
 
