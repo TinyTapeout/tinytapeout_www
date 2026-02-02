@@ -1,7 +1,7 @@
 ---
-title: 2 - Create GDS from VGA Playground
+title: 3 - Create GDS from VGA Playground
 description: Learn how to generate the files needed to manufacture your VGA design
-weight: 20
+weight: 30
 ---
 
 This guide will teach you how to create all the files that you need to get your VGA design manufactured. At the end of
