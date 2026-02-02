@@ -106,7 +106,31 @@ You should briefly describe their functionality or role - aim for this to be a l
 opportunity later to describe them in more detail if you need to.
 
 ### Edit test.py
-TODO
+We will be editing the CocoTB tests in `test/test.py` in order to force them to pass - make the following changes:
+- Insert `cocotb.pass_test()` after the `async def test_project(dut):` line.
+- Insert `cocotb.pass_test()` after the `async def compare_reference(dut):` line.
+- Commit your changes to the repo.
+
+It should look something like the following (note that lines were cut for brevity):
+
+```python
+@cocotb.test()
+async def test_project(dut):
+    cocotb.pass_test() # <- add this line!
+
+    # Set clock period to 40 ns (25 MHz)
+    CLOCK_PERIOD = 40
+
+    [...]
+
+
+@cocotb.test()
+async def compare_reference(dut):
+    cocotb.pass_test() # <- add this line too!
+
+    for img in glob.glob("output/frame*.png"):
+        [...]
+```
 
 ### Write some documentation
 Everybody submitting to a shared shuttle ends up getting a copy of your design, so having clear and concise documentation
@@ -212,3 +236,5 @@ Explore the design - you can rotate, zoom and hide certain layers or cells. Can 
 ## If you have time, try these next steps
 
 - Check out our video on [how the GitHub action works behind the scenes](/making_asics).
+- Revisit `test.py` and implement actual testing - the code is there, but you'll need to provide some reference screenshots
+so that it can compare the output with what you expect!
