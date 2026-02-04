@@ -44,6 +44,18 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
 
+# Proud winners of...
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <div style="display: block; margin-bottom: -2em;">
+    {{< customer-card "" "eu_open_source_awards.svg" "https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn" >}}
+  </div>
+
+  <p style="min-width: 30%; text-align: center">
+    Special recognition for our contribution to skills and education for open source silicon, read more at <a href="https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn">EOSA</a>.
+  </p>
+</div>
+
+
 # Sign up
 
 Sign up to the mailing list for the latest news, and to make sure you don't miss your chance to submit a design on the next Tiny Tapeout shuttle.
