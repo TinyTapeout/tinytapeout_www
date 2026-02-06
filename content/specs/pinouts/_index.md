@@ -213,3 +213,7 @@ To get started, check out the `gamepad_pmod_single` and `gamepad_pmod_dual` modu
   );
 ```
 
+{{% notice tip %}}
+If you are experiencing compatibility issues, you may need to update the firmware of your gamepad PMOD. See our
+[guide on flashing your gamepad PMOD](/guides/flash-gamepad-pmod) for more info.
+{{% /notice %}}
