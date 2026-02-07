@@ -66,6 +66,9 @@ read more about it in the [ttihp0p2 SRAM (1024x8) test project datasheet](https:
 
 The table above is not exhaustive - you should visit IHP's PDK repository to see their [SRAM macros](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.ref/sg13g2_sram/gds).
 
+For SkyWater shuttles, the density of memory macros is significantly lower. There is an experimental 32x32 register file
+created by Sylvain Munaut which has a density of 1200 bits per tile - see the [datasheet for more information](https://tinytapeout.com/chips/ttsky25b/tt_um_tnt_rf_validation).
+
 #### Using external SPI RAM
 
 The RP2040 on the [demo board](../pcb) can be configured to provide 64 kbytes of RAM to the chip over SPI thanks to the [spi-ram-emu project](https://github.com/MichaelBell/spi-ram-emu) by Mike Bell. It simulates the 23LC512 SPI RAM chip. This is a good option if you need a lot of memory, but it's also the slowest option.
