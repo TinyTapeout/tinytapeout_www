@@ -72,3 +72,12 @@ created by Sylvain Munaut which has a density of 1200 bits per tile - see the [d
 #### Using external SPI RAM
 
 The RP2040 on the [demo board](../pcb) can be configured to provide 64 kbytes of RAM to the chip over SPI thanks to the [spi-ram-emu project](https://github.com/MichaelBell/spi-ram-emu) by Mike Bell. It simulates the 23LC512 SPI RAM chip. This is a good option if you need a lot of memory, but it's also the slowest option.
+
+#### Using QSPI Pmod
+
+The QSPI Pmod, made by mole99 and Mike Bell, is an expansion card [available for purchase](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)
+which provides external memory to your project via the Pmod connectors. It contains a 128Mb flash chip and two 64Mb PSRAM chips.
+The [KianV µLinux SoC](https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC) make use of the Pmod to
+provide additional storage space for the processor.
+
+You can view the schematics on GitHub too: [github.com/mole99/qspi-pmod](https://github.com/mole99/qspi-pmod)
