@@ -42,6 +42,10 @@ In Tiny Tapeout:
 
 * Click the **"Create Project"** button.
 
+{{%notice tip%}}
+If you want to swap your Wokwi design for a Verilog project, then follow our guide on [submitting a Verilog project](/guides/submit-verilog-project) to the shuttle.
+{{%/notice%}}
+
 ### If you have a coupon code for a free tile
 
 * Ask an assistant for your coupon and type it in the coupon field and make sure to click the 'apply' button.
