@@ -76,7 +76,7 @@ The RP2040 on the [demo board](../pcb) can be configured to provide 64 kbytes of
 #### Using QSPI Pmod
 
 The QSPI Pmod, made by mole99 and Mike Bell, is an expansion card [available for purchase](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)
-which provides external memory to your project via the Pmod connectors. It contains a 128Mb flash chip and two 64Mb PSRAM chips.
+which provides external memory to your project via the Pmod connectors. It contains a 16MB flash chip and two 8MB PSRAM chips.
 The [KianV µLinux SoC](https://tinytapeout.com/chips/tt06/tt_um_kianV_rv32ima_uLinux_SoC) make use of the Pmod to
 provide additional storage space for the processor.
 
