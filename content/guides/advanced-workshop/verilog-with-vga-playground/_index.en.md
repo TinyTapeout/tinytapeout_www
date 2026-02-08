@@ -28,10 +28,10 @@ If you're curious about how it works, check out the
 
 ## Modifying your design
 After you've familiarised yourself with VGA Playground, pick one of the following presets to base your design on:
-"Stripes", "Logo" or "Checkers".
+"Stripes", "Rings", "Logo" or "Checkers".
 
 {{% notice warning %}}
-It must be one of the three designs specified above - the other designs are too large to fit onto a single tile.
+It must be one of the designs specified above - the other designs are too large to fit onto a single tile.
 {{% /notice %}}
 
 Have a read through the source code and come up with one concrete modification to make to the design - this could be
@@ -65,20 +65,18 @@ The simulation should update and your display should match the figure below - co
 
 #### What next?
 Now you've seen how to make some modifications, have some fun and see what you can come up with! Remember, you can pick
-one of three presets to modify: "Stripes", "Logo" or "Checkers".
+one of these presets to modify: "Stripes", "Rings", "Logo" or "Checkers".
 
 ## Tips & tricks
-The simulator is a really useful tool for rapidly prototyping your design, but it's important to always verify with
-physical hardware. It's very easy to make a design which looks great and can be simulated, but actually can't be
-manufactured in real life.
+The simulator is a powerful tool for rapidly prototyping your design, but a working simulation doesn't guarantee that your design can be manufactured. In the next task, you'll [harden](https://zerotoasiccourse.com/terminology/harden) your design ready for inclusion on a Tiny Tapeout chip. Before hardening, here are a few easy-to-miss details that can cause trouble later: 
 
-Some Verilog syntax is "non-synthesizable" (such as the `delay` statement) - these pieces of syntax are designed for
+* Some Verilog syntax is "non-synthesizable" (such as the `delay` statement) - these pieces of syntax are designed for
 creating testbenches which allow the engineer to verify the functionality of hardware blocks and systems.
 
-Multipliers and dividers are very expensive in terms of area, however doubling or halving a value can be implemented
+* Multipliers and dividers are very expensive in terms of area, however doubling or halving a value can be implemented
 as simple bitshifts. The tools are smart enough to notice, and will attempt to optimise your circuit that way.
 
-A framebuffer would have to be offloaded to an external memory chip - just like with the multipliers and dividers,
+* A framebuffer would have to be offloaded to an external memory chip - just like with the multipliers and dividers,
 storing information can take up a lot of precious space. Storing a black & white image with a resolution of 640x480
 takes up 38KB, which is doable on an FPGA but 32 bytes already take up 70% of a Tiny Tapeout tile!
 

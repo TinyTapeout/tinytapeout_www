@@ -30,18 +30,16 @@ results.
 
 {{< figure src="images/gitpages.png" title="Enable publishing by going to Settings 🠒 Pages 🠒 Source 🠒 Select 'GitHub Actions'" >}}
 
-### Download and commit your project
-You'll need to download your modified VGA project from VGA Playground, and upload it to GitHub to begin preparing for
-submission. You may either commit these files via git from the terminal, or upload them directly to GitHub through
-the website interface - choose whichever you're most comfortable with.
+### Download your project
 
-- Download your VGA Playground project by clicking the download icon next to the presets.
-
+Download your VGA Playground project by clicking the download icon next to the presets.
 {{< figure src="images/vgap-download-button.png" title="Download your VGA Playground project via the download button">}}
 
 You'll now have a zip file containing a collection of source files.
 
 {{< figure src="images/vgap-zip-contents.png" title="Downloaded project from VGA Playground">}}
+
+### Commit your project files into the Git repository
 
 - Commit **all** of these files to your new repository.
 
@@ -49,6 +47,8 @@ You'll now have a zip file containing a collection of source files.
 You must retain the folder structure - the files in `src` must go into the repo's `src` folder, and the files in `test`
 go into the repo's `test` folder.
 {{% /notice %}}
+
+You may either commit these files via git from the terminal, or upload them directly to GitHub through the website interface - choose whichever you're most comfortable with.
 
 #### Commit using GitHub web interface
 {{% notice tip %}}
@@ -60,7 +60,8 @@ Follow this section if you're not familiar with using git from the terminal.
 
 {{< figure src="images/github-upload-button.png" title="Upload files via the GitHub web interface">}}
 
-- Upload all of the files from the zip archive.
+- Drag and dropping should keep the same folder structure.
+- Drag and drop the `info.yaml`, `src` and `test` directories from the zip archive.
 - Click the green "Commit changes" button.
 
 {{< figure src="images/github-commit-uploaded-files.png" title="Committing uploaded files to the repository">}}
@@ -130,6 +131,14 @@ async def compare_reference(dut):
 
     for img in glob.glob("output/frame*.png"):
         [...]
+```
+
+### Update the test's Makefile
+
+Add the `hvsync_generator.v` file to the list of `PROJECT_SOURCES` in `test/Makefile`:
+
+```
+PROJECT_SOURCES = project.v hvsync_generator.v
 ```
 
 ### Write some documentation
