@@ -50,11 +50,7 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
     {{< customer-card "" "eu_open_source_awards.svg" "https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn" >}}
   </div>
 
-  <p style="min-width: 30%; text-align: center">
-    Special recognition for our contribution to skills and education for open source silicon, read more at <a href="https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn">EOSA</a>.
-  </p>
-</div>
-
+"Tiny Tapeout is [widely considered indispensable for modern IC design education](https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn")". 
 
 # Sign up
 
