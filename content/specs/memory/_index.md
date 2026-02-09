@@ -41,30 +41,39 @@ IHP has several variations of SRAM macros which can be used in shuttles which th
 being taped out with their PDK). One of these macros, 1024x8, has been successfully taped out and tested to be working -
 read more about it in the [ttihp0p2 SRAM (1024x8) test project datasheet](https://www.tinytapeout.com/chips/ttihp0p2/tt_um_urish_sram_test).
 
+The tables below are not exhaustive - you should visit IHP's PDK repository to see their [full SRAM macro selection](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.ref/sg13g2_sram/gds).
+
 <!-- tile size reference for ihp: https://github.com/TinyTapeout/tt-support-tools/blob/b4a9e6c7eabfdd6dee7460a163a0aec271b06bac/tech/ihp-sg13g2/tile_sizes.yaml -->
 
-| SRAM Macro | Physical dimensions <br> (width x height) (µm) | Area (µm²) | Minimum tile size required | Area consumption | Approximate density (bits per tile) |
+##### IHP SG13G2 single-port SRAM comparison table
+| SRAM macro | Physical dimensions <br> (width x height) (µm) | Area (µm²) | Minimum tile size required | Area consumption | Approximate density (bits per tile) |
 | :-------------------- | :----------------- | :-------- | :- | :- | :- |
-| 256x8 (single port)   | 74.325 x 236.800   | 17600.16  | 1x2 | 27.8% | ~3680  |
-| 256x8 (dual port)     | 137.190 x 278.510  | 38208.79  | 1x2 | 60.3% | ~1670  |
-| 512x8 (single port)   | 110.605 x 236.800  | 26191.26  | 1x2 | 41.3% | ~4960  |
-| 512x8 (dual port)     | 219.990 x 261.170  | 57454.79  | 2x2 | 43.7% | ~2340  |
-| 1024x8 (single port)  | 146.880 x 336.685  | 49452.29  | 1x2 | 78.0% | ~5250  |
-| 256x16 (single port)  | 119.005 x 236.800  | 28180.38  | 1x2 | 44.4% | ~4610  |
-| 256x16 (dual port)    | 137.190 x 419.950  | 57612.94  | 3x4 | 12.7% | ~2690  |
-| 512x16 (single port)  | 191.565 x 236.800  | 45362.59  | 1x2 | 71.5% | ~5730  |
-| 512x16 (dual port)    | 219.990 x 402.610  | 88570.17  | 3x4 | 19.6% | ~3480  |
-| 64x32 (dual port)     | 75.090 x 702.830*  | 52775.50  | 3x4 | 11.7% | ~1460  |
-| 256x32 (single port)  | 119.005 x 416.640  | 49582.24  | 3x4 | 11.0% | ~5830  |
-| 256x32 (dual port)    | 137.190 x 702.830  | 96421.25  | 3x4 | 21.3% | ~3200  |
-| 512x32 (single port)  | 191.565 x 416.640  | 79813.64  | 3x4 | 17.6% | ~7760  |
-| 512x32 (dual port)    | 219.990 x 685.490  | 150800.95 | 3x4 | 33.3% | ~4100  |
-| 1024x32 (single port) | 336.685 x 416.640  | 140276.44 | 3x4 | 31.0% | ~8810  |
-| 1024x32 (dual port)   | 385.590 x 685.490  | 264318.09 | 3x4 | 58.4% | ~4680  |
+| 256x8   | 236.80 x 74.10  | 17546.88  | 1x2* | 27.7% | ~3700 |
+| 512x8   | 236.80 x 110.38 | 26137.98  | 1x2* | 41.2% | ~4970 |
+| 1024x8  | 146.88 x 336.46 | 49419.24  | 2x1* | 76.0% | ~5390 |
+| 256x16  | 236.80 x 118.78 | 28127.10  | 1x2* | 44.4% | ~4620 |
+| 512x16  | 236.80 x 191.34 | 45309.31  | 1x2* | 71.5% | ~5730 |
+| 256x32  | 416.64 x 118.78 | 49488.50  | 3x4  | 10.9% | ~6240 |
+| 512x32  | 416.64 x 191.34 | 79719.90  | 3x4  | 17.6% | ~7750 |
+| 1024x32 | 416.64 x 336.46 | 140182.69 | 3x4  | 31.0% | ~8820 |
 
-\* = estimated dimensions
+\* = requires rotating macro by 90 degrees to fit
 
-The table above is not exhaustive - you should visit IHP's PDK repository to see their [SRAM macros](https://github.com/IHP-GmbH/IHP-Open-PDK/tree/main/ihp-sg13g2/libs.ref/sg13g2_sram/gds).
+##### IHP SG13G2 dual-port SRAM comparison table
+| SRAM macro | Physical dimensions <br> (width x height) (µm) | Area (µm²) | Minimum tile size required | Area consumption | Approximate density (bits per tile) |
+| :-------------------- | :----------------- | :-------- | :- | :- | :- |
+| 256x8   | 278.51 x 136.97 | 38147.51  | 1x2* | 60.2% | ~1700 |
+| 512x8   | 261.17 x 219.77 | 57397.33  | 2x2  | 43.6% | ~2350 |
+| 256x16  | 419.95 x 136.97 | 57520.55  | 3x4  | 12.7% | ~2690 |
+| 512x16  | 402.61 x 219.77 | 88481.60  | 3x4  | 19.5% | ~3490 |
+| 64x32   | 702.83 x 74.87  | 52620.88  | 3x4* | 11.6% | ~1470 |
+| 256x32  | 702.83 x 136.97 | 96266.63  | 3x4* | 21.3% | ~3210 |
+| 512x32  | 685.49 x 219.77 | 150650.14 | 3x4* | 33.3% | ~4100 |
+| 1024x32 | 685.49 x 385.37 | 264167.28 | 3x4* | 58.4% | ~4680 |
+
+\* = requires rotating macro by 90 degrees to fit
+
+##### For other PDKs
 
 For SkyWater shuttles, the density of memory macros is significantly lower. There is an experimental 32x32 register file
 created by Sylvain Munaut which has a density of 1200 bits per tile - see the [datasheet for more information](https://tinytapeout.com/chips/ttsky25b/tt_um_tnt_rf_validation).
