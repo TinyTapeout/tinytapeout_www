@@ -15,7 +15,7 @@ These Terms and Conditions (the “**Terms**”) govern your participation in th
 
 
 1.1. 
-Subject to the terms hereof, you may participate in the Program by submitting a semiconductor chip design (“**Design**”) for inclusion on an Application Specific Integrated Circuit (ASIC) and Printed Circuit Board (PCB) (collectively, a “**Chip**”) manufactured as part of a specific production run conducted by Tiny Tapeout (“**Production Run**”). If your Design is accepted as part of the Production Run, subject to the terms hereof, you may elect to purchase and receive a physical copy of the Chip, as detailed on the Tiny Tapeout website, available at [https://tinytapeout.com/](https://tinytapeout.com/) (the “**Website**”)
+Subject to the terms hereof, you may participate in the Program by submitting a semiconductor chip design (“**Design**”) for inclusion on an Application Specific Integrated Circuit (ASIC) and Printed Circuit Board (PCB) (collectively, a “**Chip**”) manufactured as part of a specific production run conducted by Tiny Tapeout (“**Production Run**”). If your Design is accepted as part of the Production Run, subject to the terms hereof, you may elect to purchase and receive a physical copy of the Chip, as detailed on the Tiny Tapeout website, available at [https://tinytapeout.com/](https://tinytapeout.com/) (the “**Website**”).
 
 
 1.2. 
@@ -23,7 +23,7 @@ All Designs must comply with and be submitted to Tiny Tapeout in accordance with
 
 
 1.3. 
-Subject to the terms hereof, Tiny Tapeout will and you hereby authorize Tiny Tapeout and its contractors to integrate your submitted Design into a combined semiconductor chip design that includes the Designs of other participants in the applicable Production Run (the “**Combined Design**”). By submitting your Design hereunder, you hereby acknowledge and agree that (i) your Design will be incorporated in the Combined Design manufactured on the Chip and will be supplied to other participants in the applicable Production Run, and (ii) your Design and Design Documentation will be published and made publicly available on the Website, Tiny Tapeout GitHub pages and other promotional materials.   
+Subject to the terms hereof, Tiny Tapeout will, and you hereby authorize Tiny Tapeout and its contractors to, integrate your submitted Design into a combined semiconductor chip design that includes the Designs of other participants in the applicable Production Run (the “**Combined Design**”). By submitting your Design hereunder, you hereby acknowledge and agree that (i) your Design will be incorporated in the Combined Design manufactured on the Chip and will be supplied to other participants in the applicable Production Run, and (ii) your Design and Design Documentation will be published and made publicly available on the Website, Tiny Tapeout GitHub pages and other promotional materials.   
 
 
 1.4. 
@@ -49,7 +49,7 @@ If you have purchased a physical copy of a Chip hereunder, we will ship your Chi
 
 
 2.4. 
-All schedules, production dates and delivery dates for the applicable Production Run are solely estimates and are subject to change at any time. You hereby expressly acknowledge and agree that Tiny Tapeout shall not be liable for any delay or disruption in the manufacture or supply of any applicable Chip or failure to comply with any schedules, production dates or delivery dates of the Production Run. Notwithstanding the foregoing, Tiny Tapeout will endeavor to notify you in writing of any such delay or failure. In the event that any Production Run is not completed or performed for any reason, as your sole and exclusive remedy, Tiny Tapeout will refund you the Fees you have paid hereunder in connection with the applicable Design. 
+All schedules, production dates and delivery dates for the applicable Production Run are solely estimates and are subject to change at any time. You hereby expressly acknowledge and agree that Tiny Tapeout shall not be liable for any delay or disruption in the manufacture or supply of any applicable Chip or failure to comply with any schedules, production dates or delivery dates of the Production Run. Notwithstanding the foregoing, Tiny Tapeout will endeavor to notify you in writing of any such delay or failure. In the event that any Production Run is not completed or performed for any reason, as your sole and exclusive remedy, Tiny Tapeout will include your Design in a future Production Run at no additional cost. If inclusion in a future Production Run is not possible, Tiny Tapeout will refund you the Fees you have paid hereunder in connection with the applicable Design.
 
 
 ## 3. Third Party Services
@@ -81,9 +81,9 @@ You hereby undertake and agree to comply with all applicable national and foreig
 
 
 6.2.
-You are solely and exclusively liable for ensuring that your Designs and/or Design Documentation, the submission thereof for the purposes set forth in these Terms, and the inclusion of your Designs on a Chip hereunder complies with applicable Export Controls Laws, including, without limitation, the determination to seek or obtain any required licenses or approvals. You shall not, without obtaining any prior authorization from applicable governmental
+You are solely and exclusively liable for ensuring that your Designs and/or Design Documentation, the submission thereof for the purposes set forth in these Terms, and the inclusion of your Designs on a Chip hereunder complies with applicable Export Control Laws, including, without limitation, the determination to seek or obtain any required licenses or approvals. You shall not, without obtaining any prior authorization from applicable governmental
 authorities required by applicable Export Control Laws, directly or indirectly, sell, export, reexport, transfer, divert, or otherwise dispose of any Chips or components thereof to any
-country, territory, entity, or person prohibited by applicable Export Controls Laws, including, for the avoidance of doubt, (i) any country or territory subject to comprehensive, government-wide, or broad sectoral sanctions (currently consisting of Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela, and the Crimea, Donetsk, Kherson, Luhansk, and Zaporizhzhia regions of Ukraine) (together, “**Sanctioned Countries**”), (ii) any individual or entity designated on OFAC’s List of Specially Designated Nationals and Blocked Persons or the U.S. Department of Commerce’s Entity List, Denied Persons List, Unverified List, or Military End-User List, or (iii)
+country, territory, entity, or person prohibited by applicable Export Control Laws, including, for the avoidance of doubt, (i) any country or territory subject to comprehensive, government-wide, or broad sectoral sanctions (currently consisting of Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela, and the Crimea, Donetsk, Kherson, Luhansk, and Zaporizhzhia regions of Ukraine) (together, “**Sanctioned Countries**”), (ii) any individual or entity designated on OFAC’s List of Specially Designated Nationals and Blocked Persons or the U.S. Department of Commerce’s Entity List, Denied Persons List, Unverified List, or Military End-User List, or (iii)
 any entity owned 50% or greater, or otherwise controlled by, the persons described in (ii) (such persons in (ii) and (iii), together, “**Sanctioned Persons**”).
 
 
@@ -92,12 +92,12 @@ You hereby represent and warrant that: (i) no Design and/or Design Documentation
 
 
 6.4.
-Any agreement between you and any of your customers relating to any Chips produced hereunder shall require such customers to abide by Export Control Laws and to provide assurances to that effect to Tiny Tapeout upon Tiny Tapeout’s request. You will immediately notify Tiny Tapeout of any known or suspected violation of this provision of Section 6 of the agreement.
+Any agreement between you and any of your customers relating to any Chips produced hereunder shall require such customers to abide by Export Control Laws and to provide assurances to that effect to Tiny Tapeout upon Tiny Tapeout’s request. You will immediately notify Tiny Tapeout of any known or suspected violation of this provision of Section 6 of these Terms.
 
 
 6.5.
-In the event you become a Sanctioned Person, are found to be in violation of Export Control Laws, or otherwise unable to comply Export Control Laws, you shall (i) immediately cease any activity involving any Chips produced hereunder, and related technical information and documentation, and (ii) inform Tiny Tapeout within three (3) business days of the occurrence. 
-Tiny Tapeout in its sole discretion has the right to terminate this Agreement, suspend, cease, or terminate performance hereunder, or modify Tiny Tapeout’s business relationship with you based on its interpretation of Export Control Laws and in order to comply with such laws.
+In the event you become a Sanctioned Person, are found to be in violation of Export Control Laws, or otherwise unable to comply with Export Control Laws, you shall (i) immediately cease any activity involving any Chips produced hereunder, and related technical information and documentation, and (ii) inform Tiny Tapeout within three (3) business days of the occurrence. 
+Tiny Tapeout in its sole discretion has the right to terminate these Terms, suspend, cease, or terminate performance hereunder, or modify Tiny Tapeout’s business relationship with you based on its interpretation of Export Control Laws and in order to comply with such laws.
 
 ## 7. Fees; Payment
 
@@ -111,7 +111,7 @@ You shall indemnify, defend and hold Tiny Tapeout, and its directors, officers, 
 
 ## 9. Limitation of Liability
 
-TINY TAPEOUT SHALL NOT BE LIABLE FOR OR ANY INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF BUSINESS, LOSS OF GOODWILL, LOSS OF OR DAMAGE TO REPUTATION, LOSS OF OR DAMAGE TO ANY PROPERTY OR MATERIALS, HOWEVER CAUSED, UNDER ANY CAUSE OF ACTION AND REGARDLESS OF THE THEORY OF LIABILITY. IN NO EVENT WILL TINY TAPEOUT’S AGGREGATE LIABILITY HEREUNDER EXCEED THE TOTAL FEES PAID TO TINY TAPEOUT HEREUNDER IN THE TWELVE-MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE LIABILITY.
+TINY TAPEOUT SHALL NOT BE LIABLE FOR ANY DIRECT OR INDIRECT, INCIDENTAL, PUNITIVE, SPECIAL OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF BUSINESS, LOSS OF GOODWILL, LOSS OF OR DAMAGE TO REPUTATION, LOSS OF OR DAMAGE TO ANY PROPERTY OR MATERIALS, HOWEVER CAUSED, UNDER ANY CAUSE OF ACTION AND REGARDLESS OF THE THEORY OF LIABILITY. IN NO EVENT WILL TINY TAPEOUT’S AGGREGATE LIABILITY HEREUNDER EXCEED THE TOTAL FEES PAID TO TINY TAPEOUT HEREUNDER IN THE TWELVE-MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE LIABILITY.
 
 
 ## 10. Term and Termination
@@ -126,7 +126,7 @@ Either Party may terminate these Terms if the other party materially breaches or
 
 
 10.3.
-Provisions in these Terms that by their nature should survive termination or expiration of these Terms, will so survive and remain in full force and effect following such termination or expiration, including, without limitation, Sections 1.4, 1.5, 2.2, 2.3, 4-9 and 12.
+Provisions in these Terms that by their nature should survive termination or expiration of these Terms, will so survive and remain in full force and effect following such termination or expiration, including, without limitation, Sections 1.4, 1.5, 2.2, 2.3, 2.4, 4-9 and 12.
 
 
 ## 11. Force Majeure
@@ -158,7 +158,4 @@ These Terms shall be governed by the laws of the State of Israel, without refere
 
 ## Last Updated
 
-October 27, 2024.  
-
- 
-
+February 11th, 2026.
