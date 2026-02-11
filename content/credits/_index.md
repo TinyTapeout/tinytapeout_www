@@ -3,6 +3,12 @@ title: "Credits"
 weight: 200
 ---
 
+# IHP 130nm work funded by
+
+<a href="https://swisschips.ethz.ch/" target="_blank">>
+  <img src="/images/logos/swisschips.png" alt="Swisschips" />
+</a>
+
 # GF180MCU work funded by
 
 <a href="https://www.tillitis.se/"> <img src="/images/tillitis.png" alt="Tillitis"> </a>
