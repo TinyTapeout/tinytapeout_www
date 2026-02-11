@@ -13,7 +13,9 @@ if you know some Verilog and want to submit a Verilog design, but already have s
 
 {{< figure src="images/github-rename-repo.png" title="Renaming a repository from 'vga-project' to 'vga-project-wokwi' via the repo settings" >}}
 
-- Create a new repository based on the [ttsky-verilog-template](https://github.com/TinyTapeout/ttsky-verilog-template) with the **same name** as the original repository.
+- Create a new repository from one of the Verilog template and make sure to use the **same name** as the original repository:
+  - For IHP shuttles: [ttihp-verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) 
+  - For SKY shuttles: [ttsky-verilog-template](https://github.com/TinyTapeout/ttsky-verilog-template) 
 
 {{< figure src="images/github-repo-template-ttsky.png" title="Using the Skywater template repository to create a new one">}}
 
