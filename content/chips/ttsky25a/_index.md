@@ -21,7 +21,7 @@ description: 237 designs, closed 2025-09-15
 - Launched: 27 June 2025
 - Submission closed: 15 September 2025
 - Submitted to ChipFoundry CC2509 shuttle using the SkyWater 130nm open source PDK
-- Chips expected Feb 2026
+- Chips expected May 2026
 
 ## Chip map
 
