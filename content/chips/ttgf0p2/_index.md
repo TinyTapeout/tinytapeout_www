@@ -17,7 +17,7 @@ description: 52 designs, closed 2025-11-24
 - Launched: 06 November 2025
 - Submission closed: 24 November 2025
 - Submitted to wafer.space using gf180mcuD 180nm open source PDK
-- Chips expected Mar 2026
+- Chips expected May 2026
 
 ## Funding
 
