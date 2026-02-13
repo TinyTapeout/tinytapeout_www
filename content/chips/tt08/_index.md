@@ -13,6 +13,12 @@ description: 135 designs, closed 2024-09-06
 * [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-08)
 * [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-08/shuttle_index.json)
 
+## Imaging
+
+Thanks to [Texplained](https://www.texplained.com/) for imaging our chips!
+
+* Interactive viewer: https://tinytapeout.com/decap/tt08
+
 ## Launch stats
 
 * Launched: 10 June 2024
