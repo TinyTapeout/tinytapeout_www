@@ -26,8 +26,9 @@
 /inverter-model https://www.zerotoasiccourse.com/post/3d_sky_inverter/
 
 # decaps 
-/decap/tt06 https://htfab.github.io/tt06-chip-imaging/#url=data/tt06.json
-/decap/tt07 https://htfab.github.io/tt07-chip-imaging/#url=data/tt07.json
+/decap/tt06 https://tinytapeout.github.io/tt06-chip-imaging/#url=data/tt06.json
+/decap/tt07 https://tinytapeout.github.io/tt07-chip-imaging/#url=data/tt07.json
+/decap/tt08 https://tinytapeout.github.io/tt08-chip-imaging/#url=data/tt08.json
 /decap/ttsky25a https://htfab.github.io/ttsky25a-chip-imaging/#url=data/ttsky25a.json
 
 # Redirect /runs -> /chips
