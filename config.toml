@@ -20,6 +20,7 @@ theme = "learn"
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSc7xnUTzdRNLFV1_wkB7vS2icDfH-aLywpcSe99GqL9Rss5Qg/viewform?usp=header"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
