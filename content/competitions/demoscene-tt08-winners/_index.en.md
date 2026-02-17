@@ -36,6 +36,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>VGA donut</b> by Andy Sloane<br>
             <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=881">Livestream announcement</a><br>
+            <a href="https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -94,6 +95,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>VGA Nyan Cat</b> by Andy Sloane<br>
             <a href="https://tinytapeout.com/chips/tt08/646">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1565">Livestream announcement</a><br>
+            <a href="https://www.a1k0n.net/2025/12/19/tiny-tapeout-demo.html">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -136,6 +138,8 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>Sequential Shadows Deluxe</b> by Toivo Henningsson<br>
             <a href="https://tinytapeout.com/chips/tt08/782">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=BIoALtoYJLGxN6pq&t=1430">Livestream announcement</a><br>
+            <a href="https://github.com/toivoh/tt08-demo/blob/main/docs/info.md">Author's project writeup</a><br>
+            <a href="https://www.youtube.com/watch?v=pkiTu3iLA_U">Author's video</a><br>
             </p>
         </td>
     </tr>
@@ -244,6 +248,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>Demo by a1k0n</b> by Andy Sloane<br>
             <a href="https://tinytapeout.com/chips/tt08/484">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2180">Livestream announcement</a><br>
+            <a href="https://www.a1k0n.net/2025/12/19/tiny-tapeout-demo.html">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -253,6 +258,8 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>Sequential Shadows Deluxe</b> by Toivo Henningsson<br>
             <a href="https://tinytapeout.com/chips/tt08/782">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=2197">Livestream announcement</a><br>
+            <a href="https://github.com/toivoh/tt08-demo/blob/main/docs/info.md">Author's project writeup</a><br>
+            <a href="https://www.youtube.com/watch?v=pkiTu3iLA_U">Author's video</a><br>
             </p>
         </td>
     </tr>
@@ -267,6 +274,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>VGA donut</b> by Andy Sloane<br>
             <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2038">Livestream announcement</a><br>
+            <a href="https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -342,6 +350,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>TT08 VGA FUN!</b> by algofoogle (Anton Maurovic)<br>
             <a href="https://tinytapeout.com/chips/tt08/267">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2747">Livestream announcement</a><br>
+            <a href="https://tinytapeout.com/chips/tt08/tt_um_algofoogle_tt08_vga_fun">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -358,6 +367,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>VGA donut</b> by Andy Sloane<br>
             <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=3066">Livestream announcement</a><br>
+            <a href="https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -372,6 +382,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>TT08 VGA FUN!</b> by algofoogle (Anton Maurovic)<br>
             <a href="https://tinytapeout.com/chips/tt08/267">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2951">Livestream announcement</a><br>
+            <a href="https://tinytapeout.com/chips/tt08/tt_um_algofoogle_tt08_vga_fun">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
