@@ -13,6 +13,43 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
 
 ## Newcomer
 
+### 1st Place
+
+<table>
+    <tr>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/975.jpg"/></td>
+        <td>
+            <p><b>Glyph Mode</b> by James Ross<br>
+            <a href="https://tinytapeout.com/chips/tt08/975">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1037">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+</table>
+
+### 2nd Place
+
+<table>
+    <tr>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
+        <td>
+            <p><b>VGA donut</b> by Andy Sloane<br>
+            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=881">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../demoscene-tt08-entries/thumb/324.jpg"/></td>
+        <td>
+            <p><b>Flame demo</b> by Konrad Beckmann & Linus Mårtensson<br>
+            <a href="https://tinytapeout.com/chips/tt08/324">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=918">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+</table>
+
 ### 3rd Place
 
 <table>
@@ -46,54 +83,17 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 2nd Place
-
-<table>
-    <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
-        <td>
-            <p><b>VGA donut</b> by Andy Sloane<br>
-            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=881">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="../demoscene-tt08-entries/thumb/324.jpg"/></td>
-        <td>
-            <p><b>Flame demo</b> by Konrad Beckmann & Linus Mårtensson<br>
-            <a href="https://tinytapeout.com/chips/tt08/324">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=918">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-</table>
+## Sound
 
 ### 1st Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/975.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/646.jpg"/></td>
         <td>
-            <p><b>Glyph Mode</b> by James Ross<br>
-            <a href="https://tinytapeout.com/chips/tt08/975">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1037">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-</table>
-
-## Sound
-
-### 3rd Place
-
-<table>
-    <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/650.jpg"/></td>
-        <td>
-            <p><b>VGA Drop (audio/visual demo)</b> by ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa<br>
-            <a href="https://tinytapeout.com/chips/tt08/650">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1207">Livestream announcement</a><br>
+            <p><b>VGA Nyan Cat</b> by Andy Sloane<br>
+            <a href="https://tinytapeout.com/chips/tt08/646">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1565">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
@@ -141,15 +141,15 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 1st Place
+### 3rd Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/646.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/650.jpg"/></td>
         <td>
-            <p><b>VGA Nyan Cat</b> by Andy Sloane<br>
-            <a href="https://tinytapeout.com/chips/tt08/646">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1565">Livestream announcement</a><br>
+            <p><b>VGA Drop (audio/visual demo)</b> by ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa<br>
+            <a href="https://tinytapeout.com/chips/tt08/650">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1207">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
@@ -157,24 +157,15 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
 
 ## Single Tile
 
-### 3rd Place
+### 1st Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/448.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/139.jpg"/></td>
         <td>
-            <p><b>Nyan</b> by Peter Nørlund<br>
-            <a href="https://tinytapeout.com/chips/tt08/448">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1689">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="../demoscene-tt08-entries/thumb/587.jpg"/></td>
-        <td>
-            <p><b>DemoSiine</b> by SagarDevAchar<br>
-            <a href="https://tinytapeout.com/chips/tt08/587">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=1734">Livestream announcement</a><br>
+            <p><b>Why not?</b> by sylefeb<br>
+            <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1881">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
@@ -203,15 +194,24 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 1st Place
+### 3rd Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/139.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/448.jpg"/></td>
         <td>
-            <p><b>Why not?</b> by sylefeb<br>
-            <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1881">Livestream announcement</a><br>
+            <p><b>Nyan</b> by Peter Nørlund<br>
+            <a href="https://tinytapeout.com/chips/tt08/448">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1689">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../demoscene-tt08-entries/thumb/587.jpg"/></td>
+        <td>
+            <p><b>DemoSiine</b> by SagarDevAchar<br>
+            <a href="https://tinytapeout.com/chips/tt08/587">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=1734">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
@@ -219,24 +219,17 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
 
 ## Graphics
 
-### 3rd Place
+### 1st Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/648.jpg"/></td>
         <td>
-            <p><b>VGA donut</b> by Andy Sloane<br>
-            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2038">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="../demoscene-tt08-entries/thumb/650.jpg"/></td>
-        <td>
-            <p><b>VGA Drop (audio/visual demo)</b> by ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa<br>
-            <a href="https://tinytapeout.com/chips/tt08/650">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=2058">Livestream announcement</a><br>
+            <p><b>Warp</b> by sylefeb<br>
+            <a href="https://tinytapeout.com/chips/tt08/648">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2229">Livestream announcement</a><br>
+            <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
+            <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
             </p>
         </td>
     </tr>
@@ -265,23 +258,44 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 1st Place
+### 3rd Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/648.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
         <td>
-            <p><b>Warp</b> by sylefeb<br>
-            <a href="https://tinytapeout.com/chips/tt08/648">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2229">Livestream announcement</a><br>
-            <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
-            <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
+            <p><b>VGA donut</b> by Andy Sloane<br>
+            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2038">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../demoscene-tt08-entries/thumb/650.jpg"/></td>
+        <td>
+            <p><b>VGA Drop (audio/visual demo)</b> by ReJ aka Renaldas Zioma, eriQue aka Erik Hemming, Matthias Kampa<br>
+            <a href="https://tinytapeout.com/chips/tt08/650">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=0oB5slAiuxV2-dnU&t=2058">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
 </table>
 
 ## Size
+
+### 1st Place
+
+<table>
+    <tr>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/139.jpg"/></td>
+        <td>
+            <p><b>Why not?</b> by sylefeb<br>
+            <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2697">Livestream announcement</a><br>
+            </p>
+        </td>
+    </tr>
+</table>
 
 ### 2nd Place
 
@@ -315,19 +329,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 1st Place
 
-<table>
-    <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/139.jpg"/></td>
-        <td>
-            <p><b>Why not?</b> by sylefeb<br>
-            <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2697">Livestream announcement</a><br>
-            </p>
-        </td>
-    </tr>
-</table>
 
 ## Mixed Signal
 
@@ -347,17 +349,15 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
 
 ## Most Useful
 
-### 3rd Place
+### 1st Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/648.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
         <td>
-            <p><b>Warp</b> by sylefeb<br>
-            <a href="https://tinytapeout.com/chips/tt08/648">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2934">Livestream announcement</a><br>
-            <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
-            <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
+            <p><b>VGA donut</b> by Andy Sloane<br>
+            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=3066">Livestream announcement</a><br>
             </p>
         </td>
     </tr>
@@ -386,15 +386,17 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
     </tr>
 </table>
 
-### 1st Place
+### 3rd Place
 
 <table>
     <tr>
-        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/227.jpg"/></td>
+        <td style="width: 20%"><img src="../demoscene-tt08-entries/thumb/648.jpg"/></td>
         <td>
-            <p><b>VGA donut</b> by Andy Sloane<br>
-            <a href="https://tinytapeout.com/chips/tt08/227">Project page</a><br>
-            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=3066">Livestream announcement</a><br>
+            <p><b>Warp</b> by sylefeb<br>
+            <a href="https://tinytapeout.com/chips/tt08/648">Project page</a><br>
+            <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2934">Livestream announcement</a><br>
+            <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
+            <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
             </p>
         </td>
     </tr>
