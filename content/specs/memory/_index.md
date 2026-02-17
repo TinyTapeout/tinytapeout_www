@@ -45,6 +45,13 @@ The tables below are not exhaustive - you should visit IHP's PDK repository to s
 
 <!-- tile size reference for ihp: https://github.com/TinyTapeout/tt-support-tools/blob/b4a9e6c7eabfdd6dee7460a163a0aec271b06bac/tech/ihp-sg13g2/tile_sizes.yaml -->
 
+{{% notice warning %}}
+Integrating the IHP SRAM macro at this stage is not trivial. There have been many changes since the example project linked
+above, and additional changes will come after TTIHP26A. The table below should be used as rough guidance only, and is subject
+to change at any time. <br> <br>
+For additional help, join our [discord](https://tinytapeout.com/discord).
+{{% /notice %}}
+
 ##### IHP SG13G2 single-port SRAM comparison table
 | SRAM macro | Physical dimensions <br> (width x height) (µm) | Area (µm²) | Minimum tile size required | Area consumption | Approximate density (bits per tile) |
 | :-------------------- | :----------------- | :-------- | :- | :- | :- |
