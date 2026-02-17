@@ -1,0 +1,5 @@
+{{ with .Site.Params.workshopFeedbackLink }}
+    {{ . }}
+{{ else }}
+    {{ warnf "params.workshopFeedbackLink in config is not set, no feedback link for workshops is available"}}
+{{ end }}
