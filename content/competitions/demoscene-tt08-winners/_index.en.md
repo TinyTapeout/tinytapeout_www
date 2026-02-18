@@ -3,6 +3,8 @@ title: TT08 Demoscene Winners
 tags: [competition]
 description: Winners of the TT08 demoscene competition!
 weight: 9
+images:
+    - images/demoscene_winners_thumbnail.jpg
 ---
 
 All of the winners of the TT08 demoscene competition - congratulations contestants!
