@@ -5,6 +5,11 @@ description: "All the entries to the TT08 demoscene competition"
 weight: 8
 ---
 
+{{%notice note%}}
+This competition is now closed! Congratulations to the winners, and thank you to everyone who participated!<br><br>
+Check out the winners on our [TT08 Demoscene Winners page](../demoscene-tt08-winners/).
+{{%/notice%}}
+
 All the entries! See below for details on each entry and how they were recorded. We are waiting on silicon (due April 2025) for the judging.
 [Find out more about the competition](/competitions/demoscene/).
 
