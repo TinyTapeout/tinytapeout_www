@@ -1,0 +1,21 @@
+# reference: https://lychee.cli.rs/guides/config/
+
+offline = false
+format = "markdown"
+
+accept = [
+    200,
+    429
+]
+
+exclude = [
+    # ignore chip project pages - these aren't staticly generated (and will flood the logs)
+    "chips/tt*/*",
+
+    # ignore select redirects (see /static/_redirects)
+    "discord",
+    "efabless-faq",
+
+    # ignore certain websites
+    '^https://(www\.)?linkedin\.com',   # returns html code 999
+]
