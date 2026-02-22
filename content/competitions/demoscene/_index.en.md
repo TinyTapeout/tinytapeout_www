@@ -5,6 +5,11 @@ description: "Build a sound and graphics demo in less than 161 x 225 microns of 
 weight: 10
 ---
 
+{{%notice note%}}
+This competition is now closed! Congratulations to the winners, and thank you to everyone who participated!<br><br>
+Check out the winners on our [TT08 Demoscene Winners page](../demoscene-tt08-winners/).
+{{%/notice%}}
+
 ## Demoscene competition!
 
 {{< youtube tycS0vGcZIY >}}

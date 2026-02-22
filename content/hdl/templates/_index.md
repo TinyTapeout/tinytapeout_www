@@ -12,3 +12,9 @@ This repo shows how to:
 
 * [specify the files](https://github.com/TinyTapeout/ttihp-verilog-template/blob/main/info.yaml#L18) for building the ASIC
 * [run an automatic test](/hdl/testing) when you push new code to the repo
+
+# User contributed templates
+
+## Chisel
+
+* https://github.com/TinyTapeout/ttihp-chisel-template

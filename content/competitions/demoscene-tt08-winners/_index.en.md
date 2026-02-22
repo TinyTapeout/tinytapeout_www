@@ -3,6 +3,8 @@ title: TT08 Demoscene Winners
 tags: [competition]
 description: Winners of the TT08 demoscene competition!
 weight: 9
+images:
+    - images/demoscene_winners_thumbnail.jpg
 ---
 
 All of the winners of the TT08 demoscene competition - congratulations contestants!
@@ -170,6 +172,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>Why not?</b> by sylefeb<br>
             <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=1881">Livestream announcement</a><br>
+            <a href="https://github.com/sylefeb/tt08-fun/blob/main/docs/info.md">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -234,6 +237,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2229">Livestream announcement</a><br>
             <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
             <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
+            <a href="https://www.youtube.com/watch?v=ELOYGwZgHnw">Author's video</a><br>
             </p>
         </td>
     </tr>
@@ -300,6 +304,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <p><b>Why not?</b> by sylefeb<br>
             <a href="https://tinytapeout.com/chips/tt08/139">Project page</a><br>
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2697">Livestream announcement</a><br>
+            <a href="https://github.com/sylefeb/tt08-fun/blob/main/docs/info.md">Author's project writeup</a><br>
             </p>
         </td>
     </tr>
@@ -408,6 +413,7 @@ Read more about the competition on our [announcement page](../demoscene/), or ch
             <a href="https://www.youtube.com/live/il_qKTiyKLY?si=iUSH1VLfD4roa_jb&t=2934">Livestream announcement</a><br>
             <a href="https://github.com/sylefeb/tt08-compo-entry/blob/main/docs/info.md">Author's project writeup</a><br>
             <a href="https://www.shadertoy.com/view/w3KyW3">Author's ShaderToy sandbox</a><br>
+            <a href="https://www.youtube.com/watch?v=ELOYGwZgHnw">Author's video</a><br>
             </p>
         </td>
     </tr>

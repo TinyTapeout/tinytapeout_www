@@ -27,7 +27,7 @@ I also added the current in the simulation traces. You can see we get a little s
 
 ### Standard cells
 
-We’ve seen how to draw and make a logic inverter, but there are many other types of logic gates like AND, OR and NOT gates. Feel free to try drawing some yourself! Share your designs with us in the [Discord community channel](https://discord.gg/e3FK68Z98y). Use the hashtag [#SilliWiz](https://twitter.com/search?q=siliwiz&src=typed_query) on social media.
+We’ve seen how to draw and make a logic inverter, but there are many other types of logic gates like AND, OR and NOT gates. Feel free to try drawing some yourself! Share your designs with us in the [Discord community channel](https://tinytapeout.com/discord). Use the hashtag [#SiliWiz](https://twitter.com/search?q=siliwiz&src=typed_query) on social media.
 
 A typical PDK will include hundreds of standard cells. Here’s the Skywater 130nm inverter standard cell:
 
