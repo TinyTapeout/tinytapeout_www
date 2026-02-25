@@ -3,11 +3,6 @@
 // Author: Uri Shaked
 
 (function () {
-  const supabaseProject = 'tinytapeout';
-  const supabaseKey =
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvdXZqeXhpaHB1ZGhibWJ1ZXBrIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg2NTIxODYsImV4cCI6MTk5NDIyODE4Nn0.-A6x_iXHNEq6VOC2KEE1zDzcTT8PXnZNnu6LhzJqnvo';
-  const databaseEndpoint = `https://${supabaseProject}.supabase.co/rest/v1/`;
-
   /** @param {number} n The number to pad. */
   function pad(n) {
     const nStr = n.toString();
@@ -38,24 +33,15 @@
     shuttleStats.href = `https://app.tinytapeout.com/shuttles/${shuttleSlug}`;
 
     async function fetchStats() {
-      const queryUrl = new URL('shuttles', databaseEndpoint);
-      queryUrl.searchParams.set(
-        'select',
-        'tiles_total,tiles_used,subsidized_pcbs_total,subsidized_pcbs_sold,deadline,pcbs_sold',
-      );
-      queryUrl.searchParams.set('slug', `eq.${shuttleSlug}`);
-      queryUrl.searchParams.set('apikey', supabaseKey);
-      const res = await fetch(queryUrl);
-      const resJson = await res.json();
-      const shuttle = resJson[0];
+      const res = await fetch(`https://app.tinytapeout.com/api/shuttles/${shuttleSlug}`);
+      const shuttle = await res.json();
       deadline = new Date(shuttle.deadline);
-      const tilesPercent = (shuttle.tiles_used / shuttle.tiles_total) * 100;
-      let pcbsSold = shuttle.pcbs_sold;
-      if (shuttle.subsidized_pcbs_total) {
-        pcbsTotal = shuttle.subsidized_pcbs_total;
-        pcbsSold = shuttle.subsidized_pcbs_sold;
+      const tilesPercent =
+        ((shuttle.tiles.total - shuttle.tiles.available) / shuttle.tiles.total) * 100;
+      if (shuttle.pcbs.total) {
+        pcbsTotal = shuttle.pcbs.total;
       }
-      const pcbsPercent = (pcbsSold / pcbsTotal) * 100;
+      const pcbsPercent = pcbsTotal ? ((pcbsTotal - shuttle.pcbs.available) / pcbsTotal) * 100 : 0;
       tileStats.textContent = `${Math.round(100 - tilesPercent)}% left`;
       pcbStatsCounter.textContent = `${Math.round(100 - pcbsPercent)}% left`;
       tileProgress.style.width = `${tilesPercent}%`;
@@ -63,80 +49,32 @@
       if (!pcbsTotal) {
         pcbStats.style.display = 'none';
       }
-      return resJson;
     }
 
-    /** @type {WebSocket | null} */
-    let ws = null;
+    let pollTimer = null;
 
-    function autoUpdateStats() {
-      const wsUrl = new URL('/realtime/v1/websocket', databaseEndpoint);
-      wsUrl.protocol = 'wss:';
-      wsUrl.searchParams.set('apikey', supabaseKey);
-      wsUrl.searchParams.set('vsn', '1.0.0');
-      let heartbeatTimer = null;
-      ws = new WebSocket(wsUrl);
-      ws.onopen = () => {
-        ws.send(
-          JSON.stringify({
-            topic: 'realtime:schema-db-changes',
-            event: 'phx_join',
-            payload: {
-              config: {
-                postgres_changes: [
-                  {
-                    event: 'UPDATE',
-                    schema: 'public',
-                    table: 'shuttles',
-                    filter: `slug=eq.${shuttleSlug}`,
-                  },
-                ],
-              },
-            },
-            ref: '1',
-          }),
-        );
-        heartbeatTimer = setInterval(() => {
-          ws.send(
-            JSON.stringify({
-              event: 'heartbeat',
-              topic: 'phoenix',
-              payload: {},
-              ref: '1',
-            }),
-          );
-        }, 30000);
-      };
-      ws.onmessage = async (event) => {
-        const payload = JSON.parse(event.data);
-        if (payload.event === 'postgres_changes') {
-          void fetchStats();
-        }
-      };
-      ws.onclose = () => {
-        if (heartbeatTimer) {
-          clearInterval(heartbeatTimer);
-          heartbeatTimer = null;
-        }
-        ws = null;
-      };
+    function startPolling() {
+      if (!pollTimer) {
+        pollTimer = setInterval(fetchStats, 30000);
+      }
+    }
+
+    function stopPolling() {
+      if (pollTimer) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+      }
     }
 
     fetchStats();
-    autoUpdateStats();
+    startPolling();
 
-    // disconnect socket on visibility change:
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden') {
-        if (ws) {
-          ws.close();
-          ws = null;
-        }
+        stopPolling();
       } else {
-        if (!ws) {
-          fetchStats();
-          autoUpdateStats();
-        }
+        fetchStats();
+        startPolling();
       }
     });
 
