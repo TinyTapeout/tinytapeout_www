@@ -5,7 +5,8 @@ format = "markdown"
 
 accept = [
     200,
-    429
+    429,
+    403
 ]
 
 exclude = [
