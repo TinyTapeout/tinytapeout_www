@@ -5,7 +5,7 @@ description: 'PCBs for Tiny Tapeout 1, 2 and 3'
 weight: 55
 ---
 
-{{< figure src="/../../specs/pcb-tt123/images/tt02_board_top.jpeg" title="PCB de TT01, 02 & 03" >}}
+{{< figure src="images/tt02_board_top.jpeg" title="PCB de TT01, 02 & 03" >}}
 
 ## Vista general de la placa
 
