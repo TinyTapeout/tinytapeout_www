@@ -70,6 +70,19 @@ plans to provide a DIY devkit, however the files are available on GitHub ([githu
 
 When you purchase 1 devkit, you will receive 1 demo board and 1 breakout board.
 
+## What is an 'analog slot'?
+An analog slot is 1x2 tiles large, and there are a limited number of available slots per shuttle. Availability of analog
+slots can be seen via the shuttle status page.
+
+{{% figure src="images/analog-slots-example-ttsky26a.jpg" title="Availability of analog slots on TTSky26a" %}}
+
+An analog _project_ can take up a maximum of two analog slots - therefore valid sizes for analog projects are either 1x2
+or 2x2. Tiles may be slightly smaller if using the 3V3 power gate.
+
+If you require a larger size, you will be charged as if you had submitted multiple 1x2/2x2 projects separately. For
+example, if you wanted 3x2 tiles and 4 pins for a single project, you'll be charged for 2x2 tiles + 4 pins, then 1x2
+tiles + 4 pins - even if you are only using 4 pins for your project.
+
 ## Can I buy older chips?
 
 Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/). We only sell spares, so there is no guarantee there will be any.
