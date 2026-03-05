@@ -19,4 +19,5 @@ exclude = [
 
     # ignore certain websites
     '^https://(www\.)?linkedin\.com',   # returns html code 999
+    '^https://(www\.)?nyu\.edu',        # returns 405
 ]
