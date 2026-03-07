@@ -12,13 +12,13 @@ description: 152 designs, closed 1st September 2022
 * [PDF datasheet](/tt01.pdf)
 * [How the scan chain works, pinout, tech details](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md)
 * [Verification](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/verification.md)
-* [Efabless MPW submission is here](https://platform.efabless.com/projects/1229)
+* [Efabless MPW submission is here](https://web.archive.org/web/20241111203507/https://platform.efabless.com/projects/1229)
 
 ## Launch stats
 
 * Launched: 2022-08-17
 * Submission closed: 2022-09-01
-* Submitted to Efabless 2022-09-05 for the [MPW7 shuttle](https://efabless.com/shuttle-status) using Skywater 130nm open source PDK
+* Submitted to Efabless 2022-09-05 for the MPW7 shuttle using Skywater 130nm open source PDK
 * Chips expected November 2023. As this was a trial run, we are not expecting to manufacture or deliver PCBs
 
 ## Project statistics

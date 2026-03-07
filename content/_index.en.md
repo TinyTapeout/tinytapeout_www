@@ -51,7 +51,7 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
     {{< customer-card "" "eu_open_source_awards.svg" "https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn" >}}
   </div>
 
-"Tiny Tapeout is [widely considered indispensable for modern IC design education](https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn")". 
+"Tiny Tapeout is [widely considered indispensable for modern IC design education](https://awards.europeanopensource.academy/awardees-2026/Matthew%20Venn)".
 
 # Sign up
 
@@ -72,7 +72,7 @@ Sign up to the mailing list for the latest news, and to make sure you don't miss
   {{< customer-card "New York Institute of technology" "nyit.png" "https://www.nyit.edu" >}}
   {{< customer-card "Hochschule Rheinmain" "hrm.png" "https://www.hs-rm.de/de/" >}}
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
-  {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/en/ce/chips/" >}} 
+  {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/hall-of-chips/" >}} 
   {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}}
   {{< customer-card "Wright State University" "wsu.png" "https://www.wright.edu/" >}}
   {{< customer-card "UC San Diego" "ucsd.png" "https://ucsd.edu" >}}
