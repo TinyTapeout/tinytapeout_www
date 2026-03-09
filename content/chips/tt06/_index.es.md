@@ -10,14 +10,14 @@ description: 238 designs, closed 2024-04-19
 
 * [Repositorio de Github](https://github.com/TinyTapeout/tinytapeout-06)
 * [Hoja de datos en PDF](https://tinytapeout.github.io/tinytapeout-06/datasheet.pdf)
-* [Envío de Efabless MPW](https://repositories.efabless.com/urish/tinytapeout-06)
+* [Envío de Efabless MPW](https://web.archive.org/web/20250116194535/https://repositories.efabless.com/urish/tinytapeout-06)
 * [Índice de transporte (JSON)](https://tinytapeout.github.io/tinytapeout-06/shuttle_index.json)
 
 # Estadísticas de lanzamiento
 
 * Lanzamiento: 30 de enero de 2024
 * Envío cerrado: 19 de abril de 2024
-* Enviado al shuttle Effables [2404C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm de código abierto PDK.
+* Enviado al shuttle Effables 2404C chipIgnite utilizando Skywater 130nm de código abierto PDK.
 * Se espera que los chips lleguen en octuubre de 2024,y las PCB en diciembre de 2024
 
 # Mapa de chips

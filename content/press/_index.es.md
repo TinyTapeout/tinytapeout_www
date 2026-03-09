@@ -12,10 +12,10 @@ date: 2023-03-08T09:56:27+01:00
 
 | Serie  | Abierto en    | Cerrado en     | Shuttle | Diseños | Chips esperados en | PCBs esperados en |
 |--------|---------------|----------------|---------|---------|--------------------|-------------------|
-| [TT01](/chips/tt01) | 2022-08-17 | 2022-09-01 | [MPW7](https://efabless.com/shuttle-status)    | 152     | Dic 2023 | - |
-| [TT02](/chips/tt02) | 2022-11-09 | 2022-12-02 | [2211Q](https://efabless.com/shuttle-status)   | 165     | Oct 2023 | Ene 2024 |
-| [TT03](/chips/tt03) | 2023-03-01 | 2023-04-23 | [2304C](https://efabless.com/shuttle-status)   | 249 (incluye 149 de TT02) | Dic 2023 | Feb 2024 |
-| [TT04](/chips/tt04) | 2023-07-01 | 2023-09-08 | [2309C](https://efabless.com/shuttle-status)   | 143     | Feb 2024 | Abr 2024 |
+| [TT01](/chips/tt01) | 2022-08-17 | 2022-09-01 | MPW7    | 152     | Dic 2023 | - |
+| [TT02](/chips/tt02) | 2022-11-09 | 2022-12-02 | 2211Q   | 165     | Oct 2023 | Ene 2024 |
+| [TT03](/chips/tt03) | 2023-03-01 | 2023-04-23 | 2304C   | 249 (incluye 149 de TT02) | Dic 2023 | Feb 2024 |
+| [TT04](/chips/tt04) | 2023-07-01 | 2023-09-08 | 2309C   | 143     | Feb 2024 | Abr 2024 |
 
 # Artículos
 

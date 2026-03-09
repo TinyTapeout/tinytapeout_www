@@ -11,13 +11,13 @@ description: 249 designs, closed 24th April 2023
 * [Repositorio de Github](https://github.com/TinyTapeout/tinytapeout-03)
 * [Hoja de Datos en PDF](https://github.com/TinyTapeout/tinytapeout-03/raw/main/datasheet.pdf)
 * [Verificación](https://github.com/TinyTapeout/tinytapeout-03/blob/main/VERIFICATION.md)
-* [Envío de Efabless](https://platform.efabless.com/projects/1971)
+* [Envío de Efabless](https://web.archive.org/web/20250206221746/https://platform.efabless.com/projects/1971)
 
 # Estadísticas de lanzamiento
 
 * Lanzamiento: 1 de marzo de 2023
 * Presentación cerrada: 24 de abril de 2023
-* Envíado al shuttle Efabless [2304C chipIgnite](https://efabless.com/shuttle-status) utilizando Skywater 130nm open source PDK.
+* Envíado al shuttle Efabless 2304C chipIgnite utilizando Skywater 130nm open source PDK.
 * Se espera que lleguen en octubre de 2023, y las PCB en diciembre de 2023.
 
 # Estadísticas de proyecto

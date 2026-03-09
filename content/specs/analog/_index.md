@@ -120,11 +120,11 @@ Edit the `info.yaml` files and the the following properties:
 
 This file is used to 'blackbox' your design when we integrate it into the Tiny Tapeout shuttle.
 
-Edit [src/project.v](src/project.v) and replace `tt_um_example` with the actual name of your top module.
+Edit `src/project.v` and replace `tt_um_example` with the actual name of your top module.
 
 ## Documentation
 
-Edit [docs/info.md](docs/info.md) and add a description of your project.
+Edit `docs/info.md` and add a description of your project.
 
 ## Draw the rest of the owl
 
