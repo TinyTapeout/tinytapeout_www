@@ -2,6 +2,7 @@
 title: "Tiny Tapeout 1"
 weight: 10
 description: 152 diseños, cerrado el 1 de Septiembre 2022
+hidden: true
 ---
 
 {{% toc %}}

@@ -3,6 +3,7 @@ title: Tiny Tapeout Chips
 weight: 10
 aliases:
     - /shuttles
+reverseMenu: true
 ---
 
 ### Current chips
