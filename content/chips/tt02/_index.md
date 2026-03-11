@@ -2,6 +2,7 @@
 title: "Tiny Tapeout 2"
 weight: 10
 description: 165 designs, closed 2nd December 2022
+hidden: true
 ---
 
 {{% toc %}}

@@ -2,6 +2,7 @@
 title: 'Tiny Tapeout IHP 0.2'
 weight: 50
 description: 95 designs, closed 2024-11-04
+hidden: true
 ---
 
 {{% toc %}}
