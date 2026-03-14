@@ -348,3 +348,13 @@ With the above two clock trees are generated, STA analysis will be run on both c
 
 Please note that the above works for OpenLane tag `2023.11.23`. More recent versions that include the `check_clock_ports.py` script will *not* work. This is due to the way the
 `check_clock_ports.py` works: it is not able to detect sliced ports (as in `ui_in[0]`).
+
+## Can I use a different HDL instead of Verilog?
+
+There is some support for VHDL, but the open-source tools are mainly geared towards Verilog so some features may not
+work as expected. You can get started with VHDL via our Verilog template and simply specify your VHDL source files in
+`info.yaml`. The build action will convert your VHDL source files into Verilog individually via GHDL. This comes with
+downsides however - you won't be able to use any custom types or records, and you will have to treat each module
+instanciation as a black box.
+
+There is a Chisel template available (thanks to Martin Schoeberl!): [github.com/TinyTapeout/ttihp-chisel-template](https://github.com/TinyTapeout/ttihp-chisel-template)
