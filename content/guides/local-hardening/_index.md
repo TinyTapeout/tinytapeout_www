@@ -117,8 +117,10 @@ pip install librelane==$LIBRELANE_TAG
 
 Congratulations, you are ready to harden your project!
 
-Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for
-GF180MCU projects, you would need to add the `--gf` flag.
+{{% notice note %}}
+For IHP projects, you need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for GF180MCU projects,
+you need to add the `--gf` flag.
+{{% /notice %}}
 
 First, generate the LibreLane configuration file:
 
