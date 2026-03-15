@@ -154,6 +154,13 @@ make -B
 
 ### Running the gate level tests
 
+{{% notice tip %}}
+Make sure you select the relevant tab below for the PDK you're using - IHP models don't have power pins and therefore
+use the unpowered netlist (`nl`) instead of the powered one (`pnl`).
+{{% /notice %}}
+
+{{< tabs groupId="gl-tests" >}}
+{{% tab name="SKY/GF" %}}
 ```sh
 cd test
 pip install -r requirements.txt
@@ -161,6 +168,18 @@ TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
 cp ../runs/wokwi/final/pnl/$TOP_MODULE.pnl.v gate_level_netlist.v
 make -B GATES=yes
 ```
+{{% /tab %}}
+
+{{% tab name="IHP" %}}
+```sh
+cd test
+pip install -r requirements.txt
+TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
+cp ../runs/wokwi/final/nl/$TOP_MODULE.nl.v gate_level_netlist.v
+make -B GATES=yes
+```
+{{% /tab %}}
+{{< /tabs>}}
 
 ### Viewing the design in OpenROAD GUI and KLayout
 
