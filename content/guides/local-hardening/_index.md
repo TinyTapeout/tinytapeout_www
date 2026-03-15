@@ -40,21 +40,26 @@ git clone https://github.com/TinyTapeout/tt-support-tools tt
 
 ## 3. Python and Pip Dependencies
 
-Create a dedicated directory for the virtual Python environment and initialize it:
+Create a dedicated directory for the virtual Python environment and initialize it. You can use Python's own `venv`
+package or [uv](https://docs.astral.sh/uv/).
 
+{{< tabs groupId="python-venv-setup" >}}
+{{% tab name="venv" %}}
 ```sh
 mkdir ~/ttsetup
 python3 -m venv ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
+{{% /tab %}}
 
-Or, if you are using [uv](https://docs.astral.sh/uv/):
-
+{{% tab name="uv" %}}
 ```sh
 mkdir ~/ttsetup
 uv venv --python 3.12 ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 Then install the dependencies:
 
