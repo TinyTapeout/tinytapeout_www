@@ -69,32 +69,43 @@ pip install -r ~/factory-test/tt/requirements.txt
 
 ## 4. Set up environment variables
 
-Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively, the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use:
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively,
+the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use. Select
+the relevant PDK below.
 
+{{< tabs groupId="pdk-env-vars" >}}
+{{% tab name="SKY130" %}}
+This is for the SkyWater 130nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
 export LIBRELANE_TAG=2.4.2
 ```
+{{% /tab %}}
 
-Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look at the "default" value for the input called "librelane-version")
-
-### GF180MCU (GlobalFoundries 180nm) Specific Instructions
-
-For GF180MCU projects, you need to set the following environment variables, overriding the ones above:
-
+{{% tab name="GF180MCU" %}}
+This is for the GlobalFoundries 180nm PDK.
 ```sh
+export PDK_ROOT=~/ttsetup/pdk
 export PDK=gf180mcuD
+export LIBRELANE_TAG=2.4.2
 ```
+{{% /tab %}}
 
-### IHP Specific Instructions
-
-For IHP projects, you need to set the following environment variables, overriding the ones above:
-
+{{% tab name="IHP" %}}
+These are for IHP projects using IHP PDKs.
 ```sh
+export PDK_ROOT=~/ttsetup/pdk
 export PDK=ihp-sg13g2
 export LIBRELANE_TAG=3.0.0.dev44
 ```
+{{% /tab %}}
+{{< /tabs >}}
+
+{{% notice note %}}
+The values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml)
+yaml for the latest values (look at the "default" value for the input called "librelane-version").
+{{% /notice %}}
 
 ## 5. Install LibreLane
 
