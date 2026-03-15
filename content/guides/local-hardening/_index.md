@@ -11,13 +11,11 @@ It uses the [factory-test](https://github.com/TinyTapeout/ttsky25b-factory-test)
 
 ## 1. Environment Setup
 
-You need Python 3.11 or newer installed on your system. You can test which python version you have by running:
+You need Python 3.11 or newer installed on your system. You can test which python version you have by running `python3 --version`.
 
-```sh
-python3 --version
-```
-
-Note: On some systems, the python binary is called `python` and not `python3`.
+{{% notice note %}}
+On some systems the python binary is called `python` and not `python3`.
+{{% /notice %}}
 
 If you have an older python version, you can [install uv](https://docs.astral.sh/uv/getting-started/installation/) as an alternative.
 
