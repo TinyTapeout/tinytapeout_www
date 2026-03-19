@@ -157,6 +157,13 @@ Yes, you need to
 
 If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
+## My Wokwi design fails with an "unmapped dff cell" error - what do I do?
+
+You may be using an unsupported flip flop configuration in a project which is targeting the IHP PDK. Depending on your
+circuit, the quickest fix may be to replace all instances of `wokwi-flip-flop-dsr` with `wokwi-flip-flop-dr` within the
+`diagram.json` file. This does mean that you lose the `set` functionality of the flip-flop, so it may not always be suitable.
+
+
 # Tiny Tapeout FAQs
 
 ## Where can I find the the template to get started?
