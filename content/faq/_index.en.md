@@ -218,7 +218,7 @@ You might not have filled in enough fields, we require the following fields to b
     how_to_test
     language
 
-## I updated and saved my wokwi design, how do I re-run the Github action to update the GDS files?
+## I updated and saved my Wokwi design, how do I re-run the Github action to update the GDS files?
 
 1. Go to your repository, click the actions tab
 2. Then click the ‘gds’ workflow
