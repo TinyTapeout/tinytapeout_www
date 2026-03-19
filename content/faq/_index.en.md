@@ -176,6 +176,21 @@ If you update your project and want us to use your latest version, you have to [
 
 You can keep updating your design up to the tapeout deadline.
 
+## Submission fails asking to reharden the project for the correct PDK - how do I do this?
+
+Example error message:
+> This project was hardened for sky130A, but you are trying to submit it to a shuttle using ihp-sg13g2. Please reharden 
+the project for the correct PDK and try again.
+
+This error message appears when you have hardened your design for one process, but are attempting to submit onto a shuttle
+which uses a different process. In the example above, the project was hardened with the SkyWater PDK, but is being
+submitted on an IHP shuttle - the manufacturing process is different and therefore the submission fails.
+
+To fix this you can either:
+- Migrate your source files onto the correct project template
+- Copy all the files from the correct template into your existing repo
+    - These should replace anything in `.github/workflows`, `.devcontainer` and `test/Makefile`
+
 ## Is it TinyTapeout or Tiny Tapeout?
 
 It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
