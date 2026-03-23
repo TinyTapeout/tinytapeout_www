@@ -2,7 +2,7 @@
 title: Crowd Sourced RISC-V (closed)
 tags: [competition]
 description: "Help build a crowd sourced microcontroller - Join the Open-Source RISC-V peripheral challenge!"
-weight: 1
+weight: 2
 ---
 
 ## Help build a crowd sourced microcontroller - Join the Open-Source RISC-V peripheral challenge!"
