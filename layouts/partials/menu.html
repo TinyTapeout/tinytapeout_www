@@ -136,12 +136,21 @@
             {{end}}
           {{ end }}
         {{else}}
-          {{ range $pages.ByWeight }}
-            {{ if and .Params.hidden (not $.showhidden) }}
-            {{else}}
-            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+          {{if .Params.reverseMenu}}
+            {{ range $pages.ByWeight.Reverse}}
+              {{ if and .Params.hidden (not $.showhidden) }}
+              {{else}}
+              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks}}
+              {{end}}
             {{end}}
-          {{ end }}
+          {{else}}
+            {{ range $pages.ByWeight }}
+              {{ if and .Params.hidden (not $.showhidden) }}
+              {{else}}
+              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+              {{end}}
+            {{ end }}
+          {{end}}
         {{end}}
         </ul>
       {{ end }}
