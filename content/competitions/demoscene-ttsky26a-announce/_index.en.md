@@ -53,7 +53,7 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 ## How to get help
 
 * Discuss on the [competition channel](https://discord.com/channels/1009193568256135208/1259420274445516891) discord community channel. Join the [discord here](/discord)
-* [Quick start VGA graphics at the VGA playground](https://tinytapeout.github.io/vga-playground/)
+* [Quick start VGA graphics at the VGA playground](https://vga-playground.com)
 * [Audio output demo](https://github.com/MichaelBell/tt08-pwm-example)
 * [Bitmap Fonts](https://github.com/ianhan/BitmapFonts)
 * [Previous competition entries](/competitions/demoscene-tt08-entries/)
