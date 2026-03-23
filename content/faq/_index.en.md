@@ -157,6 +157,13 @@ Yes, you need to
 
 If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
+## My Wokwi design fails with an "unmapped dff cell" error - what do I do?
+
+You may be using an unsupported flip flop configuration in a project which is targeting the IHP PDK. Depending on your
+circuit, the quickest fix may be to replace all instances of `wokwi-flip-flop-dsr` with `wokwi-flip-flop-dr` within the
+`diagram.json` file. This does mean that you lose the `set` functionality of the flip-flop, so it may not always be suitable.
+
+
 # Tiny Tapeout FAQs
 
 ## Where can I find the the template to get started?
@@ -168,6 +175,21 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 If you update your project and want us to use your latest version, you have to [go to your submission](https://app.tinytapeout.com/) and create a new submission.
 
 You can keep updating your design up to the tapeout deadline.
+
+## Submission fails asking to reharden the project for the correct PDK - how do I do this?
+
+Example error message:
+> This project was hardened for sky130A, but you are trying to submit it to a shuttle using ihp-sg13g2. Please reharden 
+the project for the correct PDK and try again.
+
+This error message appears when you have hardened your design for one process, but are attempting to submit onto a shuttle
+which uses a different process. In the example above, the project was hardened with the SkyWater PDK, but is being
+submitted on an IHP shuttle - the manufacturing process is different and therefore the submission fails.
+
+To fix this you can either:
+- Migrate your source files onto the correct project template
+- Copy all the files from the correct template into your existing repo
+    - These should replace anything in `.github/workflows`, `.devcontainer` and `test/Makefile`
 
 ## Is it TinyTapeout or Tiny Tapeout?
 
@@ -211,7 +233,7 @@ You might not have filled in enough fields, we require the following fields to b
     how_to_test
     language
 
-## I updated and saved my wokwi design, how do I re-run the Github action to update the GDS files?
+## I updated and saved my Wokwi design, how do I re-run the Github action to update the GDS files?
 
 1. Go to your repository, click the actions tab
 2. Then click the ‘gds’ workflow
