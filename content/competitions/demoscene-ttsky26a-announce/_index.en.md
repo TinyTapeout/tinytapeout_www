@@ -38,9 +38,9 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 * If the demo produces audio, must use the [TT audio Pmod](/specs/pinouts/#audio-output)
 * Apart from the above - no other hardware must be used
 * Start up sequence using the commander app:
-    * Enable the project, (optionally provide binary image for FLASH, optimally provide a value for ui_in[7:0] ), Reset, Enjoy
+    * Enable the project, (optionally provide binary image for FLASH, optionally provide a value for ui_in[7:0] ), Reset, Enjoy
 * There may be an initial judging round with an FPGA - TBD
-* Final judging will be done against the silicon
+* Final judging will be done against the silicon after chips have been received (expected November 2026)
 * Must be submitted to [TTSKY26a](https://app.tinytapeout.com/shuttles/ttsky26a) before the closing date of May 11th 2026
 
 ## How to enter
@@ -69,14 +69,14 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 
 ![prizes](../demoscene-tt08-announce/images/demoscene_prizes.png)
 
-* All entrants who purchase the demoboard will get free [VGA](https://github.com/mole99/tiny-vga), [audio PMODs](https://github.com/MichaelBell/tt-audio-pmod) and a sticker pack.
+* All entrants who purchase the demoboard will get free VGA, Audio and QSPI Pmod
 * Winners of each category will receive combinations of:
-    * Lithography masks,
-    * Silicon wafers,
-    * Matt’s first ASIC die mounted in an epoxy cube, numbered and signed,
-    * ASIC baseball caps,
-    * Free tiles for future tapeouts,
-    * Previous TT chips.
+    * Lithography masks
+    * Silicon wafers
+    * Matt’s first ASIC die mounted in an epoxy cube, numbered and signed
+    * ASIC baseball caps
+    * Free tiles for future tapeouts
+    * Previous TT chip
 
 ## Judges
 
@@ -90,12 +90,11 @@ We have some fantastic judges lined up:
 
 * How will the competition be judged? 
     * A panel of appointed judges will vote and have the final say
-    * There may be a pre-silicon judgement made with an FPGA - TBD
 * The final results will be judged on the post-silicon results
 * When will the competition be judged? 
     * TBD
 * TT team members are excluded from winning prizes, but can still enter
-* Will there be any extension to the deadline? No, it’s 11th May
-* You can change the documentation used by the judges up to the point of judging the design. Any changes must be submitted to the chip datasheet by pull request to the GitHub repository.
-* You are not limited to a maximum clock frequency, but if the judges can’t get the design to work (because their ASIC is slower for example) then you run the risk of not qualifying. You are advised to use ~80MHz or less.
-* You are advised to stick with a standard VGA timing, if it doesn’t work on the judge’s display you run the risk of not qualifying.
+* There is no possibility to extend the deadline
+* You can change the documentation used by the judges up to the point of judging the design. Any changes must be submitted to the chip datasheet by pull request to the GitHub repository
+* You are not limited to a maximum clock frequency, but if the judges can’t get the design to work (because their ASIC is slower for example) then you run the risk of not qualifying. You are advised to use ~80MHz or less
+* You are advised to stick with a standard VGA timing, if it doesn’t work on the judge’s display you run the risk of not qualifying
