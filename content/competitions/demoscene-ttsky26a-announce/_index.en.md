@@ -39,7 +39,6 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 * Apart from the above - no other hardware must be used
 * Start up sequence using the commander app:
     * Enable the project, (optionally provide binary image for FLASH, optionally provide a value for ui_in[7:0] ), Reset, Enjoy
-* There may be an initial judging round with an FPGA - TBD
 * Final judging will be done against the silicon after chips have been received (expected November 2026)
 * Must be submitted to [TTSKY26a](https://app.tinytapeout.com/shuttles/ttsky26a) before the closing date of May 11th 2026
 
