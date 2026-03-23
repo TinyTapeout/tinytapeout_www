@@ -87,6 +87,24 @@ tiles + 4 pins - even if you are only using 4 pins for your project.
 
 Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/). We only sell spares, so there is no guarantee there will be any.
 
+## Can I get the chip by itself?
+
+Unfortunately no. We don't ship bare dies either. The best way to get access to a chip is to pre-order a devkit and
+desolder the chip from the breakout board, or to wait for an ASIC kit (see our
+[TT07](https://store.tinytapeout.com/products/TT07-ASIC-IC-kit-p759305511) one as an example) to appear in the shop. ASIC
+kits aren't guaranteed for every shuttle.
+
+Some shuttles (such as our GF180-based ones) don't come with a traditionally packaged chip - they instead have the die
+bonded to a PCB directly (called chip-on-board, or COB) and therefore cannot be removed.
+
+If you are designing a PCB and wish to use a Tiny Tapeout chip, then we recommend that you design your PCB to interface
+with our breakout board - it will provide you with 2 connectors where you get all of the signals of the chip. See our
+[breakout board schematics](https://github.com/tinytapeout/breakout-pcb) on GitHub.
+
+If your goal was to save money by ordering the chip by itself, then you would be saving very little - a significant
+portion of the costs stem from the chip itself, along with all the logistics and handling related to it. The cost of the
+PCB components is minimal compared to the ASIC itself.
+
 # Wokwi FAQs
 
 ## How do I do x, y, z with Wokwi?
