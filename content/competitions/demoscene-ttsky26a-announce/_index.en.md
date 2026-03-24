@@ -22,15 +22,16 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 
 ## Categories
 
-* Newcomer - TTSKY26a must be your first TT tapeout
-* 4 tiles
-* 2 tiles
 * 1 tile
+* 2 tiles
 * 2 tile + QSPI Pmod 4kByte max FLASH, unlimited RAM
+* 4 tiles
+* Newcomer
 
 ## What are the rules?
 
 * Free single tile (but no chip) to all entrants
+* To qualify for the Newcomer category, TTSKY26a must be your first Tiny Tapeout
 * Must target the [VGA Pmod](/specs/pinouts/#vga-output)
 * RP2350 on the devkit is only used for selecting the design, clock and reset
 * If the demo is interactive must use the [gamepad Pmod](/specs/pinouts/#game-controllers)
