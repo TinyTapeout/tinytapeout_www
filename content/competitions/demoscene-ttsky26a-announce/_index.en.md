@@ -41,6 +41,7 @@ For inspiration, check the [winners of our last demoscene competition](/competit
     * Enable the project, (optionally provide binary image for FLASH, optionally provide a value for ui_in[7:0] ), Reset, Enjoy
 * Final judging will be done against the silicon after chips have been received (expected November 2026)
 * Must be submitted to [TTSKY26a](https://app.tinytapeout.com/shuttles/ttsky26a) before the closing date of May 11th 2026
+* Must comply with our [terms](/terms)
 
 ## How to enter
 
@@ -53,16 +54,15 @@ For inspiration, check the [winners of our last demoscene competition](/competit
 ## How to get help
 
 * Discuss on the [competition channel](https://discord.com/channels/1009193568256135208/1259420274445516891) discord community channel. Join the [discord here](/discord)
-* [Quick start VGA graphics at the VGA playground](https://vga-playground.com)
+* [Quick start VGA graphics at the VGA playground](http://localhost:1313/guides/advanced-workshop/verilog-with-vga-playground/)
 * [Audio output demo](https://github.com/MichaelBell/tt08-pwm-example)
 * [Bitmap Fonts](https://github.com/ianhan/BitmapFonts)
 * [Previous competition entries](/competitions/demoscene-tt08-entries/)
 * Writeups by previous competition winners:
-    * https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html
-    * https://www.a1k0n.net/2025/12/19/tiny-tapeout-demo.html
-    * https://github.com/toivoh/tt08-demo/blob/main/docs/info.md
-    * https://github.com/sylefeb/tt08-fun/blob/main/docs/info.md
-    * https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html
+    * [Andy's donut](https://www.a1k0n.net/2025/01/10/tiny-tapeout-donut.html)
+    * [Andy's demo](https://www.a1k0n.net/2025/12/19/tiny-tapeout-demo.html)
+    * [Toivoh's demo](https://github.com/toivoh/tt08-demo/blob/main/docs/info.md)
+    * [Sylefeb's demo](https://github.com/sylefeb/tt08-fun/blob/main/docs/info.md)
 
 ## Prizes
 
