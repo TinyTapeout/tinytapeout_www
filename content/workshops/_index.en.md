@@ -27,7 +27,8 @@ weight: 10
 Tiny Tapeout offers workshops which allow people little to no experience to go through a real silicon design process,
 where at the end they will be able to submit their design for manufacturing on the next Tiny Tapeout chip.
 
-{{< figure src="images/tt-jku-workshop.jpg" title="Tiny Tapeout Workshop at Johannes Kepler University">}}
+{{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="1200x1200 q90 Lanczos"
+showExif=false previewType="none" embedPreview=true loadJQuery=true >}}
 
 ## Tiny Tapeout Workshops
 Tiny Tapeout workshops are exciting and immersive sessions which introduce participants to real silicon design. In a
@@ -76,3 +77,8 @@ now feel that I have at least a basic understanding of how they function!"
 "I came here with zero knowledge and was successful on the first run. Pretty neat."
 {{% /carousel-quote %}}
 </div>
+
+<br>
+
+{{< gallery match="images/charts/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="1200x1200 q90 Lanczos"
+showExif=false previewType="none" embedPreview=true loadJQuery=true >}}
