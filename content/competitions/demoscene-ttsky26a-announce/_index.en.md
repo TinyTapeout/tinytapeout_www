@@ -84,6 +84,7 @@ We have some fantastic judges lined up:
 
 * [Jeri Ellsworth](https://en.wikipedia.org/wiki/Jeri_Ellsworth)
 * [Will Green](https://projectf.io/) 
+* [Sprite_tm](https://spritesmods.com)
 * TBD
 
 ## Small print
