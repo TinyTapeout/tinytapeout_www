@@ -29,7 +29,7 @@ where at the end they will be able to submit their design for manufacturing on t
 
 {{< figure src="images/tt-jku-workshop.jpg" title="Tiny Tapeout Workshop at Johannes Kepler University">}}
 
-## Team-led workshops
+## Tiny Tapeout Workshops
 Tiny Tapeout workshops are exciting and immersive sessions which introduce participants to real silicon design. In a
 four-hour workshop, participants can go from drawing a transistor and building simple logic-gate circuits to creating
 & submitting their own own design to be manufactured for the next Tiny Tapeout chip.
