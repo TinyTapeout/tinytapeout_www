@@ -90,7 +90,7 @@ or have a read through the tech specs section from the menu.
 video on it!
 
 Inspired by the [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene), the
-[TT08 Demoscene](/competitions/demoscene) was a competition to see who could capture the spirit of the scene in various
+[TT08 Demoscene](/competitions/demoscene-tt08/announce) was a competition to see who could capture the spirit of the scene in various
 categories, such as "best sound track" and "best graphics" - all within a max of 2 tiles.
 
 {{< youtube K9mu3getxhU >}}

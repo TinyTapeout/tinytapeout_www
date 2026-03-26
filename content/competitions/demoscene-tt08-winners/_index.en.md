@@ -11,7 +11,7 @@ All of the winners of the TT08 demoscene competition - congratulations contestan
 
 {{< youtube il_qKTiyKLY >}}
 
-Read more about the competition on our [announcement page](../demoscene/), or check out all of the entries [here](../demoscene-tt08-entries/).
+Read more about the competition on our [announcement page](../demoscene-tt08-announce/), or check out all of the entries [here](../demoscene-tt08-entries/).
 
 ## Newcomer
 

@@ -42,7 +42,7 @@ Tiny Tapeout would not be possible without a lot of people helping. We would esp
 * Jeremy Birch for help with STA
 * All the people who took part in [Tiny Tapeout 1](/chips/tt01) and volunteered time to improve docs and test the flow
 * The team at [YosysHQ](https://www.yosyshq.com/) and all the other open source EDA tool makers
-* Jeff and the [Efabless Team](https://efabless.com/) for running the shuttles and providing OpenLane and sponsorship
+* Jeff and the Efabless Team for running the shuttles and providing OpenLane and sponsorship
 * [Tim Ansell and Google](https://www.youtube.com/watch?v=EczW2IWdnOM) for supporting the open source silicon movement
 * [Zero to ASIC course](https://zerotoasiccourse.com/) community for all your support
 * [Electronic Cats](https://electroniccats.com/) for their support in the translation into Spanish
