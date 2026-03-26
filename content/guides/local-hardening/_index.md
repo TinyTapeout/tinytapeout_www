@@ -199,6 +199,11 @@ make -B GATES=yes
 
 ## Viewing the design in OpenROAD GUI and KLayout
 
+{{% notice info %}}
+If the GUI fails to open and you see error messages about `could not connect to display :0`, you need to give docker
+access to your windowing system. This can be done by running `xhost +local:docker` in the terminal.
+{{% /notice %}}
+
 To view the hardened design in the OpenROAD GUI, you can use the following command:
 
 ```sh
