@@ -92,8 +92,7 @@ We have some fantastic judges lined up:
 * How will the competition be judged? 
     * A panel of appointed judges will vote and have the final say
 * The final results will be judged on the post-silicon results
-* When will the competition be judged? 
-    * TBD
+* The competition will be judged when all the judges have received silicon. This is expected to be late November.
 * TT team members are excluded from winning prizes, but can still enter
 * There is no possibility to extend the deadline
 * You can change the documentation used by the judges up to the point of judging the design. Any changes must be submitted to the chip datasheet by pull request to the GitHub repository
