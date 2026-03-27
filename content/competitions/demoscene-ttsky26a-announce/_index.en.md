@@ -8,6 +8,8 @@ weight: 1
 
 ## Demoscene competition!
 
+{{< youtube Dfe993QI1K0 >}}
+
 The [home computer demoscene](https://en.wikipedia.org/wiki/Demoscene) has resulted in some amazing feats of hacking and pushing hardware to its limits.
 
 The Tiny Tapeout demoscene competition sticks to the same audio/visual output format, but instead of using an existing computer, you create your own ASIC hardware!
@@ -19,6 +21,14 @@ The Tiny Tapeout demoscene competition sticks to the same audio/visual output fo
 > Taking part in the Tiny Tapeout demo competition was a great experience: figuring out how to make a demo in hardware, interacting with the community, discussing solutions afterwards...
 
 For inspiration, check the [winners of our last demoscene competition](/competitions/demoscene-tt08-winners/).
+
+## Free area on the chip!
+
+Thanks to Precision Innovations, every entrant will receive a free tile on the TTSKY26a chip.
+
+[Precision Innovations](https://precisioninno.com/) has developed and delivered industrial quality open-source EDA tools since 2019.
+
+![precisioninno logo](./precisioninno_logo.jpg?width=50pc)
 
 ## Categories
 
