@@ -236,6 +236,19 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ![actions](/images/faq/action_pages.png)
 
+## My 'viewer' job fails after enabling GitHub Pages and rerunning it on an existing GDS action
+
+This error occurs when you have done the following:
+1. Have the GDS built, but have not configured GitHub Pages in the repository settings
+2. Then configured GitHub Pages and attempted to rerun the 'viewer' job from the existing GDS action
+
+It will appear as the following error message:
+> Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow. Artifact count is 2.
+
+Solution: simply rerun the action by pushing another commit, or via the Actions tab in your repository (see the figure below).
+
+{{< figure src="/images/faq/rerun_actions.png" title="Rerunning the GDS action via the Actions tab">}}
+
 ## I got an error on my GitHub GDS action.
 
 The best way to let me know is to ask a question in our [community discord chat](https://tinytapeout.com/discord), in the #questions channel. Include a link to your repository and the error message.
