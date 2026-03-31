@@ -92,9 +92,9 @@ Thanks to Precision Innovations, every entrant will receive a free tile on the T
 
 We have some fantastic judges lined up:
 
-* [Jeri Ellsworth](https://en.wikipedia.org/wiki/Jeri_Ellsworth)
-* [Will Green](https://projectf.io/) 
-* [Sprite_tm](https://spritesmods.com)
+* [Jeri Ellsworth](https://en.wikipedia.org/wiki/Jeri_Ellsworth) - A self-taught chip designer and inventor, Jeri is legendary in the hardware community for squeezing entire systems onto single chips - including a complete Commodore 64 inside a joystick. She also pioneered DIY semiconductor fabrication, the first person to demonstrate building a transistor using household items.
+* [Will Green](https://projectf.io/) - Will runs [Project F](https://projectf.io/), an FPGA and hardware education site that covers graphics, maths, and RISC-V. Will's current focus is [Isle](https://projectf.io/isle/fpga-computer.html), an open FPGA computer that encourages tinkering, experimentation, and doing your own thing. His tutorials have helped countless people bridge the gap from software to FPGAs - making him a perfect judge for designs that push display hardware to its limits.
+* [Sprite_tm](https://spritesmods.com) - legendary hacker who brought us the [Vectrex multi cart](https://spritesmods.com/?art=veccart), ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k) and made the [Hackaday FPGA Gameboy badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/).
 * TBD
 
 ## Small print
