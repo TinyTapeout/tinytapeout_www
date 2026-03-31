@@ -57,7 +57,7 @@ Thanks to Precision Innovations, every entrant will receive a free tile on the T
 ## How to enter
 
 * Once your design is passing the GitHub actions, submit it to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com)
-* Send us a link to your submitted design with the [competition form](https://docs.google.com/forms/d/e/1FAIpQLSeZfyClhZ-y-XTt6421OPqAOx9Evsk8-TdV3BMcKPcRoRPRPg/viewform?usp=dialog) 
+* Send us a link to your submitted design with the [competition form](https://docs.google.com/forms/d/e/1FAIpQLSclWAyeERoMRMuM_gk6Lvss_4FhPV5PAaO_IKVxwYwEnABwYA/viewform?usp=dialog) 
 * We will send you a coupon for a free tile on TTSKY26a within 48 hours
 * Apply the coupon and submit a revision to the shuttle
 * You can continue working on your design up to the closing date
