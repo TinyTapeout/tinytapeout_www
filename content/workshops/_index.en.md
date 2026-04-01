@@ -56,7 +56,8 @@ showExif=false previewType="none" embedPreview=true loadJQuery=true >}}
 
 ## Testimonials
 
-<div class="carousel-teamled-testimonials">
+<div style="display: flex; align-items: center; justify-content: center;">
+<div class="carousel-teamled-testimonials" style="width: 80%">
 {{% carousel-quote "Jørgen Kragh Jakobsen - ASIC industry professional" %}}
 "Tiny Tapeout is the most valuable project we have in the semiconductor industry for workforce development and innovation…"
 {{% /carousel-quote %}}
@@ -89,6 +90,7 @@ now feel that I have at least a basic understanding of how they function!"
 {{% carousel-quote "Workshopper from Hackaday Supercon, LA" %}}
 "I came here with zero knowledge and was successful on the first run. Pretty neat."
 {{% /carousel-quote %}}
+</div>
 </div>
 
 <br>
