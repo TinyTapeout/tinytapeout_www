@@ -39,7 +39,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
-| TTGF26a  | Jul 2026            | Dec 2026                |
-| TTIHP26b | TBD                 | TBD                     |
+| TTGF26a  | Jun 2026            | Dec 2026                |
+| TTIHP26b | Sep 2026            | Apr 2027                |
 | TTSKY26b | Sep 2026            | Apr 2027                |
 | TTSKY26c | Dec 2026            | Jun 2027                |
