@@ -100,7 +100,7 @@ To discover more about our workshops, what to expect and examples of what partic
 
 To see examples of our previous workshops and feedback from attendees, click below:
 
-<a href="https://docs.google.com/presentation/d/18kGAhPhrhINdfrjQaG-yG8rToi2THdlW25U-gfA8N9g/edit?usp=drive_link" class="btn button" target="_blank">Workshop Reports</a>
+<a href="https://drive.google.com/file/d/1WumjDRhnwsdZQhO6O2CyNerEKtFCdc5O/view?usp=drive_link" class="btn button" target="_blank">Workshop Reports</a>
 
 ## Frequently Asked Questions
 
