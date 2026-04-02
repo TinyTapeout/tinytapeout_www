@@ -22,6 +22,26 @@ weight: 10
             ]
         });
     });
+
+    $(document).ready(function(){
+        $('.carousel-sponsors').slick({
+            slidesToShow: 5,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            dots: false,
+            arrows: false,
+            // adaptiveHeight: true,
+              responsive: [
+                {
+                  breakpoint: 800,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                    }
+                }
+            ]
+        });
+    });
 </script>
 
 {{< gallery match="images/*" sortOrder="asc" rowHeight="150" margins="5" thumbnailResizeOptions="1200x1200 q90 Lanczos"
@@ -101,6 +121,32 @@ To discover more about our workshops, what to expect and examples of what partic
 To see examples of our previous workshops and feedback from attendees, click below:
 
 <a href="https://drive.google.com/file/d/1WumjDRhnwsdZQhO6O2CyNerEKtFCdc5O/view?usp=drive_link" class="btn button" target="_blank">Workshop Reports</a>
+
+## Our Workshop Sponsors
+
+<div class="carousel-sponsors">
+<img src="sponsors/ieee.png"/>
+<img src="sponsors/ieee-sscs.png"/>
+<img src="sponsors/ieee-toronto.png">
+<img src="sponsors/synopsys.png"/>
+<img src="sponsors/cmc.jpg"/>
+<img src="sponsors/chip-foundry.png"/>
+<img src="sponsors/chip-ignite.png"/>
+<img src="sponsors/chimes.png">
+<img src="sponsors/chip-design-germany.jpg"/>
+<img src="sponsors/cmc-fabric-large.png"/>
+<img src="sponsors/dccc.png"/>
+<img src="sponsors/ensilica.svg"/>
+<img src="sponsors/edu4chip.png"/>
+<img src="sponsors/novomorphic.svg"/>
+<img src="sponsors/gf-micro.png"/>
+<img src="sponsors/syosil.png"/>
+<img src="sponsors/dtu.png"/>
+<img src="sponsors/swiss-chips.png"/>
+<img src="sponsors/uk-eletronics-skills-foundation.svg"/>
+<img src="sponsors/uni-of-toronto.png"/>
+<img src="sponsors/university-of-waterloo.png"/>
+</div>
 
 ## Frequently Asked Questions
 

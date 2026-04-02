@@ -20,3 +20,9 @@
 .slick-dots li button:before {
   color: #9c6fb6 !important;
 }
+
+.carousel-sponsors img {
+  height: 10vh !important;
+  object-fit: scale-down;
+  margin: 24px auto !important;
+}
