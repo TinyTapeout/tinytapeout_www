@@ -38,6 +38,13 @@ Thanks to Precision Innovations, every entrant will receive a free tile on the T
 * 4 tiles
 * Newcomer
 
+## Judges
+
+We have some fantastic judges lined up:
+
+* [Jeri Ellsworth](https://en.wikipedia.org/wiki/Jeri_Ellsworth) - A self-taught chip designer and inventor, Jeri is legendary in the hardware community for squeezing entire systems onto single chips - including a complete Commodore 64 inside a joystick. She also pioneered DIY semiconductor fabrication, the first person to demonstrate building a transistor using household items.
+* [Will Green](https://projectf.io/) - Will runs [Project F](https://projectf.io/), an FPGA and hardware education site that covers graphics, maths, and RISC-V. Will's current focus is [Isle](https://projectf.io/isle/fpga-computer.html), an open FPGA computer that encourages tinkering, experimentation, and doing your own thing. His tutorials have helped countless people bridge the gap from software to FPGAs - making him a perfect judge for designs that push display hardware to its limits.
+* [Sprite_tm](https://spritesmods.com) - Sprite is back! A legendary hacker with a gift for making hardware do things it was never meant to. Sprite_tm has ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k), built a [Vectrex multi cart](https://spritesmods.com/?art=veccart), and built the [Hackaday FPGA badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/) - all with the kind of deranged ingenuity that makes him a natural judge for our ASIC demoscene competition. 
 ## What are the rules?
 
 * Free single tile (but no chip) to all entrants
@@ -88,14 +95,6 @@ Thanks to Precision Innovations, every entrant will receive a free tile on the T
     * Free tiles for future tapeouts
     * Previous TT chip
 
-## Judges
-
-We have some fantastic judges lined up:
-
-* [Jeri Ellsworth](https://en.wikipedia.org/wiki/Jeri_Ellsworth) - A self-taught chip designer and inventor, Jeri is legendary in the hardware community for squeezing entire systems onto single chips - including a complete Commodore 64 inside a joystick. She also pioneered DIY semiconductor fabrication, the first person to demonstrate building a transistor using household items.
-* [Will Green](https://projectf.io/) - Will runs [Project F](https://projectf.io/), an FPGA and hardware education site that covers graphics, maths, and RISC-V. Will's current focus is [Isle](https://projectf.io/isle/fpga-computer.html), an open FPGA computer that encourages tinkering, experimentation, and doing your own thing. His tutorials have helped countless people bridge the gap from software to FPGAs - making him a perfect judge for designs that push display hardware to its limits.
-* [Sprite_tm](https://spritesmods.com) - legendary hacker who brought us the [Vectrex multi cart](https://spritesmods.com/?art=veccart), ported [Doom to a Rigol scope](https://github.com/Spritetm/prboom-mso5k) and made the [Hackaday FPGA Gameboy badge](https://hackaday.com/2020/02/19/machine-inside-of-a-chip-how-sprite_tm-built-the-fpga-game-boy-badge/).
-* TBD
 
 ## Small print
 
