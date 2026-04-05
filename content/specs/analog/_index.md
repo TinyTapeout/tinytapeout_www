@@ -62,7 +62,7 @@ Power pins need to be vertical stripes on met4 layer and must adhere to the foll
 
 ## Pricing (sky130A)
 
-Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is 140€ (each tile is 50€).
+Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is 140€ (each tile is 70€).
 
 In addition, there is a cost for each analog pin attributable to a given customer (rather than project) on a given shuttle. The price for analog pins is 40€ per pin for the first 2 pins you need on the Tiny Tapeout shuttle, and 100€ per pin for additional pins.
 
