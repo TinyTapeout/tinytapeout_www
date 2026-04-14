@@ -209,6 +209,28 @@ To fix this you can either:
 - Copy all the files from the correct template into your existing repo
     - These should replace anything in `.github/workflows`, `.devcontainer` and `test/Makefile`
 
+## How do I correctly attribute authorship for a project?
+By default our templates are licensed under the Apache-2.0 license. You should update any copyright headers with your
+information - for example, in `src/project.v` there is a copyright header:
+
+```verilog
+/*
+ * Copyright (c) 2024 Your Name
+ * SPDX-License-Identifier: Apache-2.0
+ */
+```
+
+You can familiarise yourself with the license at <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>.
+
+If you are forking an existing project, it's very important that you respect the author's original license. Some licenses
+are extremely permissive (e.g. MIT), others less so. With Apache-2.0, you are required to preserve any copyright and license
+notices from the forked project, but modifications can be re-licensed and distributed as you wish.
+
+You must not simply fork a project and update the attribution to your name - this would be in violation of the Apache-2.0 license,
+and may be subject to removal if not corrected.
+
+You are encouraged to research more about open-source licenses - visit <a href="https://choosealicense.com/" target="_blank">https://choosealicense.com/</a>.
+
 ## Is it TinyTapeout or Tiny Tapeout?
 
 It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
