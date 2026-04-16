@@ -63,6 +63,7 @@ We have some fantastic judges lined up:
 
 ## How to enter
 
+* Use this template to get started: https://github.com/TinyTapeout/ttsky-verilog-template
 * Once your design is passing the GitHub actions, submit it to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com)
 * Send us a link to your submitted design with the [competition form](https://docs.google.com/forms/d/e/1FAIpQLSclWAyeERoMRMuM_gk6Lvss_4FhPV5PAaO_IKVxwYwEnABwYA/viewform?usp=dialog) 
 * We will send you a coupon for a free tile on TTSKY26a within 48 hours
