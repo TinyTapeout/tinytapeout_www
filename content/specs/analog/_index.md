@@ -88,7 +88,11 @@ Make sure the version of Magic matches the PDK.
 
 ## Create the repository
 
-Start your design from the [tt10-analog-template repository](https://github.com/TinyTapeout/tt10-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
+Start your design from one of the following analog templates - make sure to select the appropriate template for the shuttle you're targeting:
+- [SKY](https://github.com/TinyTapeout/ttsky-analog-template)
+- [IHP](https://github.com/TinyTapeout/ttihp-analog-template)
+
+Click on the green "Use this template" button on the top of the page, and select "Create a new repository".
 
 ## Decide on the size of your design
 
