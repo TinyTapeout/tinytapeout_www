@@ -96,15 +96,37 @@ Click on the green "Use this template" button on the top of the page, and select
 
 ## Decide on the size of your design
 
-Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions. 
-Download one of the [analog pin templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt10/def/analog) as a starting point for your design.
+Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions.
 
-The following templates are currently available:
+Select your target shuttle below and download a template to use as a starting point for your design.
 
-- `tt_analog_1x2.def` - 1x2 tiles, digital power supply (1.8V)
-- `tt_analog_2x2.def` - 2x2 tiles, digital power supply (1.8V)
-- `tt_analog_1x2_3v3.def` - 1x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
-- `tt_analog_2x2_3v3.def` - 2x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
+{{< tabs groupId="custom-gds-templates">}}
+{{% tab name="SKY" %}}
+Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/sky130A/def/analog](https://github.com/TinyTapeout/tt-support-tools/tree/main/tech/sky130A/def/analog)
+
+The table below shows the available templates:
+
+| Filename | Description |
+| :- | :- |
+| `tt_analog_1x2.def` | 1x2 tile, digital power supply (1.8V) |
+| `tt_analog_2x2.def` | 2x2 tile, digital power supply (1.8V) |
+| `tt_analog_1x2_3v3.def` | 1x2 tile, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies |
+| `tt_analog_2x2_3v3.def` | 2x2 tile, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies |
+{{% /tab %}}
+
+{{% tab name="IHP" %}}
+Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/ihp-sg13g2/def/analog](https://github.com/TinyTapeout/tt-support-tools/tree/main/tech/ihp-sg13g2/def/analog)
+
+The table below shows the available templates:
+
+| Filename | Description |
+| :- | :- |
+| `tt_analog_1x2.def` | 1x2 tile, digital power supply (1.8V) |
+| `tt_analog_2x2.def` | 2x2 tile, digital power supply (1.8V) |
+{{% /tab %}}
+
+{{< /tabs >}}
+
 
 ## Edit the info.yaml file
 
