@@ -60,7 +60,7 @@ Power pins need to be vertical stripes on met4 layer and must adhere to the foll
 4. Multiple power pins of each type can be used with varying dimensions as long as the above constraints are met.
 5. The actual metal area can be larger or have a different shape, but the area defined as a pin must comply with these constraints.
 
-## Pricing (sky130A)
+## Pricing - sky130A
 
 Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is 140€ (each tile is 70€).
 
