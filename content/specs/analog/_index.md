@@ -175,6 +175,11 @@ The table below shows the available templates:
 
 {{< /tabs >}}
 
+{{% notice note %}}
+Larger tiles are not shown in these tables but may be available via the provided link. They follow the same
+pattern as the ones mentioned above (i.e. a `_3v3` suffix denotes that VAPWR is available).
+{{% /notice %}}
+
 
 ## Edit the info.yaml file
 
