@@ -106,12 +106,39 @@ Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/sky130A/def/an
 
 The table below shows the available templates:
 
-| Filename | Description |
-| :- | :- |
-| `tt_analog_1x2.def` | 1x2 tile, digital power supply (1.8V) |
-| `tt_analog_2x2.def` | 2x2 tile, digital power supply (1.8V) |
-| `tt_analog_1x2_3v3.def` | 1x2 tile, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies |
-| `tt_analog_2x2_3v3.def` | 2x2 tile, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies |
+<table><thead>
+  <tr>
+    <th rowspan="2">Tile size</th>
+    <th rowspan="2">Filename</th>
+    <th colspan="2" style="text-align: center;">Available power supplies</th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">1.8V (VDPWR)</th>
+    <th style="text-align: center;">3.3V (VAPWR)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <!-- Order is: tile size (only for first row after the size changes), filename, has 1.8V, has 3.3V -->
+    <td rowspan="2">1x2<br></td>
+    <td><code>tt_analog_1x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td><code>tt_analog_1x2_3v3.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">✅</td>
+  </tr>
+  <tr>
+    <td rowspan="2">2x2</td>
+    <td><code>tt_analog_2x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td><code>tt_analog_2x2_3v3.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">✅</td>
+  </tr>
+</tbody>
+</table>
+
 {{% /tab %}}
 
 {{% tab name="IHP" %}}
@@ -119,10 +146,31 @@ Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/ihp-sg13g2/def
 
 The table below shows the available templates:
 
-| Filename | Description |
-| :- | :- |
-| `tt_analog_1x2.def` | 1x2 tile, digital power supply (1.8V) |
-| `tt_analog_2x2.def` | 2x2 tile, digital power supply (1.8V) |
+<table><thead>
+  <tr>
+    <th rowspan="2">Tile size</th>
+    <th rowspan="2">Filename</th>
+    <th colspan="2" style="text-align: center;">Available power supplies</th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">1.8V (VDPWR)</th>
+    <th style="text-align: center;">3.3V (VAPWR)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <!-- Order is: tile size (only for first row after the size changes), filename, has 1.8V, has 3.3V -->
+    <td rowspan="1">1x2<br></td>
+    <td><code>tt_analog_1x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td rowspan="1">2x2</td>
+    <td><code>tt_analog_2x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+</tbody>
+</table>
+
 {{% /tab %}}
 
 {{< /tabs >}}
