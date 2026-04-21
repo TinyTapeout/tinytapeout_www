@@ -60,7 +60,7 @@ Power pins need to be vertical stripes on met4 layer and must adhere to the foll
 4. Multiple power pins of each type can be used with varying dimensions as long as the above constraints are met.
 5. The actual metal area can be larger or have a different shape, but the area defined as a pin must comply with these constraints.
 
-## Pricing (sky130A)
+## Pricing - sky130A
 
 Projects with analog pins must be two tiles high. This means that the minimum price for the area of the project is 140€ (each tile is 70€).
 
@@ -88,19 +88,103 @@ Make sure the version of Magic matches the PDK.
 
 ## Create the repository
 
-Start your design from the [tt10-analog-template repository](https://github.com/TinyTapeout/tt10-analog-template). Click on the green "Use this template" on top of the page, and select "Create a new repository".
+Start your design from one of the following analog templates - make sure to select the appropriate template for the shuttle you're targeting:
+- [SKY](https://github.com/TinyTapeout/ttsky-analog-template)
+- [IHP](https://github.com/TinyTapeout/ttihp-analog-template)
+
+Click on the green "Use this template" button on the top of the page, and select "Create a new repository".
 
 ## Decide on the size of your design
 
-Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions. 
-Download one of the [analog pin templates](https://github.com/TinyTapeout/tt-support-tools/tree/tt10/def/analog) as a starting point for your design.
+Tiny Tapeout provides templates for custom GDS submissions. These templates include all the required pins on the metal 4 layer. Do not change the pin sizes or positions.
 
-The following templates are currently available:
+Select your target shuttle below and download a template to use as a starting point for your design.
 
-- `tt_analog_1x2.def` - 1x2 tiles, digital power supply (1.8V)
-- `tt_analog_2x2.def` - 2x2 tiles, digital power supply (1.8V)
-- `tt_analog_1x2_3v3.def` - 1x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
-- `tt_analog_2x2_3v3.def` - 2x2 tiles, both 1.8V (VDPWR) and 3.3V (VAPWR) power supplies
+{{< tabs groupId="custom-gds-templates">}}
+{{% tab name="SKY" %}}
+Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/sky130A/def/analog](https://github.com/TinyTapeout/tt-support-tools/tree/main/tech/sky130A/def/analog)
+
+The table below shows the available templates:
+
+<table><thead>
+  <tr>
+    <th rowspan="2">Tile size</th>
+    <th rowspan="2">Filename</th>
+    <th colspan="2" style="text-align: center;">Available power supplies</th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">1.8V (VDPWR)</th>
+    <th style="text-align: center;">3.3V (VAPWR)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <!-- Order is: tile size (only for first row after the size changes), filename, has 1.8V, has 3.3V -->
+    <td rowspan="2">1x2<br></td>
+    <td><code>tt_analog_1x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td><code>tt_analog_1x2_3v3.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">✅</td>
+  </tr>
+  <tr>
+    <td rowspan="2">2x2</td>
+    <td><code>tt_analog_2x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td><code>tt_analog_2x2_3v3.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">✅</td>
+  </tr>
+</tbody>
+</table>
+
+{{% /tab %}}
+
+{{% tab name="IHP" %}}
+Download: [github.com/TinyTapeout/tt-support-tools/tree/main/tech/ihp-sg13g2/def/analog](https://github.com/TinyTapeout/tt-support-tools/tree/main/tech/ihp-sg13g2/def/analog)
+
+The table below shows the available templates:
+
+<table><thead>
+  <tr>
+    <th rowspan="2">Tile size</th>
+    <th rowspan="2">Filename</th>
+    <th colspan="2" style="text-align: center;">Available power supplies</th>
+  </tr>
+  <tr>
+    <th style="text-align: center;">1.8V (VDPWR)</th>
+    <th style="text-align: center;">3.3V (VAPWR)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <!-- Order is: tile size (only for first row after the size changes), filename, has 1.8V, has 3.3V -->
+    <td rowspan="1">1x2<br></td>
+    <td><code>tt_analog_1x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+  <tr>
+    <td rowspan="1">2x2</td>
+    <td><code>tt_analog_2x2.def</code></td>
+    <td style="text-align: center;">✅</td><td style="text-align: center;">❌</td>
+  </tr>
+</tbody>
+</table>
+
+{{% /tab %}}
+
+{{< /tabs >}}
+
+{{% notice note %}}
+Larger tiles are not shown in these tables but may be available via the provided link. They follow the same
+pattern as the ones mentioned above (i.e. a `_3v3` suffix denotes that VAPWR is available).
+{{% /notice %}}
+
+{{% notice warning %}}
+An analog project can either be 1x2 or 2x2 tiles large. If you require additional space, you will be
+charged as if you had submitted multiple 1x2/2x2 projects separately. Read our [FAQ item](/faq/#what-is-an-analog-slot)
+for more info.
+{{% /notice %}}
 
 ## Edit the info.yaml file
 
