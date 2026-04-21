@@ -180,6 +180,11 @@ Larger tiles are not shown in these tables but may be available via the provided
 pattern as the ones mentioned above (i.e. a `_3v3` suffix denotes that VAPWR is available).
 {{% /notice %}}
 
+{{% notice warning %}}
+An analog project can either be 1x2 or 2x2 tiles large. If you require additional space, you will be
+charged as if you had submitted multiple 1x2/2x2 projects separately. Read our [FAQ item](/faq/#what-is-an-analog-slot)
+for more info.
+{{% /notice %}}
 
 ## Edit the info.yaml file
 
