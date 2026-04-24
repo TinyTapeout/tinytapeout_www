@@ -35,6 +35,8 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 - [SKY Wokwi submission template](https://github.com/TinyTapeout/ttsky-wokwi-template)
 - [SKY Verilog submission template](https://github.com/TinyTapeout/ttsky-verilog-template)
 - [SKY Analog submission template](https://github.com/TinyTapeout/ttsky-analog-template)
+- [GF Wokwi submission template](https://github.com/TinyTapeout/ttgf-wokwi-template)
+- [GF Verilog submission template](https://github.com/TinyTapeout/ttgf-verilog-template)
 
 # Submit your design
 
