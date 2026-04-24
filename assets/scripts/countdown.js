@@ -92,7 +92,14 @@
       secondsElement.textContent = pad(seconds);
       timerContainerElement.setAttribute(
         'title',
-        deadline.toLocaleString(undefined, { timeZoneName: 'short' }),
+        deadline.toLocaleString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZoneName: 'short',
+        }),
       );
     }
 
