@@ -63,6 +63,8 @@ We have some fantastic judges lined up:
 
 ## How to enter
 
+Before getting started please ask in the #competitions [discord channel](https://tinytapeout.com/discord) if there is enough space for you before getting started. This is because the TTSKY26a shuttle sold out and we have a limited reserve of tiles for the competition.
+
 * Use this template to get started: https://github.com/TinyTapeout/ttsky-verilog-template
 * Once your design is passing the GitHub actions, submit it to the shuttle at [app.tinytapeout.com](https://app.tinytapeout.com)
 * Send us a link to your submitted design with the [competition form](https://docs.google.com/forms/d/e/1FAIpQLSclWAyeERoMRMuM_gk6Lvss_4FhPV5PAaO_IKVxwYwEnABwYA/viewform?usp=dialog) 
