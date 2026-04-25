@@ -11,6 +11,7 @@ reverseMenu: true
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
 | [TTGF26a](https://app.tinytapeout.com/shuttles/ttgf26a) | 2026-04-17 | 2026-06-22 | WS-2606  | Open      | 2026-10-01     | 2026-11-15     |
+| [TTSKY26b](https://app.tinytapeout.com/shuttles/ttsky26b) | 2026-04-25 | 2026-05-11 | CI-2605  | Open    | 2026-10-28     | 2026-12-16       |
 | [TTSKY26a](https://app.tinytapeout.com/shuttles/ttsky26a) | 2025-02-27 | 2026-05-11 | CI-2605  | Open    | 2026-10-28     | 2026-12-16       |
 | [TTIHP0p4](/chips/ttihp0p4)                        | 2026-03-27 | 2026-03-28 | IHP-2603 | 40      | -              | None - test shuttle     |
 | [TTIHP26a](/chips/ttihp26a)                        | 2025-11-25 | 2026-03-23 | IHP-2603 | 283     | 2026-07-31     | 2026-09-16       |
@@ -41,7 +42,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
-| TTSKY26b | Sep 2026            | Apr 2027                |
+| TTSKY26c | Sep 2026            | Apr 2027                |
 | TTIHP26b | Sep 2026            | Apr 2027                |
 | TTGF26b  | 2026 Q4             | Early 2027              |
-| TTSKY26c | Dec 2026            | Jun 2027                |
+| TTSKY26d | Dec 2026            | Jun 2027                |
