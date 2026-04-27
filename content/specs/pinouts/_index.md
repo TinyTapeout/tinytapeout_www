@@ -21,7 +21,7 @@ uo_out[4] - TX
 
 or:
 
-ui_in[7]  - RX\
+ui_in[1]  - RX\
 uo_out[0] - TX
 
 ## VGA Output
@@ -97,13 +97,6 @@ uio[4] - CS\
 uio[5] - MOSI\
 uio[6] - MISO\
 uio[7] - SCK
-
-Alternatively, you can use the middle PMOD on the side of the board, in order to save the bidi IOs for another purpose.  The pinout for that is:
-
-uo_out[4] - CS\
-uo_out[3] - MOSI\
-ui_in[2]  - MISO\
-uo_out[5] - SCK
 
 If your design only receives data or only sends data via SPI, you can choose to omit MOSI or MISO and use the output only or input only Pmod.
 SPI - dual I/O and quad I/O
