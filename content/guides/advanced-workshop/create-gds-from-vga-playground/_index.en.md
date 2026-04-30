@@ -32,7 +32,7 @@ results.
 
 ### Download your project
 
-Download your VGA Playground project by clicking the download icon next to the presets.
+Download your VGA Playground project by clicking the download icon next to the title.
 {{< figure src="images/vgap-download-button.png" title="Download your VGA Playground project via the download button">}}
 
 You'll now have a zip file containing a collection of source files.
