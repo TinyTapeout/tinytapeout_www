@@ -247,3 +247,6 @@ Explore the design - you can rotate, zoom and hide certain layers or cells. Can 
 - Check out our video on [how the GitHub action works behind the scenes](/making_asics).
 - Revisit `test.py` and implement actual testing - the code is there, but you'll need to provide some reference screenshots
 so that it can compare the output with what you expect!
+- Generate a video of your design via GitHub actions - you can check out these tools and try to integrate one into your project:
+    - PNG/MP4 output with [VGA Simulator](https://github.com/urish/tt-2048-game/tree/main/vga-sim)
+    - GIF output with [Verilator VGA Simulator](https://github.com/jar/vga_sim)

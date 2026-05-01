@@ -3,6 +3,9 @@ title: TT08 Demoscene (closed)
 tags: [competition]
 description: "Build a sound and graphics demo in less than 161 x 225 microns of 130nm ASIC"
 weight: 10
+aliases:
+    - /demoscene
+
 ---
 
 {{%notice note%}}
@@ -26,7 +29,7 @@ All entrants who also purchase the [demoboard](/specs/pcb) will get a free [VGA]
 
 * 2 tiles or less.
 * VGA pinout following [Leo's VGA PMOD pinout](https://github.com/mole99/tiny-vga)
-    * your VGA timing should follow something from [http://www.tinyvga.com/vga-timing](http://www.tinyvga.com/vga-timing) or [https://tomverbeure.github.io/video_timings_calculator](https://tomverbeure.github.io/video_timings_calculator) 
+    * your VGA timing should follow something [https://tomverbeure.github.io/video_timings_calculator](https://tomverbeure.github.io/video_timings_calculator)
     * The following projects have all been tested and work with one judge’s panel:
         * [Flappy VGA](https://tinytapeout.com/chips/tt05/134)
         * [VGA experiments](https://tinytapeout.com/chips/tt05/334)

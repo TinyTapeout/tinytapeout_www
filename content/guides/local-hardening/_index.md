@@ -9,15 +9,13 @@ This document explains how to harden your Tiny Tapeout projects locally, to spee
 
 It uses the [factory-test](https://github.com/TinyTapeout/ttsky25b-factory-test) project as an example.
 
-### 1. Environment Setup
+## 1. Environment Setup
 
-You need Python 3.11 or newer installed on your system. You can test which python version you have by running:
+You need Python 3.11 or newer installed on your system. You can test which python version you have by running `python3 --version`.
 
-```sh
-python3 --version
-```
-
-Note: On some systems, the python binary is called `python` and not `python3`.
+{{% notice note %}}
+On some systems the python binary is called `python` and not `python3`.
+{{% /notice %}}
 
 If you have an older python version, you can [install uv](https://docs.astral.sh/uv/getting-started/installation/) as an alternative.
 
@@ -29,7 +27,7 @@ We assume your project was cloned to `~/factory-test`. If you don't have a proje
 git clone https://github.com/TinyTapeout/ttsky25b-factory-test ~/factory-test
 ```
 
-### 2. Clone tt-support-tools
+## 2. Clone tt-support-tools
 
 Clone the [tt-support-tools](https://github.com/TinyTapeout/tt-support-tools) repo (`main` branch) inside the `tt` directory of your project:
 
@@ -38,23 +36,28 @@ cd ~/factory-test
 git clone https://github.com/TinyTapeout/tt-support-tools tt
 ```
 
-### 3. Python and Pip Dependencies
+## 3. Python and Pip Dependencies
 
-Create a dedicated directory for the virtual Python environment and initialize it:
+Create a dedicated directory for the virtual Python environment and initialize it. You can use Python's own `venv`
+package or [uv](https://docs.astral.sh/uv/).
 
+{{< tabs groupId="python-venv-setup" >}}
+{{% tab name="venv" %}}
 ```sh
 mkdir ~/ttsetup
 python3 -m venv ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
+{{% /tab %}}
 
-Or, if you are using [uv](https://docs.astral.sh/uv/):
-
+{{% tab name="uv" %}}
 ```sh
 mkdir ~/ttsetup
 uv venv --python 3.12 ~/ttsetup/venv
 source ~/ttsetup/venv/bin/activate
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 Then install the dependencies:
 
@@ -62,47 +65,60 @@ Then install the dependencies:
 pip install -r ~/factory-test/tt/requirements.txt
 ```
 
-### 4. Set up environment variables
+## 4. Set up environment variables
 
-Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively, the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use:
+Set up `PDK_ROOT` to the path of the directory that will contain the PDK. `PDK` and `LIBRELANE_TAG` specify, respecively,
+the version of the PDK and the version of [LibreLane](https://librelane.readthedocs.io/en/latest/) you will use. Select
+the relevant PDK below.
 
+{{< tabs groupId="pdk-env-vars" >}}
+{{% tab name="SKY130" %}}
+This is for the SkyWater 130nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export LIBRELANE_TAG=2.4.2
+export LIBRELANE_TAG=3.0.0rc1
 ```
+{{% /tab %}}
 
-Note: the values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml) yaml for the latest values (look at the "default" value for the input called "librelane-version")
-
-#### GF180MCU (GlobalFoundries 180nm) Specific Instructions
-
-For GF180MCU projects, you need to set the following environment variables, overriding the ones above:
-
+{{% tab name="GF180MCU" %}}
+This is for the GlobalFoundries 180nm PDK.
 ```sh
+export PDK_ROOT=~/ttsetup/pdk
 export PDK=gf180mcuD
+export LIBRELANE_TAG=3.0.0rc1
 ```
+{{% /tab %}}
 
-#### IHP Specific Instructions
-
-For IHP projects, you need to set the following environment variables, overriding the ones above:
-
+{{% tab name="IHP" %}}
+These are for IHP projects using IHP PDKs.
 ```sh
+export PDK_ROOT=~/ttsetup/pdk
 export PDK=ihp-sg13g2
-export LIBRELANE_TAG=3.0.0.dev44
+export LIBRELANE_TAG=3.0.0rc1
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
-### 5. Install LibreLane
+{{% notice note %}}
+The values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml)
+yaml for the latest values (look at the "default" value for the input called "librelane-version").
+{{% /notice %}}
+
+## 5. Install LibreLane
 
 ```sh
 pip install librelane==$LIBRELANE_TAG
 ```
 
-### 6. Harden your project
+## 6. Harden your project
 
 Congratulations, you are ready to harden your project!
 
-Note: for IHP projects, you would need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for
-GF180MCU projects, you would need to add the `--gf` flag.
+{{% notice note %}}
+For IHP projects, you need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for GF180MCU projects,
+you need to add the `--gf` flag.
+{{% /notice %}}
 
 First, generate the LibreLane configuration file:
 
@@ -124,7 +140,7 @@ It's also recommended to run the following command, checking for any synthesis /
 ./tt/tt_tool.py --print-warnings
 ```
 
-### Rehardening
+# Rehardening
 
 Once you set your environment, you can reharden at any time. Before running `tt_tool.py`, make sure to set the environment variables (as explained in step 1 above), and reactivate the Python virtual environment by running the following command:
 
@@ -144,7 +160,7 @@ To reharden, run:
 ./tt/tt_tool.py --harden
 ```
 
-### Running the RTL tests
+## Running the RTL tests
 
 ```sh
 cd test
@@ -152,8 +168,15 @@ pip install -r requirements.txt
 make -B
 ```
 
-### Running the gate level tests
+## Running the gate level tests
 
+{{% notice tip %}}
+Make sure you select the relevant tab below for the PDK you're using - IHP models don't have power pins and therefore
+use the unpowered netlist (`nl`) instead of the powered one (`pnl`).
+{{% /notice %}}
+
+{{< tabs groupId="gl-tests" >}}
+{{% tab name="SKY/GF" %}}
 ```sh
 cd test
 pip install -r requirements.txt
@@ -161,8 +184,25 @@ TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
 cp ../runs/wokwi/final/pnl/$TOP_MODULE.pnl.v gate_level_netlist.v
 make -B GATES=yes
 ```
+{{% /tab %}}
 
-### Viewing the design in OpenROAD GUI and KLayout
+{{% tab name="IHP" %}}
+```sh
+cd test
+pip install -r requirements.txt
+TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
+cp ../runs/wokwi/final/nl/$TOP_MODULE.nl.v gate_level_netlist.v
+make -B GATES=yes
+```
+{{% /tab %}}
+{{< /tabs>}}
+
+## Viewing the design in OpenROAD GUI and KLayout
+
+{{% notice info %}}
+If the GUI fails to open and you see error messages about `could not connect to display :0`, you need to give docker
+access to your windowing system. This can be done by running `xhost +local:docker` in the terminal.
+{{% /notice %}}
 
 To view the hardened design in the OpenROAD GUI, you can use the following command:
 
@@ -176,7 +216,7 @@ For KLayout, you can use:
 ./tt/tt_tool.py --open-in-klayout
 ```
 
-### Exporting the hardened design to a PNG file
+## Exporting the hardened design to a PNG file
 
 Make sure you have the `librsvg2-bin` and `pngquant` packages installed:
 

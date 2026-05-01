@@ -10,7 +10,7 @@ description: 120 designs, closed 2024-06-01
 
 * [Github repository](https://github.com/TinyTapeout/tinytapeout-07)
 * [PDF datasheet](https://tinytapeout.github.io/tinytapeout-07/datasheet.pdf)
-* [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-07)
+* [Efabless MPW submission](https://web.archive.org/web/20241212064253/https://repositories.efabless.com/urish/tinytapeout-07)
 * [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-07/shuttle_index.json)
 
 ## Imaging
@@ -23,7 +23,7 @@ Thanks to [Texplained](https://www.texplained.com/) for imaging our chips!
 
 * Launched: 22 April 2024
 * Submission closed: 1 June 2024
-* Submitted to Efabless [2406C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
+* Submitted to Efabless 2406C chipIgnite shuttle using Skywater 130nm open source PDK
 * Chips received November 2024, PCBs will ship January 2025
 
 ## Chip map

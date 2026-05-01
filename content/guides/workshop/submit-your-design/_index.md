@@ -76,7 +76,7 @@ If you make any changes to your design after submission, you **must** update you
 
 ### How to Update
 
-1. If you only changed the Wokwi design, you can [re-run the GitHub action](/guides/wokwi-to-gds/#tips).
+1. If you only changed the Wokwi design, you can [re-run the GitHub action](/guides/workshop/create-your-gds/#tips).
 1. Otherwise, make changes to your design in your GitHub repository.
 1. Check the GDS and Docs actions are passing.
 1. Log back in to the submission portal: i.e. go to [app.tinytapeout.com](https://app.tinytapeout.com).

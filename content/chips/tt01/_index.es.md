@@ -2,6 +2,7 @@
 title: "Tiny Tapeout 1"
 weight: 10
 description: 152 diseños, cerrado el 1 de Septiembre 2022
+hidden: true
 ---
 
 {{% toc %}}
@@ -12,13 +13,13 @@ description: 152 diseños, cerrado el 1 de Septiembre 2022
 * [Hoja de datos en PDF](/tt01.pdf)
 * [Cómo funciona la cadena de escaneo, pinout y detalles técnicos](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/INFO.md)
 * [Verificación](https://github.com/tinytapeout/tinytapeout-mpw7/blob/mpw7/verification.md)
-* [Envío de MPW de Efabless esta aquí](https://platform.efabless.com/projects/1229)
+* [Envío de MPW de Efabless esta aquí](https://web.archive.org/web/20241111203507/https://platform.efabless.com/projects/1229)
 
 # Estadísticas de lanzamiento
 
 * Lanzamiento: 2022-08-17
 * Presentación cerrada: 2022-09-01
-* Enviado a Efabless el 2022-09-05 para el [shuttle MPW7](https://efabless.com/shuttle-status) utilizando el PDK de código abierto Skywater de 130 nm.
+* Enviado a Efabless el 2022-09-05 para el shuttle MPW7 utilizando el PDK de código abierto Skywater de 130 nm.
 
 # Estadísticas de proyecto
 

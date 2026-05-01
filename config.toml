@@ -1,7 +1,7 @@
 baseURL = 'https://tinytapeout.com'
 languageCode = 'en-us'
 title = 'Tiny Tapeout'
-theme = "learn"
+theme = ["learn", "hugo-shortcode-gallery"]
 
 
 [security]

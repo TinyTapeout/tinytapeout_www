@@ -2,6 +2,7 @@
 title: "Tiny Tapeout 4"
 weight: 40
 description: 143 designs, closed 8th September 2023
+hidden: true
 ---
 
 {{% toc %}}
@@ -10,14 +11,14 @@ description: 143 designs, closed 8th September 2023
 
 * [Github repository](https://github.com/TinyTapeout/tinytapeout-04)
 * [PDF datasheet](https://tinytapeout.github.io/tinytapeout-04/datasheet.pdf)
-* [Efabless MPW submission](https://repositories.efabless.com/urish/tinytapeout-04)
+* [Efabless MPW submission](https://web.archive.org/web/20241212082241/https://repositories.efabless.com/urish/tinytapeout-04)
 * [Shuttle index](https://tinytapeout.github.io/tinytapeout-04/shuttle_index.json)
 
 ## Launch stats
 
 * Launched: 1 July 2023
 * Submission closed: 8 September 2023
-* Submitted to Efabless [2309C chipIgnite](https://efabless.com/shuttle-status) shuttle using Skywater 130nm open source PDK
+* Submitted to Efabless 2309C chipIgnite shuttle using Skywater 130nm open source PDK
 * Chips expected Febuary 2024, PCBs expected March 2024
 
 ## Project statistics

@@ -1,0 +1,28 @@
+.slick-slide {
+  margin: 20px;
+}
+
+.slick-slide blockquote {
+  border-left: 0px;
+  padding-left: 0px;
+}
+.slick-slide > blockquote p {
+  color: rgb(96, 96, 96);
+  font-style: italic;
+  font-size: 1em !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #9c6fb6 !important;
+}
+
+.slick-dots li button:before {
+  color: #9c6fb6 !important;
+}
+
+.carousel-sponsors img {
+  height: 10vh !important;
+  object-fit: scale-down;
+  margin: 24px auto !important;
+}

@@ -70,9 +70,40 @@ plans to provide a DIY devkit, however the files are available on GitHub ([githu
 
 When you purchase 1 devkit, you will receive 1 demo board and 1 breakout board.
 
+## What is an 'analog slot'?
+An analog slot is 1x2 tiles large, and there are a limited number of available slots per shuttle. Availability of analog
+slots can be seen via the shuttle status page.
+
+{{% figure src="images/analog-slots-example-ttsky26a.jpg" title="Availability of analog slots on TTSky26a" %}}
+
+An analog _project_ can take up a maximum of two analog slots - therefore valid sizes for analog projects are either 1x2
+or 2x2. Tiles may be slightly smaller if using the 3V3 power gate.
+
+If you require a larger size, you will be charged as if you had submitted multiple 1x2/2x2 projects separately. For
+example, if you wanted 3x2 tiles and 4 pins for a single project, you'll be charged for 2x2 tiles + 4 pins, then 1x2
+tiles + 4 pins - even if you are only using 4 pins for your project.
+
 ## Can I buy older chips?
 
 Leftover chips and PCBs get put into our [shop](https://store.tinytapeout.com/). We only sell spares, so there is no guarantee there will be any.
+
+## Can I get the chip by itself?
+
+Unfortunately no. We don't ship bare dies either. The best way to get access to a chip is to pre-order a devkit and
+desolder the chip from the breakout board, or to wait for an ASIC kit (see our
+[TT07](https://store.tinytapeout.com/products/TT07-ASIC-IC-kit-p759305511) one as an example) to appear in the shop. ASIC
+kits aren't guaranteed for every shuttle.
+
+Some shuttles (such as our GF180-based ones) don't come with a traditionally packaged chip - they instead have the die
+bonded to a PCB directly (called chip-on-board, or COB) and therefore cannot be removed.
+
+If you are designing a PCB and wish to use a Tiny Tapeout chip, then we recommend that you design your PCB to interface
+with our breakout board - it will provide you with 2 connectors where you get all of the signals of the chip. See our
+[breakout board schematics](https://github.com/tinytapeout/breakout-pcb) on GitHub.
+
+If your goal was to save money by ordering the chip by itself, then you would be saving very little - a significant
+portion of the costs stem from the chip itself, along with all the logistics and handling related to it. The cost of the
+PCB components is minimal compared to the ASIC itself.
 
 # Wokwi FAQs
 
@@ -144,6 +175,13 @@ Yes, you need to
 
 If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
+## My Wokwi design fails with an "unmapped dff cell" error - what do I do?
+
+You may be using an unsupported flip flop configuration in a project which is targeting the IHP PDK. Depending on your
+circuit, the quickest fix may be to replace all instances of `wokwi-flip-flop-dsr` with `wokwi-flip-flop-dr` within the
+`diagram.json` file. This does mean that you lose the `set` functionality of the flip-flop, so it may not always be suitable.
+
+
 # Tiny Tapeout FAQs
 
 ## Where can I find the the template to get started?
@@ -155,6 +193,43 @@ You can access it on the [Getting Started Page](/digital_design/wokwi).
 If you update your project and want us to use your latest version, you have to [go to your submission](https://app.tinytapeout.com/) and create a new submission.
 
 You can keep updating your design up to the tapeout deadline.
+
+## Submission fails asking to reharden the project for the correct PDK - how do I do this?
+
+Example error message:
+> This project was hardened for sky130A, but you are trying to submit it to a shuttle using ihp-sg13g2. Please reharden 
+the project for the correct PDK and try again.
+
+This error message appears when you have hardened your design for one process, but are attempting to submit onto a shuttle
+which uses a different process. In the example above, the project was hardened with the SkyWater PDK, but is being
+submitted on an IHP shuttle - the manufacturing process is different and therefore the submission fails.
+
+To fix this you can either:
+- Migrate your source files onto the correct project template
+- Copy all the files from the correct template into your existing repo
+    - These should replace anything in `.github/workflows`, `.devcontainer` and `test/Makefile`
+
+## How do I correctly attribute authorship for a project?
+By default our templates are licensed under the Apache-2.0 license. You should update any copyright headers with your
+information - for example, in `src/project.v` there is a copyright header:
+
+```verilog
+/*
+ * Copyright (c) 2024 Your Name
+ * SPDX-License-Identifier: Apache-2.0
+ */
+```
+
+You can familiarise yourself with the license at <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>.
+
+If you are forking an existing project, it's very important that you respect the author's original license. Some licenses
+are extremely permissive (e.g. MIT), others less so. With Apache-2.0, you are required to preserve any copyright and license
+notices from the forked project, but modifications can be re-licensed and distributed as you wish.
+
+You must not simply fork a project and update the attribution to your name - this would be in violation of the Apache-2.0 license,
+and may be subject to removal if not corrected.
+
+You are encouraged to research more about open-source licenses - visit <a href="https://choosealicense.com/" target="_blank">https://choosealicense.com/</a>.
 
 ## Is it TinyTapeout or Tiny Tapeout?
 
@@ -183,6 +258,19 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ![actions](/images/faq/action_pages.png)
 
+## My 'viewer' job fails after enabling GitHub Pages and rerunning it on an existing GDS action
+
+This error occurs when you have done the following:
+1. Have the GDS built, but have not configured GitHub Pages in the repository settings
+2. Then configured GitHub Pages and attempted to rerun the 'viewer' job from the existing GDS action
+
+It will appear as the following error message:
+> Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow. Artifact count is 2.
+
+Solution: simply rerun the action by pushing another commit, or via the Actions tab in your repository (see the figure below).
+
+{{< figure src="/images/faq/rerun_actions.png" title="Rerunning the GDS action via the Actions tab">}}
+
 ## I got an error on my GitHub GDS action.
 
 The best way to let me know is to ask a question in our [community discord chat](https://tinytapeout.com/discord), in the #questions channel. Include a link to your repository and the error message.
@@ -198,7 +286,7 @@ You might not have filled in enough fields, we require the following fields to b
     how_to_test
     language
 
-## I updated and saved my wokwi design, how do I re-run the Github action to update the GDS files?
+## I updated and saved my Wokwi design, how do I re-run the Github action to update the GDS files?
 
 1. Go to your repository, click the actions tab
 2. Then click the ‘gds’ workflow
@@ -335,3 +423,13 @@ With the above two clock trees are generated, STA analysis will be run on both c
 
 Please note that the above works for OpenLane tag `2023.11.23`. More recent versions that include the `check_clock_ports.py` script will *not* work. This is due to the way the
 `check_clock_ports.py` works: it is not able to detect sliced ports (as in `ui_in[0]`).
+
+## Can I use a different HDL instead of Verilog?
+
+There is some support for VHDL, but the open-source tools are mainly geared towards Verilog so some features may not
+work as expected. You can get started with VHDL via our Verilog template and simply specify your VHDL source files in
+`info.yaml`. The build action will convert your VHDL source files into Verilog individually via GHDL. This comes with
+downsides however - you won't be able to use any custom types or records, and you will have to treat each module
+instanciation as a black box.
+
+There is a Chisel template available (thanks to Martin Schoeberl!): [github.com/TinyTapeout/ttihp-chisel-template](https://github.com/TinyTapeout/ttihp-chisel-template)

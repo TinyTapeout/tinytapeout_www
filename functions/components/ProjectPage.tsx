@@ -6,6 +6,7 @@ import React from 'react';
 import { IProjectFeedbackList, summarizeFeedback } from '../model/feedback.js';
 import { markdownHeadingLimiter, markdownImagePathTransformer } from '../model/project.js';
 import { getShuttlePdk, scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
+import { isTinyVGACompatible } from '../utils/tinyVGA.js';
 import { AnalogPinout } from './AnalogPinout.js';
 import { PinoutTable } from './PinoutTable.js';
 import { ProjectFeedbackList } from './ProjectFeedbackList.js';
@@ -50,6 +51,9 @@ export function ProjectPage({
   });
   const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?${threeDViewerParams.toString()}`;
 
+  const vgaPlaygroundParams = new URLSearchParams({ repo: project.repo, ref: project.commit });
+  const vgaPlaygroundUrl = `https://vga-playground.com/?${vgaPlaygroundParams.toString()}`;
+
   return (
     <div>
       <h2>
@@ -77,6 +81,13 @@ export function ProjectPage({
             Open in 3D viewer
           </a>
         </li>
+        {isTinyVGACompatible(project.pinout) && (
+          <li>
+            <a href={vgaPlaygroundUrl} target="_blank" rel="noopener">
+              Open in VGA Playground
+            </a>
+          </li>
+        )}
         {project.macro.startsWith('tt_um_wokwi_') && (
           <li>
             <a
