@@ -76,6 +76,12 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
           `<meta property="og:image:width" content="1200" />`,
           `<meta property="og:image:height" content="630" />`,
           '<meta name="twitter:card" content="summary_large_image"/>',
+
+          // if this stylesheet is missing, then the equation text is duplicated on page
+          // see https://katex.org/docs/browser
+          `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css" 
+          integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">`,
+          `<link href="/css/katex.css" rel="stylesheet">`,
         ].join('\n'),
       )
       .replaceAll('__ttreplace_shuttle_id__', shuttle)
