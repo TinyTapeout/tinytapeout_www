@@ -12,10 +12,6 @@ According to the W25Q128JV specs, we must set the QE bit of the status Register-
 
 <img src="./img/PMOD.jpeg" width=500 />
 
-- Set all the Dev board's DIP switches down and leave only the number zero active
-
-<img src="./img/DIPs.jpeg" width=500 />
-
 - Go go the [TinyTapeout commander](https://commander.tinytapeout.com/), plug in your board and select _CONNECT TO BOARD_ you must see a modal allowing you to select your detected board
 
 <img src="./img/connect_board.png" width=500 />
