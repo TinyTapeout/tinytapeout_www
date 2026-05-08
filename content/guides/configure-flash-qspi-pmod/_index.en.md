@@ -1,3 +1,7 @@
+---
+title: Configuring and flashing the QSPI Pmod
+description: Learn how to configure third-party QSPI Pmods and how to flash data onto them
+---
 # Flashing the QSPI PMOD using a TT Dev board
 
 You can use any [TinyTapeout development boards](https://store.tinytapeout.com/products/Development-Kits-c198115270) from build 4 on to write a BIN file in the Flash memory of the [QSPI PMOD](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)
