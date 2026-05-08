@@ -5,7 +5,7 @@ weight: 200
 
 # IHP 130nm work funded by
 
-<a href="https://swisschips.ethz.ch/" target="_blank">>
+<a href="https://swisschips.ethz.ch/" target="_blank">
   <img src="/images/logos/swisschips.png" alt="Swisschips" />
 </a>
 
