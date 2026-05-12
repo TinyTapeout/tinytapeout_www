@@ -1,5 +1,5 @@
 ---
-title: '4 - Submit a design revision'
+title: '4 - Optional - Submit a design revision'
 description: 'Update an already submitted design on a shuttle'
 weight: 60
 aliases:
