@@ -31,7 +31,7 @@ In Tiny Tapeout:
 If you've made any changes to your design between the previous exercise and now, you **must** update your design
 submission on your website to ensure that the latest version is included. Follow the steps below.
 
-1. If you only changed the Wokwi design, you can [re-run the GitHub action](/guides/workshop/create-your-gds/#tips).
+1. If you only changed the Wokwi design, save it and then [re-run the GitHub action](/guides/workshop/create-your-gds/#tips).
 1. Otherwise, make changes to your project in your GitHub repository.
 1. Check the GDS (and docs actions, if applicable) are passing.
 1. Log back in to the submission portal: i.e. go to [app.tinytapeout.com](https://app.tinytapeout.com).
