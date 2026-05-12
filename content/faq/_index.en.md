@@ -248,6 +248,32 @@ You need to enable the actions.
 
 Also see the next FAQ on the GDS action failing on 'pages'.
 
+## The GDS action is taking much longer than usual
+
+A typical Tiny Tapeout GDS action often completes in about 5 minutes for a small design. As your project grows, the GDS flow may take significantly longer due to increased placement and routing complexity.
+
+If the GDS action starts taking 20-25 minutes or more, especially if it later fails during placement or routing, your design may be running out of available tile area.
+
+The default Tiny Tapeout project size is 1x1. Larger designs may require additional tiles.
+
+To increase the project size, edit the tiles field in your project's info.yaml file. For example:
+
+```yaml
+  tiles: "1x2"
+```
+
+or larger, depending on your design requirements.
+
+After updating info.yaml, commit the change and re-run the GDS action.
+
+Common symptoms include:
+
+- placement failures
+- routing congestion
+- high utilization warnings
+- "Detailed placement failed" error message
+- unusually long GDS runtimes
+
 ## My GitHub action is failing on the 'pages' part.
 
 Due to Github limitations, you need to do make a change to the settings of your repository to get everything to work.
