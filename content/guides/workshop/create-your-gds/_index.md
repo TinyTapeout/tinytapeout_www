@@ -57,7 +57,7 @@ understand what your project does. Parts of this form will be used to generate t
 To make submitting easier, the portal creates the relevant GitHub repository (containing your Wokwi project) on your
 behalf.
 
-- Grant us permission via the portal to create the repository by clicking on the "Authorize Github" button.
+- Grant us permission via the portal to create the repository by clicking on the "Authorize GitHub" button.
 
 {{% figure src="images/submission_portal_step3.png" title="Repository creation authorization request" %}}
 
