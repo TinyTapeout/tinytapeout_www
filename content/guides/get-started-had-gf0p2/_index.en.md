@@ -1,12 +1,11 @@
 ---
-title: Getting started with the Tiny Tapeout Hackaday 2026 GF0p2 chip breakout
-linkTitle: Hackaday 2026 GF0p2 chip breakout quickstart
+title: Getting started with the Tiny Tapeout Hackaday GF0p2 chip breakout
+linkTitle: Hackaday GF0p2 chip breakout quickstart
 description: Bring-up and interact with the GF0p2 chip
 weight: 60
 ---
 
-If you've got your hands on a GF0p2 chip breakout card that was distributed during the Hackaday 2026 conference, this
-quickstart guide will get you going and cover the following:
+If you've got your hands on a GF0p2 chip breakout card, this quickstart guide will get you going and cover the following:
 
 - overview and bringup
 - interaction via microcontroller
