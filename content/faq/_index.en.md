@@ -60,9 +60,12 @@ You only get 1 chip. If you want more chips you have to order more of the devkit
 
 ## What is a 'tile'?
 
-A tile is a unit of area on the chip. For TT04 to TT10, a tile is about 160x100 um. You can buy as many tiles as you need for your design. See [what is the price](https://tinytapeout.com/faq/#what-is-the-price). 
+A tile is a unit of area on the chip. For TT04 to TT10, a tile is about 160x100 um. You can buy as many tiles as you need for your design. See [What is the price?](https://tinytapeout.com/faq/#what-is-the-price). 
+
+A chip is made up of a grid of tiles from all participants on a specific tapeout. See [Tiny Tapeout Chips](https://www.tinytapeout.com/chips/).
 
 ## What is a 'devkit'?
+
 A devkit (short for development kit) (also stylised as DevKit or dev-kit) is a set of components that provide an interface
 to the shuttle's ASIC. The devkit consists of two PCBs (printed circuit boards) - a 'demo board' and a 'breakout board'.
 
@@ -81,6 +84,7 @@ When you purchase 1 devkit, you will receive 1 demo board and 1 breakout (aka "c
 No, not at this time. DevKits are sold only as a pre-assembled set of both the demo board and the breakout board. We don't sell the breakout board separately, and we don't sell the chip separately either. See [Can I get the chip by itself?](https://tinytapeout.com/faq/#can-i-get-the-chip-by-itself)
 
 ## What is an 'analog slot'?
+
 An analog slot is 1x2 tiles large, and there are a limited number of available slots per shuttle. Availability of analog
 slots can be seen via the shuttle status page.
 
