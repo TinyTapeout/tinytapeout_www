@@ -16,6 +16,17 @@ Please note that you will need a microcontroller (Arduino/Pico/ESP32) to interac
 to interact with the mux onboard in order to select one of 52 designs onboard.
 {{% /notice %}}
 
+{{% notice note %}}
+We only had an ~80% yield of boards with all pads successfully bonded, so there is a possibility that your board may
+not be fully functional. If you are running into any issues, this is a possible cause.
+{{% /notice %}}
+
+{{% notice warning %}}
+There are two chip variants bonded to the breakout - `TTP2` and `TTPG`. For `TTPG`, VIO and Vcore must be present
+at the same time or before Vcore, and Vcore must not exceed 3.3V. To determine which variant you have, you will
+have to read the onboard ROM.
+{{% /notice %}}
+
 ## Overview
 
 The breakout card has one of our TTGF0p2 dies wirebonded onto it - the chip contains 52 unique designs, and was
