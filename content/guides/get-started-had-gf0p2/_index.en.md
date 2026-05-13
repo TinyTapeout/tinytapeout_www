@@ -40,7 +40,9 @@ games and PLA/FPGA fabrics.
 Projects have access to 8 input pins, 8 output pins and 8 bi-directional pins to interface with the outside world. The
 pins which the project uses should be documented in their individual datasheets. Though lacking from this breakout card,
 projects may also use PMOD expansion cards (which would typically be connected via some headers) in order to access
-additional memory ([PSRAM]()), draw to a screen via [VGA](), or connect a [gamepad controller](). 
+additional memory ([PSRAM](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)),
+draw to a screen via [VGA](https://store.tinytapeout.com/products/Tiny-VGA-Pmod-p678647356),
+or connect a [gamepad controller](https://store.tinytapeout.com/products/Gamepad-Pmod-p741891425).
 
 PMODs are available from our [store](https://store.tinytapeout.com), or you can manufacture your own if you follow the
 [Digilent PMOD specification](https://digilent.com/reference/pmod/start). Be sure to check out our [pinout specs](/specs/pinouts) page too!
