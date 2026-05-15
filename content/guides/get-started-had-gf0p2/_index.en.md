@@ -23,9 +23,14 @@ not be fully functional. If you are running into any issues, this is a possible 
 {{% /notice %}}
 
 {{% notice warning %}}
-There are two chip variants bonded to the breakout - `TTP2` and `TTPG`. For `TTPG`, VIO and Vcore must be present
-at the same time or before Vcore, and Vcore must not exceed 3.3V. To determine which variant you have, you will
-have to read the onboard ROM.
+There are two chip variants bonded to the breakout - `TTP2` and `TTPG`. `TTP2` only has a single power rail, and all
+power pins should be tied together to a supply outputting 3.3V to 5V. `TTPG` uses separate rails for VIO and Vcore -
+VIO in this case can be 3.3V or 5V, but Vcore **must** be 3.3V. If using different supplies for `TTPG`, then they must
+be ramped up/down together.
+\
+\
+Determining which variant you have will require you to bring up the chip at 3.3V first and read the onboard chip ROM - 
+this is covered later in this guide.
 {{% /notice %}}
 
 ## Overview
@@ -38,7 +43,7 @@ or by simply scrolling through the table of projects on the [chips' homepage](/c
 There is a varied selection of projects on this chip: RISC-V and custom ISA processors, visual VGA creations, playable
 games and PLA/FPGA fabrics.
 
-Projects have access to 8 input pins, 8 output pins and 8 bi-directional pins to interface with the outside world. The
+Projects have access to 10 input pins, 8 output pins and 8 bi-directional pins to interface with the outside world. The
 pins which the project uses should be documented in their individual datasheets. Though lacking from this breakout card,
 projects may also use PMOD expansion cards (which would typically be connected via some headers) in order to access
 additional memory ([PSRAM](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)),
@@ -58,13 +63,13 @@ The Tiny Tapeout multiplexer distributes a single set of user IOs to multiple us
 on which multiple designs can co-exist on the same chip, enabling a low-cost MPW shuttle.
 
 It provides the following:
-- 10 dedicated inputs (shown as `ui`)
+- 10 dedicated inputs (shown as `ui`, alongside the dedicated `clk` and `rst_n` pins)
 - 8 dedicated outputs (shown as `uo`)
 - 8 bidirectional outputs (shown as `uio`)
 
 {{% notice tip %}}
 In Verilog, a single bit of a wider bus is indexed similarly to an element of an array in a programming language. This is
-to say that signal `ui[3]` is the 3rd bit of the `ui` bus.
+to say that signal `ui[3]` is the 4th bit of the `ui` bus.
 {{% /notice %}}
 
 It is formed of 3 distinct units:
@@ -76,9 +81,9 @@ We are mostly interested in the controller. It contains 3 input lines.
 
 | Input | Description |
 | :- | :- |
-| `ena` | Sent as-is (buffered) to the downstream mux units |
-| `sel_rst_n` | Resets the internal address counter to 0 (active low) |
-| `sel_inc` | Increments the internal address counter by 1 |
+| `ctrl_ena` | Sent as-is (buffered) to the downstream mux units |
+| `ctrl_sel_rst_n` | Resets the internal address counter to 0 (active low) |
+| `ctrl_sel_inc` | Increments the internal address counter by 1 on the rising edge |
 
 To select a design at address 12, you need to pulse `sel_rst_n` low, and then pulse `sel_inc 12 times`.
 
