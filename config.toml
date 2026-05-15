@@ -21,7 +21,6 @@ theme = ["learn", "hugo-shortcode-gallery"]
   defaultContentLanguage = 'en'
   disableLightbox = true
   workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSc05tWv58GeW78dwXrmK4WwWj9krPQV0OZjR15KA5-WnwoUxg/viewform?usp=header"
-  
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
