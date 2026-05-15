@@ -7,10 +7,10 @@ weight: 60
 
 If you've got your hands on a GF0p2 chip breakout card, this quickstart guide will get you going and cover the following:
 
-TODO: good image
-
 - overview and bringup
 - interaction via microcontroller
+
+{{< figure src="images/spread.jpg" title="A couple of Hackaday 2026 breakout PCBs laid out on a table">}}
 
 {{% notice note %}}
 Please note that you will need a microcontroller (Arduino/Pico/ESP32) to interact with the chip itself, as you'll need
