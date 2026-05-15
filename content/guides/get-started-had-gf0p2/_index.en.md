@@ -85,7 +85,7 @@ We are mostly interested in the controller. It contains 3 input lines.
 | `ctrl_sel_rst_n` | Resets the internal address counter to 0 (active low) |
 | `ctrl_sel_inc` | Increments the internal address counter by 1 on the rising edge |
 
-To select a design at address 12, you need to pulse `sel_rst_n` low, and then pulse `sel_inc 12 times`.
+To select a design at address 12, you need to pulse `ctrl_sel_rst_n` low, and then pulse `ctrl_sel_inc` 12 times.
 
 {{% figure src="images/mux_select_addr_12.svg" title="Mux signals for activating the design at address 12" %}}
 
