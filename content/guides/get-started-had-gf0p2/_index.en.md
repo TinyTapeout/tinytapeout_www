@@ -104,7 +104,7 @@ This chip does not support any analog projects.
 
 ## Bring-up
 
-We will bring-up the chip and verify that is it working by reading the [on-board chip ROM](/chips/ttgf0p2/tt_um_chip_rom).
+We will bring-up the chip and verify that it is working by reading the [on-board chip ROM](/chips/ttgf0p2/tt_um_chip_rom).
 
 The chip ROM contains metadata about this chip: shuttle name, git commit hash, chip descriptor, a magic value
 and a CRC32 of the ROM contents.
