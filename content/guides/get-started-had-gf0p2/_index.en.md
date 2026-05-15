@@ -114,7 +114,6 @@ and a CRC32 of the ROM contents.
 Before we power on the chip, we should prepare the firmware for our microcontroller so that we can correctly initialise
 and control the chip. We are aiming to read the chip ROM, this means that we must:
 - Select design address 0
-- Present a ROM address via `ui`
 - Read the ROM data via `uo`
 - Toggle the clock via the `clk` pin
 
@@ -124,10 +123,16 @@ adapt it to your usecase. The function `ctrl_select_design` under `ctrl.c` is of
 
 <!-- {{< wokwi 370255004186090497 >}} -->
 
-Example firmware may look like:
+Pseudocode for selecting the ROM and reading data:
 
-```c
-// TODO
+```
+char[] data;
+gpio_put(CTRL_SEL_RST_N, LOW);
+gpio_put(CTRL_RST_N, LOW);
+
+for (int i = 0; i < 256; i++) {
+    data.append(gpio_read(ui));
+}
 ```
 
 ### Wiring
