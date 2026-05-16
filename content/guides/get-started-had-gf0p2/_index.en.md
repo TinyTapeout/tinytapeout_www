@@ -161,10 +161,18 @@ at the project's pinout table - some may use less pins than provided by the chip
 Once flashed and powered on, you should see some information being printed to the terminal.
 
 #### TTP2 variants
-TODO: ROM info
+```
+shuttle=ttgf0p2
+repo=TinyTapeout/tinytapeout-gf-0p2
+commit=7416232b
+```
 
 #### TTPG variants
-TODO: ROM info
+```
+shuttle=ttgf0p2
+repo=TinyTapeout/tinytapeout-gf-0p2
+commit=ff701baa
+```
 
 ### Selecting Projects
 
