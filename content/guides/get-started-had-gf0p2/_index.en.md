@@ -136,7 +136,7 @@ and a CRC32 of the ROM contents.
 Before we power on the chip, we should prepare the firmware for our microcontroller so that we can correctly initialise
 and control the chip. We are aiming to read the chip ROM, this means that we must:
 - Select design address 0
-- Exit the reset state by setting `u_rst_n` low
+- Set `u_rst_n` high
 - Read the ROM data via `uo`
 - Toggle the clock via the `clk` pin
 - Repeat the above two steps until all the data has been read
