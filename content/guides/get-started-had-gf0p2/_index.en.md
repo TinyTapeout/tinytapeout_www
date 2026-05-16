@@ -136,8 +136,10 @@ and a CRC32 of the ROM contents.
 Before we power on the chip, we should prepare the firmware for our microcontroller so that we can correctly initialise
 and control the chip. We are aiming to read the chip ROM, this means that we must:
 - Select design address 0
+- Exit the reset state by setting `u_rst_n` low
 - Read the ROM data via `uo`
 - Toggle the clock via the `clk` pin
+- Repeat the above two steps until all the data has been read
 
 It may help to familiarise yourself with an example project. Below is a Raspberry Pi Pico project which outputs the
 correct control signals to select a project at address 42. Feel free to modify and experiment with the design, and
@@ -149,8 +151,14 @@ Pseudocode for selecting the ROM and reading data:
 
 ```
 char[] data;
+gpio_put(CTRL_SEL_RST_N, HIGH);
+gpio_put(CTRL_SEL_INC, LOW);
 gpio_put(CTRL_SEL_RST_N, LOW);
-gpio_put(CTRL_RST_N, LOW);
+gpio_put(CTRL_SEL_RST_N, HIGH);
+gpio_put(CTRL_ENA, LOW);
+
+gpio_put(U_RST_N, LOW);
+gpio_put(CTRL_ENA, HIGH);
 
 for (int i = 0; i < 256; i++) {
     data.append(gpio_read(uo));
