@@ -19,7 +19,8 @@ to interact with the mux onboard in order to select one of 52 designs onboard.
 
 {{% notice note %}}
 We only had an ~80% yield of boards with all pads successfully bonded, so there is a possibility that your board may
-not be fully functional. If you are running into any issues, this is a possible cause.
+not be fully functional. If you are running into any issues, this is a possible cause. We will explain how to test
+whether your board is functional later in the guide.
 {{% /notice %}}
 
 {{% notice warning %}}
@@ -29,8 +30,8 @@ VIO in this case can be 3.3V or 5V, but Vcore **must** be 3.3V. If using differe
 be ramped up/down together.
 \
 \
-Determining which variant you have will require you to bring up the chip at 3.3V first and read the onboard chip ROM - 
-this is covered later in this guide.
+Determining which variant you have will require you to bring up the chip at 3.3V first and read the onboard chip ROM or
+checking if VDD Core and VDD IO are shorted - if so, then you have a TTP2 variant.
 {{% /notice %}}
 
 ## Overview
@@ -101,6 +102,27 @@ VDD IO and VDD Core must not exceed 3.3V. These can be shorted together on the `
 ## Analog I/O
 
 This chip does not support any analog projects.
+
+## Is the chip alive?
+
+You will require a multimeter for this section. Turn it to the diode checker mode, place the positive probe on a ground
+pad and observe the following:
+
+- ~0.687V on any I/O pad
+- ~0.413 on a power rail
+- 0V on a ground pin
+
+{{% figure src="images/probe_test_io.jpg" title="Testing the `u_rst_n` pin" %}}
+
+{{% figure src="images/probe_test_power.jpg" title="Testing VDD IO"%}}
+
+{{% figure src="images/probe_test_ground.jpg" title="Testing GND IO" %}}
+
+{{% notice warning %}}
+You will have to check every pin to ensure full functionality. As mentioned before, there was an 80% success rate with
+the bonding, so some pins may not be connected fully.
+{{% /notice %}}
+
 
 ## Bring-up
 
