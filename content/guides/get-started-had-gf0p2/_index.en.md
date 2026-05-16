@@ -153,7 +153,8 @@ gpio_put(CTRL_SEL_RST_N, LOW);
 gpio_put(CTRL_RST_N, LOW);
 
 for (int i = 0; i < 256; i++) {
-    data.append(gpio_read(ui));
+    data.append(gpio_read(uo));
+    gpio_toggle(U_CLK);
 }
 ```
 
