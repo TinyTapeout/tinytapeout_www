@@ -55,7 +55,7 @@ PMODs are available from our [store](https://store.tinytapeout.com), or you can 
 
 ### Pinout Diagram
 
-{{% figure src="images/pinout.svg" %}}
+{{% figure src="images/pinout.png" %}}
 
 ## Multiplexer Crash Course
 
