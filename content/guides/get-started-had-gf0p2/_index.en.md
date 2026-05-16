@@ -93,7 +93,7 @@ To select a design at address 12, you need to pulse `ctrl_sel_rst_n` low, and th
 Explore this process with this interactive simulator below. Press the play button and then click on the `INC` and `RST_N`
 buttons. Notice how the counter goes up if you keep pressing `INC`? This is the basic idea behind selecting a project.
 
-<!-- {{< wokwi 364347807664031745 >}} -->
+{{< wokwi 364347807664031745 >}}
 
 ## Power
 
@@ -108,8 +108,8 @@ This chip does not support any analog projects.
 You will require a multimeter for this section. Turn it to the diode checker mode, place the positive probe on a ground
 pad and observe the following:
 
-- ~0.687V on any I/O pad
-- ~0.413 on a power rail
+- ~0.6V on any I/O pad
+- ~0.4V on a power rail
 - 0V on a ground pin
 
 {{% figure src="images/probe_test_io.jpg" title="Testing the `u_rst_n` pin" %}}
@@ -143,7 +143,7 @@ It may help to familiarise yourself with an example project. Below is a Raspberr
 correct control signals to select a project at address 42. Feel free to modify and experiment with the design, and
 adapt it to your usecase. The function `ctrl_select_design` under `ctrl.c` is of particular interest.
 
-<!-- {{< wokwi 370255004186090497 >}} -->
+{{< wokwi 370255004186090497 >}}
 
 Pseudocode for selecting the ROM and reading data:
 
