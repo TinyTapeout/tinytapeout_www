@@ -10,11 +10,11 @@ reverseMenu: true
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
-| [TTGF26a](https://app.tinytapeout.com/shuttles/ttgf26a) | 2026-04-17 | 2026-06-22 | WS-2606  | Open      | 2026-10-01     | 2026-11-15     |
-| [TTSKY26b](https://app.tinytapeout.com/shuttles/ttsky26b) | 2026-04-25 | 2026-05-18 | CI-2605  | Open    | 2026-10-28     | 2026-12-16       |
-| [TTSKY26a](/chips/ttsky26a)                        | 2025-02-27 | 2026-05-11 | CI-2605  | 289     | 2026-10-28     | 2026-12-16       |
-| [TTIHP0p4](/chips/ttihp0p4)                        | 2026-03-27 | 2026-03-28 | IHP-2603 | 40      | -              | None - test shuttle     |
-| [TTIHP26a](/chips/ttihp26a)                        | 2025-11-25 | 2026-03-23 | IHP-2603 | 283     | 2026-07-31     | 2026-09-16       |
+| [TTGF26a](https://app.tinytapeout.com/shuttles/ttgf26a) | 2026-04-17 | 2026-06-22 | WS-2606  | Open      | 2026-10-01     | 2026-11-15      |
+| [TTSKY26b](/chips/ttsky26b)                        | 2026-04-25 | 2026-05-18 | CI-2605  | 275     | 2026-10-28     | 2026-12-16             |
+| [TTSKY26a](/chips/ttsky26a)                        | 2025-02-27 | 2026-05-11 | CI-2605  | 289     | 2026-10-28     | 2026-12-16             |
+| [TTIHP0p4](/chips/ttihp0p4)                        | 2026-03-27 | 2026-03-28 | IHP-2603 | 40      | -              | None - test shuttle    |
+| [TTIHP26a](/chips/ttihp26a)                        | 2025-11-25 | 2026-03-23 | IHP-2603 | 283     | 2026-07-31     | 2026-09-16              |
 | [TTGF0p2](/chips/ttgf0p2)                          | 2025-11-06 | 2025-11-24 | WS-2512  | 52      | 2026-05-21     | None - test shuttle     |
 | [TTSKY25b](/chips/ttsky25b)                        | 2025-09-18 | 2025-11-10 | CI-2511  | 316     | 2026-07-14     | 2026-08-30              |
 | [TTSKY25a](/chips/ttsky25a)                        | 2025-06-27 | 2025-09-15 | CI-2509  | 237     | 2026-05-07     | 2026-06-21              |
