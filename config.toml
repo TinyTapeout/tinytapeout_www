@@ -20,7 +20,7 @@ theme = ["learn", "hugo-shortcode-gallery"]
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
-  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSc05tWv58GeW78dwXrmK4WwWj9krPQV0OZjR15KA5-WnwoUxg/viewform?usp=header"
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSeVc9YmYN5TYKsDpFGyPtZE6N3sstT2PcbTdee-bK8FMjQwEQ/viewform?usp=header"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
