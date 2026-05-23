@@ -197,6 +197,16 @@ make -B GATES=yes
 {{% /tab %}}
 {{< /tabs>}}
 
+{{% notice info %}}
+If the `make -B GATES=yes` command fails with something like `make[1]: *** No rule to make target '[...]/ttsetup/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v', needed by 'sim_build/gl/sim.vvp'. Stop.`
+then you just need to run a couple of commands in order to enable the PDK.
+<br>
+<br>
+First, run `ciel ls`. It should output a list of installed PDKs and their git hash - copy this hash, or the latest if
+you have multiple installed. Finally, run `ciel enable <hash>` - for example, `ciel enable 8afc8346a57fe1ab7934ba5a6056ea8b43078e71`.
+You should be able to run the gate level tests now.
+{{% /notice %}}
+
 ## Viewing the design in OpenROAD GUI and KLayout
 
 {{% notice info %}}
