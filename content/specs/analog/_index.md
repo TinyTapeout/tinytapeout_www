@@ -18,6 +18,10 @@ You must use the pins in order, starting from 0.
 
 Even though there are 8 pins in the templates, you can only use the first 6.
 
+If you end up with pins which are not being driven and are floating, please either connect them to GND or use
+[`conb`](https://skywater-pdk.readthedocs.io/en/main/contents/libraries/sky130_fd_sc_hd/cells/conb/README.html) cells -
+see our guide on [laying out standard cells with Magic](/guides/laying-standard-cells-with-magic).
+
 ## Specifications and limitations - sky130A
 
 The path between the analog pads and your project (the ua pins) is expected to have the following properties:
