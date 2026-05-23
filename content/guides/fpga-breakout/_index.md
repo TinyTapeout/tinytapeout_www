@@ -186,6 +186,13 @@ Info: Program finished normally.
 
 You generated a valid bitstream, using the process above, but now it's just sitting on your computer.  This is how to get it running on the FPGA.
 
+{{% notice tip %}}
+If you are using Linux, you may need to add yourself to a group to use serial - typically either `dialout` or `uucp`.
+Check which group the device file representing the devkit is using by running `ls -l /dev/ttyACMX` (where `X` is a number,
+automatically assigned by your OS - usually `0` if it is the only serial device plugged in).
+Run `sudo adduser $USER <group>` in the terminal - you may need to restart your PC for the changes to apply.
+{{% /notice %}}
+
 The SDK will actually treat any *.bin file in /bitstreams on the demoboard filesystem as an available project.  Meaning that when you are on the uPython REPL, you can do
 
 ```
