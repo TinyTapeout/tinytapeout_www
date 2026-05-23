@@ -59,6 +59,11 @@ source ~/ttsetup/venv/bin/activate
 {{% /tab %}}
 {{< /tabs >}}
 
+{{% notice note %}}
+**MacOS users:** You may need to install additional dependencies before you can run the next command. Run the following:
+`brew install libpng qhull cairo`
+{{% /notice %}}
+
 Then install the dependencies:
 
 ```sh
