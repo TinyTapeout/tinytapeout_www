@@ -77,7 +77,7 @@ This is for the SkyWater 130nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 
@@ -86,7 +86,7 @@ This is for the GlobalFoundries 180nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=gf180mcuD
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 
@@ -95,7 +95,7 @@ These are for IHP projects using IHP PDKs.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=ihp-sg13g2
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 {{< /tabs >}}
