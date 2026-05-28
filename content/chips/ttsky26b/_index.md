@@ -92,7 +92,7 @@ description: 275 designs, closed 2026-05-18
 | 201 | [UART Smart I/O Hub](tt_um_snk_smart_io_hub) | NAVEEN KUMAAR S |
 | 202 | [127-stage Coarse-Tapped ADPLL](tt_um_catalinlazar_adpll_125m_sky130) | Catalin Lazar |
 | 203 | [VGA Screensaver with embedded bitmap ROM](tt_um_rom_vga_screensaver) | Uri Shaked |
-| 204 | [IEEE | 24-Bit Serial Fixed-Point Binary Divider](tt_um_digit_serial_divider) | Miguel Angel Tobón Morales |
+| 204 | [IEEE 24-Bit Serial Fixed-Point Binary Divider](tt_um_digit_serial_divider) | Miguel Angel Tobón Morales |
 | 205 | [IEE EML Gate](tt_um_eml_gate) | Taouinar Abdelbasset & Sidahmed Hamdad |
 | 206 | [Swarm Microrobot Drug Delivery FSM](tt_um_main_fsm_anbui_uci) | An Bui |
 | 207 | [2x2 Systolic Array TPU](tt_um_pfw_tpu) | PFW Tiny Tapeout Team |
