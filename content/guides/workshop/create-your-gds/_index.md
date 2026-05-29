@@ -21,8 +21,7 @@ manufacturing and also view your files with the 3D viewer.
 To submit your Wokwi project to a shuttle, we will use a helpful submission portal that will take care of creating
 the GitHub repository, setting up GitHub Actions and populating the relevant files.
 
-The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a> 
-(opens in a new tab) or at <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">app.tinytapeout.com/projects/create/wokwi</a>.
+The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a>. 
 
 {{% figure src="images/submission_portal_step1_empty.png" title="Wokwi project submission portal" %}}
 
@@ -75,7 +74,7 @@ The repository will now be created and the GDS will now start building!
 
 {{% figure src="images/submission_portal_step3_build_gds.png" title="Automatically building the GDS using GitHub Actions" %}}
 
-- Sit back and relax while your design gets built :)
+- Sit back and relax while your design gets built :) It usually takes about 5 minutes.
 
 
 ### Step 4 - Submit to Shuttle
@@ -85,7 +84,7 @@ tiles to proceed.
 
 {{% notice note %}}
 **If you have a coupon code for a free tile** then please ask a teaching assistant for your coupon. Enter it into the
-field and then click submit.
+field, click 'apply' to reduce the cost to 0, and then click submit.
 {{% /notice %}}
 
 {{% figure src="images/submission_portal_step4.png" title="Project ready for submission to the shuttle" %}}
