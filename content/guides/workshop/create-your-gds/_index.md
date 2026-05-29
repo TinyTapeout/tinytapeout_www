@@ -84,7 +84,7 @@ tiles to proceed.
 
 {{% notice note %}}
 **If you have a coupon code for a free tile** then please ask a teaching assistant for your coupon. Enter it into the
-field, click 'apply' to reduce the cost to 0, and then click submit.
+field, and then click submit.
 {{% /notice %}}
 
 {{% figure src="images/submission_portal_step4.png" title="Project ready for submission to the shuttle" %}}
