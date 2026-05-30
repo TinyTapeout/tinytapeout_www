@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div class="news-frontmatter">
+    <p class="description">{{ .Params.description }}</p>
+    <div class="news-metadata">
+        <div class="news-published-info">
+            <p>{{ .Params.author }}</p> • <p>{{ .Params.date | time.Format "2 January 2006" }}</p>
+        </div>
+        {{ with .GitInfo }}
+        <div class="news-lastmodified-info">
+            <p>(Last modified by {{ .AuthorName }} on {{ .CommitDate.Format "2 January 2006" }})</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<hr>
+
+{{ .Content }}
+
+{{ partial "footer.html" . }}

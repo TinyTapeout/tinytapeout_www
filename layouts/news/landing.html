@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+<div id="news-entries">
+{{ range .Page.Sections.ByDate.Reverse }}
+    <a href="{{.RelPermalink}}">
+        <div class="news-entry">
+            <h2>{{.Title}}</h2>
+            <p class="news-description">{{.Description}}</p>
+            <p class="news-metadata">{{.Params.author}} • {{.Params.date | time.Format "2 January 2006"}}</p>
+        </div>
+    </a>
+{{ end }}
+</div>
+
+{{ partial "footer.html" . }}
