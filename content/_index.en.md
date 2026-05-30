@@ -3,6 +3,7 @@ title: 'Tiny Tapeout'
 images: [/images/tinytapeout6.png]
 description: 'Tiny Tapeout makes it more accessible than ever to get your designs manufactured on a real chip!'
 LastModifierDisplayName: matt venn
+weight: 1
 ---
 
 # From idea to chip design in minutes!
