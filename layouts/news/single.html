@@ -6,16 +6,27 @@
         <div class="news-published-info">
             <p>{{ .Params.author }}</p> • <p>{{ .Params.date | time.Format "2 January 2006" }}</p>
         </div>
-        {{ with .GitInfo }}
-        <div class="news-lastmodified-info">
-            <p>(Last modified by {{ .AuthorName }} on {{ .CommitDate.Format "2 January 2006" }})</p>
-        </div>
-        {{ end }}
     </div>
 </div>
 
 <hr style="margin-top: 16px;">
 
-{{ .Content }}
+<div class="news-container">
+    <div class="news-content">
+        {{ .Content }}
+    </div>
+    <div class="news-footer">
+        <hr>
+        {{ with .GitInfo }}
+            <div class="news-lastmodified-info">
+                <p>
+                    Last modified by {{ .AuthorName }} on {{ .CommitDate.Format "2 January 2006" }}.
+                    Commit <a href="https://github.com/TinyTapeout/tinytapeout_www/commit/{{ .Hash }}" >{{ .AbbreviatedHash }}</a>.
+                    <a href="https://github.com/TinyTapeout/tinytapeout_www/edit/main/content/{{page.File.Path}}">Suggestions?</a>
+                </p>
+            </div>
+        {{ end }}
+    </div>
+</div>
 
 {{ partial "footer.html" . }}

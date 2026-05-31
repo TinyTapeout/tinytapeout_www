@@ -30,6 +30,13 @@ div.news-metadata {
   font-style: italic;
 }
 
+.news-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 div#news-entries {
   display: flex;
   flex-direction: column;
