@@ -5,6 +5,9 @@ author: Tiny Tapeout Team
 date: "2026-05-29"
 type: news
 layout: single
+cover:
+    image: images/render.png
+    alt: A render of a chip. Wires in blue, and the background in chrome.
 ---
 
 Welcome to our new news section. We hope to fill this spot with plenty of new and exciting news about the world of open
