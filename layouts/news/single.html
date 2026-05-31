@@ -11,6 +11,17 @@
 
 <hr style="margin-top: 16px;">
 
+{{ if .Params.cover }}
+    {{ with .Resources.GetMatch .Params.cover.image }}
+        <figure>
+            <img alt="{{ $.Params.cover.alt }}" src="{{ .RelPermalink }}"/>
+            <figcaption>
+                <h4>{{ $.Params.cover.alt }}</h4>
+            </figcaption>
+        </figure>
+    {{ end }}
+{{ end }}
+
 <div class="news-container">
     <div class="news-content">
         {{ .Content }}

@@ -4,6 +4,14 @@
 {{ range .Page.Sections.ByDate.Reverse }}
     <a href="{{.RelPermalink}}">
         <div class="news-entry">
+            {{ if .Params.cover }}
+                {{ $image_alt := .Params.cover.alt }}
+                {{ with .Resources.GetMatch .Params.cover.image }}
+                    <div class="news-cover-image">
+                        <img alt="{{ $image_alt }}" src="{{ .RelPermalink }}"/>
+                    </div>
+                {{ end }}
+            {{ end }}
             <h2>{{.Title}}</h2>
             <p class="news-description">{{.Description}}</p>
             <p class="news-metadata">{{.Params.author}} • {{.Params.date | time.Format "2 January 2006"}}</p>

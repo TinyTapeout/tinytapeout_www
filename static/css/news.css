@@ -30,6 +30,23 @@ div.news-metadata {
   font-style: italic;
 }
 
+.news-cover-image {
+  max-width: auto;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.news-cover-image img {
+  object-fit: fill !important;
+  margin: 0 auto !important;
+  transform: translate(0%, -25%);
+}
+
+.news-cover-image a {
+  pointer-events: none;
+}
+
 .news-container {
   min-height: 100vh;
   display: flex;
