@@ -7,7 +7,9 @@
             {{ if .Params.cover }}
                 {{ $image_alt := .Params.cover.alt }}
                 {{ with .Resources.GetMatch .Params.cover.image }}
-                    <div class="news-cover-image" style="background-image: url('{{ .RelPermalink }}');"></div>
+                    <div class="news-cover-image">
+                        <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}">
+                    </div>
                 {{ end }}
             {{ end }}
             <h2>{{.Title}}</h2>
