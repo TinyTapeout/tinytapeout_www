@@ -31,16 +31,12 @@ div.news-metadata {
 }
 
 .news-cover-image {
-  max-width: auto;
-  max-height: 200px;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-
-.news-cover-image img {
-  object-fit: fill !important;
-  margin: 0 auto !important;
-  transform: translate(0%, -25%);
+  height: 200px;
+  max-width: 100vw;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 30%;
 }
 
 .news-cover-image a {
