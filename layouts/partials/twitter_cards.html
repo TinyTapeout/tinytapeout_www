@@ -3,6 +3,7 @@
   to include the "Tiny Tapeout" in the twitter:title meta tag.
 */}}
 
+{{ if and (ne .Type "news") (ne .Layout "single") }}
 {{- $images := partial "_funcs/get-page-images" . }}
 {{- with index $images 0 }}
   <meta name="twitter:card" content="summary_large_image">
@@ -10,6 +11,7 @@
 {{- else }}
   <meta name="twitter:card" content="summary">
 {{- end }}
+{{ end }}
 
 {{- with or .Title site.Title site.Params.title | plainify }}
   <meta name="twitter:title" content="{{ . }} - Tiny Tapeout">
