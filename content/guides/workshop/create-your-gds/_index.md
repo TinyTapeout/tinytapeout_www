@@ -110,7 +110,7 @@ Red indicates failure and green indicates success. Only the GDS action needs to 
 
 ### GDS Action
 
-This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details. 
+This action installs the PDK, LibreLane, and generates the GDS for your project. It displays warnings, utilization statistics, and cell usage details. 
 If you have a failure, you can check the log to see what the problem is. The most common errors are:
 
 * Not resolving [ERC warnings](/guides/workshop/simulate-a-gate/#simulate) in the Wokwi design
