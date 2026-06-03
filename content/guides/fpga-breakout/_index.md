@@ -10,8 +10,8 @@ With this FPGA board you don't have to wait for an ASIC to test your digital des
 Here we'll:
 
  * Get an overview of the breakout;
- * Harden a digital design; and
- * Get it running on the demoboard; 
+ * [Harden](#harden-a-design) a digital design; and
+ * Get it [running](#get-the-design-running) on the demoboard; 
 
 ## Overview
 
