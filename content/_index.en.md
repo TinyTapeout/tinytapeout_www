@@ -15,7 +15,8 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 # Our open shuttles
 
 {{< countdown shuttle="ttgf26a"  name="GF26a"  deadline="2026-06-22T20:00:00Z" pcbs="200" >}}
-{{< countdown shuttle="ttsky26c"  name="SKY26c"  deadline="2026-09-07T20:00:00Z" pcbs="80" >}}
+{{< countdown shuttle="ttgf26b"  name="GF26b"  deadline="2026-06-22T20:00:00Z" pcbs="200" >}}
+{{< countdown shuttle="ttsky26c" name="SKY26c"  deadline="2026-09-07T20:00:00Z" pcbs="80" >}}
 
 # Get started
 
