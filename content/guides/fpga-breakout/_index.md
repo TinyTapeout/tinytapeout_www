@@ -245,6 +245,16 @@ For projects based on the Tiny Tapeout template, this is as simple as
 
 The `--port` is where your demoboard is found, so */dev/ttyACMX* under Linux, COMsomething with windows.
 
+{{% notice tip %}}
+If you are running this via the Windows Subsystem for Linux (WSL) and the command above fails, you may need to pass the
+device manually or to use a different port.
+<br><br>
+**WSL 1 users**: `COMX` is mapped to `/dev/ttySX` (where `X` is a number). See the [docs](https://learn.microsoft.com/en-gb/archive/blogs/wsl/serial-support-on-the-windows-subsystem-for-linux) for more info.
+<br><br>
+**WSL 2 users**: Please follow [Microsoft's own guide on connecting USB devices to WSL 2](https://learn.microsoft.com/en-us/windows/wsl/connect-usb).
+It makes use of the [usbipd-win](https://github.com/dorssel/usbipd-win) project.
+{{% /notice %}}
+
 
 If you hardened this bitstream without an *info.yaml* you can specify the name of the project that was previously generated to help the script find which .bin you're uploading
 
