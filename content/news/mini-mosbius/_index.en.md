@@ -4,6 +4,7 @@ description: MOSBius-style chip in a 3x2 Tiny Tapeout slot, now available on eve
 author: Matt Venn
 date: "2026-06-01"
 type: news
+tags: ['design']
 layout: single
 cover:
     image: images/thumbnail.png
@@ -48,30 +49,8 @@ and one way to compensate is by increasing their width.
 
 {{< figure src="images/inverter-scope-2.png" title="~25ns rise time with a wider mosfet" >}}
 
-## Watching Metastability
-
-Metastability is the unwanted behaviour of a latch or flip flop that goes on to cause dreaded hold violations.
-Metastability is when your circuit takes much longer than expected to settle to a steady state, which then ripples
-through your design causing havoc. If your circuit suffers from metastability, it could cost you a whole new tapeout!
-If you want to learn more about hold violations and watch a video - check out this article about
-[static timing analysis](https://www.zerotoasiccourse.com/terminology/sta/).
-
-The circuit is an SR (set/reset) latch built from 6 transistors - 2 inverters and 2 N mosfets. This time I'm using another
-feature of Mini MOSBius - a external current reference to weaken the P mosfets. This makes it easier for the set and
-reset N mosfets to force the output low.
-
-{{< figure src="images/sr-schematic.png" title="SR schematic" >}}
-
-Pulsing input 5 high, the output goes high (set) and pulsing input 2 high the output goes low (reset).
-
-By applying a 1kHz pulse on the set, and a 1.01kHz pulse on the reset we can phase the reset signal slowly through
-the set pulse. As the circuit goes metastable, we see the blue output of the circuit sometimes takes a lot longer to
-settle than usual. Each faint blue line shows a metastable event.
-
-{{< figure src="images/sr-metastability.png" title="Observed metastability of the SR circuit - each faint blue line is a metastable event" >}}
-
-It's been great to get hands on and verify Mini MOSBius. We just had a great group call with the Zero to ASIC course -
+It's been great to get hands on and verify Mini MOSBius. We just had a great group call with the [Zero to ASIC course](https://zerotoasiccourse.com) -
 participants were able to discuss a circuit and try modifications on the fly.
 
 But the most exciting part is that Mini MOSbius is now included on all our future Tiny Tapeout Sky130 based chips, so
-along with your own design you'll get a fully featured analog playground to tinker with.
+along with your own design you'll get a fully featured analog playground to tinker with!
