@@ -4,6 +4,7 @@ description: Learn about the latest developments at Tiny Tapeout and in open sou
 author: Tiny Tapeout Team
 date: "2026-05-29"
 type: news
+tags: ['milestone']
 layout: single
 cover:
     image: images/render.png
