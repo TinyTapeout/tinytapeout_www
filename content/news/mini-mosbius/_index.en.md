@@ -15,7 +15,7 @@ MOSBius is a fantastic, practical tool for learning the fundamentals of analog m
 getting hands on with mosfets and a scope is something else!
 
 Inspired by [Peter Kinget's MOSBius project last year](https://www.youtube.com/watch?v=abu3u6UX6wE), we commissioned
-Andrew Kang to create a smaller version for Tiny Tapeout - Mini MOSBius!
+Andrew Kang to create a smaller version for Tiny Tapeout - [Mini MOSBius](https://tinytapeout.com/chips/ttsky25a/tt_um_mosbius)!
 
 It's like an FPGA, but for learning analog electronics. Instead of lookup tables we have the basic building blocks of
 analog circuits: transistors, current mirrors, differential pairs and an opamp.
