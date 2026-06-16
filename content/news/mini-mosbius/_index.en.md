@@ -28,7 +28,7 @@ Let's start with one of the simplest and well known 2 transistor building blocks
 [Sylvain Munaut's configurator](https://people.osmocom.org/tnt/stuff/tt/mosbius.html) to make the connections and get
 the bitstream.
 
-{{< figure src="images/minimosbius-configurator-ui.png" title="Mini MOSBius Configurator UI" >}}
+{{< figure src="images/minimosbius-configurator-ui.png" title="Mini MOSBius Configurator UI">}}
 
 The red dots are showing where the transmission gates are active, creating nodes in the circuit. The 2 dots in the center
 are connecting the split buses so that I can use `ua[4]` as an input and `ua[5]` as an output.
@@ -48,6 +48,20 @@ Setting it to 4 we get around 25ns. An easy experiment that drives home both tha
 and one way to compensate is by increasing their width.
 
 {{< figure src="images/inverter-scope-2.png" title="~25ns rise time with a wider mosfet" >}}
+
+## Latching Data
+
+The next circuit is an SR latch. This uses 6 of the 8 mosfets to build 2 inverters to store the data and 2 pull down switches for set and reset.
+
+{{< figure src="images/sr-schematic.png" title="SR latch schematic" >}}
+
+If the point 4 is high, then point 1 is driven low by the right inverter, which reinforces the blue point high through the left inverter.
+
+Here we see it in operation, with data in blue, set in yellow and reset in green.
+
+{{< figure src="images/sr-set-reset.png" title="set and reset" >}}
+
+## Available on future Sky shuttles!
 
 It's been great to get hands on and verify Mini MOSBius. We just had a great group call with the [Zero to ASIC course](https://zerotoasiccourse.com) -
 participants were able to discuss a circuit and try modifications on the fly.
