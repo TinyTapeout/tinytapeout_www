@@ -44,10 +44,10 @@ mosfet.
 
 {{< figure src="images/inverter-scope-2.png" title="~50ns rise time for this configuration" >}}
 
-Setting it to 4 we get around 25ns. An easy experiment that drives home both that P mosfets are weaker than N mosfets,
+Setting the width to 4 in the configurator we get around 25ns. An easy experiment that drives home both that P mosfets are weaker than N mosfets,
 and one way to compensate is by increasing their width.
 
-{{< figure src="images/inverter-scope-2.png" title="~25ns rise time with a wider mosfet" >}}
+{{< figure src="images/inverter-scope-3.png" title="~25ns rise time with a wider mosfet" >}}
 
 ## Latching Data
 
