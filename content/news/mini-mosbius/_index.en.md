@@ -1,6 +1,6 @@
 ---
 title: Mini MOSBius
-description: MOSBius-style chip in a 3x2 Tiny Tapeout slot, now available on every Sky130 shuttle.
+description: A playground for analog microelectronics on TTSKY25a and all future Sky shuttles.
 author: Matt Venn
 date: "2026-06-01"
 type: news
