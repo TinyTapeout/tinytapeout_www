@@ -31,7 +31,7 @@ the bitstream.
 {{< figure src="images/minimosbius-configurator-ui.png" title="Mini MOSBius Configurator UI">}}
 
 The red dots are showing where the transmission gates are active, creating nodes in the circuit. The 2 dots in the center
-are connecting the split buses so that I can use `ua[4]` as an input and `ua[5]` as an output.
+are connecting the split buses so that I can use `ua[5]` as an input and `ua[4]` as an output.
 
 {{< figure src="images/inverter-schematic.png" title="Inverter schematic" >}}
 
