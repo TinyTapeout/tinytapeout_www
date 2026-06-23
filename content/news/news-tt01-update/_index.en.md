@@ -15,7 +15,7 @@ Big update! We've submitted all 150+ designs to MPW7, the 7th free Google open s
 
 You've probably already seen the pull requests land in your repository. We discovered some issues with the design that needed fixing before submission to Efabless, so we opened around 140 pull requests to bring all repos in line with what was submitted. If you're new to GitHub, all you need to do is merge it.
 
-A datasheet is coming. We've added a new info.yaml file to each repo — fill it in to describe your design. Since everyone who gets a chip will also receive everyone else's designs, it'd be great to know what each one does and how to use it. The info.yaml file will let us automatically generate a datasheet for the whole chip.
+A [datasheet](https://tinytapeout.com/tt01.pdf) is coming. We've added a new info.yaml file to each repo — fill it in to describe your design. Since everyone who gets a chip will also receive everyone else's designs, it'd be great to know what each one does and how to use it. The info.yaml file will let us automatically generate a datasheet for the whole chip.
 
 **When will we get the chips?** We're in the MPW7 lottery - 72 submissions, only 40 slots. We closed our submission a week before the deadline, which gives us a slightly better chance of getting picked. If we make it onto the shuttle, expect anywhere between 6 and 12 months to receive the chips.
 

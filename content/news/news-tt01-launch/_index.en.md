@@ -11,7 +11,7 @@ cover:
     alt: Tiny Tapeout demystifying microchip design and manufacture
 ---
 
-It's happening! TinyTapeout 01 has been submitted to Efabless for the free Google MPW7 shuttle on the SkyWater 130nm open-source PDK.
+It's happening! [Tiny Tapeout 01](https://tinytapeout.com/chips/tt01/) has been submitted to Efabless for the free Google MPW7 shuttle on the SkyWater 130nm open-source PDK.
 
 When we launched on August 17th, the goal was simple: make it easier and cheaper than ever to get your digital designs manufactured on a real chip, with the entire workflow in the cloud, needing no installation nor downloads. 
 

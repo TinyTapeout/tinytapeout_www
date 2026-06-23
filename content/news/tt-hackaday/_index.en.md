@@ -16,3 +16,5 @@ Tiny Tapeout made its first major conference appearance at Hackaday Supercon 202
 His talk, "Tiny Tapeout: Lowering the Barrier to ASIC Design and Manufacture", traced the rise of open-source chip design tools and showed how Tiny Tapeout brought them together into a single, accessible web workflow. 
 
 You can watch the full talk on [YouTube](https://www.youtube.com/watch?v=1jRN1L1_yrk) and read the [Hackaday write-up](https://hackaday.com/2023/02/14/supercon-2022-matt-venns-tiny-tapeout-brings-chip-design-to-the-masses/).
+
+{{< youtube 1jRN1L1_yrk >}}
