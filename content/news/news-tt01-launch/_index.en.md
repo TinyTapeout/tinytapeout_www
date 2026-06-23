@@ -1,6 +1,6 @@
 ---
-title: TT01 Submitted to Efabless MPW2 Shuttle
-description: Tiny Tapeout's very first chip submitted to the free Google MPW2 shuttle on Skywater 130nm!
+title: TT01 Submitted to Efabless MPW7 Shuttle
+description: Tiny Tapeout's very first chip submitted to the free Google MPW7 shuttle on Skywater 130nm!
 author: Tiny Tapeout Team
 date: "2022-09-04"
 type: news
