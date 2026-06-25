@@ -11,7 +11,7 @@ cover:
     alt: Tiny Tapeout 02
 ---
 
-Big update for TT02! We've just rolled out changes to the size of designs.
+Big update for [TT02](/chips/tt02)! We've just rolled out changes to the size of designs.
 
 250 slots, almost 2× bigger. As we've had fewer sales than expected, we've decreased the number of slots and increased the area each design gets. There are now 250 project slots, each 150×170 microns — almost 2× the area of before.
 

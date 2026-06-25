@@ -11,7 +11,7 @@ cover:
     alt: Numbered designs render
 ---
 
-We had 100 submissions, 25% from universities, and filled the remaining space with 149 designs from TT02, bringing the total to 249 open source designs on the chip. 
+We had [100 submissions](/chips/tt03), 25% from universities, and filled the remaining space with 149 designs from [TT02](/chips/tt02), bringing the total to 249 open source designs on the chip. 
 
 135 were Verilog, 94 were Wokwi, and the rest used other HDLs or HLS tools. Together they add up to 80,000 standard cells and 4 meters of wire.
 
