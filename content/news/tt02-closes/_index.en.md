@@ -13,7 +13,7 @@ cover:
 
 That's a wrap!
 
-We ended up with [154 designs](chips/tt02/), including 10 from schools and universities still to be added. 
+We ended up with [154 designs](/chips/tt02/), including 10 from schools and universities still to be added. 
 
 The range of what people built is remarkable: CPUs and microprocessors, FPGAs, sound generators, signal processors, clocks, games, and everything in between.
 
