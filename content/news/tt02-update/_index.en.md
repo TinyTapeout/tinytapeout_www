@@ -29,6 +29,6 @@ If you haven't filled in your docs yet, please do!
 
 We're also asking TT01 submitters to merge their designs into TT02. If 50% of those designs get added, we'll be at around 140 designs, leaving 100 slots still to fill. 
 
-If you know anyone interested in participating, especially schools or universities, send them our way → [tinytapeout.com](tinytapeout.com).
+If you know anyone interested in participating, especially schools or universities, send them our way → [tinytapeout.com](https://tinytapeout.com).
 
 Looking forward to seeing your design in the submission soon!
