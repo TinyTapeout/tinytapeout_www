@@ -21,6 +21,7 @@ enableGitInfo = true
   defaultContentLanguage = 'en'
   disableLightbox = true
   workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSeVc9YmYN5TYKsDpFGyPtZE6N3sstT2PcbTdee-bK8FMjQwEQ/viewform?usp=header"
+  workshopFoundry = "sky"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
