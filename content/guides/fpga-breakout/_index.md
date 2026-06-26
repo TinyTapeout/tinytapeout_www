@@ -10,8 +10,8 @@ With this FPGA board you don't have to wait for an ASIC to test your digital des
 Here we'll:
 
  * Get an overview of the breakout;
- * Harden a digital design; and
- * Get it running on the demoboard; 
+ * [Harden](#harden-a-design) a digital design; and
+ * Get it [running](#get-the-design-running) on the demoboard; 
 
 ## Overview
 
@@ -38,16 +38,16 @@ It is easy to harden Verilog projects targetting the FPGA breakout.
 
 ### Requirements and Setup
 
-  1) [**OSS-CAD-Suite**](https://github.com/YosysHQ/oss-cad-suite-build) to provide Yosys, and the rest of the open source FPGA toolchain;
+  - [**OSS-CAD-Suite**](https://github.com/YosysHQ/oss-cad-suite-build) to provide Yosys, and the rest of the open source FPGA toolchain;
   
-  2) The [PCF file](https://github.com/TinyTapeout/breakout-pcb/blob/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k/fabricfox.pcf) that indicates the pin mappings and lets the PnR complete the process; and 
+  - The [PCF file](https://github.com/TinyTapeout/breakout-pcb/blob/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k/fabricfox.pcf) that indicates the pin mappings and lets the PnR complete the process; and 
   
-  3) Resulting bitstream binary files must be uploaded to the right place (under `/bitstreams`) on the demoboard.
+  - Resulting bitstream binary files must be uploaded to the right place (under `/bitstreams`) on the demoboard.
 
 
 To handle the specifics related to our boards and SDK, the [Tiny Tapeout Tools](https://github.com/tinyTapeout/tt-support-tools) include utilities that make life a lot easier.
 
-Steps for setup:
+Four steps for setup:
 
   1) Follow the directions for [OSS CAD Suite Installation](https://github.com/YosysHQ/oss-cad-suite-build?tab=readme-ov-file#installation) on your platform;
   
@@ -63,11 +63,28 @@ Steps for setup:
 ```
  ⦗OSS CAD Suite⦘ user@computron:~$ git clone https://github.com/TinyTapeout/tt-support-tools.git tt
 ```
+  The top level directory may have any name and be placed anywhere on your system, the important thing is that we be able to call the scripts within. Here we'll assume the tools are installed under *~/tt/*.
 
   4) Install the TT support tools requirements
 ```
  ⦗OSS CAD Suite⦘ user@computron:~$ cd tt
  ⦗OSS CAD Suite⦘ user@computron:~/tt$ pip install -r requirements.txt
+```
+  You can test your installation by running one of the scripts now.  That should look like, e.g.:
+```
+  ⦗OSS CAD Suite⦘ user@computron:~$ ~/tt/tt_fpga.py --help
+  TT FPGA tool
+
+  positional arguments:
+    {harden,configure}        Available commands
+      harden                  Run hardening process
+      configure               Upload bitstream and manage configuration
+
+  options:
+    -h, --help                show this help message and exit
+    --project-dir PROJECT_DIR location of the project
+    --debug                   debug logging
+
 ```
 
 
@@ -75,30 +92,27 @@ Steps for setup:
 
 If you have a design based on a [Tiny Tapeout Verilog Template](https://github.com/TinyTapeout/ttsky-verilog-template), then you have a configured *info.yaml* file which makes the process of targetting the FPGA boards very easy.  Follow this process:
 
-  0) Be inside your project's top level directory, e.g.
+  0) Be sure you've [installed and setup the requirements above](#requirements-and-setup)
+
+  1) Enable the OSS CAD Suite environment
+  
 ```
-  user@computron:/tmp$ git clone https://github.com/TinyTapeout/ttsky25b-factory-test.git ftest
-  user@computron:/tmp$ cd ftest
-  user@computron:/tmp/ftest$ ls
+  user@computron:~$ source /path/to/oss-cad-suite/environment
+  ⦗OSS CAD Suite⦘ user@computron:~$
+```
+
+  2) Be inside your project's top level directory, e.g.
+```
+  ⦗OSS CAD Suite⦘ user@computron:~$ git clone https://github.com/TinyTapeout/ttsky25b-factory-test.git ftest
+  ⦗OSS CAD Suite⦘ user@computron:~$ cd ftest
+  ⦗OSS CAD Suite⦘ user@computron:~/ftest$ ls
   docs  info.yaml  LICENSE  README.md  src  test
 
 ```
   
-  1) Enable the OSS CAD Suite environment
-  
-```
-  user@computron:/tmp/ftest$ source /path/to/oss-cad-suite/environment
-  ⦗OSS CAD Suite⦘ user@computron:/tmp/ftest$
-```
-
-  2) Get a copy of the `tt-support-tools` in there
-```
-  ⦗OSS CAD Suite⦘ user@computron:/tmp/ftest$ git clone https://github.com/TinyTapeout/tt-support-tools.git tt
-```
-
   3) Harden the design by running `tt_fpga.py` with the **harden** argument
 ```
- (OSS CAD Suite⦘ user@computron:/tmp/ftest$ tt/tt_fpga.py harden 
+ (OSS CAD Suite⦘ user@computron:~/ftest$ ~/tt/tt_fpga.py harden 
  
  2026-01-17 10:03:09,518 - tt_fpga    - INFO     - Creating FPGA bitstream for [000 : unknown]
  /----------------------------------------------------------------------------\     
@@ -117,7 +131,7 @@ If you have a design based on a [Tiny Tapeout Verilog Template](https://github.c
  Info: [ 37542,  37696) |** 
 
  Info: Program finished normally.
- 2026-01-17 10:03:10,190 - tt_fpga - INFO - Bitstream created successfully: /tmp/ftest/build/tt_um_factory_test.bin
+ 2026-01-17 10:03:10,190 - tt_fpga - INFO - Bitstream created successfully: ~/ftest/build/tt_um_factory_test.bin
 ```
 
 And you are done.  The bitstream will be present within the `build/` sub-directory, named according to the top level module specified in the *info.yaml* file.
@@ -127,10 +141,10 @@ And you are done.  The bitstream will be present within the `build/` sub-directo
 
 The above is really the simplest way to do this, but you don't actually need to have the *info.yaml* or to have used the Tiny Tapeout template to leverage the tt-support-tool.
 
-If you simply try to run `tt/tt_fpga.py harden` as above, you will get an error
+If you simply try to run `~/tt/tt_fpga.py harden` as above, you will get an error
 
 ```
- ⦗OSS CAD Suite⦘ user@computron:/tmp/ftest$ tt/tt_fpga.py harden
+ ⦗OSS CAD Suite⦘ user@computron:~/ftest$ ~/tt/tt_fpga.py harden
  2026-01-17 10:10:18,520 - tt_fpga    - INFO     - Creating FPGA bitstream for None
  No project yaml, must specify source_dir
 ```
@@ -138,7 +152,7 @@ If you simply try to run `tt/tt_fpga.py harden` as above, you will get an error
 However, the `tt_fpga.py` script provides a number of options to allow you to specify what the script normally gets through the info.yaml.  The `harden --help` argument lists available options and flags
 
 ```
- (OSS CAD Suite⦘ user@computron:/tmp/ftest$ tt/tt_fpga.py harden --help
+ (OSS CAD Suite⦘ user@computron:~/ftest$ ~/tt/tt_fpga.py harden --help
  usage: tt_fpga.py harden [-h] [--name FILE] [--breakout-target {classic,fabricfox}] [--source_dir DIR] [--source FILE] [--top_module TOP]
 
  options:
@@ -151,40 +165,50 @@ However, the `tt_fpga.py` script provides a number of options to allow you to sp
   --top_module TOP      Name of the top module (default from info.yaml)
 ```
 
-The only required arguments are `--top_module` `--source_dir` and as many `--source` arguments as you have .v files you wish to include.
+The only **required** arguments are `--top_module` `--source_dir` and as many `--source` arguments as you have .v files you wish to include.
 
 Steps:
 
-  0) be inside your project top level directory
+  0) Be sure you've [installed and setup the requirements above](#requirements-and-setup)
   
   1) Enable the OSS CAD Suite environment
   
 ```
-  user@computron:/tmp/ftest$ source /path/to/oss-cad-suite/environment
-  ⦗OSS CAD Suite⦘ user@computron:/tmp/ftest$
+  user@computron:~$ source /path/to/oss-cad-suite/environment
+  ⦗OSS CAD Suite⦘ user@computron:~$
 ```
 
-  2) Get a copy of the `tt-support-tools` in there
-```
-  ⦗OSS CAD Suite⦘ user@computron:/tmp/ftest$ git clone https://github.com/TinyTapeout/tt-support-tools.git tt
-```
 
+  2) move to within your project top level directory
+
+```
+  user@computron:~$ cd /path/to/project
+```
+  
   3) Harden the design by running `tt_fpga.py` with the **harden** argument along with the required information, to get the bitstream binary file generated.
 ```
-  (OSS CAD Suite) user@computron:/tmp/ftest$ tt/tt_fpga.py harden --top_module tt_um_factory_test \
+ (OSS CAD Suite) user@computron:/path/to/project$ ~/tt/tt_fpga.py harden --top_module tt_um_factory_test \
                                                --source_dir src  --source tt_um_factory_test.v
                                                
 
  [ ... snip ... ]
 
-Info: Program finished normally.
-2026-01-17 10:14:51,166 - tt_fpga - INFO - Bitstream created successfully: /tmp/ftest/build/tt_um_factory_test.bin
+ Info: Program finished normally.
+ 2026-01-17 10:14:51,166 - tt_fpga - INFO - Bitstream created successfully: 
+ /path/to/project/build/tt_um_factory_test.bin
 
 ```
 
 ## Get the Design Running
 
 You generated a valid bitstream, using the process above, but now it's just sitting on your computer.  This is how to get it running on the FPGA.
+
+{{% notice tip %}}
+If you are using Linux, you may need to add yourself to a group to use serial - typically either `dialout` or `uucp`.
+Check which group the device file representing the devkit is using by running `ls -l /dev/ttyACMX` (where `X` is a number,
+automatically assigned by your OS - usually `0` if it is the only serial device plugged in).
+Run `sudo adduser $USER <group>` in the terminal - you may need to restart your PC for the changes to apply.
+{{% /notice %}}
 
 The SDK will actually treat any *.bin file in /bitstreams on the demoboard filesystem as an available project.  Meaning that when you are on the uPython REPL, you can do
 
@@ -197,7 +221,7 @@ To load it, assuming there's a `/bitstreams/my_project.bin` file in there.
 To make uploading and configuring the bitstreams easier, the `tt_fpga.py` script also has a *configure* command.
 
 ```
- $ tt/tt_fpga.py configure --help
+ $ ~/tt/tt_fpga.py configure --help
  usage: tt_fpga.py configure [-h] [--port COMPORT] [--set-default] [--upload] [--clockrate RATE] [--name FILE]
 
  options:
@@ -216,16 +240,26 @@ Though you can use any means to get the bitstream installed, the `--upload` flag
 For projects based on the Tiny Tapeout template, this is as simple as
 
 ```
- $ tt/tt_fpga.py configure --port /dev/ttyACM0 --upload
+ $ ~/tt/tt_fpga.py configure --port /dev/ttyACM0 --upload
 ```
 
 The `--port` is where your demoboard is found, so */dev/ttyACMX* under Linux, COMsomething with windows.
+
+{{% notice tip %}}
+If you are running this via the Windows Subsystem for Linux (WSL) and the command above fails, you may need to pass the
+device manually or to use a different port.
+<br><br>
+**WSL 1 users**: `COMX` is mapped to `/dev/ttySX` (where `X` is a number). See the [docs](https://learn.microsoft.com/en-gb/archive/blogs/wsl/serial-support-on-the-windows-subsystem-for-linux) for more info.
+<br><br>
+**WSL 2 users**: Please follow [Microsoft's own guide on connecting USB devices to WSL 2](https://learn.microsoft.com/en-us/windows/wsl/connect-usb).
+It makes use of the [usbipd-win](https://github.com/dorssel/usbipd-win) project.
+{{% /notice %}}
 
 
 If you hardened this bitstream without an *info.yaml* you can specify the name of the project that was previously generated to help the script find which .bin you're uploading
 
 ```
- $ tt/tt_fpga.py configure --port /dev/ttyACM0 --upload --name my_project
+ $ ~/tt/tt_fpga.py configure --port /dev/ttyACM0 --upload --name my_project
 ```
 
 
@@ -243,7 +277,7 @@ You may combine all of these, including upload, into a single command
 
 ```
  
- $ tt/tt_fpga.py configure --port /dev/ttyACM0 --upload \
+ $ ~/tt/tt_fpga.py configure --port /dev/ttyACM0 --upload \
                            --name my_project \
                            --set-default \
                            --clockrate 2000000

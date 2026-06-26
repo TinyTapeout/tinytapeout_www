@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+
+<div class="news-frontmatter">
+    <p class="description">{{ .Params.description }}</p>
+    <div class="news-metadata">
+        <div class="news-published-info">
+            <p>{{ .Params.author }}</p> • <p>{{ .Params.date | time.Format "2 January 2006" }}</p>
+        </div>
+    </div>
+</div>
+
+<hr style="margin-top: 16px;">
+
+{{ if .Params.cover }}
+    {{ with .Resources.GetMatch .Params.cover.image }}
+        <figure>
+            <img alt="{{ $.Params.cover.alt }}" src="{{ .RelPermalink }}"/>
+            <figcaption>
+                <h4>{{ $.Params.cover.alt }}</h4>
+            </figcaption>
+        </figure>
+    {{ end }}
+{{ end }}
+
+<div class="news-container">
+    <div class="news-content">
+        {{ .Content }}
+    </div>
+    <div class="news-footer">
+        <hr>
+        {{ with .GitInfo }}
+            <div class="news-lastmodified-info">
+                <p>
+                    Last modified by {{ .AuthorName }} on {{ .CommitDate.Format "2 January 2006" }}.
+                    Commit <a href="https://github.com/TinyTapeout/tinytapeout_www/commit/{{ .Hash }}" >{{ .AbbreviatedHash }}</a>.
+                    <a href="https://github.com/TinyTapeout/tinytapeout_www/edit/main/content/{{page.File.Path}}">Suggestions?</a>
+                </p>
+            </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

@@ -18,6 +18,10 @@ You must use the pins in order, starting from 0.
 
 Even though there are 8 pins in the templates, you can only use the first 6.
 
+If you end up with pins which are not being driven and are floating, please either connect them to GND or use
+[`conb`](https://skywater-pdk.readthedocs.io/en/main/contents/libraries/sky130_fd_sc_hd/cells/conb/README.html) cells -
+see our guide on [laying out standard cells with Magic](/guides/laying-standard-cells-with-magic).
+
 ## Specifications and limitations - sky130A
 
 The path between the analog pads and your project (the ua pins) is expected to have the following properties:
@@ -34,7 +38,9 @@ The pin locations must match one of the [Tiny Tapeout templates](https://github.
 
 The templates include all the eight analog pins, but only the pins that you paid for will be connected to the pads. In addition, the templates also include all the [standard digital pins](../gpio).
 
+{{% notice info %}}
 **Important**: Do not leave any floating digital output pins in your design. Connect any unused `uo_out`, `uio_out` and `uio_oe` pins to GND.
+{{% /notice %}}
 
 ## Area - sky130A
 
