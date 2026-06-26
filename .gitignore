@@ -5,3 +5,16 @@
 node_modules
 public
 resources/_gen/
+
+# Visual Studio Code Workspace Files
+/**/.vscode/.browse.c_cpp.db*
+/**/.vscode/c_cpp_properties.json
+/**/.vscode/launch.json
+/**/.vscode/ipch
+
+
+# Visual Studio
+**/.vs
+
+# VisualGDB
+**/.visualgdb
