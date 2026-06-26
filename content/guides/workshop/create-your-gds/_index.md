@@ -21,8 +21,7 @@ manufacturing and also view your files with the 3D viewer.
 To submit your Wokwi project to a shuttle, we will use a helpful submission portal that will take care of creating
 the GitHub repository, setting up GitHub Actions and populating the relevant files.
 
-The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a> 
-(opens in a new tab) or at <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">app.tinytapeout.com/projects/create/wokwi</a>.
+The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a>. 
 
 {{% figure src="images/submission_portal_step1_empty.png" title="Wokwi project submission portal" %}}
 
@@ -69,32 +68,13 @@ You can now allow us to create the repository containing your Wokwi project.
 
 - Click on the "Create Repo" button.
 
-The repository will now be created and the GDS will now start building!
+The repository will now be created and the physical layout of your design will now start building!
 
 {{% figure src="images/submission_portal_step3_create_repo.png" title="Creating the repository" %}}
 
 {{% figure src="images/submission_portal_step3_build_gds.png" title="Automatically building the GDS using GitHub Actions" %}}
 
-- Sit back and relax while your design gets built :)
-
-
-### Step 4 - Submit to Shuttle
-
-The final stage - submit your design onto your selected shuttle! You will need either a coupon code, or to buy some
-tiles to proceed.
-
-{{% notice note %}}
-**If you have a coupon code for a free tile** then please ask a teaching assistant for your coupon. Enter it into the
-field and then click submit.
-{{% /notice %}}
-
-{{% figure src="images/submission_portal_step4.png" title="Project ready for submission to the shuttle" %}}
-
-{{% notice tip %}}
-Your project will be automatically submitted to a shuttle, and a revision of it will be included onto the shuttle.
-To update your project, you will need to make your changes and then submit a new revision - this is covered in the
-next exercise.
-{{% /notice %}}
+- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository.
 
 ---
 
@@ -109,27 +89,6 @@ speed, the amount of tiles it uses and a description of all the pins it uses. Th
 entered in step 2 of the form.
 
 {{% figure src="images/wokwi_metadata.png" title="An example info.yaml file" %}}
-
-### Project Documentation
-
-We collect all the project information into a datasheet (<a href="https://tinytapeout.github.io/tinytapeout-sky-25b/datasheet.pdf" target="_blank">example from TTSky25b</a>) and onto the website itself. You can use Markdown to write your documentation,
-and tell everyone what your chip does, and how to test it properly.
-
-You may notice that the docs action has failed on your repository - projects with a failing docs action
-will still be included onto the shuttle, but your project information will **not** be included onto the shuttle datasheet.
-
-To add documentation, follow these steps:
-
-* Edit `docs/info.md` - this should be pre-populated with some example text already.
-* You need to change both the 'how it works' and 'how to test' sections.
-* Save and commit your changes.
-
-{{% notice warning %}}
-Leaving the info.md unmodified will cause the 'docs' action to fail. 
-{{% /notice %}}
-
-{{% figure src="images/doc_example.png" title="Example documentation to help you or someone else test a design" %}}
-
 
 ## GitHub Actions
 
@@ -146,23 +105,14 @@ To see the currently running and historical actions, go to the ‘Actions’ tab
 ![](images/actions_button.png?width=50pc)
     
 {{% notice tip %}}
-Red indicates failure and green indicates success. Only the gds action needs to be green to submit your design.
+Red indicates failure and green indicates success. Only the GDS action needs to be green to submit your design.
 {{% /notice %}}
-
-### Docs Action
-
-This action generates a preview of how your documentation will look. You can download a PDF preview to check it.
-
-If you have a failure, you can check the log to see what the problem is. The most common error is missing fields in `info.yaml` or leaving `info.md` unchanged.
-
-{{< figure src="images/checkerrors.png">}}   
 
 ### GDS Action
 
-This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details. 
+This action installs the PDK, LibreLane, and generates the GDS for your project. It displays warnings, utilization statistics, and cell usage details. 
 If you have a failure, you can check the log to see what the problem is. The most common errors are:
 
-* Not [enabling the GitHub action](/guides/workshop/create-your-gds/#allow-github-actions-to-publish) to publish
 * Not resolving [ERC warnings](/guides/workshop/simulate-a-gate/#simulate) in the Wokwi design
 * If you get stuck, ask a TA!
 
@@ -200,6 +150,39 @@ Can you match the logic gates you used in the Wokwi design with the standard cel
 - The layer visibility can be toggled using the checkboxes on the right of viewer under the 'layers' section.
 
 {{< figure src="images/or_layout_annotated.png">}}   
+
+### Project Documentation
+
+We collect all the project information into a <a href="https://tinytapeout.github.io/tinytapeout-sky-25b/datasheet.pdf" target="_blank">datasheet</a> and onto the website itself. You can use Markdown to write your documentation,
+and tell everyone what your chip does, and how to test it properly.
+
+You may notice that the docs action has failed on your repository - projects with a failing docs action
+will still be included onto the shuttle, but your project information will **not** be included onto the shuttle datasheet.
+
+To add documentation, follow these steps:
+
+* Edit `docs/info.md` - this should be pre-populated with some example text already.
+* You need to change both the 'how it works' and 'how to test' sections.
+* Save and commit your changes.
+
+### Step 4 - Submit to Shuttle
+
+The final stage - submit your design onto your selected shuttle! You will need either a coupon code, or to buy some
+tiles to proceed.
+
+{{% notice note %}}
+**If you have a coupon code for a free tile** then please ask a teaching assistant for your coupon. Enter it into the
+field, and then click submit.
+{{% /notice %}}
+
+{{% figure src="images/submission_portal_step4.png" title="Project ready for submission to the shuttle" %}}
+
+{{% notice tip %}}
+Your project will be automatically submitted to a shuttle, and a revision of it will be included onto the shuttle.
+To update your project, you will need to make your changes and then submit a new revision - this is covered in the
+next exercise.
+{{% /notice %}}
+
 
 ## Congratulations!
 

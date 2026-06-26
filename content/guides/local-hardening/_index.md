@@ -59,6 +59,11 @@ source ~/ttsetup/venv/bin/activate
 {{% /tab %}}
 {{< /tabs >}}
 
+{{% notice note %}}
+**MacOS users:** You may need to install additional dependencies before you can run the next command. Run the following:
+`brew install libpng qhull cairo`
+{{% /notice %}}
+
 Then install the dependencies:
 
 ```sh
@@ -77,7 +82,7 @@ This is for the SkyWater 130nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 
@@ -86,7 +91,7 @@ This is for the GlobalFoundries 180nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=gf180mcuD
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 
@@ -95,7 +100,7 @@ These are for IHP projects using IHP PDKs.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=ihp-sg13g2
-export LIBRELANE_TAG=3.0.0rc1
+export LIBRELANE_TAG=3.0.3
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -196,6 +201,16 @@ make -B GATES=yes
 ```
 {{% /tab %}}
 {{< /tabs>}}
+
+{{% notice info %}}
+If the `make -B GATES=yes` command fails with something like `make[1]: *** No rule to make target '[...]/ttsetup/pdk/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v', needed by 'sim_build/gl/sim.vvp'. Stop.`
+then you just need to run a couple of commands in order to enable the PDK.
+<br>
+<br>
+First, run `ciel ls`. It should output a list of installed PDKs and their git hash - copy this hash, or the latest if
+you have multiple installed. Finally, run `ciel enable <hash>` - for example, `ciel enable 8afc8346a57fe1ab7934ba5a6056ea8b43078e71`.
+You should be able to run the gate level tests now.
+{{% /notice %}}
 
 ## Viewing the design in OpenROAD GUI and KLayout
 

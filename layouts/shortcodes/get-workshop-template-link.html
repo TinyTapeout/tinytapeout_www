@@ -1,0 +1,13 @@
+{{ with .Site.Params.workshopFoundry }}
+    {{ if eq . "sky" }}
+        <a href="https://www.github.com/TinyTapeout/ttsky-verilog-template">github.com/TinyTapeout/ttsky-verilog-template</a>
+    {{ else if eq . "ihp" }}
+        <a href="https://www.github.com/TinyTapeout/ttihp-verilog-template">github.com/TinyTapeout/ttihp-verilog-template</a>
+    {{ else if eq . "gf" }}
+        <a href="https://www.github.com/TinyTapeout/ttgf-verilog-template">github.com/TinyTapeout/ttgf-verilog-template</a>
+    {{ else }}
+        {{ errorf "params.workshopFoundry is set (%s), but is not one of ['sky', 'ihp', 'gf']" . }}
+    {{ end }}
+{{ else }}
+    {{ errorf "params.workshopFoundry in config is not set, no template url is available for workshop guide" }}
+{{ end }}

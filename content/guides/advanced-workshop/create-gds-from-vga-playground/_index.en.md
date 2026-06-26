@@ -16,8 +16,7 @@ this, you'll have a GitHub repository containing your modified VGA design which 
 You'll need to create a repository using our template. It contains all the files and settings necessary to convert
 your design to the GDS we need for manufacture.
 
-<!--  - Visit [github.com/TinyTapeout/ttihp-verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template). -->
-- Visit [github.com/TinyTapeout/ttsky-verilog-template](https://github.com/TinyTapeout/ttsky-verilog-template).
+- Visit {{< get-workshop-template-link >}}
 - Click "Use this template" and then "Create a new repository".
 
 {{< figure src="images/git-repo-template.png" title="Using the IHP template repository to create a new one" >}}
