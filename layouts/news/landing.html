@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<div id="news-entries">
+{{ range .Page.Sections.ByDate.Reverse }}
+    <a href="{{.RelPermalink}}">
+        <div class="news-entry">
+            {{ if .Params.cover }}
+                {{ $image_alt := .Params.cover.alt }}
+                {{ with .Resources.GetMatch .Params.cover.image }}
+                    <div class="news-cover-image">
+                        <img loading="lazy" src="{{ .RelPermalink }}" alt="{{ .Params.cover.alt }}">
+                    </div>
+                {{ end }}
+            {{ end }}
+            <h2>{{.Title}}</h2>
+            <p class="news-description">{{.Description}}</p>
+            <p class="news-metadata">{{.Params.author}} • {{.Params.date | time.Format "2 January 2006"}}</p>
+        </div>
+    </a>
+{{ end }}
+</div>
+
+{{ partial "footer.html" . }}

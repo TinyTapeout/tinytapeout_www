@@ -62,7 +62,7 @@ description: 289 designs, closed 2026-05-11
 | 135 | [GrammarTile](tt_um_grammartile) | Plawan Rath |
 | 136 | [Osian Tiny Tapeout](tt_um_wokwi_457560507752701953) | Osian Edwards |
 | 138 | [Jasper Tiny Tape Out Workshop](tt_um_wokwi_457569853853115393) | Jasper Baker |
-| 139 | [Four tile demo [TTSKY26a demo competition]](tt_um_toivoh_demo_4tile) | Toivo Henningsson |
+| 139 | [Underflow Cubed [TTSKY26a demo competition]](tt_um_toivoh_demo_4tile) | Toivo Henningsson |
 | 140 | [Demo 4-bit ALU 74181 variant](tt_um_wokwi_463706339714973697) | Thomas Fischbacher (with Swiss Students) |
 | 142 | [Bad VGA ODE Plotter](tt_um_bad_ode_plotter_vga) | Marcus Alagar |
 | 143 | [FFD16 cpu 16-bit](tt_um_remedy_cpu) | Bahri Berkant İçöz |
@@ -182,7 +182,7 @@ description: 289 designs, closed 2026-05-11
 | 686 | [Tiny Tapeout Workshop 1](tt_um_wokwi_457571148733696001) | Yiki C |
 | 704 | [Tiny Canvas](tt_um_canvas) | Armita Bhatti & Ahmad Jamous |
 | 706 | [double_dabble_SV](tt_um_ole_moller_double_dabble_SV) | Ole Henrik Moller |
-| 708 | [Single tile demo [TTSKY26a demo competition]](tt_um_toivoh_demo_1tile) | Toivo Henningsson |
+| 708 | [Underflow Uncubed [TTSKY26a demo competition]](tt_um_toivoh_demo_1tile) | Toivo Henningsson |
 | 710 | [Tiny Space Invaders](tt_um_shiho_space_invaders) | kyu neushwastein |
 | 711 | [UWASIC Crypto](tt_um_uwasic_crypto) | Leo Qi |
 | 712 | [VGA Clock Demo](tt_um_electron65_vga) | electron65 |
