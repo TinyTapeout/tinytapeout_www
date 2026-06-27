@@ -2,7 +2,7 @@
 title: Crowd Sourced RISC-V Peripheral Entries and Winners
 tags: [competition]
 description: All entries and winners of the Crowd Sourced RISC-V peripheral competition
-weight: 12
+weight: 4
 ---
 
 All of the entries and winners of the crowd sourced open source RISC-V peripheral competition - well done everyone!
