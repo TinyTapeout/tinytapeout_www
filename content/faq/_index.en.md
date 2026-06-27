@@ -70,6 +70,14 @@ plans to provide a DIY devkit, however the files are available on GitHub ([githu
 
 When you purchase 1 devkit, you will receive 1 demo board and 1 breakout board.
 
+## When do I have to provide my shipping address?
+
+Shipping addresses are collected after the shuttle has been manufactured. We do it this way because we don't want to
+collect addresses in case people move homes.
+
+You can expect a notification from us around the expected delivery date for your shuttle - you can view this on our
+[chips](/chips) page.
+
 ## What is an 'analog slot'?
 An analog slot is 1x2 tiles large, and there are a limited number of available slots per shuttle. Availability of analog
 slots can be seen via the shuttle status page.
