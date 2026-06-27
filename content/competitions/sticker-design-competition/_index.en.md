@@ -2,7 +2,7 @@
 title: Sticker Design (closed)
 tags: [competition]
 description: Design some stickers for a chance to win a prize!
-# weight: tbc
+weight: 11
 ---
 
 {{% notice note %}}
