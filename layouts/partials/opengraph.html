@@ -42,9 +42,9 @@
 
 {{ if .Params.cover }}
   {{ $thumbnail_path := path.Join .Path "thumbnail.jpg" }}
-  {{ $social_options := "1280x720 crop center jpeg" }}
+  {{ $social_options := "1200x630 crop center jpeg" }}
   {{ if .Params.cover.social_options }}
-    {{ $social_options = printf "1280x720 %s jpeg" .Params.cover.social_options }}
+    {{ $social_options = printf "1200x630 %s jpeg" .Params.cover.social_options }}
   {{ end }}
   {{ with .Resources.GetMatch .Params.cover.image }}
     {{ $social_img := .Resize $social_options | resources.Copy $thumbnail_path }}
