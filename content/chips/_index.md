@@ -47,3 +47,12 @@ The following chips are planned for the future. The dates are estimates and may 
 | TTIHP26b | Sep 2026            | Apr 2027                |
 | TTGF26c  | 2026 Q4             | Early 2027              |
 | TTSKY26d | Dec 2026            | Jun 2027                |
+
+### Stats
+
+Graphs created by [tt-shuttle-stats](https://github.com/TinyTapeout/tt-shuttle-stats)
+
+![projects per year](https://raw.githubusercontent.com/TinyTapeout/tt-shuttle-stats/main/tt_projects_per_year.png)
+
+![projects per tapeout](https://raw.githubusercontent.com/TinyTapeout/tt-shuttle-stats/main/tt_projects.png)
+
