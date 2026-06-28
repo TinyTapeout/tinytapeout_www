@@ -50,7 +50,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 ### Stats
 
-Graphs created by [tt-shuttle-stats](https://github.com/TinyTapeout/tt-shuttle-stats)
+Graphs created by [tt-shuttle-stats](https://github.com/TinyTapeout/tt-shuttle-stats) using [data from the API](https://app.tinytapeout.com/api/shuttles/submission-stats).
 
 ![projects per year](https://raw.githubusercontent.com/TinyTapeout/tt-shuttle-stats/main/tt_projects_per_year.png)
 
