@@ -34,14 +34,25 @@ div.news-cover-image {
   max-height: 200px;
   max-width: 100vw;
   overflow: hidden;
+  position: relative;
 }
 
 .news-cover-image img {
   margin: 0 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  position: absolute;
 }
 
+/*  the theme always nests an image within an anchor tag, meaning we need to adjust the size of <a>
+    to allow for position: absolute to function properly, otherwise object-position doesn't work
+*/
 .news-cover-image a {
   pointer-events: none;
+  display: block;
+  height: 200px;
+  max-width: 100vw;
 }
 
 .news-container {
