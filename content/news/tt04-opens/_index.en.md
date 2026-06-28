@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/tt04.jpg
     alt: TinyTapeout 
+    social_options: fit smart
 ---
 
 [TT04](/chips/tt04) is open for submissions!

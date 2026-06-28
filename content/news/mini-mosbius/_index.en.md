@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/thumbnail.png
     alt: Circuit layout render of the Mini MOSBius
+    pos: top center
 ---
 
 MOSBius is a fantastic, practical tool for learning the fundamentals of analog microelectronics. Simulation is one thing,

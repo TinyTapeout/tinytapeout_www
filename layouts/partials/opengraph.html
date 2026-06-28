@@ -42,8 +42,12 @@
 
 {{ if .Params.cover }}
   {{ $thumbnail_path := path.Join .Path "thumbnail.jpg" }}
+  {{ $social_options := "1200x630 crop center jpeg" }}
+  {{ if .Params.cover.social_options }}
+    {{ $social_options = printf "1200x630 %s jpeg" .Params.cover.social_options }}
+  {{ end }}
   {{ with .Resources.GetMatch .Params.cover.image }}
-    {{ $social_img := .Resize "1280x720 cropped center jpeg" | resources.Copy $thumbnail_path }}
+    {{ $social_img := .Resize $social_options | resources.Copy $thumbnail_path }}
     {{/*  be warned of this bug: https://github.com/gohugoio/hugo/issues/10584  */}}
     {{ $social_img.Publish }}
     <meta property="og:image" content="{{ $social_img.Permalink }}">

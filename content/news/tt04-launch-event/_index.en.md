@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/image.jpg
     alt: Matt & Uri
+    social_options: crop smart
 ---
 
 We hosted the [TT04](/chips/tt04/) launch event live on StreamYard, with Matt Venn joined by special guests Uri Shaked and Pat Deegan. 
