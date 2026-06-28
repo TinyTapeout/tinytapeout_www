@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/live.jpg
     alt: Youtube Live
+    social_options: fit smart
 ---
 
 With the [TT02](/chips/tt02) chips finally back from the factory, Matt Venn hosted what we believe is the **world's first** live open-source silicon bring-up on [YouTube](https://www.youtube.com/live/MtnDSDFZuag), joined by Uri Shaked and Pat Deegan.
