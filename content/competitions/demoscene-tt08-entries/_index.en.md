@@ -11,7 +11,7 @@ Check out the winners on our [TT08 Demoscene Winners page](../demoscene-tt08-win
 {{%/notice%}}
 
 All the entries! See below for details on each entry and how they were recorded. We are waiting on silicon (due April 2025) for the judging.
-[Find out more about the competition](/competitions/demoscene/).
+[Find out more about the competition](/competitions/demoscene-tt08-announce/).
 
 {{< youtube K9mu3getxhU >}}
 

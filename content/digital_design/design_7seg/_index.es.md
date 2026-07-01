@@ -11,9 +11,6 @@ La lógica para encender los caracterers aparece en la parte inferior de la vent
 
 La parte superior de la ventana de simulación implementa un contador *modulo-11*. En otras palabras, el contador incrementa hasta 11 y luego se reinicia. Este contador es usado para determinar qué caracter debemos emitir al display de 7 segmentos.
 
-La tabla de verdad para el diseño se puede encontrar en la [hoja de cálculo del diseño](https://docs.google.com/spreadsheets/d/1-h9pBYtuxv6su2EC8qBc6nX_JqHXks6Gx5nmHFQh_30/edit?usp=sharing).
-
-
 | SW      | Función             | 
 |---------|---------------------|
 | 1       | N/A                 | 

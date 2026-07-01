@@ -19,7 +19,7 @@ uo_out[4] - TX
 
 ## Salida VGA
 
-![Tiny VGA](/../../specs/pinouts/images/tiny_vga.jpg)
+![Tiny VGA](images/tiny_vga.jpg)
 
 Para salida VGA se recomienda usar el pinout de [Tiny VGA](https://github.com/mole99/tiny-vga). La placa es de código abierto y solo utiliza un Pmod para que puedas usar de todos modos el Pmod bidireccional, u otra cosa.
 

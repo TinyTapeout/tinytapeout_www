@@ -1,0 +1,5 @@
+{{ $src :=  cond (.IsNamedParams) (.Get "src") (.Get 0) }}
+
+{{ with .Page.GetPage $src }}
+    {{.Content}}
+{{ end }}

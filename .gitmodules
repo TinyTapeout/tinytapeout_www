@@ -1,3 +1,6 @@
 [submodule "themes/learn"]
 	path = themes/learn
 	url = https://github.com/matcornic/hugo-theme-learn.git
+[submodule "themes/hugo-shortcode-gallery"]
+	path = themes/hugo-shortcode-gallery
+	url = https://github.com/mfg92/hugo-shortcode-gallery

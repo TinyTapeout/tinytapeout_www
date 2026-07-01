@@ -8,7 +8,7 @@ La información en este documento aplica para Tiny Tapeout 04 en adelante.
 
 Tiny Tapeout incluye una señal de reloj de entrada (`clk`), suministrada externamente a través del pin `mprj_io[6]` del chip Caravel (pin número 37 en el chip QFN-64).
 
-![QFN-64 chip clk pin](/../../specs/clock/images/pinout_clk.svg)
+![QFN-64 chip clk pin](images/pinout_clk.svg)
 
 ## Limitaciones
 
@@ -43,4 +43,4 @@ while True:
 
 ### Ejemplo de señal de reloj
 
-{{< figure src="/../../specs/clock/images/clk_25_179.png" title="Señal de reloj de 25.179 MHz generada por el chip RP2040" >}}
+{{< figure src="images/clk_25_179.png" title="Señal de reloj de 25.179 MHz generada por el chip RP2040" >}}

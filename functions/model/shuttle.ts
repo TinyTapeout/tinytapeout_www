@@ -50,12 +50,14 @@ export async function loadShuttleMapSvg(context: Context, shuttle: string) {
   return await fetchTextAsset(context, `https://tinytapeout.com/chips/${shuttle}/map.svg`);
 }
 
+const cmos5lShuttles = ['ttihp0p4'];
+
 export function getShuttlePdk(shuttle: string) {
   if (shuttle.startsWith('ttgf')) {
     return 'gf180mcuD';
   }
   if (shuttle.startsWith('ttihp')) {
-    return 'ihp-sg13g2';
+    return cmos5lShuttles.includes(shuttle) ? 'ihp-sg13cmos5l' : 'ihp-sg13g2';
   }
   return 'sky130A';
 }

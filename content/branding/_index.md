@@ -28,3 +28,13 @@ weight: 95
 * [400 px logo](/ttlogo_400.png)
 * [3000 px logo](/ttlogo_3000.png)
 * [SVG logo black and white](/ttlogo.svg)
+
+## Colours
+
+| Color    | Hex Code |
+|----------|----------|
+| Pink     | #fc9f9f  |
+| Blue     | #040371  |
+| Yellow   | #fef244  |
+| Hot Pink | #f82381  |
+| Cyan     | #3dfef7  |

@@ -1,116 +1,118 @@
 ---
-title: '3 - Create the GDS'
-description: 'Create the GDS of your design with a GitHub action'
+title: '3 - Create the GDS and submit your design'
+description: 'Create the GDS and submit your design by using our submission portal'
 weight: 40
 aliases:
     - /guides/workshop/wokwi-to-gds
 ---
 
-This guide will walk you through the process of preparing your Wokwi design for submission using the Tiny Tapeout GitHub template. We’ll cover the necessary steps to convert your design into the ASIC files required for chip manufacturing and also view your files with the 3D viewer.
+This guide will walk you through the process of preparing and submitting your Wokwi design using the Tiny Tapeout Wokwi
+submission portal. We’ll cover the necessary steps to convert your design into the ASIC files required for chip
+manufacturing and also view your files with the 3D viewer.
 
 ## Prerequisites
 
 * Wokwi Project: the project must have been started from the [Tiny Tapeout Wokwi Template](https://wokwi.com/projects/354858054593504257).
 * GitHub Account: If you don’t have a GitHub account, sign up for one [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
 
-## Use the GitHub Template
 
-GitHub templates are a collection of files with a predefined structure. Ours contains all the files and settings necessary to convert your design to the [GDS](https://www.zerotoasiccourse.com/terminology/gds2/) we need for manufacture.
+## Filling in the Submission Form
 
-<!--  * Go to the [GitHub Wokwi Template](https://github.com/TinyTapeout/ttsky-wokwi-template) --> 
-* Go to the [GitHub Wokwi Template](https://github.com/TinyTapeout/ttihp-wokwi-template) 
-* Click the ‘Use this template’ button to generate your own copy of the repository.
+To submit your Wokwi project to a shuttle, we will use a helpful submission portal that will take care of creating
+the GitHub repository, setting up GitHub Actions and populating the relevant files.
 
-   <img src="images/template.png" alt="Use Template Repository" width="600" style="border: 1px solid #000;"/>
-<!-- ![Use Template Repository](images/template.png) -->
+The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a>. 
 
-## Allow GitHub Actions to publish
+{{% figure src="images/submission_portal_step1_empty.png" title="Wokwi project submission portal" %}}
 
-GitHub Actions allow automated tasks to run. They are enabled by default, but we need to enable them to publish the results.
+### Step 1 - Project Information
 
-* Go to Repository Settings.
-* Go to the “Pages” section and set the build and deploy source to GitHub Actions.
+At this stage, you should have a Wokwi project which you can submit. **Make sure you have saved the Wokwi project**,
+as that will generate the unique project ID which you will need to proceed.
 
-{{< figure src="images/gitpages.png">}}
-  
-## Edit the `info.yaml` File
+- Copy the Wokwi project URL and paste it into the form.
 
-The `info.yaml` is used to tell us the important details of your project, which Wokwi project it is, who its by, what it does and how to test.
+{{% figure src="images/wokwi_copy_url.png" title="Copy the Wokwi project URL from your browser"%}}
 
-* Update the Wokwi ID in the `info.yaml` file of your repository to match the ID from your Wokwi project.
+- Select the target shuttle - this is where your project will live. Ask someone if you're unsure!
 
-![](images/WOKWI_Project_ID.png?width=50pc)
+{{% figure src="images/submission_portal_step1_filled.png" title="Submission form with the details filled in" %}}
 
-* Update the project information:
-  - Enter the 'title', 'author', and your 'discord' username if you have one.
-  - Include a brief project description in the 'description' field.
-  - If your project needs a specific clock frequency, provide the frequency in Hz under the 'clock_hz' field.
-  - These are used to generate the datasheet and the design's public webpage.
 
-![](images/wokwi_metadata.png?width=50pc)
+### Step 2 - Project Details
 
-* Describe the pins:
-  - For any pins you use, provide a description of what it does.
-  - Don't delete unused pins, just leave them blank.
+In this step, you will have to fill out information about your project - a title, description, expected/required
+clock frequency, and labels for each used pin.
 
-This example shows the description for a design with 2 inputs and 5 outputs.
+{{% figure src="images/submission_portal_step2.png" title="Project details form" %}}
 
-![](images/info_yaml.png?width=30pc)
+**Make sure you are descriptive.** Your project will be available to others, and it is helpful to be able to
+understand what your project does. Parts of this form will be used to generate the shuttle datasheet.
 
-## Save your changes
+- Fill out every applicable field - be as descriptive as possible.
 
-Clicking the commit button will save your changes.
+### Step 3 - Create & Build
 
-![](images/commitinfo.png?width=70pc)
+To make submitting easier, the portal creates the relevant GitHub repository (containing your Wokwi project) on your
+behalf.
 
-## Write some documentation
+- Grant us permission via the portal to create the repository by clicking on the "Authorize GitHub" button.
 
-We put all the project information into the [datasheet](https://tinytapeout.github.io/tinytapeout-06/datasheet.pdf) and the design's public page on the website. You can use Markdown to write your documentation, telling everyone what your chip does and how to test it.
+{{% figure src="images/submission_portal_step3.png" title="Repository creation authorization request" %}}
 
-* Edit the `info.md` File in the docs directory.
-* You need to change both the 'how it works' and 'how to test' sections.
-* Save and commit your changes as you did before.
+If successful, the webpage should refresh with a success notification.
 
-{{% notice warning %}}
-Leaving the info.md unmodified will cause the 'docs' action to fail. 
-{{% /notice %}}
+{{% figure src="images/submission_portal_step3_success.png" title="Submission portal authorization success" %}}
 
-Here's an example that would help you or someone else test the design when you receive it on the chip:
+You can now allow us to create the repository containing your Wokwi project.
 
-![](images/doc_example.png?width=70pc)
+- Click on the "Create Repo" button.
+
+The repository will now be created and the physical layout of your design will now start building!
+
+{{% figure src="images/submission_portal_step3_create_repo.png" title="Creating the repository" %}}
+
+{{% figure src="images/submission_portal_step3_build_gds.png" title="Automatically building the GDS using GitHub Actions" %}}
+
+- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository.
+
+---
+
+## Exploring the Repository
+
+The newly created repository contains several files and features that you should know about.
+
+### The `info.yaml` File
+
+`info.yaml` tells us the important details of your project: which Wokwi project it is, who it's by, it's nominal clock
+speed, the amount of tiles it uses and a description of all the pins it uses. This is populated by the information you
+entered in step 2 of the form.
+
+{{% figure src="images/wokwi_metadata.png" title="An example info.yaml file" %}}
 
 ## GitHub Actions
 
-GitHub actions are a service provided free of charge for open source projects. They usually start a virtual machine, install and then run some software.
+GitHub Actions are a service provided free of charge for open source projects. They usually start a virtual machine, install and then run some software.
 Each commit will trigger these actions to run. 
 We use a few different actions to do different tasks:
 
-- **docs** This action checks your docs and then generates a PDF preview.
-- **gds** This action generates the GDS for your project, and shows the results.
-- **wokwi test** This action will test the design if you created a truth table for your Wokwi design.
+- **docs**: This action checks your docs and then generates a PDF preview.
+- **gds**: This action generates the GDS for your project, and shows the results.
+- **wokwi test**: This action will test the design if you created a truth table for your Wokwi design.
 
 To see the currently running and historical actions, go to the ‘Actions’ tab in your repository.
 
 ![](images/actions_button.png?width=50pc)
     
 {{% notice tip %}}
-Red indicates failure and green indicates success. Only the 'docs' and 'gds' actions need to be green to submit your design.
+Red indicates failure and green indicates success. Only the GDS action needs to be green to submit your design.
 {{% /notice %}}
-
-### Docs Action
-
-This action generates a preview of how your documentation will look. You can download a PDF preview to check it.
-
-If you have a failure, you can check the log to see what the problem is. The most common error is missing fields in `info.yaml` or leaving `info.md` unchanged.
-
-{{< figure src="images/checkerrors.png">}}   
 
 ### GDS Action
 
-This action generates the GDS for your project, along with warnings, utilization statistics, and cell usage details. 
+This action installs the PDK, LibreLane, and generates the GDS for your project. It displays warnings, utilization statistics, and cell usage details. 
 If you have a failure, you can check the log to see what the problem is. The most common errors are:
 
-* Not [enabling the GitHub action](/guides/workshop/create-your-gds/#allow-github-actions-to-publish) to publish
 * Not resolving [ERC warnings](/guides/workshop/simulate-a-gate/#simulate) in the Wokwi design
 * If you get stuck, ask a TA!
 
@@ -135,15 +137,13 @@ Can you match the logic gates you used in the Wokwi design with the standard cel
 
 {{< figure src="images/gdsoutput.png">}}   
 
-##### Key commmands
-
+**Keyboard Controls:**
 1. Hide Fill, Decap, Tap cells.
 2. Hide top cell geometry.
 3. Isolate selection / back.
 4. Zoom to selection.
 
-##### Mouse commands
-
+**Mouse Controls:**
 - Use the mouse wheel or zoom gesture to zoom.
 - Pan and tilt by clicking and dragging.
 - Shift with shift left click and drag.
@@ -151,9 +151,42 @@ Can you match the logic gates you used in the Wokwi design with the standard cel
 
 {{< figure src="images/or_layout_annotated.png">}}   
 
+### Project Documentation
+
+We collect all the project information into a <a href="https://tinytapeout.github.io/tinytapeout-sky-25b/datasheet.pdf" target="_blank">datasheet</a> and onto the website itself. You can use Markdown to write your documentation,
+and tell everyone what your chip does, and how to test it properly.
+
+You may notice that the docs action has failed on your repository - projects with a failing docs action
+will still be included onto the shuttle, but your project information will **not** be included onto the shuttle datasheet.
+
+To add documentation, follow these steps:
+
+* Edit `docs/info.md` - this should be pre-populated with some example text already.
+* You need to change both the 'how it works' and 'how to test' sections.
+* Save and commit your changes.
+
+### Step 4 - Submit to Shuttle
+
+The final stage - submit your design onto your selected shuttle! You will need either a coupon code, or to buy some
+tiles to proceed.
+
+{{% notice note %}}
+**If you have a coupon code for a free tile** then please ask a teaching assistant for your coupon. Enter it into the
+field, and then click submit.
+{{% /notice %}}
+
+{{% figure src="images/submission_portal_step4.png" title="Project ready for submission to the shuttle" %}}
+
+{{% notice tip %}}
+Your project will be automatically submitted to a shuttle, and a revision of it will be included onto the shuttle.
+To update your project, you will need to make your changes and then submit a new revision - this is covered in the
+next exercise.
+{{% /notice %}}
+
+
 ## Congratulations!
 
-Once you have the GDS and Docs jobs completing successfully, you are ready to submit to the Tiny Tapeout shuttle. That's coming up soon!
+The GDS action should have completed successfully, and the project should now be submitted to your selected shuttle!
 
 ## If you have time, try these next steps
 

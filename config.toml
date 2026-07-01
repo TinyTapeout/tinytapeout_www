@@ -1,8 +1,8 @@
 baseURL = 'https://tinytapeout.com'
 languageCode = 'en-us'
 title = 'Tiny Tapeout'
-theme = "learn"
-
+theme = ["learn", "hugo-shortcode-gallery"]
+enableGitInfo = true
 
 [security]
   [security.funcs]
@@ -20,8 +20,8 @@ theme = "learn"
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
-  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSfQ7-CfwX139EeZ_mK5B7B-zrs1COUbZEk0LXseT43QYZMCIA/viewform?usp=header"
-  
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSeVc9YmYN5TYKsDpFGyPtZE6N3sstT2PcbTdee-bK8FMjQwEQ/viewform?usp=header"
+  workshopFoundry = "sky"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]

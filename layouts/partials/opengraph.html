@@ -40,6 +40,25 @@
   <meta property="og:type" content="website">
 {{- end }}
 
+{{ if .Params.cover }}
+  {{ $thumbnail_path := path.Join .Path "thumbnail.jpg" }}
+  {{ $social_options := "1200x630 crop center jpeg" }}
+  {{ if .Params.cover.social_options }}
+    {{ $social_options = printf "1200x630 %s jpeg" .Params.cover.social_options }}
+  {{ end }}
+  {{ with .Resources.GetMatch .Params.cover.image }}
+    {{ $social_img := .Resize $social_options | resources.Copy $thumbnail_path }}
+    {{/*  be warned of this bug: https://github.com/gohugoio/hugo/issues/10584  */}}
+    {{ $social_img.Publish }}
+    <meta property="og:image" content="{{ $social_img.Permalink }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ $social_img.Permalink }}">
+  {{ end }}
+{{ end }}
+
 {{- with partial "_funcs/get-page-images" . }}
   {{- range . | first 6 }}
     <meta property="og:image" content="{{ .Permalink }}">

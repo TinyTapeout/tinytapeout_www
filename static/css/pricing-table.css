@@ -34,9 +34,16 @@
   margin-top: 0;
 }
 
+.pricing-table .pricing-plan .from-price {
+  font-size: 12pt;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
 .pricing-table .pricing-plan .price {
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0px;
 }
 
 .pricing-table .pricing-plan .features {

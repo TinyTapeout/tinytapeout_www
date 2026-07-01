@@ -18,19 +18,19 @@ Our pricing model makes it easy to put many designs onto one chip that is then s
 {{< pricing-table plans=`[
   {
     "name": "Small class",
-    "price": "$500",
+    "price": "€565",
     "features": ["Up to 5 Projects", "1 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=5&pcbs=1"
   },
   {
     "name": "Medium class",
-    "price": "$2000",
+    "price": "€2195",
     "features": ["Up to 25 Projects", "3 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=25&pcbs=3"
   },
   {
     "name": "Large class",
-    "price": "$5000",
+    "price": "€5325",
     "features": ["Up to 75 Projects", "5 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=75&pcbs=5"
   }
@@ -38,7 +38,6 @@ Our pricing model makes it easy to put many designs onto one chip that is then s
 
 Fine print:
 
-* The prices do not include shipping.
 * The number of projects assumes each project is one tile (~160 x 100 um). For larger projects, or projects using analog pins, the number of projects will be less.
 * Each PCB kit includes one chip with all the projects from the shuttle, assembled on a [PCB](/specs/pcb) and ready to use.
 * Check the [shuttle schedule](/chips/) for the deadline of the next shuttle and the expected delivery date.

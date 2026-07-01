@@ -13,10 +13,10 @@ this, you'll have a GitHub repository containing your modified VGA design which 
 
 ## Prepare your project
 ### Set up the repository
-You'll need to create a repository using our IHP template. It contains all the files and settings necessary to convert
+You'll need to create a repository using our template. It contains all the files and settings necessary to convert
 your design to the GDS we need for manufacture.
 
-- Visit [github.com/TinyTapeout/ttihp-verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template).
+- Visit {{< get-workshop-template-link >}}
 - Click "Use this template" and then "Create a new repository".
 
 {{< figure src="images/git-repo-template.png" title="Using the IHP template repository to create a new one" >}}
@@ -32,7 +32,7 @@ results.
 
 ### Download your project
 
-Download your VGA Playground project by clicking the download icon next to the presets.
+Download your VGA Playground project by clicking the download icon next to the title.
 {{< figure src="images/vgap-download-button.png" title="Download your VGA Playground project via the download button">}}
 
 You'll now have a zip file containing a collection of source files.
@@ -247,3 +247,6 @@ Explore the design - you can rotate, zoom and hide certain layers or cells. Can 
 - Check out our video on [how the GitHub action works behind the scenes](/making_asics).
 - Revisit `test.py` and implement actual testing - the code is there, but you'll need to provide some reference screenshots
 so that it can compare the output with what you expect!
+- Generate a video of your design via GitHub actions - you can check out these tools and try to integrate one into your project:
+    - PNG/MP4 output with [VGA Simulator](https://github.com/urish/tt-2048-game/tree/main/vga-sim)
+    - GIF output with [Verilator VGA Simulator](https://github.com/jar/vga_sim)

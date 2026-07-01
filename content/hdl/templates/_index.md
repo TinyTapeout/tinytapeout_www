@@ -7,6 +7,7 @@ description: "Handy templates to help submit faster with an HDL"
 
 * For the IHP shuttle use: https://github.com/TinyTapeout/ttihp-verilog-template
 * For the SKY shuttle use: https://github.com/TinyTapeout/ttsky-verilog-template
+* For the GF shuttle use: https://github.com/TinyTapeout/ttgf-verilog-template
 
 This repo shows how to:
 

@@ -1,0 +1,7 @@
+{{ $attribution := cond (.IsNamedParams) (.Get "attribution") (.Get 0) }}
+
+<div>
+    <blockquote>
+        {{.Inner}}<p style="text-align: right">— {{$attribution}}</p>
+    </blockquote>
+</div>

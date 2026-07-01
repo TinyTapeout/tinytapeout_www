@@ -119,32 +119,44 @@
             <i class="fas fa-check read-icon"></i>
           {{ end }}
       </a>
-      {{ $numberOfPages := (add (len ( where .Pages "Params.hidden" "ne" true )) (len ( where .Sections "Params.hidden" "ne" true ))) }}
-      {{ if ne $numberOfPages 0 }}
-        <ul>
-          {{ $currentNode.Scratch.Set "pages" .Pages }}
-          {{ if .Sections}}
-            {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
-          {{end}}
-          {{ $pages := ($currentNode.Scratch.Get "pages") }}
 
-        {{if eq .Site.Params.ordersectionsby "title"}}
-          {{ range $pages.ByTitle }}
-            {{ if and .Params.hidden (not $.showhidden) }}
-            {{else}}
-            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+      {{if ne .Params.hideChildrenFromMenu true}}
+        {{ $numberOfPages := (add (len ( where .Pages "Params.hidden" "ne" true )) (len ( where .Sections "Params.hidden" "ne" true ))) }}
+        {{ if ne $numberOfPages 0 }}
+          <ul>
+            {{ $currentNode.Scratch.Set "pages" .Pages }}
+            {{ if .Sections}}
+              {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
             {{end}}
-          {{ end }}
-        {{else}}
-          {{ range $pages.ByWeight }}
-            {{ if and .Params.hidden (not $.showhidden) }}
+            {{ $pages := ($currentNode.Scratch.Get "pages") }}
+
+          {{if eq .Site.Params.ordersectionsby "title"}}
+            {{ range $pages.ByTitle }}
+              {{ if and .Params.hidden (not $.showhidden) }}
+              {{else}}
+              {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+              {{end}}
+            {{ end }}
+          {{else}}
+            {{if .Params.reverseMenu}}
+              {{ range $pages.ByWeight.Reverse}}
+                {{ if and .Params.hidden (not $.showhidden) }}
+                {{else}}
+                {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks}}
+                {{end}}
+              {{end}}
             {{else}}
-            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+              {{ range $pages.ByWeight }}
+                {{ if and .Params.hidden (not $.showhidden) }}
+                {{else}}
+                {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
+                {{end}}
+              {{ end }}
             {{end}}
-          {{ end }}
-        {{end}}
-        </ul>
-      {{ end }}
+          {{end}}
+          </ul>
+        {{ end }}
+      {{end}}
     </li>
   {{else}}
     {{ if not .Params.Hidden }}

@@ -21,10 +21,10 @@ Para recibir más información especialmente para quienes estén usando Tiny Tap
 ## Preparación
 
 * Mire el [video introductorio](https://youtu.be/f4w1QOpHzOo)
-* Complete algunos de los [cursos de diseño digital](../../es/digital_design/)
+* Complete algunos de los [cursos de diseño digital](digital_design/)
 * Cree un nuevo diseño o utilice uno de nuestros [proyectos personalizables](/tags/customisable/)
 * Cree los [archivos GDS necesarios para fabricación](https://tinytapeout.com/#get-your-submission-ready)
-* Eche un vistazo a las [preguntas frecuentes](../../es/faq)
+* Eche un vistazo a las [preguntas frecuentes](faq)
 
 ## Enseñanza
 
@@ -38,23 +38,23 @@ Para recibir más información especialmente para quienes estén usando Tiny Tap
 
 * Envíe usted mismo los diseños de los participantes con una tarjeta de crédito o póngase en contacto con nosotros para obtener tokens prepagos.
 * Este programa es nuevo, y aún tenemos incertidumbres con respecto a cuánto tiempo demorarán las entregas de los diseños, pero es probable que demoren alrededor de 12 meses.
-* Mientras espera, puede usar [SiliWiz](/../../es/siliwiz) para enseñar a sus estudiantes cómo se utilizan los semiconductores para construir los componentes básicos digitales que se usaron en el seminario.
+* Mientras espera, puede usar [SiliWiz](siliwiz) para enseñar a sus estudiantes cómo se utilizan los semiconductores para construir los componentes básicos digitales que se usaron en el seminario.
 
 # Consejos para universidades
 
 ## Preparación
 
 * Mire el [video introductorio](https://youtu.be/f4w1QOpHzOo)
-* Revise las [notas acerca de HDL](/../../es/hdl/)
+* Revise las [notas acerca de HDL](hdl)
 * Pruebe el flujo de trabajo con un proyecto de FPGA sencillo
 * Cree los [archivos GDS necesarios para fabricación](https://tinytapeout.com/#get-your-submission-ready)
-* Eche un vistazo a las [preguntas frecuentes](../../es/faq)
+* Eche un vistazo a las [preguntas frecuentes](faq)
 
 ## Envío
 
 * Envíe usted mismo los diseños de los participantes con una tarjeta de crédito o póngase en contacto con nosotros para obtener tokens prepagos.
 * Este programa es nuevo, y aún tenemos incertidumbres con respecto a cuánto tiempo demorarán las entregas de los diseños, pero es probable que demoren alrededor de 12 meses.
-* Mientras espera, puede usar [SiliWiz](/../../es/siliwiz) para enseñar a sus estudiantes cómo se utilizan los semiconductores para construir los componentes básicos digitales que se usaron en el seminario.
+* Mientras espera, puede usar [SiliWiz](siliwiz) para enseñar a sus estudiantes cómo se utilizan los semiconductores para construir los componentes básicos digitales que se usaron en el seminario.
 
 # Suscríbase a la lista de correo
 

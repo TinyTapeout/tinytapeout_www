@@ -168,10 +168,6 @@ Debido a las limitaciones de Github, necesitas hacer un cambio en los ajustes de
 
 ![actions](/images/faq/action_pages.png)
 
-## Tuve un error en mi GDS Action de Github.
-
-La mejor forma de hacérmelo saber es [abrir un issue en el repositorio de la plantilla con un link a su diseño de wokwi](https://github.com/tinytapeout/tt02-submission-template/issues/new?assignees=mattvenn&labels=&template=bug_report.md&title=) y te contactaré de vuelta.
-
 ## Obtuve un error en mi Github Action de documentación.
 
 Es posible que no hayas llenado suficientes campos, requerimos que se llenen los siguientes campos:

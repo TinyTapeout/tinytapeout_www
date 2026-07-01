@@ -101,7 +101,7 @@ Click the **Simulation** button and look at the traces.
 
 What does the graph show us? To start with, when the gate is less than around one volt, there is no current flowing. The MOSFET is off. Once we get past a threshold, the MOSFET starts to conduct and lets more and more current flow. This value is called the gate-source threshold.
 
-1. Try changing the Width of the gate (in) of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
+1. Try changing the width of the red polysilicon gate of the MOSFET and see how this affects the curve. If we want the most current to flow in the saturation region, should we use a short or a long gate?
 
 2. If you zoom into the graph, can you measure what gate voltage is required to get the MOSFET to start conducting?
 

@@ -2,6 +2,7 @@
 title: 'Tiny Tapeout GF 0.2'
 weight: 50
 description: 52 designs, closed 2025-11-24
+hidden: true
 ---
 
 {{% toc %}}

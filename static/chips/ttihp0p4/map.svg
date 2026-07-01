@@ -1,0 +1,2005 @@
+<svg
+  width="500"
+  viewBox="0 0 2700 3984.7"
+  style="max-width:100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    rect.spine {
+      fill: #dde;
+    }
+
+    rect.ctrl {
+      fill: orange;
+    }
+
+    rect.mux {
+      fill: purple;
+    }
+
+    rect.analog-mux {
+      fill: #4e674e;
+    }
+
+    rect.mux:hover {
+      fill: #aa00aa;
+    }
+
+    rect.tile {
+      fill: #d8d8d8;
+    }
+
+    rect.tile.project {
+      fill: #d0d;
+    }
+
+    rect.tile.analog {
+      fill: darkseagreen;
+    }
+
+    rect.tile.project:hover {
+      fill: cyan;
+    }
+
+    rect.tile.reserved {
+      fill: #ebe;
+    }
+
+    rect.tile.program-reserved {
+      fill: #c8e6c9;
+    }
+
+    rect.tile.dimmed {
+      fill: #e9e;
+    }
+
+    rect.tile.analog.dimmed {
+      fill: #b1c3b1;
+    }
+
+    rect.tile.highlight {
+      fill: #08d;
+    }
+  </style>
+  <!--$-->
+  <style>
+    rect.tile.project[data-addr="%MUX_ADDRESS%"] {
+      fill: #08d;
+    }
+
+    /* %EXTRA_STYLES% */
+  </style>
+  <rect
+    x="0"
+    y="0"
+    width="2700"
+    height="3984.7"
+    fill="#eee"
+    stroke="black"
+    stroke-width="5"
+  ></rect>
+  <rect
+    class="spine"
+    x="1300"
+    y="176.54999999999995"
+    width="100"
+    height="3572.1"
+  ></rect>
+  <rect class="ctrl" x="1302" y="1914.8600000000001" width="96" height="154.98">
+    <title>Controller</title>
+  </rect>
+  <!--$-->
+  <rect
+    class="mux"
+    x="11.76"
+    y="169.34999999999997"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="spine"
+    x="1299.12"
+    y="176.54999999999995"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    class="mux"
+    x="1400.8799999999999"
+    y="169.34999999999997"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect class="mux" x="11.76" y="566.25" width="1287.36" height="75.6">
+    <title>Mux</title>
+  </rect>
+  <rect class="spine" x="1299.12" y="573.45" width="101.76" height="40"></rect>
+  <rect
+    class="mux"
+    x="1400.8799999999999"
+    y="566.25"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="mux"
+    x="11.76"
+    y="963.1499999999999"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="spine"
+    x="1299.12"
+    y="970.3499999999999"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    class="mux"
+    x="11.76"
+    y="1360.0499999999997"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a10"
+    class="spine"
+    x="1299.12"
+    y="1367.2499999999998"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a110"
+    class="mux"
+    x="1400.8799999999999"
+    y="1360.0499999999997"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a120"
+    class="mux"
+    x="11.76"
+    y="1756.9499999999998"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a13"
+    class="spine"
+    x="1299.12"
+    y="1764.1499999999999"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a140"
+    class="mux"
+    x="1400.8799999999999"
+    y="1756.9499999999998"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a150"
+    class="mux"
+    x="11.76"
+    y="2153.85"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a16"
+    class="spine"
+    x="1299.12"
+    y="2161.0499999999997"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a170"
+    class="mux"
+    x="1400.8799999999999"
+    y="2153.85"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a180"
+    class="mux"
+    x="11.76"
+    y="2550.7499999999995"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a19"
+    class="spine"
+    x="1299.12"
+    y="2557.9499999999994"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a210"
+    class="mux"
+    x="11.76"
+    y="2947.6499999999996"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a22"
+    class="spine"
+    x="1299.12"
+    y="2954.8499999999995"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a230"
+    class="mux"
+    x="1400.8799999999999"
+    y="2947.6499999999996"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a25"
+    class="spine"
+    x="1299.12"
+    y="3351.7499999999995"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a260"
+    class="mux"
+    x="1400.8799999999999"
+    y="3344.5499999999997"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a270"
+    class="mux"
+    x="11.76"
+    y="3741.45"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a28"
+    class="spine"
+    x="1299.12"
+    y="3748.6499999999996"
+    width="101.76"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a290"
+    class="mux"
+    x="1400.8799999999999"
+    y="3741.45"
+    width="1287.36"
+    height="75.6"
+  >
+    <title>Mux</title>
+  </rect>
+  <!--$--><svg>
+    <a href="/chips/ttihp0p4/000">
+      <rect
+        class="tile project"
+        data-addr="0"
+        x="1086.96"
+        y="1995.2800000000002"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_chip_rom <!--$-->(Chip ROM)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/001">
+      <rect
+        class="tile project"
+        data-addr="1"
+        x="1086.96"
+        y="2233.42"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_factory_test <!--$-->(Tiny Tapeout Factory Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/330">
+      <rect
+        class="tile project"
+        data-addr="330"
+        x="2261.04"
+        y="2630.32"
+        width="419.52"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_htfab_asicle2 <!--$-->(Asicle v2)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/034">
+      <rect
+        class="tile project"
+        data-addr="34"
+        x="871.92"
+        y="1836.52"
+        width="202.08"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_htfab_caterpillar <!--$-->(Simon's Caterpillar)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/523">
+      <rect
+        class="tile project"
+        data-addr="523"
+        x="11.76"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_urish_simon <!--$-->(Simon Says memory game)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/521">
+      <rect
+        class="tile project"
+        data-addr="521"
+        x="226.79999999999998"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_microlane_demo <!--$-->(microlane demo project)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/519">
+      <rect
+        class="tile project"
+        data-addr="519"
+        x="441.84"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_ygdes_hdsiso8_dlhq <!--$-->(ttihp-HDSISO8)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/517">
+      <rect
+        class="tile project"
+        data-addr="517"
+        x="656.88"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_ygdes_hdsiso8_rs <!--$-->(ttihp-HDSISO8RS)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/515">
+      <rect
+        class="tile project"
+        data-addr="515"
+        x="871.92"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_YannGuidon_TinyScanChain <!--$-->(TinyScanChain5L)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttihp0p4/513">
+      <rect
+        class="tile project"
+        data-addr="513"
+        x="1086.96"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_MichaelBell_photo_frame <!--$-->(Photo Frame)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a10">
+    <a href="/chips/ttihp0p4/577">
+      <rect
+        class="tile project"
+        data-addr="577"
+        x="1400.8799999999999"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_digital_clock_example <!--$-->(7-Segment Digital Desk
+          Clock)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a11">
+    <a href="/chips/ttihp0p4/266">
+      <rect
+        class="tile project"
+        data-addr="266"
+        x="11.76"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_miniMAC <!--$-->(miniMAC_5L)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a12">
+    <a href="/chips/ttihp0p4/075">
+      <rect
+        class="tile project"
+        data-addr="75"
+        x="2261.04"
+        y="2233.42"
+        width="419.52"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_tinymoa_ihp0p4_16x16 <!--$-->(TinyMOA-IHP0P4-16x16)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a13">
+    <a href="/chips/ttihp0p4/579">
+      <rect
+        class="tile project"
+        data-addr="579"
+        x="1615.9199999999998"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_glyph_mode_hd <!--$-->(Glyph Mode HD)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a14">
+    <a href="/chips/ttihp0p4/264">
+      <rect
+        class="tile project"
+        data-addr="264"
+        x="226.79999999999998"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_prism_lite <!--$-->(ihp_cmos51_prism)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a15">
+    <a href="/chips/ttihp0p4/262">
+      <rect
+        class="tile project"
+        data-addr="262"
+        x="441.84"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_htfab_rotfpga2 <!--$-->(ROTFPGA v2)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a16">
+    <a href="/chips/ttihp0p4/490">
+      <rect
+        class="tile project"
+        data-addr="490"
+        x="1400.8799999999999"
+        y="645.8200000000002"
+        width="1289.28"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_SotaSoC <!--$-->(SotaSoC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a17">
+    <a href="/chips/ttihp0p4/581">
+      <rect
+        class="tile project"
+        data-addr="581"
+        x="1830.9599999999998"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_essen <!--$-->(Fast bfloat multiplication)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a18">
+    <a href="/chips/ttihp0p4/583">
+      <rect
+        class="tile project"
+        data-addr="583"
+        x="2046"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_calonso88_spi_i2c_reg_bank <!--$-->(Register bank
+          accessible through SPI and I2C)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a19">
+    <a href="/chips/ttihp0p4/042">
+      <rect
+        class="tile project"
+        data-addr="42"
+        x="11.76"
+        y="1836.52"
+        width="419.52"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_urish_usb_cdc <!--$-->(USB CDC (Serial) Device)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a20">
+    <a href="/chips/ttihp0p4/585">
+      <rect
+        class="tile project"
+        data-addr="585"
+        x="2261.04"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_urish_rings <!--$-->(VGA Rings)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a21">
+    <a href="/chips/ttihp0p4/260">
+      <rect
+        class="tile project"
+        data-addr="260"
+        x="656.88"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_toivoh_demo <!--$-->(Orion Iron Ion [TT08 demo
+          competition])
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a22">
+    <a href="/chips/ttihp0p4/516">
+      <rect
+        class="tile project"
+        data-addr="516"
+        x="656.88"
+        y="3424.12"
+        width="636.96"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_2048_vga_game <!--$-->(2048 sliding tile puzzle game
+          (VGA))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a23">
+    <a href="/chips/ttihp0p4/587">
+      <rect
+        class="tile project"
+        data-addr="587"
+        x="2476.08"
+        y="3821.02"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_pakesson_glitcher <!--$-->(Glitcher)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a24">
+    <a href="/chips/ttihp0p4/038">
+      <rect
+        class="tile project"
+        data-addr="38"
+        x="441.84"
+        y="1836.52"
+        width="419.52"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_chatelao_fp8_multiplier <!--$-->(OCP MXFP8 Streaming MAC
+          Unit)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a25">
+    <a href="/chips/ttihp0p4/235">
+      <rect
+        class="tile project"
+        data-addr="235"
+        x="1400.8799999999999"
+        y="1042.7200000000003"
+        width="1289.28"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_algofoogle_raybox_zero <!--$-->(raybox-zero TTIHP0p4
+          edition)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a26">
+    <a href="/chips/ttihp0p4/258">
+      <rect
+        class="tile project"
+        data-addr="258"
+        x="871.92"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_flummer_ltc <!--$-->(Linear Timecode (LTC) generator
+          with I2C control)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a27">
+    <a href="/chips/ttihp0p4/098">
+      <rect
+        class="tile project"
+        data-addr="98"
+        x="1400.8799999999999"
+        y="1836.52"
+        width="419.52"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_lledoux_s3fdp_seqcomb <!--$-->(Pattern-Guided Arithmetic
+          Optimizations with MLIR)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a28">
+    <a href="/chips/ttihp0p4/102">
+      <rect
+        class="tile project"
+        data-addr="102"
+        x="1830.9599999999998"
+        y="1836.52"
+        width="419.52"
+        height="313.74"
+      >
+        <title><!--$-->tt_um_snake_game <!--$-->(SnakeGame)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a29">
+    <a href="/chips/ttihp0p4/106">
+      <rect
+        class="tile project"
+        data-addr="106"
+        x="2261.04"
+        y="1836.52"
+        width="419.52"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_spongent88 <!--$-->(Spongent-88 Hash Accelerator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a30">
+    <a href="/chips/ttihp0p4/261">
+      <rect
+        class="tile project"
+        data-addr="261"
+        x="656.88"
+        y="3027.2200000000003"
+        width="636.96"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_lledoux_bf16_diminished_kulisch <!--$-->(Pattern-Guided
+          Arithmetic Optimizations with MLIR kulisch bf16)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a31">
+    <a href="/chips/ttihp0p4/032">
+      <rect
+        class="tile project"
+        data-addr="32"
+        x="1086.96"
+        y="1836.52"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_float_synth_nikleberg <!--$-->(float_synth)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a32">
+    <a href="/chips/ttihp0p4/299">
+      <rect
+        class="tile project"
+        data-addr="299"
+        x="11.76"
+        y="804.5800000000003"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_silicon_strummer <!--$-->(Silicon Strummer)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a33">
+    <a href="/chips/ttihp0p4/297">
+      <rect
+        class="tile project"
+        data-addr="297"
+        x="226.79999999999998"
+        y="804.5800000000003"
+        width="202.08"
+        height="154.98"
+      >
+        <title><!--$-->tt_um_vga_clock <!--$-->(VGA clock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a34">
+    <a href="/chips/ttihp0p4/522">
+      <rect
+        class="tile project"
+        data-addr="522"
+        x="11.76"
+        y="3027.2200000000003"
+        width="636.96"
+        height="710.64"
+      >
+        <title>
+          <!--$-->tt_um_urish_sic1 <!--$-->(SIC-1 8-bit SUBLEQ Single
+          Instruction Computer)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a35">
+    <a href="/chips/ttihp0p4/295">
+      <rect
+        class="tile project"
+        data-addr="295"
+        x="441.84"
+        y="804.5800000000003"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_algofoogle_vgaringosc <!--$-->(Ring osc on VGA)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a36">
+    <a href="/chips/ttihp0p4/293">
+      <rect
+        class="tile project"
+        data-addr="293"
+        x="656.88"
+        y="804.5800000000003"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_tinymoa_ihp0p4_8x8 <!--$-->(TinyMOA-IHP0P4-8x8)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a37">
+    <a href="/chips/ttihp0p4/256">
+      <rect
+        class="tile project"
+        data-addr="256"
+        x="1086.96"
+        y="2630.32"
+        width="202.08"
+        height="313.74"
+      >
+        <title>
+          <!--$-->tt_um_tinytapeout_logo_screensaver <!--$-->(VGA Screensaver
+          with Tiny Tapeout Logo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a38">
+    <a href="/chips/ttihp0p4/326">
+      <rect
+        class="tile project"
+        data-addr="326"
+        x="1400.8799999999999"
+        y="2233.42"
+        width="854.4"
+        height="710.64"
+      >
+        <title><!--$-->tt_um_lisa <!--$-->(LISA 8-Bit Microcontroller)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a39">
+    <a href="/chips/ttihp0p4/291">
+      <rect
+        class="tile project"
+        data-addr="291"
+        x="871.92"
+        y="804.5800000000003"
+        width="202.08"
+        height="154.98"
+      >
+        <title>
+          <!--$-->tt_um_nicklausthompson_twi_monitor <!--$-->(TWI Monitor)
+        </title>
+      </rect>
+    </a></svg
+  ><!--$-->
+  <rect
+    class="tile"
+    x="1400.8799999999999"
+    y="3582.88"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1615.9199999999998"
+    y="3582.88"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1830.9599999999998"
+    y="3582.88"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2046" y="3582.88" width="202.08" height="154.98">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2261.04" y="3582.88" width="202.08" height="154.98">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2476.08" y="3582.88" width="202.08" height="154.98">
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1400.8799999999999"
+    y="3424.12"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1615.9199999999998"
+    y="3424.12"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1830.9599999999998"
+    y="3424.12"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2046" y="3424.12" width="202.08" height="154.98">
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a10"
+    class="tile"
+    x="2261.04"
+    y="3424.12"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a11"
+    class="tile"
+    x="2476.08"
+    y="3424.12"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a12"
+    class="tile"
+    x="1400.8799999999999"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a13"
+    class="tile"
+    x="1615.9199999999998"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a14"
+    class="tile"
+    x="1830.9599999999998"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a15"
+    class="tile"
+    x="2046"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a16"
+    class="tile"
+    x="2261.04"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a17"
+    class="tile"
+    x="2476.08"
+    y="3185.98"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a18"
+    class="tile"
+    x="1400.8799999999999"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a19"
+    class="tile"
+    x="1615.9199999999998"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a20"
+    class="tile"
+    x="1830.9599999999998"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a21"
+    class="tile"
+    x="2046"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a22"
+    class="tile"
+    x="2261.04"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a23"
+    class="tile"
+    x="2476.08"
+    y="3027.2200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a24"
+    class="tile"
+    x="11.76"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a25"
+    class="tile"
+    x="226.79999999999998"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a26"
+    class="tile"
+    x="441.84"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a27"
+    class="tile"
+    x="656.88"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a28"
+    class="tile"
+    x="871.92"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a29"
+    class="tile"
+    x="1086.96"
+    y="2392.1800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a30"
+    class="tile"
+    x="11.76"
+    y="2233.42"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a31"
+    class="tile"
+    x="226.79999999999998"
+    y="2233.42"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a32"
+    class="tile"
+    x="441.84"
+    y="2233.42"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a33"
+    class="tile"
+    x="656.88"
+    y="2233.42"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a34"
+    class="tile"
+    x="871.92"
+    y="2233.42"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a35"
+    class="tile"
+    x="11.76"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a36"
+    class="tile"
+    x="226.79999999999998"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a37"
+    class="tile"
+    x="441.84"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a38"
+    class="tile"
+    x="656.88"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a39"
+    class="tile"
+    x="871.92"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a40"
+    class="tile"
+    x="1086.96"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a41"
+    class="tile"
+    x="1400.8799999999999"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a42"
+    class="tile"
+    x="1615.9199999999998"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a43"
+    class="tile"
+    x="1830.9599999999998"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a44"
+    class="tile"
+    x="2046"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a45"
+    class="tile"
+    x="2261.04"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a46"
+    class="tile"
+    x="2476.08"
+    y="1598.38"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a47"
+    class="tile"
+    x="11.76"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a48"
+    class="tile"
+    x="226.79999999999998"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a49"
+    class="tile"
+    x="441.84"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a50"
+    class="tile"
+    x="656.88"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a51"
+    class="tile"
+    x="871.92"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a52"
+    class="tile"
+    x="1086.96"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a53"
+    class="tile"
+    x="1400.8799999999999"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a54"
+    class="tile"
+    x="1615.9199999999998"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a55"
+    class="tile"
+    x="1830.9599999999998"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a56"
+    class="tile"
+    x="2046"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a57"
+    class="tile"
+    x="2261.04"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a58"
+    class="tile"
+    x="2476.08"
+    y="1439.6200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a59"
+    class="tile"
+    x="11.76"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a60"
+    class="tile"
+    x="226.79999999999998"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a61"
+    class="tile"
+    x="441.84"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a62"
+    class="tile"
+    x="656.88"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a63"
+    class="tile"
+    x="871.92"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a64"
+    class="tile"
+    x="1086.96"
+    y="1201.4800000000005"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a65"
+    class="tile"
+    x="11.76"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a66"
+    class="tile"
+    x="226.79999999999998"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a67"
+    class="tile"
+    x="441.84"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a68"
+    class="tile"
+    x="656.88"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a69"
+    class="tile"
+    x="871.92"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a70"
+    class="tile"
+    x="1086.96"
+    y="1042.7200000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a71"
+    class="tile"
+    x="1086.96"
+    y="804.5800000000003"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a72"
+    class="tile"
+    x="11.76"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a73"
+    class="tile"
+    x="226.79999999999998"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a74"
+    class="tile"
+    x="441.84"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a75"
+    class="tile"
+    x="656.88"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a76"
+    class="tile"
+    x="871.92"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a77"
+    class="tile"
+    x="1086.96"
+    y="645.8200000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a78"
+    class="tile"
+    x="11.76"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a79"
+    class="tile"
+    x="226.79999999999998"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a80"
+    class="tile"
+    x="441.84"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a81"
+    class="tile"
+    x="656.88"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a82"
+    class="tile"
+    x="871.92"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a83"
+    class="tile"
+    x="1086.96"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a84"
+    class="tile"
+    x="1400.8799999999999"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a85"
+    class="tile"
+    x="1615.9199999999998"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a86"
+    class="tile"
+    x="1830.9599999999998"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a87"
+    class="tile"
+    x="2046"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a88"
+    class="tile"
+    x="2261.04"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a89"
+    class="tile"
+    x="2476.08"
+    y="407.6800000000002"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a90"
+    class="tile"
+    x="11.76"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a91"
+    class="tile"
+    x="226.79999999999998"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a92"
+    class="tile"
+    x="441.84"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a93"
+    class="tile"
+    x="656.88"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a94"
+    class="tile"
+    x="871.92"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a95"
+    class="tile"
+    x="1086.96"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a96"
+    class="tile"
+    x="1400.8799999999999"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a97"
+    class="tile"
+    x="1615.9199999999998"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a98"
+    class="tile"
+    x="1830.9599999999998"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a99"
+    class="tile"
+    x="2046"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b100"
+    class="tile"
+    x="2261.04"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b101"
+    class="tile"
+    x="2476.08"
+    y="248.92000000000007"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b102"
+    class="tile"
+    x="11.76"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b103"
+    class="tile"
+    x="226.79999999999998"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b104"
+    class="tile"
+    x="441.84"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b105"
+    class="tile"
+    x="656.88"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b106"
+    class="tile"
+    x="871.92"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b107"
+    class="tile"
+    x="1086.96"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b108"
+    class="tile"
+    x="1400.8799999999999"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b109"
+    class="tile"
+    x="1615.9199999999998"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b110"
+    class="tile"
+    x="1830.9599999999998"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b111"
+    class="tile"
+    x="2046"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b112"
+    class="tile"
+    x="2261.04"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04b113"
+    class="tile"
+    x="2476.08"
+    y="10.780000000000086"
+    width="202.08"
+    height="154.98"
+  >
+    <title>Available</title>
+  </rect>
+</svg>

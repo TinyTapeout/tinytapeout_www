@@ -71,6 +71,10 @@ The commander app lets you interact with and configure the demoboard from a web 
 
 It uses the web serial API, so is currently limited to either [Chrome](https://www.google.com/search?q=chrome+browser), [Edge](https://www.microsoft.com/en-us/edge), [Opera](https://www.opera.com/) and [Brave](https://brave.com/).
 
+{{% notice tip %}}
+If you are using Linux, you may need to add yourself to the `dialout` group to use serial. Run `sudo adduser $USER dialout`
+in the terminal - you may need to restart your PC for the changes to apply.
+{{% /notice %}}
 
 With the demoboard USB plugged into a computer, use one of those browsers to access [https://commander.tinytapeout.com/](https://commander.tinytapeout.com/).
 

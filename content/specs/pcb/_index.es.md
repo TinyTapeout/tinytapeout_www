@@ -5,7 +5,7 @@ description: 'PCBs para Tiny Tapeout 4 en adelante'
 weight: 50
 ---
 
-{{< figure src="/../../specs/pcb/images/tt04_board_annotated.jpeg" title="PCB for TT04 and beyond" >}}
+{{< figure src="images/tt04_board_annotated.jpeg" title="PCB for TT04 and beyond" >}}
 
 ## Placa montadora
 
@@ -81,7 +81,7 @@ Dos sets de PMODs se encuentran en la placa demo:
 
 La fila inferior de PMODs está dispuesta con pines adicionales para proveer acceso a todos los I/O en una sola fila.
 
-{{< figure src="/../../specs/pcb/images/tt04_offboard_sils.jpeg" title="Headers de conexión off-board TT04" >}}
+{{< figure src="images/tt04_offboard_sils.jpeg" title="Headers de conexión off-board TT04" >}}
 
 Además, otro header de 1x24 pines se encuentra en la parte superior que da acceso a las líneas de alimentación y control MUX.
 
