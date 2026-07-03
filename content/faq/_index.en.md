@@ -260,17 +260,17 @@ Due to Github limitations, you need to do make a change to the settings of your 
 
 ## My GDS action is taking much longer than usual
 
-A typical Tiny Tapeout GDS action often completes in about 5 minutes for a small design. As your project grows, the GDS flow may take significantly longer due to increased placement and routing complexity.
+A typical Tiny Tapeout GDS action often completes in about 5 minutes for a small design. As your project grows, the GDS flow may take significantly longer due to increased placement and routing complexity. A project can't be submitted to a shuttle if its GDS action is failing - which will be the case if the design is too large to route.
 
 If the GDS action starts taking 20-25 minutes or more, especially if it later fails during placement or routing, your design may be running out of available tile area.
 
-The default Tiny Tapeout project size is 1x1. Larger designs may require additional tiles to be purchased. See [app.tinytapeout.com](https://app.tinytapeout.com/) 
+The default Tiny Tapeout project size is 1x1. Larger designs may require additional tiles to be purchased. See [app.tinytapeout.com](https://app.tinytapeout.com/) and the [calculator](https://app.tinytapeout.com/calculator).
 
-If a large project is submitted without purchasing additional tiles, the GDS action may struggle to place and route the design within the limited area, leading to significantly longer runtimes and potential failures.
+You can experiment with different tile sizes without purchasing them. Just update the `info.yaml` and see if the GDS action passes.
 
-Consider buying enough tiles in advance to accommodate your design, or optimizing your design to fit within the default 1x1 tile if possible. There are often no tiles available near or after the submission deadline, so it's important to plan ahead if you anticipate needing more space.
+Consider buying enough tiles in advance to accommodate your design, or optimizing your design to fit within the default 1x1 tile if possible. There are often no tiles available near the submission deadline, so it's important to plan ahead if you anticipate needing more space.
 
-You can edit your project's info.yaml to increase the tile size. The next step up is 1x2, but you can go larger if your design requires it. For example
+You can edit your project's info.yaml to increase the tile size. The next step up is 1x2, but you can go larger if your design requires it. For example:
 
 ```yaml
   tiles: "1x2"
