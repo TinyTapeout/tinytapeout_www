@@ -8,7 +8,7 @@ weight: 90
 
 # Support
 
-## I’m stuck, how can I get support?
+## I'm stuck, how can I get support?
 
 Join the [discord community with this link](https://discord.gg/rPK2nSjxy8).
 
@@ -52,7 +52,7 @@ You can find an up to date estimate for each shuttle in the [chips page](/chips)
 
 You can use our handy [calculator](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1) to check pricing. 
 
-Your allocations and projects will be found at [app.tinytapeout.com](https://app.tinytapeout.com/)
+Your allocations and projects will be found at [app.tinytapeout.com](https://app.tinytapeout.com/).
 
 ## How many chips will I receive? Can I order more?
 
@@ -60,13 +60,13 @@ You only get 1 chip. If you want more chips you have to order more of the devkit
 
 ## What is a 'tile'?
 
-A tile is a unit of area on the chip. For TT04 to TT10, a tile is about 160x100 um. You can buy as many tiles as you need for your design. See [What is the price?](https://tinytapeout.com/faq/#what-is-the-price). 
+A tile is a unit of area on the chip. For TT04 to TT10, a tile is about 160x100 um. You can buy as many tiles as you need for your design. See [What is the price?](#what-is-the-price). 
 
 A chip is made up of a grid of tiles from all participants on a specific tapeout. See [Tiny Tapeout Chips](https://www.tinytapeout.com/chips/).
 
 ## What is a 'devkit'?
 
-A devkit (short for development kit) (also stylised as DevKit or dev-kit) is a set of components that provide an interface
+A devkit (short for development kit) (also stylised as devkit or dev-kit) is a set of components that provide an interface
 to the shuttle's ASIC. The devkit consists of two PCBs (printed circuit boards) - a 'demo board' and a 'breakout board'.
 
 The breakout board contains the shuttle's ASIC, and connects to the demo board via a set of pins. The demo board contains
@@ -79,9 +79,9 @@ plans to provide a DIY devkit, however the files are available on GitHub ([githu
 
 When you purchase 1 devkit, you will receive 1 demo board and 1 breakout (aka "carrier") board.
 
-## I already have a demo board, Can I get my tile on only a carrier board without buying an additional demo board?
+## I already have a demo board. Can I get my tile on only a breakout board without buying an additional demo board?
 
-No, not at this time. DevKits are sold only as a pre-assembled set of both the demo board and the breakout board. We don't sell the breakout board separately, and we don't sell the chip separately either. See [Can I get the chip by itself?](https://tinytapeout.com/faq/#can-i-get-the-chip-by-itself)
+No, not at this time. The devkits are sold only as a pre-assembled set of both the demo board and the breakout board. We don't sell the breakout board separately, and we don't sell the chip separately either. See [Can I get the chip by itself?](#can-i-get-the-chip-by-itself)
 
 ## What is an 'analog slot'?
 
@@ -123,7 +123,7 @@ PCB components is minimal compared to the ASIC itself.
 
 ## How do I do x, y, z with Wokwi?
 
-Wokwi’s [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We don’t have much documentation yet for the [ASIC](https://www.zerotoasiccourse.com/terminology/asic/) version of Wokwi.
+Wokwi's [documentation is here](https://docs.wokwi.com/?utm_source=wokwi). We don't have much documentation yet for the [ASIC](https://www.zerotoasiccourse.com/terminology/asic/) version of Wokwi.
 
 ## Shortcut keys
 
@@ -149,7 +149,7 @@ Clicking on a component will bring up a ? in a circle. Click on the ? to [get th
 
 ## Do I have to use the 7 segment?
 
-No, you can delete it and put whatever you want there. There’s lots of other components you can choose from the + menu. But if you get a PCB, it will only have the 7 segment on it. You’d need to plug the board into a breadboard and add your extra components after.
+No, you can delete it and put whatever you want there. There are many other components you can choose from the + menu. But if you get a PCB, it will only have the 7 segment on it. You'd need to plug the board into a breadboard and add your extra components after.
 
 ## How do I add new gates?
 
@@ -187,7 +187,7 @@ Yes, you need to
 
 ## Do I need to use Wokwi, or could I use an HDL?
 
-If you’re an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
+If you're an advanced user, you can use the HDL of your choice. See the [HDL page](/hdl) for more information. 
 
 ## My Wokwi design fails with an "unmapped dff cell" error - what do I do?
 
@@ -247,7 +247,7 @@ You are encouraged to research more about open-source licenses - visit <a href="
 
 ## Is it TinyTapeout or Tiny Tapeout?
 
-It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
+It's Tiny Tapeout. See the [Branding](/branding) page for more information.
 
 # Github FAQs
 
@@ -287,7 +287,7 @@ Solution: simply rerun the action by pushing another commit, or via the Actions 
 
 ## I got an error on my GitHub GDS action.
 
-The best way to let me know is to ask a question in our [community discord chat](https://tinytapeout.com/discord), in the #questions channel. Include a link to your repository and the error message.
+The best way to let me know is to ask a question in our [community discord chat](/discord), in the #questions channel. Include a link to your repository and the error message.
 
 ## I got an error on my GitHub Documentation action.
 
@@ -303,9 +303,9 @@ You might not have filled in enough fields, we require the following fields to b
 ## I updated and saved my Wokwi design, how do I re-run the Github action to update the GDS files?
 
 1. Go to your repository, click the actions tab
-2. Then click the ‘gds’ workflow
-3. Then click the ‘Run workflow’ button
-3. Then click the ‘Run workflow’ button
+2. Then click the 'gds' workflow
+3. Then click the 'Run workflow' button
+3. Then click the 'Run workflow' button
 
 ![actions](/images/faq/rerun_actions.png)
 
@@ -317,7 +317,7 @@ There are lots!
     * user_module_xxxxx.v the [Verilog](https://www.zerotoasiccourse.com/terminology/hdl/) file that represents your Wokwi design.
     * config.tcl - config file for the [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/) ASIC tool flow that turns the Verilog into [GDS](https://www.zerotoasiccourse.com/terminology/gds2/).
     * cells.v translates the modules into the [standard cells](https://www.zerotoasiccourse.com/terminology/standardcell/) available for the Skywater 130nm process.
-* runs/wokwi/reports/metrics.csv - a detailed summary report of the tool flow. It’s beyond the scope of this doc for now to explain it all.
+* runs/wokwi/reports/metrics.csv - a detailed summary report of the tool flow. It's beyond the scope of this doc for now to explain it all.
 * runs/wokwi/reports/synthesis/1-synthesis.stat.rpt.strategy4 report of the standard cells used for your design. 
 * runs/wokwi/results/final/ (just the most important described here)
     * gds - the final GDS file that will be added to the Tiny Tapeout submission.
