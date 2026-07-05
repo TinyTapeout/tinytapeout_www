@@ -11,6 +11,7 @@ reverseMenu: true
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
 | [TTSKY26c](https://app.tinytapeout.com/shuttles/ttsky26c) | 2026-05-26 | 2026-09-07 | CI-2609  | Open      | 2027-03-27     | 2027-05-12      |
+| [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-10-01     | None - test shuttle    |
 | [TTGF26b](/chips/ttgf26b)                          | 2026-06-05 | 2026-06-22 | WS-2606  | 90      | 2026-10-01     | 2026-11-15             |
 | [TTGF26a](/chips/ttgf26a)                          | 2026-04-17 | 2026-06-22 | WS-2606  | 95      | 2026-10-01     | 2026-11-15             |
 | [TTSKY26b](/chips/ttsky26b)                        | 2026-04-25 | 2026-05-18 | CI-2605  | 273     | 2026-11-04     | 2026-12-20             |
