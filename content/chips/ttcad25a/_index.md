@@ -11,7 +11,7 @@ description: 257 designs
 - [Github repository](https://github.com/TinyTapeout/tinytapeout-cad-25a)
 - [PDF datasheet](https://tinytapeout.github.io/tinytapeout-cad-25a/datasheet.pdf)
 - [Shuttle index (JSON)](https://tinytapeout.github.io/tinytapeout-cad-25a/shuttle_index.json)
-ß
+
 ## Chip map
 
 {{< shuttle-map "ttcad25a" >}}
