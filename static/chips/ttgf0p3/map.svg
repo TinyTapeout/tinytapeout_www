@@ -1,0 +1,1140 @@
+<svg
+  width="500"
+  viewBox="0 0 3880 5070"
+  style="max-width:100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    rect.spine {
+      fill: #dde;
+    }
+
+    rect.ctrl {
+      fill: orange;
+    }
+
+    rect.mux {
+      fill: purple;
+    }
+
+    rect.analog-mux {
+      fill: #4e674e;
+    }
+
+    rect.mux:hover {
+      fill: #aa00aa;
+    }
+
+    rect.tile {
+      fill: #d8d8d8;
+    }
+
+    rect.tile.project {
+      fill: #d0d;
+    }
+
+    rect.tile.analog {
+      fill: darkseagreen;
+    }
+
+    rect.tile.project:hover {
+      fill: cyan;
+    }
+
+    rect.tile.reserved {
+      fill: #ebe;
+    }
+
+    rect.tile.program-reserved {
+      fill: #c8e6c9;
+    }
+
+    rect.tile.dimmed {
+      fill: #e9e;
+    }
+
+    rect.tile.analog.dimmed {
+      fill: #b1c3b1;
+    }
+
+    rect.tile.highlight {
+      fill: #08d;
+    }
+  </style>
+  <!--$-->
+  <style>
+    rect.tile.project[data-addr="%MUX_ADDRESS%"] {
+      fill: #08d;
+    }
+
+    /* %EXTRA_STYLES% */
+  </style>
+  <rect
+    x="0"
+    y="0"
+    width="3880"
+    height="5070"
+    fill="#eee"
+    stroke="black"
+    stroke-width="5"
+  ></rect>
+  <rect class="spine" x="1889.84" y="653.48" width="100" height="3704.4"></rect>
+  <rect class="ctrl" x="1883.84" y="2455.36" width="112" height="160.72">
+    <title>Controller</title>
+  </rect>
+  <!--$-->
+  <rect class="mux" x="425.6" y="646.28" width="1454.88" height="78.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="spine" x="1880.48" y="653.48" width="118.72" height="40"></rect>
+  <rect class="mux" x="1999.2" y="646.28" width="1454.88" height="78.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="mux" x="425.6" y="1057.88" width="1454.88" height="78.4">
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="spine"
+    x="1880.48"
+    y="1065.0800000000002"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect class="mux" x="425.6" y="1469.48" width="1454.88" height="78.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="spine" x="1880.48" y="1476.68" width="118.72" height="40"></rect>
+  <rect class="mux" x="1999.2" y="1469.48" width="1454.88" height="78.4">
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="analog-mux"
+    x="425.6"
+    y="1881.0800000000002"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a10"
+    class="spine"
+    x="1880.48"
+    y="1888.2800000000002"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a110"
+    class="analog-mux"
+    x="1999.2"
+    y="1881.0800000000002"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a120"
+    class="mux"
+    x="425.6"
+    y="2292.6800000000003"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a13"
+    class="spine"
+    x="1880.48"
+    y="2299.88"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a140"
+    class="mux"
+    x="1999.2"
+    y="2292.6800000000003"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a150"
+    class="mux"
+    x="425.6"
+    y="2704.2799999999997"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a16"
+    class="spine"
+    x="1880.48"
+    y="2711.4799999999996"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a180"
+    class="analog-mux"
+    x="425.6"
+    y="3115.88"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a19"
+    class="spine"
+    x="1880.48"
+    y="3123.08"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a200"
+    class="mux"
+    x="1999.2"
+    y="3115.88"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a210"
+    class="mux"
+    x="425.6"
+    y="3527.4800000000005"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a22"
+    class="spine"
+    x="1880.48"
+    y="3534.6800000000003"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a230"
+    class="analog-mux"
+    x="1999.2"
+    y="3527.4800000000005"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a25"
+    class="spine"
+    x="1880.48"
+    y="3946.2799999999997"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a260"
+    class="mux"
+    x="1999.2"
+    y="3939.08"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a270"
+    class="mux"
+    x="425.6"
+    y="4350.68"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a28"
+    class="spine"
+    x="1880.48"
+    y="4357.88"
+    width="118.72"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a290"
+    class="mux"
+    x="1999.2"
+    y="4350.68"
+    width="1454.88"
+    height="78.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <!--$--><svg>
+    <a href="/chips/ttgf0p3/000">
+      <rect
+        class="tile project"
+        data-addr="0"
+        x="1533.8400000000001"
+        y="2537.68"
+        width="346.64"
+        height="160.72"
+      >
+        <title><!--$-->tt_um_chip_rom <!--$-->(Chip ROM)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/001">
+      <rect
+        class="tile project"
+        data-addr="1"
+        x="1533.8400000000001"
+        y="2784.64"
+        width="346.64"
+        height="160.72"
+      >
+        <title>
+          <!--$-->tt_um_factory_test <!--$-->(Tiny Tapeout Factory Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/103">
+      <rect
+        class="tile project analog"
+        data-addr="103"
+        x="3092.88"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_tnt_gf_555 <!--$-->(tnt's recreation of a 555 on
+          GF180mcu)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/454">
+      <rect
+        class="tile project analog"
+        data-addr="454"
+        x="3092.88"
+        y="3607.84"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_mcml_vco <!--$-->(MCML VCO)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/262">
+      <rect
+        class="tile project analog"
+        data-addr="262"
+        x="440.16"
+        y="3196.24"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_tnt_gf_vco <!--$-->(Quadrature VCO)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/294">
+      <rect
+        class="tile project analog"
+        data-addr="294"
+        x="440.16"
+        y="1549.8399999999997"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_oscillating_bones <!--$-->(Oscillating Bones)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/199">
+      <rect
+        class="tile project analog"
+        data-addr="199"
+        x="1999.2"
+        y="3196.24"
+        width="1440.32"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_MichaelBell_tinyQV <!--$-->(TinyQV Risc-V SoC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/256">
+      <rect
+        class="tile project"
+        data-addr="256"
+        x="1533.8400000000001"
+        y="3196.24"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_essen <!--$-->(256x8 SRAM)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/007">
+      <rect
+        class="tile project analog"
+        data-addr="7"
+        x="440.16"
+        y="2784.64"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_analog_factory_test <!--$-->(TT GF180mcuD Analog Factory
+          Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttgf0p3/101">
+      <rect
+        class="tile project analog"
+        data-addr="101"
+        x="2728.32"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_cw_testbuffer <!--$-->(TT GF180mcuD Testbuffer)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a10">
+    <a href="/chips/ttgf0p3/102">
+      <rect
+        class="tile project"
+        data-addr="102"
+        x="1999.2"
+        y="2373.04"
+        width="1440.32"
+        height="736.96"
+      >
+        <title>
+          <!--$-->tt_um_fabulous_gf_0p3 <!--$-->(Tiny FABulous FPGA)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a11">
+    <a href="/chips/ttgf0p3/359">
+      <rect
+        class="tile project"
+        data-addr="359"
+        x="1999.2"
+        y="726.6399999999999"
+        width="1440.32"
+        height="736.96"
+      >
+        <title>
+          <!--$-->tt_um_fabulous_gf_0p3_3v3 <!--$-->(Tiny FABulous FPGA (3.3V
+          version))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a12">
+    <a href="/chips/ttgf0p3/039">
+      <rect
+        class="tile project analog"
+        data-addr="39"
+        x="440.16"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_htfab_momcap <!--$-->(MoM capacitor)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a13">
+    <a href="/chips/ttgf0p3/035">
+      <rect
+        class="tile project analog"
+        data-addr="35"
+        x="1169.28"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_gf_r2r_dac <!--$-->(GF R2R DAC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a14">
+    <a href="/chips/ttgf0p3/258">
+      <rect
+        class="tile project"
+        data-addr="258"
+        x="1169.28"
+        y="3196.24"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_AbAdA_2048 <!--$-->(Abad2048)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a15">
+    <a href="/chips/ttgf0p3/033">
+      <rect
+        class="tile project"
+        data-addr="33"
+        x="1533.8400000000001"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_signal_generator <!--$-->(Simple Signal
+          Generator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a16">
+    <a href="/chips/ttgf0p3/005">
+      <rect
+        class="tile project analog"
+        data-addr="5"
+        x="804.72"
+        y="2784.64"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_74hct00 <!--$-->(74HCT00 Quad 2-Input NAND (3.3 V))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a17">
+    <a href="/chips/ttgf0p3/037">
+      <rect
+        class="tile project analog"
+        data-addr="37"
+        x="804.72"
+        y="1961.4399999999996"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_algofoogle_gf_analog <!--$-->(algofoogle analog stuff)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a18">
+    <a href="/chips/ttgf0p3/292">
+      <rect
+        class="tile project analog"
+        data-addr="292"
+        x="804.72"
+        y="1549.8399999999997"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_LPCAS_TTGF0P3_TP1 <!--$-->(3.3V Folded Cascode OTA )
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a19">
+    <a href="/chips/ttgf0p3/518">
+      <rect
+        class="tile project"
+        data-addr="518"
+        x="440.16"
+        y="3607.84"
+        width="1440.32"
+        height="736.96"
+      >
+        <title>
+          <!--$-->tt_um_kianV_rv32ima_uLinux_SoC <!--$-->(KianV uLinux SoC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a20">
+    <a href="/chips/ttgf0p3/290">
+      <rect
+        class="tile project analog"
+        data-addr="290"
+        x="1169.28"
+        y="1549.8399999999997"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_kiterai_current_dac <!--$-->(Analog 4 bit Current DAC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a21">
+    <a href="/chips/ttgf0p3/519">
+      <rect
+        class="tile project"
+        data-addr="519"
+        x="440.16"
+        y="4431.04"
+        width="346.64"
+        height="160.72"
+      >
+        <title>
+          <!--$-->tt_um_urish_simon <!--$-->(Simon Says memory game)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a22">
+    <a href="/chips/ttgf0p3/448">
+      <rect
+        class="tile project"
+        data-addr="448"
+        x="1999.2"
+        y="3607.84"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_waferspace_vga_screensaver <!--$-->(Wafer.space Logo VGA
+          Screensaver)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a23">
+    <a href="/chips/ttgf0p3/450">
+      <rect
+        class="tile project"
+        data-addr="450"
+        x="2363.76"
+        y="3607.84"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_urish_usb_cdc <!--$-->(USB CDC (Serial) Device)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a24">
+    <a href="/chips/ttgf0p3/003">
+      <rect
+        class="tile project"
+        data-addr="3"
+        x="1169.28"
+        y="2784.64"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_a1k0n_nyancat <!--$-->(VGA Nyan Cat)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a25">
+    <a href="/chips/ttgf0p3/260">
+      <rect
+        class="tile project analog"
+        data-addr="260"
+        x="804.72"
+        y="3196.24"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_rahulbhagwat_gf180_bandgap_reference <!--$-->(GF BGR)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a26">
+    <a href="/chips/ttgf0p3/452">
+      <rect
+        class="tile project analog"
+        data-addr="452"
+        x="2728.32"
+        y="3607.84"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_odgrip_polywave <!--$-->(PolyWave)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a27">
+    <a href="/chips/ttgf0p3/356">
+      <rect
+        class="tile project"
+        data-addr="356"
+        x="1999.2"
+        y="1549.8399999999997"
+        width="1075.76"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_2048_vga_game <!--$-->(2048 sliding tile puzzle game
+          (VGA))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a28">
+    <a href="/chips/ttgf0p3/288">
+      <rect
+        class="tile project"
+        data-addr="288"
+        x="1533.8400000000001"
+        y="1549.8399999999997"
+        width="346.64"
+        height="325.36"
+      >
+        <title><!--$-->tt_um_combined <!--$-->(Philippine flag waving)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a29">
+    <a href="/chips/ttgf0p3/038">
+      <rect
+        class="tile project"
+        data-addr="38"
+        x="440.16"
+        y="2373.04"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_gojimmypi_ttgfa_UART_FSM_TRNG_Lab <!--$-->(Hardware
+          Entropy Explorer: UART/SPI TRNG and PUF)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a30">
+    <a href="/chips/ttgf0p3/358">
+      <rect
+        class="tile project analog"
+        data-addr="358"
+        x="3092.88"
+        y="1549.8399999999997"
+        width="346.64"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_gojimmypi_ttgfa_UART_FSM_TRNG_Lab_analog
+          <!--$-->(Hardware Entropy Explorer: UART/SPI TRNG and PUF (Analog))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a31">
+    <a href="/chips/ttgf0p3/099">
+      <rect
+        class="tile project"
+        data-addr="99"
+        x="1999.2"
+        y="1961.4399999999996"
+        width="711.2"
+        height="325.36"
+      >
+        <title>
+          <!--$-->tt_um_coldbrew <!--$-->(Until heat death do us part)
+        </title>
+      </rect>
+    </a></svg
+  ><!--$-->
+  <rect class="tile" x="804.72" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="1169.28" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1533.8400000000001"
+    y="4431.04"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="1999.2" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2363.76" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2728.32" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="3092.88" y="4431.04" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="1999.2" y="4184.08" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2363.76" y="4184.08" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2728.32" y="4184.08" width="346.64" height="160.72">
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a10"
+    class="tile"
+    x="3092.88"
+    y="4184.08"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a11"
+    class="tile"
+    x="1999.2"
+    y="4019.44"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a12"
+    class="tile"
+    x="2363.76"
+    y="4019.44"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a13"
+    class="tile"
+    x="2728.32"
+    y="4019.44"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a14"
+    class="tile"
+    x="3092.88"
+    y="4019.44"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a15"
+    class="tile"
+    x="1533.8400000000001"
+    y="2949.2799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a16"
+    class="tile"
+    x="804.72"
+    y="2537.68"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a17"
+    class="tile"
+    x="1169.28"
+    y="2537.68"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a18"
+    class="tile"
+    x="804.72"
+    y="2373.04"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a19"
+    class="tile"
+    x="1169.28"
+    y="2373.04"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a20"
+    class="tile"
+    x="1533.8400000000001"
+    y="2373.04"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a21"
+    class="tile"
+    x="440.16"
+    y="1302.8799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a22"
+    class="tile"
+    x="804.72"
+    y="1302.8799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a23"
+    class="tile"
+    x="1169.28"
+    y="1302.8799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a24"
+    class="tile"
+    x="1533.8400000000001"
+    y="1302.8799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a25"
+    class="tile"
+    x="440.16"
+    y="1138.2399999999998"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a26"
+    class="tile"
+    x="804.72"
+    y="1138.2399999999998"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a27"
+    class="tile"
+    x="1169.28"
+    y="1138.2399999999998"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a28"
+    class="tile"
+    x="1533.8400000000001"
+    y="1138.2399999999998"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a29"
+    class="tile"
+    x="440.16"
+    y="891.2799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a30"
+    class="tile"
+    x="804.72"
+    y="891.2799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a31"
+    class="tile"
+    x="1169.28"
+    y="891.2799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a32"
+    class="tile"
+    x="1533.8400000000001"
+    y="891.2799999999997"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a33"
+    class="tile"
+    x="440.16"
+    y="726.6399999999999"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a34"
+    class="tile"
+    x="804.72"
+    y="726.6399999999999"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a35"
+    class="tile"
+    x="1169.28"
+    y="726.6399999999999"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a36"
+    class="tile"
+    x="1533.8400000000001"
+    y="726.6399999999999"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a37"
+    class="tile"
+    x="440.16"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a38"
+    class="tile"
+    x="804.72"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a39"
+    class="tile"
+    x="1169.28"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a40"
+    class="tile"
+    x="1533.8400000000001"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a41"
+    class="tile"
+    x="1999.2"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a42"
+    class="tile"
+    x="2363.76"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a43"
+    class="tile"
+    x="2728.32"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a44"
+    class="tile"
+    x="3092.88"
+    y="479.67999999999984"
+    width="346.64"
+    height="160.72"
+  >
+    <title>Available</title>
+  </rect>
+</svg>
