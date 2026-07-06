@@ -1,0 +1,1022 @@
+{{- $register := "https://app.tinytapeout.com/workshop" -}}
+{{- $hero := .Resources.GetMatch "images/online-workshop-header.png" -}}
+{{- $austrochip := .Resources.GetMatch "images/austrochip-lecture-hall.jpg" -}}
+{{- $siliwiz := .Resources.GetMatch "images/siliwiz-laptop.jpg" -}}
+{{- $wokwi := .Resources.GetMatch "images/wokwi-digital-design.png" -}}
+{{- $group := .Resources.GetMatch "images/jku-workshop-group.jpg" -}}
+{{- $kit := .Resources.GetMatch "images/kit-lecture-hall.jpg" -}}
+{{- $demoboard := .Resources.GetMatch "images/demoboard-bringup.jpg" -}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }} — Design Your First Chip</title>
+<meta name="description" content="{{ .Description }}">
+<link rel="icon" href="/images/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ .Title }} — Design Your First Chip">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with $group }}<meta property="og:image" content="{{ .Permalink }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue:      #040371;
+    --pink:      #f82381;
+    --turquoise: #3dfef7;
+    --yellow:    #fef244;
+    --blush:     #fc9f9f;
+    --offwhite:  #f5f5f0;
+    --darkgrey:  #1a1a2e;
+    --midgrey:   #6b6b8a;
+    --white:     #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--darkgrey);
+    background: var(--white);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.15;
+  }
+
+  /* ── STICKY CTA BAR ── */
+  .sticky-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  .sticky-bar.visible { transform: translateY(0); }
+  .sticky-bar__text {
+    color: var(--white);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .sticky-bar__text span { color: var(--turquoise); }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.88; }
+  .btn--primary { background: var(--pink); color: var(--white); }
+  .btn--outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+  .btn--sm { padding: 10px 22px; font-size: 14px; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10vw 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 50%, rgba(61,254,247,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 90% 80%, rgba(248,35,129,0.12) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero__inner {
+    max-width: 760px;
+    position: relative;
+  }
+  .hero__eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--turquoise);
+    margin-bottom: 20px;
+  }
+  .hero__title {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .hero__title em {
+    font-style: normal;
+    color: var(--yellow);
+  }
+  .hero__sub {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 40px;
+    max-width: 560px;
+  }
+  .hero__meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .hero__meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hero__meta-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.5);
+    font-weight: 600;
+  }
+  .hero__meta-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--turquoise);
+  }
+  .hero__ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero__note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 16px;
+  }
+
+  /* ── SOCIAL PROOF BAR ── */
+  .proof-bar {
+    background: var(--offwhite);
+    padding: 32px;
+    border-bottom: 3px solid var(--pink);
+  }
+  .proof-bar__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+    text-align: center;
+  }
+  .proof-bar__number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1;
+  }
+  .proof-bar__label {
+    font-size: 13px;
+    color: var(--midgrey);
+    margin-top: 6px;
+    font-weight: 500;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 80px 32px;
+  }
+  .section--dark {
+    background: var(--blue);
+    color: var(--white);
+  }
+  .section--offwhite {
+    background: var(--offwhite);
+  }
+  .section__inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .section__eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 12px;
+  }
+  .section--dark .section__eyebrow { color: var(--turquoise); }
+  .section__title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--blue);
+  }
+  .section--dark .section__title { color: var(--white); }
+  .section__body {
+    font-size: 1.05rem;
+    color: var(--midgrey);
+    max-width: 640px;
+    margin-bottom: 40px;
+  }
+  .section--dark .section__body { color: rgba(255,255,255,0.7); }
+
+  /* ── WORKSHOP SESSIONS ── */
+  .sessions {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .session {
+    background: var(--white);
+    border-left: 4px solid var(--turquoise);
+    padding: 24px 28px;
+  }
+  .session__label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--turquoise);
+    margin-bottom: 8px;
+  }
+  .session__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .session__steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .session__steps li {
+    font-size: 0.95rem;
+    color: var(--midgrey);
+    padding-left: 18px;
+    position: relative;
+  }
+  .session__steps li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--pink);
+    font-size: 0.85rem;
+  }
+
+  /* ── OUTCOMES GRID ── */
+  .outcomes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .outcome {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(61,254,247,0.2);
+    border-radius: 4px;
+    padding: 24px;
+  }
+  .outcome__icon {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  .outcome__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .outcome__desc {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* ── REQUIREMENTS ── */
+  .requirements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .requirement {
+    background: var(--white);
+    border: 1px solid #e0e0ec;
+    border-radius: 4px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .requirement__icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .requirement__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--blue);
+    margin-bottom: 4px;
+  }
+  .requirement__desc {
+    font-size: 0.85rem;
+    color: var(--midgrey);
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .testimonial {
+    background: var(--blue);
+    border-radius: 4px;
+    padding: 28px;
+    position: relative;
+  }
+  .testimonial::before {
+    content: '\201C';
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--pink);
+    line-height: 1;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    opacity: 0.5;
+  }
+  .testimonial__text {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.88);
+    line-height: 1.6;
+    padding-top: 20px;
+    font-style: italic;
+  }
+  .testimonial__source {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--turquoise);
+  }
+
+  /* ── EXPERT ENDORSEMENTS ── */
+  .endorsements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .endorsement {
+    border-top: 3px solid var(--pink);
+    padding-top: 24px;
+  }
+  .endorsement__quote {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .endorsement__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--midgrey);
+  }
+
+  /* ── FAQ ── */
+  .faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .faq {
+    border-bottom: 1px solid #e0e0ec;
+    padding: 20px 0;
+  }
+  .faq__q {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .faq__a {
+    font-size: 0.95rem;
+    color: var(--midgrey);
+  }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    background: var(--blue);
+    padding: 80px 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 50% 100%, rgba(248,35,129,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-section__inner {
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .cta-section__title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .cta-section__sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 36px;
+  }
+  .cta-section__note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 16px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--darkgrey);
+    padding: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+  }
+  footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+  /* ── UTILITIES ── */
+  .text-pink { color: var(--pink); }
+  .text-turquoise { color: var(--turquoise); }
+  .divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--pink), var(--turquoise));
+    border: none;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .section { padding: 60px 20px; }
+    .hero { padding: 80px 20px 56px; }
+    .proof-bar { padding: 24px 20px; }
+    .sticky-bar { padding: 10px 16px; }
+    .sticky-bar__text { font-size: 13px; }
+    .hero__meta { gap: 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sticky-bar { transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* ── IMAGES ── */
+  /* Hero image sits beside the text on the right */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero__image { width: 100%; }
+  .hero__img { width: 100%; height: auto; display: block; }
+
+  /* Section with image layout */
+  .section--with-image .section__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 1000px;
+  }
+  .section--with-image .section__content { display: flex; flex-direction: column; }
+  .section__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+
+  /* Full-width image strip */
+  .img-strip { width: 100%; }
+  .img-strip__img {
+    width: 100%;
+    height: clamp(260px, 38vw, 420px);
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero__image { display: none; }
+    .section--with-image .section__inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar__text">Tiny Tapeout Online Workshop &nbsp;·&nbsp; <span>Mon 13 &amp; Fri 17 July · 5pm–7pm CEST</span></div>
+  <a href="{{ $register }}" class="btn btn--primary btn--sm">Register Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">Tiny Tapeout · First Online Workshop</p>
+    <h1 class="hero__title">The <em>hello world</em><br>of chip design.</h1>
+    <p class="hero__sub">Design your first chip online with Tiny Tapeout. Two days, guided sessions, worldwide — and you tapeout before you leave.</p>
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Format</span>
+        <span class="hero__meta-value">Online · 2 days</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Ticket price</span>
+        <span class="hero__meta-value">€150 or €250</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Open to</span>
+        <span class="hero__meta-value">Age 14+ · Worldwide</span>
+      </div>
+    </div>
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Dates</span>
+        <span class="hero__meta-value">Mon 13 &amp; Fri 17 July</span>
+      </div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-label">Time</span>
+        <span class="hero__meta-value">5pm–7pm CEST · 8:30pm–10:30pm IST · 8am–10am PT</span>
+      </div>
+    </div>
+    <div class="hero__ctas">
+      <a href="{{ $register }}" class="btn btn--primary">Register Now</a>
+      <a href="#what-happens" class="btn btn--outline">See what's involved</a>
+    </div>
+    <p class="hero__note">No prior chip design experience needed. Just a laptop and a GitHub account.</p>
+  </div>
+  <div class="hero__image">
+    {{ with $hero }}<img class="hero__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="A laptop displaying a colourful Tiny Tapeout chip layout">{{ end }}
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SOCIAL PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-bar__inner">
+    <div class="proof-bar__stat">
+      <div class="proof-bar__number">4.6<span style="font-size:1.2rem">/5</span></div>
+      <div class="proof-bar__label">Average workshop rating (Austrochip, Sept 2025)</div>
+    </div>
+    <div class="proof-bar__stat">
+      <div class="proof-bar__number">88%</div>
+      <div class="proof-bar__label">Said the workshop inspired them to find out more about semiconductors</div>
+    </div>
+    <div class="proof-bar__stat">
+      <div class="proof-bar__number">72%</div>
+      <div class="proof-bar__label">Rated their enjoyment 5 out of 5</div>
+    </div>
+    <div class="proof-bar__stat">
+      <div class="proof-bar__number">9+</div>
+      <div class="proof-bar__label">Workshops run at universities & conferences worldwide</div>
+    </div>
+  </div>
+</div>
+
+<!-- IMAGE STRIP: full-width between proof bar and sessions -->
+{{ with $austrochip }}
+<div class="img-strip">
+  <img class="img-strip__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="A full lecture hall of attendees at laptops during the Austrochip workshop at JKU Linz">
+</div>
+{{ end }}
+
+<!-- WHAT HAPPENS -->
+<section class="section section--offwhite section--with-image" id="what-happens">
+  <div class="section__inner">
+    <div class="section__content">
+      <p class="section__eyebrow">The workshop</p>
+      <h2 class="section__title">What happens across the two days</h2>
+      <p class="section__body">Each session is a few hours long. Between the two days, you'll have time to work on your design.</p>
+      <div class="sessions">
+
+      <div class="session">
+        <div class="session__label" style="color:var(--pink);">Day 1 · Session 1</div>
+        <div class="session__title">From transistors to your first design</div>
+        <ul class="session__steps">
+          <li>Introduction to how semiconductors work using SiliWiz</li>
+          <li>Build and simulate a simple digital design using Wokwi</li>
+          <li>Create your design template — ready to develop further</li>
+        </ul>
+      </div>
+
+      <div class="session">
+        <div class="session__label" style="color:var(--pink);">Between sessions</div>
+        <div class="session__title">Homework: develop your design</div>
+        <ul class="session__steps">
+          <li>Work on your Wokwi design at your own pace</li>
+          <li>If you know Verilog, you can switch to Verilog</li>
+          <li>Support available on Discord</li>
+        </ul>
+      </div>
+
+      <div class="session">
+        <div class="session__label" style="color:var(--pink);">Day 2 · Session 2</div>
+        <div class="session__title">Tapeout and connect</div>
+        <ul class="session__steps">
+          <li>Tiny Tapeout overview and live Q&amp;A</li>
+          <li>Convert your design to GDS files</li>
+          <li>Submit your design for manufacture</li>
+          <li>Quiz and prize draw — win a <a href="https://store.tinytapeout.com/products/Sky130-Inverter-Model-Kit-p727081769" target="_blank" rel="noopener" style="color:var(--pink);">Sky130 Inverter Model Kit</a></li>
+          <li>What to do next — signposting and next steps</li>
+        </ul>
+      </div>
+
+      </div>
+    </div><!-- end section__content -->
+    <div class="section__image">
+      {{ with $siliwiz }}<img class="section__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="A workshop attendee with the SiliWiz semiconductor tool open on their laptop">{{ end }}
+      {{ with $wokwi }}<img class="section__img" style="margin-top:16px;" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="A digital logic design built from gates in the Wokwi simulator">{{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL WALK AWAY WITH -->
+<section class="section section--dark">
+  <div class="section__inner">
+    <p class="section__eyebrow">Outcomes</p>
+    <h2 class="section__title">What you'll walk away with</h2>
+    <div class="outcomes">
+      <div class="outcome">
+        <div class="outcome__icon">🔬</div>
+        <div class="outcome__title">A real tapeout</div>
+        <div class="outcome__desc">Your design submitted for manufacture on a real chip.</div>
+      </div>
+      <div class="outcome">
+        <div class="outcome__icon">🛠️</div>
+        <div class="outcome__title">First contact with the tools</div>
+        <div class="outcome__desc">Hands-on experience with SiliWiz, Wokwi, and the Tiny Tapeout flow.</div>
+      </div>
+      <div class="outcome">
+        <div class="outcome__icon">⏱️</div>
+        <div class="outcome__title">Time to revise your design</div>
+        <div class="outcome__desc">Structured time between sessions to develop and improve your work.</div>
+      </div>
+      <div class="outcome">
+        <div class="outcome__icon">🤝</div>
+        <div class="outcome__title">Support</div>
+        <div class="outcome__desc">Live help from Matt and the team throughout both sessions.</div>
+      </div>
+      <div class="outcome">
+        <div class="outcome__icon">🌐</div>
+        <div class="outcome__title">Community</div>
+        <div class="outcome__desc">Join the Tiny Tapeout Discord — connect with chip designers worldwide.</div>
+      </div>
+      <div class="outcome">
+        <div class="outcome__icon">🏁</div>
+        <div class="outcome__title">A clear start and end</div>
+        <div class="outcome__desc">No open-ended commitment. Defined sessions, defined outcome.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKET TIERS -->
+<section class="section section--offwhite">
+  <div class="section__inner">
+    <p class="section__eyebrow">Tickets</p>
+    <h2 class="section__title">Your ticket options</h2>
+    <div class="requirements" style="margin-top: 0; align-items: stretch;">
+      <div class="requirement" style="flex-direction: column; gap: 10px; border-color: var(--pink);">
+        <div style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="requirement__icon">🎟️</div>
+          <div>
+            <div class="requirement__title">Tier 1 — €150</div>
+            <div class="requirement__desc">Includes €70 of silicon space. Your design is manufactured on a real chip. You do <strong>not</strong> receive a physical chip. We can test your design remotely and share the results with you.</div>
+          </div>
+        </div>
+      </div>
+      <div class="requirement" style="flex-direction: column; gap: 10px; border-color: var(--pink);">
+        <div style="display:flex; gap:12px; align-items:flex-start;">
+          <div class="requirement__icon">📦</div>
+          <div>
+            <div class="requirement__title">Tier 2 — €250</div>
+            <div class="requirement__desc">Your design is manufactured on a real chip and you receive a physical copy of the chip, delivered on the Tiny Tapeout demoboard.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <a href="{{ $register }}" class="btn btn--primary btn">Register Now</a> 
+  </div>
+</section>
+
+<!-- WHAT HAPPENS AFTER -->
+<section class="section section--dark">
+  <div class="section__inner">
+    <p class="section__eyebrow">After the workshop</p>
+    <h2 class="section__title">What happens next</h2>
+    <div style="display:flex; flex-direction:column; gap:12px; margin-top:8px;">
+
+      <div style="display:flex; gap:20px; align-items:flex-start; background:rgba(255,255,255,0.06); border:1px solid rgba(61,254,247,0.2); border-radius:4px; padding:24px;">
+        <div style="font-size:1.8rem; flex-shrink:0;">📅</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;">Design deadline — 10pm CEST, 7th September</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.65);">You'll submit a simple design in Session 2, but you'll have until 10pm CEST on 7th September to finalise your design. At that point we will send the design to be manufactured at Skywater and it can't be changed.</div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:20px; align-items:flex-start; background:rgba(255,255,255,0.06); border:1px solid rgba(61,254,247,0.2); border-radius:4px; padding:24px;">
+        <div style="font-size:1.8rem; flex-shrink:0;">⏳</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;">~7 months after tapeout</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.65);">Chip fabrication takes approximately 7 months. We'll keep you updated.</div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:20px; align-items:flex-start; background:rgba(255,255,255,0.06); border:1px solid rgba(61,254,247,0.2); border-radius:4px; padding:24px;">
+        <div style="font-size:1.8rem; flex-shrink:0;">🎉</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;">Tier 1: Bringup party</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.65);">Join our bringup party — we test your design remotely and share the results with you in a YouTube Live.</div>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:20px; align-items:flex-start; background:rgba(255,255,255,0.06); border:1px solid rgba(61,254,247,0.2); border-radius:4px; padding:24px;">
+        <div style="font-size:1.8rem; flex-shrink:0;">📦</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px;">Tier 2: Chip delivered</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.65);">Your chip arrives on the Tiny Tapeout demoboard, ready to test.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE STRIP: above testimonials -->
+{{ with $group }}
+<div class="img-strip">
+  <img class="img-strip__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="Attendees gathered together at a Tiny Tapeout workshop at JKU Linz">
+</div>
+{{ end }}
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">What past attendees say</p>
+    <h2 class="section__title">In their own words</h2>
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <p class="testimonial__text">Everything nicely explained, interactive &amp; interesting.</p>
+        <p class="testimonial__source">Workshop attendee</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial__text">The interactive way, good balance between lecture and hands-on.</p>
+        <p class="testimonial__source">Workshop attendee</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial__text">I came here with zero knowledge and was successful on the first run. Pretty neat.</p>
+        <p class="testimonial__source">Workshop attendee, Hackaday Supercon</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial__text">Well organized and easy to follow even for a high school student. It was a great opportunity to learn how to build your own chip.</p>
+        <p class="testimonial__source">Workshop attendee, University of Toronto</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial__text">I really liked how hands-on it was — actually building something and seeing it work made it way more engaging than just theory.</p>
+        <p class="testimonial__source">Workshop attendee, University of Toronto</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial__text">Incredible how accessible chip design has become.</p>
+        <p class="testimonial__source">Workshop attendee, KIT</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERT ENDORSEMENTS -->
+<section class="section section--offwhite section--with-image">
+  <div class="section__inner">
+    <div class="section__content">
+      <p class="section__eyebrow">Expert voices</p>
+      <h2 class="section__title">What industry and academia say</h2>
+      <div class="endorsements">
+        <div class="endorsement">
+          <p class="endorsement__quote">"Tiny Tapeout is the most valuable project we have in the semiconductor industry for workforce development and innovation…"</p>
+          <p class="endorsement__name">Jørgen Kragh Jakobsen — ASIC industry professional</p>
+        </div>
+        <div class="endorsement">
+          <p class="endorsement__quote">"Tiny Tapeout is genius! It allows students, hobbyists, and professionals to easily create custom silicon circuit blocks… indispensable for modern IC design education!"</p>
+          <p class="endorsement__name">Prof. Harald Pretl — Senior Principal Engineer at Intel, JKU, Research Institute for Integrated Circuits</p>
+        </div>
+      </div>
+    </div>
+    <div class="section__image">
+      {{ with $kit }}<img class="section__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="A packed lecture hall of workshop attendees with hands raised">{{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="section section--dark">
+  <div class="section__inner">
+    <p class="section__eyebrow">What you need</p>
+    <h2 class="section__title">Requirements to join</h2>
+    <p class="section__body">No chip design experience needed. You'll need:</p>
+    <div class="requirements" style="margin-top:0;">
+      <div class="requirement">
+        <div class="requirement__icon">💻</div>
+        <div>
+          <div class="requirement__title">A laptop</div>
+          <div class="requirement__desc">With a modern browser. All tools are web-based — no downloads required.</div>
+        </div>
+      </div>
+      <div class="requirement">
+        <div class="requirement__icon">🐙</div>
+        <div>
+          <div class="requirement__title">A GitHub account</div>
+          <div class="requirement__desc">Free to create at github.com. You'll use it to submit your design.</div>
+        </div>
+      </div>
+      <div class="requirement">
+        <div class="requirement__icon">💬</div>
+        <div>
+          <div class="requirement__title">Discord</div>
+          <div class="requirement__desc">For support during the workshop and community access. Free to join.</div>
+        </div>
+      </div>
+      <div class="requirement">
+        <div class="requirement__icon">🌍</div>
+        <div>
+          <div class="requirement__title">Age 14+</div>
+          <div class="requirement__desc">Open to anyone worldwide, from students to industry professionals.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="section">
+  <div class="section__inner">
+    <p class="section__eyebrow">How it works</p>
+    <h2 class="section__title">Delivery</h2>
+    <p class="section__body">The workshop runs fully online. Here's what you'll be using:</p>
+    <div class="delivery" style="margin-top:8px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px;">
+      <div style="display:flex; gap:12px; align-items:flex-start;">
+        <div style="font-size:1.3rem; flex-shrink:0; margin-top:2px;">📡</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:0.95rem; color:var(--blue); margin-bottom:4px;">StreamYard</div>
+          <div style="font-size:0.85rem; color:var(--midgrey);">Live sessions streamed via StreamYard. Join from any browser.</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:12px; align-items:flex-start;">
+        <div style="font-size:1.3rem; flex-shrink:0; margin-top:2px;">💬</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:0.95rem; color:var(--blue); margin-bottom:4px;">Discord</div>
+          <div style="font-size:0.85rem; color:var(--midgrey);">Support, Q&amp;A, and community throughout the workshop and beyond.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center; margin-top: 30px;">
+    <a href="/discord" class="btn btn--primary">Join our community</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FAQ -->
+<section class="section section--offwhite">
+  <div class="section__inner">
+    <p class="section__eyebrow">FAQ</p>
+    <h2 class="section__title">Common questions</h2>
+    <div class="faqs">
+      <div class="faq">
+        <p class="faq__q">Will I receive a physical chip?</p>
+        <p class="faq__a">It depends on your ticket tier. With Tier 1, your design is manufactured on a real chip but you don't receive it physically — we can test your design remotely and share the results. With Tier 2, you receive a physical copy of your chip, delivered on the Tiny Tapeout demoboard. Chips take approximately 7 months to return after tapeout.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">How long will I have to work on my design?</p>
+        <p class="faq__a">You'll submit a simple design during Session 2 of the workshop, but you'll have until 10pm CEST on 7th September to finalise your design. At that point the design goes to manufacture at Skywater and can no longer be changed.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">Do I need any chip design experience?</p>
+        <p class="faq__a">No. The workshop is designed for complete beginners. All tools are web-based and guided step by step.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">What do I actually make?</p>
+        <p class="faq__a">You design a simple digital circuit and submit it for manufacture on a real chip using the Tiny Tapeout shuttle service.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">What tools will I use?</p>
+        <p class="faq__a">SiliWiz (to understand how semiconductors work), Wokwi (to design your circuit), and the Tiny Tapeout flow to generate your GDS files and submit.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">What if I know Verilog?</p>
+        <p class="faq__a">Between sessions, you're welcome to take your design further using Verilog if you prefer.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">What do I need to bring?</p>
+        <p class="faq__a">A laptop with a modern browser, a free GitHub account, and a Discord account. That's it.</p>
+      </div>
+      <div class="faq">
+        <p class="faq__q">Is the workshop just for engineers?</p>
+        <p class="faq__a">Not at all. Past workshops have welcomed high school students, university students, hobbyists, and industry professionals. If you're curious, you belong here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE STRIP: above CTA -->
+{{ with $demoboard }}
+<div class="img-strip">
+  <img class="img-strip__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="A Tiny Tapeout ASIC demoboard nestled in colourful shredded paper">
+</div>
+{{ end }}
+
+<!-- CTA / REGISTER -->
+<section class="cta-section" id="register">
+  <div class="cta-section__inner">
+    <h2 class="cta-section__title">Ready to design your first chip?</h2>
+    <p class="cta-section__sub">Design your first chip online with Tiny Tapeout. Join people from around the world for two days of hands-on chip design — and tapeout before you leave.</p>
+    <a href="{{ $register }}" class="btn btn--primary">Register Now — from €150</a>
+    <p class="cta-section__note">Mon 13 &amp; Fri 17 July &nbsp;·&nbsp; 5pm–7pm CEST · 8:30pm–10:30pm IST · 8am–10am PT &nbsp;·&nbsp; Online via StreamYard &nbsp;·&nbsp; Age 14+ &nbsp;·&nbsp; Worldwide</p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="https://tinytapeout.com">tinytapeout.com</a> &nbsp;·&nbsp; <a href="https://x.com/tinytapeout">@tinytapeout</a> &nbsp;·&nbsp; <a href="https://linkedin.com/company/tinytapeout">LinkedIn</a>&nbsp;·&nbsp; <a href="/discord">Discord</a></p>
+</footer>
+
+<script>
+  // Sticky bar appears after hero
+  const hero = document.querySelector('.hero');
+  const stickyBar = document.getElementById('stickyBar');
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) {
+        stickyBar.classList.add('visible');
+      } else {
+        stickyBar.classList.remove('visible');
+      }
+    },
+    { threshold: 0.1 }
+  );
+  observer.observe(hero);
+</script>
+
+</body>
+</html>
