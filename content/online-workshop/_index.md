@@ -1,6 +1,6 @@
 ---
 title: Tiny Tapeout Online Workshop
-description: Design your first chip online with Tiny Tapeout — two guided days, worldwide, and you tapeout before you leave.
+description: Design your first chip online with Tiny Tapeout — two guided sessions, worldwide, and you submit your design before you leave.
 type: workshop
 hidden: true
 ---
