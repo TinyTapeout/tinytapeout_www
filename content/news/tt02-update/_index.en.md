@@ -19,7 +19,7 @@ If you've already submitted and you're happy with your design, you don't need to
 
 **Final submission deadline:** Friday 2nd December at 18:00 CET. 
 
-Efabless updated the tapeout deadline to December 5th, but we're setting our own cutoff a few days earlier to allow time to prepare the final submission.
+[Efabless](https://chipfoundry.io/efabless) updated the tapeout deadline to December 5th, but we're setting our own cutoff a few days earlier to allow time to prepare the final submission.
 
 The [TT02 datasheet](/tt02.pdf) is already looking great, complete with a table of contents and a cover logo. There are some fantastic designs in there, including another FPGA from [Jan](https://github.com/grayresearch/tt02-s4ga) and five sound generators. 
 

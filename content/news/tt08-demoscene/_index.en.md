@@ -27,7 +27,7 @@ Watch all the [entries](https://tinytapeout.com/competitions/demoscene-tt08-entr
 
 ## The Winners
 
-Some standout wins: sylefeb took 1st in both Single Tile and Size with Why not?, and 1st in Graphics with Warp. Andy Sloane swept multiple categories with VGA Nyan Cat (Sound, 1st), Demo by a1k0n, and VGA donut. James Ross won Newcomer 1st place with Glyph Mode. The Mixed Signal category was won by Anton Maurovic with TT08 VGA FUN!
+Some standout wins: sylefeb took 1st in both Single Tile and Size with [Why not?](/chips/tt08/tt_um_whynot), and 1st in Graphics with [Warp](/chips/tt08/tt_um_silice). Andy Sloane swept multiple categories with [VGA Nyan Cat](/chips/tt08/tt_um_a1k0n_nyancat) (Sound, 1st), [Demo by a1k0n](/chips/tt08/tt_um_a1k0n_demo), and [VGA donut](/chips/tt08/tt_um_a1k0n_vgadonut). James Ross won Newcomer 1st place with [Glyph Mode](/chips/tt08/tt_um_vga_glyph_mode). The Mixed Signal category was won by Anton Maurovic with [TT08 VGA FUN!](/chips/tt08/tt_um_algofoogle_tt08_vga_fun)
 
 See the full winners list [here](https://tinytapeout.com/competitions/demoscene-tt08-winners/).
 

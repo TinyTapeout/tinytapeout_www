@@ -11,7 +11,7 @@ cover:
     alt: GDS Render
 ---
 
-Tiny Tapeout 5 chips have just been received from Efabless! 
+Tiny Tapeout 5 chips have just been received from [Efabless](https://chipfoundry.io/efabless)! 
 
 We've already tested the chip and confirmed our test designs work. Next step is PCBA and then order fulfilment.
 

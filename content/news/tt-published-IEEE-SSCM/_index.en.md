@@ -11,26 +11,20 @@ cover:
     alt: GDS Render
 ---
 
-Matt Venn's first academic paper has just been published in the IEEE Solid-State Circuits Magazine.
+Matt Venn's first academic paper about Tiny Tapeout has just been published in the IEEE Solid-State Circuits Magazine!
 
-"Tiny Tapeout: A Shared Silicon Tapeout Platform Accessible To Everyone" documents the platform from first principles: the submission flow, the evolution of the multiplexer architecture, circuit board design, post-production silicon testing results, and next steps for the project.
+[Tiny Tapeout](https://tinytapeout.com/) aims to make it easier and cheaper than ever to design and manufacture custom Application-Specific Integrated Circuits (ASICs). Matt originally conceived of the idea in September 2022 as a way to guarantee silicon for his [Zero To Asic Course](https://www.zerotoasiccourse.com/) participants.
 
-The paper summarises all Tiny Tapeout shuttle runs to date:
+If you’re an IEEE member, you can read it here: https://ieeexplore.ieee.org/document/10584359, otherwise you can read the preprint: https://www.techrxiv.org/users/799365/articles/1165896-tiny-tapeout-a-shared-silicon-tapeout-platform-accessible-to-everyone
 
-[TT01](/chips/tt01) - 152 designs, launched August 2022, submitted to the Google-sponsored MPW7 lottery shuttle
+The paper explores how Tiny Tapeout leverages open-source tools and resources to break down traditional barriers in the semiconductor industry. Prior to Tiny Tapeout, the primary avenue for open-source ASIC fabrication was through Google and Efabless’s chipIgnite program. 
 
-[TT02](/chips/tt02) - 165 designs, launched November 2022, delivered January 2024
+However, the cost of a full chipIgnite slot, approximately $10,000, presented a significant obstacle for many hobbyists, students, and educators. Tiny Tapeout addresses this challenge by offering a more accessible entry point, providing a platform for a diverse range of participants to design, fabricate, and receive physical chips at a fraction of the cost.
 
-[TT03](/chips/tt03) - 249 designs, launched March 2023, delivered February 2024
+### Key highlights of the paper include
 
-[TT04](/chips/tt04) - 143 designs, launched July 2023, delivered April 2024
+- Submission flow: The paper outlines the streamlined submission process, from design creation using tools like Verilog or Wokwi to automated testing and GDSII file generation.
+- Evolution of the multiplexer design: The paper details the iterative improvements made to the multiplexer, addressing issues such as accidental macro block removal, ensuring the integrity and functionality of the shared chip.
+- Diverse project examples: From simple logic gates to a Linux-capable RISC-V CPU, the paper showcases the wide variety of projects successfully completed through Tiny Tapeout, underscoring its versatility and educational value.
 
-[TT05](/chips/tt05) - 174 designs, launched September 2023, delivered May 2024
-
-[TT06](/chips/tt06) - launched February 2024
-
-Together TT02–TT05 combined 582 designs manufactured through the Efabless ChipIgnite MPW service on the SkyWater 130nm process. 
-
-Each Tiny Tapeout tile is approximately 160×100 µm², providing room for around 1,000 logic gates. Each production run has around 400 open-source designs multiplexed to 24 general purpose I/O pins.
-
-If you're an IEEE member, read the full paper at [ieeexplore.ieee.org](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=4563670). Otherwise, the pre-print is freely available [here](https://raw.githubusercontent.com/mattvenn/tt-ieee-paper/main/paper_TT.pdf).
+The paper concludes by highlighting Tiny Tapeout’s impact on democratising ASIC design. By providing a more accessible entry point, the project fosters innovation and learning within the open-source hardware community, paving the way for a new generation of ASIC designers and enthusiasts.
