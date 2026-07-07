@@ -6,6 +6,7 @@
 {{- $group := .Resources.GetMatch "images/jku-workshop-group.jpg" -}}
 {{- $kit := .Resources.GetMatch "images/kit-lecture-hall.jpg" -}}
 {{- $demoboard := .Resources.GetMatch "images/demoboard-bringup.jpg" -}}
+{{- $social := .Resources.GetMatch "images/social.png" -}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,7 @@
 <meta property="og:title" content="{{ .Title }} — Design Your First Chip">
 <meta property="og:description" content="{{ .Description }}">
 <meta property="og:url" content="{{ .Permalink }}">
-{{ with $group }}<meta property="og:image" content="{{ .Permalink }}">{{ end }}
+{{ with $social }}<meta property="og:image" content="{{ .Permalink }}">{{ end }}
 <meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
