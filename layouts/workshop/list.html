@@ -548,6 +548,21 @@
     display: block;
   }
 
+  .hero__yt {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__yt iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+  /* force into column early so youtube embed doesn't mess up hero text */
+  @media (max-width: 991px) {
+    .hero { grid-template-columns: 1fr; }
+  }
+
   @media (max-width: 768px) {
     .hero { grid-template-columns: 1fr; }
     .hero__image { display: none; }
@@ -599,8 +614,8 @@
     </div>
     <p class="hero__note">No prior chip design experience needed. Just a laptop and a GitHub account.</p>
   </div>
-  <div class="hero__image">
-    {{ with $hero }}<img class="hero__img" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="A laptop displaying a colourful Tiny Tapeout chip layout">{{ end }}
+  <div class="hero__yt">
+    <iframe src="https://www.youtube.com/embed/_kfzFzMdhtw?si=ZVEMXIU8b87Q3pw2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 
