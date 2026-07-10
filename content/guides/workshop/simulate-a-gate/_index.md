@@ -91,7 +91,8 @@ After you've chosen a component, it gets added to your schematic. Now let's wire
 * If you need to join wires together, add a **junction** component from the *+* menu.
 * You can drag components about by left-click-dragging them.
 * You can copy and paste a component or groups of components with control+c and control+v.
-* Undo and redo with control+z and control+y
+* Undo and redo with control+z and control+y.
+* Wiring changes are disabled while the simulation is running.
 
 For more Wokwi tips, check the [FAQ](https://tinytapeout.com/faq/#how-do-i-do-x-y-z-with-wokwi).
 
