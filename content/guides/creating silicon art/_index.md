@@ -183,13 +183,13 @@ If power stripes overlap your art, try adjusting the horizontal offset first:
 
 ## What the manufactured chip looks like
 
-Your art sits on the top metal layer, but on the finished die it shares that layer with **power distribution** and **metal fill**. Fill shapes are added across the tile to keep metal density uniform during manufacturing — they are not decorative, but they cover much of the surface alongside the power grid.
+Your art will be covered by the top metal layer. This layer is reserved for Tiny Tapeout **power distribution**. Any gaps left are covered by **metal fill**. Fill shapes are added across the chip to keep metal density uniform during manufacturing.
 
 On [Tiny Tapeout 6](https://tinytapeout.com/chips/tt06/) (SKY130), a decapped die looks like this — the vertical stripes are top-level power rails and fill, with individual project tiles visible underneath only as faint variations:
 
 ![](images/tt06-top-with-fill.jpg?width=80pc)
 
-That makes it hard to see your artwork (or anyone else's logic) with the naked eye or a basic microscope. Tiny Tapeout has a partnership with [Texplained](https://www.texplained.com/): they chemically remove the top metal layer and capture high-resolution microscope images of the die underneath. Here is the same TT06 chip after delayering — the individual project blocks and routing are clearly visible:
+That makes it hard to see your artwork (or anyone else's logic) with the naked eye or a basic microscope. Tiny Tapeout has a partnership with [Texplained](https://www.texplained.com/): they remove the top metal layer and capture high-resolution microscope images of the die underneath. Here is the same TT06 chip after delayering — the individual project blocks and routing are clearly visible:
 
 ![](images/tt06-after-top-metal-removed.jpg?width=80pc)
 
