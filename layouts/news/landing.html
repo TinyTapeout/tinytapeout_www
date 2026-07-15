@@ -2,17 +2,31 @@
 {{ partial "header.html" . }}
 
 {{ $tags := slice }}
+{{ $years := slice }}
 {{ range .Pages }}
     {{ if .Params.tags }}
         {{ $tags = $tags | append .Params.tags }}
     {{ end }}
+    {{ if .Date }}
+        {{ $years = $years | append (.Date.Format "2006") }}
+    {{ end }}
 {{ end }}
 
 {{ $tags = $tags | uniq }}
+{{ $years = $years | uniq }}
+
+{{ if $years }}
+  <div class="news-tag-filters">
+    <button class="date-filter btn button" data-date="all-dates">All dates</button>
+  {{ range $years}}
+    <button class="date-filter btn button-secondary" data-date='{{ . }}'>{{.}}</button>
+  {{ end }}
+  </div>
+{{ end }}
 
 {{ if $tags }}
   <div class="news-tag-filters">
-    <button class="tag-filter btn button" data-filter="all">All</button>
+    <button class="tag-filter btn button" data-filter="all-tags">All tags</button>
   {{ range $tags}}
     <button class="tag-filter btn button-secondary" data-filter='{{ replace . " " "-" }}'>{{strings.FirstUpper .}}</button>
   {{ end }}
@@ -27,7 +41,7 @@
             {{ range .Params.tags }}
                 {{ $page_tags = $page_tags | append (replace . " " "-") }}
             {{ end }}
-            <div class="news-entry" data-filter='{{ delimit $page_tags " "}}'>
+            <div class="news-entry" data-filter='{{ delimit $page_tags " "}}' data-date='{{.Date.Format "2006"}}'>
         {{ else }}
             <div class="news-entry">
         {{ end }}

@@ -1,30 +1,61 @@
 document.addEventListener('DOMContentLoaded', function () {
   const tagFilterButtons = document.querySelectorAll('.tag-filter');
-  const newsEntries = document.querySelectorAll('.news-entry');
+  const dateFilterButtons = document.querySelectorAll('.date-filter');
+  const allFilterButtons = document.querySelectorAll('.tag-filter, .date-filter');
 
-  tagFilterButtons.forEach((button) => {
+  // convert to array for filtering later
+  const newsEntries = Array.from(document.querySelectorAll('.news-entry'));
+
+  // default filter settings
+  var filterValue = 'all-tags';
+  var dateValue = 'all-dates';
+
+  allFilterButtons.forEach((button) => {
     button.addEventListener('click', function () {
-      const filterValue = this.dataset.filter;
+      // determine which filter was clicked
+      const isTagFilter = this.dataset.filter != null;
+      const isDateFilter = this.dataset.date != null;
 
-      // when a button is clicked, style every button as a secondary button
-      tagFilterButtons.forEach((btn) => {
-        btn.classList.remove('button');
-        btn.classList.add('button-secondary');
+      // update tag filter button styling
+      if (isTagFilter) {
+        tagFilterButtons.forEach((btn) => {
+          btn.classList.remove('button');
+          btn.classList.add('button-secondary');
+        });
+        this.classList.remove('button-secondary');
+        this.classList.add('button');
+        filterValue = this.dataset.filter;
+      }
+
+      // update date filter button styling
+      if (isDateFilter) {
+        dateFilterButtons.forEach((btn) => {
+          btn.classList.remove('button');
+          btn.classList.add('button-secondary');
+        });
+        this.classList.remove('button-secondary');
+        this.classList.add('button');
+        dateValue = this.dataset.date;
+      }
+
+      // if filter is unset, treat it the same as 'all-{dates, tags}' - return untouched array
+      const dateFilteredEntries =
+        dateValue == 'all-dates'
+          ? newsEntries
+          : newsEntries.filter((entry) => entry.dataset.date.includes(dateValue));
+      const tagFilteredEntries =
+        filterValue == 'all-tags'
+          ? dateFilteredEntries
+          : dateFilteredEntries.filter((entry) => entry.dataset.filter.includes(filterValue));
+
+      // hide all articles
+      newsEntries.forEach((entry) => {
+        entry.style.display = 'none';
       });
 
-      // then on the button just clicked, add the primary button styling
-      this.classList.remove('button-secondary');
-      this.classList.add('button');
-
-      // filter the news entries given the clicked button
-      newsEntries.forEach((entry) => {
-        if (filterValue === 'all') {
-          entry.style.display = 'block';
-        } else if (entry.dataset.filter.includes(filterValue)) {
-          entry.style.display = 'block';
-        } else {
-          entry.style.display = 'none';
-        }
+      // only show filtered articles
+      tagFilteredEntries.forEach((entry) => {
+        entry.style.display = 'block';
       });
     });
   });
