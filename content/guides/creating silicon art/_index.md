@@ -181,6 +181,23 @@ If power stripes overlap your art, try adjusting the horizontal offset first:
 * `FP_PDN_VPITCH` — spacing between vertical power stripes (µm). The template default is `38.87` for current IHP and SKY shuttles.
 * `FP_PDN_VOFFSET` — horizontal offset of the first power stripe (µm). Tweak this in small steps and re-run the GDS action until the power grid clears your art in the preview.
 
+## What the manufactured chip looks like
+
+Your art sits on the top metal layer, but on the finished die it shares that layer with **power distribution** and **metal fill**. Fill shapes are added across the tile to keep metal density uniform during manufacturing — they are not decorative, but they cover much of the surface alongside the power grid.
+
+On [Tiny Tapeout 6](https://tinytapeout.com/chips/tt06/) (SKY130), a decapped die looks like this — the vertical stripes are top-level power rails and fill, with individual project tiles visible underneath only as faint variations:
+
+![](images/tt06-top-with-fill.jpg?width=80pc)
+
+That makes it hard to see your artwork (or anyone else's logic) with the naked eye or a basic microscope. Tiny Tapeout has a partnership with [Texplained](https://www.texplained.com/): they chemically remove the top metal layer and capture high-resolution microscope images of the die underneath. Here is the same TT06 chip after delayering — the individual project blocks and routing are clearly visible:
+
+![](images/tt06-after-top-metal-removed.jpg?width=80pc)
+
+If you look closely, you will find a skull silicon art hidden among the tiles. Here is a close-up of that design after delayering:
+
+![](images/tt06-skull-art-closeup.jpg?width=60pc)
+
+You can explore the full TT06 imaging data in the [interactive chip viewer](https://tinytapeout.github.io/tt06-chip-imaging/#url=data/tt06.json) — zoom and pan across the entire shuttle to find your tile and any silicon art on it.
 
 ## Creating art from code
 
