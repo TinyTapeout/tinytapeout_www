@@ -121,3 +121,20 @@ a:hover {
 #sidebar hr {
   border-color: var(--MENU-SECTION-HR-color);
 }
+
+/* Ensure that text within the button is rendered white - this was getting stuck on black when doing news tags */
+.button:focus {
+  color: #fff !important;
+}
+
+/* Recolour default secondary buttons */
+.button-secondary {
+  background: #d6d6d6;
+  color: #000;
+  box-shadow: 0 3px 0 #9c6fb6;
+}
+
+.button-secondary:hover {
+  background: #bf9ad4;
+  box-shadow: 0 3px 0 #bf9ad4;
+}
