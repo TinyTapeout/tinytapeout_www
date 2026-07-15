@@ -65,7 +65,6 @@ div.news-cover-image {
 div#news-entries {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 #news-entries a {
@@ -74,7 +73,6 @@ div#news-entries {
 }
 
 #news-entries > a:hover {
-  background-color: #f5f5f5;
   transform: scale(1.01);
 }
 
@@ -94,6 +92,11 @@ div#news-entries {
 div.news-entry {
   border: solid 1px var(--MENU-SECTION-ACTIVE-CATEGORY-color);
   padding: 10px 10px 0px 10px;
+  margin-bottom: 1rem;
+}
+
+div.news-entry:hover {
+  background-color: #f5f5f5;
 }
 
 .news-entry h2 {
@@ -108,4 +111,12 @@ div.news-entry {
 
 .news-entry .news-metadata {
   font-size: 0.9rem;
+}
+
+.news-tag-filters {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin: 20px 0px;
+  justify-content: center;
 }

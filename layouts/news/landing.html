@@ -1,9 +1,32 @@
+<script src="/scripts/news-filter.js"></script>
 {{ partial "header.html" . }}
+
+{{ $tags := slice }}
+{{ range .Pages }}
+    {{ if .Params.tags }}
+        {{ $tags = $tags | append .Params.tags }}
+    {{ end }}
+{{ end }}
+
+{{ $tags = $tags | uniq }}
+
+{{ if $tags }}
+  <div class="news-tag-filters">
+    <button class="tag-filter btn button" data-filter="all">All</button>
+  {{ range $tags}}
+    <button class="tag-filter btn button-secondary" data-filter="{{ . }}">{{strings.FirstUpper .}}</button>
+  {{ end }}
+  </div>
+{{ end }}
 
 <div id="news-entries">
 {{ range .Page.Sections.ByDate.Reverse }}
     <a href="{{.RelPermalink}}">
-        <div class="news-entry">
+        {{ if .Params.tags }}
+            <div class="news-entry" data-filter="{{ delimit .Params.tags ' '}}">
+        {{ else }}
+            <div class="news-entry">
+        {{ end }}
             {{ if .Params.cover }}
                 {{ $image_alt := .Params.cover.alt }}
                 {{ $image_pos := .Params.cover.pos | default "center center" }}
