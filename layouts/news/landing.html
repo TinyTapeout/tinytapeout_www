@@ -14,7 +14,7 @@
   <div class="news-tag-filters">
     <button class="tag-filter btn button" data-filter="all">All</button>
   {{ range $tags}}
-    <button class="tag-filter btn button-secondary" data-filter="{{ . }}">{{strings.FirstUpper .}}</button>
+    <button class="tag-filter btn button-secondary" data-filter='{{ replace . " " "-" }}'>{{strings.FirstUpper .}}</button>
   {{ end }}
   </div>
 {{ end }}
@@ -23,7 +23,11 @@
 {{ range .Page.Sections.ByDate.Reverse }}
     <a href="{{.RelPermalink}}">
         {{ if .Params.tags }}
-            <div class="news-entry" data-filter="{{ delimit .Params.tags ' '}}">
+            {{ $page_tags := slice}}
+            {{ range .Params.tags }}
+                {{ $page_tags = $page_tags | append (replace . " " "-") }}
+            {{ end }}
+            <div class="news-entry" data-filter='{{ delimit $page_tags " "}}'>
         {{ else }}
             <div class="news-entry">
         {{ end }}
