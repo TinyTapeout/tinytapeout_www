@@ -118,4 +118,5 @@ After you've placed and simulated your first components with Wokwi, you can star
     * Then connect that output to the segments you need to light up your initial.
 * Try one of the [digital design lesson plans](/digital_design).
 * Look at some of the Wokwi designs that people [submitted to a previous shuttle](https://app.tinytapeout.com/shuttles/tt06). Each Wokwi design is marked with the **W** logo, and clicking the logo opens the schematic.
+* If you want to use the 8 bi-directional pins, you can copy them from the [advanced template](https://wokwi.com/projects/419323243133324289).
 * If you want to try with Verilog, see the [HDL guide](/hdl).
