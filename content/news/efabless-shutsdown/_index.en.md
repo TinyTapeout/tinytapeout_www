@@ -15,6 +15,10 @@ As Tiny Tapeout is an independent company, we will continue to operate. Our miss
 
 We're very sad to hear that [Efabless Corporation](https://www.efabless.com) has shut down until further notice. 
 
+Watch Matt's 'eulogy' [here.](https://www.youtube.com/live/RZ2CVbicmtA?si=fL_xw3rUO0IM1DaE)
+
+{{< youtube RZ2CVbicmtA >}}
+
 Efabless has played a central role in the open source silicon community, running the first open source silicon shuttles, hosting community channels, developing tools, and supporting a wide range of projects, including ours. We wouldn't exist without their support.
 
 Right now we have [TT08](/chips/tt08) awaiting packaging and [TT09](/chips/tt09) still in the [SkyWater Technology](https://www.skywatertechnology.com/) fab. These chips represent a huge investment of time and energy from hundreds of people, and we currently don't know if we'll receive them. We are prepared to offer a refund to all affected customers if we aren't able to ship those chips.

@@ -13,8 +13,10 @@ cover:
 
 Huge news! Analog infrastructure on [TT06](/chips/tt06) is working!
 
-Matt Venn's first [mixed signal design](/chips/tt06/tt_um_mattvenn_r2r_dac) generates a sawtooth wave, proof that the analog infrastructure is functioning as intended. The oscilloscope capture shows a clean sawtooth output, demonstrating that designers can now build and test analog circuits on Tiny Tapeout silicon.
+Matt Venn's first [mixed signal design](/chips/tt06/tt_um_mattvenn_r2r_dac) generates a sawtooth wave, proof that the analog infrastructure is functioning as intended. 
 
-This is very good news for everyone who put analog designs on [TT06](/chips/tt06), [TT07](/chips/tt07), and [TT08](/chips/tt08).
+The oscilloscope capture shows a clean sawtooth output, demonstrating that designers can now build and test analog circuits on Tiny Tapeout silicon.
 
-The infrastructure that enables mixed-signal and analog designs is now confirmed working, opening the door for even more ambitious analog projects in future shuttles.
+[Here](/specs/analog/) are the specs and the basic starting guide for those interested!
+
+Check out this [video](https://youtu.be/_m_jK7twymM?si=rdjSrpzvYCWM_JbA) to find out more.

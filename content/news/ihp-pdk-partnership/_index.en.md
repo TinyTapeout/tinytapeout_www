@@ -13,7 +13,7 @@ cover:
 
 Tiny Tapeout has started work on adding support for [IHP](https://www.ihp-microelectronics.com/)'s  130nm BiCMOS PDK.
 
-Two test chips are planned, with the first public shuttle scheduled for mid-2025. The first experimental tapeout on the IHP SG13G2 process contains [24 designs](https://github.com/TinyTapeout/tinytapeout-ihp-0p1/) from Tiny Tapeout users, including several RISC-V cores, a USB CDC core, several projects with VGA output, an AY-3-8913 PSG replica, and a tiny FPGA design. 
+Two test chips are planned, with the first public shuttle scheduled for mid-2025. The [first experimental tapeout](https://github.com/TinyTapeout/tinytapeout-ihp-0p1/) on the IHP SG13G2 process contains 24 designs from Tiny Tapeout users, including several RISC-V cores, a USB CDC core, several projects with VGA output, an AY-3-8913 PSG replica, and a tiny FPGA design. 
 
 The chip is completely open source and released under the Apache 2.0 license.
 

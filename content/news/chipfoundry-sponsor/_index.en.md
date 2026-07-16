@@ -7,7 +7,7 @@ type: news
 tags: ['partnership']
 layout: single
 cover:
-    image: images/header.jpg
+    image: images/header.jpeg
     alt: ChipFoundry and Tiny Tapeout Partnership
 ---
 
