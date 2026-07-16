@@ -1,10 +1,15 @@
 ---
-title: TTSKY26a Demoscene Competition
+title: TTSKY26a Demoscene Competition (closed)
 tags: [competition]
 description: "Build a sound and graphics demo on 130nm ASIC"
 weight: 1
 
 ---
+
+{{%notice note%}}
+This competition is now closed! 
+Check out the entries on our [TTSKY26a Demoscene Entrants page](../demoscene-ttsky26a-entrants/).
+{{%/notice%}}
 
 ## Demoscene competition!
 
