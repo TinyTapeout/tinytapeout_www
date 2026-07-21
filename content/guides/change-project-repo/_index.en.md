@@ -1,11 +1,13 @@
 ---
-title: Submitting a Verilog project instead of Wokwi
-description: Change your submitted project from Wokwi to Verilog.
+title: Change your submitted project repository
+description: Learn how to change your submitted project repository or change your submission from Wokwi to Verilog
 weight: 70
+alias:
+  - submit-verilog-project
 ---
 
-This guide will show you how to repurpose your tile for a Verilog-based project instead of a Wokwi one. This is suitable
-if you know some Verilog and want to submit a Verilog design, but already have submitted a Wokwi project to the shuttle.
+This guide will show you how to change your submitted project repository, allowing you to repurpose your tile. This
+guide is suitable for any submission, but is especially useful for those looking to change their Wokwi submission.
 
 ## Steps
 
