@@ -35,9 +35,9 @@ The chip uses the [sky130_ef_io_gpiov2_pad](https://skywater-pdk.readthedocs.io/
 
 Note: the following measurements were taken on a single die at ~22 °C and may not be representative of future batches. They are only provided for reference.
 
-<img src="images/iv-curve-sink.png?featherlight=false" alt="Sink IV Curve" width="640" height="400" />
+{{% figure src="images/iv-curve-sink.png" title="Sink IV Curve" %}}
 
-<img src="images/iv-curve-source.png?featherlight=false" alt="Source IV Curve" width="640" height="400" />
+{{% figure src="images/iv-curve-source.png" title="Source IV Curve" %}}
 
 ### Multiplexer measurements
 
@@ -45,7 +45,8 @@ Note: the following measurements were taken on a single die at ~22 °C and may n
 
 After Tiny Tapeout 3.5 silicon was received and tested the worst round trip latency was measured to be 20 ns as shown in the following scope screen captures.
 
-![Rising edge latency](images/tt3p5_rising_latency.png)
-![Falling edge latency](images/tt3p5_falling_latency.png)
+{{% figure src="images/tt3p5_rising_latency.png" title="Rising edge latency" %}}
+
+{{% figure src="images/tt3p5_falling_latency.png" title="Falling edge latency" %}}
 
 Delay variance between different IO pins has been measured at less than 2ns.
