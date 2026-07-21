@@ -160,7 +160,7 @@ Here `my_logo` is the module name and `logo` is the instance name (matching what
 
 ## Step 4: Build and check the result
 
-Commit and push your changes. The **GDS** GitHub Action will run automatically (or trigger it manually from the Actions tab).
+Commit and push your changes. The **GDS** GitHub Action will run automatically (or trigger it manually from the Actions tab). Alternatively, you can [harden your project locally](/guides/local-hardening) for faster iteration.
 
 When it finishes:
 
