@@ -9,18 +9,20 @@ if you know some Verilog and want to submit a Verilog design, but already have s
 
 ## Steps
 
-- Go to your submitted repository's settings and rename the repository to anything else. Click the "Rename" button.
+- Navigate to your project on the [Tiny Tapeout submission app](https://app.tinytapeout.com). Click the "Change" button.
 
-{{< figure src="images/github-rename-repo.png" title="Renaming a repository from 'vga-project' to 'vga-project-wokwi' via the repo settings" >}}
+{{< figure src="images/app-change-repo-button.png" title="Change repo button available next to the repo URL" >}}
 
-- Create a new repository from one of the Verilog template and make sure to use the **same name** as the original repository:
-  - For IHP shuttles: [ttihp-verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) 
-  - For SKY shuttles: [ttsky-verilog-template](https://github.com/TinyTapeout/ttsky-verilog-template) 
+- You will be prompted to enter a new repo URL. Enter it and click the "Change Repo" button. Your repo must be based on
+[one of our templates](/#submission-templates).
 
-{{< figure src="images/github-repo-template-ttsky.png" title="Using the Skywater template repository to create a new one">}}
+{{< figure src="images/app-new-repo-link-prompt.png" title="Enter a new repo URL prompt" >}}
 
-- Add your design source files, documentation and update info.yaml. Commit these files to the newly created repo.
+- For the changes to take effect, you **must** submit a new revision. The project in the newly linked repository must
+have a passing GDS action. Click on the "Submit a new revision" button to automatically fetch the latest build.
 
-- Iterate on your design until the GDS and Docs actions go green.
+You should now have a different repository submitted - happy building! Make sure to fill out the documentation so that
+others can learn and experiment with your design.
 
-- Go to [app.tinytapeout.com](https://app.tinytapeout.com), click on your project name, then click on the big blue "SUBMIT A REVISION" button.
+If you run into any issues, please let us know via our [Discord](/discord). Our community can also help you troubleshoot
+any issues you are having with your submission.
