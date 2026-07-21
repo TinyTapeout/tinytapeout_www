@@ -202,6 +202,11 @@ If you update your project and want us to use your latest version, you have to [
 
 You can keep updating your design up to the tapeout deadline.
 
+## How do I change the repository I've used for my project?
+
+See our guide on [changing your submitted project repository](/guides/change-project-repo) to change the repository that
+you've associated with your submitted project.
+
 ## Submission fails asking to reharden the project for the correct PDK - how do I do this?
 
 Example error message:
