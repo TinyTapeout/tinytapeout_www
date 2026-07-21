@@ -61,11 +61,13 @@ you to enter code and run custom scripts.
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>: paste clipboard
 - <kbd>Ctrl</kbd> + <kbd>D</kbd>: exit paste mode
 
-With the Pmod connected to the demoboard and access to the REPL, we can now configure the QSPI mode for the chip.
+With the Pmod connected to the demoboard and access to the REPL, we can now configure the QSPI mode for the chip. The
+section you need to follow next will depend on the version of the demoboard you are using: follow the [ETR section](#using-the-etr-demoboard)
+if you have an ETR demoboard, or the [legacy section](#using-the-legacy-demoboard) if you have a demoboard intended for TT04+.
 
-### Steps for new TinyTapeout ETR Demoboard - 
+### Using an ETR Demoboard
 
-- Copy the [ETR based QSPI activation script](#2-etr-demoboard-based-qspi-activation-script) provided at the end of this guide.
+- Copy the [ETR-compatible QSPI activation script](#2-etr-compatible-qspi-activation-script) provided at the end of this guide.
 - Enter paste mode in the commander.
 - Paste the entirety of the script into the REPL.
 - Exit paste mode, let the script do the job.
@@ -75,7 +77,7 @@ If successful, you should see an output similar to the figure below.
 
 {{% figure src="images/commander-successful-qspi-enable-new-demoboard.png" title="Successfully executing the activation script and enabling QSPI mode"%}}
 
-### Steps for old TinyTapeout Demoboard (TT06/TT07)- 
+### Using a Legacy Demoboard
 - Copy the [Old Demoboard based QSPI activation script](#1-old-demoboard-based-qspi-activation-script) provided at the end of this guide.
 - Enter paste mode in the commander.
 - Paste the entirety of the script into the REPL.
@@ -117,7 +119,7 @@ choice.
 
 ## Appendix
 
-### 1. Old Demoboard based QSPI Activation Script
+### 1. Legacy Demoboard-compatible QSPI Activation Script
 
 This script is provided by Diego Satizabal ([github.com/dsatizabal](https://github.com/dsatizabal)). Copy to your clipboard
 by clicking the clipboard button top right of the code block.
@@ -558,7 +560,7 @@ while True:
 
 ```
 
-### 2. ETR Demoboard based QSPI Activation Script
+### 2. ETR-compatible QSPI Activation Script
 
 This script is provided by Rohan Verma ([github.com/rohanverm94](https://github.com/rohanverma94)). Copy to your clipboard
 by clicking the clipboard button top right of the code block.
