@@ -160,7 +160,7 @@ Here `my_logo` is the module name and `logo` is the instance name (matching what
 
 ## Step 4: Build and check the result
 
-Commit and push your changes. The **GDS** GitHub Action will run automatically (or trigger it manually from the Actions tab).
+Commit and push your changes. The **GDS** GitHub Action will run automatically (or trigger it manually from the Actions tab). Alternatively, you can [harden your project locally](/guides/local-hardening) for faster iteration.
 
 When it finishes:
 
@@ -187,15 +187,15 @@ Your art will be covered by the top metal layer. This layer is reserved for Tiny
 
 On [Tiny Tapeout 6](https://tinytapeout.com/chips/tt06/) (SKY130), a decapped die looks like this — the vertical stripes are top-level power rails and fill, with individual project tiles visible underneath only as faint variations:
 
-![](images/tt06-top-with-fill.jpg?width=80pc)
+{{< figure src="images/tt06-top-with-fill.jpg" title="Decapped TT06 die - individual projects are obscured by the vertical power rails" >}}
 
 That makes it hard to see your artwork (or anyone else's logic) with the naked eye or a basic microscope. Tiny Tapeout has a partnership with [Texplained](https://www.texplained.com/): they remove the top metal layer and capture high-resolution microscope images of the die underneath. Here is the same TT06 chip after delayering — the individual project blocks and routing are clearly visible:
 
-![](images/tt06-after-top-metal-removed.jpg?width=80pc)
+{{< figure src="images/tt06-after-top-metal-removed.jpg" title="TT06 with the top metal layer removed" >}}
 
 If you look closely, you will find a skull silicon art hidden among the tiles. Here is a close-up of that design after delayering:
 
-![](images/tt06-skull-art-closeup.jpg?width=60pc)
+{{< figure src="images/tt06-skull-art-closeup.jpg" title="Uri Shaked's \"Oscillating Bones\" project built with \"SkullFET\" transistors" >}}
 
 You can explore the full TT06 imaging data in the [interactive chip viewer](https://tinytapeout.github.io/tt06-chip-imaging/#url=data/tt06.json) — zoom and pan across the entire shuttle to find your tile and any silicon art on it.
 
