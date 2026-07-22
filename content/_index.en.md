@@ -42,7 +42,7 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 
 - Pricing depends on the size of your design, the shuttle you use and whether its analog or digital.
 - Use the [calculator to check current prices](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1).
-- Early bird prices are currently reserved for projects affected by the Efabless shutdown.
+- Early bird prices offer an opportunity for you to tapeout at a lower cost. Early bird prices are limited per shuttle, and are only available to individuals.
 - By making an order, you agree to our [terms of service](terms).
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
