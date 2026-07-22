@@ -5,3 +5,9 @@
 node_modules
 public
 resources/_gen/
+
+# Visual Studio Code Workspace Files
+/**/.vscode/
+
+# Visual Studio
+**/.vs
