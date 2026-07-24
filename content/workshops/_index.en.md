@@ -66,7 +66,7 @@ organisation, please complete the form below.
 <a href="https://docs.google.com/forms/d/1j7We8ZLSlwKIldqrd-iCwZ2adDclHPuWnu5nF3Ngws0" class="btn button" target="_blank">Click to enquire</a>
 
 <br>
-We have run over 15 workshops in multiple countries and helped over 800 participants learn and design their own ASIC.
+We have run over 20 workshops in multiple countries and helped over 1,000 participants learn and design their own ASIC.
 
 Participant feedback from our 2025-2026 workshops highlight the strong impact of our sessions, with high levels of
 inspiration to explore semiconductors further and consistently rating the experience highly.
