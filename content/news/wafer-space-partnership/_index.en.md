@@ -11,23 +11,23 @@ cover:
     alt: Tiny Tapeout - wafer.space
 ---
 
-Matt Venn sat down with Tim Ansell on [The Amp Hour](https://theamphour.com/703-building-wafer-space-with-tim-ansell/) who started [wafer.space](https://wafer.space/), a new Singapore-based wafer sharing service that's stepping in to fill a critical gap in the open source silicon ecosystem.
+Tim Ansell, the former Googler who kicked off the free open source lottery shuttles in 2021 has just started [wafer.space](https://wafer.space/). It's a Singapore-based wafer sharing service that's stepping in to fill a critical gap in the open source silicon ecosystem.
 
-After [Efabless](https://chipfoundry.io/efabless)'s shutdown in early 2025, the community lost its primary manufacturing pathway for low-volume chip production. Wafer.space restores that access, but at a different price point and with different tradeoffs.
+After [Efabless](https://chipfoundry.io/efabless)'s shutdown in early 2025, the community lost its primary manufacturing pathway for low-volume chip production. Wafer.space restores that access, at a different price point and with different tradeoffs.
 
 ### What Does It Cost?
-Here's what makes wafer.space different: for $7,000, you receive 1,000 finished chips. That's a huge number compared to traditional chip manufacturing, where you'd pay tens of thousands for much smaller quantities. To put it in perspective, other open source silicon services at similar price points only deliver about 30 chips. Wafer.space gives you 35x more!
 
-Each chip is tiny: 3.8 × 5 millimeters (about the size of a grain of rice). They arrive as bare die, which means they're not packaged in the black plastic rectangles you see in traditional ICs. Tim Ansell is currently working with PCB manufacturers to offer chip-on-board wire bonding, a way to mount them directly onto circuit boards for under $2 per chip, which is far cheaper than sending them to traditional packaging facilities.
+Here's what makes wafer.space different: for $7,000, you receive 1,000 finished chips, about 10x what we receive from Skywater and IHP.
 
-### Why This Matters
+To save cost, chips are shipped as bare dies, with some mounted as Chip on Board (CoB) on a small PCB.
 
-GF180MCU is cheaper than SkyWater's 130nm process because it's manufactured by one of the world's largest foundries in Singapore. The cost structure is straightforward: divide a wafer run by 40 slots, and the price comes down substantially.
+### Adapting Tiny Tapeout to GF180
 
-Tiny Tapeout is currently working on porting support for GF180MCU, which will eventually let designs flow directly from Tiny Tapeout into wafer.space production. That integration is coming soon.
+Tiny Tapeout is currently working on porting support for GF180MCU, thanks to [Tillitis and Wit](/credits). Expect to be able to order chips manufactured on GF180 by mid 2026.
 
-### Getting Started
+We expect about half the density on GF180 compared to SKY130, so each Tiny Tapeout tile will be larger - aiming for ~1000 standard cells per tile.
 
-If you're new to chip design, Tiny Tapeout's click-and-drag tools like [SiliWiz](https://app.siliwiz.com/) are the perfect starting point. Matt has previously discussed how these visual tools make chip design accessible to anyone.
+## Learn more
 
-For more advanced work, designers can use Verilog or VHDL for coding-style designs, or KLayout and Magic for drawing shapes - similar to PCB design tools. 
+* Chris Gammel interviewed Tim Ansell about it on [The Amp Hour](https://theamphour.com/703-building-wafer-space-with-tim-ansell/).
+* Join the [Wafer.space discord](https://discord.gg/43y2t53jpE).
