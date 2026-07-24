@@ -15,10 +15,10 @@ Semiconductors are the most advanced technology of our time. Yet hardly anyone k
 
 We're changing that.
 
-Our latest silicon showcases the beauty of democratized chip design. The [TTSKY25a](https://github.com/TinyTapeout/tinytapeout-chip-renders/blob/main/shuttles/ttsky25a/full_gds.png) has 237 designs from around the world, submitted to the ChipFoundry CI2509 shuttle and now in production on the SkyWater 130nm open source PDK. 
+Our latest silicon showcases the beauty of democratized chip design. The [TTSKY25a](https://github.com/TinyTapeout/tinytapeout-chip-renders/blob/main/shuttles/ttsky25a/full_gds.png) has 237 designs from around the world, submitted to the [ChipFoundry](https://chipfoundry.io/) CI2509 shuttle and now in production on the SkyWater 130nm open source PDK. 
 
-The layout is a vibrant mix of standard cells in digital designs alongside analog circuits. And what makes special is that each one is designed by someone from the open source community who decided to learn chip design for the first time. 
+The layout is an interesting mix of digital and mixed signal designs, all submitted by people in our wonderful community!
 
-We're super proud of what we've accomplished and we only have our community to thank! 
+We're super proud of what we've accomplished and we want to thank all the people working on open source silicon tooling, and especially our [sponsors](https://github.com/credits).
 
 Interested in learning about chip design? Start your journey [here](https://tinytapeout.com/digital_design/).

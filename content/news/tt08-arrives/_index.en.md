@@ -15,7 +15,7 @@ Our [TT08](/chips/tt08) chips are looking lovely on the new COB (chip-on-board)!
 
 The bare dies are now mounted and wire-bonded, thanks to Tamas for the board design and update, and Stuart for getting them bonded. The boards look fantastic! You can see the intricate wire bonds connecting each chip to the PCB traces.
 
-{{< figure src="images/board.jpeg" title="TT08" >}}
+{{< figure src="images/tt08.jpeg" title="TT08" >}}
 
 ### The Silicon Works
 
@@ -31,4 +31,6 @@ Mike Bell created a [VGA Mandelbrot](/chips/tt08/tt_um_MichaelBell_mandelbrot) s
 
 That, alongside [VGA games](/chips/tt08/tt_um_2048_vga_game), [audio synthesizers](/chips/tt08/tt_um_meriac_play_tune), [RISC-V cores](/chips/tt08/tt_um_yuri_panchul_schoolriscv_cpu_with_fibonacci_program), and countless other experiments from makers and students worldwide, make the diversity of designs on this chip remarkable.
 
-Hundreds of open source silicon designs are now on this chip. Browse all the designs [here](/chips/tt08).
+TT08 also contains the [demoscene competition entries](/competitions/demoscene-tt08-announce/).
+
+Hundreds of open source silicon designs are on this chip. Browse all the designs [here](/chips/tt08).

@@ -15,7 +15,7 @@ We just packed 237 of your projects into our most exciting ASIC to date! Let's t
 
 ### Asteroid RISC-V Takes Flight
 
-This was the first time we enabled 4-tile high designs, and it opened the door to something special: [Asteroid](https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV), a monster crowdsourced RISC-V microcontroller. At 60,000 standard cells, it's the biggest design we've ever seen on Tiny Tapeout. We'll be announcing the RISC-V competition results in the next few days!
+This was the first time we enabled 4-tile high designs, and it opened the door to something special: [Asteroid](https://tinytapeout.com/chips/ttsky25a/tt_um_tt_tinyQV), a monster [crowdsourced RISC-V](https://tinytapeout.com/competitions/risc-v-peripheral/) microcontroller. At 60,000 standard cells, it's the biggest design we've ever seen on Tiny Tapeout. We'll be announcing the RISC-V competition results in the next few days!
 
 ### Analog Innovation
 
@@ -23,7 +23,7 @@ Inspired by Peter Kinget, we commissioned Andrew Kang to create a [Mini MOSBius]
 
 ### Tributes and Community
 
-Mitch Altman has long inspired us, so as a tribute we included an ASIC version of his classic [TV-B-Gone](https://tinytapeout.com/chips/ttsky25a/tt_um_tv_b_gone_rom) — the universal off button for TVs. We also took the opportunity to test Sylvain Munaut's ROM.
+Mitch Altman has long inspired us, so as a tribute we included an ASIC version of his classic [TV-B-Gone](https://tinytapeout.com/chips/ttsky25a/tt_um_tv_b_gone_rom) — the universal off button for TVs. This also provided a good opportunity to test Sylvain Munaut's ROM.
 
 We have our first commissioned art piece from Sabine Wieluch: ["Cross Stitch Creatures"](https://tinytapeout.com/chips/ttsky25a/tt_um_bleeptrack_cc2) — the first of a 4-part series exploring what silicon art looks like.
 
