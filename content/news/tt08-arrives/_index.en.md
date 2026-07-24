@@ -15,7 +15,7 @@ Our [TT08](/chips/tt08) chips are looking lovely on the new COB (chip-on-board)!
 
 The bare dies are now mounted and wire-bonded, thanks to Tamas for the board design and update, and Stuart for getting them bonded. The boards look fantastic! You can see the intricate wire bonds connecting each chip to the PCB traces.
 
-{{< figure src="images/tt08.jpeg" title="TT08" >}}
+{{< figure src="images/tt08.jpg" title="TT08" >}}
 
 ### The Silicon Works
 
