@@ -19,6 +19,6 @@ Our latest silicon showcases the beauty of democratized chip design. The [TTSKY2
 
 The layout is an interesting mix of digital and mixed signal designs, all submitted by people in our wonderful community!
 
-We're super proud of what we've accomplished and we want to thank all the people working on open source silicon tooling, and especially our [sponsors](https://github.com/credits).
+We're super proud of what we've accomplished and we want to thank all the people working on open source silicon tooling, and especially our [sponsors](/credits).
 
 Interested in learning about chip design? Start your journey [here](https://tinytapeout.com/digital_design/).
