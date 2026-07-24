@@ -21,4 +21,4 @@ And it's completely free to participate!
 
 For full competition details, rules, and how to submit, head over to [tinytapeout.com/competitions/risc-v-peripheral/.](https://tinytapeout.com/competitions/risc-v-peripheral/)
 
-**Update!** The competition has finished and [we have our winners!](https://github.com/competitions/risc-v-peripheral-winners/)
+**Update!** The competition has finished and [we have our winners!](/competitions/risc-v-peripheral-winners/)
