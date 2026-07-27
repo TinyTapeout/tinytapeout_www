@@ -115,7 +115,7 @@ export function ProjectPage({
       {hasAnalogPins && (
         <>
           <h3>Analog pins</h3>
-          <AnalogPinout project={project} />
+          <AnalogPinout shuttle={shuttle} project={project} />
         </>
       )}
 
