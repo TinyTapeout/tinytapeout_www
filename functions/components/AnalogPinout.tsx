@@ -15,7 +15,7 @@ export function AnalogPinout({
 
   // shuttles which do not come with the ETR demo board
   // using this as a way of differenciating which pinout should be displayed
-  const nonETRShuttles = ['tt01', 'tt02', 'tt03', 'tt04', 'tt05', 'tt06', 'tt07', 'tt08'];
+  const nonETRShuttles = ['tt06', 'tt07', 'tt08'];
 
   const letterLabels = ['C', 'D', 'F', 'G', 'J', 'K', 'X', 'W', 'U', 'T', 'R', 'Q'];
 
