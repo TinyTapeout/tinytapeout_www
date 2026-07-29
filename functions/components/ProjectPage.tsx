@@ -51,6 +51,12 @@ export function ProjectPage({
   });
   const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?${threeDViewerParams.toString()}`;
 
+  const tinyExplorerParams = new URLSearchParams({
+    file: oasUrl,
+    pdk: getShuttlePdk(shuttle),
+  });
+  const tinyExplorerUrl = `https://znah.net/tiny_explorer/viewer.html?${tinyExplorerParams.toString()}`;
+
   const vgaPlaygroundParams = new URLSearchParams({ repo: project.repo, ref: project.commit });
   const vgaPlaygroundUrl = `https://vga-playground.com/?${vgaPlaygroundParams.toString()}`;
 
@@ -79,6 +85,11 @@ export function ProjectPage({
         <li>
           <a href={threeDViewerUrl} target="_blank" rel="noopener">
             Open in 3D viewer
+          </a>
+        </li>
+        <li>
+          <a href={tinyExplorerUrl} target="_blank" rel="noopener">
+            Open in Tiny Explorer
           </a>
         </li>
         {isTinyVGACompatible(project.pinout) && (
