@@ -55,7 +55,7 @@ export function ProjectPage({
     file: oasUrl,
     pdk: getShuttlePdk(shuttle),
   });
-  const tinyExplorerUrl = `https://znah.net/tiny_explorer/viewer.html?${tinyExplorerParams.toString()}`;
+  const tinyExplorerUrl = `https://gds-explorer.tinytapeout.com/viewer?${tinyExplorerParams.toString()}`;
 
   const vgaPlaygroundParams = new URLSearchParams({ repo: project.repo, ref: project.commit });
   const vgaPlaygroundUrl = `https://vga-playground.com/?${vgaPlaygroundParams.toString()}`;
@@ -89,7 +89,7 @@ export function ProjectPage({
         </li>
         <li>
           <a href={tinyExplorerUrl} target="_blank" rel="noopener">
-            Open in Tiny Explorer
+            Open in Tiny Tapeout Explorer
           </a>
         </li>
         {isTinyVGACompatible(project.pinout) && (
