@@ -23,4 +23,4 @@ The goal of Tiny Tapeout has always been simple: make chip design accessible. No
 
 Here's to the next generation of chip designers, engineers, and makers!
 
-{{< figure src="images/matt.jpg" title="Matt wins award" >}}
+{{< figure src="images/matt.jpg" title="David Cuartlies and Matt Venn" >}}

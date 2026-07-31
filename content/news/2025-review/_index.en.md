@@ -17,7 +17,7 @@ What a year it's been.
 
 In 2025, we sent 12 chips to 3 different fabs — that's an average of once per month! 
 
-We ran 8 workshops for 500 people, helping students and young people design their first ever chips. And perhaps the most exciting moment: seeing [TT06](/chips/tt06) launched into [space](/tt06-orbit) on top of a blazing rocket, carrying hundreds of open source chip designs into Low Earth Orbit.
+We ran 8 workshops for 500 people, helping students and young people design their first ever chips. And perhaps the most exciting moment: seeing [TT06](/chips/tt06) launched into [space](/news/tt06-orbit) on top of a blazing rocket, carrying hundreds of open source chip designs into Low Earth Orbit.
 
 ### The Partners
 

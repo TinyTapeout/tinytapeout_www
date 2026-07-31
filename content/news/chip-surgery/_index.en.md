@@ -13,7 +13,7 @@ cover:
 
 We cut a microscopic wire inside a chip with an ion beam, then brought it back to life with platinum gas!
 
-Matt's latest video is a collaboration with Miky at [ZeptoBars](https://zeptobars.com/en/), the only person he knows to own a FIB (focused ion beam) equipped electron microscope. 
+Matt's latest video is a collaboration with Mikhail at [ZeptoBars](https://zeptobars.com/en/), the only person he knows to own a FIB (focused ion beam) equipped electron microscope. 
 
 Together, they perform delicate surgical modifications on an open-source chip. Utilizing the focused ion beam microscope, the pair attempts to precisely sever and reconnect microscopic electrical traces while the hardware remains powered, exploring advanced techniques used for industrial chip diagnostics and prototype debugging.
 

@@ -21,7 +21,7 @@ We love this project because it combines the democratisation of both space and s
 
 [TT06](/chips/tt06) is riding aboard HUNITY, a PocketQube satellite built by Tibor Herman and the team at [BME University](https://www.bme.hu/en) in Hungary. 
 
-If you want a refresher on the project, watch the [interview](/interview-hunity/) we made with Tibor, the creator of the HUNITY satellite we're riding on.
+If you want a refresher on the project, watch the [interview](/news/interview-hunity/) we made with Tibor, the creator of the HUNITY satellite we're riding on.
 
 The SpASICs project, led by Pat Deegan, designed the integration and created the board that holds our chip. The satellite will run a series of experiments designed by the community, testing how these designs perform in the radiation environment of Low Earth Orbit.
 
