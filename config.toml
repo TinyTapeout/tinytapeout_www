@@ -1,5 +1,5 @@
 baseURL = 'https://tinytapeout.com'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Tiny Tapeout'
 theme = ["learn", "hugo-shortcode-gallery"]
 enableGitInfo = true
@@ -30,21 +30,21 @@ enableGitInfo = true
   [Languages.en]
     title = "Quicker, easier and cheaper to make your own chip!"
     weight = 1
-    languageName = "English"
+    label = "English"
 
   [Languages.es]
     title = "¡Hacer tu propio chip de forma más rápida, más fácil y más barata!"
     weight = 2
-    languageName = "Español"
+    label = "Espa\u00f1ol"
 
   [Languages.ua]
     title = "Документація українською"
     weight = 3
-    languageName = "Українська"
+    label = "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
 
   [Languages.it]
-    title = "Crea il tuo microchip in modo più veloce, più semplice ed economico!"
+    title = "Crea il tuo microchip in modo piÃ¹ veloce, piÃ¹ semplice ed economico!"
     weight = 4
-    languageName = "Italiano"
+    label = "Italiano"
 
 #disableLanguages = ['es', 'it']

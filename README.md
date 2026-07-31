@@ -4,7 +4,8 @@ Contribution instructions:
 
 * fork this repository
 * *clone the forked repository recursively*
-* install hugo:
+  updated as needed: ` git submodule update --init --recursive`
+* install [hugo]("https://github.com/gohugoio/hugo) at least version  `0.112.4`, preferably `0.159` or newer:
     * linux: `snap install hugo`
     * other platforms: https://gohugo.io/getting-started/installing/
 * after cloning the repo, change to the new directory: cd tinytapeout_www
