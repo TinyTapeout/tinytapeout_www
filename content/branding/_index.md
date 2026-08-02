@@ -25,9 +25,20 @@ weight: 95
 
 ## Images
 
-* [400 px logo](/ttlogo_400.png)
-* [3000 px logo](/ttlogo_3000.png)
+With background
+
+* [400 px logo with background](/ttlogo_400.png)
+* [3000 px logo with background](/ttlogo_3000.png)
+
+Circular TT logo
+
 * [SVG logo black and white](/ttlogo.svg)
+* [850 px logo](/ttlogo.png)
+
+## Fonts
+
+* [Montserrat](https://fonts.google.com/specimen/Montserrat) 
+* [Martian Mono](https://fonts.google.com/specimen/Martian+Mono)
 
 ## Colours
 
