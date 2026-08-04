@@ -13,13 +13,13 @@ cover:
 
 [Tiny Tapeout](https://tinytapeout.com/) ran workshops across the USA with Hackaday Supercon, UCSD, and Stanford. In total, approximately 250 people participated, with most of them successfully making a tapeout.
 
-{{< figure src="images/2.jpeg" title="Hackaday LA" >}}
+{{< figure src="images/2.jpg" title="Hackaday LA" >}}
 
 At Hackaday Supercon in Pasadena, the workshop sold out with 40 attendees. Over 60 tapeouts were submitted by participants, and the workshop received an average rating of 4.7 out of 5. All respondents said the workshop inspired them to find out more about semiconductors.
 
-{{< figure src="images/3-.jpeg" title="Hackaday LA" >}}
-{{< figure src="images/4.jpeg" title="Hackaday LA" >}}
-{{< figure src="images/5.jpeg" title="Hackaday LA" >}}
+{{< figure src="images/3-.jpg" title="Hackaday LA" >}}
+{{< figure src="images/4.jpg" title="Hackaday LA" >}}
+{{< figure src="images/5.jpg" title="Hackaday LA" >}}
 
 Matt Venn brought his musical side to science communication for the first time during these workshops.
 
