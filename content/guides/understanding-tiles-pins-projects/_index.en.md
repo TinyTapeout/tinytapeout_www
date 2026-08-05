@@ -15,7 +15,7 @@ tiles, but the default size is 1x1.
 
 Physical tile sizes (measured in µm) vary between different target foundries, but rarely differ between the same foundry.
 It is important to acknowledge this difference as a project may fit on one shuttle, but not another. For example,
-a project submitted to a TTSKY shuttle with 80% area utilization will not fit on a TTGF shuttle.
+a project submitted to a TTSKY shuttle with 80% area utilization may not fit on a TTGF shuttle.
 
 Additional sizes (not an exhaustive list) include 1x2, 2x2, 3x2, e.t.c. all the way up to 8x4 for TTSKY and TTIHP shuttles.
 Actual usable sizes depend on the currently available shuttle area. You must pay for the additional tiles you use, but
@@ -48,7 +48,7 @@ and ensuring that your design passes the design rule checks (DRC) -- be careful 
 
 If your design ***does*** require analog pins, then you must use the appropriate analog template for your target shuttle.
 There are some additional caveats with submitting an analog project:
-- The design must fit into one or two [analog slots](/faq/#what-is-an-analog-slot) -- this means a minimum project size of
+- The design must fit into an [analog slot](/faq/#what-is-an-analog-slot) -- this means a minimum project size of
 1x2 tiles
 - Each analog pin that you intend to use must be purchased individually
 - You are limited to six analog pins per project
