@@ -8,7 +8,7 @@ weight: 1
 
 {{%notice note%}}
 This competition is now closed! 
-Check out the entries on our [TTSKY26a Demoscene Entrants page](../demoscene-ttsky26a-entrants/).
+Check out the entries on our [TTSKY26a Demoscene Entries page](../demoscene-ttsky26a-entries/).
 {{%/notice%}}
 
 ## Demoscene competition!
