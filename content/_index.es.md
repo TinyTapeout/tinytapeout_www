@@ -33,7 +33,7 @@ Tiny Tapeout es un proyecto educativo que hace más fácil y barato que nunca ha
 * Cuadro de tamaño 160 x 100 um + ASIC + placa de demostración: El precio estándar es de $300 sin incluir costos de envío.
   Sin embargo, [Efabless](https://efabless.com) está patrocinando una oferta especial anticipada de **$150** (más costos de envío), limitada a un pedido por persona.
 * Cada cuadro adicional cuesta $50, y pines análogos extra están disponibles desde $40 por pin.
-* Al hacer un pedido, usted acepta nuestros [términos y condiciones](../../terms).
+* Al hacer un pedido, usted acepta nuestros [términos y condiciones](/terms).
 * Fecha de cierre es el 19 de Abril.
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}
