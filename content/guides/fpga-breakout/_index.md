@@ -13,6 +13,8 @@ Here we'll:
  * [Harden](#harden-a-design) a digital design; and
  * Get it [running](#get-the-design-running) on the demoboard; 
 
+You can [purchase an FPGA development kit](https://store.tinytapeout.com/products/FPGA-Development-Kit-p813805747) from our [online store](https://store.tinytapeout.com).
+
 ## Overview
 
 The [FPGA breakout](https://github.com/TinyTapeout/breakout-pcb/tree/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k) has a [Lattice UP5K](https://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40UltraPlus) FPGA on a PCB with headers and a [pinout](https://github.com/TinyTapeout/breakout-pcb/blob/nextgenv3/ASIC-simulator/ttdbv3-fpga-ICE40UP5k/fabricfox.pcf) compatible with the [Tiny Tapeout demoboard](https://github.com/TinyTapeout/tt-demo-pcb), which includes all the digital I/O as well as the project reset and clock (both routed to global buffer input pins on the FPGA).
@@ -284,3 +286,8 @@ You may combine all of these, including upload, into a single command
 ```
 
 
+## Purchasing
+
+You can [buy the FPGA development kit on our online store](https://store.tinytapeout.com/products/FPGA-Development-Kit-p813805747).
+Pmods can also be purchased at the [online store](https://store.tinytapeout.com) which provide extra functionality such
+as storage, VGA output and gamepad input.
