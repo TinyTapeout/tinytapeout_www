@@ -69,3 +69,7 @@ participants were able to discuss a circuit and try modifications on the fly.
 
 But the most exciting part is that Mini MOSbius is now included on all our future Tiny Tapeout Sky130 based chips, so
 along with your own design you'll get a fully featured analog playground to tinker with!
+
+Can't wait for the next Sky shuttle? You can purchase a previous shuttle chip which has a Mini MOSBius onboard from our store:
+- [TTSKY25a](https://store.tinytapeout.com/products/TTSKY25a-Development-Kit-p849097591)
+- [TTSKY25b](https://store.tinytapeout.com/products/TTSKY25b-Development-Kit-p849160072)
