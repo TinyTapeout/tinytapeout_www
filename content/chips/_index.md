@@ -15,6 +15,7 @@ These chips are currently open for submission! Tape out before the deadline to g
 
 | Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated delivery date |
 | --------------------------------------------------------- | ---------- | ---------- | -------- | -------------- | ----------------------- |
+| [TTSKY26d](https://app.tinytapeout.com/shuttles/ttsky26d) | TBD        | 2026-11-30 | CI-2612  | 2027-05-12     | 2027-06-09              |
 | [TTIHP26b](https://app.tinytapeout.com/shuttles/ttihp26b) | 2026-07-27 | 2026-09-21 | IHP-2609 | 2027-06-25     | 2027-08-16              |
 
 
@@ -29,7 +30,6 @@ The following chips are planned for the future. The dates are estimates and may 
 | Run      | Submission deadline | Estimated delivery date |
 | -------- | ------------------- | ----------------------- |
 | TTGF26c  | Dec 2026            | Early 2027              |
-| TTSKY26d | Nov 2026            | Jun 2027                |
 
 
 ### Current Chips
