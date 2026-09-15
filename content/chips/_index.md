@@ -18,7 +18,21 @@ These chips are currently open for submission! Tape out before the deadline to g
 | [TTIHP26b](https://app.tinytapeout.com/shuttles/ttihp26b) | 2026-07-27 | 2026-09-21 | IHP-2609 | 2027-06-25     | 2027-08-16              |
 
 
-### Current chips
+{{% notice note %}}
+Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/prepurchase](https://app.tinytapeout.com/prepurchase).
+{{% /notice %}}
+
+### Future Chips
+
+The following chips are planned for the future. The dates are estimates and may change.
+
+| Run      | Submission deadline | Estimated delivery date |
+| -------- | ------------------- | ----------------------- |
+| TTGF26c  | Dec 2026            | Early 2027              |
+| TTSKY26d | Nov 2026            | Jun 2027                |
+
+
+### Current Chips
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
@@ -47,18 +61,6 @@ These chips are currently open for submission! Tape out before the deadline to g
 | [TT02](/chips/tt02)                                | 2022-11-09 | 2022-12-02 | CI-2211Q | 165     | 2023-10-17     | Shipped 2024-01-25      |
 | [TT01](/chips/tt01)                                | 2022-08-17 | 2022-09-01 | MPW7     | 152     | 2024-01-30     | None - test shuttle     |
 
-{{% notice note %}}
-Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/prepurchase](https://app.tinytapeout.com/prepurchase).
-{{% /notice %}}
-
-### Future chips
-
-The following chips are planned for the future. The dates are estimates and may change.
-
-| Run      | Submission deadline | Estimated delivery date |
-| -------- | ------------------- | ----------------------- |
-| TTGF26c  | Dec 2026            | Early 2027              |
-| TTSKY26d | Nov 2026            | Jun 2027                |
 
 ### Stats
 
