@@ -9,11 +9,19 @@ cascade:
     layout: shuttle
 ---
 
+### Open for Submission
+
+These chips are currently open for submission! Tape out before the deadline to get your design made.
+
+| Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated delivery date |
+| --------------------------------------------------------- | ---------- | ---------- | -------- | -------------- | ----------------------- |
+| [TTIHP26b](https://app.tinytapeout.com/shuttles/ttihp26b) | 2026-07-27 | 2026-09-21 | IHP-2609 | 2027-06-25     | 2027-08-16              |
+
+
 ### Current chips
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
-| [TTIHP26b](https://app.tinytapeout.com/shuttles/ttihp26b) | 2026-07-27 | 2026-09-21 | IHP-2609 | Open      | 2027-06-25     | 2027-08-16      |
 | [TTSKY26c](/chips/ttsky26c)                        | 2026-05-26 | 2026-09-07 | CI-2609  | 242     | 2027-03-27     | 2027-05-12             |
 | [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-10-01     | None - test shuttle    |
 | [TTGF26b](/chips/ttgf26b)                          | 2026-06-05 | 2026-06-22 | WS-2606  | 90      | 2026-10-01     | 2026-11-15             |
