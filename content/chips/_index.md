@@ -1,5 +1,6 @@
 ---
 title: Tiny Tapeout Chips
+description: A comprehensive list of all past, present and future Tiny Tapeout chips.
 weight: 10
 aliases:
     - /shuttles
