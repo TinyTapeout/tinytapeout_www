@@ -14,7 +14,7 @@ cascade:
 
 These chips are currently open for submission! Tape out before the deadline to get your design made.
 
-| Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated delivery date |
+| Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated shipping date |
 | --------------------------------------------------------- | ---------- | ---------- | -------- | -------------- | ----------------------- |
 | [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d)†   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTGF26c](https://app.tinytapeout.com/shuttles/ttgf26c)   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
@@ -31,7 +31,7 @@ Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/pre
 
 The following chips are planned for the future. The dates are estimates and may change.
 
-| Run       | Submission deadline | Estimated delivery date |
+| Run       | Submission deadline | Estimated shipping date |
 | --------- | ------------------- | ----------------------- |
 | TTIHP27a  | March 2027          | Q1 2028                 |
 | TTGF27a   | April 2027          | October 2027            |
@@ -45,7 +45,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 ### Current Chips
 
-| Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated delivery date |
+| Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated shipping date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
 | [TTSKY26c](/chips/ttsky26c)                        | 2026-05-26 | 2026-09-07 | CI-2609  | 242     | 2027-03-27     | 2027-05-12             |
 | [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-10-01     | None - test shuttle    |
