@@ -29,13 +29,18 @@ Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/pre
 
 ### Future Chips
 
-There are no future chips currently planned, check back soon!
+The following chips are planned for the future. The dates are estimates and may change.
 
-<!-- The following chips are planned for the future. The dates are estimates and may change.
-
-| Run      | Submission deadline | Estimated delivery date |
-| -------- | ------------------- | ----------------------- |
-| TTGF26c  | Dec 2026            | Early 2027              | -->
+| Run       | Submission deadline | Estimated delivery date |
+| --------- | ------------------- | ----------------------- |
+| TTIHP27a  | March 2027          | Q1 2028                 |
+| TTGF27a   | April 2027          | October 2027            |
+| TTSKY27a  | May 2027            | November 2027           |
+| TTGF27b   | July 2027           | January 2028            |
+| TTSKY27b  | September 2027      | April 2028              |
+| TTGF27c   | October 2027        | April 2028              |
+| TTSKY27c  | December 2027       | June 2028               |
+| TTGF27d   | January 2028        | June 2028               |
 
 
 ### Current Chips
