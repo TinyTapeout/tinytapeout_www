@@ -19,7 +19,6 @@ These chips are currently open for submission! Tape out before the deadline to g
 | [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d)†   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTGF26c](https://app.tinytapeout.com/shuttles/ttgf26c)   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTSKY26d](https://app.tinytapeout.com/shuttles/ttsky26d) | TBD        | 2026-11-30 | CI-2612  | 2027-05-12     | 2027-06-09              |
-| [TTIHP26b](https://app.tinytapeout.com/shuttles/ttihp26b) | 2026-07-27 | 2026-09-21 | IHP-2609 | 2027-06-25     | 2027-08-16              |
 
 <small>† Currently reserved for ArtScience Museum Singapore. Unused tiles will be made available two days before the deadline.</small>
 
@@ -47,6 +46,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated shipping date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
+| [TTIHP26b](/chips/ttihp26b)                        | 2026-07-27 | 2026-09-21 | IHP-2609 | 123     | 2027-06-25     | 2027-08-16             |
 | [TTSKY26c](/chips/ttsky26c)                        | 2026-05-26 | 2026-09-07 | CI-2609  | 242     | 2027-03-27     | 2027-05-12             |
 | [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-11-07     | None - test shuttle    |
 | [TTGF26b](/chips/ttgf26b)                          | 2026-06-05 | 2026-06-22 | WS-2606  | 90      | 2026-11-07     | 2026-12-12             |
