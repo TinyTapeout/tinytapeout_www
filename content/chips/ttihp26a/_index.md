@@ -1,6 +1,6 @@
 ---
 title: 'Tiny Tapeout IHP 26a'
-weight: 60
+weight: 50
 description: 283 designs, closed 2026-03-23
 ---
 
