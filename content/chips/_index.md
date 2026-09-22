@@ -43,7 +43,7 @@ The following chips are planned for the future. The dates are estimates and may 
 | TTGF27d   | January 2028        | June 2028               |
 
 
-### Current Chips
+### Past Chips
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated shipping date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
