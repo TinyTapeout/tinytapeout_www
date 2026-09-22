@@ -39,7 +39,7 @@ The following chips are planned for the future. The dates are estimates and may 
 | TTSKY27b  | September 2027      | April 2028              |
 | TTGF27c   | October 2027        | April 2028              |
 | TTSKY27c  | December 2027       | June 2028               |
-| TTGF27d   | January 2028        | June 2028               |
+| TTGF28a   | January 2028        | June 2028               |
 
 
 ### Past Chips
