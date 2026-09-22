@@ -18,6 +18,9 @@
     const timerContainerElement = countdownWrapper.querySelector(
       '.countdown-timer .countdown-timer-tiles',
     );
+    const headingStatusElements = countdownWrapper.querySelectorAll(
+      '.countdown-timer .heading-status',
+    );
     const daysElement = countdownWrapper.querySelector('.countdown-timer .cd-days');
     const hoursElement = countdownWrapper.querySelector('.countdown-timer .cd-hours');
     const minutesElement = countdownWrapper.querySelector('.countdown-timer .cd-minutes');
@@ -79,8 +82,16 @@
     });
 
     function update() {
-      const now = new Date();
-      const diff = deadline.getTime() - now.getTime();
+      const deadlineTime = deadline.getTime();
+      const remaining = deadlineTime - Date.now();
+      // Also catches an invalid deadline, where remaining is NaN:
+      const closed = !(remaining > 0);
+      const diff = closed ? 0 : remaining;
+
+      for (const headingStatus of headingStatusElements) {
+        headingStatus.textContent = closed ? 'Closed' : 'Closes in';
+      }
+
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -90,20 +101,23 @@
       hoursElement.textContent = pad(hours);
       minutesElement.textContent = pad(minutes);
       secondsElement.textContent = pad(seconds);
-      timerContainerElement.setAttribute(
-        'title',
-        deadline.toLocaleString(undefined, {
+
+      if (!Number.isNaN(deadlineTime)) {
+        const deadlineText = deadline.toLocaleString(undefined, {
           year: 'numeric',
           month: 'long',
           day: 'numeric',
           hour: '2-digit',
           minute: '2-digit',
           timeZoneName: 'short',
-        }),
-      );
+        });
+        timerContainerElement.setAttribute('title', deadlineText);
+      }
     }
 
     update();
+    // Keep updating even after the deadline passed, so that the timer comes back
+    // if the deadline gets extended (fetchStats() refreshes it from the API).
     setInterval(update, 1000);
   }
 

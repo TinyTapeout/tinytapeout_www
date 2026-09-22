@@ -1,7 +1,7 @@
 <div class="countdown-wrapper" data-shuttle="{{ .Get "shuttle" }}" data-deadline="{{ .Get "deadline" }}" data-pcbs="{{ .Get "pcbs" }}">
   <div class="countdown-timer">
-    <div class="heading">{{ .Get "name" }}<br />Closes in</div>
-    <div class="heading-mobile">{{ .Get "name" }} Closes in</div>
+    <div class="heading">{{ .Get "name" }}<br /><span class="heading-status">Closes in</span></div>
+    <div class="heading-mobile">{{ .Get "name" }} <span class="heading-status">Closes in</span></div>
     <div class="countdown-timer-tiles">
       <div class="tile">
         <p class="value cd-days">44</p>
