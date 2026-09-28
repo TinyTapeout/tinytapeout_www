@@ -20,7 +20,7 @@ enableGitInfo = true
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
-  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLScvnHUmp_JO15pJqWh63-OFHw92ujI0Y0a8dvg_i6MdBQCfeg/viewform?usp=header"
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSelFOYEZ7mXMm2zVuQYh2mu494tdsgndyf-7d7eUubWDvoKOw/viewform?usp=header"
   workshopFoundry = "sky"
 
 [outputs]
