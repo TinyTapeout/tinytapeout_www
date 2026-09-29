@@ -21,8 +21,8 @@ manufacturing and also view your files with the 3D viewer.
 To submit your Wokwi project to a shuttle, we will use a helpful submission portal that will take care of creating
 the GitHub repository, setting up GitHub Actions and populating the relevant files.
 
-<!-- The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a>.  -->
-The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi?shuttle=ttgf26d" target="_blank">here</a>. 
+<!-- to stop forcing a shuttle, simply comment out wokwiWizardShuttle in config.toml -->
+The submission portal is available {{< get-wokwi-wizard-shuttle >}}. 
 
 {{% figure src="images/submission_portal_step1_empty.png" title="Wokwi project submission portal" %}}
 

@@ -1,0 +1,7 @@
+{{ $link_text := or (.Get 0) "here" }}
+{{- with .Site.Params.wokwiWizardShuttle -}}
+    <a href="https://app.tinytapeout.com/projects/create/wokwi?shuttle={{.}}" target="_blank">{{$link_text}}</a>
+{{- else -}}
+    {{- warnf "params.wokwiWizardShuttle was not set, defaulting to normal URL" -}}
+    <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">{{$link_text}}</a>
+{{- end -}}
