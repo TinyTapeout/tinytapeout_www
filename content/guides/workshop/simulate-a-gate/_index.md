@@ -117,6 +117,14 @@ After you've placed and simulated your first components with Wokwi, you can star
     * Use some logic gates to create a logic high output when the input is set correctly.
     * Then connect that output to the segments you need to light up your initial.
 * Try one of the [digital design lesson plans](/digital_design).
-* Look at some of the Wokwi designs that people [submitted to a previous shuttle](https://app.tinytapeout.com/shuttles/tt06). Each Wokwi design is marked with the **W** logo, and clicking the logo opens the schematic.
+* Take a look at some of these cool Wokwi designs:
+	* [8 bit random number generator](https://wokwi.com/projects/414120263584922625)
+	* [7 segment number tester](https://wokwi.com/projects/414120404427608065)
+	* [Count down timer](https://wokwi.com/projects/442987575358494721)
+	* [Shift register](https://wokwi.com/projects/442977452121292801)
+	* [2 bit counter](https://wokwi.com/projects/442977436543634433)
+	* [Single digit sums](https://wokwi.com/projects/445254731311517697)
+	* [Binary to Decimal converter](https://wokwi.com/projects/446565876953355265)
+	* [Counter](https://wokwi.com/projects/445276353959823361)
 * If you want to use the 8 bi-directional pins, you can copy them from the [advanced template](https://wokwi.com/projects/419323243133324289).
 * If you want to try with Verilog, see the [HDL guide](/hdl).
