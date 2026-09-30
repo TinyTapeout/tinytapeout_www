@@ -244,6 +244,12 @@ and may be subject to removal if not corrected.
 
 You are encouraged to research more about open-source licenses - visit <a href="https://choosealicense.com/" target="_blank">https://choosealicense.com/</a>.
 
+## Can I use Cadence/other VLSI tools?
+Yes, but with some caveats -- we do not provide any sort of official support for those tools, but we can accept valid
+and manufacturable designs. Note that the designs must be licensable under Apache-2.0. Read more [in our unofficial guide](/guides/using-industry-tools).
+
+We recommend that you stick with the open source tools.
+
 ## Is it TinyTapeout or Tiny Tapeout?
 
 It’s Tiny Tapeout. See the [Branding](/branding) page for more information.
