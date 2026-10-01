@@ -28,13 +28,15 @@ And finally, Matt talked about our **[RISC-V competition](/competitions/risc-v-p
 
 **The Tiny Tapeout community is growing!** The latest community stats have been very exciting and also heartwarming to see. 5,000 members on [Discord](https://tinytapeout.com/discord). 4,000 projects manufactured to date, and 24 chips completed! We are on track for 3,000 projects this year across 10 shuttles. Next year we're expecting 4,000 projects across 17 shuttles.
 
-One notable contribution from our community is the **new 3D viewer (Tiny Tapeout Explorer)**.  It doesn't just show your design in 3D, but it also extracts the netlist and simulates it running in the browser. So you can see your chip working before it even gets manufactured. Pretty neat!
+One notable contribution from our community is the **new 3D viewer, [Tiny Tapeout Explorer](https://gds-explorer.tinytapeout.com/)**.  It doesn't just show your design in 3D, but it also extracts the netlist and simulates it running in the browser. So you can see your chip working before it even gets manufactured. Pretty neat!
 
 {{< figure src="images/Explorer.jpg" title="New Tiny Tapeout Explorer" >}}
 
 ### ⏭️ What's Coming
 
-**The Tiny Tapeout GOAT!** We're ordering 1,000 designs from wafer.space and making a curated chip of the best Tiny Tapeout projects. This includes Mini Mosbius (an analog FPGA for learning analog microelectronics),  a [tiny FPGA](/chips/ttihp26a/tt_um_fabulous_ihp_26a) from Leo and the Fabulous team, and all the winners of the different [competitions](/competitions/) we've had. 
+**The Tiny Tapeout GOAT!** Which we've officially changed to **BOAT** (best of all time).
+
+We're ordering 1,000 designs from wafer.space and making a curated chip of the best Tiny Tapeout projects. This includes Mini Mosbius (an analog FPGA for learning analog microelectronics),  a [tiny FPGA](/chips/ttihp26a/tt_um_fabulous_ihp_26a) from Leo and the Fabulous team, and all the winners of the different [competitions](/competitions/) we've had. 
 {{< figure src="images/GOAT.jpg" title="Tiny Tapeout Greatest of All Time" >}}
 
 ### 🙏 A BIG Thank You

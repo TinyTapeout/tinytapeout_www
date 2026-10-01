@@ -21,14 +21,14 @@ Yesterday we closed [TTGF26b](/chips/ttgf26b/).
 
 Here are some of the shuttle's highlights:
 
-A [100Mbps 3-port Ethernet switch](/chips/ttgf26b/tt_um_coffeepot) by [Julia Desmazes](https://github.com/Essenceia/ethernet_switch).
+- [100Mbps 3-port Ethernet switch](/chips/ttgf26b/tt_um_coffeepot) by [Julia Desmazes](https://github.com/Essenceia/ethernet_switch).
 
-[2048 sliding tile puzzle game](/chips/ttgf26b/tt_um_2048_vga_game) by [Uri Shaked](https://github.com/urish/tt-2048-game). 
+- [2048 sliding tile puzzle game](/chips/ttgf26b/tt_um_2048_vga_game) by [Uri Shaked](https://github.com/urish/tt-2048-game). 
 
-[ChaCha20](/chips/ttgf26b/tt_um_egurapha_chacha20) by [Raphael Eguchi](https://github.com/egurapha/ttgf-chacha20). 
+- [ChaCha20](/chips/ttgf26b/tt_um_egurapha_chacha20) by [Raphael Eguchi](https://github.com/egurapha/ttgf-chacha20). 
 
-A simple implementation of the classic video game [PongPong](/chips/ttgf26b/tt_um_ljhahne_pong) by [Lukas Hahne](https://github.com/ljhahne/ttgf-pong). 
+- A simple implementation of the classic video game [PongPong](/chips/ttgf26b/tt_um_ljhahne_pong) by [Lukas Hahne](https://github.com/ljhahne/ttgf-pong). 
 
-A [tremolo guitar pedal ASIC](/chips/ttgf26b/tt_um_pschuetz_tremolo) by [Preston Schuetz](https://github.com/Pschuetz112/tt-guitar-pedal-tremolo_final). 
+- [Tremolo guitar pedal ASIC](/chips/ttgf26b/tt_um_pschuetz_tremolo) by [Preston Schuetz](https://github.com/Pschuetz112/tt-guitar-pedal-tremolo_final). 
 
-And someone even made a chip that generates its own atmospheric music. [Music for ASICs](/chips/ttgf26b/tt_um_d5smith_mfa) by [d5smith](https://github.com/d5smith/tt_um_d5smith_mfa).
+- And someone even made a chip that generates its own atmospheric music: [Music for ASICs](/chips/ttgf26b/tt_um_d5smith_mfa) by [d5smith](https://github.com/d5smith/tt_um_d5smith_mfa).
