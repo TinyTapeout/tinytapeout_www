@@ -22,7 +22,7 @@ enableGitInfo = true
   disableLightbox = true
   workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSfp_Hnp70xusNOJDp4EJOaeC49w34bF2scdzk3abdT8IMs6Pg/viewform?usp=header"
   workshopFoundry = "sky"
-  wokwiWizardShuttle = "ttgf26d" # to disable, simply comment it out
+  wokwiWizardShuttle = "ttsky26d" # to disable, simply comment it out
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
