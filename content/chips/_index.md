@@ -46,7 +46,7 @@ The following chips are planned for the future. The dates are estimates and may 
 
 | Run                                               | Launched   | Closed     | Shuttle  | Designs | Chips expected | Estimated shipping date |
 | ------------------------------------------------- | ---------- | ---------- | -------- | ------- | -------------- | ----------------------- |
-| [TTIHP26b](/chips/ttihp26b)                        | 2026-07-27 | 2026-09-21 | IHP-2609 | 123     | 2027-06-25     | 2027-08-16             |
+| [TTIHP26b](/chips/ttihp26b)                        | 2026-07-27 | 2026-09-21 | IHP-2609 | 123     | 2027-06-30     | 2027-09-20             |
 | [TTSKY26c](/chips/ttsky26c)                        | 2026-05-26 | 2026-09-07 | CI-2609  | 242     | 2027-03-27     | 2027-05-12             |
 | [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-11-07     | None - test shuttle    |
 | [TTGF26b](/chips/ttgf26b)                          | 2026-06-05 | 2026-06-22 | WS-2606  | 90      | 2026-11-07     | 2026-12-12             |
