@@ -16,9 +16,9 @@ These chips are currently open for submission! Tape out before the deadline to g
 
 | Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated shipping date |
 | --------------------------------------------------------- | ---------- | ---------- | -------- | -------------- | ----------------------- |
-| [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d)†   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
-| [TTGF26c](https://app.tinytapeout.com/shuttles/ttgf26c)   | TBD        | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
-| [TTSKY26d](https://app.tinytapeout.com/shuttles/ttsky26d) | TBD        | 2026-11-30 | CI-2612  | 2027-05-12     | 2027-06-09              |
+| [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d)†  | 2026-09-23 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
+| [TTGF26c](https://app.tinytapeout.com/shuttles/ttgf26c)   | 2026-09-22 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
+| [TTSKY26d](https://app.tinytapeout.com/shuttles/ttsky26d) | 2026-09-22 | 2026-11-30 | CI-2612  | 2027-05-12     | 2027-06-09              |
 
 <small>† Currently reserved for ArtScience Museum Singapore. Unused tiles will be made available two days before the deadline.</small>
 
