@@ -75,7 +75,11 @@ The repository will now be created and the physical layout of your design will n
 
 {{% figure src="images/submission_portal_step3_build_gds.png" title="Automatically building the GDS using GitHub Actions" %}}
 
-- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository.
+- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository. You
+can do this either by clicking the link from the wizard (see the figure below), or by navigating to the newly created
+repository via GitHub.
+
+{{% figure src="images/submission_portal_step3_open_repo.png" title="Opening the repository from the Wokwi wizard" %}}
 
 ---
 
