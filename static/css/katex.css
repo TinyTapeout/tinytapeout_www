@@ -1,0 +1,11 @@
+/* set font-size to match the rest of the content (https://katex.org/docs/font) */
+.katex {
+  font-size: 1em;
+}
+
+/* hide equation numbering - this isn't supported in the datasheet, so to avoid confusion i'll just hide it
+   there is no option to toggle it, see https://github.com/KaTeX/KaTeX/discussions/3180
+*/
+.eqn-num {
+  display: none !important;
+}
