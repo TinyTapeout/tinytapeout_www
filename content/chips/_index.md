@@ -51,8 +51,8 @@ The following chips are planned for the future. The dates are estimates and may 
 | [TTGF0p3](/chips/ttgf0p3)                          | 2026-06-01 | 2026-07-07 | WS-2606  | 32      | 2026-11-07     | None - test shuttle    |
 | [TTGF26b](/chips/ttgf26b)                          | 2026-06-05 | 2026-06-22 | WS-2606  | 90      | 2026-11-07     | 2026-12-12             |
 | [TTGF26a](/chips/ttgf26a)                          | 2026-04-17 | 2026-06-22 | WS-2606  | 95      | 2026-11-07     | 2026-12-12             |
-| [TTSKY26b](/chips/ttsky26b)                        | 2026-04-25 | 2026-05-18 | CI-2605  | 273     | 2026-11-04     | 2026-12-20             |
-| [TTSKY26a](/chips/ttsky26a)                        | 2026-02-27 | 2026-05-11 | CI-2605  | 289     | 2026-11-04     | 2026-12-20             |
+| [TTSKY26b](/chips/ttsky26b)                        | 2026-04-25 | 2026-05-18 | CI-2605  | 273     | 2026-12-10     | 2027-01-20             |
+| [TTSKY26a](/chips/ttsky26a)                        | 2026-02-27 | 2026-05-11 | CI-2605  | 289     | 2026-12-10     | 2027-01-20             |
 | [TTIHP0p4](/chips/ttihp0p4)                        | 2026-03-27 | 2026-03-28 | IHP-2603 | 40      | -              | None - test shuttle    |
 | [TTIHP26a](/chips/ttihp26a)                        | 2025-11-25 | 2026-03-23 | IHP-2603 | 283     | 2027-02-28     | 2027-04-10              |
 | [TTGF0p2](/chips/ttgf0p2)                          | 2025-11-06 | 2025-11-24 | WS-2512  | 52      | 2026-05-21     | None - test shuttle     |
