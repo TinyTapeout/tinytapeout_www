@@ -11,9 +11,9 @@ cover:
     alt:  Vensa - Singapore 2026
 ---
 
-### Two-day workshop at SUTD
+### Two single-day workshops at SUTD
 
-Thanks to [Vensa](https://vensa.si/), a new philanthropic initiative for Open Silicon, we were invited to run a two-day Tiny Tapeout workshop. It was held at the [Singapore University of Technology and Design (SUTD)](https://www.sutd.edu.sg/) on Monday, September 28 and Wednesday, September 30.
+Thanks to [Vensa](https://vensa.si/), a new philanthropic initiative for Open Silicon, we were invited to run two single-day Tiny Tapeout workshops on September 28, Monday, and September 30, Wednesday. It was at the [Singapore University of Technology and Design (SUTD)](https://www.sutd.edu.sg/).
 
 Matt led the workshop and there were a total of 62 participants. Forty-nine of them taped out. Their designs will be part of the [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d) shuttle.
 
@@ -40,7 +40,7 @@ Here's what some of them had to say:
 
 ### The ArtScience Museum Exhibition
 
-On Friday, October 2, Matt gave a talk at the [ArtScience Museum](https://www.marinabaysands.com/museum.html), where Tiny Tapeout also has an exhibition. 
+That Friday, October 2, Matt gave a talk at the [ArtScience Museum](https://www.marinabaysands.com/museum.html), where Tiny Tapeout also had an exhibition. 
 
 The exhibit showcases Tiny Tapeout and its goal of democratizing chip design by providing a platform where people can create, test, and manufacture their own chips.
 

@@ -17,24 +17,14 @@ It's simple: borrow a kit, test your designs, then pass it on.
 
 ### What You Get
 
-An FPGA development kit loaded with everything you need.
-
-- The Tiny Tapeout ETR demoboard with a Lattice UP5K FPGA breakout on top.
-- A collection of Pmods:
-    - VGA output for graphics. 
-    - Rotary encoder.
-    - 7-segment display.
-    - Audio Pmod. 
-    - External flash and RAM.
-    - Simon Says game module. 
-    - Gamepad Pmod. 
-- Gamepad.
-- Sticker packs.
-
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; margin: 30px 0;">
 
 <a href="https://store.tinytapeout.com/products/FPGA-Development-Kit-p813805747" style="text-decoration: none;">
 {{< figure src="images/fpga-kit.jpg" title="FPGA development kit" caption="Tiny Tapeout ETR demoboard with an FPGA breakout (Lattice UP5K) on top" >}}
+</a>
+
+<a href="https://tinytapeout.com/chips/ttsky25b/" style="text-decoration: none;">
+{{< figure src="images/ttsky25b.jpg" title="TTSKY25B breakout board" caption="A real Tiny Tapeout chip! Swap it onto the demoboard in place of the FPGA breakout to try the projects on it." >}}
 </a>
 
 <a href="https://store.tinytapeout.com/products/Tiny-VGA-Pmod-p678647356" style="text-decoration: none;">
@@ -92,4 +82,4 @@ Feel free to take one of the sticker packs and keep it. That one is yours foreve
 
 
 ### Grab Yours!
-To get started, join the **[Discord](/discord)** and **[grab a kit](/guides/fpga-breakout)** to start building.
+**[Apply here](https://docs.google.com/forms/d/e/1FAIpQLScOj6pkEj4bFc37xht5lHJhfLKBOGm3ryNojtQAuWKvacX-XA/viewform?usp=header)** to borrow a kit! Join the community on **[Discord](/discord)** and let's start building.
