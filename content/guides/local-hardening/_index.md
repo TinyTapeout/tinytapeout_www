@@ -82,7 +82,7 @@ This is for the SkyWater 130nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=sky130A
-export LIBRELANE_TAG=3.0.3
+export LIBRELANE_TAG=3.0.14
 ```
 {{% /tab %}}
 
@@ -91,16 +91,16 @@ This is for the GlobalFoundries 180nm PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
 export PDK=gf180mcuD
-export LIBRELANE_TAG=3.0.3
+export LIBRELANE_TAG=3.0.14
 ```
 {{% /tab %}}
 
-{{% tab name="IHP" %}}
-These are for IHP projects using IHP PDKs.
+{{% tab name="IHP SG13CMOS5L" %}}
+This is for IHP projects using the IHP SG13CMOS5L PDK.
 ```sh
 export PDK_ROOT=~/ttsetup/pdk
-export PDK=ihp-sg13g2
-export LIBRELANE_TAG=3.0.3
+export PDK=ihp-sg13cmos5l
+export LIBRELANE_TAG=3.1.0.dev4
 ```
 {{% /tab %}}
 {{< /tabs >}}
@@ -108,6 +108,7 @@ export LIBRELANE_TAG=3.0.3
 {{% notice note %}}
 The values of these values may change in the future - you can consult the [tt-gds-action](https://github.com/TinyTapeout/tt-gds-action/blob/main/action.yml)
 yaml for the latest values (look at the "default" value for the input called "librelane-version").
+IHP SG13CMOS5L requires LibreLane 3.1.0.dev4 or newer.
 {{% /notice %}}
 
 ## 5. Install LibreLane
