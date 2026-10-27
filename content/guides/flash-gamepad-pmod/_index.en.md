@@ -107,7 +107,9 @@ if __name__ == "__main__":
 
 - Connect your demoboard to your PC.
 
-- From the `src/` directory of the `gamepad-update` repo, do `mpremote mount . + run gamepad_prog.py`.
+- From the `src/` directory of the `gamepad-update` repo, run the flashing script:
+    - `cd src`
+    - `mpremote mount . + run gamepad_prog.py`
 
 - When prompted, press the RESET button on the demoboard to start flashing. Wait until it prints `Done.`
 
