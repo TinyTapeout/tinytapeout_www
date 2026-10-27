@@ -15,7 +15,9 @@ This issue can be fixed with a simple firmware reflash of the PMOD.
 - Navigate into the repo and initialise the submodules.
     - `git submodule update --init`
 
-- Patch `src/pico_ch32v003_prog/flash_ch32v003.py` with the following diff:
+- Patch `src/pico_ch32v003_prog/flash_ch32v003.py` with the following diff. The easiest way is to open the file in a
+text editor, go to line 278, change `open(filename, "b")` to `open(filename, "rb")` (add the `r`), and save it.
+Without this fix, the flashing script can't read the firmware file.
 
 ```diff
 diff --git a/flash_ch32v003.py b/flash_ch32v003.py
