@@ -13,6 +13,7 @@ This issue can be fixed with a simple firmware reflash of the PMOD.
     - `git clone https://github.com/psychogenic/gamepad-update`
 
 - Navigate into the repo and initialise the submodules.
+    - `cd gamepad-update`
     - `git submodule update --init`
 
 - Patch `src/pico_ch32v003_prog/flash_ch32v003.py` with the following diff. The easiest way is to open the file in a
