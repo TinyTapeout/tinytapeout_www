@@ -121,28 +121,29 @@ pip install librelane==$LIBRELANE_TAG
 Congratulations, you are ready to harden your project!
 
 {{% notice note %}}
-For IHP projects, you need to add the `--ihp` flag to all the `tt_tool.py` commands below, and for GF180MCU projects,
-you need to add the `--gf` flag.
+All the `tt_tool.py` commands below take a `--pdk $PDK` argument, which selects the PDK using the `PDK` environment
+variable you set in step 4. If `tt_tool.py` doesn't recognize the `--pdk` argument, update tt-support-tools by running
+`git -C tt pull`. The `--ihp` and `--gf` flags used by older versions of this guide are deprecated.
 {{% /notice %}}
 
 First, generate the LibreLane configuration file:
 
 ```sh
 cd ~/factory-test
-./tt/tt_tool.py --create-user-config
+./tt/tt_tool.py --pdk $PDK --create-user-config
 ```
 
 Then run the following command to harden the project locally.
 Notice that this command **requires you to have Docker** (or a compatible container engine) installed and running.
 
 ```sh
-./tt/tt_tool.py --harden
+./tt/tt_tool.py --pdk $PDK --harden
 ```
 
 It's also recommended to run the following command, checking for any synthesis / clock warnings:
 
 ```sh
-./tt/tt_tool.py --print-warnings
+./tt/tt_tool.py --pdk $PDK --print-warnings
 ```
 
 # Rehardening
@@ -156,13 +157,13 @@ source ~/ttsetup/venv/bin/activate
 If you make changes to your project configuration (e.g. increase the number of tiles), you'll need to update the LibreLane configuration file by running the following command in your project's directory:
 
 ```sh
-./tt/tt_tool.py --create-user-config
+./tt/tt_tool.py --pdk $PDK --create-user-config
 ```
 
 To reharden, run:
 
 ```sh
-./tt/tt_tool.py --harden
+./tt/tt_tool.py --pdk $PDK --harden
 ```
 
 ## Running the RTL tests
@@ -185,7 +186,7 @@ use the unpowered netlist (`nl`) instead of the powered one (`pnl`).
 ```sh
 cd test
 pip install -r requirements.txt
-TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
+TOP_MODULE=$(cd .. && ./tt/tt_tool.py --pdk $PDK --print-top-module)
 cp ../runs/wokwi/final/pnl/$TOP_MODULE.pnl.v gate_level_netlist.v
 make -B GATES=yes
 ```
@@ -195,7 +196,7 @@ make -B GATES=yes
 ```sh
 cd test
 pip install -r requirements.txt
-TOP_MODULE=$(cd .. && ./tt/tt_tool.py --print-top-module)
+TOP_MODULE=$(cd .. && ./tt/tt_tool.py --pdk $PDK --print-top-module)
 cp ../runs/wokwi/final/nl/$TOP_MODULE.nl.v gate_level_netlist.v
 make -B GATES=yes
 ```
@@ -222,13 +223,13 @@ access to your windowing system. This can be done by running `xhost +local:docke
 To view the hardened design in the OpenROAD GUI, you can use the following command:
 
 ```sh
-./tt/tt_tool.py --open-in-openroad
+./tt/tt_tool.py --pdk $PDK --open-in-openroad
 ```
 
 For KLayout, you can use:
 
 ```sh
-./tt/tt_tool.py --open-in-klayout
+./tt/tt_tool.py --pdk $PDK --open-in-klayout
 ```
 
 ## Exporting the hardened design to a PNG file
@@ -242,7 +243,7 @@ sudo apt install librsvg2-bin pngquant
 then you can use `tt_tool` to generate a render of the GDS as follows:
 
 ```sh
-./tt/tt_tool.py --create-png
+./tt/tt_tool.py --pdk $PDK --create-png
 ```
 
 The resulting optimised PNG file is called `gds_render.png` (but note that other `gds_render*` intermediate files are also left behind).
