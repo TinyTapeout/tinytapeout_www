@@ -33,11 +33,10 @@ index 7575c54..6a0c5c0 100644
          data = fhandle.read(64)
 ```
 
-- Download the updated firmware and place it into the `src` folder of the `gamepad-update` repo
+- Download the updated firmware and place it directly in the `src/` folder of the `gamepad-update` repo (not in `src/gpfw/`).
     - [Link to updated gamepad PMOD firmware](files/ch32gamepad.bin)
-
-- Download the micropython script which will flash the firmware onto the PMOD (or copy-paste the following codeblock into
-)
+    - This is the same file as `src/gpfw/ch32gamepad.bin` in the repo, so you can instead run `cp gpfw/ch32gamepad.bin .` from the `src/` directory.
+    - The flashing script looks for the firmware at `/remote/ch32gamepad.bin`, which is `src/ch32gamepad.bin` on your PC once `src/` is mounted with `mpremote`. If the file is missing there, flashing fails with `[Errno 2] ENOENT`.
 
 - Download the micropython script which will flash the firmware onto the PMOD and place it into `src/` (or copy-paste
 the following codeblock into a file called `gamepad_prog.py`)
@@ -99,10 +98,16 @@ if __name__ == "__main__":
 
 {{< figure src="images/gamepad-programming-jumper.png" title="PRJ and SWIO must be connected together with a jumper to enable programming mode.">}}
 
-- Connect your gamepad PMOD to your demoboard.
+- Connect your gamepad PMOD to the **INPUT** PMOD port (`ui_in`) of your demoboard.
+    - You don't need to connect any controllers yet. They are only used for the button test after flashing.
+    - The script uses the pin mapping of the TT ETR demoboard (RP2350) by default. If you have an older RP2040 demoboard (TT06/07/08), edit `src/pinmap.py` and set `PinMapSelected = PinMapTT06`.
 
 - Connect your demoboard to your PC.
 
 - From the `src/` directory of the `gamepad-update` repo, do `mpremote mount . + run gamepad_prog.py`.
+
+- When prompted, press the RESET button on the demoboard to start flashing. Wait until it prints `Done.`
+
+- Connect a controller to the gamepad PMOD and press some buttons. The pressed buttons are printed in the terminal, and any controller slot with nothing plugged in shows as `not connected`. Press RESET when you are done testing.
 
 If successful, your gamepad PMOD should now work nicely with clone controllers!
