@@ -1,0 +1,335 @@
+.tt-lt {
+  --lt-ink: #1b1b1b;
+  --lt-muted: #5f6368;
+  --lt-line: #d6d8da;
+  --lt-soft: #f4f5f6;
+  --lt-blue: #1c90f3;
+  --lt-blue-dark: #167ad0;
+  --lt-on: #1a7f37;
+  --lt-wire: #18a04a;
+  margin: 1.5rem 0;
+  padding: 16px;
+  border: 1px solid var(--lt-line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--lt-ink);
+  font-size: 15px;
+}
+
+.tt-lt button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.tt-lt button:focus-visible,
+.tt-lt select:focus-visible {
+  outline: 2px solid var(--lt-blue);
+  outline-offset: 1px;
+}
+
+.tt-lt-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-bottom: 16px;
+}
+
+.tt-lt .stepper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tt-lt .stepper .lbl,
+.tt-lt .example {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--lt-muted);
+}
+
+.tt-lt .stepper button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lt-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--lt-ink);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.tt-lt .stepper button:hover:not(:disabled),
+.tt-lt .clear:hover {
+  background: var(--lt-soft);
+}
+
+.tt-lt .stepper button:disabled {
+  color: #9aa0a6;
+  cursor: default;
+}
+
+.tt-lt .stepper .num {
+  min-width: 16px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tt-lt .example {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tt-lt .example select {
+  height: 32px;
+  padding: 0 8px;
+  border: 1px solid var(--lt-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--lt-ink);
+  font-size: 14px;
+}
+
+.tt-lt .clear {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--lt-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--lt-ink);
+  font-size: 14px;
+}
+
+.tt-lt-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.tt-lt-table {
+  flex: none;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tt-lt table {
+  display: table;
+  width: auto;
+  margin: 0;
+  border-collapse: collapse;
+  border: 0;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.tt-lt th,
+.tt-lt td {
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #ececea;
+  background: transparent;
+  text-align: center;
+}
+
+.tt-lt thead th {
+  height: 32px;
+  border-bottom: 2px solid var(--lt-ink);
+  color: var(--lt-ink);
+  font-weight: 600;
+}
+
+.tt-lt th.in,
+.tt-lt td.in {
+  width: 34px;
+  color: var(--lt-muted);
+}
+
+.tt-lt th.out,
+.tt-lt td.out {
+  width: 40px;
+}
+
+.tt-lt th.out.first,
+.tt-lt td.out.first {
+  border-left: 2px solid var(--lt-ink);
+}
+
+.tt-lt tbody tr:nth-child(even) {
+  background: #fafaf8;
+}
+
+.tt-lt .cell {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #9aa0a6;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.tt-lt .cell.on {
+  color: var(--lt-on);
+  font-weight: 700;
+  background: #e8f5ec;
+}
+
+.tt-lt .cell:hover {
+  background: #eef4fd;
+}
+
+.tt-lt .hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--lt-muted);
+}
+
+.tt-lt-logic {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.tt-lt-logic h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--lt-ink);
+}
+
+.tt-lt .exprs {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.tt-lt .tt-lt-over {
+  text-decoration: overline;
+}
+
+.tt-lt .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 12px;
+}
+
+.tt-lt .chip {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--lt-soft);
+  font-family: monospace;
+  font-size: 12px;
+  color: #3c4043;
+}
+
+.tt-lt .diagram {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 4px 0;
+}
+
+.tt-lt-svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.tt-lt-svg .w {
+  stroke: var(--lt-wire);
+  stroke-width: 2;
+}
+
+.tt-lt-svg .g path,
+.tt-lt-svg .g circle,
+.tt-lt-svg .tag rect {
+  fill: #fff;
+  stroke: var(--lt-ink);
+  stroke-width: 1.75;
+  stroke-linejoin: round;
+}
+
+.tt-lt-svg .g path.open {
+  fill: none;
+}
+
+.tt-lt-svg .dot {
+  fill: var(--lt-wire);
+}
+
+.tt-lt-svg .pin {
+  fill: #fff;
+  stroke: var(--lt-wire);
+  stroke-width: 2;
+}
+
+.tt-lt-svg text {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--lt-ink);
+}
+
+.tt-lt-svg .tag text {
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+.tt-lt-export {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--lt-line);
+}
+
+.tt-lt .copy {
+  height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--lt-blue);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tt-lt .copy:hover {
+  background: var(--lt-blue-dark);
+}
+
+.tt-lt .status {
+  font-size: 14px;
+  color: var(--lt-on);
+}
+
+.tt-lt details {
+  flex-basis: 100%;
+}
+
+.tt-lt summary {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--lt-muted);
+}
+
+.tt-lt pre {
+  max-height: 320px;
+  overflow: auto;
+  margin: 8px 0 0;
+  padding: 12px;
+  border-radius: 6px;
+  background: var(--lt-soft);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: pre;
+}
