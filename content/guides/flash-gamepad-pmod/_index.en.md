@@ -17,20 +17,17 @@ This issue can be fixed with a simple firmware reflash of the PMOD, using your d
     git submodule update --init
     ```
 
-2. Fix a bug in the flashing code: open `src/pico_ch32v003_prog/flash_ch32v003.py` in a text editor, go to line 278,
-   change `open(filename, "b")` to `open(filename, "rb")` and save the file.
-
-3. If you have an older RP2040 demoboard (TT06/07/08), open `src/pinmap.py` and change the last line to
+2. If you have an older RP2040 demoboard (TT06/07/08), open `src/pinmap.py` and change the last line to
    `PinMapSelected = PinMapTT06`. Skip this step for the TT ETR (RP2350) demoboard.
 
-4. Put the gamepad PMOD in programming mode by connecting the `PRJ` and `SWIO` pins together with a jumper.
+3. Put the gamepad PMOD in programming mode by connecting the `PRJ` and `SWIO` pins together with a jumper.
 
     {{< figure src="images/gamepad-programming-jumper.png" title="PRJ and SWIO must be connected together with a jumper to enable programming mode.">}}
 
-5. Plug the gamepad PMOD into the **INPUT** PMOD port of your demoboard, and connect the demoboard to your PC.
+4. Plug the gamepad PMOD into the **INPUT** PMOD port of your demoboard, and connect the demoboard to your PC.
    You don't need any controllers plugged in yet.
 
-6. Run the flashing script:
+5. Run the flashing script:
 
     ```sh
     cd src
@@ -40,9 +37,9 @@ This issue can be fixed with a simple firmware reflash of the PMOD, using your d
     If you have more than one USB serial device connected, `mpremote` may pick the wrong one. Run `mpremote devs`
     to list them, then name the demoboard's port, for example `mpremote connect /dev/ttyACM1 mount . + run main.py`.
 
-7. When prompted, press the RESET button on the demoboard. Wait until it prints `Done.`
+6. When prompted, press the RESET button on the demoboard. Wait until it prints `Done.`
 
-8. Plug a controller into the gamepad PMOD and press some buttons. You should see them printed in the terminal.
+7. Plug a controller into the gamepad PMOD and press some buttons. You should see them printed in the terminal.
    Press RESET when you are done.
 
 Your gamepad PMOD should now work nicely with clone controllers!
