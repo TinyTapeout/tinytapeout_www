@@ -65,6 +65,26 @@ function checkPlacement(layout, wokwi) {
     const maxGate = Math.max(...gates.map((p) => p.left));
     outs.forEach((o) => expect(o.left).toBeGreaterThan(maxGate));
   }
+  // Wokwi gates and buffers (about 96x36) don't overlap either.
+  const sized = real.filter((p) => p.type.startsWith('wokwi-gate'));
+  for (let a = 0; a < sized.length; a++) {
+    for (let b = a + 1; b < sized.length; b++) {
+      const p = sized[a];
+      const q = sized[b];
+      const apart =
+        p.left + 96 <= q.left ||
+        q.left + 96 <= p.left ||
+        p.top + 36 <= q.top ||
+        q.top + 36 <= p.top;
+      expect(apart, `${p.id} overlaps ${q.id}`).toBe(true);
+    }
+  }
+  // Wire routes only use Wokwi's mini-language: hN / vN moves, then '*'.
+  wokwi.connections.forEach((c) => {
+    expect(Array.isArray(c[3])).toBe(true);
+    c[3].forEach((step) => expect(step).toMatch(/^(\*|[hv]-?\d+(\.\d)?)$/));
+    if (c[3].length) expect(c[3][c[3].length - 1]).toBe('*');
+  });
   // Inputs top to bottom in table order.
   ins.forEach((p, i) => i && expect(p.top).toBeGreaterThan(ins[i - 1].top));
 }

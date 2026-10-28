@@ -360,8 +360,6 @@ export function simulate(netlist, bits) {
 // ---------------------------------------------------------------------------
 // Wokwi clipboard JSON (same shape as diagram.json: parts + connections).
 
-const WIRE_ROUTE = ['h10', '*', 'h-10'];
-
 // Wire colours by what they connect, following wokwi-lookup-table-generator's scheme, so
 // bigger circuits are easier to follow in Wokwi.
 export function wireColor(src, dst) {
@@ -378,48 +376,90 @@ export function wireColor(src, dst) {
 // Wokwi parts are bigger than the gates in the drawing, so drawing coordinates are scaled up.
 export const WOKWI_SCALE = 2;
 
-// Wokwi parts are placed where the drawing (layoutDiagram) puts them, so the pasted circuit
-// looks like the one on the page: inputs on the left, outputs on the right.
+// Geometry of Wokwi's gate and buffer parts, measured from a paste into Wokwi: about 96px
+// wide, inputs on the left edge, output on the right edge, all centred 18px below the top,
+// with the A and B inputs 9.6px (half a grid step) above and below the centre.
+const PART_W = 96;
+const PIN_MID = 18;
+const PIN_GAP = 9.6;
+
+const round1 = (v) => Math.round(v * 10) / 10;
+const move = (dir, d) => (Math.abs(d) < 0.05 ? null : dir + round1(d));
+
+// Wokwi parts are placed where the drawing (layoutDiagram) puts them, and the wires follow
+// the drawing's routes, so the pasted circuit looks like the one on the page: inputs on the
+// left feeding one vertical rail each, outputs on the right.
 export function toWokwi(netlist, layout) {
+  const S = WOKWI_SCALE;
   const byId = new Map(netlist.parts.map((p) => [p.id, p]));
   const at = new Map();
-  layout.gates.forEach((g) => at.set(g.key, { x: g.x, y: g.y }));
-  layout.tags.forEach((t) => at.set(t.key, { x: t.x, y: t.y }));
-  // Pins mark where a wire ends; inputs sit just left of theirs, outputs just right.
+  layout.gates.forEach((g) => {
+    const mid = g.y + (g.kind === 'not' ? 12 : 16);
+    at.set(g.key, { left: g.x * S, top: mid * S - PIN_MID });
+  });
+  layout.tags.forEach((t) => at.set(t.key, { left: t.x * S, top: t.y * S }));
+  // An input buffer ends at its pin in the drawing; an output buffer starts at its pin.
   layout.pins.forEach((p) => {
     const input = p.key.startsWith('in:');
-    at.set(p.key, { x: input ? p.x - 34 : p.x + 6, y: p.y - 12 });
+    at.set(p.key, { left: p.x * S - (input ? PART_W : 0), top: p.y * S - PIN_MID });
   });
 
-  const S = WOKWI_SCALE;
   const parts = [];
+  const pos = new Map();
   netlist.parts.forEach((p) => {
-    const pos = at.get(p.key);
-    if (!pos) throw new Error('no position for ' + p.key);
-    const left = Math.round(pos.x * S);
-    const top = Math.round(pos.y * S);
+    const where = at.get(p.key);
+    if (!where) throw new Error('no position for ' + p.key);
+    const left = round1(where.left);
+    const top = round1(where.top);
+    pos.set(p.id, { left, top });
     parts.push({ type: WOKWI[p.kind].type, id: p.id, top, left, attrs: {} });
     if (p.role === 'input' || p.role === 'output') {
-      const textLeft = p.role === 'input' ? left - 16 - String(p.name).length * 10 : left + 80;
+      const textLeft =
+        p.role === 'input' ? left - 16 - String(p.name).length * 10 : left + PART_W + 8;
       parts.push({
         type: 'wokwi-text',
         id: 'label_' + p.id,
-        top: top + 14,
-        left: textLeft,
+        top: round1(top + PIN_MID - 9),
+        left: round1(textLeft),
         attrs: { text: p.name },
       });
     }
   });
 
+  const outPin = (id) => ({ x: pos.get(id).left + PART_W, y: pos.get(id).top + PIN_MID });
+  const inPin = (part, j) => {
+    const { left, top } = pos.get(part.id);
+    const two = WOKWI[part.kind].ins.length === 2;
+    return { x: left, y: top + PIN_MID + (two ? (j ? PIN_GAP : -PIN_GAP) : 0) };
+  };
+  const railOf = (src) => {
+    const i = Number(src.key.split(':')[1]);
+    const r = layout.rails[i];
+    return (src.role === 'input' ? r.pos : r.neg) * S;
+  };
+
+  // Wire routes in Wokwi's mini-language: moves from the source pin, then '*', after which
+  // Wokwi joins up to the target pin.
+  const routeFor = (src, dst, j) => {
+    if (src.kind === 'vcc' || src.kind === 'gnd' || dst.role === 'inverter') return [];
+    const from = outPin(src.id);
+    const to = inPin(dst, j);
+    // From an input: along the input's row to its rail, down the rail, then across.
+    // Between gates: across to just before the target, then down or up to it.
+    const turnX = src.role === 'input' || src.role === 'inverter' ? railOf(src) : to.x - 20;
+    if (Math.abs(to.y - from.y) < 0.05) return [];
+    return [move('h', turnX - from.x), move('v', to.y - from.y), '*'].filter(Boolean);
+  };
+
   const connections = [];
   netlist.parts.forEach((p) => {
     p.ins.forEach((src, j) => {
-      const s = byId.get(src);
+      const sp = byId.get(src);
       connections.push([
-        `${src}:${WOKWI[s.kind].out}`,
+        `${src}:${WOKWI[sp.kind].out}`,
         `${p.id}:${WOKWI[p.kind].ins[j]}`,
-        wireColor(s, p),
-        WIRE_ROUTE,
+        wireColor(sp, p),
+        routeFor(sp, p, j),
       ]);
     });
   });
@@ -623,7 +663,8 @@ export function layoutDiagram(plans, inNames, outNames) {
   });
 
   const maxLabel = Math.max(1, ...outNames.map((s) => String(s).length));
-  return { w: OUTX + 24 + maxLabel * 9, h: y + 8, segs, dots, pins, gates, labels, tags };
+  const rails = rail.map((r) => ({ pos: r.pos, neg: r.neg }));
+  return { w: OUTX + 24 + maxLabel * 9, h: y + 8, segs, dots, pins, gates, labels, tags, rails };
 }
 
 // ---------------------------------------------------------------------------
