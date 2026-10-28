@@ -456,7 +456,15 @@ export function toWokwi(netlist, layout) {
     if (Math.abs(to.y - from.y) < 0.05) return [];
     // Wokwi leaves out the final joining segment when nothing follows '*', so always end
     // with a short move out of the target pin; the join is then a plain horizontal line.
-    return [move('h', turnX - from.x), move('v', to.y - from.y), '*', `h-${GRID}`].filter(Boolean);
+    // The whole path is given from the source side and ends exactly on the target pin:
+    // when pasting, Wokwi doesn't draw the last segment into the target pin (whether that's
+    // its own join or a move after '*') until a part is moved, so leave it nothing to draw.
+    return [
+      move('h', turnX - from.x),
+      move('v', to.y - from.y),
+      move('h', to.x - turnX),
+      '*',
+    ].filter(Boolean);
   };
 
   const connections = [];

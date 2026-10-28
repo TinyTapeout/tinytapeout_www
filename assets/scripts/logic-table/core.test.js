@@ -89,8 +89,8 @@ function checkPlacement(layout, wokwi) {
   wokwi.connections.forEach((c) => {
     expect(Array.isArray(c[3])).toBe(true);
     c[3].forEach((step) => expect(step).toMatch(/^(\*|[hv]-?\d+(\.\d)?)$/));
-    // Routed wires must end with a move after '*', or Wokwi leaves the last segment out.
-    if (c[3].length) expect(c[3].slice(-2)).toEqual(['*', 'h-9.6']);
+    // Routed wires spell out the whole path and end with '*' on the target pin.
+    if (c[3].length) expect(c[3][c[3].length - 1]).toBe('*');
     // ...and every move is a whole number of grid steps, so wire corners stay on the grid.
     c[3].filter((m) => m !== '*').forEach((m) => expect(onGrid(Number(m.slice(1)))).toBe(true));
   });
