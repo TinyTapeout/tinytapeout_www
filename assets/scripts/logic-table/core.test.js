@@ -65,7 +65,13 @@ function checkPlacement(layout, wokwi) {
     const maxGate = Math.max(...gates.map((p) => p.left));
     outs.forEach((o) => expect(o.left).toBeGreaterThan(maxGate));
   }
-  // Wokwi gates and buffers (about 96x36) don't overlap either.
+  // Every Wokwi part sits on Wokwi's 9.6px grid, so Wokwi doesn't move it on paste.
+  const onGrid = (v) => Math.abs(v / 9.6 - Math.round(v / 9.6)) < 1e-6;
+  wokwi.parts.forEach((p) => {
+    expect(onGrid(p.left), `${p.id} left ${p.left}`).toBe(true);
+    expect(onGrid(p.top), `${p.id} top ${p.top}`).toBe(true);
+  });
+  // Wokwi gates and buffers (96x38.4) don't overlap either.
   const sized = real.filter((p) => p.type.startsWith('wokwi-gate'));
   for (let a = 0; a < sized.length; a++) {
     for (let b = a + 1; b < sized.length; b++) {
@@ -74,8 +80,8 @@ function checkPlacement(layout, wokwi) {
       const apart =
         p.left + 96 <= q.left ||
         q.left + 96 <= p.left ||
-        p.top + 36 <= q.top ||
-        q.top + 36 <= p.top;
+        p.top + 38.4 <= q.top ||
+        q.top + 38.4 <= p.top;
       expect(apart, `${p.id} overlaps ${q.id}`).toBe(true);
     }
   }
@@ -84,7 +90,9 @@ function checkPlacement(layout, wokwi) {
     expect(Array.isArray(c[3])).toBe(true);
     c[3].forEach((step) => expect(step).toMatch(/^(\*|[hv]-?\d+(\.\d)?)$/));
     // Routed wires must end with a move after '*', or Wokwi leaves the last segment out.
-    if (c[3].length) expect(c[3].slice(-2)).toEqual(['*', 'h-10']);
+    if (c[3].length) expect(c[3].slice(-2)).toEqual(['*', 'h-9.6']);
+    // ...and every move is a whole number of grid steps, so wire corners stay on the grid.
+    c[3].filter((m) => m !== '*').forEach((m) => expect(onGrid(Number(m.slice(1)))).toBe(true));
   });
   // Inputs top to bottom in table order.
   ins.forEach((p, i) => i && expect(p.top).toBeGreaterThan(ins[i - 1].top));

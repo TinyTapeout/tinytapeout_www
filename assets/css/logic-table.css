@@ -341,7 +341,9 @@
   margin: 8px 0 0;
   padding: 12px;
   border-radius: 6px;
+  border: 1px solid var(--lt-line);
   background: var(--lt-soft);
+  color: var(--lt-ink);
   font-size: 12px;
   line-height: 1.5;
   white-space: pre;

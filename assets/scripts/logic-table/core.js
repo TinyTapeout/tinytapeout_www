@@ -376,14 +376,20 @@ export function wireColor(src, dst) {
 // Wokwi parts are bigger than the gates in the drawing, so drawing coordinates are scaled up.
 export const WOKWI_SCALE = 2;
 
-// Geometry of Wokwi's gate and buffer parts, measured from a paste into Wokwi: about 96px
-// wide, inputs on the left edge, output on the right edge, all centred 18px below the top,
-// with the A and B inputs 9.6px (half a grid step) above and below the centre.
+// Wokwi snaps parts and wires to a 0.1 inch grid of 9.6px. Parts pasted off the grid get
+// snapped, but their wires are drawn for the old position until a part is moved, so every
+// part position, pin and wire corner here is kept on the grid.
+const GRID = 9.6;
+
+// Geometry of Wokwi's gate and buffer parts, measured from pastes into Wokwi: 96px (ten grid
+// steps) wide, inputs on the left edge, output on the right edge two grid steps below the top,
+// with the A and B inputs one grid step above and below it.
 const PART_W = 96;
-const PIN_MID = 18;
-const PIN_GAP = 9.6;
+const PIN_MID = 2 * GRID;
+const PIN_GAP = GRID;
 
 const round1 = (v) => Math.round(v * 10) / 10;
+const snap = (v) => round1(Math.round(v / GRID) * GRID);
 const move = (dir, d) => (Math.abs(d) < 0.05 ? null : dir + round1(d));
 
 // Wokwi parts are placed where the drawing (layoutDiagram) puts them, and the wires follow
@@ -409,8 +415,8 @@ export function toWokwi(netlist, layout) {
   netlist.parts.forEach((p) => {
     const where = at.get(p.key);
     if (!where) throw new Error('no position for ' + p.key);
-    const left = round1(where.left);
-    const top = round1(where.top);
+    const left = snap(where.left);
+    const top = snap(where.top);
     pos.set(p.id, { left, top });
     parts.push({ type: WOKWI[p.kind].type, id: p.id, top, left, attrs: {} });
     if (p.role === 'input' || p.role === 'output') {
@@ -419,8 +425,8 @@ export function toWokwi(netlist, layout) {
       parts.push({
         type: 'wokwi-text',
         id: 'label_' + p.id,
-        top: round1(top + PIN_MID - 9),
-        left: round1(textLeft),
+        top: snap(top + PIN_MID - GRID),
+        left: snap(textLeft),
         attrs: { text: p.name },
       });
     }
@@ -435,7 +441,7 @@ export function toWokwi(netlist, layout) {
   const railOf = (src) => {
     const i = Number(src.key.split(':')[1]);
     const r = layout.rails[i];
-    return (src.role === 'input' ? r.pos : r.neg) * S;
+    return snap((src.role === 'input' ? r.pos : r.neg) * S);
   };
 
   // Wire routes in Wokwi's mini-language: moves from the source pin, then '*', after which
@@ -446,11 +452,11 @@ export function toWokwi(netlist, layout) {
     const to = inPin(dst, j);
     // From an input: along the input's row to its rail, down the rail, then across.
     // Between gates: across to just before the target, then down or up to it.
-    const turnX = src.role === 'input' || src.role === 'inverter' ? railOf(src) : to.x - 24;
+    const turnX = src.role === 'input' || src.role === 'inverter' ? railOf(src) : to.x - 2 * GRID;
     if (Math.abs(to.y - from.y) < 0.05) return [];
     // Wokwi leaves out the final joining segment when nothing follows '*', so always end
     // with a short move out of the target pin; the join is then a plain horizontal line.
-    return [move('h', turnX - from.x), move('v', to.y - from.y), '*', 'h-10'].filter(Boolean);
+    return [move('h', turnX - from.x), move('v', to.y - from.y), '*', `h-${GRID}`].filter(Boolean);
   };
 
   const connections = [];
