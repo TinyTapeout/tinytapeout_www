@@ -9,6 +9,7 @@ import {
   inputBit,
   layoutDiagram,
   planAll,
+  resizeTable,
   simulate,
   toWokwi,
 } from './core.js';
@@ -214,5 +215,62 @@ describe('logic table', () => {
     expect(colours.has('cyan')).toBe(true);
     expect(wireColor({ kind: 'not', role: 'inverter' }, { kind: 'and' })).toBe('blue');
     expect(wireColor({ kind: 'and' }, { kind: 'or' })).toBe('purple');
+  });
+
+  describe('resizeTable', () => {
+    const fullAdder = {
+      inNames: ['A', 'B', 'C'],
+      outNames: ['S', 'Cout'],
+      columns: [
+        [0, 1, 1, 0, 1, 0, 0, 1].map(Boolean),
+        [0, 0, 0, 1, 0, 1, 1, 1].map(Boolean),
+      ],
+    };
+
+    it('adding an input keeps every output the same (the new input is ignored)', () => {
+      const t = resizeTable(fullAdder, 4, 2);
+      expect(t.inNames).toEqual(['A', 'B', 'C', 'D']);
+      for (let r = 0; r < 16; r++) {
+        expect(t.columns[0][r]).toBe(fullAdder.columns[0][r >> 1]);
+        expect(t.columns[1][r]).toBe(fullAdder.columns[1][r >> 1]);
+      }
+      expect(planAll(t.columns, 4)).toEqual(planAll(fullAdder.columns, 3));
+    });
+
+    it('adding then removing an input gives back the same table', () => {
+      expect(resizeTable(resizeTable(fullAdder, 4, 2), 3, 2)).toEqual(fullAdder);
+      const one = resizeTable(fullAdder, 1, 2);
+      expect(resizeTable(resizeTable(one, 4, 2), 1, 2)).toEqual(one);
+    });
+
+    it('removing an input keeps the rows where it was 0', () => {
+      const t = resizeTable(fullAdder, 2, 2);
+      expect(t.inNames).toEqual(['A', 'B']);
+      expect(t.columns[0]).toEqual([0, 1, 1, 0].map(Boolean)); // rows where C = 0
+    });
+
+    it('adds and removes outputs without touching the others', () => {
+      const more = resizeTable(fullAdder, 3, 4);
+      expect(more.outNames).toEqual(['S', 'Cout', 'Y0', 'Y1']);
+      expect(more.columns.slice(0, 2)).toEqual(fullAdder.columns);
+      expect(more.columns[3]).toEqual(Array(8).fill(false));
+      expect(resizeTable(more, 3, 2)).toEqual(fullAdder);
+    });
+
+    it('keeps don\'t-cares and avoids clashing names', () => {
+      const t = { inNames: ['A', 'C'], outNames: ['Y0'], columns: [[null, true, false, null]] };
+      const r = resizeTable(t, 3, 2);
+      expect(r.inNames).toEqual(['A', 'C', 'B']);
+      expect(r.outNames).toEqual(['Y0', 'Y1']);
+      expect(r.columns[0]).toEqual([null, null, true, true, false, false, null, null]);
+    });
+
+    it('clamps to the allowed sizes and never changes its argument', () => {
+      const copy = JSON.parse(JSON.stringify(fullAdder));
+      const r = resizeTable(fullAdder, 9, 0);
+      expect(r.inNames.length).toBe(4);
+      expect(r.outNames.length).toBe(1);
+      expect(fullAdder).toEqual(copy);
+    });
   });
 });

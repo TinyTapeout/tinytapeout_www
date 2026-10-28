@@ -10,13 +10,12 @@ import {
   gateCounts,
   inputBit,
   layoutDiagram,
+  inputsUsed,
   planAll,
+  resizeTable,
   toLutJson,
   toWokwi,
 } from './logic-table/core.js';
-
-const DEFAULT_IN = ['A', 'B', 'C', 'D'];
-const defaultOut = (m) => Array.from({ length: m }, (_, o) => 'Y' + o);
 
 // Truth table columns given as one string per row: '1', '0' or 'x' (don't care) per output.
 function fromRows(rows) {
@@ -125,11 +124,13 @@ function diagramSvg(d) {
     ),
   );
   d.dots.forEach((p) => parts.push(`<circle class="dot" cx="${p.x}" cy="${p.y}" r="3.5"/>`));
-  d.pins.forEach((p) => parts.push(`<circle class="pin" cx="${p.x}" cy="${p.y}" r="4"/>`));
+  d.pins.forEach((p) =>
+    parts.push(`<circle class="pin${p.unused ? ' unused' : ''}" cx="${p.x}" cy="${p.y}" r="4"/>`),
+  );
   d.labels.forEach((l) => {
     const over = l.over ? ' text-decoration="overline"' : '';
     parts.push(
-      `<text class="lbl" x="${l.x}" y="${l.y + 4}" text-anchor="${l.anchor}"${over}>${esc(l.text)}</text>`,
+      `<text class="lbl${l.unused ? ' unused' : ''}" x="${l.x}" y="${l.y + 4}" text-anchor="${l.anchor}"${over}>${esc(l.text)}</text>`,
     );
   });
   return `<svg class="tt-lt-svg" width="${d.w}" height="${d.h}" viewBox="0 -6 ${d.w} ${d.h + 6}" role="img" aria-label="Gate diagram of the reduced logic">${parts.join('')}</svg>`;
@@ -171,20 +172,9 @@ function mount(root) {
     };
   };
 
+  // Keeps the table: see resizeTable in core.js.
   const resize = (n, m) => {
-    n = Math.max(1, Math.min(MAX_INPUTS, n));
-    m = Math.max(1, Math.min(MAX_OUTPUTS, m));
-    const rows = 1 << n;
-    const sameInputs = n === state.inNames.length;
-    state = {
-      example: '',
-      inNames: sameInputs ? state.inNames : DEFAULT_IN.slice(0, n),
-      outNames: Array.from({ length: m }, (_, o) => state.outNames[o] || defaultOut(m)[o]),
-      // Changing the number of inputs changes every row, so start that table afresh.
-      columns: Array.from({ length: m }, (_, o) =>
-        sameInputs && state.columns[o] ? state.columns[o] : Array(rows).fill(false),
-      ),
-    };
+    state = { example: '', ...resizeTable(state, n, m) };
   };
 
   const render = (focusKey) => {
@@ -235,6 +225,17 @@ function mount(root) {
       .filter((k) => counts[k])
       .map((k) => `<span class="chip">${counts[k]} × ${GATE_LABELS[k]}</span>`)
       .join('');
+    const notes = [];
+    if (plans.every((p) => p.kind === 'const')) {
+      notes.push('Every output is always 0 or always 1, so no gates are needed.');
+    } else {
+      const unused = inNames.filter((_, i) => !inputsUsed(plans, n)[i]);
+      if (unused.length) {
+        notes.push(
+          `${unused.join(', ')} ${unused.length === 1 ? "doesn't" : "don't"} change any output, so ${unused.length === 1 ? "it isn't" : "they aren't"} connected.`,
+        );
+      }
+    }
     const options = Object.entries(EXAMPLES)
       .map(
         ([k, ex]) =>
@@ -273,6 +274,7 @@ function mount(root) {
           <h4>Reduced logic</h4>
           <div class="exprs">${exprs}</div>
           <div class="chips">${chips || '<span class="chip">no gates</span>'}</div>
+          ${notes.map((t) => `<p class="note">${esc(t)}</p>`).join('')}
           <div class="diagram">${diagramSvg(layoutDiagram(plans, inNames, outNames))}</div>
         </div>
       </div>

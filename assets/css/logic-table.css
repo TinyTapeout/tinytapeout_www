@@ -381,3 +381,17 @@
 .tt-lt .status.err {
   color: #c5221f;
 }
+
+.tt-lt-svg .pin.unused {
+  stroke: #b0b4b8;
+}
+
+.tt-lt-svg text.unused {
+  fill: #9aa0a6;
+}
+
+.tt-lt .note {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--lt-muted);
+}

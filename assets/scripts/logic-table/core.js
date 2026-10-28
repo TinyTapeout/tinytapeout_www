@@ -446,6 +446,16 @@ export function toWokwi(netlist) {
 // Schematic layout for the on-page drawing. Inputs run down vertical rails on the left,
 // each output is a column of AND chains feeding an OR chain, with an optional NOT at the end.
 
+// Which inputs the reduced logic actually uses (an output can ignore some inputs).
+export function inputsUsed(plans, n) {
+  const used = Array(n).fill(false);
+  plans.forEach((p) => {
+    if (p.kind === 'xor') p.vars.forEach((i) => (used[i] = true));
+    if (p.kind === 'sop') p.terms.forEach((t) => t.lits.forEach((l) => (used[l.i] = true)));
+  });
+  return used;
+}
+
 export function layoutDiagram(plans, inNames, outNames) {
   const n = inNames.length;
   const GW = 44;
@@ -593,9 +603,17 @@ export function layoutDiagram(plans, inNames, outNames) {
     labels.push({ x: OUTX + 10, y: out.y, text: o.name, over: false, anchor: 'start' });
   });
 
+  const used = inputsUsed(plans, n);
   rail.forEach((r, i) => {
-    pins.push({ x: r.pos, y: 22 });
-    labels.push({ x: r.pos, y: 7, text: inNames[i], over: false, anchor: 'middle' });
+    pins.push({ x: r.pos, y: 22, unused: !used[i] });
+    labels.push({
+      x: r.pos,
+      y: 7,
+      text: inNames[i],
+      over: false,
+      anchor: 'middle',
+      unused: !used[i],
+    });
     vs(r.pos, 22, r.posMax);
     if (r.neg !== null) {
       hs(r.pos, r.pos + 18, NOTY);
@@ -663,4 +681,42 @@ export function fromLutJson(json) {
     return values.map((v, r) => parseCell(v, `Output "${name}", row ${r}`));
   });
   return { inNames: inNames.map(String), outNames, columns };
+}
+
+// ---------------------------------------------------------------------------
+// Changing the size of a table without losing what the user typed in.
+// A new input becomes the rightmost column; the outputs don't depend on it yet, so each
+// old row becomes two rows with the same outputs. Removing an input removes the rightmost
+// column and keeps the rows where it was 0. New outputs start as all 0.
+
+function nextName(used, candidates, prefix) {
+  const free = candidates.find((c) => !used.includes(c));
+  if (free) return free;
+  let k = 0;
+  while (used.includes(prefix + k)) k++;
+  return prefix + k;
+}
+
+export function resizeTable(table, n, m) {
+  n = Math.max(1, Math.min(MAX_INPUTS, n));
+  m = Math.max(1, Math.min(MAX_OUTPUTS, m));
+  const inNames = table.inNames.slice();
+  const outNames = table.outNames.slice();
+  let columns = table.columns.map((c) => c.slice());
+  while (inNames.length < n) {
+    inNames.push(nextName(inNames, ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'], 'I'));
+    columns = columns.map((c) => c.flatMap((v) => [v, v]));
+  }
+  while (inNames.length > n) {
+    inNames.pop();
+    columns = columns.map((c) => c.filter((_, r) => r % 2 === 0));
+  }
+  const rows = 1 << n;
+  while (outNames.length < m) {
+    outNames.push(nextName(outNames, [], 'Y'));
+    columns.push(Array(rows).fill(false));
+  }
+  outNames.length = m;
+  columns.length = m;
+  return { inNames, outNames, columns };
 }
