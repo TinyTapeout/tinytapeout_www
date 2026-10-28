@@ -116,6 +116,7 @@ After you've placed and simulated your first components with Wokwi, you can star
 * Make the 7 segment display the first letter of your name when you set the input to a secret code.
     * Use some logic gates to create a logic high output when the input is set correctly.
     * Then connect that output to the segments you need to light up your initial.
+* Fill in a truth table with the [logic table tool](/digital_design/logic_table/) and paste the gates it designs straight into Wokwi.
 * Try one of the [digital design lesson plans](/digital_design).
 * Take a look at some of these cool Wokwi designs:
 	* [8 bit random number generator](https://wokwi.com/projects/414120263584922625)
