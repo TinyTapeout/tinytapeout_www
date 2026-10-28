@@ -3,7 +3,8 @@
 //
 // Conventions:
 // - n inputs, rows 0 .. 2^n - 1. Input i (0 = leftmost column) in row r is (r >> (n - 1 - i)) & 1.
-// - A truth table column is an array of 2^n booleans, one per row.
+// - A truth table column is an array of 2^n cells, one per row: true (1), false (0)
+//   or null (x, don't care: the minimiser may treat it as 0 or 1, whichever is cheaper).
 
 export const MAX_INPUTS = 4;
 export const MAX_OUTPUTS = 8;
@@ -99,9 +100,10 @@ function selectCover(primes, minterms) {
   return chosen.concat(best ? best.combo : []);
 }
 
-// Sum-of-products terms for the given minterms: [{ lits: [{ i, neg }] }]
-function sopTerms(minterms, n) {
-  return selectCover(primeImplicants(minterms, n), minterms)
+// Sum-of-products terms covering the minterms, free to also cover the don't-cares.
+// Returns [{ lits: [{ i, neg }] }]
+function sopTerms(minterms, n, dontCares = []) {
+  return selectCover(primeImplicants(minterms.concat(dontCares), n), minterms)
     .map((p) => p.bits)
     .sort(
       (a, b) =>
@@ -128,9 +130,14 @@ function sopCost(terms) {
 }
 
 // Is the column the parity (XOR) of two or more inputs, or its inverse?
+// Don't-care rows match either way. Prefers the fewest inputs.
 function findXor(column, n) {
   const rows = 1 << n;
-  for (let mask = 1; mask < 1 << n; mask++) {
+  const masks = [];
+  for (let mask = 1; mask < 1 << n; mask++) masks.push(mask);
+  const bitCount = (x) => x.toString(2).replace(/0/g, '').length;
+  masks.sort((a, b) => bitCount(a) - bitCount(b) || b - a);
+  for (const mask of masks) {
     const vars = [];
     for (let i = 0; i < n; i++) if (mask & (1 << (n - 1 - i))) vars.push(i);
     if (vars.length < 2) continue;
@@ -141,6 +148,7 @@ function findXor(column, n) {
       vars.forEach((i) => {
         p ^= inputBit(r, i, n);
       });
+      if (column[r] === null || column[r] === undefined) continue;
       if (column[r] !== (p === 1)) same = false;
       else opposite = false;
     }
@@ -158,21 +166,33 @@ export function planOutput(column, n) {
   const rows = 1 << n;
   const ones = [];
   const zeros = [];
-  for (let r = 0; r < rows; r++) (column[r] ? ones : zeros).push(r);
+  const dcs = [];
+  for (let r = 0; r < rows; r++) {
+    if (column[r] === null || column[r] === undefined) dcs.push(r);
+    else (column[r] ? ones : zeros).push(r);
+  }
   if (!ones.length) return { kind: 'const', value: 0 };
   if (!zeros.length) return { kind: 'const', value: 1 };
 
-  const xor = findXor(column, n);
-  if (xor) return { kind: 'xor', vars: xor.vars, inv: xor.inv };
+  let best = { kind: 'sop', terms: sopTerms(ones, n, dcs), inv: false };
+  let bestCost = sopCost(best.terms);
 
-  const terms = sopTerms(ones, n);
-  const cterms = sopTerms(zeros, n);
   // Implementing the zeros and inverting can be cheaper. An inverted single product
   // ends in a NAND; an inverted sum needs a NOT after the last OR.
+  const cterms = sopTerms(zeros, n, dcs);
   const singleLiteral = cterms.length === 1 && cterms[0].lits.length === 1;
   const invCost = sopCost(cterms) + (cterms.length > 1 ? 1 : 0);
-  if (!singleLiteral && invCost < sopCost(terms)) return { kind: 'sop', terms: cterms, inv: true };
-  return { kind: 'sop', terms, inv: false };
+  if (!singleLiteral && invCost < bestCost) {
+    best = { kind: 'sop', terms: cterms, inv: true };
+    bestCost = invCost;
+  }
+
+  // A chain of XOR gates (plus a NOT if inverted) wins ties: it's the clearer circuit.
+  const xor = findXor(column, n);
+  if (xor && xor.vars.length - 1 + (xor.inv ? 1 : 0) <= bestCost) {
+    return { kind: 'xor', vars: xor.vars, inv: xor.inv };
+  }
+  return best;
 }
 
 export function planAll(columns, n) {
@@ -238,7 +258,11 @@ export function buildNetlist(plans, inNames, outNames) {
   const notIds = [];
   const literal = (l) => {
     if (!l.neg) return inIds[l.i];
-    if (!notIds[l.i]) notIds[l.i] = add('not', [inIds[l.i]], { id: 'not_' + safeId(inNames[l.i]) });
+    if (!notIds[l.i])
+      notIds[l.i] = add('not', [inIds[l.i]], {
+        id: 'not_' + safeId(inNames[l.i]),
+        role: 'inverter',
+      });
     return notIds[l.i];
   };
 
@@ -330,6 +354,19 @@ const COL = 120;
 const ROW = 60;
 const WIRE_ROUTE = ['h10', '*', 'h-10'];
 
+// Wire colours by what they connect, following wokwi-lookup-table-generator's scheme, so
+// bigger circuits are easier to follow in Wokwi.
+export function wireColor(src, dst) {
+  if (src.kind === 'vcc') return 'red';
+  if (src.kind === 'gnd') return 'black';
+  if (dst.role === 'output') return 'cyan';
+  if (src.role === 'input') return 'brown';
+  if (src.role === 'inverter') return 'blue';
+  if (dst.kind === 'or') return src.kind === 'or' ? 'green' : 'purple';
+  if (src.kind === 'or') return 'green'; // sum into its output inverter
+  return 'orange'; // gate to gate inside a product or XOR chain
+}
+
 export function toWokwi(netlist) {
   const byId = new Map(netlist.parts.map((p) => [p.id, p]));
   const level = {};
@@ -390,7 +427,7 @@ export function toWokwi(netlist) {
       connections.push([
         `${src}:${WOKWI[s.kind].out}`,
         `${p.id}:${WOKWI[p.kind].ins[j]}`,
-        'green',
+        wireColor(s, p),
         WIRE_ROUTE,
       ]);
     });
@@ -572,4 +609,58 @@ export function layoutDiagram(plans, inNames, outNames) {
 
   const maxLabel = Math.max(1, ...outNames.map((s) => String(s).length));
   return { w: OUTX + 24 + maxLabel * 9, h: y + 8, segs, dots, pins, gates, labels, tags };
+}
+
+// ---------------------------------------------------------------------------
+// Truth tables in wokwi-lookup-table-generator's JSON format
+// (https://github.com/maehw/wokwi-lookup-table-generator):
+//   { "version": 1, "inputs": ["a", "b"], "outputs": { "S": [0, 1, 1, 0], ... } }
+// Don't-care cells are written as "x"; that generator itself only accepts 0 and 1.
+
+export function toLutJson(table, description) {
+  const outputs = {};
+  table.outNames.forEach((name, o) => {
+    outputs[name] = table.columns[o].map((v) => (v === null || v === undefined ? 'x' : v ? 1 : 0));
+  });
+  const json = { version: 1 };
+  if (description) json.description = description;
+  json.inputs = table.inNames.slice();
+  json.outputs = outputs;
+  return json;
+}
+
+function parseCell(v, where) {
+  if (v === 1 || v === true || v === '1') return true;
+  if (v === 0 || v === false || v === '0') return false;
+  if (v === null || (typeof v === 'string' && ['x', 'X', '-', '?'].includes(v))) return null;
+  throw new Error(`${where}: expected 0, 1 or "x" but found ${JSON.stringify(v)}`);
+}
+
+export function fromLutJson(json) {
+  const obj = typeof json === 'string' ? JSON.parse(json) : json;
+  if (!obj || typeof obj !== 'object') throw new Error('Expected a JSON object');
+  const inNames = obj.inputs;
+  if (!Array.isArray(inNames) || inNames.length < 1 || inNames.length > MAX_INPUTS) {
+    throw new Error(`"inputs" must list 1 to ${MAX_INPUTS} input names`);
+  }
+  inNames.forEach((name) => {
+    if (typeof name !== 'string' || !name.trim()) throw new Error('Input names must be text');
+  });
+  if (new Set(inNames).size !== inNames.length) throw new Error('Input names must be different');
+  if (!obj.outputs || typeof obj.outputs !== 'object' || Array.isArray(obj.outputs)) {
+    throw new Error('"outputs" must be an object of output name to list of values');
+  }
+  const outNames = Object.keys(obj.outputs);
+  if (outNames.length < 1 || outNames.length > MAX_OUTPUTS) {
+    throw new Error(`"outputs" must have 1 to ${MAX_OUTPUTS} outputs`);
+  }
+  const rows = 1 << inNames.length;
+  const columns = outNames.map((name) => {
+    const values = obj.outputs[name];
+    if (!Array.isArray(values) || values.length !== rows) {
+      throw new Error(`Output "${name}" needs ${rows} values, one per row`);
+    }
+    return values.map((v, r) => parseCell(v, `Output "${name}", row ${r}`));
+  });
+  return { inNames: inNames.map(String), outNames, columns };
 }

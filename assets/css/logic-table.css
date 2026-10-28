@@ -151,7 +151,12 @@
 
 .tt-lt th.out,
 .tt-lt td.out {
-  width: 40px;
+  min-width: 40px;
+}
+
+.tt-lt th.out {
+  padding: 0 6px;
+  white-space: nowrap;
 }
 
 .tt-lt th.out.first,
@@ -180,6 +185,11 @@
   color: var(--lt-on);
   font-weight: 700;
   background: #e8f5ec;
+}
+
+.tt-lt .cell.dc {
+  color: #b06000;
+  background: #fdf3e1;
 }
 
 .tt-lt .cell:hover {
@@ -332,4 +342,39 @@
   font-size: 12px;
   line-height: 1.5;
   white-space: pre;
+}
+
+.tt-lt details.io .hint {
+  margin: 8px 0;
+}
+
+.tt-lt textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 160px;
+  padding: 10px;
+  border: 1px solid var(--lt-line);
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.tt-lt textarea:focus-visible {
+  outline: 2px solid var(--lt-blue);
+  outline-offset: 1px;
+}
+
+.tt-lt .io-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 8px;
+}
+
+.tt-lt .status.err {
+  color: #c5221f;
 }

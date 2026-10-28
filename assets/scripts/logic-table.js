@@ -6,21 +6,30 @@ import {
   MAX_INPUTS,
   MAX_OUTPUTS,
   buildNetlist,
+  fromLutJson,
   gateCounts,
   inputBit,
   layoutDiagram,
   planAll,
+  toLutJson,
   toWokwi,
 } from './logic-table/core.js';
 
 const DEFAULT_IN = ['A', 'B', 'C', 'D'];
 const defaultOut = (m) => Array.from({ length: m }, (_, o) => 'Y' + o);
 
-// Truth table columns given as one string of output bits per row.
+// Truth table columns given as one string per row: '1', '0' or 'x' (don't care) per output.
 function fromRows(rows) {
   const m = rows[0].length;
-  return Array.from({ length: m }, (_, o) => rows.map((row) => row[o] === '1'));
+  return Array.from({ length: m }, (_, o) =>
+    rows.map((row) => (row[o] === 'x' ? null : row[o] === '1')),
+  );
 }
+
+// Output cells cycle 0 -> 1 -> x (don't care) -> 0.
+const nextCell = (v) => (v === false ? true : v === true ? null : false);
+const cellText = (v) => (v === null ? 'x' : v ? '1' : '0');
+const cellName = (v) => (v === null ? "x (don't care)" : v ? '1' : '0');
 
 const EXAMPLES = {
   'full-adder': {
@@ -56,12 +65,13 @@ const EXAMPLES = {
       '1110000',
       '1111111',
       '1110011',
-      '0000000',
-      '0000000',
-      '0000000',
-      '0000000',
-      '0000000',
-      '0000000',
+      // 10 to 15 aren't BCD digits, so we don't care what the display shows.
+      'xxxxxxx',
+      'xxxxxxx',
+      'xxxxxxx',
+      'xxxxxxx',
+      'xxxxxxx',
+      'xxxxxxx',
     ]),
   },
 };
@@ -146,6 +156,10 @@ function mount(root) {
   const start = EXAMPLES[root.dataset.example] ? root.dataset.example : 'full-adder';
   let state = null;
   let status = '';
+  let ioStatus = '';
+  let ioError = false;
+  let ioDraft = null; // text the user typed into the import box, kept across re-renders
+  const open = { wokwi: false, io: false }; // <details> open state, kept across re-renders
 
   const load = (key) => {
     const ex = EXAMPLES[key];
@@ -183,6 +197,15 @@ function mount(root) {
     const counts = gateCounts(netlist);
     const wokwiJson = JSON.stringify(toWokwi(netlist), null, 2);
     root._wokwiJson = wokwiJson;
+    const tableJson = JSON.stringify(
+      toLutJson(state, state.example ? EXAMPLES[state.example].label : ''),
+      null,
+      2,
+    ).replace(
+      /\[\s*([^\[\]]*?)\s*\]/g,
+      (_, inner) => '[' + inner.split(/\s*,\s*/).join(', ') + ']',
+    );
+    root._tableJson = tableJson;
 
     const head =
       inNames.map((nm) => `<th scope="col" class="in">${esc(nm)}</th>`).join('') +
@@ -195,7 +218,8 @@ function mount(root) {
       const outs = outNames
         .map((nm, o) => {
           const v = columns[o][r];
-          return `<td class="out${o === 0 ? ' first' : ''}"><button type="button" class="cell${v ? ' on' : ''}" data-cell="${o}:${r}" aria-pressed="${v}" aria-label="${esc(nm)} in row ${r} is ${v ? 1 : 0}">${v ? 1 : 0}</button></td>`;
+          const cls = v === null ? ' dc' : v ? ' on' : '';
+          return `<td class="out${o === 0 ? ' first' : ''}"><button type="button" class="cell${cls}" data-cell="${o}:${r}" aria-label="${esc(nm)} in row ${r} is ${cellName(v)}. Click to change">${cellText(v)}</button></td>`;
         })
         .join('');
       body.push(`<tr>${ins}${outs}</tr>`);
@@ -243,7 +267,7 @@ function mount(root) {
             <thead><tr>${head}</tr></thead>
             <tbody>${body.join('')}</tbody>
           </table>
-          <p class="hint">Click an output cell to flip it between 0 and 1.</p>
+          <p class="hint">Click an output cell to change it: 0 → 1 → x (don't care).</p>
         </div>
         <div class="tt-lt-logic">
           <h4>Reduced logic</h4>
@@ -255,9 +279,21 @@ function mount(root) {
       <div class="tt-lt-export">
         <button type="button" class="copy" data-act="copy">Copy for Wokwi</button>
         <span class="status" role="status">${esc(status)}</span>
-        <details>
+        <details data-open="wokwi"${open.wokwi ? ' open' : ''}>
           <summary>Show Wokwi JSON</summary>
           <pre>${esc(wokwiJson)}</pre>
+        </details>
+        <details data-open="io" class="io"${open.io ? ' open' : ''}>
+          <summary>Import or export the table</summary>
+          <p class="hint">Uses the JSON format of
+            <a href="https://github.com/maehw/wokwi-lookup-table-generator" target="_blank" rel="noopener">wokwi-lookup-table-generator</a>.
+            Paste a table and click <b>Load table</b>. Don't-care cells are written as <code>"x"</code>.</p>
+          <textarea data-io spellcheck="false" aria-label="Truth table JSON" rows="10">${esc(ioDraft !== null ? ioDraft : tableJson)}</textarea>
+          <div class="io-actions">
+            <button type="button" class="clear" data-act="io-load">Load table</button>
+            <button type="button" class="clear" data-act="io-copy">Copy table JSON</button>
+            <span class="status${ioError ? ' err' : ''}" role="status">${esc(ioStatus)}</span>
+          </div>
         </details>
       </div>`;
 
@@ -271,9 +307,10 @@ function mount(root) {
     const cell = e.target.closest('[data-cell]');
     if (cell) {
       const [o, r] = cell.dataset.cell.split(':').map(Number);
-      state.columns[o][r] = !state.columns[o][r];
+      state.columns[o][r] = nextCell(state.columns[o][r]);
       state.example = '';
       status = '';
+      ioStatus = '';
       render(`[data-cell="${o}:${r}"]`);
       return;
     }
@@ -283,6 +320,8 @@ function mount(root) {
     const n = state.inNames.length;
     const m = state.outNames.length;
     status = '';
+    ioStatus = '';
+    ioError = false;
     if (act === 'in-') resize(n - 1, m);
     else if (act === 'in+') resize(n + 1, m);
     else if (act === 'out-') resize(n, m - 1);
@@ -297,6 +336,27 @@ function mount(root) {
       } catch (err) {
         status = 'Could not copy automatically. Open "Show Wokwi JSON" and copy the text by hand.';
       }
+    } else if (act === 'io-load') {
+      const text = root.querySelector('[data-io]').value;
+      try {
+        const t = fromLutJson(text);
+        state = { example: '', inNames: t.inNames, outNames: t.outNames, columns: t.columns };
+        ioDraft = null;
+        ioStatus = `Loaded ${t.inNames.length} inputs and ${t.outNames.length} outputs.`;
+      } catch (err) {
+        ioDraft = text;
+        ioError = true;
+        ioStatus = 'Could not load: ' + err.message;
+      }
+    } else if (act === 'io-copy') {
+      ioDraft = null;
+      try {
+        await copyText(root._tableJson);
+        ioStatus = 'Table JSON copied.';
+      } catch (err) {
+        ioError = true;
+        ioStatus = 'Could not copy automatically. Select the text and copy it by hand.';
+      }
     }
     // Keep focus on the control that was used; if it just became disabled, use its partner.
     render(`[data-act="${act}"]`);
@@ -308,10 +368,26 @@ function mount(root) {
     }
   });
 
+  root.addEventListener('input', (e) => {
+    if (e.target.matches('[data-io]')) ioDraft = e.target.value;
+  });
+
+  // <details> toggles don't bubble, so listen in the capture phase.
+  root.addEventListener(
+    'toggle',
+    (e) => {
+      const key = e.target.dataset && e.target.dataset.open;
+      if (key) open[key] = e.target.open;
+    },
+    true,
+  );
+
   root.addEventListener('change', (e) => {
     if (e.target.matches('select[data-act="example"]') && EXAMPLES[e.target.value]) {
       load(e.target.value);
       status = '';
+      ioStatus = '';
+      ioDraft = null;
       render('select[data-act="example"]');
     }
   });

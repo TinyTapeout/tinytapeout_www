@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import {
   buildNetlist,
   evalPlan,
+  fromLutJson,
+  toLutJson,
+  wireColor,
   gateCounts,
   inputBit,
   layoutDiagram,
@@ -35,9 +38,11 @@ function checkTable(columns, n) {
   const net = buildNetlist(plans, inNames, outNames);
   for (let r = 0; r < 1 << n; r++) {
     const bits = bitsOf(r, n);
+    // Don't-care cells (null) may come out either way.
+    const cared = (vals) => vals.map((v, o) => (columns[o][r] === null ? null : v));
     const expected = columns.map((c) => c[r]);
-    expect(plans.map((p) => evalPlan(p, bits))).toEqual(expected);
-    expect(simulate(net, bits)).toEqual(expected);
+    expect(cared(plans.map((p) => evalPlan(p, bits)))).toEqual(expected);
+    expect(cared(simulate(net, bits))).toEqual(expected);
   }
   // The drawing shows exactly the gates that get pasted into Wokwi.
   const drawn = layoutDiagram(plans, inNames, outNames).gates.length;
@@ -118,5 +123,96 @@ describe('logic table', () => {
         .map((p) => p.left + ',' + p.top);
       expect(new Set(spots).size).toBe(spots.length);
     }
+  });
+
+  it("implements random tables with don't-care cells", () => {
+    const rand = rng(777);
+    for (let t = 0; t < 400; t++) {
+      const n = 1 + Math.floor(rand() * 4);
+      const m = 1 + Math.floor(rand() * 4);
+      const density = rand();
+      const dcRate = rand() * 0.6;
+      const columns = Array.from({ length: m }, () =>
+        Array.from({ length: 1 << n }, () => (rand() < dcRate ? null : rand() < density)),
+      );
+      checkTable(columns, n);
+    }
+  });
+
+  it("every 2-input table with don't-cares (all 81)", () => {
+    for (let f = 0; f < 81; f++) {
+      let x = f;
+      const col = [0, 1, 2, 3].map(() => {
+        const v = x % 3;
+        x = Math.floor(x / 3);
+        return v === 2 ? null : v === 1;
+      });
+      checkTable([col], 2);
+    }
+  });
+
+  it("uses don't-cares to shrink the BCD to 7-segment decoder", () => {
+    const rows = [
+      '1111110',
+      '0110000',
+      '1101101',
+      '1111001',
+      '0110011',
+      '1011011',
+      '0011111',
+      '1110000',
+      '1111111',
+      '1110011',
+    ];
+    const blank = (dc) =>
+      Array.from({ length: 7 }, (_, o) =>
+        Array.from({ length: 16 }, (_, r) => (r < 10 ? rows[r][o] === '1' : dc ? null : false)),
+      );
+    const count = (columns) => {
+      const { net } = checkTable(columns, 4);
+      return Object.values(gateCounts(net)).reduce((a, b) => a + b, 0);
+    };
+    const withZeros = count(blank(false));
+    const withDontCares = count(blank(true));
+    // 65 gates down to 38 at the time of writing.
+    expect(withDontCares).toBeLessThan(withZeros * 0.7);
+  });
+
+  it('reads and writes wokwi-lookup-table-generator JSON', () => {
+    const half = {
+      version: 1,
+      description: 'half adder',
+      inputs: ['a', 'b'],
+      outputs: { S: [0, 1, 1, 0], C: [0, 0, 0, 1] },
+    };
+    const table = fromLutJson(JSON.stringify(half));
+    expect(table.inNames).toEqual(['a', 'b']);
+    expect(table.outNames).toEqual(['S', 'C']);
+    expect(table.columns[1]).toEqual([false, false, false, true]);
+    expect(toLutJson(table, 'half adder')).toEqual(half);
+
+    const dc = fromLutJson({ inputs: ['a'], outputs: { Y: ['x', 1] } });
+    expect(dc.columns[0]).toEqual([null, true]);
+    expect(toLutJson(dc).outputs.Y).toEqual(['x', 1]);
+
+    expect(() => fromLutJson({ inputs: ['a', 'b'], outputs: { Y: [0, 1, 1] } })).toThrow(
+      /4 values/,
+    );
+    expect(() => fromLutJson({ inputs: ['a'], outputs: { Y: [0, 2] } })).toThrow(/row 1/);
+    expect(() => fromLutJson({ inputs: [], outputs: { Y: [0] } })).toThrow(/inputs/);
+    expect(() => fromLutJson('{not json')).toThrow();
+  });
+
+  it('colours wires by what they connect', () => {
+    const columns = [[false, true, true, false, true, true, false, true]];
+    const net = buildNetlist(planAll(columns, 3), ['A', 'B', 'C'], ['Y']);
+    const wokwi = toWokwi(net);
+    const colours = new Set(wokwi.connections.map((c) => c[2]));
+    colours.forEach((c) =>
+      expect(['red', 'black', 'cyan', 'brown', 'blue', 'green', 'purple', 'orange']).toContain(c),
+    );
+    expect(colours.has('cyan')).toBe(true);
+    expect(wireColor({ kind: 'not', role: 'inverter' }, { kind: 'and' })).toBe('blue');
+    expect(wireColor({ kind: 'and' }, { kind: 'or' })).toBe('purple');
   });
 });
