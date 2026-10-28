@@ -392,7 +392,8 @@ function mount(root) {
     } else if (act === 'copy') {
       try {
         await copyText(root._wokwiJson);
-        status = 'Copied! In Wokwi, click on the diagram and press Ctrl+V (⌘+V on a Mac).';
+        status =
+          "Copied! In Wokwi, click on the diagram, press Ctrl+V (⌘+V on a Mac), then press F to zoom to fit if you can't see it.";
       } catch (err) {
         status = 'Could not copy automatically. Open "Show Wokwi JSON" and copy the text by hand.';
       }

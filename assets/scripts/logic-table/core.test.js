@@ -83,7 +83,8 @@ function checkPlacement(layout, wokwi) {
   wokwi.connections.forEach((c) => {
     expect(Array.isArray(c[3])).toBe(true);
     c[3].forEach((step) => expect(step).toMatch(/^(\*|[hv]-?\d+(\.\d)?)$/));
-    if (c[3].length) expect(c[3][c[3].length - 1]).toBe('*');
+    // Routed wires must end with a move after '*', or Wokwi leaves the last segment out.
+    if (c[3].length) expect(c[3].slice(-2)).toEqual(['*', 'h-10']);
   });
   // Inputs top to bottom in table order.
   ins.forEach((p, i) => i && expect(p.top).toBeGreaterThan(ins[i - 1].top));

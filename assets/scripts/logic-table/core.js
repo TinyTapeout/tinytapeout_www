@@ -446,9 +446,11 @@ export function toWokwi(netlist, layout) {
     const to = inPin(dst, j);
     // From an input: along the input's row to its rail, down the rail, then across.
     // Between gates: across to just before the target, then down or up to it.
-    const turnX = src.role === 'input' || src.role === 'inverter' ? railOf(src) : to.x - 20;
+    const turnX = src.role === 'input' || src.role === 'inverter' ? railOf(src) : to.x - 24;
     if (Math.abs(to.y - from.y) < 0.05) return [];
-    return [move('h', turnX - from.x), move('v', to.y - from.y), '*'].filter(Boolean);
+    // Wokwi leaves out the final joining segment when nothing follows '*', so always end
+    // with a short move out of the target pin; the join is then a plain horizontal line.
+    return [move('h', turnX - from.x), move('v', to.y - from.y), '*', 'h-10'].filter(Boolean);
   };
 
   const connections = [];

@@ -15,7 +15,7 @@ Type in a truth table below and the tool works out a small circuit of logic gate
 2. Click the output cells to set each one to `0`, `1` or `x`. The reduced logic and the gate diagram update as you go.
 3. Use **Try it** to check the circuit: flip the inputs (or click an input pin in the diagram, or the input values of a row) and watch the highlighted row move and the outputs change.
 4. Click **Copy for Wokwi**.
-5. Open your Wokwi project, click on an empty part of the diagram and press `Ctrl+V` (`⌘+V` on a Mac). The gates appear with all their wires connected.
+5. Open your Wokwi project, click on an empty part of the diagram and press `Ctrl+V` (`⌘+V` on a Mac). The gates appear with all their wires connected. Wokwi sometimes pastes outside the part of the diagram you can see, so if nothing seems to appear, press `F` to zoom the diagram to fit.
 6. Wire your input pins (for example `ui_in[0]`) to the inputs of the buffers labelled with your input names, and the buffers labelled with your output names to your output pins (for example `uo_out[0]`).
 
 The pasted circuit is laid out like the diagram, with the inputs on the left and the outputs on the right. The inputs and outputs are buffer gates with text labels next to them, so the circuit is easy to connect up however your project is laid out. The wires are coloured by what they connect: brown from an input, blue from an inverted input, orange between the gates of a product, purple from a product into an OR gate, green between OR gates and cyan to an output.
