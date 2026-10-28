@@ -395,3 +395,82 @@
   font-size: 14px;
   color: var(--lt-muted);
 }
+
+.tt-lt tbody tr.active td {
+  background: #fff1bf;
+}
+
+.tt-lt tbody tr.active .cell:not(.on):not(.dc) {
+  background: transparent;
+}
+
+.tt-lt td.in {
+  cursor: pointer;
+}
+
+.tt-lt .try {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 4px 0 8px;
+}
+
+.tt-lt .try .lbl {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--lt-muted);
+}
+
+.tt-lt .try .lvls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tt-lt .try .arrow {
+  color: var(--lt-muted);
+}
+
+.tt-lt .lvl {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+  height: 32px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid var(--lt-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--lt-ink);
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.tt-lt .lvl.high {
+  border-color: var(--lt-blue-dark);
+  background: #e3f0fd;
+  color: #0b4f8a;
+}
+
+.tt-lt button.lvl:hover {
+  border-color: #8d9093;
+}
+
+.tt-lt .lvl.out {
+  border-style: dashed;
+}
+
+.tt-lt .lvl.out.high {
+  border-style: solid;
+}
+
+.tt-lt-svg .pin.high {
+  fill: var(--lt-blue);
+  stroke: var(--lt-blue-dark);
+}
+
+.tt-lt-svg .pin-hit {
+  cursor: pointer;
+}

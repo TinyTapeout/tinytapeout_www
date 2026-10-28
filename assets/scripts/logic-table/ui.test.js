@@ -11,7 +11,7 @@ const $$ = (sel) => Array.from(root.querySelectorAll(sel));
 const click = (sel) => {
   const el = typeof sel === 'string' ? $(sel) : sel;
   if (!el) throw new Error('no element for ' + sel);
-  el.click();
+  el.dispatchEvent(new MouseEvent('click', { bubbles: true })); // SVG elements have no .click()
 };
 const exprs = () => $$('.expr').map((e) => e.textContent.trim().replace(/\s+/g, ' '));
 const counts = () => ({
@@ -146,6 +146,66 @@ describe('logic table widget', () => {
       select.dispatchEvent(new Event('change', { bubbles: true }));
       expect($('select[data-act="example"]').value).toBe(value);
       expect(exprs().length).toBe(counts().outputs);
+    });
+  });
+
+  describe('try it', () => {
+    const levels = () => $$('button.lvl').map((b) => b.textContent.replace(/\s+/g, ''));
+    const outs = () => $$('.try span.lvl').map((b) => b.textContent.replace(/\s+/g, ''));
+    const activeRow = () => $$('tbody tr').findIndex((tr) => tr.classList.contains('active'));
+    const reset = () => {
+      // Set all inputs to 0 by clicking the first row's input cell.
+      click($$('td.in[data-row="0"]')[0]);
+    };
+
+    it('starts on row 0 with every output low', () => {
+      reset();
+      expect(levels()).toEqual(['A0', 'B0', 'C0']);
+      expect(activeRow()).toBe(0);
+      expect(outs()).toEqual(['S0', 'Cout0']);
+    });
+
+    it('flipping inputs moves the highlighted row and updates the outputs', () => {
+      reset();
+      click('button.lvl[data-level="0"]'); // A = 1
+      expect(activeRow()).toBe(4);
+      expect(outs()).toEqual(['S1', 'Cout0']);
+      expect(document.activeElement).toBe($('button.lvl[data-level="0"]'));
+      click('button.lvl[data-level="2"]'); // C = 1
+      expect(activeRow()).toBe(5);
+      expect(outs()).toEqual(['S0', 'Cout1']);
+      expect($$('.tt-lt-svg .pin.high').length).toBe(3); // A, C and Cout
+    });
+
+    it("clicking a row's input values selects that row", () => {
+      click($$('td.in[data-row="7"]')[1]);
+      expect(levels()).toEqual(['A1', 'B1', 'C1']);
+      expect(activeRow()).toBe(7);
+      expect(outs()).toEqual(['S1', 'Cout1']);
+    });
+
+    it('clicking an input pin in the diagram flips it', () => {
+      reset();
+      click($('.tt-lt-svg [data-level="1"]'));
+      expect(levels()).toEqual(['A0', 'B1', 'C0']);
+      expect(activeRow()).toBe(2);
+    });
+
+    it("shows what the circuit really does for a don't-care cell", () => {
+      reset();
+      click('[data-cell="1:0"]'); // Cout row 0: 0 -> 1
+      click('[data-cell="1:0"]'); // -> x
+      expect(outs()).toEqual(['S0', 'Cout0']); // the gates still give 0 there
+    });
+
+    it('keeps the input values when inputs are added and removed', () => {
+      click($$('td.in[data-row="5"]')[0]); // A=1 B=0 C=1
+      click('[data-act="in+"]');
+      expect(levels()).toEqual(['A1', 'B0', 'C1', 'D0']);
+      expect(outs()).toEqual(['S0', 'Cout1']);
+      click('[data-act="in-"]');
+      expect(levels()).toEqual(['A1', 'B0', 'C1']);
+      expect(activeRow()).toBe(5);
     });
   });
 });

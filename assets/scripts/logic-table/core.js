@@ -252,8 +252,10 @@ export function buildNetlist(plans, inNames, outNames) {
     return id;
   };
 
-  const inIds = inNames.map((name) =>
-    add('buf', [], { id: 'in_' + safeId(name), role: 'input', name }),
+  // Every part gets a `key` naming its place in the circuit. layoutDiagram uses the same
+  // keys, so the pasted Wokwi circuit can be laid out exactly like the drawing.
+  const inIds = inNames.map((name, i) =>
+    add('buf', [], { id: 'in_' + safeId(name), role: 'input', name, key: `in:${i}` }),
   );
   const notIds = [];
   const literal = (l) => {
@@ -262,6 +264,7 @@ export function buildNetlist(plans, inNames, outNames) {
       notIds[l.i] = add('not', [inIds[l.i]], {
         id: 'not_' + safeId(inNames[l.i]),
         role: 'inverter',
+        key: `in:${l.i}:not`,
       });
     return notIds[l.i];
   };
@@ -272,26 +275,33 @@ export function buildNetlist(plans, inNames, outNames) {
     if (plan.kind === 'const') {
       src = add(plan.value ? 'vcc' : 'gnd', [], {
         id: (plan.value ? 'vcc_' : 'gnd_') + safeId(name),
+        key: `o:${o}:const`,
       });
     } else if (plan.kind === 'xor') {
       src = inIds[plan.vars[0]];
-      for (let j = 1; j < plan.vars.length; j++) src = add('xor', [src, inIds[plan.vars[j]]]);
-      if (plan.inv) src = add('not', [src]);
+      for (let j = 1; j < plan.vars.length; j++) {
+        src = add('xor', [src, inIds[plan.vars[j]]], { key: `o:${o}:t:0:${j - 1}` });
+      }
+      if (plan.inv) src = add('not', [src], { key: `o:${o}:not` });
     } else {
       const single = plan.terms.length === 1;
-      const termNets = plan.terms.map((t) => {
+      const termNets = plan.terms.map((t, ti) => {
         let acc = literal(t.lits[0]);
         for (let j = 1; j < t.lits.length; j++) {
           const last = j === t.lits.length - 1;
-          acc = add(plan.inv && single && last ? 'nand' : 'and', [acc, literal(t.lits[j])]);
+          acc = add(plan.inv && single && last ? 'nand' : 'and', [acc, literal(t.lits[j])], {
+            key: `o:${o}:t:${ti}:${j - 1}`,
+          });
         }
         return acc;
       });
       src = termNets[0];
-      for (let j = 1; j < termNets.length; j++) src = add('or', [src, termNets[j]]);
-      if (plan.inv && !single) src = add('not', [src]);
+      for (let j = 1; j < termNets.length; j++) {
+        src = add('or', [src, termNets[j]], { key: `o:${o}:or:${j - 1}` });
+      }
+      if (plan.inv && !single) src = add('not', [src], { key: `o:${o}:not` });
     }
-    add('buf', [src], { id: 'out_' + safeId(name), role: 'output', name });
+    add('buf', [src], { id: 'out_' + safeId(name), role: 'output', name, key: `o:${o}:out` });
   });
 
   return {
@@ -350,8 +360,6 @@ export function simulate(netlist, bits) {
 // ---------------------------------------------------------------------------
 // Wokwi clipboard JSON (same shape as diagram.json: parts + connections).
 
-const COL = 120;
-const ROW = 60;
 const WIRE_ROUTE = ['h10', '*', 'h-10'];
 
 // Wire colours by what they connect, following wokwi-lookup-table-generator's scheme, so
@@ -367,54 +375,37 @@ export function wireColor(src, dst) {
   return 'orange'; // gate to gate inside a product or XOR chain
 }
 
-export function toWokwi(netlist) {
+// Wokwi parts are bigger than the gates in the drawing, so drawing coordinates are scaled up.
+export const WOKWI_SCALE = 2;
+
+// Wokwi parts are placed where the drawing (layoutDiagram) puts them, so the pasted circuit
+// looks like the one on the page: inputs on the left, outputs on the right.
+export function toWokwi(netlist, layout) {
   const byId = new Map(netlist.parts.map((p) => [p.id, p]));
-  const level = {};
-  let maxLevel = 1;
-  netlist.parts.forEach((p) => {
-    if (p.role === 'input') level[p.id] = 0;
-    else if (p.role === 'output')
-      level[p.id] = -1; // placed after everything else
-    else if (!p.ins.length)
-      level[p.id] = 1; // VCC / GND
-    else level[p.id] = 1 + Math.max(...p.ins.map((id) => level[id]));
-    maxLevel = Math.max(maxLevel, level[p.id]);
-  });
-  netlist.parts.forEach((p) => {
-    if (p.role === 'output') level[p.id] = maxLevel + 1;
+  const at = new Map();
+  layout.gates.forEach((g) => at.set(g.key, { x: g.x, y: g.y }));
+  layout.tags.forEach((t) => at.set(t.key, { x: t.x, y: t.y }));
+  // Pins mark where a wire ends; inputs sit just left of theirs, outputs just right.
+  layout.pins.forEach((p) => {
+    const input = p.key.startsWith('in:');
+    at.set(p.key, { x: input ? p.x - 34 : p.x + 6, y: p.y - 12 });
   });
 
-  // Each part goes in its level's column, on the first free row at or below its first input.
-  const row = {};
-  const nextFree = {};
-  netlist.parts.forEach((p) => {
-    const col = level[p.id];
-    const want =
-      p.role === 'input' ? 2 * netlist.inputs.indexOf(p.id) : p.ins.length ? row[p.ins[0]] : 0;
-    const r = Math.max(want, nextFree[col] || 0);
-    row[p.id] = r;
-    nextFree[col] = r + 1;
-  });
-
+  const S = WOKWI_SCALE;
   const parts = [];
   netlist.parts.forEach((p) => {
-    const left = level[p.id] * COL;
-    const top = row[p.id] * ROW;
+    const pos = at.get(p.key);
+    if (!pos) throw new Error('no position for ' + p.key);
+    const left = Math.round(pos.x * S);
+    const top = Math.round(pos.y * S);
     parts.push({ type: WOKWI[p.kind].type, id: p.id, top, left, attrs: {} });
-    if (p.role === 'input') {
+    if (p.role === 'input' || p.role === 'output') {
+      const textLeft = p.role === 'input' ? left - 16 - String(p.name).length * 10 : left + 80;
       parts.push({
         type: 'wokwi-text',
         id: 'label_' + p.id,
-        top: top + 10,
-        left: left - 40,
-        attrs: { text: p.name },
-      });
-    } else if (p.role === 'output') {
-      parts.push({
-        type: 'wokwi-text',
-        id: 'label_' + p.id,
-        top: top + 10,
-        left: left + 70,
+        top: top + 14,
+        left: textLeft,
         attrs: { text: p.name },
       });
     }
@@ -460,7 +451,6 @@ export function layoutDiagram(plans, inNames, outNames) {
   const n = inNames.length;
   const GW = 44;
   const NW = 40;
-  const NOTY = 46;
   const segs = [];
   const dots = [];
   const pins = [];
@@ -511,20 +501,26 @@ export function layoutDiagram(plans, inNames, outNames) {
       }),
     ),
   );
+  // Inputs come in from the left, one row each (A at the top). Each input feeds a vertical
+  // rail, and an inverted input also goes through a NOT gate to a second rail. Rails are
+  // placed right to left (A's rightmost) so no input wire has to cross another input's rail.
+  const maxIn = Math.max(1, ...inNames.map((s) => String(s).length));
+  const PINX = 14 + maxIn * 9;
+  const inY = (i) => 16 + i * 30;
   const rail = [];
-  let x = 28;
-  for (let i = 0; i < n; i++) {
-    const r = { pos: x, neg: null, posMax: 22, negMax: NOTY };
+  let x = PINX + 28;
+  for (let i = n - 1; i >= 0; i--) {
+    const y = inY(i);
+    const r = { y, pos: x, neg: null, posMax: y, negMax: y };
     if (needNot[i]) {
-      r.neg = x + 84;
-      r.posMax = NOTY;
-      x = r.neg + 40;
+      r.neg = x + 18 + NW + 18;
+      x = r.neg + 28;
     } else {
-      x += 44;
+      x += 28;
     }
-    rail.push(r);
+    rail[i] = r;
   }
-  const gx0 = x + 4;
+  const gx0 = x + 8;
   const maxChain = Math.max(
     0,
     ...outs.map((o) => Math.max(0, ...o.terms.map((t) => t.lits.length - 1))),
@@ -546,18 +542,18 @@ export function layoutDiagram(plans, inNames, outNames) {
     route(sx(s), s.y, x2, y2, bx);
   };
 
-  let y = 84;
+  let y = inY(n - 1) + 36;
   outs.forEach((o, oi) => {
     if (oi > 0) y += 20;
     let out;
     if (o.konst !== null) {
       const yy = y + 14;
-      tags.push({ x: gx0, y: yy - 11, text: o.konst ? 'VCC' : 'GND' });
+      tags.push({ x: gx0, y: yy - 11, text: o.konst ? 'VCC' : 'GND', key: `o:${oi}:const` });
       out = { x: gx0 + 44, y: yy };
       y += 40;
     } else {
       const T = [];
-      o.terms.forEach((t) => {
+      o.terms.forEach((t, ti) => {
         const k = t.lits.length;
         if (k === 1) {
           T.push({ lit: t.lits[0], y: y + 12 });
@@ -571,7 +567,7 @@ export function layoutDiagram(plans, inNames, outNames) {
           const c = yl[j + 1] - 8;
           const last = j === k - 2;
           const kind = o.xor ? 'xor' : o.inv && last && o.terms.length === 1 ? 'nand' : 'and';
-          gates.push({ kind, x: gx, y: c - 16 });
+          gates.push({ kind, x: gx, y: c - 16, key: `o:${oi}:t:${ti}:${j}` });
           if (j === 0) conn({ lit: t.lits[0], y: yl[0] }, gx, yl[0], 0);
           else route(gx0 + (j - 1) * (GW + 24) + GW, yl[j] - 8, gx, yl[j], gx - 10);
           conn({ lit: t.lits[j + 1], y: yl[j + 1] }, gx, yl[j + 1], 0);
@@ -585,7 +581,7 @@ export function layoutDiagram(plans, inNames, outNames) {
         for (let j = 0; j < T.length - 1; j++) {
           const gx = ox0 + j * (GW + 28);
           const c = T[j + 1].y - 8;
-          gates.push({ kind: 'or', x: gx, y: c - 16 });
+          gates.push({ kind: 'or', x: gx, y: c - 16, key: `o:${oi}:or:${j}` });
           conn(prev, gx, c - 8, gx - 12);
           conn(T[j + 1], gx, c + 8, 0);
           prev = { x: gx + GW, y: c };
@@ -594,34 +590,35 @@ export function layoutDiagram(plans, inNames, outNames) {
       }
       if (o.outNot) {
         conn(out, notX, out.y, 0);
-        gates.push({ kind: 'not', x: notX, y: out.y - 12 });
+        gates.push({ kind: 'not', x: notX, y: out.y - 12, key: `o:${oi}:not` });
         out = { x: notX + NW, y: out.y };
       }
     }
     conn(out, OUTX, out.y, 0);
-    pins.push({ x: OUTX, y: out.y });
+    pins.push({ x: OUTX, y: out.y, key: `o:${oi}:out` });
     labels.push({ x: OUTX + 10, y: out.y, text: o.name, over: false, anchor: 'start' });
   });
 
   const used = inputsUsed(plans, n);
   rail.forEach((r, i) => {
-    pins.push({ x: r.pos, y: 22, unused: !used[i] });
+    pins.push({ x: PINX, y: r.y, unused: !used[i], key: `in:${i}` });
     labels.push({
-      x: r.pos,
-      y: 7,
+      x: PINX - 10,
+      y: r.y,
       text: inNames[i],
       over: false,
-      anchor: 'middle',
+      anchor: 'end',
       unused: !used[i],
     });
-    vs(r.pos, 22, r.posMax);
+    if (!used[i]) return;
+    hs(PINX, r.neg !== null ? r.pos + 18 : r.pos, r.y);
+    vs(r.pos, r.y, r.posMax);
     if (r.neg !== null) {
-      hs(r.pos, r.pos + 18, NOTY);
-      if (r.posMax > NOTY) dot(r.pos, NOTY);
-      gates.push({ kind: 'not', x: r.pos + 18, y: NOTY - 12 });
-      hs(r.pos + 18 + NW, r.neg, NOTY);
-      vs(r.neg, NOTY, r.negMax);
-      labels.push({ x: r.neg, y: NOTY - 18, text: inNames[i], over: true, anchor: 'middle' });
+      if (r.posMax > r.y) dot(r.pos, r.y);
+      gates.push({ kind: 'not', x: r.pos + 18, y: r.y - 12, key: `in:${i}:not` });
+      hs(r.pos + 18 + NW, r.neg, r.y);
+      vs(r.neg, r.y, r.negMax);
+      labels.push({ x: r.neg + 4, y: r.y - 10, text: inNames[i], over: true, anchor: 'start' });
     }
   });
 

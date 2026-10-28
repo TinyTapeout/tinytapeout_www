@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildNetlist,
   evalPlan,
+  GATE_KINDS,
   fromLutJson,
   toLutJson,
   wireColor,
@@ -33,6 +34,41 @@ function rng(seed) {
   };
 }
 
+// Gates in the drawing never overlap, and in Wokwi every input sits left of every gate and
+// every output right of every gate.
+function checkPlacement(layout, wokwi) {
+  const box = (g) => ({
+    x: g.x,
+    y: g.y,
+    w: g.kind === 'not' ? 40 : 44,
+    h: g.kind === 'not' ? 24 : 32,
+  });
+  const boxes = [
+    ...layout.gates.map(box),
+    ...layout.tags.map((t) => ({ x: t.x, y: t.y, w: 44, h: 22 })),
+  ];
+  for (let a = 0; a < boxes.length; a++) {
+    for (let b = a + 1; b < boxes.length; b++) {
+      const p = boxes[a];
+      const q = boxes[b];
+      const apart = p.x + p.w <= q.x || q.x + q.w <= p.x || p.y + p.h <= q.y || q.y + q.h <= p.y;
+      expect(apart).toBe(true);
+    }
+  }
+  const real = wokwi.parts.filter((p) => p.type !== 'wokwi-text');
+  const ins = real.filter((p) => p.id.startsWith('in_'));
+  const outs = real.filter((p) => p.id.startsWith('out_'));
+  const gates = real.filter((p) => !p.id.startsWith('in_') && !p.id.startsWith('out_'));
+  const maxIn = Math.max(...ins.map((p) => p.left));
+  gates.forEach((g) => expect(g.left).toBeGreaterThan(maxIn));
+  if (gates.length) {
+    const maxGate = Math.max(...gates.map((p) => p.left));
+    outs.forEach((o) => expect(o.left).toBeGreaterThan(maxGate));
+  }
+  // Inputs top to bottom in table order.
+  ins.forEach((p, i) => i && expect(p.top).toBeGreaterThan(ins[i - 1].top));
+}
+
 function checkTable(columns, n) {
   const { inNames, outNames } = names(n, columns.length);
   const plans = planAll(columns, n);
@@ -45,11 +81,16 @@ function checkTable(columns, n) {
     expect(cared(plans.map((p) => evalPlan(p, bits)))).toEqual(expected);
     expect(cared(simulate(net, bits))).toEqual(expected);
   }
-  // The drawing shows exactly the gates that get pasted into Wokwi.
-  const drawn = layoutDiagram(plans, inNames, outNames).gates.length;
-  const total = Object.values(gateCounts(net)).reduce((a, b) => a + b, 0);
-  expect(drawn).toBe(total);
-  return { plans, net };
+  // The drawing shows exactly the parts that get pasted into Wokwi, one for one.
+  const layout = layoutDiagram(plans, inNames, outNames);
+  const drawnGates = new Map(layout.gates.map((g) => [g.key, g.kind]));
+  expect(drawnGates.size).toBe(layout.gates.length);
+  const netGates = net.parts.filter((p) => GATE_KINDS.includes(p.kind));
+  expect(new Map(netGates.map((p) => [p.key, p.kind]))).toEqual(drawnGates);
+  const drawnKeys = [...layout.gates, ...layout.pins, ...layout.tags].map((e) => e.key).sort();
+  expect(drawnKeys).toEqual(net.parts.map((p) => p.key).sort());
+  checkPlacement(layout, toWokwi(net, layout));
+  return { plans, net, layout };
 }
 
 describe('logic table', () => {
@@ -95,7 +136,11 @@ describe('logic table', () => {
         Array.from({ length: 1 << n }, () => rand() < 0.5),
       );
       const { inNames, outNames } = names(n, m);
-      const wokwi = toWokwi(buildNetlist(planAll(columns, n), inNames, outNames));
+      const plans = planAll(columns, n);
+      const wokwi = toWokwi(
+        buildNetlist(plans, inNames, outNames),
+        layoutDiagram(plans, inNames, outNames),
+      );
       const ids = wokwi.parts.map((p) => p.id);
       expect(new Set(ids).size).toBe(ids.length);
       const pins = {
@@ -207,7 +252,7 @@ describe('logic table', () => {
   it('colours wires by what they connect', () => {
     const columns = [[false, true, true, false, true, true, false, true]];
     const net = buildNetlist(planAll(columns, 3), ['A', 'B', 'C'], ['Y']);
-    const wokwi = toWokwi(net);
+    const wokwi = toWokwi(net, layoutDiagram(planAll(columns, 3), ['A', 'B', 'C'], ['Y']));
     const colours = new Set(wokwi.connections.map((c) => c[2]));
     colours.forEach((c) =>
       expect(['red', 'black', 'cyan', 'brown', 'blue', 'green', 'purple', 'orange']).toContain(c),
@@ -221,10 +266,7 @@ describe('logic table', () => {
     const fullAdder = {
       inNames: ['A', 'B', 'C'],
       outNames: ['S', 'Cout'],
-      columns: [
-        [0, 1, 1, 0, 1, 0, 0, 1].map(Boolean),
-        [0, 0, 0, 1, 0, 1, 1, 1].map(Boolean),
-      ],
+      columns: [[0, 1, 1, 0, 1, 0, 0, 1].map(Boolean), [0, 0, 0, 1, 0, 1, 1, 1].map(Boolean)],
     };
 
     it('adding an input keeps every output the same (the new input is ignored)', () => {
@@ -257,7 +299,7 @@ describe('logic table', () => {
       expect(resizeTable(more, 3, 2)).toEqual(fullAdder);
     });
 
-    it('keeps don\'t-cares and avoids clashing names', () => {
+    it("keeps don't-cares and avoids clashing names", () => {
       const t = { inNames: ['A', 'C'], outNames: ['Y0'], columns: [[null, true, false, null]] };
       const r = resizeTable(t, 3, 2);
       expect(r.inNames).toEqual(['A', 'C', 'B']);

@@ -13,6 +13,7 @@ import {
   inputsUsed,
   planAll,
   resizeTable,
+  simulate,
   toLutJson,
   toWokwi,
 } from './logic-table/core.js';
@@ -110,7 +111,8 @@ function expressionHtml(plan, inNames) {
   return plan.inv ? `<span class="tt-lt-over">${body}</span>` : body;
 }
 
-function diagramSvg(d) {
+// high: set of pin keys whose signal is 1, from the "Try it" inputs.
+function diagramSvg(d, high, inNames) {
   const parts = [];
   d.segs.forEach((s) =>
     parts.push(`<line class="w" x1="${s.x1}" y1="${s.y1}" x2="${s.x2}" y2="${s.y2}"/>`),
@@ -124,9 +126,18 @@ function diagramSvg(d) {
     ),
   );
   d.dots.forEach((p) => parts.push(`<circle class="dot" cx="${p.x}" cy="${p.y}" r="3.5"/>`));
-  d.pins.forEach((p) =>
-    parts.push(`<circle class="pin${p.unused ? ' unused' : ''}" cx="${p.x}" cy="${p.y}" r="4"/>`),
-  );
+  d.pins.forEach((p) => {
+    const cls = `pin${p.unused ? ' unused' : ''}${high.has(p.key) ? ' high' : ''}`;
+    if (p.key.startsWith('in:')) {
+      // Input pins can be clicked to flip that input, like the buttons above the diagram.
+      const i = Number(p.key.slice(3));
+      parts.push(
+        `<g class="pin-hit" data-level="${i}"><title>Flip ${esc(inNames[i])}</title><circle cx="${p.x}" cy="${p.y}" r="11" fill="transparent"/><circle class="${cls}" cx="${p.x}" cy="${p.y}" r="5"/></g>`,
+      );
+    } else {
+      parts.push(`<circle class="${cls}" cx="${p.x}" cy="${p.y}" r="5"/>`);
+    }
+  });
   d.labels.forEach((l) => {
     const over = l.over ? ' text-decoration="overline"' : '';
     parts.push(
@@ -160,6 +171,7 @@ function mount(root) {
   let ioStatus = '';
   let ioError = false;
   let ioDraft = null; // text the user typed into the import box, kept across re-renders
+  let levels = []; // "Try it" input values, 0 or 1 per input
   const open = { wokwi: false, io: false }; // <details> open state, kept across re-renders
 
   const load = (key) => {
@@ -185,7 +197,8 @@ function mount(root) {
     const plans = planAll(columns, n);
     const netlist = buildNetlist(plans, inNames, outNames);
     const counts = gateCounts(netlist);
-    const wokwiJson = JSON.stringify(toWokwi(netlist), null, 2);
+    const layout = layoutDiagram(plans, inNames, outNames);
+    const wokwiJson = JSON.stringify(toWokwi(netlist, layout), null, 2);
     root._wokwiJson = wokwiJson;
     const tableJson = JSON.stringify(
       toLutJson(state, state.example ? EXAMPLES[state.example].label : ''),
@@ -197,6 +210,27 @@ function mount(root) {
     );
     root._tableJson = tableJson;
 
+    // "Try it": the current input values pick a row; the outputs come from simulating the
+    // circuit itself, so a don't-care cell shows what the gates really do.
+    levels = inNames.map((_, i) => (levels[i] ? 1 : 0));
+    const active = levels.reduce((acc, v) => acc * 2 + v, 0);
+    const outValues = simulate(netlist, levels);
+    const high = new Set();
+    levels.forEach((v, i) => v && high.add(`in:${i}`));
+    outValues.forEach((v, o) => v && high.add(`o:${o}:out`));
+    const tryIns = inNames
+      .map(
+        (nm, i) =>
+          `<button type="button" class="lvl${levels[i] ? ' high' : ''}" data-level="${i}" aria-pressed="${!!levels[i]}" aria-label="Input ${esc(nm)} is ${levels[i]}. Click to flip">${esc(nm)} <b>${levels[i]}</b></button>`,
+      )
+      .join('');
+    const tryOuts = outNames
+      .map(
+        (nm, o) =>
+          `<span class="lvl out${outValues[o] ? ' high' : ''}">${esc(nm)} <b>${outValues[o] ? 1 : 0}</b></span>`,
+      )
+      .join('');
+
     const head =
       inNames.map((nm) => `<th scope="col" class="in">${esc(nm)}</th>`).join('') +
       outNames
@@ -204,7 +238,9 @@ function mount(root) {
         .join('');
     const body = [];
     for (let r = 0; r < rows; r++) {
-      const ins = inNames.map((_, i) => `<td class="in">${inputBit(r, i, n)}</td>`).join('');
+      const ins = inNames
+        .map((_, i) => `<td class="in" data-row="${r}">${inputBit(r, i, n)}</td>`)
+        .join('');
       const outs = outNames
         .map((nm, o) => {
           const v = columns[o][r];
@@ -212,7 +248,7 @@ function mount(root) {
           return `<td class="out${o === 0 ? ' first' : ''}"><button type="button" class="cell${cls}" data-cell="${o}:${r}" aria-label="${esc(nm)} in row ${r} is ${cellName(v)}. Click to change">${cellText(v)}</button></td>`;
         })
         .join('');
-      body.push(`<tr>${ins}${outs}</tr>`);
+      body.push(`<tr${r === active ? ' class="active"' : ''}>${ins}${outs}</tr>`);
     }
 
     const exprs = plans
@@ -268,14 +304,20 @@ function mount(root) {
             <thead><tr>${head}</tr></thead>
             <tbody>${body.join('')}</tbody>
           </table>
-          <p class="hint">Click an output cell to change it: 0 → 1 → x (don't care).</p>
+          <p class="hint">Click an output cell to change it: 0 → 1 → x (don't care). Click an input value to try that row.</p>
         </div>
         <div class="tt-lt-logic">
           <h4>Reduced logic</h4>
           <div class="exprs">${exprs}</div>
           <div class="chips">${chips || '<span class="chip">no gates</span>'}</div>
           ${notes.map((t) => `<p class="note">${esc(t)}</p>`).join('')}
-          <div class="diagram">${diagramSvg(layoutDiagram(plans, inNames, outNames))}</div>
+          <div class="try" role="group" aria-label="Try it">
+            <span class="lbl">Try it</span>
+            <span class="lvls">${tryIns}</span>
+            <span class="arrow" aria-hidden="true">→</span>
+            <span class="lvls" role="status" aria-label="Outputs">${tryOuts}</span>
+          </div>
+          <div class="diagram">${diagramSvg(layout, high, inNames)}</div>
         </div>
       </div>
       <div class="tt-lt-export">
@@ -306,6 +348,22 @@ function mount(root) {
   };
 
   root.addEventListener('click', async (e) => {
+    const lvl = e.target.closest('[data-level]');
+    if (lvl) {
+      const i = Number(lvl.dataset.level);
+      levels[i] = levels[i] ? 0 : 1;
+      const fromButton = lvl.tagName === 'BUTTON';
+      render(fromButton ? `button[data-level="${i}"]` : null);
+      return;
+    }
+    const rowCell = e.target.closest('td[data-row]');
+    if (rowCell) {
+      const r = Number(rowCell.dataset.row);
+      const n = state.inNames.length;
+      levels = state.inNames.map((_, i) => inputBit(r, i, n));
+      render();
+      return;
+    }
     const cell = e.target.closest('[data-cell]');
     if (cell) {
       const [o, r] = cell.dataset.cell.split(':').map(Number);
