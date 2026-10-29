@@ -9,6 +9,8 @@ In this guide you'll learn how to use a Python tool to convert a lookup table in
 
 Thanks to community member **maehw** for writing this article.
 
+For smaller tables (up to 4 inputs) you can also use the in-browser [logic table tool](../logic_table/), which copies the gates straight into Wokwi.
+
 ## Truth tables
 
 You have already learned about combinational logic that can be described by using a truth table, e.g. the [full adder](https://tinytapeout.com/digital_design/puzzle_adder/).
