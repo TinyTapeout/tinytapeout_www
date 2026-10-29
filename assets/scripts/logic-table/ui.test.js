@@ -107,7 +107,8 @@ describe('logic table widget', () => {
 
   it('explains an empty circuit after clearing the table', () => {
     click('[data-act="clear"]');
-    expect(exprs()).toEqual(['S = 0', 'Cout = 0']);
+    expect(headers()).toEqual(['A', 'B', 'C', 'Y0', 'Y1']);
+    expect(exprs()).toEqual(['Y0 = 0', 'Y1 = 0']);
     expect($('.note').textContent).toMatch(/no gates are needed/);
     expect($$('.tt-lt-svg .pin.unused').length).toBe(3);
   });

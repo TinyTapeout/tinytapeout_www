@@ -387,8 +387,8 @@ function mount(root) {
     else if (act === 'out-') resize(n, m - 1);
     else if (act === 'out+') resize(n, m + 1);
     else if (act === 'clear') {
-      state.columns = state.columns.map((c) => c.map(() => false));
-      state.example = '';
+      // Same size, all 0, default names (A, B, … and Y0, Y1, …).
+      state = { example: '', ...resizeTable({ inNames: [], outNames: [], columns: [] }, n, m) };
     } else if (act === 'copy') {
       try {
         await copyText(root._wokwiJson);
