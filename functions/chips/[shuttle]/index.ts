@@ -18,7 +18,13 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   const { shuttle } = context.params as { shuttle: string };
 
   const basePage = await context.env.ASSETS.fetch(context.request);
-  if (!basePage) {
+  // The asset server answers /chips/{shuttle} (no trailing slash) with a 308 redirect
+  // to /chips/{shuttle}/ whose body is empty. Pass redirects through untouched instead
+  // of wrapping the empty body in a 200 response (which rendered as a blank page).
+  if (basePage.status >= 300 && basePage.status < 400) {
+    return basePage;
+  }
+  if (!basePage.ok) {
     return notFound(context);
   }
 
