@@ -60,13 +60,17 @@ You only get 1 chip. If you want more chips you have to order more of the devkit
 
 ## What is a 'tile'?
 
-A tile is a unit of area on the chip. For TT04 to TT10, a tile is about 160x100 um. You can buy as many tiles as you need for your design. See [What is the price?](#what-is-the-price). 
+A tile is a unit of area on the chip, and the chip is made up of multiple tiles. These tiles contain different user-submitted projects. A project gets at least one tile, which is roughly equivalent to 1000 digital logic gates.
 
-A chip is made up of a grid of tiles from all participants on a specific tapeout. See [Tiny Tapeout Chips](https://www.tinytapeout.com/chips/).
+A chip is made up of a grid of tiles from all participants on a specific tapeout. See [Tiny Tapeout Chips](/chips/).
+
+You can buy as many tiles as you need for your design. See [What is the price?](#what-is-the-price).
+
+The purchase of a tile does not include a devkit board, but one can be purchased.
 
 ## What is a 'devkit'?
 
-A devkit (short for development kit) (also stylised as devkit or dev-kit) is a set of components that provide an interface
+A devkit (short for development kit, aka "DevKit" or "dev-kit") is a set of components that provide an interface
 to the shuttle's ASIC. The devkit consists of two PCBs (printed circuit boards) - a 'demo board' and a 'breakout board'.
 
 The breakout board contains the shuttle's ASIC, and connects to the demo board via a set of pins. The demo board contains
@@ -81,7 +85,14 @@ When you purchase 1 devkit, you will receive 1 demo board and 1 breakout (aka "c
 
 ## I already have a demo board. Can I get my tile on only a breakout board without buying an additional demo board?
 
-No, not at this time. The devkits are sold only as a pre-assembled set of both the demo board and the breakout board. We don't sell the breakout board separately, and we don't sell the chip separately either. See [Can I get the chip by itself?](#can-i-get-the-chip-by-itself)
+No, not at this time. The devkits are sold only as a pre-assembled set of both the demo board and the breakout board. 
+
+We generally don't sell the breakout board separately, and we don't sell the chip separately either. See [Can I get the chip by itself?](#can-i-get-the-chip-by-itself)
+
+Some prior shuttles may be available in the store:
+
+- [TT07](https://store.tinytapeout.com/products/TT07-ASIC-IC-kit-p759305511)
+- [TT05](https://store.tinytapeout.com/products/TT05-ASIC-IC-kit-p684655153)
 
 ## When do I have to provide my shipping address?
 
