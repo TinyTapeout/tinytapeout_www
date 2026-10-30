@@ -2,6 +2,9 @@
 // Copyright (C) 2024, Tiny Tapeout LTD
 
 import { fetchTextAsset, type Context } from '../utils/context.js';
+import type { Response as WorkerResponse } from '@cloudflare/workers-types';
+
+const cache = caches.default;
 
 export const scanchainShuttles = ['tt01', 'tt02', 'tt03'];
 
@@ -47,7 +50,22 @@ export async function loadShuttleIndex<F extends keyof IShuttleIndexProject>(
 }
 
 export async function loadShuttleMapSvg(context: Context, shuttle: string) {
-  return await fetchTextAsset(context, `https://tinytapeout.com/chips/${shuttle}/map.svg`);
+  const url = `https://index.tinytapeout.com/${shuttle}/map?format=1`;
+  const cached = await cache.match(url);
+  // NOTE: ommited the isSkipCache() call, not sure if it's needed
+  if (cached) {
+    return cached.text();
+  }
+
+  const response = await fetch(url);
+  if (!response.ok) {
+    return null;
+  }
+
+  // NOTE: global.Response is not compatible with CloudFlare's version
+  // we're not using websockets, so we should be fine to change the type
+  context.waitUntil(cache.put(url, response.clone() as unknown as WorkerResponse));
+  return response.text();
 }
 
 const cmos5lShuttles = ['ttihp0p4'];

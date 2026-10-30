@@ -5,4 +5,6 @@ weight: 5
 type: news
 layout: landing
 hideChildrenFromMenu: true
+images:
+    - /news/social-preview
 ---

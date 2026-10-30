@@ -1,5 +1,5 @@
 baseURL = 'https://tinytapeout.com'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Tiny Tapeout'
 theme = ["learn", "hugo-shortcode-gallery"]
 enableGitInfo = true
@@ -20,8 +20,9 @@ enableGitInfo = true
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
-  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSeVc9YmYN5TYKsDpFGyPtZE6N3sstT2PcbTdee-bK8FMjQwEQ/viewform?usp=header"
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSdicny_09kEUDblDar6dNW8qQ-xwLxrykGGfS2-RGk4XgyvGg/viewform?usp=header"
   workshopFoundry = "sky"
+  wokwiWizardShuttle = "ttsky26d" # to disable, simply comment it out
 
 [outputs]
   home = [ "HTML", "RSS", "JSON"]
@@ -30,21 +31,22 @@ enableGitInfo = true
   [Languages.en]
     title = "Quicker, easier and cheaper to make your own chip!"
     weight = 1
-    languageName = "English"
+    label = "English"
 
   [Languages.es]
     title = "¡Hacer tu propio chip de forma más rápida, más fácil y más barata!"
     weight = 2
-    languageName = "Español"
+    label = "Español"
+    disabled = true
 
   [Languages.ua]
     title = "Документація українською"
     weight = 3
-    languageName = "Українська"
+    label = "Українська"
+    disabled = true
 
   [Languages.it]
     title = "Crea il tuo microchip in modo più veloce, più semplice ed economico!"
     weight = 4
-    languageName = "Italiano"
-
-#disableLanguages = ['es', 'it']
+    label = "Italiano"
+    disabled = true

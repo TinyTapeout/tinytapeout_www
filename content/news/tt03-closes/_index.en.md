@@ -19,6 +19,6 @@ The designs are as diverse as the designers. Some personal picks: a PDP8 CPU, a 
 
 Check out the [TT03 datasheet](https://github.com/TinyTapeout/tinytapeout-03/blob/main/datasheet.pdf) with all stats and project listings.
 
-A huge thanks to Efabless for sponsoring the project, all of the contributors, and everyone who submitted a design.
+A huge thanks to [Efabless](https://chipfoundry.io/efabless) for sponsoring the project, all of the contributors, and everyone who submitted a design.
 
 If you missed TT03 and want to take part in TT04, check our [Discord](https://discord.com/channels/1009193568256135208/1015911926053740544) to get updates on progress, improvements, and dates.

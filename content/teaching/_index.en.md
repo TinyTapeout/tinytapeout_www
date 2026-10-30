@@ -18,7 +18,7 @@ Our pricing model makes it easy to put many designs onto one chip that is then s
 {{< pricing-table plans=`[
   {
     "name": "Small class",
-    "price": "€565",
+    "price": "€665",
     "features": ["Up to 5 Projects", "1 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=5&pcbs=1"
   },

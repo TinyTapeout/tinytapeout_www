@@ -22,6 +22,36 @@ If you end up with pins which are not being driven and are floating, please eith
 [`conb`](https://skywater-pdk.readthedocs.io/en/main/contents/libraries/sky130_fd_sc_hd/cells/conb/README.html) cells -
 see our guide on [laying out standard cells with Magic](/guides/laying-standard-cells-with-magic).
 
+There is an analog switch (`tt_asw_3v3`) placed between the analog pins of your project and the output pads of the chip.
+The design files of the [analog switch are available on GitHub](https://github.com/TinyTapeout/tt-multiplexer/tree/dev/asw/sky130/tt_asw_3v3).
+The overall GPIO configuration of the chip can be found there [too](https://github.com/TinyTapeout/tt-multiplexer/blob/main/ol2/tt_top/openframe_project_wrapper.v#L166).
+It is shown below for convenience but is subject to change at any time.
+
+```verilog
+	// GPIO configuration
+	// ------------------
+
+
+	localparam [15:0] TT_PAD_CTRL   = 16'b0_00_00_0_0_0_0_0_0_0_0_001;
+	localparam [15:0] TT_PAD_IN     = 16'b0_00_00_0_0_0_0_0_0_0_0_001;
+	localparam [15:0] TT_PAD_OUT    = 16'b0_11_00_1_0_0_0_0_0_0_0_110;
+	localparam [15:0] TT_PAD_INOUT  = 16'b0_10_00_0_0_0_0_0_0_0_0_110;
+	localparam [15:0] TT_PAD_ANALOG = 16'b1_00_00_1_0_0_0_0_0_0_0_000;
+	//                                    | |     | | | | | | | |  |
+	// [   15] Analog path select --------' |     | | | | | | | |  |
+	// [14:13] Output wiring mode ----------'     | | | | | | | |  |
+	// [   10] gpio_inp_dis       ----------------' | | | | | | |  |
+	// [    9] gpio_ib_mode_sel   ------------------' | | | | | |  |
+	// [    8] gpio_vtrip_sel     --------------------' | | | | |  |
+	// [    7] gpio_slow_sel      ----------------------' | | | |  |
+	// [    6] gpio_holdover      ------------------------' | | |  |
+	// [    5] gpio_analog_en     --------------------------' | |  |
+	// [    4] gpio_analog_sel    ----------------------------' |  |
+	// [    3] gpio_analog_pol    ------------------------------'  |
+	// [ 2: 0] gpio_dm[2:0]       ---------------------------------'
+```
+
+
 ## Specifications and limitations - sky130A
 
 The path between the analog pads and your project (the ua pins) is expected to have the following properties:

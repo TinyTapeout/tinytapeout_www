@@ -6,7 +6,7 @@ weight: 150
 
 # Tiny Tapeout Terms and Conditions
 
-These Terms and Conditions (the “**Terms**”) govern your participation in the Tiny Tapeout semiconductor chip design program (the “**Program**”). The Terms constitute a binding agreement between you and Tiny Tapeout Ltd. (“**Tiny Tapeout**”). By submitting a Design (as defined below) or otherwise participating in the Program, you indicate your acceptance of these Terms. If you do not agree to these Terms, you may not participate in the Program. If you are an individual entering into these Terms on behalf of a legal entity, you hereby represent and warrant that you are authorized to enter into these Terms on behalf of such entity and bind such entity to these Terms. 
+These Terms and Conditions (the “**Terms**”) govern your participation in the Tiny Tapeout semiconductor chip design program (the “**Program**”). The Terms constitute a binding agreement between you and Tiny Tapeout B.V. (“**Tiny Tapeout**”). By submitting a Design (as defined below) or otherwise participating in the Program, you indicate your acceptance of these Terms. If you do not agree to these Terms, you may not participate in the Program. If you are an individual entering into these Terms on behalf of a legal entity, you hereby represent and warrant that you are authorized to enter into these Terms on behalf of such entity and bind such entity to these Terms. 
 
 
 
@@ -154,8 +154,8 @@ You may not assign or transfer your rights and obligations under the Terms witho
 
 
 12.5.
-These Terms shall be governed by the laws of the State of Israel, without reference to its conflict of laws rules. Any dispute, claim or controversy arising out of, connected with, or relating to these Terms will be submitted to the sole and exclusive jurisdiction of the competent court located in Tel Aviv, Israel.   
+These Terms shall be governed by the laws of the Netherlands, without reference to its conflict of laws rules. Any dispute, claim or controversy arising out of, connected with, or relating to these Terms will be submitted to the sole and exclusive jurisdiction of the competent court located in Amsterdam, the Netherlands.   
 
 ## Last Updated
 
-February 11th, 2026.
+August 7th, 2026.

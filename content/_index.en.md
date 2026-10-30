@@ -15,7 +15,8 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 
 # Our open shuttles
 
-{{< countdown shuttle="ttsky26c" name="SKY26c"  deadline="2026-09-07T20:00:00Z" pcbs="80" >}}
+{{< countdown shuttle="ttsky26d" name="SKY26d"  deadline="2026-11-30T20:00:00Z" pcbs="80" >}}
+{{< countdown shuttle="ttgf26c" name="GF26c"  deadline="2026-12-07T20:00:00Z" pcbs="200" >}}
 
 # Get started
 
@@ -42,7 +43,7 @@ Read how it works [here](https://www.techrxiv.org/users/799365/articles/1165896-
 
 - Pricing depends on the size of your design, the shuttle you use and whether its analog or digital.
 - Use the [calculator to check current prices](https://app.tinytapeout.com/calculator?tiles=1&pcbs=1).
-- Early bird prices are currently reserved for projects affected by the Efabless shutdown.
+- Early bird prices offer an opportunity for you to tapeout at a lower cost. Early bird prices are limited per shuttle, and are only available to individuals.
 - By making an order, you agree to our [terms of service](terms).
 
 {{% button href="https://app.tinytapeout.com/projects/create" icon="fas fa-download" %}}Submit your design{{% /button %}}

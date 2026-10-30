@@ -41,7 +41,7 @@ submission on your website to ensure that the latest version is included. Follow
 {{< figure src="images/submit_design_4.png" title="Submitting a new revision of a project">}}
 
 {{%notice tip%}}
-If you want to swap your Wokwi design for a Verilog project, then follow our guide on [submitting a Verilog project](/guides/submit-verilog-project) to the shuttle.
+If you want to swap your Wokwi design for a Verilog project, then follow our guide on [changing your submitted project repo](/guides/change-project-repo/).
 {{%/notice%}}
 
 {{% notice warning %}}

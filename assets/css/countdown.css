@@ -103,7 +103,9 @@
 }
 
 .shuttle-stats .item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
   align-items: center;
 }
 

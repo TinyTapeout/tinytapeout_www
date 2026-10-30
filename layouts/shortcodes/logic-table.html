@@ -1,0 +1,19 @@
+{{/*
+  Interactive truth table that reduces to logic gates and copies them to Wokwi.
+  Usage: {{< logic-table >}} or {{< logic-table example="seven-segment" >}}
+  Examples: full-adder (default), half-adder, mux, seven-segment
+*/}}
+<div class="tt-lt" data-example="{{ .Get "example" | default "full-adder" }}">
+  <noscript>This interactive logic table needs JavaScript.</noscript>
+</div>
+
+<!-- Only load the logic table assets once per page -->
+{{ if not (.Page.Scratch.Get "logic-table:done") }}
+  {{ $css := resources.Get "css/logic-table.css" | resources.Minify }}
+  <style>{{ $css.Content | safeCSS }}</style>
+
+  {{ $js := resources.Get "scripts/logic-table.js" | js.Build | resources.Minify | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+  {{ .Page.Scratch.Set "logic-table:done" true }}
+{{ end }}

@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/render.png
     alt: A render of a chip. Wires in blue, and the background in chrome.
+    pos: 0% 5%
 ---
 
 Welcome to our new news section. We hope to fill this spot with plenty of new and exciting news about the world of open

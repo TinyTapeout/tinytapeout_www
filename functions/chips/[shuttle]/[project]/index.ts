@@ -62,7 +62,13 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   }
 
   const shuttleMapSvg = await loadShuttleMapSvg(context, shuttle);
-  const title = `${projectInfo.address} ${projectInfo.title}`;
+
+  var title: string;
+  if (projectInfo.subtile_addr) {
+    title = `${projectInfo.address}-${projectInfo.subtile_addr} ${projectInfo.title}`;
+  } else {
+    title = `${projectInfo.address} ${projectInfo.title}`;
+  }
 
   const previewImageUrl = getBaseURL(context) + `/chips/${shuttle}/${project}/social-preview`;
 

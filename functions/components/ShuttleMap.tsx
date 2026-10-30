@@ -8,10 +8,16 @@ export function ShuttleMap({
   shuttleMapSvg,
 }: {
   shuttleMapSvg: string;
-  muxAddress: number;
+  muxAddress?: number;
 }) {
-  const svg = shuttleMapSvg
-    .replaceAll('%MUX_ADDRESS%', muxAddress.toString())
-    .replaceAll('/* %EXTRA_STYLES% */', 'rect.tile.project {fill: #e9e;}');
-  return <div style={{ textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: svg }} />;
+  if (muxAddress) {
+    const svg = shuttleMapSvg
+      .replaceAll('%MUX_ADDRESS%', muxAddress.toString())
+      .replaceAll('/* %EXTRA_STYLES% */', 'rect.tile.project {fill: #e9e;}');
+    return <div style={{ textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: svg }} />;
+  } else {
+    return (
+      <div style={{ textAlign: 'center' }} dangerouslySetInnerHTML={{ __html: shuttleMapSvg }} />
+    );
+  }
 }

@@ -1,11 +1,11 @@
 ---
-title: 'PCB (Tiny Tapeout 4 and onwards)'
-linkTitle: PCB (TT04+)
-description: 'PCBs for Tiny Tapeout 4 and onwards'
+title: 'PCB (Tiny Tapeout 4-8)'
+linkTitle: PCB (TT04-08)
+description: 'PCBs for Tiny Tapeout 4-8'
 weight: 50
 ---
 
-{{< figure src="images/tt04_board_annotated.jpeg" title="PCB for TT04 and beyond" >}}
+{{< figure src="images/tt04_board_annotated.jpeg" title="PCB for TT04-TT08" >}}
 
 ## Breakout board
 

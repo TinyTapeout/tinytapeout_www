@@ -6,7 +6,8 @@ format = "markdown"
 accept = [
     200,
     429,
-    403
+    403,
+    202     # ieee.org returns this
 ]
 
 exclude = [
@@ -18,6 +19,7 @@ exclude = [
     "efabless-faq",
 
     # ignore certain websites
-    '^https://(www\.)?linkedin\.com',   # returns html code 999
+    '^https://(www\.)?(.+\.)?linkedin\.com',   # returns html code 999
     '^https://(www\.)?nyu\.edu',        # returns 405
+    '^https://(www\.)?efabless\.com',   # dead
 ]

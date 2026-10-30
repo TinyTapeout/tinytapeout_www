@@ -9,6 +9,7 @@ layout: single
 cover:
     image: images/image2.jpg
     alt: Supercon 2022 Matt Venn's Tiny Tapeout Brings Chip Design to the Masses
+    social_options: crop smart
 ---
 
 Tiny Tapeout made its first major conference appearance at Hackaday Supercon 2022, where Matt Venn took the stage to introduce the project to the hardware community.

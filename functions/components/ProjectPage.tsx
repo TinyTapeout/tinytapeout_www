@@ -51,13 +51,20 @@ export function ProjectPage({
   });
   const threeDViewerUrl = `https://gds-viewer.tinytapeout.com/?${threeDViewerParams.toString()}`;
 
+  const tinyExplorerParams = new URLSearchParams({
+    file: oasUrl,
+    pdk: getShuttlePdk(shuttle),
+  });
+  const tinyExplorerUrl = `https://gds-explorer.tinytapeout.com/viewer?${tinyExplorerParams.toString()}`;
+
   const vgaPlaygroundParams = new URLSearchParams({ repo: project.repo, ref: project.commit });
   const vgaPlaygroundUrl = `https://vga-playground.com/?${vgaPlaygroundParams.toString()}`;
 
   return (
     <div>
       <h2>
-        {project.address} : {project.title}
+        {project.address}
+        {project.subtile_addr ? `-${project.subtile_addr}` : null} : {project.title}
       </h2>
 
       <img
@@ -79,6 +86,11 @@ export function ProjectPage({
         <li>
           <a href={threeDViewerUrl} target="_blank" rel="noopener">
             Open in 3D viewer
+          </a>
+        </li>
+        <li>
+          <a href={tinyExplorerUrl} target="_blank" rel="noopener">
+            Open in Tiny Tapeout Explorer
           </a>
         </li>
         {isTinyVGACompatible(project.pinout) && (
@@ -115,7 +127,7 @@ export function ProjectPage({
       {hasAnalogPins && (
         <>
           <h3>Analog pins</h3>
-          <AnalogPinout project={project} />
+          <AnalogPinout shuttle={shuttle} project={project} />
         </>
       )}
 

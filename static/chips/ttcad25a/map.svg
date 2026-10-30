@@ -1,0 +1,4438 @@
+<svg
+  width="500"
+  viewBox="0 0 3166.63 4766.63"
+  style="max-width:100%"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    rect.spine {
+      fill: #dde;
+    }
+
+    rect.ctrl {
+      fill: orange;
+    }
+
+    rect.mux {
+      fill: purple;
+    }
+
+    rect.analog-mux {
+      fill: #4e674e;
+    }
+
+    rect.mux:hover {
+      fill: #aa00aa;
+    }
+
+    rect.tile {
+      fill: #d8d8d8;
+    }
+
+    rect.tile.project {
+      fill: #d0d;
+    }
+
+    rect.tile.analog {
+      fill: darkseagreen;
+    }
+
+    rect.tile.project:hover {
+      fill: cyan;
+    }
+
+    rect.tile.reserved {
+      fill: #ebe;
+    }
+
+    rect.tile.program-reserved {
+      fill: #c8e6c9;
+    }
+
+    rect.tile.dimmed {
+      fill: #e9e;
+    }
+
+    rect.tile.analog.dimmed {
+      fill: #b1c3b1;
+    }
+
+    rect.tile.highlight {
+      fill: #08d;
+    }
+  </style>
+  <!--$-->
+  <style>
+    rect.tile.project[data-addr="%MUX_ADDRESS%"] {
+      fill: #08d;
+    }
+
+    /* %EXTRA_STYLES% */
+  </style>
+  <rect
+    x="0"
+    y="0"
+    width="3166.63"
+    height="4766.63"
+    fill="#eee"
+    stroke="black"
+    stroke-width="5"
+  ></rect>
+  <rect
+    class="spine"
+    x="1532.3999999999999"
+    y="223.26999999999998"
+    width="100"
+    height="4284"
+  ></rect>
+  <rect
+    class="ctrl"
+    x="1489.48"
+    y="2328.8299999999995"
+    width="185.84"
+    height="111.52"
+  >
+    <title>Controller</title>
+  </rect>
+  <!--$-->
+  <rect class="mux" x="99.36" y="216.07" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="spine"
+    x="1488.56"
+    y="223.26999999999998"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect class="mux" x="1676.24" y="216.07" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="mux" x="99.36" y="501.67" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="spine" x="1488.56" y="508.87" width="187.68" height="40"></rect>
+  <rect class="mux" x="1676.24" y="501.67" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="mux" x="99.36" y="787.27" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect class="spine" x="1488.56" y="794.47" width="187.68" height="40"></rect>
+  <rect class="mux" x="1676.24" y="787.27" width="1389.2" height="54.4">
+    <title>Mux</title>
+  </rect>
+  <rect
+    class="mux"
+    x="99.36"
+    y="1072.8700000000001"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a10"
+    class="spine"
+    x="1488.56"
+    y="1080.0700000000002"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a110"
+    class="mux"
+    x="1676.24"
+    y="1072.8700000000001"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a120"
+    class="mux"
+    x="99.36"
+    y="1358.47"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a13"
+    class="spine"
+    x="1488.56"
+    y="1365.67"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a140"
+    class="mux"
+    x="1676.24"
+    y="1358.47"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a150"
+    class="mux"
+    x="99.36"
+    y="1644.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a16"
+    class="spine"
+    x="1488.56"
+    y="1651.27"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a170"
+    class="analog-mux"
+    x="1676.24"
+    y="1644.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a180"
+    class="mux"
+    x="99.36"
+    y="1929.67"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a19"
+    class="spine"
+    x="1488.56"
+    y="1936.8700000000001"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a200"
+    class="mux"
+    x="1676.24"
+    y="1929.67"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a210"
+    class="mux"
+    x="99.36"
+    y="2215.2700000000004"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a22"
+    class="spine"
+    x="1488.56"
+    y="2222.4700000000003"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a230"
+    class="mux"
+    x="1676.24"
+    y="2215.2700000000004"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a240"
+    class="mux"
+    x="99.36"
+    y="2500.8700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a25"
+    class="spine"
+    x="1488.56"
+    y="2508.07"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a260"
+    class="mux"
+    x="1676.24"
+    y="2500.8700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a270"
+    class="mux"
+    x="99.36"
+    y="2786.4700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a28"
+    class="spine"
+    x="1488.56"
+    y="2793.67"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a290"
+    class="mux"
+    x="1676.24"
+    y="2786.4700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a300"
+    class="mux"
+    x="99.36"
+    y="3072.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a31"
+    class="spine"
+    x="1488.56"
+    y="3079.27"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a320"
+    class="mux"
+    x="1676.24"
+    y="3072.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a330"
+    class="analog-mux"
+    x="99.36"
+    y="3357.6700000000005"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Analog Mux</title>
+  </rect>
+  <rect
+    data-hk="02a34"
+    class="spine"
+    x="1488.56"
+    y="3364.8700000000003"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a350"
+    class="mux"
+    x="1676.24"
+    y="3357.6700000000005"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a360"
+    class="mux"
+    x="99.36"
+    y="3643.2700000000004"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a37"
+    class="spine"
+    x="1488.56"
+    y="3650.4700000000003"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a380"
+    class="mux"
+    x="1676.24"
+    y="3643.2700000000004"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a390"
+    class="mux"
+    x="99.36"
+    y="3928.8700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a40"
+    class="spine"
+    x="1488.56"
+    y="3936.07"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a410"
+    class="mux"
+    x="1676.24"
+    y="3928.8700000000003"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a420"
+    class="mux"
+    x="99.36"
+    y="4214.47"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a43"
+    class="spine"
+    x="1488.56"
+    y="4221.67"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a440"
+    class="mux"
+    x="1676.24"
+    y="4214.47"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a450"
+    class="mux"
+    x="99.36"
+    y="4500.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <rect
+    data-hk="02a46"
+    class="spine"
+    x="1488.56"
+    y="4507.2699999999995"
+    width="187.68"
+    height="40"
+  ></rect>
+  <rect
+    data-hk="02a470"
+    class="mux"
+    x="1676.24"
+    y="4500.07"
+    width="1389.2"
+    height="54.4"
+  >
+    <title>Mux</title>
+  </rect>
+  <!--$--><svg>
+    <a href="/chips/ttcad25a/000">
+      <rect
+        class="tile project"
+        data-addr="0"
+        x="1327.5599999999997"
+        y="2386.629999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_chip_rom <!--$-->(Chip ROM)</title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/001">
+      <rect
+        class="tile project"
+        data-addr="1"
+        x="1327.5599999999997"
+        y="2557.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_factory_test <!--$-->(Tiny Tapeout Factory Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/265">
+      <rect
+        class="tile project analog"
+        data-addr="265"
+        x="632.04"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_oscillating_bones <!--$-->(Oscillating Bones)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/269">
+      <rect
+        class="tile project analog"
+        data-addr="269"
+        x="284.28000000000003"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_urish_charge_pump <!--$-->(Dickson Charge Pump)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/257">
+      <rect
+        class="tile project analog"
+        data-addr="257"
+        x="1327.5599999999997"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_sonos_flash_party <!--$-->(SONOS Flash Party)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/271">
+      <rect
+        class="tile project analog"
+        data-addr="271"
+        x="110.4"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_4Bit_SAR_ADC <!--$-->(4-Bit Successive Approximation
+          ADC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/514">
+      <rect
+        class="tile project analog"
+        data-addr="514"
+        x="1153.6799999999998"
+        y="3414.7899999999995"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_cw_vref <!--$-->(Current-Mode Bandgap Reference)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/526">
+      <rect
+        class="tile project analog"
+        data-addr="526"
+        x="110.4"
+        y="3414.7899999999995"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_tt08_aicd_playground <!--$-->(AICD Playground)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/239">
+      <rect
+        class="tile project analog"
+        data-addr="239"
+        x="2893.3999999999996"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_tnt_diff_rx <!--$-->(TT08 Differential Receiver test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg>
+    <a href="/chips/ttcad25a/911">
+      <rect
+        class="tile project"
+        data-addr="911"
+        x="110.4"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rejunity_vga_logo <!--$-->(VGA Tiny Logo (1 tile))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a10">
+    <a href="/chips/ttcad25a/909">
+      <rect
+        class="tile project"
+        data-addr="909"
+        x="284.28000000000003"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_tommythorn_maxbw <!--$-->(Asynchronous Multiplier)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a11">
+    <a href="/chips/ttcad25a/907">
+      <rect
+        class="tile project"
+        data-addr="907"
+        x="458.16"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rebeccargb_universal_decoder <!--$-->(Universal Binary
+          to Segment Decoder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a12">
+    <a href="/chips/ttcad25a/905">
+      <rect
+        class="tile project"
+        data-addr="905"
+        x="632.04"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_rgb_mixer <!--$-->(RGB Mixer demo5)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a13">
+    <a href="/chips/ttcad25a/903">
+      <rect
+        class="tile project"
+        data-addr="903"
+        x="805.92"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rebeccargb_hardware_utf8 <!--$-->(Hardware UTF
+          Encoder/Decoder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a14">
+    <a href="/chips/ttcad25a/846">
+      <rect
+        class="tile project"
+        data-addr="846"
+        x="2719.52"
+        y="3985.99"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_find_the_damn_issue <!--$-->(Find The Damn Issue)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a15">
+    <a href="/chips/ttcad25a/462">
+      <rect
+        class="tile project"
+        data-addr="462"
+        x="2893.3999999999996"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_brandonramos_VGA_Pong_with_NES_Controllers <!--$-->(VGA
+          Pong with NES Controllers)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a16">
+    <a href="/chips/ttcad25a/901">
+      <rect
+        class="tile project"
+        data-addr="901"
+        x="979.8"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_kb2ghz_xalu <!--$-->(4-bit minicomputer ALU)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a17">
+    <a href="/chips/ttcad25a/899">
+      <rect
+        class="tile project"
+        data-addr="899"
+        x="1153.6799999999998"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rebeccargb_intercal_alu <!--$-->(INTERCAL ALU)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a18">
+    <a href="/chips/ttcad25a/130">
+      <rect
+        class="tile project"
+        data-addr="130"
+        x="1153.6799999999998"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_a1k0n_demo <!--$-->(Demo by a1k0n)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a19">
+    <a href="/chips/ttcad25a/259">
+      <rect
+        class="tile project analog"
+        data-addr="259"
+        x="1153.6799999999998"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_rburt16_bias_generator <!--$-->(Bias Generator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a20">
+    <a href="/chips/ttcad25a/196">
+      <rect
+        class="tile project"
+        data-addr="196"
+        x="2024"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_zec_square1 <!--$-->("SQUARE-1": VGA/audio demo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a21">
+    <a href="/chips/ttcad25a/198">
+      <rect
+        class="tile project"
+        data-addr="198"
+        x="2197.88"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_jmack2201 <!--$-->(Sprite Bouncer with Looping
+          Background Options)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a22">
+    <a href="/chips/ttcad25a/897">
+      <rect
+        class="tile project"
+        data-addr="897"
+        x="1327.5599999999997"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_ran_DanielZhu <!--$-->(Dice)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a23">
+    <a href="/chips/ttcad25a/200">
+      <rect
+        class="tile project"
+        data-addr="200"
+        x="2371.76"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_gfg_development_tinymandelbrot <!--$-->(TinyMandelbrot)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a24">
+    <a href="/chips/ttcad25a/961">
+      <rect
+        class="tile project"
+        data-addr="961"
+        x="1676.24"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_LnL_SoC <!--$-->(Lab and Lectures SoC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a25">
+    <a href="/chips/ttcad25a/486">
+      <rect
+        class="tile project analog"
+        data-addr="486"
+        x="2197.88"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_htfab_pi_snake <!--$-->(Pi Snake)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a26">
+    <a href="/chips/ttcad25a/963">
+      <rect
+        class="tile project"
+        data-addr="963"
+        x="1850.12"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_quarren42_demoscene_top <!--$-->(asic design is my
+          passion)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a27">
+    <a href="/chips/ttcad25a/965">
+      <rect
+        class="tile project"
+        data-addr="965"
+        x="2024"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_crispy_vga <!--$-->(Crispy VGA)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a28">
+    <a href="/chips/ttcad25a/202">
+      <rect
+        class="tile project"
+        data-addr="202"
+        x="2545.64"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_MichaelBell_canon <!--$-->(TT08 Pachelbel's Canon demo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a29">
+    <a href="/chips/ttcad25a/967">
+      <rect
+        class="tile project"
+        data-addr="967"
+        x="2197.88"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_shuangyu_top <!--$-->(Calculator)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a30">
+    <a href="/chips/ttcad25a/969">
+      <rect
+        class="tile project"
+        data-addr="969"
+        x="2371.76"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_407306064811090945 <!--$-->(DDR throughput and
+          flop aperature test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a31">
+    <a href="/chips/ttcad25a/522">
+      <rect
+        class="tile project analog"
+        data-addr="522"
+        x="458.16"
+        y="3414.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_08_sws <!--$-->(Sine Wave Synthesizer)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a32">
+    <a href="/chips/ttcad25a/971">
+      <rect
+        class="tile project"
+        data-addr="971"
+        x="2545.64"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_favoritohjs_scroller <!--$-->(VGA Scroller)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a33">
+    <a href="/chips/ttcad25a/204">
+      <rect
+        class="tile project"
+        data-addr="204"
+        x="2719.52"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_tt08_wirecube <!--$-->(Wirecube)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a34">
+    <a href="/chips/ttcad25a/973">
+      <rect
+        class="tile project"
+        data-addr="973"
+        x="2719.52"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_vga_glyph_mode <!--$-->(Glyph Mode)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a35">
+    <a href="/chips/ttcad25a/642">
+      <rect
+        class="tile project"
+        data-addr="642"
+        x="1153.6799999999998"
+        y="3700.3899999999994"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_a1k0n_vgadonut <!--$-->(VGA donut)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a36">
+    <a href="/chips/ttcad25a/975">
+      <rect
+        class="tile project"
+        data-addr="975"
+        x="2893.3999999999996"
+        y="4557.19"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_roy1707018 <!--$-->(RO)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a37">
+    <a href="/chips/ttcad25a/494">
+      <rect
+        class="tile project analog"
+        data-addr="494"
+        x="2893.3999999999996"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_analog_factory_test <!--$-->(TT08 Analog Factory Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a38">
+    <a href="/chips/ttcad25a/128">
+      <rect
+        class="tile project"
+        data-addr="128"
+        x="1327.5599999999997"
+        y="2672.229999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_sign_addsub <!--$-->(CMOS design of 4-bit Signed Adder
+          Subtractor)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a39">
+    <a href="/chips/ttcad25a/032">
+      <rect
+        class="tile project"
+        data-addr="32"
+        x="1327.5599999999997"
+        y="2272.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_patater_demokit <!--$-->(Patater Demo Kit Waggling
+          Rainbow on a Chip)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a40">
+    <a href="/chips/ttcad25a/520">
+      <rect
+        class="tile project analog"
+        data-addr="520"
+        x="632.04"
+        y="3414.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_algofoogle_tt08_vga_fun <!--$-->(TT08 VGA FUN!)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a41">
+    <a href="/chips/ttcad25a/169">
+      <rect
+        class="tile project"
+        data-addr="169"
+        x="632.04"
+        y="1815.4299999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_simon_cipher <!--$-->(simon_cipher)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a42">
+    <a href="/chips/ttcad25a/206">
+      <rect
+        class="tile project"
+        data-addr="206"
+        x="2893.3999999999996"
+        y="2557.9899999999993"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_thexeno_rgbw_controller <!--$-->(RGBW Color Processor)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a43">
+    <a href="/chips/ttcad25a/167">
+      <rect
+        class="tile project"
+        data-addr="167"
+        x="805.92"
+        y="1815.4299999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_demosiine_sda <!--$-->(DemoSiine)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a44">
+    <a href="/chips/ttcad25a/165">
+      <rect
+        class="tile project"
+        data-addr="165"
+        x="979.8"
+        y="1815.4299999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_bytex64_munch <!--$-->(Munch)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a45">
+    <a href="/chips/ttcad25a/229">
+      <rect
+        class="tile project analog"
+        data-addr="229"
+        x="2024"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_alexjaeger_ringoscillator <!--$-->(5MHz Ring Oscillator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a46">
+    <a href="/chips/ttcad25a/163">
+      <rect
+        class="tile project"
+        data-addr="163"
+        x="1153.6799999999998"
+        y="1815.4299999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_cfib_demo <!--$-->(cfib Demoscene Entry)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a47">
+    <a href="/chips/ttcad25a/161">
+      <rect
+        class="tile project"
+        data-addr="161"
+        x="1327.5599999999997"
+        y="1815.4299999999996"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_407852791999030273 <!--$-->(Simple 8 Bit ALU)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a48">
+    <a href="/chips/ttcad25a/296">
+      <rect
+        class="tile project"
+        data-addr="296"
+        x="632.04"
+        y="1701.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_Richard28277 <!--$-->(4-bit ALU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a49">
+    <a href="/chips/ttcad25a/294">
+      <rect
+        class="tile project"
+        data-addr="294"
+        x="805.92"
+        y="1701.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_betz_morse_keyer <!--$-->(Morse Code Keyer)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a50">
+    <a href="/chips/ttcad25a/292">
+      <rect
+        class="tile project"
+        data-addr="292"
+        x="979.8"
+        y="1701.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_nvious_graphics <!--$-->(nVious Graphics)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a51">
+    <a href="/chips/ttcad25a/290">
+      <rect
+        class="tile project"
+        data-addr="290"
+        x="1153.6799999999998"
+        y="1701.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_tiny_pll <!--$-->(Tiny PLL)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a52">
+    <a href="/chips/ttcad25a/288">
+      <rect
+        class="tile project"
+        data-addr="288"
+        x="1327.5599999999997"
+        y="1701.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_ezchips_calc <!--$-->(8-Bit Calculator)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a53">
+    <a href="/chips/ttcad25a/303">
+      <rect
+        class="tile project"
+        data-addr="303"
+        x="110.4"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_hack_cpu <!--$-->(HACK CPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a54">
+    <a href="/chips/ttcad25a/235">
+      <rect
+        class="tile project analog"
+        data-addr="235"
+        x="2545.64"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_noritsuna_Vctrl_LC_oscillator <!--$-->(Voltage
+          Controlled LC-Oscillator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a55">
+    <a href="/chips/ttcad25a/301">
+      <rect
+        class="tile project"
+        data-addr="301"
+        x="284.28000000000003"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_ring_divider <!--$-->(Divided Ring Oscillator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a56">
+    <a href="/chips/ttcad25a/484">
+      <rect
+        class="tile project analog"
+        data-addr="484"
+        x="2024"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_morningjava_r2r_from_matt <!--$-->(Bucket Brigade)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a57">
+    <a href="/chips/ttcad25a/299">
+      <rect
+        class="tile project"
+        data-addr="299"
+        x="458.16"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_ephrenm_tsal <!--$-->(TSAL_TT)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a58">
+    <a href="/chips/ttcad25a/297">
+      <rect
+        class="tile project"
+        data-addr="297"
+        x="632.04"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_kapilan_alarm <!--$-->(Alarm Clock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a59">
+    <a href="/chips/ttcad25a/014">
+      <rect
+        class="tile project"
+        data-addr="14"
+        x="110.4"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_stochastic_addmultiply_CL123abc <!--$-->(Stochastic
+          Multiplier, Adder and Self-Multiplier)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a60">
+    <a href="/chips/ttcad25a/295">
+      <rect
+        class="tile project"
+        data-addr="295"
+        x="805.92"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_407760296956596225 <!--$-->(tt08-octal-alu)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a61">
+    <a href="/chips/ttcad25a/012">
+      <rect
+        class="tile project"
+        data-addr="12"
+        x="284.28000000000003"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_dlfloatmac <!--$-->(DL float MAC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a62">
+    <a href="/chips/ttcad25a/492">
+      <rect
+        class="tile project analog"
+        data-addr="492"
+        x="2719.52"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_wakki_0123_Raw_Transistors <!--$-->(Raw_Transistors)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a63">
+    <a href="/chips/ttcad25a/293">
+      <rect
+        class="tile project"
+        data-addr="293"
+        x="979.8"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_faramire_rotary_ring_wrapper <!--$-->(Rotary Encoder
+          WS2812B Control)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a64">
+    <a href="/chips/ttcad25a/227">
+      <rect
+        class="tile project analog"
+        data-addr="227"
+        x="1850.12"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_devstdin_LDO_OSC <!--$-->(LDO BG IREF OSC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a65">
+    <a href="/chips/ttcad25a/010">
+      <rect
+        class="tile project"
+        data-addr="10"
+        x="458.16"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_frequency_counter <!--$-->(Frequency Counter SSD1306
+          OLED)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a66">
+    <a href="/chips/ttcad25a/291">
+      <rect
+        class="tile project"
+        data-addr="291"
+        x="1153.6799999999998"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rom_test <!--$-->(TT08 SKY130 ROM 'YOLO' Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a67">
+    <a href="/chips/ttcad25a/289">
+      <rect
+        class="tile project"
+        data-addr="289"
+        x="1327.5599999999997"
+        y="1529.8299999999997"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_i2c_peripheral_stevej <!--$-->(i2c peripherals: leading
+          zero count and fnv-1a hash)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a68">
+    <a href="/chips/ttcad25a/008">
+      <rect
+        class="tile project"
+        data-addr="8"
+        x="632.04"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_yuri_panchul_schoolriscv_cpu_with_fibonacci_program
+          <!--$-->(schoolRISCV CPU with Fibonacci program)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a69">
+    <a href="/chips/ttcad25a/430">
+      <rect
+        class="tile project"
+        data-addr="430"
+        x="110.4"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_yuri_panchul_adder_with_flow_control <!--$-->(Adder with
+          Flow Control)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a70">
+    <a href="/chips/ttcad25a/428">
+      <rect
+        class="tile project"
+        data-addr="428"
+        x="284.28000000000003"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_brailliance <!--$-->(Brailliance)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a71">
+    <a href="/chips/ttcad25a/426">
+      <rect
+        class="tile project"
+        data-addr="426"
+        x="458.16"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_nyan <!--$-->(nyan)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a72">
+    <a href="/chips/ttcad25a/006">
+      <rect
+        class="tile project"
+        data-addr="6"
+        x="805.92"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_MichaelBell_mandelbrot <!--$-->(VGA Mandelbrot)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a73">
+    <a href="/chips/ttcad25a/267">
+      <rect
+        class="tile project analog"
+        data-addr="267"
+        x="458.16"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_ssp_opamp <!--$-->(2-stage Opamp Designs)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a74">
+    <a href="/chips/ttcad25a/424">
+      <rect
+        class="tile project"
+        data-addr="424"
+        x="632.04"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_fountaincoder_top_ad <!--$-->(pulse_add)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a75">
+    <a href="/chips/ttcad25a/004">
+      <rect
+        class="tile project"
+        data-addr="4"
+        x="979.8"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_edwintorok <!--$-->(Rounding error)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a76">
+    <a href="/chips/ttcad25a/422">
+      <rect
+        class="tile project"
+        data-addr="422"
+        x="805.92"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_mac <!--$-->(MAC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a77">
+    <a href="/chips/ttcad25a/420">
+      <rect
+        class="tile project"
+        data-addr="420"
+        x="979.8"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_dpmu <!--$-->(DPMU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a78">
+    <a href="/chips/ttcad25a/418">
+      <rect
+        class="tile project"
+        data-addr="418"
+        x="1153.6799999999998"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_JAC_EE_segdecode <!--$-->(7 Segment Decode)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a79">
+    <a href="/chips/ttcad25a/416">
+      <rect
+        class="tile project"
+        data-addr="416"
+        x="1327.5599999999997"
+        y="1415.5899999999992"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_408118380088342529
+          <!--$-->(Traffic-light-sequence)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a80">
+    <a href="/chips/ttcad25a/431">
+      <rect
+        class="tile project"
+        data-addr="431"
+        x="110.4"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_shiftreg_test <!--$-->(TT08 SKY130 Shift Register 'YOLO'
+          Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a81">
+    <a href="/chips/ttcad25a/002">
+      <rect
+        class="tile project"
+        data-addr="2"
+        x="1153.6799999999998"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_yuri_panchul_sea_battle_vga_game <!--$-->(Sea Battle)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a82">
+    <a href="/chips/ttcad25a/429">
+      <rect
+        class="tile project"
+        data-addr="429"
+        x="284.28000000000003"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_benpayne_ps2_decoder <!--$-->(PS2 Decoder)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a83">
+    <a href="/chips/ttcad25a/427">
+      <rect
+        class="tile project"
+        data-addr="427"
+        x="458.16"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_meriac_play_tune <!--$-->(Super Mario Tune on A Piezo
+          Speaker)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a84">
+    <a href="/chips/ttcad25a/064">
+      <rect
+        class="tile project"
+        data-addr="64"
+        x="1676.24"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_comm_ic_bhavuk <!--$-->(Comm_IC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a85">
+    <a href="/chips/ttcad25a/425">
+      <rect
+        class="tile project"
+        data-addr="425"
+        x="632.04"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_daosvik_aesinvsbox <!--$-->(AES Inverse S-box)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a86">
+    <a href="/chips/ttcad25a/423">
+      <rect
+        class="tile project"
+        data-addr="423"
+        x="805.92"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_408216451206371329 <!--$-->(Logic Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a87">
+    <a href="/chips/ttcad25a/421">
+      <rect
+        class="tile project"
+        data-addr="421"
+        x="979.8"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_micro_tiles_container <!--$-->(Micro tile container)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a88">
+    <a href="/chips/ttcad25a/419">
+      <rect
+        class="tile project"
+        data-addr="419"
+        x="1153.6799999999998"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_cattuto_sr_latch <!--$-->(TT08 - experiments with
+          latch-based shift registers)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a89">
+    <a href="/chips/ttcad25a/066">
+      <rect
+        class="tile project"
+        data-addr="66"
+        x="1850.12"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_rejunity_vga_test01 <!--$-->(VGA Drop (audio/visual
+          demo))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a90">
+    <a href="/chips/ttcad25a/068">
+      <rect
+        class="tile project"
+        data-addr="68"
+        x="2024"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_silice <!--$-->(Warp)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a91">
+    <a href="/chips/ttcad25a/417">
+      <rect
+        class="tile project"
+        data-addr="417"
+        x="1327.5599999999997"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_408231820749720577 <!--$-->(Abacus Lock)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a92">
+    <a href="/chips/ttcad25a/258">
+      <rect
+        class="tile project"
+        data-addr="258"
+        x="1153.6799999999998"
+        y="2843.5899999999992"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_jayjaywong12 <!--$-->(mulmul)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a93">
+    <a href="/chips/ttcad25a/481">
+      <rect
+        class="tile project"
+        data-addr="481"
+        x="1676.24"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_emmyxu_obstacle_detection <!--$-->(Obstacle Detection)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a94">
+    <a href="/chips/ttcad25a/710">
+      <rect
+        class="tile project"
+        data-addr="710"
+        x="1676.24"
+        y="3700.3899999999994"
+        width="682.64"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_neural_navigators <!--$-->(Neural Net ASIC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a95">
+    <a href="/chips/ttcad25a/070">
+      <rect
+        class="tile project"
+        data-addr="70"
+        x="2197.88"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_a1k0n_nyancat <!--$-->(VGA Nyan Cat)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a96">
+    <a href="/chips/ttcad25a/483">
+      <rect
+        class="tile project"
+        data-addr="483"
+        x="1850.12"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_rebeccargb_styler <!--$-->(Styler)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a97">
+    <a href="/chips/ttcad25a/485">
+      <rect
+        class="tile project"
+        data-addr="485"
+        x="2024"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_resfuzzy <!--$-->(resfuzzy)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a98">
+    <a href="/chips/ttcad25a/487">
+      <rect
+        class="tile project"
+        data-addr="487"
+        x="2197.88"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_cejmu <!--$-->(CEJMU Beers and Adders)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03a99">
+    <a href="/chips/ttcad25a/072">
+      <rect
+        class="tile project"
+        data-addr="72"
+        x="2371.76"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_16_mic_beamformer_arghunter <!--$-->(16 Mic Beamformer)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b100">
+    <a href="/chips/ttcad25a/074">
+      <rect
+        class="tile project"
+        data-addr="74"
+        x="2545.64"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_pdm_pitch_filter_arghunter <!--$-->(PDM Pitch Filter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b101">
+    <a href="/chips/ttcad25a/076">
+      <rect
+        class="tile project"
+        data-addr="76"
+        x="2719.52"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_pdm_correlator_arghunter <!--$-->(PDM Correlator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b102">
+    <a href="/chips/ttcad25a/322">
+      <rect
+        class="tile project"
+        data-addr="322"
+        x="1676.24"
+        y="2843.5899999999992"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_ddc_arghunter <!--$-->(DDC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b103">
+    <a href="/chips/ttcad25a/489">
+      <rect
+        class="tile project"
+        data-addr="489"
+        x="2371.76"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_i2s_to_pwm_arghunter <!--$-->(I2S to PWM )</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b104">
+    <a href="/chips/ttcad25a/233">
+      <rect
+        class="tile project analog"
+        data-addr="233"
+        x="2371.76"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_georgboecherer_vco <!--$-->(Analog Voltage Controlled
+          Oscillator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b105">
+    <a href="/chips/ttcad25a/910">
+      <rect
+        class="tile project"
+        data-addr="910"
+        x="110.4"
+        y="4271.589999999999"
+        width="1378.16"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_supermic_arghunter <!--$-->(Supermic )</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b106">
+    <a href="/chips/ttcad25a/491">
+      <rect
+        class="tile project"
+        data-addr="491"
+        x="2545.64"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_dmtd_arghunter <!--$-->(DMTD )</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b107">
+    <a href="/chips/ttcad25a/078">
+      <rect
+        class="tile project"
+        data-addr="78"
+        x="2893.3999999999996"
+        y="2272.3899999999994"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_htfab_bouncy_capsule <!--$-->(Bouncy Capsule)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b108">
+    <a href="/chips/ttcad25a/493">
+      <rect
+        class="tile project"
+        data-addr="493"
+        x="2719.52"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_samuelm_pwm_generator <!--$-->(PWM generator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b109">
+    <a href="/chips/ttcad25a/261">
+      <rect
+        class="tile project analog"
+        data-addr="261"
+        x="979.8"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_analog_ring_osc <!--$-->(Ring Oscillators)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b110">
+    <a href="/chips/ttcad25a/326">
+      <rect
+        class="tile project"
+        data-addr="326"
+        x="2024"
+        y="2843.5899999999992"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_toivoh_demo_deluxe <!--$-->(Sequential Shadows Deluxe
+          [TT08 demo competition])
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b111">
+    <a href="/chips/ttcad25a/495">
+      <rect
+        class="tile project"
+        data-addr="495"
+        x="2893.3999999999996"
+        y="1244.2299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_faramire_stopwatch <!--$-->(Simple Stopwatch)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b112">
+    <a href="/chips/ttcad25a/558">
+      <rect
+        class="tile project"
+        data-addr="558"
+        x="110.4"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_micro_tiles_container_group2 <!--$-->(Micro tile
+          container (group 2))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b113">
+    <a href="/chips/ttcad25a/556">
+      <rect
+        class="tile project"
+        data-addr="556"
+        x="284.28000000000003"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_johshoff_metaballs <!--$-->(Metaballs)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b114">
+    <a href="/chips/ttcad25a/554">
+      <rect
+        class="tile project"
+        data-addr="554"
+        x="458.16"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_top <!--$-->(Flame demo)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b115">
+    <a href="/chips/ttcad25a/552">
+      <rect
+        class="tile project"
+        data-addr="552"
+        x="632.04"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_NicklausThompson_SkyKing <!--$-->(SkyKing Demo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b116">
+    <a href="/chips/ttcad25a/550">
+      <rect
+        class="tile project"
+        data-addr="550"
+        x="805.92"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_Electom_cla_4bits <!--$-->(4-bit CLA)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b117">
+    <a href="/chips/ttcad25a/548">
+      <rect
+        class="tile project"
+        data-addr="548"
+        x="979.8"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_vga_cbtest <!--$-->(Generate VGA output for Color
+          Blindness Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b118">
+    <a href="/chips/ttcad25a/718">
+      <rect
+        class="tile project"
+        data-addr="718"
+        x="2371.76"
+        y="3700.3899999999994"
+        width="682.64"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_zoom_zoom <!--$-->(Zoom Zoom)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b119">
+    <a href="/chips/ttcad25a/546">
+      <rect
+        class="tile project"
+        data-addr="546"
+        x="1153.6799999999998"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_dpmunit <!--$-->(DPM_Unit)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b120">
+    <a href="/chips/ttcad25a/544">
+      <rect
+        class="tile project"
+        data-addr="544"
+        x="1327.5599999999997"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_clock_divider_arghunter <!--$-->(Clock Divider )
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b121">
+    <a href="/chips/ttcad25a/047">
+      <rect
+        class="tile project"
+        data-addr="47"
+        x="110.4"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_dlmiles_poc_fskmodem_hdlctrx <!--$-->(FSK Modem +HDLC
+          +UART (PoC))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b122">
+    <a href="/chips/ttcad25a/608">
+      <rect
+        class="tile project"
+        data-addr="608"
+        x="1676.24"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_emilian_muxpga <!--$-->(TinyFPGA resubmit for TT08)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b123">
+    <a href="/chips/ttcad25a/610">
+      <rect
+        class="tile project"
+        data-addr="610"
+        x="1850.12"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_pyamnihc_dummy_counter <!--$-->(Dummy Counter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b124">
+    <a href="/chips/ttcad25a/612">
+      <rect
+        class="tile project"
+        data-addr="612"
+        x="2024"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_whynot <!--$-->(Why not?)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b125">
+    <a href="/chips/ttcad25a/263">
+      <rect
+        class="tile project analog"
+        data-addr="263"
+        x="805.92"
+        y="3129.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_sudana_ota5t_1 <!--$-->(5-T OTA)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b126">
+    <a href="/chips/ttcad25a/045">
+      <rect
+        class="tile project"
+        data-addr="45"
+        x="284.28000000000003"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_dlmiles_tt08_poc_uart <!--$-->(UART)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b127">
+    <a href="/chips/ttcad25a/043">
+      <rect
+        class="tile project"
+        data-addr="43"
+        x="458.16"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_dendraws_donut <!--$-->(donut)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b128">
+    <a href="/chips/ttcad25a/614">
+      <rect
+        class="tile project"
+        data-addr="614"
+        x="2197.88"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_408237988946759681 <!--$-->(Counter)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b129">
+    <a href="/chips/ttcad25a/616">
+      <rect
+        class="tile project"
+        data-addr="616"
+        x="2371.76"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_tmkong_rgb_mixer <!--$-->(RGB Mixer)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b130">
+    <a href="/chips/ttcad25a/490">
+      <rect
+        class="tile project analog"
+        data-addr="490"
+        x="2545.64"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_bgr_agolmanesh <!--$-->(Bandgap Reference)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b131">
+    <a href="/chips/ttcad25a/618">
+      <rect
+        class="tile project"
+        data-addr="618"
+        x="2545.64"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_z2a_rgb_mixer <!--$-->(RGB Mixer demo)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b132">
+    <a href="/chips/ttcad25a/620">
+      <rect
+        class="tile project"
+        data-addr="620"
+        x="2719.52"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_vga_clock <!--$-->(VGA clock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b133">
+    <a href="/chips/ttcad25a/622">
+      <rect
+        class="tile project"
+        data-addr="622"
+        x="2893.3999999999996"
+        y="1129.9899999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_synth_simple_mm <!--$-->(synth_simple)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b134">
+    <a href="/chips/ttcad25a/041">
+      <rect
+        class="tile project"
+        data-addr="41"
+        x="632.04"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_gus16 <!--$-->(GUS16 CPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b135">
+    <a href="/chips/ttcad25a/039">
+      <rect
+        class="tile project"
+        data-addr="39"
+        x="805.92"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_rejunity_ternary_dot <!--$-->(Ternary 128-element Dot
+          Product)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b136">
+    <a href="/chips/ttcad25a/559">
+      <rect
+        class="tile project"
+        data-addr="559"
+        x="110.4"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_virantha_enigma <!--$-->(Enigma - 52-bit Key Length)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b137">
+    <a href="/chips/ttcad25a/557">
+      <rect
+        class="tile project"
+        data-addr="557"
+        x="284.28000000000003"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_atomNPU <!--$-->(AtomNPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b138">
+    <a href="/chips/ttcad25a/330">
+      <rect
+        class="tile project"
+        data-addr="330"
+        x="2371.76"
+        y="2843.5899999999992"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_alphaonesoc <!--$-->(AlphaOneSoC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b139">
+    <a href="/chips/ttcad25a/555">
+      <rect
+        class="tile project"
+        data-addr="555"
+        x="458.16"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_gxrii_spi_sevenseg <!--$-->(SPI 7-segment display)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b140">
+    <a href="/chips/ttcad25a/553">
+      <rect
+        class="tile project"
+        data-addr="553"
+        x="632.04"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_urish_simon <!--$-->(Simon Says memory game)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b141">
+    <a href="/chips/ttcad25a/037">
+      <rect
+        class="tile project"
+        data-addr="37"
+        x="979.8"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_branch_pred <!--$-->(TinyTapeout Minimal Branch
+          Predictor)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b142">
+    <a href="/chips/ttcad25a/551">
+      <rect
+        class="tile project"
+        data-addr="551"
+        x="805.92"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_xor_encryption <!--$-->(Xor-Logic)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b143">
+    <a href="/chips/ttcad25a/549">
+      <rect
+        class="tile project"
+        data-addr="549"
+        x="979.8"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_MAC_Accelerator_OnSachinSharma <!--$-->(MAC Operation)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b144">
+    <a href="/chips/ttcad25a/035">
+      <rect
+        class="tile project"
+        data-addr="35"
+        x="1153.6799999999998"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_moody_mimosa <!--$-->(Moody-mimosa)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b145">
+    <a href="/chips/ttcad25a/547">
+      <rect
+        class="tile project"
+        data-addr="547"
+        x="1153.6799999999998"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wrapper <!--$-->(6Digit7SegClock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b146">
+    <a href="/chips/ttcad25a/460">
+      <rect
+        class="tile project"
+        data-addr="460"
+        x="2371.76"
+        y="3129.1899999999996"
+        width="508.76"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_MichaelBell_tinyQV <!--$-->(TinyQV Risc-V SoC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b147">
+    <a href="/chips/ttcad25a/545">
+      <rect
+        class="tile project"
+        data-addr="545"
+        x="1327.5599999999997"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_devmonk_ay8913 <!--$-->(Classic 8-bit era Programmable
+          Sound Generator AY-3-8913)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b148">
+    <a href="/chips/ttcad25a/033">
+      <rect
+        class="tile project"
+        data-addr="33"
+        x="1327.5599999999997"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_toivoh_demo <!--$-->(Orion Iron Ion [TT08 demo
+          competition])
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b149">
+    <a href="/chips/ttcad25a/482">
+      <rect
+        class="tile project analog"
+        data-addr="482"
+        x="1850.12"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_r2r_dac_3v3 <!--$-->(Analog 8 bit 3.3v R2R DAC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b150">
+    <a href="/chips/ttcad25a/334">
+      <rect
+        class="tile project"
+        data-addr="334"
+        x="2719.52"
+        y="2843.5899999999992"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_2048_vga_game <!--$-->(2048 sliding tile puzzle game
+          (VGA))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b151">
+    <a href="/chips/ttcad25a/488">
+      <rect
+        class="tile project analog"
+        data-addr="488"
+        x="2371.76"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_test_commit <!--$-->(Microrobotics-Basic-IPs)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b152">
+    <a href="/chips/ttcad25a/609">
+      <rect
+        class="tile project"
+        data-addr="609"
+        x="1676.24"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_jimktrains_vslc <!--$-->(VSLC - Very Small Logic
+          Controller with a timer and servo control)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b153">
+    <a href="/chips/ttcad25a/611">
+      <rect
+        class="tile project"
+        data-addr="611"
+        x="1850.12"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_gamepad_pmod_demo <!--$-->(Gamepad Pmod Demo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b154">
+    <a href="/chips/ttcad25a/237">
+      <rect
+        class="tile project analog"
+        data-addr="237"
+        x="2719.52"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_adjustable_psu_counter <!--$-->(Adjustable
+          supply digital counter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b155">
+    <a href="/chips/ttcad25a/613">
+      <rect
+        class="tile project"
+        data-addr="613"
+        x="2024"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_tinytapeout_logo_screensaver <!--$-->(VGA Screensaver
+          with Tiny Tapeout Logo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b156">
+    <a href="/chips/ttcad25a/615">
+      <rect
+        class="tile project"
+        data-addr="615"
+        x="2197.88"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_mattvenn_spi_test <!--$-->(SPI test)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b157">
+    <a href="/chips/ttcad25a/617">
+      <rect
+        class="tile project"
+        data-addr="617"
+        x="2371.76"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_huffman_coder <!--$-->(Huffmann_Coder)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b158">
+    <a href="/chips/ttcad25a/619">
+      <rect
+        class="tile project"
+        data-addr="619"
+        x="2545.64"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_multiplier <!--$-->(Vedic multiplier)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b159">
+    <a href="/chips/ttcad25a/621">
+      <rect
+        class="tile project"
+        data-addr="621"
+        x="2719.52"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422964384478997505 <!--$-->(NAND)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b160">
+    <a href="/chips/ttcad25a/623">
+      <rect
+        class="tile project"
+        data-addr="623"
+        x="2893.3999999999996"
+        y="958.6299999999993"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422964754310747137 <!--$-->(DaliaProjekt)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b161">
+    <a href="/chips/ttcad25a/686">
+      <rect
+        class="tile project"
+        data-addr="686"
+        x="110.4"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422957918936350721 <!--$-->(TinyTapeout 4 bit
+          ripple carry adder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b162">
+    <a href="/chips/ttcad25a/684">
+      <rect
+        class="tile project"
+        data-addr="684"
+        x="284.28000000000003"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422961309631153153
+          <!--$-->(Tinytapeout_design_ANP)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b163">
+    <a href="/chips/ttcad25a/682">
+      <rect
+        class="tile project"
+        data-addr="682"
+        x="458.16"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422957954050029569 <!--$-->(Extremely cool stuff
+          (secret))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b164">
+    <a href="/chips/ttcad25a/680">
+      <rect
+        class="tile project"
+        data-addr="680"
+        x="632.04"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422964381148718081 <!--$-->(test/15/02/25)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b165">
+    <a href="/chips/ttcad25a/678">
+      <rect
+        class="tile project"
+        data-addr="678"
+        x="805.92"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422959954857061377 <!--$-->(example1)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b166">
+    <a href="/chips/ttcad25a/676">
+      <rect
+        class="tile project"
+        data-addr="676"
+        x="979.8"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960174616660993 <!--$-->(First design)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b167">
+    <a href="/chips/ttcad25a/270">
+      <rect
+        class="tile project"
+        data-addr="270"
+        x="110.4"
+        y="2843.5899999999992"
+        width="508.76"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_schoeberl_wildcat <!--$-->(Wildcat RISC-V)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b168">
+    <a href="/chips/ttcad25a/674">
+      <rect
+        class="tile project"
+        data-addr="674"
+        x="1153.6799999999998"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422962760920307713 <!--$-->(4 Bit Adder with
+          Overflow Counter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b169">
+    <a href="/chips/ttcad25a/672">
+      <rect
+        class="tile project"
+        data-addr="672"
+        x="1327.5599999999997"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_kentrane_tinyspectrum <!--$-->(Tiny piano)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b170">
+    <a href="/chips/ttcad25a/736">
+      <rect
+        class="tile project"
+        data-addr="736"
+        x="1676.24"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422962914561876993 <!--$-->(Emil Njor's Design)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b171">
+    <a href="/chips/ttcad25a/738">
+      <rect
+        class="tile project"
+        data-addr="738"
+        x="1850.12"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_i2c_regf <!--$-->(Asynchronous I2C Registerfile
+          Interface)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b172">
+    <a href="/chips/ttcad25a/740">
+      <rect
+        class="tile project"
+        data-addr="740"
+        x="2024"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960054456096769 <!--$-->(3-bit register print)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b173">
+    <a href="/chips/ttcad25a/742">
+      <rect
+        class="tile project"
+        data-addr="742"
+        x="2197.88"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960130190575617 <!--$-->(Four basic building
+          blocks)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b174">
+    <a href="/chips/ttcad25a/744">
+      <rect
+        class="tile project"
+        data-addr="744"
+        x="2371.76"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422965035809389569 <!--$-->(3 Bit Adder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b175">
+    <a href="/chips/ttcad25a/746">
+      <rect
+        class="tile project"
+        data-addr="746"
+        x="2545.64"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422958894385882113 <!--$-->(TinyChipDesign)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b176">
+    <a href="/chips/ttcad25a/748">
+      <rect
+        class="tile project"
+        data-addr="748"
+        x="2719.52"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_tappu_tobias1012 <!--$-->(Tappu)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b177">
+    <a href="/chips/ttcad25a/750">
+      <rect
+        class="tile project"
+        data-addr="750"
+        x="2893.3999999999996"
+        y="844.3899999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960332734617601 <!--$-->(Enter-Code)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b178">
+    <a href="/chips/ttcad25a/687">
+      <rect
+        class="tile project"
+        data-addr="687"
+        x="110.4"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960080008854529 <!--$-->(Special code for
+          letter n)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b179">
+    <a href="/chips/ttcad25a/685">
+      <rect
+        class="tile project"
+        data-addr="685"
+        x="284.28000000000003"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422957657550394369 <!--$-->(Full Adder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b180">
+    <a href="/chips/ttcad25a/683">
+      <rect
+        class="tile project"
+        data-addr="683"
+        x="458.16"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_mp_lif_schor <!--$-->(mp_LIF_neuron)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b181">
+    <a href="/chips/ttcad25a/681">
+      <rect
+        class="tile project"
+        data-addr="681"
+        x="632.04"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422962959838345217 <!--$-->(Holm's TinyTapeOut
+          4-bit adder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b182">
+    <a href="/chips/ttcad25a/097">
+      <rect
+        class="tile project"
+        data-addr="97"
+        x="1676.24"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_asgerwenneb <!--$-->(Custom SRAM)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b183">
+    <a href="/chips/ttcad25a/679">
+      <rect
+        class="tile project"
+        data-addr="679"
+        x="805.92"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422960491546730497 <!--$-->(ANDNOT)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b184">
+    <a href="/chips/ttcad25a/677">
+      <rect
+        class="tile project"
+        data-addr="677"
+        x="979.8"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_Strider93 <!--$-->(digital LIF Neuron)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b185">
+    <a href="/chips/ttcad25a/675">
+      <rect
+        class="tile project"
+        data-addr="675"
+        x="1153.6799999999998"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422960078645704705 <!--$-->(Hero on Tape)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b186">
+    <a href="/chips/ttcad25a/673">
+      <rect
+        class="tile project"
+        data-addr="673"
+        x="1327.5599999999997"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422959974126748673 <!--$-->(my_own_chip)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b187">
+    <a href="/chips/ttcad25a/737">
+      <rect
+        class="tile project"
+        data-addr="737"
+        x="1676.24"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422968416190311425 <!--$-->(Encoder)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b188">
+    <a href="/chips/ttcad25a/739">
+      <rect
+        class="tile project"
+        data-addr="739"
+        x="1850.12"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422962904571040769 <!--$-->(simplePass)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b189">
+    <a href="/chips/ttcad25a/741">
+      <rect
+        class="tile project"
+        data-addr="741"
+        x="2024"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_keszocze_ssmcl <!--$-->(SSMCl)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b190">
+    <a href="/chips/ttcad25a/743">
+      <rect
+        class="tile project"
+        data-addr="743"
+        x="2197.88"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_luke_clock <!--$-->(TT10_Luke_Clock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b191">
+    <a href="/chips/ttcad25a/745">
+      <rect
+        class="tile project"
+        data-addr="745"
+        x="2371.76"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_enjens <!--$-->(Verilog based clock to 7-segment
+          counter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b192">
+    <a href="/chips/ttcad25a/747">
+      <rect
+        class="tile project"
+        data-addr="747"
+        x="2545.64"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_wokwi_422968696249282561 <!--$-->(Simple NAND 2)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b193">
+    <a href="/chips/ttcad25a/749">
+      <rect
+        class="tile project"
+        data-addr="749"
+        x="2719.52"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422960085743520769 <!--$-->(Adder)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b194">
+    <a href="/chips/ttcad25a/751">
+      <rect
+        class="tile project"
+        data-addr="751"
+        x="2893.3999999999996"
+        y="673.0299999999994"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_UartMain <!--$-->(XOR Cipher)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b195">
+    <a href="/chips/ttcad25a/814">
+      <rect
+        class="tile project"
+        data-addr="814"
+        x="110.4"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_torurstrom_async_lock <!--$-->(Asynchronous Locking
+          Unit)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b196">
+    <a href="/chips/ttcad25a/264">
+      <rect
+        class="tile project"
+        data-addr="264"
+        x="632.04"
+        y="2843.5899999999992"
+        width="508.76"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_larva <!--$-->(LaRVa CPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b197">
+    <a href="/chips/ttcad25a/812">
+      <rect
+        class="tile project"
+        data-addr="812"
+        x="284.28000000000003"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_zhouzhouthezhou_adder
+          <!--$-->(tt10_zhouzhouthezhou_adder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b198">
+    <a href="/chips/ttcad25a/225">
+      <rect
+        class="tile project analog"
+        data-addr="225"
+        x="1676.24"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_bg_DanielZhu123 <!--$-->(Bandgap)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b199">
+    <a href="/chips/ttcad25a/810">
+      <rect
+        class="tile project"
+        data-addr="810"
+        x="458.16"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_jp_cd101_saw <!--$-->(KCH CD101 Saw Synth)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b200">
+    <a href="/chips/ttcad25a/808">
+      <rect
+        class="tile project"
+        data-addr="808"
+        x="632.04"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_hpdl1414_uart_atudoroi <!--$-->(TT10 HPDL 1414 Uart)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b201">
+    <a href="/chips/ttcad25a/806">
+      <rect
+        class="tile project"
+        data-addr="806"
+        x="805.92"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_jun1okamura_test0 <!--$-->(7-segment with LFSR)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b202">
+    <a href="/chips/ttcad25a/099">
+      <rect
+        class="tile project"
+        data-addr="99"
+        x="1850.12"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_strau0106_simple_viii <!--$-->(simple-viii)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b203">
+    <a href="/chips/ttcad25a/804">
+      <rect
+        class="tile project"
+        data-addr="804"
+        x="979.8"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_obriensp_jtag <!--$-->(JTAG TAP)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b204">
+    <a href="/chips/ttcad25a/802">
+      <rect
+        class="tile project"
+        data-addr="802"
+        x="1153.6799999999998"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_10_vga_crossyroad <!--$-->(Crossyroad)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b205">
+    <a href="/chips/ttcad25a/842">
+      <rect
+        class="tile project"
+        data-addr="842"
+        x="1676.24"
+        y="3985.99"
+        width="1030.4"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_bilal_trng <!--$-->(TRNG)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b206">
+    <a href="/chips/ttcad25a/142">
+      <rect
+        class="tile project"
+        data-addr="142"
+        x="110.4"
+        y="2557.9899999999993"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_space_invaders_game <!--$-->(Space Invaders ASIC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b207">
+    <a href="/chips/ttcad25a/800">
+      <rect
+        class="tile project"
+        data-addr="800"
+        x="1327.5599999999997"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_sushi_demo <!--$-->(zc-sushi-demo)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b208">
+    <a href="/chips/ttcad25a/864">
+      <rect
+        class="tile project"
+        data-addr="864"
+        x="1676.24"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_kch_cd101 <!--$-->(kch cd101)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b209">
+    <a href="/chips/ttcad25a/101">
+      <rect
+        class="tile project"
+        data-addr="101"
+        x="2024"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_uart_bgdtanasa <!--$-->(ttUART)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b210">
+    <a href="/chips/ttcad25a/866">
+      <rect
+        class="tile project"
+        data-addr="866"
+        x="1850.12"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_zedulo_spitest1 <!--$-->(SimpleSPIdev)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b211">
+    <a href="/chips/ttcad25a/868">
+      <rect
+        class="tile project"
+        data-addr="868"
+        x="2024"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_daobaanh_rng <!--$-->(RNG_test)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b212">
+    <a href="/chips/ttcad25a/518">
+      <rect
+        class="tile project analog"
+        data-addr="518"
+        x="805.92"
+        y="3414.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_mattvenn_level_shifter <!--$-->(Level Shifter)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b213">
+    <a href="/chips/ttcad25a/870">
+      <rect
+        class="tile project"
+        data-addr="870"
+        x="2197.88"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_gcd_stephan <!--$-->(15bit GCD)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b214">
+    <a href="/chips/ttcad25a/516">
+      <rect
+        class="tile project analog"
+        data-addr="516"
+        x="979.8"
+        y="3414.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_alexandercoabad_mixedsignal <!--$-->(Mixed-Signal)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b215">
+    <a href="/chips/ttcad25a/872">
+      <rect
+        class="tile project"
+        data-addr="872"
+        x="2371.76"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_spacewar <!--$-->(XY Spacewar)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b216">
+    <a href="/chips/ttcad25a/582">
+      <rect
+        class="tile project"
+        data-addr="582"
+        x="1676.24"
+        y="3414.7899999999995"
+        width="682.64"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_gregac_tiny_nn <!--$-->(Tiny Neural Network Accelerator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b217">
+    <a href="/chips/ttcad25a/874">
+      <rect
+        class="tile project"
+        data-addr="874"
+        x="2545.64"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_log_afpm <!--$-->(16-bit Logarithmic Approximate
+          Floating Point Multiplier)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b218">
+    <a href="/chips/ttcad25a/876">
+      <rect
+        class="tile project"
+        data-addr="876"
+        x="2719.52"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_rkarl_Spiral <!--$-->(TT_spiralPattern)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b219">
+    <a href="/chips/ttcad25a/878">
+      <rect
+        class="tile project"
+        data-addr="878"
+        x="2893.3999999999996"
+        y="558.789999999999"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_led_jellyant <!--$-->(ledtest)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b220">
+    <a href="/chips/ttcad25a/815">
+      <rect
+        class="tile project"
+        data-addr="815"
+        x="110.4"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_project <!--$-->(Simple shift Reg)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b221">
+    <a href="/chips/ttcad25a/813">
+      <rect
+        class="tile project"
+        data-addr="813"
+        x="284.28000000000003"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_DaDDS <!--$-->(DaDDS)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b222">
+    <a href="/chips/ttcad25a/811">
+      <rect
+        class="tile project"
+        data-addr="811"
+        x="458.16"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_nithishreddykvs <!--$-->(Pulse Width Modulation)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b223">
+    <a href="/chips/ttcad25a/809">
+      <rect
+        class="tile project"
+        data-addr="809"
+        x="632.04"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_monishvr_fifo <!--$-->(Synchronous FIFO)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b224">
+    <a href="/chips/ttcad25a/807">
+      <rect
+        class="tile project"
+        data-addr="807"
+        x="805.92"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_reemashivva_fifo <!--$-->(Asynchronous FIFO)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b225">
+    <a href="/chips/ttcad25a/805">
+      <rect
+        class="tile project"
+        data-addr="805"
+        x="979.8"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_save_buffer_hash_table <!--$-->(Tiny Hash Table)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b226">
+    <a href="/chips/ttcad25a/803">
+      <rect
+        class="tile project"
+        data-addr="803"
+        x="1153.6799999999998"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_drum_goekce <!--$-->(DRUM)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b227">
+    <a href="/chips/ttcad25a/801">
+      <rect
+        class="tile project"
+        data-addr="801"
+        x="1327.5599999999997"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_rte_sine_synth <!--$-->(Sine Synth)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b228">
+    <a href="/chips/ttcad25a/865">
+      <rect
+        class="tile project"
+        data-addr="865"
+        x="1676.24"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_simon2024_c_element_top <!--$-->(Muller C-element)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b229">
+    <a href="/chips/ttcad25a/867">
+      <rect
+        class="tile project"
+        data-addr="867"
+        x="1850.12"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_tiny_shader_mole99 <!--$-->(Tiny Shader)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b230">
+    <a href="/chips/ttcad25a/869">
+      <rect
+        class="tile project"
+        data-addr="869"
+        x="2024"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_flummer_ltc <!--$-->(Linear Timecode (LTC) generator)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b231">
+    <a href="/chips/ttcad25a/103">
+      <rect
+        class="tile project"
+        data-addr="103"
+        x="2197.88"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_bitty <!--$-->(Bitty)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b232">
+    <a href="/chips/ttcad25a/871">
+      <rect
+        class="tile project"
+        data-addr="871"
+        x="2197.88"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_ole_moller_priority_encoder_to_7_segment_decoder
+          <!--$-->(Priority-encoder)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b233">
+    <a href="/chips/ttcad25a/105">
+      <rect
+        class="tile project"
+        data-addr="105"
+        x="2371.76"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_algofoogle_vga <!--$-->(IHP VGA demo)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b234">
+    <a href="/chips/ttcad25a/873">
+      <rect
+        class="tile project"
+        data-addr="873"
+        x="2371.76"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_ultra_tiny_cpu <!--$-->(UltraTiny-CPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b235">
+    <a href="/chips/ttcad25a/107">
+      <rect
+        class="tile project"
+        data-addr="107"
+        x="2545.64"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_uwasic_dinogame <!--$-->(UW ASIC - Optimized Dino)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b236">
+    <a href="/chips/ttcad25a/138">
+      <rect
+        class="tile project"
+        data-addr="138"
+        x="458.16"
+        y="2557.9899999999993"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_Qwendu_spi_fpu <!--$-->(SPI FPU)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b237">
+    <a href="/chips/ttcad25a/875">
+      <rect
+        class="tile project"
+        data-addr="875"
+        x="2545.64"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_rte_eink_driver <!--$-->(E-ink display driver)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b238">
+    <a href="/chips/ttcad25a/590">
+      <rect
+        class="tile project"
+        data-addr="590"
+        x="2371.76"
+        y="3414.7899999999995"
+        width="682.64"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_urish_sic1 <!--$-->(SIC-1 8-bit SUBLEQ Single
+          Instruction Computer)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b239">
+    <a href="/chips/ttcad25a/974">
+      <rect
+        class="tile project"
+        data-addr="974"
+        x="1676.24"
+        y="4271.589999999999"
+        width="1378.16"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_kianV_rv32ima_uLinux_SoC <!--$-->(KianV uLinux SoC)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b240">
+    <a href="/chips/ttcad25a/877">
+      <rect
+        class="tile project"
+        data-addr="877"
+        x="2719.52"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_autosel <!--$-->(I2C EEPROM Project Selection)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b241">
+    <a href="/chips/ttcad25a/109">
+      <rect
+        class="tile project"
+        data-addr="109"
+        x="2719.52"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_tnt_rom_test <!--$-->(TT09 SKY130 ROM Test)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b242">
+    <a href="/chips/ttcad25a/111">
+      <rect
+        class="tile project"
+        data-addr="111"
+        x="2893.3999999999996"
+        y="1986.7899999999995"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_tnt_rom_nolvt_test <!--$-->(TT09 SKY130 ROM Test (no LVT
+          variant))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b243">
+    <a href="/chips/ttcad25a/454">
+      <rect
+        class="tile project"
+        data-addr="454"
+        x="1676.24"
+        y="3129.1899999999996"
+        width="682.64"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_tt_tinyQV <!--$-->(TinyQV SoC with additional
+          peripherals)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b244">
+    <a href="/chips/ttcad25a/480">
+      <rect
+        class="tile project analog"
+        data-addr="480"
+        x="1676.24"
+        y="1415.5899999999992"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_htfab_dg_dac <!--$-->(Dempsey-Gorman DAC)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b245">
+    <a href="/chips/ttcad25a/654">
+      <rect
+        class="tile project"
+        data-addr="654"
+        x="110.4"
+        y="3700.3899999999994"
+        width="1030.4"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_algofoogle_raybox_zero <!--$-->(raybox-zero TTCAD25a
+          edition)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b246">
+    <a href="/chips/ttcad25a/879">
+      <rect
+        class="tile project"
+        data-addr="879"
+        x="2893.3999999999996"
+        y="387.42999999999904"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_htfab_checkers <!--$-->(Overengineered Checkers)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b247">
+    <a href="/chips/ttcad25a/134">
+      <rect
+        class="tile project"
+        data-addr="134"
+        x="805.92"
+        y="2557.9899999999993"
+        width="334.88"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_sky130_as_sc_hs <!--$-->(sky130_as_sc_hs test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b248">
+    <a href="/chips/ttcad25a/942">
+      <rect
+        class="tile project"
+        data-addr="942"
+        x="110.4"
+        y="273.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_sky130_as_sc_hs_dyn_test <!--$-->(sky130_as_sc_hs dyn
+          test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b249">
+    <a href="/chips/ttcad25a/194">
+      <rect
+        class="tile project"
+        data-addr="194"
+        x="1676.24"
+        y="2557.9899999999993"
+        width="334.88"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_rejunity_z80 <!--$-->(Zilog Z80)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b250">
+    <a href="/chips/ttcad25a/175">
+      <rect
+        class="tile project"
+        data-addr="175"
+        x="110.4"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_tnt_rf_yolo_test <!--$-->(TTCAD25a SKY130 RF YOLO Test)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b251">
+    <a href="/chips/ttcad25a/173">
+      <rect
+        class="tile project"
+        data-addr="173"
+        x="284.28000000000003"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_2x2MatrixMult_Vort3xed <!--$-->(UART Matrix Multiplier)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b252">
+    <a href="/chips/ttcad25a/171">
+      <rect
+        class="tile project"
+        data-addr="171"
+        x="458.16"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_zerotoasic_logo_screensaver <!--$-->(VGA Screensaver
+          with Zero to ASIC Logo)
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b253">
+    <a href="/chips/ttcad25a/782">
+      <rect
+        class="tile project"
+        data-addr="782"
+        x="110.4"
+        y="3985.99"
+        width="1378.16"
+        height="225.76"
+      >
+        <title>
+          <!--$-->tt_um_rejunity_lgn_mnist <!--$-->(LGN hand-written digit
+          classifier (MNIST, 16x16 pixels))
+        </title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b254">
+    <a href="/chips/ttcad25a/940">
+      <rect
+        class="tile project"
+        data-addr="940"
+        x="284.28000000000003"
+        y="273.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title><!--$-->tt_um_wokwi_422192563267712001 <!--$-->(Padlock)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b255">
+    <a href="/chips/ttcad25a/231">
+      <rect
+        class="tile project analog"
+        data-addr="231"
+        x="2197.88"
+        y="1701.1899999999996"
+        width="161"
+        height="225.76"
+      >
+        <title><!--$-->tt_um_rc_oscillators <!--$-->(R-C Oscillators)</title>
+      </rect>
+    </a></svg
+  ><svg data-hk="03b256">
+    <a href="/chips/ttcad25a/938">
+      <rect
+        class="tile project"
+        data-addr="938"
+        x="458.16"
+        y="273.1899999999996"
+        width="161"
+        height="111.52"
+      >
+        <title>
+          <!--$-->tt_um_tnt_ff_yolo_test <!--$-->(TTCAD25a SKY130 FF YOLO Test)
+        </title>
+      </rect>
+    </a></svg
+  ><!--$-->
+  <rect
+    class="tile"
+    x="632.04"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="805.92"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="979.8"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1153.6799999999998"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1327.5599999999997"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1676.24"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="1850.12"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect class="tile" x="2024" y="273.1899999999996" width="161" height="111.52">
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="2197.88"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    class="tile"
+    x="2371.76"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a10"
+    class="tile"
+    x="2545.64"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a11"
+    class="tile"
+    x="2719.52"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a12"
+    class="tile"
+    x="2893.3999999999996"
+    y="273.1899999999996"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a13"
+    class="tile"
+    x="110.4"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a14"
+    class="tile"
+    x="284.28000000000003"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a15"
+    class="tile"
+    x="458.16"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a16"
+    class="tile"
+    x="632.04"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a17"
+    class="tile"
+    x="805.92"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a18"
+    class="tile"
+    x="979.8"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a19"
+    class="tile"
+    x="1153.6799999999998"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a20"
+    class="tile"
+    x="1327.5599999999997"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a21"
+    class="tile"
+    x="1676.24"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a22"
+    class="tile"
+    x="1850.12"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a23"
+    class="tile"
+    x="2024"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a24"
+    class="tile"
+    x="2197.88"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a25"
+    class="tile"
+    x="2371.76"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a26"
+    class="tile"
+    x="2545.64"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a27"
+    class="tile"
+    x="2719.52"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+  <rect
+    data-hk="04a28"
+    class="tile"
+    x="2893.3999999999996"
+    y="101.82999999999961"
+    width="161"
+    height="111.52"
+  >
+    <title>Available</title>
+  </rect>
+</svg>

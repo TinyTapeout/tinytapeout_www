@@ -21,7 +21,8 @@ manufacturing and also view your files with the 3D viewer.
 To submit your Wokwi project to a shuttle, we will use a helpful submission portal that will take care of creating
 the GitHub repository, setting up GitHub Actions and populating the relevant files.
 
-The submission portal is available <a href="https://app.tinytapeout.com/projects/create/wokwi" target="_blank">here</a>. 
+<!-- to stop forcing a shuttle, simply comment out wokwiWizardShuttle in config.toml -->
+The submission portal is available {{< get-wokwi-wizard-shuttle >}}. 
 
 {{% figure src="images/submission_portal_step1_empty.png" title="Wokwi project submission portal" %}}
 
@@ -74,7 +75,11 @@ The repository will now be created and the physical layout of your design will n
 
 {{% figure src="images/submission_portal_step3_build_gds.png" title="Automatically building the GDS using GitHub Actions" %}}
 
-- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository.
+- It usually takes about 5 minutes for the GDS file to be created. While you wait, take a look at the repository. You
+can do this either by clicking the link from the wizard (see the figure below), or by navigating to the newly created
+repository via GitHub.
+
+{{% figure src="images/submission_portal_step3_open_repo.png" title="Opening the repository from the Wokwi wizard" %}}
 
 ---
 
