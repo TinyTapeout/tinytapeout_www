@@ -139,7 +139,8 @@
 }
 
 .tt-lt thead th {
-  height: 32px;
+  /* Tall enough for the name and the note (MSB, LSB or segment) under it. */
+  height: 40px;
   border-bottom: 2px solid var(--lt-ink);
   color: var(--lt-ink);
   font-weight: 600;
@@ -257,7 +258,7 @@
 
 .tt-lt-svg .w {
   stroke: var(--lt-wire);
-  stroke-width: 2;
+  stroke-width: 3;
 }
 
 .tt-lt-svg .g path,
@@ -265,7 +266,7 @@
 .tt-lt-svg .tag rect {
   fill: #fff;
   stroke: var(--lt-ink);
-  stroke-width: 1.75;
+  stroke-width: 2.25;
   stroke-linejoin: round;
 }
 
@@ -280,18 +281,19 @@
 .tt-lt-svg .pin {
   fill: #fff;
   stroke: var(--lt-wire);
-  stroke-width: 2;
+  stroke-width: 3;
 }
 
 .tt-lt-svg text {
   font-family: monospace;
-  font-size: 13px;
+  /* In the drawing's units (Wokwi's pixels), which are shown at 0.7x. */
+  font-size: 18px;
   font-weight: 600;
   fill: var(--lt-ink);
 }
 
 .tt-lt-svg .tag text {
-  font-size: 11px;
+  font-size: 14px;
   text-anchor: middle;
 }
 
@@ -475,4 +477,76 @@
 
 .tt-lt-svg .pin-hit {
   cursor: pointer;
+}
+
+.tt-lt th.num,
+.tt-lt td.num {
+  width: 30px;
+  color: #9aa0a6;
+  font-family: monospace;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* The row number isn't one of the inputs: keep it apart with a line, like the outputs. */
+.tt-lt th.num,
+.tt-lt td.num {
+  border-right: 2px solid var(--lt-ink);
+}
+
+.tt-lt th .sub {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--lt-muted);
+}
+
+.tt-lt .seg-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Always as tall as the display, so ticking the box doesn't move anything below it. */
+  min-height: 60px;
+  margin: 0 0 8px;
+}
+
+.tt-lt .seg-opt {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--lt-muted);
+  cursor: pointer;
+}
+
+.tt-lt .try .value {
+  /* Room for "= 15", so nothing moves when the number gets a second digit. */
+  display: inline-block;
+  width: 4ch;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--lt-ink);
+}
+
+.tt-lt-seg7 {
+  --seg-off: #3a3a3a;
+  --seg-on: #ff3b30;
+  flex: none;
+}
+
+.tt-lt-seg7 rect {
+  fill: #111;
+}
+
+.tt-lt-seg7 polygon,
+.tt-lt-seg7 circle {
+  fill: var(--seg-off);
+}
+
+.tt-lt-seg7 .on {
+  fill: var(--seg-on);
 }

@@ -19,7 +19,8 @@ const counts = () => ({
   outputs: Number($$('.stepper .num')[1].textContent),
   rows: $$('tbody tr').length,
 });
-const headers = () => $$('thead th').map((th) => th.textContent);
+// Column names, without the row number column or the MSB / LSB / segment notes under them.
+const headers = () => $$('thead th:not(.num)').map((th) => th.firstChild.textContent);
 const cells = () =>
   $$('.cell')
     .map((c) => c.textContent)
@@ -42,6 +43,11 @@ beforeEach(() => {
   const select = $('select[data-act="example"]');
   select.value = 'full-adder';
   select.dispatchEvent(new Event('change', { bubbles: true }));
+  const seg = $('input[data-act="seven-seg"]');
+  if (seg.checked) {
+    seg.checked = false;
+    seg.dispatchEvent(new Event('change', { bubbles: true }));
+  }
 });
 
 describe('logic table widget', () => {
@@ -113,6 +119,16 @@ describe('logic table widget', () => {
     expect($$('.tt-lt-svg .pin.unused').length).toBe(3);
   });
 
+  it('turns the 7-segment display off when clearing the table', () => {
+    const select = $('select[data-act="example"]');
+    select.value = 'seven-segment';
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    expect($('input[data-act="seven-seg"]').checked).toBe(true);
+    click('[data-act="clear"]');
+    expect($('input[data-act="seven-seg"]').checked).toBe(false);
+    expect($('.tt-lt-seg7')).toBeNull();
+  });
+
   it('copies valid Wokwi JSON to the clipboard', async () => {
     click('[data-act="copy"]');
     await flush();
@@ -150,6 +166,58 @@ describe('logic table widget', () => {
     });
   });
 
+  it('marks the MSB and LSB and numbers the rows', () => {
+    const notes = $$('thead th.in').map((th) => th.querySelector('.sub').textContent.trim());
+    expect(notes).toEqual(['MSB', '', 'LSB']);
+    expect($$('tbody td.num').map((td) => td.textContent)).toEqual([
+      '0',
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+    ]);
+  });
+
+  it('pastes an LED on every output, or stacked outputs for the 7-segment display', async () => {
+    const paste = async () => {
+      click('[data-act="copy"]');
+      await flush();
+      return JSON.parse(clipboard).parts.map((p) => p.type);
+    };
+    let types = await paste();
+    expect(types.filter((t) => t === 'wokwi-led')).toHaveLength(2);
+    expect($('.tt-lt-seg7')).toBeNull();
+    // The row keeps its height whether or not the display shows: nothing below it moves.
+    expect($('.seg-row')).not.toBeNull();
+
+    const seg = $('input[data-act="seven-seg"]');
+    seg.checked = true;
+    seg.dispatchEvent(new Event('change', { bubbles: true }));
+    expect($('.tt-lt-seg7')).not.toBeNull();
+    expect($$('thead th.out .sub').map((e) => e.textContent)).toEqual(['A', 'B']);
+    // Every column name sits at the same height: each header has the same note line.
+    expect($$('thead th .sub')).toHaveLength($$('thead th').length);
+    types = await paste();
+    expect(types).not.toContain('wokwi-7segment');
+    expect(types).not.toContain('wokwi-led');
+    expect(JSON.parse(clipboard).parts.some((p) => p.id === 'label_outputs')).toBe(true);
+  });
+
+  it('turns the 7-segment display on for the BCD example and lights the right segments', () => {
+    const select = $('select[data-act="example"]');
+    select.value = 'seven-segment';
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    expect($('input[data-act="seven-seg"]').checked).toBe(true);
+    click($$('td.in[data-row="5"]')[0]); // 0101
+    expect($('.try .value').textContent).toBe('= 5');
+    // 5 lights a, c, d, f and g.
+    const lit = $$('.tt-lt-seg7 polygon').map((p) => (p.classList.contains('on') ? 1 : 0));
+    expect(lit.join('')).toBe('1011011');
+  });
+
   describe('try it', () => {
     const levels = () => $$('button.lvl').map((b) => b.textContent.replace(/\s+/g, ''));
     const outs = () => $$('.try span.lvl').map((b) => b.textContent.replace(/\s+/g, ''));
@@ -174,6 +242,7 @@ describe('logic table widget', () => {
       expect(document.activeElement).toBe($('button.lvl[data-level="0"]'));
       click('button.lvl[data-level="2"]'); // C = 1
       expect(activeRow()).toBe(5);
+      expect($('.try .value').textContent).toBe('= 5');
       expect(outs()).toEqual(['S0', 'Cout1']);
       expect($$('.tt-lt-svg .pin.high').length).toBe(3); // A, C and Cout
     });
