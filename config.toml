@@ -20,7 +20,7 @@ enableGitInfo = true
   themeVariant = "tinytapeout"
   defaultContentLanguage = 'en'
   disableLightbox = true
-  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSdicny_09kEUDblDar6dNW8qQ-xwLxrykGGfS2-RGk4XgyvGg/viewform?usp=header"
+  workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSecbMrO1lCF-Oz091D4giVW_EG2JbsaDv_SNvFZ4s2I388P_g/viewform?usp=header"
   workshopFoundry = "sky"
   wokwiWizardShuttle = "ttsky26d" # to disable, simply comment it out
 
