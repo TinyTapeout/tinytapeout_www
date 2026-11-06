@@ -28,7 +28,7 @@ checking if VDD Core and VDD IO are shorted - if so, then you have a TTP2 varian
 ## Overview
 
 The breakout card has one of our TTGF0p2 dies wirebonded onto it - the chip contains 52 unique designs, and was
-manufactured using GlobalFoundries' 180nm process. The designs onboard are fully open source, and you can learn about
+manufactured using GlobalFoundries' 180nm process via [wafer.space](https://wafer.space). The designs onboard are fully open source, and you can learn about
 them all by reading our <a target="_blank" href="https://tinytapeout.github.io/tinytapeout-gf-0p2/datasheet.pdf">datasheet</a>
 or by simply scrolling through the table of projects on the [chips' homepage](/chips/ttgf0p2).
 
@@ -37,13 +37,13 @@ games and PLA/FPGA fabrics.
 
 Projects have access to 10 input pins, 8 output pins and 8 bi-directional pins to interface with the outside world. The
 pins which the project uses should be documented in their individual datasheets. Though lacking from this breakout card,
-projects may also use PMOD expansion cards (which would typically be connected via some headers) in order to access
+projects may also use Pmod expansion cards (which would typically be connected via some headers) in order to access
 additional memory ([PSRAM](https://store.tinytapeout.com/products/QSPI-Pmod-p716541602)),
 draw to a screen via [VGA](https://store.tinytapeout.com/products/Tiny-VGA-Pmod-p678647356),
 or connect a [gamepad controller](https://store.tinytapeout.com/products/Gamepad-Pmod-p741891425).
 
-PMODs are available from our [store](https://store.tinytapeout.com), or you can manufacture your own if you follow the
-[Digilent PMOD specification](https://digilent.com/reference/pmod/start). Be sure to check out our [pinout specs](/specs/pinouts) page too!
+Pmods are available from our [store](https://store.tinytapeout.com), or you can manufacture your own if you follow the
+[Digilent Pmod specification](https://digilent.com/reference/pmod/start). Be sure to check out our [pinout specs](/specs/pinouts) page too!
 
 ### Pinout Diagram
 
@@ -66,7 +66,7 @@ to say that signal `ui[3]` is the 4th bit of the `ui` bus.
 
 It is formed of 3 distinct units:
 1. The controller - used to set the address of the active design
-1. The spine - a chip-tall buss that connects the controller with all the mux units
+1. The spine - a chip-tall bus that connects the controller with all the mux units
 1. Mux units - connects the spine to individual user designs
 
 We are mostly interested in the controller. It contains 3 input lines.
@@ -77,11 +77,10 @@ We are mostly interested in the controller. It contains 3 input lines.
 | `ctrl_sel_rst_n` | Resets the internal address counter to 0 (active low) |
 | `ctrl_sel_inc` | Increments the internal address counter by 1 on the rising edge |
 
-To select a design at address 12, you need to pulse `ctrl_sel_rst_n` low, and then pulse `ctrl_sel_inc` 12 times.
+To select a design at address 12, you need to pulse `ctrl_sel_rst_n` low, and then pulse `ctrl_sel_inc` 12 times and then
+raise the `ctrl_ena` signal. ([Click to view an example waveform.](/images/mux_select_addr_12.svg))
 
-{{% figure src="images/mux_select_addr_12.svg" title="Mux signals for activating the design at address 12" %}}
-
-Explore this process with this interactive simulator below. Press the play button and then click on the `INC` and `RST_N`
+Explore this process with the interactive simulator below. Press the play button and then click on the `INC` and `RST_N`
 buttons. Notice how the counter goes up if you keep pressing `INC`? This is the basic idea behind selecting a project.
 
 {{< wokwi 364347807664031745 >}}
@@ -189,7 +188,8 @@ Some projects may require additional external hardware. This should be noted in 
 
 Experiment, explore and hack away! Pick a different project, try to see how it works by looking at their GitHub repo, or
 try and break it by feeding it weird inputs - the chip is yours to do as you please. If you do find something interesting,
-come tell us on [discord](https://tinytapeout.com/discord) or tag us on social media.
+come tell us on [discord](https://tinytapeout.com/discord) or tag us on social media. You can check out some already tested
+projects on our [Silicon Proven page](https://tinytapeout.com/chips/silicon-proven/#ttgf0p2).
 
 We hope that this inspires you to come do a tapeout of your own. We do frequent shuttles, and the community is more than
 willing to help out if you run into any issues.
