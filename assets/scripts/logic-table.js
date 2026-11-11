@@ -9,10 +9,12 @@ import {
   fromLutJson,
   gateCounts,
   inputBit,
+  inputValue,
   layoutDiagram,
   inputsUsed,
   planAll,
   resizeTable,
+  SEGMENTS,
   simulate,
   toLutJson,
   toWokwi,
@@ -78,14 +80,38 @@ const EXAMPLES = {
 
 const GATE_LABELS = { not: 'NOT', and: 'AND', nand: 'NAND', or: 'OR', xor: 'XOR' };
 
-// Gate symbols, drawn in a 44x32 box (NOT: 40x24) with inputs at y=8/24 and output at y=16.
-const GATE_SVG = {
-  and: '<path d="M0 8 H6 M0 24 H6 M35 16 H44"/><path d="M6 3 H22 A13 13 0 0 1 22 29 H6 Z"/>',
-  nand: '<path d="M0 8 H6 M0 24 H6 M39 16 H44"/><path d="M6 3 H20 A13 13 0 0 1 20 29 H6 Z"/><circle cx="36" cy="16" r="3"/>',
-  or: '<path d="M0 8 H9 M0 24 H9 M37 16 H44"/><path d="M5 3 Q23 3 37 16 Q23 29 5 29 Q12 16 5 3 Z"/>',
-  xor: '<path d="M0 8 H10 M0 24 H10 M37 16 H44"/><path class="open" d="M2 3 Q9 16 2 29"/><path d="M7 3 Q25 3 37 16 Q25 29 7 29 Q14 16 7 3 Z"/>',
-  not: '<path d="M0 12 H6 M31 12 H40"/><path d="M6 3 L25 12 L6 21 Z"/><circle cx="28" cy="12" r="3"/>',
+// Gate symbols in Wokwi's 96 x 38.4 box, so the drawing matches the paste: inputs on the left
+// edge at 9.6 and 28.8 (a NOT's at 19.2), the output on the right edge at 19.2. Each body is a
+// classic symbol drawn in a 44 x 32 box (a NOT's 40 x 24), scaled up and centred, with leads out
+// to the edges: [body, x where the input leads meet it, x where the output lead leaves it].
+const GATE_BODY = {
+  and: ['<path d="M6 3 H22 A13 13 0 0 1 22 29 H6 Z"/>', 6, 35],
+  nand: ['<path d="M6 3 H20 A13 13 0 0 1 20 29 H6 Z"/><circle cx="36" cy="16" r="3"/>', 6, 39],
+  or: ['<path d="M5 3 Q23 3 37 16 Q23 29 5 29 Q12 16 5 3 Z"/>', 9, 37],
+  xor: [
+    '<path class="open" d="M2 3 Q9 16 2 29"/><path d="M7 3 Q25 3 37 16 Q25 29 7 29 Q14 16 7 3 Z"/>',
+    10,
+    37,
+  ],
+  not: ['<path d="M6 3 L25 12 L6 21 Z"/><circle cx="28" cy="12" r="3"/>', 6, 31],
 };
+
+function gateSvg(kind) {
+  const [body, inX, outX] = GATE_BODY[kind];
+  const k = 1.2;
+  const left = (96 - (kind === 'not' ? 40 : 44) * k) / 2;
+  const top = kind === 'not' ? 19.2 - 12 * k : 0;
+  const x = (v) => +(left + v * k).toFixed(1);
+  const ins = kind === 'not' ? [19.2] : [9.6, 28.8];
+  const leads = ins.map((y) => `M0 ${y} H${x(inX)}`).join(' ') + ` M${x(outX)} 19.2 H96`;
+  return `<path class="open" d="${leads}"/><g transform="translate(${+left.toFixed(1)} ${+top.toFixed(1)}) scale(${k})">${body}</g>`;
+}
+
+// The layout is in Wokwi's pixels; the drawing is shown smaller.
+const DRAWING_SCALE = 0.7;
+
+const bitName = (i, n) =>
+  `Bit ${n - 1 - i}${n > 1 && i === 0 ? ' (MSB)' : ''}${n > 1 && i === n - 1 ? ' (LSB)' : ''}`;
 
 function esc(s) {
   return String(s).replace(
@@ -118,33 +144,52 @@ function diagramSvg(d, high, inNames) {
     parts.push(`<line class="w" x1="${s.x1}" y1="${s.y1}" x2="${s.x2}" y2="${s.y2}"/>`),
   );
   d.gates.forEach((g) =>
-    parts.push(`<g class="g" transform="translate(${g.x} ${g.y})">${GATE_SVG[g.kind]}</g>`),
+    parts.push(`<g class="g" transform="translate(${g.x} ${g.y})">${gateSvg(g.kind)}</g>`),
   );
   d.tags.forEach((t) =>
     parts.push(
-      `<g class="tag" transform="translate(${t.x} ${t.y})"><rect width="44" height="22" rx="3"/><text x="22" y="15">${esc(t.text)}</text></g>`,
+      `<g class="tag" transform="translate(${t.x} ${t.y})"><rect width="38.4" height="19.2" rx="3"/><text x="19.2" y="14.5">${esc(t.text)}</text></g>`,
     ),
   );
-  d.dots.forEach((p) => parts.push(`<circle class="dot" cx="${p.x}" cy="${p.y}" r="3.5"/>`));
+  d.dots.forEach((p) => parts.push(`<circle class="dot" cx="${p.x}" cy="${p.y}" r="4.5"/>`));
   d.pins.forEach((p) => {
     const cls = `pin${p.unused ? ' unused' : ''}${high.has(p.key) ? ' high' : ''}`;
     if (p.key.startsWith('in:')) {
       // Input pins can be clicked to flip that input, like the buttons above the diagram.
       const i = Number(p.key.slice(3));
       parts.push(
-        `<g class="pin-hit" data-level="${i}"><title>Flip ${esc(inNames[i])}</title><circle cx="${p.x}" cy="${p.y}" r="11" fill="transparent"/><circle class="${cls}" cx="${p.x}" cy="${p.y}" r="5"/></g>`,
+        `<g class="pin-hit" data-level="${i}"><title>Flip ${esc(inNames[i])}</title><circle cx="${p.x}" cy="${p.y}" r="15" fill="transparent"/><circle class="${cls}" cx="${p.x}" cy="${p.y}" r="7"/></g>`,
       );
     } else {
-      parts.push(`<circle class="${cls}" cx="${p.x}" cy="${p.y}" r="5"/>`);
+      parts.push(`<circle class="${cls}" cx="${p.x}" cy="${p.y}" r="7"/>`);
     }
   });
   d.labels.forEach((l) => {
     const over = l.over ? ' text-decoration="overline"' : '';
     parts.push(
-      `<text class="lbl${l.unused ? ' unused' : ''}" x="${l.x}" y="${l.y + 4}" text-anchor="${l.anchor}"${over}>${esc(l.text)}</text>`,
+      `<text class="lbl${l.unused ? ' unused' : ''}" x="${l.x}" y="${l.y + 6}" text-anchor="${l.anchor}"${over}>${esc(l.text)}</text>`,
     );
   });
-  return `<svg class="tt-lt-svg" width="${d.w}" height="${d.h}" viewBox="0 -6 ${d.w} ${d.h + 6}" role="img" aria-label="Gate diagram of the reduced logic">${parts.join('')}</svg>`;
+  const k = DRAWING_SCALE;
+  return `<svg class="tt-lt-svg" width="${Math.round(d.w * k)}" height="${Math.round((d.h + 10) * k)}" viewBox="0 -10 ${d.w} ${d.h + 10}" role="img" aria-label="Gate diagram of the reduced logic">${parts.join('')}</svg>`;
+}
+
+// A single digit 7-segment display lit by the outputs (output 0 is segment A, … output 7 is DP),
+// drawn like Wokwi's.
+const SEGMENT_SHAPES = [
+  '2 0 8 0 9 1 8 2 2 2 1 1',
+  '10 2 10 8 9 9 8 8 8 2 9 1',
+  '10 10 10 16 9 17 8 16 8 10 9 9',
+  '8 18 2 18 1 17 2 16 8 16 9 17',
+  '0 16 0 10 1 9 2 10 2 16 1 17',
+  '0 8 0 2 1 1 2 2 2 8 1 9',
+  '2 8 8 8 9 9 8 10 2 10 1 9',
+];
+
+function sevenSegmentSvg(outValues) {
+  const lit = (o) => (outValues[o] ? ' class="on"' : '');
+  const segs = SEGMENT_SHAPES.map((pts, o) => `<polygon points="${pts}"${lit(o)}/>`).join('');
+  return `<svg class="tt-lt-seg7" viewBox="-1 -1 15 20" width="45" height="60" role="img" aria-label="7-segment display"><rect x="-1" y="-1" width="15" height="20" rx="1"/><g transform="skewX(-8) translate(2 0)">${segs}</g><circle cx="12.4" cy="17" r="0.9"${lit(7)}/></svg>`;
 }
 
 async function copyText(text) {
@@ -172,10 +217,12 @@ function mount(root) {
   let ioError = false;
   let ioDraft = null; // text the user typed into the import box, kept across re-renders
   let levels = []; // "Try it" input values, 0 or 1 per input
+  let sevenSeg = start === 'seven-segment'; // wire the outputs to a 7-segment display
   const open = { wokwi: false, io: false }; // <details> open state, kept across re-renders
 
   const load = (key) => {
     const ex = EXAMPLES[key];
+    if (key === 'seven-segment') sevenSeg = true;
     state = {
       example: key,
       inNames: ex.inNames.slice(),
@@ -197,8 +244,12 @@ function mount(root) {
     const plans = planAll(columns, n);
     const netlist = buildNetlist(plans, inNames, outNames);
     const counts = gateCounts(netlist);
-    const layout = layoutDiagram(plans, inNames, outNames);
-    const wokwiJson = JSON.stringify(toWokwi(netlist, layout), null, 2);
+    // The drawing follows the 7-segment box: room for LEDs on the outputs, or packed closer for
+    // the stack. Its space is always the taller of the two, so ticking the box moves nothing.
+    const layout = layoutDiagram(plans, inNames, outNames, { leds: !sevenSeg });
+    const otherH = layoutDiagram(plans, inNames, outNames, { leds: sevenSeg }).h;
+    const diagramH = Math.round((Math.max(layout.h, otherH) + 10) * DRAWING_SCALE);
+    const wokwiJson = JSON.stringify(toWokwi(netlist, layout, { stacked: sevenSeg }), null, 2);
     root._wokwiJson = wokwiJson;
     const tableJson = JSON.stringify(
       toLutJson(state, state.example ? EXAMPLES[state.example].label : ''),
@@ -213,7 +264,7 @@ function mount(root) {
     // "Try it": the current input values pick a row; the outputs come from simulating the
     // circuit itself, so a don't-care cell shows what the gates really do.
     levels = inNames.map((_, i) => (levels[i] ? 1 : 0));
-    const active = levels.reduce((acc, v) => acc * 2 + v, 0);
+    const active = inputValue(levels);
     const outValues = simulate(netlist, levels);
     const high = new Set();
     levels.forEach((v, i) => v && high.add(`in:${i}`));
@@ -221,7 +272,7 @@ function mount(root) {
     const tryIns = inNames
       .map(
         (nm, i) =>
-          `<button type="button" class="lvl${levels[i] ? ' high' : ''}" data-level="${i}" aria-pressed="${!!levels[i]}" aria-label="Input ${esc(nm)} is ${levels[i]}. Click to flip">${esc(nm)} <b>${levels[i]}</b></button>`,
+          `<button type="button" class="lvl${levels[i] ? ' high' : ''}" data-level="${i}" aria-pressed="${!!levels[i]}" aria-label="Input ${esc(nm)} (bit ${n - 1 - i}) is ${levels[i]}. Click to flip" title="${bitName(i, n)}">${esc(nm)} <b>${levels[i]}</b></button>`,
       )
       .join('');
     const tryOuts = outNames
@@ -231,16 +282,28 @@ function mount(root) {
       )
       .join('');
 
+    // The first input is the MSB: each row's inputs read as a binary number, shown in the # column.
+    // Every header has a note line (often blank) so the names all sit at the same height.
+    const sub = (t) => `<small class="sub">${t ? esc(t) : '&nbsp;'}</small>`;
     const head =
-      inNames.map((nm) => `<th scope="col" class="in">${esc(nm)}</th>`).join('') +
+      `<th scope="col" class="num" title="Row number: the inputs as a decimal number">#${sub('')}</th>` +
+      inNames
+        .map(
+          (nm, i) =>
+            `<th scope="col" class="in" title="${bitName(i, n)}">${esc(nm)}${sub(n > 1 && i === 0 ? 'MSB' : n > 1 && i === n - 1 ? 'LSB' : '')}</th>`,
+        )
+        .join('') +
       outNames
-        .map((nm, o) => `<th scope="col" class="out${o === 0 ? ' first' : ''}">${esc(nm)}</th>`)
+        .map(
+          (nm, o) =>
+            `<th scope="col" class="out${o === 0 ? ' first' : ''}"${sevenSeg ? ` title="Segment ${SEGMENTS[o]}"` : ''}>${esc(nm)}${sub(sevenSeg ? SEGMENTS[o] : '')}</th>`,
+        )
         .join('');
     const body = [];
     for (let r = 0; r < rows; r++) {
-      const ins = inNames
-        .map((_, i) => `<td class="in" data-row="${r}">${inputBit(r, i, n)}</td>`)
-        .join('');
+      const ins =
+        `<td class="num" data-row="${r}">${r}</td>` +
+        inNames.map((_, i) => `<td class="in" data-row="${r}">${inputBit(r, i, n)}</td>`).join('');
       const outs = outNames
         .map((nm, o) => {
           const v = columns[o][r];
@@ -314,10 +377,15 @@ function mount(root) {
           <div class="try" role="group" aria-label="Try it">
             <span class="lbl">Try it</span>
             <span class="lvls">${tryIns}</span>
+            <span class="value" title="The inputs as a decimal number">= ${active}</span>
             <span class="arrow" aria-hidden="true">→</span>
             <span class="lvls" role="status" aria-label="Outputs">${tryOuts}</span>
           </div>
-          <div class="diagram">${diagramSvg(layout, high, inNames)}</div>
+          <div class="seg-row">
+            <label class="seg-opt"><input type="checkbox" data-act="seven-seg"${sevenSeg ? ' checked' : ''}> Show the outputs on a 7-segment display</label>
+            ${sevenSeg ? sevenSegmentSvg(outValues) : ''}
+          </div>
+          <div class="diagram" style="min-height: ${diagramH}px">${diagramSvg(layout, high, inNames)}</div>
         </div>
       </div>
       <div class="tt-lt-export">
@@ -387,13 +455,13 @@ function mount(root) {
     else if (act === 'out-') resize(n, m - 1);
     else if (act === 'out+') resize(n, m + 1);
     else if (act === 'clear') {
-      // Same size, all 0, default names (A, B, … and Y0, Y1, …).
+      // Same size, all 0, default names (A, B, … and Y0, Y1, …), and the 7-segment display off.
       state = { example: '', ...resizeTable({ inNames: [], outNames: [], columns: [] }, n, m) };
+      sevenSeg = false;
     } else if (act === 'copy') {
       try {
         await copyText(root._wokwiJson);
-        status =
-          "Copied! In Wokwi, click on the diagram, press Ctrl+V (⌘+V on a Mac), then press F to zoom to fit if you can't see it.";
+        status = `Copied! In Wokwi, click on the diagram, press Ctrl+V (⌘+V on a Mac), then press F to zoom to fit if you can't see it. ${sevenSeg ? "The outputs are stacked like the output block's pins, ready to wire to uo_out and its 7-segment display." : 'Each output lights an LED so you can try it straight away.'}`;
       } catch (err) {
         status = 'Could not copy automatically. Open "Show Wokwi JSON" and copy the text by hand.';
       }
@@ -444,6 +512,12 @@ function mount(root) {
   );
 
   root.addEventListener('change', (e) => {
+    if (e.target.matches('input[data-act="seven-seg"]')) {
+      sevenSeg = e.target.checked;
+      status = '';
+      render('input[data-act="seven-seg"]');
+      return;
+    }
     if (e.target.matches('select[data-act="example"]') && EXAMPLES[e.target.value]) {
       load(e.target.value);
       status = '';

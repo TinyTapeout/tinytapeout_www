@@ -15,10 +15,22 @@ Type in a truth table below and the tool works out a small circuit of logic gate
 2. Click the output cells to set each one to `0`, `1` or `x`. The reduced logic and the gate diagram update as you go.
 3. Use **Try it** to check the circuit: flip the inputs (or click an input pin in the diagram, or the input values of a row) and watch the highlighted row move and the outputs change.
 4. Click **Copy for Wokwi**.
-5. Open your Wokwi project, put the mouse over an empty part of the diagram and press `Ctrl+V` (`⌘+V` on a Mac). The gates appear with all their wires connected.
-6. Wire your input pins (for example `ui_in[0]`) to the inputs of the buffers labelled with your input names, and the buffers labelled with your output names to your output pins (for example `uo_out[0]`).
+5. Open your Wokwi project, put the mouse over an empty part of the diagram and press `Ctrl+V` (`⌘+V` on a Mac). The gates appear with all their wires connected, and an LED on each output.
+6. Connect the inputs to the switches, **top to top**. The input at the top is bit 0, so it goes to `ui_in[0]` (switch 1), the next one down to `ui_in[1]` (switch 2), and so on. Wire the outputs top to top too: the first output to `uo_out[0]`, the next to `uo_out[1]`, and so on.
 
-The pasted circuit is laid out like the diagram, with the inputs on the left and the outputs on the right. The inputs and outputs are buffer gates with text labels next to them, so the circuit is easy to connect up however your project is laid out. The wires are coloured by what they connect: brown from an input, blue from an inverted input, orange between the gates of a product, purple from a product into an OR gate, green between OR gates and cyan to an output.
+The pasted circuit is laid out like the diagram, with the inputs on the left and the outputs on the right. Each input and output is a junction (a small dot) with a text label next to it: wire your input pin to the input's junction and the output's junction to your output pin.
+
+## Inputs and bit order
+
+Each row of the table is a binary number, with the first input as the most significant bit (MSB) and the last input as the least significant bit (LSB). The `#` column shows each row's number in decimal, and **Try it** shows the number the inputs are set to.
+
+In the [Tiny Tapeout Wokwi template](https://wokwi.com/projects/354858054593504257), switch 1 at the top is `ui_in[0]`, the LSB. So that the pasted circuit matches, its inputs are pasted the other way up: the LSB at the top, labelled `(bit 0)`, and the MSB at the bottom. Wire them top to top and the switches will set the same number as the table's `#` column.
+
+## LEDs and the 7-segment display
+
+Every output in the pasted circuit lights an LED, so you can try the circuit in Wokwi straight away. The LEDs are only there to help you test: they are left out when your design is turned into Verilog, so you can keep them or delete them.
+
+The template already has a 7-segment display on its outputs: `uo_out[0]` drives segment A, `uo_out[1]` segment B, and so on up to `uo_out[7]` on the decimal point. Tick **Show the outputs on a 7-segment display** (the *BCD to 7-segment* example does this for you) to see your outputs on a display next to **Try it**, so you can check every digit before you paste. The pasted circuit then has no LEDs: instead its output junctions are stacked one above the other, spaced like the pins of the template's output block, with the first output at the top. Move the circuit so the stack sits next to the output block and wire each junction straight across to `uo_out[0]`, `uo_out[1]`, and so on.
 
 ## Don't care
 
