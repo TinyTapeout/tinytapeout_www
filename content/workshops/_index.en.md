@@ -65,7 +65,7 @@ organisation, please complete the form below.
 
 <a href="https://docs.google.com/forms/d/1j7We8ZLSlwKIldqrd-iCwZ2adDclHPuWnu5nF3Ngws0" class="btn button" target="_blank">Enquire about in-person workshops</a>
 
-We have run over 20 workshops in multiple countries and helped over 1,000 participants learn and design their own ASIC.
+We have run over 30 workshops in multiple countries and helped over 1,300 participants learn and design their own ASIC.
 
 **Online workshops** \
 We're also now offering Tiny Tapeout workshops online. Our first online workshop, held in July 2026, was a great success.
