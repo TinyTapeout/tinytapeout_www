@@ -5,12 +5,17 @@ import type MarkdownIt from 'markdown-it/index.js';
 import { type Token } from 'markdown-it/index.js';
 import { type IShuttleIndexProject } from './shuttle.js';
 
+export interface IProjectInfo extends IShuttleIndexProject {
+  /** PCB pin label of each entry in `analog_pins`, in the same order */
+  analog_pin_labels: string[];
+}
+
 export async function loadProjectInfo(shuttle: string, project: string) {
   const response = await fetch(`https://index.tinytapeout.com/${shuttle}/${project}.json`);
   if (!response.ok) {
     return null;
   }
-  return (await response.json()) as IShuttleIndexProject;
+  return (await response.json()) as IProjectInfo;
 }
 
 export async function loadProjectDocs(shuttle: string, project: string) {

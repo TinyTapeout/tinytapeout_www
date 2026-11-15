@@ -4,8 +4,12 @@
 import MarkdownIt from 'markdown-it';
 import React from 'react';
 import { IProjectFeedbackList, summarizeFeedback } from '../model/feedback.js';
-import { markdownHeadingLimiter, markdownImagePathTransformer } from '../model/project.js';
-import { getShuttlePdk, scanchainShuttles, type IShuttleIndexProject } from '../model/shuttle.js';
+import {
+  markdownHeadingLimiter,
+  markdownImagePathTransformer,
+  type IProjectInfo,
+} from '../model/project.js';
+import { getShuttlePdk, scanchainShuttles } from '../model/shuttle.js';
 import { isTinyVGACompatible } from '../utils/tinyVGA.js';
 import { AnalogPinout } from './AnalogPinout.js';
 import { PinoutTable } from './PinoutTable.js';
@@ -15,7 +19,7 @@ import { ShuttleMap } from './ShuttleMap.js';
 
 export interface IProjectPropProps {
   shuttle: string;
-  project: IShuttleIndexProject;
+  project: IProjectInfo;
   docs: string;
   feedback: IProjectFeedbackList | null;
   shuttleMapSvg: string | null;
@@ -127,7 +131,7 @@ export function ProjectPage({
       {hasAnalogPins && (
         <>
           <h3>Analog pins</h3>
-          <AnalogPinout shuttle={shuttle} project={project} />
+          <AnalogPinout project={project} />
         </>
       )}
 

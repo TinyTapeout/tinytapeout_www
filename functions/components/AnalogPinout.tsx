@@ -2,36 +2,16 @@
 // Copyright (C) 2024, Tiny Tapeout LTD
 
 import React from 'react';
-import { IShuttleIndexProject } from '../model/shuttle.js';
+import { type IProjectInfo } from '../model/project.js';
 
-export function AnalogPinout({
-  shuttle,
-  project,
-}: {
-  shuttle: string;
-  project: IShuttleIndexProject;
-}) {
+export function AnalogPinout({ project }: { project: IProjectInfo }) {
   const rows: React.ReactNode[] = [];
-
-  // shuttles which do not come with the ETR demo board
-  // using this as a way of differenciating which pinout should be displayed
-  const nonETRShuttles = ['tt06', 'tt07', 'tt08'];
-
-  const letterLabels = ['C', 'D', 'F', 'G', 'J', 'K', 'X', 'W', 'U', 'T', 'R', 'Q'];
-
-  const breakoutPin = (analog: number) => {
-    if (shuttle in nonETRShuttles) {
-      return analog < 6 ? 'A' + analog : 'B' + (analog - 6);
-    } else {
-      return letterLabels[analog] ?? '';
-    }
-  };
 
   for (const [ua, analog] of project.analog_pins.entries()) {
     rows.push(
       <tr key={ua}>
         <td>{ua}</td>
-        <td>{breakoutPin(analog)}</td>
+        <td>{project.analog_pin_labels[ua]}</td>
         <td>{analog}</td>
         <td>{project.pinout[`ua[${ua}]`]}</td>
       </tr>,
