@@ -49,7 +49,7 @@ Designs target IHP's 130nm CMOS5L process through Tiny Tapeout. Entrants start w
 
 Submissions should be open source so others can use and build on them. There is no need to keep work hidden until the deadline, so building in public is welcome. Because this is a much bigger project than Jane Street's earlier reverse-engineering puzzle, teams are strongly recommended.
 
-Designs must be submitted by January 18th, 2027. Jane Street will pay to tape out the most novel designs on a Tiny Tapeout shuttle, targeting the March 2027 CMOS5L shuttle. Teammates and other entrants can be found in the competitions channel on the [Tiny Tapeout Discord](https://discord.gg/rMmn8kXJng).
+Designs must be submitted by January 18th, 2027. Jane Street will pay to tape out the most novel designs on a Tiny Tapeout shuttle, targeting the March 2027 CMOS5L shuttle. Teammates and other entrants can be found in the competitions channel on the [Tiny Tapeout Discord](tinytapeout.com/discord).
 
 ## How much fits
 
