@@ -47,11 +47,11 @@ It's simple: borrow a kit, test your designs, then pass it on.
 {{< figure src="images/qspi-pmod.jpg" title="QSPI Pmod" caption="External flash and RAM for your design" >}}
 </a>
 
-<a href="#" style="text-decoration: none;">
+<a href="https://store.tinytapeout.com/products/Simon-Pmod-p655428050" style="text-decoration: none;">
 {{< figure src="images/simon-pmod.jpg" title="Simon Pmod" caption="Simon Says: buttons, LEDs, display, buzzer" >}}
 </a>
 
-<a href="https://store.tinytapeout.com/products/Simon-Pmod-p655428050" style="text-decoration: none;">
+<a href="https://store.tinytapeout.com/products/Gamepad-Pmod-p741891425" style="text-decoration: none;">
 {{< figure src="images/gamepad-pmod.jpg" title="Gamepad Pmod" caption="Connects up to two game controllers" >}}
 </a>
 
