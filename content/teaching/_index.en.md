@@ -24,13 +24,13 @@ Our pricing model makes it easy to put many designs onto one chip that is then s
   },
   {
     "name": "Medium class",
-    "price": "€2195",
+    "price": "€2695",
     "features": ["Up to 25 Projects", "3 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=25&pcbs=3"
   },
   {
     "name": "Large class",
-    "price": "€5325",
+    "price": "€6825",
     "features": ["Up to 75 Projects", "5 PCB kits"],
     "link": "https://app.tinytapeout.com/calculator?tiles=75&pcbs=5"
   }
