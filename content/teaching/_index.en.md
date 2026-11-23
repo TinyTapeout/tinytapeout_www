@@ -82,7 +82,8 @@ If you have questions about how Tiny Tapeout works, how to use Wokwi, or need mo
   {{< customer-card "Hochschule Rheinmain" "hrm.png" "https://www.hs-rm.de/de/" >}}
   {{< customer-card "Carnegie Mellon University" "cmu.png" "https://www.cmu.edu" >}}
   {{< customer-card "University of Würzburg" "julius_maximilians_universitat_wurzburg_logo.jpeg" "https://www.informatik.uni-wuerzburg.de/ce/" >}} 
-    {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}} 
+  {{< customer-card "Danmarks Tekniske Universitet" "DTU_Logo_Hvid.jpg" "https://www.dtu.dk/" >}} 
+  {{< customer-card "De La Salle University" "dlsu.png" "https://www.dlsu.edu.ph" >}}
 </div>
 
 # Sign up to the mailing list
