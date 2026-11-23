@@ -21,7 +21,7 @@ enableGitInfo = true
   defaultContentLanguage = 'en'
   disableLightbox = true
   workshopFeedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLSeT2jupem1GhX7qSVuAoxsMAncfltX75HFeVsnpKA1yrEjMFw/viewform?usp=header"
-  workshopFoundry = "globalfoundry"
+  workshopFoundry = "gf"
   wokwiWizardShuttle = "ttgf26d" # to disable, simply comment it out
 
 [outputs]
