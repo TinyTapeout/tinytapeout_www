@@ -64,7 +64,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   const shuttleMapSvg = await loadShuttleMapSvg(context, shuttle);
 
   var title: string;
-  if (projectInfo.subtile_addr) {
+  if (projectInfo.type === 'subtile') {
     title = `${projectInfo.address}-${projectInfo.subtile_addr} ${projectInfo.title}`;
   } else {
     title = `${projectInfo.address} ${projectInfo.title}`;
