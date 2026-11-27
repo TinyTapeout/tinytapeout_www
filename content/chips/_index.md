@@ -16,12 +16,14 @@ These chips are currently open for submission! Tape out before the deadline to g
 
 | Run                                                       | Launched   | Closes     | Shuttle  | Chips expected | Estimated shipping date |
 | --------------------------------------------------------- | ---------- | ---------- | -------- | -------------- | ----------------------- |
+| [TTGF26f](https://app.tinytapeout.com/shuttles/ttgf26f)†  | 2026-11-27 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
+| [TTGF26e](https://app.tinytapeout.com/shuttles/ttgf26e)†  | 2026-11-27 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTGF26d](https://app.tinytapeout.com/shuttles/ttgf26d)†  | 2026-09-23 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTGF26c](https://app.tinytapeout.com/shuttles/ttgf26c)   | 2026-09-22 | 2026-12-07 | w.s Run \#3 | 2027-05-12  | 2027-06-09              |
 | [TTSKY26d](https://app.tinytapeout.com/shuttles/ttsky26d) | 2026-09-22 | 2026-11-30 | CI-2612  | 2027-05-25     | 2027-06-25              |
 | [TTSKY26e](https://app.tinytapeout.com/shuttles/ttsky26e) | 2026-11-05 | 2026-11-30 | CI-2612  | 2027-05-25     | 2027-06-25              |
 
-<small>† Currently reserved for ArtScience Museum Singapore. Unused tiles will be made available two days before the deadline.</small>
+<small>† Tiles currently reserved for workshops. Unused tiles will be made available before the shuttle deadline.</small>
 
 {{% notice note %}}
 Tiles and PCBs for open shuttles can be prepurchased at [app.tinytapeout.com/prepurchase](https://app.tinytapeout.com/prepurchase).
